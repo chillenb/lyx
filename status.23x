@@ -68,6 +68,7 @@ What's new
 
 * INTERNALS
 
+- Fix wrong computation of what is an obviously fake PID number.
 
 
 * DOCUMENTATION AND LOCALIZATION
