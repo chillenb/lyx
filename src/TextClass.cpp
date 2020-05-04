@@ -72,20 +72,6 @@ int const LYXFILE_LAYOUT_FORMAT = LAYOUT_FORMAT;
 
 namespace {
 
-class LayoutNamesEqual : public unary_function<Layout, bool> {
-public:
-	LayoutNamesEqual(docstring const & name)
-		: name_(name)
-	{}
-	bool operator()(Layout const & c) const
-	{
-		return c.name() == name_;
-	}
-private:
-	docstring name_;
-};
-
-
 bool layout2layout(FileName const & filename, FileName const & tempfile,
                    int const format = LAYOUT_FORMAT)
 {
@@ -1438,10 +1424,7 @@ string const & TextClass::prerequisites(string const & sep) const
 bool TextClass::hasLayout(docstring const & n) const
 {
 	docstring const name = n.empty() ? defaultLayoutName() : n;
-
-	return find_if(layoutlist_.begin(), layoutlist_.end(),
-		       LayoutNamesEqual(name))
-		!= layoutlist_.end();
+	return getLayout(name) != nullptr;
 }
 
 
@@ -1458,10 +1441,8 @@ Layout const & TextClass::operator[](docstring const & name) const
 {
 	LATTEST(!name.empty());
 
-	const_iterator it =
-		find_if(begin(), end(), LayoutNamesEqual(name));
-
-	if (it == end()) {
+	Layout const * c = getLayout(name);
+	if (!c) {
 		LYXERR0("We failed to find the layout '" << name
 		       << "' in the layout list. You MUST investigate!");
 		for (const_iterator cit = begin(); cit != end(); ++cit)
@@ -1472,7 +1453,7 @@ Layout const & TextClass::operator[](docstring const & name) const
 		LASSERT(false, return dummy);
 	}
 
-	return *it;
+	return *c;
 }
 
 
@@ -1481,9 +1462,8 @@ Layout & TextClass::operator[](docstring const & name)
 	LATTEST(!name.empty());
 	// Safe to continue, given what we do below.
 
-	iterator it = find_if(begin(), end(), LayoutNamesEqual(name));
-
-	if (it == end()) {
+	Layout * c = getLayout(name);
+	if (!c) {
 		LYXERR0("We failed to find the layout '" << to_utf8(name)
 		       << "' in the layout list. You MUST investigate!");
 		for (const_iterator cit = begin(); cit != end(); ++cit)
@@ -1493,10 +1473,10 @@ Layout & TextClass::operator[](docstring const & name)
 		LATTEST(false);
 		// we are here only in release mode
 		layoutlist_.push_back(createBasicLayout(name, true));
-		it = find_if(begin(), end(), LayoutNamesEqual(name));
+		c = getLayout(name);
 	}
 
-	return *it;
+	return *c;
 }
 
 
@@ -1507,9 +1487,9 @@ bool TextClass::deleteLayout(docstring const & name)
 
 	LayoutList::iterator it =
 		remove_if(layoutlist_.begin(), layoutlist_.end(),
-			  LayoutNamesEqual(name));
+			[name](const Layout &c) { return c.name() == name; });
 
-	LayoutList::iterator end = layoutlist_.end();
+	LayoutList::iterator const end = layoutlist_.end();
 	bool const ret = (it != end);
 	layoutlist_.erase(it, end);
 	return ret;
@@ -1547,6 +1527,30 @@ bool TextClass::load(string const & path) const
 	}
 
 	return loaded_;
+}
+
+
+Layout const * TextClass::getLayout(docstring const & name) const
+{
+	LayoutList::const_iterator cit =
+		find_if(begin(), end(),
+			[name](const Layout &c) { return c.name() == name; });
+	if (cit == layoutlist_.end())
+		return nullptr;
+
+	return &(*cit);
+}
+
+
+Layout * TextClass::getLayout(docstring const & name)
+{
+	LayoutList::iterator it =
+		find_if(layoutlist_.begin(), layoutlist_.end(),
+			[name](const Layout &c) { return c.name() == name; });
+	if (it == layoutlist_.end())
+		return nullptr;
+
+	return &(*it);
 }
 
 

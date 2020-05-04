@@ -72,7 +72,7 @@ bool parse_bool(docstring & howto)
 }
 
 
-class MatchString : public binary_function<Paragraph, pos_type, int>
+class MatchString
 {
 public:
 	MatchString(docstring const & str, bool cs, bool mw)
