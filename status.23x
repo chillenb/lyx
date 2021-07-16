@@ -97,3 +97,5 @@ What's new
 
 - update included boost library to version 1.75.0.
 
+- fix warning when configuring with Qt 5.15.1x.
+
