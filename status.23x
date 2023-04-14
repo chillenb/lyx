@@ -54,8 +54,6 @@ What's new
 
 
 
-
-
 * DOCUMENTATION AND LOCALIZATION
 
 
@@ -66,7 +64,7 @@ What's new
 
 * TEX2LYX
 
-
+- Fix import of umlauts and ß in math (bug 12739).
 
 
 * LYXHTML
@@ -82,3 +80,4 @@ What's new
 * BUILD/INSTALLATION
 
 - update included boost library to version 1.75.0.
+
