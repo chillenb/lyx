@@ -128,7 +128,7 @@ void InsetMathFont::validate(LaTeXFeatures & features) const
 		if (fontname == "text" || fontname == "textnormal"
 		    || (fontname.length() == 6 && fontname.substr(0, 4) == "text"))
 			features.require("amstext");
-		if (fontname == "mathscr")
+		if (fontname == "mathscr" && !features.isRequired("unicode-math"))
 			features.require("mathrsfs");
 		if (fontname == "textipa")
 			features.require("tipa");
