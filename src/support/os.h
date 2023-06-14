@@ -62,6 +62,9 @@ int timeout_min();
 /// @param reset True if the python path should be recomputed
 std::string const python(bool reset = false);
 
+/// Check for availability of the python interpreter
+bool hasPython();
+
 ///
 bool isFilesystemCaseSensitive();
 

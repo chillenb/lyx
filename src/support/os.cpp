@@ -104,6 +104,12 @@ string const python(bool reset)
 	return command;
 }
 
+
+bool hasPython()
+{
+	return !(python23(python()).empty());
+}
+
 } // namespace os
 } // namespace support
 } // namespace lyx
