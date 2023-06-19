@@ -252,11 +252,10 @@ def legacy_latex_file(latex_file, fg_color, bg_color):
 \\definecolor{lyxbg}{rgb}{%s}
 \\pagecolor{lyxbg}
 \\usepackage[%s,tightpage]{preview}
+\\usepackage{ifthen}
 \\makeatletter
-\\def\\t@a{cmr}
-\\if\\f@family\\t@a
-\\IfFileExists{lmodern.sty}{\\usepackage{lmodern}}{\\usepackage{ae,aecompl}}
-\\fi
+\\ifthenelse{\\equal{\\f@family}{cmr}}{
+\\IfFileExists{lmodern.sty}{\\usepackage{lmodern}}{\\usepackage{ae,aecompl}}}{}
 \\g@addto@macro\\preview{\\begingroup\\color{lyxbg}\\special{ps::clippath fill}\\color{lyxfg}}
 \\g@addto@macro\\endpreview{\\endgroup}
 \\makeatother

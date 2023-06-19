@@ -52,6 +52,8 @@ What's new
 
 - Avoid crashing on a recursive macro definition (bug 12633).
 
+- Fix issue with on-screen instant preview and the mathpazo package.
+
 
 * INTERNALS
 
