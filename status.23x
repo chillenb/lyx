@@ -36,6 +36,8 @@ What's new
 
 * BUILD/INSTALLATION
 
+- Adding binary path for Homebrew on MacOS-arm64 (bug 12619).
+
 
 ** Bug fixes:
 *************
