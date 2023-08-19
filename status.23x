@@ -45,7 +45,7 @@ What's new
 * DOCUMENT INPUT/OUTPUT
 
 - Fix leaking of linespace settings between paragraphs if they have
-  different aligment (bug 12638).
+  different alignment (bug 12638).
   
 - Do not load mathrsfs if unicode-math is required (bug 12734).
 
