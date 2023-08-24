@@ -445,6 +445,8 @@ docstring const InsetCollapsible::getNewLabel(docstring const & l) const
 void InsetCollapsible::edit(Cursor & cur, bool front, EntryDirection entry_from)
 {
 	//lyxerr << "InsetCollapsible: edit left/right" << endl;
+	// We might have a selection if we moved the mouse on the button only
+	cur.clearSelection();
 	cur.push(*this);
 	InsetText::edit(cur, front, entry_from);
 }
@@ -518,9 +520,11 @@ void InsetCollapsible::doDispatch(Cursor & cur, FuncRequest & cmd)
 			cur.noScreenUpdate();
 			break;
 		}
-		// if we are selecting, we do not want to
-		// toggle the inset.
-		if (cur.selection())
+		// If we are selecting, we do not want to toggle the inset
+		// except if the selection started at the inset button we're still on.
+		// The latter addresses #12820.
+		if (cur.selection() && !clickable(cur.bv(), cur.bv().cursor().xClickPos(),
+						  cur.bv().cursor().yClickPos()))
 			break;
 		// Left button is clicked, the user asks to
 		// toggle the inset visual state.

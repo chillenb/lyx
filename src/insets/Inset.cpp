@@ -353,9 +353,13 @@ void Inset::doDispatch(Cursor & cur, FuncRequest &cmd)
 {
 	switch (cmd.action()) {
 	case LFUN_MOUSE_RELEASE:
-		// if the derived inset did not explicitly handle mouse_release,
-		// we assume we request the settings dialog
-		if (!cur.selection() && cmd.button() == mouse_button::button1
+		// If the derived inset did not explicitly handle mouse_release,
+		// we assume we request the settings dialog,
+		// except if we are about to select (MOUSE_MOTION that started
+		// outside the inset).
+		if ((!cur.selection() || covers(cur.bv(), cur.bv().cursor().xClickPos(),
+						cur.bv().cursor().yClickPos()))
+		    && cmd.button() == mouse_button::button1
 		    && clickable(cur.bv(), cmd.x(), cmd.y()) && hasSettings()) {
 			FuncRequest tmpcmd(LFUN_INSET_SETTINGS);
 			dispatch(cur, tmpcmd);

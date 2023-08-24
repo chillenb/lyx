@@ -288,6 +288,12 @@ public:
 	void setTargetX();
 	/// clear targetX, i.e. set it to -1
 	void clearTargetX();
+	/// return x position of latest mouse press or -1 if unset
+	int xClickPos() const { return x_clickpos_; }
+	/// return y position of latest mouse press or -1 if unset
+	int yClickPos() const { return y_clickpos_; }
+	/// register mouse press coordinates
+	void setClickPos(int x, int y);
 	/// set offset to actual position - targetX
 	void updateTextTargetOffset();
 	/// distance between actual and targeted position during last up/down in text
@@ -442,6 +448,9 @@ private:
 	int x_target_;
 	/// if a x_target cannot be hit exactly in a text, put the difference here
 	int textTargetOffset_;
+	/// Exact position of mouse click
+	int x_clickpos_;
+	int y_clickpos_;
 	/// the start of the new born word
 	DocIterator new_word_;
 	/// position before dispatch started

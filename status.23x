@@ -54,6 +54,9 @@ What's new
 
 - Avoid crashing on a recursive macro definition (bug 12633).
 
+- Fix several problems where insets did not react on click on
+  the Mac (bugs 12279, 12418, 12820).
+
 - Fix issue with on-screen instant preview and the mathpazo package.
 
 
