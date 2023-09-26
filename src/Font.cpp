@@ -470,8 +470,8 @@ int Font::latexWriteStartChanges(odocstream & os, BufferParams const & bparams,
 		if (runparams.inulemcmd) {
 			// needed with nested uwave in xout
 			// see https://tex.stackexchange.com/a/263042
-			os << "\\ULdepth=1000pt";
-			count += 15;
+			os << "\\ULdepth=\\maxdimen";
+			count += 18;
 		}
 		os << "\\uwave{";
 		count += 10;

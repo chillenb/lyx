@@ -15,6 +15,8 @@ What's new
 
 * DOCUMENT INPUT/OUTPUT
 
+- Fix nested underwave (\uwave) (bug 12922).
+
 
 * MISCELLANEOUS
 
