@@ -10,8 +10,10 @@
 
 #include <config.h>
 
+#include "MetricsInfo.h"
 #include "BufferView.h"
-#include "ColorSet.h"
+#include "Cursor.h"
+
 #include "LyXRC.h"
 #include "MetricsInfo.h"
 
@@ -65,7 +67,8 @@ Changer MetricsBase::changeFontSet(string const & name)
 	string const oldname = fontname;
 	fontname = name;
 	if (isMathFont(name) || isMathFont(oldname))
-		font = sane_font;
+		font = isTextFont(name) ? bv->cursor().getFont().fontInfo()
+		                        : sane_font;
 	augmentFont(font, name);
 	font.setSize(rc->old.font.size());
 	font.setStyle(rc->old.font.style());
