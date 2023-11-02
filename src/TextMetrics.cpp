@@ -450,6 +450,7 @@ bool TextMetrics::redoParagraph(pit_type const pit)
 			displayFont(pit, ii->pos) : bufferfont;
 		MacroContext mc(&buffer, parPos);
 		MetricsInfo mi(bv_, font.fontInfo(), w, mc);
+		mi.base.outer_font = displayFont(pit, ii->pos).fontInfo();
 		ii->inset->metrics(mi, dim);
 		if (!insetCache.has(ii->inset) || insetCache.dim(ii->inset) != dim) {
 			insetCache.add(ii->inset, dim);

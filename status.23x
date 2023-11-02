@@ -32,6 +32,10 @@ What's new
 - Add a few missing autocorrect combinations and allow cycling through arrows
   (bug 12711).
 
+- Reflect in the on-screen representation of math insets the fact that some
+  insets, such as \text, \mbox, \fbox and \makebox, inherit the text font
+  of the containing inset (bug 12950).
+
 
 * DOCUMENTATION AND LOCALIZATION
 

@@ -81,14 +81,14 @@ void InsetMathBox::htmlize(HtmlStream & ms) const
 
 void InsetMathBox::metrics(MetricsInfo & mi, Dimension & dim) const
 {
-	Changer dummy = mi.base.changeFontSet("textnormal");
+	Changer dummy = mi.base.changeFontSet("text");
 	cell(0).metrics(mi, dim);
 }
 
 
 void InsetMathBox::draw(PainterInfo & pi, int x, int y) const
 {
-	Changer dummy = pi.base.changeFontSet("textnormal");
+	Changer dummy = pi.base.changeFontSet("text");
 	cell(0).draw(pi, x, y);
 }
 
@@ -131,7 +131,7 @@ InsetMathFBox::InsetMathFBox(Buffer * buf)
 
 void InsetMathFBox::metrics(MetricsInfo & mi, Dimension & dim) const
 {
-	Changer dummy = mi.base.changeFontSet("textnormal");
+	Changer dummy = mi.base.changeFontSet("text");
 	cell(0).metrics(mi, dim);
 	// 1 pixel space, 1 frame, 1 space
 	dim.wid += 2 * 3;
@@ -145,7 +145,7 @@ void InsetMathFBox::draw(PainterInfo & pi, int x, int y) const
 	Dimension const dim = dimension(*pi.base.bv);
 	pi.pain.rectangle(x + 1, y - dim.ascent() + 1,
 		dim.width() - 2, dim.height() - 2, Color_foreground);
-	Changer dummy = pi.base.changeFontSet("textnormal");
+	Changer dummy = pi.base.changeFontSet("text");
 	cell(0).draw(pi, x + 3, y);
 }
 
@@ -219,7 +219,7 @@ InsetMathMakebox::InsetMathMakebox(Buffer * buf, bool framebox)
 
 void InsetMathMakebox::metrics(MetricsInfo & mi, Dimension & dim) const
 {
-	Changer dummy = mi.base.changeFontSet("textnormal");
+	Changer dummy = mi.base.changeFontSet("text");
 
 	Dimension wdim;
 	static docstring bracket = from_ascii("[");
@@ -250,7 +250,7 @@ void InsetMathMakebox::metrics(MetricsInfo & mi, Dimension & dim) const
 
 void InsetMathMakebox::draw(PainterInfo & pi, int x, int y) const
 {
-	Changer dummy = pi.base.changeFontSet("textnormal");
+	Changer dummy = pi.base.changeFontSet("text");
 	BufferView const & bv = *pi.base.bv;
 	int w = mathed_char_width(pi.base.font, '[');
 

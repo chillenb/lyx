@@ -106,6 +106,7 @@ void RowPainter::paintInset(Row::Element const & e) const
 
 	pi_.base.font = e.inset->inheritFont() ? e.font.fontInfo() :
 		pi_.base.bv->buffer().params().getFont().fontInfo();
+	pi_.base.outer_font = e.font.fontInfo();
 	pi_.ltr_pos = !e.font.isVisibleRightToLeft();
 	pi_.change_ = change_.changed() ? change_ : e.change;
 	pi_.do_spellcheck &= e.inset->allowSpellCheck();
