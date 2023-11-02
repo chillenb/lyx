@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.3\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2023-01-01 18:33-0500\n"
-"PO-Revision-Date: 2022-12-16 08:50+0000\n"
+"POT-Creation-Date: 2023-11-02 19:36+0100\n"
+"PO-Revision-Date: 2023-11-02 18:59+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -27229,6 +27229,17 @@ msgstr "V&ytvoriť adresár"
 #: src/LyX.cpp:1081
 msgid "&Exit LyX"
 msgstr "&Ukončiť LyX"
+
+#: src/LyX.cpp:621
+msgid "No python is found"
+msgstr "Nenájdený program python"
+
+#: src/LyX.cpp:622
+msgid ""
+"LyX will only have minimal functionality because no python interpreter has "
+"been found. Consider download and install of an python interpreter."
+msgstr "LyX bude len minimálne fungovať lebo sa nenašiel interpret python. Zvážte"
+" stiahnutie a inštaláciu python-interpreta."
 
 #: src/LyX.cpp:1082
 msgid "No user LyX directory. Exiting."
