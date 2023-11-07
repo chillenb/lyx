@@ -3,13 +3,13 @@
 #
 # Zdenko Podobný <zdpo@mailbox.sk>, 2003, 2006.
 # Kornel Benko <Kornel.Benko@berlin.de>, 2009.
-# Kornel Benko <kornel@lyx.org>, 2009-2022.
+# Kornel Benko <kornel@lyx.org>, 2009-2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.3\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2023-11-02 19:36+0100\n"
-"PO-Revision-Date: 2023-11-02 18:59+0000\n"
+"PO-Revision-Date: 2023-11-07 11:48+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -1181,7 +1181,7 @@ msgstr "Zosivelé poznámky:"
 #: src/frontends/qt4/GuiDocument.cpp:1942
 #: src/frontends/qt4/GuiDocument.cpp:1972
 msgid "&Change..."
-msgstr "&Zmena…"
+msgstr "&Vymeniť…"
 
 #: src/frontends/qt4/ui/ColorUi.ui:165
 msgid "Background Colors"
@@ -2122,7 +2122,7 @@ msgstr "Odkaz na e-mailovú adresu"
 
 #: src/frontends/qt4/ui/HyperlinkUi.ui:146
 msgid "E&mail"
-msgstr "E-ma&il"
+msgstr "&E-mail"
 
 #: src/frontends/qt4/ui/HyperlinkUi.ui:153
 msgid "Link to a file"
@@ -2130,7 +2130,7 @@ msgstr "Odkaz na súbor"
 
 #: src/frontends/qt4/ui/HyperlinkUi.ui:156
 msgid "Fi&le"
-msgstr "Súbo&r"
+msgstr "&Súbor"
 
 #: src/frontends/qt4/ui/IncludeUi.ui:44
 msgid "Listing Parameters"
@@ -3763,7 +3763,7 @@ msgstr "Skryť ponukovú &lištu"
 
 #: src/frontends/qt4/ui/PrefEditUi.ui:202
 msgid "Hide sta&tusbar"
-msgstr "Skryť stavový p&ruh"
+msgstr "Skryť st&avový pruh"
 
 #: src/frontends/qt4/ui/PrefEditUi.ui:209
 msgid "&Limit text width"
@@ -19832,7 +19832,7 @@ msgstr "Vložiť plávajúcu tabuľku"
 
 #: lib/ui/stdtoolbars.inc:123
 msgid "Insert label"
-msgstr "Vložiť značku"
+msgstr "Vložiť návestie"
 
 #: lib/ui/stdtoolbars.inc:124
 msgid "Insert cross-reference"
@@ -26251,7 +26251,7 @@ msgstr "LaTeX: text"
 
 #: src/Color.cpp:230
 msgid "inline completion"
-msgstr "priame doplňovanie"
+msgstr "doplňovanie v riadku"
 
 #: src/Color.cpp:232
 msgid "non-unique inline completion"
@@ -27887,14 +27887,14 @@ msgstr ""
 "Cesta, ktorú vám LyX pri voľbe šablóny ponúkne. Prázdnou hodnotou bude "
 "nastavený adresár, z ktorého bol LyX spustený."
 
-#: src/LyXRC.cpp:3505
+#: src/LyXRC.cpp:3506
 msgid ""
 "Specify those directories which should be prepended to the TEXINPUTS "
 "environment variable.\n"
 "A '.' represents the current document directory. Use the OS native format."
 msgstr ""
-"Určite adresári, ktoré by mali byť pridané do premennej TEXINPUTS pred "
-"ostatnými adresármi.\n"
+"Určite adresáre, ktoré by mali byť pridané do premennej prostredia TEXINPUTS "
+"pred ostatnými adresármi.\n"
 "'.' reprezentuje aktuálny adresár dokumentu. Použite miestny formát pre daný "
 "operačný systém."
 
@@ -29749,7 +29749,7 @@ msgstr "JIS B6"
 
 #: src/frontends/qt4/GuiDocument.cpp:1187
 msgid "Language Default (no inputenc)"
-msgstr "Štandardné pre daný jazyk (bez inputenc)"
+msgstr "Predvolený jazyk (bez inputenc)"
 
 #: src/frontends/qt4/GuiDocument.cpp:1240
 msgid "Numbered"
@@ -32548,7 +32548,7 @@ msgstr "súbor"
 #: src/insets/InsetHyperlink.cpp:258
 #, c-format
 msgid "Hyperlink (%1$s) to %2$s"
-msgstr "Hyperlinka (%1$s) na %2$s"
+msgstr "Hyperlinka (%1$s) na cieľ %2$s"
 
 #: src/insets/InsetInclude.cpp:396
 msgid "Verbatim Input"
