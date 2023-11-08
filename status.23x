@@ -70,6 +70,9 @@ What's new
 
 - Fix wrong computation of what is an obviously fake PID number.
 
+- remove a pair of static methods that were unused and hid another
+  one.
+
 
 * DOCUMENTATION AND LOCALIZATION
 

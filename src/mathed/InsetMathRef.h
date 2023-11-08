@@ -62,10 +62,6 @@ public:
 	};
 	static ref_type_info types[];
 	///
-	static int getType(docstring const & name);
-	///
-	static docstring const & getName(int type);
-	///
 	docstring const getTarget() const;
 	///
 	InsetCode lyxCode() const { return MATH_REF_CODE; }
