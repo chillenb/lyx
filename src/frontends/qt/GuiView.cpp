@@ -527,6 +527,7 @@ public:
 	string last_export_format;
 	string processing_format;
 
+	// Buffers that are being exported
 	static QSet<Buffer const *> busyBuffers;
 
 	unsigned int smallIconSize;
@@ -3451,6 +3452,12 @@ bool GuiView::exportBufferAs(Buffer & b, docstring const & iformat)
 }
 
 
+bool GuiView::isBufferBusy(Buffer const * b)
+{
+	return GuiViewPrivate::busyBuffers.contains(b);
+}
+
+
 bool GuiView::saveBuffer(Buffer & b)
 {
 	return saveBuffer(b, FileName());
@@ -4227,6 +4234,8 @@ Buffer::ExportStatus GuiView::GuiViewPrivate::runAndDestroy(const T& func,
 	// documents, starting from the master. so we must delete those.
 	Buffer * mbuf = const_cast<Buffer *>(clone->masterBuffer());
 	delete mbuf;
+	if (orig->needToRemoveBiblioTemps())
+		orig->removeBiblioTempFiles();
 	busyBuffers.remove(orig);
 	return status;
 }

@@ -2689,6 +2689,11 @@ bool Buffer::citeLabelsValid() const
 
 void Buffer::removeBiblioTempFiles() const
 {
+	if (theApp()->isBufferBusy(this)) {
+		removeBiblioTemps = true;
+		return;
+	}
+
 	// We remove files that contain LaTeX commands specific to the
 	// particular bibliographic style being used, in order to avoid
 	// LaTeX errors when we switch style.
@@ -2702,6 +2707,7 @@ void Buffer::removeBiblioTempFiles() const
 	Buffer const * const pbuf = parent();
 	if (pbuf)
 		pbuf->removeBiblioTempFiles();
+	removeBiblioTemps = false;
 }
 
 

@@ -806,18 +806,20 @@ public:
 	/// of loaded child documents).
 	docstring_list const &
 		getBibfiles(UpdateScope scope = UpdateMaster) const;
-
+	///
+	bool needToRemoveBiblioTemps() const { return removeBiblioTemps; }
 	/// routines for dealing with possible self-inclusion
 	void pushIncludedBuffer(Buffer const * buf) const;
 	void popIncludedBuffer() const;
 	bool isBufferIncluded(Buffer const * buf) const;
 private:
 	void clearIncludeList() const;
-
-private:
+	///
 	friend class MarkAsExporting;
 	/// mark the buffer as busy exporting something, or not
 	void setExportStatus(bool e) const;
+	///
+	mutable bool removeBiblioTemps = false;
 
 	///
 	References & getReferenceCache(docstring const & label);

@@ -255,6 +255,8 @@ public:
 	virtual bool unhide(Buffer * buf) = 0;
 	// Apply preferences at the start
 	static void applyPrefs();
+	///
+	virtual bool isBufferBusy(Buffer const * b) = 0;
 };
 
 /// Return the list of loadable formats.

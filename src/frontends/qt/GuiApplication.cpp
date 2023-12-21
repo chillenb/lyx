@@ -1258,6 +1258,18 @@ void GuiApplication::clearSession()
 }
 
 
+bool GuiApplication::isBufferBusy(Buffer const * b)
+{
+	Buffer const * buf = b;
+	while (buf) {
+		if (GuiView::isBufferBusy(b))
+			return true;
+		buf = buf->parent();
+	}
+	return false;
+}
+
+
 docstring Application::iconName(FuncRequest const & f, bool unknown)
 {
 	return qstring_to_ucs4(lyx::frontend::iconInfo(f, unknown, false).filepath);

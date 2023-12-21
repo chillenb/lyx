@@ -220,6 +220,8 @@ public:
 
 	/// Current ratio between physical pixels and device-independent pixels
 	double pixelRatio() const;
+	///
+	static bool isBufferBusy(Buffer const * b);
 
 Q_SIGNALS:
 	void closing(int);

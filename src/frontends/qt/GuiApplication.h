@@ -83,6 +83,7 @@ public:
 	std::string inputLanguageCode() const override;
 	void handleKeyFunc(FuncCode action) override;
 	bool unhide(Buffer * buf) override;
+	bool isBufferBusy(Buffer const * b) override;
 	//@}
 
 	///
