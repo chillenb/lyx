@@ -103,3 +103,5 @@ What's new
 
 - fix warning when configuring with Qt 5.15.1x.
 
+- do not halt compilation because of a too new autoconf or automake version
+
