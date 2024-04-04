@@ -23,7 +23,7 @@ done
 
 if [ -z "$FARM" ]; then
   echo "You must set the FARM variable to run this script, e.g.:";
-  echo "# FARM=/cvs/lyx-www/ bash check-po.sh";
+  echo "# FARM=/cvs/lyx-www/ bash update-po.sh";
   exit 1;
 fi
 
@@ -90,7 +90,7 @@ fi
 
 if diff -w -q $I18NFILE $FARM/$I18NFILE >/dev/null 2>&1; then
   echo No string differences found.
-  git checkout *.po;
+  git checkout *.po *.gmo;
   exit 0;
 fi
 
@@ -133,12 +133,11 @@ if ! cd $FARM; then
 fi
 
 echo Updating the www-user tree...
-# note that we're assuming this one is svn.
-svn up;
+git pull;
 
 echo Moving $I18NFILE...;
 mv $LYXROOT/po/$I18NFILE .;
 
 echo Committing...;
-$DEBUG svn commit -m "* $I18NFILE: update stats" $I18NFILE;
+$DEBUG git commit -m "* $I18NFILE: update stats" $I18NFILE;
 
