@@ -27129,15 +27129,14 @@ msgid "&Exit LyX"
 msgstr "&Ukonƒçit LyX"
 
 #: src/LyX.cpp:621
-#, fuzzy
 msgid "No python is found"
-msgstr "Nebyly nalezeny soubory t≈ô√≠d (textclass)"
+msgstr "Nebyl nalezen Python"
 
 #: src/LyX.cpp:622
 msgid ""
 "LyX will only have minimal functionality because no python interpreter has "
 "been found. Consider download and install of an python interpreter."
-msgstr ""
+msgstr "LyX bude fungovat pouze v minimalistickÈm reæimu, protoæe nebyl nalezen interpretr jazyka Python. Zvaæte jeho instalaci."
 
 #: src/LyX.cpp:723
 msgid ""
