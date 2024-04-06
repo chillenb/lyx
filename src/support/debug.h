@@ -217,7 +217,7 @@ LyXErr & operator<<(LyXErr &, int);
 LyXErr & operator<<(LyXErr &, unsigned int);
 LyXErr & operator<<(LyXErr &, long);
 LyXErr & operator<<(LyXErr &, unsigned long);
-#ifdef HAVE_LONG_LONG_INT
+#if defined(HAVE_LONG_LONG_INT) || defined(LYX_WASM)
 LyXErr & operator<<(LyXErr &, long long);
 LyXErr & operator<<(LyXErr &, unsigned long long);
 #endif

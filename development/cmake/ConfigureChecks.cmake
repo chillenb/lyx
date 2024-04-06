@@ -1,7 +1,7 @@
 # This file is part of LyX, the document processor.
 # Licence details can be found in the file COPYING.
 #
-# Copyright (c) 2006, Peter Kümmel, <syntheticpp@gmx.net>
+# Copyright (c) 2006, Peter Kï¿½mmel, <syntheticpp@gmx.net>
 #
 
 include(CheckIncludeFile)
@@ -293,8 +293,8 @@ if (LYX_USE_QT MATCHES "QT5|QT6")
   else()
     set(lyx_qt_config "QtCore/qconfig.h")
   endif()
-  if(WIN32)
-    set(QT_USES_X11 OFF CACHE BOOL "Win32 compiled without X11")
+  if(WIN32 OR LYX_WASM)
+    set(QT_USES_X11 OFF CACHE BOOL "Win32 or wasm compiled without X11")
     # The try_run for minngw would not work here anyway
   else()
     check_cxx_source_runs(

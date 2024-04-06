@@ -5167,7 +5167,9 @@ bool GuiView::lfunUiToggle(string const & ui_component)
 
 void GuiView::cancelExport()
 {
+	#ifndef LYX_WASM
 	Systemcall::killscript();
+	#endif
 	// stop busy signal immediately so that in the subsequent
 	// "Export canceled" prompt the status bar icons are accurate.
 	Q_EMIT scriptKilled();

@@ -33,7 +33,7 @@ template<> std::string convert<std::string>(unsigned int ui);
 template<> docstring convert<docstring>(unsigned int ui);
 template<> std::string convert<std::string>(unsigned long ul);
 template<> docstring convert<docstring>(unsigned long ul);
-#ifdef HAVE_LONG_LONG_INT
+#if defined(HAVE_LONG_LONG_INT) || defined(LYX_WASM)
 template<> std::string convert<std::string>(unsigned long long ull);
 template<> docstring convert<docstring>(unsigned long long ull);
 template<> std::string convert<std::string>(long long ll);

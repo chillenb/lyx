@@ -19,7 +19,7 @@
 #include "support/lstrings.h"
 #include "support/qstring_helpers.h"
 #include "support/Systemcall.h"
-#include "support/SystemcallPrivate.h"
+
 #include "support/os.h"
 #include "support/ProgressInterface.h"
 
@@ -28,14 +28,17 @@
 #include <cstdlib>
 #include <iostream>
 
-#include <QProcess>
+
 #include <QElapsedTimer>
 #include <QThread>
 #include <QCoreApplication>
 #include <QDebug>
 
+#ifndef LYX_WASM
+#include <QProcess>
+#include "support/SystemcallPrivate.h"
 #define USE_QPROCESS
-
+#endif
 
 struct Sleep : QThread
 {

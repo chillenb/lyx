@@ -56,6 +56,9 @@ set(HEADERS
 
 add_definitions(-DHUNSPELL_STATIC)
 add_library(hunspell STATIC ${HEADERS} ${SRCS} ${HUNCONFIG})
+if(LYX_WASM)
+target_compile_options(hunspell PRIVATE -pthread )
+endif()
 
 set(HUNSPELL_LIBRARY hunspell CACHE STRING "Hunspell library" FORCE)
 set(HUNSPELL_INCLUDE_DIR "${SRCDIR}/hunspell;${SRCDIR}" CACHE STRING "Hunspell include dirs" FORCE)

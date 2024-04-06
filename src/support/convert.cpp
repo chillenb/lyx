@@ -86,7 +86,7 @@ docstring convert<docstring>(unsigned long ul)
 }
 
 
-#ifdef HAVE_LONG_LONG_INT
+#if defined(HAVE_LONG_LONG_INT) || defined(LYX_WASM)
 template<>
 string convert<string>(unsigned long long ull)
 {

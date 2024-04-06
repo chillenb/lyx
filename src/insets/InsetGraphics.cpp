@@ -354,6 +354,7 @@ void InsetGraphics::outBoundingBox(graphics::BoundingBox & bbox) const
 	if (width == 0 || height == 0)
 		return;
 
+#ifndef LYX_WASM
 	// Use extractbb to find the dimensions in the typeset output
 	QProcess extractbb;
 	extractbb.start("extractbb", QStringList() << "-O" << toqstr(file.absFileName()));
@@ -381,6 +382,7 @@ void InsetGraphics::outBoundingBox(graphics::BoundingBox & bbox) const
 	bbox.xr.value(scalex * bbox.xr.value());
 	bbox.yb.value(scaley * bbox.yb.value());
 	bbox.yt.value(scaley * bbox.yt.value());
+#endif
 }
 
 

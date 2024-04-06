@@ -626,7 +626,7 @@ unsigned long FileName::checksum() const
 #endif // QT_VERSION
 
 	LYXERR(Debug::FILES, "Checksumming \"" << absFileName() << "\" "
-		<< result << " lasted " << t.elapsed() << " ms.");
+		<< result << " lasted " << (long) t.elapsed() << " ms.");
 	return result;
 }
 
