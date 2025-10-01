@@ -139,7 +139,7 @@ msgstr ""
 "Project-Id-Version: LyX 2.5git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-05-20 22:16-0400\n"
-"PO-Revision-Date: 2025-09-26 17:56+0200\n"
+"PO-Revision-Date: 2025-10-01 17:04+0200\n"
 "Last-Translator: Kees Zeelenberg <kzstatis@gmail.com>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -9503,12 +9503,12 @@ msgstr "Zwevende objecten en bijschriften"
 
 #: lib/layouts/algorithm2e.module:8
 msgid "Use the algorithm2e package for algorithm floats rather than LyX's home-brewed algorithm floats. Use the Algorithm style to enter and indent the algorithm."
-msgstr "Gebruik het pakket algorithm2e voor zwevende algoritmen in plaats van LyX' eigen zwevende algoritmen. Gebruik de algoritmestijl om een algoritme te beginnen en in te springen."
+msgstr "Gebruik het pakket algorithm2e voor zwevende algoritmes in plaats van LyX' eigen zwevende algoritmes. Gebruik de algoritmestijl om een algoritme te beginnen en in te springen."
 
 #: lib/layouts/algorithm2e.module:26 lib/layouts/powerdot.layout:603
 #: lib/layouts/revtex4-x.inc:319 lib/layouts/stdfloats.inc:50
 msgid "List of Algorithms"
-msgstr "Lijst van algoritmen"
+msgstr "Lijst van algoritmes"
 
 #: lib/layouts/algorithm2e.module:31 lib/layouts/powerdot.layout:607
 #: lib/layouts/revtex4-x.inc:323 lib/layouts/sciposter.layout:100
@@ -18242,7 +18242,7 @@ msgstr "algoritme"
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:125
 #: lib/layouts/theorems-ams-extended.module:86
 msgid "algorithms"
-msgstr "algoritmen"
+msgstr "algoritmes"
 
 #: lib/layouts/theorems-ams-extended-bytype.module:105
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:142
@@ -22640,7 +22640,7 @@ msgstr "Invoegsel openen|O"
 
 #: lib/ui/stdcontext.inc:181
 msgid "Close Inset|C"
-msgstr "Invoegsel sluiten|s"
+msgstr "Invoegsel sluiten|u"
 
 #: lib/ui/stdcontext.inc:183 lib/ui/stdcontext.inc:189
 #: lib/ui/stdcontext.inc:205 lib/ui/stdcontext.inc:710
