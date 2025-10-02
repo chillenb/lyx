@@ -2047,7 +2047,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 			continue;
 
 		// Extra definitions for zref-clever
-        if (params_.xref_package == "zref" && isRequired("zref-clever")) {
+		if (params_.xref_package == "zref" && isRequired("zref-clever")) {
 			if (thm.counter.empty() && !thm.zrefname.empty() && thm.zrefname != "none")
 				tmp << "\\zcsetup{countertype={" << thm.name << "=" << thm.zrefname << "}}\n";
 			else if (!thm.counter.empty()) {
@@ -2065,7 +2065,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 			}
 		}
 		// cleveref
-        else if (!thm.counter.empty() && params_.xref_package == "cleveref" && isRequired("cleveref")) {
+		else if (!thm.counter.empty() && params_.xref_package == "cleveref" && isRequired("cleveref")) {
 			if (isAvailableAtLeastFrom("LaTeX", 2020, 10))
 				// we have hooks
 				tmp << "\\AddToHook{env/" << thm.name << "/begin}"
@@ -2078,7 +2078,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 			}
 		}
 		// and refstyle
-        else if (!thm.counter.empty() && params_.xref_package == "refstyle" && isRequired("refstyle")) {
+		else if (!thm.counter.empty() && params_.xref_package == "refstyle" && isRequired("refstyle")) {
 			tmp << "\\newref{" << thm.refprefix << "}{\n"
 			    << "        name      = \\RS" << thm.name << "txt,\n"
 			    << "        names     = \\RS" << thm.name << "stxt,\n"
