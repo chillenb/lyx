@@ -2079,6 +2079,10 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 		}
 		// and refstyle
 		else if (!thm.counter.empty() && params_.xref_package == "refstyle" && isRequired("refstyle")) {
+			if (thm.refprefix.empty()) {
+				LYXERR0("Unable to write refstyle definition for `" << thm.name << "'.");
+				continue;
+			}
 			tmp << "\\newref{" << thm.refprefix << "}{\n"
 			    << "        name      = \\RS" << thm.name << "txt,\n"
 			    << "        names     = \\RS" << thm.name << "stxt,\n"
