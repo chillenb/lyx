@@ -1,7 +1,6 @@
 # Nederlandse vertaling voor LyX
 #
 # Enkele algemene regels voor een consistente vertaling:
-# (naar analogie van en gebaseerd op de Duitse vertaling in de.po)
 #
 #   1. Gebruik in menus de infinitief (onbepaalde wijs) en niet de gebiedende wijs. Bijvoorbeeld:
 #         "Opslaan" en NIET: "Sla op"
@@ -134,14 +133,16 @@
 #
 # 	Voor kleuren zie: https://www.w3schools.com/colors/default.asp
 #
+# SPDX-FileCopyrightText: 2023, 2024, 2025 Kees Zeelenberg <kzstatis@gmail.com>
+# Kees Zeelenberg <kzstatis@gmail.com>, 2023, 2024, 2025
 msgid ""
 msgstr ""
 "Project-Id-Version: LyX 2.5git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-10-01 22:07+0200\n"
-"PO-Revision-Date: 2025-10-01 17:04+0200\n"
+"PO-Revision-Date: 2025-10-02 17:46+0200\n"
 "Last-Translator: Kees Zeelenberg <kzstatis@gmail.com>\n"
-"Language-Team: \n"
+"Language-Team: Dutch <lyx-docs@lists.lyx.org>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -1339,9 +1340,8 @@ msgid "All aut&hors"
 msgstr "&Alle auteurs"
 
 #: src/frontends/qt/ui/ColorUi.ui:39
-#, fuzzy
 msgid "Alternating table row colors"
-msgstr "Afwissele&nde kleuren van tabelrijen"
+msgstr "Afwisselende kleuren van tabelrijen"
 
 #: src/frontends/qt/ui/ColorUi.ui:47 src/frontends/qt/ui/TabularUi.ui:1514
 msgid "O&dd rows:"
@@ -1352,7 +1352,6 @@ msgid "&Even rows:"
 msgstr "&Even rijen:"
 
 #: src/frontends/qt/ui/ColorUi.ui:104
-#, fuzzy
 msgid "Start with r&ow:"
 msgstr "Met rij &beginnen:"
 
@@ -1361,13 +1360,12 @@ msgid "Background Colors"
 msgstr "Achtergrondkleuren"
 
 #: src/frontends/qt/ui/ColorUi.ui:163
-#, fuzzy
 msgid "Shaded bo&xes:"
-msgstr "Blokken met schaduw:"
+msgstr "Boxen met schaduw:"
 
 #: src/frontends/qt/ui/ColorUi.ui:173
 msgid "Pa&ge:"
-msgstr ""
+msgstr "Pa&gina:"
 
 #: src/frontends/qt/ui/ColorUi.ui:234 src/frontends/qt/GuiView.cpp:1278
 #: src/frontends/qt/GuiView.cpp:1310
@@ -1388,7 +1386,6 @@ msgid "Rename the selected color"
 msgstr "De gekozen kleur hernoemen"
 
 #: src/frontends/qt/ui/ColorUi.ui:267
-#, fuzzy
 msgid "Rena&me..."
 msgstr "&Hernoemen..."
 
@@ -1421,14 +1418,12 @@ msgid "Font Colors"
 msgstr "Lettertypekleur"
 
 #: src/frontends/qt/ui/ColorUi.ui:357
-#, fuzzy
 msgid "Ma&in text:"
 msgstr "Hoofdtekst:"
 
 #: src/frontends/qt/ui/ColorUi.ui:367
-#, fuzzy
 msgid "Greyed-o&ut notes:"
-msgstr "Grijze notities:"
+msgstr "Vergrijsde notities:"
 
 #: src/frontends/qt/ui/ColorUi.ui:430
 msgid "Table &border color:"
@@ -2519,8 +2514,8 @@ msgstr "Soort link"
 
 #: src/frontends/qt/ui/HyperlinkUi.ui:136
 msgid ""
-"Link to the web or any other target with an \"authority\" component (i."
-"e., :// in the URI)"
+"Link to the web or any other target with an \"authority\" component "
+"(i.e., :// in the URI)"
 msgstr ""
 "Koppeling naar het web of een ander protocol in de naam (b.v. :// in de URI)"
 
@@ -3765,8 +3760,8 @@ msgstr "mml"
 
 #: src/frontends/qt/ui/OutputUi.ui:604 src/frontends/qt/ui/OutputUi.ui:622
 msgid ""
-"Scaling factor for images that are generated for some LaTeX constructs (e."
-"g., math formulae) in non-LaTeX output."
+"Scaling factor for images that are generated for some LaTeX constructs "
+"(e.g., math formulae) in non-LaTeX output."
 msgstr ""
 "Schaalfactor voor figuren die door LaTeX-constructies (b.v. "
 "wiskundeformules) gegenereerd zijn in niet-LaTeX output."
@@ -4056,14 +4051,12 @@ msgid "Verti&cal Phantom"
 msgstr "Verti&caal spook"
 
 #: src/frontends/qt/ui/PreambleUi.ui:24
-#, fuzzy
 msgid "LaTe&X"
-msgstr "LaTeX"
+msgstr "LaTe&X"
 
 #: src/frontends/qt/ui/PreambleUi.ui:41
-#, fuzzy
 msgid "&HTML"
-msgstr "&XHTML"
+msgstr "&HTML"
 
 #: src/frontends/qt/ui/PreambleUi.ui:61
 msgid "Find in preamble"
@@ -4144,7 +4137,7 @@ msgstr "Beginwaarden"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:192
 msgid "Edit"
-msgstr "B&ewerken"
+msgstr "Bewerken"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:202
 msgid "Apply changed colors immediately"
@@ -4155,9 +4148,8 @@ msgid "Apply &immediately"
 msgstr "Onm&iddellijk toepassen"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:212
-#, fuzzy
 msgid "Undo/Redo"
-msgstr "Mechanisme voor ongedaan maken/opnieuw toepassen"
+msgstr "Ongedaan maken / opnieuw toepassen"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:222
 msgid "&Color Settings:"
@@ -4189,21 +4181,19 @@ msgstr "&Donker"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:351
 msgid "Clea&r[[colorPrefDialog]]"
-msgstr ""
+msgstr "Wissen"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:358
-#, fuzzy
 msgid "&By color"
-msgstr "Rij kleur:"
+msgstr "Per kleur:"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:388
 msgid "Enter a string to filter colors"
 msgstr "Een tekenreeks opgeven om kleuren te filteren"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:391
-#, fuzzy
 msgid "by color name"
-msgstr "Een nieuwe kleurnaam opgeven"
+msgstr "per kleurnaam"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:466
 msgid "Add the current color set as a theme"
@@ -4457,7 +4447,7 @@ msgstr ""
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:116
 msgid "Use &justification in LyX work area"
-msgstr "&Uitlijnen in LyX-bewerker"
+msgstr "In LyX-werkgebied uitli&jnen"
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:123
 msgid "Mark end of paragraphs on screen with a pilcrow character."
@@ -4479,13 +4469,12 @@ msgid "&Underline change tracking additions"
 msgstr "&Toevoegingen onderstrepen"
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:145
-#, fuzzy
 msgid "Display &bookmarks:"
-msgstr "Bladwijzer opslaan"
+msgstr "&Bladwijzer tonen:"
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:155
 msgid "Select whether and how bookmarks should be visualized in the workarea"
-msgstr ""
+msgstr "Kiezen of en hoe bladwijzers in het werkgebied getoond moeten worden"
 
 #: src/frontends/qt/ui/PrefDocHandlingUi.ui:26
 msgid "Session Handling"
@@ -4858,7 +4847,7 @@ msgid ""
 "macOS specific setting for use with emacs bindings. Takes effect next time "
 "LyX is launched."
 msgstr ""
-"Specifieke instelling voor Mac OS X met emacs-bindingen. Gaat in bij de "
+"Specifieke instelling voor macOS met emacs-bindingen. Gaat in bij de "
 "volgende start van LyX."
 
 #: src/frontends/qt/ui/PrefInputUi.ui:104
@@ -6235,9 +6224,8 @@ msgid "Set Borders"
 msgstr "Randen instellen"
 
 #: src/frontends/qt/ui/TabularUi.ui:1080
-#, fuzzy
 msgid "Click to set borders of the current (selected) cell(s)"
-msgstr "Stel randen in van de huidige (geselecteerde) cel(len)"
+msgstr "Randen instellen van de huidige (geselecteerde) cel(len)"
 
 #: src/frontends/qt/ui/TabularUi.ui:1093
 msgid "All Borders"
@@ -6336,9 +6324,8 @@ msgid "&Border color:"
 msgstr "Kleur van rand:"
 
 #: src/frontends/qt/ui/TabularUi.ui:1506
-#, fuzzy
 msgid "Alternating row colors"
-msgstr "Afwissele&nde rijkleuren"
+msgstr "Afwisselende rijkleuren"
 
 #: src/frontends/qt/ui/TabularUi.ui:1571
 msgid "&Start with row:"
@@ -6571,9 +6558,8 @@ msgid "Two-&column document"
 msgstr "Document met twee &kolommen"
 
 #: src/frontends/qt/ui/TextLayoutUi.ui:340
-#, fuzzy
 msgid "Use &justification in LyX work area:"
-msgstr "&Uitlijnen in LyX-bewerker"
+msgstr "Uitli&jnen in het LyX-werkgebied:"
 
 #: src/frontends/qt/ui/ThesaurusUi.ui:33
 msgid "Language of the thesaurus"
@@ -7639,20 +7625,18 @@ msgstr "Geval ##"
 
 #: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
 #: lib/layouts/theorems-without-preamble.inc:458
-#, fuzzy
 msgid "case ##"
-msgstr "Geval ##"
+msgstr "geval ##"
 
 #: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
 #: lib/layouts/theorems-without-preamble.inc:458
-#, fuzzy
 msgid "Cases ##"
-msgstr "Geval ##"
+msgstr "Gevallen ##"
 
 #: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
 #: lib/layouts/theorems-without-preamble.inc:458
 msgid "cases ##"
-msgstr ""
+msgstr "gevallen ##"
 
 #: lib/layouts/AEA.layout:219 lib/layouts/theorems-without-preamble.inc:464
 msgid "Case \\thecase."
@@ -8066,23 +8050,20 @@ msgstr "Opmerking ##"
 #: lib/layouts/AEA.layout:351 lib/layouts/ijmpd.layout:452
 #: lib/layouts/theorems-counters-bytype.inc:58
 #: lib/layouts/theorems-without-preamble.inc:416
-#, fuzzy
 msgid "remark ##"
-msgstr "Opmerking ##"
+msgstr "opmerking ##"
 
 #: lib/layouts/AEA.layout:351 lib/layouts/ijmpd.layout:452
 #: lib/layouts/theorems-counters-bytype.inc:58
 #: lib/layouts/theorems-without-preamble.inc:416
-#, fuzzy
 msgid "Remarks ##"
-msgstr "Opmerking ##"
+msgstr "Opmerkingen ##"
 
 #: lib/layouts/AEA.layout:351 lib/layouts/ijmpd.layout:452
 #: lib/layouts/theorems-counters-bytype.inc:58
 #: lib/layouts/theorems-without-preamble.inc:416
-#, fuzzy
 msgid "remarks ##"
-msgstr "Opmerking ##"
+msgstr "opmerkingen ##"
 
 #: lib/layouts/AEA.layout:356 lib/layouts/ijmpc.layout:439
 #: lib/layouts/ijmpd.layout:455 lib/layouts/theorems-ams-bytype.inc:335
@@ -8126,21 +8107,18 @@ msgstr "Oplossing ##"
 
 #: lib/layouts/AEA.layout:366 lib/layouts/theorems-counters-bytype.inc:53
 #: lib/layouts/theorems-without-preamble.inc:349
-#, fuzzy
 msgid "solution ##"
-msgstr "Oplossing ##"
+msgstr "oplossing ##"
 
 #: lib/layouts/AEA.layout:366 lib/layouts/theorems-counters-bytype.inc:53
 #: lib/layouts/theorems-without-preamble.inc:349
-#, fuzzy
 msgid "Solutions ##"
-msgstr "Oplossing ##"
+msgstr "Oplossingen ##"
 
 #: lib/layouts/AEA.layout:366 lib/layouts/theorems-counters-bytype.inc:53
 #: lib/layouts/theorems-without-preamble.inc:349
-#, fuzzy
 msgid "solutions ##"
-msgstr "Oplossing ##"
+msgstr "oplossingen ##"
 
 #: lib/layouts/AEA.layout:373 lib/layouts/theorems-ams-bytype.inc:310
 #: lib/layouts/theorems-ams-chap-bytype.inc:362
@@ -8185,21 +8163,18 @@ msgstr "Samenvatting ##"
 
 #: lib/layouts/AEA.layout:383 lib/layouts/elsart.layout:528
 #: lib/layouts/theorems-counters-extended-bytype.inc:32
-#, fuzzy
 msgid "summary ##"
-msgstr "Samenvatting ##"
+msgstr "samenvatting ##"
 
 #: lib/layouts/AEA.layout:383 lib/layouts/elsart.layout:528
 #: lib/layouts/theorems-counters-extended-bytype.inc:32
-#, fuzzy
 msgid "Summaries ##"
-msgstr "Samenvattingen"
+msgstr "Samenvattingen ##"
 
 #: lib/layouts/AEA.layout:383 lib/layouts/elsart.layout:528
 #: lib/layouts/theorems-counters-extended-bytype.inc:32
-#, fuzzy
 msgid "summaries ##"
-msgstr "samenvattingen"
+msgstr "samenvattingen ##"
 
 #: lib/layouts/AEA.layout:396 src/frontends/qt/Menus.cpp:1894
 #: src/frontends/qt/Menus.cpp:1909
@@ -8296,23 +8271,20 @@ msgstr "Stelling \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:51 lib/layouts/acmart.layout:576
 #: lib/layouts/elsart.layout:298 lib/layouts/theorems-ams.module:24
 #: lib/layouts/theorems-std.module:17
-#, fuzzy
 msgid "theorem \\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "stelling \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:51 lib/layouts/acmart.layout:576
 #: lib/layouts/elsart.layout:298 lib/layouts/theorems-ams.module:24
 #: lib/layouts/theorems-std.module:17
-#, fuzzy
 msgid "Theorems \\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "Stellingen \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:51 lib/layouts/acmart.layout:576
 #: lib/layouts/elsart.layout:298 lib/layouts/theorems-ams.module:24
 #: lib/layouts/theorems-std.module:17
-#, fuzzy
 msgid "theorems \\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "stellingen \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/elsart.layout:396
@@ -8323,23 +8295,20 @@ msgstr "Gevolg \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/theorems-ams.module:25
 #: lib/layouts/theorems-std.module:18
-#, fuzzy
 msgid "corollary \\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "gevolg \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/theorems-ams.module:25
 #: lib/layouts/theorems-std.module:18
-#, fuzzy
 msgid "Corollaries \\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "Gevolgen \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/theorems-ams.module:25
 #: lib/layouts/theorems-std.module:18
-#, fuzzy
 msgid "corollaries \\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "gevolgen \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/elsart.layout:384
@@ -8350,23 +8319,20 @@ msgstr "Lemma \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/theorems-ams.module:26
 #: lib/layouts/theorems-std.module:19
-#, fuzzy
 msgid "lemma \\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "lemma \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/theorems-ams.module:26
 #: lib/layouts/theorems-std.module:19
-#, fuzzy
 msgid "Lemmas \\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Lemma's \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/theorems-ams.module:26
 #: lib/layouts/theorems-std.module:19
-#, fuzzy
 msgid "lemmas \\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "lemma's \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/elsart.layout:408
@@ -8377,23 +8343,20 @@ msgstr "Propositie \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/theorems-ams.module:27
 #: lib/layouts/theorems-std.module:20
-#, fuzzy
 msgid "proposition \\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "propositie \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/theorems-ams.module:27
 #: lib/layouts/theorems-std.module:20
-#, fuzzy
 msgid "Propositions \\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "Proposities \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/theorems-ams.module:27
 #: lib/layouts/theorems-std.module:20
-#, fuzzy
 msgid "propositions \\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "proposities \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:55 lib/layouts/acmart.layout:580
 #: lib/layouts/elsart.layout:302 lib/layouts/elsart.layout:463
@@ -8404,23 +8367,20 @@ msgstr "Vermoeden \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:55 lib/layouts/acmart.layout:580
 #: lib/layouts/elsart.layout:302 lib/layouts/theorems-ams.module:28
 #: lib/layouts/theorems-std.module:21
-#, fuzzy
 msgid "conjecture \\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "vermoeden \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:55 lib/layouts/acmart.layout:580
 #: lib/layouts/elsart.layout:302 lib/layouts/theorems-ams.module:28
 #: lib/layouts/theorems-std.module:21
-#, fuzzy
 msgid "Conjectures \\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "Vermoedens \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:55 lib/layouts/acmart.layout:580
 #: lib/layouts/elsart.layout:302 lib/layouts/theorems-ams.module:28
 #: lib/layouts/theorems-std.module:21
-#, fuzzy
 msgid "conjectures \\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "vermoedens \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:56 lib/layouts/acmart.layout:581
 #: lib/layouts/elsart.layout:303 lib/layouts/elsart.layout:444
@@ -8431,23 +8391,20 @@ msgstr "Definitie \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:56 lib/layouts/acmart.layout:581
 #: lib/layouts/elsart.layout:303 lib/layouts/theorems-ams.module:29
 #: lib/layouts/theorems-std.module:23
-#, fuzzy
 msgid "definition \\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "definitie \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:56 lib/layouts/acmart.layout:581
 #: lib/layouts/elsart.layout:303 lib/layouts/theorems-ams.module:29
 #: lib/layouts/theorems-std.module:23
-#, fuzzy
 msgid "Definitions \\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "Definities \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:56 lib/layouts/acmart.layout:581
 #: lib/layouts/elsart.layout:303 lib/layouts/theorems-ams.module:29
 #: lib/layouts/theorems-std.module:23
-#, fuzzy
 msgid "definitions \\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "definities \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:57 lib/layouts/acmart.layout:582
 #: lib/layouts/elsart.layout:304 lib/layouts/elsart.layout:475
@@ -8458,23 +8415,20 @@ msgstr "Voorbeeld \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:57 lib/layouts/acmart.layout:582
 #: lib/layouts/elsart.layout:304 lib/layouts/theorems-ams.module:30
 #: lib/layouts/theorems-std.module:24
-#, fuzzy
 msgid "example \\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "voorbeeld \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:57 lib/layouts/acmart.layout:582
 #: lib/layouts/elsart.layout:304 lib/layouts/theorems-ams.module:30
 #: lib/layouts/theorems-std.module:24
-#, fuzzy
 msgid "Examples \\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "Voorbeelden \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:57 lib/layouts/acmart.layout:582
 #: lib/layouts/elsart.layout:304 lib/layouts/theorems-ams.module:30
 #: lib/layouts/theorems-std.module:24
-#, fuzzy
 msgid "examples \\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "voorbeelden \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:58 lib/layouts/elsart.layout:305
 #: lib/layouts/elsart.layout:485 lib/layouts/theorems-ams.module:31
@@ -8484,21 +8438,18 @@ msgstr "Probleem \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:58 lib/layouts/elsart.layout:305
 #: lib/layouts/theorems-ams.module:31 lib/layouts/theorems-std.module:25
-#, fuzzy
 msgid "problem \\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "probleem \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:58 lib/layouts/elsart.layout:305
 #: lib/layouts/theorems-ams.module:31 lib/layouts/theorems-std.module:25
-#, fuzzy
 msgid "Problems \\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "Problemen \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:58 lib/layouts/elsart.layout:305
 #: lib/layouts/theorems-ams.module:31 lib/layouts/theorems-std.module:25
-#, fuzzy
 msgid "problems \\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "problemen \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:59 lib/layouts/elsart.layout:306
 #: lib/layouts/theorems-ams.module:32 lib/layouts/theorems-std.module:26
@@ -8507,21 +8458,18 @@ msgstr "Opgave \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:59 lib/layouts/elsart.layout:306
 #: lib/layouts/theorems-ams.module:32 lib/layouts/theorems-std.module:26
-#, fuzzy
 msgid "exercise \\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "exercise \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:59 lib/layouts/elsart.layout:306
 #: lib/layouts/theorems-ams.module:32 lib/layouts/theorems-std.module:26
-#, fuzzy
 msgid "Exercises \\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "Exercises \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:59 lib/layouts/elsart.layout:306
 #: lib/layouts/theorems-ams.module:32 lib/layouts/theorems-std.module:26
-#, fuzzy
 msgid "exercises \\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "exercises \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:60 lib/layouts/elsart.layout:307
 #: lib/layouts/theorems-ams.module:33 lib/layouts/theorems-std.module:27
@@ -8530,21 +8478,18 @@ msgstr "Oplossing \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:60 lib/layouts/elsart.layout:307
 #: lib/layouts/theorems-ams.module:33 lib/layouts/theorems-std.module:27
-#, fuzzy
 msgid "solution \\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "solution \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:60 lib/layouts/elsart.layout:307
 #: lib/layouts/theorems-ams.module:33 lib/layouts/theorems-std.module:27
-#, fuzzy
 msgid "Solutions \\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "Solutions \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:60 lib/layouts/elsart.layout:307
 #: lib/layouts/theorems-ams.module:33 lib/layouts/theorems-std.module:27
-#, fuzzy
 msgid "solutions \\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "solutions \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:61 lib/layouts/elsart.layout:308
 #: lib/layouts/elsart.layout:496 lib/layouts/theorems-ams.module:34
@@ -8554,21 +8499,18 @@ msgstr "Opmerking \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:61 lib/layouts/elsart.layout:308
 #: lib/layouts/theorems-ams.module:34 lib/layouts/theorems-std.module:28
-#, fuzzy
 msgid "remark \\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "remark \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:61 lib/layouts/elsart.layout:308
 #: lib/layouts/theorems-ams.module:34 lib/layouts/theorems-std.module:28
-#, fuzzy
 msgid "Remarks \\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "Remarks \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:61 lib/layouts/elsart.layout:308
 #: lib/layouts/theorems-ams.module:34 lib/layouts/theorems-std.module:28
-#, fuzzy
 msgid "remarks \\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "remarks \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:62 lib/layouts/elsart.layout:309
 #: lib/layouts/elsart.layout:518 lib/layouts/theorems-ams.module:35
@@ -8578,21 +8520,18 @@ msgstr "Bewering \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:62 lib/layouts/elsart.layout:309
 #: lib/layouts/theorems-ams.module:35 lib/layouts/theorems-std.module:29
-#, fuzzy
 msgid "claim \\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "claim \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:62 lib/layouts/elsart.layout:309
 #: lib/layouts/theorems-ams.module:35 lib/layouts/theorems-std.module:29
-#, fuzzy
 msgid "Claims \\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "Claims \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:62 lib/layouts/elsart.layout:309
 #: lib/layouts/theorems-ams.module:35 lib/layouts/theorems-std.module:29
-#, fuzzy
 msgid "claims \\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "claims \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:63 lib/layouts/theorems-ams.module:36
 #: lib/layouts/theorems-std.module:22
@@ -8601,21 +8540,18 @@ msgstr "Feit \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:63 lib/layouts/theorems-ams.module:36
 #: lib/layouts/theorems-std.module:22
-#, fuzzy
 msgid "fact \\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "fact \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:63 lib/layouts/theorems-ams.module:36
 #: lib/layouts/theorems-std.module:22
-#, fuzzy
 msgid "Facts \\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "Facts \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:63 lib/layouts/theorems-ams.module:36
 #: lib/layouts/theorems-std.module:22
-#, fuzzy
 msgid "facts \\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "facts \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:64 lib/layouts/elsart.layout:420
 #: lib/layouts/theorems-ams.module:37
@@ -8623,19 +8559,16 @@ msgid "Criterion \\arabic{theorem}"
 msgstr "Criterium \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:64 lib/layouts/theorems-ams.module:37
-#, fuzzy
 msgid "criterion \\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "criterion \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:64 lib/layouts/theorems-ams.module:37
-#, fuzzy
 msgid "Criteria \\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "Criteria \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:64 lib/layouts/theorems-ams.module:37
-#, fuzzy
 msgid "criteria \\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "criteria \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:65 lib/layouts/elsart.layout:432
 #: lib/layouts/theorems-ams.module:38
@@ -8643,19 +8576,16 @@ msgid "Algorithm \\arabic{theorem}"
 msgstr "Algoritme \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:65 lib/layouts/theorems-ams.module:38
-#, fuzzy
 msgid "algorithm \\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "algoritme \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:65 lib/layouts/theorems-ams.module:38
-#, fuzzy
 msgid "Algorithms \\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "Algoritmes \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:65 lib/layouts/theorems-ams.module:38
-#, fuzzy
 msgid "algorithms \\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "algoritmes \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:84 lib/layouts/aa.layout:225
 #: lib/layouts/aapaper.layout:78 lib/layouts/aapaper.layout:172
@@ -9818,9 +9748,8 @@ msgid "Scheme"
 msgstr "Schema"
 
 #: lib/layouts/achemso.layout:210
-#, fuzzy
 msgid "Sub-Scheme"
-msgstr "Schema"
+msgstr "Sub-Scheme"
 
 #: lib/layouts/achemso.layout:216
 msgid "List of Schemes"
@@ -9835,9 +9764,8 @@ msgid "Chart"
 msgstr "Grafiek"
 
 #: lib/layouts/achemso.layout:234
-#, fuzzy
 msgid "Sub-Chart"
-msgstr "Grafiek"
+msgstr "Sub-Chart"
 
 #: lib/layouts/achemso.layout:240
 msgid "List of Charts"
@@ -9852,9 +9780,8 @@ msgid "Graph[[mathematical]]"
 msgstr "Graaf"
 
 #: lib/layouts/achemso.layout:260
-#, fuzzy
 msgid "Sub-Graph[[mathematical]]"
-msgstr "Graaf"
+msgstr "Sub-graaf"
 
 #: lib/layouts/achemso.layout:266
 msgid "List of Graphs[[mathematical]]"
@@ -10230,18 +10157,16 @@ msgid "Sidebar (sigchi-a only)"
 msgstr "Zijbalk (enkel sigchi-a)"
 
 #: lib/layouts/acmart.layout:537
-#, fuzzy
 msgid "Sub-Sidebar (sigchi-a only)"
-msgstr "Zijbalk (enkel sigchi-a)"
+msgstr "Sub-Sidebar (sigchi-a only)"
 
 #: lib/layouts/acmart.layout:547
 msgid "Margin figure (sigchi-a only)"
 msgstr "Kantlijnfiguur (enkel sigchi-a)"
 
 #: lib/layouts/acmart.layout:547
-#, fuzzy
 msgid "Sub-Margin figure (sigchi-a only)"
-msgstr "Kantlijnfiguur (enkel sigchi-a)"
+msgstr "Sub-Margin figure (sigchi-a only)"
 
 #: lib/layouts/acmart.layout:552 lib/layouts/beamer.layout:1752
 #: lib/layouts/powerdot.layout:585 lib/layouts/sciposter.layout:110
@@ -10254,9 +10179,8 @@ msgid "Margin table (sigchi-a only)"
 msgstr "Kantlijntabel (enkel sigchi-a)"
 
 #: lib/layouts/acmart.layout:560
-#, fuzzy
 msgid "Sub-Margin table (sigchi-a only)"
-msgstr "Kantlijntabel (enkel sigchi-a)"
+msgstr "Sub-Margin table (sigchi-a only)"
 
 #: lib/layouts/acmart.layout:565 lib/layouts/beamer.layout:1738
 #: lib/layouts/powerdot.layout:567 lib/layouts/sciposter.layout:125
@@ -10685,18 +10609,16 @@ msgid "Plate"
 msgstr "Plate"
 
 #: lib/layouts/aguplus.inc:189
-#, fuzzy
 msgid "Sub-Plate"
-msgstr "Plate"
+msgstr "Sub-Plate"
 
 #: lib/layouts/aguplus.inc:200
 msgid "Planotable"
 msgstr "Planotabel"
 
 #: lib/layouts/aguplus.inc:200
-#, fuzzy
 msgid "Sub-Planotable"
-msgstr "Planotabel"
+msgstr "Sub-Planotable"
 
 #: lib/layouts/aguplus.inc:211 lib/layouts/beamer.layout:1733
 #: lib/layouts/powerdot.layout:560 lib/layouts/powerdot.layout:645
@@ -10757,9 +10679,8 @@ msgstr ""
 #: lib/layouts/algorithm2e.module:19 lib/layouts/powerdot.layout:596
 #: lib/layouts/revtex4-x.inc:311 lib/layouts/sciposter.layout:89
 #: lib/layouts/stdfloats.inc:45
-#, fuzzy
 msgid "Sub-Algorithm"
-msgstr "Algoritme"
+msgstr "Subalgoritme"
 
 #: lib/layouts/algorithm2e.module:26 lib/layouts/powerdot.layout:603
 #: lib/layouts/revtex4-x.inc:319 lib/layouts/stdfloats.inc:50
@@ -10777,25 +10698,22 @@ msgstr "Algoritme ##"
 #: lib/layouts/revtex4-x.inc:323 lib/layouts/sciposter.layout:100
 #: lib/layouts/stdfloats.inc:54
 #: lib/layouts/theorems-counters-extended-bytype.inc:11
-#, fuzzy
 msgid "algorithm ##"
-msgstr "Algoritme ##"
+msgstr "algorithm ##"
 
 #: lib/layouts/algorithm2e.module:31 lib/layouts/powerdot.layout:607
 #: lib/layouts/revtex4-x.inc:323 lib/layouts/sciposter.layout:100
 #: lib/layouts/stdfloats.inc:54
 #: lib/layouts/theorems-counters-extended-bytype.inc:11
-#, fuzzy
 msgid "Algorithms ##"
-msgstr "Algoritme ##"
+msgstr "Algorithms ##"
 
 #: lib/layouts/algorithm2e.module:31 lib/layouts/powerdot.layout:607
 #: lib/layouts/revtex4-x.inc:323 lib/layouts/sciposter.layout:100
 #: lib/layouts/stdfloats.inc:54
 #: lib/layouts/theorems-counters-extended-bytype.inc:11
-#, fuzzy
 msgid "algorithms ##"
-msgstr "Algoritme ##"
+msgstr "algorithms ##"
 
 #: lib/layouts/amsart.layout:3 lib/layouts/amsbook.layout:3
 #: lib/examples/Articles:0
@@ -11899,9 +11817,8 @@ msgstr "Presentatie"
 
 #: lib/layouts/beamer.layout:1733 lib/layouts/powerdot.layout:560
 #: lib/layouts/sciposter.layout:120 lib/layouts/stdfloats.inc:13
-#, fuzzy
 msgid "Sub-Table"
-msgstr "Tabel"
+msgstr "Sub-Table"
 
 #: lib/layouts/beamer.layout:1742 lib/layouts/powerdot.layout:572
 #: lib/layouts/sciposter.layout:130 lib/layouts/stdfloats.inc:23
@@ -11910,21 +11827,18 @@ msgstr "Tabel ##"
 
 #: lib/layouts/beamer.layout:1742 lib/layouts/powerdot.layout:572
 #: lib/layouts/sciposter.layout:130 lib/layouts/stdfloats.inc:23
-#, fuzzy
 msgid "table ##"
-msgstr "Tabel ##"
+msgstr "table ##"
 
 #: lib/layouts/beamer.layout:1742 lib/layouts/powerdot.layout:572
 #: lib/layouts/sciposter.layout:130 lib/layouts/stdfloats.inc:23
-#, fuzzy
 msgid "Tables ##"
-msgstr "Tabel ##"
+msgstr "Tables ##"
 
 #: lib/layouts/beamer.layout:1742 lib/layouts/powerdot.layout:572
 #: lib/layouts/sciposter.layout:130 lib/layouts/stdfloats.inc:23
-#, fuzzy
 msgid "tables ##"
-msgstr "Tabel ##"
+msgstr "tables ##"
 
 #: lib/layouts/beamer.layout:1747 lib/layouts/powerdot.layout:578
 #: lib/layouts/powerdot.layout:641 lib/layouts/sciposter.layout:105
@@ -11934,9 +11848,8 @@ msgstr "Figuur"
 
 #: lib/layouts/beamer.layout:1747 lib/layouts/powerdot.layout:578
 #: lib/layouts/sciposter.layout:105 lib/layouts/stdfloats.inc:29
-#, fuzzy
 msgid "Sub-Figure"
-msgstr "Figuur"
+msgstr "Sub-Figure"
 
 #: lib/layouts/beamer.layout:1756 lib/layouts/powerdot.layout:590
 #: lib/layouts/sciposter.layout:115 lib/layouts/stdfloats.inc:39
@@ -11945,21 +11858,18 @@ msgstr "Figuur ##"
 
 #: lib/layouts/beamer.layout:1756 lib/layouts/powerdot.layout:590
 #: lib/layouts/sciposter.layout:115 lib/layouts/stdfloats.inc:39
-#, fuzzy
 msgid "figure ##"
-msgstr "Figuur ##"
+msgstr "figure ##"
 
 #: lib/layouts/beamer.layout:1756 lib/layouts/powerdot.layout:590
 #: lib/layouts/sciposter.layout:115 lib/layouts/stdfloats.inc:39
-#, fuzzy
 msgid "Figures ##"
-msgstr "Figuur ##"
+msgstr "Figures ##"
 
 #: lib/layouts/beamer.layout:1756 lib/layouts/powerdot.layout:590
 #: lib/layouts/sciposter.layout:115 lib/layouts/stdfloats.inc:39
-#, fuzzy
 msgid "figures ##"
-msgstr "Figuur ##"
+msgstr "figures ##"
 
 #: lib/layouts/beamerposter.layout:3 lib/examples/Articles:0
 msgid "Beamerposter"
@@ -12114,18 +12024,16 @@ msgid "Act ##"
 msgstr "Akte ##"
 
 #: lib/layouts/broadway.layout:28
-#, fuzzy
 msgid "act ##"
-msgstr "Feit ##"
+msgstr "act ##"
 
 #: lib/layouts/broadway.layout:28
 msgid "Acts ##"
-msgstr ""
+msgstr "Bedrijven ##"
 
 #: lib/layouts/broadway.layout:28
-#, fuzzy
 msgid "acts ##"
-msgstr "Feiten"
+msgstr "acts ##"
 
 #: lib/layouts/broadway.layout:33
 msgid "Scene Number"
@@ -12136,19 +12044,16 @@ msgid "Scene ##"
 msgstr "Scène ##"
 
 #: lib/layouts/broadway.layout:34
-#, fuzzy
 msgid "scene ##"
-msgstr "Scène ##"
+msgstr "scene ##"
 
 #: lib/layouts/broadway.layout:34
-#, fuzzy
 msgid "Scenes ##"
-msgstr "Scène ##"
+msgstr "Scenes ##"
 
 #: lib/layouts/broadway.layout:34
-#, fuzzy
 msgid "scenes ##"
-msgstr "Scène ##"
+msgstr "scenes ##"
 
 #: lib/layouts/broadway.layout:38 lib/layouts/hollywood.layout:41
 msgid "Dialogue"
@@ -13152,9 +13057,8 @@ msgid "Die TeXnische Komoedie"
 msgstr "Die TeXnische Komödie"
 
 #: lib/layouts/econsocart.layout:3 lib/examples/Articles:0
-#, fuzzy
 msgid "Econometric Society Journals"
-msgstr "Econometrica"
+msgstr "Econometric Society Journals"
 
 #: lib/layouts/econsocart.layout:34 lib/layouts/ectaart.layout:25
 msgid "RunTitle"
@@ -13189,24 +13093,20 @@ msgid "Keyword"
 msgstr "Trefwoord"
 
 #: lib/layouts/econsocart.layout:120
-#, fuzzy
 msgid "Funding"
-msgstr "Codering"
+msgstr "Funding"
 
 #: lib/layouts/econsocart.layout:125
-#, fuzzy
 msgid "Funding:"
-msgstr "Behandeling:"
+msgstr "Funding:"
 
 #: lib/layouts/econsocart.layout:128
-#, fuzzy
 msgid "Coeditor"
-msgstr "Voor redacteurs"
+msgstr "Coeditor"
 
 #: lib/layouts/econsocart.layout:133
-#, fuzzy
 msgid "Coeditor:"
-msgstr "Bew&erkingsprogramma:"
+msgstr "Coeditor:"
 
 #: lib/layouts/econsocart.layout:213
 #: lib/layouts/theorems-ams-extended-bytype.module:374
@@ -13233,7 +13133,7 @@ msgstr "Aanname"
 
 #: lib/layouts/econsocart.layout:278
 msgid "    Q.E.D."
-msgstr ""
+msgstr "    Q.E.D."
 
 #: lib/layouts/econsocart.layout:359 lib/layouts/ijmpc.layout:458
 #: lib/layouts/ijmpd.layout:489 lib/layouts/ijmpd.layout:493
@@ -13275,7 +13175,7 @@ msgstr "Label adres"
 
 #: lib/layouts/econsocart.layout:387
 msgid "Label to be used to relate an author and his/her address"
-msgstr ""
+msgstr "Label to be used to relate an author and his/her address"
 
 #: lib/layouts/econsocart.layout:394 lib/layouts/ectaart.layout:224
 msgid "Name (First Name)"
@@ -13292,42 +13192,36 @@ msgid "Name (Surname)"
 msgstr "Naam (achternaam)"
 
 #: lib/layouts/econsocart.layout:418
-#, fuzzy
 msgid "Email Address"
-msgstr "E-mailadres: "
+msgstr "Email Address"
 
 #: lib/layouts/econsocart.layout:423
-#, fuzzy
 msgid "Label of this e-mail address"
-msgstr "Naar een e-mailadres"
+msgstr "Label of this e-mail address"
 
 #: lib/layouts/econsocart.layout:442
 msgid "Label of this address to relate it to authors"
-msgstr ""
+msgstr "Label of this address to relate it to authors"
 
 #: lib/layouts/econsocart.layout:453
-#, fuzzy
 msgid "Address Division"
-msgstr "Adresoptie"
+msgstr "Address Division"
 
 #: lib/layouts/econsocart.layout:456
-#, fuzzy
 msgid "Organization Division"
-msgstr "Organization"
+msgstr "Organization Division"
 
 #: lib/layouts/econsocart.layout:462
-#, fuzzy
 msgid "Address Organization"
-msgstr "Adresoptie"
+msgstr "Address Organization"
 
 #: lib/layouts/econsocart.layout:465
-#, fuzzy
 msgid "Organization Name"
-msgstr "Organization"
+msgstr "Organization Name"
 
 #: lib/layouts/ectaart.layout:3
 msgid "Econometrica (ectaart, obsolete)"
-msgstr ""
+msgstr "Econometrica (ectaart, obsolete)"
 
 #: lib/layouts/ectaart.layout:81 lib/layouts/elsart.layout:154
 msgid "Address Option"
@@ -13621,21 +13515,18 @@ msgstr "Eindnoot ##"
 
 #: lib/layouts/endnotes.module:16 lib/layouts/enotez.module:16
 #: lib/layouts/memoir.layout:310
-#, fuzzy
 msgid "endnote ##"
-msgstr "Eindnoot ##"
+msgstr "endnote ##"
 
 #: lib/layouts/endnotes.module:16 lib/layouts/enotez.module:16
 #: lib/layouts/memoir.layout:310
-#, fuzzy
 msgid "Endnotes ##"
-msgstr "Eindnoot ##"
+msgstr "Endnotes ##"
 
 #: lib/layouts/endnotes.module:16 lib/layouts/enotez.module:16
 #: lib/layouts/memoir.layout:310
-#, fuzzy
 msgid "endnotes ##"
-msgstr "Eindnoot ##"
+msgstr "endnotes ##"
 
 #: lib/layouts/endnotes.module:19 lib/layouts/enotez.module:19
 #: lib/layouts/foottoend.module:16 lib/layouts/foottoenotez.module:17
@@ -14193,12 +14084,12 @@ msgstr ""
 "documentrevisies. Een lijst van annotaties kan geproduceerd worden door de "
 "alineastijl 'Lijst van FIXMEs' te gebruiken. De annotaties zijn aanpaspaar "
 "via de LaTeX-preambule. Zie de FiXme-documentatie voor meer details. "
-"OPMERKING: Standaard worden de opmerkingen enkel getoond in "
-"'conceptmodus' (als de opties 'draft' ingevoerd is bij Document > "
-"Instellingen > Documentklasse > Klasseopties > Aangepast). Om ze altijd te "
-"tonen moet u \\fxsetup{draft} in de preambule steken bij Document > "
-"Instellingen > Preambule. OPMERKING: u moet versie 4 of hoger van het pakket "
-"FiXme gebruiken voor bepaalde functies."
+"OPMERKING: Standaard worden de opmerkingen enkel getoond in 'conceptmodus' "
+"(als de opties 'draft' ingevoerd is bij Document > Instellingen > "
+"Documentklasse > Klasseopties > Aangepast). Om ze altijd te tonen moet u "
+"\\fxsetup{draft} in de preambule steken bij Document > Instellingen > "
+"Preambule. OPMERKING: u moet versie 4 of hoger van het pakket FiXme "
+"gebruiken voor bepaalde functies."
 
 #: lib/layouts/fixme.module:18 lib/layouts/fixme.module:56
 msgid "Fixme"
@@ -15027,124 +14918,100 @@ msgid "Hebrew Article"
 msgstr "Hebreeuws artikel"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
-#, fuzzy
 msgid "Theorem \\thesection.\\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "Theorem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
-#, fuzzy
 msgid "theorem \\thesection.\\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "theorem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
-#, fuzzy
 msgid "Theorems \\thesection.\\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "Theorems \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
-#, fuzzy
 msgid "theorems \\thesection.\\arabic{theorem}"
-msgstr "Stelling \\arabic{theorem}"
+msgstr "theorems \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
-#, fuzzy
 msgid "Corollary \\thesection.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "Corollary \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
-#, fuzzy
 msgid "corollary \\thesection.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "corollary \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
-#, fuzzy
 msgid "Corollaries \\thesection.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "Corollaries \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
-#, fuzzy
 msgid "corollaries \\thesection.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "corollaries \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
-#, fuzzy
 msgid "Lemma \\thesection.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Lemma \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
-#, fuzzy
 msgid "lemma \\thesection.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "lemma \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
-#, fuzzy
 msgid "Lemmas \\thesection.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Lemmas \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
-#, fuzzy
 msgid "lemmas \\thesection.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "lemmas \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
-#, fuzzy
 msgid "Claim \\thesection.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "Claim \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
-#, fuzzy
 msgid "claim \\thesection.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "claim \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
-#, fuzzy
 msgid "Claims \\thesection.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "Claims \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
-#, fuzzy
 msgid "claims \\thesection.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "claims \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
-#, fuzzy
 msgid "Definition \\thesection.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "Definition \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
-#, fuzzy
 msgid "definition \\thesection.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "definition \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
-#, fuzzy
 msgid "Definitions \\thesection.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "Definitions \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
-#, fuzzy
 msgid "definitions \\thesection.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "definitions \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
-#, fuzzy
 msgid "Remark \\thesection.\\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "Remark \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
-#, fuzzy
 msgid "remark \\thesection.\\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "remark \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
-#, fuzzy
 msgid "Remarks \\thesection.\\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "Remarks \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
-#, fuzzy
 msgid "remarks \\thesection.\\arabic{theorem}"
-msgstr "Opmerking \\arabic{theorem}"
+msgstr "remarks \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:85 lib/layouts/theorems-ams.inc:372
 #: lib/layouts/theorems.inc:373
@@ -15363,21 +15230,18 @@ msgstr "Bewering ##"
 
 #: lib/layouts/ijmpc.layout:469 lib/layouts/ijmpd.layout:503
 #: lib/layouts/theorems-counters-bytype.inc:62
-#, fuzzy
 msgid "claim ##"
-msgstr "Bewering ##"
+msgstr "claim ##"
 
 #: lib/layouts/ijmpc.layout:469 lib/layouts/ijmpd.layout:503
 #: lib/layouts/theorems-counters-bytype.inc:62
-#, fuzzy
 msgid "Claims ##"
-msgstr "Bewering ##"
+msgstr "Claims ##"
 
 #: lib/layouts/ijmpc.layout:469 lib/layouts/ijmpd.layout:503
 #: lib/layouts/theorems-counters-bytype.inc:62
-#, fuzzy
 msgid "claims ##"
-msgstr "Bewering ##"
+msgstr "claims ##"
 
 #: lib/layouts/ijmpc.layout:473 lib/layouts/ijmpd.layout:507
 #: lib/layouts/theorems-ams-bytype.inc:368
@@ -15415,19 +15279,16 @@ msgid "Theorem ##"
 msgstr "Stelling ##"
 
 #: lib/layouts/ijmpd.layout:434 lib/layouts/theorems-counters-bytype.inc:7
-#, fuzzy
 msgid "theorem ##"
-msgstr "Stelling ##"
+msgstr "theorem ##"
 
 #: lib/layouts/ijmpd.layout:434 lib/layouts/theorems-counters-bytype.inc:7
-#, fuzzy
 msgid "Theorems ##"
-msgstr "Stelling ##"
+msgstr "Theorems ##"
 
 #: lib/layouts/ijmpd.layout:434 lib/layouts/theorems-counters-bytype.inc:7
-#, fuzzy
 msgid "theorems ##"
-msgstr "Stelling ##"
+msgstr "theorems ##"
 
 #: lib/layouts/ijmpd.layout:465 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
@@ -15436,21 +15297,18 @@ msgstr "Gevolg ##"
 
 #: lib/layouts/ijmpd.layout:465 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
-#, fuzzy
 msgid "corollary ##"
-msgstr "Gevolg ##"
+msgstr "corollary ##"
 
 #: lib/layouts/ijmpd.layout:465 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
-#, fuzzy
 msgid "Corollaries ##"
-msgstr "Gevolgen"
+msgstr "Corollaries ##"
 
 #: lib/layouts/ijmpd.layout:465 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
-#, fuzzy
 msgid "corollaries ##"
-msgstr "gevolgen"
+msgstr "corollaries ##"
 
 #: lib/layouts/ijmpd.layout:474 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
@@ -15459,21 +15317,18 @@ msgstr "Lemma ##"
 
 #: lib/layouts/ijmpd.layout:474 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
-#, fuzzy
 msgid "lemma ##"
-msgstr "Lemma ##"
+msgstr "lemma ##"
 
 #: lib/layouts/ijmpd.layout:474 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
-#, fuzzy
 msgid "Lemmas ##"
-msgstr "Lemma ##"
+msgstr "Lemmas ##"
 
 #: lib/layouts/ijmpd.layout:474 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
-#, fuzzy
 msgid "lemmas ##"
-msgstr "Lemma ##"
+msgstr "lemmas ##"
 
 #: lib/layouts/ijmpd.layout:491
 #: lib/layouts/theorems-counters-extended-bytype.inc:44
@@ -15484,23 +15339,20 @@ msgstr "Vraag ##"
 #: lib/layouts/ijmpd.layout:491
 #: lib/layouts/theorems-counters-extended-bytype.inc:44
 #: lib/layouts/theorems-without-preamble.inc:506
-#, fuzzy
 msgid "question ##"
-msgstr "Vraag ##"
+msgstr "question ##"
 
 #: lib/layouts/ijmpd.layout:491
 #: lib/layouts/theorems-counters-extended-bytype.inc:44
 #: lib/layouts/theorems-without-preamble.inc:506
-#, fuzzy
 msgid "Questions ##"
-msgstr "Vraag ##"
+msgstr "Questions ##"
 
 #: lib/layouts/ijmpd.layout:491
 #: lib/layouts/theorems-counters-extended-bytype.inc:44
 #: lib/layouts/theorems-without-preamble.inc:506
-#, fuzzy
 msgid "questions ##"
-msgstr "Vraag ##"
+msgstr "questions ##"
 
 #: lib/layouts/ijmpd.layout:516 lib/layouts/theorems-counters-bytype.inc:26
 #: lib/layouts/theorems-without-preamble.inc:179
@@ -15509,21 +15361,18 @@ msgstr "Vermoeden ##"
 
 #: lib/layouts/ijmpd.layout:516 lib/layouts/theorems-counters-bytype.inc:26
 #: lib/layouts/theorems-without-preamble.inc:179
-#, fuzzy
 msgid "conjecture ##"
-msgstr "Vermoeden ##"
+msgstr "conjecture ##"
 
 #: lib/layouts/ijmpd.layout:516 lib/layouts/theorems-counters-bytype.inc:26
 #: lib/layouts/theorems-without-preamble.inc:179
-#, fuzzy
 msgid "Conjectures ##"
-msgstr "Vermoeden ##"
+msgstr "Conjectures ##"
 
 #: lib/layouts/ijmpd.layout:516 lib/layouts/theorems-counters-bytype.inc:26
 #: lib/layouts/theorems-without-preamble.inc:179
-#, fuzzy
 msgid "conjectures ##"
-msgstr "Vermoeden ##"
+msgstr "conjectures ##"
 
 #: lib/layouts/ijmpd.layout:526 lib/layouts/theorems-without-preamble.inc:155
 msgid "Prop(osition)"
@@ -15538,23 +15387,20 @@ msgstr "Propositie ##"
 #: lib/layouts/ijmpd.layout:528 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
-#, fuzzy
 msgid "proposition ##"
-msgstr "Propositie ##"
+msgstr "proposition ##"
 
 #: lib/layouts/ijmpd.layout:528 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
-#, fuzzy
 msgid "Propositions ##"
-msgstr "Propositie ##"
+msgstr "Propositions ##"
 
 #: lib/layouts/ijmpd.layout:528 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
-#, fuzzy
 msgid "propositions ##"
-msgstr "Propositie ##"
+msgstr "propositions ##"
 
 #: lib/layouts/initials.module:2
 msgid "Initials (Drop Caps)"
@@ -16298,22 +16144,20 @@ msgid "Numbered Example (Multiline)"
 msgstr "Genummerd voorbeeld (meerdere regels)"
 
 #: lib/layouts/linguistics.module:20
-#, fuzzy
 msgid "(\\theequation)"
-msgstr "\\thesection"
+msgstr "(\\theequation)"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
 msgid "##"
-msgstr ""
+msgstr "##"
 
 #: lib/layouts/linguistics.module:27 lib/layouts/linguistics.module:111
 msgid "Subexample"
 msgstr "Subvoorbeeld"
 
 #: lib/layouts/linguistics.module:29
-#, fuzzy
 msgid "(\\theequation) (\\alph{subexamplei})"
-msgstr "\\theexamplei (\\alph{subexamplei})"
+msgstr "(\\theequation) (\\alph{subexamplei})"
 
 #: lib/layouts/linguistics.module:39
 msgid "Numbered Example (multiline)"
@@ -16716,9 +16560,8 @@ msgid "Tableau"
 msgstr "Tableau"
 
 #: lib/layouts/linguistics.module:569
-#, fuzzy
 msgid "Sub-Tableau"
-msgstr "Tableau"
+msgstr "Sub-Tableau"
 
 #: lib/layouts/linguistics.module:575
 msgid "List of Tableaux"
@@ -16729,38 +16572,32 @@ msgid "Tableau ##"
 msgstr "Tableau ##"
 
 #: lib/layouts/linguistics.module:578
-#, fuzzy
 msgid "tableau ##"
-msgstr "Tableau ##"
+msgstr "tableau ##"
 
 #: lib/layouts/linguistics.module:578
-#, fuzzy
 msgid "Tableaux ##"
-msgstr "Tableau ##"
+msgstr "Tableaux ##"
 
 #: lib/layouts/linguistics.module:578
-#, fuzzy
 msgid "tableaux ##"
-msgstr "Tableau ##"
+msgstr "tableaux ##"
 
 #: lib/layouts/litinsets.inc:13 lib/layouts/litinsets.inc:19
 msgid "Chunk ##"
 msgstr "Stuk ##"
 
 #: lib/layouts/litinsets.inc:13
-#, fuzzy
 msgid "chunk ##"
-msgstr "Stuk ##"
+msgstr "chunk ##"
 
 #: lib/layouts/litinsets.inc:13
-#, fuzzy
 msgid "Chunks ##"
-msgstr "Stuk ##"
+msgstr "Chunks ##"
 
 #: lib/layouts/litinsets.inc:13
-#, fuzzy
 msgid "chunks ##"
-msgstr "Stuk ##"
+msgstr "chunks ##"
 
 #: lib/layouts/litinsets.inc:16
 msgid "Literate programming"
@@ -17488,19 +17325,16 @@ msgid "Chapter ##"
 msgstr "Hoofdstuk ##"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
-#, fuzzy
 msgid "chapter ##"
-msgstr "Hoofdstuk ##"
+msgstr "chapter ##"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
-#, fuzzy
 msgid "Chapters ##"
-msgstr "Hoofdstuk ##"
+msgstr "Chapters ##"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
-#, fuzzy
 msgid "chapters ##"
-msgstr "Hoofdstuk ##"
+msgstr "chapters ##"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
@@ -17509,21 +17343,18 @@ msgstr "Paragraaf ##"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
-#, fuzzy
 msgid "section ##"
-msgstr "Paragraaf ##"
+msgstr "section ##"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
-#, fuzzy
 msgid "Sections ##"
-msgstr "Paragraaf ##"
+msgstr "Sections ##"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
-#, fuzzy
 msgid "sections ##"
-msgstr "Paragraaf ##"
+msgstr "sections ##"
 
 #: lib/layouts/numreport.inc:46 lib/layouts/stdcounters.inc:92
 #: lib/layouts/stdcounters.inc:97
@@ -17537,15 +17368,13 @@ msgstr "voetnoot \\arabic{footnote}"
 
 #: lib/layouts/numreport.inc:46 lib/layouts/stdcounters.inc:92
 #: lib/layouts/stdcounters.inc:97
-#, fuzzy
 msgid "Footnotes \\arabic{footnote}"
-msgstr "Voetnoot \\arabic{footnote}"
+msgstr "Footnotes \\arabic{footnote}"
 
 #: lib/layouts/numreport.inc:46 lib/layouts/stdcounters.inc:92
 #: lib/layouts/stdcounters.inc:97
-#, fuzzy
 msgid "footnotes \\arabic{footnote}"
-msgstr "voetnoot \\arabic{footnote}"
+msgstr "footnotes \\arabic{footnote}"
 
 #: lib/layouts/numrevtex.inc:9
 msgid "\\Roman{section}."
@@ -18334,9 +18163,8 @@ msgid "Video"
 msgstr "Video"
 
 #: lib/layouts/revtex4-x.inc:329
-#, fuzzy
 msgid "Sub-Video"
-msgstr "Video"
+msgstr "Sub-Video"
 
 #: lib/layouts/revtex4-x.inc:332
 msgid "List of Videos"
@@ -18347,19 +18175,16 @@ msgid "Video ##"
 msgstr "Video ##"
 
 #: lib/layouts/revtex4-x.inc:339
-#, fuzzy
 msgid "video ##"
-msgstr "Video ##"
+msgstr "video ##"
 
 #: lib/layouts/revtex4-x.inc:339
-#, fuzzy
 msgid "Videos ##"
-msgstr "Video ##"
+msgstr "Videos ##"
 
 #: lib/layouts/revtex4-x.inc:339
-#, fuzzy
 msgid "videos ##"
-msgstr "Video ##"
+msgstr "videos ##"
 
 #: lib/layouts/revtex4-x.inc:343
 msgid "Videos"
@@ -18530,24 +18355,20 @@ msgid "\\thechapter.\\arabic{equation}"
 msgstr "\\thechapter.\\arabic{equation}"
 
 #: lib/layouts/scrbook.layout:32
-#, fuzzy
 msgid "Equation (\\thechapter.\\arabic{equation})"
-msgstr "equation \\thechapter.\\arabic{equation}"
+msgstr "Equation (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrbook.layout:32
-#, fuzzy
 msgid "equation (\\thechapter.\\arabic{equation})"
-msgstr "equation \\thechapter.\\arabic{equation}"
+msgstr "equation (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrbook.layout:32
-#, fuzzy
 msgid "Equations (\\thechapter.\\arabic{equation})"
-msgstr "equation \\thechapter.\\arabic{equation}"
+msgstr "Equations (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrbook.layout:32
-#, fuzzy
 msgid "equations (\\thechapter.\\arabic{equation})"
-msgstr "equation \\thechapter.\\arabic{equation}"
+msgstr "equations (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrclass.inc:52
 msgid "\\alph{enumii})"
@@ -19332,81 +19153,68 @@ msgid "Part ##"
 msgstr "Deel ##"
 
 #: lib/layouts/stdcounters.inc:11
-#, fuzzy
 msgid "part ##"
-msgstr "Deel ##"
+msgstr "part ##"
 
 #: lib/layouts/stdcounters.inc:11
-#, fuzzy
 msgid "Parts ##"
-msgstr "Deel ##"
+msgstr "Parts ##"
 
 #: lib/layouts/stdcounters.inc:11
 msgid "parts ##"
-msgstr ""
+msgstr "delen ##"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
 msgid "Paragraph ##"
 msgstr "Alinea ##"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
-#, fuzzy
 msgid "paragraph ##"
-msgstr "Alinea ##"
+msgstr "paragraph ##"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
-#, fuzzy
 msgid "Paragraphs ##"
-msgstr "Alinea ##"
+msgstr "Paragraphs ##"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
-#, fuzzy
 msgid "paragraphs ##"
-msgstr "Alinea ##"
+msgstr "paragraphs ##"
 
 #: lib/layouts/stdcounters.inc:51
 msgid "\\arabic{enumi}."
 msgstr "\\arabic{enumi}."
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "Item \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "Item \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "item \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "item \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "Items \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "Items \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "items \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "items \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "Item \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "Item \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "item \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "item \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "Items \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "Items \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "items \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "items \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:65
 msgid "\\roman{enumiii}."
@@ -19414,19 +19222,19 @@ msgstr "\\roman{enumiii}."
 
 #: lib/layouts/stdcounters.inc:66
 msgid "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:72
 msgid "\\Alph{enumiv}."
@@ -19434,58 +19242,51 @@ msgstr "\\Alph{enumiv}."
 
 #: lib/layouts/stdcounters.inc:73
 msgid "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:82
 msgid "Listing ##"
 msgstr "Codefragment ##"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "listing ##"
-msgstr "Codefragment ##"
+msgstr "listing ##"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "Listings ##"
-msgstr "Codefragment ##"
+msgstr "Listings ##"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "listings ##"
-msgstr "Codefragment ##"
+msgstr "listings ##"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "Equation (##)"
-msgstr "Vergelijking ##"
+msgstr "Equation (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "equation (##)"
-msgstr "Vergelijking ##"
+msgstr "equation (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "Equations (##)"
-msgstr "Vergelijking ##"
+msgstr "Equations (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "equations (##)"
-msgstr "Vergelijking ##"
+msgstr "equations (##)"
 
 #: lib/layouts/stdcounters.inc:98
 msgid "\\fnsymbol{thanks}"
@@ -19543,9 +19344,8 @@ msgid "Margin"
 msgstr "Marge"
 
 #: lib/layouts/stdinsets.inc:52
-#, fuzzy
 msgid "Foot ##"
-msgstr "Voetnoot ##"
+msgstr "Foot ##"
 
 #: lib/layouts/stdinsets.inc:181
 msgid "Greyedout"
@@ -19648,22 +19448,20 @@ msgid "Verbatim*"
 msgstr "Verbatim*"
 
 #: lib/layouts/stdlists.inc:76
-#, fuzzy
 msgid "Item[[enumerate]]"
-msgstr "Genummerde opsomming"
+msgstr "Item"
 
 #: lib/layouts/stdlists.inc:76
-#, fuzzy
 msgid "item[[enumerate]]"
-msgstr "Genummerde opsomming"
+msgstr "item"
 
 #: lib/layouts/stdlists.inc:77
 msgid "Items[[enumerate]]"
-msgstr ""
+msgstr "Items"
 
 #: lib/layouts/stdlists.inc:77
 msgid "items[[enumerate]]"
-msgstr ""
+msgstr "items"
 
 #: lib/layouts/stdsections.inc:15 lib/layouts/svcommon.inc:128
 msgid "Part \\thepart"
@@ -19722,19 +19520,16 @@ msgstr ""
 "Bekijk het voorbeeldbestand subequations.lyx."
 
 #: lib/layouts/subequations.module:15
-#, fuzzy
 msgid "Sub-Equation"
-msgstr "Subvergelijking"
+msgstr "Sub-Equation"
 
 #: lib/layouts/subequations.module:17
-#, fuzzy
 msgid "\\theequation\\alph{subequation}"
-msgstr "\\thesection.\\arabic{equation}"
+msgstr "\\theequation\\alph{subequation}"
 
 #: lib/layouts/subequations.module:25
-#, fuzzy
 msgid "Subequations (##)"
-msgstr "Subvergelijking"
+msgstr "Subequations (##)"
 
 #: lib/layouts/svcommon.inc:125 lib/layouts/svmult.layout:117
 msgid "PartBacktext"
@@ -20969,19 +20764,16 @@ msgid "Case \\arabic{casei}"
 msgstr "Geval \\arabic{casei}"
 
 #: lib/layouts/theorems-case.inc:13
-#, fuzzy
 msgid "case \\arabic{casei}"
-msgstr "Geval \\arabic{casei}"
+msgstr "case \\arabic{casei}"
 
 #: lib/layouts/theorems-case.inc:13
-#, fuzzy
 msgid "Cases \\arabic{casei}"
-msgstr "Geval \\arabic{casei}"
+msgstr "Cases \\arabic{casei}"
 
 #: lib/layouts/theorems-case.inc:13
-#, fuzzy
 msgid "cases \\arabic{casei}"
-msgstr "Geval \\arabic{casei}"
+msgstr "cases \\arabic{casei}"
 
 #: lib/layouts/theorems-case.inc:14
 msgid "Case \\arabic{casei}."
@@ -21000,19 +20792,16 @@ msgid "Case \\roman{caseii}"
 msgstr "Geval \\roman{caseii}"
 
 #: lib/layouts/theorems-case.inc:20
-#, fuzzy
 msgid "case \\roman{caseii}"
-msgstr "Geval \\roman{caseii}"
+msgstr "case \\roman{caseii}"
 
 #: lib/layouts/theorems-case.inc:20
-#, fuzzy
 msgid "Cases \\roman{caseii}"
-msgstr "Geval \\roman{caseii}"
+msgstr "Cases \\roman{caseii}"
 
 #: lib/layouts/theorems-case.inc:20
-#, fuzzy
 msgid "cases \\roman{caseii}"
-msgstr "Geval \\roman{caseii}"
+msgstr "cases \\roman{caseii}"
 
 #: lib/layouts/theorems-case.inc:23
 msgid "Case (Level 3)"
@@ -21027,19 +20816,16 @@ msgid "Case \\alph{caseiii}"
 msgstr "Geval \\alph{caseiii}"
 
 #: lib/layouts/theorems-case.inc:26
-#, fuzzy
 msgid "case \\alph{caseiii}"
-msgstr "Geval \\alph{caseiii}"
+msgstr "case \\alph{caseiii}"
 
 #: lib/layouts/theorems-case.inc:26
-#, fuzzy
 msgid "Cases \\alph{caseiii}"
-msgstr "Geval \\alph{caseiii}"
+msgstr "Cases \\alph{caseiii}"
 
 #: lib/layouts/theorems-case.inc:26
-#, fuzzy
 msgid "cases \\alph{caseiii}"
-msgstr "Geval \\alph{caseiii}"
+msgstr "cases \\alph{caseiii}"
 
 #: lib/layouts/theorems-case.inc:29
 msgid "Case (Level 4)"
@@ -21050,19 +20836,16 @@ msgid "Case \\arabic{caseiv}"
 msgstr "Geval \\arabic{caseiv}"
 
 #: lib/layouts/theorems-case.inc:31
-#, fuzzy
 msgid "case \\arabic{caseiv}"
-msgstr "Geval \\arabic{caseiv}"
+msgstr "case \\arabic{caseiv}"
 
 #: lib/layouts/theorems-case.inc:31
-#, fuzzy
 msgid "Cases \\arabic{caseiv}"
-msgstr "Geval \\arabic{caseiv}"
+msgstr "Cases \\arabic{caseiv}"
 
 #: lib/layouts/theorems-case.inc:31
-#, fuzzy
 msgid "cases \\arabic{caseiv}"
-msgstr "Geval \\arabic{caseiv}"
+msgstr "cases \\arabic{caseiv}"
 
 #: lib/layouts/theorems-case.inc:32
 msgid "Case \\arabic{caseiv}."
@@ -21102,304 +20885,244 @@ msgstr ""
 "documentklassen die een commando voor hoofdstukken voorzien."
 
 #: lib/layouts/theorems-chap.module:19
-#, fuzzy
 msgid "Theorem \\thechapter.\\arabic{theorem}"
-msgstr "Stelling \\thechapter.\\thetheorem."
+msgstr "Theorem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:19
-#, fuzzy
 msgid "theorem \\thechapter.\\arabic{theorem}"
-msgstr "Stelling \\thechapter.\\thetheorem."
+msgstr "theorem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:19
-#, fuzzy
 msgid "Theorems \\thechapter.\\arabic{theorem}"
-msgstr "Stelling \\thechapter.\\thetheorem."
+msgstr "Theorems \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:19
-#, fuzzy
 msgid "theorems \\thechapter.\\arabic{theorem}"
-msgstr "Stelling \\thechapter.\\thetheorem."
+msgstr "theorems \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
-#, fuzzy
 msgid "Corollary \\thechapter.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "Corollary \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
-#, fuzzy
 msgid "corollary \\thechapter.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "corollary \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
-#, fuzzy
 msgid "Corollaries \\thechapter.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "Corollaries \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
-#, fuzzy
 msgid "corollaries \\thechapter.\\arabic{theorem}"
-msgstr "Gevolg \\arabic{theorem}"
+msgstr "corollaries \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
-#, fuzzy
 msgid "Lemma \\thechapter.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Lemma \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
-#, fuzzy
 msgid "lemma \\thechapter.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "lemma \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
-#, fuzzy
 msgid "Lemmas \\thechapter.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Lemmas \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
-#, fuzzy
 msgid "lemmas \\thechapter.\\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "lemmas \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
-#, fuzzy
 msgid "Proposition \\thechapter.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "Proposition \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
-#, fuzzy
 msgid "proposition \\thechapter.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "proposition \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
-#, fuzzy
 msgid "Propositions \\thechapter.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "Propositions \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
-#, fuzzy
 msgid "propositions \\thechapter.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "propositions \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:23
-#, fuzzy
 msgid "Conjecture \\thechapter.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "Conjecture \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:23
-#, fuzzy
 msgid "conjecture \\thechapter.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "conjecture \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:23
-#, fuzzy
 msgid "Conjectures \\thechapter.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "Conjectures \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:23
-#, fuzzy
 msgid "conjectures \\thechapter.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "conjectures \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:24
-#, fuzzy
 msgid "Definition \\thechapter.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "Definition \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:24
-#, fuzzy
 msgid "definition \\thechapter.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "definition \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:24
-#, fuzzy
 msgid "Definitions \\thechapter.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "Definitions \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:24
-#, fuzzy
 msgid "definitions \\thechapter.\\arabic{theorem}"
-msgstr "Definitie \\arabic{theorem}"
+msgstr "definitions \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:25
-#, fuzzy
 msgid "Example \\thechapter.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "Example \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:25
-#, fuzzy
 msgid "example \\thechapter.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "example \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:25
-#, fuzzy
 msgid "Examples \\thechapter.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "Examples \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:25
-#, fuzzy
 msgid "examples \\thechapter.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "examples \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:26
-#, fuzzy
 msgid "Problem \\thechapter.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "Problem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:26
-#, fuzzy
 msgid "problem \\thechapter.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "problem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:26
-#, fuzzy
 msgid "Problems \\thechapter.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "Problems \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:26
-#, fuzzy
 msgid "problems \\thechapter.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "problems \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
-#, fuzzy
 msgid "Exercise \\thechapter.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "Exercise \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
-#, fuzzy
 msgid "exercise \\thechapter.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "exercise \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
-#, fuzzy
 msgid "Exercises \\thechapter.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "Exercises \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
-#, fuzzy
 msgid "exercises \\thechapter.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "exercises \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:28
-#, fuzzy
 msgid "Solution \\thechapter.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "Solution \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:28
-#, fuzzy
 msgid "solution \\thechapter.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "solution \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:28
-#, fuzzy
 msgid "Solutions \\thechapter.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "Solutions \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:28
-#, fuzzy
 msgid "solutions \\thechapter.\\arabic{theorem}"
-msgstr "equation \\thechapter.\\arabic{equation}"
+msgstr "solutions \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:29
-#, fuzzy
 msgid "Remark \\thechapter.\\arabic{theorem}"
-msgstr "Opmerking \\thechapter.\\theremark."
+msgstr "Remark \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:29
-#, fuzzy
 msgid "remark \\thechapter.\\arabic{theorem}"
-msgstr "Opmerking \\thechapter.\\theremark."
+msgstr "remark \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:29
-#, fuzzy
 msgid "Remarks \\thechapter.\\arabic{theorem}"
-msgstr "Opmerking \\thechapter.\\theremark."
+msgstr "Remarks \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:29
-#, fuzzy
 msgid "remarks \\thechapter.\\arabic{theorem}"
-msgstr "Opmerking \\thechapter.\\theremark."
+msgstr "remarks \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:30
-#, fuzzy
 msgid "Claim \\thechapter.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "Claim \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:30
-#, fuzzy
 msgid "claim \\thechapter.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "claim \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:30
-#, fuzzy
 msgid "Claims \\thechapter.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "Claims \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:30
-#, fuzzy
 msgid "claims \\thechapter.\\arabic{theorem}"
-msgstr "Bewering \\arabic{theorem}"
+msgstr "claims \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:31
-#, fuzzy
 msgid "Fact \\thechapter.\\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "Fact \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:31
-#, fuzzy
 msgid "fact \\thechapter.\\arabic{theorem}"
-msgstr "\\thechapter.\\arabic{equation}"
+msgstr "fact \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:31
-#, fuzzy
 msgid "Facts \\thechapter.\\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "Facts \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:31
-#, fuzzy
 msgid "facts \\thechapter.\\arabic{theorem}"
-msgstr "\\thechapter.\\arabic{equation}"
+msgstr "facts \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:32
-#, fuzzy
 msgid "Criterion \\thechapter.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "Criterion \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:32
-#, fuzzy
 msgid "criterion \\thechapter.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "criterion \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:32
-#, fuzzy
 msgid "Criteria \\thechapter.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "Criteria \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:32
-#, fuzzy
 msgid "criteria \\thechapter.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "criteria \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:33
-#, fuzzy
 msgid "Algorithm \\thechapter.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "Algoritme \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:33
-#, fuzzy
 msgid "algorithm \\thechapter.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "algoritme \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:33
-#, fuzzy
 msgid "Algorithms \\thechapter.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "Algoritmes \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:33
-#, fuzzy
 msgid "algorithms \\thechapter.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "algoritmes \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209
@@ -21408,21 +21131,18 @@ msgstr "Feit ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209
-#, fuzzy
 msgid "fact ##"
-msgstr "Feit ##"
+msgstr "fact ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209
-#, fuzzy
 msgid "Facts ##"
-msgstr "Feit ##"
+msgstr "Facts ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209
-#, fuzzy
 msgid "facts ##"
-msgstr "feiten"
+msgstr "facts ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:35
 #: lib/layouts/theorems-without-preamble.inc:232
@@ -21431,21 +21151,18 @@ msgstr "Definitie ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:35
 #: lib/layouts/theorems-without-preamble.inc:232
-#, fuzzy
 msgid "definition ##"
-msgstr "Definitie ##"
+msgstr "definition ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:35
 #: lib/layouts/theorems-without-preamble.inc:232
-#, fuzzy
 msgid "Definitions ##"
-msgstr "Definitie ##"
+msgstr "Definitions ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:35
 #: lib/layouts/theorems-without-preamble.inc:232
-#, fuzzy
 msgid "definitions ##"
-msgstr "Definitie ##"
+msgstr "definitions ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:39
 #: lib/layouts/theorems-without-preamble.inc:263
@@ -21454,21 +21171,18 @@ msgstr "Voorbeeld ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:39
 #: lib/layouts/theorems-without-preamble.inc:263
-#, fuzzy
 msgid "example ##"
-msgstr "Voorbeeld ##"
+msgstr "example ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:39
 #: lib/layouts/theorems-without-preamble.inc:263
-#, fuzzy
 msgid "Examples ##"
-msgstr "Voorbeeld ##"
+msgstr "Examples ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:39
 #: lib/layouts/theorems-without-preamble.inc:263
-#, fuzzy
 msgid "examples ##"
-msgstr "Voorbeeld ##"
+msgstr "examples ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:43
 #: lib/layouts/theorems-without-preamble.inc:285
@@ -21479,23 +21193,20 @@ msgstr "Probleem ##"
 #: lib/layouts/theorems-counters-bytype.inc:43
 #: lib/layouts/theorems-without-preamble.inc:285
 #: lib/layouts/theorems-without-preamble.inc:311
-#, fuzzy
 msgid "problem ##"
-msgstr "Probleem ##"
+msgstr "problem ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:43
 #: lib/layouts/theorems-without-preamble.inc:285
 #: lib/layouts/theorems-without-preamble.inc:311
-#, fuzzy
 msgid "Problems ##"
-msgstr "Probleem ##"
+msgstr "Problems ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:43
 #: lib/layouts/theorems-without-preamble.inc:285
 #: lib/layouts/theorems-without-preamble.inc:311
-#, fuzzy
 msgid "problems ##"
-msgstr "Probleem ##"
+msgstr "problems ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:48
 #: lib/layouts/theorems-without-preamble.inc:392
@@ -21504,81 +21215,66 @@ msgstr "Opgave ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:48
 #: lib/layouts/theorems-without-preamble.inc:392
-#, fuzzy
 msgid "exercise ##"
-msgstr "Opgave ##"
+msgstr "exercise ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:48
 #: lib/layouts/theorems-without-preamble.inc:392
-#, fuzzy
 msgid "Exercises ##"
-msgstr "Opgave ##"
+msgstr "Exercises ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:48
 #: lib/layouts/theorems-without-preamble.inc:392
-#, fuzzy
 msgid "exercises ##"
-msgstr "Opgave ##"
+msgstr "exercises ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:6
-#, fuzzy
 msgid "Criterion ##"
-msgstr "Criterium"
+msgstr "Criterion ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:6
-#, fuzzy
 msgid "criterion ##"
-msgstr "criterium"
+msgstr "criterion ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:6
-#, fuzzy
 msgid "Criteria ##"
-msgstr "Criteria"
+msgstr "Criteria ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:6
-#, fuzzy
 msgid "criteria ##"
-msgstr "criteria"
+msgstr "criteria ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:16
-#, fuzzy
 msgid "Axiom ##"
-msgstr "Axioma"
+msgstr "Axiom ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:16
-#, fuzzy
 msgid "axiom ##"
-msgstr "axioma"
+msgstr "axiom ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:16
-#, fuzzy
 msgid "Axioms ##"
-msgstr "Axioma's"
+msgstr "Axioms ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:16
-#, fuzzy
 msgid "axioms ##"
-msgstr "axioma's"
+msgstr "axioms ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:20
-#, fuzzy
 msgid "Condition ##"
-msgstr "Voorwaarde"
+msgstr "Condition ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:20
-#, fuzzy
 msgid "condition ##"
-msgstr "voorwaarde"
+msgstr "condition ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:20
-#, fuzzy
 msgid "Conditions ##"
-msgstr "Voorwaarden"
+msgstr "Conditions ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:20
-#, fuzzy
 msgid "conditions ##"
-msgstr "voorwaarden"
+msgstr "conditions ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
@@ -21587,81 +21283,66 @@ msgstr "Aantekening ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
-#, fuzzy
 msgid "note ##"
-msgstr "Aantekening ##"
+msgstr "aantekening ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
-#, fuzzy
 msgid "Notes ##"
-msgstr "Aantekening ##"
+msgstr "Aantekeningen ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
-#, fuzzy
 msgid "notes ##"
-msgstr "Eindnoot ##"
+msgstr "notes ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
-#, fuzzy
 msgid "Notation ##"
-msgstr "Notatie"
+msgstr "Notation ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
-#, fuzzy
 msgid "notation ##"
-msgstr "notatie"
+msgstr "notation ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
-#, fuzzy
 msgid "Notations ##"
-msgstr "Notaties"
+msgstr "Notations ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
-#, fuzzy
 msgid "notations ##"
-msgstr "notaties"
+msgstr "notations ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
-#, fuzzy
 msgid "Conclusion ##"
-msgstr "Conclusie"
+msgstr "Conclusion ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
-#, fuzzy
 msgid "conclusion ##"
-msgstr "conclusie"
+msgstr "conclusion ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
-#, fuzzy
 msgid "Conclusions ##"
-msgstr "Conclusies"
+msgstr "Conclusions ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
-#, fuzzy
 msgid "conclusions ##"
-msgstr "conclusie"
+msgstr "conclusions ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:40
-#, fuzzy
 msgid "Assumption ##"
-msgstr "Aanname"
+msgstr "Aanname ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:40
-#, fuzzy
 msgid "assumption ##"
-msgstr "aanname"
+msgstr "aanname ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:40
-#, fuzzy
 msgid "Assumptions ##"
-msgstr "Aannames"
+msgstr "Aannames ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:40
-#, fuzzy
 msgid "assumptions ##"
-msgstr "aannames"
+msgstr "aannames ##"
 
 #: lib/layouts/theorems-named.module:3
 msgid "Standard Theorems (Nameable)"
@@ -21739,184 +21420,148 @@ msgstr ""
 "ingesteld bij aanvang van een paragraaf)."
 
 #: lib/layouts/theorems-sec.module:21
-#, fuzzy
 msgid "Proposition \\thesection.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "Proposition \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:21
-#, fuzzy
 msgid "proposition \\thesection.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "proposition \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:21
-#, fuzzy
 msgid "Propositions \\thesection.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "Propositions \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:21
-#, fuzzy
 msgid "propositions \\thesection.\\arabic{theorem}"
-msgstr "Propositie \\arabic{theorem}"
+msgstr "propositions \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
-#, fuzzy
 msgid "Conjecture \\thesection.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "Conjecture \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
-#, fuzzy
 msgid "conjecture \\thesection.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "conjecture \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
-#, fuzzy
 msgid "Conjectures \\thesection.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "Conjectures \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
-#, fuzzy
 msgid "conjectures \\thesection.\\arabic{theorem}"
-msgstr "Vermoeden \\arabic{theorem}"
+msgstr "conjectures \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:24
-#, fuzzy
 msgid "Example \\thesection.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "Example \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:24
-#, fuzzy
 msgid "example \\thesection.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "example \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:24
-#, fuzzy
 msgid "Examples \\thesection.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "Examples \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:24
-#, fuzzy
 msgid "examples \\thesection.\\arabic{theorem}"
-msgstr "Voorbeeld \\arabic{theorem}"
+msgstr "examples \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:25
-#, fuzzy
 msgid "Problem \\thesection.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "Problem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:25
-#, fuzzy
 msgid "problem \\thesection.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "problem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:25
-#, fuzzy
 msgid "Problems \\thesection.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "Problems \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:25
-#, fuzzy
 msgid "problems \\thesection.\\arabic{theorem}"
-msgstr "Probleem \\arabic{theorem}"
+msgstr "problems \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:26
-#, fuzzy
 msgid "Exercise \\thesection.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "Exercise \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:26
-#, fuzzy
 msgid "exercise \\thesection.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "exercise \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:26
-#, fuzzy
 msgid "Exercises \\thesection.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "Exercises \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:26
-#, fuzzy
 msgid "exercises \\thesection.\\arabic{theorem}"
-msgstr "Opgave \\arabic{theorem}"
+msgstr "exercises \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:27
-#, fuzzy
 msgid "Solution \\thesection.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "Solution \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:27
-#, fuzzy
 msgid "solution \\thesection.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "solution \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:27
-#, fuzzy
 msgid "Solutions \\thesection.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "Solutions \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:27
-#, fuzzy
 msgid "solutions \\thesection.\\arabic{theorem}"
-msgstr "Oplossing \\arabic{theorem}"
+msgstr "solutions \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:30
-#, fuzzy
 msgid "Fact \\thesection.\\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "Fact \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:30
-#, fuzzy
 msgid "fact \\thesection.\\arabic{theorem}"
-msgstr "Vraag \\arabic{theorem}"
+msgstr "fact \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:30
-#, fuzzy
 msgid "Facts \\thesection.\\arabic{theorem}"
-msgstr "Feit \\arabic{theorem}"
+msgstr "Facts \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:30
-#, fuzzy
 msgid "facts \\thesection.\\arabic{theorem}"
-msgstr "Vraag \\arabic{theorem}"
+msgstr "facts \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:31
-#, fuzzy
 msgid "Criterion \\thesection.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "Criterion \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:31
-#, fuzzy
 msgid "criterion \\thesection.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "criterion \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:31
-#, fuzzy
 msgid "Criteria \\thesection.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "Criteria \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:31
-#, fuzzy
 msgid "criteria \\thesection.\\arabic{theorem}"
-msgstr "Criterium \\arabic{theorem}"
+msgstr "criteria \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:32
-#, fuzzy
 msgid "Algorithm \\thesection.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "Algoritme \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:32
-#, fuzzy
 msgid "algorithm \\thesection.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "algoritme \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:32
-#, fuzzy
 msgid "Algorithms \\thesection.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "Algorithms \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:32
-#, fuzzy
 msgid "algorithms \\thesection.\\arabic{theorem}"
-msgstr "Algoritme \\arabic{theorem}"
+msgstr "algoritmes \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-starred.inc:146
 msgid "Conjecture."
@@ -22014,19 +21659,16 @@ msgid "Property ##"
 msgstr "Eigenschap ##"
 
 #: lib/layouts/theorems-without-preamble.inc:482
-#, fuzzy
 msgid "property ##"
-msgstr "Eigenschap ##"
+msgstr "property ##"
 
 #: lib/layouts/theorems-without-preamble.inc:482
-#, fuzzy
 msgid "Properties ##"
-msgstr "Eigenschap ##"
+msgstr "Properties ##"
 
 #: lib/layouts/theorems-without-preamble.inc:482
-#, fuzzy
 msgid "properties ##"
-msgstr "Eigenschap ##"
+msgstr "properties ##"
 
 #: lib/layouts/theorems-without-preamble.inc:488
 msgid "Property \\theproperty."
@@ -22174,19 +21816,16 @@ msgid "Margin Figure ##"
 msgstr "Kantlijnfiguur ##"
 
 #: lib/layouts/tufte-book.layout:258
-#, fuzzy
 msgid "margin figure ##"
-msgstr "Kantlijnfiguur ##"
+msgstr "margin figure ##"
 
 #: lib/layouts/tufte-book.layout:258
-#, fuzzy
 msgid "Margin Figures ##"
-msgstr "Kantlijnfiguur ##"
+msgstr "Margin Figures ##"
 
 #: lib/layouts/tufte-book.layout:258
-#, fuzzy
 msgid "margin figures ##"
-msgstr "Kantlijnfiguur ##"
+msgstr "margin figures ##"
 
 #: lib/layouts/tufte-book.layout:262
 msgid "Margin Table"
@@ -22197,37 +21836,32 @@ msgid "Margin Table ##"
 msgstr "Kantlijntabel ##"
 
 #: lib/layouts/tufte-book.layout:263
-#, fuzzy
 msgid "margin table ##"
-msgstr "Kantlijntabel ##"
+msgstr "margin table ##"
 
 #: lib/layouts/tufte-book.layout:263
-#, fuzzy
 msgid "Margin Tables ##"
-msgstr "Kantlijntabel ##"
+msgstr "Margin Tables ##"
 
 #: lib/layouts/tufte-book.layout:263
-#, fuzzy
 msgid "margin tables ##"
-msgstr "Kantlijntabel ##"
+msgstr "margin tables ##"
 
 #: lib/layouts/tufte-book.layout:269
 msgid "MarginTable"
 msgstr "Kantlijntabel"
 
 #: lib/layouts/tufte-book.layout:269
-#, fuzzy
 msgid "Sub-MarginTable"
-msgstr "Kantlijntabel"
+msgstr "Sub-MarginTable"
 
 #: lib/layouts/tufte-book.layout:285
 msgid "MarginFigure"
 msgstr "Kantlijnfiguur"
 
 #: lib/layouts/tufte-book.layout:285
-#, fuzzy
 msgid "Sub-MarginFigure"
-msgstr "Kantlijnfiguur"
+msgstr "Sub-MarginFigure"
 
 #: lib/layouts/tufte-handout.layout:3 lib/examples/Articles:0
 msgid "Tufte Handout"
@@ -25816,7 +25450,7 @@ msgstr "Databank(en) extern wijzigen...|x"
 
 #: lib/ui/stdcontext.inc:180
 msgid "Open Inset|O"
-msgstr "Invoegsel openen|O"
+msgstr "Invoegsel openen|o"
 
 #: lib/ui/stdcontext.inc:181
 msgid "Close Inset|C"
@@ -28733,37 +28367,35 @@ msgstr "Formeel script\t\\mathscr"
 
 #: lib/ui/stdtoolbars.inc:461
 msgid "Basic Text\t\\mbox"
-msgstr ""
+msgstr "Basistekst\t\\mbox"
 
 #: lib/ui/stdtoolbars.inc:462
 msgid "Framed Text\t\\fbox"
-msgstr ""
+msgstr "Kadertekst\t\\fbox"
 
 #: lib/ui/stdtoolbars.inc:463
 msgid "Framed Text (Adjustable)\t\\framebox"
-msgstr ""
+msgstr "Kadertekst (aanpasbaar)\t\\framebox"
 
 #: lib/ui/stdtoolbars.inc:464
 msgid "Adapting Text (AMS)\t\\text"
-msgstr ""
+msgstr "Tekst aanpassen (AMS)\t\\text"
 
 #: lib/ui/stdtoolbars.inc:465
-#, fuzzy
 msgid "Roman Text\t\\textrm"
-msgstr "Normale tekstmodus\t\\textrm"
+msgstr "Roman Text\t\\textrm"
 
 #: lib/ui/stdtoolbars.inc:466
-#, fuzzy
 msgid "Normal Font Text\t\\textnormal"
-msgstr "Normale tekstmodus\t\\textrm"
+msgstr "Normal Font Text\t\\textnormal"
 
 #: lib/ui/stdtoolbars.inc:467
 msgid "Intertext\t\\intertext"
-msgstr ""
+msgstr "Intertext\t\\intertext"
 
 #: lib/ui/stdtoolbars.inc:468
 msgid "Short Intertext\t\\shortintertext"
-msgstr ""
+msgstr "Korte intertext\t\\shortintertext"
 
 #: lib/ui/stdtoolbars.inc:472
 msgid "ldots"
@@ -33384,7 +33016,7 @@ msgstr "Eenvoudig grid"
 #: src/Author.cpp:56
 #, c-format
 msgid "%1$s[[name]] (%2$s[[email]])"
-msgstr "%1$s[[name]] (%2$s[[email]])"
+msgstr "%1$s (%2$s)"
 
 #: src/BiblioInfo.cpp:791 src/BiblioInfo.cpp:841 src/BiblioInfo.cpp:852
 #: src/BiblioInfo.cpp:907 src/BiblioInfo.cpp:911
@@ -34754,24 +34386,20 @@ msgid "selected text"
 msgstr "geselecteerde tekst"
 
 #: src/Color.cpp:269
-#, fuzzy
 msgid "preedit focus background"
-msgstr "achtergrond vergrijsd invoegsel"
+msgstr "pre-edit focus achtergrond"
 
 #: src/Color.cpp:270
-#, fuzzy
 msgid "preedit focus text"
-msgstr "tekst vergrijsd invoegsel"
+msgstr "pre-edit focus tekst"
 
 #: src/Color.cpp:271
-#, fuzzy
 msgid "preedit background"
-msgstr "achtergrond vergrijsd invoegsel"
+msgstr "pre-edit achtergrond"
 
 #: src/Color.cpp:272
-#, fuzzy
 msgid "preedit text"
-msgstr "tekst vergrijsd invoegsel"
+msgstr "pre-edit tekst"
 
 #: src/Color.cpp:273
 msgid "LaTeX text"
@@ -36209,11 +35837,11 @@ msgstr "Selecteer of de lastfiles nog bestaan."
 
 #: src/LyXRC.cpp:3219
 msgid ""
-"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 -"
-"n38\" Refer to the ChkTeX documentation."
+"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
+"-n38\" Refer to the ChkTeX documentation."
 msgstr ""
-"Defineer hoe chktex uitgevoerd moet worden. Bv. \"chktex -n11 -n1 -n3 -n6 -"
-"n9 -22 -n25 -n30 -n38\". Raadpleeg de ChkTeX-documentatie."
+"Defineer hoe chktex uitgevoerd moet worden. Bv. \"chktex -n11 -n1 -n3 -n6 "
+"-n9 -22 -n25 -n30 -n38\". Raadpleeg de ChkTeX-documentatie."
 
 #: src/LyXRC.cpp:3226
 msgid ""
@@ -36952,10 +36580,12 @@ msgid ""
 "The layout file %1$s has a version unknown to LyX and could thus not be "
 "converted."
 msgstr ""
+"Het layout-bestand %1$s is van een onbekende versie en kon niet omgezet "
+"worden."
 
 #: src/TextClass.cpp:364 src/TextClass.cpp:394
 msgid "Layout Conversion Error"
-msgstr ""
+msgstr "Fout bij omzetten van layout"
 
 #: src/TextClass.cpp:395
 msgid ""
@@ -36963,6 +36593,9 @@ msgid ""
 "not be converted.\n"
 "Please check Document > Settings > Local Layouts!"
 msgstr ""
+"Een lokale versie van dit document heeft een onbekende versie en kon niet "
+"omgezet worden.\n"
+"Controleer Document > Instellingen... > Lokale layout"
 
 #: src/TextClass.cpp:960
 msgid "Missing File"
@@ -37738,9 +37371,8 @@ msgid "Select Color"
 msgstr "Kleur kiezen"
 
 #: src/frontends/qt/GuiApplication.cpp:783
-#, fuzzy
 msgid "Paragraph[[Sectioning]]"
-msgstr "Alinea-instellingen"
+msgstr "Alinea"
 
 #: src/frontends/qt/GuiApplication.cpp:1297
 msgid "Nothing to do"
@@ -38127,7 +37759,7 @@ msgstr "Kaderinstellingen"
 #: src/frontends/qt/GuiBranch.cpp:67
 #, c-format
 msgid "%1$s[[branch]] (%2$s)[[master]]"
-msgstr "%1$s[[branch]] (%2$s)[[master]]"
+msgstr "%1$s (%2$s)"
 
 #: src/frontends/qt/GuiBranch.cpp:68
 msgid "master"
@@ -40187,12 +39819,10 @@ msgid "Export a color theme"
 msgstr "Een kleurenthema exporteren"
 
 #: src/frontends/qt/GuiPrefs.cpp:1460
-#, fuzzy
 msgid "Enter the name of the color theme."
 msgstr "Wat is de naam van het kleurenthema?"
 
 #: src/frontends/qt/GuiPrefs.cpp:1461
-#, fuzzy
 msgid "Enter the name of the new color theme to save."
 msgstr "Wat is de naam van het nieuwe kleurenthema dat opgeslagen moet worden?"
 
@@ -40209,9 +39839,8 @@ msgid "A user color theme with the same name exists."
 msgstr "Er bestaat al een gebruikers-kleurenthema met dezelfde naam."
 
 #: src/frontends/qt/GuiPrefs.cpp:1490
-#, fuzzy
 msgid "Do you want to overwrite the theme?"
-msgstr "Overschrijven?"
+msgstr "Het thema overschrijven?"
 
 #: src/frontends/qt/GuiPrefs.cpp:1533
 msgid "Import a color theme"
@@ -40237,7 +39866,7 @@ msgstr "Het gekozen thema is een systeemthema en kan niet worden verwijderd."
 
 #: src/frontends/qt/GuiPrefs.cpp:1681
 msgid "Confirm the removal"
-msgstr ""
+msgstr "Bevestig de verwijdering"
 
 #: src/frontends/qt/GuiPrefs.cpp:1682
 #, c-format
@@ -40261,24 +39890,20 @@ msgid "Click here to change the color in the dark mode"
 msgstr "Klik om de kleur in de donkere modus te wijzigen"
 
 #: src/frontends/qt/GuiPrefs.cpp:2025
-#, fuzzy
 msgid "Such a color is not found"
-msgstr "Zoektekst niet gevonden!"
+msgstr "Kleur niet gevonden!"
 
 #: src/frontends/qt/GuiPrefs.cpp:2094
-#, fuzzy
 msgid "No[[bookmarks]]"
-msgstr "bladwijzers"
+msgstr "Nee"
 
 #: src/frontends/qt/GuiPrefs.cpp:2095
-#, fuzzy
 msgid "Inline"
-msgstr "Doorlopend|D"
+msgstr "Binnen de regel"
 
 #: src/frontends/qt/GuiPrefs.cpp:2096
-#, fuzzy
 msgid "In Margin"
-msgstr "Marge"
+msgstr "In de kantlijn"
 
 #: src/frontends/qt/GuiPrefs.cpp:2188
 msgid "Paths"
@@ -40555,30 +40180,28 @@ msgid "Identity"
 msgstr "Identiteit"
 
 #: src/frontends/qt/GuiPrefs.h:380
-#, fuzzy
 msgid "Default[[sortkey]]"
-msgstr "Delete"
+msgstr "Standaard"
 
 #: src/frontends/qt/GuiPrefs.h:380
-#, fuzzy
 msgid "Default[[guiname]]"
-msgstr "&Standaardmarges"
+msgstr "Default"
 
 #: src/frontends/qt/GuiPrefs.h:381
 msgid "Monochrome[[sortkey]]"
-msgstr ""
+msgstr "Monochroom"
 
 #: src/frontends/qt/GuiPrefs.h:381
 msgid "Monochrome[[guiname]]"
-msgstr ""
+msgstr "Monochroom"
 
 #: src/frontends/qt/GuiPrefs.h:382
 msgid "Solarized[[sortkey]]"
-msgstr ""
+msgstr "Gesolarizeerd"
 
 #: src/frontends/qt/GuiPrefs.h:382
 msgid "Solarized[[guiname]]"
-msgstr ""
+msgstr "Gesolarizeerd"
 
 #: src/frontends/qt/GuiPrefs.h:386
 msgid "Light"
