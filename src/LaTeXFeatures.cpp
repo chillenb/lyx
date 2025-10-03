@@ -2078,7 +2078,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 			}
 		}
 		// and refstyle
-        else if (params_.xref_package == "refstyle" && isRequired("refstyle")) {
+		else if (params_.xref_package == "refstyle" && isRequired("refstyle")) {
 			if (thm.refprefix.empty()) {
 				LYXERR0("Unable to write refstyle definition for `" << thm.name << "'.");
 				continue;
