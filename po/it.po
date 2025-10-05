@@ -6,15 +6,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-09-05 07:35+0200\n"
-"PO-Revision-Date: 2025-08-12 23:19+0200\n"
+"POT-Creation-Date: 2025-10-05 21:08+0200\n"
+"PO-Revision-Date: 2025-10-05 21:25+0200\n"
 "Last-Translator: Enrico Forestieri <forenr@lyx.org>\n"
 "Language-Team: italiano <it@li.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.6\n"
+"X-Generator: Poedit 3.7\n"
 "X-Poedit-Basepath: C:/cygwin/usr/local/src/lyx/lyx-devel\n"
 "X-Poedit-SourceCharset: iso-8859-1\n"
 
@@ -2382,8 +2382,8 @@ msgstr "Tipo collegamento"
 
 #: src/frontends/qt/ui/HyperlinkUi.ui:136
 msgid ""
-"Link to the web or any other target with an \"authority\" component (i."
-"e., :// in the URI)"
+"Link to the web or any other target with an \"authority\" component "
+"(i.e., :// in the URI)"
 msgstr ""
 "Collegamento al Web o a qualsiasi altro target con un componente di "
 "\"autorità\" (ad esempio, :// nell'URI)"
@@ -3637,8 +3637,8 @@ msgstr "mml"
 
 #: src/frontends/qt/ui/OutputUi.ui:604 src/frontends/qt/ui/OutputUi.ui:622
 msgid ""
-"Scaling factor for images that are generated for some LaTeX constructs (e."
-"g., math formulae) in non-LaTeX output."
+"Scaling factor for images that are generated for some LaTeX constructs "
+"(e.g., math formulae) in non-LaTeX output."
 msgstr ""
 "Fattore di scala delle immagini generate per alcuni costrutti LaTeX (ad "
 "esempio formule matematiche) in output non LaTeX."
@@ -9289,7 +9289,7 @@ msgid "Altaffilation"
 msgstr "Affiliazione alt."
 
 #: lib/layouts/aastex.layout:201 lib/layouts/agutex.layout:132
-#: src/mathed/InsetMathHull.cpp:1962 src/mathed/InsetMathHull.cpp:1971
+#: src/mathed/InsetMathHull.cpp:1996 src/mathed/InsetMathHull.cpp:2005
 msgid "Number"
 msgstr "Numero"
 
@@ -16050,22 +16050,20 @@ msgid "Numbered Example (Multiline)"
 msgstr "Esempio numerato (multilinea)"
 
 #: lib/layouts/linguistics.module:20
-#, fuzzy
 msgid "(\\theequation)"
-msgstr "\\thesection"
+msgstr "(\\theequation)"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
 msgid "##"
-msgstr ""
+msgstr "##"
 
 #: lib/layouts/linguistics.module:27 lib/layouts/linguistics.module:111
 msgid "Subexample"
 msgstr "Sottoesempio"
 
 #: lib/layouts/linguistics.module:29
-#, fuzzy
 msgid "(\\theequation) (\\alph{subexamplei})"
-msgstr "\\theexamplei (\\alph{subexamplei})"
+msgstr "(\\theequation) (\\alph{subexamplei})"
 
 #: lib/layouts/linguistics.module:39
 msgid "Numbered Example (multiline)"
@@ -19086,44 +19084,36 @@ msgid "\\arabic{enumi}."
 msgstr "\\arabic{enumi}."
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "Item \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "Voce \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "item \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "voce \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "Items \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "Voci \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
-#, fuzzy
 msgid "items \\arabic{enumi}"
-msgstr "\\arabic{enumi}."
+msgstr "voci \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "Item \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "Voce \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "item \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "voce \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "Items \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "Voci \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
-#, fuzzy
 msgid "items \\arabic{enumi}\\alph{enumii}"
-msgstr "(\\arabic{enumiii})"
+msgstr "voci \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:65
 msgid "\\roman{enumiii}."
@@ -19131,19 +19121,19 @@ msgstr "\\roman{enumiii}."
 
 #: lib/layouts/stdcounters.inc:66
 msgid "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "Voce \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "voce \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "Voci \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr ""
+msgstr "voci \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:72
 msgid "\\Alph{enumiv}."
@@ -19151,19 +19141,19 @@ msgstr "\\Alph{enumiv}."
 
 #: lib/layouts/stdcounters.inc:73
 msgid "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "Voce \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "voce \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "Voci \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr ""
+msgstr "voci \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:82
 msgid "Listing ##"
@@ -19253,9 +19243,8 @@ msgid "Margin"
 msgstr "Margine"
 
 #: lib/layouts/stdinsets.inc:52
-#, fuzzy
 msgid "Foot ##"
-msgstr "Nota a piè pagina ##"
+msgstr "Piede ##"
 
 #: lib/layouts/stdinsets.inc:181
 msgid "Greyedout"
@@ -19358,22 +19347,20 @@ msgid "Verbatim*"
 msgstr "Testuale*"
 
 #: lib/layouts/stdlists.inc:76
-#, fuzzy
 msgid "Item[[enumerate]]"
-msgstr "Elenco numerato"
+msgstr "Voce"
 
 #: lib/layouts/stdlists.inc:76
-#, fuzzy
 msgid "item[[enumerate]]"
-msgstr "Elenco numerato"
+msgstr "voce"
 
 #: lib/layouts/stdlists.inc:77
 msgid "Items[[enumerate]]"
-msgstr ""
+msgstr "Voci"
 
 #: lib/layouts/stdlists.inc:77
 msgid "items[[enumerate]]"
-msgstr ""
+msgstr "voci"
 
 #: lib/layouts/stdsections.inc:15 lib/layouts/svcommon.inc:128
 msgid "Part \\thepart"
@@ -19432,19 +19419,16 @@ msgstr ""
 "il manuale di matematica."
 
 #: lib/layouts/subequations.module:15
-#, fuzzy
 msgid "Sub-Equation"
-msgstr "Sottoequazioni"
+msgstr "Sottoequazione"
 
 #: lib/layouts/subequations.module:17
-#, fuzzy
 msgid "\\theequation\\alph{subequation}"
-msgstr "\\thesection.\\arabic{equation}"
+msgstr "\\theequation\\alph{subequation}"
 
 #: lib/layouts/subequations.module:25
-#, fuzzy
 msgid "Subequations (##)"
-msgstr "equazioni (##)"
+msgstr "Sottoequazioni (##)"
 
 #: lib/layouts/svcommon.inc:125 lib/layouts/svmult.layout:117
 msgid "PartBacktext"
@@ -32654,64 +32638,60 @@ msgid "External Material"
 msgstr "Materiale esterno"
 
 #: lib/examples/Articles:0
-msgid "XY-Figure"
-msgstr "XY-Figure"
-
-#: lib/examples/Articles:0
-msgid "Minted Listings"
-msgstr "Listati vari con minted"
-
-#: lib/examples/Articles:0
-msgid "Instant Preview"
-msgstr "Anteprima istantanea"
-
-#: lib/examples/Articles:0
-msgid "XY-Pic"
-msgstr "XY-Pic"
-
-#: lib/examples/Articles:0
 msgid "Computer Algebra Systems"
 msgstr "Sistemi di algebra computazionale"
-
-#: lib/examples/Articles:0
-msgid "Minted File Listing"
-msgstr "Listato di file con minted"
-
-#: lib/examples/Articles:0
-msgid "Itemize Bullets"
-msgstr "Elenchi puntati"
 
 #: lib/examples/Articles:0
 msgid "Feynman Diagrams"
 msgstr "Diagrammi di Feynman"
 
 #: lib/examples/Articles:0
-msgid "Graphics and Insets"
-msgstr "Grafici ed inserti"
+msgid "Instant Preview"
+msgstr "Anteprima istantanea"
 
 #: lib/examples/Articles:0
-msgid "Mixing Japanese with other Languages (with CJKutf8)"
-msgstr "Comporre giapponese con altre lingue (con CJKutf8)"
+msgid "Itemize Bullets"
+msgstr "Elenchi puntati"
+
+#: lib/examples/Articles:0
+msgid "Minted File Listing"
+msgstr "Listato di file con minted"
+
+#: lib/examples/Articles:0
+msgid "Minted Listings"
+msgstr "Listati vari con minted"
+
+#: lib/examples/Articles:0
+msgid "XY-Figure"
+msgstr "XY-Figure"
+
+#: lib/examples/Articles:0
+msgid "XY-Pic"
+msgstr "XY-Pic"
+
+#: lib/examples/Articles:0
+msgid "Graphics and Insets"
+msgstr "Grafici ed inserti"
 
 #: lib/examples/Articles:0
 msgid "Localization Test (for Developers)"
 msgstr "Test di localizzazione (per sviluppatori)"
 
 #: lib/examples/Articles:0
-msgid "Writing Armenian"
-msgstr "Scrivere in armeno"
+msgid "Mixing Japanese with other Languages (with CJKutf8)"
+msgstr "Comporre giapponese con altre lingue (con CJKutf8)"
 
 #: lib/examples/Articles:0
 msgid "Mixing Japanese with other Languages (with platex)"
 msgstr "Comporre giapponese con altre lingue (con platex)"
 
 #: lib/examples/Articles:0
-msgid "Language Support"
-msgstr "Supporto linguistico"
+msgid "Writing Armenian"
+msgstr "Scrivere in armeno"
 
 #: lib/examples/Articles:0
-msgid "Serial Letter 3"
-msgstr "Lettera seriale 3"
+msgid "Language Support"
+msgstr "Supporto linguistico"
 
 #: lib/examples/Articles:0
 msgid "Serial Letter 1"
@@ -32722,16 +32702,20 @@ msgid "Serial Letter 2"
 msgstr "Lettera seriale 2"
 
 #: lib/examples/Articles:0
+msgid "Serial Letter 3"
+msgstr "Lettera seriale 3"
+
+#: lib/examples/Articles:0
+msgid "Hazard and Precautionary Statements"
+msgstr "Dichiarazioni di Pericolo e Cautela"
+
+#: lib/examples/Articles:0
 msgid "LilyPond Book"
 msgstr "LilyPond Book"
 
 #: lib/examples/Articles:0
 msgid "Multilingual Captions"
 msgstr "Didascalie multilingua"
-
-#: lib/examples/Articles:0
-msgid "Hazard and Precautionary Statements"
-msgstr "Dichiarazioni di Pericolo e Cautela"
 
 #: lib/examples/Articles:0
 msgid "Noweb2LyX"
@@ -32746,16 +32730,16 @@ msgid "Modules"
 msgstr "Moduli"
 
 #: lib/examples/Articles:0
-msgid "Foils Landslide"
-msgstr "Foils Landslide"
+msgid "Beamer (Complex)"
+msgstr "Beamer (complesso)"
 
 #: lib/examples/Articles:0
 msgid "Foils"
 msgstr "Foils"
 
 #: lib/examples/Articles:0
-msgid "Beamer (Complex)"
-msgstr "Beamer (complesso)"
+msgid "Foils Landslide"
+msgstr "Foils Landslide"
 
 #: lib/examples/Articles:0
 msgid "Welcome"
@@ -32766,12 +32750,8 @@ msgid "Writing Korean with CJK-ko"
 msgstr "Scrivere in coreano con CJK-ko"
 
 #: lib/examples/Articles:0
-msgid "Mathematical Monthly"
-msgstr "Mathematical Monthly"
-
-#: lib/examples/Articles:0
-msgid "Springers Global Journal Template (V. 3)"
-msgstr "Springers Global Journal Template (V. 3)"
+msgid "Hebrew Article (KOMA-Script)"
+msgstr "Articolo ebraico (KOMA-Script)"
 
 #: lib/examples/Articles:0
 msgid "IEEE Transactions Conference"
@@ -32782,68 +32762,68 @@ msgid "IEEE Transactions Journal"
 msgstr "IEEE Transactions Journal"
 
 #: lib/examples/Articles:0
-msgid "Hebrew Article (KOMA-Script)"
-msgstr "Articolo ebraico (KOMA-Script)"
+msgid "Mathematical Monthly"
+msgstr "Mathematical Monthly"
+
+#: lib/examples/Articles:0
+msgid "Springers Global Journal Template (V. 3)"
+msgstr "Springers Global Journal Template (V. 3)"
 
 #: lib/examples/Articles:0
 msgid "00 Main File"
 msgstr "00 File principale"
 
 #: lib/examples/Articles:0
-msgid "02 Foreword"
-msgstr "02 Preambolo"
-
-#: lib/examples/Articles:0
-msgid "10 Glossary"
-msgstr "10 Glossario"
-
-#: lib/examples/Articles:0
-msgid "09 Appendix"
-msgstr "09 Appendice"
-
-#: lib/examples/Articles:0
-msgid "11 References"
-msgstr "11 Riferimenti"
-
-#: lib/examples/Articles:0
-msgid "04 Acknowledgements"
-msgstr "04 Riconoscimenti"
-
-#: lib/examples/Articles:0
-msgid "08 Author"
-msgstr "08 Autore"
-
-#: lib/examples/Articles:0
-msgid "06 Acronym"
-msgstr "06 Acronimo"
-
-#: lib/examples/Articles:0
 msgid "01 Dedication"
 msgstr "01 Dedica"
+
+#: lib/examples/Articles:0
+msgid "02 Foreword"
+msgstr "02 Preambolo"
 
 #: lib/examples/Articles:0
 msgid "03 Preface"
 msgstr "03 Prefazione"
 
 #: lib/examples/Articles:0
-msgid "07 Part"
-msgstr "07 Parte"
+msgid "04 Acknowledgements"
+msgstr "04 Riconoscimenti"
 
 #: lib/examples/Articles:0
 msgid "05 Contributor List"
 msgstr "05 Elenco contributori"
 
 #: lib/examples/Articles:0
-msgid "09 Glossary"
-msgstr "09 Glossario"
+msgid "06 Acronym"
+msgstr "06 Acronimo"
 
 #: lib/examples/Articles:0
-msgid "06 Part"
-msgstr "06 Parte"
+msgid "07 Part"
+msgstr "07 Parte"
+
+#: lib/examples/Articles:0
+msgid "08 Author"
+msgstr "08 Autore"
+
+#: lib/examples/Articles:0
+msgid "09 Appendix"
+msgstr "09 Appendice"
+
+#: lib/examples/Articles:0
+msgid "10 Glossary"
+msgstr "10 Glossario"
+
+#: lib/examples/Articles:0
+msgid "11 References"
+msgstr "11 Riferimenti"
 
 #: lib/examples/Articles:0
 msgid "05 Acronym"
 msgstr "05 Acronimo"
+
+#: lib/examples/Articles:0
+msgid "06 Part"
+msgstr "06 Parte"
 
 #: lib/examples/Articles:0
 msgid "07 Chapter"
@@ -32854,6 +32834,10 @@ msgid "08 Appendix"
 msgstr "08 Appendice"
 
 #: lib/examples/Articles:0
+msgid "09 Glossary"
+msgstr "09 Glossario"
+
+#: lib/examples/Articles:0
 msgid "10 Solutions"
 msgstr "10 Soluzioni"
 
@@ -32862,16 +32846,12 @@ msgid "Econometrica"
 msgstr "Econometrica"
 
 #: lib/examples/Articles:0
-msgid "Simple"
-msgstr "Semplice"
-
-#: lib/examples/Articles:0
 msgid "Colored"
 msgstr "Colorato"
 
 #: lib/examples/Articles:0
-msgid "Main File"
-msgstr "File principale"
+msgid "Simple"
+msgstr "Semplice"
 
 #: lib/examples/Articles:0
 msgid "Chapter 1"
@@ -32882,6 +32862,10 @@ msgid "Chapter 2"
 msgstr "Capitolo 2"
 
 #: lib/examples/Articles:0
+msgid "Main File"
+msgstr "File principale"
+
+#: lib/examples/Articles:0
 msgid "PhD Thesis"
 msgstr "Tesi di dottorato"
 
@@ -32890,16 +32874,16 @@ msgid "Theses"
 msgstr "Tesi"
 
 #: lib/examples/Articles:0
-msgid "Japanese Report (Standard Class for LuaTeX%2C vertical Writing)"
-msgstr "Libro giapponese (classe standard per LuaTeX, scrittura verticale)"
+msgid "Japanese Article (Standard Class for LuaTeX%2C vertical Writing)"
+msgstr "Articolo giapponese (classe standard per LuaTeX, scrittura verticale)"
 
 #: lib/examples/Articles:0
 msgid "Japanese Book (Standard Class for LuaTeX%2C vertical Writing)"
 msgstr "Libro giapponese (classe standard per LuaTeX, scrittura verticale)"
 
 #: lib/examples/Articles:0
-msgid "Japanese Article (Standard Class for LuaTeX%2C vertical Writing)"
-msgstr "Articolo giapponese (classe standard per LuaTeX, scrittura verticale)"
+msgid "Japanese Report (Standard Class for LuaTeX%2C vertical Writing)"
+msgstr "Libro giapponese (classe standard per LuaTeX, scrittura verticale)"
 
 #: lib/tabletemplates/Formal_with_Footline.lyx:0
 msgid "Formal with Footline"
@@ -34072,22 +34056,22 @@ msgstr "Nome ramo"
 msgid "Branch already exists"
 msgstr "Il ramo esiste già"
 
-#: src/BufferView.cpp:3463
+#: src/BufferView.cpp:3471
 #, c-format
 msgid "Inserting document %1$s..."
 msgstr "Sto inserendo il documento %1$s..."
 
-#: src/BufferView.cpp:3480
+#: src/BufferView.cpp:3488
 #, c-format
 msgid "Document %1$s inserted."
 msgstr "Documento %1$s inserito."
 
-#: src/BufferView.cpp:3482
+#: src/BufferView.cpp:3490
 #, c-format
 msgid "Could not insert document %1$s"
 msgstr "Non riesco ad inserire il documento %1$s"
 
-#: src/BufferView.cpp:3988
+#: src/BufferView.cpp:3996
 #, c-format
 msgid ""
 "Could not read the specified document\n"
@@ -34098,11 +34082,11 @@ msgstr ""
 "%1$s\n"
 "a causa dell'errore: %2$s"
 
-#: src/BufferView.cpp:3990
+#: src/BufferView.cpp:3998
 msgid "Could not read file"
 msgstr "Non riesco a leggere il file"
 
-#: src/BufferView.cpp:3997
+#: src/BufferView.cpp:4005
 #, c-format
 msgid ""
 "%1$s\n"
@@ -34111,17 +34095,17 @@ msgstr ""
 "%1$s\n"
 "non può essere letto."
 
-#: src/BufferView.cpp:3998 src/frontends/qt/qt_helpers.cpp:323
+#: src/BufferView.cpp:4006 src/frontends/qt/qt_helpers.cpp:323
 #: src/frontends/qt/qt_helpers.cpp:330 src/frontends/qt/qt_helpers.cpp:396
 #: src/output.cpp:38
 msgid "Could not open file"
 msgstr "Non riesco ad aprire il file"
 
-#: src/BufferView.cpp:4005
+#: src/BufferView.cpp:4013
 msgid "Reading not UTF-8 encoded file"
 msgstr "Lettura di un file non codificato UTF-8"
 
-#: src/BufferView.cpp:4006
+#: src/BufferView.cpp:4014
 msgid ""
 "The file is not UTF-8 encoded.\n"
 "It will be read as local 8Bit-encoded.\n"
@@ -35502,8 +35486,8 @@ msgid ""
 "Failed to create directory. Perhaps wrong -userdir command-line option?\n"
 "Exiting."
 msgstr ""
-"Non è stato possibile creare la cartella. Possibilmente un errata opzione -"
-"userdir?\n"
+"Non è stato possibile creare la cartella. Possibilmente un errata opzione "
+"-userdir?\n"
 "Abbandono."
 
 #: src/LyX.cpp:1182
@@ -35739,11 +35723,11 @@ msgstr ""
 
 #: src/LyXRC.cpp:3219
 msgid ""
-"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 -"
-"n38\" Refer to the ChkTeX documentation."
+"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
+"-n38\" Refer to the ChkTeX documentation."
 msgstr ""
-"Definisce come avviare chktex. Cioè: \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -"
-"n30 -n38\". Fare riferimento alla documentazione di ChkTeX."
+"Definisce come avviare chktex. Cioè: \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 "
+"-n30 -n38\". Fare riferimento alla documentazione di ChkTeX."
 
 #: src/LyXRC.cpp:3226
 msgid ""
@@ -36146,8 +36130,8 @@ msgid ""
 "This starts the lyxserver. The pipes get an additional extension \".in\" and "
 "\".out\". Only for advanced users."
 msgstr ""
-"Questo avvia il lyxserver. Le pipe richiedono un estensione addizionale \"."
-"in\" e \".out\". Solo per utenti esperti."
+"Questo avvia il lyxserver. Le pipe richiedono un estensione addizionale "
+"\".in\" e \".out\". Solo per utenti esperti."
 
 #: src/LyXRC.cpp:3507
 msgid "De-select if you don't want the startup banner."
@@ -41411,19 +41395,19 @@ msgstr "Dimensione icone impostata a %1$d×%2$d."
 msgid "%1$s unknown command!"
 msgstr "%1$s è un comando sconosciuto!"
 
-#: src/frontends/qt/GuiView.cpp:5279
+#: src/frontends/qt/GuiView.cpp:5286
 msgid "Zoom level is now %1$d% (default value: %2$d%)"
 msgstr "Zoom: %1$d% (default: %2$d%)"
 
-#: src/frontends/qt/GuiView.cpp:5342
+#: src/frontends/qt/GuiView.cpp:5349
 msgid "Please, preview the document first."
 msgstr "Occorre visualizzare il documento prima."
 
-#: src/frontends/qt/GuiView.cpp:5360
+#: src/frontends/qt/GuiView.cpp:5367
 msgid "Couldn't proceed."
 msgstr "Non posso procedere."
 
-#: src/frontends/qt/GuiView.cpp:5740
+#: src/frontends/qt/GuiView.cpp:5747
 msgid "Disable Shell Escape"
 msgstr "Disabilita Shell Escape"
 
@@ -43713,7 +43697,7 @@ msgid "Match found."
 msgstr "Corrispondenza trovata."
 
 #: src/mathed/InsetMathAMSArray.cpp:136 src/mathed/InsetMathCases.cpp:91
-#: src/mathed/InsetMathHull.cpp:2267 src/mathed/InsetMathSplit.cpp:127
+#: src/mathed/InsetMathHull.cpp:2301 src/mathed/InsetMathSplit.cpp:127
 #: src/mathed/InsetMathSubstack.cpp:89
 #, c-format
 msgid "Can't add vertical grid lines in '%1$s'"
@@ -43769,16 +43753,16 @@ msgstr "Nessuna linea verticale da cancellare"
 msgid "Unknown tabular feature '%1$s'"
 msgstr "La caratteristica della tabella '%1$s' è sconosciuta"
 
-#: src/mathed/InsetMathHull.cpp:1803
+#: src/mathed/InsetMathHull.cpp:1837
 #, c-format
 msgid "Type: %1$s"
 msgstr "Tipo: %1$s"
 
-#: src/mathed/InsetMathHull.cpp:1839
+#: src/mathed/InsetMathHull.cpp:1873
 msgid "Bad math environment"
 msgstr "Contesto matematico errato"
 
-#: src/mathed/InsetMathHull.cpp:1840
+#: src/mathed/InsetMathHull.cpp:1874
 msgid ""
 "Computation cannot be performed for AMS math environments.\n"
 "Change the math formula type and try again."
@@ -43786,16 +43770,16 @@ msgstr ""
 "Il calcolo non può essere effettuato in contesti matematici AMS.\n"
 "Occorre cambiare il tipo di formula matematica e riprovare."
 
-#: src/mathed/InsetMathHull.cpp:1962 src/mathed/InsetMathHull.cpp:1971
+#: src/mathed/InsetMathHull.cpp:1996 src/mathed/InsetMathHull.cpp:2005
 msgid "No number"
 msgstr "Nessun numero"
 
-#: src/mathed/InsetMathHull.cpp:2250
+#: src/mathed/InsetMathHull.cpp:2284
 #, c-format
 msgid "Can't change number of rows in '%1$s'"
 msgstr "Non posso cambiare il numero di righe in '%1$s'"
 
-#: src/mathed/InsetMathHull.cpp:2260
+#: src/mathed/InsetMathHull.cpp:2294
 #, c-format
 msgid "Can't change number of columns in '%1$s'"
 msgstr "Non posso cambiare il numero di colonne in '%1$s'"
@@ -47282,13 +47266,13 @@ msgstr "Utente sconosciuto"
 #~ msgid ""
 #~ "{%author%[[%author%, ]][[{%editor%[[%editor%, ed., ]]}]]}\"%title%"
 #~ "\"{%journal%[[, {!<i>!}%journal%{!</i>!}]][[{%publisher%[[, %publisher%]]"
-#~ "[[{%institution%[[, %institution%]]}]]}]]}{%year%[[ (%year%)]]}"
-#~ "{%pages%[[, %pages%]]}."
+#~ "[[{%institution%[[, %institution%]]}]]}]]}{%year%[[ (%year%)]]}{%pages%"
+#~ "[[, %pages%]]}."
 #~ msgstr ""
 #~ "{%author%[[%author%, ]][[{%editor%[[%editor%, ed., ]]}]]}\"%title%"
 #~ "\"{%journal%[[, {!<i>!}%journal%{!</i>!}]][[{%publisher%[[, %publisher%]]"
-#~ "[[{%institution%[[, %institution%]]}]]}]]}{%year%[[ (%year%)]]}"
-#~ "{%pages%[[, %pages%]]}."
+#~ "[[{%institution%[[, %institution%]]}]]}]]}{%year%[[ (%year%)]]}{%pages%"
+#~ "[[, %pages%]]}."
 
 #~ msgid "Use the XeTeX processing engine"
 #~ msgstr "Usa XeTeX per la compilazione"
@@ -48157,8 +48141,8 @@ msgstr "Utente sconosciuto"
 #~ msgid ""
 #~ "Specify an alternate personal dictionary file. E.g. \".aspell_english\"."
 #~ msgstr ""
-#~ "Specifica un dizionario personale alternativo. Per esempio: \"."
-#~ "aspell_english\"."
+#~ "Specifica un dizionario personale alternativo. Per esempio: "
+#~ "\".aspell_english\"."
 
 #~ msgid ""
 #~ "Specify whether to pass the -T input encoding option to aspell. Enable "
