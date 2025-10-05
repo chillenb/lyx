@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -54,11 +54,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Índice
 \shortcut idx
 \color #008000
@@ -75,7 +83,7 @@
 \papersides 1
 \paperpagestyle plain
 \tablestyle default
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \change_bars false
 \postpone_fragile_content false
@@ -84,7 +92,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
-\author -1463541724 "Daniel" d3vf4n@tutanota.com
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -176,13 +184,7 @@ de manera explícita
 
 \begin_layout Standard
 3.
- Intentos 
-\change_deleted -1463541724 1694119762
-fallidos
-\change_inserted -1463541724 1694119763
-simples
-\change_unchanged
- de usar más cosas de \SpecialChar LyX
+ Intentos simples de usar más cosas de \SpecialChar LyX
 
 \end_layout
 
@@ -231,13 +233,7 @@ Pista:
 \begin_layout Standard
 La filosofía básica de \SpecialChar LyX
  es que te preocupes del contenido de lo que escribes,
- no de 
-\change_inserted -1463541724 1694105090
-su presentación
-\change_deleted -1463541724 1694105084
-la forma
-\change_unchanged
-.
+ no de su presentación.
 \end_layout
 
 \begin_layout Standard
@@ -250,11 +246,7 @@ la forma
  utiliza \SpecialChar LaTeX
 ,
  un sistema de preparación de documentos diseñado por Leslie Lamport en 1985.
- Fue construido sobre un lenguaje de composición
-\change_inserted -1463541724 1694105112
- tipográfica
-\change_unchanged
- llamado \SpecialChar TeX
+ Fue construido sobre un lenguaje de composición tipográfica llamado \SpecialChar TeX
 ,
  creado por Donald Knuth en 1984.
  \SpecialChar LaTeX
@@ -288,20 +280,10 @@ de Lamport en la segunda entrada de la bibliografía?
  Para que un documento sea fácil de leer,
  su estructura visual debe reflejar su estructura lógica.
  Las citas y los programas de ordenador,
- al ser elementos 
-\change_inserted -1463541724 1694114230
-lógica y 
-\change_unchanged
-estructuralmente distintos,
+ al ser elementos lógica y estructuralmente distintos,
  deberían distinguirse visualmente uno de otro [...] Como \SpecialChar LaTeX
  no puede entenderte directamente,
- debes indicarle explícitamente la estructura lógica mediante 
-\change_deleted -1463541724 1694114282
-comandos
-\change_inserted -1463541724 1694114381
-instrucciones
-\change_unchanged
- especiales [...] Mientras escribes el documento,
+ debes indicarle explícitamente la estructura lógica mediante instrucciones especiales [...] Mientras escribes el documento,
  deberías preocuparte de su estructura lógica,
  no de su apariencia.».
 \begin_inset Note Note
@@ -336,11 +318,6 @@ Pista:
  De esta forma,
  combina la facilidad de uso de los procesadores de texto con la potencia de \SpecialChar LaTeX
 .
- 
-\change_deleted -1463541724 1694114452
-Esto es Bueno.
-
-\change_unchanged
  Además,
  el formato de fichero es independiente del ordenador/sistema que uses.
  Y lo mejor de todo,
@@ -378,46 +355,18 @@ status open
 
 \begin_layout Plain Layout
 Pista:
- 
-\change_inserted -1463541724 1694113614
-Énfasis
-\change_deleted -1463541724 1694113611
-¡Resáltalo!
-\change_unchanged
-
+ Énfasis
 \end_layout
 
 \end_inset
 
- 
-\change_deleted -1463541724 1694113622
-de
-\change_inserted -1463541724 1694113622
-por
-\change_unchanged
- hablarte de ellas.
- Aquí tienes una lista con s
-\change_inserted -1463541724 1694114511
-o
-\change_deleted -1463541724 1694114506
-ó
-\change_unchanged
-lo unas pocas.
+ por hablarte de ellas.
+ Aquí tienes una lista con solo unas pocas.
 \end_layout
 
 \begin_layout Standard
 * \SpecialChar LyX
- se en
-\change_inserted -1463541724 1694113581
-c
-\change_deleted -1463541724 1694113581
-g
-\change_unchanged
-arga él solo de los márgenes y la numeración de las notas a pie de página
-\change_inserted -1463541724 1694116929
-.
-\change_unchanged
-
+ se encarga él solo de los márgenes y la numeración de las notas a pie de página.
 \end_layout
 
 \begin_layout Standard
@@ -441,25 +390,13 @@ Pista:
 
 \begin_layout Plain Layout
 deberían escribirse 
-\change_deleted -1463541724 1694114049
-"
-\change_inserted -1463541724 1694114050
-
 \begin_inset Quotes fld
 \end_inset
 
-
-\change_unchanged
 directamente
-\change_inserted -1463541724 1694114047
-
 \begin_inset Quotes frd
 \end_inset
 
-
-\change_deleted -1463541724 1694114046
-"
-\change_unchanged
 .
  ¿Y si cambiásemos los
 \end_layout
@@ -523,13 +460,7 @@ Después de este gran esfuerzo científico,
 
 \begin_layout Standard
 \SpecialChar LyX
- es 
-\change_deleted -1463541724 1694114031
-un maravilloso
-\change_inserted -1463541724 1694114032
-muy bueno
-\change_unchanged
-
+ es muy bueno
 \end_layout
 
 \begin_layout Standard
@@ -544,13 +475,7 @@ status open
 \begin_layout Plain Layout
 Pista:
  No es muy bueno,
- pero es poes
-\change_deleted -1463541724 1694113713
-i
-\change_inserted -1463541724 1694113713
-í
-\change_unchanged
-a,
+ pero es poesía,
  concretamente una
 \end_layout
 
@@ -575,13 +500,7 @@ Pista:
 \end_layout
 
 \begin_layout Plain Layout
-en modo matem
-\change_inserted -1463541724 1694113953
-á
-\change_deleted -1463541724 1694113953
-a
-\change_unchanged
-tico
+en modo matemático
 \end_layout
 
 \end_inset
@@ -590,13 +509,7 @@ tico
 \end_layout
 
 \begin_layout Standard
-Mi 
-\change_deleted -1463541724 1694113644
-ecuación
-\change_inserted -1463541724 1694113645
-fórmula
-\change_unchanged
- favorita es la solución de la ecuación de segundo grado.
+Mi fórmula favorita es la solución de la ecuación de segundo grado.
  Si ax^2+bx+c=0 (ec.1),
  entonces x= -b + o menos la raíz cuadrada de b^2-4ac,
  todo dividido por 2a (ec.
@@ -604,11 +517,7 @@ fórmula
 \end_layout
 
 \begin_layout Standard
-Otra de mis 
-\change_deleted -1463541724 1694113674
-ecuaciones 
-\change_unchanged
-favoritas es la base del cálculo:
+Otra de mis favoritas es la base del cálculo:
  f'(x) se define como el límite cuando deltax tiende a cero de f(x+deltax) - f(x) dividido por deltax (ec.
  3).
 \end_layout
