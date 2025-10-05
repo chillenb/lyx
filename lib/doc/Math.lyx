@@ -1,5 +1,5 @@
 #LyX 2.5 created this file. For more info see https://www.lyx.org/
-\lyxformat 641
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -244,9 +244,6 @@ logicalmkup
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
-\author -1900975149 "Koji Yokota" yokota@lyx.org
-\author -712698321 "Jürgen Spitzmüller"
-\author 5863208 "ab"
 \end_header
 
 \begin_body
@@ -305,13 +302,7 @@ author:
 
 
 \family sans
-Version 2.
-\change_deleted -1900975149 1752684621
-4
-\change_inserted -1900975149 1752684625
-5
-\change_unchanged
-.x
+Version 2.5.x
 \end_layout
 
 \begin_layout Standard
@@ -624,7 +615,6 @@ arg   "math-mutate equation"
 \end_inset
 
  to change from an inline to a display style formula.
- 
 \end_layout
 
 \begin_layout Standard
@@ -4250,7 +4240,7 @@ hphantom
 vphantom
 \series default
  creates only space for the width of the box content.
- Therefore  the boxes of both commands have only one red arrow.
+ Therefore the boxes of both commands have only one red arrow.
 \end_layout
 
 \begin_layout Standard
@@ -15178,7 +15168,7 @@ sqrt
 \begin_inset space \textvisiblespace{}
 \end_inset
 
-B 
+B
 \end_layout
 
 \end_inset
@@ -17159,7 +17149,6 @@ fint
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
 \begin_inset Formula $\fint$
 \end_inset
 
@@ -17185,7 +17174,6 @@ landupint
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
 \begin_inset Formula $\landupint$
 \end_inset
 
@@ -17211,7 +17199,6 @@ landdownint
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
 \begin_inset Formula $\landdownint$
 \end_inset
 
@@ -19589,7 +19576,7 @@ Box
 \begin_layout Plain Layout
 
 \backslash
-cap 
+cap
 \end_layout
 
 \end_inset
@@ -25714,21 +25701,6 @@ An overview about the different Euro symbols:
 
 \begin_layout Plain Layout
 
-\change_deleted -712698321 1750238229
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-cmidrule[0.08em]{2-3}
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -25737,7 +25709,7 @@ cmidrule[0.08em]{2-3}
 \begin_inset Text
 
 \begin_layout Plain Layout
-Command 
+Command
 \end_layout
 
 \end_inset
@@ -25865,36 +25837,6 @@ officialeuro
 
 \end_inset
 
-
-\change_deleted -712698321 1750238266
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-
-\series bold
-
-\backslash
-cmidrule
-\series default
- is used here only for table borders.
- See sec.
- 
-\family sans
-Formal Tables
-\family default
- of the 
-\emph on
-EmbeddedObjects
-\emph default
- manual for details.
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -28888,7 +28830,6 @@ mod.
 b
 \series default
  as argument but acts as a binary operator.
- 
 \end_layout
 
 \begin_layout Section
@@ -33211,11 +33152,7 @@ text
 In the align environments as well as the multline and gather environment,
  text can be inserted that will appear in a separate line and doesn't affect the column alignment.
  To do this,
- 
-\change_inserted -1900975149 1752713723
-let 
-\change_unchanged
-the command 
+ let the command 
 \series bold
 
 \backslash
@@ -33255,40 +33192,17 @@ intertext
 
 \end_inset
 
- 
-\change_deleted -1900975149 1752713728
-is
-\change_inserted -1900975149 1752713729
-be
-\change_unchanged
- used
-\change_inserted -1900975149 1752713868
- in the \SpecialChar LaTeX
+ be used in the \SpecialChar LaTeX
  background.
  On \SpecialChar LyX
 ,
  it can be inserted either by typing the command directly at the beginning of a line of equations followed by a space key,
  or by clicking the text icon 
-\change_deleted -712698321 1752813527
-
-\begin_inset Graphics
-	filename ../images/math/dynamic-math-texts.svgz
-	lyxscale 15
-	darkModeSensitive
-	width 16pt
-
-\end_inset
-
-
-\change_inserted -712698321 1752813538
-
 \begin_inset Info
 type  "icon"
 arg   "math-insert \\math-texts"
 \end_inset
 
-
-\change_inserted -1900975149 1752713868
  on the math panel and then choosing 
 \begin_inset Quotes eld
 \end_inset
@@ -33317,45 +33231,10 @@ shortintertext
 \series default
 ,
  can be inserted in a similar way.
-
-\change_deleted -1900975149 1752682177
- in the following scheme:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -1900975149 1752682177
-
-\series bold
-
-\backslash
-intertext{text}
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
 The text should not be longer than a line because it cannot be hyphenated.
- 
-\change_deleted -1900975149 1752684447
-As \SpecialChar LyX
- doesn't yet support 
-\series bold
-
-\backslash
-intertext
-\series default
- directly,
- the text is written as mathematical text.
- Therefore 
-\series bold
-
-\backslash
-intertext
-\series default
- must be at the beginning of a line and will appear in the output above this line.
-
-\change_unchanged
  An example where the text was inserted at the beginning of the second line:
 \begin_inset Formula 
 \begin{align}
@@ -33377,9 +33256,7 @@ intertext
 \series default
  always creates some vertical space between the text and the formula lines.
  To avoid this space,
- 
-\change_inserted -1900975149 1752685493
-the above 
+ the above 
 \backslash
 
 \series bold
@@ -33392,18 +33269,12 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752685493
 Commands
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752685493
 S
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -33414,37 +33285,19 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted -1900975149 1752685493
-
 \backslash
 shortintertext
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
 \end_inset
 
  can be used.
- Although it uses 
-\change_deleted -1900975149 1752685428
-in the document settings under 
-\family sans
-Math
-\begin_inset space ~
-\end_inset
-
-Options
-\family default
- for the 
-\change_unchanged
-package 
+ Although it uses package 
 \series bold
 mathtools
 \series default
@@ -33470,76 +33323,10 @@ mathtools
 
 \end_inset
 
-
-\change_inserted -1900975149 1752685471
 ,
  \SpecialChar LyX
  automatically loads it for you.
-
-\change_unchanged
- 
-\change_inserted -1900975149 1752685534
-Its output looks like:
- 
-\change_deleted -1900975149 1752685518
-set the option to 
-\family sans
-Load
-\begin_inset space ~
-\end_inset
-
-always
-\family default
-.
- Then you can use the command 
-\series bold
-
-\backslash
-shortintertext
-\series default
-
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-Commands
-\begin_inset IndexMacro subentry
-status open
-
-\begin_layout Plain Layout
-S
-\end_layout
-
-\end_inset
-
-
-\begin_inset IndexMacro subentry
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-shortintertext
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- instead of 
-\series bold
-
-\backslash
-intertext
-\series default
-:
-\change_unchanged
-
+ Its output looks like:
 \end_layout
 
 \begin_layout Standard
@@ -33647,7 +33434,6 @@ arg   "math-number-toggle"
 ).
  The formula number is displayed in \SpecialChar LyX
  behind the formula as a number in parentheses.
- 
 \end_layout
 
 \begin_layout Standard
@@ -38668,8 +38454,6 @@ Computer Algebra Systems
  offers the exchange between mathematical expressions written in \SpecialChar LyX
 's math editor and external applications or user defined scripts.
  Currently supported applications are 
-\change_inserted 5863208 1747563133
-
 \family typewriter
 Maple,
  Mathematica,
@@ -38678,33 +38462,9 @@ Maple,
  and 
 \family typewriter
 Octave
-\change_deleted 5863208 1747563144
-
-\family sans
-Maple
-\family default
-,
- 
-\family sans
-Mathematica
-\family default
-,
- 
-\family sans
-Maxima
-\family default
- and 
-\family sans
-Octave
-\change_unchanged
-
 \family default
 .
- Note that the set of supported mathematical constructs is limited
-\change_deleted 5863208 1747561997
- only to very simple cases
-\change_unchanged
-.
+ Note that the set of supported mathematical constructs is limited.
 \end_layout
 
 \begin_layout Subsection
@@ -38787,7 +38547,7 @@ Note:
 
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Itemize
@@ -38820,19 +38580,13 @@ Note:
 \end_inset
 
 
-\change_inserted 5863208 1747561211
-
 \end_layout
 
 \begin_layout Subsubsection
-
-\change_inserted 5863208 1747561759
 Notes for more sophisticated usage
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747563385
 The CAS interface in \SpecialChar LyX
  simply tries to translate a math expression to a form suitable as input to the various programs without trying any semantic interpretation.
  Thus,
@@ -38863,38 +38617,22 @@ Mathematica
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 In[1]:= (ab + 2ab)/b + 1/a + ab
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
-
-\end_layout
-
-\begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
         1        3 ab
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 Out[1]= - + ab + ----
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
         a         b
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 As you can see,
  
 \family typewriter
@@ -38920,38 +38658,22 @@ b
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 In[2]:= (a b + 2a b)/b + 1/a + a b
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
-
-\end_layout
-
-\begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
         1
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 Out[2]= - + 3 a + a b
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
         a
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747563400
 Using 
 \family typewriter
 Mathematica
@@ -38962,8 +38684,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $\frac{ab+2ab}{b}+\frac{1}{a}+ab=\frac{1}{a}+ab+\frac{3\,ab}{b}$
 \end_inset
 
@@ -38971,8 +38691,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 
 \family roman
 \series medium
@@ -38989,8 +38707,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $\frac{a*b+2a*b}{b}+\frac{1}{a}+a*b=\frac{1}{a}+3\,a+a\,b$
 \end_inset
 
@@ -38999,8 +38715,6 @@ Mathematica
 
 \begin_layout Standard
 \noindent
-
-\change_inserted 5863208 1747563407
 But we can also use 
 \family typewriter
 Mathematica
@@ -39009,8 +38723,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $Simplify[\frac{a\,b+2a\,b}{b}+\frac{1}{a}+a\,b]=\frac{1}{a}+a\,\left(3+b\right)$
 \end_inset
 
@@ -39018,8 +38730,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $Sin[Pi/4]=\frac{1}{{\sqrt{2}}}$
 \end_inset
 
@@ -39036,8 +38746,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $TrigExpand[Cos[\alpha+\beta]]=\cos(\alpha)\,\cos(\beta)-\sin(\alpha)\,\sin(\beta)$
 \end_inset
 
@@ -39045,8 +38753,6 @@ Mathematica
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $TrigExpand[\cos\left(\alpha+\beta\right)]=\cos(\alpha)\,\cos(\beta)-\sin(\alpha)\,\sin(\beta)$
 \end_inset
 
@@ -39055,15 +38761,11 @@ Mathematica
 
 \begin_layout Standard
 \noindent
-
-\change_inserted 5863208 1747561760
 Each CAS program follows its own rules.
 \end_layout
 
 \begin_layout Standard
 \noindent
-
-\change_inserted 5863208 1747563168
 
 \family typewriter
 Maxima
@@ -39076,107 +38778,73 @@ Maxima
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (%i1) (ab + 2ab)/b + 1/a + ab;
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 incorrect syntax:
  ab is not an infix operator
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (ab + 2ab)
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
         ^
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (%i1) (a b + 2 a b)/b + 1/a + a b;
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 incorrect syntax:
  b is not an infix operator
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (a b
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
    ^
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (%i1) (a*b + 2a*b)/b + 1/a + a*b;
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 incorrect syntax:
  a is not an infix operator
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (a*b + 2a*
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
         ^
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (%i1) (a*b + 2*a*b)/b + 1/a + a*b;
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
                                              1
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
 (%o1)                            a b + 3 a + -
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted 5863208 1747561760
                                              a
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747563174
 As you can see,
  we have to use 
 \family typewriter
@@ -39198,8 +38866,6 @@ Maxima
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $\frac{ab+2ab}{b}+\frac{1}{a}+ab=$
 \end_inset
 
@@ -39207,8 +38873,6 @@ Maxima
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $\frac{a\,b+2\,a\,b}{b}+\frac{1}{a}+a\,b=$
 \end_inset
 
@@ -39216,8 +38880,6 @@ Maxima
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $\frac{a*b+2a*b}{b}+\frac{1}{a}+a*b=$
 \end_inset
 
@@ -39225,8 +38887,6 @@ Maxima
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1747561760
 \begin_inset Formula $\frac{a*b+2*a*b}{b}+\frac{1}{a}+a*b=a\,b+3\,a+\frac{1}{a}$
 \end_inset
 
@@ -39235,8 +38895,6 @@ Maxima
 
 \begin_layout Standard
 \noindent
-
-\change_inserted 5863208 1747566263
 To sum up 
 \family typewriter
 Maxima

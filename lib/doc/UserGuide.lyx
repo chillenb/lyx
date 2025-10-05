@@ -166,14 +166,6 @@ logicalmkup
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
-\author -1900975149 "Koji Yokota" yokota@lyx.org
-\author -1162675398 "Tobias Hilbricht" hilbricht@linopus.de
-\author -712698321 "Jürgen Spitzmüller"
-\author -584632292 "Richard Kimberly Heck"
-\author -495245474 "Jean-Marc Lasgouttes"
-\author 5863208 "ab"
-\author 1075283030 "Thibaut"
-\author 1549938239 "Kornel Benko"
 \end_header
 
 \begin_body
@@ -216,13 +208,7 @@ literal "false"
 \begin_inset Newline newline
 \end_inset
 
-Version 2.
-\change_deleted -1900975149 1752836134
-4
-\change_inserted -1900975149 1752836136
-5
-\change_unchanged
-.x
+Version 2.5.x
 \begin_inset Note Note
 status collapsed
 
@@ -1617,13 +1603,7 @@ PDF
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -495245474 1747237609
-macOS
-\change_deleted -495245474 1747237605
-OS X
-\change_unchanged
- only
+macOS only
 \end_layout
 
 \end_inset
@@ -1865,7 +1845,6 @@ test
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Itemize
@@ -1906,7 +1885,6 @@ starlet
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Itemize
@@ -4998,25 +4976,12 @@ Paper size
 \end_inset
 
 
-\change_inserted -712698321 1750234820
-
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:Paper-Size-Orientation"
 
 \end_inset
 
-
-\change_deleted -712698321 1750234820
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:Paper-Size,-Orientation"
-
-\end_inset
-
-
-\change_unchanged
 
 \end_layout
 
@@ -8403,7 +8368,6 @@ To resume an enumeration,
 Enumerate-Resume
 \family default
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -9569,10 +9533,6 @@ Here is an example:
 
 \begin_layout LyX-Code
 #include <stdio.h>
-\end_layout
-
-\begin_layout LyX-Code
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -13419,7 +13379,7 @@ status open
 
 \begin_layout Plain Layout
 Mr.
- Edge 
+ Edge
 \end_layout
 
 \end_inset
@@ -13434,7 +13394,7 @@ status open
 
 \begin_layout Plain Layout
 Mr.
- Edge 
+ Edge
 \end_layout
 
 \end_inset
@@ -15447,7 +15407,6 @@ microtype
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -17168,112 +17127,11 @@ Main
 text
 \family default
  is used,
- you can select 
-\change_deleted -712698321 1740035527
-
-\family sans
-Black
-\family default
-,
- 
-\family sans
-White
-\family default
-,
- 
-\family sans
-Red
-\family default
-,
- 
-\family sans
-Green
-\family default
-,
- 
-\family sans
-Blue
-\family default
-,
- 
-\family sans
-Cyan
-\family default
-,
- 
-\family sans
-Magenta
-\family default
-,
- 
-\family sans
-Yellow
-\family default
-,
- 
-\family sans
-Brown
-\family default
-,
- 
-\family sans
-Darkgray
-\family default
-,
- 
-\family sans
-Gray
-\family default
-,
- 
-\family sans
-Lightgray
-\family default
-,
- 
-\family sans
-Lime
-\family default
-,
- 
-\family sans
-Orange
-\family default
-,
- 
-\family sans
-Olive
-\family default
-,
- 
-\family sans
-Pink
-\family default
-,
- 
-\family sans
-Purple
-\family default
-,
- 
-\family sans
-Teal
-\family default
- and 
-\family sans
-Violet
-\family default
- text
-\change_inserted -712698321 1740035670
-from more than 750 predefined colors as defined by different color schemes (\SpecialChar LaTeX
+ you can select from more than 750 predefined colors as defined by different color schemes (\SpecialChar LaTeX
  base colors,
  DVIPS colors,
  SVG colors,
- and X11 colors)
-\change_unchanged
-.
-
-\change_inserted -712698321 1740064151
+ and X11 colors).
  To find your way through that long list,
  you can search colors in this dropdown simply by typing while the list is open.
 \begin_inset Newline newline
@@ -17293,8 +17151,6 @@ reference "sec:Colors"
 \end_inset
 
 ).
-\change_unchanged
-
 \begin_inset Index idx
 range none
 pageformat default
@@ -17625,7 +17481,6 @@ arg   "textstyle-apply"
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -18628,13 +18483,9 @@ Export\SpecialChar menuseparator
 LyXHTML
 \family default
 .
-\change_inserted 1075283030 1738976031
-
 \end_layout
 
 \begin_layout Subsubsection
-
-\change_inserted 1075283030 1738976049
 DocBook
 \begin_inset Index idx
 range none
@@ -18642,24 +18493,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1075283030 1738976031
 File formats
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1075283030 1738976038
 DocBook
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -18672,11 +18515,7 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1075283030 1738976042
 DocBook
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -18685,8 +18524,6 @@ DocBook
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1075283030 1738976174
 This file type has the extension 
 \begin_inset Quotes eld
 \end_inset
@@ -18718,8 +18555,6 @@ Output
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1075283030 1738976181
 DocBook output remains 
 \begin_inset Quotes eld
 \end_inset
@@ -18734,13 +18569,7 @@ under development
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1075283030 1738976809
-You can export your document as an X
-\change_deleted 5863208 1739017671
-HT
-\change_inserted 1075283030 1738976809
-ML file using the menu item 
+You can export your document as an XML file using the menu item 
 \family sans
 File\SpecialChar menuseparator
 Export\SpecialChar menuseparator
@@ -18768,8 +18597,6 @@ nolink "false"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -22871,14 +22698,10 @@ name "subsec:Image-Formats"
 
 \begin_layout Standard
 You can insert images
-\change_inserted 5863208 1701369912
-
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 5863208 1701371417
 Apart from static images specific scripts generating images can be used as well.
  For example one can use Gnuplot script (files with 
 \begin_inset Quotes eld
@@ -22905,8 +22728,6 @@ Apart from static images specific scripts generating images can be used as well.
 
 \family default
  extension) instead of image filename.
-
-\change_inserted -1162675398 1718386882
  Gnuplot scripts can also be included as external material.
  Labels and numbers are then typeset in document fonts,
  and LaTeX math used in the Gnuplot script is rendered.
@@ -22920,14 +22741,10 @@ literal "false"
 \end_inset
 
  for more information about installing the template for Gnuplot scripts as external material.
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  in any known file format.
  But as we explained in section
 \begin_inset space ~
@@ -26620,19 +26437,13 @@ Shift
 \family default
  plus the arrow keys works as usual.
  You can also copy and paste the entire table as a single unit by starting the selection from outside the table.
-\change_inserted -712698321 1740816072
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1740816077
 Colors
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740816278
 You can set the background color of individual cells,
  whole rows or columns,
  and the color of the table borders (rules) in the table settings dialog.
@@ -26645,8 +26456,6 @@ Embedded Object
 Colored Tables
 \emph default
 ) for details and examples.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -30962,25 +30771,7 @@ Text
 Typefaces are useful for entering some characters in some given font,
  but not for text.
  For typing longer pieces of text use the math text,
- which is obtained using the entr
-\change_inserted -1900975149 1752824536
-ies
-\change_deleted -1900975149 1752824547
-y 
-\family sans
-Normal
-\begin_inset space ~
-\end_inset
-
-text
-\begin_inset space ~
-\end_inset
-
-mode
-\change_unchanged
-
-\family default
- of the 
+ which is obtained using the entries of the 
 \family sans
 Math
 \begin_inset space ~
@@ -30995,17 +30786,9 @@ arg   "math-insert \\math-texts"
 \end_inset
 
 .
- 
-\change_inserted -1900975149 1752835977
-The entries 
-\change_deleted -712698321 1754291031
-
+ The entries 
 \family sans
-LR
-\change_inserted -712698321 1754291032
 Basic
-\change_inserted -1900975149 1752835977
-
 \begin_inset space ~
 \end_inset
 
@@ -31013,22 +30796,12 @@ Text
 \family default
 ,
  
-\change_deleted -712698321 1754291039
-
 \family sans
-AMS
-\change_inserted -712698321 1754291042
 Adapting
-\change_inserted -1900975149 1752835977
-
 \begin_inset space ~
 \end_inset
 
-Text
-\change_inserted -712698321 1754291052
- (AMS)
-\change_inserted -1900975149 1752835977
-
+Text (AMS)
 \family default
 ,
  
@@ -31053,15 +30826,7 @@ Text
 \family default
  can be used for typing normal texts.
  Note that those texts cannot be broken into lines.
- 
-\change_deleted -712698321 1752905838
-While they use different \SpecialChar LaTeX
- commands,
- they can be used interchangeably in most of cases in \SpecialChar LyX
-,
- and there are no noticeable differences
-\change_inserted -712698321 1754291091
-The difference of these commands is how they set fonts.
+ The difference of these commands is how they set fonts.
  
 \family sans
 Basic
@@ -31102,12 +30867,8 @@ Text
 \family default
  sets it to the base font (family,
  shape.
- etc.)
-\change_inserted -1900975149 1752835977
-.
- 
-\change_inserted -712698321 1754291122
-Also,
+ etc.).
+ Also,
  in contrast to
 \family sans
  Basic
@@ -31136,9 +30897,7 @@ Basic
 Text
 \family default
  sticks with the default settings.
- 
-\change_inserted -1900975149 1752835977
-For precise differences in their implementations,
+ For precise differences in their implementations,
  please refer to the manual of the underlying \SpecialChar LaTeX
  commands (see Table 
 \begin_inset CommandInset ref
@@ -31161,19 +30920,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\change_deleted -1900975149 1752834962
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\change_inserted -1900975149 1752834941
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835248
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Math-Text-Commands"
@@ -31181,21 +30930,15 @@ name "tab:Math-Text-Commands"
 \end_inset
 
 Math Text Commands
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Plain Layout
 \align center
-
-\change_inserted -1900975149 1752835003
 \begin_inset Tabular
 <lyxtabular version="3" rows="9" columns="2">
 <features borderColor="default" oddRowsColor="default" evenRowsColor="default" tabularvalignment="middle">
@@ -31206,11 +30949,7 @@ Math Text Commands
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835029
 Menu entry
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31219,12 +30958,8 @@ Menu entry
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835211
 Underlying \SpecialChar LaTeX
  command
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31236,20 +30971,12 @@ Underlying \SpecialChar LaTeX
 
 \begin_layout Plain Layout
 
-\change_deleted -712698321 1754291023
-
 \family sans
-LR
-\change_inserted -712698321 1754291024
 Basic
-\change_inserted -1900975149 1752835024
-
 \begin_inset space ~
 \end_inset
 
 Text
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31258,25 +30985,17 @@ Text
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835147
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -1900975149 1752835147
-
 \backslash
 mbox
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -31289,28 +31008,16 @@ mbox
 
 \begin_layout Plain Layout
 
-\change_inserted -1900975149 1752835036
-
 \family sans
-A
-\change_deleted -712698321 1754291131
-MS
-\change_inserted -712698321 1754291132
-dapting
-\change_inserted -1900975149 1752835036
-
+Adapting
 \begin_inset space ~
 \end_inset
 
 Text
-\change_inserted -712698321 1754291137
-
 \begin_inset space ~
 \end_inset
 
 (AMS)
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31319,25 +31026,17 @@ Text
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835157
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -1900975149 1752835161
-
 \backslash
 text
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -31349,8 +31048,6 @@ text
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835043
 
 \family sans
 Roman
@@ -31358,8 +31055,6 @@ Roman
 \end_inset
 
 Text
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31368,25 +31063,17 @@ Text
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835163
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -1900975149 1752835178
-
 \backslash
 textrm
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -31398,8 +31085,6 @@ textrm
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835051
 
 \family sans
 Normal
@@ -31411,8 +31096,6 @@ Font
 \end_inset
 
 Text
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31421,38 +31104,28 @@ Text
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835179
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -1900975149 1752835198
-
 \backslash
 textnormal
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
 \end_inset
 </cell>
 </row>
-<row change="inserted -1900975149 1752835003" color="default">
+<row color="default">
 <cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \family sans
 Framed
@@ -31468,14 +31141,10 @@ Text
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \backslash
 fbox
@@ -31489,13 +31158,11 @@ fbox
 \end_inset
 </cell>
 </row>
-<row change="inserted -1900975149 1752835003" color="default">
+<row color="default">
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \family sans
 Framed
@@ -31506,15 +31173,11 @@ Text
 \begin_inset space ~
 \end_inset
 
-
-\change_deleted -712698321 1754291155
 with
 \begin_inset space ~
 \end_inset
 
-Sizes
-\change_inserted -1900975149 1752835003
-(Adjustable)
+Sizes(Adjustable)
 \end_layout
 
 \end_inset
@@ -31523,14 +31186,10 @@ Sizes
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \backslash
 framebox
@@ -31544,13 +31203,11 @@ framebox
 \end_inset
 </cell>
 </row>
-<row change="inserted -1900975149 1752835003" color="default">
+<row color="default">
 <cell alignment="center" valignment="top" topline="true" leftline="true" color="default" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \family sans
 Intertext
@@ -31562,14 +31219,10 @@ Intertext
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \backslash
 intertext
@@ -31583,13 +31236,11 @@ intertext
 \end_inset
 </cell>
 </row>
-<row change="inserted -1900975149 1752835003" color="default">
+<row color="default">
 <cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" color="default" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \family sans
 Short
@@ -31605,14 +31256,10 @@ Intertext
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1752835003
 
 \backslash
 shortintertext
@@ -31631,8 +31278,6 @@ shortintertext
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -31641,8 +31286,6 @@ shortintertext
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1900975149 1752838348
 
 \family sans
 Framed
@@ -31661,17 +31304,7 @@ Text
 \begin_inset space ~
 \end_inset
 
-
-\change_deleted -712698321 1752906141
-with
-\begin_inset space ~
-\end_inset
-
-Sizes
-\change_inserted -712698321 1752906141
 (Adjustable)
-\change_inserted -1900975149 1752838348
-
 \family default
  type a text in a framed box.
  The former sets a text in a framed box of a default size.
@@ -31692,72 +31325,40 @@ tuple "list"
 
 .
  The text position can be specified using either letter 
-\change_deleted -712698321 1752906200
-l
-\change_inserted -712698321 1752906200
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1752906200
 l
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_inserted -1900975149 1752838348
  (left),
  
-\change_deleted -712698321 1752906209
-c
-\change_inserted -712698321 1752906209
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1752906209
 c
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_inserted -1900975149 1752838348
  (center) or 
-\change_deleted -712698321 1752906220
-r
-\change_inserted -712698321 1752906220
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1752906220
 r
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_inserted -1900975149 1752838348
  (right).
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1900975149 1752833122
 
 \family sans
 Intertext
@@ -31781,7 +31382,6 @@ Text in Multiline Formulas
 \end_inset
 
  in Math manual for their usage.
- 
 \end_layout
 
 \begin_layout Standard
@@ -32171,42 +31771,18 @@ name "sec:Cross-References"
 \begin_layout Standard
 One of \SpecialChar LyX
 's strengths is cross-references.
- You can reference every
-\change_inserted -712698321 1723183496
-thing in the document that has a counter
-\change_unchanged
- 
-\change_inserted -712698321 1723183501
-(e.
+ You can reference everything in the document that has a counter (e.
 \begin_inset space \thinspace{}
 \end_inset
 
 g.,
- 
-\change_unchanged
-section,
+ section,
  float,
  footnote,
  formula,
- and list
-\change_inserted -712698321 1723183507
-)
-\change_deleted -712698321 1723183511
- in the document
-\change_unchanged
-.
+ and list).
  To reference a document part,
- 
-\change_deleted -712698321 1743945136
-you have to insert
-\change_inserted -712698321 1743945140
-it needs to have
-\change_unchanged
- a label
-\change_deleted -712698321 1743945148
- into it
-\change_unchanged
-.
+ it needs to have a label.
  The label is used as an anchor and a name for the reference.
  We want for example to refer to the second item of the following list:
 \end_layout
@@ -32230,8 +31806,6 @@ Third item
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743945230
 Labels can be inserted manually,
  as described in what follows,
  but \SpecialChar LyX
@@ -32240,29 +31814,13 @@ Labels can be inserted manually,
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743945473
 To manually insert a label,
- 
-\change_deleted -712698321 1743945482
-First we insert a label into the second item with
-\change_inserted -712698321 1743945482
-use
-\change_unchanged
- the menu 
+ use the menu 
 \family sans
 Insert\SpecialChar menuseparator
 Label
 \family default
- or 
-\change_deleted -712698321 1743945487
-by 
-\change_unchanged
-press
-\change_deleted -712698321 1743945489
-ing
-\change_unchanged
- the toolbar button 
+ or press the toolbar button 
 \begin_inset Info
 type  "icon"
 arg   "label-insert"
@@ -32345,32 +31903,9 @@ arg   "dialog-show-new-inset ref"
 \end_inset
 
 .
- 
-\change_deleted -712698321 1743945594
-A gray cross-reference box like this:
- 
-\begin_inset Graphics
-	filename clipart/reference.png
-
-\end_inset
-
- is inserted and t
-\change_inserted -712698321 1743945594
-T
-\change_unchanged
-he cross-reference window appears showing all the labels in the document
-\change_inserted -712698321 1743945638
- (note that you can sort,
- group or filter the list)
-\change_unchanged
-.
- We can now 
-\change_deleted -712698321 1743945646
-sort the labels alphabetically and then choose
-\change_inserted -712698321 1743945647
-select
-\change_unchanged
- the entry 
+ The cross-reference window appears showing all the labels in the document (note that you can sort,
+ group or filter the list).
+ We can now select the entry 
 \begin_inset Quotes eld
 \end_inset
 
@@ -32383,9 +31918,7 @@ enu:Second-item
 \end_inset
 
 .
- 
-\change_inserted -712698321 1743945707
-A gray cross-reference box like this:
+ A gray cross-reference box like this:
  
 \begin_inset Graphics
 	filename clipart/reference.png
@@ -32393,15 +31926,9 @@ A gray cross-reference box like this:
 \end_inset
 
  is inserted – this will become the reference in the output (the item number by default).
-\change_deleted -712698321 1743945710
-At the position of the cross-reference box the item number will appear in the output.
-\change_inserted -712698321 1743945942
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743946070
 Note that some cross-reference styles allow for multiple labels in a cross reference and format this to appropriate output (e.
 \begin_inset space \thinspace{}
 \end_inset
@@ -32431,8 +31958,6 @@ Sections 1 to 5
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743945888
 Alternatively to the list of existing labels,
  you can also let the dialog display all sections headings (
 \begin_inset Quotes eld
@@ -32458,13 +31983,9 @@ Add
  will check if the item already has a label and if not,
  creates one before inserting it.
  You don't have to bother with inserting labels yourself!
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743946586
 For selected elements (section headings,
  footnotes,
  table and figure floats),
@@ -32495,43 +32016,16 @@ Insert Cross-Reference to this Item
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1723184542
-A
-\change_inserted -712698321 1723184543
-Other
-\change_deleted -712698321 1723184013
-s an
-\change_unchanged
- alternative
-\change_inserted -712698321 1723184545
-s
-\change_unchanged
- to 
+Other alternatives to 
 \family sans
 Insert\SpecialChar menuseparator
 Cross-Reference
-\change_inserted -712698321 1723184603
-
 \family default
  which work for all item types (but require a label to exist already) are the following:
-\change_deleted -712698321 1723184051
-,
- you can
-\change_inserted -712698321 1723184553
-
 \end_layout
 
 \begin_layout Itemize
-
-\change_deleted -712698321 1723184557
- 
-\change_inserted -712698321 1723184638
-R
-\change_deleted -712698321 1723184638
-r
-\change_unchanged
-ight-click on a label and in the popup menu select 
+Right-click on a label and in the popup menu select 
 \family sans
 Copy as Reference
 \family default
@@ -32548,13 +32042,9 @@ arg   "paste"
 \end_inset
 
 ).
-\change_inserted -712698321 1723184640
-
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1723184714
 In the outliner,
  section 
 \family sans
@@ -32569,24 +32059,8 @@ Insert Reference at Cursor Position
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1723184132
 Whatever approach you take,
- 
-\change_deleted -712698321 1723184093
-H
-\change_inserted -712698321 1723184094
-h
-\change_unchanged
-ere is 
-\change_inserted -712698321 1723184100
-how 
-\change_unchanged
-our cross-reference
-\change_inserted -712698321 1723185807
- ultimately comes out
-\change_unchanged
-:
+ here is how our cross-reference ultimately comes out:
  Item
 \begin_inset space ~
 \end_inset
@@ -32687,13 +32161,9 @@ nolink "false"
 \end_inset
 
 
-\change_inserted -712698321 1743170721
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1743170846
 page
 \begin_inset space ~
 \end_inset
@@ -32711,8 +32181,6 @@ zref-clever
 ,
  prints the text “page” and the page number.
  It can combine multiple labels to an ordered page list or range.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -32747,8 +32215,6 @@ If the label is on the same page,
  if it is on the next page which is not a facing page,
  it prints “on the next page”.
  The wording of the printed text also depends on the used document class.
-\change_inserted -712698321 1743171056
-
 \begin_inset Newline newline
 \end_inset
 
@@ -32807,15 +32273,11 @@ page
 \family default
 \series default
 .
-\change_inserted -712698321 1743171062
-
 \begin_inset Newline newline
 \end_inset
 
 If two labels are inserted,
  they are handled as beginning and end of a range.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -32839,15 +32301,11 @@ Note:
 
 \series default
  This feature is only available when you have the \SpecialChar LaTeX
--package
-\change_inserted -712698321 1742721528
- 
+-package 
 \series bold
 cleveref
 \series default
 ,
-
-\change_unchanged
  
 \series bold
 prettyref
@@ -32855,8 +32313,6 @@ prettyref
  or 
 \series bold
 refstyle
-\change_inserted -712698321 1742721546
-
 \series default
 
 \begin_inset Index idx
@@ -32865,32 +32321,22 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742721546
 \SpecialChar LaTeX
  packages
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742721546
 prettyref
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \begin_inset Index idx
 range none
@@ -32927,13 +32373,7 @@ status open
 status open
 
 \begin_layout Plain Layout
-
-\change_deleted -712698321 1742721549
-refstyle
-\change_inserted -712698321 1742721550
 cleveref
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -32954,16 +32394,8 @@ cleveref
 
 You can select which \SpecialChar LaTeX
 -package should be used for this feature by setting the option 
-\change_deleted -712698321 1742721596
-
 \family sans
-U
-\change_inserted -712698321 1742721595
 Format packages
-\change_deleted -712698321 1742721600
-se refstyle (not prettyref) for cross-references
-\change_unchanged
-
 \family default
  in the menu 
 \family sans
@@ -32976,24 +32408,12 @@ Document Class
 \series bold
 refstyle
 \series default
- is the default
-\change_inserted -712698321 1742721692
-.
-
-\change_unchanged
- 
-\change_deleted -712698321 1742721696
-and preferred because
-\change_inserted -712698321 1742721697
-Note that
-\change_unchanged
- 
+ is the default.
+ Note that 
 \series bold
 prettyref
 \series default
- 
-\change_inserted -712698321 1746342171
-by default (the 
+ by default (the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -33002,11 +32422,7 @@ unlocalized
 \end_inset
 
  version in \SpecialChar LyX
-) 
-\change_unchanged
-supports only English documents
-\change_inserted -712698321 1746341955
- (unless you add your own settings),
+) supports only English documents (unless you add your own settings),
  but \SpecialChar LyX
  can generate localized definitions for many languages if you select 
 \begin_inset Quotes eld
@@ -33017,30 +32433,18 @@ prettyref and varioref
 \end_inset
 
 .
- Note that this might override your own definitions in the preamble or a style file
-\change_unchanged
-.
- 
-\change_inserted -712698321 1746341975
-If you want,
+ Note that this might override your own definitions in the preamble or a style file.
+ If you want,
  or need,
  to generate your own string,
- 
-\change_deleted -712698321 1746341975
-T
-\change_inserted -712698321 1746341976
-t
-\change_unchanged
-he format is specified by using the command 
+ the format is specified by using the command 
 \series bold
 
 \backslash
 newref\SpecialChar ligaturebreak
 format
 \series default
- (prettyref)
-\change_inserted -712698321 1742730901
-,
+ (prettyref),
 
 \series bold
  
@@ -33056,9 +32460,7 @@ crefname
 \backslash
 zcRefTypeSetup
 \series default
- (zref-clever)
-\change_unchanged
- or 
+ (zref-clever) or 
 \series bold
 
 \backslash
@@ -33106,72 +32508,25 @@ prettyref
 \series bold
 refstyle 
 \series default
-predefine
-\change_deleted -712698321 1746342318
-s
-\change_unchanged
- reference formats for all 
-\change_deleted -712698321 1746342336
-available
-\change_inserted -712698321 1746342337
-possible
-\change_unchanged
- types
-\change_inserted -712698321 1746342362
-,
+predefine reference formats for all possible types,
  although a wide range is defined automatically by \SpecialChar LyX
- (
-\change_deleted -712698321 1746342365
-.
- This is especially true
-\change_inserted -712698321 1746342368
-e.
+ (e.
 \begin_inset space \thinspace{}
 \end_inset
 
 g.,
-
-\change_unchanged
  for the wide variety of mathematical 
-\change_inserted -712698321 1742722007
-
 \begin_inset Quotes els
 \end_inset
 
-
-\change_deleted -712698321 1742722008
-`
-\change_unchanged
 theorem
-\change_deleted -712698321 1742722011
-'
-\change_inserted -712698321 1742722012
-
 \begin_inset Quotes ers
 \end_inset
 
-
-\change_unchanged
- environments
-\change_inserted -712698321 1742722033
-)
-\change_unchanged
-.
- 
-\change_deleted -712698321 1746342379
-So i
-\change_inserted -712698321 1746342379
-I
-\change_unchanged
-f you want to make formatted references to,
+ environments).
+ If you want to make formatted references to,
  say,
- 
-\change_deleted -712698321 1746342403
-Propositions
-\change_inserted -712698321 1746342408
-MyType
-\change_unchanged
-,
+ MyType,
  then you will need to define the relevant format yourself.
  For 
 \series bold
@@ -33187,19 +32542,7 @@ prettyref
 
 \backslash
 newref\SpecialChar ligaturebreak
-format{
-\change_deleted -712698321 1746342414
-prop
-\change_inserted -712698321 1746342415
-mythype
-\change_unchanged
-}{
-\change_deleted -712698321 1746342418
-Proposition
-\change_inserted -712698321 1746342420
-My Type
-\change_unchanged
- 
+format{mythype}{My Type 
 \backslash
 ref{#1}}
 \series default
@@ -33220,45 +32563,21 @@ literal "true"
 \begin_inset Newline newline
 \end_inset
 
-The option
-\change_deleted -584632292 1742750435
-s
-\change_unchanged
- 
+The option 
 \family sans
 Plural
 \family default
- 
-\change_deleted -712698321 1742722076
-and 
-\family sans
-Capitalized
-\family default
- 
-\change_unchanged
-will be available with formatted references only if you are using the 
+ will be available with formatted references only if you are using the 
 \series bold
 refstyle
 \series default
- package
-\change_inserted -712698321 1742722093
-,
- and with textual references using cleveref
-\change_unchanged
-.
-
-\change_inserted -584632292 1742750449
- The
-\change_inserted -712698321 1742730991
- 
+ package,
+ and with textual references using cleveref.
+ The 
 \family sans
 Capitalized
 \family default
- 
-\change_inserted -584632292 1742750451
-option 
-\change_inserted -712698321 1742730991
-is available with formatted references using 
+ option is available with formatted references using 
 \series bold
 refstyle
 \series default
@@ -33285,20 +32604,10 @@ on page
 zref-vario
 \series default
 .
-\change_deleted -712698321 1742731074
-
-\begin_inset Newline newline
-\end_inset
-
-
-\change_inserted -712698321 1742731076
-
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1742731072
 For
 \series bold
  zref-clever
@@ -33414,11 +32723,7 @@ g.
 refstyle
 \series default
 's range commands.
-
-\change_inserted -584632292 1742750335
- 
-\change_unchanged
-The number and current page of the referenced document part in the output is automatically calculated by \SpecialChar LaTeX
+ The number and current page of the referenced document part in the output is automatically calculated by \SpecialChar LaTeX
 .
  The varieties are adjusted in the field 
 \family sans
@@ -33523,19 +32828,13 @@ Referencing Floats
 Embedded Objects
 \emph default
  manual.
-\change_inserted -712698321 1743947129
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1743947200
 Cross-References to External Documents
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743947564
 Within one file or a set of related files (master,
  children and siblings;
  see section 
@@ -33551,15 +32850,7 @@ Embedded
 Objects
 \emph default
 ),
- 
-\change_inserted -584632292 1743955999
-that is 
-\change_inserted -712698321 1743947564
-all 
-\change_inserted -584632292 1743956003
-that needs to be 
-\change_inserted -712698321 1743947564
-said about how to generate cross references.
+ that is all that needs to be said about how to generate cross references.
  However,
  there might be cases when you want to refer to parts of completely separate documents (such as another volume in a multi-volume book).
  This is possible (with the help of the \SpecialChar LaTeX
@@ -33572,15 +32863,9 @@ xr
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743947698
 To insert such a reference,
  open this document as well.
- From the document
-\change_inserted -584632292 1743956042
- in which
-\change_inserted -712698321 1744087522
- the reference should be inserted,
+ From the document in which the reference should be inserted,
  open the cross-references dialog as explained in the previous section.
  Assure that 
 \begin_inset Quotes eld
@@ -33607,8 +32892,6 @@ In:
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1744087587
 Alternatively,
  you can also use the 
 \family sans
@@ -33618,8 +32901,6 @@ Copy as Reference
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1743947906
 There is one caveat,
  though:
  Since \SpecialChar LaTeX
@@ -33631,8 +32912,6 @@ There is one caveat,
  When previewing such documents,
  it opens the respective target documents and compiles or updates them before handling the actual (referring) document.
  Of course you need to make sure that the referred to document is available (at the path it was when you inserted the reference) and accessible.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -33888,20 +33167,12 @@ Typewriter
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753943975
-LaTeX
-\change_unchanged
  Preamble
-\change_inserted -712698321 1753943985
-
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 :
 \end_layout
@@ -33999,20 +33270,12 @@ usepackage{xurl}
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753944002
-LaTeX 
-\change_unchanged
 Preamble
-\change_inserted -712698321 1753944000
-
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 ;
  this will cause URLs to be broken at every character.
@@ -35343,16 +34606,10 @@ literal "true"
 \end_inset
 
 .
-\change_inserted -712698321 1720530740
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1720530806
 Note that the Chicago style biblatex mode has built-in citation and bibliography styles which can only be slightly adapted via the bibliography options (please refer to the package manual for details).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -35606,8 +34863,6 @@ with Bib\SpecialChar TeX
 Additional Features
 \emph default
  manual.
-\change_inserted -1900975149 1750580800
-
 \end_layout
 
 \begin_layout Subsection
@@ -35825,13 +35080,9 @@ biblatex
 Options
 \family default
  field.
-\change_inserted -712698321 1720530575
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1720530576
 Biblatex
 \begin_inset space ~
 \end_inset
@@ -35851,25 +35102,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720530576
 \SpecialChar LaTeX
  packages
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720530576
 biblatex-chicago
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -35886,11 +35129,7 @@ Chicago Manual of Style
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720530576
 authordate
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -35900,18 +35139,12 @@ authordate
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720530576
 notes-bibliography
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  mode are supported.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -35950,8 +35183,6 @@ Biblatex
 biblatex
 \series default
  styles are also supported by this variant.
-\change_inserted -712698321 1720530371
-
 \end_layout
 
 \begin_layout Description
@@ -36104,7 +35335,6 @@ et al.
 \end_inset
 
 ).
- 
 \end_layout
 
 \begin_layout Standard
@@ -36874,33 +36104,9 @@ Note also that in \SpecialChar LaTeX
 .
  This also works in \SpecialChar LyX
 ,
- although you 
-\change_deleted -712698321 1723474901
-have
-\change_inserted -712698321 1723474901
-need
-\change_unchanged
- to 
-\change_inserted -712698321 1723474911
-insert 
-\change_deleted -712698321 1723474914
-take care that
-\change_unchanged
- the character 
-\change_deleted -712698321 1723474917
-is not formatted
-\change_inserted -712698321 1723474926
-in \SpecialChar TeX
- mode
-\change_unchanged
-.
- 
-\change_deleted -712698321 1723474935
-For this reason,
- a real exclamation mark has to be inserted to an index entry in a specific way.
- 
-\change_unchanged
-See section
+ although you need to insert the character in \SpecialChar TeX
+ mode.
+ See section
 \begin_inset space ~
 \end_inset
 
@@ -36913,7 +36119,6 @@ nolink "false"
 \end_inset
 
  for details.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -37196,21 +36401,9 @@ Note that in \SpecialChar LaTeX
 .
  This also works in \SpecialChar LyX
 ,
- although you 
-\change_deleted -712698321 1723475013
-have to take care that the character is not formatted
-\change_inserted -712698321 1723475013
-need to insert  the character in \SpecialChar TeX
- mode
-\change_unchanged
-.
- 
-\change_deleted -712698321 1723475019
-For this reason,
- a real @ character has to be inserted to an index entry in a specific way.
- 
-\change_unchanged
-See section
+ although you need to insert the character in \SpecialChar TeX
+ mode.
+ See section
 \begin_inset space ~
 \end_inset
 
@@ -37294,7 +36487,6 @@ Bananas
 \series default
 ,
  will be listed separately.
- 
 \end_layout
 
 \begin_layout Standard
@@ -37606,163 +36798,32 @@ status collapsed
 \end_inset
 
 .
- 
-\change_deleted -712698321 1723475049
-If you use them literally,
- you might get surprising results or even a non-working index.
- In any case,
- you will not get the character itself
-\change_inserted -712698321 1723475153
-Since the respective functionality is achievable in \SpecialChar LyX
+ Since the respective functionality is achievable in \SpecialChar LyX
  via sub-insets,
  these characters are escaped by 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723475136
 \begin_inset Quotes qld
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
 \end_inset
 
  if you insert them to indexes,
- so you get the literal character in the output
-\change_unchanged
-.
+ so you get the literal character in the output.
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1723475160
-In order to use these characters in inset entries,
- they have to be 
-\begin_inset Quotes els
-\end_inset
-
-escaped
-\begin_inset Quotes ers
-\end_inset
-
-,
- that is prepended by a character that tells the index processor to treat this character without its special meaning.
- By default,
- the escape character is 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Quotes qld
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- (but this can be changed).
- So enter 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Quotes qld
-\end_inset
-
-!
-\end_layout
-
-\end_inset
-
-,
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Quotes qld
-\end_inset
-
-@
-\end_layout
-
-\end_inset
-
-,
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Quotes qld
-\end_inset
-
-
-\begin_inset Quotes qrd
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-,
- or 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Quotes qld
-\end_inset
-
-|
-\end_layout
-
-\end_inset
-
- to get the special character you want.
- Note that the escape character,
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-\begin_inset Quotes qld
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-,
-\change_inserted -712698321 1723475173
 If you want the special meaning instead,
- you
-\change_unchanged
- 
+ you 
 \emph on
 must
 \emph default
- 
-\change_deleted -712698321 1723475181
-be 
-\change_unchanged
-insert
-\change_deleted -712698321 1723475183
-ed
-\change_unchanged
- 
-\change_inserted -712698321 1723475191
-these special characters 
-\change_unchanged
-in a TeX code box (see section
+ insert these special characters in a TeX code box (see section
 \begin_inset space ~
 \end_inset
 
@@ -38325,11 +37386,7 @@ nomencl
 
  installed.
  You find it in the \SpecialChar TeX
- catalog
-\change_deleted -712698321 1723454635
-ue
-\change_unchanged
-,
+ catalog,
  
 \begin_inset CommandInset citation
 LatexCommand cite
@@ -38339,13 +37396,7 @@ literal "true"
 \end_inset
 
  or in the package manager of your \SpecialChar LaTeX
-
-\change_inserted -712698321 1723454632
- 
-\change_deleted -712698321 1723454632
--
-\change_unchanged
-system.
+ system.
 \end_layout
 
 \begin_layout Standard
@@ -38369,13 +37420,7 @@ arg   "nomencl-insert"
 \end_inset
 
 .
- A 
-\change_deleted -712698321 1723454657
-gray box
-\change_inserted -712698321 1723454660
-collapsible inset
-\change_unchanged
- labeled 
+ A collapsible inset labeled 
 \begin_inset Quotes eld
 \end_inset
 
@@ -38387,30 +37432,14 @@ Nom
 \begin_inset Quotes erd
 \end_inset
 
- is inserted
-\change_deleted -712698321 1723454685
- and a window pops up asking for the nomenclature entry
-\change_unchanged
-.
-
-\change_inserted -712698321 1723454710
+ is inserted.
  If the cursor is after a word,
  this is copied into the inset.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724253386
 By default,
- 
-\change_deleted -712698321 1724253387
-A
-\change_inserted -712698321 1724253387
-a
-\change_unchanged
- nomenclature entry consists of two main entries.
+ a nomenclature entry consists of two main entries.
  The first is the term or 
 \family sans
 Symbol
@@ -38421,8 +37450,6 @@ Symbol
 Description
 \family default
  of the term or symbol.
-
-\change_inserted -712698321 1724253392
  The former is inserted into the collapsible inset directly,
  the latter into the 
 \family sans
@@ -38436,8 +37463,6 @@ Insert
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724253593
 In addition to this,
  you can select a 
 \begin_inset Quotes eld
@@ -38471,35 +37496,6 @@ note
 Insert
 \family default
  menu.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1723454741
-\begin_inset Note Greyedout
-status open
-
-\begin_layout Plain Layout
-
-\series bold
-Note:
-
-\series default
- To use \SpecialChar TeX
- code for nomenclature entries the option 
-\family sans
-Literal
-\family default
- in the nomenclature dialog has to be used.
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -38529,186 +37525,8 @@ Layout
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1723454941
 Within the nomenclature inset,
  you can use math and formatting as usual.
-\change_deleted -712698321 1723454925
-If you have symbols in formulas,
- you have to define them in the 
-\family sans
-Symbol
-\family default
- field as \SpecialChar LaTeX
- formulas.
- For example to get 
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Formula $\sigma$
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
-,
- insert this:
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-$
-\backslash
-sigma$
-\begin_inset Newline newline
-\end_inset
-
-
-\series default
-The 
-\begin_inset Quotes eld
-\end_inset
-
-$
-\begin_inset Quotes erd
-\end_inset
-
- character starts/ends the formula.
- The \SpecialChar LaTeX
--command for the Greek letter is the name of the letter beginning with a backslash 
-\begin_inset Quotes eld
-\end_inset
-
-
-\backslash
-
-\begin_inset Quotes erd
-\end_inset
-
-.
- For capital Greek letters,
- start the command also with a capital letter,
- like 
-\series bold
-
-\backslash
-Sigma
-\series default
-.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1723454925
-(A short introduction to the \SpecialChar LaTeX
- syntax is given in section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:LaTeX-Syntax"
-nolink "false"
-
-\end_inset
-
-.)
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1723454925
-You cannot use the 
-\family sans
-Text
-\begin_inset space ~
-\end_inset
-
-Style
-\family default
- dialog to format the description text;
- you have to use \SpecialChar LaTeX
--commands.
- For example the description of the nomenclature entry for the 
-\begin_inset Quotes eld
-\end_inset
-
-
-\begin_inset Formula $\sigma$
-\end_inset
-
-
-\begin_inset Quotes erd
-\end_inset
-
- in this document is:
-\begin_inset Newline newline
-\end_inset
-
-
-\series bold
-dummy entry for the character 
-\backslash
-textsf{sigma}
-\series default
-
-\begin_inset Newline newline
-\end_inset
-
-The command 
-\series bold
-
-\backslash
-textsf
-\series default
- sets the fonts to 
-\family sans
-sans
-\begin_inset space ~
-\end_inset
-
-serif
-\family default
-.
- To get 
-\series bold
-bold
-\series default
- font use the command 
-\series bold
-
-\backslash
-textbf
-\series default
-,
- for 
-\family typewriter
-typewriter
-\family default
- use 
-\series bold
-
-\backslash
-texttt
-\series default
-,
- for 
-\emph on
-emphasized
-\emph default
- use 
-\series bold
-
-\backslash
-emph
-\series default
-.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -38756,79 +37574,6 @@ serif
 .
 \end_layout
 
-\begin_layout Standard
-
-\change_deleted -712698321 1723454959
-If the characters |
-\begin_inset space \space{}
-\end_inset
-
-,
-\begin_inset space \space{}
-\end_inset
-
-!
-\begin_inset space \space{}
-\end_inset
-
-,
- @ and
-\begin_inset space \space{}
-\end_inset
-
-"
-\begin_inset space \space{}
-\end_inset
-
-should appear in nomenclature entries containing \SpecialChar TeX
- code they need to be escaped by adding a percent character in front of them.
-\begin_inset Nomenclature
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-%@,
- %|,
- %!,
- %"
-\end_layout
-
-\end_inset
-
-
-\begin_inset Argument post:1
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-Special characters in nomenclature context which need to be escaped by `
-\backslash
-%'
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
 \begin_layout Subsection
 Sort Order of Nomenclature Entries
 \begin_inset Index idx
@@ -38857,20 +37602,8 @@ Sort order
 
 \begin_layout Standard
 The nomenclature entries are sorted alphabetically by the \SpecialChar LaTeX
-
-\change_deleted -712698321 1723454966
--
-\change_inserted -712698321 1723454966
- 
-\change_unchanged
-code of the symbol definition.
- This leads to undesired results 
-\change_deleted -712698321 1723454971
-when
-\change_inserted -712698321 1723454971
-if
-\change_unchanged
- you,
+ code of the symbol definition.
+ This leads to undesired results if you,
  for example,
  have symbols in formulas.
  Suppose you have nomenclature entries for the symbols 
@@ -39001,19 +37734,7 @@ $
 
 \begin_layout Standard
 To control the sort order,
- you can 
-\change_deleted -712698321 1723454992
-edit the 
-\family sans
-Sort
-\begin_inset space ~
-\end_inset
-
-as
-\family default
- field of the nomenclature dialog
-\change_inserted -712698321 1723455033
-use the 
+ you can use the 
 \family sans
 Sort as
 \family default
@@ -39021,9 +37742,7 @@ Sort as
 \family sans
 Insert
 \family default
- menu
-\change_unchanged
-.
+ menu.
  Then the nomenclature entry will be sorted by this entry and not the symbol definition.
  For the example given,
  you can insert 
@@ -39044,27 +37763,6 @@ a
 \end_inset
 
 .
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1724304988
-For subgrouping and tips for using sort entries see the 
-\series bold
-nomencl
-\series default
- documentation,
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "nomencl"
-literal "true"
-
-\end_inset
-
-.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -39105,32 +37803,17 @@ The
 \series bold
 nomencl
 \series default
- package offers 
-\change_deleted -712698321 1724303919
-some
-\change_inserted -712698321 1724303922
-a range of
-\change_unchanged
- options to adjust the appearance of the nomenclature.
- 
-\change_inserted -712698321 1724303527
-They can be set in 
+ package offers a range of options to adjust the appearance of the nomenclature.
+ They can be set in 
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
 Nomenclature
 \family default
 :
-\change_deleted -712698321 1724303912
-Here are some of its options;
- for more have a look at its documentation:
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1724303686
 Nomenclature
 \begin_inset space ~
 \end_inset
@@ -39146,8 +37829,6 @@ siunits
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1724303561
 Add
 \begin_inset space ~
 \end_inset
@@ -39168,8 +37849,6 @@ contents adds the nomenclature list to the table of contents.
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1724305361
 Add
 \begin_inset space ~
 \end_inset
@@ -39178,17 +37857,7 @@ equation
 \begin_inset space ~
 \end_inset
 
-references
-\change_deleted -712698321 1724303715
-refeq
-\change_unchanged
- 
-\change_deleted -712698321 1724303716
-A
-\change_inserted -712698321 1724303717
-a
-\change_unchanged
-ppends the phrase 
+references appends the phrase 
 \begin_inset Quotes eld
 \end_inset
 
@@ -39216,10 +37885,6 @@ eq
 \end_layout
 
 \begin_layout Description
-
-\change_deleted -712698321 1724303727
-refpage
-\change_inserted -712698321 1724305363
 Add
 \begin_inset space ~
 \end_inset
@@ -39228,15 +37893,7 @@ page
 \begin_inset space ~
 \end_inset
 
-references
-\change_unchanged
- 
-\change_deleted -712698321 1724303734
-A
-\change_inserted -712698321 1724303734
-a
-\change_unchanged
-ppends the phrase 
+references appends the phrase 
 \begin_inset Quotes eld
 \end_inset
 
@@ -39260,20 +37917,10 @@ page
 page
 \family default
 \emph default
- is the number of the page on which the nomenclature entry appear
-\change_deleted -712698321 1724305457
-ed
-\change_inserted -712698321 1724305457
-s
-\change_unchanged
-
+ is the number of the page on which the nomenclature entry appears
 \end_layout
 
 \begin_layout Description
-
-\change_deleted -712698321 1724303752
-intoc
-\change_inserted -712698321 1724303758
 Use
 \begin_inset space ~
 \end_inset
@@ -39282,23 +37929,14 @@ standard
 \begin_inset space ~
 \end_inset
 
-subgroups
-\change_unchanged
- 
-\change_deleted -712698321 1724303777
-Inserts the nomenclature in the Table of Contents
-\change_inserted -712698321 1724309742
-uses predefined subgroups (Latin Letters,
+subgroups uses predefined subgroups (Latin Letters,
  Greek Letters,
  Superscripts,
  Subscripts) to structure the nomenclature list.
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1724311045
 Entries are assigned to a subgroup via the 
 \family sans
 Sort
@@ -39322,8 +37960,6 @@ as
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724309722
 Please refer to the 
 \series bold
 nomencl
@@ -39339,14 +37975,10 @@ literal "true"
 
 ,
  if you need different subgrouping.
-\change_unchanged
-
 \end_layout
 
 \end_deeper
 \begin_layout Description
-
-\change_inserted -712698321 1724303903
 Other
 \begin_inset space ~
 \end_inset
@@ -39367,218 +37999,71 @@ literal "true"
 
 ,
  for details.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1724303935
-To use one or more of the options,
- add them to the comma-separated document class options list in the 
-\family sans
-Document\SpecialChar menuseparator
-Settings
-\family default
- dialog.
- In this document the options 
-\series bold
-refpage,
- intoc
-\series default
- are used.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1724303935
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1724303954
-You can also use the first two options above
-\change_inserted -712698321 1724306838
 With the default style,
- if you want to add page or equation references
-\change_unchanged
- only 
-\change_deleted -712698321 1724303972
-for
-\change_inserted -712698321 1724303972
-to
-\change_unchanged
- 
-\change_inserted -712698321 1724303974
-selected
-\change_deleted -712698321 1724303976
-certain
-\change_unchanged
- nomenclature entries
-\change_inserted -712698321 1724303985
-,
- you can do this by
-\change_deleted -712698321 1724303987
- when you
-\change_unchanged
- add
-\change_inserted -712698321 1724303990
-ing
-\change_unchanged
- one of the following commands 
-\change_inserted -712698321 1724304028
-in \SpecialChar TeX
- mode 
-\change_unchanged
-a
-\change_inserted -712698321 1724304042
-t
-\change_deleted -712698321 1724304042
-s
-\change_unchanged
- 
-\change_inserted -712698321 1724304098
-the very end 
-\change_deleted -712698321 1724304050
-last entry to
-\change_inserted -712698321 1724304050
-of
-\change_unchanged
- the 
+ if you want to add page or equation references only to selected nomenclature entries,
+ you can do this by adding one of the following commands in \SpecialChar TeX
+ mode at the very end of the 
 \family sans
 Description
 \family default
- field 
-\change_deleted -712698321 1724304011
-in
-\change_inserted -712698321 1724304011
-of
-\change_unchanged
- the nomenclature 
-\change_inserted -712698321 1724304088
-entry
-\change_deleted -712698321 1724304016
-dialog
-\change_unchanged
-:
+ field of the nomenclature entry:
 \end_layout
 
 \begin_layout Description
 
 \backslash
-nomrefeq 
-\change_deleted -712698321 1724304118
-Like the 
-\series bold
-refeq
-\series default
- option
-\change_inserted -712698321 1724304130
-for an equation reference
-\change_unchanged
-
+nomrefeq for an equation reference
 \end_layout
 
 \begin_layout Description
 
 \backslash
-nomrefpage 
-\change_deleted -712698321 1724304133
-Like the 
-\series bold
-refpage
-\series default
- option
-\change_inserted -712698321 1724304135
-for a page reference
-\change_unchanged
-
+nomrefpage for a page reference
 \end_layout
 
 \begin_layout Description
 
 \backslash
 nomrefeqpage 
-\change_deleted -712698321 1724304161
-Short notation of 
 \series bold
-
-\backslash
-nomrefeq
-\backslash
-nomrefpage
-\change_inserted -712698321 1724304175
 for a combined equation and page reference
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724304216
 If you have selected a reference option in document settings,
  you can also disable it for selected entries by adding instead either of
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
 
 \backslash
 nomnorefeq
-\change_deleted -712698321 1724304228
-,
-\begin_inset space ~
-\end_inset
-
-
-\change_inserted -712698321 1724304229
-
 \end_layout
 
 \begin_layout Description
 
 \backslash
 nomnorefpage
-\change_deleted -712698321 1724304230
-,
-\begin_inset space ~
-\end_inset
-
-
-\change_inserted -712698321 1724304231
-
 \end_layout
 
 \begin_layout Description
 
 \backslash
 nomnorefeqpage
-\change_deleted -712698321 1724304230
- Turns off the corresponding options
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724306868
 Note that you need to add 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1723460010
-
 \backslash
 protect
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -39588,13 +38073,7 @@ protect
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1724304289
-Words like
-\change_inserted -712698321 1724304292
-Expressions such as
-\change_unchanged
- 
+Expressions such as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -39603,11 +38082,7 @@ page
 \end_inset
 
  are automatically translated for most document languages.
- If not
-\change_inserted -712698321 1724304360
- (or if you want a different wording)
-\change_unchanged
-,
+ If not (or if you want a different wording),
  add these lines in front of the nomenclature list as \SpecialChar TeX
  code:
 \end_layout
@@ -39797,17 +38272,7 @@ Printing
 \end_layout
 
 \begin_layout Standard
-To 
-\change_deleted -712698321 1724304544
-print
-\change_inserted -712698321 1724304545
-input
-\change_unchanged
- the nomenclature
-\change_inserted -712698321 1724304556
- at the location where it should be printed
-\change_unchanged
-,
+To input the nomenclature at the location where it should be printed,
  use the menu 
 \family sans
 Insert\SpecialChar menuseparator
@@ -39828,36 +38293,12 @@ Nomenclature
 \end_inset
 
  will show the place where the nomenclature is printed in the output.
- 
-\change_inserted -712698321 1724304569
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724304668
 With default nomenclature style,
- you can adjust the list appearance (space between symbol and description and list indentation) 
-\change_deleted -712698321 1724304607
-B
-\change_inserted -712698321 1724304610
-b
-\change_unchanged
-y right-clicking on 
-\change_inserted -712698321 1724304620
-this box.
-\change_deleted -712698321 1724304636
-it,
- the amount of space for symbols can be altered
-\change_unchanged
-.
- You can 
-\change_deleted -712698321 1724304674
-choose
-\change_inserted -712698321 1724304674
-select
-\change_unchanged
- between these settings:
+ you can adjust the list appearance (space between symbol and description and list indentation) by right-clicking on this box..
+ You can select between these settings:
 \end_layout
 
 \begin_layout Description
@@ -39878,42 +38319,17 @@ label
 \end_inset
 
 width
-\change_inserted -712698321 1721576787
-
 \begin_inset space ~
 \end_inset
 
-(guessed)
-\change_unchanged
- 
-\change_inserted -712698321 1721576880
-\SpecialChar LyX
- tries to guess the 
-\change_deleted -712698321 1721576836
-the width of the 
-\change_unchanged
-widest symbol of all nomenclature entries 
-\change_deleted -712698321 1721576839
-is
-\change_inserted -712698321 1721576839
-and
-\change_unchanged
- use
-\change_inserted -712698321 1721576845
- this.
-\change_deleted -712698321 1721576844
-d
-\change_inserted -712698321 1721576994
+(guessed) \SpecialChar LyX
+ tries to guess the widest symbol of all nomenclature entries and use this.
  Note that this guessing might go wrong,
  as \SpecialChar LyX
  does not know how the formatted output in your PDF will look like exactly.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1724304720
 Longest
 \begin_inset space ~
 \end_inset
@@ -39929,16 +38345,10 @@ width
 (set) here you can enter the widest symbol yourself to use its width.
  While this is more accurate than the second method,
  the disadvantage is that you need to keep this up to date if new (longer) entries are added to the nomenclature.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
-Custom custom space
-\change_inserted -712698321 1724304744
- as specified in the widget.
-\change_unchanged
-
+Custom custom space as specified in the widget.
 \end_layout
 
 \begin_layout Standard
@@ -39985,13 +38395,7 @@ nomname{List of Symbols}}}
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1724304772
-When
-\change_inserted -712698321 1724304772
-If
-\change_unchanged
- you are using another document language than English,
+If you are using another document language than English,
  replace
 \begin_inset Newline newline
 \end_inset
@@ -40006,13 +38410,7 @@ captionsenglish
 \series bold
 
 \backslash
-
-\change_deleted -712698321 1724304814
-extras
-\change_inserted -712698321 1724304814
-captions
-\change_unchanged
-***
+captions***
 \series default
 ,
  where *** is the name of the language used.
@@ -40401,224 +38799,9 @@ Answer
 \end_layout
 
 \begin_layout Standard
-To use conditional output inside 
-\change_inserted -495245474 1747223737
-equations,
- 
-\change_deleted -495245474 1747223748
-places 
-\change_unchanged
-where you cannot insert branch insets,
- 
-\change_deleted -495245474 1747223754
-like inside equations,
- 
-\change_inserted -495245474 1747223724
-it is useful to define 
-\change_deleted -495245474 1747223516
-you can code special \SpecialChar LaTeX
- definitions for each branch.
- For example you can define for the question branch
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-For an introduction to the \SpecialChar LaTeX
--syntax,
- see section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:LaTeX-Syntax"
-nolink "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-
-\series bold
-
-\backslash
-newcommand{
-\backslash
-question}[1]{#1}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-
-\series bold
-
-\backslash
-newcommand{
-\backslash
-answer}[1]{}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-and for the answer branch
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-
-\series bold
-
-\backslash
-newcommand{
-\backslash
-question}[1]{}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-
-\series bold
-
-\backslash
-newcommand{
-\backslash
-answer}[1]{#1}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-\begin_inset Branch Question
-inverted 0
-status open
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-newcommand{
-\backslash
-question}[1]{#1}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-newcommand{
-\backslash
-answer}[1]{}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-\begin_inset Branch Answer
-inverted 0
-status collapsed
-
-\begin_layout Standard
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-newcommand{
-\backslash
-question}[1]{}
-\end_layout
-
-\begin_layout Plain Layout
-
-\backslash
-newcommand{
-\backslash
-answer}[1]{#1}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-Now it is possible to use the 
-\series bold
-
-\backslash
-question{\SpecialChar ldots
-}
-\series default
- and 
-\series bold
-
-\backslash
-answer{\SpecialChar ldots
-}
-\series default
- commands to obtain conditional output.
- Here is an example formula where only the 
-\series bold
-
-\backslash
-question
-\series default
- part appears:
-\begin_inset Formula 
-\[
-x^{2}-2x-2\Rightarrow\question{x_{1}}\answer{x_{2}}=1\question{+\sqrt{3}}\answer{-\sqrt{3}}.
-\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -495245474 1747223516
-Inside math,
- the same effect can be achieved using
-\change_unchanged
- math macros
-\change_inserted -495245474 1747223549
- in branches
-\change_unchanged
-,
+To use conditional output inside equations,
+ where you cannot insert branch insets,
+ it is useful to define math macros in branches,
  see the 
 \emph on
 Math
@@ -40839,14 +39022,10 @@ Color
 links
 \family default
  both turn off the default behavior of enclosing all links in frames
-\change_inserted 5863208 1727201632
-
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 5863208 1727641281
 The "colorlinks" option in the hyperref package disables the frames around links at the beginning of the document.
  If you want both you need to add the following to the preamble after enabling colored links:
  
@@ -40855,14 +39034,10 @@ status open
 
 \begin_layout Plain Layout
 
-\change_inserted 5863208 1727641266
-
 \backslash
 AtBeginDocument{
 \backslash
 hypersetup{pdfborder=0 0 1}}
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -40873,11 +39048,7 @@ hypersetup{pdfborder=0 0 1}}
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 5863208 1727641281
 pdfborderstyle={/S/U/W 1}
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -40888,8 +39059,6 @@ pdfborderstyle={/S/U/W 1}
 
 \end_inset
 
-
-\change_unchanged
 ;
  
 \family sans
@@ -41365,25 +39534,13 @@ Settings
 \family default
 \SpecialChar menuseparator
 
-\change_deleted -712698321 1753944022
-
 \family sans
-LaTeX
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
 Preamble
-\change_inserted -712698321 1753944019
-
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 ) with the command
 \end_layout
@@ -41693,13 +39850,9 @@ Roman{page}
 \end_inset
 
 
-\change_inserted 1075283030 1738975469
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted 1075283030 1738975518
 Raw XML for DocBook output
 \begin_inset Index idx
 range none
@@ -41707,24 +39860,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted 1075283030 1738975497
 DocBook
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted 1075283030 1738975500
 Raw XML
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -41741,8 +39886,6 @@ name "subsec:DocBook-raw"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 1075283030 1738975983
 \SpecialChar TeX
  Code boxes can also be used in conjunction with DocBook output.
  Some common cases are natively recognised,
@@ -41769,8 +39912,6 @@ name "subsec:DocBook-raw"
 >
 \family default
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -42387,24 +40528,12 @@ footheight
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753944033
-LaTeX
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
 Preamble
-\change_inserted -712698321 1753944035
-
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 :
 \end_layout
@@ -45891,38 +44020,12 @@ LyX format of the special \SpecialChar LyX
 
 \begin_layout Description
 DocBook
-\change_inserted 1075283030 1738975076
-
 \begin_inset space ~
 \end_inset
 
-5
-\change_unchanged
- text file with code in the language 
-\change_deleted 1075283030 1738975082
-SG
-\change_inserted 1075283030 1738975082
-X
-\change_unchanged
-ML that is used for the markup language 
+5 text file with code in the language XML that is used for the markup language 
 \family typewriter
 DocBook
-\change_deleted 1075283030 1738975084
-
-\end_layout
-
-\begin_layout Description
-
-\change_deleted 1075283030 1738975084
-DocBook
-\begin_inset space ~
-\end_inset
-
-(XML) text file with code in the language XML that is used for the markup language 
-\family typewriter
-DocBook
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -47504,8 +45607,6 @@ nolink "false"
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -584632292 1712109674
 Plain
 \begin_inset space ~
 \end_inset
@@ -47514,25 +45615,11 @@ Double
 \begin_inset space ~
 \end_inset
 
-
-\change_deleted -584632292 1712109675
-Ordinary
+Quotation
 \begin_inset space ~
 \end_inset
 
-
-\change_unchanged
-Quot
-\change_inserted -584632292 1712109680
-ation
-\begin_inset space ~
-\end_inset
-
-Mark
-\change_deleted -584632292 1712109681
-e
-\change_unchanged
- Inserts this quote:
+Mark Inserts this quote:
  ",
  no matter what quote style you selected in the 
 \family sans
@@ -47544,8 +45631,6 @@ Language
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -584632292 1712109701
 Plain
 \begin_inset space ~
 \end_inset
@@ -47568,39 +45653,15 @@ Mark Inserts this quote:
 \end_layout
 
 \begin_layout Description
-
-\change_deleted -584632292 1712109722
-Single
-\change_inserted -584632292 1712109720
 Inner
-\change_unchanged
-
 \begin_inset space ~
 \end_inset
 
-Quot
-\change_inserted -584632292 1712109726
-ation
+Quotation
 \begin_inset space ~
 \end_inset
 
-Mark
-\change_deleted -584632292 1712109727
-e
-\change_unchanged
- Inserts a
-\change_inserted -584632292 1712109731
-n inner
-\change_unchanged
- 
-\change_deleted -584632292 1712109733
-single 
-\change_unchanged
-quote 
-\change_inserted -584632292 1712109738
-(usually a single quote) 
-\change_unchanged
-in the quotation marks style selected in the 
+Mark Inserts an inner quote (usually a single quote) in the quotation marks style selected in the 
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
@@ -52606,13 +50667,9 @@ Embedded
 Objects
 \emph default
  manual.
-\change_inserted -712698321 1742640894
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1742641130
 In the 
 \family sans
 Formatted cross-references
@@ -52641,25 +50698,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742640894
 \SpecialChar LaTeX
  packages
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742640894
 prettyref
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -52672,25 +50721,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742640894
 \SpecialChar LaTeX
  packages
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742640894
 refstyle
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -52712,106 +50753,11 @@ nolink "false"
 ).
  Also you can select whether cross-references should be rendered in formatted form or not in the \SpecialChar LyX
  workarea.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1742641143
 Finally,
- 
-\change_deleted -712698321 1742641143
-T
-\change_inserted -712698321 1742641143
-t
-\change_unchanged
-here is 
-\change_deleted -712698321 1742641151
-also 
-\change_unchanged
-an option to suppress the 
-\change_inserted -712698321 1742641171
-(otherwise automatically inserted) 
-\change_unchanged
-date
-\change_inserted -712698321 1742641157
- in the title.
-
-\change_unchanged
- 
-\change_deleted -712698321 1742640892
-and one to use the \SpecialChar LaTeX
--package 
-\series bold
-refstyle
-\series default
- instead of 
-\series bold
-prettyref
-\series default
-
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-\SpecialChar LaTeX
- packages
-\begin_inset IndexMacro subentry
-status open
-
-\begin_layout Plain Layout
-prettyref
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-\SpecialChar LaTeX
- packages
-\begin_inset IndexMacro subentry
-status open
-
-\begin_layout Plain Layout
-refstyle
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- for cross-references,
- see section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Cross-References"
-nolink "false"
-
-\end_inset
-
-.
-\change_unchanged
-
+ there is an option to suppress the (otherwise automatically inserted) date in the title.
 \end_layout
 
 \begin_layout Section
@@ -52900,16 +50846,12 @@ nolink "false"
 \end_layout
 
 \begin_layout Section
-
-\change_inserted -712698321 1751785476
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Text-Layout"
 
 \end_inset
 
-
-\change_unchanged
 Text Layout
 \end_layout
 
@@ -52962,8 +50904,6 @@ Use justification in \SpecialChar LyX
  justifies the text on screen.
  This only affects the text inside \SpecialChar LyX
  not in the output.
-
-\change_inserted -712698321 1751785819
  The 
 \emph on
 default
@@ -52987,8 +50927,6 @@ reference "sec:Display"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -53013,26 +50951,12 @@ This dialog is described in sections
 \end_inset
 
 
-\change_inserted -712698321 1750234820
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:Paper-Size-Orientation"
 
 \end_inset
 
-
-\change_deleted -712698321 1750234820
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Paper-Size,-Orientation"
-nolink "false"
-
-\end_inset
-
-
-\change_unchanged
  and 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -53147,7 +51071,6 @@ Encodings
  automatically selects the appropriate traditional encoding for the given language(s).
  If the document contains text in more than one language you thus may get more than one encoding in the \SpecialChar LaTeX
  file.
- 
 \end_layout
 
 \begin_layout Standard
@@ -53369,8 +51292,6 @@ None will not use a language package.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724421528
 In 
 \family sans
 Language Options
@@ -54162,16 +52083,12 @@ European
 \end_layout
 
 \begin_layout Section
-
-\change_inserted -712698321 1740064062
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Colors"
 
 \end_inset
 
-
-\change_unchanged
 Colors
 \begin_inset Index idx
 range none
@@ -54264,9 +52181,7 @@ Greyed-out notes
 \end_layout
 
 \begin_layout Standard
-Here you can alter 
-\change_inserted -712698321 1740814702
-the color of several elements of the document which then apply globally (unless otherwise set in the individual settings dialog):
+Here you can alter the color of several elements of the document which then apply globally (unless otherwise set in the individual settings dialog):
 \end_layout
 
 \begin_layout Itemize
@@ -54275,16 +52190,7 @@ the font color for the
 Main text
 \family default
  (default:
- black)
-\change_inserted -712698321 1740814664
- and 
-\change_unchanged
-,
-
-\change_deleted -712698321 1740814632
- 
-\change_unchanged
-for 
+ black) and ,for 
 \family sans
 Greyed
 \begin_inset space ~
@@ -54293,16 +52199,7 @@ Greyed
 out notes
 \family default
  (default:
- light grey)
-\change_deleted -712698321 1740814641
-for
-\change_inserted -712698321 1740814641
-,
-
-\change_deleted -712698321 1740814642
- 
-\change_inserted -712698321 1740814643
-
+ light grey),
 \end_layout
 
 \begin_layout Itemize
@@ -54311,13 +52208,7 @@ the background color for the
 Page
 \family default
  (default:
- 
-\change_deleted -712698321 1740814642
-white
-\change_inserted -712698321 1740814620
-none
-\change_unchanged
-) and for 
+ none) and for 
 \family sans
 Shaded
 \begin_inset space ~
@@ -54326,32 +52217,19 @@ Shaded
 boxes
 \family default
  (default:
- red)
-\change_inserted -712698321 1740814723
-,
-\change_deleted -712698321 1740814722
-.
- 
-\change_inserted -712698321 1740814725
-
+ red),
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1740814746
 the color of table borders,
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1740814835
 and two colors which will be used for the background of odd and even table rows,
  respectively.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740814852
 Also,
  you can define custom colors which will then be available in all document-related color selections in \SpecialChar LyX
  (e.
@@ -54363,51 +52241,16 @@ g.,
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740814873
 These possibilities will now be described in turn.
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1740227191
 Main text,
  page,
  notes and boxes colors
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740227585
-The button 
-\family sans
-Reset
-\family default
- sets the color back to the default.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740227613
-Clicking any button showing 
-\family sans
-Default
-\family default
- or 
-\family sans
-Change
-\family default
- opens a dialog enabling you to choose from a selection of colors or from a color-picker or to specify a color using HSL or RGB values.
- In the dialog you can add any color to the custom colors to select them later more quickly.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -712698321 1740227751
 You can select from an extensive list of predefined colors for each element.
  Main text and page color furthermore provide a 
 \begin_inset Quotes eld
@@ -54432,8 +52275,6 @@ no color
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740815559
 If none of the predefined colors suit you,
  you can define a custom color as documented in the section that follows the next,
  which will then be available in the list as well.
@@ -54506,19 +52347,11 @@ Page
 \begin_inset space ~
 \end_inset
 
-Code
-\change_deleted -712698321 1740227950
- after a forced page break
-\change_unchanged
-:
+Code:
 \end_layout
 
 \begin_layout Itemize
-For the page color
-\change_inserted -712698321 1740227948
- (after a forced page break)
-\change_unchanged
-:
+For the page color (after a forced page break):
 \begin_inset Newline newline
 \end_inset
 
@@ -54542,58 +52375,10 @@ color{color name}
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740227986
 You can use any color which is listed in the dialog (including the custom colors) with these commands.
  Note,
  however,
- that some colors require
-\change_deleted -712698321 1740227990
-You are restricted to one of 
-\series bold
-black
-\series default
-,
- 
-\series bold
-blue
-\series default
-,
- 
-\series bold
-cyan
-\series default
-,
- 
-\series bold
-green
-\series default
-,
- 
-\series bold
-magenta
-\series default
-,
- 
-\series bold
-red
-\series default
-,
- 
-\series bold
-white
-\series default
- or 
-\series bold
-yellow
-\series default
- for the 
-\series bold
-color name
-\series default
- unless you have defined your own color
-\change_inserted -712698321 1740228138
- the 
+ that some colors require the 
 \family typewriter
 \color blue
 xcolor
@@ -54618,23 +52403,7 @@ x11names
 \family typewriter
 xcolor
 \family default
- manual for details)
-\change_deleted -712698321 1740228042
- (see the section 
-\emph on
-Colored Tables
-\emph default
- of the 
-\emph on
-Embedded
-\begin_inset space ~
-\end_inset
-
-Objects
-\emph default
- Manual)
-\change_unchanged
-.
+ manual for details).
 \begin_inset Newline newline
 \end_inset
 
@@ -54711,14 +52480,10 @@ note_fontcolor
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1740815111
 Table colors
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740815231
 Table colors (cells,
  rows,
  columns,
@@ -54729,8 +52494,6 @@ Table colors (cells,
 
 \begin_layout Enumerate
 
-\change_inserted -712698321 1740815271
-
 \family sans
 Table border color
 \family default
@@ -54739,8 +52502,6 @@ Table border color
 \end_layout
 
 \begin_layout Enumerate
-
-\change_inserted -712698321 1740815499
 
 \family sans
 Alternating table row colors
@@ -54766,22 +52527,16 @@ zebra-striped
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740815538
 As in all other color settings,
  you can select from the list of predefined colors,
  but also define a custom color (see below) which will appear in the selection then as well.
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1740063896
 Custom colors
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740063989
 To define custom colors,
  add a name consisting only of ASCII characters and no blanks (such as 
 \emph on
@@ -54793,8 +52548,6 @@ mycolor
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740064041
 Note that if you rename or delete colors,
  \SpecialChar LyX
  will not check if this color is used anywhere in the document and not rename it there,
@@ -54802,11 +52555,7 @@ Note that if you rename or delete colors,
 \end_layout
 
 \begin_layout Standard
-To see how to define and use custom colors
-\change_inserted -712698321 1740063847
- in other contexts
-\change_unchanged
-,
+To see how to define and use custom colors in other contexts,
  see section 
 \emph on
 Colored
@@ -55073,11 +52822,7 @@ nolink "false"
 \end_layout
 
 \begin_layout Section
-Indexes
-\change_inserted -712698321 1724253284
- & Nomenclature
-\change_unchanged
-
+Indexes & Nomenclature
 \end_layout
 
 \begin_layout Standard
@@ -55098,19 +52843,13 @@ nolink "false"
 \end_inset
 
  for details).
-\change_inserted -712698321 1724303218
-
 \end_layout
 
 \begin_layout Section
-
-\change_inserted -712698321 1724303226
 Nomenclature
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1724303279
 Here you can select a nomenclature style and select among some options that determine the output of the nomenclature list (see section
 \begin_inset space ~
 \end_inset
@@ -55127,8 +52866,6 @@ nolink "false"
 \end_inset
 
  for details).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -55746,25 +53483,12 @@ Note:
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753944044
-\SpecialChar LaTeX
-
-\begin_inset space ~
-\end_inset
-
-
-\change_unchanged
 Preamble
-\change_inserted -712698321 1753944046
-
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 ).
  For example for the € sign one needs to add the line 
@@ -56060,23 +53784,6 @@ Additional
 Features
 \emph default
  manual.
- 
-\change_deleted -712698321 1723968417
-
-\family sans
-Math
-\begin_inset space ~
-\end_inset
-
-image
-\begin_inset space ~
-\end_inset
-
-scaling
-\family default
- is used for the size of equations in the output.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -56104,8 +53811,6 @@ Additional Features
 
 \begin_layout Description
 
-\change_inserted -712698321 1723968656
-
 \family sans
 Scaling
 \begin_inset space ~
@@ -56130,11 +53835,7 @@ g.,
  math,
  linguistics structure trees) in non-\SpecialChar LaTeX
  output (XHTML,
- DocBook) graphically
-\change_unchanged
-.
-
-\change_inserted -712698321 1723968904
+ DocBook) graphically.
  The factor multiplies with 72
 \begin_inset space \thinspace{}
 \end_inset
@@ -56143,8 +53844,6 @@ dpi.
  The higher the value,
  thus,
  the better the image quality (and the bigger the file size).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -56172,26 +53871,12 @@ programs If this is switched on,
 \end_layout
 
 \begin_layout Section
-
-\change_deleted -712698321 1753941355
-La
-\family sans
-TeX
-\family default
- 
-\change_unchanged
 Preamble
 \end_layout
 
 \begin_layout Standard
-In this
-\change_inserted -712698321 1753941368
- section,
- you can add
-\change_unchanged
- 
-\change_inserted -712698321 1753943793
-code that is output verbatim in a specific position of the generated \SpecialChar LaTeX
+In this section,
+ you can add code that is output verbatim in a specific position of the generated \SpecialChar LaTeX
  or XHTML document,
  before the main document (body) starts.
  Use the respective input widget (
@@ -56206,31 +53891,9 @@ HTML
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1753943106
 In the case of \SpecialChar LaTeX
 ,
- the preamble is the place where you can manually load 
-\change_deleted -712698321 1753943110
-text field you can enter commands to load special \SpecialChar LaTeX
--
-\change_unchanged
-packages or 
-\change_deleted -712698321 1753943115
-to 
-\change_inserted -712698321 1753943361
-(re-)
-\change_unchanged
-define 
-\change_deleted -712698321 1753943117
-\SpecialChar LaTeX
--
-\change_inserted -712698321 1753943120
- 
-\change_unchanged
-commands
-\change_inserted -712698321 1753943720
- (cf.
+ the preamble is the place where you can manually load packages or (re-)define commands (cf.
  the introduction to the \SpecialChar LaTeX
  syntax in section
 \begin_inset space ~
@@ -56244,11 +53907,7 @@ nolink "false"
 
 \end_inset
 
-)
-\change_unchanged
-.
-
-\change_inserted -712698321 1753943188
+).
  In the case of XHTML,
  you might,
  for instance,
@@ -56256,45 +53915,12 @@ nolink "false"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1753943192
 In any case,
-
-\change_deleted -712698321 1753943188
- 
-\change_inserted -712698321 1753943194
- 
-\change_deleted -712698321 1753943195
-T
-\change_inserted -712698321 1753943196
-t
-\change_unchanged
-he preamble is a
-\change_inserted -712698321 1753943208
-n expert tool
-\change_deleted -712698321 1753943216
- thing for \SpecialChar LaTeX
--experts
-\change_unchanged
-.
- You should not 
-\change_deleted -712698321 1753943326
-enter commands her
-\change_inserted -712698321 1753943327
-us
-\change_unchanged
-e 
-\change_inserted -712698321 1753943329
-it 
-\change_unchanged
-until you know exactly what you are doing.
-\change_inserted -712698321 1753944829
-
+ the preamble is an expert tool.
+ You should not use it until you know exactly what you are doing.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1753944865
 For details on the preamble,
  please also refer to section
 \begin_inset space ~
@@ -56305,28 +53931,9 @@ For details on the preamble,
 Additional Features
 \emph default
  manual.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1753943140
-An introduction to the \SpecialChar LaTeX
--syntax is given in section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:LaTeX-Syntax"
-nolink "false"
-
-\end_inset
-
-
-\change_unchanged
 .
 \end_layout
 
@@ -57268,9 +54875,7 @@ Color
 \end_layout
 
 \begin_layout Standard
-Here you can 
-\change_inserted -1900975149 1746731296
-select or edit a color theme for screen.
+Here you can select or edit a color theme for screen.
  Predefined system themes and user-defined themes are listed in the 
 \family sans
 Themes
@@ -57280,8 +54885,6 @@ Themes
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1900975149 1746724938
 Themes can be edited and saved as a user-defined theme.
  To modify a theme,
  you choose a base theme from the 
@@ -57326,15 +54929,6 @@ Edit
  button depending on which color mode you want to modify,
  and you can choose a color in the pop-up dialog.
  You can call the same dialog by clicking the color swatch in each list item.
-\change_deleted -1900975149 1746724576
-change the screen colors used by \SpecialChar LyX
- by choosing an item in the list and selecting the 
-\family sans
-Alter
-\family default
- button.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -57360,13 +54954,9 @@ label and URL
 text
 \family default
  are then not customizable and thus not listed.
-\change_inserted -1900975149 1746727675
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1900975149 1746727941
 While you attempt try-and-errors to find a desirable color,
  you can use Undo/Redo buttons to cancel or resume past operations.
  If you activate 
@@ -57380,13 +54970,7 @@ Apply immediately
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1900975149 1746733571
-Once the theme becomes satis
-\change_inserted -712698321 1746885508
-f
-\change_inserted -1900975149 1746733571
-actory,
+Once the theme becomes satisfactory,
  it can be saved,
  i.e.
  add to the 
@@ -57410,48 +54994,27 @@ Remove
 \family default
  button.
  Note that you can delete only user-defined themes and system themes cannot be deleted.
- 
-\change_deleted -712698321 1746886398
-u
-\change_inserted -712698321 1746886398
-U
-\change_inserted -1900975149 1746733571
-ser-defined themes are denoted by a checkmark icon.
+ User-defined themes are denoted by a checkmark icon.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -1900975149 1746728497
 Themes can be exported or imported using Export or Import menu,
  respectively,
  which opens by pushing 
 \family sans
-More
-\change_inserted -712698321 1746886401
-\SpecialChar ldots
-
-\change_deleted -712698321 1746886403
-...
-
-\change_inserted -1900975149 1746728497
+More\SpecialChar ldots
 
 \family default
  button.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1751785681
 \begin_inset CommandInset label
 LatexCommand label
 name "sec:Display"
 
 \end_inset
 
-
-\change_unchanged
 Display
 \begin_inset Index idx
 range none
@@ -57478,32 +55041,16 @@ Display
 \end_layout
 
 \begin_layout Standard
-Here you can specify 
-\change_inserted -712698321 1751795328
-how different elements 
-\change_deleted -712698321 1751795331
-if graphics 
-\change_unchanged
-are displayed inside 
-\change_inserted -712698321 1751795557
-the workarea of 
-\change_unchanged
-\SpecialChar LyX
+Here you can specify how different elements are displayed inside the workarea of \SpecialChar LyX
 .
-\change_inserted -712698321 1751795356
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1751795399
 
 \family sans
 Display graphics
 \family default
  determines whether graphics are displayed or just represented symbolically.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -57525,13 +55072,9 @@ nolink "false"
 \end_inset
 
 .
-\change_inserted -712698321 1751785600
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1751785641
 With the option 
 \family sans
 Use justification in \SpecialChar LyX
@@ -57553,8 +55096,6 @@ reference "sec:Text-Layout"
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -57575,13 +55116,9 @@ of
 paragraphs
 \family default
  displays a pilcrow (¶) at the end of every paragraph.
-\change_inserted -712698321 1751795512
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1751795621
 
 \family sans
 Underline change tracking additions
@@ -57590,8 +55127,6 @@ Underline change tracking additions
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1751795669
 With 
 \family sans
 Display bookmarks
@@ -59131,7 +56666,6 @@ cursor
 movement Here you can define how cursor movement (with the arrow keys) behaves when writing scripts with right-to-left direction (e.g.,
  Arabic,
  Hebrew or Farsi).
- 
 \end_layout
 
 \begin_deeper
@@ -61308,13 +58842,9 @@ https://mirrors.ctan.org/macros/latex/contrib/caption/caption.pdf
 \end_inset
 
 
-\change_inserted -712698321 1742722173
-
 \end_layout
 
 \begin_layout Bibliography
-
-\change_inserted -712698321 1742722235
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "cleveref"
@@ -61339,25 +58869,17 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742722175
 \SpecialChar LaTeX
  packages
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742722254
 cleveref
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -61372,17 +58894,11 @@ cleveref
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742722259
 https://mirrors.ctan.org/macros/latex/contrib/cleveref/cleveref.pdf
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -61818,13 +59334,9 @@ https://mirrors.ctan.org/macros/latex/contrib/refstyle/refstyle.pdf
 \end_inset
 
 
-\change_inserted -712698321 1742730694
-
 \end_layout
 
 \begin_layout Bibliography
-
-\change_inserted -712698321 1742730701
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "zref-clever"
@@ -61849,25 +59361,17 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742730695
 \SpecialChar LaTeX
  packages
 \begin_inset IndexMacro subentry
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742730730
 zref-clever
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 
@@ -61882,23 +59386,11 @@ zref-clever
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1742730723
-https://mirrors.ctan.org/macros/latex/contrib/
-\change_inserted 1549938239 1747209463
-zref-clever
-\change_deleted 1549938239 1747209445
-refstyle
-\change_inserted -712698321 1742730723
-/zref-clever-doc.pdf
-\change_unchanged
-
+https://mirrors.ctan.org/macros/latex/contrib/zref-clever/zref-clever-doc.pdf
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
 
 \end_layout
 

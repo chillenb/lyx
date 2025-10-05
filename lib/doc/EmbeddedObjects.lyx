@@ -1,5 +1,5 @@
 #LyX 2.5 created this file. For more info see https://www.lyx.org/
-\lyxformat 634
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -211,8 +211,8 @@ varwidth
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
@@ -251,7 +251,6 @@ varwidth
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
-\author -712698321 "Jürgen Spitzmüller"
 \end_header
 
 \begin_body
@@ -312,7 +311,7 @@ author:
 
 
 \family sans
-Version 2.4.x
+Version 2.5.x
 \end_layout
 
 \begin_layout Standard
@@ -2582,13 +2581,9 @@ nolink "false"
 \end_inset
 
 .
-\change_inserted -712698321 1740820976
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1740821318
 Colors In this tab you can adjust the colors of the table.
  You can set the background colors for individual cells,
  whole rows or columns,
@@ -2606,8 +2601,6 @@ reference "sec:Colored-Tables"
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -3822,7 +3815,7 @@ TEL.
 \begin_inset Text
 
 \begin_layout Plain Layout
- continued on next page
+continued on next page
 \end_layout
 
 \end_inset
@@ -4813,7 +4806,7 @@ Franz
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
+
 \end_layout
 
 \end_inset
@@ -9474,7 +9467,7 @@ Franz
 \begin_inset Text
 
 \begin_layout Plain Layout
- 
+
 \end_layout
 
 \end_inset
@@ -17487,17 +17480,9 @@ Color
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1740823126
-Individually 
-\change_unchanged
-Colored Cells
-\change_inserted -712698321 1740823134
-,
+Individually Colored Cells,
  Rows,
  and Columns
-\change_unchanged
-
 \begin_inset Index idx
 range none
 pageformat default
@@ -17562,31 +17547,7 @@ name "tab:Table-colored-without"
 
 \end_inset
 
-Table 
-\change_inserted -712698321 1740821659
-with 
-\change_unchanged
-colored 
-\change_deleted -712698321 1740821667
-without using the package 
-\series bold
-colortbl
-\series default
-
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-Table without colortbl
-\end_layout
-
-\end_inset
-
-
-\change_inserted -712698321 1740821669
-text
-\change_unchanged
-
+Table with colored text
 \end_layout
 
 \end_inset
@@ -17735,12 +17696,8 @@ type  "icon"
 arg   "dialog-show character"
 \end_inset
 
-)
-\change_inserted -712698321 1740821911
- as you would do to color text outside tables,
- too
-\change_unchanged
-.
+) as you would do to color text outside tables,
+ too.
  This was used to create Table
 \begin_inset space ~
 \end_inset
@@ -17754,9 +17711,7 @@ nolink "false"
 \end_inset
 
 .
- In any other case you 
-\change_inserted -712698321 1740821866
-set the colors either in 
+ In any other case you set the colors either in 
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
@@ -17773,11 +17728,7 @@ Colors
 ) for the color setting of individual tables.
  These settings employ,
  and hence require,
- 
-\change_deleted -712698321 1740819026
-have to use 
-\change_unchanged
-the \SpecialChar LaTeX
+ the \SpecialChar LaTeX
 -package 
 \series bold
 colortbl
@@ -17809,200 +17760,6 @@ colortbl
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740822511
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-ifcolortbl
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-The following section part will only be displayed when the \SpecialChar LaTeX
--package 
-\series bold
-colortbl
-\series default
- is installed.
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740819043
-To create colored tables,
- 
-\series bold
-colortbl
-\series default
- must be loaded in the preamble with the line
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740819043
-
-\series bold
-
-\backslash
-usepackage{colortbl}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740819043
-The color of a column is adjusted with the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740819043
-
-\series bold
-
-\backslash
-columncolor{name of color}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740819043
-inside the command 
-\series bold
->{ }
-\series default
-.
- More about the command 
-\series bold
->{}
-\series default
- is contained in section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:Multicolumn-Calculations"
-nolink "false"
-
-\end_inset
-
-.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230805
-The following color names are predefined:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230805
-
-\family sans
-red
-\family default
-,
- 
-\family sans
-green
-\family default
-,
- 
-\family sans
-yellow
-\family default
-,
- 
-\family sans
-blue
-\family default
-,
- 
-\family sans
-cyan
-\family default
-,
- 
-\family sans
-magenta
-\family default
-,
- 
-\family sans
-black
-\family default
- and 
-\family sans
-white
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230805
-\begin_inset VSpace medskip
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230805
-If you add the option
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230805
-
-\series bold
-dvipsnames
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822067
-to the document class options in the document settings,
- you can additionally use further 61
-\begin_inset space ~
-\end_inset
-
-colors.
- These colors are listed in appendix
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "chap:List-of-dvips-colornames"
-nolink "false"
-
-\end_inset
-
-.
- 
-\change_inserted -712698321 1740822109
 You can principally use all colors which are listed in the diverse color selection widgets (e.
 \begin_inset space \thinspace{}
 \end_inset
@@ -18017,9 +17774,7 @@ Text
 Style
 \family default
  dialog).
- 
-\change_unchanged
-One of these colors,
+ One of these colors,
  
 \emph on
 Maroon
@@ -18038,37 +17793,11 @@ nolink "false"
 \end_inset
 
 .
-
-\change_inserted -712698321 1740822135
- 
-\change_deleted -712698321 1740822135
-
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740231021
-\begin_inset VSpace medskip
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -712698321 1740822149
 If none of the provided colors suit you,
- 
-\change_deleted -712698321 1740822150
-Y
-\change_inserted -712698321 1740822150
-y
-\change_unchanged
-ou can also define your own color 
-\change_inserted -712698321 1740822325
-in 
+ you can also define your own color in 
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar ldots
@@ -18080,185 +17809,6 @@ Custom Colors
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740230946
-with the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-
-\series bold
-
-\backslash
-definecolor{color name}{color model}{color values}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-The color model can be
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\change_deleted -712698321 1740230946
-cmyk:
- cyan,
- magenta,
- yellow,
- black
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\change_deleted -712698321 1740230946
-rgb:
- red,
- green blue
-\end_layout
-
-\begin_layout Labeling
-\labelwidthstring 00.00.0000
-
-\change_deleted -712698321 1740230946
-gray gray
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-and the color values are comma separated numbers between 0 and 1 describing the factor for the corresponding color of the color model.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-You can e.
-\begin_inset space \thinspace{}
-\end_inset
-
-g.
-\begin_inset space \space{}
-\end_inset
-
-define the color "
-\emph on
-darkgreen
-\emph default
-" in the preamble with
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-
-\series bold
-
-\backslash
-definecolor{darkgreen}{cmyk}{0.5,
- 0,
- 1,
- 0.5}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-and the color "
-\emph on
-lightgray
-\emph default
-" with
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740230946
-
-\series bold
-
-\backslash
-definecolor{lightgray}{gray}{0.8}
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740231023
-\begin_inset VSpace medskip
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822213
-Lines are colored with the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822213
-
-\series bold
-
-\backslash
-rowcolor{name of color}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822213
-and cells are colored with the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822213
-
-\series bold
-
-\backslash
-cellcolor{name of color}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822213
-Both commands are inserted at the beginning of a cell as \SpecialChar TeX
- Code.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822256
-To color characters in the table,
- mark the cells and use the 
-\family sans
-Text
-\begin_inset space ~
-\end_inset
-
-Style
-\family default
- dialog.
- If a cell contains \SpecialChar TeX
- Code mark only the characters,
- otherwise the colored \SpecialChar TeX
- Code will cause \SpecialChar LaTeX
- errors.
-\change_unchanged
-
 \begin_inset Note Greyedout
 status open
 
@@ -18277,30 +17827,7 @@ Note:
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740826738
-\begin_inset VSpace bigskip
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823209
-To c
-\change_inserted -712698321 1740823210
-C
-\change_unchanged
-reat
-\change_deleted -712698321 1740823211
-e
-\change_inserted -712698321 1740823212
-ing
-\change_unchanged
- Table
+Creating Table
 \begin_inset space ~
 \end_inset
 
@@ -18312,25 +17839,13 @@ nolink "false"
 
 \end_inset
 
- 
-\change_deleted -712698321 1740823215
-do the following
-\change_inserted -712698321 1740823218
-is easy
-\change_unchanged
-:
+ is easy:
  The color of the first column should be dark
-\change_inserted -712698321 1740822757
-
 \emph on
  
-\change_unchanged
-
 \emph default
 green.
- So 
-\change_inserted -712698321 1740822863
-select 
+ So select 
 \emph on
 DarkGreen
 \emph default
@@ -18343,39 +17858,8 @@ Column Color
 Tabular Settings
 \family default
  while the cursor is in this column.
-\change_deleted -712698321 1740822763
-insert
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822763
-
-\series bold
->{
-\backslash
-columncolor{darkgreen}
-\backslash
-centering}c
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823187
-as \SpecialChar LaTeX
--argument for this column.
-
-\change_unchanged
- The first row should be 
-\change_deleted -712698321 1740822831
-light blue
-\change_inserted -712698321 1740822832
-cyan
-\change_unchanged
-,
- therefore 
-\change_inserted -712698321 1740822896
-we select 
+ The first row should be cyan,
+ therefore we select 
 \emph on
 Cyan
 \emph default
@@ -18383,54 +17867,15 @@ Cyan
 \family sans
 Row Color
 \family default
- while the cursor is in
-\change_deleted -712698321 1740822872
-the \SpecialChar TeX
- Code command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822872
-
-\series bold
-
-\backslash
-rowcolor{cyan}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822872
-is inserted to the first cell of
-\change_unchanged
- this row.
+ while the cursor is in this row.
  Note that this overwrites the column color for the first cell.
- The last cell of the last row is colored maroon 
-\change_inserted -712698321 1740823303
-just the same way,
+ The last cell of the last row is colored maroon just the same way,
  only using 
 \family sans
 Cell Color
 \family default
  this time.
  Cell colors will overwrite both row and column colors.
- 
-\change_deleted -712698321 1740822922
-by inserting the \SpecialChar TeX
- Code command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822922
-
-\series bold
-
-\backslash
-cellcolor{Maroon}
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -18465,30 +17910,10 @@ name "tab:Table-colored-using"
 \end_inset
 
 Table colored using the 
-\change_deleted -712698321 1740822697
-package 
-\series bold
-colortbl
-\series default
-
-\begin_inset Argument 1
-status collapsed
-
-\begin_layout Plain Layout
-Table with colortbl
-\end_layout
-
-\end_inset
-
-
-\change_inserted -712698321 1740822703
-
 \family sans
 Table Settings
 \family default
  dialog
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -18509,21 +17934,6 @@ Table Settings
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_deleted -712698321 1740822375
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-rowcolor{cyan}
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 
 \color magenta
 a
@@ -18617,21 +18027,6 @@ h
 
 \begin_layout Plain Layout
 
-\change_deleted -712698321 1740822434
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-cellcolor{Maroon}
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
 \color green
 i
 \end_layout
@@ -18651,73 +18046,8 @@ i
 
 \end_layout
 
-\begin_layout Standard
-
-\change_deleted -712698321 1740822506
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-else
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-The following will be displayed when the \SpecialChar LaTeX
--package 
-\series bold
-colortbl
-\series default
- is not installed:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822506
-You need to install the package 
-\series bold
-colortbl
-\series default
- to see the content of this section in the output.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822506
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-fi
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
 \begin_layout Subsection
-
-\change_inserted -712698321 1740823468
-Alternately 
-\change_unchanged
-Colored Rows
+Alternately Colored Rows
 \begin_inset Index idx
 range none
 pageformat default
@@ -18765,8 +18095,6 @@ for Table Rows
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740828304
 If you want a table where rows use alternating colors (
 \begin_inset Quotes eld
 \end_inset
@@ -18827,183 +18155,6 @@ even
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740823415
-In case every second table row needs to be colored there is an alternative to the method described in the previous section:
- One loads the package 
-\series bold
-xcolor
-\series default
-
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-\SpecialChar LaTeX
- packages
-\begin_inset IndexMacro subentry
-status open
-
-\begin_layout Plain Layout
-xcolor
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
- in the document preamble with the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823415
-
-\series bold
-
-\backslash
-usepackage[table]{xcolor}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823415
-
-\series bold
-xcolor
-\series default
- automatically loads also the package 
-\series bold
-colortbl
-\series default
-
-\begin_inset Index idx
-range none
-pageformat default
-status collapsed
-
-\begin_layout Plain Layout
-\SpecialChar LaTeX
- packages
-\begin_inset IndexMacro subentry
-status open
-
-\begin_layout Plain Layout
-colortbl
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-,
- so 
-\series bold
-colortbl
-\series default
- must be installed in your \SpecialChar LaTeX
--distribution,
- otherwise you get \SpecialChar LaTeX
--errors.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822729
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-ifcolortbl
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-The following section part will only be displayed when the \SpecialChar LaTeX
--package 
-\series bold
-colortbl
-\series default
- is installed.
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823797
-The table rows are colored with the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823797
-
-\series bold
-
-\backslash
-rowcolors[commands]{row number}{odd row color}{even row color}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823797
-that is either inserted in the document preamble or as \SpecialChar TeX
- Code before the first table to be colored.
- row
-\begin_inset space ~
-\end_inset
-
-number is the number of the first row which should be colored according to the odd row color.
- commands can be additional commands that are executed before every table row.
- So for example the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823797
-
-\series bold
-
-\backslash
-rowcolors{1}{white}{lightgray}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823877
-leads to the coloring scheme
-\change_inserted -712698321 1740823877
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740824528
- of 
-\change_unchanged
 Table
 \begin_inset space ~
 \end_inset
@@ -19016,34 +18167,8 @@ nolink "false"
 
 \end_inset
 
-
-\change_inserted -712698321 1740823920
  shows an example with white odd and light gray even row colors,
- starting from the first row
-\change_unchanged
-.
- 
-\change_deleted -712698321 1740824528
-The command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740824528
-
-\series bold
-
-\backslash
-rowcolors[
-\backslash
-hline]{1}{lightgray}{cyan}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740824528
-leads to the coloring scheme of
-\change_unchanged
+ starting from the first row.
  Table
 \begin_inset space ~
 \end_inset
@@ -19056,78 +18181,10 @@ nolink "false"
 
 \end_inset
 
-
-\change_inserted -712698321 1740824642
  has the rows colored in a darker and lighter (sky) blue,
  but the coloring only starts at row 2,
  while the first (header) row uses an own row color,
- an even darker shade of blue
-\change_unchanged
-.
- 
-\change_deleted -712698321 1740824565
-If odd
-\begin_inset space ~
-\end_inset
-
-row
-\begin_inset space ~
-\end_inset
-
-color and/or even
-\begin_inset space ~
-\end_inset
-
-row
-\begin_inset space ~
-\end_inset
-
-color are left empty,
- no color will be used so that the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740824565
-
-\series bold
-
-\backslash
-rowcolors{1}{}{}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740824565
-deletes all colors.
- 
-\series bold
-
-\backslash
-rowcolors
-\series default
- affects all tables following that command.
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740823857
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-rowcolors{1}{white}{lightgray}
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
+ an even darker shade of blue.
 \end_layout
 
 \begin_layout Standard
@@ -19293,27 +18350,6 @@ Z
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740823934
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-\backslash
-rowcolors[
-\backslash
-hline]{1}{lightgray}{cyan}
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
 \begin_inset Float table
 placement h
 alignment document
@@ -19331,13 +18367,7 @@ name "tab:Table-rowcolors-2"
 
 \end_inset
 
-Table 
-\change_deleted -712698321 1740824686
-where every second row is colored cyan and at which there is a line between each row
-\change_inserted -712698321 1740824703
-with blue zebra stripes and an individually colored header row
-\change_unchanged
-.
+Table with blue zebra stripes and an individually colored header row.
 \end_layout
 
 \end_inset
@@ -19488,103 +18518,9 @@ Z
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted -712698321 1740826360
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-rowcolors{1}{}{}
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status collapsed
-
-\begin_layout Plain Layout
-turns off the row coloring
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822733
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-else
-\end_layout
-
-\end_inset
-
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-The following will be displayed when the \SpecialChar LaTeX
--package 
-\series bold
-colortbl
-\series default
- is not installed:
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822733
-You need to install the package 
-\series bold
-colortbl
-\series default
- to see the content of this section in the output.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740822733
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-fi
-\end_layout
-
-\end_inset
-
-
-\change_inserted -712698321 1740824749
-
-\end_layout
-
-\begin_layout Standard
-
-\change_inserted -712698321 1740824816
 The zebra stripes can be overwritten by individual cell,
  column and row colors,
  and of course you can also use border lines (although this somewhat might defeat the purpose of the coloring).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -19633,13 +18569,9 @@ for Table Lines
 \end_inset
 
 
-\change_inserted -712698321 1740824904
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740825770
 To give table border lines a different color than the default black,
  you can select a different color either in 
 \family sans
@@ -19677,13 +18609,9 @@ Border color
 Table Settings
 \family default
  dialog.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740824995
 \begin_inset Float table
 placement h
 alignment document
@@ -19692,13 +18620,9 @@ sideways false
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740825454
 \begin_inset CommandInset label
 LatexCommand label
 name "tab:Table-bordercolors"
@@ -19706,8 +18630,6 @@ name "tab:Table-bordercolors"
 \end_inset
 
 Table with lime borders.
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -19717,8 +18639,6 @@ Table with lime borders.
 
 \begin_layout Plain Layout
 \align center
-
-\change_inserted -712698321 1740824995
 \begin_inset Tabular
 <lyxtabular version="3" rows="4" columns="3">
 <features borderColor="lime" oddRowsColor="default" evenRowsColor="default" startAltRowColors="2" tabularvalignment="middle">
@@ -19730,8 +18650,6 @@ Table with lime borders.
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 X
 \end_layout
 
@@ -19741,8 +18659,6 @@ X
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 Y
 \end_layout
 
@@ -19752,8 +18668,6 @@ Y
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 Z
 \end_layout
 
@@ -19765,8 +18679,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 1
 \end_layout
 
@@ -19776,8 +18688,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 2
 \end_layout
 
@@ -19787,8 +18697,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 3
 \end_layout
 
@@ -19800,8 +18708,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 4
 \end_layout
 
@@ -19811,8 +18717,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 5
 \end_layout
 
@@ -19822,8 +18726,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 6
 \end_layout
 
@@ -19835,8 +18737,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 7
 \end_layout
 
@@ -19846,8 +18746,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 8
 \end_layout
 
@@ -19857,8 +18755,6 @@ Z
 \begin_inset Text
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1740824995
 9
 \end_layout
 
@@ -19875,13 +18771,9 @@ Z
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1740829468
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:More-Fancy-Stuff"
@@ -19889,13 +18781,9 @@ name "subsec:More-Fancy-Stuff"
 \end_inset
 
 More Fancy Stuff
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1740826015
 If you use \SpecialChar TeX
  code,
  you can do some more fancy (but arguably also visually very doubtful) coloring if you wish so.
@@ -25981,8 +24869,6 @@ nolink "false"
 \end_inset
 
 .
-
-\change_inserted -712698321 1740829537
  As with the fancy line colors discussed in section
 \begin_inset space ~
 \end_inset
@@ -25997,8 +24883,6 @@ reference "subsec:More-Fancy-Stuff"
 ,
  we do not encourage you to use coloring like this in your documents,
  as this is rather bizarre and distracting.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -26589,11 +25473,7 @@ reset to default
 
 \begin_layout Standard
 The coloring of lines,
- columns and lines works as de
-\change_inserted -712698321 1740829630
-s
-\change_unchanged
-cribed in section
+ columns and lines works as described in section
 \begin_inset space ~
 \end_inset
 
@@ -30744,7 +29624,6 @@ Figure #:
  is the actual reference number.
  By default the label and the number are in the same font as the caption text and a colon follows the number to divide the label from the text.
  This caption format is suitable for many but not all documents.
- 
 \end_layout
 
 \begin_layout Standard
@@ -39018,24 +37897,7 @@ This is colored text within a colored,
 
 \begin_layout Standard
 If you need another color than the predefined ones,
- you
-\change_deleted -712698321 1740244776
- can define your own color as described in section
-\begin_inset space ~
-\end_inset
-
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Colored-Tables"
-nolink "false"
-
-\end_inset
-
-.
- 
-\change_inserted -712698321 1740244787
-can define your own color in 
+ youcan define your own color in 
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar ldots
@@ -39044,145 +37906,6 @@ Colors\SpecialChar menuseparator
 Custom Colors
 \family default
  and use that.
- 
-\change_deleted -712698321 1740244798
-To use your own color you must typeset the box by using TeX code:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-Colored boxes without frame are created with the command 
-\series bold
-
-\backslash
-colorbox
-\series default
-.
- It has the following scheme:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-
-\series bold
-
-\backslash
-colorbox{color}{box content}
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-The box content can also be a box and colored boxes can also be within other boxes.
- To have e.
-\begin_inset space \thinspace{}
-\end_inset
-
-g.
-\begin_inset space \space{}
-\end_inset
-
-a darkgreen background for a word,
- insert the command
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-
-\series bold
-
-\backslash
-colorbox{darkgreen}{
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-before the word in \SpecialChar TeX
- Code.
- After the word insert a closing brace 
-\begin_inset Quotes eld
-\end_inset
-
-
-\series bold
-}
-\series default
-
-\begin_inset Quotes erd
-\end_inset
-
- in \SpecialChar TeX
- Code.
-\begin_inset Newline newline
-\end_inset
-
-This is the result:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-This is a line where the word 
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-\backslash
-colorbox{darkgreen}{
-\end_layout
-
-\end_inset
-
-
-\begin_inset Quotes eld
-\end_inset
-
-Attention!
-\begin_inset Quotes erd
-\end_inset
-
-
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-}
-\end_layout
-
-\end_inset
-
- has a darkgreen background.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-Framed,
- colored boxes are created with the command 
-\series bold
-
-\backslash
-fcolorbox
-\series default
-.
- It has the following scheme:
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted -712698321 1740244798
-
-\series bold
-
-\backslash
-fcolorbox{frame color}{box color}{box content}
-\change_unchanged
-
 \end_layout
 
 \begin_layout Section
@@ -43563,7 +42286,6 @@ Input
 \end_inset
 
 ).
- 
 \end_layout
 
 \begin_layout Standard

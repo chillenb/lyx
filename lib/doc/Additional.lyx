@@ -144,10 +144,6 @@ initials
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
-\author -712698321 "Jürgen Spitzmüller"
-\author -584632292 "Richard Kimberly Heck"
-\author -495245474 "Jean-Marc Lasgouttes"
-\author 5863208 "ab"
 \end_header
 
 \begin_body
@@ -158,7 +154,7 @@ Additional \SpecialChar LyX
 \end_layout
 
 \begin_layout Subtitle
-Version 2.4.x
+Version 2.5.x
 \end_layout
 
 \begin_layout Author
@@ -437,7 +433,6 @@ Update
 They will only invoke \SpecialChar LaTeX
  if the file has changed since the last time \SpecialChar LaTeX
  was run.
- 
 \end_layout
 
 \begin_layout Standard
@@ -688,7 +683,7 @@ name "sec:Inserting-TeX-Code"
 
 Inserting \SpecialChar TeX
  Code into \SpecialChar LyX
- Documents 
+ Documents
 \end_layout
 
 \begin_layout Standard
@@ -822,10 +817,6 @@ end{minipage}
 
 \backslash
 end{tabular}
-\end_layout
-
-\begin_layout LyX-Code
-
 \end_layout
 
 \begin_layout Standard
@@ -1119,7 +1110,6 @@ indentfirst
  envelopes,
  margins,
  etc.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -1223,21 +1213,10 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_deleted -712698321 1753944999
-\SpecialChar LaTeX
-
-\begin_inset space ~
-\end_inset
-
-Preamble
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_inserted -712698321 1753945008
 
 \family sans
 Preamble
@@ -1246,8 +1225,6 @@ Preamble
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
  in the 
 \family sans
@@ -1655,7 +1632,6 @@ if
 for example,
  if it follows a figure or is the first paragraph in a section—
 then there is no need for indentation.
- 
 \end_layout
 
 \begin_layout Standard
@@ -1856,18 +1832,12 @@ Fonts
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753945050
-Preamble
-\change_inserted -712698321 1753945050
 Preamble
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
  usually reduces the overfull lines drastically (we use this in the preamble of this document):
 \end_layout
@@ -1945,7 +1915,7 @@ Settings
 
 \end_inset
 
- 
+
 \end_layout
 
 \end_deeper
@@ -2127,7 +2097,6 @@ If you've inserted \SpecialChar LaTeX
  You may have forgotten to load a package.
  In any case,
  this error message usually means that you used an undefined command.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2478,13 +2447,11 @@ https://www.ctan.org/tex-archive/macros/latex/required/amsmath
  These layouts are appropriate,
  and useful,
  for any mathematical writing.
- 
 \end_layout
 
 \begin_layout Standard
 There are three basic AMS \SpecialChar LaTeX
  layouts:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -2668,7 +2635,6 @@ There is a long list of included environments provided by these layouts.
  However,
  the AMS recommends the environments that are available in \SpecialChar LyX
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -2820,14 +2786,12 @@ Standard Theorems (Unnumbered)
 
 \begin_layout Theorem
 This is typically used for the statements of major results.
- 
 \end_layout
 
 \begin_layout Corollary*
 This is used for statements which follow fairly directly from previous statements.
  Again,
  these can be major results.
- 
 \end_layout
 
 \begin_layout Lemma
@@ -2848,7 +2812,6 @@ These are statements provided without justification,
 \begin_layout Definition*
 Guess what this is for.
  The font is different for this environment than for the previous ones.
- 
 \end_layout
 
 \begin_layout Example*
@@ -2877,13 +2840,11 @@ Often used in the course of giving a proof of a larger result.
 Generally,
  these are used to break up long arguments,
  using specific instances of some condition.
- 
 \end_layout
 
 \begin_layout Case
 The numbering scheme for cases is on its own,
  not together with other numbered statements.
- 
 \end_layout
 
 \begin_layout Proof
@@ -2947,7 +2908,6 @@ Used for the explanation of,
 
 \begin_layout Summary
 Do we really need to tell you?
- 
 \end_layout
 
 \begin_layout Conclusion*
@@ -3785,7 +3745,6 @@ Layout\SpecialChar menuseparator
 Document
 \family default
 ).
- 
 \end_layout
 
 \begin_layout Itemize
@@ -4585,24 +4544,13 @@ ettings
 \family default
 \SpecialChar menuseparator
 
-\change_deleted -712698321 1753945064
-
 \family sans
-\SpecialChar LaTeX
-
-\begin_inset space ~
-\end_inset
-
-Preamble
-\change_inserted -712698321 1753945064
 Preamble
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 ) and the problem is solved.
 \end_layout
@@ -5069,7 +5017,6 @@ book.cls
 ,
  resp.,
  and fit better to Polish typography conventions in a number of points.
- 
 \end_layout
 
 \begin_layout Standard
@@ -5130,7 +5077,7 @@ outer page number is placed on outer side of page
 
 \end_deeper
 \begin_layout Itemize
-Options 
+Options
 \end_layout
 
 \begin_deeper
@@ -6210,7 +6157,6 @@ postprocessing
 \end_inset
 
  actions which need to be done before you submit it to the journals.
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -6223,7 +6169,6 @@ Export\SpecialChar menuseparator
 
 \family default
 ).
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -7076,7 +7021,7 @@ You should not mix title layouts with normal ones
 
 \begin_layout Paragraph
 \SpecialChar LaTeX
- error processing a table 
+ error processing a table
 \end_layout
 
 \begin_layout Standard
@@ -7114,7 +7059,6 @@ References
 
 \begin_layout Standard
 A couple of things:
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -7147,7 +7091,6 @@ Ressler(1992)
 Ressler (1992)
 \family default
 .
- 
 \end_layout
 
 \begin_layout Enumerate
@@ -7244,7 +7187,6 @@ pretty
  I chose not to make separate layouts for the preprint and preprint2 styles.
  Since I assume you will spend most of your time in the plain manuscript mode anyway,
  I decided not to chew up more disk space with this.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -7612,7 +7554,6 @@ Layout
  Remember that in Rev\SpecialChar TeX
 ,
  at least one optional argument is required!
- 
 \end_layout
 
 \begin_layout Standard
@@ -8370,7 +8311,6 @@ Recipe Book
 \begin_layout Standard
 The class is designed for typesetting one or two recipes per page.
  The hyperlinked table of contents (ToC) and page numbers make browsing recipes convenient.
- 
 \end_layout
 
 \begin_layout Section
@@ -9150,7 +9090,6 @@ empty
 \series default
  The final output contains no page numbers,
  or other headers or footers (except footnotes of course).
- 
 \end_layout
 
 \begin_layout Labeling
@@ -9794,7 +9733,6 @@ ShortRotatefoilhead
 \end_inset
 
 inches less separation between the foilhead and the body.
- 
 \end_layout
 
 \begin_layout Standard
@@ -10079,7 +10017,6 @@ pt
 textwidth
 \family default
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -10506,7 +10443,6 @@ Foil\SpecialChar TeX
 
 \family default
  has not been maintained since 2008.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -10909,7 +10845,7 @@ feature
 \begin_inset Quotes erd
 \end_inset
 
- 
+
 \end_layout
 
 \begin_layout Paragraph
@@ -10939,7 +10875,6 @@ Slide
 User's Guide
 \emph default
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -11057,7 +10992,6 @@ VisibleText
  completely ignores it.
  In fact,
  you can leave these five environments completely empty.
- 
 \end_layout
 
 \begin_layout Standard
@@ -11416,7 +11350,6 @@ appended to the page number of the parent
 Slide
 \family default
 .
- 
 \end_layout
 
 \end_inset
@@ -11552,7 +11485,6 @@ Overlay
 \family default
 ;
  it doesn't matter which] where they would be contain instead blank space.
- 
 \end_layout
 
 \begin_layout Standard
@@ -11726,7 +11658,6 @@ status open
 
 \begin_layout Plain Layout
 The commands of interest are:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -13452,19 +13383,12 @@ fxsetup{draft}
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753945098
-\SpecialChar LaTeX
- Preamble
-\change_inserted -712698321 1753945098
 Preamble
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 .
 \end_layout
@@ -17326,18 +17250,12 @@ As a final example,
 \family sans
 Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
-
-\change_deleted -712698321 1753945108
-LaTeX Preamble
-\change_inserted -712698321 1753945108
 Preamble
 \family default
 \SpecialChar menuseparator
 
 \family sans
 LaTeX
-\change_unchanged
-
 \family default
 :
 \end_layout
@@ -20652,7 +20570,6 @@ scientific.bib
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -22079,7 +21996,6 @@ Document
  When you click on this selection a small box is inserted into the file at the current cursor location.
  Clicking on the box raises a dialog which allows you to select the file to be included,
  and the method of its inclusion.
- 
 \end_layout
 
 \begin_layout Standard
@@ -22307,7 +22223,6 @@ output
 \end_inset
 
  checkbox typesets a mark to unambiguously define the presence of a space.
- 
 \end_layout
 
 \begin_layout Standard
@@ -22653,17 +22568,7 @@ Converters
 
 \end_inset
 
- These 
-\change_deleted -584632292 1723129205
-fall into two large groups:
- there are 
-\change_unchanged
-converters
-\change_deleted -584632292 1723129216
- that use \SpecialChar LaTeX
- as an intermediate format
-\change_unchanged
-,
+ These converters,
  such as 
 \begin_inset Flex Code
 status collapsed
@@ -22697,35 +22602,12 @@ plastex
 \end_inset
 
 ,
- 
-\change_inserted -584632292 1723129224
-use \SpecialChar LaTeX
+ use \SpecialChar LaTeX
  as an intermediate format,
- 
-\change_unchanged
-relying upon \SpecialChar LyX
+ relying upon \SpecialChar LyX
  to produce the \SpecialChar LaTeX
-
-\change_deleted 5863208 1723062487
-;
- and there is a converter that works directly on \SpecialChar LyX
- files,
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-e\SpecialChar LyX
-er
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
 .
  All of these have different advantages and disadvantages.
- 
 \end_layout
 
 \begin_layout Standard
@@ -22802,126 +22684,17 @@ can be a challenge.
 \end_layout
 
 \begin_layout Standard
-
-\change_deleted 5863208 1723062659
-Alex Fernandez's 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-e\SpecialChar LyX
-er
-\end_layout
-
-\end_inset
-
- (
-\begin_inset CommandInset href
-LatexCommand href
-name "http://pinchito.es/elyxer/"
-target "https://pinchito.es/elyxer/"
-literal "false"
-
-\end_inset
-
-) solves some of these problems.
- In particular,
- the formulae it produces scale perfectly,
- since it renders math using a combination of HTML and CSS rather than converting the formulae to images.
- But even moderately complex formula are rendered less well than with 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-htlatex
-\end_layout
-
-\end_inset
-
-;
- this reflects the limitations of HTML.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-That said,
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-e\SpecialChar LyX
-er
-\end_layout
-
-\end_inset
-
- can also use jsMath and MathJax for equations,
- but this setting is only available globally and requires one to have access to a server that runs the backend.
-\end_layout
-
-\end_inset
-
- More importantly (as of version 1.1.1,
- at least),
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-e\SpecialChar LyX
-er
-\end_layout
-
-\end_inset
-
- has limited support for math macros and no support for user-defined paragraph or character styles.
- These limitations make 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-e\SpecialChar LyX
-er
-\end_layout
-
-\end_inset
-
- unsuitable for many of the documents \SpecialChar LyX
- users produce.
- In principle,
- of course,
- these problems could be solved,
- but the \SpecialChar LyX
- developers have decided to follow a different path and have made 
-\change_inserted -584632292 1723129317
 Beginning with \SpecialChar LyX
  2.0,
  however,
- 
-\change_unchanged
-\SpecialChar LyX
- itself 
-\change_inserted -584632292 1723129321
-has been 
-\change_unchanged
-capable of writing XHTML,
+ \SpecialChar LyX
+ itself has been capable of writing XHTML,
  just as it is capable of writing \SpecialChar LaTeX
 ,
  DocBook,
- and plaintext.
-\change_deleted 5863208 1723062762
-
-\end_layout
-
-\begin_layout Standard
-As of this writing,
- 
-\change_inserted -584632292 1723129359
-however,
- 
-\change_unchanged
-XHTML output remains under development and should probably be regarded as 
+ and plaintext.As of this writing,
+ however,
+ XHTML output remains under development and should probably be regarded as 
 \begin_inset Quotes eld
 \end_inset
 
@@ -22930,126 +22703,9 @@ experimental
 \end_inset
 
 .
-
-\change_inserted -584632292 1723129393
  Nonetheless,
  it has several advantages over the other converters mentioned.
-
-\change_inserted 5863208 1723062863
- 
-\change_deleted 5863208 1723062863
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-The file 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-development/HTML/HTML.notes
-\end_layout
-
-\end_inset
-
-,
- which can be found in the \SpecialChar LyX
- source tree or 
-\begin_inset CommandInset href
-LatexCommand href
-name "accessed online"
-target "https://www.lyx.org/trac/browser/lyxgit/development/HTML/HTML.notes?rev=master"
-literal "false"
-
-\end_inset
-
-,
- usually contains up-to-date information about the state of XHTML output.
- See also the list of XHTML bugs on 
-\begin_inset CommandInset href
-LatexCommand href
-name "the bug tracker"
-target "https://www.lyx.org/trac/query?status=reopened&status=assigned&status=new&max=0&component=xhtml+export&order=id&col=id&col=summary&col=reporter&col=keywords&keywords=%21%7Efixedintrunk&desc=1"
-literal "false"
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
- Still,
- the developers have chosen this approach because it has several potential advantages over the other two.
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 5863208 1723062863
-These advantages are primarily due to the fact that the XHTML output routines,
- since they are part of \SpecialChar LyX
-,
- know everything \SpecialChar LyX
- knows about the document being exported.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-Another advantage is that,
- since these routines are internal to \SpecialChar LyX
-,
- they are immune to changes in \SpecialChar LyX
-'s file format,
- or to changes in the semantics of existing insets.
-\end_layout
-
-\end_inset
-
- So they know about the table of contents (as displayed in the outline),
- about the counters associated with different paragraph styles,
- and about user-defined styles.
- The XHTML output routines know what \SpecialChar LyX
- knows about internationalization,
- too,
- so they will output 
-\begin_inset Quotes eld
-\end_inset
-
-Chapter 1
-\begin_inset Quotes erd
-\end_inset
-
- or 
-\begin_inset Quotes eld
-\end_inset
-
-
-\lang ngerman
-Kapitel
-\lang english
- 1
-\begin_inset Quotes erd
-\end_inset
-
-,
- depending upon the language in effect at the time.
- 
-\end_layout
-
-\begin_layout Standard
-
-\change_deleted 5863208 1723062863
-Quite generally,
- the output routines know what \SpecialChar LyX
- knows about document layout,
- that is,
- about how the document is to be rendered on screen.
- We use this information when we output the document as XHTML.
- In particular,
- 
-\change_unchanged
-\SpecialChar LyX
+ \SpecialChar LyX
  
 \emph on
 automatically
@@ -23129,7 +22785,6 @@ xymatrix
 
  package or ERT—
 then it will instead output the formula as an image.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -23137,66 +22792,13 @@ HTML
 \begin_inset Newline newline
 \end_inset
 
-
-\change_deleted 5863208 1723063028
-As mentioned above,
- 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-elyxer
-\end_layout
-
-\end_inset
-
- outputs math as HTML,
- styled by CSS.
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-\SpecialChar LyX
- has borrowed some of the CSS for its HTML output from 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-elyxer
-\end_layout
-
-\end_inset
-
-.
-\end_layout
-
-\end_inset
-
- For simple formulae,
- this can work quite well,
- though with more complicated formulae it tends to break down.
- Still,
- t
-\change_inserted 5863208 1723063028
-T
-\change_unchanged
-his method has the advantage that it is very widely supported and so it may be appropriate for documents that contain only a little,
- fairly simple math
-\change_inserted 5863208 1723063017
-,
- though with more complicated formulae it tends to break
-\change_unchanged
-.
+This method has the advantage that it is very widely supported and so it may be appropriate for documents that contain only a little,
+ fairly simple math,
+ though with more complicated formulae it tends to break.
 \begin_inset Newline newline
 \end_inset
 
-If 
-\change_inserted 5863208 1723063049
-\SpecialChar LyX
-
-\change_deleted 5863208 1723063051
-Lyx
-\change_unchanged
+If \SpecialChar LyX
  is unable to render a formula as HTML—
 for example,
  if the formula uses the 
@@ -23211,7 +22813,6 @@ xymatrix
 
  package or ERT—
 then it will instead output the formula as an image.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -23410,7 +23011,6 @@ Bibliography and Citations
 
 \begin_layout Standard
 XHTML output fully supports bibliographies and citations.
- 
 \end_layout
 
 \begin_layout Standard
@@ -24287,13 +23887,7 @@ echo $a
 \end_layout
 
 \begin_layout Subsection
-AppleScript (
-\change_deleted -495245474 1747237678
-Mac OS X
-\change_inserted -495245474 1747237680
-macOS
-\change_unchanged
-)
+AppleScript (macOS)
 \end_layout
 
 \begin_layout Standard
@@ -24688,7 +24282,6 @@ src-specials
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -24736,7 +24329,7 @@ latex/pdflatex
 \end_layout
 
 \begin_layout Subsubsection*
-Built-in DVI-search via src-specials (DVI only) 
+Built-in DVI-search via src-specials (DVI only)
 \end_layout
 
 \begin_layout Standard
@@ -24797,7 +24390,7 @@ latex -src-specials $$i
 \end_layout
 
 \begin_layout Subsubsection*
-External Packages (PDFSync and scrltx) 
+External Packages (PDFSync and scrltx)
 \end_layout
 
 \begin_layout Standard
@@ -24814,7 +24407,6 @@ scrltx
  In order to enable it,
  load the packages in the \SpecialChar LyX
  preamble:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -24900,7 +24492,7 @@ Note that PDFSync might affect the output layout of your document.
 
 \begin_layout Subsubsection*
 Built-in reverse search via Sync\SpecialChar TeX
- (DVI and PDF) 
+ (DVI and PDF)
 \end_layout
 
 \begin_layout Standard
@@ -26068,7 +25660,6 @@ near
 
 .
  This latter functionality is provided by an external call of synctex (see the predefined example configurations).
- 
 \end_layout
 
 \begin_layout Standard
@@ -26107,27 +25698,7 @@ If you have the
 \family typewriter
 chktex
 \family default
- program installed
-\change_deleted 5863208 1729542513
-
-\begin_inset Foot
-status collapsed
-
-\begin_layout Plain Layout
-
-\family typewriter
-chktex
-\family default
- is not yet available when you are using the \SpecialChar LaTeX
- distribution MiK\SpecialChar TeX
-.
-\end_layout
-
-\end_inset
-
-
-\change_unchanged
-,
+ program installed,
  you'll find in the 
 \family sans
 Tools
@@ -27421,7 +26992,6 @@ If your document is not under revision control,
 Register
 \family default
  item is not visible.
- 
 \end_layout
 
 \begin_layout Standard
@@ -27472,7 +27042,6 @@ Read
 man ci
 \family default
  to understand the switches.
- 
 \end_layout
 
 \begin_layout Subsubsection
@@ -27863,7 +27432,6 @@ If your document is not under revision control,
 Register
 \family default
  item is not visible.
- 
 \end_layout
 
 \begin_layout Standard
@@ -28822,14 +28390,12 @@ status collapsed
 
 \begin_layout Plain Layout
 One need to organize the files structure so that all external files are in the same directory or subdirectories of the document.
- 
 \end_layout
 
 \end_inset
 
 .
  This become especially useful once you cooperate with people which neither know about subversion management nor they have ambition to commit additional material to the repository.
- 
 \end_layout
 
 \begin_layout Standard
@@ -30423,7 +29989,6 @@ status collapsed
 \end_inset
 
 ' revisions back means comparison of the edited file with last commited revision).
- 
 \end_layout
 
 \begin_layout Standard
@@ -30519,7 +30084,6 @@ Literate Programming
 
 \begin_layout Standard
 From the Literate Programming FAQ:
- 
 \end_layout
 
 \begin_layout Quotation
@@ -30538,7 +30102,6 @@ Literate programming is the combination of documentation and source together in 
 E.
  Knuth during the development of his \SpecialChar TeX
  typesetting software.
- 
 \end_layout
 
 \begin_layout Standard
@@ -30555,21 +30118,20 @@ How is literate programming different from verbose commenting?
 There are three distinguishing characteristics.
  In order of importance,
  they are:
- 
 \end_layout
 
 \begin_deeper
 \begin_layout Itemize
-flexible order of elaboration 
+flexible order of elaboration
 \end_layout
 
 \begin_layout Itemize
-automatic support for browsing 
+automatic support for browsing
 \end_layout
 
 \begin_layout Itemize
 typeset documentation,
- especially diagrams and mathematics 
+ especially diagrams and mathematics
 \end_layout
 
 \end_deeper
@@ -30652,7 +30214,6 @@ are programs that read a given data stream and output a manipulated data stream.
 \end_inset
 
  and to perform special processing that you may need.
- 
 \end_layout
 
 \begin_layout Itemize
@@ -30665,7 +30226,6 @@ It is free.
 
 \begin_layout Standard
 The Noweb web page can be found at:
- 
 \end_layout
 
 \begin_layout Quote
@@ -30914,7 +30474,6 @@ DVI
  menu option is chosen,
  a \SpecialChar LaTeX
  file is generated.
- 
 \end_layout
 
 \begin_deeper
@@ -31090,7 +30649,6 @@ build-script
  (a program or script) with the name of the Noweb file (normally a file in the \SpecialChar LyX
  temp directory) and the directory path of the original \SpecialChar LyX
  file.
- 
 \end_layout
 
 \begin_layout Standard
@@ -31477,7 +31035,6 @@ There is also a new function implemented in the \SpecialChar LyX
 
 server-goto-file-row" function,
  to be used with ddd/gdb or other debugger.
- 
 \end_layout
 
 \begin_layout Standard
@@ -31584,7 +31141,6 @@ Build Program
 \end_inset
 
  File menu entry.
- 
 \end_layout
 
 \begin_layout Standard

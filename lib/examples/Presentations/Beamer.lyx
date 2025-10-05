@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -56,10 +56,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -85,6 +94,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -108,7 +118,7 @@ Version
 \begin_inset space ~
 \end_inset
 
-2.3
+2.5
 \end_layout
 
 \begin_layout TitleGraphic
@@ -132,7 +142,6 @@ Version
 status open
 
 \begin_layout Plain Layout
-
 presentation
 \end_layout
 
@@ -160,7 +169,6 @@ Purposes
 status open
 
 \begin_layout Plain Layout
-
 +-
 \end_layout
 
@@ -741,7 +749,6 @@ Default Overlay Specifications
 status open
 
 \begin_layout Plain Layout
-
 1-2
 \end_layout
 
@@ -846,7 +853,6 @@ overlays
 status open
 
 \begin_layout Plain Layout
-
 3
 \end_layout
 
@@ -1057,7 +1063,6 @@ Separated Frame Above
 status open
 
 \begin_layout Plain Layout
-
 3
 \end_layout
 
@@ -1502,7 +1507,6 @@ Basically,
 status open
 
 \begin_layout Plain Layout
-
 +-
 \end_layout
 
@@ -1530,7 +1534,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 6
 \end_layout
 
@@ -1737,7 +1740,6 @@ Action Specifications
 status open
 
 \begin_layout Plain Layout
-
 2
 \end_layout
 
@@ -1809,7 +1811,6 @@ modes
 status open
 
 \begin_layout Plain Layout
-
 3
 \end_layout
 
@@ -1969,7 +1970,6 @@ Overlay Specifications
 status open
 
 \begin_layout Plain Layout
-
 2
 \end_layout
 
@@ -2047,7 +2047,6 @@ hiding
 status open
 
 \begin_layout Plain Layout
-
 only@2
 \end_layout
 
@@ -2103,7 +2102,6 @@ Coverage degrees
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 setbeamercovered{transparent}
@@ -2172,7 +2170,6 @@ transparent
 status open
 
 \begin_layout Plain Layout
-
 2
 \end_layout
 
@@ -2293,7 +2290,6 @@ g.,
 status open
 
 \begin_layout Plain Layout
-
 +(1)-
 \end_layout
 
@@ -2315,7 +2311,6 @@ Three
 status open
 
 \begin_layout Plain Layout
-
 1-
 \end_layout
 
@@ -2356,7 +2351,6 @@ Beamer
 status open
 
 \begin_layout Plain Layout
-
 +-
 \end_layout
 
@@ -2439,7 +2433,6 @@ A block
 status open
 
 \begin_layout Plain Layout
-
 alert@+
 \end_layout
 
@@ -2618,7 +2611,6 @@ Beamer
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -2654,7 +2646,6 @@ Uncovered
 status open
 
 \begin_layout Plain Layout
-
 3-
 \end_layout
 
@@ -2690,7 +2681,6 @@ moves
 status open
 
 \begin_layout Plain Layout
-
 4
 \end_layout
 
@@ -2721,7 +2711,6 @@ Overprint
 status open
 
 \begin_layout Plain Layout
-
 5
 \end_layout
 
@@ -2781,7 +2770,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setbeamercovered{transparent}
 \end_layout
@@ -2838,7 +2826,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -2862,7 +2849,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 3-
 \end_layout
 
@@ -2913,7 +2899,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 4-
 \end_layout
 
@@ -2947,7 +2932,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 5-
 \end_layout
 
@@ -2981,7 +2965,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 6-
 \end_layout
 
@@ -3087,7 +3070,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 2
 \end_layout
 
@@ -3108,7 +3090,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 3
 \end_layout
 
@@ -3129,7 +3110,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 4
 \end_layout
 
@@ -3149,7 +3129,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 5
 \end_layout
 
@@ -3168,7 +3147,6 @@ structure
 status open
 
 \begin_layout Plain Layout
-
 6
 \end_layout
 
@@ -3307,7 +3285,6 @@ hints
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -3335,7 +3312,6 @@ A general-purpose block
 status open
 
 \begin_layout Plain Layout
-
 3-
 \end_layout
 
@@ -3371,7 +3347,6 @@ examples
 status open
 
 \begin_layout Plain Layout
-
 4-
 \end_layout
 
@@ -3466,7 +3441,6 @@ Separator
 status open
 
 \begin_layout Plain Layout
-
 only@2
 \end_layout
 
@@ -3636,7 +3610,6 @@ Sometimes it is useful to divide a presentation into columns
 status open
 
 \begin_layout Plain Layout
-
 .4
 \backslash
 textwidth
@@ -3671,7 +3644,6 @@ Columns
 status open
 
 \begin_layout Plain Layout
-
 .4
 \backslash
 textwidth
@@ -3893,7 +3865,6 @@ beamer
 status open
 
 \begin_layout Plain Layout
-
 presentation
 \end_layout
 
@@ -3971,7 +3942,6 @@ article
 status open
 
 \begin_layout Plain Layout
-
 article
 \end_layout
 
@@ -4100,7 +4070,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 presentation
 \end_layout
 
@@ -4120,7 +4089,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 article
 \end_layout
 
@@ -4205,7 +4173,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 presentation
 \end_layout
 
@@ -4226,7 +4193,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 article
 \end_layout
 
@@ -4624,7 +4590,6 @@ newblock
 status open
 
 \begin_layout Plain Layout
-
 presentation
 \end_layout
 
@@ -4648,7 +4613,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newblock
 \end_layout
@@ -4661,7 +4625,6 @@ newblock
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
 \end_layout
 

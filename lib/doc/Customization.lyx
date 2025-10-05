@@ -147,10 +147,6 @@ logicalmkup
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
-\author -1900975149 "Koji Yokota" yokota@lyx.org
-\author -849685795 "横田宏治"
-\author -712698321 "Jürgen Spitzmüller"
-\author 5863208 "ab"
 \end_header
 
 \begin_body
@@ -204,7 +200,7 @@ literal "false"
 \begin_inset Newline newline
 \end_inset
 
-Version 2.4.x
+Version 2.5.x
 \end_layout
 
 \begin_layout Standard
@@ -322,7 +318,6 @@ UserDir
 \end_inset
 
  in the remainder of this document.
- 
 \end_layout
 
 \begin_layout Section
@@ -683,7 +678,6 @@ clipart/
 \end_inset
 
  Contains graphics files that can be included in documents.
- 
 \end_layout
 
 \begin_layout Labeling
@@ -916,23 +910,15 @@ nolink "false"
 \end_inset
 
 .
-\change_inserted -1900975149 1740527245
-
 \end_layout
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-
-\change_inserted -1900975149 1740531616
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1740527263
 themes/
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -942,11 +928,7 @@ themes/
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -1900975149 1740527460
 .theme
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1602,7 +1584,7 @@ DVI
 
 \end_inset
 
-.) 
+.)
 \end_layout
 
 \begin_layout Standard
@@ -2195,7 +2177,6 @@ Copier
 \end_inset
 
  field.
- 
 \end_layout
 
 \begin_layout Standard
@@ -2301,7 +2282,6 @@ status collapsed
 \end_inset
 
 .
- 
 \end_layout
 
 \end_inset
@@ -2666,17 +2646,11 @@ latex
 
 \begin_layout Labeling
 \labelwidthstring 00.00.0000
-
-\change_inserted -712698321 1723633863
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723632792
 needcopiesfrom=<format>
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2694,11 +2668,7 @@ g.,
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723633006
 <format>
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -2710,11 +2680,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723633014
 needcopiesfrom=docbook5
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -3973,7 +3939,7 @@ key
 
 \end_inset
 
- outstring 
+ outstring
 \end_layout
 
 \begin_layout Standard
@@ -4437,7 +4403,7 @@ define
 
 \end_inset
 
- an external keymap translation program 
+ an external keymap translation program
 \end_layout
 
 \begin_layout Standard
@@ -4865,7 +4831,6 @@ can be produced in this manner.
 \end_inset
 
  mechanism.
- 
 \end_layout
 
 \begin_layout Standard
@@ -4957,7 +4922,6 @@ char
 \family roman
 \shape up
 might have had on the next keystroke.
- 
 \end_layout
 
 \begin_layout Standard
@@ -5183,7 +5147,6 @@ kmod
 \end_inset
 
  declaration.
- 
 \end_layout
 
 \begin_layout Standard
@@ -5313,7 +5276,6 @@ previous
 point in the
 \family default
  file.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6146,7 +6108,6 @@ In this chapter,
  layout and template files,
  as well as offer a refresher on correctly installing new \SpecialChar LaTeX
  document classes.
- 
 \end_layout
 
 \begin_layout Standard
@@ -6944,7 +6905,6 @@ Presentations
 \end_inset
 
  category).
- 
 \end_layout
 
 \begin_layout Standard
@@ -6980,7 +6940,6 @@ This section describes the various sorts of \SpecialChar LyX
  DocBook,
  XHTML,
  or whatever output format is being used.
- 
 \end_layout
 
 \begin_layout Standard
@@ -7368,7 +7327,6 @@ status collapsed
  Supporting a style file is usually fairly easy.
  Supporting a new class file is a bit harder.
  We'll discuss the former in this section and the latter in the next.
- 
 \end_layout
 
 \begin_layout Standard
@@ -7396,7 +7354,6 @@ report.cls
 
 ,
  which is a standard class.
- 
 \end_layout
 
 \begin_layout Standard
@@ -7444,7 +7401,6 @@ myclass.layout
 \end_inset
 
  and change the line:
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -7602,7 +7558,6 @@ to change the font for chapter headings to sans-serif.
  This will override (or,
  in this case,
  add to) the existing declaration for the Chapter style.
- 
 \end_layout
 
 \begin_layout Standard
@@ -7795,7 +7750,6 @@ thesis.layout
 :
  \SpecialChar LyX
  assumes that the document class has the same name as the layout file.
- 
 \end_layout
 
 \end_inset
@@ -8142,7 +8096,6 @@ biblatex
  but also the way how normal Bib\SpecialChar TeX
  citations (without additional packages) are handled in \SpecialChar LyX
  is defined in such a file.
- 
 \end_layout
 
 \begin_layout Standard
@@ -8681,7 +8634,6 @@ foo.sty
 \end_inset
 
  package.
- 
 \end_layout
 
 \begin_layout Standard
@@ -8794,7 +8746,6 @@ though,
  of course,
  you can bind it to a key yourself.
  But you will normally use this function simply by entering it in the mini-buffer.
- 
 \end_layout
 
 \begin_layout Standard
@@ -9433,9 +9384,7 @@ BibInToc
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369458
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -9447,7 +9396,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -9461,45 +9410,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369458
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369458
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369458
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- If the document class adds the bibliography to the table of contents,
+] If the document class adds the bibliography to the table of contents,
  add this option with value 
 \begin_inset Flex Code
 status collapsed
@@ -10530,7 +10441,6 @@ nolink "false"
 \end_inset
 
  for more information.
- 
 \end_layout
 
 \begin_layout Description
@@ -11302,9 +11212,7 @@ string
 
 \end_inset
 
-] 
-\change_deleted -849685795 1754369459
-[
+] [
 \begin_inset Flex Code
 status collapsed
 
@@ -11316,7 +11224,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -11330,45 +11238,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369459
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369459
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369459
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Whether the class already provides the feature 
+] Whether the class already provides the feature 
 \begin_inset Flex Code
 status collapsed
 
@@ -12380,22 +12250,14 @@ status collapsed
 \end_inset
 
 .
-\change_inserted -712698321 1717320820
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1717321090
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1717320831
 ParskipFull
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -12405,11 +12267,7 @@ ParskipFull
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1717320820
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -12421,11 +12279,7 @@ string
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1717320884
 parskip=full
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -12439,17 +12293,11 @@ parskip
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1717321094
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1717320913
 ParskipHalf
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -12459,11 +12307,7 @@ ParskipHalf
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1717320909
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -12475,11 +12319,7 @@ string
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1717320920
 parskip=half
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -12490,8 +12330,6 @@ parskip=half
 parskip
 \emph default
  package.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -12743,7 +12581,6 @@ nolink "false"
 \end_inset
 
  for more information.
- 
 \end_layout
 
 \begin_layout Description
@@ -12903,7 +12740,6 @@ string
  This is used to group related styles in the style combobox on the toolbar.
  Any string can be used,
  but you may want to use existing categories with your own styles.
- 
 \end_layout
 
 \begin_layout Description
@@ -13216,21 +13052,14 @@ EndLabelType
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1723455721
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455730
 EscapeChars
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -13240,11 +13069,7 @@ EscapeChars
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455616
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -13254,21 +13079,13 @@ string
  
 \family default
 Defines individual characters that should be escaped in the context of this paragraph.
- Not
-\change_inserted -849685795 1754358965
-e
-\change_inserted -712698321 1723455721
- that the first character in the string denotes the escape character,
+ Note that the first character in the string denotes the escape character,
  so 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455696
 %!@
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -13278,11 +13095,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455704
 !
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -13292,11 +13105,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455712
 @
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -13306,11 +13115,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455721
 %
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -13446,9 +13251,7 @@ FreeSpacing
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369460
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -13460,7 +13263,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -13474,45 +13277,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369461
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369461
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369461
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Usually \SpecialChar LyX
+] Usually \SpecialChar LyX
  does not allow you to insert more than one space between words,
  since a space is considered as the separation between two words,
  not a character or symbol of its own.
@@ -14438,7 +14203,6 @@ Manual
 
  means the label is the very first word (up to the first real blank).
  Use non-breaking spaces if you want more than one word as the label.
- 
 \end_layout
 
 \begin_layout Description
@@ -14958,7 +14722,6 @@ LatexName
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Description
@@ -14995,7 +14758,6 @@ item
 \end_inset
 
  is generated for each paragraph of this environment.
- 
 \end_layout
 
 \begin_layout Description
@@ -15118,7 +14880,6 @@ begin{thebibliography}{99}
 Putting the last few things together,
  the \SpecialChar LaTeX
  output will be either:
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -15130,7 +14891,6 @@ LatexName[LatexParam]{\SpecialChar ldots
 
 \begin_layout Standard
 or:
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -15473,17 +15233,11 @@ Right_Address_Box
 
 \end_deeper
 \begin_layout Description
-
-\change_inserted -712698321 1747303660
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1747303589
 MultiPar
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15494,12 +15248,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1747303589
-
 \emph on
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15513,11 +15263,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1747303589
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15597,17 +15343,11 @@ NeedCProtect
 \end_inset
 
  [
-\change_inserted -712698321 1715492667
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715492433
 -1
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15616,8 +15356,6 @@ status collapsed
 \begin_inset space \thinspace{}
 \end_inset
 
-
-\change_unchanged
 
 \begin_inset Flex Code
 status collapsed
@@ -15644,26 +15382,16 @@ status collapsed
 
 \end_inset
 
-] 
-\change_inserted -712698321 1715492466
-Value 
+] Value 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715492466
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_deleted -712698321 1715492468
-This
-\change_unchanged
  causes macros that contain this layout to be protected with 
 \begin_inset Flex Code
 status collapsed
@@ -15682,18 +15410,12 @@ cprotect
 cprotect
 \family default
 ) if necessary and thus allows (some) verbatim stuff in macros.
-
-\change_inserted -712698321 1715492595
  With the default setting (value 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715492536
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15705,12 +15427,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1715492551
-
 \backslash
 cprotect
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15721,11 +15439,7 @@ cprotect
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715492585
 -1
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15736,20 +15450,14 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1715492585
-
 \backslash
 cprotect
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  within this layout,
  even if required by a nested element.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -15956,17 +15664,11 @@ Standard
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1715509676
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715509206
 NoPassThruChars
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -15976,11 +15678,7 @@ NoPassThruChars
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715509203
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -16526,7 +16224,7 @@ string
 status collapsed
 
 \begin_layout Plain Layout
-Requires 
+Requires
 \end_layout
 
 \end_inset
@@ -16992,22 +16690,14 @@ Enumerate
 \end_inset
 
 .
-\change_inserted -712698321 1745588502
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745589025
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588508
 TheoremName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17017,11 +16707,7 @@ TheoremName
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588969
 amsthm
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17033,12 +16719,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1745589025
-
 \backslash
 newtheorem
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17047,17 +16729,11 @@ newtheorem
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745643919
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588706
 TheoremLaTeXName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17067,11 +16743,7 @@ TheoremLaTeXName
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588713
 TheoremName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17084,11 +16756,7 @@ TheoremName
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588765
 theoremname
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17100,12 +16768,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1745589048
-
 \backslash
 newtheorem
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17114,29 +16778,17 @@ newtheorem
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745644962
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745643926
 TheoremCrossRefName
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  The name used in the label of formatted cross-references to this theorem.
- This is use
-\change_deleted -849685795 1754362353
-s
-\change_inserted -849685795 1754362354
-d
-\change_inserted -712698321 1745644962
- in cases where the cross-references package does not provide a definition for a given theorem type.
+ This is used in cases where the cross-references package does not provide a definition for a given theorem type.
  Please always use the spelling with initial capitalization (e.
 \begin_inset space \thinspace{}
 \end_inset
@@ -17154,17 +16806,11 @@ Theorem
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745645040
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745645504
 TheoremCrossRefPluralName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17174,11 +16820,7 @@ TheoremCrossRefPluralName
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745644987
 TheoremCrossRefName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17197,22 +16839,14 @@ Criteria
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745589135
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588892
 TheoremZRefName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17222,11 +16856,7 @@ TheoremZRefName
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588888
 TheoremName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17237,11 +16867,7 @@ TheoremName
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588952
 zref-clever
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17260,32 +16886,20 @@ none
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745589130
 zref-clever
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  definition exists.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745589638
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588591
 TheoremCounter
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17295,11 +16909,7 @@ TheoremCounter
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588618
 TheoremName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17312,12 +16922,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1745589170
-
 \backslash
 newtheorem
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17337,12 +16943,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1745589186
-
 \backslash
 newtheorem*
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17351,17 +16953,11 @@ newtheorem*
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745589757
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588776
 TheoremParentCounter
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17371,11 +16967,7 @@ TheoremParentCounter
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588668
 TheoremName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17387,12 +16979,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1745589200
-
 \backslash
 newtheorem
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17404,11 +16992,7 @@ newtheorem
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588807
 chapter
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17417,17 +17001,11 @@ chapter
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1745589761
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588834
 TheoremStyle
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17437,11 +17015,7 @@ TheoremStyle
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1745588829
 TheoremName
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -17453,19 +17027,13 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1745588880
-
 \backslash
 theoremstyle
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -17835,7 +17403,6 @@ newtheorem
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Standard
@@ -18685,7 +18252,6 @@ chapter
 
 ,
  the floats will be numbered within chapters.
- 
 \end_layout
 
 \begin_layout Description
@@ -18833,22 +18399,14 @@ tbp
 \end_inset
 
 .
-\change_inserted -712698321 1751702464
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1751702481
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1751702464
 Preamble
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -18868,11 +18426,7 @@ Preamble
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1751702464
 EndPreamble
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -18882,8 +18436,6 @@ EndPreamble
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -18915,9 +18467,7 @@ string
 \end_inset
 
 ] A format for use with formatted references to this counter.
- 
-\change_inserted -712698321 1747995106
-Singular and plural forms can be given if separated by 
+ Singular and plural forms can be given if separated by 
 \begin_inset Quotes els
 \end_inset
 
@@ -18935,9 +18485,7 @@ Section|Sections
 \end_inset
 
 ).
- 
-\change_unchanged
-For example,
+ For example,
  one might want to have references to tables appear as 
 \begin_inset Quotes eld
 \end_inset
@@ -18981,28 +18529,12 @@ nolink "false"
  So,
  for sections,
  it would be:
- Section
-\change_inserted -712698321 1747995138
-|Sections
-\change_unchanged
- ##,
+ Section|Sections ##,
  or perhaps:
- 
-\change_deleted -712698321 1747995141
-s
-\change_inserted -712698321 1747995141
-S
-\change_unchanged
-ection
-\change_inserted -712698321 1747995147
-|Sections
-\change_unchanged
- 
+ Section|Sections 
 \backslash
 arabic{section} (which might render as:
  section 2.7).
-
-\change_inserted -712698321 1747995301
  Please always use the spelling with initial capitalization and indicate plural forms (e.
 \begin_inset space \thinspace{}
 \end_inset
@@ -19019,8 +18551,6 @@ Criterion|Criteria
 ),
  lowercase versions will be produced by \SpecialChar LyX
  automatically.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -19314,7 +18844,6 @@ name "subsec:Flex-insets-and"
 
 \begin_layout Standard
 Flex insets come in two different kinds:
- 
 \end_layout
 
 \begin_layout Itemize
@@ -20369,22 +19898,14 @@ CopyStyle Flex:<name>
 \end_inset
 
 .
-\change_inserted -712698321 1756018877
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1756018900
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1756018883
 Counter
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -20394,11 +19915,7 @@ Counter
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1756018878
 <name>
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -20406,8 +19923,6 @@ status collapsed
 ] The counter,
  if any,
  used and stepped by this inset.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -20666,22 +20181,14 @@ InsetLayout
 \end_inset
 
  declarations.
-\change_inserted -712698321 1723455878
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1723455890
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455884
 EscapeChars
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -20691,11 +20198,7 @@ EscapeChars
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455884
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -20705,8 +20208,6 @@ string
  
 \family default
 Defines individual characters that should be escaped in the context of this inset.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -20767,9 +20268,7 @@ FixedWidthPreambleEncoding
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369524
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -20781,7 +20280,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -20795,45 +20294,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369524
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369524
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369524
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Force a fixed width encoding for the translated contents of 
+] Force a fixed width encoding for the translated contents of 
 \begin_inset Flex Code
 status collapsed
 
@@ -20880,9 +20341,7 @@ ForceLocalFontSwitch
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369525
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -20894,7 +20353,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -20908,45 +20367,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369525
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369525
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369525
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- When using babel,
+] When using babel,
  always use a local font switch (
 \begin_inset Flex Code
 status collapsed
@@ -20985,9 +20406,7 @@ ForceLTR
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369526
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -20999,7 +20418,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21013,45 +20432,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369526
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369526
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369526
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Force the 
+] Force the 
 \begin_inset Quotes eld
 \end_inset
 
@@ -21084,9 +20465,7 @@ ForceOwnlines
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369527
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -21098,7 +20477,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21112,45 +20491,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369527
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369527
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369527
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Force a line break in the \SpecialChar LaTeX
+] Force a line break in the \SpecialChar LaTeX
  output before the inset starts and after the inset ends.
  This assures the inset itself is output on its own lines,
  for parsing purposes.
@@ -21166,9 +20507,7 @@ ForcePlain
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369528
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -21180,7 +20519,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21194,45 +20533,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369528
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369528
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369528
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Indicates whether the 
+] Indicates whether the 
 \begin_inset Flex Code
 status collapsed
 
@@ -21258,9 +20559,7 @@ FreeSpacing
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369529
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -21272,7 +20571,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21286,45 +20585,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369529
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369529
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369529
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- As with paragraph styles,
+] As with paragraph styles,
  see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -21368,48 +20629,14 @@ InheritFont
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369530
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-
-,
-\begin_inset space \thinspace{}
-\end_inset
-
-
+ [
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
 \emph on
-1
-\end_layout
-
-\end_inset
-
-]
-\change_inserted -849685795 1754369530
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369530
-
-\emph on
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -21423,91 +20650,35 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -849685795 1754369530
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-]
-\change_unchanged
- The font inside the inset is inherited from the parent for \SpecialChar LaTeX
+] The font inside the inset is inherited from the parent for \SpecialChar LaTeX
  export if this parameter is 1,
  as well as on screen.
  Otherwise the document default font is used.
-\change_inserted -712698321 1723525171
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1724213734
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723525171
 InsertCotext
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369532
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1724213734
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-,
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -712698321 1724213734
-
-\emph on
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_inserted -849685795 1754369532
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369532
 
 \emph on
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -21521,35 +20692,23 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -849685795 1754369532
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-]
-\change_inserted -712698321 1724213734
- If this is set to 
+] If this is set to 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723525171
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 ,
  a copy of the co-text (either selected text or the word preceding the cursor) is inserted as content on inset creation.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -21562,9 +20721,7 @@ InToc
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369534
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -21576,7 +20733,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21590,45 +20747,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369534
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369534
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369534
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Whether to include the contents of this inset in the strings generated for the `Outline' pane for all table of contents,
+] Whether to include the contents of this inset in the strings generated for the `Outline' pane for all table of contents,
  regardless of the AddToToc setting.
  One would not,
  for example,
@@ -21648,9 +20767,7 @@ IsTocCaption
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369535
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -21662,7 +20779,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21676,45 +20793,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369535
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369535
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369535
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- If this is set to 1 and AddToToc is enabled,
+] If this is set to 1 and AddToToc is enabled,
  the inset adds a summary of its contents in its item in the table of contents.
  Otherwise,
  only the label appears.
@@ -21730,23 +20809,19 @@ KeepEmpty
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369536
-[
-\emph on
-
+ [
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
+
+\emph on
 0
 \end_layout
 
 \end_inset
 
 
-\emph default
-,
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21760,45 +20835,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369536
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369536
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369536
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- As with paragraph styles,
+] As with paragraph styles,
  see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -21895,19 +20932,13 @@ Branch
 \end_inset
 
 ) modify this label on the fly.
-
-\change_inserted -712698321 1756046664
  If the inset has a counter,
  it can be added to the label via the placeholder 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1756021044
 ##
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -21932,8 +20963,6 @@ nolink "false"
 \end_inset
 
  if it should refer to other counter values.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -22182,7 +21211,6 @@ LatexName
 Putting the last few things together,
  the \SpecialChar LaTeX
  output will be either:
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -22194,7 +21222,6 @@ LatexName[LatexParam]{\SpecialChar ldots
 
 \begin_layout Standard
 or:
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -22454,9 +21481,7 @@ MultiPar
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369538
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -22468,7 +21493,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -22482,45 +21507,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369538
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369538
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369538
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Whether multiple paragraphs are permitted in this inset.
+] Whether multiple paragraphs are permitted in this inset.
  This will also set 
 \begin_inset Flex Code
 status collapsed
@@ -22571,9 +21558,7 @@ NeedProtect
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369539
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -22585,7 +21570,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -22599,45 +21584,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369539
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369539
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369539
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Whether fragile commands in this inset should be 
+] Whether fragile commands in this inset should be 
 \begin_inset Flex Code
 status collapsed
 
@@ -22669,25 +21616,17 @@ NeedCProtect
 \end_inset
 
  [
-\change_inserted -712698321 1715685021
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715685023
 -1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 ,
  
-\change_unchanged
-
 \begin_inset Flex Code
 status collapsed
 
@@ -22699,10 +21638,6 @@ status collapsed
 
 \end_inset
 
-
-\change_deleted -849685795 1754369544
-,
-\change_unchanged
 
 \begin_inset space \thinspace{}
 \end_inset
@@ -22717,26 +21652,16 @@ status collapsed
 
 \end_inset
 
-] 
-\change_deleted -712698321 1715685030
-This
-\change_inserted -712698321 1715685031
-Value 
+] Value 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715685031
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  causes macros that contain this inset to be protected with 
 \begin_inset Flex Code
 status collapsed
@@ -22756,18 +21681,12 @@ cprotect
 \family default
 ) if necessary and thus allows (some) verbatim stuff in macros.
  Default is false.
-
-\change_inserted -712698321 1715685049
  With the default setting (value 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715685008
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -22779,12 +21698,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1715685008
-
 \backslash
 cprotect
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -22795,11 +21710,7 @@ cprotect
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715685008
 -1
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -22810,20 +21721,14 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1715685008
-
 \backslash
 cprotect
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  within this inset,
  even if required by a nested element.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -22836,9 +21741,7 @@ NeedMBoxProtect
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369540
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -22850,7 +21753,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -22864,45 +21767,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369540
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369540
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369540
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Whether specific commands in this inset (such as 
+] Whether specific commands in this inset (such as 
 \begin_inset Flex Code
 status collapsed
 
@@ -23020,22 +21885,14 @@ InsetLayout
 \end_inset
 
 .
-\change_inserted -712698321 1715512954
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1715512954
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715512954
 NoPassThruChars
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -23045,11 +21902,7 @@ NoPassThruChars
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1715512954
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -23074,8 +21927,6 @@ PassThru
 \end_inset
 
  conditions if they are unsuitable in a given context.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -23143,9 +21994,7 @@ ParbreakIgnored
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369551
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -23157,7 +22006,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -23171,45 +22020,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369551
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369551
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369551
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- If this is set to 
+] If this is set to 
 \begin_inset Flex Code
 status collapsed
 
@@ -23236,9 +22047,7 @@ ParbreakIsNewline
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369552
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -23250,7 +22059,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -23264,45 +22073,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369552
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369552
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369552
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- As with paragraph styles,
+] As with paragraph styles,
  see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23325,9 +22096,7 @@ PassThru
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369553
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -23339,7 +22108,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -23353,45 +22122,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369553
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369553
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369553
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- As with paragraph styles,
+] As with paragraph styles,
  see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -23492,9 +22223,7 @@ ResetArgs
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369554
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -23506,7 +22235,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -23520,45 +22249,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369554
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369554
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369554
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Resets the \SpecialChar LaTeX
+] Resets the \SpecialChar LaTeX
  arguments of this layout (as defined via the 
 \begin_inset Flex Code
 status collapsed
@@ -23594,9 +22285,7 @@ ResetsFont
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369557
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -23608,7 +22297,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -23622,45 +22311,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369557
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369557
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369557
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- If 
+] If 
 \begin_inset Flex Code
 status collapsed
 
@@ -23810,48 +22461,14 @@ Spellcheck
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369559
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-0
-\end_layout
-
-\end_inset
-
-,
-\begin_inset space \thinspace{}
-\end_inset
-
-
+ [
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
 
 \emph on
-1
-\end_layout
-
-\end_inset
-
-]
-\change_inserted -849685795 1754369559
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369559
-
-\emph on
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -23865,35 +22482,21 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -849685795 1754369559
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-]
-\change_unchanged
- Allow spell-checking the contents of this inset.
+] Allow spell-checking the contents of this inset.
  Default is true.
-\change_inserted -712698321 1755872621
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1755872640
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755872622
 StepParentCounter
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -23904,12 +22507,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755872622
-
 \emph on
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -23919,18 +22518,12 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755872622
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 ] Steps the parent counter of the counter of this inset at the beginning of the inset.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -24195,9 +22788,7 @@ Mandatory
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369562
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -24209,7 +22800,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -24223,45 +22814,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369562
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369562
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369562
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- Declare if this is a mandatory (1) or an optional (0) argument.
+] Declare if this is a mandatory (1) or an optional (0) argument.
  Mandatory arguments will be output empty if not given,
  while optional arguments will not be output at all.
  By default,
@@ -24602,9 +23155,7 @@ FreeSpacing
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369451
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -24616,7 +23167,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -24630,45 +23181,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369451
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369451
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369451
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- As with paragraph styles,
+] As with paragraph styles,
  see 
 \begin_inset CommandInset ref
 LatexCommand ref
@@ -24729,22 +23242,14 @@ Classic
 \end_inset
 
 ] describes the rendering style used for the inset's frame and buttons.
-\change_inserted -712698321 1723455759
-
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1723455909
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455760
 EscapeChars
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -24754,11 +23259,7 @@ EscapeChars
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455760
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -24774,11 +23275,7 @@ Defines individual characters that should be escaped in the context of this para
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455760
 %!@
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -24788,11 +23285,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455760
 !
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -24802,11 +23295,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455760
 @
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -24816,11 +23305,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1723455760
 %
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -24829,8 +23314,6 @@ status collapsed
  Note that this needs to be explicitly defined for arguments.
  That is,
  arguments do not inherit EscapeChars from their parent inset or layout.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -25025,76 +23508,26 @@ that should be output in raw form,
  this needs to be explicitly defined for arguments.
  That is,
  arguments do not inherit PassThruChars from their parent inset or layout.
-\change_inserted -712698321 1748075210
-
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1748075463
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1748075210
 InheritFont
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369451
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1748075210
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-,
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -712698321 1748075210
-
-\emph on
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_inserted -849685795 1754369451
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369451
 
 \emph on
 0
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -25108,21 +23541,13 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -849685795 1754369451
 1
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-]
-\change_inserted -712698321 1748075463
- The font inside the argument is inherited from the surrounding text on screen if this parameter is 1 (which is the default).
+] The font inside the argument is inherited from the surrounding text on screen if this parameter is 1 (which is the default).
  Otherwise the document default font is used.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Itemize
@@ -25135,9 +23560,7 @@ IsTocCaption
 
 \end_inset
 
- 
-\change_deleted -849685795 1754369451
-[
+ [
 \begin_inset Flex Code
 status collapsed
 
@@ -25149,7 +23572,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -25163,45 +23586,7 @@ status collapsed
 
 \end_inset
 
-]
-\change_inserted -849685795 1754369451
-[
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369451
-
-\emph on
-0
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-
-\begin_inset space \thinspace{}
-\end_inset
-
-
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -849685795 1754369451
-1
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-]
-\change_unchanged
- If this is set to 1,
+] If this is set to 1,
  the argument will output its content in the corresponding item in the table of contents.
  See AddToToc.
 \end_layout
@@ -25622,7 +24007,6 @@ counter
 \end_inset
 
 .
- 
 \end_layout
 
 \begin_layout Itemize
@@ -25799,25 +24183,15 @@ hebrew
 \end_deeper
 \begin_layout Standard
 If 
-\change_deleted -712698321 1756018721
-LabelString
-\change_inserted -712698321 1756018721
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1756018721
 LabelString
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
-
-\change_unchanged
  is not defined,
  a default value is constructed as follows:
  if the counter has a parent counter 
@@ -25984,9 +24358,7 @@ string
 \end_inset
 
 ] A format for use with formatted references to this counter.
- 
-\change_inserted -712698321 1747995324
-Singular and plural forms can be given if separated by 
+ Singular and plural forms can be given if separated by 
 \begin_inset Quotes els
 \end_inset
 
@@ -26004,9 +24376,7 @@ Section|Sections
 \end_inset
 
 ).
- 
-\change_unchanged
-For example,
+ For example,
  one might want to have references to section numbers appear as 
 \begin_inset Quotes eld
 \end_inset
@@ -26056,8 +24426,6 @@ arabic{section}
 \end_inset
 
  (which might render as §2.7).
-
-\change_inserted -712698321 1747995373
  Please always use the spelling with initial capitalization and indicate plural forms wherever applicable (e.
 \begin_inset space \thinspace{}
 \end_inset
@@ -26074,8 +24442,6 @@ Criterion|Criteria
 ),
  lowercase versions will be produced by \SpecialChar LyX
  automatically.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -26146,20 +24512,6 @@ lem
 ),
  and the second a formatting string,
  as for 
-\change_deleted -712698321 1747995412
-
-\begin_inset Flex Code
-status open
-
-\begin_layout Plain Layout
-LabelString
-\end_layout
-
-\end_inset
-
- or
-\change_unchanged
- 
 \begin_inset Flex Code
 status open
 
@@ -26182,22 +24534,14 @@ PrettyFormat
 \end_inset
 
  is used.
-\change_inserted -712698321 1755842953
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1755843126
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755842965
 StepOtherCounter
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -26207,11 +24551,7 @@ StepOtherCounter
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755842953
 string
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -26239,18 +24579,12 @@ none
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755843121
 StepOtherCounter
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  setting).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -26666,7 +25000,7 @@ Bold
 
 \end_inset
 
-] 
+]
 \end_layout
 
 \begin_layout Description
@@ -26724,7 +25058,7 @@ Slanted
 
 \end_inset
 
-] 
+]
 \end_layout
 
 \begin_layout Description
@@ -26880,13 +25214,7 @@ cite engine
  author names and/or years.
  Currently,
  \SpecialChar LyX
- supports 
-\change_deleted -712698321 1720358297
-three
-\change_inserted -712698321 1720358297
-four
-\change_unchanged
- such engine types,
+ supports four such engine types,
  namely:
 \end_layout
 
@@ -26971,22 +25299,14 @@ Smith and Miller [1]
 \end_inset
 
 )
-\change_inserted -712698321 1720358301
-
 \end_layout
 
 \begin_layout Enumerate
-
-\change_inserted -712698321 1720358652
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720358314
 notes
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -27001,8 +25321,6 @@ notes and bibliography
 \end_inset
 
 ) citations using foot- or endnotes with full citations (or shortened ones on subsequent citations of the same source) next to a bibliography.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
@@ -27062,25 +25380,15 @@ CiteEngine
 \end_layout
 
 \begin_layout LyX-Code
-
-\change_inserted -712698321 1720623059
-style@
-\change_unchanged
-LyXName|alias$*<!_stardesc!_stardesctooltip>[][]=latexcmd
+style@LyXName|alias$*<!_stardesc!_stardesctooltip>[][]=latexcmd
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1720883627
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720623079
 style
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -27097,11 +25405,7 @@ g.,
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720623135
 apa@nptextcite
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -27112,12 +25416,8 @@ status collapsed
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1720623254
-
 \backslash
 nptextcite
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -27132,11 +25432,7 @@ apa
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720883593
 !
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -27253,40 +25549,25 @@ latexcmd
 :
  The actual \SpecialChar LaTeX
  command that is output.
- 
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1720623197
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720623197
 Style
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 ,
  
-\change_unchanged
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_deleted -712698321 1720623181
-A
-\change_inserted -712698321 1720623181
-a
-\change_unchanged
-lias
+alias
 \end_layout
 
 \end_inset
@@ -27424,7 +25705,6 @@ latexcmd
 \end_inset
 
 ).
- 
 \end_layout
 
 \begin_deeper
@@ -27489,7 +25769,6 @@ Full aut&hor list
 
  checkbox label in the citation dialog,
  the second one to an optional tool tip for this checkbox.
- 
 \end_layout
 
 \begin_layout Standard
@@ -27516,7 +25795,6 @@ status collapsed
 
  from the prefix,
  like this:
- 
 \end_layout
 
 \begin_layout LyX-Code
@@ -28204,22 +26482,14 @@ Biblatex
 \family default
  format for multi-reference citations),
  the false part if this is not the case.
-\change_inserted -712698321 1720625677
-
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1720628578
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720628557
 {%ifstyle:<styles>%[[true]][[false]]}
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -28238,11 +26508,7 @@ true
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720628580
 <styles>
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -28886,13 +27152,9 @@ status collapsed
  Note that these are not macros,
  in the sense just defined.
  They will not be expanded.
-\change_inserted -712698321 1720499621
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1720499725
 For some characters which are otherwise hard to get,
  we have predefined macros.
  Currently,
@@ -28900,17 +27162,11 @@ For some characters which are otherwise hard to get,
 \end_layout
 
 \begin_layout Itemize
-
-\change_inserted -712698321 1720499707
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1720499707
 %elp%
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -29116,7 +27372,6 @@ Type
 \end_inset
 
  tag.
- 
 \end_layout
 
 \begin_layout Standard
@@ -29225,7 +27480,6 @@ value
 Note that the label is output only for the first paragraph,
  as it should be for a theorem,
  for example.
- 
 \end_layout
 
 \begin_layout Standard
@@ -29295,10 +27549,6 @@ value
 
 \family sans
 </tag>
-\end_layout
-
-\begin_layout LyX-Code
-
 \end_layout
 
 \begin_layout LyX-Code
@@ -30197,7 +28447,6 @@ title
 \end_inset
 
  environment.
- 
 \end_layout
 
 \begin_layout Subsection
@@ -30482,13 +28731,7 @@ string
 status collapsed
 
 \begin_layout Plain Layout
-class=
-\change_deleted -712698321 1753508399
-`
-\change_inserted -712698321 1753508400
-'
-\change_unchanged
-insetname_inner'
+class='insetname_inner'
 \end_layout
 
 \end_inset
@@ -30498,18 +28741,12 @@ insetname_inner'
 \end_inset
 
 .
-
-\change_inserted -712698321 1753508560
  The placeholder 
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1753508431
 $$content
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -30524,11 +28761,7 @@ g.,
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1753508520
 href='$$content'
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -30538,18 +28771,12 @@ href='$$content'
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1753508560
 HTMLInnerTag a
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 ).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -30840,7 +29067,6 @@ The caption,
  if there is one,
  is a separate inset and will be output as such.
  Its appearance can be controlled via the InsetLayout for caption insets.
- 
 \end_layout
 
 \begin_layout Description
@@ -31234,13 +29460,9 @@ Labels are rarely output,
  such as definition lists:
  in this case,
  the term being defined will be the label.
-\change_inserted 5863208 1739022811
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted 5863208 1739023270
 There is a limited possibility to enter raw XML directly into the document,
  see Section 
 \family sans
@@ -31251,8 +29473,6 @@ Raw XML for DocBook output
 User Guide
 \emph default
 .
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
@@ -33336,7 +31556,6 @@ nolink "false"
 \begin_layout Standard
 Having said that,
  we encourage you to submit any interesting templates that you create.
- 
 \end_layout
 
 \begin_layout Standard
@@ -34419,14 +32638,10 @@ $$AbsPath
 
 \end_inset
 
- The absolute file path
-\change_inserted -712698321 1712390130
-.
+ The absolute file path.
  If compiling with \SpecialChar LyX
 ,
- this is the path to the file in the temporary directory
-\change_unchanged
-.
+ this is the path to the file in the temporary directory.
 \end_layout
 
 \begin_layout Description
@@ -34557,29 +32772,19 @@ $$FName
 
  (absolute name or relative to the \SpecialChar LyX
  document).
-\change_inserted -712698321 1712389740
-
 \end_layout
 
 \begin_layout Description
-
-\change_inserted -712698321 1712390181
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1712389749
 $$OrigAbsName
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
  The file name with absolute path to the original directory (not the temporary directory).
-\change_unchanged
-
 \end_layout
 
 \begin_layout Description
@@ -35010,7 +33215,6 @@ This also implies that you are restricted in what command strings you can use in
  If you want to use some of the shell features,
  you should write a safe script to do this in a controlled manner,
  and then invoke the script from the command string.
- 
 \end_layout
 
 \begin_layout Standard
@@ -36336,7 +34540,7 @@ regexpframe Color for regexp frame
 \end_layout
 
 \begin_layout Description
-scroll Color that indicates when a row can be scrolled 
+scroll Color that indicates when a row can be scrolled
 \end_layout
 
 \begin_layout Description
