@@ -1,0 +1,19 @@
+Please find the documents with tracked changes here:
+
+* UserGuide.lyx:
+https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/doc/UserGuide.lyx
+
+* Additional.lyx:
+https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/doc/Additional.lyx
+
+* Customization.lyx:
+https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/doc/Customization.lyx
+
+* EmbeddedObjects.lyx:
+https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/doc/EmbeddedObjects.lyx
+
+* Math.lyx:
+https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/doc/Math.lyx
+
+* examples/Modules/Linguistics.lyx:
+https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/examples/Modules/Linguistics.lyx
