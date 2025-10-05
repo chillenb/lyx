@@ -134,7 +134,7 @@ End
 \paperpagestyle default
 \tablestyle default
 \listings_params "language={[LaTeX]TeX},basicstyle={\ttfamily}"
-\tracking_changes true
+\tracking_changes false
 \output_changes false
 \change_bars false
 \postpone_fragile_content false
@@ -144,7 +144,6 @@ End
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
-\author -712698321 "Jürgen Spitzmüller"
 \end_header
 
 \begin_body
@@ -172,15 +171,9 @@ literal "false"
 \end_layout
 
 \begin_layout Date
-
-\change_deleted -712698321 1755087294
-21/04/2015
-\change_inserted -712698321 1755087308
 \SpecialChar LyX
  v.
  2.5
-\change_unchanged
-
 \end_layout
 
 \begin_layout Abstract
@@ -506,25 +499,12 @@ it can have several paragraphs
 
 \begin_layout Numbered Examples (consecutive)
 This is a single example
-\change_inserted -712698321 1755086583
-
 \begin_inset CommandInset label
 LatexCommand label
 name "lex:single-example"
 
 \end_inset
 
-
-\change_deleted -712698321 1755086583
-
-\begin_inset CommandInset label
-LatexCommand label
-name "exa:single-example"
-
-\end_inset
-
-
-\change_unchanged
  [Style 
 \emph on
 Numbered Example (consecutive)
@@ -538,25 +518,12 @@ Consecutive single examples get their own numbers
 
 \begin_layout Subexample
 This is a subexample
-\change_inserted -712698321 1755086597
-
 \begin_inset CommandInset label
 LatexCommand label
 name "lex:subexample"
 
 \end_inset
 
-
-\change_deleted -712698321 1755086597
-
-\begin_inset CommandInset label
-LatexCommand label
-name "subsec:subexample"
-
-\end_inset
-
-
-\change_unchanged
  [Style 
 \emph on
 Subexample
@@ -569,8 +536,6 @@ And another one
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1755846246
 \begin_inset CommandInset label
 LatexCommand label
 name "subsec:numbering"
@@ -581,8 +546,6 @@ Numbering Examples and Equations
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755845776
 By default,
  
 \emph on
@@ -599,8 +562,6 @@ equation
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755845729
 If you use both equations and examples and want to have separate numbering for each of them,
  
 \emph on
@@ -627,66 +588,46 @@ Local Layout
 \end_layout
 
 \begin_layout Quote
-
-\change_inserted -712698321 1755845744
 \begin_inset listings
 lstparams "basicstyle={\footnotesize\ttfamily}"
 inline false
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845882
 PackageOptions covington owncounter
 \end_layout
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755845882
-
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845883
 Counter examplei
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845917
 	LabelString          "(
 \backslash
 arabic{examplei})"
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845889
 	StepOtherCounter      none
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845883
 End
 \end_layout
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755845883
-
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845883
 Counter subexamplei
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755846646
 	LabelString  "(
 \backslash
 arabic{examplei}) (
@@ -695,11 +636,7 @@ alph{subexamplei})"
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755845883
 End
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -708,14 +645,10 @@ End
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755846008
 This separates the numbering of examples and equations both in the output and the workarea.
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1755845360
 Referring to Numbered Examples
 \end_layout
 
@@ -727,66 +660,25 @@ Insert\SpecialChar menuseparator
 Cross references
 \family default
 .
- 
-\change_deleted -712698321 1755090756
-We refer here,
- just for the sake of demonstrating this,
- to
-\change_inserted -712698321 1755090863
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755090789
 Simple references which only output the number look like this:
-
-\change_unchanged
  
-\change_inserted -712698321 1755086583
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lex:single-example"
 
 \end_inset
 
-
-\change_deleted -712698321 1755090756
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "exa:single-example"
-nolink "false"
-
-\end_inset
-
-
-\change_unchanged
  and 
-\change_inserted -712698321 1755086597
-
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "lex:subexample"
 
 \end_inset
 
-
-\change_deleted -712698321 1755090756
-
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "subsec:subexample"
-nolink "false"
-
-\end_inset
-
-
-\change_unchanged
 .
-
-\change_inserted -712698321 1755092855
  If you want the numbers to be embraced in parentheses,
  as is the convention,
  select the parenthetical format instead:
@@ -805,13 +697,9 @@ reference "lex:subexample"
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755091020
 For more convenient referencing,
  you can also use 
 \begin_inset Quotes eld
@@ -870,8 +758,6 @@ Format Packages
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755091214
 In what follows,
  we describe the necessary settings for English documents.
  If you write in a different language (or prefer other terminology),
@@ -899,8 +785,6 @@ Examples
 \end_layout
 
 \begin_layout Enumerate
-
-\change_inserted -712698321 1755087781
 With 
 \begin_inset Quotes eld
 \end_inset
@@ -915,22 +799,16 @@ prettyref and varioref
 
 \begin_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1755087823
 \begin_inset listings
 inline false
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755087803
-
 \backslash
 newrefformat{lex}{example~(
 \backslash
 ref{#1})}
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -939,8 +817,6 @@ ref{#1})}
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755155199
 Note that the 
 \emph on
 prettyref
@@ -975,8 +851,6 @@ lex:
 
 \end_deeper
 \begin_layout Enumerate
-
-\change_inserted -712698321 1755088253
 With 
 \begin_inset Quotes eld
 \end_inset
@@ -991,58 +865,40 @@ refstyle and varioref
 
 \begin_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1755088337
 \begin_inset listings
 inline false
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755088284
-
 \backslash
 newref{lex}{
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755154726
     name = {example~},
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755154732
     names = {examples~},
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755154741
     Name = {Example~},
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755154746
     Names = {Examples~},
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755154882
     refcmd = (
 \backslash
 ref{#1})
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755088284
 }
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1051,8 +907,6 @@ ref{#1})
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755155204
 As with 
 \emph on
 prettyref
@@ -1085,8 +939,6 @@ refstyle
 
 \end_deeper
 \begin_layout Enumerate
-
-\change_inserted -712698321 1755088875
 With 
 \begin_inset Quotes eld
 \end_inset
@@ -1101,28 +953,20 @@ cleveref and varioref
 
 \begin_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1755088967
 \begin_inset listings
 inline false
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755088931
 % We must load cleveref manually,
  as it needs
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755088940
 % to be loaded before covington!
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755091764
 
 \backslash
 usepackage{cleveref}
@@ -1130,23 +974,17 @@ usepackage{cleveref}
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755091764
-
 \backslash
 crefname{covex}{example}{examples}
 \end_layout
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755091764
-
 \backslash
 Crefname{covex}{Example}{Examples}
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755091992
 
 \backslash
 creflabelformat{covex}{
@@ -1156,35 +994,25 @@ textup{(#2#1#3)}}
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755091764
-
 \backslash
 AddToHook{env/covsubexamples/begin}{%
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755091764
   
 \backslash
 crefalias{enumi}{covex}
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092013
 }
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755155237
 % The following is not needed
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755155238
 % with option 
 \begin_inset Quotes eld
 \end_inset
@@ -1198,26 +1026,18 @@ owncounter
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755092012
-
 \backslash
 AddToHook{env/covexamples/begin}{%
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092012
   
 \backslash
 crefalias{equation}{covex}
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092012
 }
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1226,8 +1046,6 @@ crefalias{equation}{covex}
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755846288
 Other than 
 \emph on
 prettyref
@@ -1274,8 +1092,6 @@ first-level enumeration) counter.
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755846317
 If you separate numbering for equations and examples as documented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1288,8 +1104,6 @@ reference "subsec:numbering"
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755155350
 Also,
  other than 
 \emph on
@@ -1306,8 +1120,6 @@ refstyle
 
 \end_deeper
 \begin_layout Enumerate
-
-\change_inserted -712698321 1755089680
 Finally,
  with 
 \begin_inset Quotes eld
@@ -1323,93 +1135,65 @@ zref-clever and zref-vario
 
 \begin_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1755089964
 \begin_inset listings
 inline false
 status open
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755090117
-
 \backslash
 zcRefTypeSetup{covex}{
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755090117
   Name-sg = Example ,
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755090117
   name-sg = example ,
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755090117
   Name-pl = Examples ,
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755090117
   name-pl = examples ,
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755090117
   refbounds-first-sg = {,(,),} ,
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755090117
   refbounds = {(,,,)} ,
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092072
 }
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092072
 
 \backslash
 AddToHook{env/covsubexs/begin}{%
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092072
    
 \backslash
 zcsetup{countertype={enumi=covex}}%
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092087
 }
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755155385
 % The following is not needed
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755155386
 % with option 
 \begin_inset Quotes eld
 \end_inset
@@ -1423,26 +1207,18 @@ owncounter
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755092079
-
 \backslash
 AddToHook{env/covexamples/begin}{%
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092079
   
 \backslash
 zcsetup{countertype={equation=covex}}%
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755092079
 }
-\change_unchanged
-
 \end_layout
 
 \end_inset
@@ -1451,8 +1227,6 @@ zcsetup{countertype={equation=covex}}%
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755094694
 As with 
 \emph on
 cleveref
@@ -1464,8 +1238,6 @@ cleveref
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755095637
 Note that 
 \emph on
 zref-clever
@@ -1498,13 +1270,9 @@ literal "false"
 \end_inset
 
  for details on how to include these in the above definitions.
-\change_unchanged
-
 \end_layout
 
 \begin_layout Standard
-
-\change_inserted -712698321 1755844757
 Note,
  finally,
  that the 
@@ -1519,8 +1287,6 @@ AddToHook
 
 \end_deeper
 \begin_layout Standard
-
-\change_inserted -712698321 1755844908
 If you want the formatted references also to appear that way in the workarea or cross-references dialog,
  add this to 
 \family sans
@@ -1532,21 +1298,15 @@ Local Layout
 \end_layout
 
 \begin_layout Quote
-
-\change_inserted -712698321 1755844867
 \begin_inset listings
 inline false
 status open
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755844872
 Counter examplei
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755844881
     PrettyFormat 
 \begin_inset Quotes eld
 \end_inset
@@ -1559,26 +1319,18 @@ Example|Examples ##
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755844872
 End
 \end_layout
 
 \begin_layout Plain Layout
 
-\change_inserted -712698321 1755844872
-
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755844872
 Counter subexamplei
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755844884
     PrettyFormat 
 \begin_inset Quotes eld
 \end_inset
@@ -1591,23 +1343,15 @@ Example|Examples ##
 \end_layout
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755844872
 End
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 
-\change_unchanged
-
 \end_layout
 
 \begin_layout Subsection
-
-\change_inserted -712698321 1755845220
 Adaptations
 \end_layout
 
@@ -1641,15 +1385,7 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-For 
-\change_deleted -712698321 1755155463
-global 
-\change_unchanged
-adjustments
-\change_inserted -712698321 1755155480
- that should apply for the whole document
-\change_unchanged
-,
+For adjustments that should apply for the whole document,
  these options can be passed to the 
 \family typewriter
 
@@ -4455,13 +4191,9 @@ https://www.ctan.org/tex-archive/macros/latex/contrib/varwidth
 \end_inset
 
 .
-\change_inserted -712698321 1755095540
-
 \end_layout
 
 \begin_layout Bibliography
-
-\change_inserted -712698321 1755095553
 \begin_inset CommandInset bibitem
 LatexCommand bibitem
 key "zref-clever"
@@ -4475,18 +4207,12 @@ The zref-clever package:
 status collapsed
 
 \begin_layout Plain Layout
-
-\change_inserted -712698321 1755095540
 https://www.ctan.org/tex-archive/macros/latex/contrib/zref-clever
-\change_unchanged
-
 \end_layout
 
 \end_inset
 
 .
-\change_unchanged
-
 \end_layout
 
 \end_body
