@@ -157,6 +157,7 @@ bool InsetLayout::read(Lexer & lex, TextClass const & tclass,
 		IL_RESETSFONT,
 		IL_SPELLCHECK,
 		IL_STEPPARENTCOUNTER,
+		IL_XREF_REQ_DEF,
 		IL_END
 	};
 
@@ -173,6 +174,7 @@ bool InsetLayout::read(Lexer & lex, TextClass const & tclass,
 		{ "contentaslabel", IL_CONTENTASLABEL },
 		{ "copystyle", IL_COPYSTYLE },
 		{ "counter", IL_COUNTER},
+		{ "crossrefneeddef", IL_XREF_REQ_DEF },
 		{ "custompars", IL_CUSTOMPARS },
 		{ "decoration", IL_DECORATION },
 		{ "display", IL_DISPLAY },
@@ -541,6 +543,13 @@ bool InsetLayout::read(Lexer & lex, TextClass const & tclass,
 		case IL_REFPREFIX:
 			lex >> refprefix_;
 			break;
+		case IL_XREF_REQ_DEF: {
+			lex.eatLine();
+			vector<string> const req =
+				getVectorFromString(lex.getString(true));
+			xref_req_defs_.insert(req.begin(), req.end());
+			break;
+		}
 		case IL_HTMLTAG:
 			lex >> htmltag_;
 			break;

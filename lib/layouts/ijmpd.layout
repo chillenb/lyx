@@ -398,6 +398,7 @@ Style RomanList
   HTMLItem	li
   HTMLLabel	NONE
   RefPrefix	enu
+  CrossrefNeedDef       refstyle,prettyref
   DocBookTag            orderedlist
   DocBookItemTag        listitem
   DocBookItemInnerTag   para

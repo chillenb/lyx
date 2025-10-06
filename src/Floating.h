@@ -14,6 +14,8 @@
 
 #include "support/docstring.h"
 
+#include <set>
+
 namespace lyx {
 
 /** This is a "float layout" object. It contains the parameters for how to
@@ -38,7 +40,8 @@ public:
 		 std::string const & docbookAttr, std::string const & docbookTagType,
 		 std::string const & docbookFloatType, std::string const & docbookCaption,
 		 std::string const & required, docstring const & preamble,
-		 bool usesfloat, bool ispredefined, bool allowswide, bool allowssideways);
+		 std::string const & xref_defs, bool usesfloat, bool ispredefined,
+		 bool allowswide, bool allowssideways);
 	///
 	std::string const & floattype() const { return floattype_; }
 	///
@@ -64,6 +67,8 @@ public:
 	std::string const & refPrefix() const { return refprefix_; }
 	/// allowed placement options
 	std::string const & allowedPlacement() const { return allowedplacement_; }
+	///
+	std::set<std::string> const & needCrossrefDefs() const { return xref_req_defs_; }
 	///
 	bool usesFloatPkg() const { return usesfloatpkg_; }
 	/// allowed placement options
@@ -146,6 +151,8 @@ private:
 	mutable std::string docbook_tag_type_;
 	/// DocBook float type, to override float_type_ (figure, table, algorithm, video)
 	std::string docbook_float_type_;
+	///
+	std::set<std::string> xref_req_defs_;
 };
 
 

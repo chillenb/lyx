@@ -94,6 +94,7 @@ Style Chapter
 	ParSep			0.8
 	Align			Block
 	RefPrefix		chap
+	CrossrefNeedDef         prettyref
 	Argument 1
 	  LabelString	"Short Title|S"
 	  Tooltip	"The chapter as it appears in the table of contents/running headers"
@@ -127,6 +128,7 @@ Style Section
 	ParSep			0.7
 	Align			Block
 	RefPrefix		sec
+	CrossrefNeedDef         prettyref
 	Argument 1
 	  LabelString	"Short Title|S"
 	  Tooltip	"The section as it appears in the table of contents/running headers"
@@ -150,6 +152,7 @@ Style Subsection
 	BottomSep		0.5
 	ParSep			0.5
 	RefPrefix		subsec
+	CrossrefNeedDef         prettyref
 	Font
 	  Series		Bold
 	  Size			Large

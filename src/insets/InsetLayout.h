@@ -121,6 +121,8 @@ public:
 	docstring const & counter() const { return counter_; }
 	///
 	docstring const & refprefix() const { return refprefix_; }
+	///
+	std::set<std::string> const & needCrossrefDefs() const { return xref_req_defs_; }
 	/// The tag enclosing all the material in this inset. Default is "span".
 	std::string const & htmltag() const;
 	/// Additional attributes for inclusion with the start tag. Default (if
@@ -327,6 +329,8 @@ private:
 	bool fixedwidthpreambleencoding_ = false;
 	///
 	docstring refprefix_;
+	/// Requires crossref defintions for packages
+	std::set<std::string> xref_req_defs_;
 	///
 	mutable std::string htmltag_;
 	///

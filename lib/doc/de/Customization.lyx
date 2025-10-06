@@ -8437,6 +8437,89 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
+CrossrefNeedDef
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+cleveref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+prettyref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+refstyle
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+zref
+\end_layout
+
+\end_inset
+
+] Bestimmt,
+ ob Definitionen für formatierte Querverweise (für spezifische Pakete,
+ von denen Sie hier eines oder mehrere [durch Komma getrennt] angeben) erzeugt werden sollen.
+ Verwenden Sie dies wenn ein Paket den \SpecialChar LaTeX
+-Befehl (oder Zähler),
+ der mit dieser Layout-Definition assoziiert ist,
+ nicht von Haus aus unterstützt.
+ Beachten Sie:
+ Wenn Sie dies für ein offiziell unterstützte Layout-Datei hinzufügen,
+ erfordert dies eine Dateiformatänderung (vgl.
+ die Methode 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+revert_ling_xrefs
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+lyx_2_6.py
+\end_layout
+
+\end_inset
+
+ als Beispiel).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 DefaultFont
 \end_layout
 
@@ -16682,6 +16765,89 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+CrossrefNeedDef
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+cleveref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+prettyref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+refstyle
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+zref
+\end_layout
+
+\end_inset
+
+] Bestimmt,
+ ob Definitionen für formatierte Querverweise (für spezifische Pakete,
+ von denen Sie hier eines oder mehrere [durch Komma getrennt] angeben) erzeugt werden sollen.
+ Verwenden Sie dies wenn ein Paket den \SpecialChar LaTeX
+-Befehl (oder Zähler),
+ der mit dieser Gleitobjekt-Definition assoziiert ist,
+ nicht von Haus aus unterstützt.
+ Beachten Sie:
+ Wenn Sie dies für ein offiziell unterstützte Layout-Datei hinzufügen,
+ erfordert dies eine Dateiformatänderung (vgl.
+ die Methode 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+revert_ling_xrefs
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+lyx_2_6.py
+\end_layout
+
+\end_inset
+
+ als Beispiel).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Extension
 \end_layout
 
@@ -18748,6 +18914,89 @@ status collapsed
 
 ] Falls diese Einfügung einen Zähler verwenden und hochzählen soll,
  legen Sie das hier fest.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+CrossrefNeedDef
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+cleveref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+prettyref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+refstyle
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+zref
+\end_layout
+
+\end_inset
+
+] Bestimmt,
+ ob Definitionen für formatierte Querverweise (für spezifische Pakete,
+ von denen Sie hier eines oder mehrere [durch Komma getrennt] angeben) erzeugt werden sollen.
+ Verwenden Sie dies wenn ein Paket den \SpecialChar LaTeX
+-Befehl (oder Zähler),
+ der mit dieser InsetLayout-Definition assoziiert ist,
+ nicht von Haus aus unterstützt.
+ Beachten Sie:
+ Wenn Sie dies für ein offiziell unterstützte Layout-Datei hinzufügen,
+ erfordert dies eine Dateiformatänderung (vgl.
+ die Methode 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+revert_ling_xrefs
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+lyx_2_6.py
+\end_layout
+
+\end_inset
+
+ als Beispiel).
 \end_layout
 
 \begin_layout Description

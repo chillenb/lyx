@@ -59,7 +59,7 @@ namespace lyx {
 // You should also run the development/tools/updatelayouts.py script,
 // to update the format of all of our layout files.
 //
-int const LAYOUT_FORMAT = 111; // spitz: StepOtherCounters tag for Counter
+int const LAYOUT_FORMAT = 112; // spitz: CrossrefNeedDef tag
 
 
 // Layout format for the current lyx file format. Controls which format is
@@ -1486,6 +1486,7 @@ bool TextClass::readFloat(Lexer & lexrc)
 		FT_REQUIRES,
 		FT_PRETTYFORMAT,
 		FT_PREAMBLE,
+		FT_XREF_REQ_DEF,
 		FT_END
 	};
 
@@ -1493,6 +1494,7 @@ bool TextClass::readFloat(Lexer & lexrc)
 		{ "allowedplacement", FT_ALLOWED_PLACEMENT },
 		{ "allowssideways", FT_ALLOWS_SIDEWAYS },
 		{ "allowswide", FT_ALLOWS_WIDE },
+		{ "crossrefneeddef", FT_XREF_REQ_DEF },
 		{ "docbookattr", FT_DOCBOOKATTR },
 		{ "docbookcaption", FT_DOCBOOKCAPTION },
 		{ "docbookfloattype", FT_DOCBOOKFLOATTYPE },
@@ -1539,6 +1541,7 @@ bool TextClass::readFloat(Lexer & lexrc)
 	string type;
 	string within;
 	string required;
+	string xref_req_defs;
 	docstring prettyformat;
 	docstring preamble;
 	bool usesfloat = true;
@@ -1572,6 +1575,12 @@ bool TextClass::readFloat(Lexer & lexrc)
 				ispredefined = fl.isPredefined();
 				listcommand = fl.listCommand();
 				refprefix = fl.refPrefix();
+				set<string> const cd = fl.needCrossrefDefs();
+				for (auto const & s : cd) {
+					if (!xref_req_defs.empty())
+						xref_req_defs += ",";
+					xref_req_defs += s;
+				}
 			}
 			break;
 		case FT_NAME:
@@ -1671,6 +1680,10 @@ bool TextClass::readFloat(Lexer & lexrc)
 			lexrc.next();
 			docbookfloattype = lexrc.getString();
 			break;
+		case FT_XREF_REQ_DEF:
+			lexrc.eatLine();
+			xref_req_defs = lexrc.getString();
+			break;
 		case FT_END:
 			getout = true;
 			break;
@@ -1703,8 +1716,8 @@ bool TextClass::readFloat(Lexer & lexrc)
 			listname, listcommand, refprefix, allowed_placement,
 			htmltag, htmlattr, htmlstyle, docbooktag, docbookattr,
 			docbooktagtype, docbookfloattype, docbookcaption,
-			required, preamble, usesfloat, ispredefined,
-			allowswide, allowssideways);
+			required, preamble, xref_req_defs,
+			usesfloat, ispredefined, allowswide, allowssideways);
 		floatlist_.newFloat(fl);
 		// each float has its own counter
 		counters_.newCounter(from_ascii(type), from_ascii(within),

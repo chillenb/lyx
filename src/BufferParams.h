@@ -668,6 +668,9 @@ public:
 	/// to copy them all, e.g., not the default master.
 	void copyForAdvFR(BufferParams const & bp);
 
+	///
+	bool isRefStyleSupported(docstring & pr) const;
+
 private:
 	///
 	void readPreamble(support::Lexer &);

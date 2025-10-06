@@ -294,14 +294,7 @@ docstring InsetRef::getFormattedCmd(docstring const & ref,
 			have_cmd = true;
 			continue;
 		}
-	
-		if (xref_package != "refstyle") {
-			// \prettyref uses the whole label
-			label.push_back(r);
-			have_cmd = true;
-			continue;
-		}
-	
+
 		// make sure the prefix is legal for a latex command
 		size_t const len = pr.size();
 		bool invalid_prefix = false;
@@ -318,6 +311,14 @@ docstring InsetRef::getFormattedCmd(docstring const & ref,
 			prefix = pr;
 			have_prefix = true;
 		}
+
+		if (xref_package != "refstyle") {
+			// \prettyref uses the whole label
+			label.push_back(r);
+			have_cmd = true;
+			continue;
+		}
+
 		if (!invalid_prefix)
 			label.push_back(l);
 	}
@@ -344,34 +345,6 @@ docstring InsetRef::getEscapedLabel(OutputParams const & rp) const
 	ParamInfo const & pi = p.info();
 	ParamInfo::ParamData const & pd = pi["reference"];
 	return p.prepareCommand(rp, getParam("reference"), pd.handling());
-}
-
-
-bool InsetRef::isRefStyleSupported(docstring & pr) const
-{
-	// lowercase capitalized prefixes
-	char_type t = lowercase(pr[0]);
-	pr[0] = t;
-
-	// These are supported by the package
-	if (pr == "part" || pr == "chap" || pr == "sec" || pr == "eq"
-	    || pr == "fig" || pr == "tab" || pr == "fn")
-		return true;
-
-	// These are additionally supported by LyX
-	if (pr == "alg" || pr == "cha" || pr == "enu" || pr == "subsec")
-		return true;
-
-	// Theorems are all supported by LyX
-	DocumentClass const & tclass = buffer().masterParams().documentClass();
-	DocumentClass::const_iterator lit = tclass.begin();
-	DocumentClass::const_iterator len = tclass.end();
-	for (; lit != len; ++lit) {
-		if (!lit->thmName().empty() && lit->refprefix == pr)
-			return true;
-	}
-
-	return false;
 }
 
 
@@ -444,7 +417,7 @@ void InsetRef::latex(otexstream & os, OutputParams const & rp) const
 					os << ",";
 			}
 			if (contains(*it, ' ') && !useRange() && buffer().masterParams().xref_package == "refstyle"
-			    && isRefStyleSupported(prefix))
+			    && buffer().masterParams().isRefStyleSupported(prefix))
 				// refstyle bug: labels with blanks need to be grouped for known commands
 				// otherwise the blanks will be gobbled
 				os << "{" << *it << "}";
@@ -986,17 +959,14 @@ void InsetRef::validate(LaTeXFeatures & features) const
 		bool const use_caps   = getParam("caps") == "true";
 		docstring const fcmd =
 			getFormattedCmd(data, label, prefix, buffer().masterParams().xref_package, use_caps, useRange());
+		features.useRefPrefix(lowercase(prefix));
 		if (buffer().masterParams().xref_package == "refstyle") {
 			features.require("refstyle");
-			if (prefix == "alg" || prefix == "Alg")
-				features.require("refstyle:algref");
-			else if (prefix == "cha" || prefix == "Cha")
+			if (prefix == "cha" || prefix == "Cha")
 				features.require("refstyle:charef");
-			else if (prefix == "enu" || prefix == "Enu")
-				features.require("refstyle:enuref");
 			else if (prefix == "subsec" || prefix == "Subsec")
 				features.require("refstyle:subsecref");
-			else if (!prefix.empty() && !isRefStyleSupported(prefix)) {
+			else if (!prefix.empty() && !buffer().masterParams().isRefStyleSupported(prefix)) {
 				// fallback command for unsupported prefixes
 				docstring lcmd = "\\AtBeginDocument{\\providecommand" +
 						fcmd + "[1]{\\ref{" + prefix + ":#1}}}";
@@ -1008,9 +978,9 @@ void InsetRef::validate(LaTeXFeatures & features) const
 			features.require("zref-clever");
 		} else {
 			features.require("prettyref");
-			// prettyref uses "cha" for chapters, so we provide a kind of
-			// translation.
-			if (prefix == "chap")
+			// prettyref uses "cha" for chapters, so we provide a kind of translation,
+			// but only for the unlocalized variant.
+			if (prefix == "chap" && buffer().masterParams().xref_package == "prettyref")
 				features.addPreambleSnippet(from_ascii("\\let\\pr@chap=\\pr@cha"));
 		}
 	} else if (cmd == "eqref" && buffer().params().xref_package != "refstyle")

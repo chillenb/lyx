@@ -95,6 +95,7 @@ enum LayoutTags {
 	LT_INNERTAG,
 	LT_LABELTAG,
 	LT_ITEMTAG,
+	LT_XREF_REQ_DEF,
 	LT_THM_NAME,
 	LT_THM_LATEXNAME,
 	LT_THM_COUNTER,
@@ -250,6 +251,7 @@ bool Layout::readIgnoreForcelocal(Lexer & lex, TextClass const & tclass,
 		{ "category",       LT_CATEGORY },
 		{ "commanddepth",   LT_COMMANDDEPTH },
 		{ "copystyle",      LT_COPYSTYLE },
+		{ "crossrefneeddef", LT_XREF_REQ_DEF },
 		{ "dependson",      LT_DEPENDSON },
 		{ "docbookabstract",           LT_DOCBOOKABSTRACT },
 		{ "docbookattr",               LT_DOCBOOKATTR },
@@ -579,6 +581,14 @@ bool Layout::readIgnoreForcelocal(Lexer & lex, TextClass const & tclass,
 		case LT_ITEMCOMMAND:
 			lex >> itemcommand_;
 			break;
+
+		case LT_XREF_REQ_DEF: {
+			lex.eatLine();
+			vector<string> const req =
+				getVectorFromString(lex.getString(true));
+			xref_req_defs_.insert(req.begin(), req.end());
+			break;
+		}
 
 		case LT_THM_NAME:
 			lex >> thm_name_;
@@ -1761,6 +1771,16 @@ void Layout::write(ostream & os) const
 			os << to_utf8(*it);
 		}
 		os << "\n\tEndIsAutoNestedBy\n";
+	}
+	if (!xref_req_defs_.empty()) {
+		os << "\tCrossrefNeedDef ";
+		for (set<string>::const_iterator it = xref_req_defs_.begin();
+		     it != xref_req_defs_.end(); ++it) {
+			if (it != xref_req_defs_.begin())
+				os << ',';
+			os << *it;
+		}
+		os << '\n';
 	}
 	if (!thm_name_.empty())
 		os << "\tTheoremName " << thm_name_ << '\n';

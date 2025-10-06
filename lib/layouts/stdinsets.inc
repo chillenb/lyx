@@ -53,6 +53,7 @@ InsetLayout Foot
 	LatexType             Command
 	LatexName             footnote
 	Counter               footnote
+	CrossrefNeedDef       prettyref
 	InheritFont 	      false
 	Font
 	  Size                FootnoteSize

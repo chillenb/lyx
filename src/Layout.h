@@ -183,6 +183,8 @@ public:
 	///
 	std::string const & itemtag() const { return itemtag_; }
 	///
+	std::set<std::string> const & needCrossrefDefs() const { return xref_req_defs_; }
+	///
 	std::string const & thmName() const { return thm_name_; }
 	///
 	std::string const & thmLaTeXName() const { return thm_latex_name_; }
@@ -518,6 +520,8 @@ private:
 	std::string labeltag_;
 	/// Internal tag to surround the item text in a list.
 	std::string itemtag_;
+	/// Requires crossref defintions for packages
+	std::set<std::string> xref_req_defs_;
 	/// Tags for theorem definitions
 	/// 1. name
 	std::string thm_name_;

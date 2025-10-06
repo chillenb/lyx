@@ -25,6 +25,7 @@ namespace lyx {
 
 class Buffer;
 class BufferParams;
+class Floating;
 class InsetLayout;
 class Language;
 class Layout;
@@ -91,11 +92,12 @@ public:
 	docstring const getTClassPreamble() const;
 	/// Localizations for theorem reference defs
 	docstring const getThmI18nDefs(Layout const &) const;
-	/// Localizations for extra reference defs
-	docstring const getXRefI18nDefs(Layout const &) const;
-	/// Localizations for extra reference defs
-	docstring const getXRefI18nDefs(InsetLayout const &) const;
-	/// The language dependent definitions needed by the document's textclass
+	/// Extra reference defs for layouts
+	docstring const getXRefDefs(docstring const & pr, docstring const &,
+				    std::set<std::string> const & ncd,
+				    std::string const & ln, bool const env = true) const;
+	docstring const getXRefI18nDefs(docstring const &, docstring const &) const;
+		/// The language dependent definitions needed by the document's textclass
 	docstring const getTClassI18nPreamble(bool use_babel,
 				bool use_polyglossia, bool use_minted) const;
 	///
@@ -173,6 +175,8 @@ public:
 	///
 	void useInsetLayout(InsetLayout const & lay);
 	///
+	void useRefPrefix(docstring const & pr);
+	///
 	Buffer const & buffer() const;
 	///
 	void setBuffer(Buffer const &);
@@ -223,6 +227,11 @@ private:
 	///
 	std::string const getColorValue(std::string const &) const;
 	///
+	bool requireXRefDef(docstring const & pr, std::string const & ln,
+			    std::set<std::string> const & ncd) const;
+	///
+	bool refPrefixUsed(docstring const & pr) const;
+	///
 	std::list<docstring> usedLayouts_;
 	///
 	std::list<docstring> usedInsetLayouts_;
@@ -251,6 +260,8 @@ private:
 	///
 	std::list<ThmInfo> usedTheorems_;
 	///
+	std::set<docstring> usedRefPrefixes_;
+	///
 	typedef std::map<docstring, std::string> FileMap;
 	///
 	FileMap IncludedFiles_;
@@ -276,6 +287,8 @@ private:
 	std::string savenote_env_;
 	/// This is used to avoid recursion in InsetMathMacro::validate
 	std::set<docstring> active_macros_;
+	///
+	mutable std::set<docstring> xref_defs_;
 };
 
 

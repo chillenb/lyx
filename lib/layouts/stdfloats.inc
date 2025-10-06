@@ -20,6 +20,7 @@ Float
 	UsesFloatPkg          false
 	ListCommand           listoftables
 	RefPrefix             tab
+	CrossrefNeedDef       prettyref
 	PrettyFormat          "Table|Tables ##"
 End
 
@@ -36,6 +37,7 @@ Float
 	UsesFloatPkg          false
 	ListCommand           listoffigures
 	RefPrefix             fig
+	CrossrefNeedDef       prettyref
 	PrettyFormat          "Figure|Figures ##"
 End
 
@@ -51,6 +53,7 @@ Float
 	IsPredefined          false
 	UsesFloatPkg          true
 	RefPrefix             alg
+	CrossrefNeedDef       refstyle,prettyref
 	PrettyFormat          "Algorithm|Algorithms ##"
 End
 

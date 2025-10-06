@@ -663,7 +663,7 @@ docstring Counters::formattedCounter(docstring const & name,
 				     docstring const & prex,
 				     string const & lang,
 				     bool const lc,
-				     bool const pl) const
+				     bool const pl, bool plain) const
 {
 	CounterList::const_iterator it = counterList_.find(name);
 	if (it == counterList_.end())
@@ -675,8 +675,8 @@ docstring Counters::formattedCounter(docstring const & name,
 		counterLabel(translateIfPossible(getFormattedLabel(ctr.refFormat(prex), lc, pl), lang),
 			     lang);
 	if (format.empty())
-		return value;
-	return subst(format, from_ascii("##"), value);
+		return plain ? from_ascii("##") : value;
+	return plain ? format : subst(format, from_ascii("##"), value);
 }
 
 

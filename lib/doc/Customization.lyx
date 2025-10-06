@@ -147,6 +147,7 @@ logicalmkup
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
+\author -712698321 "Jürgen Spitzmüller"
 \end_header
 
 \begin_body
@@ -9765,6 +9766,105 @@ nolink "false"
 \end_layout
 
 \begin_layout Description
+
+\change_inserted -712698321 1759755322
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755035
+CrossrefNeedDef
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755076
+cleveref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755063
+prettyref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755080
+refstyle
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755092
+zref
+\end_layout
+
+\end_inset
+
+] Whether definitions for formatted references (for the specified,
+ comma-separated packages,
+ of which you can specify one ore more) need to be generated.
+ Use this if a package does not support the \SpecialChar LaTeX
+ command (or counter) associated with this layout.
+ Note that if you add this for official layout files,
+ this requires a file format change (see the method 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755285
+revert_ling_xrefs
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755294
+lyx_2_6.py
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ for a model).
+\end_layout
+
+\begin_layout Description
 \begin_inset Flex Code
 status collapsed
 
@@ -17916,6 +18016,105 @@ status collapsed
 \end_inset
 
  if the float does not support this feature.
+\change_inserted -712698321 1759755385
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1759755412
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+CrossrefNeedDef
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+cleveref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+prettyref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+refstyle
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+zref
+\end_layout
+
+\end_inset
+
+] Whether definitions for formatted references (for the specified,
+ comma-separated packages,
+ of which you can specify one ore more) need to be generated.
+ Use this if a package does not support the \SpecialChar LaTeX
+ float (or float counter) associated with this float definition.
+ Note that if you add this for official layout files,
+ this requires a file format change (see the method 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+revert_ling_xrefs
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755385
+lyx_2_6.py
+\end_layout
+
+\end_inset
+
+ for a model).
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -19923,6 +20122,105 @@ status collapsed
 ] The counter,
  if any,
  used and stepped by this inset.
+\change_inserted -712698321 1759755357
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1759755368
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+CrossrefNeedDef
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+cleveref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+prettyref
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+refstyle
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+zref
+\end_layout
+
+\end_inset
+
+] Whether definitions for formatted references (for the specified,
+ comma-separated packages,
+ of which you can specify one ore more) need to be generated.
+ Use this if a package does not support the \SpecialChar LaTeX
+ command (or counter) associated with this InsetLayout.
+ Note that if you add this for official layout files,
+ this requires a file format change (see the method 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+revert_ling_xrefs
+\end_layout
+
+\end_inset
+
+ in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1759755357
+lyx_2_6.py
+\end_layout
+
+\end_inset
+
+ for a model).
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description

@@ -200,7 +200,8 @@ public:
 				   docstring const & prefix,
 				   std::string const & lang,
 				   bool lowercase = false,
-				   bool plural = false) const;
+				   bool plural = false,
+				   bool plain = false) const;
 	///
 	docstring const & guiName(docstring const & cntr) const;
 	///

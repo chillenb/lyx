@@ -320,6 +320,7 @@ Float
 	IsPredefined	false
 	UsesFloatPkg	true
 	RefPrefix		alg
+	CrossrefNeedDef         refstyle,prettyref
 	PrettyFormat            "Algorithm|Algorithms ##"
 End
 

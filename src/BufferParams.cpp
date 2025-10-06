@@ -4545,4 +4545,45 @@ bool BufferParams::workareaJustified() const
 }
 
 
+bool BufferParams::isRefStyleSupported(docstring & pr) const
+{
+	// lowercase capitalized prefixes
+	char_type t = lowercase(pr[0]);
+	pr[0] = t;
+
+	// These are supported by the package
+	if (pr == "part" || pr == "chap" || pr == "sec" || pr == "eq"
+	    || pr == "fig" || pr == "tab" || pr == "fn")
+		return true;
+
+	// These are additionally supported by LyX
+	if (pr == "cha" || pr == "subsec")
+		return true;
+
+	DocumentClass::const_iterator lit = documentClass().begin();
+	DocumentClass::const_iterator len = documentClass().end();
+	for (; lit != len; ++lit) {
+		if (lit->refprefix != pr)
+			continue;
+		// Theorems are all supported by LyX
+		if (!lit->thmName().empty())
+			return true;
+		// For these we build definitions
+		if (lit->needCrossrefDefs().find("refstyle") != lit->needCrossrefDefs().end())
+			return true;
+	}
+
+	FloatList const & floats = documentClass().floats();
+	for (auto const & fl : floats) {
+		if (fl.second.refPrefix() != to_ascii(pr))
+			continue;
+		// For these we build definitions
+		if (fl.second.needCrossrefDefs().find("refstyle") != fl.second.needCrossrefDefs().end())
+			return true;
+	}
+
+	return false;
+}
+
+
 } // namespace lyx

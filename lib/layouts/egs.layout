@@ -182,6 +182,7 @@ Style Enumerate
 	AlignPossible         Block, Left
 	LabelType             Enumerate
 	RefPrefix             enu
+	CrossrefNeedDef       refstyle,prettyref
 	Argument item:1
 		LabelString   "Custom Item|s"
 		Tooltip       "A customized item string"

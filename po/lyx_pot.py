@@ -124,12 +124,6 @@ def layouts_l10n(input_files, output, base, layouttranslations):
     keyset = set()
     oldtrans = dict()
     if layouttranslations:
-        # predefined prettyref strings
-        keyset.add("Part")
-        keyset.add("Chapter")
-        keyset.add("Section")
-        keyset.add("Paragraph[[Sectioning]]")
-        keyset.add("Footnote")
         linguas_file = os.path.join(base, 'po/LINGUAS')
         for line in open(linguas_file).readlines():
             res = Comment.search(line)
@@ -359,14 +353,23 @@ def layouts_l10n(input_files, output, base, layouttranslations):
             res = CounterFormat.search(line)
             if res != None:
                 string = res.group(1)
-                if not layouttranslations:
-                    CounterFormats = re.compile(r'^(.*)\|(.*) ([^\s]+)$', re.IGNORECASE)
-                    lres = CounterFormats.search(string)
-                    if lres != None:
+                CounterFormats = re.compile(r'^(.*)\|(.*) ([^\s]+)$', re.IGNORECASE)
+                lres = CounterFormats.search(string)
+                if lres != None:
+                    if layouttranslations:
+                        keyset.add(lres.group(1) + " " + lres.group(3))
+                        keyset.add(lres.group(1).lower() + " " + lres.group(3))
+                        keyset.add(lres.group(2) + " " + lres.group(3))
+                        keyset.add(lres.group(2).lower() + " " + lres.group(3))
+                    else:
                         writeString(out, src, base, lineno, lres.group(1) + " " + lres.group(3))
                         writeString(out, src, base, lineno, lres.group(1).lower() + " " + lres.group(3))
                         writeString(out, src, base, lineno, lres.group(2) + " " + lres.group(3))
                         writeString(out, src, base, lineno, lres.group(2).lower() + " " + lres.group(3))
+                else:
+                    if layouttranslations:
+                        keyset.add(string)
+                        keyset.add(string.lower())
                     else:
                         writeString(out, src, base, lineno, string)
                         writeString(out, src, base, lineno, string.lower())

@@ -732,6 +732,18 @@ void LaTeXFeatures::useInsetLayout(InsetLayout const & lay)
 }
 
 
+void LaTeXFeatures::useRefPrefix(docstring const & pr)
+{
+	usedRefPrefixes_.insert(pr);
+}
+
+
+bool LaTeXFeatures::refPrefixUsed(docstring const & pr) const
+{
+	return pr.empty() || usedRefPrefixes_.find(pr) != usedRefPrefixes_.end();
+}
+
+
 bool LaTeXFeatures::isRequired(string const & name) const
 {
 	if (features_.find(name) != features_.end()) {
@@ -1815,7 +1827,7 @@ TexString LaTeXFeatures::getMacros() const
 	getFloatDefinitions(macros);
 
 	// extra xref definitions
-	// FIXME: longterm, provide layout tags
+	// These are idiosyncratic and hence hardcoded
 	if (mustProvide("refstyle:charef")) {
 		// this is not provided by the package, but we use the prefix
 		// copy the definition is a copy of chapref
@@ -1839,38 +1851,6 @@ TexString LaTeXFeatures::getMacros() const
 		       << "        Name      = \\RSSectxt,\n"
 		       << "        Names     = \\RSSecstxt,\n"
 		       << "        refcmd    = {\\S\\ref{#1}},\n"
-		       << "        rngtxt    = \\RSrngtxt,\n"
-		       << "        lsttwotxt = \\RSlsttwotxt,\n"
-		       << "        lsttxt    = \\RSlsttxt\n"
-		       << "  }\n"
-		       << "}{}\n"
-		       << '\n';
-	}
-
-	if (mustProvide("refstyle:enuref")) {
-		// this is not provided by the package, but we use the prefix
-		macros << "\\RS@ifundefined{enuref}{\n"
-		       << "  \\newref{enu}{\n"
-		       << "        name      = \\RSenutxt,\n"
-		       << "        names     = \\RSenustxt,\n"
-		       << "        Name      = \\RSEnutxt,\n"
-		       << "        Names     = \\RSEnustxt,\n"
-		       << "        rngtxt    = \\RSrngtxt,\n"
-		       << "        lsttwotxt = \\RSlsttwotxt,\n"
-		       << "        lsttxt    = \\RSlsttxt\n"
-		       << "  }\n"
-		       << "}{}\n"
-		       << '\n';
-	}
-
-	if (mustProvide("refstyle:algref")) {
-		// this is not provided by the package, but we use the prefix
-		macros << "\\RS@ifundefined{algref}{\n"
-		       << "  \\newref{alg}{\n"
-		       << "        name      = \\RSalgtxt,\n"
-		       << "        names     = \\RSalgstxt,\n"
-		       << "        Name      = \\RSAlgtxt,\n"
-		       << "        Names     = \\RSAlgstxt,\n"
 		       << "        rngtxt    = \\RSrngtxt,\n"
 		       << "        lsttwotxt = \\RSlsttwotxt,\n"
 		       << "        lsttxt    = \\RSlsttxt\n"
@@ -2043,7 +2023,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 	ostringstream tmp;
 
 	for (auto const & thm : usedTheorems_) {
-		if (thm.counter == "none")
+		if (thm.counter == "none" || !refPrefixUsed(from_ascii(thm.refprefix)))
 			continue;
 
 		// Extra definitions for zref-clever
@@ -2321,7 +2301,7 @@ docstring const i18npreamble(docstring const & templ, Language const * lang,
 
 docstring const LaTeXFeatures::getThmI18nDefs(Layout const & lay) const
 {
-	if (lay.thmName().empty())
+	if (lay.thmName().empty() || !refPrefixUsed(lay.refprefix))
 		return docstring();
 	if (params_.xref_package == "zref" && lay.thmZRefName() == "none" && !lay.thmXRefName().empty()
 	    && (isRequired("zref-clever") || isRequired("zref-vario"))) {
@@ -2364,51 +2344,188 @@ docstring const LaTeXFeatures::getThmI18nDefs(Layout const & lay) const
 }
 
 
-docstring const LaTeXFeatures::getXRefI18nDefs(Layout const & lay) const
+bool LaTeXFeatures::requireXRefDef(docstring const & pr, string const & ln, set<string> const & ncd) const
 {
-	odocstringstream ods;
-	if (params_.xref_package == "prettyref-l7n" && isRequired("prettyref")) {
-		if (lay.refprefix == "part")
-			ods << "\\newrefformat{" << lay.refprefix << "}{_(Part)~\\ref{#1}}\n";
-		else if (lay.refprefix == "cha")
-			ods << "\\newrefformat{" << lay.refprefix << "}{_(Chapter)~\\ref{#1}}\n";
-		else if (lay.refprefix == "sec" || lay.refprefix == "subsec" || lay.refprefix == "sub")
-			ods << "\\newrefformat{" << lay.refprefix << "}{_(Section)~\\ref{#1}}\n";
-		else if (lay.refprefix == "par")
-			ods << "\\newrefformat{par}{_(Paragraph[[Sectioning]])~\\ref{#1}}\n";
-		else if (lay.refprefix == "enu")
-			ods << "\\newrefformat{enu}{_(Item[[enumerate]])~\\ref{#1}}\n";
-		if (!ods.str().empty())
-			return ods.str();
+	if (pr.empty() || !refPrefixUsed(pr))
+		return false;
+	string const xp = (params_.xref_package == "prettyref-l7n") ? "prettyref" : params_.xref_package;
+	if (ncd.find(xp) == ncd.end())
+		return false;
+	else if (xref_defs_.find(pr) == xref_defs_.end()) {
+		xref_defs_.insert(pr);
+		// xref defs can be specific to different contexts
+		// so also record this
+		xref_defs_.insert(pr + ":" + from_ascii(ln));
+		return true;
 	}
-	if (params_.xref_package == "refstyle" && isRequired("refstyle:algref")) {
-		docstring const tn = from_ascii("Algorithm");
-		docstring const tnp = from_ascii("Algorithms");
-		docstring const prfxname = from_ascii("alg");
-		ods << "\\def\\RS" << prfxname << "txt{_(" << lowercase(tn) << ")~}\n"
-		    << "\\def\\RS" << prfxname << "stxt{_(" << lowercase(tnp) << ")~}\n"
-		    << "\\def\\RS" << capitalize(prfxname) << "txt{_(" << tn << ")~}\n"
-		    << "\\def\\RS" << capitalize(prfxname) << "stxt{_(" << tnp << ")~}\n";
+	else if (xref_defs_.find(pr + ":" + from_ascii(ln)) == xref_defs_.end()) {
+		// in case we have the prefix, but not in this context
+		xref_defs_.insert(pr + ":" + from_ascii(ln));
+		return true;
 	}
-	if (params_.xref_package == "refstyle" && isRequired("refstyle:enuref")) {
-		docstring const tn = from_ascii("Item[[enumerate]]");
-		docstring const tnp = from_ascii("Items[[enumerate]]");
-		docstring const prfxname = from_ascii("enu");
-		ods << "\\def\\RS" << prfxname << "txt{_(" << lowercase(tn) << ")~}\n"
-		    << "\\def\\RS" << prfxname << "stxt{_(" << lowercase(tnp) << ")~}\n"
-		    << "\\def\\RS" << capitalize(prfxname) << "txt{_(" << tn << ")~}\n"
-		    << "\\def\\RS" << capitalize(prfxname) << "stxt{_(" << tnp << ")~}\n";
-	}
-	return ods.str();
+	return false;
 }
 
 
-docstring const LaTeXFeatures::getXRefI18nDefs(InsetLayout const & lay) const
+namespace {
+docstring getFormattedLabel(docstring const & in, bool const value = false)
+{
+	docstring l;
+	docstring v = rsplit(in, l, ' ');
+	if (value) {
+		// Turn back expanded values to '##' placeholder
+		odocstringstream ods;
+		docstring::const_iterator lit = v.begin();
+		docstring::const_iterator end = v.end();
+		bool have_digit = false;
+		for (; lit != end; ++lit) {
+			if ('0' <= (*lit) && (*lit) <= '9') {
+				if (!have_digit)
+					ods << from_ascii("##");
+				have_digit = true;
+				continue;
+			}
+			ods << (*lit);
+		}
+		return ods.str();
+	}
+	return l;
+}
+
+docstring getRefstyleDef(docstring const & pr, docstring const & refcmd)
 {
 	odocstringstream ods;
+	ods << "\\makeatletter\n"
+	    << "\\RS@ifundefined{" << pr << "ref}{\n"
+	    << "    \\newref{" << pr << "}{\n"
+	    << "        name      = \\RS" << pr << "txt,\n"
+	    << "        names     = \\RS" << pr << "stxt,\n"
+	    << "        Name      = \\RS" << capitalize(pr) << "txt,\n"
+	    << "        Names     = \\RS" << capitalize(pr) << "stxt,\n";
+	if (!refcmd.empty())
+		ods << "        refcmd    = {" << refcmd << "},\n";
+	ods << "        rngtxt    = \\RSrngtxt,\n"
+	    << "        lsttwotxt = \\RSlsttwotxt,\n"
+	    << "        lsttxt    = \\RSlsttxt\n"
+	    << "    }\n"
+	    << "}{}\n"
+	    << "\\makeatother\n";
+	return ods.str();
+}
+}// namespace anon
+
+
+docstring const LaTeXFeatures::getXRefDefs(docstring const & pr, docstring const & cnt,
+					   set<string> const & ncd, string const & ln,
+					   bool const env) const
+{
+	if (!requireXRefDef(pr, ln, ncd) || prefixIs(params_.xref_package, "prettyref")
+	    || (params_.xref_package == "refstyle" && !isRequired("refstyle")))
+		return docstring();
+
+	Counters & cnts = params_.documentClass().counters();
+
+	// zref
+	if (params_.xref_package == "zref" && isRequired("zref-clever")) {
+		if (cnts.latexName(cnt) == cnt)
+			return docstring();
+		odocstringstream ods;
+		if (isAvailableAtLeastFrom("LaTeX", 2020, 10)) {
+			// we have hooks
+			docstring const type = env ? from_ascii("env") : from_ascii("cmd");
+			ods << "\\AddToHook{" << type << "/" << from_ascii(ln) << "/begin}"
+			    << "{\\zcsetup{countertype={" << cnts.latexName(cnt) << "=" << cnt << "}}}\n";
+		} else {
+			docstring lnn = from_ascii(ln);
+			ods << "\\let\\lyxsave" << lnn << "\\" << lnn << "\n";
+			ods << "\\def\\" << lnn
+			    << "{\\zcsetup{countertype={" << cnts.latexName(cnt) << "=" << cnt << "}}"
+			    << "\\lyxsave" << lnn << "}\n";
+		}
+		return ods.str();
+	}
+	// cleveref
+	else if (params_.xref_package == "cleveref" && isRequired("cleveref")) {
+		if (cnts.latexName(cnt) == cnt)
+			return docstring();
+		odocstringstream ods;
+		if (isAvailableAtLeastFrom("LaTeX", 2020, 10)) {
+			// we have hooks
+			docstring const type = env ? from_ascii("env") : from_ascii("cmd");
+			ods << "\\AddToHook{" << type << "/" << from_ascii(ln) << "/begin}"
+			     << "{\\crefalias{" << cnts.latexName(cnt) << "}{" << cnt << "}}\n";
+		} else {
+			docstring lnn = from_ascii(ln);
+			ods << "\\let\\lyxsave" << lnn << "\\" << lnn << "\n";
+			ods << "\\def\\" << lnn
+			    << "{\\crefalias{" << cnts.latexName(cnt) << "}{" << cnt << "}"
+			    << "\\lyxsave" << lnn << "}\n";
+		}
+		return ods.str();
+	}
+
+	// refstyle
+	docstring const fl = cnts.formattedCounter(cnt, pr, "en", false, false, true);
+	docstring val = getFormattedLabel(fl, true);
+	docstring refcmd;
+	if (val != "##")
+		refcmd = subst(val, from_ascii("##"), from_ascii("\\ref{#1}"));
+	return getRefstyleDef(pr, refcmd);
+}
+
+
+docstring const LaTeXFeatures::getXRefI18nDefs(docstring const & pr, docstring const & cnt) const
+{
+	if (xref_defs_.find(pr) == xref_defs_.end())
+		return docstring();
+
+	odocstringstream ods;
+	Counters & cnts = params_.documentClass().counters();
+	docstring const fl = cnts.formattedCounter(cnt, pr, "en", false, false, true);
+	docstring const flp = cnts.formattedCounter(cnt, pr, "en", false, true, true);
+	docstring val = getFormattedLabel(fl, true);
+	bool const plainval = val == "##";
 	if (params_.xref_package == "prettyref-l7n" && isRequired("prettyref")) {
-		if (lay.refprefix() == "fn")
-			ods << "\\newrefformat{fn}{_(Footnote)~\\ref{#1}}\n";
+		ods << "\\newrefformat{" << pr << "}{_("
+		    << getFormattedLabel(fl, false)
+		    << ")~";
+		if (plainval)
+			ods << "\\ref{#1}";
+		else
+			ods << subst(val, from_ascii("##"), from_ascii("\\ref{#1}"));
+		ods << "}\n";
+	}
+	else if (params_.xref_package == "refstyle" && isRequired("refstyle")) {
+		docstring const tn = getFormattedLabel(fl, false);
+		docstring const tnp = getFormattedLabel(flp, false);
+		ods << "\\def\\RS" << pr << "txt{_(" << lowercase(tn) << ")~}\n"
+		    << "\\def\\RS" << pr << "stxt{_(" << lowercase(tnp) << ")~}\n"
+		    << "\\def\\RS" << capitalize(pr) << "txt{_(" << tn << ")~}\n"
+		    << "\\def\\RS" << capitalize(pr) << "stxt{_(" << tnp << ")~}\n";
+	}
+	else if (params_.xref_package == "cleveref" && isRequired("cleveref")) {
+		docstring const tn = getFormattedLabel(fl, false);
+		docstring const tnp = getFormattedLabel(flp, false);
+		ods << "\\crefname{" << cnt << "}{_(" << lowercase(tn) << ")}{_(" << lowercase(tnp) << ")}\n"
+		    << "\\Crefname{" << cnt << "}{_(" << tn << ")}{_(" << tnp << ")}\n";
+		if (!plainval)
+			ods << "\\creflabelformat{" << cnt << "}{\\textup{"
+			    << subst(val, from_ascii("##"), from_ascii("#2#1#3"))
+			    << "}}\n";
+	}
+	else if (params_.xref_package == "zref" && (isRequired("zref-clever") || isRequired("zref-vario"))) {
+		docstring const tn = getFormattedLabel(fl, false);
+		docstring const tnp = getFormattedLabel(flp, false);
+		ods << "\\zcRefTypeSetup{" << cnt << "}{\n"
+		    << "    Name-sg = _(" << tn << "),\n"
+		    << "    name-sg = _(" << lowercase(tn) << "),\n"
+		    << "    Name-pl = _(" << tnp << "),\n"
+		    << "    name-pl = _(" << lowercase(tnp) << ")";
+		if (!plainval)
+			ods << ",\n    refbounds = {"
+			    << subst(val, from_ascii("##"), from_ascii(",,,"))
+			    << "}\n";
+		ods << "}\n";
 	}
 	return ods.str();
 }
@@ -2432,7 +2549,17 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						buffer().language(),
 						buffer().params().encoding(),
 						use_polyglossia, false));
-		docstring const xxref = getXRefI18nDefs(tclass[*cit]);
+		docstring const cnt = (tclass[*cit].latextype == LATEX_ITEM_ENVIRONMENT)
+				? tclass[*cit].counter + from_ascii("i")
+				: tclass[*cit].counter;
+		snippets.insert(i18npreamble(getXRefDefs(tclass[*cit].refprefix, cnt,
+						         tclass[*cit].needCrossrefDefs(),
+							 tclass[*cit].latexname(),
+							 tclass[*cit].isEnvironment()),
+						buffer().language(),
+						buffer().params().encoding(),
+						use_polyglossia, false));
+		docstring const xxref = getXRefI18nDefs(tclass[*cit].refprefix, cnt);
 		if (!xxref.empty())
 			snippets.insert(i18npreamble(xxref,
 						     buffer().language(),
@@ -2470,66 +2597,58 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 			}
 		}
 	}
-	if ((use_babel || use_polyglossia)) {
-		FloatList const & floats = params_.documentClass().floats();
-		UsedFloats::const_iterator fit = usedFloats_.begin();
-		UsedFloats::const_iterator fend = usedFloats_.end();
-		for (; fit != fend; ++fit) {
-			Floating const & fl = floats.getType(fit->first);
-			// construct prettyref definitions if required
-			docstring prettyreffloatdefs;
-			if (params_.xref_package == "prettyref-l7n" && isRequired("prettyref")) {
-				odocstringstream ods;
-				if (fl.refPrefix() == "alg") {
-					ods << "\\newrefformat{" << from_ascii(fl.refPrefix()) << "}{_(Algorithm)~\\ref{#1}}\n";
-					prettyreffloatdefs = ods.str();
-				}
-				if (fl.refPrefix() == "fig")
-					ods << "\\newrefformat{" << from_ascii(fl.refPrefix()) << "}{\\figurename~\\ref{#1}}\n";
-				if (fl.refPrefix() == "tab")
-					ods << "\\newrefformat{" << from_ascii(fl.refPrefix()) << "}{\\tablename~\\ref{#1}}\n";
-				if (!ods.str().empty())
-					snippets.insert(i18npreamble(ods.str(),
-								     buffer().language(),
-								     buffer().params().encoding(),
-								     use_polyglossia, false));
-			}
-			if (!UsedLanguages_.empty()) {
-				// we assume builtin floats are translated
-				if (fl.isPredefined())
-					continue;
-				docstring const type = from_ascii(fl.floattype());
-				docstring const flname = from_utf8(fl.name());
-				docstring name = buffer().language()->translateLayout(fl.name());
-				// only request translation if we have a real translation
-				// (that differs from the source)
-				if (flname != name)
+	FloatList const & floats = params_.documentClass().floats();
+	UsedFloats::const_iterator fit = usedFloats_.begin();
+	UsedFloats::const_iterator fend = usedFloats_.end();
+	for (; fit != fend; ++fit) {
+		Floating const & fl = floats.getType(fit->first);
+		// construct definitions if required
+		docstring const float_defs = getXRefDefs(from_ascii(fl.refPrefix()), from_ascii(fl.floattype()),
+							 fl.needCrossrefDefs(), fl.floattype(), true);
+		// and localizations
+		docstring const floats_l7n_defs =
+			getXRefI18nDefs(from_ascii(fl.refPrefix()), from_ascii(fl.floattype()));
+		if (!float_defs.empty())
+			snippets.insert(i18npreamble(float_defs,
+					buffer().language(),
+					buffer().params().encoding(),
+					use_polyglossia, false));
+		if (!floats_l7n_defs.empty() && floats_l7n_defs != float_defs)
+			snippets.insert(i18npreamble(floats_l7n_defs,
+					buffer().language(),
+					buffer().params().encoding(),
+					use_polyglossia, false));
+		if (!UsedLanguages_.empty() && (use_babel || use_polyglossia)) {
+			docstring const type = from_ascii(fl.floattype());
+			docstring const flname = from_utf8(fl.name());
+			docstring name = buffer().language()->translateLayout(fl.name());
+			// only request translation if we have a real translation
+			// (that differs from the source)
+			if (flname != name)
+				snippets.insert(getFloatI18nPreamble(
+						type, name, buffer().language(),
+						buffer().params().encoding(),
+						use_polyglossia));
+			for (lang_it lit = lbeg; lit != lend; ++lit) {
+				string const code = (*lit)->code();
+				name = (*lit)->translateLayout(fl.name());
+				// we assume we have a suitable translation if
+				// either the language is English (we need to
+				// translate into English if English is a secondary
+				// language) or if translateIfPossible returns
+				// something different to the English source.
+				bool const have_translation =
+					(flname != name || contains(code, "en"));
+				if (have_translation)
 					snippets.insert(getFloatI18nPreamble(
-							type, name, buffer().language(),
-							buffer().params().encoding(),
-							use_polyglossia));
-				for (lang_it lit = lbeg; lit != lend; ++lit) {
-					string const code = (*lit)->code();
-					name = (*lit)->translateLayout(fl.name());
-					// we assume we have a suitable translation if
-					// either the language is English (we need to
-					// translate into English if English is a secondary
-					// language) or if translateIfPossible returns
-					// something different to the English source.
-					bool const have_translation =
-						(flname != name || contains(code, "en"));
-					if (have_translation)
-						snippets.insert(getFloatI18nPreamble(
-							type, name, *lit,
-							buffer().params().encoding(),
-							use_polyglossia));
-					if (!prettyreffloatdefs.empty()) {
-						snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(prettyreffloatdefs, "\n") + "}\n",
+						type, name, *lit,
+						buffer().params().encoding(),
+						use_polyglossia));
+				if (!floats_l7n_defs.empty())
+						snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(floats_l7n_defs, "\n") + "}\n",
 									     *lit,
 									     buffer().params().encoding(),
 									     use_polyglossia, false));
-					}
-				}
 			}
 		}
 	}
@@ -2556,7 +2675,14 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						buffer().language(),
 						buffer().params().encoding(),
 						use_polyglossia, need_fixedwidth));
-		docstring const xxref = getXRefI18nDefs(it->second);
+		snippets.insert(i18npreamble(getXRefDefs(it->second.refprefix(), it->second.counter(),
+							 it->second.needCrossrefDefs(),
+							 it->second.latexname(),
+							 it->second.latextype() == InsetLaTeXType::ENVIRONMENT),
+						buffer().language(),
+						buffer().params().encoding(),
+						use_polyglossia, false));
+		docstring const xxref = getXRefI18nDefs(it->second.refprefix(), it->second.counter());
 		if (!xxref.empty())
 			snippets.insert(i18npreamble(xxref,
 						     buffer().language(),

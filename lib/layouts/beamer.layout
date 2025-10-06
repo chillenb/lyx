@@ -180,6 +180,7 @@ Style Enumerate
   Align            Left
   LabelType        Enumerate
   RefPrefix        enu
+  CrossrefNeedDef       refstyle,prettyref
   DocBookTag            orderedlist
   DocBookItemTag        listitem
   DocBookItemInnerTag   para
@@ -282,6 +283,7 @@ Style Part
   LabelType        Static
   LabelString      "Part"
   RefPrefix        part
+  CrossrefNeedDef   prettyref
   Font
     Family         Roman
     Series         Bold
@@ -312,6 +314,7 @@ Style Section
   LabelCounter     section
   LabelString      "Section \arabic{section}"
   RefPrefix        sec
+  CrossrefNeedDef   prettyref
   Argument 1
     LabelString    "Mode"
     MenuString     "Mode Specification|S"
@@ -377,6 +380,7 @@ Style Subsection
   LabelCounter     subsection
   LabelString      "Subsection \arabic{section}.\arabic{subsection}"
   RefPrefix        subsec
+  CrossrefNeedDef    prettyref
   Argument 1
     LabelString    "Mode"
     MenuString     "Mode Specification|S"
@@ -441,6 +445,7 @@ Style Subsubsection
   LabelCounter     subsubsection
   LabelString      "Subsubsection \arabic{section}.\arabic{subsection}.\arabic{subsubsection}"
   RefPrefix        sub
+  CrossrefNeedDef  prettyref
   Argument 1
     LabelString    "Mode"
     MenuString     "Mode Specification|S"
@@ -1740,6 +1745,7 @@ Float
   UsesFloatPkg     false
   ListCommand      listoftables
   PrettyFormat     "Table|Tables ##"
+  CrossrefNeedDef  prettyref
 End
 
 Float
@@ -1754,6 +1760,7 @@ Float
   UsesFloatPkg     false
   ListCommand      listoffigures
   PrettyFormat     "Figure|Figures ##"
+  CrossrefNeedDef  prettyref
 End
 
 

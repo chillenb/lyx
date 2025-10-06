@@ -11,28 +11,35 @@ Format 111
 
 ModifyStyle Part
 	RefPrefix part
+	CrossrefNeedDef       prettyref
 End
 
 ModifyStyle Chapter
 	RefPrefix chap
+	CrossrefNeedDef       prettyref
 End
 
 ModifyStyle Section
 	RefPrefix sec
+	CrossrefNeedDef       prettyref
 End
 
 ModifyStyle Subsection
 	RefPrefix subsec
+	CrossrefNeedDef       prettyref
 End
 
 ModifyStyle Subsubsection
 	RefPrefix subsec
+	CrossrefNeedDef       prettyref
 End
 
 ModifyStyle Paragraph
 	RefPrefix par
+	CrossrefNeedDef       prettyref
 End
 
 ModifyStyle Subparagraph
 	RefPrefix par
+	CrossrefNeedDef       prettyref
 End
