@@ -18,5 +18,5 @@ https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2
 * examples/Modules/Linguistics.lyx:
 https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/examples/Modules/Linguistics.lyx
 
-* examples(Presentations/Beamer.lyx:
+* examples/Presentations/Beamer.lyx:
 https://codeberg.org/LyX-org/lyx/raw/commit/afb1fd0a481d903a13d9658ca3e1e9fd5be2b444/lib/examples/Presentations/Beamer.lyx
