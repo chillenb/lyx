@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -102,12 +102,20 @@ logicalmkup
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \branch Obsolete
 \selected 0
 \filename_suffix 0
@@ -141,6 +149,7 @@ logicalmkup
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -221,7 +230,7 @@ Chrétien
 
 
 \begin_inset Note Note
-status collapsed
+status open
 
 \begin_layout Plain Layout
 Informations de révision :
@@ -284,6 +293,11 @@ Mise à jour pour 2.4.0,
  dernière révision avant publication
 \end_layout
 
+\begin_layout Plain Layout
+Mise à jour pour 2.5.0,
+ octobre 2025 (JPC)
+\end_layout
+
 \end_inset
 
 
@@ -294,7 +308,7 @@ Mise à jour pour 2.4.0,
 \begin_inset Newline newline
 \end_inset
 
-Version 2.4.x
+Version 2.5.x
 \end_layout
 
 \begin_layout Standard
@@ -1001,6 +1015,33 @@ nolink "false"
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+themes/
+\end_layout
+
+\end_inset
+
+ contient les fichiers avec le suffixe 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+.theme
+\end_layout
+
+\end_inset
+
+ qui définit les palettes de couleurs.
+ Une palette est un ensemble de couleurs qui définit une couleur pour chaque composant de la vue d'un document dans \SpecialChar LyX
+.
+ Elle n'affecte pas la sortie imprimable du document elle-même.
 \end_layout
 
 \begin_layout Labeling
@@ -2025,22 +2066,18 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 #!/bin/bash
 \end_layout
 
 \begin_layout Plain Layout
-
 FROMFILE=$1
 \end_layout
 
 \begin_layout Plain Layout
-
 TOFILE=`basename $2`
 \end_layout
 
 \begin_layout Plain Layout
-
 cp $FROMFILE /home/you/pdf/$TOFILE
 \end_layout
 
@@ -2550,6 +2587,39 @@ latex
 
 \family default
  est utilisé.
+\end_layout
+
+\begin_layout Labeling
+\labelwidthstring 00.00.0000
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+needcopiesfrom=<format>
+\end_layout
+
+\end_inset
+
+ certains formats (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ DocBook) créent des fichiers externes dotés de noms spécifiques (par exemple si les maths sont restituées graphiquement),
+ mais ils ne sont créés que dans le répertoire de travail si le format est le format cible.Si vous avez un tel format dans votre succession de conversions et que vous en ayez besoin en conversion,
+ utilisez ce drapeau avec le format adéquat (voir par exemple le convertisseur de DocBook à ePub,
+ qui utilise 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+needcopiesfrom=docbook5
+\end_layout
+
+\end_inset
+
+).
+ Les fichiers seront rendus disponibles dans le répertoire temporaire dès que le format sera créé.
 \end_layout
 
 \begin_layout Labeling
@@ -3386,10 +3456,7 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-https://www.gnu.org/software/gettext/manual/html_node/PO-Mode.html
-\backslash
-#PO-Mode
+https://www.gnu.org/software/gettext/manual/html_node/PO-Mode.html#PO-Mode
 \end_layout
 
 \end_inset
@@ -3846,7 +3913,6 @@ Nota:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/WebFr.HowToUseGIT
 \end_layout
 
@@ -4068,7 +4134,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 b o
 \end_layout
@@ -4096,7 +4161,6 @@ underdot (underd)
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 d o
@@ -4134,7 +4198,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 t o
 \end_layout
@@ -4154,7 +4217,6 @@ breve (bre)
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 u o
@@ -4199,7 +4261,6 @@ dot (dot)
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 .s
@@ -9043,7 +9104,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -10847,7 +10908,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -11858,6 +11919,86 @@ string="empty|plain|headings|fancy"
 
 
 \family default
+..
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+ParskipFull
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+] si la classe a une option pour insérer une ligne complète en saut de paragraphe,
+ spécifiez-le ici (e.g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+parskip=full
+\end_layout
+
+\end_inset
+
+).
+ Ceci émet l'option plutôt que d'user du paquetage
+\emph on
+ parskip
+\emph default
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+ParskipHalf
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+] si la classe a une option pour insérer une demi-ligne en saut de paragraphe,
+ spécifiez-le ici (e.g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+parskip=half
+\end_layout
+
+\end_inset
+
+).
+ Ceci émet l'option plutôt que d'user du paquetage
+\emph on
+ parskip
+\emph default
 .
 \end_layout
 
@@ -12566,6 +12707,75 @@ Static
 status collapsed
 
 \begin_layout Plain Layout
+EscapeChars
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+]
+\family typewriter
+ 
+\family default
+définit les caractères isolés qui doivent être échappés dans le contexte du paragraphe.
+ Notez que le premier caractère de la chaîne désigne le caractère d’échappement,
+ donc 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+%!@
+\end_layout
+
+\end_inset
+
+ échappera les deux caractères 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ et 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+ avec 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Font
 \end_layout
 
@@ -12697,7 +12907,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -14715,6 +14925,49 @@ Right_Address_Box
 status collapsed
 
 \begin_layout Plain Layout
+MultiPar
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] précise si plusieurs paragraphes sont autorisés dans ce format.
+ Ceci ne s'applique qu'aux formats de commande.
+ S'il est vrai,
+ les paragraphes multiples sont insérés dans la même commande (plutôt que de créer une nouvelle commande pour chaque paragraphe).
+ Implicitement faux.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 NeedProtect
 \end_layout
 
@@ -14815,7 +15068,45 @@ cprotect
 \family sans
 cprotect
 \family default
-) et par suite autorise du texte verbatim dans les macros
+) et par suite autorise du texte verbatim dans les macros.
+ Avec la valeur implicite (valeur 0),
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+cprotect
+\end_layout
+
+\end_inset
+
+ est utilisé si un élément interne le requiert.
+ La valeur 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+ prévient tout usage de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+cprotect
+\end_layout
+
+\end_inset
+
+ dans ce format,
+ même si un élément interne le requiert.
 \end_layout
 
 \begin_layout Description
@@ -15020,6 +15311,44 @@ status collapsed
 \end_inset
 
  veut dire qu'il peut s'il le veut.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+NoPassThruChars
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+]
+\family typewriter
+ 
+\family default
+définit les caractères isolés qui ne doivent pas être émis sous forme brute (sans des conversions spéciales que \SpecialChar LaTeX
+ pourrait demander),
+ même si un tel traitement est requis par un élément du format.
+ Cette balise peut être utilisée pour écraser des conditions 
+\begin_inset Quotes els
+\end_inset
+
+PassThru
+\begin_inset Quotes ers
+\end_inset
+
+ si elle ne sont pas appropriées dans un contexte donné.
 \end_layout
 
 \begin_layout Description
@@ -16012,6 +16341,354 @@ Enumerate
 status collapsed
 
 \begin_layout Plain Layout
+TheoremName
+\end_layout
+
+\end_inset
+
+ précise que le style courant représente un théorème défini via le paquetage théorèmes AMS (
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+amsthm
+\end_layout
+
+\end_inset
+
+).
+ Le nom indiqué ici est utilisé dans la définition (premier argument obligatoire de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+newtheorem
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremLaTeXName
+\end_layout
+
+\end_inset
+
+ si un 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremName
+\end_layout
+
+\end_inset
+
+ a été précisé,
+ spécifie la macro \SpecialChar LaTeX
+ qui porte le nom donné non précédé d'un antislash (e.g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+theoremname
+\end_layout
+
+\end_inset
+
+).
+ Ceci est utilisé dans le second argument obligatoire de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+newtheorem
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremCrossRefName
+\end_layout
+
+\end_inset
+
+ précise le nom utilisé dans l'étiquette des références croisées mises en forme attribuées à ce théorème.
+ Ceci est utilisé dans les cas où le paquetage de références croisées ne fournit pas de définition pour un type de théorème donné.
+ Merci d'utiliser systématiquement une capitale initiale (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Quotes cld
+\end_inset
+
+Théorème
+\begin_inset Quotes crd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremCrossRefPluralName
+\end_layout
+
+\end_inset
+
+ définit la pluriel de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremCrossRefName
+\end_layout
+
+\end_inset
+
+ (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Quotes cld
+\end_inset
+
+Théorèmes
+\begin_inset Quotes crd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremZRefName
+\end_layout
+
+\end_inset
+
+ si un 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremName
+\end_layout
+
+\end_inset
+
+ a été précisé,
+ définition d'un nom correspondant pour le paquetage 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+zref-clever
+\end_layout
+
+\end_inset
+
+ si le nom du théorème diffère.
+ La valeur 
+\begin_inset Quotes cld
+\end_inset
+
+none
+\begin_inset Quotes crd
+\end_inset
+
+ indique qu'il n'existe pas de définition 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+zref-clever
+\end_layout
+
+\end_inset
+
+ correspondante.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremCounter
+\end_layout
+
+\end_inset
+
+ si un 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremName
+\end_layout
+
+\end_inset
+
+ a été précisé,
+ ceci détermine un compteur de théorèmes partagé.
+ Notez qu'il doit exister un compteur/nom d'un autre théorème (premier argument facultatif de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+newtheorem
+\end_layout
+
+\end_inset
+
+).
+ La valeur 
+\begin_inset Quotes cld
+\end_inset
+
+none
+\begin_inset Quotes crd
+\end_inset
+
+ indique
+\begin_inset space ~
+\end_inset
+
+que ce théorème n'est pas numéroté (et 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+newtheorem*
+\end_layout
+
+\end_inset
+
+ est utilisé).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremParentCounter
+\end_layout
+
+\end_inset
+
+ si un 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremName
+\end_layout
+
+\end_inset
+
+ a été précisé,
+ ceci détermine un compteur parent pour le théorème (second argument optionnel de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+newtheorem
+\end_layout
+
+\end_inset
+
+).
+ Notez que ceci doit être un compteur existant (e.g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chapter
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremStyle
+\end_layout
+
+\end_inset
+
+ si un 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+TheoremName
+\end_layout
+
+\end_inset
+
+ a été précisé,
+ ceci détermine le style de théorème comme spécifié par 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+theoremstyle
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 TextFont
 \end_layout
 
@@ -16721,7 +17398,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 oe{}
 \end_layout
@@ -17430,14 +18106,47 @@ tbp
 \end_layout
 
 \begin_layout Description
-
-\lang english
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
+Preamble
+\end_layout
 
-\lang english
+\end_inset
+
+ précise l'information à inclure dans le préambule \SpecialChar LaTeX
+ quand ce flottant est utilisé.
+ Utile pour définir les macros,
+ les paquetages à charger,
+ etc.,
+ requis par ce flottant particulier.
+ Doit se termine par 
+\begin_inset Quotes cld
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+EndPreamble
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes crd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 PrettyFormat
 \end_layout
 
@@ -17448,9 +18157,7 @@ PrettyFormat
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang english
-string
+chaîne
 \end_layout
 
 \end_inset
@@ -17463,9 +18170,25 @@ string
 \begin_inset Quotes erd
 \end_inset
 
-] 
-\lang french
-définit le format utilisé pour les références mises en forme à ce compteur.
+] définit le format utilisé pour les références mises en forme à ce compteur.
+ Les formes au singulier et au pluriel peuvent être données en les séparant par 
+\begin_inset Quotes cld
+\end_inset
+
+|
+\begin_inset Quotes crd
+\end_inset
+
+ (e.g.
+ 
+\begin_inset Quotes cld
+\end_inset
+
+Section|Sections
+\begin_inset Quotes crd
+\end_inset
+
+).
  Par exemple,
  on peut vouloir les références aux tableaux apparaître sous la forme 
 \begin_inset Quotes cld
@@ -17508,18 +18231,32 @@ nolink "false"
 .) La première forme sera remplacée par le numéro du compteur lui-même.
  Ainsi,
  pour les sections,
- ce serait 
+ ce serait:
+ 
 \shape italic
-Section ##
+Section|Sections ##
 \shape default
 ,
  ou peut-être 
 \shape italic
-section 
+Section|Sections 
 \backslash
 arabic{section}
 \shape default
- (qui apparaîtra par exemple comme section 2.7).
+ (qui apparaîtra par exemple comme:
+ section 2.7).
+ Merci d'utiliser exclusivement une capitale initiale et d'indiquer les pluriels (e.g.
+ 
+\begin_inset Quotes cld
+\end_inset
+
+Critère|Criteria
+\begin_inset Quotes crd
+\end_inset
+
+),
+ les initiales en minuscules seront produites automatiquement par \SpecialChar LyX
+.
 \end_layout
 
 \begin_layout Description
@@ -18928,6 +19665,31 @@ CopyStyle Flex:<nom>
 status collapsed
 
 \begin_layout Plain Layout
+Counter
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+<nom>
+\end_layout
+
+\end_inset
+
+] précise le compteur,
+ si besoin,
+ utilisé et incrémenté par cet insert.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 CustomPars
 \end_layout
 
@@ -19208,6 +19970,33 @@ InsetLayout
 status collapsed
 
 \begin_layout Plain Layout
+EscapeChars
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+]
+\family typewriter
+ 
+\family default
+définit les caractères isolés qui doivent être échappés dans le contexte de cet insert.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Font
 \end_layout
 
@@ -19277,7 +20066,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -19694,6 +20483,57 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+InsertCotext
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] si positionné à 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+,
+ une copie du co-texte (soit le texte sélectionné,
+ soit le mot précédant le curseur) est inséré en tant que contenu lors de la création de l'insert.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 InToc
 \end_layout
 
@@ -19927,6 +20767,41 @@ Branche
 \end_inset
 
 ) modifient ce marqueur à la volée.
+ Si l'insert a un compteur,
+ il peut être ajouté à l'étiquette via l'espace réservé 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+##
+\end_layout
+
+\end_inset
+
+ (e.g.,
+ 
+\begin_inset Quotes cld
+\end_inset
+
+Note ##
+\begin_inset Quotes crd
+\end_inset
+
+).
+ D plus,
+ l'étiquette peut contenir les commandes de mise en forme spéciales décrite dans 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Counters,subsec:Compteurs"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+ si elle doit se référer à d'autres compteurs.
 \end_layout
 
 \begin_layout Description
@@ -20535,7 +21410,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -20608,7 +21483,7 @@ NeedProtect
 
 \end_inset
 
- [
+  [
 \begin_inset Flex Code
 status collapsed
 
@@ -20620,7 +21495,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -20634,7 +21509,11 @@ status collapsed
 
 \end_inset
 
-] indique si les commandes fragiles de cet insert doivent êtres protégées par 
+
+\lang english
+]
+\lang french
+indique si les commandes fragiles de cet insert doivent êtres protégées par 
 \begin_inset Flex Code
 status collapsed
 
@@ -20680,8 +21559,10 @@ status collapsed
 
 \begin_layout Plain Layout
 
+\emph off
+-1
 \emph on
-0
+,0
 \end_layout
 
 \end_inset
@@ -20719,6 +21600,54 @@ cprotect
 \family default
 ) et par suite autorise du texte verbatim dans les macros.
  Implicitement faux.
+ Avec cette valeur implicite 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+cprotect
+\end_layout
+
+\end_inset
+
+ est utilisé si un élément le demande.
+ La valeur 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+-1
+\end_layout
+
+\end_inset
+
+ interdit toute utilisation de 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+cprotect
+\end_layout
+
+\end_inset
+
+ dans l'insert,
+ même si elle est requise par un élément encapsulé.
 \end_layout
 
 \begin_layout Description
@@ -20743,7 +21672,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -20822,7 +21751,7 @@ NewlineCmd
 status collapsed
 
 \begin_layout Plain Layout
-[string]
+[chaîne]
 \end_layout
 
 \end_inset
@@ -20861,7 +21790,7 @@ NoInsetLayout
 status collapsed
 
 \begin_layout Plain Layout
-<layout>
+<format>
 \end_layout
 
 \end_inset
@@ -20884,6 +21813,44 @@ InsetLayout
 status collapsed
 
 \begin_layout Plain Layout
+NoPassThruChars
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+]
+\family typewriter
+ 
+\family default
+définit les caractères isolés qui ne doivent pas être émis sous forme brute (sans conversions particulières que \SpecialChar LaTeX
+ pourrait demander),
+ même si une telle conversion est requise par un des éléments de ce format.
+ Cette directive peut être utilisée pour écraser des directives 
+\begin_inset Quotes els
+\end_inset
+
+PassThru
+\begin_inset Quotes ers
+\end_inset
+
+ si elle ne conviennent pas dans le contexte.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 ObsoletedBy
 \end_layout
 
@@ -20894,7 +21861,7 @@ ObsoletedBy
 status collapsed
 
 \begin_layout Plain Layout
-<layout>
+<format>
 \end_layout
 
 \end_inset
@@ -20943,7 +21910,7 @@ ParbreakIgnored
 
 \end_inset
 
- [
+  [
 \begin_inset Flex Code
 status collapsed
 
@@ -20955,7 +21922,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -20987,27 +21954,21 @@ ParbreakIsNewline
 \end_inset
 
  [
-\family typewriter
-\emph on
-
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
+
+\emph on
 0
 \end_layout
 
 \end_inset
 
 
-\family default
-\emph default
-,
 \begin_inset space \thinspace{}
 \end_inset
 
-
-\family typewriter
 
 \begin_inset Flex Code
 status collapsed
@@ -21018,8 +21979,6 @@ status collapsed
 
 \end_inset
 
-
-\family default
 ] fonctionne comme avec les styles de paragraphe,
  voir 
 \begin_inset CommandInset ref
@@ -21042,28 +22001,22 @@ PassThru
 
 \end_inset
 
- [
-\family typewriter
-\emph on
-
+  [
 \begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
+
+\emph on
 0
 \end_layout
 
 \end_inset
 
 
-\family default
-\emph default
-,
 \begin_inset space \thinspace{}
 \end_inset
 
-
-\family typewriter
 
 \begin_inset Flex Code
 status collapsed
@@ -21074,8 +22027,6 @@ status collapsed
 
 \end_inset
 
-
-\family default
 ] fonctionne comme avec les styles de paragraphe,
  voir 
 \begin_inset CommandInset ref
@@ -21188,7 +22139,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21243,12 +22194,14 @@ ResetsFont
 status collapsed
 
 \begin_layout Plain Layout
+
+\emph on
 0
 \end_layout
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21257,8 +22210,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\emph on
 1
 \end_layout
 
@@ -21408,12 +22359,14 @@ Spellcheck
 status collapsed
 
 \begin_layout Plain Layout
+
+\emph on
 0
 \end_layout
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -21422,8 +22375,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
-\emph on
 1
 \end_layout
 
@@ -21440,6 +22391,41 @@ vrai
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+StepParentCounter
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+,
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] incrémente le compteur parent du compteur de cet insert au début de l'insert.
 \end_layout
 
 \begin_layout Subsection
@@ -21708,7 +22694,7 @@ Mandatory
 
 \end_inset
 
- [
+[
 \begin_inset Flex Code
 status collapsed
 
@@ -21720,7 +22706,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -22084,7 +23070,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -22165,7 +23151,78 @@ Classic
 
 \end_inset
 
-] précise le style de rendu utilisé pour les cadres d'insertion et les boutons;
+] précise le style de rendu utilisé pour les cadres d'insertion et les boutons.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+EscapeChars
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+]
+\family typewriter
+ 
+\family default
+définit les caractères isolés qui doivent être échappés dans le contexte du paragraphe.
+ Notez que le premier caractère de la chaîne désigne le caractère d’échappement,
+ donc 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+%!@
+\end_layout
+
+\end_inset
+
+ échappera les deux caractères 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ et 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+ avec 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+%
+\end_layout
+
+\end_inset
+
+.
+ Notez que ceci doit être défini explicitement pour les arguments.
+ Ce qui veut dire que les arguments n'héritent pas EscapeChars de leur insert ou format parent.
 \end_layout
 
 \begin_layout Itemize
@@ -22381,6 +23438,47 @@ PassThruChars
 status collapsed
 
 \begin_layout Plain Layout
+InheritFont
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] avec la valeur implicite 1,
+ la police de l'argument est héritée du texte environnant à l'écran.
+ Sinon la police implicite du document est utilisée.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 IsTocCaption
 \end_layout
 
@@ -22398,7 +23496,7 @@ status collapsed
 
 \end_inset
 
-,
+
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -23136,7 +24234,24 @@ string
 \end_inset
 
 ] définit un format à utiliser pour les références mises en forme utilisant ce compteur.
- Par exemple,
+ Les formes au singulier et au pluriel peuvent ếtre précisées avec le séparateur 
+\begin_inset Quotes cld
+\end_inset
+
+|
+\begin_inset Quotes crd
+\end_inset
+
+ (e.g.
+ 
+\begin_inset Quotes cld
+\end_inset
+
+Section|Sections
+\begin_inset Quotes crd
+\end_inset
+
+).Par exemple,
  on peut vouloir que les références aux numéros de section apparaissent comme 
 \begin_inset Quotes cld
 \end_inset
@@ -23190,6 +24305,9 @@ arabic{section}
 \end_inset
 
  (qui pourrait être affiché comme §2.7).
+ Merci de toujours utiliser une forme capitalisée et d'indiquer le pluriel si nécessaire.
+ Les versions en minuscules seront produites par \SpecialChar LyX
+ automatiquement.
 \end_layout
 
 \begin_layout Description
@@ -23211,9 +24329,7 @@ RefFormat
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang english
-string
+chaîne
 \end_layout
 
 \end_inset
@@ -23224,9 +24340,7 @@ string
 status collapsed
 
 \begin_layout Plain Layout
-
-\lang english
-string
+chaîne
 \end_layout
 
 \end_inset
@@ -23308,6 +24422,57 @@ PrettyFormat
 \end_inset
 
  qui est utilisé.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+StepOtherCounter
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+chaîne
+\end_layout
+
+\end_inset
+
+ = 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+] spécifie un compteur différent (par son nom) qui est également incrémenté si le compteur défini ici est incrémenté.
+ Si on utilise 
+\begin_inset Quotes cld
+\end_inset
+
+none
+\begin_inset Quotes crd
+\end_inset
+
+ ,
+ aucun autre compteur n'est incrémenté (ceci peut être utilisé pour remettre à zéro un réglage 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+StepOtherCounter
+\end_layout
+
+\end_inset
+
+ hérité).
 \end_layout
 
 \begin_layout Description
@@ -23945,7 +25110,7 @@ moteur de citation
  des noms d'auteurs ou des années.
  Actuellement,
  \SpecialChar LyX
- reconnaît trois types de moteurs:
+ reconnaît quatre types de moteurs:
 \end_layout
 
 \begin_layout Enumerate
@@ -24031,6 +25196,28 @@ Smith et Miller [1]
 )
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+notes
+\end_layout
+
+\end_inset
+
+:
+ citations dans le style Chicago (
+\begin_inset Quotes cld
+\end_inset
+
+notes et bibliographie
+\begin_inset Quotes crd
+\end_inset
+
+) utilisant les notes de bas de page ou en fin de document avec les citations complètes (ou raccourcies lors de citations ultérieures de la même source) près d'une bibliographie.
+\end_layout
+
 \begin_layout Standard
 Les blocs 
 \begin_inset Flex Code
@@ -24089,7 +25276,7 @@ CiteEngine
 \end_layout
 
 \begin_layout LyX-Code
-LyXName|alias$*<!_stardesc!_stardesctooltip>[][]=latexcmd
+style@LyXName|alias$*<!_stardesc!_stardesctooltip>[][]=latexcmd
 \end_layout
 
 \begin_layout Itemize
@@ -24097,11 +25284,90 @@ LyXName|alias$*<!_stardesc!_stardesctooltip>[][]=latexcmd
 status collapsed
 
 \begin_layout Plain Layout
+style
+\end_layout
+
+\end_inset
+
+:
+ 
+\family roman
+une liste de styles de citation biblatex (séparés par des virgules) pour lesquels cette commande est spécifique.
+ E.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ avec
+\family default
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+apa@nptextcite
+\end_layout
+
+\end_inset
+
+ 
+\family roman
+une commande de citation
+\family default
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+nptextcite
+\end_layout
+
+\end_inset
+
+
+\family roman
+,
+ qui est uniquement disponible avec le style de ciation 
+\emph on
+apa,
+
+\emph default
+ peut être définie.
+ Si la liste est précedée d'un point d'excamation (
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\family roman
+!
+\end_layout
+
+\end_inset
+
+),
+ la signification est inversée:
+ le style est utilisé partout sauf dans les styles listés.
+\end_layout
+
+\begin_layout Itemize
+
+\lang english
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\lang english
 LyXName
 \end_layout
 
 \end_inset
 
+
+\lang french
 :
  le nom utilisé dans le fichier 
 \begin_inset Flex Code
@@ -24203,7 +25469,22 @@ latexcmd
 status collapsed
 
 \begin_layout Plain Layout
-Alias
+Style
+\end_layout
+
+\end_inset
+
+
+\lang english
+,
+
+\lang french
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+alias
 \end_layout
 
 \end_inset
@@ -25189,6 +26470,49 @@ false
  sinon.
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+{%ifstyle:<styles>%[[true]][[false]]}
+\end_layout
+
+\end_inset
+
+:
+ traite l'option 
+\begin_inset Quotes cld
+\end_inset
+
+true
+\begin_inset Quotes crd
+\end_inset
+
+ si le style de citation biblatex courant correspond à un des styles de la liste des 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+<styles>
+\end_layout
+
+\end_inset
+
+ (séparés par des virgules),
+ sinon l'option 
+\begin_inset Quotes cld
+\end_inset
+
+false
+\begin_inset Quotes crd
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
 \begin_layout Standard
 Il a été dit que 
 \begin_inset Flex Code
@@ -25831,6 +27155,38 @@ status collapsed
  Notez bien que ce ne sont pas des macro-instructions,
  au sens défini ci-dessus:
  elles ne seront pas interprétées.
+\end_layout
+
+\begin_layout Standard
+Pour certains caractères difficiles à obtenir par ailleurs,
+ nous avons des macros prédéfinies.
+ actuellement elles ne comptent que:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+%elp%
+\end_layout
+
+\end_inset
+
+ émet les caractère points de suspension (
+\begin_inset Quotes cld
+\end_inset
+
+\SpecialChar ldots
+
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Quotes crd
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -27471,6 +28827,38 @@ class=`nominsert_inner'
 \end_inset
 
 .
+ L'emplacement 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+$$content
+\end_layout
+
+\end_inset
+
+ peut être utilisé pour représenter le contenu de l'insert (e.g.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+href='$$content'
+\end_layout
+
+\end_inset
+
+pour des inserts produisant les hyperliens avec 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+HTMLInnerTag a
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description
@@ -28125,7 +29513,6 @@ getSizeCSS()
 status collapsed
 
 \begin_layout Plain Layout
-
 src/FontInfo.cpp
 \end_layout
 
@@ -28189,6 +29576,11 @@ Les étiquettes sont rarement exportées,
  comme dans les listes de définitions:
  dans ce cas,
  le terme défini sera l'étiquette.
+\end_layout
+
+\begin_layout Standard
+Il est possible de saisir du code XML directement dan sle document,
+ voisr la section 
 \end_layout
 
 \begin_layout Subsection
@@ -31528,6 +32920,9 @@ $$AbsPath
 \end_inset
 
  est le chemin d'accès absolu.
+ Lors de la compilation \SpecialChar LyX
+,
+ il s'agit du chemin vers le fichier dans le répertoire temporaire.
 \end_layout
 
 \begin_layout Description
@@ -31674,6 +33069,19 @@ $$FName
 
  (absolu ou relatif au document \SpecialChar LyX
 ).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+$$OrigAbsName
+\end_layout
+
+\end_inset
+
+ est le nom du fichier avec le chemin absolu vers le répertoire original (et non pas le répertoire temporaire).
 \end_layout
 
 \begin_layout Description
