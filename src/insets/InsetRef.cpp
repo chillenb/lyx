@@ -87,10 +87,6 @@ ParamInfo const & InsetRef::findInfo(string const & /* cmdName */)
 		param_info_.add("nolink", ParamInfo::LYX_INTERNAL);
 		param_info_.add("tuple", ParamInfo::LYX_INTERNAL);
 		param_info_.add("filenames", ParamInfo::LYX_INTERNAL);
-		// FIXME: This is unused as of 2020 (fd6e14414f272)
-		// remove param later (needs file format change,
-		// since InsetCommandParams would assert otherwise)
-		param_info_.add("name", ParamInfo::LYX_INTERNAL);
 	}
 	return param_info_;
 }

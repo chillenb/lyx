@@ -42,12 +42,10 @@ from lyx2lyx_tools import (
 #    check_token,
 #    count_pars_in_inset,
 #    del_complete_lines,
-#    del_token,
 #    del_value,
 #    find_complete_lines, 
 #    find_end_of,
 #    find_end_of_layout,
-#    find_re,
 #    find_substring,
 #    find_token_backwards,
 #    find_token_exact,
@@ -59,7 +57,9 @@ from lyx2lyx_tools import (
 #    set_bool_value,
 #    is_in_inset
 from parser_tools import (
+    del_token,
     find_end_of_inset,
+    find_re,
     find_token,
     get_quoted_value,
     get_value
@@ -198,13 +198,52 @@ def revert_ling_xrefs(document):
     revert_xref_defs(document, "tbl", "Tableau|Tableaux ##", "tableau", [""])
 
 
+def convert_refname(document):
+    "Remove the long unused name crossref parameter"
+
+    # Remove name CommandInset ref param.
+    # This is unused as of 2020 (fd6e14414f272)
+    i = 0
+    while True:
+        i = find_token(document.body, "\\begin_inset CommandInset ref", i)
+        if i == -1:
+            break
+        j = find_end_of_inset(document.body, i)
+        if j == -1:
+            document.warning("Can't find end of reference inset at line %d!!" % (i))
+            i += 1
+            continue
+
+        del_token(document.body, "name", i, j)
+        i += 1
+
+    # Same for InsetMathRef where this was an optional argument
+    regexp = re.compile(r"(.*)(\\[a-zA-Z]*ref|formatted)(\[\w+\])(.*)")
+    i = 0
+    while True:
+        i = find_token(document.body, "\\begin_inset Formula", i)
+        if i == -1:
+            break
+        j = find_end_of_inset(document.body, i)
+        if j == -1:
+            document.warning("Can't find end of inset at line %d of body!" % i)
+            i += 1
+            continue
+        k = find_re(document.body, regexp, i, j)
+        if k != -1:
+            m = regexp.match(document.body[k])
+            if m:
+                document.body[k] = m.group(1) + m.group(2) + m.group(4)
+        i = j
+
+
 ##
 # Conversion hub
 #
 
 supported_versions = ["2.6.0", "2.6"]
 convert = [
-    [644, []]
+    [644, [convert_refname]]
 ]
 
 
