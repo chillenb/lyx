@@ -9,8 +9,10 @@ changes happened in particular if possible. A good example would be
 
 2025-10-05 Jürgen Spitzmüller <spitz@lyx.org>
 	* Format incremented to 644:
-	 Support formatted cross references for examples
-	 and tableaux in linguistics module
+	 - Support formatted cross references for examples
+	   and tableaux in linguistics module
+	 - Remove deprecated "name" parameter of InsetCommand ref
+	   and the InsetMathRef counterpart (optional argument to ref command).
 
 2025-07-30 Jürgen Spitzmüller <spitz@lyx.org>
 	* Format incremented to 643: New buffer param
