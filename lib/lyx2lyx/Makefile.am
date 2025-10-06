@@ -36,6 +36,7 @@ dist_lyx2lyx_PYTHON = \
 	lyx_2_3.py \
 	lyx_2_4.py \
 	lyx_2_5.py \
+	lyx_2_6.py \
 	test_parser_tools.py
 
 install-data-hook:

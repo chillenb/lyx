@@ -7,6 +7,11 @@ changes happened in particular if possible. A good example would be
 
 -----------------------
 
+2025-10-05 Jürgen Spitzmüller <spitz@lyx.org>
+	* Format incremented to 644:
+	 Support formatted cross references for examples
+	 and tableaux in linguistics module
+
 2025-07-30 Jürgen Spitzmüller <spitz@lyx.org>
 	* Format incremented to 643: New buffer param
 	  \begin_preamble_html ... \end_preamble_html

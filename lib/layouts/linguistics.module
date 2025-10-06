@@ -18,7 +18,7 @@ Counter examplei
 	GuiName              "Numbered Example (Multiline)"
 	Within               chapter
 	LabelString          "(\theequation)"
-	PrettyFormat         "##"
+	PrettyFormat         "Example|Examples (##)"
 	StepOtherCounter      equation
 	LaTeXName             equation
 End
@@ -27,7 +27,7 @@ Counter subexamplei
 	GuiName              Subexample
 	Within               examplei
 	LabelString          "(\theequation) (\alph{subexamplei})"
-	PrettyFormat         "##"
+	PrettyFormat         "Example|Examples (##)"
 	LaTeXName             enumi
 End
 
@@ -53,6 +53,7 @@ Style Numbered_Example_(multiline)
 	LabelType             Static
 	LabelCounter          examplei
 	RefPrefix             lex
+	CrossrefNeedDef       refstyle,prettyref,cleveref,zref
 	LabelFont
 		Color         textlabel1
 	EndFont
@@ -568,6 +569,7 @@ Float
 	Type                  tableau
 	GuiName               Tableau
 	RefPrefix             tbl
+	CrossrefNeedDef       refstyle,prettyref,cleveref,zref
 	Placement             tbp
 	Extension             otl
 	NumberWithin          none

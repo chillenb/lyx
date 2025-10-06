@@ -30,9 +30,6 @@
     }
   }
 }{}
-
-% Formatted references to (sub-)examples via prettyref
-\newrefformat{lex}{example~(\ref{#1})}
 \end_preamble
 \use_default_options false
 \begin_modules
@@ -134,7 +131,7 @@ End
 \paperpagestyle default
 \tablestyle default
 \listings_params "language={[LaTeX]TeX},basicstyle={\ttfamily}"
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \change_bars false
 \postpone_fragile_content false
@@ -144,6 +141,7 @@ End
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
+\author -712698321 "Jürgen Spitzmüller"
 \end_header
 
 \begin_body
@@ -173,7 +171,13 @@ literal "false"
 \begin_layout Date
 \SpecialChar LyX
  v.
- 2.5
+ 2.
+\change_deleted -712698321 1759755941
+5
+\change_inserted -712698321 1759755941
+6
+\change_unchanged
+
 \end_layout
 
 \begin_layout Abstract
@@ -739,7 +743,9 @@ tuple "list"
 \end_inset
 
 .
- However,
+ 
+\change_deleted -712698321 1759755984
+However,
  as the cross-reference packages that are employed by \SpecialChar LyX
  to produce such references do not know 
 \emph on
@@ -758,6 +764,8 @@ Format Packages
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 In what follows,
  we describe the necessary settings for English documents.
  If you write in a different language (or prefer other terminology),
@@ -785,6 +793,8 @@ Examples
 \end_layout
 
 \begin_layout Enumerate
+
+\change_deleted -712698321 1759755984
 With 
 \begin_inset Quotes eld
 \end_inset
@@ -799,6 +809,8 @@ prettyref and varioref
 
 \begin_deeper
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 \begin_inset listings
 inline false
 status open
@@ -817,6 +829,8 @@ ref{#1})}
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 Note that the 
 \emph on
 prettyref
@@ -851,6 +865,8 @@ lex:
 
 \end_deeper
 \begin_layout Enumerate
+
+\change_deleted -712698321 1759755984
 With 
 \begin_inset Quotes eld
 \end_inset
@@ -865,6 +881,8 @@ refstyle and varioref
 
 \begin_deeper
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 \begin_inset listings
 inline false
 status open
@@ -907,6 +925,8 @@ ref{#1})
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 As with 
 \emph on
 prettyref
@@ -939,6 +959,8 @@ refstyle
 
 \end_deeper
 \begin_layout Enumerate
+
+\change_deleted -712698321 1759755984
 With 
 \begin_inset Quotes eld
 \end_inset
@@ -953,6 +975,8 @@ cleveref and varioref
 
 \begin_deeper
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 \begin_inset listings
 inline false
 status open
@@ -1046,6 +1070,8 @@ crefalias{equation}{covex}
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 Other than 
 \emph on
 prettyref
@@ -1092,6 +1118,8 @@ first-level enumeration) counter.
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 If you separate numbering for equations and examples as documented in 
 \begin_inset CommandInset ref
 LatexCommand formatted
@@ -1104,6 +1132,8 @@ reference "subsec:numbering"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 Also,
  other than 
 \emph on
@@ -1120,6 +1150,8 @@ refstyle
 
 \end_deeper
 \begin_layout Enumerate
+
+\change_deleted -712698321 1759755984
 Finally,
  with 
 \begin_inset Quotes eld
@@ -1135,6 +1167,8 @@ zref-clever and zref-vario
 
 \begin_deeper
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 \begin_inset listings
 inline false
 status open
@@ -1227,6 +1261,8 @@ zcsetup{countertype={equation=covex}}%
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 As with 
 \emph on
 cleveref
@@ -1238,6 +1274,8 @@ cleveref
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 Note that 
 \emph on
 zref-clever
@@ -1273,6 +1311,8 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 Note,
  finally,
  that the 
@@ -1287,6 +1327,8 @@ AddToHook
 
 \end_deeper
 \begin_layout Standard
+
+\change_deleted -712698321 1759755984
 If you want the formatted references also to appear that way in the workarea or cross-references dialog,
  add this to 
 \family sans
@@ -1298,6 +1340,8 @@ Local Layout
 \end_layout
 
 \begin_layout Quote
+
+\change_deleted -712698321 1759755984
 \begin_inset listings
 inline false
 status open
@@ -1348,6 +1392,8 @@ End
 
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 

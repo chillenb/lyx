@@ -104,8 +104,9 @@ format_relation = [
     ("2_1", list(range(414, 475)), minor_versions("2.1", 5), 48),
     ("2_2", list(range(475, 509)), minor_versions("2.2", 4), 60),
     ("2_3", list(range(509, 545)), minor_versions("2.3", 7), 66),
-    ("2_4", list(range(545, 621)), minor_versions("2.4", 0), 104),
-    ("2_5", (), minor_versions("2.5", 0), sys.maxsize),
+    ("2_4", list(range(545, 621)), minor_versions("2.4", 5), 104),
+    ("2_5", list(range(621, 644)), minor_versions("2.5", 0), 111),
+    ("2_6", (), minor_versions("2.6", 0), sys.maxsize),
 ]
 
 ####################################################################
