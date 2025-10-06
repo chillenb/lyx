@@ -105,6 +105,7 @@ def main(argv):
     dt2dv_call = 'dt2dv -si "%s"' % outfile
     dt2dv_stdin = os.popen(dt2dv_call, 'w')
     dt2dv_stdin.write(dtl_data)
+    dt2dv_stdin.close()
 
 
 if __name__ == "__main__":
