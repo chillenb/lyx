@@ -218,7 +218,7 @@ def convert_refname(document):
         i += 1
 
     # Same for InsetMathRef where this was an optional argument
-    regexp = re.compile(r"(.*)(\\[a-zA-Z]*ref|formatted)(\[\w+\])(.*)")
+    regexp = re.compile(r"(.*\\)(ref|pageref|cpageref|vref|vpageref|formatted|prettyref|eqref|nameref|labelonly)(\[\w+\])(.*)")
     i = 0
     while True:
         i = find_token(document.body, "\\begin_inset Formula", i)
