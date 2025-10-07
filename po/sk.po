@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-09-05 07:35+0200\n"
-"PO-Revision-Date: 2025-08-24 08:32+0000\n"
+"POT-Creation-Date: 2025-10-07 09:45+0200\n"
+"PO-Revision-Date: 2025-10-07 07:55+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -15951,8 +15951,20 @@ msgid "(\\theequation)"
 msgstr "(\\theequation)"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-msgid "##"
-msgstr "##"
+msgid "Example (##)"
+msgstr "Príklad (##)"
+
+#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
+msgid "example (##)"
+msgstr "príklad (##)"
+
+#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
+msgid "Examples (##)"
+msgstr "Príklady (##)"
+
+#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
+msgid "examples (##)"
+msgstr "príklady (##)"
 
 #: lib/layouts/linguistics.module:27 lib/layouts/linguistics.module:111
 msgid "Subexample"
@@ -19242,22 +19254,6 @@ msgstr "Nomenklatúra"
 #: lib/layouts/stdlayouts.inc:94 src/insets/InsetInclude.cpp:420
 msgid "Verbatim*"
 msgstr "Doslovne*"
-
-#: lib/layouts/stdlists.inc:76
-msgid "Item[[enumerate]]"
-msgstr "Položka"
-
-#: lib/layouts/stdlists.inc:76
-msgid "item[[enumerate]]"
-msgstr "položka"
-
-#: lib/layouts/stdlists.inc:77
-msgid "Items[[enumerate]]"
-msgstr "Položky"
-
-#: lib/layouts/stdlists.inc:77
-msgid "items[[enumerate]]"
-msgstr "položky"
 
 #: lib/layouts/stdsections.inc:15 lib/layouts/svcommon.inc:128
 msgid "Part \\thepart"
@@ -37092,10 +37088,6 @@ msgstr "Otvoriť"
 msgid "Select Color"
 msgstr "Výber farieb"
 
-#: src/frontends/qt/GuiApplication.cpp:783
-msgid "Paragraph[[Sectioning]]"
-msgstr "Odstavec"
-
 #: src/frontends/qt/GuiApplication.cpp:1297
 msgid "Nothing to do"
 msgstr "Nie je čo robiť"
@@ -44089,6 +44081,21 @@ msgstr ""
 #: src/support/userinfo.cpp:44
 msgid "Unknown user"
 msgstr "Neznámy používateľ"
+
+#~ msgid "Paragraph[[Sectioning]]"
+#~ msgstr "Odstavec"
+
+#~ msgid "Item[[enumerate]]"
+#~ msgstr "Položka"
+
+#~ msgid "item[[enumerate]]"
+#~ msgstr "položka"
+
+#~ msgid "Items[[enumerate]]"
+#~ msgstr "Položky"
+
+#~ msgid "items[[enumerate]]"
+#~ msgstr "položky"
 
 #~ msgid "Theorem \\thetheorem:"
 #~ msgstr "Teoréma \\thetheorem:"
