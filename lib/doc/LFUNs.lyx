@@ -1,5 +1,5 @@
 #LyX 2.5 created this file. For more info see https://www.lyx.org/
-\lyxformat 631
+\lyxformat 644
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -68,11 +68,19 @@ End
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -3527,7 +3535,7 @@ Action Copies the label at the cursor as a cross-reference to be pasted elsewher
 \end_layout
 
 \begin_layout Description
-Syntax copy-label-as-reference <LABEL>
+Syntax label-copy-as-reference <LABEL>
 \end_layout
 
 \begin_layout Description
@@ -4496,11 +4504,18 @@ reference-next
 \end_layout
 
 \begin_layout Description
-Action Go to the next label or cross-reference.
+Action Go to the next label or cross-reference of the same target.
 \end_layout
 
 \begin_layout Description
-Syntax reference-next
+Syntax reference-next [anyref]
+\end_layout
+
+\begin_layout Description
+Params anyref:
+ if this is used,
+ the function goes to the next cross-reference,
+ whatever its target (but not to labels)
 \end_layout
 
 \begin_layout Description
@@ -4513,12 +4528,15 @@ reference-to-paragraph
 \end_layout
 
 \begin_layout Description
-Action Inserts a cross-reference to the paragraph with a given ID
+Action Inserts a cross-reference to the paragraph with a given ID or saves the newly created label for insertion into the ref dialog
 \end_layout
 
 \begin_layout Description
 Notion The function checks of the paragraph already has a label.
- If so,
+\begin_inset Newline newline
+\end_inset
+
+If so,
  it uses that.
  Otherwise it inserts a label and uses this.
 \end_layout
@@ -4539,7 +4557,20 @@ if it is in a nested inset
 \end_inset
 
 <TYPE>:
- cross-references type
+ cross-references type or "forrefdialog".
+\begin_inset Newline newline
+\end_inset
+
+The latter stores the label for further processing,
+\begin_inset Newline newline
+\end_inset
+
+all other immendiately insert a ref of the given type
+\begin_inset Newline newline
+\end_inset
+
+(e.g.,
+ eqref).
 \end_layout
 
 \begin_layout Description
@@ -5981,10 +6012,26 @@ Params <LANG>:
 \end_inset
 
 where "script" stands for the external script (normalized expression will be passed)
+\begin_inset Newline newline
+\end_inset
+
+<COMMAND>:
+ Particular command can be entered here.
+ The way it will be used is language specific.
+ E.g.
+ for maxima it will be rewritten to the form:
+\begin_inset Newline newline
+\end_inset
+
+simpsum:true;tex(<COMMAND>(MATHED_EXPRESSION))}}
 \end_layout
 
 \begin_layout Description
 Sample math-extern maple simplify
+\begin_inset Newline newline
+\end_inset
+
+math-extern maxima factor
 \end_layout
 
 \begin_layout Description
@@ -7493,6 +7540,32 @@ Origin Dekel,
 \end_layout
 
 \begin_layout Subsection*
+buffer-update-external
+\end_layout
+
+\begin_layout Description
+Action Exports the externally referred documents of the current document and put the result into the temporary directory.
+\end_layout
+
+\begin_layout Description
+Notion This is needed for external references (xr) support.
+\end_layout
+
+\begin_layout Description
+Syntax buffer-update-external [master]
+\end_layout
+
+\begin_layout Description
+Params master:
+ do this for the master document.
+\end_layout
+
+\begin_layout Description
+Origin spitz,
+ 6 Aug 2025
+\end_layout
+
+\begin_layout Subsection*
 buffer-view
 \end_layout
 
@@ -7951,6 +8024,14 @@ Sample Close all Notes in buffers:
 \end_inset
 
 	       master-buffer-forall branch-activate Solutions
+\begin_inset Newline newline
+\end_inset
+
+	       Trick to open all hidden buffers (last lfun can be any no-op buffer lfun):
+\begin_inset Newline newline
+\end_inset
+
+	       master-buffer-forall font-state
 \begin_inset Newline newline
 \end_inset
 
