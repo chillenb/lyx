@@ -40,7 +40,6 @@
 #include "support/convert.h"
 #include "support/gettext.h"
 #include "support/lstrings.h"
-#include "support/textutils.h"
 
 using namespace std;
 using namespace lyx::support;
