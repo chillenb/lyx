@@ -343,6 +343,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./BufferView.cpp::#include <iterator>
 ./BufferView.cpp::#include <sstream>
 ./BufferView.cpp::#include <vector>
+./Bullet.cpp::#include "support/lassert.h"
 ./Changes.cpp::#include "Changes.h"
 ./Changes.cpp::#include "Color.h"
 ./Changes.cpp::#include "OutputParams.h"
@@ -401,6 +402,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./CutAndPaste.cpp::#include "mathed/MathData.h"
 ./CutAndPaste.cpp::#include "mathed/InsetMath.h"
 ./CutAndPaste.cpp::#include "support/docstream.h"
+./CutAndPaste.cpp::#include "support/lstrings.h"
 ./CutAndPaste.cpp::#include "frontends/Clipboard.h"
 ./CutAndPaste.cpp::#include <string>
 ./CutAndPaste.cpp::#include <tuple>
@@ -1845,6 +1847,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./xml.cpp::#include <functional>
 Following are strong candidates from above for removal:
 filtered: ./Buffer.cpp : LayoutFile_h
+filtered: ./Bullet.cpp : lassert_h
 filtered: ./Changes.cpp : lassert_h
 filtered: ./EnchantChecker.cpp : lassert_h
 filtered: ./Graph.cpp : lassert_h
