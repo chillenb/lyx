@@ -5,7 +5,7 @@
 
 !!Documents compilation process and images conversion
 
-- the default length of latex log lines is now by default extended so that the 
+- the default length of latex log lines is now by default extended so that the
   detection of latex erros is more robust (esp. for missing citations/references).
   Works with TeX Live only.
 
@@ -57,13 +57,13 @@
 
 - Layout now has a tag "MultiPar <true|false>", which causes mutliple paragraphs
   being output within the same command.
-  
+
 - InsetArgument now have their own "InheritFont" tag where you can specifiy
   whether the argument should take the surrounding font (in the workarea).
-  
+
 - Counter specifications can now have a tag "StepOtherCounter <counter>" which
   effects that this other counter is stepped whenever the counter in question is.
-  
+
 - InsetLayout now also support "StepParentCounter <true|false>", like Layout.
 
 - If InsetLayout used a counter, the value of this counter has been automatically
@@ -81,6 +81,10 @@
 !!!The following metadata files have been added to the tarball in 2.5:
 
 !!Changes with respect to external programs and libraries in 2.5:
+
+- The Qt6 libraries are now used by default. In order to force
+  building against Qt5, the configure option --disable-qt6 (or the
+  cmake -DLYX_USE_QT=QT5 option) has to be used.
 
 - The support for python 2 was completely removed. Python 3.8 (or newer)
   must be present on your system for LyX to work properly.
