@@ -20792,7 +20792,7 @@ Note ##
  l'étiquette peut contenir les commandes de mise en forme spéciales décrite dans 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:Counters,subsec:Compteurs"
+reference "subsec:Compteurs"
 plural "false"
 caps "false"
 noprefix "false"
