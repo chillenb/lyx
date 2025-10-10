@@ -557,12 +557,10 @@ void InsetRef::latex(otexstream & os, OutputParams const & rp) const
 		if (use_nolink)
 			os << "*";
 		docstring opts = getParam("options");
-		if (use_zref && use_caps) {
-			if (!opts.empty())
-				opts +=", ";
-			opts += "noname, page";
-		}
-		if (use_zref && !opts.empty())
+		if (!opts.empty())
+			opts +=", ";
+		opts += "noname, page";
+		if (!opts.empty())
 			os << "[" << opts << "]";
 		os << '{' << data << '}';
 	} else if (nlabels == 1) {
