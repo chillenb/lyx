@@ -995,7 +995,7 @@ bool GuiRef::isValid()
 	QString const reftype =
 		typeCO->itemData(typeCO->currentIndex()).toString();
 	bool const threshold = (reftype == "vref" || reftype == "vpageref")
-		&& selectedLV->topLevelItemCount() > 1;
+		&& selectedLV->topLevelItemCount() > 2;
 	return selectedLV->currentItem() && !threshold;
 }
 
