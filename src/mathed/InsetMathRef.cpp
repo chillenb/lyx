@@ -580,11 +580,9 @@ void InsetMathRef::writeMath(TeXMathStream & os) const
 		if (use_nolink)
 			os << "*";
 		docstring opts = asString(cell(1));
-		if (hasFeature("caps")) {
-			if (!opts.empty())
-				opts +=", ";
-			opts += "noname, page";
-		}
+		if (!opts.empty())
+			opts +=", ";
+		opts += "noname, page";
 		if (!opts.empty())
 			os << "[" << opts << "]";
 		os << '{' << cell(0) << '}';
