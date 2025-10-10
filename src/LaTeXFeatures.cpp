@@ -2578,6 +2578,16 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						buffer().language(),
 						buffer().params().encoding(),
 						use_polyglossia, false));
+			if (!thmxref.empty())
+				snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(thmxref, "\n") + "}\n",
+							     buffer().language(),
+							     buffer().params().encoding(),
+							     use_polyglossia, false));
+			if (!xxref.empty())
+				snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(xxref, "\n") + "}\n",
+							     buffer().language(),
+							     buffer().params().encoding(),
+							     use_polyglossia, false));
 			for (lang_it lit = lbeg; lit != lend; ++lit) {
 				if (!thmxref.empty())
 					snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(thmxref, "\n") + "}\n",
