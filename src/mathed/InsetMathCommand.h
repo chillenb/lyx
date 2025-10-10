@@ -26,7 +26,7 @@ class InsetMathCommand : public InsetMathNest {
 public:
 	///
 	explicit InsetMathCommand(Buffer * buf, docstring const & name,
-		bool needs_math_mode = true);
+		bool needs_math_mode = true, idx_type ncells = 2);
 	///
 	marker_type marker(BufferView const *) const override { return marker_type::NO_MARKER; }
 	///

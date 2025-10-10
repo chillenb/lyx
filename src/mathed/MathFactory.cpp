@@ -863,7 +863,22 @@ bool createInsetMath_fromDialogStr(docstring const & str, MathData & md)
 		InsetCommand::string2params(to_utf8(str), icp);
 		Encoding const * const utf8 = encodings.fromLyXName("utf8");
 		OutputParams op(utf8);
-		mathed_parse_cell(md, icp.getCommand(op, false, true));
+		odocstringstream ods;
+		ods << icp.getCommand(op, false, true);
+		vector<docstring> features;
+		if (icp["plural"] == from_ascii("true"))
+			features.push_back(from_ascii("plural"));
+		if (icp["caps"] == from_ascii("true"))
+			features.push_back(from_ascii("caps"));
+		if (icp["noprefix"] == from_ascii("true"))
+			features.push_back(from_ascii("noprefix"));
+		if (icp["nolink"] == from_ascii("true"))
+			features.push_back(from_ascii("nolink"));
+		if (icp["tuple"] != from_ascii("list"))
+			features.push_back(from_ascii("range"));
+		if (!features.empty())
+			ods << "[" << getStringFromVector(features) << "]";
+		mathed_parse_cell(md, ods.str());
 	} else if (name == "mathspace") {
 		InsetSpaceParams isp(true);
 		InsetSpace::string2params(to_utf8(str), isp);

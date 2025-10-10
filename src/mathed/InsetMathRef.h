@@ -79,6 +79,10 @@ protected:
 	bool getStatus(Cursor &, FuncRequest const &, FuncStatus &) const override;
 private:
 	///
+	bool hasFeature(std::string const & string) const;
+	///
+	bool useRange() const;
+	///
 	Inset * clone() const override;
 };
 

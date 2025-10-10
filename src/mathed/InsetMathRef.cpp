@@ -25,6 +25,8 @@
 #include "MathStream.h"
 #include "MathSupport.h"
 #include "ParIterator.h"
+#include "PDFOptions.h"
+#include "frontends/alert.h"
 #include "xml.h"
 
 #include "insets/InsetCommand.h"
@@ -37,16 +39,17 @@
 #include <ostream>
 
 using namespace std;
+using namespace lyx::support;
 
 namespace lyx {
 
 InsetMathRef::InsetMathRef(Buffer * buf)
-	: InsetMathCommand(buf, from_ascii("ref"), false)
+	: InsetMathCommand(buf, from_ascii("ref"), false, 3)
 {}
 
 
 InsetMathRef::InsetMathRef(Buffer * buf, docstring const & data)
-	: InsetMathCommand(buf, data, false)
+	: InsetMathCommand(buf, data, false, 3)
 {}
 
 
@@ -262,6 +265,18 @@ string const InsetMathRef::createDialogStr(string const & type) const
 	InsetCommandParams icp(REF_CODE, (type.empty()
 			?  to_ascii(commandname()) : type));
 	icp["reference"] = asString(cell(0));
+	if (!cell(1).empty())
+		icp["options"] = asString(cell(1));
+	if (hasFeature("plural"))
+		icp["plural"] = from_ascii("true");
+	if (hasFeature("caps"))
+		icp["caps"] = from_ascii("true");
+	if (hasFeature("noprefix"))
+		icp["noprefix"] = from_ascii("true");
+	if (hasFeature("nolink"))
+		icp["nolink"] = from_ascii("true");
+	if (hasFeature("range"))
+		icp["tuple"] = from_ascii("range");
 	return InsetCommand::params2string(icp);
 }
 
@@ -272,10 +287,33 @@ docstring const InsetMathRef::getTarget() const
 }
 
 
+bool InsetMathRef::hasFeature(string const & string) const
+{
+	vector<docstring> const features = getVectorFromString(asString(cell(2)));
+	for (auto const & f : features) {
+		if (from_ascii(string) == f)
+			return true;
+	}
+	return false;
+}
+
+
 void InsetMathRef::changeTarget(docstring const & target)
 {
 	InsetCommandParams icp(REF_CODE, to_ascii(commandname()));
 	icp["reference"] = target;
+	if (!cell(1).empty())
+		icp["options"] = asString(cell(1));
+	if (hasFeature("plural"))
+		icp["plural"] = from_ascii("true");
+	if (hasFeature("caps"))
+		icp["caps"] = from_ascii("true");
+	if (hasFeature("noprefix"))
+		icp["noprefix"] = from_ascii("true");
+	if (hasFeature("nolink"))
+		icp["nolink"] = from_ascii("true");
+	if (hasFeature("range"))
+		icp["tuple"] = from_ascii("range");
 	MathData md(buffer_);
 	Buffer & buf = buffer();
 	if (createInsetMath_fromDialogStr(
@@ -287,6 +325,21 @@ void InsetMathRef::changeTarget(docstring const & target)
 }
 
 
+bool InsetMathRef::useRange() const
+{
+	docstring const & cmd = commandname();
+	vector<docstring> const refs = getVectorFromString(asString(cell(0)));
+	if (refs.size() == 2 && (cmd == "vref" || cmd == "vpageref")
+	    && buffer().masterParams().xref_package != "zref")
+		return true;
+	if (refs.size() != 2 || !hasFeature("range"))
+		return false;
+	return cmd == "vref" || cmd == "vpageref"
+		|| (cmd == "formatted" && !prefixIs(buffer().masterParams().xref_package, "prettyref"))
+		|| (cmd == "cpageref");
+}
+
+
 void InsetMathRef::writeMath(TeXMathStream & os) const
 {
 	docstring const & cmd = commandname();
@@ -295,112 +348,270 @@ void InsetMathRef::writeMath(TeXMathStream & os) const
 		LYXERR0("Unassigned buffer_ in InsetMathRef::write!");
 		LYXERR0("LaTeX output may be wrong!");
 	}
-	// are we writing to the LyX file?
 	if (!os.latex()) {
-		// if so, then this is easy
-		InsetMathCommand::writeMath(os);
+		// we are writing to the LyX file
+		ModeSpecifier specifier(os, currentMode(), lockedMode(), asciiOnly());
+		MathEnsurer ensurer(os, false);
+		os << '\\' << cmd;
+		if (!cell(1).empty())
+			os << '[' << cell(1) << ']';
+		os << '{' << cell(0) << '}';
+		if (!cell(2).empty())
+			os << '[' << cell(2) << ']';
 		return;
 	}
+	bool const use_prettyref =
+		prefixIs(buffer().masterParams().xref_package, "prettyref");
 	bool const use_refstyle =
 		buffer_ && buffer().params().xref_package == "refstyle";
-	bool special_case =  cmd == "formatted" ||
-			cmd == "vref" ||
-			cmd == "vpageref" ||
-			cmd == "cpageref" ||
-			cmd == "labelonly" ||
-			(cmd == "eqref" && use_refstyle);
-	// we need to translate 'formatted' to prettyref or refstyle-type
-	// commands and just output the label with labelonly
+	bool const use_cleveref = buffer().masterParams().xref_package == "cleveref";
+	bool const use_zref = buffer().masterParams().xref_package == "zref";
+	vector<docstring> labels = getVectorFromString(asString(cell(0)));
+	int const nlabels = labels.size();
+	bool const use_nolink = buffer().masterParams().pdfoptions().use_hyperref && hasFeature("nolink");
+	// we need to translate 'formatted' to the appropriate commands
+	// (depending on xref package) and just output the label with labelonly
 	// most of this is borrowed from InsetRef and should be kept in 
 	// sync with that.
 	ModeSpecifier specifier(os, currentMode(), lockedMode(), asciiOnly());
 	MathEnsurer ensurer(os, false);
-	if (!special_case) {
-		os << from_ascii("\\") << cmd << "{" << cell(0) << from_ascii("}");
-	}
-	else if (cmd == "vref" || cmd == "vpageref") {
-		os << from_ascii("\\");
-		if (buffer_ && buffer().params().xref_package == "zref")
+	if (cmd == "vref" || cmd == "vpageref") {
+		os << "\\";
+		if (use_zref)
 			os << "z";
-		os << cmd << "{" << cell(0) << from_ascii("}");
-	}
-	else if (cmd == "cpageref") {
-		os << from_ascii("\\");
-		if (buffer_ && buffer().params().xref_package == "zref")
-			os << "z";
-		if (buffer_ && (buffer().params().xref_package == "cleveref"
-		    || buffer().params().xref_package == "zref"))
-			os << cmd;
+		os << cmd;
+		if (useRange())
+			os << "range";
+		if (use_nolink)
+			os << "*";
+		docstring opts = asString(cell(1));
+		if (use_zref && hasFeature("caps")) {
+			if (!opts.empty())
+				opts +=", ";
+			opts += "S";
+		}
+		if (use_zref && !opts.empty())
+			os << "[" << opts << "]";
+		bool first = true;
+		os << "{";
+		for (auto const & l : labels) {
+			if (!first) {
+				if (useRange())
+					os << "}{";
+				else
+					os << ",";
+			}
+			os << l;
+			first = false;
+		}
+		os << "}";
+	} else if (cmd == "cpageref" && use_cleveref) {
+		if (hasFeature("caps"))
+			os << "\\Cpageref";
 		else
-			os << "pageref";
-		os << "{" << cell(0) << from_ascii("}");
-	}
-	else if (use_refstyle && cmd == "eqref") {
+			os << "\\cpageref";
+		if (useRange())
+			os << "range";
+		bool first = true;
+		os << "{";
+		for (auto const & l : labels) {
+			if (!first) {
+				if (useRange())
+					os << "}{";
+				else
+					os << ",";
+			}
+			os << l;
+			first = false;
+		}
+		os << "}";
+	} else if (cmd == "cpageref" && use_zref) {
+		os << "\\zcpageref";
+		if (use_nolink)
+			os << "*";
+		docstring opts = asString(cell(1));
+		if (hasFeature("caps")) {
+			if (!opts.empty())
+				opts +=", ";
+			opts += "S";
+		}
+		if (useRange()) {
+			if (!opts.empty())
+				opts +=", ";
+			opts += "range";
+		}
+		if (!opts.empty())
+			os << "[" << opts << "]";
+		bool first = true;
+		os << "{";
+		for (auto const & l : labels) {
+			if (!first)
+				os << ",";
+			os << l;
+			first = false;
+		}
+		os << "}";
+	} else if (cmd == "cpageref") {
+		bool first = true;
+		for (auto const & label : labels) {
+			if (!first)
+				os << ", ";
+			os << "\\pageref";
+			if (use_nolink)
+				os << "*";
+			os << '{' << label << '}';
+			first = false;
+		}
+	} else if (nlabels > 1 && cmd == "ref" && use_cleveref) {
+		os << "\\labelcref" << '{' << cell(0) << '}';
+	} else if (nlabels > 1 && cmd == "pageref" && use_cleveref) {
+		os << "\\labelcpageref" << '{' << cell(0) << '}';
+	} else if (use_refstyle && cmd == "eqref") {
 		// we advertise this as printing "(n)", so we'll do that, at least
 		// for refstyle, since refstlye's own \eqref prints, by default,
 		// "equation n". if one wants \eqref, one can get it by using a
 		// formatted label in this case.
-		os << '(' << from_ascii("\\ref{") << cell(0) << from_ascii("})");
-	}
-	else if (cmd == "formatted") {
-		if (buffer_ && support::prefixIs(buffer().params().xref_package, "prettyref"))
-			os << "\\prettyref{" << cell(0) << "}";
-		else {
-			odocstringstream ods;
-			// get the label we are referencing
-			for (auto const & d : cell(0)) {
-				ods << d;
-			}
-			docstring const ref = ods.str();
+		os << '(' << from_ascii("\\ref");
+		if (use_nolink)
+			os << "*";
+		os << "{" << cell(0) << from_ascii("})");
+	} else if (cmd == "formatted") {
+		odocstringstream ods;
+		// get the label we are referencing
+		for (auto const & d : cell(0))
+			ods << d;
+		docstring const ref = ods.str();
 
-			/*
-			At the moment, the 'plural', 'nolink' and 'caps' options will
-			not work here. Also ranges. The reason is that we handle these as
-			'internal' LyX argumemts, but those are not handled by
-			InsetCommandParams::getCommand, which is what is used
-			in createInsetMath_fromDialogStr to interpret the data
-			coming from the dialog.
-			If this is fixed, then what follows will get the info
-			we need.
-			Fixing it, I think, would mean sub-classing
-			InsetCommandParams to InsetRefParams, and the overriding
-			getCommand.
-			*******************************************************
-			// reset
-			ods.str(docstring());
-			ods.clear();
-			// get the options from the optional argument
-			for (auto const & d : cell(1))
-				ods << d;
-			docstring const options = ods.str();
-			bool const caps   = support::contains(options, 'C');
-			bool const plural = support::contains(options, 's');
-			*/
-			vector<docstring> label;
-			docstring prefix;
-			docstring const fcmd =
-				InsetRef::getFormattedCmd(ref, label, prefix, buffer().params().xref_package);
-			os << fcmd;
-			//if (plural)
-			//	os << "[s]";
-			bool first = true;
-			os << "{";
-			for (auto const & l : label) {
-				if (!first) {
-//					if (useRange())
-//						os << "}{";
-//					else
-						os << ",";
-				}
-				os << l;
-				first = false;
+		vector<docstring> lbls;
+		docstring prefix;
+		docstring const fcmd =
+			InsetRef::getFormattedCmd(ref, lbls, prefix,
+						  buffer().params().xref_package,
+						  hasFeature("caps"), useRange());
+		os << fcmd;
+		if (use_nolink && (use_cleveref || use_zref))
+			os << "*";
+		if (hasFeature("plural") && use_refstyle)
+			os << "[s]";
+		else if (use_zref) {
+			docstring opts = asString(cell(1));
+			if (hasFeature("caps")) {
+				if (!opts.empty())
+					opts +=", ";
+				opts += "S";
 			}
-			os << "}";
+			if (useRange()) {
+				if (!opts.empty())
+					opts +=", ";
+				opts += "range";
+			}
+			if (!opts.empty())
+				os << "[" << opts << "]";
 		}
-	}
-	else if (cmd == "labelonly") {
-		// noprefix does not work here, for reasons given above.
-		os << cell(0);
+		bool first = true;
+		os << "{";
+		vector<docstring>::const_iterator it = lbls.begin();
+		vector<docstring>::const_iterator en = lbls.end();
+		for (size_t i = 0; it != en; ++it, ++i) {
+			if (!first) {
+				if (use_prettyref) {
+					os << "}";
+					if (lbls.size() == 2)
+						os << buffer().B_("[[reference 1]] and [[reference2]]");
+					else if (i > 0 && i == lbls.size() - 1)
+						os << buffer().B_("[[reference 1, ...]], and [[reference n]]");
+					else
+						os << buffer().B_("[[reference 1]], [[reference2, ...]]");
+					os << "\\ref{";
+				} else if (useRange() && !use_zref)
+					os << "}{";
+				else
+					os << ",";
+			}
+			if (::contains(*it, ' ') && !useRange() && use_refstyle
+			    && buffer().masterParams().isRefStyleSupported(prefix))
+				// refstyle bug: labels with blanks need to be grouped for known commands
+				// otherwise the blanks will be gobbled
+				os << "{" << *it << "}";
+			else {
+				if (use_prettyref && !::contains(*it, ':'))
+					// warn on invalid label
+					frontend::Alert::warning(_("Invalid label!"),
+								 bformat(_("The label `%1$s' does not have a prefix (e.g., `sec:'), "
+									   "which is needed for formatted references with prettyref.\n"
+									   "You will most likely run into a LaTeX error."),
+									 *it), true);
+				os << *it;
+			}
+			first = false;
+		}
+		os << "}";
+	} else if (cmd == "labelonly") {
+		if (!hasFeature("noprefix"))
+			os << cell(0);
+		else {
+			docstring prefix;
+			vector <docstring> slrefs;
+			for (auto const & r : labels) {
+				docstring suffix = split(r, prefix, ':');
+				if (suffix.empty()) {
+					LYXERR0("Label `" << r << "' contains no `:' separator.");
+					slrefs.push_back(r);
+				} else
+					slrefs.push_back(suffix);
+			}
+			os << getStringFromVector(slrefs);
+		}
+	} else if (nlabels > 1 && cmd == "ref" && use_zref) {
+		os << "\\zcref";
+		if (use_nolink)
+			os << "*";
+		docstring opts = asString(cell(1));
+		if (hasFeature("caps")) {
+			if (!opts.empty())
+				opts +=", ";
+			opts += "noname";
+		}
+		if (use_zref && !opts.empty())
+			os << "[" << opts << "]";
+		os << '{' << cell(0) << '}';
+	} else if (nlabels > 1 && cmd == "pageref" && use_zref) {
+		os << "\\zcref";
+		if (use_nolink)
+			os << "*";
+		docstring opts = asString(cell(1));
+		if (hasFeature("caps")) {
+			if (!opts.empty())
+				opts +=", ";
+			opts += "noname, page";
+		}
+		if (!opts.empty())
+			os << "[" << opts << "]";
+		os << '{' << cell(0) << '}';
+	} else if (nlabels == 1) {
+		os << "\\" << cmd;
+		if (use_nolink)
+			os << "*";
+		os << "{" << cell(0) << "}";
+	} else {
+		bool first = true;
+		vector<docstring>::const_iterator it = labels.begin();
+		vector<docstring>::const_iterator en = labels.end();
+		for (size_t i = 0; it != en; ++it, ++i) {
+			if (!first) {
+				if (labels.size() == 2)
+					os << buffer().B_("[[reference 1]] and [[reference2]]");
+				else if (i > 0 && i == labels.size() - 1)
+					os << buffer().B_("[[reference 1, ...]], and [[reference n]]");
+				else
+					os << buffer().B_("[[reference 1]], [[reference2, ...]]");
+			}
+			os << "\\" << cmd;
+			if (use_nolink)
+				os << "*";
+			os << '{' << *it << '}';
+			first = false;
+		}
 	}
 }
 

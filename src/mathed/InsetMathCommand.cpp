@@ -21,8 +21,8 @@ using namespace std;
 namespace lyx {
 
 
-InsetMathCommand::InsetMathCommand(Buffer * buf, docstring const & name, bool needs_math_mode)
-	: InsetMathNest(buf, 2), name_(name), needs_math_mode_(needs_math_mode),
+InsetMathCommand::InsetMathCommand(Buffer * buf, docstring const & name, bool needs_math_mode, idx_type ncells)
+	: InsetMathNest(buf, ncells), name_(name), needs_math_mode_(needs_math_mode),
 	  set_label_(false)
 {
 	lock_ = true;

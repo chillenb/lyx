@@ -1574,11 +1574,16 @@ bool Parser::parse1(InsetMathGrid & grid, unsigned flags,
 			  || t.cs() == "vpageref" || t.cs() == "vref" 
 			  || t.cs() == "formatted" || t.cs() == "labelonly") {
 			cell->emplace_back(new InsetMathRef(buf, t.cs()));
-			docstring const opt = parse_verbatim_option();
+			docstring const opt1 = parse_verbatim_option();
 			docstring const ref = parse_verbatim_item();
-			if (!opt.empty()) {
+			docstring const opt2 = parse_verbatim_option();
+			if (!opt1.empty()) {
 				cell->back().nucleus()->cell(1).push_back(
-					MathAtom(new InsetMathString(buf, opt)));
+					MathAtom(new InsetMathString(buf, opt1)));
+			}
+			if (!opt2.empty()) {
+				cell->back().nucleus()->cell(2).push_back(
+					MathAtom(new InsetMathString(buf, opt2)));
 			}
 			cell->back().nucleus()->cell(0).push_back(
 					MathAtom(new InsetMathString(buf, ref)));

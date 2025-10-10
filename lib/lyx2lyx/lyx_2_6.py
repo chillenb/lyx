@@ -237,17 +237,353 @@ def convert_refname(document):
         i = j
 
 
+def revert_mathref(document):
+    "Revert advanced formatted refs to LaTeX"
+
+    package = "refstyle"
+    i = find_token(document.header, "\\crossref_package", 0)
+    if i == -1:
+        document.warning("Missing \\crossref_package header!")
+    else:
+        package = get_value(document.header, "\\crossref_package", i)
+
+    regexp = re.compile(r"(.*\\)(ref|pageref|cpageref|vref|vpageref|formatted|prettyref|eqref|nameref|labelonly)(\[|\{)(.*)")
+    # \cmd[opt]{arg}[opt]
+    reg_opt1 = re.compile(r"(.*\\)(ref|pageref|cpageref|vref|vpageref|formatted|prettyref|eqref|nameref|labelonly)(\[[^\]]+\])(\{[^\}]+\})(\[[^\]]+\])(.*)")
+    # \cmd[opt]{arg}
+    reg_opt2 = re.compile(r"(.*\\)(ref|pageref|cpageref|vref|vpageref|formatted|prettyref|eqref|nameref|labelonly)(\[[^\]]\])(\{[^\}]+\})(.*)")
+    # \cmd{arg}[opt]
+    reg_opt3 = re.compile(r"(.*\\)(ref|pageref|cpageref|vref|vpageref|formatted|prettyref|eqref|nameref|labelonly)(\{[^\}]+\})(\[[^\]]+\])(.*)")
+    need_zref_clever = False
+    need_zref_vario = False
+    need_cleveref = False
+    need_refstyle = False
+    need_varioref = False
+    i = 0
+    while True:
+        i = find_token(document.body, "\\begin_inset Formula", i)
+        if i == -1:
+            break
+        j = find_end_of_inset(document.body, i)
+        if j == -1:
+            document.warning("Can't find end of inset at line %d of body!" % i)
+            i += 1
+            continue
+        k = find_re(document.body, regexp, i, j)
+        if k == -1:
+            i = j
+            continue
+        
+        pretext = ""
+        posttext = ""
+        cmd = ""
+        opt = ""
+        arg = ""
+        features = []
+        l = i
+        while True:
+            m = reg_opt1.match(document.body[k])
+            if m:
+                pretext = m.group(1)
+                cmd = m.group(2)
+                opt = m.group(3)
+                arg = m.group(4)
+                features = m.group(5)[1:-1].split(",")
+                posttext = m.group(6)
+            else:
+                m = reg_opt2.match(document.body[k])
+                if m:
+                    pretext = m.group(1)
+                    cmd = m.group(2)
+                    opt = m.group(3)
+                    arg = m.group(4)
+                    posttext = m.group(5)
+                else:
+                    m = reg_opt3.match(document.body[k])
+                    if m:
+                        pretext = m.group(1)
+                        cmd = m.group(2)
+                        arg = m.group(3)
+                        features = m.group(4)[1:-1].split(",")
+                        posttext = m.group(5)
+                    else:
+                        l += 1
+                        k = find_re(document.body, regexp, l, j)
+                        if k == -1 or l == j:
+                            i = j
+                            break
+
+            arguments = arg[1:-1].split(",")
+            
+            use_nolink = "nolink" in features and find_token(document.header, "\\use_hyperref true", 0) != -1
+
+            # labelonly
+            if cmd == "labelonly":
+                # strip prefixes if requested
+                if "noprefix" in features:
+                    npargs = []
+                    for argu in arguments:
+                        if ":" in argu:
+                            npargs.append(argu.split(":", 1)[1])
+                        else:
+                            npargs.append(argu)
+                    arg = "{" + ",".join(npargs) + "}"
+                document.body[k] = pretext + cmd + arg + posttext
+                continue
+
+            use_range = False
+            if len(arguments) == 2 and (cmd == "vref" or cmd == "vpageref") and package != "zref":
+                use_range = True
+            elif len(arguments) != 2 or "range" not in features:
+                use_range = False
+            elif cmd == "vref" or cmd == "vpageref" or cmd == "cpageref" or (cmd == "formatted" and  "prettyref" not in package):
+                use_range = True
+            
+            if cmd == "vref" or cmd == "vpageref":
+                if not use_range and "nolink" not in features and (package != "zref" or ("caps" not in features and opt == "")):
+                    document.body[k] = pretext + cmd + arg + posttext
+                    continue
+                if package == "zref":
+                    cmd = "z" + cmd
+                    need_zref_vario = True
+                else:
+                    need_varioref = True
+                if use_range:
+                    cmd += "range"
+                if use_nolink:
+                    cmd += "*"
+                realopt = []
+                if package == "zref":
+                    realopt = opt[1:-1].split(",")
+                    if "caps" in features:
+                        realopt.append("S")
+                    realopt = list(filter(None, realopt))
+                    if len(realopt) > 0:
+                        cmd += "[" + ",".join(realopt) + "]"
+                first = True
+                cmd += "{"
+                for argu in arguments:
+                    if not first:
+                        if use_range:
+                            cmd += "}{"
+                        else:
+                            cmd += ","
+                    first = False
+                    cmd += argu
+                cmd += "}"
+                document.body[k] = pretext + cmd + posttext
+                continue
+
+            # cpageref
+            if cmd == "cpageref":
+                if package == "cleveref":
+                    if not use_range and "caps" not in features:
+                        # just remove the opts
+                        document.body[k] = pretext + cmd + arg + posttext
+                        continue
+                    need_cleveref = True
+                    if "caps" in features:
+                        cmd = cmd.title()
+                    first = True
+                    cmd += "{"
+                    for argu in arguments:
+                        if not first:
+                            if use_range:
+                                cmd += "}{"
+                            else:
+                                cmd += ","
+                            first = False
+                        cmd += argu
+                    cmd += "}"
+                    document.body[k] = pretext + cmd + posttext
+                    continue
+                if package == "zref":
+                    if not use_range and "caps" not in features and not use_nolink:
+                        # just remove the opts
+                        document.body[k] = pretext + cmd + arg + posttext
+                        continue
+                    need_zref_clever = True
+                    cmd = "z" + cmd
+                    if use_nolink:
+                        cmd += "*"
+                    realopt = opt[1:-1].split(",")
+                    if "caps" in features:
+                        realopt.append("S")
+                    if use_range:
+                        realopt.append("range")
+                    realopt = list(filter(None, realopt))
+                    if len(realopt) > 0:
+                        cmd += "[" + ",".join(realopt) + "]"
+                    first = True
+                    cmd += "{"
+                    for argu in arguments:
+                        if not first:
+                            if use_range:
+                                cmd += "}{"
+                            else:
+                                cmd += ","
+                            first = False
+                        cmd += argu
+                    cmd += "}"
+                    document.body[k] = pretext + cmd + posttext
+                    continue
+                else:
+                    if "nolink" in features:
+                        cmd = "pageref*"
+                    document.body[k] = pretext + cmd + arg + posttext
+                    continue
+
+            if len(arguments) > 1 and package == "cleveref":
+                if cmd == "ref":
+                    need_cleveref = True
+                    document.body[k] = pretext + "labelcref" + arg + posttext
+                    continue
+                if cmd == "pageref":
+                    need_cleveref = True
+                    document.body[k] = pretext + "labelcpageref" + arg + posttext
+                    continue
+
+            if len(arguments) > 1 and package == "zref":
+                if cmd == "ref" or cmd == "pageref":
+                    need_zref_clever = True
+                    cmd = "zcref"
+                    if use_nolink:
+                        cmd += "*"
+                    realopt = opt[1:-1].split(",")
+                    if "caps" in features:
+                        realopt.append("noname")
+                        if cmd == "pageref":
+                            realopt.append("page")
+                    realopt = list(filter(None, realopt))
+                    if len(realopt) > 0:
+                        cmd += "[" + ",".join(realopt) + "]"
+                    document.body[k] = pretext + cmd + arg + posttext
+                    continue
+
+            # formatted
+            if cmd == "formatted":
+                # prettyref
+                if "prettyref" in package:
+                    cmd = "prettyref"
+                # refstyle
+                if package == "refstyle":
+                    if len(arguments) == 1 and not "plural" in features and not "caps" in features:
+                        document.body[k] = pretext + cmd + arg + posttext
+                        continue
+                    need_refstyle = True
+                    npargs = []
+                    prfx = ""
+                    for argu in arguments:
+                        document.warning("argu: %s" % argu)
+                        if ":" in argu:
+                            npargs.append(argu.split(":", 1)[1])
+                            if prfx == "":
+                                prfx = argu.split(":", 1)[0]
+                        else:
+                            npargs.append(argu)
+                    cmd = prfx + "ref"
+                    if "caps" in features:
+                        cmd = cmd.title()
+                    if "plural" in features:
+                        cmd += "[s]"
+                    arg = "{" + ",".join(npargs) + "}"
+                    document.body[k] = pretext + cmd + arg + posttext
+                    continue
+                # cleveref
+                if package == "cleveref":
+                    if len(arguments) == 1 and not "caps" in features:
+                        document.body[k] = pretext + cmd + arg + posttext
+                        continue
+                    need_cleveref = True
+                    if "caps" in features:
+                        cmd = "Cref"
+                    else:
+                        cmd = "cref"
+                    if use_range:
+                        cmd += "range"
+                    if use_nolink:
+                        cmd += "*"
+                    document.body[k] = pretext + cmd + arg + posttext
+                    continue
+                # zref
+                if package == "zref":
+                    if len(arguments) == 1 and not "caps" in features:
+                        document.body[k] = pretext + cmd + arg + posttext
+                        continue
+                    need_zref_clever = True
+                    cmd = "zcref"
+                    realopt = opt[1:-1].split(",")
+                    if "caps" in features:
+                        realopt.append("S")
+                    if use_range:
+                        realopt.append("range") 
+                    if use_nolink:
+                        cmd += "*"
+                    realopt = list(filter(None, realopt))
+                    if len(realopt) > 0:
+                        cmd += "[" + ",".join(realopt) + "]"
+                    document.body[k] = pretext + cmd + arg + posttext
+                    continue
+
+            # Rest (\ref, \eqref, \prettyref
+            if len(arguments) > 1:
+                cmds = []
+                first = True
+                for argu in arguments:
+                    if first:
+                        cmds.append(cmd + "{" + argu + "}")
+                        first = False
+                    else:
+                        cmds.append("\\" + cmd + "{" + argu + "}")
+                cmd = ", ".join(cmds)
+                document.body[k] = pretext + cmd + posttext
+                continue
+            # remove the opts
+            document.body[k] = pretext + cmd + arg + posttext
+            continue
+
+        i = j
+
+    # preamble
+    if need_zref_clever:
+        add_to_preamble(
+            document,
+            ["\\usepackage{zref-clever}"]
+        )
+    if need_zref_vario:
+        add_to_preamble(
+            document,
+            ["\\usepackage{zref-vario}"]
+        )
+    if need_cleveref:
+        add_to_preamble(
+            document,
+            ["\\usepackage{cleveref}"]
+        )
+    if need_varioref:
+        add_to_preamble(
+            document,
+            ["\\usepackage{varioref}"]
+        )
+    if need_refstyle:
+        add_to_preamble(
+            document,
+            ["\\usepackage{refstyle}"]
+        )
+
 ##
 # Conversion hub
 #
 
 supported_versions = ["2.6.0", "2.6"]
 convert = [
-    [644, [convert_refname]]
+    [644, [convert_refname]],
+    [645, []]
 ]
 
 
 revert = [
+    [644, [revert_mathref]],
     [643, [revert_ling_xrefs]]
 ]
 

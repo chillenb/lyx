@@ -176,18 +176,17 @@ void GuiRef::enableBoxes()
 	bool const allow_caps = use_refstyle || use_cleveref || use_zref;
 	bool const allow_nohyper = !isLabelOnly && (!isFormatted || use_cleveref || use_zref)
 			&& (reftype != "cpageref" || use_zref);
-	bool const intext = bufferview()->cursor().inTexted();
-	pluralCB->setEnabled(intext && isFormatted && allow_plural);
-	capsCB->setEnabled(intext && (isFormatted || zref_clever || reftype == "cpageref")
+	pluralCB->setEnabled(isFormatted && allow_plural);
+	capsCB->setEnabled((isFormatted || zref_clever || reftype == "cpageref")
 			   && allow_caps);
-	noprefixCB->setEnabled(intext && isLabelOnly);
+	noprefixCB->setEnabled(isLabelOnly);
 	// disabling of hyperlinks not supported by formatted references
-	nolinkCB->setEnabled(hyper_on && intext && allow_nohyper);
+	nolinkCB->setEnabled(hyper_on && allow_nohyper);
 	// options only supported by zref currently
 	refOptionsLE->setEnabled(use_zref && (isFormatted || zref_clever));
 	refOptionsLA->setEnabled(use_zref && (isFormatted || zref_clever));
 	bool const allow_range_list_switch = selectedLV->topLevelItemCount() == 2
-		&& (isFormatted || reftype == "cpageref") && !use_prettyref && intext;
+		&& (isFormatted || reftype == "cpageref") && !use_prettyref;
 	if (reftype == "vref" || reftype == "vpageref")
 		rangeListCO->setCurrentIndex(rangeListCO->findData("range"));
 	rangeListCO->setEnabled(allow_range_list_switch);
@@ -572,8 +571,6 @@ void GuiRef::updateContents()
 
 	typeCO->clear();
 
-	// FIXME Bring InsetMathRef on par with InsetRef
-	// (see #11104)
 	bool const have_cpageref =
 			buffer().params().xref_package == "cleveref"
 			|| buffer().params().xref_package == "zref";
