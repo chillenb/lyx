@@ -4,7 +4,7 @@
 # Layout file for the frletter class.
 # Author : Liviu Andronic and Uwe Stöhr
 
-Format 111
+Format 112
 
 # Read the definitions from letter.layout
 Input letter.layout

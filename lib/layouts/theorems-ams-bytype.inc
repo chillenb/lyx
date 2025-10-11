@@ -21,7 +21,7 @@
 # - Claim
 # - Case (by inclusion)
 
-Format 111
+Format 112
 
 Input theorems-counters-bytype.inc
 

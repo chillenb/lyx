@@ -4,7 +4,7 @@
 #Allows to use Noweb as a literate programming tool.
 #DescriptionEnd
 
-Format 111
+Format 112
 Input litinsets.inc
 OutputType              literate
 

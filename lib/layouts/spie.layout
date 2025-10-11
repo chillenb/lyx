@@ -6,7 +6,7 @@
 # to be used with the spie.cls LaTex-style available at
 # http://public.lanl.gov/kmh/spie/
 
-Format 111
+Format 112
 Input stdclass.inc
 
 NoStyle Chapter

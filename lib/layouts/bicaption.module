@@ -6,7 +6,7 @@
 #DescriptionEnd
 #Author: Uwe Stöhr <uwestoehr@web.de>
 
-Format 111
+Format 112
 
 Style "Caption setup"
 	LatexType	command

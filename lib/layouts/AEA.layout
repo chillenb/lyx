@@ -4,7 +4,7 @@
 # Authors : Koji Yokota <yokota@res.otaru-uc.ac.jp>
 #           Uwe Stöhr <uwestoehr@web.de>
 
-Format 111
+Format 112
 Input stdclass.inc
 Input theorems-ams.module
 Input theorems-bytype.module
