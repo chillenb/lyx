@@ -171,17 +171,14 @@ bool BranchList::add(docstring const & s)
 		// Is this name already in the list?
 		bool const already = find(name);
 		//
-		// Not necessarily a problem, but these cases should probably
-		// be handled in the GUI (e.g., 7d1eea03).
-		// For now, I will put a terminal message. But eventually
-		// I would like to use an assert instead:
-		//   LASSERT(!already, /**/);
-		// \scott
 		if (already) {
 			LYXERR0("Error: attempt to add branch that already exists: '"
 				<< name
 				<< "'. Please report this use case.");
 		}
+		// Not necessarily a problem, but these cases should probably
+		// be handled in the GUI (e.g., 7d1eea03). \scott
+		LASSERT(!already, /**/);
 		//
 		if (!already) {
 			added = true;
