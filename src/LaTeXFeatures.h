@@ -91,12 +91,12 @@ public:
 	/// The definitions needed by the document's textclass
 	docstring const getTClassPreamble() const;
 	/// Localizations for theorem reference defs
-	docstring const getThmI18nDefs(Layout const &) const;
+	docstring const getThmI18nDefs(Layout const &, bool const force = false) const;
 	/// Extra reference defs for layouts
 	docstring const getXRefDefs(docstring const & pr, docstring const &,
 				    std::set<std::string> const & ncd,
 				    std::string const & ln, bool const env = true) const;
-	docstring const getXRefI18nDefs(docstring const &, docstring const &) const;
+	docstring const getXRefI18nDefs(docstring const &, docstring const &, bool const force = false) const;
 		/// The language dependent definitions needed by the document's textclass
 	docstring const getTClassI18nPreamble(bool use_babel,
 				bool use_polyglossia, bool use_minted) const;

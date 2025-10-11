@@ -357,19 +357,24 @@ def layouts_l10n(input_files, output, base, layouttranslations):
                 lres = CounterFormats.search(string)
                 if lres != None:
                     if layouttranslations:
-                        keyset.add(lres.group(1) + " " + lres.group(3))
-                        keyset.add(lres.group(1).lower() + " " + lres.group(3))
-                        keyset.add(lres.group(2) + " " + lres.group(3))
-                        keyset.add(lres.group(2).lower() + " " + lres.group(3))
+                        keyset.add(lres.group(1))
+                        keyset.add(lres.group(1).lower())
+                        keyset.add(lres.group(2))
+                        keyset.add(lres.group(2).lower())
                     else:
+                        writeString(out, src, base, lineno, lres.group(1))
+                        writeString(out, src, base, lineno, lres.group(1).lower())
+                        writeString(out, src, base, lineno, lres.group(2))
+                        writeString(out, src, base, lineno, lres.group(2).lower())
                         writeString(out, src, base, lineno, lres.group(1) + " " + lres.group(3))
                         writeString(out, src, base, lineno, lres.group(1).lower() + " " + lres.group(3))
                         writeString(out, src, base, lineno, lres.group(2) + " " + lres.group(3))
                         writeString(out, src, base, lineno, lres.group(2).lower() + " " + lres.group(3))
                 else:
                     if layouttranslations:
-                        keyset.add(string)
-                        keyset.add(string.lower())
+                        if not "\\" in string:
+                            keyset.add(string)
+                            keyset.add(string.lower())
                     else:
                         writeString(out, src, base, lineno, string)
                         writeString(out, src, base, lineno, string.lower())

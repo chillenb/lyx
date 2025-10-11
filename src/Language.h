@@ -109,6 +109,8 @@ public:
 	docstring decimalSeparator() const;
 	/// This language corresponds to a translation of the GUI
 	bool hasGuiSupport() const { return has_gui_support_; }
+	/// Is this language supported by a specific package?
+	bool supportedBy(std::string const & package) const;
 	///
 	bool read(support::Lexer & lex);
 	///
@@ -162,6 +164,8 @@ private:
 	std::vector<std::string> fontenc_;
 	///
 	std::vector<std::string> dateformats_;
+	///
+	std::vector<std::string> supported_by_;
 	///
 	bool internal_enc_;
 	///

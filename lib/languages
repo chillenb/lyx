@@ -34,6 +34,7 @@
 #	EndPostBabelPreamble
 #	Requires           <requirement>
 #	Provides           <babel language feature>
+#       SupportedBy        <package,package,...>
 # End
 #
 #
@@ -145,6 +146,9 @@
 #   You can use the placeholders $lang$ and $opts$ (as in
 #   \languageattribute{$lang$}{$opts$})
 #   The special value "modifier" indicates to use babel modifiers.
+# * SupportedBy indicates whether a specific package provides localization
+#   for the given language. This is currently used for the cross-reference
+#   packages (cleveref, refstyle, zref).
 #
 ##########################################################################
 
@@ -179,6 +183,7 @@ Language afrikaans
 	FontEncoding	 T1|OT1
 	DateFormats      "dd MMMM yyyy|dd MMM yyyy|yyyy/MM/dd"
 	LangCode         af_ZA
+	SupportedBy      refstyle
 End
 
 # FontEncoding: no hyphenation, but uses Ç/ç und Ë/ë
@@ -213,6 +218,7 @@ Language american
 	FontEncoding	 ASCII
 	DateFormats      "MMMM dd, yyyy|MMM dd, yyyy|M/d/yyyy"
 	LangCode         en_US
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language amharic
@@ -326,6 +332,7 @@ Language australian
 	DateFormats      "d MMMM yyyy|d MMM yyyy|dd/MM/yyyy"
 	QuoteStyle       english
 	LangCode         en_AU
+	SupportedBy      cleveref,refstyle,zref
 End
 
 # In polyglossia, this is supported since release 1.33.4 (May 2014)
@@ -343,6 +350,7 @@ Language austrian
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de
 	LangVariety      alt
+	SupportedBy      refstyle,zref
 End
 
 # In polyglossia, this is supported since release 1.33.4 (May 2014)
@@ -358,6 +366,7 @@ Language naustrian
 	FontEncoding	 T1|OT1
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_AT
+	SupportedBy      refstyle,zref
 End
 
 Language azerbaijani
@@ -466,6 +475,7 @@ Language brazilian
 	FontEncoding	 T1|OT1
 	DateFormats      "d 'de' MMMM 'de' yyyy|d 'de' MMM 'de' yyyy|dd/MM/yyyy"
 	LangCode         pt_BR
+	SupportedBy      cleveref,refstyle,zref
 End
 
 # FontEncoding: # ? no hyphenation, but uses ñ
@@ -491,6 +501,7 @@ Language british
 	FontEncoding	 ASCII
 	DateFormats      "d MMMM yyyy|d MMM yyyy|dd/MM/yyyy"
 	LangCode         en_GB
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language bulgarian
@@ -519,6 +530,7 @@ Language canadian
 	FontEncoding     ASCII
 	DateFormats      "MMMM d, yyyy|d MMM yyyy|yyyy-MM-dd"
 	LangCode         en_CA
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language canadien
@@ -533,6 +545,7 @@ Language canadien
 	FontEncoding	 T1|OT1
 	DateFormats      "d MMMM yyyy|d MMM yyyy|yyyy-MM-dd"
 	LangCode         fr_CA
+	SupportedBy      zref
 End
 
 Language catalan
@@ -546,6 +559,7 @@ Language catalan
 	FontEncoding	 T1|OT1
 	DateFormats      "d / MMMM / yyyy|d / MMM / yyyy|dd/MM/yyyy"
 	LangCode         ca_ES
+	SupportedBy      cleveref
 End
 
 # uses CJK package
@@ -639,6 +653,7 @@ Language danish
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|dd/MM/yyyy"
 	LangCode         da_DK
+	SupportedBy      cleveref,refstyle
 End
 
 # babel only provides a "bare minimum locale"
@@ -664,6 +679,7 @@ Language dutch
 	FontEncoding	 T1|OT1
 	DateFormats      "d MMMM yyyy|d MMM yyyy|d-M-yyyy"
 	LangCode         nl_NL
+	SupportedBy      cleveref,zref
 End
 
 Language english
@@ -678,6 +694,7 @@ Language english
 	Encoding         iso8859-15
 	FontEncoding	 ASCII
 	LangCode         en_US
+	SupportedBy      cleveref,refstyle,zref
 End
 
 # Esperanto has no country code because it is an auxiliary language.
@@ -692,6 +709,7 @@ Language esperanto
 	FontEncoding	 IL3|T1|OT1
 	DateFormats      "'la' d 'de' MMMM yyyy|'la' d 'de' MMM yyyy|MM/dd/yyyy"
 	LangCode         eo_EO
+	SupportedBy      cleveref
 End
 
 Language estonian
@@ -755,6 +773,7 @@ Language french
 	FontEncoding	 T1|OT1
 	DateFormats      "d MMMM yyyy|d MMM yyyy|dd/MM/yyyy"
 	LangCode         fr_FR
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language friulan
@@ -810,6 +829,7 @@ Language german
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de
 	LangVariety      alt
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language ngerman
@@ -825,6 +845,7 @@ Language ngerman
 	FontEncoding	 T1|OT1
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_DE
+	SupportedBy      cleveref,refstyle,zref
 End
 
 # In Babel, this is supported since release 2.7 of babel-german (Dec 2013)
@@ -843,6 +864,7 @@ Language german-ch
 	FontEncoding	 T1|OT1
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_CH
+	SupportedBy      zref
 End
 
 # In Babel, this is supported since release 2.7 of babel-german (Dec 2013)
@@ -860,6 +882,7 @@ Language german-ch-old
 	FontEncoding	 T1|OT1
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
  	LangCode         de_CH
+	SupportedBy      zref
 End
 
 Language greek
@@ -973,6 +996,7 @@ Language italian
 	FontEncoding	 ASCII
 	DateFormats      "dd MMMM yyyy|dd/MMM/yyyy|dd/MM/yyyy"
 	LangCode         it_IT
+	SupportedBy      cleveref,refstyle,zref
 End
 
 # Since 2016-12-18, babel-japanese works with non-TeX fonts (Xe/LuaTeX), too
@@ -1288,6 +1312,7 @@ Language newzealand
 	FontEncoding	 ASCII
 	DateFormats      "d MMMM yyyy|d MMM yyyy|dd/MM/yyyy"
 	LangCode         en_NZ
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language nko
@@ -1315,6 +1340,7 @@ Language norsk
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|dd./MM./yyyy"
 	LangCode         nb_NO
+	SupportedBy      cleveref,refstyle
 End
 
 Language nynorsk
@@ -1329,6 +1355,7 @@ Language nynorsk
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|dd.MM.yyyy"
 	LangCode         nn_NO
+	SupportedBy      refstyle
 End
 
 Language occitan
@@ -1405,6 +1432,7 @@ Language portuguese
 	FontEncoding	 T1|OT1
 	DateFormats      "d 'de' MMMM 'de' yyyy|d 'de' MMM 'de' yyyy|yyyy/MM/dd"
 	LangCode         pt_PT
+	SupportedBy      refstyle,zref
 End
 
 Language punjabi
@@ -1456,6 +1484,7 @@ Language russian
 	DateFormats      "d MMMM yyyy 'г'.|d MMM yyyy 'г'.|dd.MM.yyyy"
 	LangCode         ru_RU
 	Provides         textcyrillic
+	SupportedBy      cleveref,zref
 End
 
 # FontEncoding: no hyphenation, but diacritics
@@ -1571,6 +1600,7 @@ Language spanish
 	FontEncoding	 T1|OT1
 	DateFormats      "d 'de' MMMM 'de' yyyy|d MMM yyyy|dd/MM/yyyy"
 	LangCode         es_ES
+	SupportedBy      cleveref,zref
 End
 
 # there are no spanish shorthands in polyglossia
@@ -1599,6 +1629,7 @@ Language swedish
 	FontEncoding	 T1|OT1
 	DateFormats      "d MMMM yyyy|d MMM yyyy|yyyy-MM-dd"
 	LangCode         sv_SE
+	SupportedBy      cleveref,refstyle,zref
 End
 
 Language syriac
@@ -1725,6 +1756,7 @@ Language ukrainian
 	DateFormats      "dd MMMM yyyy|d MM yyyy|dd.MM.yyyy"
 	LangCode         uk_UA
 	Provides         textcyrillic
+	SupportedBy      cleveref
 End
 
 Language uppersorbian

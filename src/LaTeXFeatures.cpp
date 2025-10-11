@@ -2299,17 +2299,18 @@ docstring const i18npreamble(docstring const & templ, Language const * lang,
 } // namespace
 
 
-docstring const LaTeXFeatures::getThmI18nDefs(Layout const & lay) const
+docstring const LaTeXFeatures::getThmI18nDefs(Layout const & lay, bool const force) const
 {
 	if (lay.thmName().empty() || !refPrefixUsed(lay.refprefix))
 		return docstring();
-	if (params_.xref_package == "zref" && lay.thmZRefName() == "none" && !lay.thmXRefName().empty()
+	if (params_.xref_package == "zref"
+	    && ((lay.thmZRefName() == "none" || force) && !lay.thmXRefName().empty())
 	    && (isRequired("zref-clever") || isRequired("zref-vario"))) {
 		docstring const tn = from_utf8(lay.thmXRefName());
 		docstring const tnp = from_utf8(lay.thmXRefNamePl());
 		odocstringstream ods;
-		ods << "\\zcRefTypeSetup{"
-		    << from_utf8(lay.thmName()) << "}{\n"
+		ods << "\\zcLanguageSetup{$$lang}{\n"
+		    << "type    = " << from_utf8(lay.thmName()) << ",\n"
 		    << "Name-sg = _(" << tn << "),\n"
 		    << "name-sg = _(" << lowercase(tn) << "),\n"
 		    << "Name-pl = _(" << tnp << "),\n"
@@ -2474,9 +2475,9 @@ docstring const LaTeXFeatures::getXRefDefs(docstring const & pr, docstring const
 }
 
 
-docstring const LaTeXFeatures::getXRefI18nDefs(docstring const & pr, docstring const & cnt) const
+docstring const LaTeXFeatures::getXRefI18nDefs(docstring const & pr, docstring const & cnt, bool const force) const
 {
-	if (xref_defs_.find(pr) == xref_defs_.end())
+	if (pr.empty() || (!force && xref_defs_.find(pr) == xref_defs_.end()))
 		return docstring();
 
 	odocstringstream ods;
@@ -2516,7 +2517,8 @@ docstring const LaTeXFeatures::getXRefI18nDefs(docstring const & pr, docstring c
 	else if (params_.xref_package == "zref" && (isRequired("zref-clever") || isRequired("zref-vario"))) {
 		docstring const tn = getFormattedLabel(fl, false);
 		docstring const tnp = getFormattedLabel(flp, false);
-		ods << "\\zcRefTypeSetup{" << cnt << "}{\n"
+		ods << "\\zcLanguageSetup{$$lang}{\n"
+		    << "    type    = "   << cnt << ",\n"
 		    << "    Name-sg = _(" << tn << "),\n"
 		    << "    name-sg = _(" << lowercase(tn) << "),\n"
 		    << "    Name-pl = _(" << tnp << "),\n"
@@ -2539,6 +2541,7 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 	// commands (would happen if e.g. both theorem and theorem* are used)
 	set<docstring> snippets;
 	typedef LanguageList::const_iterator lang_it;
+	string const xref_package = buffer().params().xref_package;
 	lang_it const lbeg = UsedLanguages_.begin();
 	lang_it const lend =  UsedLanguages_.end();
 	list<docstring>::const_iterator cit = usedLayouts_.begin();
@@ -2559,18 +2562,32 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						buffer().language(),
 						buffer().params().encoding(),
 						use_polyglossia, false));
-		docstring const xxref = getXRefI18nDefs(tclass[*cit].refprefix, cnt);
-		if (!xxref.empty())
+		docstring xxref = getXRefI18nDefs(tclass[*cit].refprefix, cnt,
+						  !buffer().language()->supportedBy(xref_package));
+		if (!xxref.empty()) {
+			if (xref_package == "zref" && !buffer().language()->supportedBy(xref_package))
+				snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+							     buffer().language(),
+							     buffer().params().encoding(),
+							     use_polyglossia, false));
 			snippets.insert(i18npreamble(xxref,
 						     buffer().language(),
 						     buffer().params().encoding(),
 						     use_polyglossia, false));
-		docstring const thmxref = getThmI18nDefs(tclass[*cit]);
-		if (!thmxref.empty())
+		}
+		docstring thmxref = getThmI18nDefs(tclass[*cit],
+						   !buffer().language()->supportedBy(xref_package));
+		if (!thmxref.empty()) {
+			if (xref_package == "zref" && !buffer().language()->supportedBy(xref_package))
+				snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+							     buffer().language(),
+							     buffer().params().encoding(),
+							     use_polyglossia, false));
 			snippets.insert(i18npreamble(thmxref,
 						     buffer().language(),
 						     buffer().params().encoding(),
 						     use_polyglossia, false));
+		}
 		// commands for language changing (for multilanguage documents)
 		if ((use_babel || use_polyglossia) && !UsedLanguages_.empty()) {
 			snippets.insert(i18npreamble(
@@ -2578,27 +2595,47 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						buffer().language(),
 						buffer().params().encoding(),
 						use_polyglossia, false));
-			if (!thmxref.empty())
+			if (!thmxref.empty() && xref_package != "zref")
 				snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(thmxref, "\n") + "}\n",
 							     buffer().language(),
 							     buffer().params().encoding(),
 							     use_polyglossia, false));
-			if (!xxref.empty())
+			if (!xxref.empty() && xref_package != "zref")
 				snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(xxref, "\n") + "}\n",
 							     buffer().language(),
 							     buffer().params().encoding(),
 							     use_polyglossia, false));
 			for (lang_it lit = lbeg; lit != lend; ++lit) {
-				if (!thmxref.empty())
-					snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(thmxref, "\n") + "}\n",
+				thmxref = getThmI18nDefs(tclass[*cit],
+							 !(*lit)->supportedBy(xref_package));
+				if (!thmxref.empty()) {
+					if (xref_package == "zref" && !(*lit)->supportedBy(xref_package))
+						snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+									     *lit,
+									     buffer().params().encoding(),
+									     use_polyglossia, false));
+					snippets.insert(i18npreamble(xref_package == "zref" ?
+									     thmxref
+									   : "\\addto\\captions$$lang{" + rtrim(thmxref, "\n") + "}\n",
 								     *lit,
 								     buffer().params().encoding(),
 								     use_polyglossia, false));
-				if (!xxref.empty())
-					snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(xxref, "\n") + "}\n",
-								     *lit,
-								     buffer().params().encoding(),
-								     use_polyglossia, false));
+				}
+				xxref = getXRefI18nDefs(tclass[*cit].refprefix, cnt,
+							!(*lit)->supportedBy(xref_package));
+				if (!xxref.empty()) {
+					if (xref_package == "zref" && !(*lit)->supportedBy(xref_package))
+						snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+									     *lit,
+									     buffer().params().encoding(),
+									     use_polyglossia, false));
+					snippets.insert(i18npreamble(xref_package == "zref" ?
+								xxref
+							      : "\\addto\\captions$$lang{" + rtrim(xxref, "\n") + "}\n",
+							*lit,
+							buffer().params().encoding(),
+							use_polyglossia, false));
+				}
 				snippets.insert(i18npreamble(
 						tclass[*cit].babelpreamble(),
 						*lit,
@@ -2616,18 +2653,25 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 		docstring const float_defs = getXRefDefs(from_ascii(fl.refPrefix()), from_ascii(fl.floattype()),
 							 fl.needCrossrefDefs(), fl.floattype(), true);
 		// and localizations
-		docstring const floats_l7n_defs =
-			getXRefI18nDefs(from_ascii(fl.refPrefix()), from_ascii(fl.floattype()));
+		docstring floats_l7n_defs =
+			getXRefI18nDefs(from_ascii(fl.refPrefix()), from_ascii(fl.floattype()),
+					!buffer().language()->supportedBy(xref_package));
 		if (!float_defs.empty())
 			snippets.insert(i18npreamble(float_defs,
 					buffer().language(),
 					buffer().params().encoding(),
 					use_polyglossia, false));
-		if (!floats_l7n_defs.empty() && floats_l7n_defs != float_defs)
+		if (!floats_l7n_defs.empty() && floats_l7n_defs != float_defs) {
+			if (xref_package == "zref" && !buffer().language()->supportedBy(xref_package))
+				snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+							     buffer().language(),
+							     buffer().params().encoding(),
+							     use_polyglossia, false));
 			snippets.insert(i18npreamble(floats_l7n_defs,
 					buffer().language(),
 					buffer().params().encoding(),
 					use_polyglossia, false));
+		}
 		if (!UsedLanguages_.empty() && (use_babel || use_polyglossia)) {
 			docstring const type = from_ascii(fl.floattype());
 			docstring const flname = from_utf8(fl.name());
@@ -2654,11 +2698,21 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						type, name, *lit,
 						buffer().params().encoding(),
 						use_polyglossia));
-				if (!floats_l7n_defs.empty())
-						snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(floats_l7n_defs, "\n") + "}\n",
+				floats_l7n_defs = getXRefI18nDefs(from_ascii(fl.refPrefix()), from_ascii(fl.floattype()),
+								   !(*lit)->supportedBy(xref_package));
+				if (!floats_l7n_defs.empty()) {
+					if (xref_package == "zref" && !(*lit)->supportedBy(xref_package))
+						snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
 									     *lit,
 									     buffer().params().encoding(),
 									     use_polyglossia, false));
+					snippets.insert(i18npreamble(xref_package == "zref" ?
+									     floats_l7n_defs
+									   : "\\addto\\captions$$lang{" + rtrim(floats_l7n_defs, "\n") + "}\n",
+								     *lit,
+								     buffer().params().encoding(),
+								     use_polyglossia, false));
+				}
 			}
 		}
 	}
@@ -2692,12 +2746,19 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						buffer().language(),
 						buffer().params().encoding(),
 						use_polyglossia, false));
-		docstring const xxref = getXRefI18nDefs(it->second.refprefix(), it->second.counter());
-		if (!xxref.empty())
+		docstring xxref = getXRefI18nDefs(it->second.refprefix(), it->second.counter(),
+						   !buffer().language()->supportedBy(xref_package));
+		if (!xxref.empty()) {
+			if (xref_package == "zref" && !buffer().language()->supportedBy(xref_package))
+				snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+							     buffer().language(),
+							     buffer().params().encoding(),
+							     use_polyglossia, false));
 			snippets.insert(i18npreamble(xxref,
 						     buffer().language(),
 						     buffer().params().encoding(),
 						     use_polyglossia, false));
+		}
 		// commands for language changing (for multilanguage documents)
 		if ((use_babel || use_polyglossia) && !UsedLanguages_.empty()) {
 			snippets.insert(i18npreamble(
@@ -2711,11 +2772,21 @@ docstring const LaTeXFeatures::getTClassI18nPreamble(bool use_babel,
 						*lit,
 						buffer().params().encoding(),
 						use_polyglossia, need_fixedwidth));
-				if (!xxref.empty())
-					snippets.insert(i18npreamble("\\addto\\captions$$lang{" + rtrim(xxref, "\n") + "}\n",
+				xxref = getXRefI18nDefs(it->second.refprefix(), it->second.counter(),
+							!(*lit)->supportedBy(xref_package));
+				if (!xxref.empty()) {
+					if (xref_package == "zref" && !(*lit)->supportedBy(xref_package))
+						snippets.insert(i18npreamble(from_ascii("\\zcDeclareLanguage{$$lang}\n"),
+									     *lit,
+									     buffer().params().encoding(),
+									     use_polyglossia, false));
+					snippets.insert(i18npreamble(xref_package == "zref" ?
+									     xxref
+									   : "\\addto\\captions$$lang{" + rtrim(xxref, "\n") + "}\n",
 							*lit,
 							buffer().params().encoding(),
 							use_polyglossia, false));
+				}
 			}
 		}
 	}

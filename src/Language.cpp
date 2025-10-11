@@ -57,6 +57,16 @@ bool Language::isBabelExclusive() const
 }
 
 
+bool Language::supportedBy(std::string const & package) const
+{
+	for (auto const & p : supported_by_) {
+		if (p == package)
+			return true;
+	}
+	return false;
+}
+
+
 docstring const Language::translateLayout(string const & msg) const
 {
 	if (msg.empty())
@@ -151,6 +161,7 @@ bool Language::readLanguage(Lexer & lex)
 		LA_PREBABELPREAMBLE,
 		LA_PROVIDES,
 		LA_REQUIRES,
+		LA_SUPPORTED_BY,
 		LA_QUOTESTYLE,
 		LA_RTL,
 		LA_WORDWRAP,
@@ -170,7 +181,7 @@ bool Language::readLanguage(Lexer & lex)
 		{ "fontencoding",         LA_FONTENC },
 		{ "guiname",              LA_GUINAME },
 		{ "hasguisupport",        LA_HAS_GUI_SUPPORT },
-	    { "imoffinmath",          LA_IM_OFF_IN_MATH },
+		{ "imoffinmath",          LA_IM_OFF_IN_MATH },
 		{ "internalencoding",     LA_INTERNAL_ENC },
 		{ "langcode",             LA_LANG_CODE },
 		{ "langvariety",          LA_LANG_VARIETY },
@@ -182,6 +193,7 @@ bool Language::readLanguage(Lexer & lex)
 		{ "quotestyle",           LA_QUOTESTYLE },
 		{ "requires",             LA_REQUIRES },
 		{ "rtl",                  LA_RTL },
+		{ "supportedby",          LA_SUPPORTED_BY },
 		{ "wordwrap",             LA_WORDWRAP },
 		{ "xindyname",            LA_XINDYNAME }
 	};
@@ -285,6 +297,13 @@ bool Language::readLanguage(Lexer & lex)
 		case LA_PROVIDES:
 			lex >> provides_;
 			break;
+		case LA_SUPPORTED_BY: {
+			lex.eatLine();
+			vector<string> const fe =
+				getVectorFromString(lex.getString(true));
+			supported_by_.insert(supported_by_.end(), fe.begin(), fe.end());
+			break;
+		}
 		case LA_RTL:
 			lex >> rightToLeft_;
 			break;
