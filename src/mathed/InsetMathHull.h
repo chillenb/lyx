@@ -71,7 +71,7 @@ public:
 	///
 	docstring label(row_type row) const;
 	///
-	void label(row_type row, docstring const & label);
+	void label(row_type row, docstring const & label, bool const init = false);
 	///
 	std::vector<InsetLabel *> const & getLabels() { return labels_; }
 	///

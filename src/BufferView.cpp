@@ -53,6 +53,7 @@
 #include "insets/InsetRef.h"
 #include "insets/InsetText.h"
 
+#include "mathed/InsetMathHull.h"
 #include "mathed/InsetMathNest.h"
 #include "mathed/InsetMathRef.h"
 #include "mathed/MathData.h"
@@ -1723,6 +1724,7 @@ void BufferView::dispatch(FuncRequest const & cmd, DispatchResult & dr)
 		vector<string> const pids = getVectorFromString(cmd.getArg(0));
 		string const type = cmd.getArg(1);
 		int id = convert<int>(pids.back());
+		row_type row = -1;
 		inserted_label_.clear();
 		if (id < 0)
 			break;
@@ -1735,43 +1737,69 @@ void BufferView::dispatch(FuncRequest const & cmd, DispatchResult & dr)
 				++i;
 				continue;
 			}
-			string label = dit.innerParagraph().getLabelForXRef();
+			string label;
+			if (dit.nextInset() && dit.nextInset()->asInsetMath() && dit.nextInset()->asInsetMath()->asHullInset()) {
+				row = convert<row_type>(pids.front());
+				label = to_utf8(dit.nextInset()->asInsetMath()->asHullInset()->label(row));
+			} else
+				label = dit.innerParagraph().getLabelForXRef();
 			if (!label.empty()) {
 				// if the paragraph has a label, we use this
 				if (type == "forrefdialog")
+					// only store the label for the dialog to take it
 					inserted_label_ = label;
 				else {
+					// insert a reference to the label (e.g., from outliner)
 					string const arg = (type.empty()) ? label : label + " " + type;
 					lyx::dispatch(FuncRequest(LFUN_REFERENCE_INSERT, arg));
 					cur.forceBufferUpdate();
 				}
 				break;
 			} else {
-				// if there is not a label yet
-				// go to the paragraph (including nested insets) ...
-				lyx::dispatch(FuncRequest(LFUN_BOOKMARK_SAVE, "0"));
-				for (string const & s : pids) {
-					id = convert<int>(s);
-					if (id < 0)
-						break;
-					dit = b->getParFromID(id);
-					lyx::dispatch(FuncRequest(LFUN_PARAGRAPH_GOTO, s));
+				// if there is not a label yet, insert one
+				// this categorically differes in texted and mathed
+				docstring new_label;
+				if (dit.nextInset() && dit.nextInset()->asInsetMath() && dit.nextInset()->asInsetMath()->asHullInset()) {
+					// in mathed, we set the label via InsetMathHull::label()
+					// but we need to assure it is unique
+					new_label = from_ascii("eq:equation");
+					int j = 1;
+					while (buffer().activeLabel(new_label)) {
+						new_label = new_label + '-' + convert<docstring>(j);
+						++j;
+					}
+					// record undo for the math inset next to dit
+					cur.buffer()->undo().recordUndoInset(CursorData(dit), dit.nextInset());
+					// insert the label to the desired row of the hull inset
+					dit.nextInset()->asInsetMath()->asHullInset()->label(row, new_label, true);
+					// needed to get the new label into the buffer list
+					cur.buffer()->updateBuffer();
+				} else {
+					// in texted, go to the paragraph (including nested insets) ...
+					lyx::dispatch(FuncRequest(LFUN_BOOKMARK_SAVE, "0"));
+					for (string const & s : pids) {
+						id = convert<int>(s);
+						if (id < 0)
+							break;
+						dit = b->getParFromID(id);
+						lyx::dispatch(FuncRequest(LFUN_PARAGRAPH_GOTO, s));
+					}
+					// insert a new label
+					// we do not want to open the dialog, hence we
+					// do not employ LFUN_LABEL_INSERT
+					InsetCommandParams p(LABEL_CODE);
+					new_label = dit.getPossibleLabel();
+					p["name"] = new_label;
+					string const data = InsetCommand::params2string(p);
+					lyx::dispatch(FuncRequest(LFUN_INSET_INSERT, data));
+					// ... go back to the original position
+					lyx::dispatch(FuncRequest(LFUN_BOOKMARK_GOTO, "0"));
 				}
-				// ... if not, insert a new label
-				// we do not want to open the dialog, hence we
-				// do not employ LFUN_LABEL_INSERT
-				InsetCommandParams p(LABEL_CODE);
-				docstring const new_label = dit.getPossibleLabel();
-				p["name"] = new_label;
-				string const data = InsetCommand::params2string(p);
-				lyx::dispatch(FuncRequest(LFUN_INSET_INSERT, data));
-				// ... go back to the original position
-				lyx::dispatch(FuncRequest(LFUN_BOOKMARK_GOTO, "0"));
 				if (type == "forrefdialog")
-					// ... and save for the ref dialog to insert
+					// save for the ref dialog to insert
 					inserted_label_ = to_utf8(new_label);
 				else {
-					// ... or insert the ref directly (from outliner)
+					// or insert the ref directly (from outliner)
 					string const arg = (type.empty()) ? to_utf8(new_label)
 									  : to_utf8(new_label) + " " + type;
 					lyx::dispatch(FuncRequest(LFUN_REFERENCE_INSERT, arg));

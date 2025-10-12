@@ -31,7 +31,7 @@ public:
 	/// Open a level.
 	/// When entering a float or flex or paragraph (with AddToToc)
 	void pushItem(DocIterator const & dit, docstring const & s,
-	              bool output_active, bool is_captioned = false);
+	              bool output_active, bool is_captioned = false, int row = -1);
 	/// Edit entry at current level. Add new entry if already captioned.
 	/// When encountering a float caption
 	void captionItem(DocIterator const & dit, docstring const & s,
@@ -39,6 +39,8 @@ public:
 	/// Edit entry at current level (always).
 	/// When encountering an argument (with isTocCaption) for flex or paragraph
 	void argumentItem(docstring const & arg_str);
+	///
+	void mathMultilineItem(docstring const & arg_str, Toc::size_type row);
 	/// Close a level.
 	/// When exiting a float or flex or paragraph
 	void pop();

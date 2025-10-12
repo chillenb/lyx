@@ -594,6 +594,15 @@ Menuset
 
 
 #
+# Toc Equation context menu
+#
+
+	Menu "context-toc-equation"
+		SubMenu "Insert Cross-Reference to this Item|C" "context-toc-ref-to-par"
+	End
+
+
+#
 # Toc Footnotes context menu
 #
 

@@ -354,8 +354,8 @@ void InsetMathHull::addToToc(DocIterator const & pit, bool output_active,
 	TocBuilder & b = backend.builder("equation");
 	b.pushItem(pit, docstring(), output_active);
 	if (first != last)
-		b.argumentItem(bformat(from_ascii("(%1$s-%2$s)"),
-		                       numbers_[first], numbers_[last]));
+		b.mathMultilineItem(bformat(from_ascii("(%1$s-%2$s)"),
+		                       numbers_[first], numbers_[last]), 0);
 
 	odocstringstream ods;
 	Encoding const * enc = encodings.fromLyXName("utf8");
@@ -373,7 +373,7 @@ void InsetMathHull::addToToc(DocIterator const & pit, bool output_active,
 		if (first == last) {
 			// this is the only equation
 			plaintext(ods, ops, max_length);
-			b.argumentItem(label + " " + ods.str());
+			b.mathMultilineItem(label + " " + ods.str(), row);
 		} else {
 			// insert as sub-items
 			otexrowstream ots(ods);
@@ -387,7 +387,7 @@ void InsetMathHull::addToToc(DocIterator const & pit, bool output_active,
 					break;
 				}
 			}
-			b.pushItem(pit, label+ " " + d, output_active);
+			b.pushItem(pit, label+ " " + d, output_active, false, row);
 			// clear the stringstream
 			odocstringstream().swap(ods);
 			b.pop();
@@ -1002,7 +1002,7 @@ docstring InsetMathHull::label(row_type row) const
 }
 
 
-void InsetMathHull::label(row_type row, docstring const & label)
+void InsetMathHull::label(row_type row, docstring const & label, bool const init)
 {
 	//lyxerr << "setting label '" << label << "' for row " << row << endl;
 	if (labels_[row]) {
@@ -1022,6 +1022,9 @@ void InsetMathHull::label(row_type row, docstring const & label)
 	labels_[row] = new InsetLabel(buffer_, p);
 	if (buffer_)
 		labels_[row]->setBuffer(buffer());
+	if (init)
+		// Newly created inset so initialize it.
+		labels_[row]->initView();
 }
 
 
@@ -2101,11 +2104,9 @@ void InsetMathHull::doDispatch(Cursor & cur, FuncRequest & cmd)
 				if (labels_[r])
 					// The label will take care of the reference update.
 					label(r, str);
-				else {
-					label(r, str);
+				else
 					// Newly created inset so initialize it.
-					labels_[r]->initView();
-				}
+					label(r, str, true);
 			}
 			cur.forceBufferUpdate();
 			break;

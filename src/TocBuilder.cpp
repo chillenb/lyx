@@ -15,6 +15,7 @@
 #include "DocIterator.h"
 #include "TocBackend.h"
 
+#include "support/convert.h"
 #include "support/lassert.h"
 
 using namespace std;
@@ -32,9 +33,16 @@ TocBuilder::TocBuilder(shared_ptr<Toc> const & toc)
 }
 
 void TocBuilder::pushItem(DocIterator const & dit, docstring const & s,
-                          bool output_active, bool is_captioned)
+                          bool output_active, bool is_captioned, int row)
 {
-	toc_->push_back(TocItem(dit, stack_.size(), s, output_active));
+	TocItem item(dit, stack_.size(), s, output_active);
+	if (row != -1) {
+		docstring parID = item.parIDs();
+		if (!stack_.empty())
+			parID = (*toc_)[stack_.top().pos].dit().paragraphGotoArgument(true);
+		item.setParIDs(convert<docstring>(row) + ',' + parID);
+	}
+	toc_->push_back(item);
 	frame f = {
 		toc_->size() - 1, //pos
 		is_captioned, //is_captioned
@@ -84,6 +92,22 @@ void TocBuilder::argumentItem(docstring const & arg_str)
 	string const & delim =
 		(str.empty() || !stack_.top().is_captioned) ? "" :  ", ";
 	item.str(str + from_ascii(delim) + arg_str);
+	stack_.top().is_captioned = true;
+}
+
+void TocBuilder::mathMultilineItem(docstring const & arg_str, Toc::size_type row)
+{
+	if (stack_.empty() || arg_str.empty())
+		return;
+	TocItem & item = (*toc_)[stack_.top().pos];
+	docstring const & str = item.str();
+	string const & delim =
+		(str.empty() || !stack_.top().is_captioned) ? "" :  ", ";
+	item.str(str + from_ascii(delim) + arg_str);
+	docstring parID = item.parIDs();
+	if (!stack_.empty())
+		parID = (*toc_)[stack_.top().pos].dit().paragraphGotoArgument(true);
+	item.setParIDs(convert<docstring>(row) + ',' + parID);
 	stack_.top().is_captioned = true;
 }
 

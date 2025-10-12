@@ -554,9 +554,8 @@ void GuiRef::updateTargets()
 				targetCO->addItem(toqstr(translateIfPossible(name.second)), toqstr(name.first));
 		}
 	}
-// FIXME This does not work yet with REFERENCE_TO_PARAGRAPH
-//	if (isTargetAvailable("equation"))
-//		targetCO->addItem(qt_("Equations"), "equation");
+	if (isTargetAvailable("equation"))
+		targetCO->addItem(qt_("Equations"), "equation");
 	// restore previous setting
 	int const i = targetCO->findData(target);
 	if (i != -1)
