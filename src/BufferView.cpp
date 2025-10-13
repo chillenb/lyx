@@ -1765,11 +1765,11 @@ void BufferView::dispatch(FuncRequest const & cmd, DispatchResult & dr)
 					new_label = from_ascii("eq:equation");
 					int j = 1;
 					while (buffer().activeLabel(new_label)) {
-						new_label = new_label + '-' + convert<docstring>(j);
+						new_label = from_ascii("eq:equation") + '-' + convert<docstring>(j);
 						++j;
 					}
 					// record undo for the math inset next to dit
-					cur.buffer()->undo().recordUndoInset(CursorData(dit), dit.nextInset());
+					CursorData(dit).recordUndo();
 					// insert the label to the desired row of the hull inset
 					dit.nextInset()->asInsetMath()->asHullInset()->label(row, new_label, true);
 					// needed to get the new label into the buffer list
