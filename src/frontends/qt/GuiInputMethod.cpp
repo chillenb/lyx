@@ -447,6 +447,11 @@ void GuiInputMethod::setPreeditStyle(
 			       "QInputMethodEvent::Selection start: " << it.start <<
 			       " length: " << it.length);
 			break;
+#if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
+		case QInputMethodEvent::MimeData:
+			// FIXME this is new in Qt 6.10. Something to implement?
+			break;
+#endif
 		} // end switch
 	} // end for
 
