@@ -249,7 +249,7 @@ public:
 			                             "style=\"font-size: xx-large;\">%1"
 			                             "</span><br>U+%2</p>%3")
 			                     .arg(toqstr(c))
-			                     .arg(QString("%1").arg(c, 0, 16).toUpper())
+			                     .arg(QString("%1").arg(int(c), 0, 16).toUpper())
 			                     .arg(latex));
 		}
 		case Qt::SizeHintRole:
