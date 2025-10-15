@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-10-07 09:45+0200\n"
-"PO-Revision-Date: 2025-10-07 07:55+0000\n"
+"POT-Creation-Date: 2025-10-15 13:09+0200\n"
+"PO-Revision-Date: 2025-10-15 11:33+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -7433,6 +7433,27 @@ msgid "Case"
 msgstr "Prípad"
 
 #: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
+#: lib/layouts/theorems-case.inc:13 lib/layouts/theorems-case.inc:20
+#: lib/layouts/theorems-case.inc:26 lib/layouts/theorems-case.inc:31
+#: lib/layouts/theorems-without-preamble.inc:458
+msgid "case"
+msgstr "prípad"
+
+#: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
+#: lib/layouts/theorems-case.inc:13 lib/layouts/theorems-case.inc:20
+#: lib/layouts/theorems-case.inc:26 lib/layouts/theorems-case.inc:31
+#: lib/layouts/theorems-without-preamble.inc:458
+msgid "Cases"
+msgstr "Prípady"
+
+#: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
+#: lib/layouts/theorems-case.inc:13 lib/layouts/theorems-case.inc:20
+#: lib/layouts/theorems-case.inc:26 lib/layouts/theorems-case.inc:31
+#: lib/layouts/theorems-without-preamble.inc:458
+msgid "cases"
+msgstr "prípady"
+
+#: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
 #: lib/layouts/theorems-without-preamble.inc:458
 msgid "Case ##"
 msgstr "Prípad ##"
@@ -11662,6 +11683,11 @@ msgstr "Obrázok"
 msgid "Sub-Figure"
 msgstr "Podobrázok"
 
+#: lib/layouts/beamer.layout:1762 lib/layouts/powerdot.layout:593
+#: lib/layouts/sciposter.layout:117 lib/layouts/stdfloats.inc:41
+msgid "figure"
+msgstr "obrázok"
+
 #: lib/layouts/beamer.layout:1756 lib/layouts/powerdot.layout:590
 #: lib/layouts/sciposter.layout:115 lib/layouts/stdfloats.inc:39
 msgid "Figure ##"
@@ -11829,6 +11855,22 @@ msgstr "Skripty"
 #: lib/layouts/broadway.layout:27
 msgid "Act Number"
 msgstr "Čítač Akt"
+
+#: lib/layouts/broadway.layout:28
+msgid "Act"
+msgstr "Akt"
+
+#: lib/layouts/broadway.layout:28
+msgid "act"
+msgstr "akt"
+
+#: lib/layouts/broadway.layout:28
+msgid "Acts"
+msgstr "Akty"
+
+#: lib/layouts/broadway.layout:28
+msgid "acts"
+msgstr "akty"
 
 #: lib/layouts/broadway.layout:28
 msgid "Act ##"
@@ -13343,6 +13385,16 @@ msgstr "koncové poznámky ##"
 #: lib/layouts/jlreq-common.inc:133 lib/layouts/memoir.layout:313
 msgid "Endnote"
 msgstr "Koncová poznámka"
+
+#: lib/layouts/endnotes.module:16 lib/layouts/enotez.module:16
+#: lib/layouts/memoir.layout:310
+msgid "endnote"
+msgstr "koncová poznámka"
+
+#: lib/layouts/endnotes.module:16 lib/layouts/enotez.module:16
+#: lib/layouts/memoir.layout:310
+msgid "endnotes"
+msgstr "koncové poznámky"
 
 #: lib/layouts/endnotes.module:32 lib/layouts/endnotes.module:35
 #: lib/layouts/foottoend.module:20 lib/layouts/foottoend.module:23
@@ -14899,6 +14951,18 @@ msgstr "Všeobecné"
 msgid "Scene"
 msgstr "Scéna"
 
+#: lib/layouts/broadway.layout:34
+msgid "scene"
+msgstr "scéna"
+
+#: lib/layouts/broadway.layout:34
+msgid "Scenes"
+msgstr "Scény"
+
+#: lib/layouts/broadway.layout:34
+msgid "scenes"
+msgstr "scény"
+
 #: lib/layouts/hpstatement.module:2
 msgid "Chemistry: Hazard and Precautionary Statements"
 msgstr "Chémia: Rizikové a Bezpečnostné Inštrukcie"
@@ -15939,8 +16003,8 @@ msgid ""
 "Linguistics."
 msgstr ""
 "Definuje špeciálne prostredie užitočné pre lingvistiku (číslované príklady, "
-"glosy, sémantické štýly znakov (markup), plávajúce tabuľky). Pozrite "
-"Pomocník->špecifické manuály->Lingvistika."
+"glosy, sémantické štýly znakov (markup), plávajúce tablá). Pozrite Pomocník-"
+">špecifické manuály->Lingvistika."
 
 #: lib/layouts/linguistics.module:18
 msgid "Numbered Example (Multiline)"
@@ -16385,6 +16449,14 @@ msgstr "Podtablo"
 msgid "List of Tableaux"
 msgstr "Zoznam tablov"
 
+#: lib/layouts/linguistics.module:580
+msgid "tableau"
+msgstr "tablo"
+
+#: lib/layouts/linguistics.module:580
+msgid "tableaux"
+msgstr "tablá"
+
 #: lib/layouts/linguistics.module:578
 msgid "Tableau ##"
 msgstr "Tablo ##"
@@ -16424,6 +16496,18 @@ msgstr "Dokumentačné programovanie"
 #: lib/layouts/litinsets.inc:18
 msgid "Chunk"
 msgstr "Odrezok"
+
+#: lib/layouts/litinsets.inc:13
+msgid "chunk"
+msgstr "odrezok"
+
+#: lib/layouts/litinsets.inc:13
+msgid "Chunks"
+msgstr "Odrezky"
+
+#: lib/layouts/litinsets.inc:13
+msgid "chunks"
+msgstr "odrezky"
 
 #: lib/layouts/llncs.layout:3
 msgid "Lecture Notes in Comp. Science (LNCS)"
@@ -17138,6 +17222,18 @@ msgid "\\Alph{chapter}"
 msgstr "\\Alph{chapter}"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
+msgid "chapter"
+msgstr "kapitola"
+
+#: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
+msgid "Chapters"
+msgstr "Kapitoly"
+
+#: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
+msgid "chapters"
+msgstr "kapitoly"
+
+#: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
 msgid "Chapter ##"
 msgstr "Kapitola ##"
 
@@ -17152,6 +17248,21 @@ msgstr "Kapitoly ##"
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
 msgid "chapters ##"
 msgstr "kapitoly ##"
+
+#: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
+#: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
+msgid "section"
+msgstr "sekcia"
+
+#: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
+#: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
+msgid "Sections"
+msgstr "Sekcie"
+
+#: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
+#: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
+msgid "sections"
+msgstr "sekcie"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
@@ -17979,6 +18090,10 @@ msgstr "Podvideo"
 msgid "List of Videos"
 msgstr "Zoznam videí"
 
+#: lib/layouts/revtex4-x.inc:340
+msgid "video"
+msgstr "video"
+
 #: lib/layouts/revtex4-x.inc:339
 msgid "Video ##"
 msgstr "Video ##"
@@ -17998,6 +18113,10 @@ msgstr "videá ##"
 #: lib/layouts/revtex4-x.inc:343
 msgid "Videos"
 msgstr "Videá"
+
+#: lib/layouts/revtex4-x.inc:340
+msgid "videos"
+msgstr "videá"
 
 #: lib/layouts/revtex4-x.inc:346
 msgid "Float Link"
@@ -18163,6 +18282,16 @@ msgstr "KOMA-Script kniha"
 #: lib/layouts/scrbook.layout:31
 msgid "\\thechapter.\\arabic{equation}"
 msgstr "\\thechapter.\\arabic{equation}"
+
+#: lib/layouts/scrbook.layout:32 lib/layouts/stdcounters.inc:87
+#: lib/layouts/subequations.module:18
+msgid "equation"
+msgstr "rovnica"
+
+#: lib/layouts/scrbook.layout:32 lib/layouts/stdcounters.inc:87
+#: lib/layouts/subequations.module:18
+msgid "equations"
+msgstr "rovnice"
 
 #: lib/layouts/scrbook.layout:32
 msgid "Equation (\\thechapter.\\arabic{equation})"
@@ -18957,6 +19086,18 @@ msgid "\\Roman{part}"
 msgstr "\\Roman{part}"
 
 #: lib/layouts/stdcounters.inc:11
+msgid "part"
+msgstr "časť"
+
+#: lib/layouts/stdcounters.inc:11
+msgid "Parts"
+msgstr "Časťi"
+
+#: lib/layouts/stdcounters.inc:11
+msgid "parts"
+msgstr "časti"
+
+#: lib/layouts/stdcounters.inc:11
 msgid "Part ##"
 msgstr "Časť ##"
 
@@ -18971,6 +19112,18 @@ msgstr "Časti ##"
 #: lib/layouts/stdcounters.inc:11
 msgid "parts ##"
 msgstr "časti ##"
+
+#: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
+msgid "paragraph"
+msgstr "odstavec"
+
+#: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
+msgid "Paragraphs"
+msgstr "Odstavce"
+
+#: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
+msgid "paragraphs"
+msgstr "odstavce"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
 msgid "Paragraph ##"
@@ -18991,6 +19144,21 @@ msgstr "odstavce ##"
 #: lib/layouts/stdcounters.inc:51
 msgid "\\arabic{enumi}."
 msgstr "\\arabic{enumi}."
+
+#: lib/layouts/stdcounters.inc:52 lib/layouts/stdcounters.inc:59
+#: lib/layouts/stdcounters.inc:66 lib/layouts/stdcounters.inc:73
+msgid "item"
+msgstr "položka"
+
+#: lib/layouts/stdcounters.inc:52 lib/layouts/stdcounters.inc:59
+#: lib/layouts/stdcounters.inc:66 lib/layouts/stdcounters.inc:73
+msgid "Items"
+msgstr "Položky"
+
+#: lib/layouts/stdcounters.inc:52 lib/layouts/stdcounters.inc:59
+#: lib/layouts/stdcounters.inc:66 lib/layouts/stdcounters.inc:73
+msgid "items"
+msgstr "položky"
 
 #: lib/layouts/stdcounters.inc:52
 msgid "Item \\arabic{enumi}"
@@ -19065,6 +19233,10 @@ msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 msgstr "položky \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:82
+msgid "listing"
+msgstr "výpis"
+
+#: lib/layouts/stdcounters.inc:82
 msgid "Listing ##"
 msgstr "Výpis ##"
 
@@ -19104,9 +19276,19 @@ msgstr "\\fnsymbol{thanks}"
 msgid "Tables"
 msgstr "Tabuľky"
 
+#: lib/layouts/beamer.layout:1747 lib/layouts/powerdot.layout:574
+#: lib/layouts/sciposter.layout:133 lib/layouts/stdfloats.inc:24
+msgid "tables"
+msgstr "tabuľky"
+
 #: lib/layouts/stdfloatnames.inc:6 lib/layouts/stdinsets.inc:640
 msgid "Figures"
 msgstr "Obrázky"
+
+#: lib/layouts/beamer.layout:1762 lib/layouts/powerdot.layout:593
+#: lib/layouts/sciposter.layout:117 lib/layouts/stdfloats.inc:41
+msgid "figures"
+msgstr "obrázky"
 
 #: lib/layouts/stdfloatnames.inc:7
 #: lib/layouts/theorems-ams-extended-bytype.module:88
@@ -19131,6 +19313,11 @@ msgstr "Poznámky na okraji (neočíslované)"
 msgid "Footnotes"
 msgstr "Poznámky pod čiarou"
 
+#: lib/layouts/numreport.inc:46 lib/layouts/stdcounters.inc:92
+#: lib/layouts/stdcounters.inc:97
+msgid "footnotes"
+msgstr "poznámky pod čiarou"
+
 #: lib/layouts/stdinsets.inc:13
 msgid "Notes"
 msgstr "Poznámky"
@@ -19146,6 +19333,10 @@ msgstr "Heslá registier"
 #: lib/layouts/stdinsets.inc:16
 msgid "Listings"
 msgstr "Výpisy"
+
+#: lib/layouts/stdcounters.inc:82
+msgid "listings"
+msgstr "výpisy"
 
 #: lib/layouts/stdinsets.inc:19
 msgid "Margin"
@@ -21060,6 +21251,11 @@ msgstr "podmienky ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
+msgid "notes"
+msgstr "poznámky"
+
+#: lib/layouts/theorems-counters-extended-bytype.inc:24
+#: lib/layouts/theorems-without-preamble.inc:530
 msgid "Note ##"
 msgstr "Poznámka ##"
 
@@ -21093,6 +21289,10 @@ msgstr "Notácie ##"
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
 msgid "notations ##"
 msgstr "notácie ##"
+
+#: lib/layouts/theorems-counters-extended-bytype.inc:36
+msgid "conclusions"
+msgstr "závery"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
 msgid "Conclusion ##"
@@ -21436,6 +21636,18 @@ msgid "Label of the corresponding problem"
 msgstr "Štítok korešpondujúci problému"
 
 #: lib/layouts/theorems-without-preamble.inc:482
+msgid "property"
+msgstr "vlastnosť"
+
+#: lib/layouts/theorems-without-preamble.inc:482
+msgid "Properties"
+msgstr "Vlastnosti"
+
+#: lib/layouts/theorems-without-preamble.inc:482
+msgid "properties"
+msgstr "vlastnosti"
+
+#: lib/layouts/theorems-without-preamble.inc:482
 msgid "Property ##"
 msgstr "Vlastnosť ##"
 
@@ -21591,6 +21803,14 @@ msgstr "Celá šírka"
 msgid "Margin Figure"
 msgstr "Krajný obrázok"
 
+#: lib/layouts/tufte-book.layout:261
+msgid "margin figure"
+msgstr "krajný obrázok"
+
+#: lib/layouts/tufte-book.layout:261
+msgid "margin figures"
+msgstr "krajné obrázky"
+
 #: lib/layouts/tufte-book.layout:258
 msgid "Margin Figure ##"
 msgstr "Krajný obrázok ##"
@@ -21610,6 +21830,14 @@ msgstr "krajné obrázky ##"
 #: lib/layouts/tufte-book.layout:262
 msgid "Margin Table"
 msgstr "Krajná tabuľka"
+
+#: lib/layouts/tufte-book.layout:266
+msgid "margin table"
+msgstr "krajná tabuľka"
+
+#: lib/layouts/tufte-book.layout:266
+msgid "margin tables"
+msgstr "krajné tabuľky"
 
 #: lib/layouts/tufte-book.layout:263
 msgid "Margin Table ##"
@@ -47950,12 +48178,6 @@ msgstr "Neznámy používateľ"
 
 #~ msgid "Insert Optional Parameter"
 #~ msgstr "Chýbajúci parameter"
-
-#~ msgid "figure"
-#~ msgstr "Obrázok"
-
-#~ msgid "tableau"
-#~ msgstr "Tabuľka"
 
 #~ msgid "keywords"
 #~ msgstr "Kľúčové slová"
