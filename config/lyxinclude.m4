@@ -6,7 +6,7 @@ dnl         Allan Rae (rae@lyx.org)
 dnl Compute the default build type from AC_PACKAGE_VERSION at autoconf time.
 m4_define([LYX_BUILD_TYPE], [m4_bmatch(AC_PACKAGE_VERSION,
     [dev], [development],
-    [pre\|alpha\|beta\|rc], [prerelease],
+    [pre\|alpha\|beta\|rc\|RC], [prerelease],
     [release])])
 
 
