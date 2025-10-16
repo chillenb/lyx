@@ -325,8 +325,8 @@ void Undo::Private::doRecordUndo(UndoKind kind,
 	    && !stack.top().bparams
 	    && samePar(stack.top().cell, cell)
 	    //&& stack.top().kind == kind // needed?
-	    && stack.top().from <= from
-	    && stack.top().end >= end) {
+	    && stack.top().from == from
+	    && stack.top().end == end) {
 		LYXERR(Debug::UNDO, "Undo coalescing: skip entry");
 		return;
 	}
