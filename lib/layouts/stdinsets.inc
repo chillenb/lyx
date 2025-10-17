@@ -375,7 +375,6 @@ InsetLayout Listings
 	FreeSpacing           true
 	ForceLTR              true
 	ForcePlain            true
-	NeedCProtect          true
 	RefPrefix             lst
 	EditExternal          true
 	HTMLTag               code
