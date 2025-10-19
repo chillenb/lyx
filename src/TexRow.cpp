@@ -406,7 +406,7 @@ bool TexRow::sameParOrInsetMath(RowEntry entry1, RowEntry entry2)
 
 
 //static
-int TexRow::comparePos(RowEntry const & entry1, RowEntry const & entry2)
+pos_type TexRow::comparePos(RowEntry const & entry1, RowEntry const & entry2)
 {
 	// assume it is sameParOrInsetMath
 	switch (entry1.type /* equal to entry2.type */) {
@@ -526,7 +526,7 @@ TexRow::RowListIterator TexRow::end() const
 }
 
 
-pair<int,int> TexRow::rowFromDocIterator(DocIterator const & dit) const
+pair<pos_type, pos_type> TexRow::rowFromDocIterator(DocIterator const & dit) const
 {
 	// Do not change anything in this algorithm if unsure.
 	bool beg_found = false;
@@ -598,27 +598,27 @@ pair<int,int> TexRow::rowFromDocIterator(DocIterator const & dit) const
 	}
 	if (!beg_found)
 		return make_pair(-1,-1);
-	int const best_beg_row = distance(rowlist_.begin(),
+	pos_type const best_beg_row = distance(rowlist_.begin(),
 									  best_beg_entry.row()) + 1;
-	int const best_end_row = distance(rowlist_.begin(),
+	pos_type const best_end_row = distance(rowlist_.begin(),
 									  best_end_entry.row()) + end_offset;
 	return make_pair(best_beg_row, best_end_row);
 }
 
 
-pair<int,int> TexRow::rowFromCursor(Cursor const & cur) const
+pair<pos_type, pos_type> TexRow::rowFromCursor(Cursor const & cur) const
 {
 	DocIterator beg = cur.selectionBegin();
-	pair<int,int> beg_rows = rowFromDocIterator(beg);
-	if (cur.selection()) {
-		DocIterator end = cur.selectionEnd();
-		if (!cur.selIsMultiCell() && !end.top().at_cell_begin())
-			end.top().backwardPos();
-		pair<int,int> end_rows = rowFromDocIterator(end);
-		return make_pair(min(beg_rows.first, end_rows.first),
-		                 max(beg_rows.second, end_rows.second));
-	} else
+	pair<pos_type, pos_type> beg_rows = rowFromDocIterator(beg);
+	if (!cur.selection())
 		return make_pair(beg_rows.first, beg_rows.second);
+
+	DocIterator end = cur.selectionEnd();
+	if (!cur.selIsMultiCell() && !end.top().at_cell_begin())
+		end.top().backwardPos();
+	pair<pos_type, pos_type> end_rows = rowFromDocIterator(end);
+	return make_pair(min(beg_rows.first, end_rows.first),
+	                 max(beg_rows.second, end_rows.second));
 }
 
 

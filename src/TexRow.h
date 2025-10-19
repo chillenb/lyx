@@ -191,12 +191,12 @@ public:
 	/// Finds the best pair of rows for dit
 	/// returns (-1,-1) if not found.
 	/// This is the main algorithm behind forward-search.
-	std::pair<int,int> rowFromDocIterator(DocIterator const & dit) const;
+	std::pair<pos_type, pos_type> rowFromDocIterator(DocIterator const & dit) const;
 
 	/// Finds the best pair of rows for cursor, taking the selection into
 	/// account
 	/// returns (-1,-1) if not found.
-	std::pair<int,int> rowFromCursor(Cursor const & dit) const;
+	std::pair<pos_type, pos_type> rowFromCursor(Cursor const & dit) const;
 
 	/// Returns the number of rows contained
 	size_t rows() const;
@@ -215,7 +215,7 @@ private:
 	static bool sameParOrInsetMath(RowEntry entry1, RowEntry entry2);
 	/// computes the distance in pos or cell index
 	/// assumes it is the sameParOrInsetMath
-	static int comparePos(RowEntry const & entry1, RowEntry const & entry2);
+	static pos_type comparePos(RowEntry const & entry1, RowEntry const & entry2);
 
 };
 

@@ -3185,8 +3185,8 @@ namespace {
 /** delete num_spaces characters between from and to. Return the
  * number of spaces that got physically deleted (not marked as
  * deleted) */
-int deleteSpaces(Paragraph & par, pos_type const from, pos_type to,
-				  int num_spaces, bool const trackChanges)
+pos_type deleteSpaces(Paragraph & par, pos_type const from, pos_type to,
+				  pos_type num_spaces, bool const trackChanges)
 {
 	if (num_spaces <= 0)
 		return 0;
@@ -3273,7 +3273,7 @@ bool Text::deleteEmptyParagraphMechanism(Cursor & cur,
 		// Remove spaces and adapt cursor.
 		if (num_spaces > 0) {
 			old.recordUndo();
-			int const deleted =
+			pos_type const deleted =
 				deleteSpaces(oldpar, from, to, num_spaces, trackChanges);
 			// correct cur position
 			// FIXME: there can be other cursors pointing there, we should update them
@@ -3381,7 +3381,8 @@ void Text::deleteEmptyParagraphMechanism(pit_type first, pit_type last,
 					--num_spaces;
 
 				// Remove spaces if needed
-				int const deleted = deleteSpaces(par, from , to, num_spaces, trackChanges);
+				pos_type const deleted =
+					deleteSpaces(par, from , to, num_spaces, trackChanges);
 				from = to - deleted;
 			}
 		}
