@@ -3192,7 +3192,7 @@ int deleteSpaces(Paragraph & par, pos_type const from, pos_type to,
 		return 0;
 
 	// First, delete spaces marked as inserted
-	int pos = from;
+	pos_type pos = from;
 	while (pos < to && num_spaces > 0) {
 		Change const & change = par.lookupChange(pos);
 		if (change.inserted() && !change.currentAuthor()) {
@@ -3204,7 +3204,7 @@ int deleteSpaces(Paragraph & par, pos_type const from, pos_type to,
 	}
 
 	// Then remove remaining spaces
-	int const psize = par.size();
+	pos_type const psize = par.size();
 	par.eraseChars(from, from + num_spaces, trackChanges);
 	return psize - par.size();
 }
@@ -3261,7 +3261,7 @@ bool Text::deleteEmptyParagraphMechanism(Cursor & cur,
 			   && !oldpar.isDeleted(to))
 			++to;
 
-		int num_spaces = to - from;
+		pos_type num_spaces = to - from;
 		// If we are not at the start of the paragraph, keep one space
 		if (from != to && from > 0)
 			--num_spaces;
@@ -3374,7 +3374,7 @@ void Text::deleteEmptyParagraphMechanism(pit_type first, pit_type last,
 				if (from == to)
 					break;
 
-				int num_spaces = to - from;
+				pos_type num_spaces = to - from;
 
 				// If we are not at the extremity of the paragraph, keep one space
 				if (from != to && from > 0 && to < par.size())
@@ -3465,7 +3465,7 @@ void mathDispatch(Cursor & cur, FuncRequest const & cmd)
 
 	if (sel.empty()) {
 #ifdef ENABLE_ASSERTIONS
-		const int old_pos = cur.pos();
+		const pos_type old_pos = cur.pos();
 #endif
 		cur.insert(new InsetMathHull(cur.buffer(), hullSimple));
 #ifdef ENABLE_ASSERTIONS
