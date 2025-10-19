@@ -644,7 +644,8 @@ void InsetMathNest::handleFont2(Cursor & cur, docstring const & arg)
 		}
 	}
 
-	if (support::contains(arg, from_ascii("size"))) {
+	if (support::contains(arg, from_ascii("size")) &&
+	    currentMode() != MATH_MODE) {
 		switch(font.fontInfo().size()) {
 		case TINY_SIZE:
 			im = from_ascii("tiny");
