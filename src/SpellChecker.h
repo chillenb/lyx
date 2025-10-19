@@ -14,6 +14,7 @@
 #define SPELL_BASE_H
 
 #include "support/docstring.h"
+#include "support/types.h"
 #include <vector>
 
 
@@ -96,7 +97,7 @@ public:
 	/// start position and length of misspelled word at index
 	virtual void misspelledWord(
 		int /* index */,
-		int & start, int & length) const
+		pos_type & start, int & length) const
 	{
 		/// index is used here to make the compiler happy
 		start = 0;

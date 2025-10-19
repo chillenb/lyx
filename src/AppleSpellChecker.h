@@ -35,7 +35,7 @@ public:
 	int numDictionaries() const override;
 	bool canCheckParagraph() const override { return true; }
 	int numMisspelledWords() const override;
-	void misspelledWord(int index, int & start, int & length) const override;
+	void misspelledWord(int index, pos_type & start, int & length) const override;
 	docstring const error() override;
 	void advanceChangeNumber() override;
 	//@}

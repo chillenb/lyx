@@ -341,7 +341,7 @@ public:
 	/// (logically) erase the char at pos; return true if it was actually erased
 	bool eraseChar(pos_type pos, bool trackChanges);
 	/// (logically) erase the given range; return the number of chars actually erased
-	int eraseChars(pos_type start, pos_type end, bool trackChanges);
+	pos_type eraseChars(pos_type start, pos_type end, bool trackChanges);
 
 	///
 	void resetFonts(Font const & font);
@@ -478,7 +478,7 @@ public:
 	/// \return non-zero if the specified string is at the specified
 	///	position; returned value is the actual match length in positions
 	/// \param del specifies whether deleted strings in ct mode will be considered
-	int find(
+	pos_type find(
 		docstring const & str, ///< string to search
 		bool cs, ///<
 		bool mw, ///<
@@ -536,7 +536,7 @@ private:
 	///
 	void registerWords();
 	///
-	int getInsetPos(InsetCode const code, int startpos,
+	pos_type getInsetPos(InsetCode const code, pos_type startpos,
 			bool ignore_deleted=false) const;
 
 	/// Pimpl away stuff

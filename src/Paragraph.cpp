@@ -450,12 +450,12 @@ public:
 		last = endpos;
 	}
 
-	int countSkips(SkipPositionsIterator & it, SkipPositionsIterator const et,
-			    int & start) const
+	static pos_type countSkips(SkipPositionsIterator & it, SkipPositionsIterator const et,
+			    pos_type & start)
 	{
-		int numskips = 0;
+		pos_type numskips = 0;
 		while (it != et && it->first < start) {
-			long skip = it->last - it->first + 1;
+			pos_type skip = it->last - it->first + 1;
 			start += skip;
 			numskips += skip;
 			++it;
@@ -932,7 +932,7 @@ bool Paragraph::eraseChar(pos_type pos, bool trackChanges)
 }
 
 
-int Paragraph::eraseChars(pos_type start, pos_type end, bool trackChanges)
+pos_type Paragraph::eraseChars(pos_type start, pos_type end, bool trackChanges)
 {
 	LASSERT(start >= 0 && start <= size(), return 0);
 	LASSERT(end >= start && end <= size() + 1, return 0);
@@ -4610,11 +4610,11 @@ bool Paragraph::allowEmpty() const
 }
 
 
-int Paragraph::getInsetPos(InsetCode const code, int startpos,
+pos_type Paragraph::getInsetPos(InsetCode const code, pos_type startpos,
 			   bool ignore_deleted) const
 {
 	while (startpos != -1) {
-		int found_pos = d->insetlist_.find(code, startpos);
+		pos_type found_pos = d->insetlist_.find(code, startpos);
 		if (found_pos == -1)
 			// nothing found
 			return -1;
@@ -4648,7 +4648,7 @@ bool Paragraph::brokenBiblio() const
 void Paragraph::fixBiblio(DocIterator & dit)
 {
 	bool const track_changes = dit.buffer()->params().track_changes;
-	int bibitem_pos = getInsetPos(BIBITEM_CODE, 0, true);
+	pos_type bibitem_pos = getInsetPos(BIBITEM_CODE, 0, true);
 	DocIterator changedit = dit;
 
 	// The case where paragraph is not BIBLIO
@@ -4838,7 +4838,7 @@ void Paragraph::changeCase(BufferParams const & bparams, pos_type pos,
 	}
 }
 
-int Paragraph::find(docstring const & str, bool cs, bool mw,
+pos_type Paragraph::find(docstring const & str, bool cs, bool mw,
 		pos_type start_pos, bool del) const
 {
 	pos_type pos = start_pos;
@@ -5271,15 +5271,15 @@ void Paragraph::Private::markMisspelledWords(
 		setMisspelled(first, last, SpellChecker::WORD_OK);
 		return;
 	}
-	int snext = first;
+	pos_type snext = first;
 	SpellChecker * speller = theSpellChecker();
 	// locate and enumerate the error positions
 	int nerrors = speller->numMisspelledWords();
-	int numskipped = 0;
+	pos_type numskipped = 0;
 	SkipPositionsIterator it = skips.begin();
 	SkipPositionsIterator et = skips.end();
 	for (int index = 0; index < nerrors; ++index) {
-		int wstart;
+		pos_type wstart;
 		int wlen = 0;
 		speller->misspelledWord(index, wstart, wlen);
 		/// should not happen if speller supports range checks
