@@ -475,13 +475,14 @@ GuiFontMetrics::getTextLayout(docstring const & s, bool const rtl,
 }
 
 
-int GuiFontMetrics::pos2x(docstring const & s, int pos, bool const rtl,
+int GuiFontMetrics::pos2x(docstring const & s, pos_type pos, bool const rtl,
                           double const wordspacing) const
 {
 	TextLayoutHelper tlh(s, rtl);
 	auto ptl = getTextLayout(tlh, wordspacing);
 	// pos can be negative, see #10506.
-	int const qpos = tlh.pos2qpos(max(pos, 0));
+	int const qpos = tlh.pos2qpos(static_cast<docstring::size_type>(
+		max<pos_type>(pos, 0)));
 	return static_cast<int>(ptl->lineForTextPosition(qpos).cursorToX(qpos));
 }
 

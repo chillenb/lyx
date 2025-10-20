@@ -79,7 +79,7 @@ public:
 	int rbearing(char_type c) const override;
 	int width(docstring const & s) const override;
 	int signedWidth(docstring const & s) const override;
-	int pos2x(docstring const & s, int pos, bool rtl, double ws) const override;
+	int pos2x(docstring const & s, pos_type pos, bool rtl, double ws) const override;
 	int x2pos(docstring const & s, int & x, bool rtl, double ws) const override;
 	Breaks breakString(docstring const & s, int first_wid, int wid, bool rtl, bool force) const override;
 	Dimension const dimension(char_type c) const override;

@@ -18,6 +18,7 @@
 
 #include "support/mute_warning.h"
 #include "support/docstring.h"
+#include "support/types.h"
 
 #include <vector>
 
@@ -116,7 +117,7 @@ public:
 	 * \param rtl is true for right-to-left layout
 	 * \param ws is the amount of extra inter-word space applied text justification.
 	 */
-	virtual int pos2x(docstring const & s, int pos, bool rtl, double ws) const = 0;
+	virtual int pos2x(docstring const & s, pos_type pos, bool rtl, double ws) const = 0;
 	/**
 	 * return the position in the string for a given x offset. The
 	 * direction of the string is forced, and the returned value
