@@ -560,7 +560,8 @@ int Formats::getNumber(string const & name) const
 	if (cit == formatlist_.end())
 		return -1;
 
-	return distance(formatlist_.begin(), cit);
+	// The ptrdiff_t will fit in an int, even a 32-bit one.
+	return static_cast<int>(distance(formatlist_.begin(), cit));
 }
 
 

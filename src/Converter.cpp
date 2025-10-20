@@ -179,7 +179,8 @@ int Converters::getNumber(string const & from, string const & to) const
 		find_if(converterlist_.begin(), converterlist_.end(),
 			ConverterEqual(from, to));
 	if (cit != converterlist_.end())
-		return distance(converterlist_.begin(), cit);
+		// The ptrdiff_t will fit in an int, even a 32-bit one.
+		return static_cast<int>(distance(converterlist_.begin(), cit));
 	else
 		return -1;
 }
