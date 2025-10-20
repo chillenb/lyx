@@ -164,6 +164,8 @@ public:
 	void forOutliner(docstring &, size_t const maxlen, bool const) const override;
 
 	/// Update the contextual information of this inset
+	void update(DocIterator const & dit);
+	///
 	void updateBuffer(ParIterator const &, UpdateType, bool const deleted = false) override;
 
 	///

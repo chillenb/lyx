@@ -747,7 +747,9 @@ void InsetQuotes::doDispatch(Cursor & cur, FuncRequest & cmd)
 		}
 		cur.recordUndoInset(this);
 		parseString(cmd.getArg(1), true);
-		cur.forceBufferUpdate();
+		// The context values (set inInsetQuotes::updateBuffer) have
+		// no reason to have changed change after this lfun
+		//cur.forceBufferUpdate();
 		break;
 	}
 	default:
@@ -942,16 +944,22 @@ void InsetQuotes::forOutliner(docstring & os, size_t const, bool const) const
 }
 
 
-void InsetQuotes::updateBuffer(ParIterator const & it, UpdateType /* utype*/, bool const /*deleted*/)
+void InsetQuotes::update(DocIterator const & dit)
 {
 	BufferParams const & bp = buffer().masterBuffer()->params();
-	Font const & font = it.paragraph().getFontSettings(bp, it.pos());
-	pass_thru_ = it.paragraph().isPassThru();
+	Font const & font = dit.paragraph().getFontSettings(bp, dit.pos());
+	pass_thru_ = dit.paragraph().isPassThru();
 	context_lang_ = font.language()->code();
 	internal_fontenc_ = font.language()->internalFontEncoding();
 	global_style_ = bp.quotes_style;
 	fontspec_ = bp.useNonTeXFonts;
 	rtl_ = font.isRightToLeft();
+}
+
+
+void InsetQuotes::updateBuffer(ParIterator const & it, UpdateType /* utype*/, bool const /*deleted*/)
+{
+	update(it);
 }
 
 

@@ -5234,8 +5234,10 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 		}
 		QuoteLevel const quote_level = inner
 				? QuoteLevel::Secondary : QuoteLevel::Primary;
-		cur.insert(new InsetQuotes(cur.buffer(), c, quote_level, cmd.getArg(1), cmd.getArg(2)));
-		cur.buffer()->updateBuffer();
+		InsetQuotes * quote = new InsetQuotes(cur.buffer(), c, quote_level,
+		                                      cmd.getArg(1), cmd.getArg(2));
+		quote->update(cur);
+		cur.insert(quote);
 		cur.posForward();
 		break;
 	}
