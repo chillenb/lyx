@@ -74,7 +74,7 @@ void FontList::erase(pos_type pos)
 		// entry, we just make it smaller
 		// (see update below), otherwise we
 		// should delete it.
-		unsigned int const i = it - list_.begin();
+		unsigned int const i = static_cast<unsigned int>(it - list_.begin());
 		list_.erase(it);
 		if (i >= list_.size())
 			return;

@@ -117,9 +117,9 @@ int AuthorList::record(Author const & a)
 	Authors::const_iterator const end = authors_.end();
 	for (; it != end; ++it) {
 		if (valid && *it == a)
-			return it - beg;
+			return static_cast<int>(it - beg);
 		if (it->bufferId() == a.bufferId()) {
-			int const id = it - beg;
+			int const id = static_cast<int>(it - beg);
 			if (!it->valid()) {
 				// we need to handle the case of a valid author being registered
 				// after an invalid one. For instance, because "buffer-reload"
@@ -130,7 +130,7 @@ int AuthorList::record(Author const & a)
 		}
 	}
 	authors_.push_back(a);
-	return authors_.size() - 1;
+	return static_cast<int>(authors_.size()) - 1;
 }
 
 

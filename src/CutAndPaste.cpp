@@ -76,7 +76,7 @@ namespace lyx {
 
 namespace {
 
-typedef pair<pit_type, int> PitPosPair;
+typedef pair<pit_type, pos_type> PitPosPair;
 typedef pair<DocumentClassConstPtr, AuthorList > DocInfoPair;
 
 typedef limited_stack<pair<ParagraphList, DocInfoPair > > CutStack;
@@ -562,7 +562,7 @@ pasteSelectionHelper(DocIterator const & cur, ParagraphList const & parlist,
 PitPosPair eraseSelectionHelper(BufferParams const & params,
 	ParagraphList & pars,
 	pit_type startpit, pit_type endpit,
-	int startpos, int endpos)
+	pos_type startpos, pos_type endpos)
 {
 	// Start of selection is really invalid.
 	if (startpit == pit_type(pars.size()) ||
@@ -699,7 +699,7 @@ void putClipboard(ParagraphList const & paragraphs,
 
 void copySelectionHelper(Buffer const & buf, Text const & text,
 	pit_type startpit, pit_type endpit,
-	int start, int end, DocumentClassConstPtr const & dc, CutStack & cutstack)
+	pos_type start, pos_type end, DocumentClassConstPtr const & dc, CutStack & cutstack)
 {
 	ParagraphList const & pars = text.paragraphs();
 
@@ -971,7 +971,7 @@ void cutSelectionHelper(Cursor & cur, CutStack & cuts, bool realcut, bool putcli
 		pit_type begpit = cur.selBegin().pit();
 		pit_type endpit = cur.selEnd().pit();
 
-		int endpos = cur.selEnd().pos();
+		pos_type endpos = cur.selEnd().pos();
 
 		BufferParams const & bp = cur.buffer()->params();
 		if (realcut) {

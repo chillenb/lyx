@@ -3265,8 +3265,8 @@ void BufferView::setSelection(DocIterator const & from,
 		cursor().selection(true);
 	} else {
 		// only single paragraph
-		int const size = to.pos() - from.pos();
-		putSelectionAt(from, size, false);
+		pos_type const size = to.pos() - from.pos();
+		putSelectionAt(from, static_cast<int>(size), false);
 	}
 	processUpdateFlags(Update::Force | Update::FitCursor);
 }
