@@ -1260,6 +1260,8 @@ pos_type GuiInputMethod::getCaretPos(size_type preedit_length)
 GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(
 		const bool real_boundary, const bool virtual_boundary)
 {
+	// the virtual boundary case has the real cusor on the second row of
+	// the preedit inputs
 	const pos_type second_row_idx = d->cur_row_idx_ + 1 - virtual_boundary;
 
 	// accumulate the length of preedit elements within d->rows_[d->cur_row_idx_]
@@ -1285,7 +1287,7 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(
 	            second_row_idx + virtual_boundary : d->cur_row_idx_;
 
 	// the second row exists and begins with the preedit
-	if (second_row_idx < (pos_type)d->rows_size_ &&
+	if (second_row_idx + virtual_boundary < (pos_type)d->rows_size_ &&
 	        d->rows_[second_row_idx + virtual_boundary].begin()->isPreedit()) {
 
 		for (pos_type i = second_row_idx + virtual_boundary;
