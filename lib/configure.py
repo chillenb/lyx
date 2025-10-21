@@ -170,7 +170,7 @@ def checkUpgrade():
         logger.info('Checking for upgrade from previous version.')
         parent = os.path.dirname(cwd)
         appname = basename[:(-len(version_suffix))]
-        for version in ['-2.4', '-2.3', '-2.2', '-2.1', '-2.0', '-1.6' ]:
+        for version in ['-2.5', '-2.4', '-2.3', '-2.2', '-2.1', '-2.0', '-1.6' ]:
             logger.debug('Checking for upgrade from previous version ' + version)
             previous = os.path.join(parent, appname + version)
             logger.debug('previous = ' + previous)
@@ -858,7 +858,8 @@ def checkFormatEntries(dtl_tools):
 \Format lyx21x     21.lyx "LyX 2.1.x"             "" ""	""	"document"	""
 \Format lyx22x     22.lyx "LyX 2.2.x"             "" ""	""	"document"	""
 \Format lyx23x     23.lyx "LyX 2.3.x"             "" ""	""	"document"	""
-\Format lyx24x     24.lyx "LyX 2.4.x"             "" ""	""	"document,menu=export"	""
+\Format lyx24x     24.lyx "LyX 2.4.x"             "" ""	""	"document"	""
+\Format lyx25x     25.lyx "LyX 2.5.x"             "" ""	""	"document,menu=export"	""
 \Format clyx       cjklyx "CJK LyX 1.4.x (big5)"  "" ""	""	"document"	""
 \Format jlyx       cjklyx "CJK LyX 1.4.x (euc-jp)" "" ""	""	"document"	""
 \Format klyx       cjklyx "CJK LyX 1.4.x (euc-kr)" "" ""	""	"document"	""
@@ -1382,6 +1383,7 @@ def checkConverterEntries():
 \converter lyx        lyx22x     "$${python} $$s/lyx2lyx/lyx2lyx -V 2.2 -o $$o $$i"	""
 \converter lyx        lyx23x     "$${python} $$s/lyx2lyx/lyx2lyx -V 2.3 -o $$o $$i"	""
 \converter lyx        lyx24x     "$${python} $$s/lyx2lyx/lyx2lyx -V 2.4 -o $$o $$i"	""
+\converter lyx        lyx25x     "$${python} $$s/lyx2lyx/lyx2lyx -V 2.5 -o $$o $$i"	""
 \converter lyx        clyx       "$${python} $$s/lyx2lyx/lyx2lyx -V 1.4 -o $$o -c big5   $$i"	""
 \converter lyx        jlyx       "$${python} $$s/lyx2lyx/lyx2lyx -V 1.4 -o $$o -c euc_jp $$i"	""
 \converter lyx        klyx       "$${python} $$s/lyx2lyx/lyx2lyx -V 1.4 -o $$o -c euc_kr $$i"	""
