@@ -7,7 +7,7 @@
 #DescriptionEnd
 #Author: Uwe Stöhr <uwestoehr@web.de>
 
-Format 112
+Format 113
 
 InsetLayout "Flex:R-S number"
 	LyxType		custom

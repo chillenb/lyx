@@ -7,7 +7,7 @@
 #Authors: Jürgen Spitzmüller
 #         Uwe Stöhr <uwestoehr@lyx.org>
 
-Format 112
+Format 113
 
 InsetLayout Flex:Color_Box
   LyXType               custom

@@ -9,7 +9,7 @@
 # With non-LuaLaTeX:	everyhook
 # With LuaLaTeX:	luatexja, luatexja-adjust
 
-Format 112
+Format 113
 
 # Input general definitions
 Input book.layout

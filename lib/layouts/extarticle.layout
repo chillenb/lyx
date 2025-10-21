@@ -3,7 +3,7 @@
 #  \DeclareCategory{Articles}
 # Herbert Voss <voss@lyx.org>
 
-Format 112
+Format 113
 Input article.layout
 
 # change available fontsizes

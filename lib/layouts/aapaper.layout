@@ -15,7 +15,7 @@
 # and reconfigure LyX (after running texhash, of course).
 
 
-Format 112
+Format 113
 Columns                 2
 Sides                   2
 SecNumDepth             3

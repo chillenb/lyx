@@ -3,7 +3,7 @@
 #  \DeclareCategory{Obsolete}
 # Author : Koji Yokota <yok...@res.otaru-uc.ac.jp>
 
-Format 112
+Format 113
 Input article.layout
 
 TitleLatexType		Environment

@@ -1,6 +1,6 @@
 # Moved here by rikiheck. Original author cloudy.
 
-Format 112
+Format 113
 
 #This is just a hacked version of the AMS proof environment
 Style Proof

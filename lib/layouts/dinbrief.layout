@@ -16,7 +16,7 @@
 
 # TODO: DocBook doesn't support several letters in the same file.
 
-Format 112
+Format 113
 
 Input letter.layout
 

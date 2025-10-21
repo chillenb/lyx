@@ -7,7 +7,7 @@
 
 # Author: Jürgen Spitzmüller <spitz@lyx.org>
 
-Format 112
+Format 113
 
 InsetLayout Flex:SectionBox
 	LyXType            custom

@@ -2,7 +2,7 @@
 # Author : Martin vermeer <martin.vermeer@hut.fi>
 # Character Styles definition
 
-Format 112
+Format 113
 
 # Error fallback:
 InsetLayout Flex
