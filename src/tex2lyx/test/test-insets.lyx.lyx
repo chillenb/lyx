@@ -1,5 +1,5 @@
 #LyX file created by tex2lyx 2.6
-\lyxformat 646
+\lyxformat 647
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -7030,11 +7030,11 @@ Page breaks
 
 \begin_layout Standard
 They can also or be broken by a newpage 
-\begin_inset Newpage newpage
+\begin_inset Textbreak newpage
 \end_inset
 
 or by a page break 
-\begin_inset Newpage pagebreak
+\begin_inset Textbreak pagebreak
 \end_inset
 
 or by a defined page break 
