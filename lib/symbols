@@ -1213,7 +1213,7 @@ endif
 iffont cmm
 \def\hookrightarrow{\lhook\joinrel\rightarrow}                  mathrel &#x21AA;
 \def\hookleftarrow{\leftarrow\joinrel\rhook}                    mathrel &#x21A9;
-\def\bowtie{\mathrel\triangleright\joinrel\mathrel\triangleleft} mathrel&#x22C8;
+\def\bowtie{\mathrel\triangleright\joinrel\mathrel\triangleleft} mathrel &#x22C8;
 endif
 iffont msa
 \def\dashrightarrow{\mathrel{\lyxdabar\lyxdabar\lyxright}}      mathrel &#x290F;    amssymb
