@@ -5694,7 +5694,7 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 		cur.posForward();
 		break;
 
-	case LFUN_NEWPAGE_INSERT: {
+	case LFUN_TEXTBREAK_INSERT: {
 		// When we are in a heading, put the page break in a standard
 		// paragraph before the heading (if cur.pos() == 0) or after
 		// (if cur.pos() == cur.lastpos())
@@ -6932,9 +6932,9 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 		break;
 	}
 
-	case LFUN_NEWPAGE_INSERT:
+	case LFUN_TEXTBREAK_INSERT:
 		// not allowed in description items and in the midst of sections
-		code = NEWPAGE_CODE;
+		code = TEXTBREAK_CODE;
 		enable = !inDescriptionItem(cur)
 			&& (cur.text()->getTocLevel(cur.pit()) == Layout::NOT_IN_TOC
 			    || cur.pos() == 0 || cur.pos() == cur.lastpos());

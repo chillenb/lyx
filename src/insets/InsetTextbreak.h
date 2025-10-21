@@ -1,6 +1,6 @@
 // -*- C++ -*-
 /**
- * \file InsetNewpage.h
+ * \file InsetTextbreak.h
  * This file is part of LyX, the document processor.
  * Licence details can be found in the file COPYING.
  *
@@ -9,15 +9,15 @@
  * Full author contact details are available in file CREDITS.
  */
 
-#ifndef INSET_NEWPAGE_H
-#define INSET_NEWPAGE_H
+#ifndef INSET_TEXTBREAK_H
+#define INSET_TEXTBREAK_H
 
 #include "Inset.h"
 
 
 namespace lyx {
 
-class InsetNewpageParams
+class InsetTextbreakParams
 {
 public:
 	/// The different kinds of breaks we support
@@ -36,7 +36,7 @@ public:
 		CONTEXTUAL
 	};
 	///
-	InsetNewpageParams() : kind(NEWPAGE) {}
+	InsetTextbreakParams() : kind(NEWPAGE) {}
 	///
 	void write(std::ostream & os) const;
 	///
@@ -46,23 +46,23 @@ public:
 };
 
 
-class InsetNewpage : public Inset
+class InsetTextbreak : public Inset
 {
 public:
 	///
-	InsetNewpage();
+	InsetTextbreak();
 	///
-	explicit InsetNewpage(InsetNewpageParams const & par);
+	explicit InsetTextbreak(InsetTextbreakParams const & par);
 	///
-	static void string2params(std::string const &, InsetNewpageParams &);
+	static void string2params(std::string const &, InsetTextbreakParams &);
 	///
-	static std::string params2string(InsetNewpageParams const &);
+	static std::string params2string(InsetTextbreakParams const &);
 	/// Update the contextual information of this inset
 	void updateBuffer(ParIterator const &, UpdateType, bool const deleted = false) override;
 
 private:
 	///
-	InsetCode lyxCode() const override { return NEWPAGE_CODE; }
+	InsetCode lyxCode() const override { return TEXTBREAK_CODE; }
 	///
 	void metrics(MetricsInfo &, Dimension &) const override;
 	///
@@ -81,7 +81,7 @@ private:
 	///
 	void write(std::ostream & os) const override;
 	///
-	int rowFlags() const override { return (params_.kind == InsetNewpageParams::NOPAGEBREAK) ? Inline : Display; }
+	int rowFlags() const override { return (params_.kind == InsetTextbreakParams::NOPAGEBREAK) ? Inline : Display; }
 	///
 	docstring insetLabel() const;
 	///
@@ -89,14 +89,14 @@ private:
 	///
 	std::string contextMenuName() const override;
 	///
-	Inset * clone() const override { return new InsetNewpage(*this); }
+	Inset * clone() const override { return new InsetTextbreak(*this); }
 	///
 	void doDispatch(Cursor & cur, FuncRequest & cmd) override;
 	///
 	bool getStatus(Cursor & cur, FuncRequest const & cmd, FuncStatus &) const override;
 
 	///
-	InsetNewpageParams params_;
+	InsetTextbreakParams params_;
 	///
 	std::string contextual_cmd_;
 	///
@@ -105,4 +105,4 @@ private:
 
 } // namespace lyx
 
-#endif // INSET_NEWPAGE_H
+#endif // INSET_TEXTBREAK_H

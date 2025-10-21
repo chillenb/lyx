@@ -24,9 +24,9 @@ foreach(_base InsetExternal ExternalSupport Inset InsetArgument
 	InsetERT InsetFlex InsetFloat InsetFloatList InsetFoot InsetFootlike
 	InsetGraphics InsetHyperlink InsetInfo InsetIPA InsetIPAMacro InsetInclude InsetIndex InsetIndexMacro
 	InsetLabel InsetLayout InsetLine InsetListings InsetListingsParams InsetMarginal
-	InsetNewline InsetNewpage InsetNomencl InsetNote
+	InsetNewline InsetNomencl InsetNote
 	InsetPhantom InsetPreview InsetQuotes InsetRef InsetScript InsetSeparator InsetSpace InsetSpecialChar
-	InsetTOC InsetTabular InsetText InsetVSpace InsetWrap
+	InsetTOC InsetTabular InsetText InsetTextbreak InsetVSpace InsetWrap
 	RenderButton RenderGraphic RenderPreview)
   handle_source_option("CXX" ${TOP_SRC_DIR}/src/insets/${_base}.cpp -Wno-shadow)
 endforeach()

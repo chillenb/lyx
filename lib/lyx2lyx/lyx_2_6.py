@@ -633,6 +633,31 @@ def revert_contextual_breaks(document):
             if not handled:
                 del document.body[beglay - 1 : endlay + 1]
 
+
+def convert_textbreaks(document):
+    "Convert Inset Textbreak to Inset Newpage"
+
+    i = 0
+    while True:
+        i = find_token(document.body, "\\begin_inset Newpage", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\begin_inset Newpage", "\\begin_inset Textbreak")
+        i += 1
+        continue
+
+def revert_textbreaks(document):
+    "Revert Inset Textbreak to Inset Newpage"
+
+    i = 0
+    while True:
+        i = find_token(document.body, "\\begin_inset Textbreak", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\begin_inset Textbreak", "\\begin_inset Newpage")
+        i += 1
+        continue
+
 ##
 # Conversion hub
 #
@@ -641,11 +666,13 @@ supported_versions = ["2.6.0", "2.6"]
 convert = [
     [644, [convert_refname]],
     [645, []],
-    [646, []]
+    [646, []],
+    [647, [convert_textbreaks]]
 ]
 
 
 revert = [
+    [646, [revert_textbreaks]],
     [645, [revert_contextual_breaks]],
     [644, [revert_mathref]],
     [643, [revert_ling_xrefs]]

@@ -118,7 +118,7 @@ static void build_translator()
 	insetnames[LISTINGS_CODE] = InsetName("listings");
 	insetnames[INFO_CODE] = InsetName("info", _("Info"));
 	insetnames[COLLAPSIBLE_CODE] = InsetName("collapsible");
-	insetnames[NEWPAGE_CODE] = InsetName("newpage");
+	insetnames[TEXTBREAK_CODE] = InsetName("textbreak");
 	insetnames[SCRIPT_CODE] = InsetName("script");
 	insetnames[CELL_CODE] = InsetName("tablecell");
 	insetnames[MATH_AMSARRAY_CODE] = InsetName("mathamsarray");

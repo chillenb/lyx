@@ -8,6 +8,10 @@ changes happened in particular if possible. A good example would be
 -----------------------
 
 2025-10-21 Jürgen Spitzmüller <spitz@lyx.org>
+	* Format incremented to 647:
+	  Rename inset newpage to inset textbreak.
+
+2025-10-21 Jürgen Spitzmüller <spitz@lyx.org>
 	* Format incremented to 646: Implement contextual text breaks
 	  in Layout and InsetLayout:
 	  BreakCommand <command> <GUI string>

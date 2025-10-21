@@ -469,11 +469,11 @@ Menuset
 		Item "Ragged Line Break|R" "newline-insert newline"
 		Item "Justified Line Break|J" "newline-insert linebreak"
 		Separator
-		Item "New Page|N" "newpage-insert newpage"
-		Item "Page Break|a" "newpage-insert pagebreak"
-		Item "Prevent Page Break|g" "newpage-insert nopagebreak"
-		Item "Clear Page|C" "newpage-insert clearpage"
-		Item "Clear Double Page|D" "newpage-insert cleardoublepage"
+		Item "New Page|N" "textbreak-insert newpage"
+		Item "Page Break|a" "textbreak-insert pagebreak"
+		Item "Prevent Page Break|g" "textbreak-insert nopagebreak"
+		Item "Clear Page|C" "textbreak-insert clearpage"
+		Item "Clear Double Page|D" "textbreak-insert cleardoublepage"
 		TextBreaks
 	End
 

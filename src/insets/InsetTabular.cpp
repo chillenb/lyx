@@ -6849,7 +6849,7 @@ bool InsetTabular::getStatus(Cursor & cur, FuncRequest const & cmd,
 	case LFUN_NEWLINE_INSERT:
 		return cell(cur.idx())->getStatus(cur, cmd, status);
 
-	case LFUN_NEWPAGE_INSERT:
+	case LFUN_TEXTBREAK_INSERT:
 		status.setEnabled(false);
 		return true;
 

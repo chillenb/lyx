@@ -1815,12 +1815,12 @@ bool InsetMathNest::getStatus(Cursor & cur, FuncRequest const & cmd,
 	case LFUN_IPA_INSERT:
 	case LFUN_LISTING_INSERT:
 	case LFUN_MARGINALNOTE_INSERT:
-	case LFUN_NEWPAGE_INSERT:
 	case LFUN_NOMENCL_INSERT:
 	case LFUN_NOMENCL_PRINT:
 	case LFUN_NOTE_INSERT:
 	case LFUN_PREVIEW_INSERT:
 	case LFUN_TABULAR_INSERT:
+	case LFUN_TEXTBREAK_INSERT:
 	case LFUN_WRAP_INSERT:
 		flag.setEnabled(false);
 		break;

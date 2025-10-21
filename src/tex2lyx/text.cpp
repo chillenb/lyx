@@ -6159,7 +6159,7 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 		    t.cs() == "cleardoublepage" ||
 		    t.cs() == "nopagebreak") {
 			context.check_layout(os);
-			begin_inset(os, "Newpage ");
+			begin_inset(os, "Textbreak ");
 			os << t.cs();
 			end_inset(os);
 			skip_spaces_braces(p);

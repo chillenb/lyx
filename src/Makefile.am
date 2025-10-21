@@ -606,8 +606,6 @@ liblyxinsets_a_SOURCES = \
 	insets/InsetMarginal.h \
 	insets/InsetNewline.cpp \
 	insets/InsetNewline.h \
-	insets/InsetNewpage.cpp \
-	insets/InsetNewpage.h \
 	insets/InsetNomencl.cpp \
 	insets/InsetNomencl.h \
 	insets/InsetNote.cpp \
@@ -632,6 +630,8 @@ liblyxinsets_a_SOURCES = \
 	insets/InsetTabular.h \
 	insets/InsetText.cpp \
 	insets/InsetText.h \
+	insets/InsetTextbreak.cpp \
+	insets/InsetTextbreak.h \
 	insets/InsetTOC.cpp \
 	insets/InsetTOC.h \
 	insets/InsetVSpace.cpp \

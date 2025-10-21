@@ -2271,9 +2271,9 @@ void LyXAction::init()
  * \li Action: Modify some properties of an inset.
  * \li Notion: Used for argument, bibitem, bibtex, box, branch, caption, citation,
                         command, ert, external, float, graphics, include, index,
-                        info, label, line, listings, newline, newpage, nomencl,
+                        info, label, line, listings, newline, nomencl,
                         note, phantom, quotes, ref, script, separator, space,
-                        tabular, vspace and wrap insets.
+                        tabular, textbreak, vspace and wrap insets.
  * \li Syntax: inset-modify <INSET> <ARGS> \n
                inset-modify changetype <TYPE>
  * \li Sample: Change a Note inset into a Comment inset: \n
@@ -3211,14 +3211,14 @@ void LyXAction::init()
 		{ LFUN_NEWLINE_INSERT, "newline-insert", Noop, Edit },
 
 /*!
- * \var lyx::FuncCode lyx::LFUN_NEWPAGE_INSERT
+ * \var lyx::FuncCode lyx::LFUN_TEXTBREAK_INSERT
  * \li Action: Inserts a new page.
- * \li Syntax: newpage-insert <ARG>
+ * \li Syntax: textbreak-insert <ARG>
  * \li Params: <ARG>: <newpage|pagebreak|clearpage|cleardoublepage|contextual> default: newpage
  * \li Origin: uwestoehr, 24 Nov 2007
  * \endvar
  */
-		{ LFUN_NEWPAGE_INSERT, "newpage-insert", Noop, Edit },
+		{ LFUN_TEXTBREAK_INSERT, "textbreak-insert", Noop, Edit },
 
 /*!
  * \var lyx::FuncCode lyx::LFUN_NOMENCL_INSERT

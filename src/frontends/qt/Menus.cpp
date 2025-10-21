@@ -1551,10 +1551,10 @@ void MenuDefinition::expandTextBreaks(BufferView const * bv, bool const modify)
 		gui = to_utf8(_("Contextual Break"));
 	if (modify)
 		addWithStatusCheck(MenuItem(MenuItem::Command, qt_(gui),
-				    FuncRequest(LFUN_INSET_MODIFY, "newpage contextual")));
+				    FuncRequest(LFUN_INSET_MODIFY, "textbreak contextual")));
 	else
 		add(MenuItem(MenuItem::Command, qt_(gui),
-			    FuncRequest(LFUN_NEWPAGE_INSERT, "contextual")));
+			    FuncRequest(LFUN_TEXTBREAK_INSERT, "contextual")));
 	
 }
 

@@ -231,7 +231,7 @@ bool InsetScript::insetAllowed(InsetCode code) const
 	case MATH_MACRO_CODE:
 	case MATH_MACROTEMPLATE_CODE:
 	case NEWLINE_CODE:
-	case NEWPAGE_CODE:
+	case TEXTBREAK_CODE:
 	case NOMENCL_PRINT_CODE:
 	case QUOTE_CODE:
 	case PREVIEW_CODE:
@@ -260,12 +260,12 @@ bool InsetScript::getStatus(Cursor & cur, FuncRequest const & cmd,
 	case LFUN_LISTING_INSERT:
 	case LFUN_MARGINALNOTE_INSERT:
 	case LFUN_NEWLINE_INSERT:
-	case LFUN_NEWPAGE_INSERT:
 	case LFUN_NOMENCL_PRINT:
 	case LFUN_PREVIEW_INSERT:
 	case LFUN_QUOTE_INSERT:
 	case LFUN_TABULAR_INSERT:
 	case LFUN_TABULAR_STYLE_INSERT:
+	case LFUN_TEXTBREAK_INSERT:
 	case LFUN_WRAP_INSERT:
 		flag.setEnabled(false);
 		return true;

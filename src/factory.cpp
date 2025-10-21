@@ -41,7 +41,6 @@
 #include "insets/InsetLine.h"
 #include "insets/InsetMarginal.h"
 #include "insets/InsetNewline.h"
-#include "insets/InsetNewpage.h"
 #include "insets/InsetNomencl.h"
 #include "insets/InsetNote.h"
 #include "insets/InsetArgument.h"
@@ -53,6 +52,7 @@
 #include "insets/InsetSeparator.h"
 #include "insets/InsetSpace.h"
 #include "insets/InsetTabular.h"
+#include "insets/InsetTextbreak.h"
 #include "insets/InsetTOC.h"
 #include "insets/InsetVSpace.h"
 #include "insets/InsetWrap.h"
@@ -84,22 +84,22 @@ Inset * createInsetHelper(Buffer * buf, FuncRequest const & cmd)
 
 		switch (cmd.action()) {
 
-		case LFUN_NEWPAGE_INSERT: {
+		case LFUN_TEXTBREAK_INSERT: {
 			string const name = cmd.getArg(0);
-			InsetNewpageParams inp;
+			InsetTextbreakParams inp;
 			if (name.empty() || name == "newpage")
-				inp.kind = InsetNewpageParams::NEWPAGE;
+				inp.kind = InsetTextbreakParams::NEWPAGE;
 			else if (name == "pagebreak")
-				inp.kind = InsetNewpageParams::PAGEBREAK;
+				inp.kind = InsetTextbreakParams::PAGEBREAK;
 			else if (name == "clearpage")
-				inp.kind = InsetNewpageParams::CLEARPAGE;
+				inp.kind = InsetTextbreakParams::CLEARPAGE;
 			else if (name == "cleardoublepage")
-				inp.kind = InsetNewpageParams::CLEARDOUBLEPAGE;
+				inp.kind = InsetTextbreakParams::CLEARDOUBLEPAGE;
 			else if (name == "nopagebreak")
-				inp.kind = InsetNewpageParams::NOPAGEBREAK;
+				inp.kind = InsetTextbreakParams::NOPAGEBREAK;
 			else if (name == "contextual")
-				inp.kind = InsetNewpageParams::CONTEXTUAL;
-			return new InsetNewpage(inp);
+				inp.kind = InsetTextbreakParams::CONTEXTUAL;
+			return new InsetTextbreak(inp);
 		}
 
 		case LFUN_SEPARATOR_INSERT: {
@@ -650,8 +650,8 @@ Inset * readInset(Lexer & lex, Buffer * buf)
 			inset.reset(new InsetFoot(buf));
 		} else if (tmptok == "Marginal") {
 			inset.reset(new InsetMarginal(buf));
-		} else if (tmptok == "Newpage") {
-			inset.reset(new InsetNewpage);
+		} else if (tmptok == "Textbreak") {
+			inset.reset(new InsetTextbreak);
 		} else if (tmptok == "Newline") {
 			inset.reset(new InsetNewline);
 		} else if (tmptok == "Separator") {

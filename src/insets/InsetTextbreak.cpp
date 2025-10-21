@@ -1,5 +1,5 @@
 /**
- * \file InsetNewpage.cpp
+ * \file InsetTextbreak.cpp
  * This file is part of LyX, the document processor.
  * Licence details can be found in the file COPYING.
  *
@@ -11,7 +11,7 @@
 
 #include <config.h>
 
-#include "InsetNewpage.h"
+#include "InsetTextbreak.h"
 
 #include "Buffer.h"
 #include "Cursor.h"
@@ -40,80 +40,80 @@ namespace lyx {
 
 using support::Lexer;
 
-InsetNewpage::InsetNewpage() : Inset(nullptr)
+InsetTextbreak::InsetTextbreak() : Inset(nullptr)
 {}
 
 
-InsetNewpage::InsetNewpage(InsetNewpageParams const & params)
+InsetTextbreak::InsetTextbreak(InsetTextbreakParams const & params)
 	: Inset(nullptr), params_(params)
 {}
 
 
-void InsetNewpageParams::write(ostream & os) const
+void InsetTextbreakParams::write(ostream & os) const
 {
 	switch (kind) {
-	case InsetNewpageParams::NEWPAGE:
+	case InsetTextbreakParams::NEWPAGE:
 		os << "newpage";
 		break;
-	case InsetNewpageParams::PAGEBREAK:
+	case InsetTextbreakParams::PAGEBREAK:
 		os <<  "pagebreak";
 		break;
-	case InsetNewpageParams::CLEARPAGE:
+	case InsetTextbreakParams::CLEARPAGE:
 		os <<  "clearpage";
 		break;
-	case InsetNewpageParams::CLEARDOUBLEPAGE:
+	case InsetTextbreakParams::CLEARDOUBLEPAGE:
 		os <<  "cleardoublepage";
 		break;
-	case InsetNewpageParams::NOPAGEBREAK:
+	case InsetTextbreakParams::NOPAGEBREAK:
 		os <<  "nopagebreak";
 		break;
-	case InsetNewpageParams::CONTEXTUAL:
+	case InsetTextbreakParams::CONTEXTUAL:
 		os <<  "contextual";
 		break;
 	}
 }
 
 
-void InsetNewpageParams::read(Lexer & lex)
+void InsetTextbreakParams::read(Lexer & lex)
 {
-	lex.setContext("InsetNewpageParams::read");
+	lex.setContext("InsetTextbreakParams::read");
 	string token;
 	lex >> token;
 
 	if (token == "newpage")
-		kind = InsetNewpageParams::NEWPAGE;
+		kind = InsetTextbreakParams::NEWPAGE;
 	else if (token == "pagebreak")
-		kind = InsetNewpageParams::PAGEBREAK;
+		kind = InsetTextbreakParams::PAGEBREAK;
 	else if (token == "clearpage")
-		kind = InsetNewpageParams::CLEARPAGE;
+		kind = InsetTextbreakParams::CLEARPAGE;
 	else if (token == "cleardoublepage")
-		kind = InsetNewpageParams::CLEARDOUBLEPAGE;
+		kind = InsetTextbreakParams::CLEARDOUBLEPAGE;
 	else if (token == "nopagebreak")
-		kind = InsetNewpageParams::NOPAGEBREAK;
+		kind = InsetTextbreakParams::NOPAGEBREAK;
 	else if (token == "contextual")
-		kind = InsetNewpageParams::CONTEXTUAL;
+		kind = InsetTextbreakParams::CONTEXTUAL;
 	else
 		lex.printError("Unknown kind");
 }
 
 
-void InsetNewpage::write(ostream & os) const
+void InsetTextbreak::write(ostream & os) const
 {
-	os << "Newpage ";
+	os << "Textbreak ";
 	params_.write(os);
 }
 
 
-void InsetNewpage::read(Lexer & lex)
+void InsetTextbreak::read(Lexer & lex)
 {
 	params_.read(lex);
 	lex >> "\\end_inset";
 }
 
 
-void InsetNewpage::metrics(MetricsInfo & mi, Dimension & dim) const
+void InsetTextbreak::metrics(MetricsInfo & mi, Dimension & dim) const
 {
-	if (params_.kind == InsetNewpageParams::NOPAGEBREAK) {
+	if (params_.kind == InsetTextbreakParams::NOPAGEBREAK) {
 		frontend::FontMetrics const & fm = theFontMetrics(mi.base.font);
 		dim.asc = fm.maxAscent();
 	        dim.des = fm.maxDescent();
@@ -127,9 +127,9 @@ void InsetNewpage::metrics(MetricsInfo & mi, Dimension & dim) const
 }
 
 
-void InsetNewpage::draw(PainterInfo & pi, int x, int y) const
+void InsetTextbreak::draw(PainterInfo & pi, int x, int y) const
 {
-	if (params_.kind == InsetNewpageParams::NOPAGEBREAK) {
+	if (params_.kind == InsetTextbreakParams::NOPAGEBREAK) {
 
 	        FontInfo font;
 	        font.setColor(ColorName());
@@ -203,12 +203,12 @@ void InsetNewpage::draw(PainterInfo & pi, int x, int y) const
 }
 
 
-void InsetNewpage::doDispatch(Cursor & cur, FuncRequest & cmd)
+void InsetTextbreak::doDispatch(Cursor & cur, FuncRequest & cmd)
 {
 	switch (cmd.action()) {
 
 	case LFUN_INSET_MODIFY: {
-		InsetNewpageParams params;
+		InsetTextbreakParams params;
 		cur.recordUndo();
 		string2params(to_utf8(cmd.argument()), params);
 		params_.kind = params.kind;
@@ -222,18 +222,18 @@ void InsetNewpage::doDispatch(Cursor & cur, FuncRequest & cmd)
 }
 
 
-bool InsetNewpage::getStatus(Cursor & cur, FuncRequest const & cmd,
+bool InsetTextbreak::getStatus(Cursor & cur, FuncRequest const & cmd,
 	FuncStatus & status) const
 {
 	switch (cmd.action()) {
 	// we handle these
 	case LFUN_INSET_MODIFY: {
 		bool enabled = true;
-		if (cmd.getArg(0) == "newpage") {
-			InsetNewpageParams params;
+		if (cmd.getArg(0) == "textbreak") {
+			InsetTextbreakParams params;
 			string2params(to_utf8(cmd.argument()), params);
 			status.setOnOff(params_.kind == params.kind);
-			enabled = params.kind != InsetNewpageParams::CONTEXTUAL || !contextual_cmd_.empty();
+			enabled = params.kind != InsetTextbreakParams::CONTEXTUAL || !contextual_cmd_.empty();
 		}
 		status.setEnabled(enabled);
 		return true;
@@ -244,20 +244,20 @@ bool InsetNewpage::getStatus(Cursor & cur, FuncRequest const & cmd,
 }
 
 
-docstring InsetNewpage::insetLabel() const
+docstring InsetTextbreak::insetLabel() const
 {
 	switch (params_.kind) {
-		case InsetNewpageParams::NEWPAGE:
+		case InsetTextbreakParams::NEWPAGE:
 			return _("New Page");
-		case InsetNewpageParams::PAGEBREAK:
+		case InsetTextbreakParams::PAGEBREAK:
 			return _("Page Break");
-		case InsetNewpageParams::CLEARPAGE:
+		case InsetTextbreakParams::CLEARPAGE:
 			return _("Clear Page");
-		case InsetNewpageParams::CLEARDOUBLEPAGE:
+		case InsetTextbreakParams::CLEARDOUBLEPAGE:
 			return _("Clear Double Page");
-		case InsetNewpageParams::NOPAGEBREAK:
+		case InsetTextbreakParams::NOPAGEBREAK:
 			return _("No Page Break");
-		case InsetNewpageParams::CONTEXTUAL:
+		case InsetTextbreakParams::CONTEXTUAL:
 			return contextual_gui_.empty() ? _("Non-sensical Break") : _(contextual_gui_);
 		default:
 			return _("New Page");
@@ -265,16 +265,16 @@ docstring InsetNewpage::insetLabel() const
 }
 
 
-ColorCode InsetNewpage::ColorName() const
+ColorCode InsetTextbreak::ColorName() const
 {
 	switch (params_.kind) {
-		case InsetNewpageParams::PAGEBREAK:
-		case InsetNewpageParams::NOPAGEBREAK:
+		case InsetTextbreakParams::PAGEBREAK:
+		case InsetTextbreakParams::NOPAGEBREAK:
 			return Color_pagebreak;
-		case InsetNewpageParams::NEWPAGE:
-		case InsetNewpageParams::CLEARPAGE:
-		case InsetNewpageParams::CLEARDOUBLEPAGE:
-		case InsetNewpageParams::CONTEXTUAL:
+		case InsetTextbreakParams::NEWPAGE:
+		case InsetTextbreakParams::CLEARPAGE:
+		case InsetTextbreakParams::CLEARDOUBLEPAGE:
+		case InsetTextbreakParams::CONTEXTUAL:
 			return Color_newpage;
 	}
 	// not really useful, but to avoids gcc complaints
@@ -282,31 +282,31 @@ ColorCode InsetNewpage::ColorName() const
 }
 
 
-void InsetNewpage::latex(otexstream & os, OutputParams const & runparams) const
+void InsetTextbreak::latex(otexstream & os, OutputParams const & runparams) const
 {
 	if (runparams.inDeletedInset) {
 		os << "\\mbox{}\\\\\\makebox[\\columnwidth]{\\dotfill\\ "
 		   << insetLabel() << "\\ \\dotfill}";
 	} else {
 		switch (params_.kind) {
-		case InsetNewpageParams::NEWPAGE:
+		case InsetTextbreakParams::NEWPAGE:
 			os << "\\newpage" << termcmd;
 			break;
-		case InsetNewpageParams::PAGEBREAK:
+		case InsetTextbreakParams::PAGEBREAK:
 			if (runparams.moving_arg)
 				os << "\\protect";
 			os << "\\pagebreak" << termcmd;
 			break;
-		case InsetNewpageParams::CLEARPAGE:
+		case InsetTextbreakParams::CLEARPAGE:
 			os << "\\clearpage" << termcmd;
 			break;
-		case InsetNewpageParams::CLEARDOUBLEPAGE:
+		case InsetTextbreakParams::CLEARDOUBLEPAGE:
 			os << "\\cleardoublepage" << termcmd;
 			break;
-		case InsetNewpageParams::NOPAGEBREAK:
+		case InsetTextbreakParams::NOPAGEBREAK:
 			os << "\\nopagebreak" << termcmd;
 			break;
-		case InsetNewpageParams::CONTEXTUAL:
+		case InsetTextbreakParams::CONTEXTUAL:
 			if (!contextual_cmd_.empty())
 				os << "\\" << contextual_cmd_ << termcmd;
 			break;
@@ -318,46 +318,46 @@ void InsetNewpage::latex(otexstream & os, OutputParams const & runparams) const
 }
 
 
-int InsetNewpage::plaintext(odocstringstream & os,
+int InsetTextbreak::plaintext(odocstringstream & os,
         OutputParams const &, size_t) const
 {
-	if (params_.kind ==  InsetNewpageParams::NOPAGEBREAK)
+	if (params_.kind ==  InsetTextbreakParams::NOPAGEBREAK)
 		return 0;
 	os << '\n';
 	return PLAINTEXT_NEWLINE;
 }
 
 
-void InsetNewpage::docbook(XMLStream & os, OutputParams const &) const
+void InsetTextbreak::docbook(XMLStream & os, OutputParams const &) const
 {
-	if (params_.kind !=  InsetNewpageParams::NOPAGEBREAK)
+	if (params_.kind !=  InsetTextbreakParams::NOPAGEBREAK)
 		os << xml::CR();
 }
 
 
-docstring InsetNewpage::xhtml(XMLStream & xs, OutputParams const &) const
+docstring InsetTextbreak::xhtml(XMLStream & xs, OutputParams const &) const
 {
-	if (params_.kind !=  InsetNewpageParams::NOPAGEBREAK)
+	if (params_.kind !=  InsetTextbreakParams::NOPAGEBREAK)
 		xs << xml::CompTag("br");
 	return docstring();
 }
 
 
-void InsetNewpage::updateBuffer(ParIterator const & it, UpdateType /* utype*/, bool const /*deleted*/)
+void InsetTextbreak::updateBuffer(ParIterator const & it, UpdateType /* utype*/, bool const /*deleted*/)
 {
 	buffer().text().getContextualBreak(it.plist(), it.pit(), contextual_cmd_, contextual_gui_);
 }
 
 
-string InsetNewpage::contextMenuName() const
+string InsetTextbreak::contextMenuName() const
 {
-	return "context-newpage";
+	return "context-textbreak";
 }
 
 
-void InsetNewpage::string2params(string const & in, InsetNewpageParams & params)
+void InsetTextbreak::string2params(string const & in, InsetTextbreakParams & params)
 {
-	params = InsetNewpageParams();
+	params = InsetTextbreakParams();
 	if (in.empty())
 		return;
 
@@ -367,8 +367,8 @@ void InsetNewpage::string2params(string const & in, InsetNewpageParams & params)
 
 	string name;
 	lex >> name;
-	if (!lex || name != "newpage") {
-		LYXERR0("Expected arg 2 to be \"wrap\" in " << in);
+	if (!lex || name != "textbreak") {
+		LYXERR0("Expected arg 2 to be \"textbreak\" in " << in);
 		return;
 	}
 
@@ -376,10 +376,10 @@ void InsetNewpage::string2params(string const & in, InsetNewpageParams & params)
 }
 
 
-string InsetNewpage::params2string(InsetNewpageParams const & params)
+string InsetTextbreak::params2string(InsetTextbreakParams const & params)
 {
 	ostringstream data;
-	data << "newpage" << ' ';
+	data << "textbreak" << ' ';
 	params.write(data);
 	return data.str();
 }
