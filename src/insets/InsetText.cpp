@@ -568,7 +568,8 @@ void InsetText::latex(otexstream & os, OutputParams const & runparams) const
 		rp.pass_thru_chars += il.passThruChars();
 	if (!il.noPassThruChars().empty())
 		rp.no_pass_thru_chars += il.noPassThruChars();
-	if (il.noCProtect())
+	// cprotect generally does not work in tables
+	if (il.noCProtect() || lyxCode() == CELL_CODE)
 		rp.no_cprotect = true;
 	if (!il.newlineCmd().empty())
 		rp.newlinecmd = il.newlineCmd();
