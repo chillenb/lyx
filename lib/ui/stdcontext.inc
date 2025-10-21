@@ -350,6 +350,7 @@ Menuset
 		Item "No Page Break|g" "inset-modify newpage nopagebreak"
 		Item "Clear Page|C" "inset-modify newpage clearpage"
 		Item "Clear Double Page|D" "inset-modify newpage cleardoublepage"
+		TextBreaksModify
 	End
 
 #

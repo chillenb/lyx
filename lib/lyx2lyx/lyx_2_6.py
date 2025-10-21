@@ -28,14 +28,14 @@ import re
 #    length_in_bp,
 #    lyx2latex,
 #    lyx2verbatim,
-#    put_cmd_in_ert,
 #    revert_flex_inset,
 #    revert_flex_inset,
 #    revert_font_attrs,
 #    revert_language
 #    str2bool
 from lyx2lyx_tools import (
-    add_to_preamble
+    add_to_preamble,
+    put_cmd_in_ert
 )
 
 # Uncomment only what you need to import, please (parser_tools):
@@ -45,13 +45,9 @@ from lyx2lyx_tools import (
 #    del_value,
 #    find_complete_lines, 
 #    find_end_of,
-#    find_end_of_layout,
 #    find_substring,
-#    find_token_backwards,
 #    find_token_exact,
 #    find_tokens,
-#    get_containing_inset,
-#    get_containing_layout,
 #    get_bool_value,
 #    get_option_value,
 #    set_bool_value,
@@ -59,8 +55,13 @@ from lyx2lyx_tools import (
 from parser_tools import (
     del_token,
     find_end_of_inset,
+    find_end_of_layout,
+    find_end_of_sequence,
     find_re,
     find_token,
+    find_token_backwards,
+    get_containing_inset,
+    get_containing_layout,
     get_quoted_value,
     get_value
 )
@@ -571,6 +572,67 @@ def revert_mathref(document):
             ["\\usepackage{refstyle}"]
         )
 
+
+def revert_contextual_breaks(document):
+    "Revert contextual breaks in multicol and frame to LaTeX"
+
+    i = 0
+    while True:
+        i = find_token(document.body, "\\begin_inset Newpage contextual", i)
+        if i == -1:
+            break
+        j = find_end_of_inset(document.body, i)
+        if j == -1:
+            document.warning("Can't find end of Newpage inset at line %d!!" % (i))
+            i += 1
+            continue
+        # get the containing layout
+        lay = get_containing_layout(document.body, i)
+        if lay == False:
+            document.warning("No containing layout found!")
+            i += 1
+            continue
+        beglay = lay[1]
+        endlay = find_end_of_layout(document.body, beglay)
+        if endlay == False:
+            document.warning("Cannot find endlayout!")
+            i += 1
+            continue    
+        # check whether this is Frame
+        if lay[0] == "Frame":
+            document.body[i : j + 1] = put_cmd_in_ert("\\framebreak{}")
+            i += 1
+            continue
+        # next try inset
+        inInset = get_containing_inset(document.body, beglay)
+        if inInset and inInset[0] == "Flex Multiple Columns":
+            endInset = find_end_of_inset(document.body, inInset[1])
+            if endInset == -1:
+                 document.warning("Can't find end of multicol inset at line %d!!" % (inInset))
+                 i += 1
+                 continue
+            document.body[i : j + 1] = put_cmd_in_ert("\\columnbreak{}")
+            i += 1
+            continue
+        else:
+            # try layout
+            handled = False
+            k = i - 1
+            while True:
+                k = find_token_backwards(document.body, "\\begin_layout Frame", k)
+                if k == -1:
+                    break
+                l = find_end_of_sequence(document.body, k)
+                if l > i:
+                    document.body[i : j + 1] = put_cmd_in_ert("\\framebreak{}")
+                    i += 1
+                    handled = True
+                    break
+                k -= 1
+                continue
+            if not handled:
+                del document.body[beglay - 1 : endlay + 1]
+
 ##
 # Conversion hub
 #
@@ -578,11 +640,13 @@ def revert_mathref(document):
 supported_versions = ["2.6.0", "2.6"]
 convert = [
     [644, [convert_refname]],
-    [645, []]
+    [645, []],
+    [646, []]
 ]
 
 
 revert = [
+    [645, [revert_contextual_breaks]],
     [644, [revert_mathref]],
     [643, [revert_ling_xrefs]]
 ]

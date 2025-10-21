@@ -77,6 +77,7 @@ bool InsetLayout::read(Lexer & lex, TextClass const & tclass,
 		IL_ARGUMENT,
 		IL_BABELPREAMBLE,
 		IL_BGCOLOR,
+		IL_BREAKCOMMAND,
 		IL_CONTENTASLABEL,
 		IL_COPYSTYLE,
 		IL_COUNTER,
@@ -171,6 +172,7 @@ bool InsetLayout::read(Lexer & lex, TextClass const & tclass,
 		{ "argument", IL_ARGUMENT },
 		{ "babelpreamble", IL_BABELPREAMBLE },
 		{ "bgcolor", IL_BGCOLOR },
+		{ "breakcommand", IL_BREAKCOMMAND },
 		{ "contentaslabel", IL_CONTENTASLABEL },
 		{ "copystyle", IL_COPYSTYLE },
 		{ "counter", IL_COUNTER},
@@ -706,6 +708,14 @@ bool InsetLayout::read(Lexer & lex, TextClass const & tclass,
 		case IL_STEPPARENTCOUNTER:
 			lex >> stepparentcounter_;
 			break;
+		case IL_BREAKCOMMAND: {
+			if (lex.next()) {
+				string const cmd = lex.getString();
+				string const gui = (lex.next()) ? lex.getString() : string();
+				layout_break_ = make_pair(cmd, gui);
+			}
+			break;
+		}
 		case IL_END:
 			getout = true;
 			break;

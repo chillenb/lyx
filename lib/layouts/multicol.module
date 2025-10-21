@@ -38,6 +38,7 @@ InsetLayout Flex:Multiple_Columns
 	DocBookTag      IGNORE
   EndArgument
   ResetsFont        true
+  BreakCommand      columnbreak "Column Break"
 
   # The current DocBook implementation is quite lacking, but it would require
   # a lot more C++ code to have perfect output. The major problem: not all

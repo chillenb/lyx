@@ -9775,6 +9775,8 @@ status collapsed
 
 \change_inserted -712698321 1759755035
 CrossrefNeedDef
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -9787,6 +9789,8 @@ status collapsed
 
 \change_inserted -712698321 1759755076
 cleveref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -9799,6 +9803,8 @@ status collapsed
 
 \change_inserted -712698321 1759755063
 prettyref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -9811,6 +9817,8 @@ status collapsed
 
 \change_inserted -712698321 1759755080
 refstyle
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -9823,6 +9831,8 @@ status collapsed
 
 \change_inserted -712698321 1759755092
 zref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -12814,6 +12824,73 @@ Note that a `float' here is a real number,
  If the next paragraph has another style,
  the separations are not simply added,
  but the maximum is taken.
+\change_inserted -712698321 1761019622
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761019622
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019622
+BreakCommand
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019622
+<command>
+\end_layout
+
+\end_inset
+
+] [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019622
+<GUI string>
+\end_layout
+
+\end_inset
+
+] Defines a text break specific for this layout.
+ The command is given without preceding backslash (e.g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019634
+BreakCommand framebreak 
+\begin_inset Quotes eld
+\end_inset
+
+Frame Break
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -18030,6 +18107,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 CrossrefNeedDef
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -18042,6 +18121,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 cleveref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -18054,6 +18135,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 prettyref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -18066,6 +18149,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 refstyle
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -18078,6 +18163,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 zref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -18096,6 +18183,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 revert_ling_xrefs
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -18108,6 +18197,8 @@ status collapsed
 
 \change_inserted -712698321 1759755385
 lyx_2_6.py
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20004,6 +20095,73 @@ nolink "false"
 \end_inset
 
  for a list of the available color names.
+\change_inserted -712698321 1761019429
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761019594
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019436
+BreakCommand
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019461
+<command>
+\end_layout
+
+\end_inset
+
+] [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019481
+<GUI string>
+\end_layout
+
+\end_inset
+
+] Defines a text break specific for this layout.
+ The command is given without preceding backslash (e.g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761019565
+BreakCommand columnbreak 
+\begin_inset Quotes eld
+\end_inset
+
+Column Break
+\begin_inset Quotes erd
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description
@@ -20136,6 +20294,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 CrossrefNeedDef
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20148,6 +20308,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 cleveref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20160,6 +20322,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 prettyref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20172,6 +20336,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 refstyle
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20184,6 +20350,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 zref
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20202,6 +20370,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 revert_ling_xrefs
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20214,6 +20384,8 @@ status collapsed
 
 \change_inserted -712698321 1759755357
 lyx_2_6.py
+\change_unchanged
+
 \end_layout
 
 \end_inset

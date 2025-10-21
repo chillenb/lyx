@@ -20,7 +20,7 @@ namespace lyx {
 class InsetNewpageParams
 {
 public:
-	/// The different kinds of spaces we support
+	/// The different kinds of breaks we support
 	enum Kind {
 		///
 		NEWPAGE,
@@ -31,7 +31,9 @@ public:
 		///
 		CLEARDOUBLEPAGE,
 		///
-		NOPAGEBREAK
+		NOPAGEBREAK,
+		///
+		CONTEXTUAL
 	};
 	///
 	InsetNewpageParams() : kind(NEWPAGE) {}
@@ -55,6 +57,9 @@ public:
 	static void string2params(std::string const &, InsetNewpageParams &);
 	///
 	static std::string params2string(InsetNewpageParams const &);
+	/// Update the contextual information of this inset
+	void updateBuffer(ParIterator const &, UpdateType, bool const deleted = false) override;
+
 private:
 	///
 	InsetCode lyxCode() const override { return NEWPAGE_CODE; }
@@ -92,6 +97,10 @@ private:
 
 	///
 	InsetNewpageParams params_;
+	///
+	std::string contextual_cmd_;
+	///
+	std::string contextual_gui_;
 };
 
 } // namespace lyx

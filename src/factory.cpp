@@ -97,6 +97,8 @@ Inset * createInsetHelper(Buffer * buf, FuncRequest const & cmd)
 				inp.kind = InsetNewpageParams::CLEARDOUBLEPAGE;
 			else if (name == "nopagebreak")
 				inp.kind = InsetNewpageParams::NOPAGEBREAK;
+			else if (name == "contextual")
+				inp.kind = InsetNewpageParams::CONTEXTUAL;
 			return new InsetNewpage(inp);
 		}
 

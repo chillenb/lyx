@@ -552,6 +552,7 @@ Style Frame
     AutoInsert     1
     IsTocCaption   1
   EndArgument
+  BreakCommand      framebreak "Frame Break"
   AutoNests 
 	Standard,Itemize,Enumerate,Description,FrameTitle,FrameSubtitle,Column,
 	Columns,ColumnsCenterAligned,ColumnsTopAligned,Pause,Overprint,OverlayArea,Only,Block,

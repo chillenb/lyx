@@ -9,7 +9,7 @@
 # This script will update a .layout file to current format
 
 # The latest layout format is also defined in src/TextClass.cpp
-currentFormat = 112
+currentFormat = 113
 
 
 # Incremented to format 4, 6 April 2007, lasgouttes
@@ -381,6 +381,10 @@ currentFormat = 112
 # New InsetLayout tag "CrossrefNeedDef"
 # New Float tag "CrossrefNeedDef"
 
+# Incremented to format 113, 20 October 2025 by spitz
+# New Layout tag "BreakCommand"
+# New InsetLayout tag "BreakCommand"
+
 # Do not forget to document format change in Customization
 # Manual (section "Declaring a new text class").
 
@@ -720,7 +724,7 @@ def convert(lines, end_format):
                 i += 1
             continue
 
-        if 101 <= format <= 112:
+        if 101 <= format <= 113:
             # nothing to do.
             i += 1
             continue

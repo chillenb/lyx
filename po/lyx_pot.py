@@ -118,6 +118,7 @@ def layouts_l10n(input_files, output, base, layouttranslations):
     Comment = re.compile(r'^(.*)#')
     Translation = re.compile(r'^\s*Translation\s+(.*\S)\s*$', re.IGNORECASE)
     KeyValPair = re.compile(r'\s*"(.*)"\s+"(.*)"')
+    BreakCommand = re.compile(r'^\s*BreakCommand\s+(.*\S)\s+\"([^\"]*)\"', re.IGNORECASE)
 
     oldlanguages = []
     languages = []
@@ -393,6 +394,11 @@ def layouts_l10n(input_files, output, base, layouttranslations):
                     else:
                         writeString(out, src, base, lineno, string)
                         writeString(out, src, base, lineno, string.lower())
+                continue
+            res = BreakCommand.search(line)
+            if res != None:
+                if not layouttranslations:
+                    writeString(out, src, base, lineno, res.group(2))
                 continue
             res = Float.search(line)
             if res != None:

@@ -13,10 +13,14 @@
 
 #include "InsetNewpage.h"
 
+#include "Buffer.h"
 #include "Cursor.h"
 #include "FuncRequest.h"
 #include "FuncStatus.h"
 #include "MetricsInfo.h"
+#include "Paragraph.h"
+#include "ParIterator.h"
+#include "Text.h"
 #include "xml.h"
 #include "texstream.h"
 #include "TextMetrics.h"
@@ -63,6 +67,9 @@ void InsetNewpageParams::write(ostream & os) const
 	case InsetNewpageParams::NOPAGEBREAK:
 		os <<  "nopagebreak";
 		break;
+	case InsetNewpageParams::CONTEXTUAL:
+		os <<  "contextual";
+		break;
 	}
 }
 
@@ -83,6 +90,8 @@ void InsetNewpageParams::read(Lexer & lex)
 		kind = InsetNewpageParams::CLEARDOUBLEPAGE;
 	else if (token == "nopagebreak")
 		kind = InsetNewpageParams::NOPAGEBREAK;
+	else if (token == "contextual")
+		kind = InsetNewpageParams::CONTEXTUAL;
 	else
 		lex.printError("Unknown kind");
 }
@@ -218,14 +227,17 @@ bool InsetNewpage::getStatus(Cursor & cur, FuncRequest const & cmd,
 {
 	switch (cmd.action()) {
 	// we handle these
-	case LFUN_INSET_MODIFY:
+	case LFUN_INSET_MODIFY: {
+		bool enabled = true;
 		if (cmd.getArg(0) == "newpage") {
 			InsetNewpageParams params;
 			string2params(to_utf8(cmd.argument()), params);
 			status.setOnOff(params_.kind == params.kind);
+			enabled = params.kind != InsetNewpageParams::CONTEXTUAL || !contextual_cmd_.empty();
 		}
-		status.setEnabled(true);
+		status.setEnabled(enabled);
 		return true;
+	}
 	default:
 		return Inset::getStatus(cur, cmd, status);
 	}
@@ -245,6 +257,8 @@ docstring InsetNewpage::insetLabel() const
 			return _("Clear Double Page");
 		case InsetNewpageParams::NOPAGEBREAK:
 			return _("No Page Break");
+		case InsetNewpageParams::CONTEXTUAL:
+			return contextual_gui_.empty() ? _("Non-sensical Break") : _(contextual_gui_);
 		default:
 			return _("New Page");
 	}
@@ -260,6 +274,7 @@ ColorCode InsetNewpage::ColorName() const
 		case InsetNewpageParams::NEWPAGE:
 		case InsetNewpageParams::CLEARPAGE:
 		case InsetNewpageParams::CLEARDOUBLEPAGE:
+		case InsetNewpageParams::CONTEXTUAL:
 			return Color_newpage;
 	}
 	// not really useful, but to avoids gcc complaints
@@ -291,6 +306,10 @@ void InsetNewpage::latex(otexstream & os, OutputParams const & runparams) const
 		case InsetNewpageParams::NOPAGEBREAK:
 			os << "\\nopagebreak" << termcmd;
 			break;
+		case InsetNewpageParams::CONTEXTUAL:
+			if (!contextual_cmd_.empty())
+				os << "\\" << contextual_cmd_ << termcmd;
+			break;
 		default:
 			os << "\\newpage" << termcmd;
 			break;
@@ -321,6 +340,12 @@ docstring InsetNewpage::xhtml(XMLStream & xs, OutputParams const &) const
 	if (params_.kind !=  InsetNewpageParams::NOPAGEBREAK)
 		xs << xml::CompTag("br");
 	return docstring();
+}
+
+
+void InsetNewpage::updateBuffer(ParIterator const & it, UpdateType /* utype*/, bool const /*deleted*/)
+{
+	buffer().text().getContextualBreak(it.plist(), it.pit(), contextual_cmd_, contextual_gui_);
 }
 
 

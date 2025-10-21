@@ -474,6 +474,7 @@ Menuset
 		Item "Prevent Page Break|g" "newpage-insert nopagebreak"
 		Item "Clear Page|C" "newpage-insert clearpage"
 		Item "Clear Double Page|D" "newpage-insert cleardoublepage"
+		TextBreaks
 	End
 
 	Menu "insert_math"

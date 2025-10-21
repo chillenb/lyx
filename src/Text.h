@@ -359,6 +359,8 @@ public:
 	Font const outerFont(pit_type pit_offset) const;
 	/// Return the label type at the end of paragraph \c pit.
 	int getEndLabel(pit_type pit) const;
+	/// Get command and GUI string of contextual text breaks
+	void getContextualBreak(ParagraphList const & pars, pit_type const & pit, std::string & cmd, std::string & gui) const;
 
 private:
 	/// The InsetText owner shall have access to everything.

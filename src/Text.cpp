@@ -6936,6 +6936,12 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 		enable = !inDescriptionItem(cur)
 			&& (cur.text()->getTocLevel(cur.pit()) == Layout::NOT_IN_TOC
 			    || cur.pos() == 0 || cur.pos() == cur.lastpos());
+		if (cmd.getArg(0) == "contextual") {
+			string cmd;
+			string gui;
+			getContextualBreak(paragraphs(), cur.pit(), cmd, gui);
+			enable &= !cmd.empty();
+		}
 		break;
 
 	case LFUN_LANGUAGE:
@@ -7182,6 +7188,38 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 
 	status.setEnabled(enable);
 	return true;
+}
+
+
+void Text::getContextualBreak(ParagraphList const & pars, pit_type const & pit, string & cmd, string & gui) const
+{
+	cmd.clear();
+	gui.clear();
+	Paragraph const & par = pars.at(pit);
+	if (!par.layout().breakCmd().empty()) {
+		cmd = par.layout().breakCmd();
+		gui = par.layout().breakGUIName();
+		return;
+	}
+	pit_type prev_pit = pit - 1;
+	depth_type depth = par.getDepth();
+	while (prev_pit >= 0 && depth > 0) {
+		Paragraph const & prev_par = pars.at(prev_pit);
+		depth = prev_par.getDepth();
+		Layout const & layout = prev_par.layout();
+		if (!layout.breakCmd().empty()) {
+			cmd = layout.breakCmd();
+			gui = layout.breakGUIName();
+			return;
+		}
+		--prev_pit;
+	}
+	InsetLayout const & il = par.inInset().getLayout();
+	if (!il.breakCmd().empty()) {
+		cmd = il.breakCmd();
+		gui = il.breakGUIName();
+		return;
+	}
 }
 
 

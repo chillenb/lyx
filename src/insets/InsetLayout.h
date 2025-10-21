@@ -86,6 +86,10 @@ public:
 	///
 	docstring const & rightdelim() const { return rightdelim_; }
 	///
+	std::string const & breakCmd() const { return layout_break_.first; }
+	///
+	std::string const & breakGUIName() const { return layout_break_.second; }
+	///
 	bool inheritFont() const { return inheritfont_; }
 	///
 	FontInfo const & font() const { return font_; }
@@ -479,6 +483,8 @@ private:
 	bool insert_cotext_ = false;
 	/// Step parent counter?
 	bool stepparentcounter_ = false;
+	///
+	std::pair<std::string, std::string> layout_break_;
 };
 
 ///

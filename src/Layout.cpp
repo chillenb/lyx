@@ -42,6 +42,7 @@ enum LayoutTags {
 	LT_AUTONESTEDBY,
 	LT_MARGIN,
 	LT_BOTTOMSEP,
+	LT_BREAKCOMMAND,
 	LT_CATEGORY,
 	LT_COMMANDDEPTH,
 	LT_COPYSTYLE,
@@ -248,6 +249,7 @@ bool Layout::readIgnoreForcelocal(Lexer & lex, TextClass const & tclass,
 		{ "autonests",      LT_AUTONESTS },
 		{ "babelpreamble",  LT_BABELPREAMBLE },
 		{ "bottomsep",      LT_BOTTOMSEP },
+		{ "breakcommand",   LT_BREAKCOMMAND },
 		{ "category",       LT_CATEGORY },
 		{ "commanddepth",   LT_COMMANDDEPTH },
 		{ "copystyle",      LT_COPYSTYLE },
@@ -983,6 +985,14 @@ bool Layout::readIgnoreForcelocal(Lexer & lex, TextClass const & tclass,
 			lex >> is_toc_caption_;
 			break;
 
+		case LT_BREAKCOMMAND: {
+			if (lex.next()) {
+				string const cmd = lex.getString();
+				string const gui = (lex.next()) ? lex.getString() : string();
+				layout_break_ = make_pair(cmd, gui);
+			}
+			break;
+		}
 		}
 	}
 	lex.popTable();

@@ -11329,6 +11329,59 @@ float
 status collapsed
 
 \begin_layout Plain Layout
+BreakCommand
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+<Befehl>
+\end_layout
+
+\end_inset
+
+] [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+<GUI-String>
+\end_layout
+
+\end_inset
+
+] Definiert einen Textumbruch speziell für diesen Stil.
+ Der Befehl wird ohne voranstehenden Rückschrägstrich angegeben (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+BreakCommand framebreak 
+\begin_inset Quotes eld
+\end_inset
+
+Frame Break
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Category
 \end_layout
 
@@ -18800,6 +18853,59 @@ nolink "false"
 \end_inset
 
  für eine Liste von verfügbaren Farbnamen.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+BreakCommand
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+<Befehl>
+\end_layout
+
+\end_inset
+
+] [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+<GUI-String>
+\end_layout
+
+\end_inset
+
+] Definiert einen Textumbruch speziell für diesen Stil.
+ Der Befehl wird ohne voranstehenden Rückschrägstrich angegeben (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+BreakCommand columnbreak 
+\begin_inset Quotes eld
+\end_inset
+
+Column Break
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description

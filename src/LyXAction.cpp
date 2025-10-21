@@ -3214,7 +3214,7 @@ void LyXAction::init()
  * \var lyx::FuncCode lyx::LFUN_NEWPAGE_INSERT
  * \li Action: Inserts a new page.
  * \li Syntax: newpage-insert <ARG>
- * \li Params: <ARG>: <newpage|pagebreak|clearpage|cleardoublepage> default: newpage
+ * \li Params: <ARG>: <newpage|pagebreak|clearpage|cleardoublepage|contextual> default: newpage
  * \li Origin: uwestoehr, 24 Nov 2007
  * \endvar
  */

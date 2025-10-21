@@ -177,6 +177,10 @@ public:
 	///
 	docstring rightdelim() const & { return rightdelim_; }
 	///
+	std::string const & breakCmd() const { return layout_break_.first; }
+	///
+	std::string const & breakGUIName() const { return layout_break_.second; }
+	///
 	std::string const & innertag() const { return innertag_; }
 	///
 	std::string const & labeltag() const { return labeltag_; }
@@ -698,6 +702,8 @@ private:
 	std::string toc_type_;
 	///
 	bool is_toc_caption_;
+	///
+	std::pair<std::string, std::string> layout_break_;
 };
 
 

@@ -155,6 +155,10 @@ public:
 		/** This is the list of selections that can
 		    be pasted. */
 		PasteRecent,
+		/** contextual text breaks */
+		TextBreaks,
+		/** modify contextual text breaks */
+		TextBreaksModify,
 		/** toolbars */
 		Toolbars,
 		/** Available branches in document */
@@ -375,6 +379,7 @@ public:
 	void expandToc2(Toc const & toc_list, size_t from, size_t to, int depth, const string & toc_type);
 	void expandToc(Buffer const * buf);
 	void expandPasteRecent(Buffer const * buf);
+	void expandTextBreaks(BufferView const * bv, bool modify = false);
 	void expandToolbars();
 	void expandBranches(Buffer const * buf);
 	void expandIndices(Buffer const * buf, bool listof = false);
@@ -505,6 +510,8 @@ void MenuDefinition::read(Lexer & lex)
 		md_env_separators,
 		md_env_separatorscontext,
 		md_switchquotes,
+		md_textbreaks,
+		md_textbreaksmodify,
 		md_zoomoptions
 	};
 
@@ -543,6 +550,8 @@ void MenuDefinition::read(Lexer & lex)
 		{ "switcharguments", md_switcharguments },
 		{ "switchcaptions", md_switchcaptions },
 		{ "switchquotes", md_switchquotes },
+		{ "textbreaks", md_textbreaks },
+		{ "textbreaksmodify", md_textbreaksmodify },
 		{ "toc", md_toc },
 		{ "toolbars", md_toolbars },
 		{ "updateformats", md_updateformats },
@@ -703,6 +712,15 @@ void MenuDefinition::read(Lexer & lex)
 		case md_switchquotes:
 			add(MenuItem(MenuItem::SwitchQuotes));
 			break;
+
+		case md_textbreaks:
+			add(MenuItem(MenuItem::TextBreaks));
+			break;
+
+		case md_textbreaksmodify:
+			add(MenuItem(MenuItem::TextBreaksModify));
+			break;
+		
 
 		case md_zoomoptions:
 			add(MenuItem(MenuItem::ZoomOptions));
@@ -1513,6 +1531,31 @@ void MenuDefinition::expandPasteRecent(Buffer const * buf)
 		add(MenuItem(MenuItem::Command, toqstr(lb),
 				    FuncRequest(LFUN_PASTE, i)));
 	}
+}
+
+
+void MenuDefinition::expandTextBreaks(BufferView const * bv, bool const modify)
+{
+	if (!bv)
+		return;
+	Text const * text = bv->cursor().text();
+	if (!text)
+		return;
+
+	string cmd;
+	string gui;
+	text->getContextualBreak(text->paragraphs(), bv->cursor().pit(), cmd, gui);
+	if (cmd.empty())
+		return;
+	if (gui.empty())
+		gui = to_utf8(_("Contextual Break"));
+	if (modify)
+		addWithStatusCheck(MenuItem(MenuItem::Command, qt_(gui),
+				    FuncRequest(LFUN_INSET_MODIFY, "newpage contextual")));
+	else
+		add(MenuItem(MenuItem::Command, qt_(gui),
+			    FuncRequest(LFUN_NEWPAGE_INSERT, "contextual")));
+	
 }
 
 
@@ -2495,6 +2538,14 @@ void Menus::Impl::expand(MenuDefinition const & frommenu,
 
 		case MenuItem::PasteRecent:
 			tomenu.expandPasteRecent(buf);
+			break;
+
+		case MenuItem::TextBreaks:
+			tomenu.expandTextBreaks(bv);
+			break;
+
+		case MenuItem::TextBreaksModify:
+			tomenu.expandTextBreaks(bv, true);
 			break;
 
 		case MenuItem::Toolbars:
