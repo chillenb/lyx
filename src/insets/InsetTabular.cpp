@@ -2252,6 +2252,7 @@ void Tabular::read(Lexer & lex)
 				return;
 			}
 			cell_info[i][j].inset->toggleCaptionRow(is_long_tabular && row_info[i].caption);
+			cell_info[i][j].inset->toggleVarWidth(column_info[j].varwidth);
 			getTokenValue(line, "multicolumn", cell_info[i][j].multicolumn);
 			getTokenValue(line, "multirow", cell_info[i][j].multirow);
 			getTokenValue(line, "mroffset", cell_info[i][j].mroffset);
@@ -4970,7 +4971,8 @@ void InsetTableCell::draw(PainterInfo & pi, int x, int y) const
 	int const w = width;
 	int const h = mr_rows * (tm.height() + 2 * topOffset(pi.base.bv) + bottomOffset(pi.base.bv) + Painter::thin_line);
 	int const yframe = y - mr_rows * (tm.ascent()) - mr_rows * (Painter::thin_line) - topOffset(pi.base.bv);
-	int const xframe = x - (w - tm.width()) / 2 + leftOffset(pi.base.bv);
+	int const xframe = (isVarwidth) ? x : x - (w - tm.width()) / 2 + leftOffset(pi.base.bv);
+
 	if (pi.full_repaint)
 		pi.pain.fillRectangle(xframe, yframe, w, h,
 			pi.backgroundColor(this));
