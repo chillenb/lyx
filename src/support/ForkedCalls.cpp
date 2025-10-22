@@ -411,8 +411,10 @@ int ForkedCall::generateChild()
 
 	startup.cb = sizeof(STARTUPINFO);
 
-	if (CreateProcess(0, (LPSTR)command_.c_str(), 0, 0, FALSE,
-		CREATE_NO_WINDOW, 0, 0, &startup, &process)) {
+	if (CreateProcess(nullptr, LPSTR(command_.c_str()),
+			nullptr, nullptr, FALSE,
+			CREATE_NO_WINDOW, nullptr, nullptr,
+			&startup, &process)) {
 		CloseHandle(process.hThread);
 		cpid = (pid_t)process.hProcess;
 	}
