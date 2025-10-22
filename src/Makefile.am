@@ -43,7 +43,7 @@ if LYX_WIN_RESOURCE
 .rc.o:
 	cp $(top_srcdir)/development/Win32/packaging/icons/lyx.ico .
 	cp $(top_srcdir)/development/Win32/packaging/icons/lyx_doc.ico .
-	$(RC) -I$(top_builddir) --preprocessor "$(CPP) -xc-header -DRC_INVOKED" $< -o $@
+	$(RC) -I$(top_builddir) --preprocessor="$(CC)" --preprocessor-arg="-E" --preprocessor-arg="-xc-header" --preprocessor-arg="-DRC_INVOKED" $< -o $@
 endif
 
 if INSTALL_MACOSX

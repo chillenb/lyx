@@ -5,7 +5,7 @@ include $(top_srcdir)/config/common.am
 
 .rc.o:
 	cp $(top_srcdir)/development/Win32/packaging/icons/lyx_*32x32.ico .
-	windres -I$(top_builddir) --preprocessor "$(CPP) -xc-header -DRC_INVOKED" $< -o $@
+	windres -I$(top_builddir) --preprocessor="$(CC)" --preprocessor-arg="-E" --preprocessor-arg="-xc-header" --preprocessor-arg="-DRC_INVOKED" $< -o $@
 
 bin_PROGRAMS = lyxeditor lyxwin
 bin_SCRIPTS = lyxeditor.sh
