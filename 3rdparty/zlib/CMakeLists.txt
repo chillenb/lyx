@@ -11,17 +11,12 @@ if (POLICY CMP0075)
   cmake_policy(SET CMP0075 NEW)
 endif()
 
-set(CMAKE_ALLOW_LOOSE_LOOP_CONSTRUCTS ON)
-
 project(zlib C)
 
-set(VERSION "1.2.11")
-set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/1.2.11)
+set(VERSION "1.3.1")
+set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/${VERSION})
 
 handle_warning_options("zlib" "CC" -Wno-deprecated-non-prototype -Wno-strict-prototypes -Wnested-anon-types -Wno-implicit-fallthrough -Wno-format-nonliteral -Wno-reserved-macro-identifier)
-
-option(ASM686 "Enable building i686 assembly implementation")
-option(AMD64 "Enable building amd64 assembly implementation")
 
 include(CheckTypeSize)
 include(CheckFunctionExists)
@@ -72,26 +67,24 @@ if(MSVC)
     set(CMAKE_DEBUG_POSTFIX "d")
     add_definitions(-D_CRT_SECURE_NO_DEPRECATE)
     add_definitions(-D_CRT_NONSTDC_NO_DEPRECATE)
-    include_directories(${CMAKE_CURRENT_SOURCE_DIR})
+    include_directories(${SRCDIR})
 endif()
 
 if(NOT CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_CURRENT_BINARY_DIR)
     # If we're doing an out of source build and the user has a zconf.h
     # in their source tree...
-    if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/zconf.h)
+    if(EXISTS ${SRCDIR}/zconf.h)
         message(STATUS "Renaming")
-        message(STATUS "    ${CMAKE_CURRENT_SOURCE_DIR}/zconf.h")
+        message(STATUS "    ${SRCDIR}/zconf.h")
         message(STATUS "to 'zconf.h.included' because this file is included with zlib")
         message(STATUS "but CMake generates it automatically in the build directory.")
-        file(RENAME ${CMAKE_CURRENT_SOURCE_DIR}/zconf.h ${CMAKE_CURRENT_SOURCE_DIR}/zconf.h.included)
+        file(RENAME ${SRCDIR}/zconf.h ${SRCDIR}/zconf.h.included)
   endif()
 endif()
 
-#set(ZLIB_PC ${CMAKE_CURRENT_BINARY_DIR}/zlib.pc)
-#configure_file( ${CMAKE_CURRENT_SOURCE_DIR}/zlib.pc.cmakein ${ZLIB_PC} @ONLY)
 set(Z_PREFIX 1)
-configure_file(${SRCDIR}/zconf.h.cmakein ${CMAKE_BINARY_DIR}/zconf.h @ONLY)
-include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_SOURCE_DIR} ${CMAKE_BINARY_DIR})
+configure_file(	${SRCDIR}/zconf.h.cmakein
+		${CMAKE_CURRENT_BINARY_DIR}/zconf.h @ONLY)
 
 
 #============================================================================
@@ -99,7 +92,7 @@ include_directories(${CMAKE_CURRENT_BINARY_DIR} ${CMAKE_SOURCE_DIR} ${CMAKE_BINA
 #============================================================================
 
 set(ZLIB_PUBLIC_HDRS
-    ${CMAKE_BINARY_DIR}/zconf.h
+    ${CMAKE_CURRENT_BINARY_DIR}/zconf.h
     ${SRCDIR}/zlib.h
 )
 set(ZLIB_PRIVATE_HDRS
@@ -131,41 +124,8 @@ set(ZLIB_SRCS
     ${SRCDIR}/zutil.c
 )
 
-if(CMAKE_COMPILER_IS_GNUCC)
-    if(ASM686)
-        set(ZLIB_ASMS contrib/asm686/match.S)
-    elseif (AMD64)
-        set(ZLIB_ASMS contrib/amd64/amd64-match.S)
-    endif ()
-
-	if(ZLIB_ASMS)
-		add_definitions(-DASMV)
-		set_source_files_properties(${ZLIB_ASMS} PROPERTIES LANGUAGE C COMPILE_FLAGS -DNO_UNDERLINE)
-	endif()
-endif()
-
-if(MSVC)
-    if(ASM686)
-		ENABLE_LANGUAGE(ASM_MASM)
-        set(ZLIB_ASMS
-			contrib/masmx86/inffas32.asm
-			contrib/masmx86/match686.asm
-		)
-    elseif (AMD64)
-		ENABLE_LANGUAGE(ASM_MASM)
-        set(ZLIB_ASMS
-			contrib/masmx64/gvmat64.asm
-			contrib/masmx64/inffasx64.asm
-		)
-    endif()
-
-	if(ZLIB_ASMS)
-		add_definitions(-DASMV -DASMINF)
-	endif()
-endif()
-
-add_library(zlibstatic STATIC ${ZLIB_SRCS} ${ZLIB_ASMS} ${ZLIB_PUBLIC_HDRS} ${ZLIB_PRIVATE_HDRS})
-
+add_library(zlibstatic STATIC ${ZLIB_SRCS} ${ZLIB_PUBLIC_HDRS} ${ZLIB_PRIVATE_HDRS})
+target_include_directories(zlibstatic PUBLIC ${CMAKE_CURRENT_BINARY_DIR} ${SRCDIR})
 
 set(ZLIB_LIBRARY zlibstatic CACHE STRING "Zlib library" FORCE)
 set(ZLIB_INCLUDE_DIR  ${SRCDIR} CACHE STRING "Zlib include dir" FORCE)

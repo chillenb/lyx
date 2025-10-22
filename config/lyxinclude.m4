@@ -474,14 +474,14 @@ AC_DEFUN([LYX_USE_INCLUDED_ZLIB],[
   AC_MSG_RESULT([$lyx_cv_with_included_zlib])
   if test x$lyx_cv_with_included_zlib = xyes ; then
     lyx_included_libs="$lyx_included_libs zlib"
-    ZLIB_INCLUDES='-I$(top_srcdir)/3rdparty/zlib/1.2.8 -I$(top_builddir)/3rdparty/zlib'
+    ZLIB_INCLUDES='-I$(top_srcdir)/3rdparty/zlib/1.3.1 -I$(top_builddir)/3rdparty/zlib'
     ZLIB_LIBS='$(top_builddir)/3rdparty/zlib/liblyxzlib.a'
     mkdir -p 3rdparty/zlib
 dnl include standard config.h for HAVE_UNISTD_H
     echo "#include <../../config.h>" > 3rdparty/zlib/zconf.h
 dnl prevent clash with system zlib that might be dragged in by other libs
     echo "#define Z_PREFIX 1" >> 3rdparty/zlib/zconf.h
-    cat "${srcdir}/3rdparty/zlib/1.2.8/zconf.h.in" >> 3rdparty/zlib/zconf.h
+    cat "${srcdir}/3rdparty/zlib/1.3.1/zconf.h.in" >> 3rdparty/zlib/zconf.h
   else
     ZLIB_INCLUDES=
     AC_CHECK_HEADERS(zlib.h,

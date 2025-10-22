@@ -2,42 +2,43 @@ include $(top_srcdir)/config/common.am
 
 noinst_LIBRARIES = liblyxzlib.a
 
+ZLIB_VERSION=1.3.1
+
 EXTRA_DIST = \
 	CMakeLists.txt \
-	1.2.11/README \
-	1.2.11/treebuild.xml \
-	1.2.11/zconf.h.in \
-	1.2.11/zconf.h.cmakein \
-	1.2.11/zlib.3 \
-	1.2.11/zlib.map \
-	1.2.11/zlib.pc.cmakein \
-	1.2.11/zlib.pc.in
+	$(ZLIB_VERSION)/LICENSE \
+	$(ZLIB_VERSION)/README \
+	$(ZLIB_VERSION)/treebuild.xml \
+	$(ZLIB_VERSION)/zconf.h.in \
+	$(ZLIB_VERSION)/zconf.h.cmakein \
+	$(ZLIB_VERSION)/zlib.3 \
+	$(ZLIB_VERSION)/zlib.map
 
 liblyxzlib_a_SOURCES = \
-	1.2.11/adler32.c \
-	1.2.11/compress.c \
-	1.2.11/crc32.c \
-	1.2.11/crc32.h \
-	1.2.11/deflate.c \
-	1.2.11/deflate.h \
-	1.2.11/gzclose.c \
-	1.2.11/gzguts.h \
-	1.2.11/gzlib.c \
-	1.2.11/gzread.c \
-	1.2.11/gzwrite.c \
-	1.2.11/infback.c \
-	1.2.11/inffast.c \
-	1.2.11/inffast.h \
-	1.2.11/inffixed.h \
-	1.2.11/inflate.c \
-	1.2.11/inflate.h \
-	1.2.11/inftrees.c \
-	1.2.11/inftrees.h \
-	1.2.11/trees.c \
-	1.2.11/trees.h \
-	1.2.11/uncompr.c \
-	1.2.11/zconf.h \
-	1.2.11/zlib.h \
-	1.2.11/zutil.c \
-	1.2.11/zutil.h
+	$(ZLIB_VERSION)/adler32.c \
+	$(ZLIB_VERSION)/compress.c \
+	$(ZLIB_VERSION)/crc32.c \
+	$(ZLIB_VERSION)/crc32.h \
+	$(ZLIB_VERSION)/deflate.c \
+	$(ZLIB_VERSION)/deflate.h \
+	$(ZLIB_VERSION)/gzclose.c \
+	$(ZLIB_VERSION)/gzguts.h \
+	$(ZLIB_VERSION)/gzlib.c \
+	$(ZLIB_VERSION)/gzread.c \
+	$(ZLIB_VERSION)/gzwrite.c \
+	$(ZLIB_VERSION)/infback.c \
+	$(ZLIB_VERSION)/inffast.c \
+	$(ZLIB_VERSION)/inffast.h \
+	$(ZLIB_VERSION)/inffixed.h \
+	$(ZLIB_VERSION)/inflate.c \
+	$(ZLIB_VERSION)/inflate.h \
+	$(ZLIB_VERSION)/inftrees.c \
+	$(ZLIB_VERSION)/inftrees.h \
+	$(ZLIB_VERSION)/trees.c \
+	$(ZLIB_VERSION)/trees.h \
+	$(ZLIB_VERSION)/uncompr.c \
+	$(ZLIB_VERSION)/zconf.h \
+	$(ZLIB_VERSION)/zlib.h \
+	$(ZLIB_VERSION)/zutil.c \
+	$(ZLIB_VERSION)/zutil.h
 
