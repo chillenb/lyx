@@ -203,12 +203,18 @@ private:
 	/// paragraph. The y-coordinate is allowed to be off-screen and
 	/// the metrics will be automatically updated if needed. This is
 	/// the reason why we need a non const BufferView.
+	/// \param y the vertical position of interest (relative to the screen).
+	/// \param strict : when true, return -1 when \c y points either
+	///   above or below the text contents.
 	/// FIXME: check whether this is still needed
-	pit_type getPitNearY(int y);
+	pit_type getPitNearY(int y, bool strict = false);
 
 	/// returns the row near the specified y-coordinate in a given paragraph
 	/// (relative to the screen).
-	Row const * getRowNearY(int & y);
+	/// \param y the vertical position of interest (relative to the screen).
+	/// \param strict : when true, return nullptr when \c y points either
+	///   above or below the text contents.
+	Row const * getRowNearY(int y, bool strict = false);
 
 public:
 	/// returns the position near the specified x-coordinate of the row.

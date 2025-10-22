@@ -1465,7 +1465,7 @@ pair<pos_type, bool> TextMetrics::getPosNearX(Row const & row, int & x) const
 
 
 // y is screen coordinate
-pit_type TextMetrics::getPitNearY(int y)
+pit_type TextMetrics::getPitNearY(int y, bool strict)
 {
 	LASSERT(!text_->paragraphs().empty(), return -1);
 	LASSERT(!par_metrics_.empty(), return -1);
@@ -1479,11 +1479,11 @@ pit_type TextMetrics::getPitNearY(int y)
 
 	if (y < it->second.top()) {
 		// We are looking for a position that is before the first paragraph in
-		// the cache (which is in priciple off-screen, that is before the
-		// visible part.
+		// the cache (which is in principle off-screen, that is before the
+		// visible part).
 		if (it->first == 0)
 			// We are already at the first paragraph in the inset.
-			return 0;
+			return strict ? -1 : 0;
 		// OK, this is the paragraph we are looking for.
 		pit = it->first - 1;
 		newParMetricsUp();
@@ -1492,12 +1492,12 @@ pit_type TextMetrics::getPitNearY(int y)
 
 	if (y >= par_metrics_[last->first].bottom()) {
 		// We are looking for a position that is after the last paragraph in
-		// the cache (which is in priciple off-screen), that is before the
-		// visible part.
+		// the cache (which is in principle off-screen, that is after the
+		// visible part).
 		pit = last->first + 1;
 		if (pit == int(text_->paragraphs().size()))
 			//  We are already at the last paragraph in the inset.
-			return last->first;
+			return strict ? -1 : last->first;
 		// OK, this is the paragraph we are looking for.
 		newParMetricsDown();
 		return pit;
@@ -1512,10 +1512,11 @@ pit_type TextMetrics::getPitNearY(int y)
 }
 
 
-Row const * TextMetrics::getRowNearY(int & y)
+Row const * TextMetrics::getRowNearY(int y, bool strict)
 {
-	pit_type const pit = getPitNearY(y);
-	LASSERT(pit != -1, return nullptr);
+	pit_type const pit = getPitNearY(y, strict);
+	if (pit == -1)
+		return nullptr;
 	ParagraphMetrics const & pm = par_metrics_[pit];
 
 	int yy = pm.top();
@@ -1617,8 +1618,9 @@ Row::Element const * TextMetrics::checkInsetHit(Row const & row, int x) const
 //takes screen x,y coordinates
 Inset * TextMetrics::checkInsetHit(int x, int y)
 {
-	Row const * row = getRowNearY(y);
-	LASSERT(row != nullptr, return nullptr);
+	Row const * row = getRowNearY(y, true);
+	if (row == nullptr)
+		return nullptr;
 	Row::Element const * e = checkInsetHit(*row, x);
 
 	return e ? const_cast<Inset *>(e->inset) : nullptr;
