@@ -845,7 +845,7 @@ void MathData::collectOptionalParameters(Cursor * cur,
 		// (see caller), but making this explicit pleases coverity.
 		if (cur && thisSlice != lyx::npos
 		    && thisPos >= pos && thisPos <= right) {
-			int paramPos = max(0, int(thisPos - pos - 1));
+			lyx::pos_type paramPos = max(0, int(thisPos - pos - 1));
 			vector<CursorSlice> x;
 			cur->resize(thisSlice + 1, x);
 			(*cur)[thisSlice].pos() = macroPos;
@@ -882,7 +882,7 @@ void MathData::collectParameters(Cursor * cur,
 
 		// fix cursor
 		vector<CursorSlice> argSlices;
-		int argPos = 0;
+		lyx::pos_type argPos = 0;
 		// Note: The two expressions on the first line are equivalent
 		// (see caller), but making this explicit pleases coverity.
 		if (cur && thisSlice != lyx::npos && thisPos == pos)

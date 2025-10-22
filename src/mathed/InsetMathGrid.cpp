@@ -212,9 +212,9 @@ void InsetMathGrid::setHorizontalAlignments(docstring const & hh)
 			}
 			--it;
 			if (newcolumn) {
-				colinfo_[col].lines = count(
+				colinfo_[col].lines = static_cast<int>(count(
 					colinfo_[col].special.begin(),
-					colinfo_[col].special.end(), '|');
+					colinfo_[col].special.end(), '|'));
 				LYXERR(Debug::MATHED, "special column separator: `"
 					<< to_utf8(colinfo_[col].special) << '\'');
 				++col;
@@ -229,9 +229,9 @@ void InsetMathGrid::setHorizontalAlignments(docstring const & hh)
 			colinfo_[col].align = static_cast<char>(c);
 			if (!colinfo_[col].special.empty()) {
 				colinfo_[col].special += c;
-				colinfo_[col].lines = count(
+				colinfo_[col].lines = static_cast<int>(count(
 						colinfo_[col].special.begin(),
-						colinfo_[col].special.end(), '|');
+						colinfo_[col].special.end(), '|'));
 				LYXERR(Debug::MATHED, "special column separator: `"
 					<< to_utf8(colinfo_[col].special) << '\'');
 			}
