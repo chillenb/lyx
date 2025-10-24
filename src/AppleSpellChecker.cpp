@@ -197,9 +197,11 @@ int AppleSpellChecker::numMisspelledWords() const
 }
 
 
-void AppleSpellChecker::misspelledWord(int index, int & start, int & length) const
+void AppleSpellChecker::misspelledWord(int index, pos_type & start, int & length) const
 {
-	AppleSpeller_misspelledWord(d->speller, index, &start, &length);
+	int start_ = start;
+	AppleSpeller_misspelledWord(d->speller, index, &start_, &length);
+	start = (pos_type)start_;
 }
 
 
