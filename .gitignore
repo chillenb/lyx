@@ -19,6 +19,7 @@ stamp-h1
 *.patch
 build*/
 CMakeLists.txt.user
+CMakeLists.txt.user.*
 .dirstamp
 /src/tex2lyx/test/*.lyx.tex
 GPATH
