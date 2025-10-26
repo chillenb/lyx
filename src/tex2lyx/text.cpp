@@ -64,8 +64,10 @@ void parse_text_in_inset(Parser & p, ostream & os, unsigned flags, bool outer,
 		newcontext.layout = &context.textclass.plainLayout();
 	else
 		newcontext.font = context.font;
-	// Inherit commands to pass through
+	// Inherit commands to pass through,
 	newcontext.pass_thru_cmds = context.pass_thru_cmds;
+	// break_command,
+	newcontext.break_command = context.break_command;
 	// and table cell
 	newcontext.in_table_cell = context.in_table_cell;
 	if (layout)
@@ -2682,6 +2684,12 @@ void parse_environment(Parser & p, ostream & os, bool outer,
 				break;
 			}
 			context.check_deeper(os);
+			// contextual text break: use one if layout
+			// or nesting layout defines one
+			if (!newlayout->breakCmd().empty())
+				context.break_command = newlayout->breakCmd();
+			else if (context.need_end_deeper)
+				context.break_command = parent_context.break_command;
 			if (newlayout->keepempty) {
 				// We need to start a new paragraph
 				// even if it is empty.
@@ -2734,6 +2742,8 @@ void parse_environment(Parser & p, ostream & os, bool outer,
 		if ((newinsetlayout = findInsetLayout(parent_context.textclass, name, false))) {
 			eat_whitespace(p, os, parent_context, false);
 			parent_context.check_layout(os);
+			// contextual text break if defined by InsetLayout
+			parent_context.break_command = newinsetlayout->breakCmd();
 			begin_inset(os, "Flex ");
 			docstring flex_name = newinsetlayout->name();
 			// FIXME: what do we do if the prefix is not Flex: ?
@@ -2750,6 +2760,7 @@ void parse_environment(Parser & p, ostream & os, bool outer,
 			} else
 				parse_text_in_inset(p, os, FLAG_END, false, parent_context, newinsetlayout);
 			end_inset(os);
+			parent_context.break_command.clear();
 			break;
 		}
 
@@ -6161,6 +6172,16 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			context.check_layout(os);
 			begin_inset(os, "Textbreak ");
 			os << t.cs();
+			end_inset(os);
+			skip_spaces_braces(p);
+			continue;
+		}
+
+		if (!context.break_command.empty()
+		    && context.break_command == t.cs()) {
+			// contextual text break
+			context.check_layout(os);
+			begin_inset(os, "Textbreak contextual");
 			end_inset(os);
 			skip_spaces_braces(p);
 			continue;

@@ -140,6 +140,8 @@ public:
 	std::string list_preamble;
 	/// A LaTeXParam to be ignored in parsing.
 	std::string latexparam;
+	/// Contextual text break
+	std::string break_command;
 	/// If there has been an \\begin_deeper, we'll need a matching
 	/// \\end_deeper
 	bool need_end_deeper;
