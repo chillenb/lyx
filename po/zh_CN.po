@@ -8,6 +8,7 @@
 # Winfred Huang <tone90999@hotmail.com>, 2018.
 # Jiaxu Zi <3119932298@qq.com>, 2024.
 # vidon <vidon@email.com>, 2024-6-27.
+# vidon <vidon@email.com>, 2025-10-27. 
 # Note from Winfred Huang:
 # 本翻译文件依照俄文版处理了一部分无需翻译照抄原文的条目，
 # 依照日文版处理了一部分需要翻译的条目。少部分条目之翻译为
@@ -25,7 +26,7 @@ msgstr ""
 "Project-Id-Version: zh_CN\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-09-05 07:35+0200\n"
-"PO-Revision-Date: 2024-07-16 21:30+0800\n"
+"PO-Revision-Date: 2025-10-27 00:07+0800\n"
 "Last-Translator: Jiaxu Zi <3119932298@qq.com>\n"
 "Language-Team: 简体中文 <lyx-docs@lists.lyx.org>\n"
 "Language: zh_CN\n"
@@ -33,7 +34,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.8\n"
 "X-Poedit-Basepath: ..\n"
 
 #: src/frontends/qt/ui/AboutUi.ui:27
@@ -324,11 +325,11 @@ msgstr "添加本地（&L）..."
 
 #: src/frontends/qt/ui/BibtexUi.ui:91
 msgid "Transfer an absolute local path to a relative one or vice versa"
-msgstr ""
+msgstr "绝对路径与相对路径相互转换"
 
 #: src/frontends/qt/ui/BibtexUi.ui:94 src/frontends/qt/GuiBibtex.cpp:417
 msgid "&Make Relative"
-msgstr ""
+msgstr "设为相对路径(&M)"
 
 #: src/frontends/qt/ui/BibtexUi.ui:101
 msgid "Inherit bibliography databases from the master document"
@@ -1195,40 +1196,35 @@ msgid "All aut&hors"
 msgstr "所有作者(&H)"
 
 #: src/frontends/qt/ui/ColorUi.ui:39
-#, fuzzy
 msgid "Alternating table row colors"
-msgstr "替代“结语”的名称"
+msgstr "表格行交替着色"
 
 #: src/frontends/qt/ui/ColorUi.ui:47 src/frontends/qt/ui/TabularUi.ui:1514
-#, fuzzy
 msgid "O&dd rows:"
-msgstr "添加行"
+msgstr "奇数行(&d):"
 
 #: src/frontends/qt/ui/ColorUi.ui:67 src/frontends/qt/ui/TabularUi.ui:1534
-#, fuzzy
 msgid "&Even rows:"
-msgstr "行间(&W)"
+msgstr "偶数行(&E):"
 
 #: src/frontends/qt/ui/ColorUi.ui:104
 msgid "Start with r&ow:"
-msgstr ""
+msgstr "起始行(&O):"
 
 #: src/frontends/qt/ui/ColorUi.ui:152
 msgid "Background Colors"
 msgstr "背景色"
 
 #: src/frontends/qt/ui/ColorUi.ui:163
-#, fuzzy
 msgid "Shaded bo&xes:"
-msgstr "带背景色框:"
+msgstr "带背景色框(&x):"
 
 #: src/frontends/qt/ui/ColorUi.ui:173
 msgid "Pa&ge:"
-msgstr ""
+msgstr "页码(&g):"
 
 #: src/frontends/qt/ui/ColorUi.ui:234 src/frontends/qt/GuiView.cpp:1278
 #: src/frontends/qt/GuiView.cpp:1310
-#, fuzzy
 msgid "Custom Colors"
 msgstr "自定义颜色"
 
@@ -1238,17 +1234,14 @@ msgid "1"
 msgstr "1"
 
 #: src/frontends/qt/ui/ColorUi.ui:254
-#, fuzzy
 msgid "Remove the selected color"
-msgstr "删除选中分支"
+msgstr "删除选中的颜色"
 
 #: src/frontends/qt/ui/ColorUi.ui:264
-#, fuzzy
 msgid "Rename the selected color"
-msgstr "修改所选颜色"
+msgstr "重命名所选颜色"
 
 #: src/frontends/qt/ui/ColorUi.ui:267
-#, fuzzy
 msgid "Rena&me..."
 msgstr "重命名(&N)..."
 
@@ -1257,45 +1250,40 @@ msgid "Define or change button color"
 msgstr "定义或改变按钮颜色"
 
 #: src/frontends/qt/ui/ColorUi.ui:304
-#, fuzzy
 msgid "&New:[[color]]"
-msgstr "新分支(&N):[[branch]]"
+msgstr "新(&N):[[color]]"
 
 #: src/frontends/qt/ui/ColorUi.ui:314
-#, fuzzy
 msgid ""
 "Enter the name of the desired color (only ASCII characters and no space "
 "allowed) and hit \"Add\""
-msgstr "输入想要的索引名称 (如”人名索引“) 后点击”添加“"
+msgstr ""
+"输入所需颜色的名称（仅允许使用 ASCII 字符，且不能包含空格），然后点击 “添"
+"加”。"
 
 #: src/frontends/qt/ui/ColorUi.ui:321
-#, fuzzy
 msgid "Add a new color to the list"
-msgstr "向列表中添加新分支"
+msgstr "向列表中添加新颜色"
 
 #: src/frontends/qt/ui/ColorUi.ui:333
-#, fuzzy
 msgid "A&vailable Custom Colors:"
-msgstr "可用的文献(&V):"
+msgstr "可用自定义颜色(&V):"
 
 #: src/frontends/qt/ui/ColorUi.ui:346
 msgid "Font Colors"
 msgstr "字体颜色"
 
 #: src/frontends/qt/ui/ColorUi.ui:357
-#, fuzzy
 msgid "Ma&in text:"
-msgstr "正文文本:"
+msgstr "正文(&):"
 
 #: src/frontends/qt/ui/ColorUi.ui:367
-#, fuzzy
 msgid "Greyed-o&ut notes:"
-msgstr "灰色注释:"
+msgstr "灰色注释(&u):"
 
 #: src/frontends/qt/ui/ColorUi.ui:430
-#, fuzzy
 msgid "Table &border color:"
-msgstr "设置边框线"
+msgstr "表格边框颜色(&b):"
 
 #: src/frontends/qt/ui/CompareHistoryUi.ui:23
 msgid "Compare Revisions"
@@ -1657,9 +1645,8 @@ msgstr "搜索(&C)"
 
 #: src/frontends/qt/ui/FindAndReplaceUi.ui:55
 #: src/frontends/qt/ui/SearchUi.ui:120
-#, fuzzy
 msgid "&Find what:"
-msgstr "查找(&F):"
+msgstr "查找目标(&F):"
 
 #: src/frontends/qt/ui/FindAndReplaceUi.ui:92
 msgid "Replace &with:"
@@ -2339,8 +2326,8 @@ msgstr "链接类型"
 
 #: src/frontends/qt/ui/HyperlinkUi.ui:136
 msgid ""
-"Link to the web or any other target with an \"authority\" component (i."
-"e., :// in the URI)"
+"Link to the web or any other target with an \"authority\" component "
+"(i.e., :// in the URI)"
 msgstr "使用包含“权威”组件（即URI中的://）的链接指向网络或其他目标。"
 
 #: src/frontends/qt/ui/HyperlinkUi.ui:139
@@ -2644,14 +2631,12 @@ msgid "Enter the name of the default master document"
 msgstr "输入默认主文档名"
 
 #: src/frontends/qt/ui/LaTeXUi.ui:188
-#, fuzzy
 msgid "Formatted cross-references"
-msgstr "格式化的引用"
+msgstr "带格式的交叉引用"
 
 #: src/frontends/qt/ui/LaTeXUi.ui:196
-#, fuzzy
 msgid "&Format packages:"
-msgstr "所有包:"
+msgstr "样式包(&F):"
 
 #: src/frontends/qt/ui/LaTeXUi.ui:224
 msgid ""
@@ -2729,9 +2714,8 @@ msgid ""
 msgstr "输入加载语言包需要的命令 (默认为: \\usepackage{babel})"
 
 #: src/frontends/qt/ui/LanguageUi.ui:204
-#, fuzzy
 msgid "Language &Options"
-msgstr "语言设置"
+msgstr "语言设置(&O)"
 
 #: src/frontends/qt/ui/LineUi.ui:23
 msgid "Of&fset:"
@@ -3273,19 +3257,16 @@ msgid "S&elected:"
 msgstr "已选定(&e):"
 
 #: src/frontends/qt/ui/NomenclUi.ui:24
-#, fuzzy
 msgid "Nomenclature St&yle:"
-msgstr "术语符号: "
+msgstr "术语样式(&y): "
 
 #: src/frontends/qt/ui/NomenclUi.ui:52
-#, fuzzy
 msgid "Add the nomenclature list to the table of contents"
-msgstr "添加文献引用到目录"
+msgstr "将术语表添加到目录"
 
 #: src/frontends/qt/ui/NomenclUi.ui:55
-#, fuzzy
 msgid "Add to &table of contents"
-msgstr "添加文献引用到目录"
+msgstr "添加到目录(&t)"
 
 #: src/frontends/qt/ui/NomenclUi.ui:62
 msgid ""
@@ -3293,11 +3274,12 @@ msgid ""
 "nomenclature where x is the number of the last equation in front of the "
 "corresponding nomenclature"
 msgstr ""
+"在术语表 / 符号表的每个条目后，都会附加短语‘，参见式（x）’，其中 x 代表对应术"
+"语表 / 符号表条目前方最后一个公式的编号。"
 
 #: src/frontends/qt/ui/NomenclUi.ui:65
-#, fuzzy
 msgid "Add &equation references"
-msgstr "未定义的引用"
+msgstr "添加公式引用(&e)"
 
 #: src/frontends/qt/ui/NomenclUi.ui:72
 msgid ""
@@ -3305,31 +3287,30 @@ msgid ""
 "where x is the number of the page on which the corresponding nomenclature is "
 "used"
 msgstr ""
+"在术语表 / 符号表的每个条目后，都会附加短语‘，参见第 x 页’，其中 x 代表对应术"
+"语表 / 符号表条目所使用的页码。"
 
 #: src/frontends/qt/ui/NomenclUi.ui:75
-#, fuzzy
 msgid "Add &page references"
-msgstr "所有引用"
+msgstr "添加页码引用(&p)"
 
 #: src/frontends/qt/ui/NomenclUi.ui:82
 msgid ""
 "Use standard subgroups (Latin Letters, Greek Letters, ...) to structure the "
 "nomenclature list"
-msgstr ""
+msgstr "使用标准子类别（拉丁字母、希腊字母等）来构建术语表的结构"
 
 #: src/frontends/qt/ui/NomenclUi.ui:85
 msgid "Use standard &subgroups"
-msgstr ""
+msgstr "使用标准子类别(&s)"
 
 #: src/frontends/qt/ui/NomenclUi.ui:94
-#, fuzzy
 msgid "&Other options:"
-msgstr "其他选项"
+msgstr "其他选项(&O):"
 
 #: src/frontends/qt/ui/NomenclUi.ui:104
-#, fuzzy
 msgid "Insert additional options of the nomencl package here"
-msgstr "您可以在此处插入其他选项（由字体包提供）"
+msgstr "在此处插入 nomencl 宏包的额外选项"
 
 #: src/frontends/qt/ui/NoteUi.ui:23 src/frontends/qt/ui/PhantomUi.ui:23
 msgid "Type"
@@ -3418,9 +3399,8 @@ msgid "De&fault output format:"
 msgstr "默认输出格式(&F):"
 
 #: src/frontends/qt/ui/OutputUi.ui:145
-#, fuzzy
 msgid "Output Options"
-msgstr "LaTeX 输出选项"
+msgstr "输出选项"
 
 #: src/frontends/qt/ui/OutputUi.ui:161
 msgid "&LaTeX"
@@ -3469,9 +3449,8 @@ msgid "Format to use for math output."
 msgstr "数学输出的格式。"
 
 #: src/frontends/qt/ui/OutputUi.ui:302
-#, fuzzy
 msgid "MathML Core (default)"
-msgstr "外部 (默认设置)"
+msgstr "MathML 核心 (默认)"
 
 #: src/frontends/qt/ui/OutputUi.ui:307 src/frontends/qt/ui/OutputUi.ui:436
 #: lib/configure.py:834
@@ -3490,9 +3469,8 @@ msgid "LaTeX"
 msgstr "LaTeX"
 
 #: src/frontends/qt/ui/OutputUi.ui:322
-#, fuzzy
 msgid "MathML 3"
-msgstr "MathML"
+msgstr "MathML 3"
 
 #: src/frontends/qt/ui/OutputUi.ui:347
 msgid "Whether to comply strictly with XHTML 1.1."
@@ -3519,19 +3497,16 @@ msgid "CALS"
 msgstr "CALS"
 
 #: src/frontends/qt/ui/OutputUi.ui:469
-#, fuzzy
 msgid "MathML &version:"
-msgstr "LyX 版本"
+msgstr "MathML 版本(&v)"
 
 #: src/frontends/qt/ui/OutputUi.ui:499
-#, fuzzy
 msgid "MathML 3 (default)"
-msgstr "m (默认)"
+msgstr "MathML 3 (默认)"
 
 #: src/frontends/qt/ui/OutputUi.ui:504
-#, fuzzy
 msgid "MathML Core"
-msgstr "MathML"
+msgstr "MathML 核心"
 
 #: src/frontends/qt/ui/OutputUi.ui:532
 msgid "&MathML namespace prefix:"
@@ -3559,13 +3534,15 @@ msgstr "mml"
 
 #: src/frontends/qt/ui/OutputUi.ui:604 src/frontends/qt/ui/OutputUi.ui:622
 msgid ""
-"Scaling factor for images that are generated for some LaTeX constructs (e."
-"g., math formulae) in non-LaTeX output."
+"Scaling factor for images that are generated for some LaTeX constructs "
+"(e.g., math formulae) in non-LaTeX output."
 msgstr ""
+"在非 LaTeX 输出格式中，为部分 LaTeX 结构（如数学公式）生成的图像所用的缩放比"
+"例系数。"
 
 #: src/frontends/qt/ui/OutputUi.ui:607
 msgid "Scaling of generated &images:"
-msgstr ""
+msgstr "生成图像的缩放比例(&i):"
 
 #: src/frontends/qt/ui/OutputUi.ui:659
 msgid ""
@@ -3640,7 +3617,7 @@ msgstr "无边框超链接(&F)"
 
 #: src/frontends/qt/ui/PDFSupportUi.ui:285
 msgid "Mutually exclusive with frames around links, see manual."
-msgstr ""
+msgstr "与链接周围的边框互斥，详见手册。"
 
 #: src/frontends/qt/ui/PDFSupportUi.ui:288
 msgid "C&olor links"
@@ -3835,14 +3812,12 @@ msgid "Verti&cal Phantom"
 msgstr "垂直占位(&c)"
 
 #: src/frontends/qt/ui/PreambleUi.ui:24
-#, fuzzy
 msgid "LaTe&X"
-msgstr "LaTeX"
+msgstr "LaTe&X"
 
 #: src/frontends/qt/ui/PreambleUi.ui:41
-#, fuzzy
 msgid "&HTML"
-msgstr "&XHTML"
+msgstr "&HTML"
 
 #: src/frontends/qt/ui/PreambleUi.ui:61
 msgid "Find in preamble"
@@ -3855,32 +3830,30 @@ msgstr "查找(&F)"
 #: src/frontends/qt/ui/PrefColorsUi.ui:70
 msgid ""
 "Reset the light-mode color of the selected object/element to the last saved"
-msgstr ""
+msgstr "将所选对象 / 元素的浅色模式颜色重置为上次保存的状态"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:73
-#, fuzzy
 msgid "Ligh&t"
-msgstr "高亮"
+msgstr "浅色(&t)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:86
 msgid ""
 "Reset the dark-mode color of the selected object/element to the last saved"
-msgstr ""
+msgstr "将所选对象 / 元素的深色模式颜色重置为上次保存的状态"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:89
 msgid "Dar&k"
-msgstr ""
+msgstr "深色(&k)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:102
 msgid ""
 "Reset the light- and dark-mode colors of the selected object/element to the "
 "last saved"
-msgstr ""
+msgstr "将所选对象 / 元素的浅色模式和深色模式颜色重置为上次保存的状态"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:105
-#, fuzzy
 msgid "&Both"
-msgstr "下边距(&B):"
+msgstr "两个(&B)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:125 lib/ui/stdtoolbars.inc:87
 #: src/BufferView.cpp:1598
@@ -3898,22 +3871,19 @@ msgstr "重做"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:144
 msgid "R&edo"
-msgstr ""
+msgstr "重做(&e)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:153
-#, fuzzy
 msgid "&Themes:"
-msgstr "方案"
+msgstr "主题(&T):"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:172
-#, fuzzy
 msgid "Reset all colors in the table to the last saved"
-msgstr "重设所有颜色名至默认色值"
+msgstr "将表格中的所有颜色重置为上次保存的状态"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:175
-#, fuzzy
 msgid "Reset &All Colors"
-msgstr "重置颜色(&e)"
+msgstr "重置所有颜色(&A)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:182
 #: src/frontends/qt/GuiApplication.cpp:780 src/frontends/qt/GuiPrefs.h:387
@@ -3921,85 +3891,72 @@ msgid "Reset"
 msgstr "重置"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:192
-#, fuzzy
 msgid "Edit"
-msgstr "编辑(&E)"
+msgstr "编辑"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:202
-#, fuzzy
 msgid "Apply changed colors immediately"
-msgstr "立即改变(&I)"
+msgstr "立即应用已修改的颜色"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:205
-#, fuzzy
 msgid "Apply &immediately"
-msgstr "立即改变(&I)"
+msgstr "立即应用(&i)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:212
-#, fuzzy
 msgid "Undo/Redo"
-msgstr "撤销/重做机制"
+msgstr "撤销/重做"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:222
-#, fuzzy
 msgid "&Color Settings:"
-msgstr "浮动体设置"
+msgstr "颜色设置(&C):"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:241
 msgid "Use the color scheme of your Operating System/Desktop Environment"
 msgstr "使用操作系统或桌面环境提供的取色器"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:244
-#, fuzzy
 msgid "Use &system colors"
-msgstr "使用系统取色器(&U)"
+msgstr "使用系统取颜色(&s)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:262
-#, fuzzy
 msgid "Change the light-mode color of the selected object/element"
-msgstr "修改选定的分支名称"
+msgstr "更改所选对象 / 元素的浅色模式颜色"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:265
-#, fuzzy
 msgid "&Light"
-msgstr "右(&R)"
+msgstr "浅色(&L)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:278
-#, fuzzy
 msgid "Change the dark-mode color of the selected object/element"
-msgstr "修改选定的分支名称"
+msgstr "更改所选对象 / 元素的深色模式颜色"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:281
 msgid "&Dark"
-msgstr ""
+msgstr "深色(&D)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:351
 msgid "Clea&r[[colorPrefDialog]]"
-msgstr ""
+msgstr "清除[[colorPrefDialog]](&r)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:358
-#, fuzzy
 msgid "&By color"
-msgstr "基本颜色"
+msgstr "按颜色(&B)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:388
-#, fuzzy
 msgid "Enter a string to filter colors"
-msgstr "输入文本以过滤内容"
+msgstr "输入字符串以筛选颜色"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:391
-#, fuzzy
 msgid "by color name"
-msgstr "输入新分支名"
+msgstr "按颜色名称"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:466
 msgid "Add the current color set as a theme"
-msgstr ""
+msgstr "将当前颜色集添加为主题"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:476
-#, fuzzy
 msgid "Remove a selected color theme"
-msgstr "删除选中分支"
+msgstr "删除所选的颜色主题"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:479
 #: src/frontends/qt/ui/PrefConvertersUi.ui:300
@@ -4010,12 +3967,11 @@ msgstr "删除(&V)"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:486
 msgid "Other menus to handle themes"
-msgstr ""
+msgstr "用于处理主题的其他菜单"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:489
-#, fuzzy
 msgid "&More..."
-msgstr "更多(M)...|M"
+msgstr "更多(&M)..."
 
 #: src/frontends/qt/ui/PrefCompletionUi.ui:26
 msgid "In Math"
@@ -4249,13 +4205,12 @@ msgid "&Underline change tracking additions"
 msgstr "添加更改跟踪下划线"
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:145
-#, fuzzy
 msgid "Display &bookmarks:"
-msgstr "保存书签"
+msgstr "显示书签(&b):"
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:155
 msgid "Select whether and how bookmarks should be visualized in the workarea"
-msgstr ""
+msgstr "选择书签是否以及如何在工作区中显示"
 
 #: src/frontends/qt/ui/PrefDocHandlingUi.ui:26
 msgid "Session Handling"
@@ -4612,11 +4567,10 @@ msgid "&Primary:"
 msgstr "主要(&P):"
 
 #: src/frontends/qt/ui/PrefInputUi.ui:101
-#, fuzzy
 msgid ""
 "macOS specific setting for use with emacs bindings. Takes effect next time "
 "LyX is launched."
-msgstr "在 OS X 与 macOS 上使用 emacs 时的设置。下次启动 LyX 时生效。"
+msgstr "用于搭配 emacs 快捷键的 macOS 专属设置，将在下次启动 LyX 时生效。"
 
 #: src/frontends/qt/ui/PrefInputUi.ui:104
 msgid "Do not swap Apple and Control keys"
@@ -5238,9 +5192,8 @@ msgid ""
 msgstr ""
 
 #: src/frontends/qt/ui/PrefUi.ui:128
-#, fuzzy
 msgid "C&olor scheme:"
-msgstr "简历配色方案:"
+msgstr "配色方案(&O):"
 
 #: src/frontends/qt/ui/PrefUi.ui:156
 msgid "Context Help"
@@ -5936,9 +5889,8 @@ msgid "Set Borders"
 msgstr "设置边框"
 
 #: src/frontends/qt/ui/TabularUi.ui:1080
-#, fuzzy
 msgid "Click to set borders of the current (selected) cell(s)"
-msgstr "设置当前(选中)单元边框"
+msgstr "点击以设置当前（所选）单元格的边框"
 
 #: src/frontends/qt/ui/TabularUi.ui:1093
 msgid "All Borders"
@@ -5987,71 +5939,60 @@ msgid "Additional Space"
 msgstr "额外间距"
 
 #: src/frontends/qt/ui/TabularUi.ui:1192
-#, fuzzy
 msgid "To&p of row:"
-msgstr "行上(&O)"
+msgstr "行上(&p):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1268
 msgid "Botto&m of row:"
-msgstr "行下(&M)"
+msgstr "行下(&M):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1285
 msgid "Bet&ween rows:"
-msgstr "行间(&W)"
+msgstr "行间(&W):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1338
-#, fuzzy
 msgid "C&olors"
-msgstr "颜色"
+msgstr "颜色(&o)"
 
 #: src/frontends/qt/ui/TabularUi.ui:1356
-#, fuzzy
 msgid "Ri&ght Overhang:"
-msgstr "悬挂缩进(&H)"
+msgstr "右侧外伸(&g):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1372
-#, fuzzy
 msgid "Col&umn color:"
-msgstr "字体颜色"
+msgstr "列颜色(&u):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1395
-#, fuzzy
 msgid "Right Overhan&g:"
-msgstr "悬挂缩进(&H)"
+msgstr "右侧外伸(&g):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1405
-#, fuzzy
 msgid "Left Over&hang:"
-msgstr "悬挂缩进(&H)"
+msgstr "左侧外伸(&h):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1415
-#, fuzzy
 msgid "Ro&w color:"
-msgstr "无颜色"
+msgstr "行颜色(&w):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1428
-#, fuzzy
 msgid "Left O&verhang:"
-msgstr "悬挂缩进(&H)"
+msgstr "左侧外伸(&v):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1448
-#, fuzzy
 msgid "C&ell color:"
-msgstr "颜色(&C):"
+msgstr "单元格颜色(&e):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1468
-#, fuzzy
 msgid "&Border color:"
-msgstr "下边框"
+msgstr "边框颜色(&B):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1506
-#, fuzzy
 msgid "Alternating row colors"
-msgstr "替代“结语”的名称"
+msgstr "交替行颜色"
 
 #: src/frontends/qt/ui/TabularUi.ui:1571
 msgid "&Start with row:"
-msgstr ""
+msgstr "起始行(&S):"
 
 #: src/frontends/qt/ui/TabularUi.ui:1607
 msgid "&Multi-Page Table"
@@ -6277,9 +6218,8 @@ msgid "Two-&column document"
 msgstr "双栏文档(&C)"
 
 #: src/frontends/qt/ui/TextLayoutUi.ui:340
-#, fuzzy
 msgid "Use &justification in LyX work area:"
-msgstr "在 LyX 工作区内使用两端对齐(&J)"
+msgstr "在 LyX 工作区内使用两端对齐(&J):"
 
 #: src/frontends/qt/ui/ThesaurusUi.ui:33
 msgid "Language of the thesaurus"
@@ -10453,8 +10393,8 @@ msgid ""
 "brewed algorithm floats. Use the Algorithm style to enter and indent the "
 "algorithm."
 msgstr ""
-"使用 algorithm2e 包来处理算法浮动体，而不是 LyX 自带的算法浮动体。使用“算"
-"法”样式输入及排版算法。"
+"使用 algorithm2e 包来处理算法浮动体，而不是 LyX 自带的算法浮动体。使用“算法”"
+"样式输入及排版算法。"
 
 #: lib/layouts/algorithm2e.module:19 lib/layouts/powerdot.layout:596
 #: lib/layouts/revtex4-x.inc:311 lib/layouts/sciposter.layout:89
@@ -15782,9 +15722,9 @@ msgid ""
 "has to be installed for this module to work: install.packages('knitr'). Note "
 "it depends on R >= 2.14.1. For more info see http://yihui.name/knitr"
 msgstr ""
-"在 R 中使用 knitr 生成动态报告。本模块需要安装如下 R 包: install."
-"packages('knitr')。注意 R 版本必须高于 2.14.1。请参见 http://yihui.name/"
-"knitr (谢益辉的主页)"
+"在 R 中使用 knitr 生成动态报告。本模块需要安装如下 R 包: "
+"install.packages('knitr')。注意 R 版本必须高于 2.14.1。请参见 http://"
+"yihui.name/knitr (谢益辉的主页)"
 
 #: lib/layouts/knitr.module:14 lib/layouts/litinsets.inc:12
 #: lib/layouts/sweave.module:14
@@ -18867,8 +18807,8 @@ msgid ""
 "markup provided by the Text Properties dialog, words marked-up with soul are "
 "hyphenated."
 msgstr ""
-"通过soul包定义用于高亮、加宽间距、划掉、下划线和大写/小写字母的文字样式。"
-"与“文本属性”对话框提供的标记相比，使用soul标记的单词可以进行连字符断行。"
+"通过soul包定义用于高亮、加宽间距、划掉、下划线和大写/小写字母的文字样式。与"
+"“文本属性”对话框提供的标记相比，使用soul标记的单词可以进行连字符断行。"
 
 #: lib/layouts/soul.module:17
 msgid "Spaceletters"
@@ -19119,39 +19059,32 @@ msgid "Listing ##"
 msgstr "程序列表 ##"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "listing ##"
 msgstr "程序列表 ##"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "Listings ##"
 msgstr "程序列表 ##"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "listings ##"
 msgstr "程序列表 ##"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "Equation (##)"
-msgstr "公式 ##"
+msgstr "公式 (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "equation (##)"
-msgstr "公式 ##"
+msgstr "公式 (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "Equations (##)"
-msgstr "公式 ##"
+msgstr "公式 (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
-#, fuzzy
 msgid "equations (##)"
-msgstr "公式 ##"
+msgstr "公式 (##)"
 
 #: lib/layouts/stdcounters.inc:98
 msgid "\\fnsymbol{thanks}"
@@ -19209,7 +19142,6 @@ msgid "Margin"
 msgstr "旁注"
 
 #: lib/layouts/stdinsets.inc:52
-#, fuzzy
 msgid "Foot ##"
 msgstr "脚注 ##"
 
@@ -19241,9 +19173,8 @@ msgid "Idx"
 msgstr "索引"
 
 #: lib/layouts/stdinsets.inc:430 src/insets/InsetIndexMacro.cpp:56
-#, fuzzy
 msgid "See"
-msgstr "场"
+msgstr "指引替换"
 
 #: lib/layouts/stdinsets.inc:446 src/insets/InsetIndexMacro.cpp:57
 msgid "See also"
@@ -19259,37 +19190,32 @@ msgid "Subentry"
 msgstr "子条目"
 
 #: lib/layouts/stdinsets.inc:460
-#, fuzzy
 msgid "Nom"
-msgstr "否"
+msgstr "术语表"
 
 #: lib/layouts/stdinsets.inc:478
 msgid "Sort this entry as specified in the inset"
-msgstr ""
+msgstr "按插入框中指定的方式对本条目标进行排序"
 
 #: lib/layouts/stdinsets.inc:482
-#, fuzzy
 msgid "Description of the entry"
-msgstr "描述列表选项"
+msgstr "条目说明"
 
 #: lib/layouts/stdinsets.inc:494
 msgid "Unit"
-msgstr ""
+msgstr "单位"
 
 #: lib/layouts/stdinsets.inc:495
-#, fuzzy
 msgid "Nomenclature unit"
-msgstr "术语"
+msgstr "术语单位"
 
 #: lib/layouts/stdinsets.inc:500
-#, fuzzy
 msgid "Note[[nomencl]]"
-msgstr "页[[nomencl]]"
+msgstr "注释[[nomencl]]"
 
 #: lib/layouts/stdinsets.inc:501
-#, fuzzy
 msgid "Nomenclature note"
-msgstr "术语项"
+msgstr "术语注释"
 
 #: lib/layouts/stdinsets.inc:691
 msgid "Argument"
@@ -19320,22 +19246,20 @@ msgid "Verbatim*"
 msgstr "原文输出*"
 
 #: lib/layouts/stdlists.inc:76
-#, fuzzy
 msgid "Item[[enumerate]]"
-msgstr "编号列表"
+msgstr "编号列表[[enumerate]]"
 
 #: lib/layouts/stdlists.inc:76
-#, fuzzy
 msgid "item[[enumerate]]"
-msgstr "编号列表"
+msgstr "编号列表[[enumerate]]"
 
 #: lib/layouts/stdlists.inc:77
 msgid "Items[[enumerate]]"
-msgstr ""
+msgstr "编号列表[[enumerate]]"
 
 #: lib/layouts/stdlists.inc:77
 msgid "items[[enumerate]]"
-msgstr ""
+msgstr "编号列表[[enumerate]]"
 
 #: lib/layouts/stdsections.inc:15 lib/layouts/svcommon.inc:128
 msgid "Part \\thepart"
@@ -26783,9 +26707,8 @@ msgid "Lowercase|L"
 msgstr "小写(L)|L"
 
 #: lib/ui/stdmenus.inc:193
-#, fuzzy
 msgid "Invert Case|I"
-msgstr "反转"
+msgstr "大小写转换"
 
 #: lib/ui/stdmenus.inc:197
 msgid "Dissolve Text Style"
@@ -27108,9 +27031,8 @@ msgid "Index Properties"
 msgstr "索引属性"
 
 #: lib/ui/stdmenus.inc:397
-#, fuzzy
 msgid "Nomenclature Entry|y"
-msgstr "术语项(Y)...|Y"
+msgstr "术语表条目|y"
 
 #: lib/ui/stdmenus.inc:399
 msgid "Table...|T"
@@ -27153,14 +27075,12 @@ msgid "Symbols...|b"
 msgstr "特殊符号(B)...|B"
 
 #: lib/ui/stdmenus.inc:419
-#, fuzzy
 msgid "Plain Double Quotation Mark|Q"
-msgstr "外引号 (中文为双引号) (Q)|Q"
+msgstr "普通双引号|Q"
 
 #: lib/ui/stdmenus.inc:420
-#, fuzzy
 msgid "Plain Single Quotation Mark|S"
-msgstr "外引号 (中文为双引号) (Q)|Q"
+msgstr "普通单引号|S"
 
 #: lib/ui/stdmenus.inc:421
 msgid "Inner Quotation Mark|n"
@@ -27335,9 +27255,8 @@ msgid "Subentry|b"
 msgstr "子条目|b"
 
 #: lib/ui/stdmenus.inc:541
-#, fuzzy
 msgid "Sortkey|k"
-msgstr "排序"
+msgstr "排序键|k"
 
 #: lib/ui/stdmenus.inc:548
 msgid "Comment|C"
@@ -27368,9 +27287,8 @@ msgid "LaTeX Log|L"
 msgstr "LaTeX 日志(L)|L"
 
 #: lib/ui/stdmenus.inc:578
-#, fuzzy
 msgid "Processing Errors|r"
-msgstr "索引处理器错误"
+msgstr "处理错误|r"
 
 #: lib/ui/stdmenus.inc:579
 msgid "Start Appendix Here|x"
@@ -27429,9 +27347,8 @@ msgid "Bookmarks|B"
 msgstr "书签(B)|B"
 
 #: lib/ui/stdmenus.inc:608
-#, fuzzy
 msgid "Next Error|E"
-msgstr "下一个错误(&E)"
+msgstr "下一个错误|E"
 
 #: lib/ui/stdmenus.inc:609
 msgid "Next Note|N"
@@ -35979,11 +35896,11 @@ msgstr "选中此项检查是否新近打开文件仍然存在。"
 
 #: src/LyXRC.cpp:3219
 msgid ""
-"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 -"
-"n38\" Refer to the ChkTeX documentation."
+"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
+"-n38\" Refer to the ChkTeX documentation."
 msgstr ""
-"定义运行 chktex 的方式。如：“chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 -"
-"n38”。请参阅 ChkTeX 文档。"
+"定义运行 chktex 的方式。如：“chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
+"-n38”。请参阅 ChkTeX 文档。"
 
 #: src/LyXRC.cpp:3226
 msgid ""
@@ -38611,19 +38528,16 @@ msgid "&Switch Back"
 msgstr "切回(&S)"
 
 #: src/frontends/qt/GuiDocument.cpp:2039
-#, fuzzy
 msgid "&Left:"
-msgstr "左(&L)"
+msgstr "左(&L):"
 
 #: src/frontends/qt/GuiDocument.cpp:2040
-#, fuzzy
 msgid "&Right:"
-msgstr "右(&R)"
+msgstr "右(&R):"
 
 #: src/frontends/qt/GuiDocument.cpp:2043
-#, fuzzy
 msgid "&Outer:"
-msgstr "外边距(&U):"
+msgstr "外边距(&O):"
 
 #: src/frontends/qt/GuiDocument.cpp:2432
 msgid "Default margins"
@@ -39760,61 +39674,52 @@ msgid "Screen Fonts"
 msgstr "屏幕字体"
 
 #: src/frontends/qt/GuiPrefs.cpp:1426
-#, fuzzy
 msgid "Export a color theme"
-msgstr "导出已取消"
+msgstr "导出颜色主题"
 
 #: src/frontends/qt/GuiPrefs.cpp:1460
-#, fuzzy
 msgid "Enter the name of the color theme."
-msgstr "输入默认主文档名"
+msgstr "输入颜色主题名称。"
 
 #: src/frontends/qt/GuiPrefs.cpp:1461
-#, fuzzy
 msgid "Enter the name of the new color theme to save."
-msgstr "输入默认主文档名"
+msgstr "输入要保存的新颜色主题名称。"
 
 #: src/frontends/qt/GuiPrefs.cpp:1465
-#, fuzzy
 msgid "Name the color theme"
-msgstr "会议名称"
+msgstr "为该颜色主题命名"
 
 #: src/frontends/qt/GuiPrefs.cpp:1467
 msgid "New theme name"
-msgstr ""
+msgstr "新主题名称"
 
 #: src/frontends/qt/GuiPrefs.cpp:1489
 msgid "A user color theme with the same name exists."
 msgstr ""
 
 #: src/frontends/qt/GuiPrefs.cpp:1490
-#, fuzzy
 msgid "Do you want to overwrite the theme?"
-msgstr ""
-"文件 %1$s 已经存在。\n"
-"您要覆盖它吗？"
+msgstr "要覆盖该主题？"
 
 #: src/frontends/qt/GuiPrefs.cpp:1533
 msgid "Import a color theme"
 msgstr ""
 
 #: src/frontends/qt/GuiPrefs.cpp:1657
-#, fuzzy
 msgid "Select a user theme"
-msgstr "选择主文档"
+msgstr "选择一个用户主题"
 
 #: src/frontends/qt/GuiPrefs.cpp:1658
 msgid "Please select a user theme to remove from the \"Themes\" list menu."
-msgstr ""
+msgstr "请从‘主题’列表菜单中选择一个要移除的用户主题"
 
 #: src/frontends/qt/GuiPrefs.cpp:1670
 msgid "Not a user theme"
-msgstr ""
+msgstr "非用户主题"
 
 #: src/frontends/qt/GuiPrefs.cpp:1671
-#, fuzzy
 msgid "The selected theme is a system theme. It cannot be removed."
-msgstr "默认索引不能删除。"
+msgstr "所选主题为系统主题，无法删除。"
 
 #: src/frontends/qt/GuiPrefs.cpp:1681
 msgid "Confirm the removal"
@@ -39826,14 +39731,12 @@ msgid "Do you really want to remove the theme \"%1$s\"?"
 msgstr ""
 
 #: src/frontends/qt/GuiPrefs.cpp:1820
-#, fuzzy
 msgid "&Export..."
-msgstr "导出中..."
+msgstr "导出(&E)..."
 
 #: src/frontends/qt/GuiPrefs.cpp:1821
-#, fuzzy
 msgid "&Import..."
-msgstr "导入(I)|I"
+msgstr "导入(&I)..."
 
 #: src/frontends/qt/GuiPrefs.cpp:1851
 #, fuzzy
@@ -39851,19 +39754,16 @@ msgid "Such a color is not found"
 msgstr "找不到搜索字符串！"
 
 #: src/frontends/qt/GuiPrefs.cpp:2094
-#, fuzzy
 msgid "No[[bookmarks]]"
-msgstr "书签"
+msgstr "不显示[[bookmarks]]"
 
 #: src/frontends/qt/GuiPrefs.cpp:2095
-#, fuzzy
 msgid "Inline"
-msgstr "行内(I)|I"
+msgstr "行内"
 
 #: src/frontends/qt/GuiPrefs.cpp:2096
-#, fuzzy
 msgid "In Margin"
-msgstr "旁注"
+msgstr "在旁注"
 
 #: src/frontends/qt/GuiPrefs.cpp:2188
 msgid "Paths"
@@ -39990,14 +39890,12 @@ msgid "Oxygen"
 msgstr "Oxygen"
 
 #: src/frontends/qt/GuiPrefs.cpp:3442
-#, fuzzy
 msgid "Light Mode"
-msgstr "马的移动"
+msgstr "浅色模式"
 
 #: src/frontends/qt/GuiPrefs.cpp:3443
-#, fuzzy
 msgid "Dark Mode"
-msgstr "PDF 页面模式"
+msgstr "深色模式"
 
 #: src/frontends/qt/GuiPrefs.cpp:3471
 msgid "Restart needed"
@@ -40019,9 +39917,9 @@ msgid ""
 "Note that these files are hidden by default by some file managers. A "
 "dedicated backup directory can be set in the 'Paths' section."
 msgstr ""
-"如果勾选，会在当前工作目录创建文档备份。备份文件具有相同的文件名但后缀为“."
-"lyx~”。请注意，某些文件管理器默认情况下会隐藏这些文件。您可以在“路径”部分设置"
-"专用备份目录。"
+"如果勾选，会在当前工作目录创建文档备份。备份文件具有相同的文件名但后缀"
+"为“.lyx~”。请注意，某些文件管理器默认情况下会隐藏这些文件。您可以在“路径”部分"
+"设置专用备份目录。"
 
 #: src/frontends/qt/GuiPrefs.cpp:3645
 #, c-format
@@ -40127,55 +40025,48 @@ msgid "Identity"
 msgstr "身份"
 
 #: src/frontends/qt/GuiPrefs.h:380
-#, fuzzy
 msgid "Default[[sortkey]]"
-msgstr "删除[[Key]]"
+msgstr "默认[[sortkey]]"
 
 #: src/frontends/qt/GuiPrefs.h:380
-#, fuzzy
 msgid "Default[[guiname]]"
-msgstr "默认边距"
+msgstr "默认[[guiname]]"
 
 #: src/frontends/qt/GuiPrefs.h:381
 msgid "Monochrome[[sortkey]]"
-msgstr ""
+msgstr "单色方案[[sortkey]]"
 
 #: src/frontends/qt/GuiPrefs.h:381
 msgid "Monochrome[[guiname]]"
-msgstr ""
+msgstr "单色方案[[guiname]]"
 
 #: src/frontends/qt/GuiPrefs.h:382
 msgid "Solarized[[sortkey]]"
-msgstr ""
+msgstr "低饱和彩色方案[[sortkey]]"
 
 #: src/frontends/qt/GuiPrefs.h:382
 msgid "Solarized[[guiname]]"
-msgstr ""
+msgstr "低饱和彩色方案[[guiname]]"
 
 #: src/frontends/qt/GuiPrefs.h:386
-#, fuzzy
 msgid "Light"
-msgstr "右(&R)"
+msgstr "浅色（模式）"
 
 #: src/frontends/qt/GuiPrefs.h:386
-#, fuzzy
 msgid "Dark"
-msgstr "PDF 页面模式"
+msgstr "深色（模式）"
 
 #: src/frontends/qt/GuiPrefs.h:386
-#, fuzzy
 msgid "Object/Element"
-msgstr "对象名称"
+msgstr "对象/元素"
 
 #: src/frontends/qt/GuiPrintNomencl.cpp:45
-#, fuzzy
 msgid "Longest label width (guessed)"
-msgstr "最长标签长度"
+msgstr "最长标签宽度（推测值）"
 
 #: src/frontends/qt/GuiPrintNomencl.cpp:47
-#, fuzzy
 msgid "Longest label width (set)"
-msgstr "最长标签长度"
+msgstr "最长标签宽度（已设置）"
 
 #: src/frontends/qt/GuiPrintNomencl.h:40
 msgid "Nomenclature List Settings"
@@ -43256,7 +43147,7 @@ msgstr "以 '%1$s' 开头的参数有:  %2$s"
 
 #: src/insets/InsetMarginal.cpp:32
 msgid "margin"
-msgstr "边框"
+msgstr "旁注"
 
 #: src/insets/InsetNewpage.cpp:239 src/insets/InsetNewpage.cpp:249
 msgid "New Page"
