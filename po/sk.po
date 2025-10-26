@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-10-15 13:09+0200\n"
-"PO-Revision-Date: 2025-10-15 11:33+0000\n"
+"POT-Creation-Date: 2025-10-26 07:48+0100\n"
+"PO-Revision-Date: 2025-10-26 06:59+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -11178,6 +11178,10 @@ msgstr "Titul rámu"
 msgid "Enter the frame title here"
 msgstr "Vložte sem titul rámu"
 
+#: lib/layouts/beamer.layout:555
+msgid "Frame Break"
+msgstr "Zalomenie rámu"
+
 #: lib/layouts/beamer.layout:559
 msgid "PlainFrame"
 msgstr "Prostý rám"
@@ -17174,6 +17178,10 @@ msgid ""
 msgstr ""
 "Voľný priestor nutný na strane aby sa viac stĺpcové prostredie na tejto "
 "strane mohlo začať"
+
+#: lib/layouts/multicol.module:41
+msgid "Column Break"
+msgstr "Zalomenie stĺpca"
 
 #: lib/layouts/mwart.layout:3
 msgid "Polish Article (MW Bundle)"
@@ -32685,6 +32693,10 @@ msgid "LyX 2.4.x"
 msgstr "LyX 2.4.x"
 
 #: lib/configure.py:862
+msgid "LyX 2.5.x"
+msgstr "LyX 2.5.x"
+
+#: lib/configure.py:862
 msgid "CJK LyX 1.4.x (big5)"
 msgstr "CJK LyX 1.4.x (big5)"
 
@@ -41609,6 +41621,10 @@ msgstr "Prázdny obsah"
 msgid "Open Outliner..."
 msgstr "Otvoriť prehľad…"
 
+#: src/frontends/qt/Menus.cpp:1551
+msgid "Contextual Break"
+msgstr "Kontextuálne zalomenie"
+
 #: src/frontends/qt/Menus.cpp:1530
 msgid "[[Toolbar]]On|O"
 msgstr "Zapnúť|Z"
@@ -43261,6 +43277,10 @@ msgstr "Vyprázdniť dvojitú stránku (\\cleardoublepage)"
 #: src/insets/InsetNewpage.cpp:247
 msgid "No Page Break"
 msgstr "Bez zalomenia strany"
+
+#: src/insets/InsetTextbreak.cpp:261
+msgid "Non-sensical Break"
+msgstr "Nezmyselné zalomenie"
 
 #: src/insets/InsetNomencl.cpp:62
 msgid "Nomenclature Symbol: "
