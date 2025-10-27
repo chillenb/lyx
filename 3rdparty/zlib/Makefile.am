@@ -37,7 +37,6 @@ liblyxzlib_a_SOURCES = \
 	$(ZLIB_VERSION)/trees.c \
 	$(ZLIB_VERSION)/trees.h \
 	$(ZLIB_VERSION)/uncompr.c \
-	$(ZLIB_VERSION)/zconf.h \
 	$(ZLIB_VERSION)/zlib.h \
 	$(ZLIB_VERSION)/zutil.c \
 	$(ZLIB_VERSION)/zutil.h
