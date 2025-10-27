@@ -1154,11 +1154,17 @@ void Tabular::updateIndexes()
 				    && getOddRowColor() != "default" && !getOddRowColor().empty())
 					colors.push_back(getOddRowColor());
 			}
-			for (auto const & color : colors)
+			bool have_col = false;
+			for (auto const & color : colors) {
 				if (color != "default" && lcolor.isKnownLyXName(color)) {
+					have_col = true;
 					cell_info[row][column].inset->setBackgroundColor(color);
 					break;
 				}
+			}
+			if (!have_col)
+				// assure all colors are cleared
+				cell_info[row][column].inset->setBackgroundColor("none");
 			if (buffer().params().track_changes) {
 				if (row_info[row].change.changed())
 					cell_info[row][column].inset->setChange(row_info[row].change);
