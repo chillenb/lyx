@@ -4,7 +4,7 @@
 # Extended book textclass definition file.
 # Herbert Voss <voss@lyx.org>
 
-Format 113
+Format 114
 Input book.layout
 
 # change available fontsizes

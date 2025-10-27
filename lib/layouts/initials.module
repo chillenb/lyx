@@ -6,7 +6,7 @@
 #DescriptionEnd
 #Authors: Pavel Sanda and Uwe Stöhr
 
-Format 113
+Format 114
 
 AddToPreamble
 	\@ifundefined{lettrine}{\usepackage{lettrine}}{}

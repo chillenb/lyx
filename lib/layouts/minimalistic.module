@@ -4,7 +4,7 @@
 # Redefines several insets (Index, Branch, URL) as being Minimalistic. 
 #DescriptionEnd
 
-Format 113
+Format 114
 
 InsetLayout Index
 		Decoration   minimalistic

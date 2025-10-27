@@ -3,5 +3,5 @@
 #  \DeclareCategory{Obsolete}
 
 # Read the definitions from article.layout
-Format 113
+Format 114
 Input article.layout
