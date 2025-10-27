@@ -626,7 +626,7 @@ docstring xml::cleanID(docstring const & orig)
 	// This code could be improved: it uses Qt outside the GUI part. Any TLS implementation could do the trick.
 	typedef map<docstring, docstring> MangledMap;
 	static QThreadStorage<MangledMap> tMangledNames;
-	static QThreadStorage<int> tMangleID;
+	thread_local int tMangleID = 0;
 
 	// If the name is already known, just return it.
 	MangledMap & mangledNames = tMangledNames.localData();
@@ -662,10 +662,9 @@ docstring xml::cleanID(docstring const & orig)
 	// This avoids having a clash if satisfying XML requirements for ID makes two IDs identical, like "a:b" and "a!b",
 	// as both of them would be transformed as "a.b". With this procedure, one will become "a.b" and the other "a.b-1".
 	if (mangle && mangledNames.find(content) != mangledNames.end()) {
-		int & mangleID = tMangleID.localData();
-		if (mangleID > 0)
-			content += "-" + convert<docstring>(mangleID);
-		mangleID += 1;
+		if (tMangleID > 0)
+			content += "-" + convert<docstring>(tMangleID);
+		tMangleID += 1;
 	}
 
 	// Save the new ID to avoid recomputing it afterwards and to ensure stability over the document.

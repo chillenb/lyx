@@ -485,23 +485,18 @@ void InsetIndex::docbook(XMLStream & xs, OutputParams const & runparams) const
 		} else {
 			// Append an ID if uniqueness is not guaranteed across the document.
 			static QThreadStorage<set<docstring>> tKnownTermLists;
-			static QThreadStorage<int> tID;
+			thread_local int tID = 0;
 
 			set<docstring> &knownTermLists = tKnownTermLists.localData();
-			int &ID = tID.localData();
-
-			if (!tID.hasLocalData()) {
-				tID.localData() = 0;
-			}
 
 			// Modify the index terms to add the unique ID if needed.
 			docstring newIndexTerms = indexTerms;
 			if (knownTermLists.find(indexTerms) != knownTermLists.end()) {
-				newIndexTerms += from_ascii(string("-") + to_string(ID));
+				newIndexTerms += from_ascii(string("-") + to_string(tID));
 
 				// Only increment for the end of range, so that the same number is used for the start of range.
 				if (hasEndRange) {
-					ID++;
+					tID++;
 				}
 			}
 
