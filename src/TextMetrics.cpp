@@ -1608,7 +1608,7 @@ Row::Element const * TextMetrics::checkInsetHit(Row const & row, int x) const
 			break;
 		if (xx + e.full_width() > x)
 			return (e.type == Row::INSET) ? &e : nullptr;
-		xx += e.full_width();
+		xx += static_cast<int>(e.full_width());
 	}
 
 	return nullptr;
@@ -1636,7 +1636,7 @@ int TextMetrics::cursorX(CursorSlice const & sl,
 	if (pm.rows().empty())
 		return 0;
 	Row const & row = pm.getRow(sl.pos(), boundary);
-	return row.pos2x(sl.pos(), boundary);
+	return static_cast<int>(row.pos2x(sl.pos(), boundary));
 }
 
 
