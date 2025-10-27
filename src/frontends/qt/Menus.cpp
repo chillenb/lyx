@@ -199,6 +199,12 @@ public:
 		EnvironmentSeparatorsContext,
 		/** This is the list of quotation marks available */
 		SwitchQuotes,
+		/** This is the list of special chars available */
+		SpecialChars,
+		/** This is the list of formatting special chars available */
+		SpecialCharsFormatting,
+		/** This is the list of logo special chars available */
+		SpecialCharsLogos,
 		/** Options in the Zoom menu **/
 		ZoomOptions
 	};
@@ -379,6 +385,7 @@ public:
 	void expandToc2(Toc const & toc_list, size_t from, size_t to, int depth, const string & toc_type);
 	void expandToc(Buffer const * buf);
 	void expandPasteRecent(Buffer const * buf);
+	void expandSpecialChars(Buffer const * buf, string const & type);
 	void expandTextBreaks(BufferView const * bv, bool modify = false);
 	void expandToolbars();
 	void expandBranches(Buffer const * buf);
@@ -509,6 +516,9 @@ void MenuDefinition::read(Lexer & lex)
 		md_switchcaptions,
 		md_env_separators,
 		md_env_separatorscontext,
+		md_specialchars,
+		md_specialchars_formatting,
+		md_specialchars_logos,
 		md_switchquotes,
 		md_textbreaks,
 		md_textbreaksmodify,
@@ -545,6 +555,9 @@ void MenuDefinition::read(Lexer & lex)
 		{ "optsubmenu", md_optsubmenu },
 		{ "pasterecent", md_pasterecent },
 		{ "separator", md_separator },
+		{ "specialcharformattings", md_specialchars_formatting },
+		{ "specialcharlogos", md_specialchars_logos },
+		{ "specialchars", md_specialchars },
 		{ "spellingsuggestions", md_spellingsuggestions },
 		{ "submenu", md_submenu },
 		{ "switcharguments", md_switcharguments },
@@ -707,6 +720,18 @@ void MenuDefinition::read(Lexer & lex)
 
 		case md_env_separatorscontext:
 			add(MenuItem(MenuItem::EnvironmentSeparatorsContext));
+			break;
+
+		case md_specialchars:
+			add(MenuItem(MenuItem::SpecialChars));
+			break;
+
+		case md_specialchars_formatting:
+			add(MenuItem(MenuItem::SpecialCharsFormatting));
+			break;
+
+		case md_specialchars_logos:
+			add(MenuItem(MenuItem::SpecialCharsLogos));
 			break;
 
 		case md_switchquotes:
@@ -1530,6 +1555,19 @@ void MenuDefinition::expandPasteRecent(Buffer const * buf)
 		docstring const lb = i + from_ascii(". ") + s + "|" + i;
 		add(MenuItem(MenuItem::Command, toqstr(lb),
 				    FuncRequest(LFUN_PASTE, i)));
+	}
+}
+
+
+void MenuDefinition::expandSpecialChars(Buffer const * buf, string const & type)
+{
+	if (!buf)
+		return;
+	for (auto const & [key, value] : buf->params().documentClass().specialChars()) {
+		if (value.type != type)
+			continue;
+		add(MenuItem(MenuItem::Command, qt_(value.menustring),
+			    FuncRequest(LFUN_SPECIALCHAR_INSERT, key)));
 	}
 }
 
@@ -2538,6 +2576,18 @@ void Menus::Impl::expand(MenuDefinition const & frommenu,
 
 		case MenuItem::PasteRecent:
 			tomenu.expandPasteRecent(buf);
+			break;
+
+		case MenuItem::SpecialChars:
+			tomenu.expandSpecialChars(buf, "specialchar");
+			break;
+
+		case MenuItem::SpecialCharsFormatting:
+			tomenu.expandSpecialChars(buf, "formatting");
+			break;
+
+		case MenuItem::SpecialCharsLogos:
+			tomenu.expandSpecialChars(buf, "logo");
 			break;
 
 		case MenuItem::TextBreaks:

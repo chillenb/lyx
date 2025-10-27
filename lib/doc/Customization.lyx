@@ -11705,6 +11705,60 @@ Settings
 \end_inset
 
  dialog.
+\change_inserted -712698321 1761549934
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761550114
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761549946
+SpecialChar
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ Defines a new special character.
+ See 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:SpecialChars"
+
+\end_inset
+
+ for details.
+ Must end with 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761549935
+End
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -12838,6 +12892,8 @@ status collapsed
 
 \change_inserted -712698321 1761019622
 BreakCommand
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -12850,6 +12906,8 @@ status collapsed
 
 \change_inserted -712698321 1761019622
 <command>
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -12862,6 +12920,8 @@ status collapsed
 
 \change_inserted -712698321 1761019622
 <GUI string>
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -12883,6 +12943,8 @@ Frame Break
 \begin_inset Quotes erd
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -20109,6 +20171,8 @@ status collapsed
 
 \change_inserted -712698321 1761019436
 BreakCommand
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20121,6 +20185,8 @@ status collapsed
 
 \change_inserted -712698321 1761019461
 <command>
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -20133,6 +20199,8 @@ status collapsed
 
 \change_inserted -712698321 1761019481
 <GUI string>
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -24261,6 +24329,936 @@ item
  users can insert redefinitions (of lengths etc.) to individual lists.
  By default,
  these arguments do not have a delimiter.
+\change_inserted -712698321 1761549993
+
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted -712698321 1761550007
+Special Characters
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:SpecialChars"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1761578930
+Here is how special characters,
+ formatting commands and logos that need specific \SpecialChar LaTeX
+,
+ XHTML or DocBook output,
+ are defined.
+ Standard definitions are included in the file 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761550165
+stdspecialchars.inc
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+ which is automatically loaded for each class.
+ However,
+ if you want to modify definitions thereof,
+ you need to manually load it first via adding
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1761550170
+Input stdspecialchars.inc
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1761552239
+to your layout file.
+ The definition always starts with 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552134
+SpecialChar <name>
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ and ends with 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552146
+End
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
+ Between these tags,
+ the following specifications can be made to create a new special character or modify an existing one:
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553099
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553077
+CanBreakAfter
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553071
+
+\emph on
+0
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553071
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] If this is set to 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553071
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+ the line in the work area can be broken after this also if no blank follows.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553279
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552327
+Font
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ The font used for the display of the character in the work area.
+ See 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Font-description"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553280
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553280
+ForceLTR
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553280
+
+\emph on
+0
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553280
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] Force Left-to-Right output.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552940
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552914
+IsChar
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552908
+
+\emph on
+0
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552908
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] If this is set to 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552908
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+ the special character is handled as a character of a word.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552948
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552943
+IsLetter
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552940
+
+\emph on
+0
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552940
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] If this is set to 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552940
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+ the special character is handled as a letter.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553007
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552704
+LaTeXOutput
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552883
+[string]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ The text or command that is output to \SpecialChar LaTeX
+.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553032
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553011
+LaTeXOutputRTL
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553007
+[string]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ Alternative text or command that is output to \SpecialChar LaTeX
+ in right-to-left context.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761579029
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553037
+LaTeXOutputUTF8
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553032
+[string]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ Alternative text or command that is output to \SpecialChar LaTeX
+ in UTF-8 encoding.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553134
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552596
+LyXOutput
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552885
+[string]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ The text that is output in the workarea.
+ This might be verbatim text or a unicode hex value (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552659
+0x002e
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761553196
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553187
+NeedProtect
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553134
+
+\emph on
+0
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553134
+1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] Whether this command should be 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761553134
+
+\backslash
+protect
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+'ed in fragile context.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552888
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552736
+PlainTextOutput
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552888
+[string]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ The text that is output in plain text export.
+ This might be verbatim text or a unicode hex value (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552732
+0x002e
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552367
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552271
+MenuString
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552271
+[string]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ A string for the menu.
+ You can define an accelerator by appending the respective character to the string,
+ divided by 
+\begin_inset Quotes eld
+\end_inset
+
+|
+\begin_inset Quotes erd
+\end_inset
+
+ (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.
+\begin_inset space \space{}
+\end_inset
+
+
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552418
+My Character|M
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552834
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552367
+Requires
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552367
+string
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] Whether the class requires the feature 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552367
+string
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
+ Multiple features must be separated by commas.
+ Note that you can only request supported features.
+ (See 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:List-of-functions"
+nolink "false"
+
+\end_inset
+
+ for the list of features.).
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552858
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552838
+Tooltip
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552834
+string
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] An optional tooltip that is displayed when hovering the character.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552761
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552488
+Type
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552496
+type
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+] The type of the special character,
+ might be either 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552533
+specialchar
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552537
+formatting
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+,
+ or 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552540
+logo
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
+ This determines where this will be accessible in the menu.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1761552821
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552765
+XHTMLOutput
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ The text or entity (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761552821
+&#x2026;
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+) that is output in XHTML and DocBook.
 \end_layout
 
 \begin_layout Subsection

@@ -5,6 +5,7 @@
  *
  * \author Asger Alstrup Nielsen
  * \author Jean-Marc Lasgouttes
+ * \author Jürgen Spitzmüller
  * \author Lars Gullik Bjønnes
  *
  * Full author contact details are available in file CREDITS.
@@ -14,12 +15,15 @@
 
 #include "InsetSpecialChar.h"
 
+#include "Buffer.h"
+#include "BufferParams.h"
 #include "Dimension.h"
 #include "Encoding.h"
 #include "Font.h"
 #include "Language.h"
 #include "LaTeXFeatures.h"
 #include "MetricsInfo.h"
+#include "TextClass.h"
 #include "xml.h"
 #include "texstream.h"
 
@@ -29,80 +33,38 @@
 
 #include "support/debug.h"
 #include "support/docstream.h"
+#include "support/gettext.h"
+#include "support/lstrings.h"
+#include "support/textutils.h"
 #include "support/Lexer.h"
 
 using namespace std;
+using namespace lyx::support;
 
 namespace lyx {
 
 using support::Lexer;
 
 
-InsetSpecialChar::InsetSpecialChar(Kind k)
-	: Inset(nullptr), kind_(k)
+InsetSpecialChar::InsetSpecialChar(string const k)
+	: Inset(nullptr), kind_(k), unknown_(false)
 {}
-
-
-InsetSpecialChar::Kind InsetSpecialChar::kind() const
-{
-	return kind_;
-}
 
 
 docstring InsetSpecialChar::toolTip(BufferView const &, int, int) const
 {
-	docstring message;
-	switch (kind_) {
-		case ALLOWBREAK:
-			message = from_ascii("Optional Line Break (ZWSP)");
-			break;
-		case LIGATURE_BREAK:
-			message = from_ascii("Ligature Break (ZWNJ)");
-			break;
-		case END_OF_SENTENCE:
-			message = from_ascii("End of Sentence");
-			break;
-		case HYPHENATION:
-			message = from_ascii("Hyphenation Point");
-			break;
-		case SLASH:
-			message = from_ascii("Breakable Slash");
-			break;
-		case NOBREAKDASH:
-			message = from_ascii("Protected Hyphen (SHY)");
-			break;
-		case LDOTS:
-		case MENU_SEPARATOR:
-		case PHRASE_LYX:
-		case PHRASE_TEX:
-		case PHRASE_LATEX2E:
-		case PHRASE_LATEX:
-			// no tooltip for these ones.
-			break;
-	}
-	return message;
+	if (unknown_)
+		return bformat(_("Unknown special character (%1$s)!"), from_utf8(kind_));
+
+	return buffer().params().documentClass().specialChars()[kind_].tooltip;
 }
 
 
 int InsetSpecialChar::rowFlags() const
 {
-	switch (kind_) {
-	case ALLOWBREAK:
-	case HYPHENATION:
-	case SLASH:
-		// these are the elements that allow line breaking
+	if (!unknown_ && buffer().params().documentClass().specialChars()[kind_].can_break_after)
 		return CanBreakAfter;
-	case NOBREAKDASH:
-	case END_OF_SENTENCE:
-	case LIGATURE_BREAK:
-	case LDOTS:
-	case MENU_SEPARATOR:
-	case PHRASE_LYX:
-	case PHRASE_TEX:
-	case PHRASE_LATEX2E:
-	case PHRASE_LATEX:
-		break;
-	}
+
 	return Inline;
 }
 
@@ -119,12 +81,12 @@ void drawChar(PainterInfo & pi, int & x, int const y, char_type ch)
 }
 
 
-void drawLogo(PainterInfo & pi, int & x, int const y, InsetSpecialChar::Kind kind)
+void drawLogo(PainterInfo & pi, int & x, int const y, string const kind)
 {
 	FontInfo const & font = pi.base.font;
 	int const em = theFontMetrics(font).em();
-	switch (kind) {
-	case InsetSpecialChar::PHRASE_LYX:
+
+	if (kind == "LyX") {
 		/** Reference macro:
 		 *  \providecommand{\LyX}{L\kern-.1667em\lower.25em\hbox{Y}\kern-.125emX\\@};
 		 */
@@ -133,9 +95,9 @@ void drawLogo(PainterInfo & pi, int & x, int const y, InsetSpecialChar::Kind kin
 		drawChar(pi, x, y + em / 4, 'Y');
 		x -= em / 8;
 		drawChar(pi, x, y, 'X');
-		break;
-
-	case InsetSpecialChar::PHRASE_TEX: {
+		return;
+	}
+	if (kind == "TeX") {
 		/** Reference macro:
 		 *  \def\TeX{T\kern-.1667em\lower.5ex\hbox{E}\kern-.125emX\@}
 		 */
@@ -145,22 +107,22 @@ void drawLogo(PainterInfo & pi, int & x, int const y, InsetSpecialChar::Kind kin
 		drawChar(pi, x, y + ex / 2, 'E');
 		x -= em / 8;
 		drawChar(pi, x, y, 'X');
-		break;
+		return;
 	}
-	case InsetSpecialChar::PHRASE_LATEX2E:
+	if (kind == "LaTeX2e") { 
 		/** Reference macro:
 		 *  \DeclareRobustCommand{\LaTeXe}{\mbox{\m@th
 		 *    \if b\expandafter\@car\f@series\@nil\boldmath\fi
 		 *    \LaTeX\kern.15em2$_{\textstyle\varepsilon}$}}
 		 */
-		drawLogo(pi, x, y, InsetSpecialChar::PHRASE_LATEX);
+		drawLogo(pi, x, y, "LaTeX");
 		x += 3 * em / 20;
 		drawChar(pi, x, y, '2');
 		// ε U+03B5 GREEK SMALL LETTER EPSILON
 		drawChar(pi, x, y + em / 4, char_type(0x03b5));
-		break;
-
-	case InsetSpecialChar::PHRASE_LATEX: {
+		return;
+	}
+	if (kind == "LaTeX") { 
 		/** Reference macro:
 		 * \DeclareRobustCommand{\LaTeX}{L\kern-.36em%
 		 *        {\sbox\z@ T%
@@ -179,12 +141,10 @@ void drawLogo(PainterInfo & pi, int & x, int const y, InsetSpecialChar::Kind kin
 		pi2.base.font.decSize().decSize();
 		drawChar(pi2, x, y - em / 5, 'A');
 		x -= 3 * em / 20;
-		drawLogo(pi, x, y, InsetSpecialChar::PHRASE_TEX);
-		break;
+		drawLogo(pi, x, y, "TeX");
+		return;
 	}
-	default:
-		LYXERR0("No information for drawing logo " << kind);
-	}
+	LYXERR0("No information for drawing logo " << kind);
 }
 
 } // namespace
@@ -198,57 +158,32 @@ void InsetSpecialChar::metrics(MetricsInfo & mi, Dimension & dim) const
 	dim.wid = 0;
 
 	docstring s;
-	switch (kind_) {
-		case ALLOWBREAK:
-			dim.asc = fm.xHeight();
-			dim.des = fm.descent('g');
-			dim.wid = fm.em() / 8;
-			break;
-		case LIGATURE_BREAK:
-			s = from_ascii("|");
-			break;
-		case END_OF_SENTENCE:
-			s = from_ascii(".");
-			break;
-		case LDOTS: {
-			// see comment in draw().
-			auto const fam = mi.base.font.family();
-			// Multiplication by 3 is done here to limit rounding effects.
-			int const spc3 = fam == TYPEWRITER_FAMILY ? 0 : 3 * fm.width(char_type(' ')) / 2;
-			dim.wid = 3 * fm.width(char_type('.')) + spc3;
-			break;
-		}
-		case MENU_SEPARATOR:
-			// ▹  U+25B9 WHITE RIGHT-POINTING SMALL TRIANGLE
-			// There is a \thinspace on each side of the triangle
-			dim.wid = 2 * fm.em() / 6 + fm.width(char_type(0x25B9));
-			break;
-		case HYPHENATION:
-			dim.wid = fm.width(from_ascii("-"));
-			if (dim.wid > 5)
-				dim.wid -= 2; // to make it look shorter
-			break;
-		case SLASH:
-			s = from_ascii("/");
-			dim.des = fm.descent(s[0]);
-			break;
-		case NOBREAKDASH:
-			s = from_ascii("-");
-			break;
-		case PHRASE_LYX:
-		case PHRASE_TEX:
-		case PHRASE_LATEX2E:
-		case PHRASE_LATEX:
-			dim.asc = fm.maxAscent();
-			dim.des = fm.maxDescent();
-			frontend::NullPainter np;
-			PainterInfo pi(mi.base.bv, np);
-			pi.base.font = mi.base.font;
-			// We rely on the fact that drawLogo updates x to compute
-			// the width without code duplication.
-			drawLogo(pi, dim.wid, 0, kind_);
-			break;
-	}
+	if (unknown_)
+		s = from_ascii("??");
+	else if (kind_ == "allowbreak") {
+		dim.asc = fm.xHeight();
+		dim.des = fm.descent('g');
+		dim.wid = fm.em() / 8;
+	} else if (kind_ == "menuseparator") {
+		// ▹  U+25B9 WHITE RIGHT-POINTING SMALL TRIANGLE
+		// There is a \thinspace on each side of the triangle
+		dim.wid = 2 * fm.em() / 6 + fm.width(char_type(0x25B9));
+	} else if (kind_ == "softhyphen") {
+		dim.wid = fm.width(from_ascii("-"));
+		if (dim.wid > 5)
+			dim.wid -= 2; // to make it look shorter
+	} else if (kind_ == "LyX" || kind_ == "TeX" || kind_ == "LaTeX" || kind_ == "LaTeX2e") {
+		dim.asc = fm.maxAscent();
+		dim.des = fm.maxDescent();
+		frontend::NullPainter np;
+		PainterInfo pi(mi.base.bv, np);
+		pi.base.font = mi.base.font;
+		// We rely on the fact that drawLogo updates x to compute
+		// the width without code duplication.
+		drawLogo(pi, dim.wid, 0, kind_);
+	} else
+		s = buffer().params().documentClass().specialChars()[kind_].lyx_output;
+
 	if (dim.wid == 0)
 		dim.wid = fm.width(s);
 }
@@ -258,15 +193,13 @@ void InsetSpecialChar::draw(PainterInfo & pi, int x, int y) const
 {
 	FontInfo font = pi.base.font;
 
-	switch (kind_) {
-	case HYPHENATION:
-	{
-		font.setColor(Color_special);
-		pi.pain.text(x, y, char_type('-'), font);
-		break;
+	if (unknown_) {
+		font.setColor(Color_error);
+		pi.pain.text(x, y, from_ascii("??"), font);
+		return;
 	}
-	case ALLOWBREAK:
-	{
+
+	if (kind_ == "allowbreak") {
 		// A small vertical line
 		int const asc = theFontMetrics(pi.base.font).xHeight();
 		int const desc = theFontMetrics(pi.base.font).descent('g');
@@ -275,38 +208,13 @@ void InsetSpecialChar::draw(PainterInfo & pi, int x, int y) const
 		int const y0 = y + desc;
 		int const y1 = y - asc / 3;
 		pi.pain.line(x0, y1, x1, y0, Color_special);
-		break;
+		return;
 	}
-	case LIGATURE_BREAK:
-	{
-		font.setColor(Color_special);
-		pi.pain.text(x, y, char_type('|'), font);
-		break;
+	if (kind_ == "LyX" || kind_ == "TeX" || kind_ == "LaTeX" || kind_ == "LaTeX2e") {
+		drawLogo(pi, x, y, kind_);
+		return;
 	}
-	case END_OF_SENTENCE:
-	{
-		font.setColor(Color_special);
-		pi.pain.text(x, y, char_type('.'), font);
-		break;
-	}
-	case LDOTS:
-	{
-		font.setColor(Color_special);
-		/* \textellipsis uses a \fontdimen3 is spacing. The TeXbook
-		 * tells us that \fontdimen3 is the interword stretch, and
-		 * that this is usually half a space.
-		 */
-		frontend::FontMetrics const & fm = theFontMetrics(font);
-		auto const fam = pi.base.font.family();
-		int const spc = fam == TYPEWRITER_FAMILY ? 0 : fm.width(char_type(' ')) / 2;
-		int wid1 = fm.width(char_type('.')) + spc;
-		pi.pain.text(x, y, char_type('.'), font);
-		pi.pain.text(x + wid1, y, char_type('.'), font);
-		pi.pain.text(x + 2 * wid1, y, char_type('.'), font);
-		break;
-	}
-	case MENU_SEPARATOR:
-	{
+	if (kind_ == "menuseparator") {
 		frontend::FontMetrics const & fm = theFontMetrics(font);
 
 		// There is a \thinspace on each side of the triangle
@@ -316,117 +224,42 @@ void InsetSpecialChar::draw(PainterInfo & pi, int x, int y) const
 		char_type const c = pi.ltr_pos ? 0x25B9 : 0x25C3;
 		font.setColor(Color_special);
 		pi.pain.text(x, y, c, font);
-		break;
+		return;
 	}
-	case SLASH:
-	{
-		font.setColor(Color_special);
-		pi.pain.text(x, y, char_type('/'), font);
-		break;
-	}
-	case NOBREAKDASH:
-	{
-		font.setColor(Color_latex);
-		pi.pain.text(x, y, char_type('-'), font);
-		break;
-	}
-	case PHRASE_LYX:
-	case PHRASE_TEX:
-	case PHRASE_LATEX2E:
-	case PHRASE_LATEX:
-		drawLogo(pi, x, y, kind_);
-		break;
-	}
+
+	SpecialChar const sc = buffer().params().documentClass().specialChars()[kind_];
+	font.setColor(sc.font.color());
+	pi.pain.text(x, y, sc.lyx_output, font);
 }
 
 
 void InsetSpecialChar::write(ostream & os) const
 {
-	string command;
-	switch (kind_) {
-	case HYPHENATION:
-		command = "softhyphen";
-		break;
-	case ALLOWBREAK:
-		command = "allowbreak";
-		break;
-	case LIGATURE_BREAK:
-		command = "ligaturebreak";
-		break;
-	case END_OF_SENTENCE:
-		command = "endofsentence";
-		break;
-	case LDOTS:
-		command = "ldots";
-		break;
-	case MENU_SEPARATOR:
-		command = "menuseparator";
-		break;
-	case SLASH:
-		command = "breakableslash";
-		break;
-	case NOBREAKDASH:
-		command = "nobreakdash";
-		break;
-	case PHRASE_LYX:
-		command = "LyX";
-		break;
-	case PHRASE_TEX:
-		command = "TeX";
-		break;
-	case PHRASE_LATEX2E:
-		command = "LaTeX2e";
-		break;
-	case PHRASE_LATEX:
-		command = "LaTeX";
-		break;
-	}
-	os << "\\SpecialChar " << command << "\n";
+	os << "\\SpecialChar " << kind_ << "\n";
 }
 
 
 void InsetSpecialChar::read(Lexer & lex)
 {
 	lex.next();
-	string const command = lex.getString();
-
-	if (command == "softhyphen")
-		kind_ = HYPHENATION;
-	else if (command == "allowbreak")
-		kind_ = ALLOWBREAK;
-	else if (command == "ligaturebreak")
-		kind_ = LIGATURE_BREAK;
-	else if (command == "endofsentence")
-		kind_ = END_OF_SENTENCE;
-	else if (command == "ldots")
-		kind_ = LDOTS;
-	else if (command == "menuseparator")
-		kind_ = MENU_SEPARATOR;
-	else if (command == "breakableslash")
-		kind_ = SLASH;
-	else if (command == "nobreakdash")
-		kind_ = NOBREAKDASH;
-	else if (command == "LyX")
-		kind_ = PHRASE_LYX;
-	else if (command == "TeX")
-		kind_ = PHRASE_TEX;
-	else if (command == "LaTeX2e")
-		kind_ = PHRASE_LATEX2E;
-	else if (command == "LaTeX")
-		kind_ = PHRASE_LATEX;
-	else
-		lex.printError("InsetSpecialChar: Unknown kind: `$$Token'");
+	kind_ = lex.getString();
+	unknown_ = false;
 }
 
 
-void InsetSpecialChar::latex(otexstream & os,
-			     OutputParams const & rp) const
+void InsetSpecialChar::latex(otexstream & os, OutputParams const & rp) const
 {
+	if (unknown_)
+		return;
+
+	SpecialChar const sc = buffer().params().documentClass().specialChars()[kind_];
 	bool const rtl = rp.local_font && rp.local_font->isRightToLeft();
 	bool const utf8 = rp.encoding->iconvName() == "UTF-8";
+	bool force_ltr = false;
 	string lswitch = "";
 	string lswitche = "";
 	if (rtl && !rp.use_polyglossia) {
+		force_ltr = sc.force_ltr;
 		lswitch = "\\L{";
 		lswitche = "}";
 		if (getLocalOrDefaultLang(rp)->lang() == "arabic_arabi"
@@ -434,182 +267,79 @@ void InsetSpecialChar::latex(otexstream & os,
 			lswitch = "\\textLR{";
 	}
 
-	switch (kind_) {
-	case HYPHENATION:
-		os << "\\-";
-		break;
-	case ALLOWBREAK:
-		// U+200B not yet supported by utf8 inputenc
-		os << "\\LyXZeroWidthSpace" << termcmd;
-		break;
-	case LIGATURE_BREAK:
-		if (utf8)
-			// U+200C ZERO WIDTH NON-JOINER
-			os.put(0x200c);
-		else
-			os << "\\textcompwordmark" << termcmd;
-		break;
-	case END_OF_SENTENCE:
-		os << "\\@.";
-		break;
-	case LDOTS:
-		os << "\\ldots" << termcmd;
-		break;
-	case MENU_SEPARATOR:
-		if (rtl)
-			os << "\\lyxarrow*";
-		else
-			os << "\\lyxarrow";
+	if (sc.need_protect && rp.moving_arg)
+		os << "\\protect";
+	if (force_ltr)
+		os << lswitch;
+	if (rtl && !sc.latex_output_rtl.empty())
+		os << sc.latex_output_rtl;
+	else if (utf8 && !sc.latex_output_utf8.empty())
+		os << sc.latex_output_utf8;
+	else
+		os << sc.latex_output;
+	if (force_ltr)
+		os << lswitche;
+	else if (sc.latex_output_utf8.empty()
+		 && prefixIs(sc.latex_output, from_ascii("\\"))
+		 && isAlphaASCII(os.lastChar()))
 		os << termcmd;
-		break;
-	case SLASH:
-		os << "\\slash" << termcmd;
-		break;
-	case NOBREAKDASH:
-		if (rp.moving_arg)
-			os << "\\protect";
-		os << "\\nobreakdash-";
-		break;
-	case PHRASE_LYX:
-		if (rp.moving_arg)
-			os << "\\protect";
-		os << lswitch << "\\LyX" << termcmd << lswitche;
-		break;
-	case PHRASE_TEX:
-		if (rp.moving_arg)
-			os << "\\protect";
-		os << lswitch << "\\TeX" << termcmd << lswitche;
-		break;
-	case PHRASE_LATEX2E:
-		if (rp.moving_arg)
-			os << "\\protect";
-		os << lswitch << "\\LaTeXe" << termcmd << lswitche;
-		break;
-	case PHRASE_LATEX:
-		if (rp.moving_arg)
-			os << "\\protect";
-		os << lswitch << "\\LaTeX" << termcmd << lswitche;
-		break;
-	}
 }
 
 
-int InsetSpecialChar::plaintext(odocstringstream & os,
-        OutputParams const &, size_t) const
+int InsetSpecialChar::plaintext(odocstringstream & os, OutputParams const &, size_t) const
 {
-	switch (kind_) {
-	case HYPHENATION:
+	if (unknown_)
 		return 0;
-	case ALLOWBREAK:
-		// U+200B ZERO WIDTH SPACE (ZWSP)
-		os.put(0x200b);
-		return 1;
-	case LIGATURE_BREAK:
-		// U+200C ZERO WIDTH NON-JOINER
-		os.put(0x200c);
-		return 1;
-	case END_OF_SENTENCE:
-		os << '.';
-		return 1;
-	case LDOTS:
-		// … U+2026 HORIZONTAL ELLIPSIS
-		os.put(0x2026);
-		return 1;
-	case MENU_SEPARATOR:
-		os << "->";
-		return 2;
-	case SLASH:
-		os << '/';
-		return 1;
-	case NOBREAKDASH:
-		// ‑ U+2011 NON-BREAKING HYPHEN
-		os.put(0x2011);
-		return 1;
-	case PHRASE_LYX:
-		os << "LyX";
-		return 3;
-	case PHRASE_TEX:
-		os << "TeX";
-		return 3;
-	case PHRASE_LATEX2E:
-		os << "LaTeX2";
-		// ε U+03B5 GREEK SMALL LETTER EPSILON
-		os.put(0x03b5);
-		return 7;
-	case PHRASE_LATEX:
-		os << "LaTeX";
-		return 5;
-	}
-	return 0;
-}
 
-
-namespace {
-string specialCharKindToXMLEntity(InsetSpecialChar::Kind kind) {
-	switch (kind) {
-	case InsetSpecialChar::Kind::HYPHENATION:
-		// Soft hyphen.
-		return "&#xAD;";
-	case InsetSpecialChar::Kind::ALLOWBREAK:
-		// Zero-width space
-		return "&#x200B;";
-	case InsetSpecialChar::Kind::LIGATURE_BREAK:
-		// Zero width non-joiner
-		return "&#x200C;";
-	case InsetSpecialChar::Kind::END_OF_SENTENCE:
-		return ".";
-	case InsetSpecialChar::Kind::LDOTS:
-		// &hellip;
-		return "&#x2026;";
-	case InsetSpecialChar::Kind::MENU_SEPARATOR:
-		// &rArr;, right arrow.
-		return "&#x21D2;";
-	case InsetSpecialChar::Kind::SLASH:
-		// &frasl;, fractional slash.
-		return "&#x2044;";
-	case InsetSpecialChar::Kind::NOBREAKDASH:
-		// Non-breaking hyphen.
-		return "&#x2011;";
-	case InsetSpecialChar::Kind::PHRASE_LYX:
-		return "LyX";
-	case InsetSpecialChar::Kind::PHRASE_TEX:
-		return "TeX";
-	case InsetSpecialChar::Kind::PHRASE_LATEX2E:
-		// Lower-case epsilon.
-		return "LaTeX2&#x03b5;";
-	case InsetSpecialChar::Kind::PHRASE_LATEX:
-		return "LaTeX";
-	default:
-		return "";
-	}
-}
+	docstring const res = buffer().params().documentClass().specialChars()[kind_].plaintext_output;
+	os << res;
+	return res.size();
 }
 
 
 void InsetSpecialChar::docbook(XMLStream & xs, OutputParams const &) const
 {
-	xs << XMLStream::ESCAPE_NONE << from_ascii(specialCharKindToXMLEntity(kind_));
+	if (unknown_)
+		return;
+
+	xs << XMLStream::ESCAPE_NONE
+	   << buffer().params().documentClass().specialChars()[kind_].xhtml_output;
 }
 
 
 docstring InsetSpecialChar::xhtml(XMLStream & xs, OutputParams const &) const
 {
-	xs << XMLStream::ESCAPE_NONE << from_ascii(specialCharKindToXMLEntity(kind_));
+	if (unknown_)
+		return docstring();
+
+	xs << XMLStream::ESCAPE_NONE
+	   << buffer().params().documentClass().specialChars()[kind_].xhtml_output;
 	return docstring();
+}
+
+
+void InsetSpecialChar::update()
+{
+	unknown_ = !buffer().params().documentClass().isKnownSpecialChar(kind_);
+}
+
+
+void InsetSpecialChar::updateBuffer(ParIterator const & /* it*/, UpdateType /* utype*/, bool const /*deleted*/)
+{
+	update();
 }
 
 
 void InsetSpecialChar::toString(odocstream & os) const
 {
-	switch (kind_) {
-	case ALLOWBREAK:
-	case LIGATURE_BREAK:
+	if (unknown_)
+		return;
+
+	if (kind_ == "allowbreak" || kind_ == "ligaturebreak")
 		// Do not output ZERO WIDTH SPACE and ZERO WIDTH NON JOINER here
 		// Spell checker would choke on it.
 		return;
-	default:
-		break;
-	}
+
 	odocstringstream ods;
 	plaintext(ods, OutputParams(nullptr));
 	os << ods.str();
@@ -617,8 +347,11 @@ void InsetSpecialChar::toString(odocstream & os) const
 
 
 void InsetSpecialChar::forOutliner(docstring & os, size_t const,
-								   bool const) const
+				   bool const) const
 {
+	if (unknown_)
+		return;
+
 	odocstringstream ods;
 	plaintext(ods, OutputParams(nullptr));
 	os += ods.str();
@@ -627,29 +360,33 @@ void InsetSpecialChar::forOutliner(docstring & os, size_t const,
 
 void InsetSpecialChar::validate(LaTeXFeatures & features) const
 {
-	if (kind_ == ALLOWBREAK)
-		features.require("lyxzerowidthspace");
-	if (kind_ == MENU_SEPARATOR)
-		features.require("lyxarrow");
-	if (kind_ == NOBREAKDASH)
-		features.require("amsmath");
-	if (kind_ == PHRASE_LYX)
-		features.require("LyX");
+	if (unknown_)
+		return;
+
+	SpecialChar const sc = buffer().params().documentClass().specialChars()[kind_];
+	if (sc.req.empty())
+		return;
+	vector<string> const reqs = getVectorFromString(sc.req);
+	for (auto const & s : reqs)
+		features.require(s);
 }
 
 
 bool InsetSpecialChar::isChar() const
 {
-	return kind_ != HYPHENATION && kind_ != LIGATURE_BREAK;
+	if (unknown_)
+		return false;
+
+	return buffer().params().documentClass().specialChars()[kind_].is_char;
 }
 
 
 bool InsetSpecialChar::isLetter() const
 {
-	return kind_ == HYPHENATION || kind_ == LIGATURE_BREAK
-		|| kind_ == NOBREAKDASH
-		|| kind_ == PHRASE_LYX || kind_ == PHRASE_LATEX
-		|| kind_ == PHRASE_TEX || kind_ == PHRASE_LATEX2E;
+	if (unknown_)
+		return false;
+
+	return buffer().params().documentClass().specialChars()[kind_].is_letter;
 }
 
 

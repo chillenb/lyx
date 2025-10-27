@@ -10182,6 +10182,46 @@ arg   "dialog-show document"
 status collapsed
 
 \begin_layout Plain Layout
+SpecialChar
+\end_layout
+
+\end_inset
+
+ Definiert ein neues Sonderzeichen.
+ Siehe 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Sonderzeichen"
+
+\end_inset
+
+ für Einzelheiten.
+ Muss mit 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+End
+\end_layout
+
+\end_inset
+
+
+\begin_inset Quotes erd
+\end_inset
+
+ beendet werden.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Style
 \end_layout
 
@@ -15074,7 +15114,8 @@ string
 
 \end_inset
 
- benötigt (siehe 
+ benötigt.
+ Mehrere Funktionen werden mit Kommata abgetrennt (siehe 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "chap:Liste-von-Funktionen"
@@ -15082,7 +15123,7 @@ nolink "false"
 
 \end_inset
 
- für eine List der Funktionen).
+ für eine Liste der Funktionen).
  Wenn Sie ein Paket mit bestimmten Optionen anfordern müssen,
  können Sie zusätzlich 
 \begin_inset Flex Code
@@ -23340,6 +23381,687 @@ item
  Auf diese Weise können Benutzer in individuellen Listen Re-Definitionen (bspw.
  von Längen) vornehmen.
  In der Voreinstellung haben diese Argumente keine Begrenzungszeichen.
+\end_layout
+
+\begin_layout Subsection
+Sonderzeichen
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Sonderzeichen"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Im folgenden wird beschrieben,
+ wie Sonderzeichen,
+ Formatierungszeichen und Logos,
+ die eine spezielle \SpecialChar LaTeX
+-,
+ XHTML- oder DocBook-Ausgabe erfordern,
+ definiert werden.
+ Standarddefinitionen enthält die Datei 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+stdspecialchars.inc
+\end_layout
+
+\end_inset
+
+,
+ die für jede Klasse automatisch geladen wird.
+ Wenn Sie allerdings Standarddefinitionen modifizieren wollen,
+ müssen Sie die Datei zuvor manuell laden,
+ indem Sie diese Zeile in die Layout-Datei einfügen:
+\end_layout
+
+\begin_layout LyX-Code
+Input stdspecialchars.inc
+\end_layout
+
+\begin_layout Standard
+Die Definitionen beginnen immer mit 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+SpecialChar <name>
+\end_layout
+
+\end_inset
+
+ und enden mit 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+End
+\end_layout
+
+\end_inset
+
+.
+ Zwischen diesen beiden Marken können die folgenden Spezifikationen angegeben werden,
+ um neue Sonderzeichen zu definieren oder bestehende zu modifizieren:
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+CanBreakAfter
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Falls dies auf 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ gesetzt wird,
+ kann die Zeile im Arbeitsbereich nach diesem Sonderzeichen umbrochen werden,
+ auch wenn kein Leerzeichen folgt.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Font
+\end_layout
+
+\end_inset
+
+ Die Schrift,
+ die zur Darstellung des Sonderzeichensverwendet wird;
+ siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "subsec:Beschreibung-des-Zeichensatzes"
+nolink "false"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+ForceLTR
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Erzwinge Links-nach-rechts-Ausgabe für das Sonderzeichen.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+IsChar
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Falls dies auf 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ gesetzt wird,
+ wird das Sonderzeichen als Wortbestandteil behandelt.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+IsLetter
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Falls dies auf 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ gesetzt wird,
+ wird das Sonderzeichen als Buchstabe behandelt.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+LaTeXOutput
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[string]
+\end_layout
+
+\end_inset
+
+ Der Text oder Befehl,
+ der in \SpecialChar LaTeX
+ ausgegeben wird.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+LaTeXOutputRTL
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[string]
+\end_layout
+
+\end_inset
+
+ Alternativer Text oder Befehl,
+ der in \SpecialChar LaTeX
+ ausgegeben im Rechts-nach-links-Kontext wird.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+LaTeXOutputUTF8
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[string]
+\end_layout
+
+\end_inset
+
+ Alternativer Text oder Befehl,
+ der in \SpecialChar LaTeX
+ in der UTF-8-Kodierung ausgegeben wird.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+LyXOutput
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[string]
+\end_layout
+
+\end_inset
+
+ Der Text,
+ der im Arbeitsbereich ausgegeben wird.
+ Das kann normaler Text sein oder ein Unicode-Hex-Wert (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+0x002e
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+NeedProtect
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Legt fest,
+ ob der Befehl im zerbrechlichen Umfeld mit 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+protect
+\end_layout
+
+\end_inset
+
+ geschützt werden muss.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+PlainTextOutput
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[string]
+\end_layout
+
+\end_inset
+
+ Der Text,
+ der im einfachen Textmodus ausgegeben wird.
+ Das kann normaler Text sein oder ein Unicode-Hex-Wert (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+0x002e
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+MenuString
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[string]
+\end_layout
+
+\end_inset
+
+ Eine spezifische Zeichenkette für das Menü.
+ Sie können ein Tastenkürzel definieren,
+ indem Sie das entsprechende Zeichen an die Zeichenkette mit 
+\begin_inset Quotes gld
+\end_inset
+
+|
+\begin_inset Quotes grd
+\end_inset
+
+ abgetrennt anhängen (z.
+\begin_inset space \thinspace{}
+\end_inset
+
+B.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Mein Sonderzeichen|M
+\end_layout
+
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Requires
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] legt fest,
+ dass das Sonderzeichen die Funktion 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+ benötigt.
+ Mehrere Funktionen werden mit Kommata abgetrennt (siehe 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "chap:Liste-von-Funktionen"
+nolink "false"
+
+\end_inset
+
+ für eine Liste der Funktionen).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Tooltip
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Ein optionaler Tooltip,
+ der angezeigt wird,
+ wenn die Maus über das Sonderzeichen fährt.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Type
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+type
+\end_layout
+
+\end_inset
+
+] Die Art des Sonderzeichens:
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+specialchar
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+formatting
+\end_layout
+
+\end_inset
+
+,
+ oder 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+logo
+\end_layout
+
+\end_inset
+
+.
+ Dies bestimmt,
+ wo im Menü das Zeichen zugänglich wird.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+XHTMLOutput
+\end_layout
+
+\end_inset
+
+ Der Text oder die Einheit (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+&#x2026;
+\end_layout
+
+\end_inset
+
+),
+ die in XHTML und DocBook ausgegeben wird.
 \end_layout
 
 \begin_layout Subsection

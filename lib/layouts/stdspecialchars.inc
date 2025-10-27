@@ -1,78 +1,192 @@
 #
-# Standard special characters
+# Standard special characters of LyX
 #
 
-Format 113
-SpecialChar LigatureBreak
-	Type		Formatting
-	LabelString	"Ligature Break|k"
-	LyXOutput	0x007c
-	LatexOutput	\textcompwordmark{}
-	PlaintextOutput	0x200c
-	XHTMLOutput	&#8204;
-	IsLetter	1
-End
+Format 114
 
-SpecialChar EndOfSentence
-	LabelString	"End of Sentence|E"
+Provides stdspecialchars 1
+
+
+#
+# Characters
+#
+
+SpecialChar endofsentence
+	Type		specialchar
+	MenuString	"End of Sentence|E"
 	LyXOutput	0x002e
 	LatexOutput	\@.
 	PlaintextOutput	0x002e
-	DocBookOutput	"."
-	XHTMLOutput	"."
+	XHTMLOutput	.
+	Tooltip         "End of Sentence"
+	IsChar		1
+	Font
+	  Color		special
+	EndFont
 End
 
-SpecialChar LDots
-	LabelString	"Ellipsis|i"
-	Width		"."
+SpecialChar ldots
+	Type		specialchar
+	MenuString	"Ellipsis|i"
+	Tooltip         "Ellipsis"
 	LyXOutput	0x2026
-	LatexOutput	\ldots{}
+	LatexOutput	\ldots
 	PlaintextOutput	0x2026
-	DocBookOutput	"..."
-	XHTMLOutput	&hellip;
+	XHTMLOutput	&#x2026;
+	IsChar		1
+	Font
+	  Color		special
+	EndFont
 End
 
-SpecialChar MenuSeparator
-	LabelString	"Menu Separator|M"
-	Width		" x "
+SpecialChar menuseparator
+	Type		specialchar
+	MenuString	"Menu Separator|M"
+	Tooltip         "Menu Separator"
 	LyXOutput	0x25b7
-	LatexOutput	\lyxarrow{}
-	LaTexOutputRTL	\lyxarrow*{}
+	LatexOutput	\lyxarrow
+	LaTexOutputRTL	\lyxarrow*
 	PlaintextOutput	"->"
-	DocBookOutput	&lyxarrow;
-	XHTMLOutput	&rArr;
+	XHTMLOutput	&#x21D2;
 	Requires	lyxarrow
+	IsChar		1
+	Font
+	  Color		special
+	EndFont
 End
 
-SpecialChar Hyphenation
-	Type		Formatting
-	LabelString	"Hyphenation Point|H"
-	LyXOutput	0x2010
-	LatexOutput	\-
-	IsLetter	1
-End
-
-SpecialChar Slash
-	LabelString	"Breakable Slash|a"
+SpecialChar breakableslash
+	Type		specialchar
+	MenuString	"Breakable Slash|a"
+	Tooltip         "Breakable Slash"
 	LyXOutput	0x002f
-	LatexOutput	\slash{}
+	LatexOutput	\slash
 	PlaintextOutput	0x002f
-	DocBookOutput	/
-	XHTMLOutput	&frasl;
+	XHTMLOutput	&#x2044;
+	Tooltip         "Breakable Slash"
+	CanBreakAfter   1
+	IsChar		1
+	Font
+	  Color		special
+	EndFont
 End
 
-SpecialChar NobreakDash
-	LabelString	"Non-Breaking Hyphen|y"
+SpecialChar nobreakdash
+	Type		specialchar
+	MenuString	"Non-Breaking Hyphen|y"
+	Tooltip         "Non-Breaking Hyphen (SHY)"
 	LyXOutput	0x2010
 	LatexOutput	\nobreakdash-
-	NeedsProtect	1
+	NeedProtect	1
 	PlaintextOutput	0x2011
-	DocBookOutput	-
-	XHTMLOutput	&#8209;
+	XHTMLOutput	&#x2011;
 	Requires	amsmath
 	IsLetter	1
 	Font
 	  Color		latex
 	EndFont
+	IsChar		1
+End
+
+#
+# Formatting
+#
+
+SpecialChar allowbreak
+	Type		formatting
+	MenuString	"Optional Line Break|B"
+	Tooltip         "Optional Line Break (ZWSP)"
+	LyXOutput	0x002f
+	LatexOutput	\LyXZeroWidthSpace
+	PlaintextOutput	0x200b
+	XHTMLOutput	&#x200B;
+	Requires        lyxzerowidthspace
+	CanBreakAfter   1
+	Font
+	  Color		special
+	EndFont
+End
+
+SpecialChar ligaturebreak
+	Type		formatting
+	MenuString	"Ligature Break|k"
+	Tooltip         "Ligature Break (ZWNJ)"
+	LyXOutput	0x007c
+	LatexOutput	\textcompwordmark
+	LaTeXOutputUTF8 0x200c
+	PlaintextOutput	0x200c
+	XHTMLOutput	&#x200C;
+	IsLetter	1
+	Type		formatting
+	Font
+	  Color		special
+	EndFont
+End
+
+SpecialChar softhyphen
+	Type		formatting
+	MenuString	"Hyphenation Point|H"
+	Tooltip         "Hyphenation Point"
+	LyXOutput	0x2010
+	LatexOutput	\-
+	IsLetter	1
+	XHTMLOutput	&#xAD;
+	CanBreakAfter   1
+	Font
+	  Color		special
+	EndFont
+End
+
+#
+# Logos
+#
+
+SpecialChar LaTeX
+	Type		logo
+	MenuString	"LaTeX Logo|a"
+	LatexOutput	\LaTeX
+	NeedProtect	1
+	PlaintextOutput	LaTeX
+	XHTMLOutput	LaTeX
+	IsLetter	1
+	IsChar		1
+	ForceLTR        1
+End
+
+SpecialChar LaTeX2e
+	Type		logo
+	MenuString	"LaTeX2e Logo|e"
+	LatexOutput	\LaTeXe
+	NeedProtect	1
+	PlaintextOutput	LaTeX2e
+	XHTMLOutput	LaTeX2&#x03b5;
+	IsLetter	1
+	IsChar		1
+	ForceLTR        1
+End
+
+SpecialChar LyX
+	Type		logo
+	MenuString	"LyX Logo|L"
+	LatexOutput	\LyX
+	NeedProtect	1
+	PlaintextOutput	LyX
+	XHTMLOutput	LyX
+	Requires	LyX
+	IsLetter	1
+	IsChar		1
+	ForceLTR        1
+End
+
+SpecialChar TeX
+	Type		logo
+	MenuString	"TeX Logo|T"
+	LatexOutput	\TeX
+	NeedProtect	1
+	PlaintextOutput	TeX
+	XHTMLOutput	TeX
+	IsLetter	1
+	IsChar		1
+	ForceLTR        1
 End
 

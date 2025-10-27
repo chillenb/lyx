@@ -894,11 +894,11 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 	pos_type pos = cur.pos();
 
 	// The special chars we handle
-	static map<wchar_t, InsetSpecialChar::Kind> specialchars = {
-		{ 0x200c, InsetSpecialChar::LIGATURE_BREAK },
-		{ 0x200b, InsetSpecialChar::ALLOWBREAK },
-		{ 0x2026, InsetSpecialChar::LDOTS },
-		{ 0x2011, InsetSpecialChar::NOBREAKDASH }
+	static map<wchar_t, string> specialchars = {
+		{ 0x200c, "ligaturebreak" },
+		{ 0x200b, "allowbreak" },
+		{ 0x2026, "ldots" },
+		{ 0x2011, "nobreakdash" }
 	};
 
 	// insert the string, don't insert doublespace
@@ -3536,11 +3536,14 @@ void regexpDispatch(Cursor & cur, FuncRequest const & cmd)
 }
 
 
-void specialChar(Cursor & cur, InsetSpecialChar::Kind kind)
+void specialChar(Cursor & cur, string const kind)
 {
 	cur.recordUndo();
 	cap::replaceSelection(cur);
-	cur.insert(new InsetSpecialChar(kind));
+	InsetSpecialChar * sc = new InsetSpecialChar(kind);
+	sc->setBuffer(*cur.buffer());
+	sc->update();
+	cur.insert(sc);
 	cur.posForward();
 }
 
@@ -4844,33 +4847,29 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 	case LFUN_SPECIALCHAR_INSERT: {
 		string const name = to_utf8(cmd.argument());
 		if (name == "hyphenation")
-			specialChar(cur, InsetSpecialChar::HYPHENATION);
-		else if (name == "allowbreak")
-			specialChar(cur, InsetSpecialChar::ALLOWBREAK);
+			specialChar(cur, "softhyphen");
 		else if (name == "ligature-break")
-			specialChar(cur, InsetSpecialChar::LIGATURE_BREAK);
+			specialChar(cur, "ligaturebreak");
 		else if (name == "slash")
-			specialChar(cur, InsetSpecialChar::SLASH);
-		else if (name == "nobreakdash")
-			specialChar(cur, InsetSpecialChar::NOBREAKDASH);
+			specialChar(cur, "breakableslash");
 		else if (name == "dots")
-			specialChar(cur, InsetSpecialChar::LDOTS);
+			specialChar(cur, "ldots");
 		else if (name == "end-of-sentence")
-			specialChar(cur, InsetSpecialChar::END_OF_SENTENCE);
+			specialChar(cur, "endofsentence");
 		else if (name == "menu-separator")
-			specialChar(cur, InsetSpecialChar::MENU_SEPARATOR);
+			specialChar(cur, "menuseparator");
 		else if (name == "lyx")
-			specialChar(cur, InsetSpecialChar::PHRASE_LYX);
+			specialChar(cur, "LyX");
 		else if (name == "tex")
-			specialChar(cur, InsetSpecialChar::PHRASE_TEX);
+			specialChar(cur, "TeX");
 		else if (name == "latex")
-			specialChar(cur, InsetSpecialChar::PHRASE_LATEX);
+			specialChar(cur, "LaTeX");
 		else if (name == "latex2e")
-			specialChar(cur, InsetSpecialChar::PHRASE_LATEX2E);
+			specialChar(cur, "LaTeX2e");
 		else if (name.empty())
 			lyxerr << "LyX function 'specialchar-insert' needs an argument." << endl;
 		else
-			lyxerr << "Wrong argument for LyX function 'specialchar-insert'." << endl;
+			specialChar(cur, name);
 		break;
 	}
 
@@ -6683,9 +6682,12 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 		// if an inset is not allowed.
 		allow_in_passthru = true;
 		break;
-	case LFUN_SPECIALCHAR_INSERT:
+	case LFUN_SPECIALCHAR_INSERT: {
+		string const arg = cmd.getArg(0);
 		code = SPECIALCHAR_CODE;
+		enable = cur.buffer()->params().documentClass().isKnownSpecialChar(arg);
 		break;
+	}
 	case LFUN_SPACE_INSERT:
 		// slight hack: we know this is allowed in math mode
 		if (cur.inTexted())

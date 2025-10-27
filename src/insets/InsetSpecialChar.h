@@ -55,11 +55,9 @@ public:
 	};
 
 	///
-	InsetSpecialChar() : Inset(0), kind_(HYPHENATION) {}
+	InsetSpecialChar() : Inset(0), kind_("softhyphen") {}
 	///
-	explicit InsetSpecialChar(Kind k);
-	///
-	Kind kind() const;
+	explicit InsetSpecialChar(std::string const k);
 	///
 	docstring toolTip(BufferView const & bv, int x, int y) const override;
 	/// some special chars allow line breaking after them
@@ -81,6 +79,10 @@ public:
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
 	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	/// Update the contextual information of this inset
+	void update();
+	///
+	void updateBuffer(ParIterator const &, UpdateType, bool const deleted = false) override;
 	///
 	bool findUsesToString() const override { return true; }
 	///
@@ -108,7 +110,9 @@ private:
 	Inset * clone() const override { return new InsetSpecialChar(*this); }
 
 	/// And which kind is this?
-	Kind kind_;
+	std::string kind_;
+	/// Is this known?
+	bool unknown_;
 };
 
 

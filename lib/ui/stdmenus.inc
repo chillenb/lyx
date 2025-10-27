@@ -414,15 +414,11 @@ Menuset
 
 	Menu "insert_special"
 		Item "Symbols...|b" "dialog-show symbols"
-		Item "Ellipsis|i" "specialchar-insert dots"
-		Item "End of Sentence|E" "specialchar-insert end-of-sentence"
 		Item "Plain Double Quotation Mark|Q" "quote-insert outer auto plain"
 		Item "Plain Single Quotation Mark|S" "quote-insert inner auto plain"
 		Item "Inner Quotation Mark|n" "quote-insert inner"
-		Item "Non-Breaking Hyphen|y" "specialchar-insert nobreakdash"
-		Item "Breakable Slash|a" "specialchar-insert slash"
+		SpecialChars
 		Item "Visible Space|V" "space-insert visible"
-		Item "Menu Separator|M" "specialchar-insert menu-separator"
 		Item "Phonetic Symbols|P" "ipa-insert"
 		Submenu "Logos|L" "insert_logos"
 	End
@@ -445,10 +441,7 @@ Menuset
 	End
 
 	Menu "insert_logos"
-		Item "LyX Logo|L" "specialchar-insert lyx"
-		Item "TeX Logo|T" "specialchar-insert tex"
-		Item "LaTeX Logo|a" "specialchar-insert latex"
-		Item "LaTeX2e Logo|e" "specialchar-insert latex2e"
+		SpecialCharLogos
 	End
 
 	Menu "insert_formatting"
@@ -463,9 +456,7 @@ Menuset
 		Item "Vertical Space...|V" "dialog-show-new-inset vspace"
 		Submenu "Phantom|m" "insert_phantom"
 		Separator
-		Item "Hyphenation Point|H" "specialchar-insert hyphenation"
-		Item "Ligature Break|k" "specialchar-insert ligature-break"
-		Item "Optional Line Break|B" "specialchar-insert allowbreak"
+		SpecialCharFormattings
 		Item "Ragged Line Break|R" "newline-insert newline"
 		Item "Justified Line Break|J" "newline-insert linebreak"
 		Separator

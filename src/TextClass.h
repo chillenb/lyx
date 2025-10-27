@@ -43,6 +43,27 @@ class FloatList;
 class Layout;
 class LayoutFile;
 
+class SpecialChar
+{
+public:
+	docstring lyx_output;
+	docstring latex_output;
+	docstring latex_output_rtl;
+	docstring latex_output_utf8;
+	docstring plaintext_output;
+	docstring xhtml_output;
+	docstring tooltip;
+	std::string menustring;
+	std::string req;
+	std::string type;
+	bool can_break_after;
+	bool is_letter;
+	bool is_char;
+	bool need_protect;
+	bool force_ltr;
+	FontInfo font;
+};
+
 /// Based upon ideas in boost::noncopyable, inheriting from this
 /// class effectively makes the copy constructor protected but the
 /// assignment constructor private.
@@ -376,6 +397,8 @@ protected:
 	std::map<CiteEngineType, std::vector<CitationStyle> > class_cite_styles_;
 	///
 	std::map<std::string, docstring> outliner_names_;
+	/// Special characters
+	std::map<std::string, SpecialChar> special_chars_;
 	/// Does this class put the bibliography to toc by itself?
 	bool bibintoc_;
 private:
@@ -400,6 +423,8 @@ private:
 	void readMaxCounter(support::Lexer &);
 	///
 	void readClassOptions(support::Lexer &);
+	///
+	void readSpecialChars(support::Lexer &);
 	///
 	void readCharStyle(support::Lexer &, std::string const &);
 	///
@@ -537,6 +562,10 @@ public:
 	int max_toclevel() const { return max_toclevel_; }
 	/// returns true if the class has a ToC structure
 	bool hasTocLevels() const;
+	///
+	std::map<std::string, SpecialChar> specialChars() const { return special_chars_; }
+	/// returns true if the class has a ToC structure
+	bool isKnownSpecialChar(std::string const & name) const;
 	///
 	std::string const getCiteFormat(CiteEngineType const & type,
 		std::string const & entry, bool const punct = true,

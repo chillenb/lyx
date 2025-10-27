@@ -1081,7 +1081,7 @@ void InsetInfo::build()
 		for (docstring const & name : names) {
 			// do not insert > for the top level menu item
 			if (&name != &names.front())
-				par.insertInset(par.size(), new InsetSpecialChar(InsetSpecialChar::MENU_SEPARATOR),
+				par.insertInset(par.size(), new InsetSpecialChar("menuseparator"),
 						f, Change(Change::UNCHANGED));
 			//FIXME: add proper underlines here. This
 			// involves rewriting searchMenu used above to

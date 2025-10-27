@@ -59,7 +59,7 @@ namespace lyx {
 // You should also run the development/tools/updatelayouts.py script,
 // to update the format of all of our layout files.
 //
-int const LAYOUT_FORMAT = 113; // spitz: BreakCommand tag
+int const LAYOUT_FORMAT = 114; // spitz: SpecialChar
 
 
 // Layout format for the current lyx file format. Controls which format is
@@ -141,8 +141,8 @@ TextClass::TextClass()
 	  outputFormat_("latex"), has_output_format_(false), defaultfont_(sane_font), 
 	  titletype_(TITLE_COMMAND_AFTER), titlename_("maketitle"),
 	  min_toclevel_(0), max_toclevel_(0), maxcitenames_(2),
-	  cite_full_author_list_(true), bibintoc_(false) {
-}
+	  cite_full_author_list_(true), bibintoc_(false)
+{}
 
 
 bool TextClass::readStyle(Lexer & lexrc, Layout & lay, ReadType rt) const
@@ -183,6 +183,7 @@ enum TextClassTags {
 	TC_SECNUMDEPTH,
 	TC_TOCDEPTH,
 	TC_CLASSOPTIONS,
+	TC_SPECIALCHARS,
 	TC_PREAMBLE,
 	TC_HTMLPREAMBLE,
 	TC_HTMLSTYLES,
@@ -277,6 +278,7 @@ LexerKeyword textClassTags[] = {
 	{ "rightmargin",       TC_RIGHTMARGIN },
 	{ "secnumdepth",       TC_SECNUMDEPTH },
 	{ "sides",             TC_SIDES },
+	{ "specialchar",       TC_SPECIALCHARS },
 	{ "style",             TC_STYLE },
 	{ "tablestyle",        TC_TABLESTYLE },
 	{ "titlelatexname",    TC_TITLELATEXNAME },
@@ -658,6 +660,10 @@ TextClass::ReturnValues TextClass::read(Lexer & lexrc, ReadType rt)
 			readClassOptions(lexrc);
 			break;
 
+		case TC_SPECIALCHARS:
+			readSpecialChars(lexrc);
+			break;
+
 		case TC_PREAMBLE:
 			preamble_ = lexrc.getLongString(from_ascii("EndPreamble"));
 			break;
@@ -952,7 +958,7 @@ TextClass::ReturnValues TextClass::read(Lexer & lexrc, ReadType rt)
 	// If we do not succeed, then it was not there, which means that
 	// the textclass did not provide the definitions of the standard
 	// insets. So we need to try to load them.
-	size_type const erased = provides_.erase("stdinsets");
+	size_type erased = provides_.erase("stdinsets");
 	if (!erased) {
 		FileName tmp = libFileSearch("layouts", "stdinsets.inc");
 
@@ -963,6 +969,22 @@ TextClass::ReturnValues TextClass::read(Lexer & lexrc, ReadType rt)
 		} else if (!read(tmp, MERGE)) {
 			frontend::Alert::warning(_("Corrupt File"),
 				_("Could not read stdinsets.inc! This may lead to data loss!"));
+			error = true;
+		}
+	}
+
+	// Same for stdspecialchars
+	erased = provides_.erase("stdspecialchars");
+	if (!erased) {
+		FileName tmp = libFileSearch("layouts", "stdspecialchars.inc");
+
+		if (tmp.empty()) {
+			frontend::Alert::warning(_("Missing File"),
+				_("Could not find stdspecialchars.inc! This may lead to data loss!"));
+			error = true;
+		} else if (!read(tmp, MERGE)) {
+			frontend::Alert::warning(_("Corrupt File"),
+				_("Could not read stdspecialchars.inc! This may lead to data loss!"));
 			error = true;
 		}
 	}
@@ -1114,6 +1136,176 @@ void TextClass::readClassOptions(Lexer & lexrc)
 			break;
 		}
 	}
+	lexrc.popTable();
+}
+
+
+void TextClass::readSpecialChars(Lexer & lexrc)
+{
+	std::string name;
+	if (lexrc.next())
+		name = lexrc.getString();
+	else {
+		lexrc.printError("No type given for SpecialChar: `$$Token'.");
+		return;
+	}
+	enum {
+		SC_LYX_OUTPUT,
+		SC_LATEX_OUTPUT,
+		SC_LATEX_OUTPUT_RTL,
+		SC_LATEX_OUTPUT_UTF8,
+		SC_PLAINTEXT_OUTPUT,
+		SC_XHTML_OUTPUT,
+		SC_TOOLTIP,
+		SC_MENUSTRING,
+		SC_REQUIRES,
+		SC_FORCE_LTR,
+		SC_IS_CHAR,
+		SC_IS_LETTER,
+		SC_CAN_BREAK_AFTER,
+		SC_FONT,
+		SC_NEED_PROTECT,
+		SC_TYPE,
+		SC_END
+	};
+
+	LexerKeyword specialCharTags[] = {
+		{"canbreakafter",   SC_CAN_BREAK_AFTER },
+		{"end",             SC_END },
+		{"font",            SC_FONT },
+		{"forceltr",        SC_FORCE_LTR },
+		{"ischar",          SC_IS_CHAR },
+		{"isletter",        SC_IS_LETTER },
+		{"latexoutput",     SC_LATEX_OUTPUT },
+		{"latexoutputrtl",  SC_LATEX_OUTPUT_RTL },
+		{"latexoutpututf8", SC_LATEX_OUTPUT_UTF8 },
+		{"lyxoutput",       SC_LYX_OUTPUT },
+		{"menustring",      SC_MENUSTRING },
+		{"needprotect",     SC_NEED_PROTECT },
+		{"plaintextoutput", SC_PLAINTEXT_OUTPUT },
+		{"requires",        SC_REQUIRES },
+		{"tooltip",         SC_TOOLTIP },
+		{"type",            SC_TYPE },
+		{"xhtmloutput",     SC_XHTML_OUTPUT }
+	};
+
+	lexrc.pushTable(specialCharTags);
+	bool getout = false;
+	SpecialChar sc;
+	if (special_chars_.find(name) != special_chars_.end())
+		sc = special_chars_[name];
+	else {
+		// init values
+		sc.can_break_after = false;
+		sc.force_ltr = false;
+		sc.is_char = false;
+		sc.is_letter = false;
+		sc.need_protect = false;
+	}
+	while (!getout && lexrc.isOK()) {
+		int le = lexrc.lex();
+		switch (le) {
+		case Lexer::LEX_UNDEF:
+			lexrc.printError("Unknown SpecialChar tag `$$Token'");
+			continue;
+		default:
+			break;
+		}
+		switch (le) {
+		case SC_CAN_BREAK_AFTER:
+			lexrc.next();
+			sc.can_break_after = lexrc.getBool();
+			break;
+		case SC_FORCE_LTR:
+			lexrc.next();
+			sc.force_ltr = lexrc.getBool();
+			break;
+		case SC_IS_CHAR:
+			lexrc.next();
+			sc.is_char = lexrc.getBool();
+			break;
+		case SC_IS_LETTER:
+			lexrc.next();
+			sc.is_letter = lexrc.getBool();
+			break;
+		case SC_NEED_PROTECT:
+			lexrc.next();
+			sc.need_protect = lexrc.getBool();
+			break;
+		case SC_MENUSTRING:
+			lexrc.eatLine();
+			sc.menustring = trim(lexrc.getString(), "\"");
+			break;
+		case SC_LATEX_OUTPUT: {
+			lexrc.next();
+			docstring const res = rtrim(lexrc.getDocString());
+			if (isHex(res))
+				sc.latex_output = docstring(1, hexToInt(res));
+			else
+				sc.latex_output = rtrim(lexrc.getDocString());
+			break;
+		}
+		case SC_LATEX_OUTPUT_RTL: {
+			lexrc.next();
+			docstring const res = rtrim(lexrc.getDocString());
+			if (isHex(res))
+				sc.latex_output_rtl = docstring(1, hexToInt(res));
+			else
+				sc.latex_output_rtl = rtrim(lexrc.getDocString());
+			break;
+		}
+		case SC_LATEX_OUTPUT_UTF8: {
+			lexrc.next();
+			docstring const res = rtrim(lexrc.getDocString());
+			if (isHex(res))
+				sc.latex_output_utf8 = docstring(1, hexToInt(res));
+			else
+				sc.latex_output_utf8 = rtrim(lexrc.getDocString());
+			break;
+		}
+		case SC_LYX_OUTPUT: {
+			lexrc.next();
+			docstring const res = rtrim(lexrc.getDocString());
+			if (isHex(res))
+				sc.lyx_output = docstring(1, hexToInt(res));
+			else
+				sc.lyx_output = rtrim(lexrc.getDocString());
+			break;
+		}
+		case SC_PLAINTEXT_OUTPUT: {
+			lexrc.next();
+			docstring const res = rtrim(lexrc.getDocString());
+			if (isHex(res))
+				sc.plaintext_output = docstring(1, hexToInt(res));
+			else
+				sc.plaintext_output = rtrim(lexrc.getDocString());
+			break;
+		}
+		case SC_REQUIRES:
+			lexrc.eatLine();
+			sc.req = lexrc.getString();
+			break;
+		case SC_TOOLTIP:
+			lexrc.next();
+			sc.tooltip = rtrim(lexrc.getDocString());
+			break;
+		case SC_TYPE:
+			lexrc.next();
+			sc.type = lowercase(lexrc.getString());
+			break;
+		case SC_XHTML_OUTPUT:
+			lexrc.next();
+			sc.xhtml_output = rtrim(lexrc.getDocString());
+			break;
+		case SC_FONT:
+			sc.font = lyxRead(lexrc, sc.font);
+			break;
+		case SC_END:
+			getout = true;
+			break;
+		}
+	}
+	special_chars_[name] = sc;
 	lexrc.popTable();
 }
 
@@ -2203,6 +2395,12 @@ vector<CitationStyle> const & DocumentClass::citeStyles(
 	if (it == cite_styles_.end())
 		return empty;
 	return it->second;
+}
+
+
+bool DocumentClass::isKnownSpecialChar(std::string const & name) const
+{
+	return special_chars_.find(name) != special_chars_.end();
 }
 
 
