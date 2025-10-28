@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-10-26 07:48+0100\n"
-"PO-Revision-Date: 2025-10-26 06:59+0000\n"
+"POT-Creation-Date: 2025-10-28 07:48+0100\n"
+"PO-Revision-Date: 2025-10-28 06:59+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -19470,13 +19470,25 @@ msgstr "Príloha \\thechapter"
 msgid "Ligature Break|k"
 msgstr "Zlomiť zliatku (ligatúru)|i"
 
+#: lib/layouts/stdspecialchars.inc:113
+msgid "Ligature Break (ZWNJ)"
+msgstr "Zlomiť zliatku (ligatúru) (ZWNJ)"
+
 #: lib/layouts/stdspecialchars.inc:17 lib/ui/stdmenus.inc:418
 msgid "End of Sentence|E"
 msgstr "Koniec vety|K"
 
+#: lib/layouts/stdspecialchars.inc:21
+msgid "End of Sentence"
+msgstr "Koniec vety"
+
 #: lib/layouts/stdspecialchars.inc:26 lib/ui/stdmenus.inc:417
 msgid "Ellipsis|i"
 msgstr "Vypustenie|V"
+
+#: lib/layouts/stdspecialchars.inc:31
+msgid "Ellipsis"
+msgstr "Vypustenie"
 
 #: lib/layouts/stdspecialchars.inc:36 lib/ui/stdmenus.inc:425
 msgid "Menu Separator|M"
@@ -19486,13 +19498,25 @@ msgstr "Oddeľovač v menu|O"
 msgid "Hyphenation Point|H"
 msgstr "Bod rozdeľovania|B"
 
+#: lib/layouts/stdspecialchars.inc:129
+msgid "Hyphenation Point"
+msgstr "Bod rozdeľovania"
+
 #: lib/layouts/stdspecialchars.inc:56 lib/ui/stdmenus.inc:423
 msgid "Breakable Slash|a"
 msgstr "Nechránené lomítko|l"
 
+#: lib/layouts/stdspecialchars.inc:61 lib/layouts/stdspecialchars.inc:66
+msgid "Breakable Slash"
+msgstr "Nechránené lomítko"
+
 #: lib/layouts/stdspecialchars.inc:65 lib/ui/stdmenus.inc:422
 msgid "Non-Breaking Hyphen|y"
 msgstr "Nerozbitný spojovník|b"
+
+#: lib/layouts/stdspecialchars.inc:77
+msgid "Non-Breaking Hyphen (SHY)"
+msgstr "Nerozbitný spojovník (SHY)"
 
 #: lib/layouts/stdstarsections.inc:109
 msgid "Subparagraph*"
@@ -27035,6 +27059,10 @@ msgstr "Fantóm|F"
 #: lib/ui/stdmenus.inc:468
 msgid "Optional Line Break|B"
 msgstr "Voliteľný zlom riadku|z"
+
+#: lib/layouts/stdspecialchars.inc:98
+msgid "Optional Line Break (ZWSP)"
+msgstr "Voliteľný zlom riadku (ZWSP)"
 
 #: lib/ui/stdmenus.inc:474
 msgid "Prevent Page Break|g"
@@ -36572,17 +36600,25 @@ msgstr ""
 msgid "Missing File"
 msgstr "Chýbajúci súbor"
 
-#: src/TextClass.cpp:961
+#: src/TextClass.cpp:967
 msgid "Could not find stdinsets.inc! This may lead to data loss!"
-msgstr "Nedá sa nájsť súbor stdinsets.inc! Môže dôjsť ku strata dát!"
+msgstr "Nedá sa nájsť súbor stdinsets.inc! Môže dôjsť ku stratu dát!"
 
 #: src/TextClass.cpp:964
 msgid "Corrupt File"
 msgstr "Skazený súbor"
 
-#: src/TextClass.cpp:965
+#: src/TextClass.cpp:971
 msgid "Could not read stdinsets.inc! This may lead to data loss!"
-msgstr "Nedá sa čítať súbor stdinsets.inc! Môže dôjsť ku strata dát!"
+msgstr "Nedá sa čítať súbor stdinsets.inc! Môže dôjsť ku stratu dát!"
+
+#: src/TextClass.cpp:983
+msgid "Could not find stdspecialchars.inc! This may lead to data loss!"
+msgstr "Nedá sa nájsť súbor stdspecialchars.inc! Môže dôjsť ku stratu dát!"
+
+#: src/TextClass.cpp:987
+msgid "Could not read stdspecialchars.inc! This may lead to data loss!"
+msgstr "Nedá sa čítať súbor stdspecialchars.inc! Môže dôjsť ku stratu dát!"
 
 #: src/TextClass.cpp:1712
 #, c-format
@@ -43537,6 +43573,11 @@ msgstr "Horizontálna medzera (%1$s)"
 #, c-format
 msgid "Non-Breaking Horizontal Space (%1$s)"
 msgstr "Nerozbitná horizontálna medzera (%1$s)"
+
+#: src/insets/InsetSpecialChar.cpp:57
+#, c-format
+msgid "Unknown special character (%1$s)!"
+msgstr "Neznámy špeciálny znak (%1$s)!"
 
 #: src/insets/InsetTOC.cpp:78
 msgid "Unknown TOC type"
