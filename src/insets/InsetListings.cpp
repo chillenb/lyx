@@ -413,7 +413,7 @@ void InsetListings::latex(otexstream & os, OutputParams const & runparams) const
 			// Go out of vertical mode. Otherwise \egroup
 			// causes a paragraph break (#12821)
 			os << "\\leavevmode";
-		os << "\\egroup" << breakln;
+		os << "\\egroup" << termcmd;
 		runparams.encoding = save_enc;
 	}
 
