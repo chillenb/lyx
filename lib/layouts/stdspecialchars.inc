@@ -15,7 +15,7 @@ SpecialChar endofsentence
 	Type		specialchar
 	MenuString	"End of Sentence|E"
 	LyXOutput	0x002e
-	LatexOutput	\@.
+	LatexOutput	\\@.
 	PlaintextOutput	0x002e
 	XHTMLOutput	.
 	Tooltip         "End of Sentence"
@@ -30,7 +30,7 @@ SpecialChar ldots
 	MenuString	"Ellipsis|i"
 	Tooltip         "Ellipsis"
 	LyXOutput	0x2026
-	LatexOutput	\ldots
+	LatexOutput	\\ldots
 	PlaintextOutput	0x2026
 	XHTMLOutput	&#x2026;
 	IsChar		1
@@ -44,8 +44,8 @@ SpecialChar menuseparator
 	MenuString	"Menu Separator|M"
 	Tooltip         "Menu Separator"
 	LyXOutput	0x25b7
-	LatexOutput	\lyxarrow
-	LaTexOutputRTL	\lyxarrow*
+	LatexOutput	\\lyxarrow
+	LaTexOutputRTL	\\lyxarrow*
 	PlaintextOutput	"->"
 	XHTMLOutput	&#x21D2;
 	Requires	lyxarrow
@@ -60,7 +60,7 @@ SpecialChar breakableslash
 	MenuString	"Breakable Slash|a"
 	Tooltip         "Breakable Slash"
 	LyXOutput	0x002f
-	LatexOutput	\slash
+	LatexOutput	\\slash
 	PlaintextOutput	0x002f
 	XHTMLOutput	&#x2044;
 	Tooltip         "Breakable Slash"
@@ -76,7 +76,7 @@ SpecialChar nobreakdash
 	MenuString	"Non-Breaking Hyphen|y"
 	Tooltip         "Non-Breaking Hyphen (SHY)"
 	LyXOutput	0x2010
-	LatexOutput	\nobreakdash-
+	LatexOutput	\\nobreakdash-
 	NeedProtect	1
 	PlaintextOutput	0x2011
 	XHTMLOutput	&#x2011;
@@ -97,7 +97,7 @@ SpecialChar allowbreak
 	MenuString	"Optional Line Break|B"
 	Tooltip         "Optional Line Break (ZWSP)"
 	LyXOutput	0x002f
-	LatexOutput	\LyXZeroWidthSpace
+	LatexOutput	\\LyXZeroWidthSpace
 	PlaintextOutput	0x200b
 	XHTMLOutput	&#x200B;
 	Requires        lyxzerowidthspace
@@ -112,7 +112,7 @@ SpecialChar ligaturebreak
 	MenuString	"Ligature Break|k"
 	Tooltip         "Ligature Break (ZWNJ)"
 	LyXOutput	0x007c
-	LatexOutput	\textcompwordmark
+	LatexOutput	\\textcompwordmark
 	LaTeXOutputUTF8 0x200c
 	PlaintextOutput	0x200c
 	XHTMLOutput	&#x200C;
@@ -128,7 +128,7 @@ SpecialChar softhyphen
 	MenuString	"Hyphenation Point|H"
 	Tooltip         "Hyphenation Point"
 	LyXOutput	0x2010
-	LatexOutput	\-
+	LatexOutput	\\-
 	IsLetter	1
 	XHTMLOutput	&#xAD;
 	CanBreakAfter   1
@@ -144,7 +144,7 @@ End
 SpecialChar LaTeX
 	Type		logo
 	MenuString	"LaTeX Logo|a"
-	LatexOutput	\LaTeX
+	LatexOutput	\\LaTeX
 	NeedProtect	1
 	PlaintextOutput	LaTeX
 	XHTMLOutput	LaTeX
@@ -156,7 +156,7 @@ End
 SpecialChar LaTeX2e
 	Type		logo
 	MenuString	"LaTeX2e Logo|e"
-	LatexOutput	\LaTeXe
+	LatexOutput	\\LaTeXe
 	NeedProtect	1
 	PlaintextOutput	LaTeX2e
 	XHTMLOutput	LaTeX2&#x03b5;
@@ -168,7 +168,7 @@ End
 SpecialChar LyX
 	Type		logo
 	MenuString	"LyX Logo|L"
-	LatexOutput	\LyX
+	LatexOutput	\\LyX
 	NeedProtect	1
 	PlaintextOutput	LyX
 	XHTMLOutput	LyX
@@ -181,7 +181,7 @@ End
 SpecialChar TeX
 	Type		logo
 	MenuString	"TeX Logo|T"
-	LatexOutput	\TeX
+	LatexOutput	\\TeX
 	NeedProtect	1
 	PlaintextOutput	TeX
 	XHTMLOutput	TeX

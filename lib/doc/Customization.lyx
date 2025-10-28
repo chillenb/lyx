@@ -24705,7 +24705,7 @@ status collapsed
 
 \begin_layout Description
 
-\change_inserted -712698321 1761553007
+\change_inserted -712698321 1761640200
 \begin_inset Flex Code
 status collapsed
 
@@ -24735,6 +24735,77 @@ status collapsed
 
  The text or command that is output to \SpecialChar LaTeX
 .
+ Note that special characters such as 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761640153
+
+\backslash
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ or 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761640176
+\begin_inset Quotes qld
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ need to be escaped (
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761640190
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1761640196
+
+\backslash
+
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description

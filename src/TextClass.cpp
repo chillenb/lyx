@@ -1237,7 +1237,7 @@ void TextClass::readSpecialChars(Lexer & lexrc)
 			sc.menustring = trim(lexrc.getString(), "\"");
 			break;
 		case SC_LATEX_OUTPUT: {
-			lexrc.next();
+			lexrc.next(true);
 			docstring const res = rtrim(lexrc.getDocString());
 			if (isHex(res))
 				sc.latex_output = docstring(1, hexToInt(res));
