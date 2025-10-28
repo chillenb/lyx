@@ -935,6 +935,7 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 					       font, bparams.track_changes
 					       ? Change(Change::INSERTED)
 					       : Change(Change::UNCHANGED)))) {
+			par.getInset(pos)->setBuffer(*cur.buffer());
 			++pos;
 			space_inserted = false;
 		} else if (!isPrintable(ch)) {

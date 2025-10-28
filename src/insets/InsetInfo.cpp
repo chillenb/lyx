@@ -1080,9 +1080,11 @@ void InsetInfo::build()
 		//fu.fontInfo().setUnderbar(FONT_ON);
 		for (docstring const & name : names) {
 			// do not insert > for the top level menu item
-			if (&name != &names.front())
+			if (&name != &names.front()) {
 				par.insertInset(par.size(), new InsetSpecialChar("menuseparator"),
 						f, Change(Change::UNCHANGED));
+				par.getInset(par.size() - 1)->setBuffer(buffer());
+			}
 			//FIXME: add proper underlines here. This
 			// involves rewriting searchMenu used above to
 			// return a vector of menus. If we do not do
