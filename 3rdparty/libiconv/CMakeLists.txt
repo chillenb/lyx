@@ -21,7 +21,7 @@ endif()
 set(CMAKE_MODULE_PATH .)
 include ( configure.cmake )
 
-set(LIBICONV_VERSION 1.15)
+set(LIBICONV_VERSION 1.18)
 
 set(SRCDIR ${LIBICONV_VERSION})
 
@@ -41,8 +41,13 @@ set(HAVE_WCHAR_T 0)
 set(BINDIR ${CMAKE_BINARY_DIR}/libiconv)
 configure_file(config.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config.h)
 configure_file(${SRCDIR}/include/iconv.h.build.in ${CMAKE_CURRENT_BINARY_DIR}/iconv.h)
+configure_file(${SRCDIR}/libcharset/include/localcharset.h.build.in ${CMAKE_CURRENT_BINARY_DIR}/localcharset.h)
+configure_file(${SRCDIR}/libcharset/include/libcharset.h.build.in ${CMAKE_CURRENT_BINARY_DIR}/libcharset.h)
 
-configure_file(${SRCDIR}/libcharset/include/libcharset.h.in ${BINDIR}/include/libcharset.h)
+# Generating these two files causes libcharset build errors, because they are found before the ones in ${CMAKE_CURRENT_BINARY_DIR}.
+# Fortunately they are not needed externally, so we do not need to create them.
+#configure_file(${SRCDIR}/libcharset/include/localcharset.h.in ${BINDIR}/include/localcharset.h)
+#configure_file(${SRCDIR}/libcharset/include/libcharset.h.in ${BINDIR}/include/libcharset.h)
 configure_file(${SRCDIR}/srclib/uniwidth.in.h ${BINDIR}/srclib/uniwidth.h)
 configure_file(${SRCDIR}/srclib/unitypes.in.h ${BINDIR}/srclib/unitypes.h)
 configure_file(${SRCDIR}/include/iconv.h.in ${BINDIR}/include/iconv.h)
@@ -59,7 +64,7 @@ add_definitions(-Dset_relocation_prefix=libcharset_set_relocation_prefix -Dreloc
 set(SRC_LIBCHARSET ${SRCDIR}/libcharset/lib/localcharset.c)
 
 # libiconv
-set(SRC_LIBICONV ${SRCDIR}/lib/iconv.c ${SRCDIR}/lib/relocatable.c)
+set(SRC_LIBICONV ${SRCDIR}/lib/compat.c ${SRCDIR}/lib/genaliases2.c ${SRCDIR}/lib/genaliases.c ${SRCDIR}/lib/genflags.c ${SRCDIR}/lib/gentranslit.c ${SRCDIR}/lib/iconv.c)
 
 add_library(iconv ${SRC_LIBICONV} ${SRC_LIBCHARSET})
 set_target_properties(iconv PROPERTIES COMPILE_FLAGS -DBUILDING_LIBICONV)
@@ -69,7 +74,6 @@ set(ICONV_LIBRARY iconv CACHE STRING "libiconv library" FORCE)
 set(ICONV_FOUND iconv CACHE STRING "libiconv found" FORCE)
 
 handle_source_option("CC" ${SRCDIR}/lib/iconv.c -Werror -Wno-cast-align -Wno-parentheses-equality -Wno-static-in-inline -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-missing-field-initializers -Wno-unused-macros -Wno-redundant-decls -Wno-implicit-fallthrough -Wno-strict-prototypes)
-handle_source_option("CC" ${SRCDIR}/lib/relocatable.c -Wno-unused-macros)
 set_target_properties(iconv PROPERTIES
 	FOLDER "3rd_party"
 	INTERPROCEDURAL_OPTIMIZATION ${LYX_IPO_SUPPORTED})
