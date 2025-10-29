@@ -23,7 +23,6 @@
 #include "Language.h"
 #include "LaTeXFeatures.h"
 #include "MetricsInfo.h"
-#include "TextClass.h"
 #include "xml.h"
 #include "texstream.h"
 
@@ -46,9 +45,12 @@ namespace lyx {
 using support::Lexer;
 
 
-InsetSpecialChar::InsetSpecialChar(string const k)
-	: Inset(nullptr), kind_(k), unknown_(false)
-{}
+InsetSpecialChar::InsetSpecialChar(Buffer * buf, string const k)
+	: Inset(buf), kind_(k), unknown_(false)
+{
+	if (buf)
+		update();
+}
 
 
 docstring InsetSpecialChar::toolTip(BufferView const &, int, int) const
@@ -56,13 +58,13 @@ docstring InsetSpecialChar::toolTip(BufferView const &, int, int) const
 	if (unknown_)
 		return bformat(_("Unknown special character (%1$s)!"), from_utf8(kind_));
 
-	return buffer().params().documentClass().specialChars()[kind_].tooltip;
+	return sc_.tooltip;
 }
 
 
 int InsetSpecialChar::rowFlags() const
 {
-	if (!unknown_ && buffer().params().documentClass().specialChars()[kind_].can_break_after)
+	if (!unknown_ && sc_.can_break_after)
 		return CanBreakAfter;
 
 	return Inline;
@@ -182,7 +184,7 @@ void InsetSpecialChar::metrics(MetricsInfo & mi, Dimension & dim) const
 		// the width without code duplication.
 		drawLogo(pi, dim.wid, 0, kind_);
 	} else
-		s = buffer().params().documentClass().specialChars()[kind_].lyx_output;
+		s = sc_.lyx_output;
 
 	if (dim.wid == 0)
 		dim.wid = fm.width(s);
@@ -227,9 +229,8 @@ void InsetSpecialChar::draw(PainterInfo & pi, int x, int y) const
 		return;
 	}
 
-	SpecialChar const sc = buffer().params().documentClass().specialChars()[kind_];
-	font.setColor(sc.font.color());
-	pi.pain.text(x, y, sc.lyx_output, font);
+	font.setColor(sc_.font.color());
+	pi.pain.text(x, y, sc_.lyx_output, font);
 }
 
 
@@ -252,14 +253,13 @@ void InsetSpecialChar::latex(otexstream & os, OutputParams const & rp) const
 	if (unknown_)
 		return;
 
-	SpecialChar const sc = buffer().params().documentClass().specialChars()[kind_];
 	bool const rtl = rp.local_font && rp.local_font->isRightToLeft();
 	bool const utf8 = rp.encoding->iconvName() == "UTF-8";
 	bool force_ltr = false;
 	string lswitch = "";
 	string lswitche = "";
 	if (rtl && !rp.use_polyglossia) {
-		force_ltr = sc.force_ltr;
+		force_ltr = sc_.force_ltr;
 		lswitch = "\\L{";
 		lswitche = "}";
 		if (getLocalOrDefaultLang(rp)->lang() == "arabic_arabi"
@@ -267,20 +267,20 @@ void InsetSpecialChar::latex(otexstream & os, OutputParams const & rp) const
 			lswitch = "\\textLR{";
 	}
 
-	if (sc.need_protect && rp.moving_arg)
+	if (sc_.need_protect && rp.moving_arg)
 		os << "\\protect";
 	if (force_ltr)
 		os << lswitch;
-	if (rtl && !sc.latex_output_rtl.empty())
-		os << sc.latex_output_rtl;
-	else if (utf8 && !sc.latex_output_utf8.empty())
-		os << sc.latex_output_utf8;
+	if (rtl && !sc_.latex_output_rtl.empty())
+		os << sc_.latex_output_rtl;
+	else if (utf8 && !sc_.latex_output_utf8.empty())
+		os << sc_.latex_output_utf8;
 	else
-		os << sc.latex_output;
+		os << sc_.latex_output;
 	if (force_ltr)
 		os << lswitche;
-	else if (sc.latex_output_utf8.empty()
-		 && prefixIs(sc.latex_output, from_ascii("\\"))
+	else if (sc_.latex_output_utf8.empty()
+		 && prefixIs(sc_.latex_output, from_ascii("\\"))
 		 && isAlphaASCII(os.lastChar()))
 		os << termcmd;
 }
@@ -291,7 +291,7 @@ int InsetSpecialChar::plaintext(odocstringstream & os, OutputParams const &, siz
 	if (unknown_)
 		return 0;
 
-	docstring const res = buffer().params().documentClass().specialChars()[kind_].plaintext_output;
+	docstring const res = sc_.plaintext_output;
 	os << res;
 	return res.size();
 }
@@ -302,8 +302,7 @@ void InsetSpecialChar::docbook(XMLStream & xs, OutputParams const &) const
 	if (unknown_)
 		return;
 
-	xs << XMLStream::ESCAPE_NONE
-	   << buffer().params().documentClass().specialChars()[kind_].xhtml_output;
+	xs << XMLStream::ESCAPE_NONE << sc_.xhtml_output;
 }
 
 
@@ -312,15 +311,19 @@ docstring InsetSpecialChar::xhtml(XMLStream & xs, OutputParams const &) const
 	if (unknown_)
 		return docstring();
 
-	xs << XMLStream::ESCAPE_NONE
-	   << buffer().params().documentClass().specialChars()[kind_].xhtml_output;
+	xs << XMLStream::ESCAPE_NONE << sc_.xhtml_output;
 	return docstring();
 }
 
 
 void InsetSpecialChar::update()
 {
-	unknown_ = !buffer().params().documentClass().isKnownSpecialChar(kind_);
+	if (!buffer().masterParams().documentClass().isKnownSpecialChar(kind_))
+		unknown_ = true;
+	else {
+		sc_ = buffer().masterParams().documentClass().specialChars()[kind_];
+		unknown_ = false;
+	}
 }
 
 
@@ -363,10 +366,9 @@ void InsetSpecialChar::validate(LaTeXFeatures & features) const
 	if (unknown_)
 		return;
 
-	SpecialChar const sc = buffer().params().documentClass().specialChars()[kind_];
-	if (sc.req.empty())
+	if (sc_.req.empty())
 		return;
-	vector<string> const reqs = getVectorFromString(sc.req);
+	vector<string> const reqs = getVectorFromString(sc_.req);
 	for (auto const & s : reqs)
 		features.require(s);
 }
@@ -377,7 +379,7 @@ bool InsetSpecialChar::isChar() const
 	if (unknown_)
 		return false;
 
-	return buffer().params().documentClass().specialChars()[kind_].is_char;
+	return sc_.is_char;
 }
 
 
@@ -386,7 +388,7 @@ bool InsetSpecialChar::isLetter() const
 	if (unknown_)
 		return false;
 
-	return buffer().params().documentClass().specialChars()[kind_].is_letter;
+	return sc_.is_letter;
 }
 
 

@@ -931,11 +931,10 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 				space_inserted = true;
 			}
 		} else if (specialchars.find(ch) != specialchars.end()
-			   && (par.insertInset(pos, new InsetSpecialChar(specialchars.find(ch)->second),
+			   && (par.insertInset(pos, new InsetSpecialChar(cur.buffer(), specialchars.find(ch)->second),
 					       font, bparams.track_changes
 					       ? Change(Change::INSERTED)
 					       : Change(Change::UNCHANGED)))) {
-			par.getInset(pos)->setBuffer(*cur.buffer());
 			++pos;
 			space_inserted = false;
 		} else if (!isPrintable(ch)) {
@@ -3541,8 +3540,7 @@ void specialChar(Cursor & cur, string const kind)
 {
 	cur.recordUndo();
 	cap::replaceSelection(cur);
-	InsetSpecialChar * sc = new InsetSpecialChar(kind);
-	sc->setBuffer(*cur.buffer());
+	InsetSpecialChar * sc = new InsetSpecialChar(cur.buffer(), kind);
 	sc->update();
 	cur.insert(sc);
 	cur.posForward();

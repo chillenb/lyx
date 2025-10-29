@@ -17,6 +17,8 @@
 
 #include "Inset.h"
 
+#include "TextClass.h"
+
 
 namespace lyx {
 
@@ -57,7 +59,7 @@ public:
 	///
 	InsetSpecialChar() : Inset(0), kind_("softhyphen") {}
 	///
-	explicit InsetSpecialChar(std::string const k);
+	explicit InsetSpecialChar(Buffer * buf, std::string const k);
 	///
 	docstring toolTip(BufferView const & bv, int x, int y) const override;
 	/// some special chars allow line breaking after them
@@ -109,8 +111,10 @@ public:
 private:
 	Inset * clone() const override { return new InsetSpecialChar(*this); }
 
-	/// And which kind is this?
+	/// Special char type
 	std::string kind_;
+	///
+	SpecialChar sc_;
 	/// Is this known?
 	bool unknown_;
 };
