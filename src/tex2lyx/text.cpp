@@ -5474,20 +5474,6 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			continue;
 		}
 
-		string lyxname;
-		if (isKnownSpecialChar(t.cs(), lyxname)
-		    || (t.cs() == "protect"
-			&& p.next_token().cat() == catEscape
-			&& isKnownSpecialChar(p.next_token().cs(), lyxname, true))) {
-			// LyX sometimes puts a \protect in front, so we have to ignore it
-			if (t.cs() == "protect")
-				p.get_token();
-			context.check_layout(os);
-			os << "\\SpecialChar " << lyxname << '\n';
-			skip_spaces_braces(p);
-			continue;
-		}
-
 		if ((t.cs() == "nobreakdash" && p.next_token().asInput() == "-") ||
 		         (t.cs() == "protect" && p.next_token().asInput() == "\\nobreakdash" &&
 		          p.next_next_token().asInput() == "-") ||
@@ -6191,7 +6177,6 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			if (context.current_table_odd_row_color.empty() || context.current_table_even_row_color.empty())
 				output_ert_inset(os, t.asInput(), context);
 		}
-		
 
 		if (t.cs() == "DeclareRobustCommand" ||
 		         t.cs() == "DeclareRobustCommandx" ||
@@ -6699,6 +6684,22 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			// character or a combining sequence.
 			name += '{' + p.verbatim_item() + '}';
 		}
+
+		// special chars
+		string lyxname;
+		if (isKnownSpecialChar(t.cs(), lyxname)
+		    || (t.cs() == "protect"
+			&& p.next_token().cat() == catEscape
+			&& isKnownSpecialChar(p.next_token().cs(), lyxname, true))) {
+			// LyX sometimes puts a \protect in front, so we have to ignore it
+			if (t.cs() == "protect")
+				p.get_token();
+			context.check_layout(os);
+			os << "\\SpecialChar " << lyxname << '\n';
+			skip_spaces_braces(p);
+			continue;
+		}
+
 		// now get the character from unicodesymbols
 		bool termination;
 		docstring rem;
