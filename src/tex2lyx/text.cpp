@@ -5478,8 +5478,10 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 		if (isKnownSpecialChar(t.cs(), lyxname)
 		    || (t.cs() == "protect"
 			&& p.next_token().cat() == catEscape
-			&& isKnownSpecialChar(t.cs(), lyxname, true))) {
+			&& isKnownSpecialChar(p.next_token().cs(), lyxname, true))) {
 			// LyX sometimes puts a \protect in front, so we have to ignore it
+			if (t.cs() == "protect")
+				p.get_token();
 			context.check_layout(os);
 			os << "\\SpecialChar " << lyxname << '\n';
 			skip_spaces_braces(p);
