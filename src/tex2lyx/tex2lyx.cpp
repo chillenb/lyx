@@ -492,6 +492,18 @@ bool isProvided(string const & name)
 }
 
 
+bool isKnownSpecialChar(string const & latex, string & lyxname, bool const only_protected)
+{
+	for (auto const & [name, sc] : textclass.specialChars()) {
+		if (to_ascii(ltrim(sc.latex_output, "\\")) == latex) {
+			lyxname = name;
+			return only_protected ? sc.need_protect : true;
+		}
+	}
+	return false;
+}
+
+
 bool noweb_mode = false;
 bool pdflatex = false;
 bool xetex = false;

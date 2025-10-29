@@ -320,24 +320,6 @@ char const * const known_text_font_shapes[] = { "textit", "textsl", "textsc",
 char const * const known_coded_font_shapes[] = { "italic", "slanted",
 "smallcaps", "up", 0};
 
-/// Known special characters which need skip_spaces_braces() afterwards
-char const * const known_special_chars[] = {"ldots",
-"lyxarrow", "textcompwordmark",
-"slash", "textasciitilde", "textasciicircum", "textbackslash",
-"LyX", "TeX", "LaTeXe",
-"LaTeX", 0};
-
-/// special characters from known_special_chars which may have a \\protect before
-char const * const known_special_protect_chars[] = {"LyX", "TeX",
-"LaTeXe", "LaTeX", 0};
-
-/// the same as known_special_chars with .lyx names
-char const * const known_coded_special_chars[] = {"\\SpecialChar ldots\n",
-"\\SpecialChar menuseparator\n", "\\SpecialChar ligaturebreak\n",
-"\\SpecialChar breakableslash\n", "~", "^", "\n\\backslash\n",
-"\\SpecialChar LyX\n", "\\SpecialChar TeX\n", "\\SpecialChar LaTeX2e\n",
-"\\SpecialChar LaTeX\n", 0};
-
 /*!
  * Graphics file extensions known by the dvips driver of the graphics package.
  * These extensions are used to complete the filename of an included
@@ -5492,16 +5474,14 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			continue;
 		}
 
-		if (is_known(t.cs(), known_special_chars) ||
-		    (t.cs() == "protect" &&
-		     p.next_token().cat() == catEscape &&
-		     is_known(p.next_token().cs(), known_special_protect_chars))) {
+		string lyxname;
+		if (isKnownSpecialChar(t.cs(), lyxname)
+		    || (t.cs() == "protect"
+			&& p.next_token().cat() == catEscape
+			&& isKnownSpecialChar(t.cs(), lyxname, true))) {
 			// LyX sometimes puts a \protect in front, so we have to ignore it
-			where = is_known(
-				t.cs() == "protect" ? p.get_token().cs() : t.cs(),
-				known_special_chars);
 			context.check_layout(os);
-			os << known_coded_special_chars[where - known_special_chars];
+			os << "\\SpecialChar " << lyxname << '\n';
 			skip_spaces_braces(p);
 			continue;
 		}

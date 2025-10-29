@@ -128,6 +128,9 @@ extern InsetLayout const * findInsetLayoutWithoutModule(TextClass const & tc, st
 extern bool checkModule(std::string const & name, bool command);
 /// Is this feature already provided e.g. by the document class?
 extern bool isProvided(std::string const & name);
+/// Is this a known special character?
+extern bool isKnownSpecialChar(std::string const & latex, std::string & lyxname,
+			       bool const only_protected = false);
 // Access to environment stack
 extern std::vector<std::string> active_environments;
 std::string active_environment();
