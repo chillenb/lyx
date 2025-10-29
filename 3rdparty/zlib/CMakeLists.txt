@@ -16,7 +16,7 @@ project(zlib C)
 set(VERSION "1.3.1")
 set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/${VERSION})
 
-handle_warning_options("zlib" "CC" -Wno-deprecated-non-prototype -Wno-strict-prototypes -Wnested-anon-types -Wno-implicit-fallthrough -Wno-format-nonliteral -Wno-reserved-macro-identifier)
+handle_warning_options("zlib" "CC" -Wno-deprecated-non-prototype -Wno-strict-prototypes -Wnested-anon-types -Wno-implicit-fallthrough -Wno-format-nonliteral -Wno-reserved-macro-identifier -Wno-cast-align)
 
 include(CheckTypeSize)
 include(CheckFunctionExists)
