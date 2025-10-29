@@ -25,7 +25,7 @@ set(LIBICONV_VERSION 1.18)
 
 set(SRCDIR ${LIBICONV_VERSION})
 
-handle_warning_options("libiconv" "CC" -Wno-error -Wdeprecated-non-prototype -Wstrict-prototypes -Wstatic-in-inline -Wparentheses-equality -Wundef -Wno-reserved-macro-identifier)
+handle_warning_options("libiconv" "CC" -Werror -Wdeprecated-non-prototype -Wstrict-prototypes -Wstatic-in-inline -Wparentheses-equality -Wundef -Wno-reserved-macro-identifier -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-implicit-fallthrough -Wno-cast-align -Wno-parentheses-equality)
 
 # Options
 option(ENABLE_EXTRA "Enable a few rarely used encodings" OFF)
@@ -73,7 +73,14 @@ set(ICONV_INCLUDE_DIR ${BINDIR}/include CACHE STRING "libiconv include  dir" FOR
 set(ICONV_LIBRARY iconv CACHE STRING "libiconv library" FORCE)
 set(ICONV_FOUND iconv CACHE STRING "libiconv found" FORCE)
 
-handle_source_option("CC" ${SRCDIR}/lib/iconv.c -Werror -Wno-cast-align -Wno-parentheses-equality -Wno-static-in-inline -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-missing-field-initializers -Wno-unused-macros -Wno-redundant-decls -Wno-implicit-fallthrough -Wno-strict-prototypes)
+foreach(_base iconv genaliases2 genaliases genflags)
+  handle_source_option("CC" ${SRCDIR}/lib/${_base}.c -Wno-unused-macros)
+endforeach()
+
+handle_source_option("CC" ${SRCDIR}/lib/iconv.c -Wno-cast-align -Wno-parentheses-equality -Wno-static-in-inline -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-missing-field-initializers -Wno-redundant-decls -Wno-implicit-fallthrough -Wno-strict-prototypes)
+handle_source_option("CC" ${SRCDIR}/lib/genaliases2.c -Wno-unused-but-set-variable -Wno-unused-function)
+handle_source_option("CC" ${SRCDIR}/lib/genflags.c -Wno-pedantic)
+handle_source_option("CC" ${SRCDIR}/lib/gentranslit.c -Wno-format)
 set_target_properties(iconv PROPERTIES
 	FOLDER "3rd_party"
 	INTERPROCEDURAL_OPTIMIZATION ${LYX_IPO_SUPPORTED})
