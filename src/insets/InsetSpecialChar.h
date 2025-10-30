@@ -59,7 +59,7 @@ public:
 	///
 	InsetSpecialChar() : Inset(nullptr), kind_("softhyphen"), unknown_(false) {}
 	///
-	explicit InsetSpecialChar(Buffer * buf, std::string const k);
+	explicit InsetSpecialChar(Buffer * buf, std::string const & k);
 	///
 	docstring toolTip(BufferView const & bv, int x, int y) const override;
 	/// some special chars allow line breaking after them

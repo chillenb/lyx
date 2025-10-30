@@ -3536,7 +3536,7 @@ void regexpDispatch(Cursor & cur, FuncRequest const & cmd)
 }
 
 
-void specialChar(Cursor & cur, string const kind)
+void specialChar(Cursor & cur, string const & kind)
 {
 	cur.recordUndo();
 	cap::replaceSelection(cur);

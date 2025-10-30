@@ -45,7 +45,7 @@ namespace lyx {
 using support::Lexer;
 
 
-InsetSpecialChar::InsetSpecialChar(Buffer * buf, string const k)
+InsetSpecialChar::InsetSpecialChar(Buffer * buf, string const & k)
 	: Inset(buf), kind_(k), unknown_(false)
 {
 	if (buf)
