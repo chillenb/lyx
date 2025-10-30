@@ -57,7 +57,7 @@ public:
 	};
 
 	///
-	InsetSpecialChar() : Inset(0), kind_("softhyphen") {}
+	InsetSpecialChar() : Inset(nullptr), kind_("softhyphen"), unknown_(false) {}
 	///
 	explicit InsetSpecialChar(Buffer * buf, std::string const k);
 	///
