@@ -753,6 +753,7 @@ void MathData::attachMacroParameters(Cursor * cur,
 
 		// get pointer to "deep" copied macro inset
 		scriptInset = operator[](macroPos).nucleus()->asScriptInset();
+		scriptInset->setBuffer(*buffer_);
 		macroInset = scriptInset->nuc()[0].nucleus()->asMacroInset();
 	}
 
