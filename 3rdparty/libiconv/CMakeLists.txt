@@ -64,7 +64,7 @@ add_definitions(-Dset_relocation_prefix=libcharset_set_relocation_prefix -Dreloc
 set(SRC_LIBCHARSET ${SRCDIR}/libcharset/lib/localcharset.c)
 
 # libiconv
-set(SRC_LIBICONV ${SRCDIR}/lib/compat.c ${SRCDIR}/lib/genaliases2.c ${SRCDIR}/lib/genaliases.c ${SRCDIR}/lib/genflags.c ${SRCDIR}/lib/gentranslit.c ${SRCDIR}/lib/iconv.c)
+set(SRC_LIBICONV ${SRCDIR}/lib/compat.c ${SRCDIR}/lib/genaliases2.c ${SRCDIR}/lib/genaliases.c ${SRCDIR}/lib/gentranslit.c ${SRCDIR}/lib/iconv.c)
 
 add_library(iconv ${SRC_LIBICONV} ${SRC_LIBCHARSET})
 set_target_properties(iconv PROPERTIES COMPILE_FLAGS -DBUILDING_LIBICONV)
@@ -73,13 +73,12 @@ set(ICONV_INCLUDE_DIR ${BINDIR}/include CACHE STRING "libiconv include  dir" FOR
 set(ICONV_LIBRARY iconv CACHE STRING "libiconv library" FORCE)
 set(ICONV_FOUND iconv CACHE STRING "libiconv found" FORCE)
 
-foreach(_base iconv genaliases2 genaliases genflags)
+foreach(_base iconv genaliases2 genaliases)
   handle_source_option("CC" ${SRCDIR}/lib/${_base}.c -Wno-unused-macros)
 endforeach()
 
 handle_source_option("CC" ${SRCDIR}/lib/iconv.c -Wno-cast-align -Wno-parentheses-equality -Wno-static-in-inline -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-missing-field-initializers -Wno-redundant-decls -Wno-implicit-fallthrough -Wno-strict-prototypes)
 handle_source_option("CC" ${SRCDIR}/lib/genaliases2.c -Wno-unused-but-set-variable -Wno-unused-function)
-handle_source_option("CC" ${SRCDIR}/lib/genflags.c -Wno-pedantic)
 handle_source_option("CC" ${SRCDIR}/lib/gentranslit.c -Wno-format)
 set_target_properties(iconv PROPERTIES
 	FOLDER "3rd_party"
