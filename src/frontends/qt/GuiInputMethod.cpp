@@ -1443,10 +1443,11 @@ QLocale & GuiInputMethod::locale() const
 void GuiInputMethod::setAbsolutePosition(Cursor & cur) const
 {
 	d->abs_pos_ = 0;
-	ParagraphList paras = cur.buffer()->paragraphs();
-	for (int i=0; i < (int)paras.size(); ++i) {
-		if (i >= cur.pit()) break;
-		d->abs_pos_ += paras[i].size();
+
+	for (auto const & p : cur.buffer()->paragraphs()) {
+		if (p.id() == cur.paragraph().id())
+			break;
+		d->abs_pos_ += p.size();
 	}
 	d->abs_pos_ += cur.pos();
 }
