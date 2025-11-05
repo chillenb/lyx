@@ -32,6 +32,10 @@
 #include <QInputDialog>
 #include <QPushButton>
 
+#ifdef Q_OS_MACOS
+#include <QOperatingSystemVersion>
+#endif
+
 #include <iomanip>
 #include <iostream>
 
@@ -111,8 +115,14 @@ buttonid doPrompt(docstring const & title, docstring const & question,
 	QMessageBox msg_box(QMessageBox::Information,
 			toqstr(title), toqstr(question),
 			QMessageBox::NoButton, qApp->focusWidget());
-#ifdef Q_OS_MAC
-	msg_box.setWindowModality(Qt::WindowModal);
+#ifdef Q_OS_MACOS
+	// temporary workaround of the issue:
+	//     https://bugreports.qt.io/browse/QTBUG-141689
+	if (QOperatingSystemVersion::current() <
+	        QOperatingSystemVersion(QOperatingSystemVersion::MacOS, 26))
+		msg_box.setWindowModality(Qt::WindowModal);
+	else
+		msg_box.setWindowModality(Qt::ApplicationModal);
 #endif
 	b[0] = msg_box.addButton(b1.empty() ? "OK" : toqstr(b1),
 					QMessageBox::ActionRole);
