@@ -255,7 +255,7 @@ void GuiInputMethod::processPreedit(QInputMethodEvent* ev)
 	d->cur_row_idx_ = initializePositions(d->cur_);
 	// initialize virtual caret to the anchor (real cursor) position
 	d->init_point_ =
-		initializeCaretCoords(d->cur_row_idx_,
+		initializeCaretCoords(d->cur_row_idx_ + d->real_boundary_,
 				      d->real_boundary_ && !d->im_state_.composing_mode_);
 
 	// Push preedit texts into row elements, which can shift the anchor
@@ -762,7 +762,7 @@ std::array<int,2> GuiInputMethod::setCaretOffset(pos_type caret_pos)
 	if (caret_row.index > d->cur_row_idx_ || d->real_boundary_) {
 		QString lastline_str;
 
-		if (d->real_boundary_ && caret_row.index == d->cur_row_idx_)
+		if (d->real_boundary_ && caret_row.index == d->cur_row_idx_ + d->real_boundary_)
 			lastline_str = str_before_caret;
 		else
 #if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
@@ -817,10 +817,10 @@ std::array<int,2> GuiInputMethod::setCaretOffset(pos_type caret_pos)
 
 	// vertical offset only applicable to main text
 	caret_offset[1] = 0;
-	for (pos_type i = d->cur_row_idx_ -
-	     (d->real_boundary_ && d->im_state_.composing_mode_);
-	     i < caret_row.index -
-	     (d->real_boundary_ && !d->im_state_.composing_mode_); ++i)
+	for (pos_type i = d->cur_row_idx_ +
+	     (d->real_boundary_ && !d->im_state_.composing_mode_);
+	     i < caret_row.index +
+	     (d->real_boundary_ && d->im_state_.composing_mode_); ++i)
 		caret_offset[1] += d->rows_[i].descent() + d->rows_[i+1].ascent();
 
 	return caret_offset;
@@ -1167,8 +1167,6 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 	// post_real_boundary can be treated interchangeably, so merge them into
 	// real_boundary, i.e. d->real_boundary_.
 	real_boundary |= post_real_boundary;
-	if (real_boundary)
-		++cur_row_idx;
 
 	LYXERR(Debug::DEBUG, "========== BEGIN: initializePositions ==========");
 	LYXERR(Debug::DEBUG, "cur_row_idx   = " << cur_row_idx <<
@@ -1179,12 +1177,8 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 	        d->buffer_view_->textMetrics(
 	            cur->innerText()).maxWidth()
 	             - d->rows_[cur_row_idx].right_margin);
-	if (real_boundary)
-		LYXERR(Debug::DEBUG, "row width     = " << std::dec <<
-		        d->rows_[cur_row_idx-1].width());
-	else
-		LYXERR(Debug::DEBUG, "row width     = " << std::dec <<
-		        d->rows_[cur_row_idx].width());
+	LYXERR(Debug::DEBUG, "row width     = " << std::dec <<
+			d->rows_[cur_row_idx].width());
 	if (d->preedit_str_.empty())
 		LYXERR(Debug::DEBUG, "wchar width   = " <<
 		       horizontalAdvance(from_utf8("あ")));
@@ -1257,16 +1251,18 @@ pos_type GuiInputMethod::getCaretPos(size_type preedit_length)
 }
 
 
-GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(
-		const bool real_boundary, const bool virtual_boundary)
+GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(const bool real_boundary, const bool virtual_boundary)
 {
 	// the virtual boundary case has the real cusor on the second row of
 	// the preedit inputs
-	const pos_type second_row_idx = d->cur_row_idx_ + 1 - virtual_boundary;
+	const pos_type second_row_idx =
+	        d->cur_row_idx_ + 1 + real_boundary - virtual_boundary;
 
 	// accumulate the length of preedit elements within d->rows_[d->cur_row_idx_]
 	// the length of str is used since preedits has zero widths (pos == endpos)
 	// second_row_pos is only useful when preedit string goes over two rows
+	LASSERT(d->cur_row_idx_ < (pos_type)d->rows_size_ &&
+	        d->cur_row_idx_ >= 0, return {});
 	Row::const_iterator begin =
 	        d->rows_[d->cur_row_idx_].findElement(d->cur_pos_, false);
 	pos_type second_row_pos = d->cur_pos_;
@@ -1284,15 +1280,13 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(
 
 	// if the preedit caret is on the second row or later, count the second row
 	caret_row.index = d->caret_pos_ > second_row_pos ?
-	            second_row_idx + virtual_boundary : d->cur_row_idx_;
+	            second_row_idx + virtual_boundary : d->cur_row_idx_ + real_boundary;
 
 	// the second row exists and begins with the preedit
-	if (second_row_idx + virtual_boundary < (pos_type)d->rows_size_ &&
-	        d->rows_[second_row_idx + virtual_boundary].begin()->isPreedit()) {
+	if (d->cur_row_idx_ + 1 < (pos_type)d->rows_size_ &&
+	        d->rows_[d->cur_row_idx_ + 1].begin()->isPreedit()) {
 
-		for (pos_type i = second_row_idx + virtual_boundary;
-			 i < (pos_type)d->rows_size_; i++)
-		{
+		for (pos_type i = d->cur_row_idx_+1; i < (pos_type)d->rows_size_; i++) {
 			if (d->rows_[i].front().isPreedit()) {
 				int row_length = 0;
 				for (const Row::Element & elm : d->rows_[i])
