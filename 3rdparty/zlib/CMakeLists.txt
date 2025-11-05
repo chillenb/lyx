@@ -16,8 +16,6 @@ project(zlib C)
 set(VERSION "1.3.1")
 set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/${VERSION})
 
-handle_warning_options("zlib" "CC" -Wno-deprecated-non-prototype -Wno-strict-prototypes -Wnested-anon-types -Wno-implicit-fallthrough -Wno-format-nonliteral -Wno-reserved-macro-identifier -Wno-cast-align)
-
 include(CheckTypeSize)
 include(CheckFunctionExists)
 include(CheckIncludeFile)
@@ -125,7 +123,8 @@ set(ZLIB_SRCS
 )
 
 add_library(zlibstatic STATIC ${ZLIB_SRCS} ${ZLIB_PUBLIC_HDRS} ${ZLIB_PRIVATE_HDRS})
-target_include_directories(zlibstatic PUBLIC ${CMAKE_CURRENT_BINARY_DIR} ${SRCDIR})
+# SYSTEM because we are not interested in any warning of this thirdparty library
+target_include_directories(zlibstatic SYSTEM PUBLIC ${CMAKE_CURRENT_BINARY_DIR} ${SRCDIR})
 
 set(ZLIB_LIBRARY zlibstatic CACHE STRING "Zlib library" FORCE)
 set(ZLIB_INCLUDE_DIR  ${SRCDIR} CACHE STRING "Zlib include dir" FORCE)

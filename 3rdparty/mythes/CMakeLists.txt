@@ -12,20 +12,16 @@ endif()
 set(VERSION "1.2.5")
 set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/${VERSION})
 
-handle_warning_options("mythes" "CXX" -Wno-stringop-truncation -Wno-reserved-macro-identifier)
-if (${LYX_DEBUG_SANITIZE} MATCHES UNSPECIFIED)
-  handle_source_option("CXX" ${SRCDIR}/mythes.cxx -Wno-nonnull)
-endif()
 file(GLOB support_mythes_sources ${SRCDIR}/*.cxx)
 file(GLOB support_mythes_headers ${SRCDIR}/*.hxx)
-
-include_directories(${VERSION})
 
 #============================================================================
 # lyxmytheslib
 #============================================================================
 
 add_library(mytheslibstatic STATIC ${support_mythes_sources} ${support_mythes_headers} )
+# SYSTEM because we are not interested in any warning of this thirdparty library
+target_include_directories(mytheslibstatic SYSTEM PRIVATE ${VERSION})
 
 
 set(MYTHESLIB_LIBRARY mytheslibstatic CACHE STRING "Mytheslib library" FORCE)

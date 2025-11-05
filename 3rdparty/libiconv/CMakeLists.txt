@@ -25,8 +25,6 @@ set(LIBICONV_VERSION 1.18)
 
 set(SRCDIR ${LIBICONV_VERSION})
 
-handle_warning_options("libiconv" "CC" -Werror -Wdeprecated-non-prototype -Wstrict-prototypes -Wstatic-in-inline -Wparentheses-equality -Wundef -Wno-reserved-macro-identifier -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-implicit-fallthrough -Wno-cast-align -Wno-parentheses-equality)
-
 # Options
 option(ENABLE_EXTRA "Enable a few rarely used encodings" OFF)
 option(ENABLE_NLS "Translation of program messages to the user's native
@@ -52,14 +50,6 @@ configure_file(${SRCDIR}/srclib/uniwidth.in.h ${BINDIR}/srclib/uniwidth.h)
 configure_file(${SRCDIR}/srclib/unitypes.in.h ${BINDIR}/srclib/unitypes.h)
 configure_file(${SRCDIR}/include/iconv.h.in ${BINDIR}/include/iconv.h)
 
-# Dirty fix for MinGW
-if(MINGW)
-  add_definitions(-DELOOP=0 -DHAVE_DECL_STRERROR_R=0)
-endif ()
-
-include_directories(BEFORE ${CMAKE_CURRENT_BINARY_DIR} ${BINDIR}/include ${SRCDIR}/include ${SRCDIR}/srclib)
-add_definitions(-Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -DINSTALLPREFIX=NULL -DNO_XMALLOC -DBUILDING_LIBCHARSET -DINSTALLDIR="" -DLIBDIR="" -DENABLE_RELOCATABLE=1 -DIN_LIBRARY)
-
 # libcharset
 set(SRC_LIBCHARSET ${SRCDIR}/libcharset/lib/localcharset.c)
 
@@ -67,17 +57,20 @@ set(SRC_LIBCHARSET ${SRCDIR}/libcharset/lib/localcharset.c)
 set(SRC_LIBICONV ${SRCDIR}/lib/compat.c ${SRCDIR}/lib/iconv.c)
 
 add_library(iconv ${SRC_LIBICONV} ${SRC_LIBCHARSET})
-set_target_properties(iconv PROPERTIES COMPILE_FLAGS -DBUILDING_LIBICONV)
+
+# Dirty fix for MinGW
+if(MINGW)
+  target_compile_definitions(iconv PRIVATE -DELOOP=0 -DHAVE_DECL_STRERROR_R=0)
+endif ()
+
+# SYSTEM because we are not interested in any warning of this thirdparty library
+target_include_directories(iconv SYSTEM BEFORE PRIVATE ${CMAKE_CURRENT_BINARY_DIR} ${BINDIR}/include ${SRCDIR}/include ${SRCDIR}/srclib)
+target_compile_definitions(iconv PRIVATE -DBUILDING_LIBICONV -Dset_relocation_prefix=libcharset_set_relocation_prefix -Drelocate=libcharset_relocate -DHAVE_CONFIG_H -DINSTALLPREFIX=NULL -DNO_XMALLOC -DBUILDING_LIBCHARSET -DINSTALLDIR="" -DLIBDIR="" -DENABLE_RELOCATABLE=1 -DIN_LIBRARY)
 
 set(ICONV_INCLUDE_DIR ${BINDIR}/include CACHE STRING "libiconv include  dir" FORCE)
 set(ICONV_LIBRARY iconv CACHE STRING "libiconv library" FORCE)
 set(ICONV_FOUND iconv CACHE STRING "libiconv found" FORCE)
 
-foreach(_base iconv)
-  handle_source_option("CC" ${SRCDIR}/lib/${_base}.c -Wno-unused-macros)
-endforeach()
-
-handle_source_option("CC" ${SRCDIR}/lib/iconv.c -Wno-cast-align -Wno-parentheses-equality -Wno-static-in-inline -Wno-unused-parameter -Wno-sign-compare -Wno-type-limits -Wno-missing-field-initializers -Wno-redundant-decls -Wno-implicit-fallthrough -Wno-strict-prototypes)
 set_target_properties(iconv PROPERTIES
 	FOLDER "3rd_party"
 	INTERPROCEDURAL_OPTIMIZATION ${LYX_IPO_SUPPORTED})

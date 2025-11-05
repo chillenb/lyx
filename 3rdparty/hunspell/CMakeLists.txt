@@ -11,13 +11,9 @@ endif()
 
 project(hunspell)
 
-handle_warning_options("hunspell" "CXX" -Wno-suggest-final-types -Wno-suggest-final-methods -Wno-unused-but-set-variable -Wno-deprecated-declarations -Wno-format-nonliteral -Wno-unused-macros -Wno-sign-compare -Wno-unused-parameter)
-
 set(HUNSPELL_VERSION 1.7.2)
 
 set(SRCDIR ${CMAKE_CURRENT_SOURCE_DIR}/${HUNSPELL_VERSION}/src)
-
-include_directories(./ ${SRCDIR}/hunspell)
 
 # LIBS
 set(SRCS
@@ -32,10 +28,6 @@ set(SRCS
     ${SRCDIR}/hunspell/hunspell.cxx
     ${SRCDIR}/hunspell/replist.cxx)
 
-handle_source_option("CC" ${SRCDIR}/hunspell/affixmgr.cxx -Wno-shadow)
-foreach(_base affixmgr suggestmgr)
-  handle_source_option("CC" ${SRCDIR}/hunspell/${_base}.cxx -Wno-null-dereference)
-endforeach()
 set(HEADERS
     ${SRCDIR}/hunspell/affentry.hxx
     ${SRCDIR}/hunspell/htypes.hxx
@@ -55,8 +47,10 @@ set(HEADERS
     ${SRCDIR}/hunspell/replist.hxx
     ${SRCDIR}/hunspell/hunvisapi.h)
 
-add_definitions(-DHUNSPELL_STATIC)
 add_library(hunspell STATIC ${HEADERS} ${SRCS} ${HUNCONFIG})
+target_compile_definitions(hunspell PRIVATE -DHUNSPELL_STATIC)
+# SYSTEM because we are not interested in any warning of this thirdparty library
+target_include_directories(hunspell SYSTEM PRIVATE ./ ${SRCDIR}/hunspell)
 
 set(HUNSPELL_LIBRARY hunspell CACHE STRING "Hunspell library" FORCE)
 set(HUNSPELL_INCLUDE_DIR "${SRCDIR}/hunspell;${SRCDIR}" CACHE STRING "Hunspell include dirs" FORCE)
