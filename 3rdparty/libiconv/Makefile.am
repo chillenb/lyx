@@ -37,6 +37,12 @@ EXTRA_DIST = \
 # would require to generate libcharset.h from libcharset.h.build.in
 EXTRA_DIST += ${LIBICONV_VERSION}/libcharset/lib/relocatable-stub.c
 
+# Generators are not needed
+EXTRA_DIST += ${LIBICONV_VERSION}/lib/genaliases2.c \
+	${LIBICONV_VERSION}/lib/genaliases.c \
+	${LIBICONV_VERSION}/lib/genflags.c \
+	${LIBICONV_VERSION}/lib/gentranslit.c
+
 AM_CPPFLAGS += -I$(srcdir)/${LIBICONV_VERSION}/srclib -DLIBDIR=\"\"
 
 liblyxiconv_a_SOURCES = \
@@ -219,10 +225,6 @@ liblyxiconv_a_SOURCES = \
 	${LIBICONV_VERSION}/lib/gbkext2.h \
 	${LIBICONV_VERSION}/lib/gbkext_inv.h \
 	${LIBICONV_VERSION}/lib/gbk.h \
-	${LIBICONV_VERSION}/lib/genaliases2.c \
-	${LIBICONV_VERSION}/lib/genaliases.c \
-	${LIBICONV_VERSION}/lib/genflags.c \
-	${LIBICONV_VERSION}/lib/gentranslit.c \
 	${LIBICONV_VERSION}/lib/georgian_academy.h \
 	${LIBICONV_VERSION}/lib/georgian_ps.h \
 	${LIBICONV_VERSION}/lib/hkscs1999.h \
