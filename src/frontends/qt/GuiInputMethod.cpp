@@ -1445,7 +1445,7 @@ void GuiInputMethod::setAbsolutePosition(Cursor & cur) const
 	d->abs_pos_ = 0;
 
 	for (auto const & p : cur.buffer()->paragraphs()) {
-		if (p.id() == cur.paragraph().id())
+		if (p.id() == cur.innerParagraph().id())
 			break;
 		d->abs_pos_ += p.size();
 	}
