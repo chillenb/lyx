@@ -754,7 +754,7 @@ std::array<int,2> GuiInputMethod::setCaretOffset(pos_type caret_pos)
 	// preedits added on boundary is appended to the same line
 	//         -> real_boundary = false   virtual_boundary = true
 
-	PreeditRow caret_row = getCaretInfo(d->real_boundary_, d->virtual_boundary_);
+	PreeditRow caret_row = getCaretInfo();
 	std::array<int,2> caret_offset {};
 
 	// caret_row.index doesn't decrease with virtual_boundary
@@ -1251,12 +1251,12 @@ pos_type GuiInputMethod::getCaretPos(size_type preedit_length)
 }
 
 
-GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(const bool real_boundary, const bool virtual_boundary)
+GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo()
 {
 	// the virtual boundary case has the real cusor on the second row of
 	// the preedit inputs
 	const pos_type second_row_idx =
-	        d->cur_row_idx_ + 1 + real_boundary - virtual_boundary;
+	        d->cur_row_idx_ + 1 + d->real_boundary_ - d->virtual_boundary_;
 
 	// accumulate the length of preedit elements within d->rows_[d->cur_row_idx_]
 	// the length of str is used since preedits has zero widths (pos == endpos)
@@ -1272,15 +1272,15 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(const bool real_boundary
 
 	PreeditRow caret_row{};
 
-	// when real_boundary is true, cursor position is at the beginning of the
+	// when d->real_boundary_ is true, cursor position is at the beginning of the
 	// new line, while the caret on screen stays at the end of one line above
 	// below is the starting point to calculate caret_row.pos
-	caret_row.pos = (real_boundary && !d->im_state_.composing_mode_) ?
+	caret_row.pos = (d->real_boundary_ && !d->im_state_.composing_mode_) ?
 	            d->cur_pos_ : second_row_pos;
 
 	// if the preedit caret is on the second row or later, count the second row
 	caret_row.index = d->caret_pos_ > second_row_pos ?
-	            second_row_idx + virtual_boundary : d->cur_row_idx_ + real_boundary;
+	            second_row_idx + d->virtual_boundary_ : d->cur_row_idx_ + d->real_boundary_;
 
 	// the second row exists and begins with the preedit
 	if (d->cur_row_idx_ + 1 < (pos_type)d->rows_size_ &&
@@ -1307,8 +1307,8 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo(const bool real_boundary
 	        "\tcaret_row.index   = " << std::dec << caret_row.index);
 	LYXERR(Debug::DEBUG, "caret_row.pos_    = " << std::dec << caret_row.pos <<
 	        "\td->cur_row_idx_   = " << std::dec << d->cur_row_idx_);
-	LYXERR(Debug::DEBUG, "real_boundary     = " << real_boundary <<
-	        "\tvirtual_boundary  = " << virtual_boundary);
+	LYXERR(Debug::DEBUG, "d->real_boundary_     = " << d->real_boundary_ <<
+	        "\td->virtual_boundary_  = " << d->virtual_boundary_);
 	LYXERR(Debug::DEBUG, "=============== END: getCaretInfo ===============");
 
 	return caret_row;

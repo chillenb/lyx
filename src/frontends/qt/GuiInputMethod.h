@@ -164,7 +164,7 @@ private:
 	/// x shift factor from the caret to the selection segment's head
 	int shiftFromCaretToSegmentHead();
 	///
-	PreeditRow getCaretInfo(const bool real_boundary, const bool virtual_boundary);
+	PreeditRow getCaretInfo();
 	/// Pick up next segment from the turnout if there is a match and return
 	/// the next segment position to be filled
 	/// If the second argument is given, it is merged before filling the segment
