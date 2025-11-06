@@ -7390,6 +7390,7 @@ void InsetTabular::tabularFeatures(Cursor & cur,
 		cur.pit() = 0;
 		cur.pos() = 0;
 		cur.selection(false);
+		cur.forceBufferUpdate();
 		break;
 
 	case Tabular::DELETE_COLUMN:
@@ -7418,15 +7419,18 @@ void InsetTabular::tabularFeatures(Cursor & cur,
 		cur.pit() = 0;
 		cur.pos() = 0;
 		cur.selection(false);
+		cur.forceBufferUpdate();
 		break;
 
 	case Tabular::COPY_ROW:
 		tabular.copyRow(row);
+		cur.forceBufferUpdate();
 		break;
 
 	case Tabular::COPY_COLUMN:
 		tabular.copyColumn(column);
 		cur.idx() = tabular.cellIndex(row, column);
+		cur.forceBufferUpdate();
 		break;
 
 	case Tabular::MOVE_COLUMN_RIGHT:
