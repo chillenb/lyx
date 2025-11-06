@@ -56,6 +56,7 @@
 #include "TextClass.h"
 #include "TextMetrics.h"
 #include "Thesaurus.h"
+#include "Undo.h"
 #include "WordLangTuple.h"
 #include "WordList.h"
 
@@ -3216,6 +3217,9 @@ bool Text::deleteEmptyParagraphMechanism(Cursor & cur,
 		Cursor & old, bool & need_anchor_change)
 {
 	//LYXERR(Debug::DEBUG, "DEPM: cur:\n" << cur << "old:\n" << old);
+
+	// Useful when called from mouseSetCursor, for example
+	UndoGroupHelper ugh(old);
 
 	Paragraph & oldpar = old.paragraph();
 	bool const trackChanges = cur.buffer()->params().track_changes;
