@@ -8395,7 +8395,7 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 		dirtyTabularStack(true);
 	} else {
 		loctab = &tabular;
-		cell = bv.cursor().idx();
+		cell = bv.cursor().selectionBegin().idx();
 		ocol = tabular.cellColumn(cell);
 		row = tabular.cellRow(cell);
 	}
