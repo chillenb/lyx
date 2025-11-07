@@ -1044,7 +1044,7 @@ void Tabular::insertColumn(col_type col, bool copy, row_type row)
 	idx_type cspan = columnSpan(cellIndex(row, col));
 	col += cspan - 1;
 	column_info.insert(column_info.begin() + col + 1,
-					   ColumnData(column_info[col]));
+			   ColumnData(column_info[col]));
 
 	for (row_type r = 0; r < nrows(); ++r) {
 		cell_info[r].insert(cell_info[r].begin() + col + 1,
@@ -1052,7 +1052,7 @@ void Tabular::insertColumn(col_type col, bool copy, row_type row)
 		// make new cell part of multicolumn if old cell was at the beginning
 		// or middle of a multicolumn
 		if (cell_info[r][col].multicolumn == CELL_BEGIN_OF_MULTICOLUMN
-			|| (col + 1 < ncols()
+			|| (col + 2 < ncols()
 				&& cell_info[r][col].multicolumn == CELL_PART_OF_MULTICOLUMN
 				&& cell_info[r][col + 2].multicolumn == CELL_PART_OF_MULTICOLUMN
 			))
