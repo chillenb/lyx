@@ -8407,6 +8407,7 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 	rows = loctab->nrows();
 	col_type columns = loctab->ncols();
 
+	bool need_buffer_update = false;
 	while (p < len &&
 	       (p = buf.find_first_of(from_ascii("\t\n"), p)) != docstring::npos)
 	{
@@ -8417,6 +8418,7 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 			// append column if necessary
 			if (cols == columns) {
 				loctab->appendColumn(cols - 1);
+				need_buffer_update = true;
 				columns = loctab->ncols();
 				cells = loctab->numberofcells;
 				++cell;
@@ -8445,6 +8447,7 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 			// append row if necessary
 			if (row == rows && p < len - 1) {
 				loctab->appendRow(row - 1);
+				need_buffer_update = true;
 				rows = loctab->nrows();
 				cells = loctab->numberofcells;
 			}
@@ -8455,6 +8458,8 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 		++p;
 		op = p;
 	}
+	if (need_buffer_update)
+		bv.cursor().forceBufferUpdate();
 	// check for the last cell if there is no trailing '\n'
 	if (cell < cells && op < len) {
 		shared_ptr<InsetTableCell> inset = loctab->cellInset(cell);
