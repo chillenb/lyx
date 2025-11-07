@@ -8405,7 +8405,7 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 	p = 0;
 	cols = ocol;
 	rows = loctab->nrows();
-	col_type columns = loctab->ncols();
+	col_type lastcol = loctab->ncols() - 1;
 
 	bool need_buffer_update = false;
 	while (p < len &&
@@ -8416,14 +8416,14 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 		switch (buf[p]) {
 		case '\t':
 			// append column if necessary
-			if (cols == columns) {
-				loctab->appendColumn(cols - 1);
+			if (cols == lastcol) {
+				loctab->appendColumn(cols, row);
 				need_buffer_update = true;
-				columns = loctab->ncols();
+				lastcol = loctab->ncols() - 1;
 				cells = loctab->numberofcells;
-				++cell;
+				cell = loctab->cellIndex(row, cols);
 			}
-			if (cols < columns) {
+			if (cols <= lastcol) {
 				shared_ptr<InsetTableCell> inset = loctab->cellInset(cell);
 				Font const font = bv.textMetrics(&inset->text()).
 					displayFont(0, 0);
@@ -8435,7 +8435,7 @@ bool InsetTabular::insertPlaintextString(BufferView & bv, docstring const & buf,
 			break;
 		case '\n':
 			// we can only set this if we are not too far right
-			if (cols < columns) {
+			if (cols <= lastcol) {
 				shared_ptr<InsetTableCell> inset = tabular.cellInset(cell);
 				Font const font = bv.textMetrics(&inset->text()).
 					displayFont(0, 0);
