@@ -717,7 +717,8 @@ std::array<int,2> GuiInputMethod::setCaretOffset(pos_type caret_pos)
 	// This is also true for next_row_pos.
 	// On the other hand d->caret_pos_ counts preedit elements.
 
-	if (d->preedit_str_.empty() || d->cur_->reverseDirectionNeeded()) {
+	if (d->preedit_str_.empty() || d->cur_->reverseDirectionNeeded() ||
+	        d->cur_->inMathed()) {
 		// reset shift of the virtual caret as the preedit string is cancelled
 		// this part is also visited right before starting preedit input
 		return {0, 0};
