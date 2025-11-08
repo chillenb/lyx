@@ -77,11 +77,11 @@ public:
 	void text(int, int, docstring const &, Font const &,
 	          Color, size_type, size_type, double, double) override {}
 
-	/// draw a char with input method
+	/// draw a char with input method, FontInfo is used in mathed
 	void text(int, int, char_type, InputMethod const *, pos_type const,
 	          FontInfo const * = nullptr, Direction const = Auto) override {}
 
-	/// draw a string with input method
+	/// draw a string with input method, FontInfo is used in mathed
 	void text(int, int, docstring const &, InputMethod const *, pos_type const,
 	          FontInfo const * = nullptr,Direction const = Auto) override {}
 

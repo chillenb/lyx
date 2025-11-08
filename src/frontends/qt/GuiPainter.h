@@ -137,10 +137,14 @@ public:
                       double wordspacing, double textwidth) override;
 
 	/// draw a char at position x, y (y is the baseline) using input method
+	/// char_format_index specifies preedit format
+	/// f is used to get the font size in the text mode of mathed
 	void text(int x, int y, char_type c, InputMethod const * im,
 	          pos_type const char_format_index, FontInfo const * f = nullptr,
 	          Direction const dir = Auto) override;
 	/// draw a string at position x, y (y is the baseline) using input method.
+	/// char_format_index specifies preedit format
+	/// f is used to get the font size in the text mode of mathed
 	void text(int x, int y, docstring const & str, InputMethod const * im,
 	          pos_type const char_format_index, FontInfo const * f = nullptr,
 	          Direction const dir = Auto) override;

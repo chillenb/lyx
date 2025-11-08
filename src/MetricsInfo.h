@@ -126,7 +126,8 @@ public:
 	void draw(int x, int y, char_type c);
 	///
 	void draw(int x, int y, docstring const & str);
-	///
+	/// Draw preedit char using char_format_index for format
+	/// f is used to get the font size in the text mode of mathed
 	void draw(int x, int y, char_type c, frontend::InputMethod const * im,
 	          pos_type const char_format_index, FontInfo const * f = nullptr);
 
