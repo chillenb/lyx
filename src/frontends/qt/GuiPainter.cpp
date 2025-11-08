@@ -345,16 +345,16 @@ void GuiPainter::text(int x, int y, docstring const & s,
 
 
 void GuiPainter::text(int x, int y, char_type c, InputMethod const * im,
-                      pos_type const char_format_index, Direction const dir)
+                      pos_type const char_format_index, FontInfo const * f,
+                      Direction const dir)
 {
-	text(x, y, docstring(1, c), im, char_format_index, dir);
+	text(x, y, docstring(1, c), im, char_format_index, f, dir);
 }
 
 
 void GuiPainter::text(int x, int y, docstring const & s,
-                                     InputMethod const * im,
-                                     pos_type const char_format_index,
-                                     Direction const dir)
+                      InputMethod const * im, pos_type const char_format_index,
+                      FontInfo const * f, Direction const dir)
 {
 	if (s.empty())
 		return;
@@ -370,7 +370,14 @@ void GuiPainter::text(int x, int y, docstring const & s,
 	setPen(gim->charFormat(char_format_index).foreground().color());
 	setBackgroundMode(Qt::OpaqueMode);
 	setBackground(gim->charFormat(char_format_index).background());
-	setFont(gim->charFormat(char_format_index).font());
+
+	QFont qfont = gim->charFormat(char_format_index).font();
+	if (f != nullptr) {
+		int fsize = getFont(*f).pointSize();
+		LASSERT(fsize > 0, fsize = 12);
+		qfont.setPointSize(fsize);
+	}
+	setFont(qfont);
 
 	LYXERR(Debug::GUI, "Drawing preedit segment " << char_format_index <<
 	       ": fg = " <<

@@ -195,7 +195,7 @@ void InsetMathChar::draw(PainterInfo & pi, int x, int y,
                          frontend::InputMethod const * im,
                          pos_type const char_format_index) const
 {
-	pi.draw(x, y, char_, im, char_format_index);
+	pi.draw(x, y, char_, im, char_format_index, &pi.base.font);
 }
 
 

@@ -219,9 +219,9 @@ void PainterInfo::draw(int x, int y, docstring const & str)
 
 void PainterInfo::draw(int x, int y, char_type c,
                        frontend::InputMethod const * im,
-                       pos_type const char_format_index)
+                       pos_type const char_format_index, FontInfo const * f)
 {
-	pain.text(x, y, c, im, char_format_index);
+	pain.text(x, y, c, im, char_format_index, f);
 }
 
 

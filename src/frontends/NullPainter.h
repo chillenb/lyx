@@ -78,12 +78,12 @@ public:
 	          Color, size_type, size_type, double, double) override {}
 
 	/// draw a char with input method
-	void text(int, int, char_type, InputMethod const *,
-	          pos_type const, Direction const = Auto) override {}
+	void text(int, int, char_type, InputMethod const *, pos_type const,
+	          FontInfo const * = nullptr, Direction const = Auto) override {}
 
 	/// draw a string with input method
-	void text(int, int, docstring const &, InputMethod const *,
-	          pos_type const, Direction const = Auto) override {}
+	void text(int, int, docstring const &, InputMethod const *, pos_type const,
+	          FontInfo const * = nullptr,Direction const = Auto) override {}
 
 	/// This painter does not paint
 	bool isNull() const override { return true; }
