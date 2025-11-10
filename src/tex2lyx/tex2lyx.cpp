@@ -492,9 +492,14 @@ bool isProvided(string const & name)
 }
 
 
-bool isKnownSpecialChar(string const & latex, string & lyxname, bool const only_protected)
+bool isKnownInsetSpecialChar(string const & latex, string & lyxname, bool const only_protected,
+			     bool const partof)
 {
 	for (auto const & [name, sc] : textclass.specialChars()) {
+		if (partof && prefixIs(to_ascii(ltrim(sc.latex_output, "\\")), latex)) {
+			lyxname = name;
+			return only_protected ? sc.need_protect : true;
+		}
 		if (to_ascii(ltrim(sc.latex_output, "\\")) == latex) {
 			lyxname = name;
 			return only_protected ? sc.need_protect : true;

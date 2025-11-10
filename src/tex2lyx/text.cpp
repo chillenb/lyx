@@ -5483,27 +5483,13 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 		}
 
 		if (is_known(t.cs(), known_special_chars)) {
-			// LyX sometimes puts a \protect in front, so we have to ignore it
+			// These are special chars which are coded in LyX
+			// in a specific way. Note: InsetSpecialChar is handled
+			// separately (below)
 			where = is_known(t.cs(), known_special_chars);
 			context.check_layout(os);
 			os << known_coded_special_chars[where - known_special_chars];
 			skip_spaces_braces(p);
-			continue;
-		}
-
-		if ((t.cs() == "nobreakdash" && p.next_token().asInput() == "-") ||
-		         (t.cs() == "protect" && p.next_token().asInput() == "\\nobreakdash" &&
-		          p.next_next_token().asInput() == "-") ||
-		         (t.cs() == "@" && p.next_token().asInput() == ".")) {
-			// LyX sometimes puts a \protect in front, so we have to ignore it
-			if (t.cs() == "protect")
-				p.get_token();
-			context.check_layout(os);
-			if (t.cs() == "nobreakdash")
-				os << "\\SpecialChar nobreakdash\n";
-			else
-				os << "\\SpecialChar endofsentence\n";
-			p.get_token();
 			continue;
 		}
 
@@ -6702,12 +6688,12 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			name += '{' + p.verbatim_item() + '}';
 		}
 
-		// special chars
+		// (Single) special chars supported via InsetSpecialChar
 		string lyxname;
-		if (isKnownSpecialChar(t.cs(), lyxname)
+		if (isKnownInsetSpecialChar(t.cs(), lyxname)
 		    || (t.cs() == "protect"
 			&& p.next_token().cat() == catEscape
-			&& isKnownSpecialChar(p.next_token().cs(), lyxname, true))) {
+			&& isKnownInsetSpecialChar(p.next_token().cs(), lyxname, true))) {
 			// LyX sometimes puts a \protect in front, so we have to ignore it
 			if (t.cs() == "protect")
 				p.get_token();
@@ -6715,6 +6701,36 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			os << "\\SpecialChar " << lyxname << '\n';
 			skip_spaces_braces(p);
 			continue;
+		}
+		// And multi-token special chars
+		if (isKnownInsetSpecialChar(t.cs(), lyxname, false, true)
+		    || (t.cs() == "protect"
+			&& p.next_token().cat() == catEscape
+			&& isKnownInsetSpecialChar(p.next_token().cs(), lyxname, true, true))) {
+			p.pushPosition();
+			string latex;
+			if (t.cs() == "protect") {
+				// ignore \protect
+				latex = p.next_token().cs();
+				p.get_token();
+			} else
+				latex = t.cs();
+			// Try to the complete token sequence as long as it is known
+			// as part of a known special char sequence
+			while (isKnownInsetSpecialChar(latex + p.next_token().cs(), lyxname, false, true)) {
+				latex += p.next_token().cs();
+				p.get_token();
+			}
+			// It this a known complete sequence?
+			if (isKnownInsetSpecialChar(latex, lyxname)) {
+				context.check_layout(os);
+				os << "\\SpecialChar " << lyxname << '\n';
+				skip_braces(p);
+				p.dropPosition();
+				continue;
+			}
+			// If not, go back and fall through
+			p.popPosition();
 		}
 
 		// now get the character from unicodesymbols
