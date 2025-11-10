@@ -1246,7 +1246,7 @@ void TextClass::readSpecialChars(Lexer & lexrc)
 			break;
 		}
 		case SC_LATEX_OUTPUT_RTL: {
-			lexrc.next();
+			lexrc.next(true);
 			docstring const res = rtrim(lexrc.getDocString());
 			if (isHex(res))
 				sc.latex_output_rtl = docstring(1, hexToInt(res));
