@@ -1255,7 +1255,7 @@ void TextClass::readSpecialChars(Lexer & lexrc)
 			break;
 		}
 		case SC_LATEX_OUTPUT_UTF8: {
-			lexrc.next();
+			lexrc.next(true);
 			docstring const res = rtrim(lexrc.getDocString());
 			if (isHex(res))
 				sc.latex_output_utf8 = docstring(1, hexToInt(res));

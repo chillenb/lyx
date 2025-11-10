@@ -23860,6 +23860,73 @@ status collapsed
  Alternativer Text oder Befehl,
  der in \SpecialChar LaTeX
  in der UTF-8-Kodierung ausgegeben wird.
+ Wie bei 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+LaTeXOutput
+\end_layout
+
+\end_inset
+
+ müssen Sonderzeichen wie 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+ oder 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ maskiert werden (
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\backslash
+
+\end_layout
+
+\end_inset
+
+,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description
