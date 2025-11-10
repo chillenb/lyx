@@ -1194,14 +1194,6 @@ void TextClass::readSpecialChars(Lexer & lexrc)
 	SpecialChar sc;
 	if (special_chars_.find(name) != special_chars_.end())
 		sc = special_chars_[name];
-	else {
-		// init values
-		sc.can_break_after = false;
-		sc.force_ltr = false;
-		sc.is_char = false;
-		sc.is_letter = false;
-		sc.need_protect = false;
-	}
 	while (!getout && lexrc.isOK()) {
 		int le = lexrc.lex();
 		switch (le) {

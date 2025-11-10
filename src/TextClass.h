@@ -56,11 +56,11 @@ public:
 	std::string menustring;
 	std::string req;
 	std::string type;
-	bool can_break_after;
-	bool is_letter;
-	bool is_char;
-	bool need_protect;
-	bool force_ltr;
+	bool can_break_after = false;
+	bool is_letter = false;
+	bool is_char = false;
+	bool need_protect = false;
+	bool force_ltr = false;
 	FontInfo font;
 };
 
