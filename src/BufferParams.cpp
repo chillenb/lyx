@@ -1315,9 +1315,10 @@ string BufferParams::readToken(Lexer & lex, string const & token,
 			boxbgcolor = lex.getString();
 			if (boxbgcolor == "none")
 				break;
-			// set a local name for the painter
-			lcolor.setColor("boxbgcolor@" + filename.absFileName(),
-					lcolor.getX11HexName(boxbgcolor));
+			// Register and set a local name for the painter
+			string const localcolor = "boxbgcolor@" + filename.absFileName();
+			registerLyXColor(localcolor, boxbgcolor);
+			lcolor.setColor(localcolor, lcolor.getX11HexName(boxbgcolor));
 			break;
 		}
 		if (token == "\\table_border_color") {
