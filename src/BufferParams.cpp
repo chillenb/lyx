@@ -1305,9 +1305,10 @@ string BufferParams::readToken(Lexer & lex, string const & token,
 			notefontcolor = lex.getString();
 			if (notefontcolor == "none")
 				break;
-			// set a local name for the painter
-			lcolor.setColor("notefontcolor@" + filename.absFileName(),
-					lcolor.getX11HexName(notefontcolor));
+			// Register and set a local name for the painter
+			string const localcolor = "notefontcolor@" + filename.absFileName();
+			registerLyXColor(localcolor, notefontcolor);
+			lcolor.setColor(localcolor, lcolor.getX11HexName(notefontcolor));
 			break;
 		}
 		if (token == "\\boxbgcolor") {
