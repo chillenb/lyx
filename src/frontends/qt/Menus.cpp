@@ -295,7 +295,7 @@ public:
 	/// set the description of the  submenu
 	void submenuname(QString const & name) { submenuname_ = name; }
 	///
-	bool hasSubmenu() const { return !submenu_.isEmpty(); }
+	bool hasSubmenu() const;
 	///
 	MenuDefinition const & submenu() const { return submenu_.at(0); }
 	MenuDefinition & submenu() { return submenu_[0]; }
@@ -406,6 +406,9 @@ public:
 	///
 	QString name_;
 };
+
+
+bool MenuItem::hasSubmenu() const { return !submenu_.isEmpty(); }
 
 
 /// Helper for std::find_if
