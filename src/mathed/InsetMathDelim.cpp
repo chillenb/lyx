@@ -32,15 +32,30 @@ using namespace std;
 
 namespace lyx {
 
-static docstring convertDelimToLatexName(docstring const & name)
+static docstring convertDelimToLatexName(docstring const & name, docstring const & escape_chars)
 {
+	docstring result;
 	if (name.size() == 1) {
 		char_type const c = name[0];
 		if (c == '<' || c == '(' || c == '[' || c == '.'
 		    || c == '>' || c == ')' || c == ']' || c == '/' || c == '|')
-			return name;
+			result = name;
+	} else
+		result = '\\' + name + ' ';
+
+	// since some chars used for delims ('|' at least)
+	// must be escaped in Index and Nomencl, we have
+	// to handle this (#13250)
+	if (!escape_chars.empty()) {
+		odocstringstream ods;
+		for (char_type const c : result) {
+			if (support::contains(escape_chars.substr(1), c))
+				ods << escape_chars.substr(0,1);
+			ods.put(c);
+		}
+		result = ods.str();
 	}
-	return '\\' + name + ' ';
+	return result;
 }
 
 
@@ -86,37 +101,15 @@ void InsetMathDelim::validate(LaTeXFeatures & features) const
 void InsetMathDelim::writeMath(TeXMathStream & os) const
 {
 	MathEnsurer ensurer(os);
-	docstring ldelim = convertDelimToLatexName(left_);
-	docstring rdelim = convertDelimToLatexName(right_);
-	// since some chars used for delims ('|' at least)
-	// must be escaped in Index and Nomencl, we have
-	// to handle this (#13250)
-	if (!os.escapeChars().empty()) {
-		odocstringstream ods;
-		for (char_type const c : ldelim) {
-			if (support::contains(os.escapeChars().substr(1), c))
-				ods << os.escapeChars().substr(0,1);
-			ods.put(c);
-		}
-		ldelim = ods.str();
-		ods.clear();
-		ods.str(docstring());
-		for (char_type const c : rdelim) {
-			if (support::contains(os.escapeChars().substr(1), c))
-				ods << os.escapeChars().substr(0,1);
-			ods.put(c);
-		}
-		rdelim = ods.str();
-	}
-	os << "\\left" << ldelim << cell(0)
-	   << "\\right" << rdelim;
+	os << "\\left" << convertDelimToLatexName(left_, os.escapeChars()) << cell(0)
+	   << "\\right" << convertDelimToLatexName(right_, os.escapeChars());
 }
 
 
 void InsetMathDelim::normalize(NormalStream & os) const
 {
-	os << "[delim " << convertDelimToLatexName(left_) << ' '
-	   << convertDelimToLatexName(right_) << ' ' << cell(0) << ']';
+	os << "[delim " << convertDelimToLatexName(left_, docstring()) << ' '
+	   << convertDelimToLatexName(right_, docstring()) << ' ' << cell(0) << ']';
 }
 
 
