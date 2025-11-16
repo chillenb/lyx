@@ -367,7 +367,7 @@ void InsetMathNest::latex(otexstream & os, OutputParams const & runparams) const
 	else
 		ot = TeXMathStream::wsDefault;
 	TeXMathStream wi(os, runparams.moving_arg, true, ot,
-	                 runparams.encoding);
+	                 runparams.encoding, runparams.escape_chars);
 	wi.strikeoutMath(runparams.inDeletedInset);
 	if (runparams.inulemcmd) {
 		wi.ulemCmd(TeXMathStream::UNDERLINE);

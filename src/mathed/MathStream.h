@@ -145,8 +145,9 @@ public:
 	};
 	///
 	explicit TeXMathStream(otexrowstream & os, bool fragile = false,
-	                       bool latex = false, OutputType output = wsDefault,
-	                       Encoding const * encoding = nullptr);
+			       bool latex = false, OutputType output = wsDefault,
+			       Encoding const * encoding = nullptr,
+			       docstring escapechar = docstring());
 	///
 	~TeXMathStream();
 	///
@@ -209,6 +210,8 @@ public:
 	bool inMathClass() const { return mathclass_; }
 	/// LaTeX encoding
 	Encoding const * encoding() const { return encoding_; }
+	///
+	docstring escapeChars() const { return escape_chars_; }
 
 	/// Temporarily change the TexRow information about the outer row entry.
 	Changer changeRowEntry(TexRow::RowEntry const & entry);
@@ -253,6 +256,8 @@ private:
 	TexRow::RowEntry row_entry_ = TexRow::row_none;
 	/// whether we are in a MathClass inset
 	bool mathclass_ = false;
+	///
+	docstring escape_chars_;
 };
 
 ///
