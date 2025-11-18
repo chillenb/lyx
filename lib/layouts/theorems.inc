@@ -246,6 +246,7 @@ Style Example
 	TheoremLaTeXName      examplename
 	TheoremCrossRefName   Example
 	TheoremCrossRefPluralName Examples
+	TheoremZRefName       none
 	LangPreamble
 		\providecommand{\examplename}{_(Example)}
 	EndLangPreamble
