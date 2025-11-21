@@ -32,7 +32,7 @@
 #include <QInputDialog>
 #include <QPushButton>
 
-#ifdef Q_OS_MACOS
+#if defined(Q_OS_MACOS) && QT_VERSION == QT_VERSION_CHECK(6, 10, 0)
 #include <QOperatingSystemVersion>
 #endif
 
@@ -115,8 +115,8 @@ buttonid doPrompt(docstring const & title, docstring const & question,
 	QMessageBox msg_box(QMessageBox::Information,
 			toqstr(title), toqstr(question),
 			QMessageBox::NoButton, qApp->focusWidget());
-#ifdef Q_OS_MACOS
-	// temporary workaround of the issue:
+#if defined(Q_OS_MACOS) && QT_VERSION == QT_VERSION_CHECK(6, 10, 0)
+	// workaround of the issue in Qt 6.10.0 on macOS 26 (Tahoe):
 	//     https://bugreports.qt.io/browse/QTBUG-141689
 	if (QOperatingSystemVersion::current() <
 	        QOperatingSystemVersion(QOperatingSystemVersion::MacOS, 26))
