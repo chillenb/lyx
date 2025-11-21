@@ -34,14 +34,13 @@ namespace lyx {
 
 static docstring convertDelimToLatexName(docstring const & name, docstring const & escape_chars)
 {
-	docstring result;
+	docstring result = '\\' + name + ' ';
 	if (name.size() == 1) {
 		char_type const c = name[0];
 		if (c == '<' || c == '(' || c == '[' || c == '.'
 		    || c == '>' || c == ')' || c == ']' || c == '/' || c == '|')
 			result = name;
-	} else
-		result = '\\' + name + ' ';
+	}
 
 	// since some chars used for delims ('|' at least)
 	// must be escaped in Index and Nomencl, we have
