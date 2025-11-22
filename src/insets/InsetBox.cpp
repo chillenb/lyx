@@ -513,14 +513,14 @@ void InsetBox::latex(otexstream & os, OutputParams const & runparams) const
 	if (params_.inner_box) {
 		if (params_.use_parbox) {
 			if (params_.backgroundcolor != "none" && btype == Frameless) {
-				os << maybeBeginL << "\\colorbox{" << params_.backgroundcolor << "}{";
+				os << maybeBeginL << "\\colorbox{" << getBackgroundColor() << "}{";
 				needEndL = !maybeBeginL.empty();
 			}
 			os << "\\parbox";
 		} else if (params_.use_makebox) {
 			if (!width_string.empty()) {
 				if (params_.backgroundcolor != "none") {
-					os << maybeBeginL << "\\colorbox{" << params_.backgroundcolor << "}{";
+					os << maybeBeginL << "\\colorbox{" << getBackgroundColor() << "}{";
 					needEndL = !maybeBeginL.empty();
 				}
 				os << "\\makebox";
@@ -537,7 +537,7 @@ void InsetBox::latex(otexstream & os, OutputParams const & runparams) const
 					os << "[" << params_.hor_pos << "]";
 			} else {
 				if (params_.backgroundcolor != "none") {
-					os << maybeBeginL << "\\colorbox{" << params_.backgroundcolor << "}";
+					os << maybeBeginL << "\\colorbox{" << getBackgroundColor() << "}";
 					needEndL = !maybeBeginL.empty();
 				}
 				else
@@ -547,7 +547,7 @@ void InsetBox::latex(otexstream & os, OutputParams const & runparams) const
 		}
 		else {
 			if (params_.backgroundcolor != "none" && btype == Frameless) {
-				os << maybeBeginL << "\\colorbox{" << params_.backgroundcolor << "}{";
+				os << maybeBeginL << "\\colorbox{" << getBackgroundColor() << "}{";
 				needEndL = !maybeBeginL.empty();
 			}
 			os << "\\begin{minipage}";

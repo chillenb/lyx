@@ -405,7 +405,7 @@ docstring GuiBox::dialogToParams() const
 		params.framecolor =
 			fromqstr(frameColorCO->getData(frameColorCO->currentIndex()));
 	else
-		params.framecolor = "foreground";
+		params.framecolor = "default";
 	if (backgroundColorCO->isEnabled())
 		params.backgroundcolor =
 			fromqstr(backgroundColorCO->getData(backgroundColorCO->currentIndex()));
