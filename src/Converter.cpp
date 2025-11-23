@@ -264,10 +264,10 @@ void Converters::update(Formats const & formats)
 // It is called when adding a new converter in FormPreferences
 void Converters::updateLast(Formats const & formats)
 {
-	if (converterlist_.begin() != converterlist_.end()) {
-		ConverterList::iterator it = converterlist_.end() - 1;
-		it->setFrom(formats.getFormat(it->from()));
-		it->setTo(formats.getFormat(it->to()));
+	if (!converterlist_.empty()) {
+		auto & last = converterlist_.back();
+		last.setFrom(formats.getFormat(last.from()));
+		last.setTo(formats.getFormat(last.to()));
 	}
 }
 
