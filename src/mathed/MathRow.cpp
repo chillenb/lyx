@@ -278,7 +278,7 @@ void MathRow::metrics(MetricsInfo & mi, Dimension & dim)
 		case END:
 			if (e.inset) {
 				e.inset->afterMetrics();
-				LATTEST(dim_insets.back().first == e.inset);
+				LATTEST(!dim_insets.empty() && dim_insets.back().first == e.inset);
 				d = dim_insets.back().second;
 				afterMetricsMarkers(mi, e, d);
 				d.wid += e.before + e.after;

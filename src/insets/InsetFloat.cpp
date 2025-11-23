@@ -38,6 +38,7 @@
 #include "support/debug.h"
 #include "support/docstream.h"
 #include "support/gettext.h"
+#include "support/lassert.h"
 #include "support/Lexer.h"
 #include "support/lstrings.h"
 
@@ -536,6 +537,7 @@ std::tuple<InsetCode, const Inset *, const InsetCaption *, const InsetLabel *> d
 					case CAPTION_CODE:
 						if (!caption) {
 							caption = dynamic_cast<const InsetCaption *>(inset);
+							LATTEST(caption != nullptr);
 
 							// A label often hides in a caption. Make a simplified version of the main loop.
 							if (!label) {
