@@ -17,6 +17,7 @@
 #include "FontInfo.h"
 #include "LayoutEnums.h"
 #include "LayoutModuleList.h"
+#include "SpecialChar.h"
 
 #include "insets/InsetLayout.h"
 
@@ -42,27 +43,6 @@ class Lexer;
 class FloatList;
 class Layout;
 class LayoutFile;
-
-class SpecialChar
-{
-public:
-	docstring lyx_output;
-	docstring latex_output;
-	docstring latex_output_rtl;
-	docstring latex_output_utf8;
-	docstring plaintext_output;
-	docstring xhtml_output;
-	docstring tooltip;
-	std::string menustring;
-	std::string req;
-	std::string type;
-	bool can_break_after = false;
-	bool is_letter = false;
-	bool is_char = false;
-	bool need_protect = false;
-	bool force_ltr = false;
-	FontInfo font;
-};
 
 /// Based upon ideas in boost::noncopyable, inheriting from this
 /// class effectively makes the copy constructor protected but the

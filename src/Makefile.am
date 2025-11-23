@@ -282,6 +282,8 @@ liblyxcore_a_SOURCES = \
 	Session.h \
 	Spacing.cpp \
 	Spacing.h \
+	SpecialChar.cpp \
+	SpecialChar.h \
 	SpellChecker.h \
 	Statistics.cpp \
 	Statistics.h \

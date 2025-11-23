@@ -106,6 +106,7 @@ LYX_OBJS = \
 	../LayoutModuleList.o \
 	../ModuleList.o \
 	../Spacing.o \
+	../SpecialChar.o \
 	../TextClass.o \
 	../version.o
 
