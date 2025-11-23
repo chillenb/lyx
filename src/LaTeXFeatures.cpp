@@ -2084,16 +2084,17 @@ string const LaTeXFeatures::loadAMSPackages() const
 {
 	ostringstream tmp;
 
-	if (mustProvide("amsmath")
-	    && params_.use_package("amsmath") != BufferParams::package_off) {
+	bool const amsmath = mustProvide("amsmath")
+		&& params_.use_package("amsmath") != BufferParams::package_off;
+	if (amsmath)
 		tmp << "\\usepackage{amsmath}\n";
-	} else {
-		// amsbsy and amstext are already provided by amsmath
-		if (mustProvide("amsbsy"))
-			tmp << "\\usepackage{amsbsy}\n";
-		if (mustProvide("amstext"))
-			tmp << "\\usepackage{amstext}\n";
-	}
+	// amsbsy and amstext are already provided by amsmath
+	// we need to check with mustProvide here to
+	// register the packages in features_loaded_
+	if (mustProvide("amsbsy") && !amsmath)
+		tmp << "\\usepackage{amsbsy}\n";
+	if (mustProvide("amstext") && !amsmath)
+		tmp << "\\usepackage{amstext}\n";
 
 	if (mustProvide("amsthm"))
 		tmp << "\\usepackage{amsthm}\n";
