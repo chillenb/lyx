@@ -7,7 +7,7 @@
 set(check_layout_SOURCES)
 foreach(_f insets/InsetLayout.cpp CiteEnginesList.cpp Color.cpp Counters.cpp Floating.cpp
        FloatList.cpp FontInfo.cpp Layout.cpp LayoutFile.cpp support/Lexer.cpp
-       ModuleList.cpp Spacing.cpp TextClass.cpp tests/check_layout.cpp
+       ModuleList.cpp Spacing.cpp SpecialChar.cpp TextClass.cpp tests/check_layout.cpp
        tests/dummy_functions.cpp tests/dummy4checklayout.cpp)
   list(APPEND check_layout_SOURCES "${TOP_SRC_DIR}/src/${_f}")
 endforeach()
@@ -121,7 +121,7 @@ if (${LYX_DEBUG_SANITIZE} MATCHES "ADDRESS")
   endforeach()
 endif()
 foreach(_base tests/dummy4checklayout Counters FontInfo Layout LayoutFile
-	TextClass insets/InsetLayout tests/check_layout)
+	SpecialChar TextClass insets/InsetLayout tests/check_layout)
   handle_source_option("CXX" ${TOP_SRC_DIR}/src/${_base}.cpp -Wno-shadow)
 endforeach()
 foreach(_base TextClass)

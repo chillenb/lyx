@@ -50,7 +50,7 @@ foreach(_base BiblioInfo Buffer BufferEncodings BufferList BufferParams BufferVi
 	DocIterator Font FontInfo FontList Format InsetIterator
 	InsetList Language LaTeX LaTeXFeatures Layout LayoutFile LayoutModuleList LyX LyXRC
 	MetricsInfo PDFOptions ParIterator Paragraph ParagraphMetrics ParagraphParameters
-	Row RowPainter Statistics TexRow Text TextClass TextMetrics TocBackend TocBuilder Trans
+	Row RowPainter SpecialChar Statistics TexRow Text TextClass TextMetrics TocBackend TocBuilder Trans
 	Undo VSpace factory lyxfind output_docbook output_latex output_plaintext output_xhtml
 	xml) 
   handle_source_option("CXX" ${TOP_SRC_DIR}/src/${_base}.cpp -Wno-shadow)

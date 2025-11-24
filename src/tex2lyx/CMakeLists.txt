@@ -30,7 +30,7 @@ if (${LYX_DEBUG_SANITIZE} MATCHES "ADDRESS")
   endforeach()
 endif()
 foreach(_base tex2lyx/Context tex2lyx/Parser tex2lyx/Preamble tex2lyx/text
-	Counters FontInfo Layout LayoutFile LayoutModuleList TextClass
+	Counters FontInfo Layout LayoutFile LayoutModuleList SpecialChar TextClass
 	insets/InsetLayout tex2lyx/dummy_impl tex2lyx/math tex2lyx/table tex2lyx/tex2lyx
   )
   handle_source_option("CXX" ${TOP_SRC_DIR}/src/${_base}.cpp -Wno-shadow)
