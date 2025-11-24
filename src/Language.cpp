@@ -164,6 +164,7 @@ bool Language::readLanguage(Lexer & lex)
 		LA_SUPPORTED_BY,
 		LA_QUOTESTYLE,
 		LA_RTL,
+		LA_SPECIALCHARS,
 		LA_WORDWRAP,
 		LA_ACTIVECHARS
 	};
@@ -193,6 +194,7 @@ bool Language::readLanguage(Lexer & lex)
 		{ "quotestyle",           LA_QUOTESTYLE },
 		{ "requires",             LA_REQUIRES },
 		{ "rtl",                  LA_RTL },
+		{ "specialchar",          LA_SPECIALCHARS },
 		{ "supportedby",          LA_SUPPORTED_BY },
 		{ "wordwrap",             LA_WORDWRAP },
 		{ "xindyname",            LA_XINDYNAME }
@@ -297,6 +299,9 @@ bool Language::readLanguage(Lexer & lex)
 		case LA_PROVIDES:
 			lex >> provides_;
 			break;
+		case LA_SPECIALCHARS:
+			readSpecialChars(lex);
+			break;
 		case LA_SUPPORTED_BY: {
 			lex.eatLine();
 			vector<string> const fe =
@@ -358,6 +363,30 @@ void Language::readLayoutTranslations(Language::TranslationMap const & trans, bo
 		    || layoutTranslations_.find(t.first) == layoutTranslations_.end())
 			layoutTranslations_[t.first] = t.second;
 	}
+}
+
+
+void Language::readSpecialChars(Lexer & lexrc)
+{
+	std::string name;
+	if (lexrc.next())
+		name = lexrc.getString();
+	else {
+		lexrc.printError("No type given for SpecialChar: `$$Token'.");
+		return;
+	}
+	SpecialChar sc;
+	if (special_chars_.find(name) != special_chars_.end())
+		sc = special_chars_[name];
+
+	special_chars_[name] = specialchars.readSpecialChars(lexrc, sc);
+	lexrc.popTable();
+}
+
+
+bool Language::isKnownSpecialChar(string const & name) const
+{
+	return special_chars_.find(name) != special_chars_.end();
 }
 
 

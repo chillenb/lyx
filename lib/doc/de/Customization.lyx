@@ -23414,13 +23414,30 @@ stdspecialchars.inc
 
 ,
  die für jede Klasse automatisch geladen wird.
- Wenn Sie allerdings Standarddefinitionen modifizieren wollen,
+ Wenn Sie jedoch Standarddefinitionen modifizieren wollen,
  müssen Sie die Datei zuvor manuell laden,
  indem Sie diese Zeile in die Layout-Datei einfügen:
 \end_layout
 
 \begin_layout LyX-Code
 Input stdspecialchars.inc
+\end_layout
+
+\begin_layout Standard
+Außerdem enthalten einige Sprachdefinitionen Definitionen für sprachspezifische Sonderzeichen (bspw.
+ sogenannte Babel-Shorthands).
+ Wenn Sie diese überschreiben wollen,
+ nutzen Sie die Option 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+IgnoreLanguage
+\end_layout
+
+\end_inset
+
+ (siehe unten).
 \end_layout
 
 \begin_layout Standard
@@ -23560,6 +23577,56 @@ status collapsed
 \end_inset
 
 ] Erzwinge Links-nach-rechts-Ausgabe für das Sonderzeichen.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+IgnoreLanguage
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Wenn Sie diesen Wert auf 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+ setzen,
+ wird die Definition nicht durch sprachspezifische Definitionen überschrieben.
 \end_layout
 
 \begin_layout Description

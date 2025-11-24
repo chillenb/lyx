@@ -16,6 +16,7 @@
 
 
 #include "Inset.h"
+#include "Font.h"
 
 #include "TextClass.h"
 
@@ -57,9 +58,9 @@ public:
 	};
 
 	///
-	InsetSpecialChar() : Inset(nullptr), kind_("softhyphen"), unknown_(false) {}
+	InsetSpecialChar() : Inset(nullptr), kind_("softhyphen"), unknown_(false), lang_(nullptr){}
 	///
-	explicit InsetSpecialChar(Buffer * buf, std::string const & k);
+	explicit InsetSpecialChar(Buffer * buf, Language const * lang, std::string const & k);
 	///
 	docstring toolTip(BufferView const & bv, int x, int y) const override;
 	/// some special chars allow line breaking after them
@@ -117,6 +118,8 @@ private:
 	SpecialChar sc_;
 	/// Is this known?
 	bool unknown_;
+	///
+	Language * lang_;
 };
 
 

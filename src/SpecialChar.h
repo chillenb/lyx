@@ -42,7 +42,27 @@ public:
 	bool is_char = false;
 	bool need_protect = false;
 	bool force_ltr = false;
+	bool ignore_lang = false;
 	FontInfo font;
+	// store whether we have default settings
+	bool lyx_output_default = true;
+	bool latex_output_default = true;
+	bool latex_output_rtl_default = true;
+	bool latex_output_utf8_default = true;
+	bool plaintext_output_default = true;
+	bool xhtml_output_default = true;
+	bool tooltip_default = true;
+	bool menustring_default = true;
+	bool req_default = true;
+	bool type_default = true;
+	bool can_break_after_default = true;
+	bool is_letter_default = true;
+	bool is_char_default = true;
+	bool need_protect_default = true;
+	bool force_ltr_default = true;
+	bool font_default = true;
+	///
+	SpecialChar & resolve(SpecialChar const &);
 };
 
 class SpecialChars

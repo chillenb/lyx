@@ -932,7 +932,8 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 				space_inserted = true;
 			}
 		} else if (specialchars.find(ch) != specialchars.end()
-			   && (par.insertInset(pos, new InsetSpecialChar(cur.buffer(), specialchars.find(ch)->second),
+			   && (par.insertInset(pos, new InsetSpecialChar(cur.buffer(), cur.current_font.language(),
+									 specialchars.find(ch)->second),
 					       font, bparams.track_changes
 					       ? Change(Change::INSERTED)
 					       : Change(Change::UNCHANGED)))) {
@@ -3544,7 +3545,7 @@ void specialChar(Cursor & cur, string const & kind)
 {
 	cur.recordUndo();
 	cap::replaceSelection(cur);
-	InsetSpecialChar * sc = new InsetSpecialChar(cur.buffer(), kind);
+	InsetSpecialChar * sc = new InsetSpecialChar(cur.buffer(), cur.current_font.language(), kind);
 	sc->update();
 	cur.insert(sc);
 	cur.posForward();
@@ -6688,7 +6689,8 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 	case LFUN_SPECIALCHAR_INSERT: {
 		string const arg = cmd.getArg(0);
 		code = SPECIALCHAR_CODE;
-		enable = cur.buffer()->params().documentClass().isKnownSpecialChar(arg);
+		enable = cur.buffer()->params().documentClass().isKnownSpecialChar(arg)
+			|| (cur.inTexted() && const_cast<Language*>(cur.current_font.language())->isKnownSpecialChar(arg));
 		break;
 	}
 	case LFUN_SPACE_INSERT:

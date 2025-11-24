@@ -23,6 +23,8 @@
 #include "Language.h"
 #include "LaTeXFeatures.h"
 #include "MetricsInfo.h"
+#include "Paragraph.h"
+#include "ParIterator.h"
 #include "xml.h"
 #include "texstream.h"
 
@@ -45,8 +47,8 @@ namespace lyx {
 using support::Lexer;
 
 
-InsetSpecialChar::InsetSpecialChar(Buffer * buf, string const & k)
-	: Inset(buf), kind_(k), unknown_(false)
+InsetSpecialChar::InsetSpecialChar(Buffer * buf, Language const * lang, string const & k)
+	: Inset(buf), kind_(k), unknown_(false), lang_(const_cast<Language*>(lang))
 {
 	if (buf)
 		update();
@@ -318,17 +320,24 @@ docstring InsetSpecialChar::xhtml(XMLStream & xs, OutputParams const &) const
 
 void InsetSpecialChar::update()
 {
-	if (!buffer().masterParams().documentClass().isKnownSpecialChar(kind_))
+	bool const local = lang_ && lang_->isKnownSpecialChar(kind_);
+	if (!local && !buffer().masterParams().documentClass().isKnownSpecialChar(kind_))
 		unknown_ = true;
 	else {
 		sc_ = buffer().masterParams().documentClass().specialChars()[kind_];
+		if (local) {
+			SpecialChar lsc = lang_->specialChars()[kind_];
+			sc_ = lsc.resolve(sc_);
+		}
 		unknown_ = false;
 	}
 }
 
 
-void InsetSpecialChar::updateBuffer(ParIterator const & /* it*/, UpdateType /* utype*/, bool const /*deleted*/)
+void InsetSpecialChar::updateBuffer(ParIterator const & it, UpdateType /* utype*/, bool const /*deleted*/)
 {
+	BufferParams const & bp = buffer().params();
+	lang_ = const_cast<Language *>(it.paragraph().getFontSettings(bp, it.pos()).language());
 	update();
 }
 

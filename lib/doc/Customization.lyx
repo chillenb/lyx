@@ -24348,7 +24348,7 @@ name "subsec:SpecialChars"
 
 \begin_layout Standard
 
-\change_inserted -712698321 1761578930
+\change_inserted -712698321 1763989788
 Here is how special characters,
  formatting commands and logos that need specific \SpecialChar LaTeX
 ,
@@ -24383,9 +24383,36 @@ Input stdspecialchars.inc
 
 \begin_layout Standard
 
-\change_inserted -712698321 1761552239
+\change_inserted -712698321 1763989781
 to your layout file.
- The definition always starts with 
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1763989822
+Also,
+ some language definitions provide definitions for language-specific special characters (such as so-called babel shorthands).
+ Those can be overwritten by using the 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1763989822
+IgnoreLanguage
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ flag (see below).
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1761552239
+The definition always starts with 
 \begin_inset Flex Code
 status collapsed
 
@@ -24516,7 +24543,7 @@ nolink "false"
 
 \begin_layout Description
 
-\change_inserted -712698321 1761553280
+\change_inserted -712698321 1763989431
 \begin_inset Flex Code
 status collapsed
 
@@ -24565,6 +24592,54 @@ status collapsed
 \end_inset
 
 ] Force Left-to-Right output.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1763989695
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1763989442
+IgnoreLanguage
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1763989432
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1763989432
+1
+\end_layout
+
+\end_inset
+
+] If you set this to true,
+ the definition will not be overwritten by language-specific definitions.
 \end_layout
 
 \begin_layout Description
@@ -24980,6 +25055,8 @@ status collapsed
 
 \change_inserted -712698321 1762780991
 LaTeXOutput
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -24999,6 +25076,8 @@ status collapsed
 
 \backslash
 
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -25013,6 +25092,8 @@ status collapsed
 \begin_inset Quotes qld
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -25029,6 +25110,8 @@ status collapsed
 \backslash
 
 \backslash
+
+\change_unchanged
 
 \end_layout
 
@@ -25048,6 +25131,8 @@ status collapsed
 \begin_inset Quotes qld
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 

@@ -15,6 +15,8 @@
 #ifndef LANGUAGE_H
 #define LANGUAGE_H
 
+#include "SpecialChar.h"
+
 #include "support/docstring.h"
 
 #include <map>
@@ -83,6 +85,8 @@ public:
 	 * appears in the exported document, since the output must not depend
 	 * on installed locales. Non-ASCII keys are not translated. */
 	docstring const translateLayout(std::string const & msg) const;
+	///
+	void readSpecialChars(support::Lexer &);
 	/// default encoding
 	Encoding const * encoding() const { return encoding_; }
 	///
@@ -119,6 +123,10 @@ public:
 	typedef std::map<trivstring, trivdocstring> TranslationMap;
 	///
 	void readLayoutTranslations(TranslationMap const & trans, bool replace);
+	/// Special characters
+	std::map<std::string, SpecialChar> specialChars() { return special_chars_; }
+	///
+	bool isKnownSpecialChar(std::string const &) const;
 	// for the use in std::map
 	friend bool operator<(Language const & p, Language const & q);
 private:
@@ -178,6 +186,8 @@ private:
 	TranslationMap layoutTranslations_;
 	///
 	int use_babel_provide_;
+	/// Special characters
+	std::map<std::string, SpecialChar> special_chars_;
 };
 
 
@@ -215,6 +225,8 @@ public:
 	const_iterator end() const { return languagelist_.end(); }
 	///
 	bool haveOtherForceProvide() const;
+	/// Special characters
+	std::map<std::string, SpecialChar> special_chars_;
 
 private:
 	///

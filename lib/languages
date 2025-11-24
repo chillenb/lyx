@@ -35,6 +35,9 @@
 #	Requires           <requirement>
 #	Provides           <babel language feature>
 #       SupportedBy        <package,package,...>
+#       SpecialChar
+#          <SpecialChar definitions>
+#       End
 # End
 #
 #

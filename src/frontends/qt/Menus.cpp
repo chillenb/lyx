@@ -385,7 +385,7 @@ public:
 	void expandToc2(Toc const & toc_list, size_t from, size_t to, int depth, const string & toc_type);
 	void expandToc(Buffer const * buf);
 	void expandPasteRecent(Buffer const * buf);
-	void expandSpecialChars(Buffer const * buf, string const & type);
+	void expandSpecialChars(BufferView const * bv, string const & type);
 	void expandTextBreaks(BufferView const * bv, bool modify = false);
 	void expandToolbars();
 	void expandBranches(Buffer const * buf);
@@ -1562,11 +1562,24 @@ void MenuDefinition::expandPasteRecent(Buffer const * buf)
 }
 
 
-void MenuDefinition::expandSpecialChars(Buffer const * buf, string const & type)
+void MenuDefinition::expandSpecialChars(BufferView const * bv, string const & type)
 {
-	if (!buf)
+	if (!bv)
 		return;
-	for (auto const & [key, value] : buf->params().documentClass().specialChars()) {
+	for (auto const & [key, value] : bv->buffer().params().documentClass().specialChars()) {
+		if (value.type != type)
+			continue;
+		add(MenuItem(MenuItem::Command, qt_(value.menustring),
+			    FuncRequest(LFUN_SPECIALCHAR_INSERT, key)));
+	}
+	if (!bv->cursor().inTexted())
+		return;
+	Language * lang = const_cast<Language*>(bv->cursor().current_font.language());
+	if (!lang)
+		return;
+	for (auto const & [key, value] : lang->specialChars()) {
+		if (bv->buffer().params().documentClass().isKnownSpecialChar(key))
+			continue;
 		if (value.type != type)
 			continue;
 		add(MenuItem(MenuItem::Command, qt_(value.menustring),
@@ -2582,15 +2595,15 @@ void Menus::Impl::expand(MenuDefinition const & frommenu,
 			break;
 
 		case MenuItem::SpecialChars:
-			tomenu.expandSpecialChars(buf, "specialchar");
+			tomenu.expandSpecialChars(bv, "specialchar");
 			break;
 
 		case MenuItem::SpecialCharsFormatting:
-			tomenu.expandSpecialChars(buf, "formatting");
+			tomenu.expandSpecialChars(bv, "formatting");
 			break;
 
 		case MenuItem::SpecialCharsLogos:
-			tomenu.expandSpecialChars(buf, "logo");
+			tomenu.expandSpecialChars(bv, "logo");
 			break;
 
 		case MenuItem::TextBreaks:
