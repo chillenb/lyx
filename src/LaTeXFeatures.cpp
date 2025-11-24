@@ -1358,7 +1358,8 @@ string const LaTeXFeatures::getPackages() const
 		if (mustProvide(feature)) {
 			if (before_simplefeature_.find(feature) != before_simplefeature_.end())
 				packages << before_simplefeature_[feature];
-			packages << "\\usepackage{" << feature << "}\n";
+			if (params_.use_package(feature) != BufferParams::package_off)
+				packages << "\\usepackage{" << feature << "}\n";
 			if (after_simplefeature_.find(feature) != after_simplefeature_.end())
 				packages << after_simplefeature_[feature];
 		}
