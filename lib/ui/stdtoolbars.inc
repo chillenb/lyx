@@ -114,12 +114,13 @@ ToolbarSet
 		Item "Update" "buffer-update"
 		Item "View master document" "master-buffer-view"
 		Item "Update master document" "master-buffer-update"
+		Item "Export" "buffer-export"
 #		Item "Cancel export" "export-cancel"
 		Item "Enable Forward/Reverse Search" "buffer-toggle-output-sync"
 		Separator
 		StickyPopupMenu "view-others" "View other formats"
 		StickyPopupMenu "update-others" "Update other formats"
-	End
+		End
 
 	Toolbar "extra" "Extra"
 		Item "Default" "layout"
