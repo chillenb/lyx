@@ -192,6 +192,7 @@ Language afrikaans
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -373,6 +374,7 @@ Language austrian
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -403,6 +405,7 @@ Language naustrian
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -484,6 +487,7 @@ Language belarusian
 	LangCode         be_BY
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -749,6 +753,7 @@ Language dutch
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -837,6 +842,7 @@ Language finnish
 	LangCode         fi_FI
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"-
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -904,6 +910,7 @@ Language georgian
 	LangCode         ka_GE
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -935,6 +942,7 @@ Language german
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -965,6 +973,7 @@ Language ngerman
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -998,6 +1007,7 @@ Language german-ch
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -1030,6 +1040,7 @@ Language german-ch-old
 	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -1457,6 +1468,7 @@ Language mongolian
 	Provides         textcyrillic
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -1561,6 +1573,7 @@ Language oldrussian
 	LangCode         ru_petr1708
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -1681,6 +1694,7 @@ Language russian
 	SupportedBy      cleveref,zref
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -1779,6 +1793,7 @@ Language slovak
 	LangCode         sk_SK
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
@@ -1975,6 +1990,7 @@ Language ukrainian
 	SupportedBy      cleveref
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
+	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
