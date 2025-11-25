@@ -187,6 +187,19 @@ Language afrikaans
 	DateFormats      "dd MMMM yyyy|dd MMM yyyy|yyyy/MM/dd"
 	LangCode         af_ZA
 	SupportedBy      refstyle
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -369,6 +382,33 @@ Language austrian
 	LangCode         de
 	LangVariety      alt
 	SupportedBy      refstyle,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -400,6 +440,33 @@ Language naustrian
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_AT
 	SupportedBy      refstyle,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -485,6 +552,33 @@ Language belarusian
 	FontEncoding	 T2A
 	DateFormats      "dd MMMM yyyy|d MMM yyyy|d.M.yyyy"
 	LangCode         be_BY
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0
@@ -536,6 +630,19 @@ Language brazilian
 	DateFormats      "d 'de' MMMM 'de' yyyy|d 'de' MMM 'de' yyyy|dd/MM/yyyy"
 	LangCode         pt_BR
 	SupportedBy      cleveref,refstyle,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
 	    Requires ""
@@ -748,6 +855,19 @@ Language dutch
 	DateFormats      "d MMMM yyyy|d MMM yyyy|d-M-yyyy"
 	LangCode         nl_NL
 	SupportedBy      cleveref,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -908,6 +1028,33 @@ Language georgian
 	Encoding         utf8
 	FontEncoding     T8M
 	LangCode         ka_GE
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0
@@ -937,6 +1084,33 @@ Language german
 	LangCode         de
 	LangVariety      alt
 	SupportedBy      cleveref,refstyle,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -968,6 +1142,33 @@ Language ngerman
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_DE
 	SupportedBy      cleveref,refstyle,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -1002,6 +1203,33 @@ Language german-ch
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_CH
 	SupportedBy      zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -1035,6 +1263,33 @@ Language german-ch-old
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
  	LangCode         de_CH
 	SupportedBy      zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar breakableslash
 	    LaTeXOutput  \"/
 	End
@@ -1466,6 +1721,33 @@ Language mongolian
 	DateFormats      "yyyy оны M сарын d|d-M-yyyy|dd-MM-yyyy"
 	LangCode         mn_MN
 	Provides         textcyrillic
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0
@@ -1571,6 +1853,33 @@ Language oldrussian
 	Encoding         koi8-r
 	FontEncoding     T2A
 	LangCode         ru_petr1708
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0
@@ -1609,6 +1918,19 @@ Language polish
 	FontEncoding     QX|T1|OT1
 	DateFormats      "d MMMM yyyy|d MMM yyyy|yyyy-MM-dd"
 	LangCode         pl_PL
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
 	    Requires ""
@@ -1632,6 +1954,19 @@ Language portuguese
 	DateFormats      "d 'de' MMMM 'de' yyyy|d 'de' MMM 'de' yyyy|yyyy/MM/dd"
 	LangCode         pt_PT
 	SupportedBy      refstyle,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 	SpecialChar allowbreak
 	    LaTeXOutput  \"\"
 	    Requires ""
@@ -1692,6 +2027,33 @@ Language russian
 	LangCode         ru_RU
 	Provides         textcyrillic
 	SupportedBy      cleveref,zref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0
@@ -1791,6 +2153,33 @@ Language slovak
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|d.M.yyyy"
 	LangCode         sk_SK
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0
@@ -1988,6 +2377,33 @@ Language ukrainian
 	LangCode         uk_UA
 	Provides         textcyrillic
 	SupportedBy      cleveref
+	SpecialChar extrasofthyphen
+	    Type	formatting
+	    MenuString	"Additional Hyphenation Point|y"
+	    Tooltip     "Hyphenation point that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    XHTMLOutput	&#xAD;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
 	    LaTeXOutput  \"~
 	    NeedProtect	 0

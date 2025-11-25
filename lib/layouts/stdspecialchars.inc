@@ -125,8 +125,8 @@ End
 
 SpecialChar softhyphen
 	Type		formatting
-	MenuString	"Hyphenation Point|H"
-	Tooltip         "Hyphenation Point"
+	MenuString	"Exclusive Hyphenation Point|H"
+	Tooltip         "Hyphenation point that overwrites predefined hyphenation possibilities"
 	LyXOutput	0x2010
 	LatexOutput	\\-
 	IsLetter	1

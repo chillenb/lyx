@@ -45,7 +45,6 @@ from lyx2lyx_tools import (
 #    del_value,
 #    find_complete_lines, 
 #    find_end_of,
-#    find_substring,
 #    find_token_exact,
 #    find_tokens,
 #    get_bool_value,
@@ -58,6 +57,7 @@ from parser_tools import (
     find_end_of_layout,
     find_end_of_sequence,
     find_re,
+    find_substring,
     find_token,
     find_token_backwards,
     get_containing_inset,
@@ -658,6 +658,88 @@ def revert_textbreaks(document):
         i += 1
         continue
 
+
+def revert_hyphen_shorthands(document):
+    "Revert SpecialChar breakabledash and SpecialChar extrasofthyphen to ERT"
+
+    mainlang = get_value(document.header, "\\language")
+    if mainlang == "":
+        document.warning("Malformed LyX document! No \\language header found!")
+        return
+
+    langs_breakabledash = [
+        "austrian",
+        "naustrian",
+        "belarusian",
+        "georgian",
+        "german",
+        "ngerman",
+        "german-ch",
+        "german-ch-old",
+        "mongolian",
+        "oldrussian",
+        "russian",
+        "slovak",
+        "ukrainian"
+    ]
+    
+    langs_extrasofthyphen = [
+        "afrikaans",
+        "austrian",
+        "naustrian",
+        "belarusian",
+        "brazilian",
+        "dutch",
+        "georgian",
+        "german",
+        "ngerman",
+        "german-ch",
+        "german-ch-old",
+        "mongolian",
+        "oldrussian",
+        "polish",
+        "portuguese",
+        "russian",
+        "slovak",
+        "ukrainian"
+    ]
+
+    i = 0
+    while True:
+        i = find_substring(document.body, "\\SpecialChar breakabledash", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\SpecialChar breakabledash", "")
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        if lang in langs_breakabledash:
+            cmd = put_cmd_in_ert("\"=")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
+    i = 0
+    while True:
+        i = find_substring(document.body, "\\SpecialChar extrasofthyphen", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\SpecialChar extrasofthyphen", "")
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        if lang in langs_extrasofthyphen:
+            cmd = put_cmd_in_ert("\"-")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
 ##
 # Conversion hub
 #
@@ -667,11 +749,13 @@ convert = [
     [644, [convert_refname]],
     [645, []],
     [646, []],
-    [647, [convert_textbreaks]]
+    [647, [convert_textbreaks]],
+    [648, []]
 ]
 
 
 revert = [
+    [647, [revert_hyphen_shorthands]],
     [646, [revert_textbreaks]],
     [645, [revert_contextual_breaks]],
     [644, [revert_mathref]],

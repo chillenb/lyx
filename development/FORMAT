@@ -7,6 +7,12 @@ changes happened in particular if possible. A good example would be
 
 -----------------------
 
+2025-11-25 Jürgen Spitzmüller <spitz@lyx.org>
+	* Format incremented to 648:
+	  New (language-specific) SpecialChars extrasofthyphen
+	  and breakabledash that are supported in some languages
+	  via babelshorthands ("- and "=).
+
 2025-10-21 Jürgen Spitzmüller <spitz@lyx.org>
 	* Format incremented to 647:
 	  Rename inset newpage to inset textbreak.

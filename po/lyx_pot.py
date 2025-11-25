@@ -548,6 +548,8 @@ def languages_l10n(input_files, output, base):
     '''Generate pot file from lib/languages'''
     out = io.open(output, 'w', encoding='utf_8', newline='\n')
     GuiName = re.compile(r'^[^#]*GuiName\s+(.*)', re.IGNORECASE)
+    MenuString = re.compile(r'^[^#]*MenuString\S*\s+(.*\S)\s*$', re.IGNORECASE)
+    Tooltip = re.compile(r'^\s*Tooltip\S*\s+(.*\S)\s*$', re.IGNORECASE)
 
     for src in input_files:
         descStartLine = -1
@@ -556,6 +558,16 @@ def languages_l10n(input_files, output, base):
         for line in io.open(src, encoding='utf_8').readlines():
             lineno += 1
             res = GuiName.search(line)
+            if res != None:
+                string = res.group(1)
+                writeString(out, src, base, lineno, string)
+                continue
+            res = MenuString.search(line)
+            if res != None:
+                string = res.group(1)
+                writeString(out, src, base, lineno, string)
+                continue
+            res = Tooltip.search(line)
             if res != None:
                 string = res.group(1)
                 writeString(out, src, base, lineno, string)
