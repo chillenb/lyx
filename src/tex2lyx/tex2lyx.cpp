@@ -17,6 +17,7 @@
 
 #include "Context.h"
 #include "Encoding.h"
+#include "Language.h"
 #include "Layout.h"
 #include "LayoutFile.h"
 #include "LayoutModuleList.h"
@@ -492,10 +493,23 @@ bool isProvided(string const & name)
 }
 
 
-bool isKnownInsetSpecialChar(string const & latex, string & lyxname, bool const only_protected,
-			     bool const partof)
+bool isKnownInsetSpecialChar(string const & latex, string & lyxname, string const & language,
+			     bool const only_protected, bool const partof)
 {
 	for (auto const & [name, sc] : textclass.specialChars()) {
+		if (partof && prefixIs(to_ascii(ltrim(sc.latex_output, "\\")), latex)) {
+			lyxname = name;
+			return only_protected ? sc.need_protect : true;
+		}
+		if (to_ascii(ltrim(sc.latex_output, "\\")) == latex) {
+			lyxname = name;
+			return only_protected ? sc.need_protect : true;
+		}
+	}
+	Language * lang = const_cast<Language*>(languages.getLanguage(language));
+	if (!lang)
+		return false;
+	for (auto const & [name, sc] : lang->specialChars()) {
 		if (partof && prefixIs(to_ascii(ltrim(sc.latex_output, "\\")), latex)) {
 			lyxname = name;
 			return only_protected ? sc.need_protect : true;
@@ -938,6 +952,18 @@ bool roundtripMode()
 	return roundtrip;
 }
 
+bool readLanguagesFile(string const & name)
+{
+	LYXERR(Debug::INIT, "About to read " << name << "...");
+
+	FileName const lang_path = libFileSearch(string(), name);
+	if (lang_path.empty())
+		return false;
+
+	languages.read(lang_path);
+	return true;
+}
+
 
 namespace {
 
@@ -964,6 +990,10 @@ bool tex2lyx(idocstream & is, ostream & os, string const & encoding,
 		error_message("Could not load default modules for text class.");
 		return false;
 	}
+
+	// Load language definitions if not already done
+	if (languages.size() == 0 && !readLanguagesFile("languages"))
+		error_message("Could not load languages file.");
 
 	// Load preloaded modules.
 	// This needs to be done after the preamble is parsed, since the text

@@ -21,6 +21,7 @@
 #include "tex2lyx.h"
 #include "LaTeXColors.h"
 #include "LaTeXFeatures.h"
+#include "LaTeXFonts.h"
 #include "LyXRC.h"
 #include "xml.h"
 
@@ -63,6 +64,25 @@ LaTeXColors & theLaTeXColors()
 	return * lc;
 }
 
+//
+// Dummy definitions needed by Language
+//
+
+LaTeXFonts & theLaTeXFonts()
+{
+	LaTeXFonts * lc = new LaTeXFonts;
+	return * lc;
+}
+
+LaTeXFont LaTeXFonts::getLaTeXFont(docstring const &)
+{
+	return LaTeXFont();
+}
+
+bool LaTeXFont::hasFontenc(std::string const &) const
+{
+	return false;
+}
 
 //
 // Dummy translation support (needed at many places)

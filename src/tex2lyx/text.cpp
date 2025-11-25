@@ -3254,6 +3254,59 @@ void fix_child_filename(string & name)
 }
 
 
+bool parseSpecialChar(ostream & os, Token const & t, Parser & p, Context & context)
+{
+	// (Single) special chars supported via InsetSpecialChar
+	string lyxname;
+	if (isKnownInsetSpecialChar(t.cs(), lyxname, context.font.language)
+	    || (t.cs() == "protect"
+		&& p.next_token().cat() == catEscape
+		&& isKnownInsetSpecialChar(p.next_token().cs(), lyxname,
+					   context.font.language, true))) {
+		// LyX sometimes puts a \protect in front, so we have to ignore it
+		if (t.cs() == "protect")
+			p.get_token();
+		context.check_layout(os);
+		os << "\\SpecialChar " << lyxname << '\n';
+		skip_spaces_braces(p);
+		return true;
+	}
+	// And multi-token special chars
+	if (isKnownInsetSpecialChar(t.cs(), lyxname, context.font.language, false, true)
+	    || (t.cs() == "protect"
+		&& p.next_token().cat() == catEscape
+		&& isKnownInsetSpecialChar(p.next_token().cs(), lyxname,
+					   context.font.language, true, true))) {
+		p.pushPosition();
+		string latex;
+		if (t.cs() == "protect") {
+			// ignore \protect
+			latex = p.next_token().cs();
+			p.get_token();
+		} else
+			latex = t.cs();
+		// Try to the complete token sequence as long as it is known
+		// as part of a known special char sequence
+		while (isKnownInsetSpecialChar(latex + p.next_token().cs(), lyxname,
+					       context.font.language, false, true)) {
+			latex += p.next_token().cs();
+			p.get_token();
+		}
+		// It this a known complete sequence?
+		if (isKnownInsetSpecialChar(latex, lyxname, context.font.language)) {
+			context.check_layout(os);
+			os << "\\SpecialChar " << lyxname << '\n';
+			skip_braces(p);
+			p.dropPosition();
+			return true;
+		}
+		// If not, go back and fall through
+		p.popPosition();
+	}
+	return false;
+}
+
+
 void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 		Context & context, string const & rdelim, string const & rdelimesc)
 {
@@ -3465,12 +3518,16 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 		}
 
 		// babel shorthands (also used by polyglossia)
-		// Since these can have different meanings for different languages
-		// we import them as ERT (but they must be put in ERT to get output
-		// verbatim).
 		if (t.asInput() == "\"") {
+			// First check if shorthand is supported
+			// via language-specific SpecialChar
+			if (parseSpecialChar(os, t, p, context))
+				continue;
+			// Unsupported shorthands: Since these can have different
+			// meanings for different languages,
+			// we import them as ERT (to get output verbatim).
 			string s = "\"";
-			// We put the known shorthand pairs together in
+			// We put known shorthand pairs together in
 			// one ERT inset. In other cases (such as "a), only
 			// the quotation mark is ERTed.
 			if (is_known(p.next_token().asInput(), known_babel_shorthands)) {
@@ -6688,50 +6745,8 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			name += '{' + p.verbatim_item() + '}';
 		}
 
-		// (Single) special chars supported via InsetSpecialChar
-		string lyxname;
-		if (isKnownInsetSpecialChar(t.cs(), lyxname)
-		    || (t.cs() == "protect"
-			&& p.next_token().cat() == catEscape
-			&& isKnownInsetSpecialChar(p.next_token().cs(), lyxname, true))) {
-			// LyX sometimes puts a \protect in front, so we have to ignore it
-			if (t.cs() == "protect")
-				p.get_token();
-			context.check_layout(os);
-			os << "\\SpecialChar " << lyxname << '\n';
-			skip_spaces_braces(p);
+		if (parseSpecialChar(os, t, p, context))
 			continue;
-		}
-		// And multi-token special chars
-		if (isKnownInsetSpecialChar(t.cs(), lyxname, false, true)
-		    || (t.cs() == "protect"
-			&& p.next_token().cat() == catEscape
-			&& isKnownInsetSpecialChar(p.next_token().cs(), lyxname, true, true))) {
-			p.pushPosition();
-			string latex;
-			if (t.cs() == "protect") {
-				// ignore \protect
-				latex = p.next_token().cs();
-				p.get_token();
-			} else
-				latex = t.cs();
-			// Try to the complete token sequence as long as it is known
-			// as part of a known special char sequence
-			while (isKnownInsetSpecialChar(latex + p.next_token().cs(), lyxname, false, true)) {
-				latex += p.next_token().cs();
-				p.get_token();
-			}
-			// It this a known complete sequence?
-			if (isKnownInsetSpecialChar(latex, lyxname)) {
-				context.check_layout(os);
-				os << "\\SpecialChar " << lyxname << '\n';
-				skip_braces(p);
-				p.dropPosition();
-				continue;
-			}
-			// If not, go back and fall through
-			p.popPosition();
-		}
 
 		// now get the character from unicodesymbols
 		bool termination;

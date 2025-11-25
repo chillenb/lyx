@@ -12,7 +12,7 @@ set(LINKED_headers)
 
 foreach(_src graphics/GraphicsParams insets/ExternalTemplate
 	insets/ExternalTransforms insets/InsetLayout Author CiteEnginesList Color Counters
-	Encoding FloatList Floating FontInfo LaTeXPackages Layout
+	Encoding FloatList Floating FontInfo Language LaTeXPackages Layout
 	LayoutFile LayoutModuleList support/Lexer ModuleList TextClass
 	LaTeXColors Spacing SpecialChar version)
 	list(APPEND LINKED_sources ${TOP_SRC_DIR}/src/${_src}.cpp)
@@ -30,7 +30,7 @@ if (${LYX_DEBUG_SANITIZE} MATCHES "ADDRESS")
   endforeach()
 endif()
 foreach(_base tex2lyx/Context tex2lyx/Parser tex2lyx/Preamble tex2lyx/text
-	Counters FontInfo Layout LayoutFile LayoutModuleList SpecialChar TextClass
+	Counters FontInfo Language Layout LayoutFile LayoutModuleList SpecialChar TextClass
 	insets/InsetLayout tex2lyx/dummy_impl tex2lyx/math tex2lyx/table tex2lyx/tex2lyx
   )
   handle_source_option("CXX" ${TOP_SRC_DIR}/src/${_base}.cpp -Wno-shadow)

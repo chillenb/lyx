@@ -130,6 +130,7 @@ extern bool checkModule(std::string const & name, bool command);
 extern bool isProvided(std::string const & name);
 /// Is this a special character supported by InsetSpecialChar?
 extern bool isKnownInsetSpecialChar(std::string const & latex, std::string & lyxname,
+				    std::string const & language,
 				    bool const only_protected = false,
 				    bool const partof = false);
 // Access to environment stack
