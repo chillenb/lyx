@@ -20,7 +20,7 @@ foreach(_base Dialog DialogFactory FindAndReplace FloatPlacement
 	GuiChanges GuiCharacter GuiCitation GuiClipboard GuiCommandBuffer GuiCompleter GuiCounter
 	GuiDelimiter GuiDocument GuiERT GuiExternal
 	GuiFontLoader GuiGraphics GuiHSpace GuiHyperlink GuiInclude GuiIndex GuiIndices GuiInfo GuiInputMethod
-	GuiLabel GuiLine GuiListings GuiLog GuiLyXFiles GuiNote GuiPainter GuiParagraph GuiPhantom GuiPrintNomencl GuiPrintindex
+	GuiLabel GuiLine GuiListings GuiLog GuiLyXFiles GuiNote GuiPainter GuiParagraph GuiPhantom GuiPrefs GuiPrintNomencl GuiPrintindex
 	GuiRef GuiSelectionManager GuiSendto GuiSpellchecker GuiSymbols
 	GuiTabular GuiTabularCreate GuiThesaurus GuiToolbar
 	GuiView GuiVSpace GuiViewSource GuiWorkArea GuiWrap

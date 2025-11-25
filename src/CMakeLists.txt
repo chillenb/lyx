@@ -45,12 +45,12 @@ handle_source_option("CXX" "${TOP_SRC_DIR}/src/LyX.cpp" -Wno-error -Wno-invalid-
 handle_source_option("CXX" ${TOP_SRC_DIR}/src/TextMetrics.cpp -Wno-implicit-int-float-conversion)
 handle_source_option("CXX" ${TOP_SRC_DIR}/src/CursorSlice.cpp -Wno-null-dereference)
 
-foreach(_base BiblioInfo Buffer BufferEncodings BufferList BufferParams BufferView
+foreach(_base AspellChecker BiblioInfo Buffer BufferEncodings BufferList BufferParams BufferView
 	Changes Compare Converter Counters Cursor CursorSlice CutAndPaste
-	DocIterator Font FontInfo FontList Format InsetIterator
+	DocIterator EnchantChecker Font FontInfo FontList Format HunspellChecker InsetIterator
 	InsetList Language LaTeX LaTeXFeatures Layout LayoutFile LayoutModuleList LyX LyXRC
 	MetricsInfo PDFOptions ParIterator Paragraph ParagraphMetrics ParagraphParameters
-	Row RowPainter SpecialChar Statistics TexRow Text TextClass TextMetrics TocBackend TocBuilder Trans
+	Row RowPainter SpecialChar Statistics TexRow Text TextClass TextMetrics Thesaurus TocBackend TocBuilder Trans
 	Undo VSpace factory lyxfind output_docbook output_latex output_plaintext output_xhtml
 	xml) 
   handle_source_option("CXX" ${TOP_SRC_DIR}/src/${_base}.cpp -Wno-shadow)
