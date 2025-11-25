@@ -187,6 +187,20 @@ Language afrikaans
 	DateFormats      "dd MMMM yyyy|dd MMM yyyy|yyyy/MM/dd"
 	LangCode         af_ZA
 	SupportedBy      refstyle
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # FontEncoding: no hyphenation, but uses Ç/ç und Ë/ë
@@ -354,6 +368,20 @@ Language austrian
 	LangCode         de
 	LangVariety      alt
 	SupportedBy      refstyle,zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # In polyglossia, this is supported since release 1.33.4 (May 2014)
@@ -370,6 +398,20 @@ Language naustrian
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_AT
 	SupportedBy      refstyle,zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language azerbaijani
@@ -440,6 +482,17 @@ Language belarusian
 	FontEncoding	 T2A
 	DateFormats      "dd MMMM yyyy|d MMM yyyy|d.M.yyyy"
 	LangCode         be_BY
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # supported by polyglossia but not babel:
@@ -479,6 +532,14 @@ Language brazilian
 	DateFormats      "d 'de' MMMM 'de' yyyy|d 'de' MMM 'de' yyyy|dd/MM/yyyy"
 	LangCode         pt_BR
 	SupportedBy      cleveref,refstyle,zref
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # FontEncoding: # ? no hyphenation, but uses ñ
@@ -683,6 +744,20 @@ Language dutch
 	DateFormats      "d MMMM yyyy|d MMM yyyy|d-M-yyyy"
 	LangCode         nl_NL
 	SupportedBy      cleveref,zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language english
@@ -760,6 +835,17 @@ Language finnish
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|d.M.yyyy"
 	LangCode         fi_FI
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"-
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language french
@@ -816,6 +902,17 @@ Language georgian
 	Encoding         utf8
 	FontEncoding     T8M
 	LangCode         ka_GE
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # german does not use a country code (due to the variety)
@@ -833,6 +930,20 @@ Language german
 	LangCode         de
 	LangVariety      alt
 	SupportedBy      cleveref,refstyle,zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language ngerman
@@ -849,6 +960,20 @@ Language ngerman
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_DE
 	SupportedBy      cleveref,refstyle,zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # In Babel, this is supported since release 2.7 of babel-german (Dec 2013)
@@ -868,6 +993,20 @@ Language german-ch
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de_CH
 	SupportedBy      zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # In Babel, this is supported since release 2.7 of babel-german (Dec 2013)
@@ -886,6 +1025,20 @@ Language german-ch-old
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
  	LangCode         de_CH
 	SupportedBy      zref
+	SpecialChar breakableslash
+	    LaTeXOutput  \"/
+	End
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language greek
@@ -1302,6 +1455,17 @@ Language mongolian
 	DateFormats      "yyyy оны M сарын d|d-M-yyyy|dd-MM-yyyy"
 	LangCode         mn_MN
 	Provides         textcyrillic
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language newzealand
@@ -1395,6 +1559,17 @@ Language oldrussian
 	Encoding         koi8-r
 	FontEncoding     T2A
 	LangCode         ru_petr1708
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # FIXME DateFormats
@@ -1421,6 +1596,14 @@ Language polish
 	FontEncoding     QX|T1|OT1
 	DateFormats      "d MMMM yyyy|d MMM yyyy|yyyy-MM-dd"
 	LangCode         pl_PL
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language portuguese
@@ -1436,6 +1619,14 @@ Language portuguese
 	DateFormats      "d 'de' MMMM 'de' yyyy|d 'de' MMM 'de' yyyy|yyyy/MM/dd"
 	LangCode         pt_PT
 	SupportedBy      refstyle,zref
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language punjabi
@@ -1488,6 +1679,17 @@ Language russian
 	LangCode         ru_RU
 	Provides         textcyrillic
 	SupportedBy      cleveref,zref
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 # FontEncoding: no hyphenation, but diacritics
@@ -1575,6 +1777,17 @@ Language slovak
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|d.M.yyyy"
 	LangCode         sk_SK
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language slovene
@@ -1760,6 +1973,17 @@ Language ukrainian
 	LangCode         uk_UA
 	Provides         textcyrillic
 	SupportedBy      cleveref
+	SpecialChar nobreakdash
+	    LaTeXOutput  \"~
+	End
+	SpecialChar allowbreak
+	    LaTeXOutput  \"\"
+	    Requires ""
+	End
+	SpecialChar ligaturebreak
+	    LaTeXOutput  \"|
+	    LaTeXOutputUTF8 \"|
+	End
 End
 
 Language uppersorbian
