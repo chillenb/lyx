@@ -211,7 +211,7 @@ SpecialChar SpecialChars::readSpecialChars(Lexer & lexrc, SpecialChar & sc) cons
 		}
 		case SC_REQUIRES:
 			lexrc.eatLine();
-			sc.req = lexrc.getString();
+			sc.req = trim(lexrc.getString(), "\"");
 			sc.req_default = false;
 			break;
 		case SC_TOOLTIP:
