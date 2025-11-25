@@ -712,6 +712,7 @@ check_layout_LYX_OBJS = \
 	LayoutFile.o \
 	ModuleList.o \
 	Spacing.o \
+	SpecialChar.o \
 	TextClass.o
 
 check_ExternalTransforms_CPPFLAGS = $(AM_CPPFLAGS)
