@@ -1090,6 +1090,7 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 	//     d->virtual_boundary_ = if the preedits hit the boundary
 	// and returns the row index of the starting point of preedits
 
+	d->pm_ptr_ = resetParagraphMetrics(cur);
 	if (d->rows_size_ == 0 || d->rows_->empty())
 		return 0;
 
@@ -1097,7 +1098,6 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 	if (cur->top().pos() != d->cur_pos_)
 		Q_EMIT cursorPositionChanged();
 
-	d->pm_ptr_ = resetParagraphMetrics(cur);
 	// Note that getRowIndex(., false) gives the row index *after* preedit
 	// strings since they are virtual, so it increases as preedit strings go
 	// over multiple rows. To fix it at the starting point, getRowIndex(., true)
