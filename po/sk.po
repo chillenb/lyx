@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-10-28 07:48+0100\n"
-"PO-Revision-Date: 2025-10-28 06:59+0000\n"
+"POT-Creation-Date: 2025-11-26 08:25+0100\n"
+"PO-Revision-Date: 2025-11-26 10:34+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -19474,6 +19474,14 @@ msgstr "Zlomiť zliatku (ligatúru)|i"
 msgid "Ligature Break (ZWNJ)"
 msgstr "Zlomiť zliatku (ligatúru) (ZWNJ)"
 
+#: lib/layouts/stdspecialchars.inc:128
+msgid "Exclusive Hyphenation Point|H"
+msgstr "Exkluzívny bod rozdeľovania|b"
+
+#: lib/layouts/stdspecialchars.inc:129
+msgid "Hyphenation point that overwrites predefined hyphenation possibilities"
+msgstr "Bod rozdeľovania, ktorý prepíše preddefinované možnosti spojovníka"
+
 #: lib/layouts/stdspecialchars.inc:17 lib/ui/stdmenus.inc:418
 msgid "End of Sentence|E"
 msgstr "Koniec vety|K"
@@ -19493,14 +19501,6 @@ msgstr "Vypustenie"
 #: lib/layouts/stdspecialchars.inc:36 lib/ui/stdmenus.inc:425
 msgid "Menu Separator|M"
 msgstr "Oddeľovač v menu|O"
-
-#: lib/layouts/stdspecialchars.inc:49 lib/ui/stdmenus.inc:466
-msgid "Hyphenation Point|H"
-msgstr "Bod rozdeľovania|B"
-
-#: lib/layouts/stdspecialchars.inc:129
-msgid "Hyphenation Point"
-msgstr "Bod rozdeľovania"
 
 #: lib/layouts/stdspecialchars.inc:56 lib/ui/stdmenus.inc:423
 msgid "Breakable Slash|a"
@@ -21964,6 +21964,22 @@ msgstr "Ignorovať"
 msgid "Afrikaans"
 msgstr "Afrikánsky"
 
+#: lib/languages:192 lib/languages:387 lib/languages:445 lib/languages:557
+#: lib/languages:635 lib/languages:860 lib/languages:1033 lib/languages:1089
+#: lib/languages:1147 lib/languages:1208 lib/languages:1268 lib/languages:1726
+#: lib/languages:1858 lib/languages:1923 lib/languages:1959 lib/languages:2032
+#: lib/languages:2158 lib/languages:2382
+msgid "Additional Hyphenation Point|y"
+msgstr "Ďalší bod rozdeľovania|Ď"
+
+#: lib/languages:193 lib/languages:388 lib/languages:446 lib/languages:558
+#: lib/languages:636 lib/languages:861 lib/languages:1034 lib/languages:1090
+#: lib/languages:1148 lib/languages:1209 lib/languages:1269 lib/languages:1727
+#: lib/languages:1859 lib/languages:1924 lib/languages:1960 lib/languages:2033
+#: lib/languages:2159 lib/languages:2383
+msgid "Hyphenation point that keeps predefined hyphenation possibilities"
+msgstr "Bod rozdeľovania ktorý zachováva preddefinované možnosti spojovníka"
+
 #: lib/languages:186
 msgid "Albanian"
 msgstr "Albánsky"
@@ -22003,6 +22019,21 @@ msgstr "Anglicky (Austrália)"
 #: lib/languages:334
 msgid "German (Austria, old spelling)"
 msgstr "Nemecky (Rakúsko, starý pravopis)"
+
+#: lib/languages:400 lib/languages:458 lib/languages:570 lib/languages:1046
+#: lib/languages:1102 lib/languages:1160 lib/languages:1221 lib/languages:1281
+#: lib/languages:1739 lib/languages:1871 lib/languages:2045 lib/languages:2171
+#: lib/languages:2395
+msgid "Hyphen with Additional Hyphenation Point|y"
+msgstr "Spojovník s ďalším bodom rozdeľovania|ď"
+
+#: lib/languages:401 lib/languages:459 lib/languages:571 lib/languages:1047
+#: lib/languages:1103 lib/languages:1161 lib/languages:1222 lib/languages:1282
+#: lib/languages:1740 lib/languages:1872 lib/languages:2046 lib/languages:2172
+#: lib/languages:2396
+msgid "Breakable hyphen that keeps predefined hyphenation possibilities"
+msgstr ""
+"Rozdeliteľný spojovník, ktorý zachováva preddefinované možnosti delenia slov"
 
 #: lib/languages:350
 msgid "German (Austria)"
@@ -44371,6 +44402,9 @@ msgstr ""
 msgid "Unknown user"
 msgstr "Neznámy používateľ"
 
+#~ msgid "Hyphenation Point"
+#~ msgstr "Bod rozdeľovania"
+
 #~ msgid "Paragraph[[Sectioning]]"
 #~ msgstr "Odstavec"
 
@@ -50157,3 +50191,6 @@ msgstr "Neznámy používateľ"
 
 #~ msgid "Sele&cted Label:"
 #~ msgstr "V&ybraný štítok:"
+
+#~ msgid "Hyphenation Point|H"
+#~ msgstr "Bod rozdeľovania|B"
