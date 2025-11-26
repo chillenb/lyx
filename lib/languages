@@ -1931,10 +1931,6 @@ Language polish
 	      Color		textlabel2
 	    EndFont
 	End
-	SpecialChar allowbreak
-	    LaTeXOutput  \"\"
-	    Requires ""
-	End
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
