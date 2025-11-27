@@ -96,14 +96,14 @@ msgstr ""
 "Project-Id-Version: LyX 2.4git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-11-27 00:21-0500\n"
-"PO-Revision-Date: 2025-10-27 17:07+0100\n"
+"PO-Revision-Date: 2025-11-27 09:31+0100\n"
 "Last-Translator: Juergen Spitzmueller <spitz@lyx.org>\n"
-"Language-Team: German <lyx-docs@lists.lyx.org>\n"
+"Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 25.08.2\n"
+"X-Generator: Lokalize 18.12.1\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 
 #: src/frontends/qt/ui/AboutUi.ui:27
@@ -20168,13 +20168,12 @@ msgid "Ligature Break (ZWNJ)"
 msgstr "Ligaturtrenner (ZWNJ)"
 
 #: lib/layouts/stdspecialchars.inc:128
-#, fuzzy
 msgid "Exclusive Hyphenation Point|H"
-msgstr "Trennmöglichkeit|ö"
+msgstr "Exklusive Trennmöglichkeit|ö"
 
 #: lib/layouts/stdspecialchars.inc:129
 msgid "Hyphenation point that overwrites predefined hyphenation possibilities"
-msgstr ""
+msgstr "Trennmöglichkeit, die alle vordefinierten Möglichkeiten überschreibt"
 
 #: lib/layouts/stdspecialchars.inc:146
 msgid "LaTeX Logo|a"
@@ -22466,9 +22465,8 @@ msgstr "Afrikaans"
 #: lib/languages:1147 lib/languages:1208 lib/languages:1268 lib/languages:1726
 #: lib/languages:1858 lib/languages:1923 lib/languages:1955 lib/languages:2028
 #: lib/languages:2154 lib/languages:2378
-#, fuzzy
 msgid "Additional Hyphenation Point|y"
-msgstr "Trennmöglichkeit|ö"
+msgstr "Zusätzliche Trennmöglichkeit|ä"
 
 #: lib/languages:193 lib/languages:388 lib/languages:446 lib/languages:558
 #: lib/languages:636 lib/languages:861 lib/languages:1034 lib/languages:1090
@@ -22476,7 +22474,7 @@ msgstr "Trennmöglichkeit|ö"
 #: lib/languages:1859 lib/languages:1924 lib/languages:1956 lib/languages:2029
 #: lib/languages:2155 lib/languages:2379
 msgid "Hyphenation point that keeps predefined hyphenation possibilities"
-msgstr ""
+msgstr "Trennmöglichkeit, die alle vordefinierten Möglichkeiten behält"
 
 #: lib/languages:222
 msgid "Albanian"
@@ -22523,14 +22521,14 @@ msgstr "Deutsch (Österreich, alte Rechtschreibung)"
 #: lib/languages:1739 lib/languages:1871 lib/languages:2041 lib/languages:2167
 #: lib/languages:2391
 msgid "Hyphen with Additional Hyphenation Point|y"
-msgstr ""
+msgstr "Trennstrich mit zusätzlichen Trennmöglichkeiten|z"
 
 #: lib/languages:401 lib/languages:459 lib/languages:571 lib/languages:1047
 #: lib/languages:1103 lib/languages:1161 lib/languages:1222 lib/languages:1282
 #: lib/languages:1740 lib/languages:1872 lib/languages:2042 lib/languages:2168
 #: lib/languages:2392
 msgid "Breakable hyphen that keeps predefined hyphenation possibilities"
-msgstr ""
+msgstr "Trennbarer Trennstrich, die zusätzliche Trennmöglichkeiten behält"
 
 #: lib/languages:431
 msgid "German (Austria)"
@@ -27999,9 +27997,8 @@ msgid "Update master document"
 msgstr "Hauptdokument aktualisieren"
 
 #: lib/ui/stdtoolbars.inc:117
-#, fuzzy
 msgid "Export"
-msgstr "Exportieren|E"
+msgstr "Exportieren"
 
 #: lib/ui/stdtoolbars.inc:119
 msgid "Enable Forward/Reverse Search"
@@ -44283,9 +44280,9 @@ msgid "Non-Breaking Horizontal Space (%1$s)"
 msgstr "Geschützter horizontaler Abstand (%1$s)"
 
 #: src/insets/InsetSpecialChar.cpp:61
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown special character (%1$s)!"
-msgstr "Sonderzeichen"
+msgstr "Unbekanntes Sonderzeichen (%1$s)!"
 
 #: src/insets/InsetTOC.cpp:78
 msgid "Unknown TOC type"
