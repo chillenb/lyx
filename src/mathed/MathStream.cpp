@@ -440,7 +440,7 @@ TeXMathStream & operator<<(TeXMathStream & ws, docstring const & s)
 
 TeXMathStream::TeXMathStream(otexrowstream & os, bool fragile, bool latex,
 			     OutputType output, Encoding const * encoding,
-			     docstring escapechars)
+			     docstring const & escapechars)
 	: os_(os), fragile_(fragile), latex_(latex),
 	  output_(output), encoding_(encoding), escape_chars_(escapechars)
 {}

@@ -147,7 +147,7 @@ public:
 	explicit TeXMathStream(otexrowstream & os, bool fragile = false,
 			       bool latex = false, OutputType output = wsDefault,
 			       Encoding const * encoding = nullptr,
-			       docstring escapechar = docstring());
+			       docstring const & escapechar = docstring());
 	///
 	~TeXMathStream();
 	///
