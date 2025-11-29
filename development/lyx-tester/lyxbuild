@@ -831,7 +831,8 @@ else
   # "hotspot"): -g3 mostly adds macro information, which is useful for stepping
   # in gdb, but irrelevant (and extra overhead) for hotspot profiling so just
   # stick with "-g"
-  #CPPFLAGS_FAST="${CPPFLAGS};-O2;-march=native;-g"
+  # -fno-omit-frame-pointer is also recommended for profilers.
+  #CPPFLAGS_FAST="${CPPFLAGS};-O2;-march=native;-g;-fno-omit-frame-pointer"
   #
   #
   # These flags aren't currently used, but might be useful for better
