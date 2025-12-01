@@ -277,7 +277,7 @@ AC_ARG_ENABLE(optimization,
     enable_optimization=yes;)
 case $enable_optimization in
     yes)
-        if test $enable_debug = yes ; then
+        if test $enable_debug = yes -a $build_type != "profiling" ; then
             lyx_optim=-Og
         else
             lyx_optim=-O2
