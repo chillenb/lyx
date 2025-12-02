@@ -3275,8 +3275,8 @@ int LatexInfo::dispatch(ostringstream &os, int previousStart, KeyInfo &actual)
 			actual._dataEnd++;
 		interval_.addIntervall(0, actual._dataEnd+1);
 		interval_.actualdeptindex = 0;
-		interval_.depts[0] = actual._dataEnd+1;
-		interval_.closes[0] = -1;
+		Intervall::depts[0] = actual._dataEnd+1;
+		Intervall::closes[0] = -1;
 		break;
 	}
 	case KeyInfo::isText:
@@ -4937,8 +4937,8 @@ static int findAdvReplace(BufferView * bv, FindAndReplaceOptions const & opt, Ma
 	ostringstream oss;
 	repl_buffer_orig.write(oss);
 	string lyx = oss.str();
-	if (matchAdv.valid_matches > 0)
-		replaceMatches(lyx, matchAdv.valid_matches, matchAdv.matches);
+	if (MatchStringAdv::valid_matches > 0)
+		replaceMatches(lyx, MatchStringAdv::valid_matches, MatchStringAdv::matches);
 	Buffer repl_buffer(string(), false);
 	repl_buffer.setInternal(true);
 	repl_buffer.setUnnamed(true);
