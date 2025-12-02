@@ -1896,7 +1896,7 @@ void parse_unknown_environment(Parser & p, string const & name, ostream & os,
 	// \large\begin{foo}\huge bar\end{foo}
 	// will not work.
 	bool const specialfont =
-		(parent_context.font != parent_context.normalfont);
+		(parent_context.font != Context::normalfont);
 	bool const was_custom_environment = parent_context.in_custom_environment;
 	parent_context.in_custom_environment = true;
 	bool const new_layout_allowed = parent_context.new_layout_allowed;
@@ -2781,7 +2781,7 @@ void parse_environment(Parser & p, ostream & os, bool outer,
 				arguments.pop_back();
 			// See comment in parse_unknown_environment()
 			bool const specialfont =
-				(parent_context.font != parent_context.normalfont);
+				(parent_context.font != Context::normalfont);
 			bool const was_custom_environment = parent_context.in_custom_environment;
 			parent_context.in_custom_environment = true;
 			bool const new_layout_allowed =
