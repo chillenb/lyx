@@ -4178,7 +4178,7 @@ void GuiDocument::applyView()
 	pdf.backref =
 		backref_opts[pdfSupportModule->backrefCO->currentIndex()];
 	if (pdfSupportModule->fullscreenCB->isChecked())
-		pdf.pagemode = pdf.pagemode_fullscreen;
+		pdf.pagemode = PDFOptions::pagemode_fullscreen;
 	else
 		pdf.pagemode.clear();
 	pdf.quoted_options = pdf.quoted_options_check(
@@ -4847,7 +4847,7 @@ void GuiDocument::paramsToDialog()
 		pdfSupportModule->backrefCO->setCurrentIndex(nn);
 
 	pdfSupportModule->fullscreenCB->setChecked
-		(pdf.pagemode == pdf.pagemode_fullscreen);
+		(pdf.pagemode == PDFOptions::pagemode_fullscreen);
 
 	pdfSupportModule->optionsTE->setPlainText(
 		toqstr(pdf.quoted_options));
