@@ -3517,7 +3517,6 @@ void BufferView::insertLyXFile(FileName const & fname, bool const ignorelang)
 		res = _("Could not insert document %1$s");
 	}
 
-	buffer_.changed(true);
 	// emit message signal.
 	message(bformat(res, disp_fn));
 }
