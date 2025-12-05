@@ -3183,6 +3183,7 @@ bool BufferView::checkDepm(Cursor & cur, Cursor & old)
 
 	// we would rather not do this here, but it needs to be done before
 	// the changed() signal is sent.
+	// FIXME : code using checkDepm will trigger a second full metrics update.
 	buffer_.updateBuffer();
 
 	buffer_.changed(true);

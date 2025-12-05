@@ -5276,8 +5276,7 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 			if (!bvcur.selection())
 				// Set the cursor
 				bvcur.resetAnchor();
-			if (!bv->mouseSetCursor(cur, cmd.modifier() == ShiftModifier))
-				cur.screenUpdateFlags(Update::FitCursor);
+			needsUpdate |= bv->mouseSetCursor(cur, cmd.modifier() == ShiftModifier);
 			// FIXME: move this to mouseSetCursor?
 			if (bvcur.wordSelection() && bvcur.inTexted())
 				expandWordSel(bvcur);
@@ -5302,8 +5301,7 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 				cur.noScreenUpdate();
 				return;
 			}
-			if (!bv->mouseSetCursor(cur, false))
-				cur.screenUpdateFlags(Update::FitCursor);
+			needsUpdate |= bv->mouseSetCursor(cur, false));
 			break;
 		}
 
