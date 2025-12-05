@@ -5301,7 +5301,7 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 				cur.noScreenUpdate();
 				return;
 			}
-			needsUpdate |= bv->mouseSetCursor(cur, false));
+			needsUpdate |= bv->mouseSetCursor(cur, false);
 			break;
 		}
 
