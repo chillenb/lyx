@@ -3230,8 +3230,6 @@ bool BufferView::mouseSetCursor(Cursor & cur, bool const select)
 	d->cursor_.boundary(cur.boundary());
 	d->cursor_.finishUndo();
 	d->cursor_.setCurrentFont();
-	if (update)
-		cur.forceBufferUpdate();
 	return update;
 }
 
