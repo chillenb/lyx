@@ -669,7 +669,9 @@ public:
 	/// something has changed).
 	void updateId();
 
-	/// This function is called when the buffer is changed.
+	/**  Immediately redraw all views of this buffer
+	 * \param update_metrics: if true, recompute metrics first
+	 */
 	void changed(bool update_metrics) const;
 	/**  Update the cursors held by bufferviews iterator after an  insertion
 	 * \param dit : the place where the insertion happened.
