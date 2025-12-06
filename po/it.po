@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: it\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-11-27 00:21-0500\n"
-"PO-Revision-Date: 2025-12-06 12:52+0100\n"
+"PO-Revision-Date: 2025-12-06 13:19+0100\n"
 "Last-Translator: Enrico Forestieri <forenr@lyx.org>\n"
 "Language-Team: italiano <it@li.org>\n"
 "Language: it\n"
@@ -35045,7 +35045,7 @@ msgstr "Testo modificato (area di lavoro, confronto)"
 
 #: src/Color.cpp:341
 msgid "changes - deleted text brightness (workarea)"
-msgstr "Todifiche - Testo eliminato (area di lavoro)"
+msgstr "Modifiche - Testo eliminato (area di lavoro)"
 
 #: src/Color.cpp:342
 msgid "added space markers"
