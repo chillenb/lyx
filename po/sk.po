@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-11-27 00:21-0500\n"
-"PO-Revision-Date: 2025-11-26 10:34+0000\n"
+"POT-Creation-Date: 2025-11-28 11:10+0100\n"
+"PO-Revision-Date: 2025-11-28 11:29+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -4562,7 +4562,7 @@ msgstr ""
 
 #: src/frontends/qt/ui/PrefFileformatsUi.ui:86
 msgid "Sho&w in export menu"
-msgstr "Zobraziť v menu e&xport"
+msgstr "Zobraziť v menu e&xportovať"
 
 #: src/frontends/qt/ui/PrefFileformatsUi.ui:93
 msgid "Vector &graphics format"
@@ -27727,9 +27727,8 @@ msgid "Update master document"
 msgstr "Aktualizovať hlavný dokument"
 
 #: lib/ui/stdtoolbars.inc:117
-#, fuzzy
 msgid "Export"
-msgstr "Exportovať|E"
+msgstr "Exportovať"
 
 #: lib/ui/stdtoolbars.inc:119
 msgid "Enable Forward/Reverse Search"
@@ -33691,7 +33690,7 @@ msgstr "Nemôžem spustiť chktex úspešne."
 #: src/Buffer.cpp:2850
 #, c-format
 msgid "Don't know how to export to format: %1$s"
-msgstr "Žiadne informácie pre export formátu: %1$s"
+msgstr "Žiadne informácie pre exportovanie formátu: %1$s"
 
 #: src/Buffer.cpp:2929
 msgid "Branch state changes in master document"
@@ -33709,7 +33708,7 @@ msgstr ""
 #: src/Buffer.cpp:2999
 #, c-format
 msgid "Error exporting to format: %1$s."
-msgstr "Chyba pri exporte na formát: %1$s."
+msgstr "Chyba pri exportovaní do formátu: %1$s."
 
 #: src/Buffer.cpp:3008
 msgid "Error generating literate programming code."
@@ -33755,7 +33754,7 @@ msgstr ""
 
 #: src/Buffer.cpp:3565 src/insets/InsetBibtex.cpp:349
 msgid "Export Warning!"
-msgstr "Export-Varovanie!"
+msgstr "Export-varovanie!"
 
 #: src/Buffer.cpp:3566
 msgid ""
@@ -33798,7 +33797,7 @@ msgstr "Automatické ukladanie súčasného dokumentu…"
 #: src/Buffer.cpp:4595
 #, c-format
 msgid "No information for exporting the format %1$s."
-msgstr "Žiadne informácie pre export formátu %1$s."
+msgstr "Žiadne informácie o exporte formátu %1$s."
 
 #: src/Buffer.cpp:4599
 #, c-format
