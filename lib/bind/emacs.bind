@@ -74,7 +74,7 @@ Format 5
 #bind "C-z"                    "------"
 
 \bind "C-~S-slash"             "undo"
-\bind "C-~S-underscore"        "undo"
+\bind "C-~S-underscore"        "redo"
 
 \bind "~S-M-quotedbl"		"quote-insert inner"
 \bind "~S-C-quotedbl"		"quote-insert outer auto plain"
