@@ -13,6 +13,8 @@
 
 #include "GuiHyperlink.h"
 
+#include "Validator.h"
+
 #include "qt_helpers.h"
 
 #include "insets/InsetHyperlink.h"
@@ -52,6 +54,9 @@ GuiHyperlink::GuiHyperlink(QWidget * parent) : InsetParamsWidget(parent)
 		this, SIGNAL(changed()));
 	connect(noneRB, SIGNAL(clicked()),
 		this, SIGNAL(changed()));
+
+	targetED->setValidator(new NoNewLineValidator(targetED));
+	nameED->setValidator(new NoNewLineValidator(nameED));
 
 	setFocusProxy(targetED);
 }
