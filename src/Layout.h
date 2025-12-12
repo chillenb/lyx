@@ -173,9 +173,9 @@ public:
 	///
 	std::string const & latexparam() const { return latexparam_; }
 	///
-	docstring leftdelim() const & { return leftdelim_; }
+	docstring const & leftdelim() const { return leftdelim_; }
 	///
-	docstring rightdelim() const & { return rightdelim_; }
+	docstring const & rightdelim() const { return rightdelim_; }
 	///
 	std::string const & breakCmd() const { return layout_break_.first; }
 	///
