@@ -28,12 +28,12 @@ typedef struct AppleSpellerRec * AppleSpeller ;
 AppleSpeller newAppleSpeller(void);
 void freeAppleSpeller(AppleSpeller speller);
 
-SpellCheckResult AppleSpeller_check(AppleSpeller speller, const char * word, const char * lang);
-void AppleSpeller_ignore(AppleSpeller speller, const char * word);
-size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const char * word, const char * lang);
+SpellCheckResult AppleSpeller_check(AppleSpeller speller, const wchar_t * word, const char * lang);
+void AppleSpeller_ignore(AppleSpeller speller, const wchar_t * word);
+size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const wchar_t * word, const char * lang);
 const char * AppleSpeller_getSuggestion(AppleSpeller speller, size_t pos);
-void AppleSpeller_learn(AppleSpeller speller, const char * word);
-void AppleSpeller_unlearn(AppleSpeller speller, const char * word);
+void AppleSpeller_learn(AppleSpeller speller, const wchar_t * word);
+void AppleSpeller_unlearn(AppleSpeller speller, const wchar_t * word);
 int AppleSpeller_hasLanguage(AppleSpeller speller, const char * lang);
 int AppleSpeller_numMisspelledWords(AppleSpeller speller);
 void AppleSpeller_misspelledWord(AppleSpeller speller, int index, int * start, int * length);

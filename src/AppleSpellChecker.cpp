@@ -84,7 +84,7 @@ SpellChecker::Result AppleSpellChecker::check(WordLangTuple const & word,
 	if (!hasDictionary(word.lang()))
 		return NO_DICTIONARY;
 
-	string const word_str = to_utf8(word.word());
+	docstring const word_str = word.word();
 	string const lang = d->languageMap[word.lang()->lang()];
 
 	vector<WordLangTuple>::const_iterator it = docdict.begin();
@@ -114,7 +114,7 @@ void AppleSpellChecker::advanceChangeNumber()
 // add to personal dictionary
 void AppleSpellChecker::insert(WordLangTuple const & word)
 {
-	string const word_str = to_utf8(word.word());
+	docstring const word_str = word.word();
 	AppleSpeller_learn(d->speller, word_str.c_str());
 	LYXERR(Debug::GUI, "learn word: \"" << word.word() << "\"");
 	advanceChangeNumber();
@@ -124,7 +124,7 @@ void AppleSpellChecker::insert(WordLangTuple const & word)
 // remove from personal dictionary
 void AppleSpellChecker::remove(WordLangTuple const & word)
 {
-	string const word_str = to_utf8(word.word());
+	docstring const word_str = word.word();
 	AppleSpeller_unlearn(d->speller, word_str.c_str());
 	LYXERR(Debug::GUI, "unlearn word: \"" << word.word() << "\"");
 	advanceChangeNumber();
@@ -134,7 +134,7 @@ void AppleSpellChecker::remove(WordLangTuple const & word)
 // ignore for session
 void AppleSpellChecker::accept(WordLangTuple const & word)
 {
-	string const word_str = to_utf8(word.word());
+	docstring const word_str = word.word();
 	AppleSpeller_ignore(d->speller, word_str.c_str());
 	LYXERR(Debug::GUI, "ignore word: \"" << word.word() << "\"");
 	advanceChangeNumber();
@@ -145,7 +145,7 @@ void AppleSpellChecker::suggest(WordLangTuple const & wl,
 	docstring_list & suggestions)
 {
 	suggestions.clear();
-	string const word_str = to_utf8(wl.word());
+	docstring const word_str = wl.word();
 	size_t num = AppleSpeller_makeSuggestion(d->speller,
 					word_str.c_str(), wl.lang()->code().c_str());
 	for (size_t i = 0; i < num; i++) {

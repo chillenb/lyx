@@ -12,6 +12,8 @@
 
 #import <AvailabilityMacros.h>
 
+#include <wchar.h>
+
 #include "support/AppleSpeller.h"
 
 typedef struct AppleSpellerRec {
@@ -48,9 +50,18 @@ void freeAppleSpeller(AppleSpeller speller)
 }
 
 
-static NSString * toString(const char * word)
+static NSString * toString(const char * lang)
 {
-	return [[NSString alloc] initWithBytes:word length:strlen(word) encoding:NSUTF8StringEncoding];
+	return [[NSString alloc] initWithBytes:lang length:strlen(lang) encoding:NSUTF8StringEncoding];
+}
+
+
+NSString * wcharToString(const wchar_t* text, NSUInteger length)
+{
+	BOOL lendian = NSHostByteOrder() == NS_LittleEndian;
+	NSUInteger bytes = length*sizeof(wchar_t);
+
+	return [[NSString alloc] initWithBytes:text length:bytes encoding:(lendian ? NSUTF32LittleEndianStringEncoding : NSUTF32BigEndianStringEncoding)];
 }
 
 
@@ -77,22 +88,70 @@ static NSString * toLanguage(AppleSpeller speller, const char * lang)
 }
 
 
-SpellCheckResult AppleSpeller_check(AppleSpeller speller, const char * word, const char * lang)
+BOOL surrorate(unichar curr, unichar next) {
+	return 0xD800 <= curr && curr <= 0xDBFF &&
+		0xDC00 <= next && next <= 0xDFFF;
+}
+
+
+NSArray * AppleSpeller_adjustPositions(NSArray * misspelled,
+	NSString * text, NSUInteger length)
+{
+	NSUInteger r = 0;
+	NSUInteger i = 0;
+	NSUInteger rcount = [misspelled count];
+	NSRange range = [[misspelled objectAtIndex:r] rangeValue];
+	NSUInteger rstart = range.location;
+	NSUInteger rend   = range.location+range.length;
+	NSUInteger asurrogates = 0;
+	NSUInteger rsurrogates = 0;
+	NSMutableArray * result = [NSMutableArray arrayWithCapacity:rcount+1];
+	unichar curr = [text characterAtIndex:i];
+
+	while (i < length-1 && r < rcount) {
+		if (i == rstart) {
+			range.location -= asurrogates;
+			rsurrogates = 0;
+		} else if (i == rend) {
+			range.length -= rsurrogates;
+			[result addObject:[NSValue valueWithRange:range]];
+			if (++r < rcount) {
+				range = [[misspelled objectAtIndex:r] rangeValue];
+				rstart = range.location;
+				rend   = range.location+range.length;
+			}
+		}
+		unichar prev = curr;
+		curr = [text characterAtIndex:++i];
+		if (surrorate(prev, curr) && i < length-1) {
+			curr = [text characterAtIndex:++i];
+			asurrogates++;
+			rsurrogates++;
+		}
+	}
+	return result;
+}
+
+
+SpellCheckResult AppleSpeller_check(AppleSpeller speller,
+	const wchar_t * word, const char * lang)
 {
 	if (!speller->checker || !lang || !word)
 		return SPELL_CHECK_FAILED;
 
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * word_ = toString(word);
+	NSUInteger wlength = wcslen(word);
+	NSString * word_ = wcharToString(word, wlength);
 	NSString * lang_ = toString(lang);
 	SpellCheckResult result = SPELL_CHECK_FAILED;
-	int start = 0;
-	int length = [word_ length];
+	NSUInteger start = 0;
+	NSUInteger ulength = [word_ length];
 
 	[speller->misspelled release];
 	speller->misspelled = nil;
+	BOOL surrogates = ulength > wlength;
 
-	while (result == SPELL_CHECK_FAILED && start < length) {
+	while (result == SPELL_CHECK_FAILED && start < ulength) {
 		NSRange match = [speller->checker
 			checkSpellingOfString:word_
 			startingAt:start
@@ -117,6 +176,11 @@ SpellCheckResult AppleSpeller_check(AppleSpeller speller, const char * word, con
 			start = match.location + match.length + 1;
 		}
 	}
+	if ([speller->misspelled count] > 0 && surrogates) {
+		NSArray * misspelled = AppleSpeller_adjustPositions(speller->misspelled, word_, ulength);
+		[speller->misspelled release];
+		speller->misspelled = [[NSArray arrayWithArray:misspelled] retain];
+	}
 
 	[word_ release];
 	[lang_ release];
@@ -126,10 +190,10 @@ SpellCheckResult AppleSpeller_check(AppleSpeller speller, const char * word, con
 }
 
 
-void AppleSpeller_ignore(AppleSpeller speller, const char * word)
+void AppleSpeller_ignore(AppleSpeller speller, const wchar_t * word)
 {
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * word_ = toString(word);
+	NSString * word_ = wcharToString(word, wcslen(word));
 
 	[speller->checker ignoreWord:word_ inSpellDocumentWithTag:(speller->doctag)];
 
@@ -138,13 +202,13 @@ void AppleSpeller_ignore(AppleSpeller speller, const char * word)
 }
 
 
-size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const char * word, const char * lang)
+size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const wchar_t * word, const char * lang)
 {
 	if (!speller->checker || !word || !lang)
 		return 0;
 
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * word_ = toString(word);
+	NSString * word_ = wcharToString(word, wcslen(word));
 	NSString * lang_ = toString(lang);
 	NSArray * result ;
 
@@ -177,10 +241,10 @@ const char * AppleSpeller_getSuggestion(AppleSpeller speller, size_t pos)
 }
 
 
-void AppleSpeller_learn(AppleSpeller speller, const char * word)
+void AppleSpeller_learn(AppleSpeller speller, const wchar_t * word)
 {
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * word_ = toString(word);
+	NSString * word_ = wcharToString(word, wcslen(word));
 
 	if ([NSSpellChecker instancesRespondToSelector:@selector(learnWord:)])
 		[speller->checker learnWord:word_];
@@ -190,10 +254,10 @@ void AppleSpeller_learn(AppleSpeller speller, const char * word)
 }
 
 
-void AppleSpeller_unlearn(AppleSpeller speller, const char * word)
+void AppleSpeller_unlearn(AppleSpeller speller, const wchar_t * word)
 {
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
-	NSString * word_ = toString(word);
+	NSString * word_ = wcharToString(word, wcslen(word));
 
 	if ([NSSpellChecker instancesRespondToSelector:@selector(unlearnWord:)])
 		[speller->checker unlearnWord:word_];
