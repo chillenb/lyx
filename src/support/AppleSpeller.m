@@ -16,11 +16,7 @@
 
 typedef struct AppleSpellerRec {
 	NSSpellChecker * checker;
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 	NSInteger doctag;
-#else
-	int doctag;
-#endif
 	NSArray * suggestions;
 	NSArray * misspelled;
 } AppleSpellerRec ;
@@ -61,7 +57,6 @@ static NSString * toString(const char * word)
 static NSString * toLanguage(AppleSpeller speller, const char * lang)
 {
 	NSString * result = nil;
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	NSString * lang_ = toString(lang);
 	if ([NSSpellChecker instancesRespondToSelector:@selector(availableLanguages)]) {
@@ -78,7 +73,6 @@ static NSString * toLanguage(AppleSpeller speller, const char * lang)
 	}
 	[lang_ release];
 	[pool release];
-#endif
 	return result;
 }
 
@@ -114,11 +108,7 @@ SpellCheckResult AppleSpeller_check(AppleSpeller speller, const char * word, con
 					result = SPELL_CHECK_LEARNED;
 			}
 		} else {
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 			NSUInteger capacity = [speller->misspelled count] + 1;
-#else
-			int capacity = [speller->misspelled count] + 1;
-#endif
 			NSMutableArray * misspelled = [NSMutableArray arrayWithCapacity:capacity];
 			[misspelled addObjectsFromArray:speller->misspelled];
 			[misspelled addObject:[NSValue valueWithRange:match]];
@@ -158,8 +148,6 @@ size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const char * word, cons
 	NSString * lang_ = toString(lang);
 	NSArray * result ;
 
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1060)
-	// Mac OS X 10.6 only
 	NSInteger slen = [word_ length];
 	NSRange range = { 0, slen };
 
@@ -167,10 +155,6 @@ size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const char * word, cons
 		inString:word_
 		language:lang_
 		inSpellDocumentWithTag:speller->doctag];
-#else
-	[speller->checker setLanguage:lang_];
-	result = [speller->checker guessesForWord:word_];
-#endif
 
 	[word_ release];
 	[lang_ release];
@@ -195,7 +179,6 @@ const char * AppleSpeller_getSuggestion(AppleSpeller speller, size_t pos)
 
 void AppleSpeller_learn(AppleSpeller speller, const char * word)
 {
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	NSString * word_ = toString(word);
 
@@ -204,13 +187,11 @@ void AppleSpeller_learn(AppleSpeller speller, const char * word)
 
 	[word_ release];
 	[pool release];
-#endif
 }
 
 
 void AppleSpeller_unlearn(AppleSpeller speller, const char * word)
 {
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 	NSAutoreleasePool * pool = [[NSAutoreleasePool alloc] init];
 	NSString * word_ = toString(word);
 
@@ -219,7 +200,6 @@ void AppleSpeller_unlearn(AppleSpeller speller, const char * word)
 
 	[word_ release];
 	[pool release];
-#endif
 }
 
 
@@ -231,11 +211,7 @@ int AppleSpeller_numMisspelledWords(AppleSpeller speller)
 
 void AppleSpeller_misspelledWord(AppleSpeller speller, int index, int * start, int * length)
 {
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 	NSRange range = [[speller->misspelled objectAtIndex:(NSUInteger)index] rangeValue];
-#else
-	NSRange range = [[speller->misspelled objectAtIndex:index] rangeValue];
-#endif
 	*start = range.location;
 	*length = range.length;
 }
@@ -243,9 +219,5 @@ void AppleSpeller_misspelledWord(AppleSpeller speller, int index, int * start, i
 
 int AppleSpeller_hasLanguage(AppleSpeller speller, const char * lang)
 {
-#if defined(__MAC_OS_X_VERSION_MAX_ALLOWED) && (__MAC_OS_X_VERSION_MAX_ALLOWED >= 1050)
 	return toLanguage(speller, lang) != nil;
-#else
-	return true;
-#endif
 }
