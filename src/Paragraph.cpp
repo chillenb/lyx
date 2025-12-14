@@ -5278,13 +5278,21 @@ void Paragraph::Private::markMisspelledWords(
 	pos_type numskipped = 0;
 	SkipPositionsIterator it = skips.begin();
 	SkipPositionsIterator et = skips.end();
+	int wsize = word.size();
 	for (int index = 0; index < nerrors; ++index) {
 		pos_type wstart;
 		int wlen = 0;
 		speller->misspelledWord(index, wstart, wlen);
 		/// should not happen if speller supports range checks
-		if (!wlen)
+		if (0 == wlen)
 			continue;
+		if (wstart + wlen > wsize) {
+			LYXERR(Debug::GUI, "OUTSIDE of word: \"" <<
+				   word << "\" [" <<
+				   wstart << ".." << (wstart + wlen) << "]" <<
+				   " word size: " << wsize);
+			break;
+		}
 		WordLangTuple const candidate(word.substr(wstart, wlen), lang);
 		wstart += first + numskipped;
 		if (snext < wstart) {
