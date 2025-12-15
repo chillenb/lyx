@@ -208,7 +208,7 @@ bool EnchantChecker::hasDictionary(Language const * lang) const
 }
 
 
-int EnchantChecker::numDictionaries() const
+size_t EnchantChecker::numDictionaries() const
 {
 	return d->spellers_.size();
 }

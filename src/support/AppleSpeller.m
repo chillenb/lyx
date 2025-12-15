@@ -267,21 +267,21 @@ void AppleSpeller_unlearn(AppleSpeller speller, const wchar_t * word)
 }
 
 
-int AppleSpeller_numMisspelledWords(AppleSpeller speller)
+size_t AppleSpeller_numMisspelledWords(AppleSpeller speller)
 {
 	return [speller->misspelled count];
 }
 
 
-void AppleSpeller_misspelledWord(AppleSpeller speller, int index, int * start, int * length)
+void AppleSpeller_misspelledWord(AppleSpeller speller, size_t index, size_t * start, size_t * length)
 {
-	NSRange range = [[speller->misspelled objectAtIndex:(NSUInteger)index] rangeValue];
+	NSRange range = [[speller->misspelled objectAtIndex:index] rangeValue];
 	*start = range.location;
 	*length = range.length;
 }
 
 
-int AppleSpeller_hasLanguage(AppleSpeller speller, const char * lang)
+bool AppleSpeller_hasLanguage(AppleSpeller speller, const char * lang)
 {
 	return toLanguage(speller, lang) != nil;
 }

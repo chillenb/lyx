@@ -177,9 +177,9 @@ bool AppleSpellChecker::hasDictionary(Language const * lang) const
 }
 
 
-int AppleSpellChecker::numDictionaries() const
+size_t AppleSpellChecker::numDictionaries() const
 {
-	int result = 0;
+	size_t result = 0;
 	map<string, string>::const_iterator it = d->languageMap.begin();
 	map<string, string>::const_iterator et = d->languageMap.end();
 
@@ -191,17 +191,17 @@ int AppleSpellChecker::numDictionaries() const
 }
 
 
-int AppleSpellChecker::numMisspelledWords() const
+size_t AppleSpellChecker::numMisspelledWords() const
 {
 	return AppleSpeller_numMisspelledWords(d->speller);
 }
 
 
-void AppleSpellChecker::misspelledWord(int index, pos_type & start, int & length) const
+void AppleSpellChecker::misspelledWord(size_t index, pos_type & start, size_t & length) const
 {
-	int start_ = start;
+	size_t start_ = start;
 	AppleSpeller_misspelledWord(d->speller, index, &start_, &length);
-	start = (pos_type)start_;
+	start = start_;
 }
 
 

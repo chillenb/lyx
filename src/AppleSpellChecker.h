@@ -32,10 +32,10 @@ public:
 	void remove(WordLangTuple const &) override;
 	void accept(WordLangTuple const &) override;
 	bool hasDictionary(Language const * lang) const override;
-	int numDictionaries() const override;
+	size_t numDictionaries() const override;
 	bool canCheckParagraph() const override { return true; }
-	int numMisspelledWords() const override;
-	void misspelledWord(int index, pos_type & start, int & length) const override;
+	size_t numMisspelledWords() const override;
+	void misspelledWord(size_t index, pos_type & start, size_t & length) const override;
 	docstring const error() override;
 	void advanceChangeNumber() override;
 	//@}

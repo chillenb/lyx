@@ -5274,14 +5274,14 @@ void Paragraph::Private::markMisspelledWords(
 	pos_type snext = first;
 	SpellChecker * speller = theSpellChecker();
 	// locate and enumerate the error positions
-	int nerrors = speller->numMisspelledWords();
+	size_t nerrors = speller->numMisspelledWords();
 	pos_type numskipped = 0;
 	SkipPositionsIterator it = skips.begin();
 	SkipPositionsIterator et = skips.end();
-	int wsize = word.size();
-	for (int index = 0; index < nerrors; ++index) {
+	size_t wsize = word.size();
+	for (size_t index = 0; index < nerrors; ++index) {
 		pos_type wstart;
-		int wlen = 0;
+		size_t wlen = 0;
 		speller->misspelledWord(index, wstart, wlen);
 		/// should not happen if speller supports range checks
 		if (0 == wlen)

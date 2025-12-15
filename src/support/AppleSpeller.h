@@ -34,9 +34,9 @@ size_t AppleSpeller_makeSuggestion(AppleSpeller speller, const wchar_t * word, c
 const char * AppleSpeller_getSuggestion(AppleSpeller speller, size_t pos);
 void AppleSpeller_learn(AppleSpeller speller, const wchar_t * word);
 void AppleSpeller_unlearn(AppleSpeller speller, const wchar_t * word);
-int AppleSpeller_hasLanguage(AppleSpeller speller, const char * lang);
-int AppleSpeller_numMisspelledWords(AppleSpeller speller);
-void AppleSpeller_misspelledWord(AppleSpeller speller, int index, int * start, int * length);
+bool AppleSpeller_hasLanguage(AppleSpeller speller, const char * lang);
+size_t AppleSpeller_numMisspelledWords(AppleSpeller speller);
+void AppleSpeller_misspelledWord(AppleSpeller speller, size_t index, size_t * start, size_t * length);
 
 #ifdef __cplusplus
 } // extern "C"

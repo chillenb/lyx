@@ -66,7 +66,7 @@ struct AspellChecker::Private
 
 	bool isValidDictionary(AspellConfig * config,
 			string const & lang, string const & variety);
-	int numDictionaries() const;
+	size_t numDictionaries() const;
 	bool checkAspellData(AspellConfig * config,
 		string const & basepath, string const & datapath, string const & dictpath,
 		string const & lang, string const & variety);
@@ -325,9 +325,9 @@ AspellSpeller * AspellChecker::Private::speller(Language const * lang)
 }
 
 
-int AspellChecker::Private::numDictionaries() const
+size_t AspellChecker::Private::numDictionaries() const
 {
-	int result = 0;
+	size_t result = 0;
 	Spellers::const_iterator it = spellers_.begin();
 	Spellers::const_iterator et = spellers_.end();
 
@@ -531,7 +531,7 @@ bool AspellChecker::hasDictionary(Language const * lang) const
 }
 
 
-int AspellChecker::numDictionaries() const
+size_t AspellChecker::numDictionaries() const
 {
 	return d->numDictionaries();
 }

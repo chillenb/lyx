@@ -62,7 +62,7 @@ struct HunspellChecker::Private
 	bool haveLanguageFiles(string const & hpath);
 	bool haveDictionary(Language const * lang, string & hpath);
 	bool haveDictionary(Language const * lang);
-	int numDictionaries() const;
+	size_t numDictionaries() const;
 	Hunspell * addSpeller(Language const * lang, string & hpath);
 	Hunspell * addSpeller(Language const * lang);
 	Hunspell * speller(Language const * lang);
@@ -267,9 +267,9 @@ Hunspell * HunspellChecker::Private::addSpeller(Language const * lang)
 }
 
 
-int HunspellChecker::Private::numDictionaries() const
+size_t HunspellChecker::Private::numDictionaries() const
 {
-	int result = 0;
+	size_t result = 0;
 	Spellers::const_iterator it = spellers_.begin();
 	Spellers::const_iterator et = spellers_.end();
 
@@ -474,7 +474,7 @@ bool HunspellChecker::hasDictionary(Language const * lang) const
 }
 
 
-int HunspellChecker::numDictionaries() const
+size_t HunspellChecker::numDictionaries() const
 {
 	return d->numDictionaries();
 }

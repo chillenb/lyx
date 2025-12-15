@@ -86,18 +86,18 @@ public:
 	virtual bool hasDictionary(Language const *) const = 0;
 
 	/// how many valid dictionaries were found
-	virtual int numDictionaries() const = 0;
+	virtual size_t numDictionaries() const = 0;
 
 	/// if speller can spell check whole paragraph return true
 	virtual bool canCheckParagraph() const { return false; }
 
 	/// count of misspelled words
-	virtual int numMisspelledWords() const { return 0; }
+	virtual size_t numMisspelledWords() const { return 0; }
 
 	/// start position and length of misspelled word at index
 	virtual void misspelledWord(
-		int /* index */,
-		pos_type & start, int & length) const
+		size_t /* index */,
+		pos_type & start, size_t & length) const
 	{
 		/// index is used here to make the compiler happy
 		start = 0;

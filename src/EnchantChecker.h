@@ -40,7 +40,7 @@ public:
 	void remove(WordLangTuple const &) override;
 	void accept(WordLangTuple const &) override;
 	bool hasDictionary(Language const * lang) const override;
-	int numDictionaries() const override;
+	size_t numDictionaries() const override;
 	docstring const error() override;
 	void advanceChangeNumber() override;
 	///@}
