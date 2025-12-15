@@ -806,6 +806,9 @@ else
 
       # TODO: turn this back on once we figure out the issue with the -DNDEBUG.
       #
+      # update (2025-12-15): Scott cannot reproduce on GCC 15.0.1 (or on Clang).
+      #                      Kornel can reproduce on GCC 14.
+      #
       # We may want to set this flag depending on whether we also use -DNDEBUG.
       # See here for details:
       #   https://www.mail-archive.com/search?l=mid&q=pvnhaildjqwx3woyixeo7ap3cpewfi4zggh33wxksablr47uqk%40gxd336xvqgmt
