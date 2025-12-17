@@ -759,7 +759,7 @@ void TextMetrics::setRowAlignment(Row & row, int width) const
 int TextMetrics::labelFill(Row const & row) const
 {
 	Paragraph const & par = text_->getPar(row.pit());
-	LBUFERR(par.beginOfBody() > 0 || par.isEnvSeparator(0));
+	LBUFERR(par.beginOfBody() > 0 || par.isEnvSeparator(0) || par.isNewline(0));
 
 	int w = 0;
 	// iterate over elements before main body (except the last one,
