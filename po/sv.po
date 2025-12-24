@@ -428,20 +428,18 @@
 #   wrap               ? -> svep, varva? bryt? (automatisk) radbrytning? linda in? att svepa runt
 #
 # Jim Rotmalm <jim.rotmalm@gmail.com>, 2010-2022.
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: LyX 2.4.3\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-11-27 00:21-0500\n"
-"PO-Revision-Date: 2025-10-06 16:43+0200\n"
+"POT-Creation-Date: 2025-12-24 22:58+0100\n"
+"PO-Revision-Date: 2025-12-21 17:02+0100\n"
 "Last-Translator: Påvel Nicklasson <pavelnicklasson@bahnhof.se>\n"
 "Language-Team: Swedish <lyx-docs@lists.lyx.org>\n"
 "Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 3.4.2\n"
 "X-Generator: Poedit 3.4.2\n"
 
 #: src/frontends/qt/ui/AboutUi.ui:27
@@ -474,11 +472,11 @@ msgstr "[[do]]Ö&ppna"
 
 #: src/frontends/qt/ui/AboutUi.ui:222
 msgid "Temporary directory"
-msgstr "Tillfällig katalog"
+msgstr "&Tillfällig katalog"
 
 #: src/frontends/qt/ui/AboutUi.ui:253
 msgid "Open temporary directory in file browser"
-msgstr "Öppna tillfällig katalog i filhanterare"
+msgstr "Öppna tillfällig katalog i filhanteraren"
 
 #: src/frontends/qt/ui/AboutUi.ui:301
 msgid "Credits"
@@ -655,7 +653,7 @@ msgstr "Åte&rställ"
 
 #: src/frontends/qt/ui/BiblioUi.ui:320
 msgid "Select this if you want to split your bibliography into sections"
-msgstr "Välj detta om du vill dela upp din bibliografi in i avsnitt"
+msgstr "Välj detta om du vill dela upp din bibliografi i avsnitt"
 
 #: src/frontends/qt/ui/BiblioUi.ui:323
 msgid "Subdivided bibli&ography"
@@ -739,11 +737,12 @@ msgstr "&Lägg till lokal..."
 
 #: src/frontends/qt/ui/BibtexUi.ui:91
 msgid "Transfer an absolute local path to a relative one or vice versa"
-msgstr "Överför en absolut lokal sökväg till en relativ eller vice versa"
+msgstr ""
+"Överför en absolut lokal sökväg till en relativ sökväg eller vice versa"
 
 #: src/frontends/qt/ui/BibtexUi.ui:94 src/frontends/qt/GuiBibtex.cpp:417
 msgid "&Make Relative"
-msgstr "&Gör relativ"
+msgstr "&Gör Relativ"
 
 #: src/frontends/qt/ui/BibtexUi.ui:101
 msgid "Inherit bibliography databases from the master document"
@@ -755,7 +754,7 @@ msgstr "&Ärv från huvuddokument"
 
 #: src/frontends/qt/ui/BibtexUi.ui:111
 msgid "Remove the selected database"
-msgstr "Ta bort vald databas"
+msgstr "Ta bort markerad databas"
 
 #: src/frontends/qt/ui/BibtexUi.ui:114 src/frontends/qt/ui/CitationUi.ui:159
 #: src/frontends/qt/ui/RefUi.ui:199
@@ -1029,7 +1028,7 @@ msgstr "Sträck"
 
 #: src/frontends/qt/ui/BoxUi.ui:275 src/frontends/qt/ui/ListingsUi.ui:113
 #: src/frontends/qt/ui/TabularUi.ui:343 src/frontends/qt/ui/TabularUi.ui:1855
-#: src/frontends/qt/ui/WrapUi.ui:47 src/frontends/qt/GuiDocument.cpp:1667
+#: src/frontends/qt/ui/WrapUi.ui:47 src/frontends/qt/GuiDocument.cpp:1671
 #: src/frontends/qt/GuiParagraph.cpp:111 src/frontends/qt/GuiTabular.cpp:1105
 msgid "Left"
 msgstr "Vänster"
@@ -1042,7 +1041,7 @@ msgstr "Centrerad"
 
 #: src/frontends/qt/ui/BoxUi.ui:285 src/frontends/qt/ui/ListingsUi.ui:118
 #: src/frontends/qt/ui/TabularUi.ui:353 src/frontends/qt/ui/WrapUi.ui:52
-#: src/frontends/qt/GuiDocument.cpp:1669 src/frontends/qt/GuiParagraph.cpp:112
+#: src/frontends/qt/GuiDocument.cpp:1673 src/frontends/qt/GuiParagraph.cpp:112
 #: src/frontends/qt/GuiTabular.cpp:1107
 msgid "Right"
 msgstr "Höger"
@@ -1084,7 +1083,7 @@ msgid "Size value"
 msgstr "Storleksvärde"
 
 #: src/frontends/qt/ui/BoxUi.ui:431 src/frontends/qt/GuiBranches.cpp:54
-#: src/frontends/qt/GuiDocument.cpp:1420
+#: src/frontends/qt/GuiDocument.cpp:1424
 msgid "Color"
 msgstr "Färg"
 
@@ -1207,7 +1206,7 @@ msgstr "Lägg till a&lla"
 #: src/frontends/qt/ui/BranchesUnknownUi.ui:58 src/Buffer.cpp:1518
 #: src/Buffer.cpp:4873 src/Buffer.cpp:4983 src/LyXVC.cpp:114 src/LyXVC.cpp:309
 #: src/buffer_funcs.cpp:56 src/frontends/qt/GuiBranches.cpp:256
-#: src/frontends/qt/GuiClipboard.cpp:251 src/frontends/qt/GuiDocument.cpp:3058
+#: src/frontends/qt/GuiClipboard.cpp:251 src/frontends/qt/GuiDocument.cpp:3062
 #: src/frontends/qt/GuiParagraph.cpp:173 src/frontends/qt/GuiPrefs.cpp:4283
 #: src/frontends/qt/GuiPrefs.cpp:4307 src/frontends/qt/GuiView.cpp:3128
 #: src/frontends/qt/GuiView.cpp:3291 src/frontends/qt/GuiView.cpp:3521
@@ -1256,15 +1255,15 @@ msgstr "&Storlek:"
 #: src/frontends/qt/GuiCharacter.cpp:188 src/frontends/qt/GuiDocument.cpp:110
 #: src/frontends/qt/GuiDocument.cpp:898 src/frontends/qt/GuiDocument.cpp:912
 #: src/frontends/qt/GuiDocument.cpp:934 src/frontends/qt/GuiDocument.cpp:1105
-#: src/frontends/qt/GuiDocument.cpp:1190 src/frontends/qt/GuiDocument.cpp:1240
-#: src/frontends/qt/GuiDocument.cpp:1253 src/frontends/qt/GuiDocument.cpp:1524
-#: src/frontends/qt/GuiDocument.cpp:1551 src/frontends/qt/GuiDocument.cpp:1660
-#: src/frontends/qt/GuiDocument.cpp:1668 src/frontends/qt/GuiDocument.cpp:2741
-#: src/frontends/qt/GuiDocument.cpp:2866 src/frontends/qt/GuiDocument.cpp:2869
-#: src/frontends/qt/GuiDocument.cpp:2872 src/frontends/qt/GuiDocument.cpp:2904
-#: src/frontends/qt/GuiDocument.cpp:2915 src/frontends/qt/GuiDocument.cpp:2926
-#: src/frontends/qt/GuiDocument.cpp:3013 src/frontends/qt/GuiDocument.cpp:3627
-#: src/frontends/qt/GuiDocument.cpp:5206 src/frontends/qt/GuiExternal.cpp:70
+#: src/frontends/qt/GuiDocument.cpp:1190 src/frontends/qt/GuiDocument.cpp:1244
+#: src/frontends/qt/GuiDocument.cpp:1257 src/frontends/qt/GuiDocument.cpp:1528
+#: src/frontends/qt/GuiDocument.cpp:1555 src/frontends/qt/GuiDocument.cpp:1664
+#: src/frontends/qt/GuiDocument.cpp:1672 src/frontends/qt/GuiDocument.cpp:2745
+#: src/frontends/qt/GuiDocument.cpp:2870 src/frontends/qt/GuiDocument.cpp:2873
+#: src/frontends/qt/GuiDocument.cpp:2876 src/frontends/qt/GuiDocument.cpp:2908
+#: src/frontends/qt/GuiDocument.cpp:2919 src/frontends/qt/GuiDocument.cpp:2930
+#: src/frontends/qt/GuiDocument.cpp:3017 src/frontends/qt/GuiDocument.cpp:3631
+#: src/frontends/qt/GuiDocument.cpp:5210 src/frontends/qt/GuiExternal.cpp:70
 #: src/frontends/qt/GuiGraphics.cpp:67 src/frontends/qt/GuiIndex.cpp:44
 #: src/frontends/qt/GuiIndices.cpp:57 src/frontends/qt/GuiListings.cpp:153
 #: src/frontends/qt/GuiListings.cpp:160 src/frontends/qt/GuiPrefs.cpp:3273
@@ -1463,7 +1462,7 @@ msgstr "S&pråk:"
 #: lib/layouts/europasscv.layout:441 lib/layouts/europasscv.layout:476
 #: lib/layouts/europasscv.layout:483 lib/layouts/europecv.layout:322
 #: lib/layouts/europecv.layout:328 lib/layouts/moderncv.layout:581
-#: src/frontends/qt/GuiDocument.cpp:1902 src/frontends/qt/GuiPrefs.cpp:3224
+#: src/frontends/qt/GuiDocument.cpp:1906 src/frontends/qt/GuiPrefs.cpp:3224
 #: src/frontends/qt/Menus.cpp:1069
 msgid "Language"
 msgstr "Språk"
@@ -1623,7 +1622,7 @@ msgstr "Alla författare"
 
 #: src/frontends/qt/ui/ColorUi.ui:39
 msgid "Alternating table row colors"
-msgstr "Växlande tabellradsfärger"
+msgstr "Växlande färger på tabellraderna"
 
 #: src/frontends/qt/ui/ColorUi.ui:47 src/frontends/qt/ui/TabularUi.ui:1514
 msgid "O&dd rows:"
@@ -1652,7 +1651,7 @@ msgstr "Si&da:"
 #: src/frontends/qt/ui/ColorUi.ui:234 src/frontends/qt/GuiView.cpp:1278
 #: src/frontends/qt/GuiView.cpp:1310
 msgid "Custom Colors"
-msgstr "Anpassade färger"
+msgstr "Anpassad färger"
 
 #: src/frontends/qt/ui/ColorUi.ui:244 src/frontends/qt/ui/IndicesUi.ui:158
 #: src/frontends/qt/ui/ProgressViewUi.ui:171
@@ -1684,8 +1683,8 @@ msgid ""
 "Enter the name of the desired color (only ASCII characters and no space "
 "allowed) and hit \"Add\""
 msgstr ""
-"Ange namnet på önskad färg (endast ASCII-tecken och inga blanksteg) och "
-"klicka \"Lägg till\""
+"Ange namnet på önskad färg (endast ASCII-tecken och inga mellanslag "
+"tillåtna) och klicka på ”Lägg till”."
 
 #: src/frontends/qt/ui/ColorUi.ui:321
 msgid "Add a new color to the list"
@@ -1701,15 +1700,15 @@ msgstr "Typsnittsfärger"
 
 #: src/frontends/qt/ui/ColorUi.ui:357
 msgid "Ma&in text:"
-msgstr "H&uvudtext:"
+msgstr "Hu&vudtext:"
 
 #: src/frontends/qt/ui/ColorUi.ui:367
 msgid "Greyed-o&ut notes:"
-msgstr "Nedtonade n&oter:"
+msgstr "Gråmarkerade noter:"
 
 #: src/frontends/qt/ui/ColorUi.ui:430
 msgid "Table &border color:"
-msgstr "Ta&bellkantsfärg:"
+msgstr "Ta&bell och kantfärg:"
 
 #: src/frontends/qt/ui/CompareHistoryUi.ui:23
 msgid "Compare Revisions"
@@ -1816,7 +1815,7 @@ msgid ""
 "If checked, modification affects the counter only in the LyX workarea, not "
 "in the output"
 msgstr ""
-"Om markerad, påverkar ändringen räknaren endast i LyX arbetsområde, inte i "
+"Om markerat, påverkar ändringen räknaren endast i LyX arbetsområde, inte i "
 "utmatningen"
 
 #: src/frontends/qt/ui/CounterUi.ui:85
@@ -2082,7 +2081,7 @@ msgstr "Sök"
 #: src/frontends/qt/ui/FindAndReplaceUi.ui:55
 #: src/frontends/qt/ui/SearchUi.ui:120
 msgid "&Find what:"
-msgstr "Sök v&ad:"
+msgstr "&Hitta vad:"
 
 #: src/frontends/qt/ui/FindAndReplaceUi.ui:92
 msgid "Replace &with:"
@@ -2789,8 +2788,8 @@ msgstr "Länktyp"
 
 #: src/frontends/qt/ui/HyperlinkUi.ui:136
 msgid ""
-"Link to the web or any other target with an \"authority\" component "
-"(i.e., :// in the URI)"
+"Link to the web or any other target with an \"authority\" component (i."
+"e., :// in the URI)"
 msgstr ""
 "Länk till Nätet eller något annat mål med en \"auktoritets\" komponent (t. "
 "ex. , :// i URI:n)"
@@ -3115,7 +3114,7 @@ msgstr "Ange namnet på standardhuvuddokumentet"
 
 #: src/frontends/qt/ui/LaTeXUi.ui:188
 msgid "Formatted cross-references"
-msgstr "Formaterad korsreferens"
+msgstr "Formaterade korsreferenser"
 
 #: src/frontends/qt/ui/LaTeXUi.ui:196
 msgid "&Format packages:"
@@ -3201,7 +3200,7 @@ msgstr ""
 
 #: src/frontends/qt/ui/LanguageUi.ui:204
 msgid "Language &Options"
-msgstr "Spr&åkinställningar"
+msgstr "Språk&alternativ"
 
 #: src/frontends/qt/ui/LineUi.ui:23
 msgid "Of&fset:"
@@ -3756,7 +3755,7 @@ msgstr "Nomenklaturst&il:"
 
 #: src/frontends/qt/ui/NomenclUi.ui:52
 msgid "Add the nomenclature list to the table of contents"
-msgstr "Lägg till nomenklaturlistan i innehållsförteckningen"
+msgstr "Lägg till nomenklaturlista till innehållsförteckningen"
 
 #: src/frontends/qt/ui/NomenclUi.ui:55
 msgid "Add to &table of contents"
@@ -3768,12 +3767,12 @@ msgid ""
 "nomenclature where x is the number of the last equation in front of the "
 "corresponding nomenclature"
 msgstr ""
-"Frasen \", se ekvation (x)\" läggs till varje post i nomenklaturen där x är "
+"Frasen \", se ekvation (x)” läggs till varje post i nomenklaturen där x är "
 "numret på den sista ekvationen framför motsvarande nomenklatur"
 
 #: src/frontends/qt/ui/NomenclUi.ui:65
 msgid "Add &equation references"
-msgstr "Lägg till &ekvationsreferenser"
+msgstr "Lägg till &ekvationsreferens"
 
 #: src/frontends/qt/ui/NomenclUi.ui:72
 msgid ""
@@ -3781,7 +3780,7 @@ msgid ""
 "where x is the number of the page on which the corresponding nomenclature is "
 "used"
 msgstr ""
-"Frasen \", se sidan x\" läggs till varje post i nomenklaturen där x är "
+"Frasen ”, se sidan x” läggs till varje uppslag i nomenklaturen, där x är "
 "numret på den sida där motsvarande nomenklatur används"
 
 #: src/frontends/qt/ui/NomenclUi.ui:75
@@ -3793,12 +3792,12 @@ msgid ""
 "Use standard subgroups (Latin Letters, Greek Letters, ...) to structure the "
 "nomenclature list"
 msgstr ""
-"Använd standardundergrupper (Latinska bokstäver, ...) för att strukturera "
-"nomenklaturlistan"
+"Använd standardundergrupper (latinska bokstäver, grekiska bokstäver, ...) "
+"för att strukturera nomenklaturlistan."
 
 #: src/frontends/qt/ui/NomenclUi.ui:85
 msgid "Use standard &subgroups"
-msgstr "Använda &standardundergrupper"
+msgstr "Använd &standardundergrupper"
 
 #: src/frontends/qt/ui/NomenclUi.ui:94
 msgid "&Other options:"
@@ -3806,7 +3805,7 @@ msgstr "&Andra alternativ:"
 
 #: src/frontends/qt/ui/NomenclUi.ui:104
 msgid "Insert additional options of the nomencl package here"
-msgstr "Infoga ytterligare alternativ från nomencl-paketet här"
+msgstr "Infoga ytterligare alternativ för nomencl-paketet här"
 
 #: src/frontends/qt/ui/NoteUi.ui:23 src/frontends/qt/ui/PhantomUi.ui:23
 msgid "Type"
@@ -3951,7 +3950,7 @@ msgstr "Format att använda för matematikutmatning."
 
 #: src/frontends/qt/ui/OutputUi.ui:302
 msgid "MathML Core (default)"
-msgstr "MathML (standard)"
+msgstr "MathML Core (standard)"
 
 #: src/frontends/qt/ui/OutputUi.ui:307 src/frontends/qt/ui/OutputUi.ui:436
 #: lib/configure.py:834
@@ -3964,7 +3963,7 @@ msgstr "Bilder"
 
 #: src/frontends/qt/ui/OutputUi.ui:317 lib/layouts/aapaper.layout:63
 #: lib/layouts/egs.layout:721 lib/languages:171
-#: src/frontends/qt/GuiDocument.cpp:1730 src/frontends/qt/GuiErrorList.cpp:47
+#: src/frontends/qt/GuiDocument.cpp:1734 src/frontends/qt/GuiErrorList.cpp:47
 #: src/frontends/qt/GuiLog.cpp:246 src/frontends/qt/GuiPrefs.cpp:535
 msgid "LaTeX"
 msgstr "LaTeX"
@@ -3999,7 +3998,7 @@ msgstr "CALS"
 
 #: src/frontends/qt/ui/OutputUi.ui:469
 msgid "MathML &version:"
-msgstr "MathML &version:"
+msgstr "MathML-&version:"
 
 #: src/frontends/qt/ui/OutputUi.ui:499
 msgid "MathML 3 (default)"
@@ -4035,15 +4034,15 @@ msgstr "mml"
 
 #: src/frontends/qt/ui/OutputUi.ui:604 src/frontends/qt/ui/OutputUi.ui:622
 msgid ""
-"Scaling factor for images that are generated for some LaTeX constructs "
-"(e.g., math formulae) in non-LaTeX output."
+"Scaling factor for images that are generated for some LaTeX constructs (e."
+"g., math formulae) in non-LaTeX output."
 msgstr ""
-"Skalningsfaktor för bilder som genereras för vissa LaTeX-konstruktioner "
-"(t.ex. matematiska formler) i icke-LaTeX-utmatning."
+"Skalningsfaktor för bilder som genereras för vissa LaTeX-konstruktioner (t."
+"ex. matematiska formler) i icke-LaTeX-utdata."
 
 #: src/frontends/qt/ui/OutputUi.ui:607
 msgid "Scaling of generated &images:"
-msgstr "Skalning av genererade &bilder:"
+msgstr "Skalning av genererade b&ilder:"
 
 #: src/frontends/qt/ui/OutputUi.ui:659
 msgid ""
@@ -4122,7 +4121,7 @@ msgstr "Inga ramar runt länkar"
 
 #: src/frontends/qt/ui/PDFSupportUi.ui:285
 msgid "Mutually exclusive with frames around links, see manual."
-msgstr "Ömsesidigt uteslutande med ramar runt länkar, se manual."
+msgstr "Ömsesidigt uteslutande med ramar runt länkar, se manualen."
 
 #: src/frontends/qt/ui/PDFSupportUi.ui:288
 msgid "C&olor links"
@@ -4204,8 +4203,8 @@ msgstr "&Landskap"
 
 #: src/frontends/qt/ui/PageLayoutUi.ui:179
 #: lib/layouts/customHeadersFooters.module:3 lib/layouts/landscape.module:3
-#: lib/layouts/multicol.module:3 src/frontends/qt/GuiDocument.cpp:1247
-#: src/frontends/qt/GuiDocument.cpp:1250 src/frontends/qt/GuiDocument.cpp:1900
+#: lib/layouts/multicol.module:3 src/frontends/qt/GuiDocument.cpp:1251
+#: src/frontends/qt/GuiDocument.cpp:1254 src/frontends/qt/GuiDocument.cpp:1904
 msgid "Page Layout"
 msgstr "Sidutformning"
 
@@ -4252,7 +4251,7 @@ msgstr "Dubbel"
 #: src/frontends/qt/GuiDocument.cpp:913 src/frontends/qt/GuiDocument.cpp:919
 #: src/frontends/qt/GuiDocument.cpp:927 src/frontends/qt/GuiDocument.cpp:1046
 #: src/frontends/qt/GuiDocument.cpp:1111 src/frontends/qt/GuiDocument.cpp:1197
-#: src/frontends/qt/GuiDocument.cpp:1254 src/frontends/qt/GuiDocument.cpp:1661
+#: src/frontends/qt/GuiDocument.cpp:1258 src/frontends/qt/GuiDocument.cpp:1665
 #: src/frontends/qt/GuiHSpace.cpp:50 src/frontends/qt/GuiIndex.cpp:48
 #: src/frontends/qt/GuiPrefs.cpp:709 src/frontends/qt/GuiPrefs.cpp:737
 #: src/frontends/qt/GuiPrefs.cpp:764 src/frontends/qt/GuiPrefs.cpp:3120
@@ -4363,8 +4362,8 @@ msgid ""
 "Reset the light- and dark-mode colors of the selected object/element to the "
 "last saved"
 msgstr ""
-"Återställ de markerade objektens/elementens ljusa och mörka färger till de "
-"senast sparade"
+"Återställ ljus- och mörklägesfärgerna för det valda objektet/elementet till "
+"de senast sparade"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:105
 msgid "&Both"
@@ -4386,7 +4385,7 @@ msgstr "Gör om"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:144
 msgid "R&edo"
-msgstr "&Gör om"
+msgstr "Gö&r om"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:153
 msgid "&Themes:"
@@ -4394,7 +4393,7 @@ msgstr "&Teman:"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:172
 msgid "Reset all colors in the table to the last saved"
-msgstr "Återställ alla färger i tabellen till de senast sparade"
+msgstr "Återställ alla färger i tabellen till den senast sparade"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:175
 msgid "Reset &All Colors"
@@ -4423,7 +4422,7 @@ msgstr "Ångra/Gör om"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:222
 msgid "&Color Settings:"
-msgstr "&Färginställningar:"
+msgstr "F&ärginställningar:"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:241
 msgid "Use the color scheme of your Operating System/Desktop Environment"
@@ -4467,11 +4466,11 @@ msgstr "efter färgnamn"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:466
 msgid "Add the current color set as a theme"
-msgstr "Lägg till den aktuella färguppsättningen som ett tema"
+msgstr "Lägg till den aktuella färginställningen som ett tema"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:476
 msgid "Remove a selected color theme"
-msgstr "Ta bort ett valt färgtema"
+msgstr "Ta bort ett markerat färgtema"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:479
 #: src/frontends/qt/ui/PrefConvertersUi.ui:300
@@ -4744,7 +4743,7 @@ msgstr "Visa bokmärken:"
 
 #: src/frontends/qt/ui/PrefDisplayUi.ui:155
 msgid "Select whether and how bookmarks should be visualized in the workarea"
-msgstr "Välj om och hur bokmärken ska visas i arbetsområdet"
+msgstr "Välj om och hur bokmärken ska visas på arbetsytan"
 
 #: src/frontends/qt/ui/PrefDocHandlingUi.ui:26
 msgid "Session Handling"
@@ -4822,9 +4821,9 @@ msgid ""
 "document. This allows moving the document elsewhere and still finding the "
 "included files."
 msgstr ""
-"Om denna är markerad så kommer dokumentets sökväg att sparas i "
-"dokumentet.Detta tillåter dokumentet att flyttas annanstans och fortfarande "
-"hitta de inkluderade filerna."
+"Om denna är markerad så kommer dokumentets sökväg att sparas i dokumentet."
+"Detta tillåter dokumentet att flyttas annanstans och fortfarande hitta de "
+"inkluderade filerna."
 
 #: src/frontends/qt/ui/PrefDocHandlingUi.ui:161
 msgid "Save the &document directory path"
@@ -5196,7 +5195,7 @@ msgid "Select which (LaTeX) language package documents should use by default"
 msgstr "Välj vilket (LaTeX) språkpaket dokument ska använda som standard"
 
 #: src/frontends/qt/ui/PrefLanguageUi.ui:77
-#: src/frontends/qt/GuiDocument.cpp:1107 src/frontends/qt/GuiDocument.cpp:2937
+#: src/frontends/qt/GuiDocument.cpp:1107 src/frontends/qt/GuiDocument.cpp:2941
 #: src/frontends/qt/GuiPrefs.cpp:708 src/frontends/qt/GuiPrefs.cpp:736
 msgid "Automatic"
 msgstr "Automatisk"
@@ -5262,7 +5261,7 @@ msgid ""
 "If checked, the document language is explicitly set by a language switch "
 "command"
 msgstr ""
-"Om markerad ställs dokumentspråket in explicit med ett språkväxlingskommando"
+"Om markerat, ställs dokumentspråket in explicit med ett språkväxlingskommando"
 
 #: src/frontends/qt/ui/PrefLanguageUi.ui:163
 msgid "Set document language e&xplicitly"
@@ -5273,7 +5272,7 @@ msgid ""
 "If checked, the document language is explicitly closed by a language switch "
 "command"
 msgstr ""
-"Om markerad, stängs dokumentspråket uttryckligen genom ett "
+"Om markerat, stängs dokumentspråket uttryckligen genom ett "
 "språkväxlingskommando"
 
 #: src/frontends/qt/ui/PrefLanguageUi.ui:173
@@ -5782,7 +5781,7 @@ msgstr ""
 
 #: src/frontends/qt/ui/PrefUi.ui:128
 msgid "C&olor scheme:"
-msgstr "F&ärgschema:"
+msgstr "Fär&gschema:"
 
 #: src/frontends/qt/ui/PrefUi.ui:156
 msgid "Context Help"
@@ -5891,7 +5890,7 @@ msgstr ""
 "LaTeX-kod i indexnamn."
 
 #: src/frontends/qt/ui/ProgressViewUi.ui:93
-#: src/frontends/qt/GuiDocument.cpp:1915 src/frontends/qt/GuiPrefs.cpp:101
+#: src/frontends/qt/GuiDocument.cpp:1919 src/frontends/qt/GuiPrefs.cpp:101
 msgid "Output"
 msgstr "Utmatning"
 
@@ -5949,7 +5948,7 @@ msgstr "Rensa automatiskt"
 
 #: src/frontends/qt/ui/RefUi.ui:25
 msgid "&Select from:"
-msgstr "M&arkera från:"
+msgstr "&Markera från:"
 
 #: src/frontends/qt/ui/RefUi.ui:40
 msgid "&In[[buffer]]:"
@@ -5965,7 +5964,7 @@ msgstr "Tillgänglig&a etiketter:"
 
 #: src/frontends/qt/ui/RefUi.ui:118
 msgid "Selected &Labels:"
-msgstr "Markerade &etiketter:"
+msgstr "Valda &etiketter:"
 
 #: src/frontends/qt/ui/RefUi.ui:144 lib/layouts/econsocart.layout:422
 #: lib/layouts/econsocart.layout:441 src/insets/InsetRef.cpp:1026
@@ -6493,8 +6492,8 @@ msgstr "Sätt kanter"
 #: src/frontends/qt/ui/TabularUi.ui:1080
 msgid "Click to set borders of the current (selected) cell(s)"
 msgstr ""
-"Klicka för att ange kantlinjer för den/de aktuella (markerade) cellen/"
-"cellerna"
+"Klicka för att ställa in gränserna för den aktuella (markerade) cellen/"
+"cellerna."
 
 #: src/frontends/qt/ui/TabularUi.ui:1093
 msgid "All Borders"
@@ -6547,7 +6546,7 @@ msgstr "Ytterligare mellanrum"
 
 #: src/frontends/qt/ui/TabularUi.ui:1192
 msgid "To&p of row:"
-msgstr "Överst &på rad:"
+msgstr "Radens &överkant:"
 
 #: src/frontends/qt/ui/TabularUi.ui:1268
 msgid "Botto&m of row:"
@@ -6563,7 +6562,7 @@ msgstr "F&ärger"
 
 #: src/frontends/qt/ui/TabularUi.ui:1356
 msgid "Ri&ght Overhang:"
-msgstr "Höger överhäng:"
+msgstr "Hö&ger över&häng:"
 
 #: src/frontends/qt/ui/TabularUi.ui:1372
 msgid "Col&umn color:"
@@ -6579,7 +6578,7 @@ msgstr "Vänster över&häng:"
 
 #: src/frontends/qt/ui/TabularUi.ui:1415
 msgid "Ro&w color:"
-msgstr "Radfärg:"
+msgstr "Ra&dfärg:"
 
 #: src/frontends/qt/ui/TabularUi.ui:1428
 msgid "Left O&verhang:"
@@ -6595,7 +6594,7 @@ msgstr "&Kantfärg:"
 
 #: src/frontends/qt/ui/TabularUi.ui:1506
 msgid "Alternating row colors"
-msgstr "Alternerande radfärger"
+msgstr "Växlande radfärger"
 
 #: src/frontends/qt/ui/TabularUi.ui:1571
 msgid "&Start with row:"
@@ -6826,7 +6825,7 @@ msgstr "Tvåspaltigt dokument"
 
 #: src/frontends/qt/ui/TextLayoutUi.ui:340
 msgid "Use &justification in LyX work area:"
-msgstr "Använd &justering i LyX-arbetsområdet:"
+msgstr "Använd &justering i LyX arbetsområde:"
 
 #: src/frontends/qt/ui/ThesaurusUi.ui:33
 msgid "Language of the thesaurus"
@@ -7123,7 +7122,7 @@ msgstr "Nyckel"
 
 #: lib/citeengines/biblatex-chicago.citeengine:2
 msgid "Biblatex (Chicago style)"
-msgstr "Biblatex (Chicago-stil)"
+msgstr "Biblatex (Chigacostil)"
 
 #: lib/citeengines/biblatex-chicago.citeengine:8
 msgid ""
@@ -7131,9 +7130,9 @@ msgid ""
 "to produce citations according to the Chicago Manual of Style. As with "
 "normal Biblatex, the use of 'biber' as Bibliography processor is advised."
 msgstr ""
-"Denna Biblatex-variant använder biblatex-chicago-paketet ovanpå biblatex för "
-"att producera citat enligt Chicago Manual of Style. Precis som med vanlig "
-"Biblatex rekommenderas användning av 'biber' som bibliografiprocessor."
+"Denna Biblatex-variant använder paketet biblatex-chicago ovanpå biblatex för "
+"att skapa källhänvisningar enligt Chicago Manual of Style. Precis som med "
+"vanlig Biblatex rekommenderas användning av ’biber’ som bibliografiprocessor."
 
 #: lib/citeengines/biblatex-chicago.citeengine:151
 #: lib/citeengines/biblatex-natbib.citeengine:149
@@ -7220,7 +7219,7 @@ msgstr " and [[två separata författare i citat]]"
 
 #: lib/citeengines/biblatex-chicago.citeengine:167
 msgid "'s[[genitive suffix for author names]]"
-msgstr "'s[[genitivsuffix för författarnamn]]"
+msgstr "'s[[genitivesuffix för författarnamn]]"
 
 #: lib/citeengines/biblatex-chicago.citeengine:322
 #: lib/citeengines/biblatex-natbib.citeengine:332
@@ -7237,27 +7236,27 @@ msgstr "Upphöjd skrift"
 
 #: lib/citeengines/biblatex-chicago.citeengine:324
 msgid "+ footnote: full or abbr. bib. entry"
-msgstr "+ fotnot: fullständig eller förkortad bib-post"
+msgstr "+ fotnot: full eller förkortad. bib. post"
 
 #: lib/citeengines/biblatex-chicago.citeengine:325
 msgid "full or abbr. bib. entry"
-msgstr "fullständig eller förkortad bib-post"
+msgstr "full eller förkortad bib. post"
 
 #: lib/citeengines/biblatex-chicago.citeengine:326
 msgid "Full or abbreviated bibliography entry."
-msgstr "Fullständig eller förkortad bibliografipost."
+msgstr "Full eller förkortad bibliografipost."
 
 #: lib/citeengines/biblatex-chicago.citeengine:327
 msgid "full or abbr. bib. entry w/o author"
-msgstr "fullständig eller förkortad bib-post m/u författare"
+msgstr "full eller förkortad bib. m/u författare"
 
 #: lib/citeengines/biblatex-chicago.citeengine:328
 msgid "Full or abbreviated bibliography entry without author."
-msgstr "Fullständig eller förkortad bibliografipost utan författare."
+msgstr "Full eller förkortad bibliografipost utan författare."
 
 #: lib/citeengines/biblatex-chicago.citeengine:329
 msgid "abbr. bib. entry"
-msgstr "förkortad bib-post"
+msgstr "förkortad bib. post"
 
 #: lib/citeengines/biblatex-chicago.citeengine:330
 msgid "Abbreviated bibliography entry."
@@ -7265,19 +7264,19 @@ msgstr "Förkortad bibliografipost."
 
 #: lib/citeengines/biblatex-chicago.citeengine:331
 msgid "full bib. entry w/o author"
-msgstr "fullständig bib-post m/u författare"
+msgstr "full bib. post m/u författare"
 
 #: lib/citeengines/biblatex-chicago.citeengine:332
 msgid "Full bibliography entry without author."
-msgstr "Fullständig bibliografipost utan författare."
+msgstr "Full bibliografipost utan författare."
 
 #: lib/citeengines/biblatex-chicago.citeengine:333
 msgid "full or abbr. bib. entry w/o prenames"
-msgstr "fullständig eller förkortad bib-post m/u förnamn"
+msgstr "full eller förkortad bi. post m/u förnamn"
 
 #: lib/citeengines/biblatex-chicago.citeengine:334
 msgid "Full or abbreviated bibliography, omit prenames."
-msgstr "Fullständig eller förkortad bibliografi, utelämna förnamn."
+msgstr "Full eller förkortad bibliografi, utelämna förnamn."
 
 #: lib/citeengines/biblatex-chicago.citeengine:335
 msgid "No ibidem tracking"
@@ -7289,41 +7288,39 @@ msgstr "Ingen ibid."
 
 #: lib/citeengines/biblatex-chicago.citeengine:337
 msgid "No &ibidem tracking[[Possible substitute to All aut&hors]]"
-msgstr "Ingen &ibidem-spårning[[Möjlig ersättning för Alla förf&örare]]"
+msgstr "Ingen &ibidem-spårning[[Möjlig ersättning för alla &författare]]"
 
 #: lib/citeengines/biblatex-chicago.citeengine:338
 msgid "Disable ibidem tracking for this entry"
-msgstr "Inaktivera ibidem-spårning för den här posten"
+msgstr "Inaktivera ibidem-spårning för denna post"
 
 #: lib/citeengines/biblatex-chicago.citeengine:339
 msgid "No &back reference[[Possible substitute to All aut&hors]]"
-msgstr "Ingen &bakåtreferens[[Möjlig ersättning för Alla förf&örfattare]]"
+msgstr "Ingen &bakreferens[[Möjlig ersättning för alla för&fattare]]"
 
 #: lib/citeengines/biblatex-chicago.citeengine:340
 msgid ""
 "Disable page tracking for this entry to prevent back references (with option "
 "noteref)"
 msgstr ""
-"Inaktivera sidspårning för den här posten för att förhindra bakåtreferenser "
-"(med alternativet noteref)"
+"Inaktivera sidspårning för denna post för att förhindra bakåtreferenser (med "
+"alternativet noteref)"
 
 #: lib/citeengines/biblatex-chicago.citeengine:341
 msgid "abbr. bib. entry w/ back ref."
-msgstr "förkortad bib-post utan bakåtreferens."
+msgstr "förkortad bib. post m/ bakåtref."
 
 #: lib/citeengines/biblatex-chicago.citeengine:342
 msgid "Abbreviated bib. entry (enforce back reference)"
-msgstr ""
-"Förkortad bib-post (framtvinga bakåtriktad referens)Förkortad bib-post "
-"(framtvinga bakåtriktad referens)"
+msgstr "Förkortad bib. post (tillämpa bakåtreferens)"
 
 #: lib/citeengines/biblatex-chicago.citeengine:343
 msgid "(w/ back ref.)"
-msgstr "(med/ bakåtrefer.)"
+msgstr "(m/ bakåtref.)"
 
 #: lib/citeengines/biblatex-chicago.citeengine:344
 msgid "(enforce back reference)"
-msgstr "(framtvinga bakreferens)"
+msgstr "(tillämpa bakåtreferens)"
 
 #: lib/citeengines/biblatex-chicago.citeengine:345
 msgid "??? (no shorthand!)"
@@ -7354,12 +7351,12 @@ msgstr ""
 #: lib/citeengines/biblatex-natbib.citeengine:158
 #: lib/citeengines/biblatex.citeengine:150
 msgid "Omit aut&hors[[Possible substitute to All aut&hors]]"
-msgstr "Uteslut för&fattare[[Möjlig ersättning för Alla för&fattare]]"
+msgstr "Utelämna för&fattare[[Möjlig ersättning för alla för&fattare]]"
 
 #: lib/citeengines/biblatex-natbib.citeengine:159
 #: lib/citeengines/biblatex.citeengine:151
 msgid "Omit authors or editors in the citation"
-msgstr "Utelämna författare eller redaktörer i hänvisningen"
+msgstr "Utelämna författare eller redaktörer i citatet"
 
 #: lib/citeengines/biblatex.citeengine:2 src/insets/InsetBibtex.cpp:145
 msgid "Biblatex"
@@ -7374,8 +7371,8 @@ msgid ""
 msgstr ""
 "Biblatex stöder många författare-år och numeriska stilar. Det är "
 "huvudsakligen inriktat på humaniora. Det är högst anpassningsbart, helt "
-"lokaliserat, och tillhandahåller många funktioner som inte är möjliga med "
-"BibTeX. Användning av 'biber' som bibliografibehandlare rekommenderas."
+"lokaliserat, och förser många funktioner som inte är möjliga med BibTeX. "
+"Användningen av 'biber' som bibliografibehandlare är rekommenderad."
 
 #: lib/citeengines/jurabib.citeengine:2
 msgid "Jurabib (BibTeX)"
@@ -7422,9 +7419,9 @@ msgid ""
 msgstr ""
 "Natbib stöder ett omfång av både författare-år och numeriska stilar "
 "huvudsakligen inriktade på humaniora. Det har funktioner som automatisk "
-"sortering och sammanfogning av numeriska citat, anteckningar, kapitalisering "
-"av 'van'-delen av författarnamn, förkortade och hela författarlistor med "
-"mera."
+"sortering och sammanfogning av numeriska citat, annoteringar, kapitalisering "
+"av 'van'-delen av författarnamn, förkortade och hela författarlistor, och "
+"mer."
 
 #: lib/layouts/AEA.layout:3 lib/examples/Articles:0
 msgid "American Economic Association (AEA)"
@@ -8090,7 +8087,7 @@ msgstr "Förmodan"
 #: lib/layouts/theorems.inc:89 lib/layouts/theorems.inc:92
 #: lib/layouts/theorems.inc:95
 msgid "Corollary"
-msgstr "Korollarium"
+msgstr "Följdsats"
 
 #: lib/layouts/AEA.layout:274 lib/layouts/econsocart.layout:317
 #: lib/layouts/elsart.layout:417
@@ -8178,7 +8175,7 @@ msgstr "Definition"
 #: lib/layouts/theorems-without-preamble.inc:272
 #: lib/layouts/theorems-without-preamble.inc:275 lib/layouts/theorems.inc:239
 #: lib/layouts/theorems.inc:247 lib/layouts/theorems.inc:251
-#: lib/layouts/theorems.inc:254 src/frontends/qt/GuiDocument.cpp:1450
+#: lib/layouts/theorems.inc:254 src/frontends/qt/GuiDocument.cpp:1454
 msgid "Example"
 msgstr "Exempel"
 
@@ -8247,7 +8244,7 @@ msgstr "Övning"
 #: lib/layouts/theorems.inc:114 lib/layouts/theorems.inc:117
 #: lib/layouts/theorems.inc:120
 msgid "Lemma"
-msgstr "Lemma"
+msgstr "Hjälpsats"
 
 #: lib/layouts/AEA.layout:320 lib/layouts/agutex.layout:173
 #: lib/layouts/agutex.layout:185 lib/layouts/econsocart.layout:263
@@ -8338,7 +8335,7 @@ msgstr "Problem"
 #: lib/layouts/theorems.inc:140 lib/layouts/theorems.inc:143
 #: lib/layouts/theorems.inc:146
 msgid "Proposition"
-msgstr "Proposition"
+msgstr "Påstående"
 
 #: lib/layouts/AEA.layout:350 lib/layouts/AEA.layout:351
 #: lib/layouts/AEA.layout:354 lib/layouts/econsocart.layout:255
@@ -8398,7 +8395,7 @@ msgstr "Anmärkningar"
 #: lib/layouts/theorems-counters-bytype.inc:58
 #: lib/layouts/theorems-without-preamble.inc:416 lib/layouts/theorems.inc:356
 msgid "remarks"
-msgstr "anmärkningarar"
+msgstr "anmärkningar"
 
 #: lib/layouts/AEA.layout:351 lib/layouts/ijmpd.layout:453
 #: lib/layouts/theorems-counters-bytype.inc:58
@@ -8702,73 +8699,73 @@ msgstr "teorem \\arabic{theorem}"
 #: lib/layouts/elsart.layout:299 lib/layouts/elsart.layout:396
 #: lib/layouts/theorems-ams.module:25 lib/layouts/theorems-std.module:18
 msgid "Corollary \\arabic{theorem}"
-msgstr "Korollarium \\arabic{theorem}"
+msgstr "Följdsats \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/theorems-ams.module:25
 #: lib/layouts/theorems-std.module:18
 msgid "corollary \\arabic{theorem}"
-msgstr "korollarium \\arabic{theorem}"
+msgstr "följdsats \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/theorems-ams.module:25
 #: lib/layouts/theorems-std.module:18
 msgid "Corollaries \\arabic{theorem}"
-msgstr "Korollarier \\arabic{theorem}"
+msgstr "Följdsats \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:52 lib/layouts/acmart.layout:577
 #: lib/layouts/elsart.layout:299 lib/layouts/theorems-ams.module:25
 #: lib/layouts/theorems-std.module:18
 msgid "corollaries \\arabic{theorem}"
-msgstr "korollarier \\arabic{theorem}"
+msgstr "följdsats \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/elsart.layout:384
 #: lib/layouts/theorems-ams.module:26 lib/layouts/theorems-std.module:19
 msgid "Lemma \\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Hjälpsats \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/theorems-ams.module:26
 #: lib/layouts/theorems-std.module:19
 msgid "lemma \\arabic{theorem}"
-msgstr "lemma \\arabic{theorem}"
+msgstr "hjälpsats \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/theorems-ams.module:26
 #: lib/layouts/theorems-std.module:19
 msgid "Lemmas \\arabic{theorem}"
-msgstr "Lemma \\arabic{theorem}"
+msgstr "Hjälpsatser \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:53 lib/layouts/acmart.layout:578
 #: lib/layouts/elsart.layout:300 lib/layouts/theorems-ams.module:26
 #: lib/layouts/theorems-std.module:19
 msgid "lemmas \\arabic{theorem}"
-msgstr "lemma \\arabic{theorem}"
+msgstr "hjälpsatser \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/elsart.layout:408
 #: lib/layouts/theorems-ams.module:27 lib/layouts/theorems-std.module:20
 msgid "Proposition \\arabic{theorem}"
-msgstr "Proposition \\arabic{theorem}"
+msgstr "Påstående \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/theorems-ams.module:27
 #: lib/layouts/theorems-std.module:20
 msgid "proposition \\arabic{theorem}"
-msgstr "proposition \\arabic{theorem}"
+msgstr "påstående \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/theorems-ams.module:27
 #: lib/layouts/theorems-std.module:20
 msgid "Propositions \\arabic{theorem}"
-msgstr "Propositioner \\arabic{theorem}"
+msgstr "Påståenden \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:54 lib/layouts/acmart.layout:579
 #: lib/layouts/elsart.layout:301 lib/layouts/theorems-ams.module:27
 #: lib/layouts/theorems-std.module:20
 msgid "propositions \\arabic{theorem}"
-msgstr "propositioner \\arabic{theorem}"
+msgstr "påståenden \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:55 lib/layouts/acmart.layout:580
 #: lib/layouts/elsart.layout:302 lib/layouts/elsart.layout:463
@@ -8958,12 +8955,12 @@ msgstr "faktum \\arabic{theorem}"
 #: lib/layouts/IEEEtran.layout:63 lib/layouts/theorems-ams.module:36
 #: lib/layouts/theorems-std.module:22
 msgid "Facts \\arabic{theorem}"
-msgstr "Fakta \\arabic{theorem}"
+msgstr "Faktum \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:63 lib/layouts/theorems-ams.module:36
 #: lib/layouts/theorems-std.module:22
 msgid "facts \\arabic{theorem}"
-msgstr "fakta \\arabic{theorem}"
+msgstr "faktum \\arabic{theorem}"
 
 #: lib/layouts/IEEEtran.layout:64 lib/layouts/elsart.layout:420
 #: lib/layouts/theorems-ams.module:37
@@ -9252,7 +9249,7 @@ msgstr "Kort titel för bilagan"
 #: lib/layouts/stdstruct.inc:59 lib/layouts/svcommon.inc:658
 #: lib/layouts/tufte-book.layout:302 lib/layouts/tufte-book.layout:304
 #: lib/layouts/tufte-handout.layout:78 lib/examples/Articles:0
-#: src/frontends/qt/GuiDocument.cpp:1906 src/insets/InsetBibtex.cpp:959
+#: src/frontends/qt/GuiDocument.cpp:1910 src/insets/InsetBibtex.cpp:959
 msgid "Bibliography"
 msgstr "Bibliografi"
 
@@ -9337,7 +9334,7 @@ msgstr "Valfritt foto för biografi"
 #: lib/layouts/pdfcomment.module:47 lib/layouts/pdfcomment.module:58
 #: lib/layouts/scrlettr.layout:129 lib/layouts/scrlttr2.layout:173
 #: lib/layouts/sigplanconf.layout:85 lib/layouts/sigplanconf.layout:164
-#: lib/layouts/tcolorbox.module:144 src/frontends/qt/GuiDocument.cpp:1419
+#: lib/layouts/tcolorbox.module:144 src/frontends/qt/GuiDocument.cpp:1423
 #: src/frontends/qt/GuiIndices.cpp:51 src/mathed/InsetMathMacroTemplate.cpp:492
 msgid "Name"
 msgstr "Namn"
@@ -9821,9 +9818,9 @@ msgstr "Alternativ tillhörighet:"
 msgid "And"
 msgstr "Och"
 
-#: lib/layouts/aastex.layout:256 src/frontends/qt/GuiDocument.cpp:3365
-#: src/frontends/qt/GuiDocument.cpp:3377 src/frontends/qt/GuiDocument.cpp:3506
-#: src/frontends/qt/GuiDocument.cpp:3525
+#: lib/layouts/aastex.layout:256 src/frontends/qt/GuiDocument.cpp:3369
+#: src/frontends/qt/GuiDocument.cpp:3381 src/frontends/qt/GuiDocument.cpp:3510
+#: src/frontends/qt/GuiDocument.cpp:3529
 msgid "and"
 msgstr "och"
 
@@ -9841,7 +9838,7 @@ msgstr "Ämnesrubriker:"
 
 #: lib/layouts/aastex.layout:365
 msgid "[Acknowledgments]"
-msgstr "[Tackord]"
+msgstr "[Acknowledgments]"
 
 #: lib/layouts/aastex.layout:377
 msgid "PlaceFigure"
@@ -10164,7 +10161,7 @@ msgstr "Schema"
 
 #: lib/layouts/achemso.layout:210
 msgid "Sub-Scheme"
-msgstr "Undersystem"
+msgstr "Underschema"
 
 #: lib/layouts/achemso.layout:216
 msgid "List of Schemes"
@@ -10276,7 +10273,7 @@ msgstr "ACM journal"
 
 #: lib/layouts/acmart.layout:111 lib/layouts/apax.inc:336
 #: lib/layouts/apax.inc:344 lib/layouts/apax.inc:353 lib/layouts/apax.inc:361
-#: src/frontends/qt/GuiDocument.cpp:1916 src/frontends/qt/GuiDocument.cpp:5194
+#: src/frontends/qt/GuiDocument.cpp:1920 src/frontends/qt/GuiDocument.cpp:5198
 msgid "Preamble"
 msgstr "Ingress"
 
@@ -10638,17 +10635,17 @@ msgstr "Teorem \\thetheorem."
 #: lib/layouts/acmart.layout:624 lib/layouts/heb-article.layout:74
 #: lib/layouts/theorems-ams.inc:84 lib/layouts/theorems.inc:84
 msgid "Corollary \\thetheorem."
-msgstr "Korollarium \\thetheorem."
+msgstr "Följdsats \\thetheorem."
 
 #: lib/layouts/acmart.layout:631 lib/layouts/heb-article.layout:63
 #: lib/layouts/theorems-ams.inc:109 lib/layouts/theorems.inc:109
 msgid "Lemma \\thetheorem."
-msgstr "Lemma \\thetheorem."
+msgstr "Hjälpsats \\thetheorem."
 
 #: lib/layouts/acmart.layout:638 lib/layouts/theorems-ams.inc:134
 #: lib/layouts/theorems.inc:134 lib/layouts/theorems.inc:135
 msgid "Proposition \\thetheorem."
-msgstr "Proposition \\thetheorem."
+msgstr "Påstående \\thetheorem."
 
 #: lib/layouts/acmart.layout:645 lib/layouts/theorems-ams.inc:159
 #: lib/layouts/theorems.inc:160
@@ -11034,7 +11031,7 @@ msgstr "Planotabell"
 
 #: lib/layouts/aguplus.inc:200
 msgid "Sub-Planotable"
-msgstr "Underplanot"
+msgstr "Underplanotabell"
 
 #: lib/layouts/aguplus.inc:211 lib/layouts/beamer.layout:1739
 #: lib/layouts/beamer.layout:1748 lib/layouts/powerdot.layout:561
@@ -12106,7 +12103,7 @@ msgstr "Vers"
 #: lib/layouts/beamer.layout:1326 lib/layouts/foils.layout:341
 #: lib/layouts/theorems-starred.inc:83
 msgid "Corollary."
-msgstr "Korollarium."
+msgstr "Följdsats."
 
 #: lib/layouts/beamer.layout:1339 lib/layouts/beamer.layout:1496
 #: lib/layouts/beamer.layout:1516 lib/layouts/beamer.layout:1536
@@ -12186,7 +12183,7 @@ msgstr "Faktum."
 #: lib/layouts/beamer.layout:1391 lib/layouts/foils.layout:334
 #: lib/layouts/theorems-starred.inc:104
 msgid "Lemma."
-msgstr "Lemma."
+msgstr "Hjälpsats."
 
 #: lib/layouts/beamer.layout:1403 lib/layouts/foils.layout:327
 #: lib/layouts/theorems-named.module:18 lib/layouts/theorems-starred.inc:35
@@ -12530,7 +12527,7 @@ msgstr "Akter ##"
 #: lib/layouts/broadway.layout:28
 #, fuzzy
 msgid "acts"
-msgstr "Fakta"
+msgstr "Faktum"
 
 #: lib/layouts/broadway.layout:28
 msgid "Act ##"
@@ -12581,7 +12578,7 @@ msgstr "scen ##"
 
 #: lib/layouts/broadway.layout:34
 msgid "Scenes ##"
-msgstr "Scener ##"
+msgstr "Scner ##"
 
 #: lib/layouts/broadway.layout:34
 msgid "scenes ##"
@@ -13710,8 +13707,7 @@ msgstr "Adressetikett"
 
 #: lib/layouts/econsocart.layout:387
 msgid "Label to be used to relate an author and his/her address"
-msgstr ""
-"Etikett som ska användas för att relatera en författare och dennes adress"
+msgstr "Etikett som ska användas för att ange författare och dennes adress"
 
 #: lib/layouts/econsocart.layout:394 lib/layouts/ectaart.layout:224
 msgid "Name (First Name)"
@@ -13737,7 +13733,7 @@ msgstr "Etikett för denna e-postadress"
 
 #: lib/layouts/econsocart.layout:442
 msgid "Label of this address to relate it to authors"
-msgstr "Etikett för denna adress för att relatera den till författare"
+msgstr "Etikett för denna adress för att koppla den till författarna"
 
 #: lib/layouts/econsocart.layout:453
 msgid "Address Division"
@@ -14632,15 +14628,15 @@ msgid ""
 "them always, insert \\fxsetup{draft} to Document > Settings > Preamble. NOTE "
 "also that you need version 4 or later of the FiXme package for some features."
 msgstr ""
-"Tillhandahåller 'FiXme''-anteckningar (marginal) för "
-"dokumentrevideringssyften. En lista över anteckningar kan produceras genom "
-"att använda styckestilen 'Lista över FIXMEs'. Anteckningarna är "
-"anpassningsbara via LaTeX-ingressen. Se FiXme-dokumentationen för detaljer. "
-"Obs: Som standard visas noterna bara i 'utkast'-läge (om alternativet "
-"'utkast' har blivit infogat i Dokument > Inställningar > Dokumentklass > "
-"Klassalternativ > Anpassad). För att alltid visa dem, infoga "
-"\\fxsetup{draft} till Dokument > Inställningar > Ingress. Notera även att du "
-"behöver version 4 eller senare av FiXme-paketet för vissa funktioner."
+"Förser 'FiXme'-annoteringar (marginal) för dokumentrevideringssyften. En "
+"lista över annoteringar kan produceras genom att använda styckestilen 'Lista "
+"över FIXMEs'. Annoteringarna är anpassningsbara via LaTeX-ingressen. Se "
+"FiXme-dokumentationen för detaljer. Notera: Som standard visas noterna bara "
+"i 'utkast'-läge (om alternativet 'utkast' har blivit infogat i Dokument > "
+"Inställningar > Dokumentklass > Klassalternativ > Anpassad). För att alltid "
+"visa dem, infoga \\fxsetup{draft} till Dokument > Inställningar > Ingress. "
+"Notera även att du behöver version 4 eller senare av FiXme-paketet för vissa "
+"funktioner."
 
 #: lib/layouts/fixme.module:18 lib/layouts/fixme.module:56
 msgid "Fixme"
@@ -14681,8 +14677,8 @@ msgid "Fixme Error"
 msgstr "Fixme-fel"
 
 #: lib/layouts/fixme.module:83 src/frontends/qt/GuiCompare.cpp:201
-#: src/frontends/qt/GuiDocument.cpp:3071 src/frontends/qt/GuiDocument.cpp:3151
-#: src/frontends/qt/GuiDocument.cpp:5169
+#: src/frontends/qt/GuiDocument.cpp:3075 src/frontends/qt/GuiDocument.cpp:3155
+#: src/frontends/qt/GuiDocument.cpp:5173
 msgid "Error"
 msgstr "Fel"
 
@@ -14908,15 +14904,15 @@ msgstr "Teorem #."
 
 #: lib/layouts/foils.layout:278 lib/layouts/llncs.layout:391
 msgid "Lemma #."
-msgstr "Lemma #."
+msgstr "Hjälpsats #."
 
 #: lib/layouts/foils.layout:285 lib/layouts/llncs.layout:356
 msgid "Corollary #."
-msgstr "Korollarium #."
+msgstr "Fäljdsats #."
 
 #: lib/layouts/foils.layout:292 lib/layouts/llncs.layout:425
 msgid "Proposition #."
-msgstr "Proposition #."
+msgstr "Påstående #."
 
 #: lib/layouts/foils.layout:299 lib/layouts/llncs.layout:370
 msgid "Definition #."
@@ -14930,21 +14926,21 @@ msgstr "Teorem*"
 #: lib/layouts/foils.layout:331 lib/layouts/siamltex.layout:95
 #: lib/layouts/theorems-order.inc:22 lib/layouts/theorems-starred.inc:101
 msgid "Lemma*"
-msgstr "Lemma*"
+msgstr "Hjälpsats*"
 
 #: lib/layouts/foils.layout:338 lib/layouts/siamltex.layout:85
 #: lib/layouts/theorems-order.inc:16 lib/layouts/theorems-starred.inc:80
 msgid "Corollary*"
-msgstr "Korollarium*"
+msgstr "Följdsats*"
 
 #: lib/layouts/foils.layout:345 lib/layouts/siamltex.layout:105
 #: lib/layouts/theorems-order.inc:28 lib/layouts/theorems-starred.inc:122
 msgid "Proposition*"
-msgstr "Proposition*"
+msgstr "Påstående*"
 
 #: lib/layouts/foils.layout:348 lib/layouts/theorems-starred.inc:125
 msgid "Proposition."
-msgstr "Proposition."
+msgstr "Påstående."
 
 #: lib/layouts/foils.layout:352 lib/layouts/siamltex.layout:134
 #: lib/layouts/theorems-order.inc:40 lib/layouts/theorems-starred.inc:185
@@ -15467,11 +15463,11 @@ msgstr "Hebreisk artikel"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
 msgid "Theorem \\thesection.\\arabic{theorem}"
-msgstr "Teorem  \\thesection.\\arabic{theorem}"
+msgstr "Teorem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
 msgid "theorem \\thesection.\\arabic{theorem}"
-msgstr "teorem  \\thesection.\\arabic{theorem}"
+msgstr "teorem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
 msgid "Theorems \\thesection.\\arabic{theorem}"
@@ -15479,51 +15475,51 @@ msgstr "Teorem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:14 lib/layouts/theorems-sec.module:18
 msgid "theorems \\thesection.\\arabic{theorem}"
-msgstr "teorem  \\thesection.\\arabic{theorem}"
+msgstr "teorem \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
 msgid "Corollary \\thesection.\\arabic{theorem}"
-msgstr "Korollarium  \\thesection.\\arabic{theorem}"
+msgstr "Följdsats \\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
 msgid "corollary \\thesection.\\arabic{theorem}"
-msgstr "korollarium  \\thesection.\\arabic{theorem}"
+msgstr "följdsats \\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
 msgid "Corollaries \\thesection.\\arabic{theorem}"
-msgstr "Korollarier  \\thesection.\\arabic{theorem}"
+msgstr "Följdsatser \\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:15 lib/layouts/theorems-sec.module:19
 msgid "corollaries \\thesection.\\arabic{theorem}"
-msgstr "korollarier  \\thesection.\\arabic{theorem}"
+msgstr "följdsatser \\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
 msgid "Lemma \\thesection.\\arabic{theorem}"
-msgstr "Lemma  \\thesection.\\arabic{theorem}"
+msgstr "Hjälpsats \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
 msgid "lemma \\thesection.\\arabic{theorem}"
-msgstr "lemma \\thesection.\\arabic{theorem}"
+msgstr "hjälpsats \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
 msgid "Lemmas \\thesection.\\arabic{theorem}"
-msgstr "Lemma  \\thesection.\\arabic{theorem}"
+msgstr "Hjälpsats \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:16 lib/layouts/theorems-sec.module:20
 msgid "lemmas \\thesection.\\arabic{theorem}"
-msgstr "lemma  \\thesection.\\arabic{theorem}"
+msgstr "hjälpsatser \thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
 msgid "Claim \\thesection.\\arabic{theorem}"
-msgstr "Påstående  \\thesection.\\arabic{theorem}"
+msgstr "Påstående \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
 msgid "claim \\thesection.\\arabic{theorem}"
-msgstr "påstående  \\thesection.\\arabic{theorem}"
+msgstr "påstående \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
 msgid "Claims \\thesection.\\arabic{theorem}"
-msgstr "Påståenden  \\thesection.\\arabic{theorem}"
+msgstr "Påståenden \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:17 lib/layouts/theorems-sec.module:29
 msgid "claims \\thesection.\\arabic{theorem}"
@@ -15531,35 +15527,35 @@ msgstr "påståenden \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
 msgid "Definition \\thesection.\\arabic{theorem}"
-msgstr "Definition  \\thesection.\\arabic{theorem}"
+msgstr "Definition \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
 msgid "definition \\thesection.\\arabic{theorem}"
-msgstr "definition  \\thesection.\\arabic{theorem}"
+msgstr "definition \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
 msgid "Definitions \\thesection.\\arabic{theorem}"
-msgstr "Definitioner  \\thesection.\\arabic{theorem}"
+msgstr "Definitioner \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:18 lib/layouts/theorems-sec.module:23
 msgid "definitions \\thesection.\\arabic{theorem}"
-msgstr "definitioner  \\thesection.\\arabic{theorem}"
+msgstr "definitioner \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
 msgid "Remark \\thesection.\\arabic{theorem}"
-msgstr "Anmärkning  \\thesection.\\arabic{theorem}"
+msgstr "Anmärkning \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
 msgid "remark \\thesection.\\arabic{theorem}"
-msgstr "anmärkning  \\thesection.\\arabic{theorem}"
+msgstr "anmärkning \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
 msgid "Remarks \\thesection.\\arabic{theorem}"
-msgstr "Anmärkningar  \\thesection.\\arabic{theorem}"
+msgstr "Anmärkningar \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:19 lib/layouts/theorems-sec.module:28
 msgid "remarks \\thesection.\\arabic{theorem}"
-msgstr "anmärkningar  \\thesection.\\arabic{theorem}"
+msgstr "anmärkningar \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/heb-article.layout:85 lib/layouts/theorems-ams.inc:372
 #: lib/layouts/theorems.inc:374
@@ -15735,7 +15731,7 @@ msgstr ""
 #: lib/layouts/theorems-bytype.inc:80
 #: lib/layouts/theorems-without-preamble.inc:93
 msgid "Corollary \\thecorollary."
-msgstr "Korollarium \\thecorollary."
+msgstr "Följdsats \\thecorollary."
 
 #: lib/layouts/ijmpc.layout:452 lib/layouts/ijmpd.layout:478
 #: lib/layouts/theorems-ams-bytype.inc:110
@@ -15743,7 +15739,7 @@ msgstr "Korollarium \\thecorollary."
 #: lib/layouts/theorems-bytype.inc:104
 #: lib/layouts/theorems-without-preamble.inc:116
 msgid "Lemma \\thelemma."
-msgstr "Lemma \\thelemma."
+msgstr "Hjälpsats \\thelemma."
 
 #: lib/layouts/ijmpc.layout:456 lib/layouts/ijmpd.layout:486
 #: lib/layouts/theorems-ams-bytype.inc:134
@@ -15751,7 +15747,7 @@ msgstr "Lemma \\thelemma."
 #: lib/layouts/theorems-bytype.inc:128
 #: lib/layouts/theorems-without-preamble.inc:139
 msgid "Proposition \\theproposition."
-msgstr "Proposition \\theproposition."
+msgstr "Påstående \\theproposition."
 
 #: lib/layouts/ijmpc.layout:460 lib/layouts/ijmpd.layout:495
 #: lib/layouts/theorems-ams-extended-bytype.module:418
@@ -15878,7 +15874,7 @@ msgstr "teorem ##"
 #: lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87 lib/layouts/theorems.inc:89
 msgid "corollary"
-msgstr "korollarium"
+msgstr "följdsats"
 
 #: lib/layouts/ijmpd.layout:466 lib/layouts/theorems-ams-bytype.inc:92
 #: lib/layouts/theorems-ams-chap-bytype.inc:136 lib/layouts/theorems-ams.inc:90
@@ -15886,7 +15882,7 @@ msgstr "korollarium"
 #: lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87 lib/layouts/theorems.inc:90
 msgid "Corollaries"
-msgstr "Korollarier"
+msgstr "Följdsatser"
 
 #: lib/layouts/ijmpd.layout:466 lib/layouts/theorems-ams-bytype.inc:92
 #: lib/layouts/theorems-ams-chap-bytype.inc:136 lib/layouts/theorems-ams.inc:90
@@ -15894,27 +15890,27 @@ msgstr "Korollarier"
 #: lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87 lib/layouts/theorems.inc:90
 msgid "corollaries"
-msgstr "korollarier"
+msgstr "följdsatser"
 
 #: lib/layouts/ijmpd.layout:466 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
 msgid "Corollary ##"
-msgstr "Korollarium ##"
+msgstr "Följdsats ##"
 
 #: lib/layouts/ijmpd.layout:466 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
 msgid "corollary ##"
-msgstr "kollarium ##"
+msgstr "följdsats ##"
 
 #: lib/layouts/ijmpd.layout:466 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
 msgid "Corollaries ##"
-msgstr "Korollarier ##"
+msgstr "Följdsatser ##"
 
 #: lib/layouts/ijmpd.layout:466 lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-without-preamble.inc:87
 msgid "corollaries ##"
-msgstr "korollarier ##"
+msgstr "följdsatser ##"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-ams-bytype.inc:114
 #: lib/layouts/theorems-ams-chap-bytype.inc:159
@@ -15922,7 +15918,7 @@ msgstr "korollarier ##"
 #: lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110 lib/layouts/theorems.inc:114
 msgid "lemma"
-msgstr "lemma"
+msgstr "hjälpsats"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-ams-bytype.inc:115
 #: lib/layouts/theorems-ams-chap-bytype.inc:160
@@ -15930,7 +15926,7 @@ msgstr "lemma"
 #: lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110 lib/layouts/theorems.inc:115
 msgid "Lemmas"
-msgstr "Lemma"
+msgstr "Hjälpsatser"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-ams-bytype.inc:115
 #: lib/layouts/theorems-ams-chap-bytype.inc:160
@@ -15938,27 +15934,27 @@ msgstr "Lemma"
 #: lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110 lib/layouts/theorems.inc:115
 msgid "lemmas"
-msgstr "lemma"
+msgstr "hjälpsatser"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
 msgid "Lemma ##"
-msgstr "Lemma ##"
+msgstr "Hjälpsats ##"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
 msgid "lemma ##"
-msgstr "lemma ##"
+msgstr "hjälpsats ##"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
 msgid "Lemmas ##"
-msgstr "Lemma ##"
+msgstr "Hjälpsatser ##"
 
 #: lib/layouts/ijmpd.layout:475 lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-without-preamble.inc:110
 msgid "lemmas ##"
-msgstr "lemma ##"
+msgstr "hjälpsatser ##"
 
 #: lib/layouts/ijmpd.layout:492
 #: lib/layouts/theorems-ams-extended-bytype.module:421
@@ -16066,7 +16062,7 @@ msgstr "Prop(osition)"
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156 lib/layouts/theorems.inc:140
 msgid "proposition"
-msgstr "proposition"
+msgstr "påstående"
 
 #: lib/layouts/ijmpd.layout:529 lib/layouts/theorems-ams-bytype.inc:139
 #: lib/layouts/theorems-ams-chap-bytype.inc:185
@@ -16075,7 +16071,7 @@ msgstr "proposition"
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156 lib/layouts/theorems.inc:141
 msgid "Propositions"
-msgstr "Propositioner"
+msgstr "Påståenden"
 
 #: lib/layouts/ijmpd.layout:529 lib/layouts/theorems-ams-bytype.inc:139
 #: lib/layouts/theorems-ams-chap-bytype.inc:185
@@ -16084,31 +16080,31 @@ msgstr "Propositioner"
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156 lib/layouts/theorems.inc:141
 msgid "propositions"
-msgstr "propositioner"
+msgstr "påståenden"
 
 #: lib/layouts/ijmpd.layout:529 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
 msgid "Proposition ##"
-msgstr "Proposition ##"
+msgstr "Påstående ##"
 
 #: lib/layouts/ijmpd.layout:529 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
 msgid "proposition ##"
-msgstr "proposition ##"
+msgstr "påstående ##"
 
 #: lib/layouts/ijmpd.layout:529 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
 msgid "Propositions ##"
-msgstr "Propositioner ##"
+msgstr "Påståenden ##"
 
 #: lib/layouts/ijmpd.layout:529 lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-without-preamble.inc:133
 #: lib/layouts/theorems-without-preamble.inc:156
 msgid "propositions ##"
-msgstr "propositioner ##"
+msgstr "påståenden ##"
 
 #: lib/layouts/initials.module:2
 msgid "Initials (Drop Caps)"
@@ -16677,9 +16673,9 @@ msgid ""
 "it depends on R >= 2.14.1. For more info see http://yihui.name/knitr"
 msgstr ""
 "Använder knitr-paketet i R för dynamisk rapportgenerering. Detta R-paket "
-"måste vara installerad för denna modul att fungera: "
-"install.packages('knitr'). Notera att det beror på R >= 2.14.1. För mer "
-"information se http://yihui.name/knitr"
+"måste vara installerad för denna modul att fungera: install."
+"packages('knitr'). Notera att det beror på R >= 2.14.1. För mer information "
+"se http://yihui.name/knitr"
 
 #: lib/layouts/knitr.module:14 lib/layouts/litinsets.inc:12
 #: lib/layouts/sweave.module:14
@@ -17328,11 +17324,11 @@ msgstr "tablå ##"
 
 #: lib/layouts/linguistics.module:580
 msgid "Tableaux ##"
-msgstr "Tablå ##"
+msgstr "Tablåer ##"
 
 #: lib/layouts/linguistics.module:580
 msgid "tableaux ##"
-msgstr "tablå ##"
+msgstr "tablåer ##"
 
 #: lib/layouts/litinsets.inc:13 lib/layouts/litinsets.inc:18
 msgid "Chunk"
@@ -19198,19 +19194,19 @@ msgstr "Ekvationer"
 
 #: lib/layouts/scrbook.layout:32
 msgid "Equation (\\thechapter.\\arabic{equation})"
-msgstr "Ekvation \\thechapter.\\arabic{equation}"
+msgstr "Ekvation (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrbook.layout:32
 msgid "equation (\\thechapter.\\arabic{equation})"
-msgstr "ekvation \\thechapter.\\arabic{equation}"
+msgstr "ekvation (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrbook.layout:32
 msgid "Equations (\\thechapter.\\arabic{equation})"
-msgstr "Ekvationer \\thechapter.\\arabic{equation}"
+msgstr "Ekvationer (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrbook.layout:32
 msgid "equations (\\thechapter.\\arabic{equation})"
-msgstr "ekvationer \\thechapter.\\arabic{equation}"
+msgstr "ekvationer (\\thechapter.\\arabic{equation})"
 
 #: lib/layouts/scrclass.inc:52
 msgid "\\alph{enumii})"
@@ -19790,7 +19786,7 @@ msgstr "<Synlig text följer>"
 
 #: lib/layouts/sn-jnl.layout:3 lib/examples/Articles:0
 msgid "Springer Nature Journals"
-msgstr "Springer Nature-tidskrifter"
+msgstr "Springer Nature Journals"
 
 #: lib/layouts/sn-jnl.layout:60 lib/layouts/sn-jnl.layout:74
 msgid "Affiliation Nr."
@@ -19798,7 +19794,7 @@ msgstr "Tillhörighet Nr."
 
 #: lib/layouts/sn-jnl.layout:64
 msgid "Author (Corresp.)"
-msgstr "Författare (Korrespondens)"
+msgstr "Författare (Korresp.)"
 
 #: lib/layouts/sn-jnl.layout:67
 msgid "Author (Corr.):"
@@ -19806,11 +19802,11 @@ msgstr "Författare (Korr.):"
 
 #: lib/layouts/sn-jnl.layout:78
 msgid "Affiliation (Corresp.)"
-msgstr "Tillhörighet (korrespondens)"
+msgstr "Tillhörighet (Korresp.)"
 
 #: lib/layouts/sn-jnl.layout:89
 msgid "Equal Contribution"
-msgstr "Lika stora bidrag"
+msgstr "Lika bidrag"
 
 #: lib/layouts/sn-jnl.layout:138
 msgid "Classification"
@@ -19842,15 +19838,15 @@ msgstr "Postnummer"
 
 #: lib/layouts/sn-jnl.layout:202
 msgid "Postcode"
-msgstr "Postnummer"
+msgstr "Postkod"
 
 #: lib/layouts/sn-jnl.layout:236
 msgid "----------- Begin Backmatter ----------"
-msgstr "----------- Börja Eftertext ----------"
+msgstr "----------- Börja bakre material ----------"
 
 #: lib/layouts/sn-jnl.layout:246
 msgid "Backmatter heading"
-msgstr "Eftertextrubrik"
+msgstr "Rubrik bakre material"
 
 #: lib/layouts/sn-jnl.layout:277
 msgid "Appendix \\Alph{appendix}"
@@ -19978,11 +19974,11 @@ msgstr "i"
 
 #: lib/layouts/stdciteformats.inc:32
 msgid ", & [[separate name of last author in citation w/ ampersand]]"
-msgstr ", & [[separat namn på sista författaren i hänvisning med et-tecken]]"
+msgstr ", & [[separat namn för sista författaren i citat m/ ampersand]]"
 
 #: lib/layouts/stdciteformats.inc:33
 msgid " & [[separate two authors in citation w/ ampersand]]"
-msgstr " & [[separera två författare i hänvisning med et-tecken]]"
+msgstr " & [[två separata författare i citat m/ ampersand]]"
 
 #: lib/layouts/stdcounters.inc:10
 msgid "\\Roman{part}"
@@ -20078,19 +20074,19 @@ msgstr "Post \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
 msgid "item \\arabic{enumi}"
-msgstr "post \\arabic{enumi}."
+msgstr "post \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
 msgid "Items \\arabic{enumi}"
-msgstr "Poster \\arabic{enumi}."
+msgstr "Poster \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:52
 msgid "items \\arabic{enumi}"
-msgstr "poster \\arabic{enumi}."
+msgstr "poster \\arabic{enumi}"
 
 #: lib/layouts/stdcounters.inc:59
 msgid "Item \\arabic{enumi}\\alph{enumii}"
-msgstr "Post (\\arabic{enumi}\\alph{enumii}"
+msgstr "Post \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
 msgid "item \\arabic{enumi}\\alph{enumii}"
@@ -20102,7 +20098,7 @@ msgstr "Poster \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:59
 msgid "items \\arabic{enumi}\\alph{enumii}"
-msgstr "poster\\arabic{enumi}\\alph{enumii}"
+msgstr "poster \\arabic{enumi}\\alph{enumii}"
 
 #: lib/layouts/stdcounters.inc:65
 msgid "\\roman{enumiii}."
@@ -20110,19 +20106,19 @@ msgstr "\\roman{enumiii}."
 
 #: lib/layouts/stdcounters.inc:66
 msgid "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr "Post  \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
+msgstr "Post \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr "post  \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
+msgstr "post \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "Items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr "Poster  \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
+msgstr "Poster \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:66
 msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
-msgstr "poster  \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
+msgstr "poster \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}"
 
 #: lib/layouts/stdcounters.inc:72
 msgid "\\Alph{enumiv}."
@@ -20130,7 +20126,7 @@ msgstr "\\Alph{enumiv}."
 
 #: lib/layouts/stdcounters.inc:73
 msgid "Item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
-msgstr "Post  \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
+msgstr "Post \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:73
 msgid "item \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
@@ -20184,11 +20180,11 @@ msgstr "ekvation (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
 msgid "Equations (##)"
-msgstr "Ekvationer(##)"
+msgstr "Ekvationer (##)"
 
 #: lib/layouts/stdcounters.inc:87 lib/layouts/subequations.module:18
 msgid "equations (##)"
-msgstr "ekvationer (##)"
+msgstr "ekvatioer (##)"
 
 #: lib/layouts/stdcounters.inc:98
 msgid "\\fnsymbol{thanks}"
@@ -20212,7 +20208,7 @@ msgstr "Marginalnoter"
 msgid "Notes"
 msgstr "Noter"
 
-#: lib/layouts/stdinsets.inc:14 src/frontends/qt/GuiDocument.cpp:1914
+#: lib/layouts/stdinsets.inc:14 src/frontends/qt/GuiDocument.cpp:1918
 msgid "Branches"
 msgstr "Grenar"
 
@@ -20226,7 +20222,7 @@ msgstr "Marginal"
 
 #: lib/layouts/stdinsets.inc:52
 msgid "Foot ##"
-msgstr "Fot ##"
+msgstr "Sidfot ##"
 
 #: lib/layouts/stdinsets.inc:182
 msgid "Greyedout"
@@ -20246,8 +20242,8 @@ msgstr "Listningar"
 msgid "List of Listings"
 msgstr "Lista över listningar"
 
-#: lib/layouts/stdinsets.inc:358 src/frontends/qt/GuiDocument.cpp:1912
-#: src/frontends/qt/GuiDocument.cpp:5192
+#: lib/layouts/stdinsets.inc:358 src/frontends/qt/GuiDocument.cpp:1916
+#: src/frontends/qt/GuiDocument.cpp:5196
 msgid "Listings[[inset]]"
 msgstr "Listningar"
 
@@ -20278,7 +20274,7 @@ msgstr "Nom"
 
 #: lib/layouts/stdinsets.inc:478
 msgid "Sort this entry as specified in the inset"
-msgstr "Sortera den här posten enligt anvisning i infällningen"
+msgstr "Sortera denna post enligt anvisningarna i den infällda rutan"
 
 #: lib/layouts/stdinsets.inc:482
 msgid "Description of the entry"
@@ -20294,11 +20290,11 @@ msgstr "Nomenklaturenhet"
 
 #: lib/layouts/stdinsets.inc:500
 msgid "Note[[nomencl]]"
-msgstr "Not[[nomencl]]"
+msgstr "Anmärkning[nomencl]]"
 
 #: lib/layouts/stdinsets.inc:501
 msgid "Nomenclature note"
-msgstr "Nomenklaturnot"
+msgstr "Nomenklaturanmärkning"
 
 #: lib/layouts/stdinsets.inc:691
 msgid "Argument"
@@ -20874,7 +20870,7 @@ msgstr "faktum"
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209 lib/layouts/theorems.inc:190
 msgid "Facts"
-msgstr "Fakta"
+msgstr "Faktum"
 
 #: lib/layouts/theorems-ams-bytype.inc:186
 #: lib/layouts/theorems-ams-chap-bytype.inc:234
@@ -20882,7 +20878,7 @@ msgstr "Fakta"
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209 lib/layouts/theorems.inc:190
 msgid "facts"
-msgstr "fakta"
+msgstr "faktum"
 
 #: lib/layouts/theorems-ams-bytype.inc:206
 #: lib/layouts/theorems-ams-chap-bytype.inc:254
@@ -20997,10 +20993,10 @@ msgstr ""
 "Definierar teoremmiljöer och bevismiljön via det utökade AMS-maskineriet. "
 "Både numrerade och onumrerade typer förses. I motsats till den vanliga AMS-"
 "teoremmodulen har de olika teoremtyperna försedda här varsin skild räknare "
-"(t.ex. teorem 1, teorem 2, lemma 1, proposition 1, teorem 3, lemma 2, ..., i "
-"motsats till teorem 1, teorem 2, lemma 3, proposition 4, ...). Numreringens "
-"omfång är hela dokumentet. För kapitel- och avsnittsbred numrering, använd "
-"en av 'i avsnitt'/'i kapitel'-modulerna, respektive."
+"(t.ex. teorem 1, teorem 2, hjälpsats 1, påstående 1, teorem 3, hjälpsats "
+"2, ..., i motsats till teorem 1, teorem 2, hjälpsats 3, påstående 4, ...). "
+"Numreringens omfång är hela dokumentet. För kapitel- och avsnittsbred "
+"numrering, använd en av 'i avsnitt'/'i kapitel'-modulerna, respektive."
 
 #: lib/layouts/theorems-ams-chap-bytype.module:2
 msgid "AMS Theorems (Numbered by Type within Chapters)"
@@ -21019,9 +21015,10 @@ msgstr ""
 "Definierar teoremmiljöer och bevismiljön via det utökade AMS-maskineriet. "
 "Både numrerade och onumrerade typer förses. I motsats till den vanliga AMS-"
 "teoremmodulen har de olika teoremtyperna försedda här varsin skild räknare "
-"(t.ex. teorem 1.1, teorem 1.2, lemma 1.1, proposition 1.1, teorem 1.3, lemma "
-"1.2, ..., i motsats till teorem 1, teorem 2, lemma 3, proposition 4, ...). "
-"Numreringen startar om för varje kapitel: teorem 1.1, teorem 2.1, ..."
+"(t.ex. teorem 1.1, teorem 1.2, hjälpsats 1.1, påstående 1.1, teorem 1.3, "
+"hjälpsats 1.2, ..., i motsats till teorem 1, teorem 2, hjälpsats 3, "
+"påstående 4, ...). Numreringen startar om för varje kapitel: teorem 1.1, "
+"teorem 2.1, ..."
 
 #: lib/layouts/theorems-ams-extended-bytype.module:2
 msgid "AMS Theorems (Extended, Numbered by Type)"
@@ -21188,13 +21185,13 @@ msgstr "not"
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:253
 #: lib/layouts/theorems-ams-extended.module:212
 msgid "Notes[[theorem]]"
-msgstr "Noter[[teorem]]"
+msgstr "Noter[[theorem]]"
 
 #: lib/layouts/theorems-ams-extended-bytype.module:213
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:253
 #: lib/layouts/theorems-ams-extended.module:212
 msgid "notes[[theorem]]"
-msgstr "noter[[teorem]]"
+msgstr "noter[[theorem]]"
 
 #: lib/layouts/theorems-ams-extended-bytype.module:226
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:266
@@ -21279,13 +21276,13 @@ msgstr "slutsats"
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:382
 #: lib/layouts/theorems-ams-extended.module:338
 msgid "Conclusions[[theorem]]"
-msgstr "Slutsatser[[teorem]]"
+msgstr "Slutsatser[[theorem]]"
 
 #: lib/layouts/theorems-ams-extended-bytype.module:339
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:382
 #: lib/layouts/theorems-ams-extended.module:338
 msgid "conclusions[[theorem]]"
-msgstr "slutsatser[[teorem]]"
+msgstr "slutsatser[[theorem]]"
 
 #: lib/layouts/theorems-ams-extended-bytype.module:354
 #: lib/layouts/theorems-ams-extended-chap-bytype.module:397
@@ -21481,10 +21478,10 @@ msgid ""
 msgstr ""
 "Definierar några teoremmiljöer för användning med icke-AMS-klasser. I "
 "motsats till den vanliga teoremmodulen har de olika teoremtyperna försedda "
-"här varsin skild räknare (t.ex., teorem 1, teorem 2, lemma 1, proposition 1, "
-"teorem 3, lemma 2, ..., i motsats till teorem 1, teorem 2, lemma 3, "
-"proposition 4, ...). Numreringens omfång är hela dokumentet. För kapitel- "
-"och avsnittsbred numrering, använd en av 'i avsnitt'/'i kapitel'-modulerna, "
+"här varsin skild räknare (t.ex., teorem 1, teorem 2, hjälpsats 1, påstående "
+"1, teorem 3, lemma 2, ..., i motsats till teorem 1, teorem 2, hjälpsats 3, "
+"påstående 4, ...). Numreringens omfång är hela dokumentet. För kapitel- och "
+"avsnittsbred numrering, använd en av 'i avsnitt'/'i kapitel'-modulerna, "
 "respektive."
 
 #: lib/layouts/theorems-case.inc:12
@@ -21497,7 +21494,7 @@ msgstr "Fall  \\arabic{casei}"
 
 #: lib/layouts/theorems-case.inc:13
 msgid "case \\arabic{casei}"
-msgstr "fall \\arabic{casei}"
+msgstr "fall  \\arabic{casei}"
 
 #: lib/layouts/theorems-case.inc:13
 msgid "Cases \\arabic{casei}"
@@ -21597,9 +21594,9 @@ msgid ""
 msgstr ""
 "Definierar några teoremmiljöer för användning med icke-AMS-klasser. I "
 "motsats till den vanliga teoremmodulen har de olika teoremtyperna försedda "
-"här varsin skild räknare (t.ex., teorem 1, teorem 2, lemma 1, proposition 1, "
-"teorem 3, lemma 2, ..., i motsats till teorem 1, teorem 2, lemma 3, "
-"proposition 4, ...). Numreringen återställs vid varje kapitelstart."
+"här varsin skild räknare (t.ex., teorem 1, teorem 2, hjälpsats 1, påstående "
+"1, teorem 3, hjälpsats 2, ..., i motsats till teorem 1, teorem 2, hjälpsats "
+"3, påstående 4, ...). Numreringen återställs vid varje kapitelstart."
 
 #: lib/layouts/theorems-chap.module:2
 msgid "Standard Theorems (Numbered by Chapter)"
@@ -21621,7 +21618,7 @@ msgstr "Teorem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:19
 msgid "theorem \\thechapter.\\arabic{theorem}"
-msgstr "teorem \\thechapter.\\arabic{theorem}"
+msgstr "teorem  \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:19
 msgid "Theorems \\thechapter.\\arabic{theorem}"
@@ -21629,55 +21626,55 @@ msgstr "Teorem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:19
 msgid "theorems \\thechapter.\\arabic{theorem}"
-msgstr "teorem\\thechapter.\\arabic{theorem}"
+msgstr "teorem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
 msgid "Corollary \\thechapter.\\arabic{theorem}"
-msgstr "Korollarium \\thechapter.\\arabic{theorem}"
+msgstr "Följdsats \\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
 msgid "corollary \\thechapter.\\arabic{theorem}"
-msgstr "korollarium \\thechapter.\\arabic{theorem}"
+msgstr "följdsats \\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
 msgid "Corollaries \\thechapter.\\arabic{theorem}"
-msgstr "Korollarier \\thechapter.\\arabic{theorem}"
+msgstr "Följdsatser \\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:20
 msgid "corollaries \\thechapter.\\arabic{theorem}"
-msgstr "korollarier \\thechapter.\\arabic{theorem}"
+msgstr "följdsatser \\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
 msgid "Lemma \\thechapter.\\arabic{theorem}"
-msgstr "Lemma\\thechapter.\\arabic{theorem}"
+msgstr "Hjälpsats \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
 msgid "lemma \\thechapter.\\arabic{theorem}"
-msgstr "lemma \\thechapter.\\arabic{theorem}"
+msgstr "hjälpsats \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
 msgid "Lemmas \\thechapter.\\arabic{theorem}"
-msgstr "Lemma \\thechapter.\\arabic{theorem}"
+msgstr "Hjälpsatser \\\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:21
 msgid "lemmas \\thechapter.\\arabic{theorem}"
-msgstr "lemma \\thechapter.\\arabic{theorem}"
+msgstr "hjälpsatser \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
 msgid "Proposition \\thechapter.\\arabic{theorem}"
-msgstr "Proposition \\thechapter.\\arabic{theorem}"
+msgstr "Påstående \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
 msgid "proposition \\thechapter.\\arabic{theorem}"
-msgstr "proposition \\thechapter.\\arabic{theorem}"
+msgstr "påstående \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
 msgid "Propositions \\thechapter.\\arabic{theorem}"
-msgstr "Propositioner \\thechapter.\\arabic{theorem}"
+msgstr "Påståenden \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:22
 msgid "propositions \\thechapter.\\arabic{theorem}"
-msgstr "propositioner \\thechapter.\\arabic{theorem}"
+msgstr "påståenden \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:23
 msgid "Conjecture \\thechapter.\\arabic{theorem}"
@@ -21701,7 +21698,7 @@ msgstr "Definition \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:24
 msgid "definition \\thechapter.\\arabic{theorem}"
-msgstr "definition \\thechapter.\\arabic{theorem}"
+msgstr "definition  \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:24
 msgid "Definitions \\thechapter.\\arabic{theorem}"
@@ -21741,7 +21738,7 @@ msgstr "Problem \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:26
 msgid "problems \\thechapter.\\arabic{theorem}"
-msgstr "problem \\thechapter.\\arabic{theorem}"
+msgstr "problem  \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
 msgid "Exercise \\thechapter.\\arabic{theorem}"
@@ -21749,7 +21746,7 @@ msgstr "Övning \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
 msgid "exercise \\thechapter.\\arabic{theorem}"
-msgstr "övning \\thechapter.\\arabic{theorem}"
+msgstr "övning  \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:27
 msgid "Exercises \\thechapter.\\arabic{theorem}"
@@ -21789,11 +21786,11 @@ msgstr "Anmärkningar \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:29
 msgid "remarks \\thechapter.\\arabic{theorem}"
-msgstr "anmärkningar \\thechapter.\\arabic{theorem}"
+msgstr "anmärkningar  \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:30
 msgid "Claim \\thechapter.\\arabic{theorem}"
-msgstr "Påstående\\thechapter.\\arabic{theorem}"
+msgstr "Påstående \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:30
 msgid "claim \\thechapter.\\arabic{theorem}"
@@ -21817,11 +21814,11 @@ msgstr "faktum \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:31
 msgid "Facts \\thechapter.\\arabic{theorem}"
-msgstr "Fakta \\thechapter.\\arabic{theorem}"
+msgstr "Faktum \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:31
 msgid "facts \\thechapter.\\arabic{theorem}"
-msgstr "fakta \\thechapter.\\arabic{theorem}"
+msgstr "faktum \\thechapter.\\arabic{theorem}"
 
 #: lib/layouts/theorems-chap.module:32
 msgid "Criterion \\thechapter.\\arabic{theorem}"
@@ -21868,12 +21865,12 @@ msgstr "faktum ##"
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209
 msgid "Facts ##"
-msgstr "Fakta ##"
+msgstr "Faktum ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:30
 #: lib/layouts/theorems-without-preamble.inc:209
 msgid "facts ##"
-msgstr "fakta"
+msgstr "faktum ##"
 
 #: lib/layouts/theorems-counters-bytype.inc:35
 #: lib/layouts/theorems-without-preamble.inc:232
@@ -22021,33 +22018,33 @@ msgstr "Anteckning ##"
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
 msgid "note ##"
-msgstr "anteckning ##"
+msgstr "not ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
 msgid "Notes ##"
-msgstr "Anteckningar ##"
+msgstr "Noter ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
 msgid "notes ##"
-msgstr "anteckningar ##"
+msgstr "noter ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
 msgid "Notation ##"
-msgstr "Anteckningar ##"
+msgstr "Notering ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
 msgid "notation ##"
-msgstr "anteckning ##"
+msgstr "notering ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
 msgid "Notations ##"
-msgstr "Anteckningar ##"
+msgstr "Noteringar ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:28
 msgid "notations ##"
-msgstr "anteckningar ##"
+msgstr "noteringar ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
 #, fuzzy
@@ -22144,9 +22141,9 @@ msgid ""
 msgstr ""
 "Definierar några teoremmiljöer för användning med icke-AMS-klasser. I "
 "motsats till den vanliga teoremmodulen har de olika teoremtyperna försedda "
-"här varsin skild räknare (t.ex., teorem 1, teorem 2, lemma 1, proposition 1, "
-"teorem 3, lemma 2, ..., i motsats till teorem 1, teorem 2, lemma 3, "
-"proposition 4, ...). Numreringen återställs vid varje avsnittstart."
+"här varsin skild räknare (t.ex., teorem 1, teorem 2, hjälpsats 1, påstående "
+"1, teorem 3, hjälpsats 2, ..., i motsats till teorem 1, teorem 2, hjälpsats "
+"3, påstående 4, ...). Numreringen återställs vid varje avsnittstart."
 
 #: lib/layouts/theorems-sec.module:2
 msgid "Standard Theorems (Numbered by Section)"
@@ -22162,19 +22159,19 @@ msgstr ""
 
 #: lib/layouts/theorems-sec.module:21
 msgid "Proposition \\thesection.\\arabic{theorem}"
-msgstr "Proposition \\thesection.\\arabic{theorem}"
+msgstr "Påstående \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:21
 msgid "proposition \\thesection.\\arabic{theorem}"
-msgstr "proposition \\thesection.\\arabic{theorem}"
+msgstr "påstående \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:21
 msgid "Propositions \\thesection.\\arabic{theorem}"
-msgstr "Propositioner \\thesection.\\arabic{theorem}"
+msgstr "Påståenden \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:21
 msgid "propositions \\thesection.\\arabic{theorem}"
-msgstr "propositioner \\thesection.\\arabic{theorem}"
+msgstr "påståenden \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
 msgid "Conjecture \\thesection.\\arabic{theorem}"
@@ -22182,7 +22179,7 @@ msgstr "Förmodan \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
 msgid "conjecture \\thesection.\\arabic{theorem}"
-msgstr "förmodan \\thesection.\\arabic{theorem}"
+msgstr "förmodan  \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:22
 msgid "Conjectures \\thesection.\\arabic{theorem}"
@@ -22266,11 +22263,11 @@ msgstr "faktum \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:30
 msgid "Facts \\thesection.\\arabic{theorem}"
-msgstr "Fakta \\thesection.\\arabic{theorem}"
+msgstr "Faktum \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:30
 msgid "facts \\thesection.\\arabic{theorem}"
-msgstr "fakta \\thesection.\\arabic{theorem}"
+msgstr "faktum \\thesection.\\arabic{theorem}"
 
 #: lib/layouts/theorems-sec.module:31
 msgid "Criterion \\thesection.\\arabic{theorem}"
@@ -22738,7 +22735,7 @@ msgstr "Arabiska (ArabTeX, endast med TeX-typsnitt)"
 
 #: lib/languages:298
 msgid "Arabic (Arabi or non-TeX fonts)"
-msgstr "Arabiska (Arabi eller icke-TeX-typsnitt)"
+msgstr "Arabiska (Arabi eller icke TeX-typsnitt)"
 
 #: lib/languages:333 src/frontends/qt/GuiSymbols.cpp:63
 msgid "Armenian"
@@ -22958,7 +22955,7 @@ msgstr "Japanska"
 
 #: lib/languages:1444
 msgid "Japanese (CJK, only with TeX fonts)"
-msgstr "Japanese (CJK, endast med TeX-typsnitt)"
+msgstr "Japanska (CJK, endast med TeX-typsnitt)"
 
 #: lib/languages:1455 src/frontends/qt/GuiSymbols.cpp:73
 msgid "Kannada"
@@ -22998,11 +22995,11 @@ msgstr "Latin (klassisk)"
 
 #: lib/languages:1575
 msgid "Latin (Ecclesiastic)"
-msgstr "Latin (kyrko)"
+msgstr "Latin (kyrklig)"
 
 #: lib/languages:1588
 msgid "Latin (Medieval)"
-msgstr "Latin (medeltids)"
+msgstr "Latin (medeltida)"
 
 #: lib/languages:1605
 msgid "Latvian"
@@ -23078,7 +23075,7 @@ msgstr "Portugisiska"
 
 #: lib/languages:1977
 msgid "Punjabi"
-msgstr "Punjabi"
+msgstr "Punjabiska"
 
 #: lib/languages:1987
 msgid "Romanian"
@@ -23102,7 +23099,7 @@ msgstr "Sanskrit"
 
 #: lib/languages:2091
 msgid "Scottish Gaelic"
-msgstr "Skotsgaeliska"
+msgstr "Skotsk gaeliska"
 
 #: lib/languages:2108
 msgid "Serbian"
@@ -23174,7 +23171,7 @@ msgstr "Urdu"
 
 #: lib/languages:2442
 msgid "Uyghur"
-msgstr "Uigur"
+msgstr "Uguriska"
 
 #: lib/languages:2455
 msgid "Vietnamese"
@@ -23195,7 +23192,7 @@ msgstr "Svart"
 #: lib/latexcolors:154 lib/latexcolors:161 lib/latexcolors:169
 #: lib/latexcolors:177 lib/latexcolors:184
 msgid "LaTeX Base Colors"
-msgstr "LaTeX Grundfärger"
+msgstr "LaTeX grundfärger"
 
 #: lib/latexcolors:53
 msgid "Dark gray"
@@ -23243,7 +23240,7 @@ msgstr "Violett"
 
 #: lib/latexcolors:137 lib/latexcolors:491 lib/latexcolors:1521
 msgid "Purple"
-msgstr "Lila"
+msgstr "Purpur"
 
 #: lib/latexcolors:145 lib/latexcolors:595 lib/latexcolors:1650
 msgid "Blue"
@@ -23321,11 +23318,11 @@ msgstr "Gulorange"
 
 #: lib/latexcolors:291
 msgid "BurntOrange"
-msgstr "Brandgul"
+msgstr "Brändorange"
 
 #: lib/latexcolors:299
 msgid "Bittersweet"
-msgstr "Bittersöt"
+msgstr "Bittersötorange"
 
 #: lib/latexcolors:307
 msgid "RedOrange"
@@ -23337,7 +23334,7 @@ msgstr "Mahogny"
 
 #: lib/latexcolors:325 lib/latexcolors:1217
 msgid "Maroon"
-msgstr "Kanstanj"
+msgstr "Rödbrun"
 
 #: lib/latexcolors:333
 msgid "BrickRed"
@@ -23361,15 +23358,15 @@ msgstr "Lax"
 
 #: lib/latexcolors:387
 msgid "CarnationPink"
-msgstr "Nejlikarosa"
+msgstr "Nejlikorosa"
 
 #: lib/latexcolors:407 lib/latexcolors:1505
 msgid "VioletRed"
-msgstr "Violröd"
+msgstr "Violettröd"
 
 #: lib/latexcolors:415
 msgid "Rhodamine"
-msgstr "Rhodamin"
+msgstr "Rhodamine"
 
 #: lib/latexcolors:423
 msgid "Mulberry"
@@ -23393,11 +23390,11 @@ msgstr "Tistel"
 
 #: lib/latexcolors:471 lib/latexcolors:1497
 msgid "Orchid"
-msgstr "Orkide"
+msgstr "Orkidé"
 
 #: lib/latexcolors:481 lib/latexcolors:1553
 msgid "DarkOrchid"
-msgstr "Mörkorkide"
+msgstr "Mörkorkidé"
 
 #: lib/latexcolors:501 lib/latexcolors:1465
 msgid "Plum"
@@ -23413,7 +23410,7 @@ msgstr "Blåviolett"
 
 #: lib/latexcolors:535
 msgid "Periwinkle"
-msgstr "Vintergrön"
+msgstr "Vintergröna"
 
 #: lib/latexcolors:545 lib/latexcolors:1866
 msgid "CadetBlue"
@@ -23421,7 +23418,7 @@ msgstr "Kadettblå"
 
 #: lib/latexcolors:555 lib/latexcolors:1674
 msgid "CornflowerBlue"
-msgstr "Blåklintsblå"
+msgstr "Kornblå"
 
 #: lib/latexcolors:565 lib/latexcolors:1609
 msgid "MidnightBlue"
@@ -23453,7 +23450,7 @@ msgstr "Turkos"
 
 #: lib/latexcolors:649
 msgid "TealBlue"
-msgstr "Blågrön"
+msgstr "Turkosblå"
 
 #: lib/latexcolors:659 lib/latexcolors:1794
 msgid "Aquamarine"
@@ -23473,7 +23470,7 @@ msgstr "Jungelgrön"
 
 #: lib/latexcolors:693 lib/latexcolors:1938
 msgid "SeaGreen"
-msgstr "Sjögrön"
+msgstr "Havsgrön"
 
 #: lib/latexcolors:713 lib/latexcolors:1946
 msgid "ForestGreen"
@@ -23513,7 +23510,7 @@ msgstr "Sepia"
 
 #: lib/latexcolors:805 lib/latexcolors:1329
 msgid "Tan"
-msgstr "Solbränd"
+msgstr "Barkbrun"
 
 #: lib/latexcolors:821 lib/latexcolors:829 lib/latexcolors:846
 #: lib/latexcolors:863 lib/latexcolors:880 lib/latexcolors:897
@@ -23564,7 +23561,7 @@ msgstr "Solbränd"
 #: lib/latexcolors:1997 lib/latexcolors:2005 lib/latexcolors:2013
 #: lib/latexcolors:2021 lib/latexcolors:2029
 msgid "SVG Names"
-msgstr "SVG Namn"
+msgstr "SVG namn"
 
 #: lib/latexcolors:826
 msgid "DarkSlateGray"
@@ -23600,7 +23597,7 @@ msgstr "Gainsboro"
 
 #: lib/latexcolors:961
 msgid "WhiteSmoke"
-msgstr "Vitrök"
+msgstr "Rökvit"
 
 #: lib/latexcolors:969
 msgid "GhostWhite"
@@ -23616,7 +23613,7 @@ msgstr "Elfenben"
 
 #: lib/latexcolors:1001
 msgid "FloralWhite"
-msgstr "Blommigvit"
+msgstr "Blomstervit"
 
 #: lib/latexcolors:1009
 msgid "Seashell"
@@ -23640,7 +23637,7 @@ msgstr "Skålladmandel"
 
 #: lib/latexcolors:1049
 msgid "PapayaWhip"
-msgstr "Papayakräm"
+msgstr "Vispadpapaya"
 
 #: lib/latexcolors:1057
 msgid "Beige"
@@ -23648,11 +23645,11 @@ msgstr "Beige"
 
 #: lib/latexcolors:1065
 msgid "Cornsilk"
-msgstr "Majsblast"
+msgstr "Majsstrå"
 
 #: lib/latexcolors:1073
 msgid "LightGoldenrodYellow"
-msgstr "Ljusgyllengul"
+msgstr "Ljusguldtackegul"
 
 #: lib/latexcolors:1081
 msgid "LightYellow"
@@ -23660,7 +23657,7 @@ msgstr "Ljusgul"
 
 #: lib/latexcolors:1089
 msgid "LemonChiffon"
-msgstr "Citronchiffong"
+msgstr "Citronchiffon"
 
 #: lib/latexcolors:1097
 msgid "PaleGoldenrod"
@@ -23716,7 +23713,7 @@ msgstr "Indianröd"
 
 #: lib/latexcolors:1241
 msgid "Crimson[[color]]"
-msgstr "Karmosin[[färg]]"
+msgstr "Karmosinröd[[färg]]"
 
 #: lib/latexcolors:1265
 msgid "Tomato"
@@ -23748,7 +23745,7 @@ msgstr "Rosbrun"
 
 #: lib/latexcolors:1337
 msgid "BurlyWood"
-msgstr "Mäktigtträd"
+msgstr "Kraftigtträ"
 
 #: lib/latexcolors:1345
 msgid "Wheat"
@@ -23756,7 +23753,7 @@ msgstr "Vete"
 
 #: lib/latexcolors:1353
 msgid "PeachPuff"
-msgstr "Persikapuff"
+msgstr "Persikopuff"
 
 #: lib/latexcolors:1361
 msgid "Moccasin"
@@ -23816,11 +23813,11 @@ msgstr "Ljusskifferblå"
 
 #: lib/latexcolors:1569
 msgid "MediumPurple"
-msgstr "Mellanlila"
+msgstr "Mellanpurpur"
 
 #: lib/latexcolors:1577
 msgid "MediumOrchid"
-msgstr "Mellanorkide"
+msgstr "Mellanorkidé"
 
 #: lib/latexcolors:1585
 msgid "MediumSlateBlue"
@@ -23832,7 +23829,7 @@ msgstr "Skifferblå"
 
 #: lib/latexcolors:1601
 msgid "DarkSlateBlue"
-msgstr "Mörkskiffergrå"
+msgstr "Mörkskifferblå"
 
 #: lib/latexcolors:1634
 msgid "DarkBlue"
@@ -23840,7 +23837,7 @@ msgstr "Mörkblå"
 
 #: lib/latexcolors:1642
 msgid "MediumBlue"
-msgstr "Melanblå"
+msgstr "Mellanblå"
 
 #: lib/latexcolors:1666
 msgid "SteelBlue"
@@ -23852,7 +23849,7 @@ msgstr "Dodgerblå"
 
 #: lib/latexcolors:1690
 msgid "DeepSkyBlue"
-msgstr "Djuphimmelsblå"
+msgstr "Djupthimmelsblå"
 
 #: lib/latexcolors:1698
 msgid "LightSkyBlue"
@@ -23868,7 +23865,7 @@ msgstr "Ljusblå"
 
 #: lib/latexcolors:1738
 msgid "Aqua"
-msgstr "Vetten"
+msgstr "Vatten"
 
 #: lib/latexcolors:1746
 msgid "PowderBlue"
@@ -23880,11 +23877,11 @@ msgstr "Ljuscyan"
 
 #: lib/latexcolors:1762
 msgid "AliceBlue"
-msgstr "Aliceblå"
+msgstr "Babyblå"
 
 #: lib/latexcolors:1770
 msgid "Azure"
-msgstr "Azurblå"
+msgstr "Azur"
 
 #: lib/latexcolors:1778
 msgid "MintCream"
@@ -23892,7 +23889,7 @@ msgstr "Mintkräm"
 
 #: lib/latexcolors:1786
 msgid "Honeydew"
-msgstr "Honungsdagg"
+msgstr "Honung"
 
 #: lib/latexcolors:1810
 msgid "PaleTurquoise"
@@ -24071,7 +24068,7 @@ msgstr "Grå0"
 #: lib/latexcolors:4500 lib/latexcolors:4508 lib/latexcolors:4516
 #: lib/latexcolors:4524 lib/latexcolors:4532 lib/latexcolors:4540
 msgid "X11 Names"
-msgstr "X11 Namn"
+msgstr "X11 namn"
 
 #: lib/latexcolors:2056
 msgid "Snow1"
@@ -24171,35 +24168,35 @@ msgstr "Navajovit4"
 
 #: lib/latexcolors:2248
 msgid "LemonChiffon1"
-msgstr "Citronchiffong1"
+msgstr "Citronchiffon1"
 
 #: lib/latexcolors:2256
 msgid "LemonChiffon2"
-msgstr "Citronchiffong2"
+msgstr "Citronchiffon2"
 
 #: lib/latexcolors:2264
 msgid "LemonChiffon3"
-msgstr "Citronchiffong3"
+msgstr "Citronchiffon3"
 
 #: lib/latexcolors:2272
 msgid "LemonChiffon4"
-msgstr "Citronchiffong4"
+msgstr "Citronchiffon4"
 
 #: lib/latexcolors:2280
 msgid "Cornsilk1"
-msgstr "Majsblast1"
+msgstr "Majsstrå1"
 
 #: lib/latexcolors:2288
 msgid "Cornsilk2"
-msgstr "Majsblast2"
+msgstr "Majsstrå2"
 
 #: lib/latexcolors:2296
 msgid "Cornsilk3"
-msgstr "Majsblast3"
+msgstr "Majsstrå3"
 
 #: lib/latexcolors:2304
 msgid "Cornsilk4"
-msgstr "Majsblast4"
+msgstr "Majsstrå4"
 
 #: lib/latexcolors:2312
 msgid "Ivory1"
@@ -24219,19 +24216,19 @@ msgstr "Elfenben4"
 
 #: lib/latexcolors:2344
 msgid "Honeydew1"
-msgstr "Honungsdagg1"
+msgstr "Honung1"
 
 #: lib/latexcolors:2352
 msgid "Honeydew2"
-msgstr "Honungsdagg2"
+msgstr "Honung2"
 
 #: lib/latexcolors:2360
 msgid "Honeydew3"
-msgstr "Honungsdagg3"
+msgstr "Honung3"
 
 #: lib/latexcolors:2368
 msgid "Honeydew4"
-msgstr "Honungsdagg4"
+msgstr "Honung4"
 
 #: lib/latexcolors:2376
 msgid "LavenderBlush1"
@@ -24267,19 +24264,19 @@ msgstr "Dimrosa4"
 
 #: lib/latexcolors:2440
 msgid "Azure1"
-msgstr "Azurblå1"
+msgstr "Azur1"
 
 #: lib/latexcolors:2448
 msgid "Azure2"
-msgstr "Azurblå2"
+msgstr "Azur2"
 
 #: lib/latexcolors:2456
 msgid "Azure3"
-msgstr "Azurblå3"
+msgstr "Azur3"
 
 #: lib/latexcolors:2464
 msgid "Azure4"
-msgstr "Azurblå4"
+msgstr "Azur4"
 
 #: lib/latexcolors:2472
 msgid "SlateBlue1"
@@ -24423,7 +24420,7 @@ msgstr "Skiffergrå3"
 
 #: lib/latexcolors:2752
 msgid "SlateGray4"
-msgstr "Skiffergrå4"
+msgstr "Skiffergrå14"
 
 #: lib/latexcolors:2760
 msgid "LightSteelBlue1"
@@ -24643,7 +24640,7 @@ msgstr "Grön1"
 
 #: lib/latexcolors:3192
 msgid "Green2"
-msgstr "Grön1"
+msgstr "Grön2"
 
 #: lib/latexcolors:3200
 msgid "Green3"
@@ -24863,19 +24860,19 @@ msgstr "Sienna4"
 
 #: lib/latexcolors:3632
 msgid "Burlywood1"
-msgstr "Mäktigtträd1"
+msgstr "Kraftigtträ1"
 
 #: lib/latexcolors:3640
 msgid "Burlywood2"
-msgstr "Mäktigtträd2"
+msgstr "Kraftigtträ2"
 
 #: lib/latexcolors:3648
 msgid "Burlywood3"
-msgstr "Mäktigtträd3"
+msgstr "Kraftigtträ3"
 
 #: lib/latexcolors:3656
 msgid "Burlywood4"
-msgstr "Mäktigtträd4"
+msgstr "Kraftigtträ4"
 
 #: lib/latexcolors:3664
 msgid "Wheat1"
@@ -24895,19 +24892,19 @@ msgstr "Vete4"
 
 #: lib/latexcolors:3696
 msgid "Tan1"
-msgstr "Solbränd1"
+msgstr "Barkbrun1"
 
 #: lib/latexcolors:3704
 msgid "Tan2"
-msgstr "Solbränd2"
+msgstr "Barkbrun2"
 
 #: lib/latexcolors:3712
 msgid "Tan3"
-msgstr "Solbränd3"
+msgstr "Barkbrun3"
 
 #: lib/latexcolors:3720
 msgid "Tan4"
-msgstr "Solbränd4"
+msgstr "Barkbrun4"
 
 #: lib/latexcolors:3728
 msgid "Chocolate1"
@@ -25127,7 +25124,7 @@ msgstr "Ljusrosa2"
 
 #: lib/latexcolors:4160
 msgid "LightPink3"
-msgstr "Ljusrosa2"
+msgstr "Ljusrosa3"
 
 #: lib/latexcolors:4168
 msgid "LightPink4"
@@ -25151,23 +25148,23 @@ msgstr "Blekviolettröd4"
 
 #: lib/latexcolors:4208
 msgid "Maroon1"
-msgstr "Kanstanj1"
+msgstr "Rödbrun1"
 
 #: lib/latexcolors:4216
 msgid "Maroon2"
-msgstr "Kanstanj2"
+msgstr "Rödbrun2"
 
 #: lib/latexcolors:4224
 msgid "Maroon3"
-msgstr "Kanstanj3"
+msgstr "Rödbrun3"
 
 #: lib/latexcolors:4232
 msgid "Maroon4"
-msgstr "Kanstanj4"
+msgstr "Rödbrun4"
 
 #: lib/latexcolors:4240
 msgid "Maroon0"
-msgstr "Kanstanj0"
+msgstr "Rödbrun0"
 
 #: lib/latexcolors:4248
 msgid "VioletRed1"
@@ -25203,19 +25200,19 @@ msgstr "Magenta4"
 
 #: lib/latexcolors:4312
 msgid "Orchid1"
-msgstr "Orkide1"
+msgstr "Orkidé1"
 
 #: lib/latexcolors:4320
 msgid "Orchid2"
-msgstr "Orkide2"
+msgstr "Orkidé2"
 
 #: lib/latexcolors:4328
 msgid "Orchid3"
-msgstr "Orkide3"
+msgstr "Orkidé3"
 
 #: lib/latexcolors:4336
 msgid "Orchid4"
-msgstr "Orkide4"
+msgstr "Orkidé4"
 
 #: lib/latexcolors:4344
 msgid "Plum1"
@@ -25235,71 +25232,71 @@ msgstr "Plommon4"
 
 #: lib/latexcolors:4376
 msgid "MediumOrchid1"
-msgstr "Mellanorkide1"
+msgstr "Magenta1"
 
 #: lib/latexcolors:4384
 msgid "MediumOrchid2"
-msgstr "Mellanorkide2"
+msgstr "Mellanorkidé2"
 
 #: lib/latexcolors:4392
 msgid "MediumOrchid3"
-msgstr "Mellanorkide3"
+msgstr "Mellanorkidé3"
 
 #: lib/latexcolors:4400
 msgid "MediumOrchid4"
-msgstr "Mellanorkide4"
+msgstr "Mellanorkidé4"
 
 #: lib/latexcolors:4408
 msgid "DarkOrchid1"
-msgstr "Mörkorkide1"
+msgstr "Mörkorkidé1"
 
 #: lib/latexcolors:4416
 msgid "DarkOrchid2"
-msgstr "Mörkorkide2"
+msgstr "Mörkorkidé2"
 
 #: lib/latexcolors:4424
 msgid "DarkOrchid3"
-msgstr "Mörkorkide3"
+msgstr "Mörkorkidé3"
 
 #: lib/latexcolors:4432
 msgid "DarkOrchid4"
-msgstr "Mörkorkide4"
+msgstr "Mörkorkidé4"
 
 #: lib/latexcolors:4440
 msgid "Purple0"
-msgstr "Lila0"
+msgstr "Purpur0"
 
 #: lib/latexcolors:4449
 msgid "Purple1"
-msgstr "Lila1"
+msgstr "Purpur1"
 
 #: lib/latexcolors:4457
 msgid "Purple2"
-msgstr "Llila2"
+msgstr "Purpur2"
 
 #: lib/latexcolors:4465
 msgid "Purple3"
-msgstr "Lila3"
+msgstr "Purpur3"
 
 #: lib/latexcolors:4473
 msgid "Purple4"
-msgstr "Lila4"
+msgstr "Purpur4"
 
 #: lib/latexcolors:4481
 msgid "MediumPurple1"
-msgstr "Mellanlila1"
+msgstr "Mellanpurpur1"
 
 #: lib/latexcolors:4489
 msgid "MediumPurple2"
-msgstr "Mellanlila2"
+msgstr "Mellanpurpur2"
 
 #: lib/latexcolors:4497
 msgid "MediumPurple3"
-msgstr "Mellanlila3"
+msgstr "Mellanpurpur3"
 
 #: lib/latexcolors:4505
 msgid "MediumPurple4"
-msgstr "Mellanlila4"
+msgstr "Mellanpurpur4"
 
 #: lib/latexcolors:4513
 msgid "Thistle1"
@@ -26174,7 +26171,7 @@ msgstr "<Sida>"
 
 #: lib/ui/stdcontext.inc:99 lib/ui/stdcontext.inc:121 lib/ui/stdcontext.inc:741
 msgid "p. <Page>|."
-msgstr "s.<Sida>|."
+msgstr "s. <Sida>|."
 
 #: lib/ui/stdcontext.inc:100 lib/ui/stdcontext.inc:122
 #: lib/ui/stdcontext.inc:742
@@ -26844,7 +26841,7 @@ msgstr "Infoga referens vid markörens position|I"
 #: lib/ui/stdcontext.inc:611 lib/ui/stdcontext.inc:629
 #: lib/ui/stdcontext.inc:757
 msgid "Insert Cross-Reference to this Item|C"
-msgstr "Infoga korsreferens till denna post|C"
+msgstr "Infoga korsreferens till detta objekt|C"
 
 #: lib/ui/stdcontext.inc:652
 msgid "Insert Copy at Cursor Position|I"
@@ -26896,7 +26893,7 @@ msgstr "Infoga sorteringsnyckel|k"
 
 #: lib/ui/stdcontext.inc:680
 msgid "Insert See Reference|cf"
-msgstr "Infoga Se referens|cf"
+msgstr "Infoga se referens|cf"
 
 #: lib/ui/stdcontext.inc:681
 msgid "Insert See also Reference|a"
@@ -28540,7 +28537,7 @@ msgid "Functions"
 msgstr "Funktioner"
 
 #: lib/ui/stdtoolbars.inc:224 lib/ui/stdtoolbars.inc:447
-#: src/frontends/qt/GuiDocument.cpp:1898
+#: src/frontends/qt/GuiDocument.cpp:1902
 msgid "Fonts"
 msgstr "Typsnitt"
 
@@ -28553,7 +28550,7 @@ msgid "Big operators"
 msgstr "Stora operatörer"
 
 #: lib/ui/stdtoolbars.inc:228 lib/ui/stdtoolbars.inc:705
-#: src/frontends/qt/GuiDocument.cpp:5495
+#: src/frontends/qt/GuiDocument.cpp:5499
 msgid "Miscellaneous"
 msgstr "Diverse"
 
@@ -29167,15 +29164,15 @@ msgstr "Inramad text (justerbar)\t\\framebox"
 
 #: lib/ui/stdtoolbars.inc:465
 msgid "Adapting Text (AMS)\t\\text"
-msgstr "Anpassa text (AMS) \t\\text"
+msgstr "Anpassa text (AMS)\t\\text"
 
 #: lib/ui/stdtoolbars.inc:466
 msgid "Roman Text\t\\textrm"
-msgstr "Antikva text\t\\textrm"
+msgstr "Antikvatext\t\\textrm"
 
 #: lib/ui/stdtoolbars.inc:467
 msgid "Normal Font Text\t\\textnormal"
-msgstr "Normal rypsnitt text\t\\textnormal"
+msgstr "Normalt typsnitt text\t\\textnormal"
 
 #: lib/ui/stdtoolbars.inc:468
 msgid "Intertext\t\\intertext"
@@ -30423,11 +30420,11 @@ msgstr "vartriangle"
 
 #: lib/ui/stdtoolbars.inc:823
 msgid "triangledown"
-msgstr "nedåttriangel"
+msgstr "triangledown"
 
 #: lib/ui/stdtoolbars.inc:824
 msgid "square"
-msgstr "fyrkant"
+msgstr "square"
 
 #: lib/ui/stdtoolbars.inc:827
 msgid "CheckedBox"
@@ -30447,11 +30444,11 @@ msgstr "wasylozenge"
 
 #: lib/ui/stdtoolbars.inc:831
 msgid "circledR"
-msgstr "inringadR"
+msgstr "circledR"
 
 #: lib/ui/stdtoolbars.inc:832
 msgid "circledS"
-msgstr "inringadS"
+msgstr "circledS"
 
 #: lib/ui/stdtoolbars.inc:833
 msgid "measuredangle"
@@ -30475,7 +30472,7 @@ msgstr "Finv"
 
 #: lib/ui/stdtoolbars.inc:838
 msgid "Game"
-msgstr "Spel"
+msgstr "Game"
 
 #: lib/ui/stdtoolbars.inc:839
 msgid "Bbbk"
@@ -30507,7 +30504,7 @@ msgstr "blacklozenge"
 
 #: lib/ui/stdtoolbars.inc:847
 msgid "bigstar"
-msgstr "storstjärna"
+msgstr "bigstar"
 
 #: lib/ui/stdtoolbars.inc:848
 msgid "sphericalangle"
@@ -30531,7 +30528,7 @@ msgstr "diagdown"
 
 #: lib/ui/stdtoolbars.inc:853
 msgid "lightning"
-msgstr "blixt"
+msgstr "lightning"
 
 #: lib/ui/stdtoolbars.inc:854
 msgid "varcopyright"
@@ -30591,15 +30588,15 @@ msgstr "leadsto"
 
 #: lib/ui/stdtoolbars.inc:876
 msgid "Leftcircle"
-msgstr "Vänstercirkel"
+msgstr "Leftcircle"
 
 #: lib/ui/stdtoolbars.inc:877
 msgid "Rightcircle"
-msgstr "Högercirkel"
+msgstr "Rightcircle"
 
 #: lib/ui/stdtoolbars.inc:878
 msgid "CIRCLE"
-msgstr "CIRKEL"
+msgstr "CIRCLE"
 
 #: lib/ui/stdtoolbars.inc:879
 msgid "LEFTCIRCLE"
@@ -30691,31 +30688,31 @@ msgstr "checkmark"
 
 #: lib/ui/stdtoolbars.inc:905
 msgid "eighthnote"
-msgstr "åttondelsnot"
+msgstr "eighthnote"
 
 #: lib/ui/stdtoolbars.inc:906
 msgid "quarternote"
-msgstr "kvartsnot"
+msgstr "quarternote"
 
 #: lib/ui/stdtoolbars.inc:907
 msgid "halfnote"
-msgstr "halvnot"
+msgstr "halfnote"
 
 #: lib/ui/stdtoolbars.inc:908
 msgid "fullnote"
-msgstr "helnot"
+msgstr "fullnote"
 
 #: lib/ui/stdtoolbars.inc:909
 msgid "twonotes"
-msgstr "dubbelnot"
+msgstr "twonotes"
 
 #: lib/ui/stdtoolbars.inc:910
 msgid "female"
-msgstr "kvinna"
+msgstr "female"
 
 #: lib/ui/stdtoolbars.inc:911
 msgid "male"
-msgstr "man"
+msgstr "male"
 
 #: lib/ui/stdtoolbars.inc:912
 msgid "vernal"
@@ -30731,7 +30728,7 @@ msgstr "descnode"
 
 #: lib/ui/stdtoolbars.inc:915
 msgid "fullmoon"
-msgstr "fullmåne"
+msgstr "fullmoon"
 
 #: lib/ui/stdtoolbars.inc:916
 msgid "newmoon"
@@ -30751,7 +30748,7 @@ msgstr "astrosun"
 
 #: lib/ui/stdtoolbars.inc:920
 msgid "mercury"
-msgstr "merkurius"
+msgstr "mercury"
 
 #: lib/ui/stdtoolbars.inc:921
 msgid "venus"
@@ -30759,7 +30756,7 @@ msgstr "venus"
 
 #: lib/ui/stdtoolbars.inc:922
 msgid "earth"
-msgstr "jorden"
+msgstr "earth"
 
 #: lib/ui/stdtoolbars.inc:923
 msgid "mars"
@@ -30771,7 +30768,7 @@ msgstr "jupiter"
 
 #: lib/ui/stdtoolbars.inc:925
 msgid "saturn"
-msgstr "saturnus"
+msgstr "saturn"
 
 #: lib/ui/stdtoolbars.inc:926
 msgid "uranus"
@@ -30779,7 +30776,7 @@ msgstr "uranus"
 
 #: lib/ui/stdtoolbars.inc:927
 msgid "neptune"
-msgstr "neptunus"
+msgstr "neptune"
 
 #: lib/ui/stdtoolbars.inc:928
 msgid "pluto"
@@ -33537,24 +33534,12 @@ msgid "External Material"
 msgstr "Externt material"
 
 #: lib/examples/Articles:0
-msgid "Itemize Bullets"
-msgstr "Punktlista"
-
-#: lib/examples/Articles:0
-msgid "Minted File Listing"
-msgstr "Präglad fillista"
-
-#: lib/examples/Articles:0
-msgid "Minted Listings"
-msgstr "Präglade listor"
-
-#: lib/examples/Articles:0
 msgid "XY-Figure"
 msgstr "XY-figur"
 
 #: lib/examples/Articles:0
-msgid "Feynman Diagrams"
-msgstr "Feynman-diagram"
+msgid "Minted Listings"
+msgstr "Präglade listor"
 
 #: lib/examples/Articles:0
 msgid "Instant Preview"
@@ -33569,28 +33554,44 @@ msgid "Computer Algebra Systems"
 msgstr "Datoralgebrasystem"
 
 #: lib/examples/Articles:0
-msgid "Graphics and Insets"
-msgstr "Grafik och insättningar"
+msgid "Minted File Listing"
+msgstr "Präglad fillista"
 
 #: lib/examples/Articles:0
-msgid "Localization Test (for Developers)"
-msgstr "Lokaliseringstest (för utvecklare)"
+msgid "Itemize Bullets"
+msgstr "Punktlista"
+
+#: lib/examples/Articles:0
+msgid "Feynman Diagrams"
+msgstr "Feynman-diagram"
+
+#: lib/examples/Articles:0
+msgid "Graphics and Insets"
+msgstr "Grafik och insättningar"
 
 #: lib/examples/Articles:0
 msgid "Mixing Japanese with other Languages (with CJKutf8)"
 msgstr "Blanda japanska med andra språk (med CJKutf8)"
 
 #: lib/examples/Articles:0
-msgid "Mixing Japanese with other Languages (with platex)"
-msgstr "Blanda japanska med andra språk (med platex)"
+msgid "Localization Test (for Developers)"
+msgstr "Lokaliseringstest (för utvecklare)"
 
 #: lib/examples/Articles:0
 msgid "Writing Armenian"
 msgstr "Skriva armeniska"
 
 #: lib/examples/Articles:0
+msgid "Mixing Japanese with other Languages (with platex)"
+msgstr "Blanda japanska med andra språk (med platex)"
+
+#: lib/examples/Articles:0
 msgid "Language Support"
 msgstr "Språkstöd"
+
+#: lib/examples/Articles:0
+msgid "Serial Letter 3"
+msgstr "Seriebrev 3"
 
 #: lib/examples/Articles:0
 msgid "Serial Letter 1"
@@ -33601,8 +33602,12 @@ msgid "Serial Letter 2"
 msgstr "Seriebrev 2"
 
 #: lib/examples/Articles:0
-msgid "Serial Letter 3"
-msgstr "Seriebrev 3"
+msgid "LilyPond Book"
+msgstr "LilyPond-bok"
+
+#: lib/examples/Articles:0
+msgid "Multilingual Captions"
+msgstr "Flerspråkiga bildtexter"
 
 #: lib/examples/Articles:0
 msgid "Hazard and Precautionary Statements"
@@ -33613,32 +33618,24 @@ msgid "Noweb2LyX"
 msgstr "Noweb2LyX"
 
 #: lib/examples/Articles:0
-msgid "LilyPond Book"
-msgstr "LilyPond-bok"
-
-#: lib/examples/Articles:0
-msgid "Multilingual Captions"
-msgstr "Flerspråkiga bildtexter"
-
-#: lib/examples/Articles:0
 msgid "Noweb Listerrors"
 msgstr "Noweb Listfel"
 
-#: lib/examples/Articles:0 src/frontends/qt/GuiDocument.cpp:1896
+#: lib/examples/Articles:0 src/frontends/qt/GuiDocument.cpp:1900
 msgid "Modules"
 msgstr "Moduler"
 
 #: lib/examples/Articles:0
-msgid "Beamer (Complex)"
-msgstr "Beamer (komplex)"
+msgid "Foils Landslide"
+msgstr "Foils Landslide"
 
 #: lib/examples/Articles:0
 msgid "Foils"
 msgstr "Foils"
 
 #: lib/examples/Articles:0
-msgid "Foils Landslide"
-msgstr "Foils Landslide"
+msgid "Beamer (Complex)"
+msgstr "Beamer (komplex)"
 
 #: lib/examples/Articles:0
 msgid "Welcome"
@@ -33649,8 +33646,12 @@ msgid "Writing Korean with CJK-ko"
 msgstr "Skriva koreanska med CJK-ko"
 
 #: lib/examples/Articles:0
-msgid "Hebrew Article (KOMA-Script)"
-msgstr "Hebreisk artikel (Koma-script)"
+msgid "Mathematical Monthly"
+msgstr "Mathematical Monthly"
+
+#: lib/examples/Articles:0
+msgid "Springers Global Journal Template (V. 3)"
+msgstr "Springers Global Journal-mall (V. 3)"
 
 #: lib/examples/Articles:0
 msgid "IEEE Transactions Conference"
@@ -33661,68 +33662,68 @@ msgid "IEEE Transactions Journal"
 msgstr "IEEE Transactions Tidskrift"
 
 #: lib/examples/Articles:0
-msgid "Mathematical Monthly"
-msgstr "Mathematical Monthly"
-
-#: lib/examples/Articles:0
-msgid "Springers Global Journal Template (V. 3)"
-msgstr "Springers Global Journal-mall (V. 3)"
+msgid "Hebrew Article (KOMA-Script)"
+msgstr "Hebreisk artikel (Koma-script)"
 
 #: lib/examples/Articles:0
 msgid "00 Main File"
 msgstr "00 Huvudfil"
 
 #: lib/examples/Articles:0
-msgid "01 Dedication"
-msgstr "01 Dedikation"
-
-#: lib/examples/Articles:0
 msgid "02 Foreword"
 msgstr "02 Förord"
-
-#: lib/examples/Articles:0
-msgid "03 Preface"
-msgstr "03 Företal"
-
-#: lib/examples/Articles:0
-msgid "04 Acknowledgements"
-msgstr "04 Tackord"
-
-#: lib/examples/Articles:0
-msgid "05 Contributor List"
-msgstr "05 Medarbetarlista"
-
-#: lib/examples/Articles:0
-msgid "06 Acronym"
-msgstr "06 Förkortningar"
-
-#: lib/examples/Articles:0
-msgid "07 Part"
-msgstr "07 Del"
-
-#: lib/examples/Articles:0
-msgid "08 Author"
-msgstr "08 Författare"
-
-#: lib/examples/Articles:0
-msgid "09 Appendix"
-msgstr "09 Bilaga"
 
 #: lib/examples/Articles:0
 msgid "10 Glossary"
 msgstr "10 Ordlista"
 
 #: lib/examples/Articles:0
+msgid "09 Appendix"
+msgstr "09 Bilaga"
+
+#: lib/examples/Articles:0
 msgid "11 References"
 msgstr "11 Referenser"
 
 #: lib/examples/Articles:0
-msgid "05 Acronym"
-msgstr "05 Förkortningar"
+msgid "04 Acknowledgements"
+msgstr "04 Tackord"
+
+#: lib/examples/Articles:0
+msgid "08 Author"
+msgstr "08 Författare"
+
+#: lib/examples/Articles:0
+msgid "06 Acronym"
+msgstr "06 Förkortningar"
+
+#: lib/examples/Articles:0
+msgid "01 Dedication"
+msgstr "01 Dedikation"
+
+#: lib/examples/Articles:0
+msgid "03 Preface"
+msgstr "03 Företal"
+
+#: lib/examples/Articles:0
+msgid "07 Part"
+msgstr "07 Del"
+
+#: lib/examples/Articles:0
+msgid "05 Contributor List"
+msgstr "05 Medarbetarlista"
+
+#: lib/examples/Articles:0
+msgid "09 Glossary"
+msgstr "09 Ordlista"
 
 #: lib/examples/Articles:0
 msgid "06 Part"
 msgstr "06 Del"
+
+#: lib/examples/Articles:0
+msgid "05 Acronym"
+msgstr "05 Förkortningar"
 
 #: lib/examples/Articles:0
 msgid "07 Chapter"
@@ -33733,10 +33734,6 @@ msgid "08 Appendix"
 msgstr "08 Bilaga"
 
 #: lib/examples/Articles:0
-msgid "09 Glossary"
-msgstr "09 Ordlista"
-
-#: lib/examples/Articles:0
 msgid "10 Solutions"
 msgstr "10 Lösningar"
 
@@ -33745,12 +33742,16 @@ msgid "Econometrica"
 msgstr "Econometrica"
 
 #: lib/examples/Articles:0
+msgid "Simple"
+msgstr "Enkelt"
+
+#: lib/examples/Articles:0
 msgid "Colored"
 msgstr "Färgad"
 
 #: lib/examples/Articles:0
-msgid "Simple"
-msgstr "Enkelt"
+msgid "Main File"
+msgstr "Huvudfil"
 
 #: lib/examples/Articles:0
 msgid "Chapter 1"
@@ -33761,10 +33762,6 @@ msgid "Chapter 2"
 msgstr "Kapitel 2"
 
 #: lib/examples/Articles:0
-msgid "Main File"
-msgstr "Huvudfil"
-
-#: lib/examples/Articles:0
 msgid "PhD Thesis"
 msgstr "Doktorsavhandling"
 
@@ -33773,16 +33770,16 @@ msgid "Theses"
 msgstr "Avhandling"
 
 #: lib/examples/Articles:0
-msgid "Japanese Article (Standard Class for LuaTeX%2C vertical Writing)"
-msgstr "Japansk artikel (standardklass för LuaTeX%2C vertikal skrift)"
+msgid "Japanese Report (Standard Class for LuaTeX%2C vertical Writing)"
+msgstr "Japansk rapport (standardklass för LuaTeX%2C vertikal skrift)"
 
 #: lib/examples/Articles:0
 msgid "Japanese Book (Standard Class for LuaTeX%2C vertical Writing)"
 msgstr "Japansk bok (standardklass för LuaTeX%2C vertikal skrift)"
 
 #: lib/examples/Articles:0
-msgid "Japanese Report (Standard Class for LuaTeX%2C vertical Writing)"
-msgstr "Japansk rapport (standardklass för LuaTeX%2C vertikal skrift)"
+msgid "Japanese Article (Standard Class for LuaTeX%2C vertical Writing)"
+msgstr "Japansk artikel (standardklass för LuaTeX%2C vertikal skrift)"
 
 #: lib/tabletemplates/Formal_with_Footline.lyx:0
 msgid "Formal with Footline"
@@ -33910,8 +33907,8 @@ msgid ""
 "You can find the converted file at %2$s while LyX is running."
 msgstr ""
 "Den konverterade versionen av %1$s till aktuellt LyX-format avslutades "
-"oväntat, vilket innebär att den förmodligen är skadad.\n"
-"Du kan hitta den konverterade filen i %2$s medan LyX körs."
+"oväntat, vilket innebär att den troligen är skadad.\n"
+"Du hittar den konverterade filen på %2$s medan LyX körs."
 
 #: src/Buffer.cpp:1284 src/Buffer.cpp:1355
 msgid "Document format failure"
@@ -34516,8 +34513,8 @@ msgid ""
 msgstr ""
 "Filen\n"
 "  %1$s\n"
-"har tagits bort från disken\n"
-"Den kommer nu att markeras som ändrad."
+"har tagits bort från disken!\n"
+"Den kommer att markeras som modifierad."
 
 #: src/BufferParams.cpp:543
 msgid ""
@@ -34949,22 +34946,22 @@ msgstr "Grennamn"
 msgid "Branch already exists"
 msgstr "Gren finns redan"
 
-#: src/BufferView.cpp:3499
+#: src/BufferView.cpp:3498
 #, c-format
 msgid "Inserting document %1$s..."
 msgstr "Infogar dokument %1$s..."
 
-#: src/BufferView.cpp:3516
+#: src/BufferView.cpp:3515
 #, c-format
 msgid "Document %1$s inserted."
 msgstr "Dokument %1$s infogat."
 
-#: src/BufferView.cpp:3518
+#: src/BufferView.cpp:3517
 #, c-format
 msgid "Could not insert document %1$s"
 msgstr "Kunde inte infoga dokument %1$s"
 
-#: src/BufferView.cpp:4024
+#: src/BufferView.cpp:4022
 #, c-format
 msgid ""
 "Could not read the specified document\n"
@@ -34975,11 +34972,11 @@ msgstr ""
 "%1$s\n"
 "på grund av fel: %2$s"
 
-#: src/BufferView.cpp:4026
+#: src/BufferView.cpp:4024
 msgid "Could not read file"
 msgstr "Kunde inte läsa fil"
 
-#: src/BufferView.cpp:4033
+#: src/BufferView.cpp:4031
 #, c-format
 msgid ""
 "%1$s\n"
@@ -34988,17 +34985,17 @@ msgstr ""
 "%1$s\n"
 " är inte läsbar."
 
-#: src/BufferView.cpp:4034 src/frontends/qt/qt_helpers.cpp:323
+#: src/BufferView.cpp:4032 src/frontends/qt/qt_helpers.cpp:323
 #: src/frontends/qt/qt_helpers.cpp:330 src/frontends/qt/qt_helpers.cpp:396
 #: src/output.cpp:38
 msgid "Could not open file"
 msgstr "Kunde inte öppna fil"
 
-#: src/BufferView.cpp:4041
+#: src/BufferView.cpp:4039
 msgid "Reading not UTF-8 encoded file"
 msgstr "Läser fil som inte är kodad som UTF-8"
 
-#: src/BufferView.cpp:4042
+#: src/BufferView.cpp:4040
 msgid ""
 "The file is not UTF-8 encoded.\n"
 "It will be read as local 8Bit-encoded.\n"
@@ -35169,19 +35166,19 @@ msgstr "vald text"
 
 #: src/Color.cpp:269
 msgid "preedit focus background"
-msgstr "förredigeringsfokusbakgrund"
+msgstr "förredigera fokusbakgrund"
 
 #: src/Color.cpp:270
 msgid "preedit focus text"
-msgstr "förredigeringsfokustext"
+msgstr "förredigera fokustext"
 
 #: src/Color.cpp:271
 msgid "preedit background"
-msgstr "förredigeringsbakgrund"
+msgstr "förredigera bakgrund"
 
 #: src/Color.cpp:272
 msgid "preedit text"
-msgstr "förredigeringstext"
+msgstr "förredigera text"
 
 #: src/Color.cpp:273
 msgid "LaTeX text"
@@ -35644,11 +35641,11 @@ msgstr ""
 "Ingen information för att omvandla %1$s formatfiler till %2$s.\n"
 "Definiera en omvandlare i inställningar."
 
-#: src/Converter.cpp:603 src/frontends/qt/GuiDocument.cpp:2212
+#: src/Converter.cpp:603 src/frontends/qt/GuiDocument.cpp:2216
 msgid "Pygments driver command not found!"
 msgstr "Pygments drivrutinkommando hittades inte!"
 
-#: src/Converter.cpp:604 src/frontends/qt/GuiDocument.cpp:2213
+#: src/Converter.cpp:604 src/frontends/qt/GuiDocument.cpp:2217
 msgid ""
 "The driver command necessary to use the minted package\n"
 "(pygmentize) has not been found. Make sure you have\n"
@@ -35918,17 +35915,17 @@ msgid "Number %1$s"
 msgstr "Nummer %1$s"
 
 #: src/FontInfo.cpp:43 src/frontends/qt/GuiCharacter.cpp:116
-#: src/frontends/qt/GuiDocument.cpp:5206 src/frontends/qt/GuiListings.cpp:160
+#: src/frontends/qt/GuiDocument.cpp:5210 src/frontends/qt/GuiListings.cpp:160
 msgid "Roman"
 msgstr "Antikva"
 
 #: src/FontInfo.cpp:43 src/frontends/qt/GuiCharacter.cpp:117
-#: src/frontends/qt/GuiDocument.cpp:5206 src/frontends/qt/GuiListings.cpp:160
+#: src/frontends/qt/GuiDocument.cpp:5210 src/frontends/qt/GuiListings.cpp:160
 msgid "Sans Serif"
 msgstr "Linjär"
 
 #: src/FontInfo.cpp:43 src/frontends/qt/GuiCharacter.cpp:118
-#: src/frontends/qt/GuiDocument.cpp:5206 src/frontends/qt/GuiListings.cpp:160
+#: src/frontends/qt/GuiDocument.cpp:5210 src/frontends/qt/GuiListings.cpp:160
 msgid "Typewriter"
 msgstr "Skrivmaskin"
 
@@ -36042,7 +36039,7 @@ msgstr "Kan inte redigera fil"
 
 #: src/Format.cpp:737
 msgid "LinkBack files can only be edited on macOS."
-msgstr "LinkBack-filer kan bara redigeras på macOS."
+msgstr "LinkBack-filer kan endast redigeras på macOS."
 
 #: src/Format.cpp:750
 #, c-format
@@ -36604,8 +36601,8 @@ msgstr "Välj för att kontrollera huruvida senaste-filer fortfarande finns."
 
 #: src/LyXRC.cpp:3219
 msgid ""
-"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
-"-n38\" Refer to the ChkTeX documentation."
+"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 -"
+"n38\" Refer to the ChkTeX documentation."
 msgstr ""
 "Definiera hur chktex körs. T.ex. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
 "-n38\" Se dokumentationen för ChkTeX."
@@ -36658,7 +36655,7 @@ msgstr "Använd Apple-tangent som Meta och Control-tangent som Ctrl."
 
 #: src/LyXRC.cpp:3253
 msgid "Use the macOS conventions for cursor movement"
-msgstr "Använd macOS-konventionerna för markörrörelse"
+msgstr "Använd macOS-konventioner för markörförflyttning"
 
 #: src/LyXRC.cpp:3257
 msgid ""
@@ -36780,8 +36777,8 @@ msgid ""
 "language. E.g. \\selectlanguage{$$lang} where $$lang is substituted by the "
 "name of the second language."
 msgstr ""
-"LaTeX-kommandot för att ändra från dokumentets språk till ett annat språk. "
-"T.ex. \\selectlanguage{$$lang} där $$lang ersätts med namnet på det andra "
+"LaTeX-kommandot för att ändra från dokumentets språk till ett annat språk. T."
+"ex. \\selectlanguage{$$lang} där $$lang ersätts med namnet på det andra "
 "språket."
 
 #: src/LyXRC.cpp:3341
@@ -37279,40 +37276,40 @@ msgstr "&Nej, avbryt operationen"
 msgid "Layout "
 msgstr "Utformning "
 
-#: src/Text.cpp:5020 src/Text.cpp:5571
+#: src/Text.cpp:5020 src/Text.cpp:5569
 msgid " not known"
 msgstr " inte känd"
 
-#: src/Text.cpp:5570
+#: src/Text.cpp:5568
 msgid "Table Style "
 msgstr "Tabellstil "
 
-#: src/Text.cpp:5770 src/frontends/qt/GuiApplication.cpp:1895
+#: src/Text.cpp:5768 src/frontends/qt/GuiApplication.cpp:1895
 msgid "Missing argument"
 msgstr "Argument saknas"
 
-#: src/Text.cpp:5937
+#: src/Text.cpp:5935
 msgid "Invalid argument (number exceeds stack size)!"
 msgstr "Ogiltigt argument (talet överstiger stack-storleken)!"
 
-#: src/Text.cpp:5941
+#: src/Text.cpp:5939
 msgid "Invalid argument (must be a non-negative number)!"
 msgstr "Ogiltigt argument (måste vara ett icke-negativt tal)!"
 
-#: src/Text.cpp:5946 src/Text.cpp:5960
+#: src/Text.cpp:5944 src/Text.cpp:5958
 #, c-format
 msgid "Text properties applied: %1$s"
 msgstr "Textegenskaper tillämpade: %1$s"
 
-#: src/Text.cpp:5962
+#: src/Text.cpp:5960
 msgid "Invalid argument of textstyle-update"
 msgstr "Ogiltigt argument för textstyle-update"
 
-#: src/Text.cpp:6119
+#: src/Text.cpp:6117
 msgid "Path to thesaurus directory not set!"
 msgstr "Sökväg till synonymordboken inte satt!"
 
-#: src/Text.cpp:6120
+#: src/Text.cpp:6118
 msgid ""
 "The path to the thesaurus directory has not been specified.\n"
 "The thesaurus is not functional.\n"
@@ -37324,7 +37321,7 @@ msgstr ""
 "Vänligen referera till avsnitt 6.15.1 i handboken för\n"
 "inställningsinstruktioner."
 
-#: src/Text.cpp:6246 src/Text.cpp:6257
+#: src/Text.cpp:6244 src/Text.cpp:6255
 msgid "Paragraph layout set"
 msgstr "Styckeutformningsuppsättning"
 
@@ -37338,12 +37335,12 @@ msgid ""
 "The layout file %1$s has a version unknown to LyX and could thus not be "
 "converted."
 msgstr ""
-"Layoutfilen %1$s har en version som är okänd för LyX och kunde därför inte "
+"Layoutfilen %1$s har en version okänd för LyX och kunde därför inte "
 "konverteras."
 
 #: src/TextClass.cpp:366 src/TextClass.cpp:396
 msgid "Layout Conversion Error"
-msgstr "Layoutkonverteringsfel"
+msgstr "Fel vid layoutkonvertering"
 
 #: src/TextClass.cpp:397
 msgid ""
@@ -37351,8 +37348,8 @@ msgid ""
 "not be converted.\n"
 "Please check Document > Settings > Local Layouts!"
 msgstr ""
-"En lokal layout för detta dokument har en version som är okänd för LyX och "
-"kunde därför inte konverteras.\n"
+"Den lokala layouten för detta dokument har en version som LyX inte känner "
+"igen och kunde därför inte konverteras.\n"
 "Kontrollera Dokument > Inställningar > Lokala layouter!"
 
 #: src/TextClass.cpp:966 src/TextClass.cpp:982
@@ -37522,7 +37519,7 @@ msgstr "Etiketter och referenser"
 msgid "Broken References and Citations"
 msgstr "Trasiga referenser och citat"
 
-#: src/TocBackend.cpp:299 src/frontends/qt/GuiDocument.cpp:1895
+#: src/TocBackend.cpp:299 src/frontends/qt/GuiDocument.cpp:1899
 msgid "Child Documents"
 msgstr "Barndokument"
 
@@ -37953,8 +37950,8 @@ msgid "Replace and find previous occurrence (Shift+Enter, forwards: Enter)"
 msgstr "Ersätt och hitta föregående förekomst (Shift+Enter, forwards: Enter)"
 
 #: src/frontends/qt/FloatPlacement.cpp:182
-#: src/frontends/qt/GuiDocument.cpp:1196 src/frontends/qt/GuiDocument.cpp:2938
-#: src/frontends/qt/GuiDocument.cpp:2965
+#: src/frontends/qt/GuiDocument.cpp:1196 src/frontends/qt/GuiDocument.cpp:2942
+#: src/frontends/qt/GuiDocument.cpp:2969
 msgid "Class Default"
 msgstr "Klassens standard"
 
@@ -37962,7 +37959,7 @@ msgstr "Klassens standard"
 msgid "Document Default"
 msgstr "Dokumentstandard"
 
-#: src/frontends/qt/FloatPlacement.h:38 src/frontends/qt/GuiDocument.cpp:1911
+#: src/frontends/qt/FloatPlacement.h:38 src/frontends/qt/GuiDocument.cpp:1915
 msgid "Float Settings"
 msgstr "Flotteinställningar"
 
@@ -38241,11 +38238,11 @@ msgstr "Okänd funktion."
 
 #: src/frontends/qt/GuiApplication.cpp:2777
 msgid "partial draw"
-msgstr "delvis ritning"
+msgstr "partiell ritning"
 
 #: src/frontends/qt/GuiApplication.cpp:2780
 msgid "partial draw on backing store"
-msgstr "delvis uttag på stödbutik"
+msgstr "partiell ritning på backup-lagret"
 
 #: src/frontends/qt/GuiApplication.cpp:2783
 msgid "full draw"
@@ -38332,9 +38329,9 @@ msgid ""
 "Insert the author name(s) for the author-number reference here. If you use "
 "an abbreviated list (with `et al.'), the full list can go below."
 msgstr ""
-"Ange författarnamnet/namnen för författar-nummer referensen här. Om du "
-"använder en förkortad lista (med `et al.') kan den fullständiga listan "
-"placeras nedan."
+"Ange författarens/författarnas namn för författarnummerreferensen här. Om du "
+"använder en förkortad lista (med 'et al.') kan den fullständiga listan anges "
+"nedan."
 
 #: src/frontends/qt/GuiBibitem.cpp:64
 msgid ""
@@ -38428,7 +38425,7 @@ msgstr "alla referensenheter"
 
 #: src/frontends/qt/GuiBibtex.cpp:646 src/frontends/qt/GuiBibtex.cpp:656
 #: src/frontends/qt/GuiCompare.cpp:165 src/frontends/qt/GuiCompare.cpp:169
-#: src/frontends/qt/GuiDocument.cpp:3109 src/frontends/qt/GuiExternal.cpp:685
+#: src/frontends/qt/GuiDocument.cpp:3113 src/frontends/qt/GuiExternal.cpp:685
 #: src/frontends/qt/GuiGraphics.cpp:837 src/frontends/qt/GuiInclude.cpp:377
 #: src/frontends/qt/GuiLyXFiles.cpp:365 src/frontends/qt/GuiLyXFiles.cpp:371
 #: src/frontends/qt/GuiView.cpp:3008 src/frontends/qt/GuiView.cpp:3072
@@ -38524,8 +38521,8 @@ msgid "Filename Suffix"
 msgstr "Filnamnsändelse"
 
 #: src/frontends/qt/GuiBranches.cpp:134 src/frontends/qt/GuiBranches.cpp:148
-#: src/frontends/qt/GuiDocument.cpp:899 src/frontends/qt/GuiDocument.cpp:3555
-#: src/frontends/qt/GuiDocument.cpp:4967
+#: src/frontends/qt/GuiDocument.cpp:899 src/frontends/qt/GuiDocument.cpp:3559
+#: src/frontends/qt/GuiDocument.cpp:4971
 #: src/frontends/qt/GuiProgressView.cpp:145
 #: src/frontends/qt/GuiProgressView.cpp:159
 #: src/frontends/qt/GuiProgressView.cpp:181
@@ -38533,8 +38530,8 @@ msgid "Yes"
 msgstr "Ja"
 
 #: src/frontends/qt/GuiBranches.cpp:134 src/frontends/qt/GuiBranches.cpp:148
-#: src/frontends/qt/GuiDocument.cpp:900 src/frontends/qt/GuiDocument.cpp:3554
-#: src/frontends/qt/GuiDocument.cpp:4238 src/frontends/qt/GuiDocument.cpp:4966
+#: src/frontends/qt/GuiDocument.cpp:900 src/frontends/qt/GuiDocument.cpp:3558
+#: src/frontends/qt/GuiDocument.cpp:4242 src/frontends/qt/GuiDocument.cpp:4970
 #: src/frontends/qt/GuiProgressView.cpp:111
 #: src/frontends/qt/GuiProgressView.cpp:144
 #: src/frontends/qt/GuiProgressView.cpp:181
@@ -38563,7 +38560,7 @@ msgstr ""
 msgid "&Merge"
 msgstr "Sa&mmanfoga"
 
-#: src/frontends/qt/GuiBranches.cpp:273 src/frontends/qt/GuiDocument.cpp:5727
+#: src/frontends/qt/GuiBranches.cpp:273 src/frontends/qt/GuiDocument.cpp:5731
 #: src/frontends/qt/GuiIndices.cpp:242
 msgid "Renaming failed"
 msgstr "Namnbyte misslyckades"
@@ -38940,7 +38937,7 @@ msgid "Big Skip"
 msgstr "Stort avstånd"
 
 #: src/frontends/qt/GuiDocument.cpp:930 src/frontends/qt/GuiDocument.cpp:932
-#: src/frontends/qt/GuiDocument.cpp:1899
+#: src/frontends/qt/GuiDocument.cpp:1903
 msgid "Text Layout"
 msgstr "Textutformning"
 
@@ -39038,234 +39035,234 @@ msgstr ""
 "Använd OpenType- och TrueType-typsnitt direkt (kräver XeTeX eller LuaTeX)\n"
 "Du måste installera paketet \"fontspec\" för att använda denna funktion"
 
-#: src/frontends/qt/GuiDocument.cpp:1241
+#: src/frontends/qt/GuiDocument.cpp:1245
 msgid "empty"
 msgstr "tom"
 
-#: src/frontends/qt/GuiDocument.cpp:1242
+#: src/frontends/qt/GuiDocument.cpp:1246
 msgid "plain"
 msgstr "vanlig"
 
-#: src/frontends/qt/GuiDocument.cpp:1243
+#: src/frontends/qt/GuiDocument.cpp:1247
 msgid "headings"
 msgstr "rubriker"
 
-#: src/frontends/qt/GuiDocument.cpp:1244
+#: src/frontends/qt/GuiDocument.cpp:1248
 msgid "fancy"
 msgstr "häftig"
 
-#: src/frontends/qt/GuiDocument.cpp:1255
+#: src/frontends/qt/GuiDocument.cpp:1259
 msgid "US letter"
 msgstr "US letter"
 
-#: src/frontends/qt/GuiDocument.cpp:1256
+#: src/frontends/qt/GuiDocument.cpp:1260
 msgid "US legal"
 msgstr "US legal"
 
-#: src/frontends/qt/GuiDocument.cpp:1257
+#: src/frontends/qt/GuiDocument.cpp:1261
 msgid "US executive"
 msgstr "US executive"
 
-#: src/frontends/qt/GuiDocument.cpp:1258
+#: src/frontends/qt/GuiDocument.cpp:1262
 msgid "A0"
 msgstr "A0"
 
-#: src/frontends/qt/GuiDocument.cpp:1259
+#: src/frontends/qt/GuiDocument.cpp:1263
 msgid "A1"
 msgstr "A1"
 
-#: src/frontends/qt/GuiDocument.cpp:1260
+#: src/frontends/qt/GuiDocument.cpp:1264
 msgid "A2"
 msgstr "A2"
 
-#: src/frontends/qt/GuiDocument.cpp:1261
+#: src/frontends/qt/GuiDocument.cpp:1265
 msgid "A3"
 msgstr "A3"
 
-#: src/frontends/qt/GuiDocument.cpp:1262
+#: src/frontends/qt/GuiDocument.cpp:1266
 msgid "A4"
 msgstr "A4"
 
-#: src/frontends/qt/GuiDocument.cpp:1263
+#: src/frontends/qt/GuiDocument.cpp:1267
 msgid "A5"
 msgstr "A5"
 
-#: src/frontends/qt/GuiDocument.cpp:1264
+#: src/frontends/qt/GuiDocument.cpp:1268
 msgid "A6"
 msgstr "A6"
 
-#: src/frontends/qt/GuiDocument.cpp:1265
+#: src/frontends/qt/GuiDocument.cpp:1269
 msgid "B0"
 msgstr "B0"
 
-#: src/frontends/qt/GuiDocument.cpp:1266
+#: src/frontends/qt/GuiDocument.cpp:1270
 msgid "B1"
 msgstr "B1"
 
-#: src/frontends/qt/GuiDocument.cpp:1267
+#: src/frontends/qt/GuiDocument.cpp:1271
 msgid "B2"
 msgstr "B2"
 
-#: src/frontends/qt/GuiDocument.cpp:1268
+#: src/frontends/qt/GuiDocument.cpp:1272
 msgid "B3"
 msgstr "B3"
 
-#: src/frontends/qt/GuiDocument.cpp:1269
+#: src/frontends/qt/GuiDocument.cpp:1273
 msgid "B4"
 msgstr "B4"
 
-#: src/frontends/qt/GuiDocument.cpp:1270
+#: src/frontends/qt/GuiDocument.cpp:1274
 msgid "B5"
 msgstr "B5"
 
-#: src/frontends/qt/GuiDocument.cpp:1271
+#: src/frontends/qt/GuiDocument.cpp:1275
 msgid "B6"
 msgstr "B6"
 
-#: src/frontends/qt/GuiDocument.cpp:1272
+#: src/frontends/qt/GuiDocument.cpp:1276
 msgid "C0"
 msgstr "C0"
 
-#: src/frontends/qt/GuiDocument.cpp:1273
+#: src/frontends/qt/GuiDocument.cpp:1277
 msgid "C1"
 msgstr "C1"
 
-#: src/frontends/qt/GuiDocument.cpp:1274
+#: src/frontends/qt/GuiDocument.cpp:1278
 msgid "C2"
 msgstr "C2"
 
-#: src/frontends/qt/GuiDocument.cpp:1275
+#: src/frontends/qt/GuiDocument.cpp:1279
 msgid "C3"
 msgstr "C3"
 
-#: src/frontends/qt/GuiDocument.cpp:1276
+#: src/frontends/qt/GuiDocument.cpp:1280
 msgid "C4"
 msgstr "C4"
 
-#: src/frontends/qt/GuiDocument.cpp:1277
+#: src/frontends/qt/GuiDocument.cpp:1281
 msgid "C5"
 msgstr "C5"
 
-#: src/frontends/qt/GuiDocument.cpp:1278
+#: src/frontends/qt/GuiDocument.cpp:1282
 msgid "C6"
 msgstr "C6"
 
-#: src/frontends/qt/GuiDocument.cpp:1279
+#: src/frontends/qt/GuiDocument.cpp:1283
 msgid "JIS B0"
 msgstr "JIS B0"
 
-#: src/frontends/qt/GuiDocument.cpp:1280
+#: src/frontends/qt/GuiDocument.cpp:1284
 msgid "JIS B1"
 msgstr "JIS B1"
 
-#: src/frontends/qt/GuiDocument.cpp:1281
+#: src/frontends/qt/GuiDocument.cpp:1285
 msgid "JIS B2"
 msgstr "JIS B2"
 
-#: src/frontends/qt/GuiDocument.cpp:1282
+#: src/frontends/qt/GuiDocument.cpp:1286
 msgid "JIS B3"
 msgstr "JIS B3"
 
-#: src/frontends/qt/GuiDocument.cpp:1283
+#: src/frontends/qt/GuiDocument.cpp:1287
 msgid "JIS B4"
 msgstr "JIS B4"
 
-#: src/frontends/qt/GuiDocument.cpp:1284
+#: src/frontends/qt/GuiDocument.cpp:1288
 msgid "JIS B5"
 msgstr "JIS B5"
 
-#: src/frontends/qt/GuiDocument.cpp:1285
+#: src/frontends/qt/GuiDocument.cpp:1289
 msgid "JIS B6"
 msgstr "JIS B6"
 
-#: src/frontends/qt/GuiDocument.cpp:1353 src/frontends/qt/GuiDocument.cpp:1357
-#: src/frontends/qt/GuiDocument.cpp:1361 src/frontends/qt/GuiDocument.cpp:1365
-#: src/frontends/qt/GuiDocument.cpp:1369 src/frontends/qt/GuiDocument.cpp:1373
-#: src/frontends/qt/GuiDocument.cpp:1377 src/frontends/qt/GuiDocument.cpp:1381
-#: src/frontends/qt/GuiDocument.cpp:1901
+#: src/frontends/qt/GuiDocument.cpp:1357 src/frontends/qt/GuiDocument.cpp:1361
+#: src/frontends/qt/GuiDocument.cpp:1365 src/frontends/qt/GuiDocument.cpp:1369
+#: src/frontends/qt/GuiDocument.cpp:1373 src/frontends/qt/GuiDocument.cpp:1377
+#: src/frontends/qt/GuiDocument.cpp:1381 src/frontends/qt/GuiDocument.cpp:1385
+#: src/frontends/qt/GuiDocument.cpp:1905
 msgid "Page Margins"
 msgstr "Sidmarginaler"
 
-#: src/frontends/qt/GuiDocument.cpp:1422
+#: src/frontends/qt/GuiDocument.cpp:1426
 msgid "Double-click on an item to change its color"
 msgstr "Dubbelklicka på ett objekt för att ändra dess färg"
 
-#: src/frontends/qt/GuiDocument.cpp:1451
+#: src/frontends/qt/GuiDocument.cpp:1455
 msgid "Numbered"
 msgstr "Numrerad"
 
-#: src/frontends/qt/GuiDocument.cpp:1452
+#: src/frontends/qt/GuiDocument.cpp:1456
 msgid "Appears in TOC"
 msgstr "Visas i innehållsförteckning"
 
-#: src/frontends/qt/GuiDocument.cpp:1552
+#: src/frontends/qt/GuiDocument.cpp:1556
 msgid "Tabular"
 msgstr "Tabellarisk"
 
-#: src/frontends/qt/GuiDocument.cpp:1558
+#: src/frontends/qt/GuiDocument.cpp:1562
 msgid "Package"
 msgstr "Paket"
 
-#: src/frontends/qt/GuiDocument.cpp:1558
+#: src/frontends/qt/GuiDocument.cpp:1562
 msgid "Load automatically"
 msgstr "Ladda automatiskt"
 
-#: src/frontends/qt/GuiDocument.cpp:1559
+#: src/frontends/qt/GuiDocument.cpp:1563
 msgid "Load always"
 msgstr "Ladda alltid"
 
-#: src/frontends/qt/GuiDocument.cpp:1559
+#: src/frontends/qt/GuiDocument.cpp:1563
 msgid "Do not load"
 msgstr "Ladda inte"
 
-#: src/frontends/qt/GuiDocument.cpp:1571
+#: src/frontends/qt/GuiDocument.cpp:1575
 msgid "The AMS LaTeX packages are always used"
 msgstr "AMS LaTeX-paketen används alltid"
 
-#: src/frontends/qt/GuiDocument.cpp:1574
+#: src/frontends/qt/GuiDocument.cpp:1578
 #, c-format
 msgid "The LaTeX package %1$s is always used"
 msgstr "LaTeX-paketet %1$s används alltid"
 
-#: src/frontends/qt/GuiDocument.cpp:1579
+#: src/frontends/qt/GuiDocument.cpp:1583
 msgid "The AMS LaTeX packages are never used"
 msgstr "AMS LaTeX-paketen används aldrig"
 
-#: src/frontends/qt/GuiDocument.cpp:1582
+#: src/frontends/qt/GuiDocument.cpp:1586
 #, c-format
 msgid "The LaTeX package %1$s is never used"
 msgstr "LaTeX-paketet %1$s används aldrig"
 
-#: src/frontends/qt/GuiDocument.cpp:1666 src/frontends/qt/GuiDocument.cpp:1910
+#: src/frontends/qt/GuiDocument.cpp:1670 src/frontends/qt/GuiDocument.cpp:1914
 msgid "Math Options"
 msgstr "Matematikalternativ"
 
-#: src/frontends/qt/GuiDocument.cpp:1707
+#: src/frontends/qt/GuiDocument.cpp:1711
 msgid "Cleveref and varioref"
 msgstr "Cleveref och varioref"
 
-#: src/frontends/qt/GuiDocument.cpp:1708
+#: src/frontends/qt/GuiDocument.cpp:1712
 msgid "Prettyref (unlocalized) and varioref"
 msgstr "Prettyref (olokaliserad) och varioref"
 
-#: src/frontends/qt/GuiDocument.cpp:1709
+#: src/frontends/qt/GuiDocument.cpp:1713
 msgid "Prettyref and varioref"
 msgstr "Prettyref och varioref"
 
-#: src/frontends/qt/GuiDocument.cpp:1710
+#: src/frontends/qt/GuiDocument.cpp:1714
 msgid "Refstyle and varioref"
 msgstr "Refstyle och varioref"
 
-#: src/frontends/qt/GuiDocument.cpp:1711
+#: src/frontends/qt/GuiDocument.cpp:1715
 msgid "Zref-clever and zref-vario"
 msgstr "Zref-clever och zref-vario"
 
-#: src/frontends/qt/GuiDocument.cpp:1728 src/frontends/qt/GuiDocument.cpp:3088
+#: src/frontends/qt/GuiDocument.cpp:1732 src/frontends/qt/GuiDocument.cpp:3092
 #, c-format
 msgid "%1$s [Class '%2$s']"
 msgstr "%1$s [Klass '%2$s']"
 
-#: src/frontends/qt/GuiDocument.cpp:1731
+#: src/frontends/qt/GuiDocument.cpp:1735
 #, c-format
 msgid ""
 "Class not found by LyX. Please check if you have the matching %1$s class and "
@@ -39274,59 +39271,59 @@ msgstr ""
 "Klass hittades inte av LyX. Vänligen kontrollera om du har den matchande "
 "klassen %1$s och alla paket som krävs (%2$s) installerade."
 
-#: src/frontends/qt/GuiDocument.cpp:1793
+#: src/frontends/qt/GuiDocument.cpp:1797
 msgid "All avail. modules"
 msgstr "Alla tillgängliga moduler"
 
-#: src/frontends/qt/GuiDocument.cpp:1887 src/frontends/qt/GuiDocument.cpp:2198
+#: src/frontends/qt/GuiDocument.cpp:1891 src/frontends/qt/GuiDocument.cpp:2202
 msgid "Input listings parameters below. Enter ? for a list of parameters."
 msgstr ""
 "Mata in listningsparametrar nedan. Ange ? för en lista över parametrar."
 
-#: src/frontends/qt/GuiDocument.cpp:1894
+#: src/frontends/qt/GuiDocument.cpp:1898
 msgid "Document Class"
 msgstr "Dokumentklass"
 
-#: src/frontends/qt/GuiDocument.cpp:1897 src/frontends/qt/GuiDocument.cpp:3655
-#: src/frontends/qt/GuiDocument.cpp:5193
+#: src/frontends/qt/GuiDocument.cpp:1901 src/frontends/qt/GuiDocument.cpp:3659
+#: src/frontends/qt/GuiDocument.cpp:5197
 msgid "Local Layout"
 msgstr "Lokal utformning"
 
-#: src/frontends/qt/GuiDocument.cpp:1903 src/frontends/qt/GuiPrefs.cpp:986
+#: src/frontends/qt/GuiDocument.cpp:1907 src/frontends/qt/GuiPrefs.cpp:986
 msgid "Colors"
 msgstr "Färger"
 
-#: src/frontends/qt/GuiDocument.cpp:1904
+#: src/frontends/qt/GuiDocument.cpp:1908
 msgid "Change Tracking"
 msgstr "Ändringsspårning"
 
-#: src/frontends/qt/GuiDocument.cpp:1905
+#: src/frontends/qt/GuiDocument.cpp:1909
 msgid "Numbering & TOC"
 msgstr "Numrering & innehållsförteckning"
 
-#: src/frontends/qt/GuiDocument.cpp:1907
+#: src/frontends/qt/GuiDocument.cpp:1911
 msgid "Indexes"
 msgstr "Index"
 
-#: src/frontends/qt/GuiDocument.cpp:1908 src/insets/InsetNomencl.cpp:193
+#: src/frontends/qt/GuiDocument.cpp:1912 src/insets/InsetNomencl.cpp:193
 msgid "Nomenclature"
 msgstr "Nomenklatur"
 
-#: src/frontends/qt/GuiDocument.cpp:1909
+#: src/frontends/qt/GuiDocument.cpp:1913
 msgid "PDF Properties"
 msgstr "PDF-egenskaper"
 
-#: src/frontends/qt/GuiDocument.cpp:1913
+#: src/frontends/qt/GuiDocument.cpp:1917
 msgid "Bullets"
 msgstr "Bomber"
 
-#: src/frontends/qt/GuiDocument.cpp:1930 src/frontends/qt/GuiDocument.cpp:1978
-#: src/frontends/qt/GuiDocument.cpp:3137 src/frontends/qt/GuiDocument.cpp:3439
-#: src/frontends/qt/GuiDocument.cpp:5158
+#: src/frontends/qt/GuiDocument.cpp:1934 src/frontends/qt/GuiDocument.cpp:1982
+#: src/frontends/qt/GuiDocument.cpp:3141 src/frontends/qt/GuiDocument.cpp:3443
+#: src/frontends/qt/GuiDocument.cpp:5162
 msgid "Unapplied changes"
 msgstr "Ej tillämpade ändringar"
 
-#: src/frontends/qt/GuiDocument.cpp:1931
+#: src/frontends/qt/GuiDocument.cpp:1935
 msgid ""
 "Some changes in the document were not yet applied.\n"
 "Do you want to apply them before closing or dismiss the changes?"
@@ -39334,16 +39331,16 @@ msgstr ""
 "Några ändringar i dokumentet har inte tillämpats än.\n"
 "Vill du tillämpa dem innan du stänger eller avvisa ändringarna?"
 
-#: src/frontends/qt/GuiDocument.cpp:1933 src/frontends/qt/GuiDocument.cpp:3140
-#: src/frontends/qt/GuiDocument.cpp:3442 src/frontends/qt/GuiDocument.cpp:5161
+#: src/frontends/qt/GuiDocument.cpp:1937 src/frontends/qt/GuiDocument.cpp:3144
+#: src/frontends/qt/GuiDocument.cpp:3446 src/frontends/qt/GuiDocument.cpp:5165
 msgid "&Apply"
 msgstr "Tillämp&a"
 
-#: src/frontends/qt/GuiDocument.cpp:1933 src/frontends/qt/GuiDocument.cpp:1981
+#: src/frontends/qt/GuiDocument.cpp:1937 src/frontends/qt/GuiDocument.cpp:1985
 msgid "&Dismiss Changes"
 msgstr "Avvisa än&dringar"
 
-#: src/frontends/qt/GuiDocument.cpp:1979
+#: src/frontends/qt/GuiDocument.cpp:1983
 msgid ""
 "Some changes in the previous document were not yet applied.\n"
 "Do you want to switch back in order to apply them or dismiss the changes?"
@@ -39351,31 +39348,31 @@ msgstr ""
 "Vissa ändringar i det föregående dokumentet har ännu inte tillämpats.\n"
 "Vill du växla tillbaka för att tillämpa dem eller avvisa ändringarna?"
 
-#: src/frontends/qt/GuiDocument.cpp:1981
+#: src/frontends/qt/GuiDocument.cpp:1985
 msgid "&Switch Back"
 msgstr "&Växla tillbaka"
-
-#: src/frontends/qt/GuiDocument.cpp:2039
-msgid "&Left:"
-msgstr "&Vänster:"
-
-#: src/frontends/qt/GuiDocument.cpp:2040
-msgid "&Right:"
-msgstr "&Höger:"
 
 #: src/frontends/qt/GuiDocument.cpp:2043
 msgid "&Outer:"
 msgstr "&Yttre:"
 
-#: src/frontends/qt/GuiDocument.cpp:2432
+#: src/frontends/qt/GuiDocument.cpp:2047
+msgid "&Right:"
+msgstr "&Höger:"
+
+#: src/frontends/qt/GuiDocument.cpp:2048
+msgid "&Left:"
+msgstr "&Vänster:"
+
+#: src/frontends/qt/GuiDocument.cpp:2436
 msgid "Default margins"
 msgstr "Standardmarginaler"
 
-#: src/frontends/qt/GuiDocument.cpp:2432
+#: src/frontends/qt/GuiDocument.cpp:2436
 msgid "Package defaults"
 msgstr "Paketets standardinställningar"
 
-#: src/frontends/qt/GuiDocument.cpp:2435
+#: src/frontends/qt/GuiDocument.cpp:2439
 msgid ""
 "If no value is given, the defaults as set by the class, a package or the "
 "preamble are used."
@@ -39383,7 +39380,7 @@ msgstr ""
 "Om inget värde anges används de standardvärden som anges av en klass, ett "
 "paket eller ingressen."
 
-#: src/frontends/qt/GuiDocument.cpp:2436
+#: src/frontends/qt/GuiDocument.cpp:2440
 msgid ""
 "If no value is given, the defaults as set by the geometry package or a "
 "package/class overriding geometry's defaults are used."
@@ -39391,51 +39388,51 @@ msgstr ""
 "Om inget värde anges används de standardvärden som anges av geometripaketet "
 "eller ett paket/klass som åsidosätter geometrins standardvärden."
 
-#: src/frontends/qt/GuiDocument.cpp:2624
+#: src/frontends/qt/GuiDocument.cpp:2628
 msgid "Direct (No inputenc)"
 msgstr "Direkt (Ingen inputenc)"
 
-#: src/frontends/qt/GuiDocument.cpp:2626
+#: src/frontends/qt/GuiDocument.cpp:2630
 msgid "Direct (XeTeX/LuaTeX)"
 msgstr "Direkt (XeTeX/LuaTeX)"
 
-#: src/frontends/qt/GuiDocument.cpp:2802 src/frontends/qt/GuiDocument.cpp:4621
-#: src/frontends/qt/GuiDocument.cpp:4632 src/frontends/qt/GuiDocument.cpp:4643
-#: src/frontends/qt/GuiDocument.cpp:4655
+#: src/frontends/qt/GuiDocument.cpp:2806 src/frontends/qt/GuiDocument.cpp:4625
+#: src/frontends/qt/GuiDocument.cpp:4636 src/frontends/qt/GuiDocument.cpp:4647
+#: src/frontends/qt/GuiDocument.cpp:4659
 msgid " (not installed)"
 msgstr " (inte installerad)"
 
-#: src/frontends/qt/GuiDocument.cpp:2867 src/frontends/qt/GuiDocument.cpp:2870
-#: src/frontends/qt/GuiDocument.cpp:2873 src/frontends/qt/GuiDocument.cpp:2905
-#: src/frontends/qt/GuiDocument.cpp:2916 src/frontends/qt/GuiDocument.cpp:2927
+#: src/frontends/qt/GuiDocument.cpp:2871 src/frontends/qt/GuiDocument.cpp:2874
+#: src/frontends/qt/GuiDocument.cpp:2877 src/frontends/qt/GuiDocument.cpp:2909
+#: src/frontends/qt/GuiDocument.cpp:2920 src/frontends/qt/GuiDocument.cpp:2931
 msgid "Default font (as set by class)"
 msgstr "Standardteckensnitt (enligt klass)"
 
-#: src/frontends/qt/GuiDocument.cpp:2875
+#: src/frontends/qt/GuiDocument.cpp:2879
 msgid "Non-TeX Fonts Default"
 msgstr "Icke-TeX-typsnittens standard"
 
-#: src/frontends/qt/GuiDocument.cpp:2877
+#: src/frontends/qt/GuiDocument.cpp:2881
 msgid " (not available)"
 msgstr " (inte tillgänglig)"
 
-#: src/frontends/qt/GuiDocument.cpp:2878
+#: src/frontends/qt/GuiDocument.cpp:2882
 msgid "Class Default (TeX Fonts)"
 msgstr "Klassens standard (TeX-typsnitt)"
 
-#: src/frontends/qt/GuiDocument.cpp:3040
+#: src/frontends/qt/GuiDocument.cpp:3044
 msgid "Lay&outs"
 msgstr "Utf&ormningar"
 
-#: src/frontends/qt/GuiDocument.cpp:3042
+#: src/frontends/qt/GuiDocument.cpp:3046
 msgid "LyX Layout (*.layout)"
 msgstr "LyX-utformning (*.layout)"
 
-#: src/frontends/qt/GuiDocument.cpp:3044 src/frontends/qt/GuiDocument.cpp:3053
+#: src/frontends/qt/GuiDocument.cpp:3048 src/frontends/qt/GuiDocument.cpp:3057
 msgid "Local layout file"
 msgstr "Lokal utformningsfil"
 
-#: src/frontends/qt/GuiDocument.cpp:3054
+#: src/frontends/qt/GuiDocument.cpp:3058
 msgid ""
 "The layout file you have selected is a local layout\n"
 "file, not one in the system or user directory.\n"
@@ -39447,28 +39444,28 @@ msgstr ""
 "Ditt dokument kanske inte fungerar med denna utformning\n"
 "om du flyttar utformningsfilen till en annan katalog."
 
-#: src/frontends/qt/GuiDocument.cpp:3058
+#: src/frontends/qt/GuiDocument.cpp:3062
 msgid "&Set Layout"
 msgstr "&Sätt utformning"
 
-#: src/frontends/qt/GuiDocument.cpp:3072
+#: src/frontends/qt/GuiDocument.cpp:3076
 msgid "Unable to read local layout file."
 msgstr "Kan inte läsa lokal utformningsfil."
 
-#: src/frontends/qt/GuiDocument.cpp:3089
+#: src/frontends/qt/GuiDocument.cpp:3093
 msgid "This is a local layout file."
 msgstr "Detta är en lokal utformningsfil."
 
-#: src/frontends/qt/GuiDocument.cpp:3103
+#: src/frontends/qt/GuiDocument.cpp:3107
 msgid "Select master document"
 msgstr "Välj huvuddokument"
 
-#: src/frontends/qt/GuiDocument.cpp:3107
+#: src/frontends/qt/GuiDocument.cpp:3111
 msgid "LyX Files (*.lyx)"
 msgstr "LyX-filer (*.lyx)"
 
-#: src/frontends/qt/GuiDocument.cpp:3138 src/frontends/qt/GuiDocument.cpp:3440
-#: src/frontends/qt/GuiDocument.cpp:5159
+#: src/frontends/qt/GuiDocument.cpp:3142 src/frontends/qt/GuiDocument.cpp:3444
+#: src/frontends/qt/GuiDocument.cpp:5163
 msgid ""
 "Some changes in the dialog were not yet applied.\n"
 "If you do not apply now, they will be lost after this action."
@@ -39476,85 +39473,85 @@ msgstr ""
 "Några ändringar i dialogen har inte tillämpats än.\n"
 "Om du inte tillämpar nu kommer de att förloras efter denna åtgärd."
 
-#: src/frontends/qt/GuiDocument.cpp:3140 src/frontends/qt/GuiDocument.cpp:3442
-#: src/frontends/qt/GuiDocument.cpp:5161
+#: src/frontends/qt/GuiDocument.cpp:3144 src/frontends/qt/GuiDocument.cpp:3446
+#: src/frontends/qt/GuiDocument.cpp:5165
 msgid "&Dismiss"
 msgstr "Avfär&da"
 
-#: src/frontends/qt/GuiDocument.cpp:3151 src/frontends/qt/GuiDocument.cpp:5169
+#: src/frontends/qt/GuiDocument.cpp:3155 src/frontends/qt/GuiDocument.cpp:5173
 msgid "Unable to set document class."
 msgstr "Kan inte sätta dokumentklass."
 
-#: src/frontends/qt/GuiDocument.cpp:3321
+#: src/frontends/qt/GuiDocument.cpp:3325
 msgid "Basic numerical"
 msgstr "Grundläggande numerär"
 
-#: src/frontends/qt/GuiDocument.cpp:3324
+#: src/frontends/qt/GuiDocument.cpp:3328
 msgid "Author-year"
 msgstr "Författare-år"
 
-#: src/frontends/qt/GuiDocument.cpp:3327
+#: src/frontends/qt/GuiDocument.cpp:3331
 msgid "Author-number"
 msgstr "Författare-nummer"
 
-#: src/frontends/qt/GuiDocument.cpp:3330
+#: src/frontends/qt/GuiDocument.cpp:3334
 msgid "Notes and Bibliography"
 msgstr "Noter och bibliografi"
 
-#: src/frontends/qt/GuiDocument.cpp:3364
+#: src/frontends/qt/GuiDocument.cpp:3368
 #, c-format
 msgid "%1$s and %2$s"
 msgstr "%1$s och %2$s"
 
-#: src/frontends/qt/GuiDocument.cpp:3371
+#: src/frontends/qt/GuiDocument.cpp:3375
 #, c-format
 msgid "%1$s, %2$s"
 msgstr "%1$s, %2$s"
 
-#: src/frontends/qt/GuiDocument.cpp:3376
+#: src/frontends/qt/GuiDocument.cpp:3380
 #, c-format
 msgid "%1$s, %2$s, and %3$s"
 msgstr "%1$s, %2$s, och %3$s"
 
-#: src/frontends/qt/GuiDocument.cpp:3390
+#: src/frontends/qt/GuiDocument.cpp:3394
 #, c-format
 msgid "%1$s (unavailable)"
 msgstr "%1$s (otillgänglig)"
 
-#: src/frontends/qt/GuiDocument.cpp:3492
+#: src/frontends/qt/GuiDocument.cpp:3496
 msgid "Module provided by document class."
 msgstr "Modul försedd av dokumentklass."
 
-#: src/frontends/qt/GuiDocument.cpp:3500
+#: src/frontends/qt/GuiDocument.cpp:3504
 #, c-format
 msgid "<p><b>Category:</b> %1$s.</p>"
 msgstr "<p><b>Kategori:</b> %1$s.</p>"
 
-#: src/frontends/qt/GuiDocument.cpp:3510
+#: src/frontends/qt/GuiDocument.cpp:3514
 #, c-format
 msgid "<p><b>Package(s) required:</b> %1$s.</p>"
 msgstr "<p><b>Paket som krävs:</b> %1$s.</p>"
 
-#: src/frontends/qt/GuiDocument.cpp:3516
+#: src/frontends/qt/GuiDocument.cpp:3520
 msgid "or"
 msgstr "eller"
 
-#: src/frontends/qt/GuiDocument.cpp:3519
+#: src/frontends/qt/GuiDocument.cpp:3523
 #, c-format
 msgid "<p><b>Modules required:</b> %1$s.</p>"
 msgstr "<p><b>Moduler som krävs:</b> %1$s.</p>"
 
-#: src/frontends/qt/GuiDocument.cpp:3528
+#: src/frontends/qt/GuiDocument.cpp:3532
 #, c-format
 msgid "<p><b>Modules excluded:</b> %1$s.</p>"
 msgstr "<p><b>Exkluderade moduler:</b> %1$s.</p>"
 
-#: src/frontends/qt/GuiDocument.cpp:3533
+#: src/frontends/qt/GuiDocument.cpp:3537
 #, c-format
 msgid "<p><b>Filename:</b> <tt>%1$s.module</tt>.</p>"
 msgstr "<p><b>Filenamn:</b> <tt>%1$s.modul</tt>.</p>"
 
-#: src/frontends/qt/GuiDocument.cpp:3538
+#: src/frontends/qt/GuiDocument.cpp:3542
 msgid ""
 "<p><font color=red><b>WARNING: Some required packages are unavailable!</b></"
 "font></p>"
@@ -39562,72 +39559,72 @@ msgstr ""
 "<p><teckensnittsfärg=röd><b>VARNING: Vissa nödvändiga paket saknas!</b></"
 "font></p>"
 
-#: src/frontends/qt/GuiDocument.cpp:4240
+#: src/frontends/qt/GuiDocument.cpp:4244
 msgid "per part"
 msgstr "per del"
 
-#: src/frontends/qt/GuiDocument.cpp:4242
+#: src/frontends/qt/GuiDocument.cpp:4246
 msgid "per chapter"
 msgstr "per kapitel"
 
-#: src/frontends/qt/GuiDocument.cpp:4244
+#: src/frontends/qt/GuiDocument.cpp:4248
 msgid "per section"
 msgstr "per avsnitt"
 
-#: src/frontends/qt/GuiDocument.cpp:4246
+#: src/frontends/qt/GuiDocument.cpp:4250
 msgid "per subsection"
 msgstr "per underavsnitt"
 
-#: src/frontends/qt/GuiDocument.cpp:4247
+#: src/frontends/qt/GuiDocument.cpp:4251
 msgid "per child document"
 msgstr "per barndokument"
 
-#: src/frontends/qt/GuiDocument.cpp:4274
+#: src/frontends/qt/GuiDocument.cpp:4278
 #, c-format
 msgid "%1$s (not available)"
 msgstr "%1$s (inte tillgänglig)"
 
-#: src/frontends/qt/GuiDocument.cpp:4542
+#: src/frontends/qt/GuiDocument.cpp:4546
 msgid "[No options predefined]"
 msgstr "[Inga alternativ fördefinierade]"
 
-#: src/frontends/qt/GuiDocument.cpp:4622 src/frontends/qt/GuiDocument.cpp:4633
-#: src/frontends/qt/GuiDocument.cpp:4644
+#: src/frontends/qt/GuiDocument.cpp:4626 src/frontends/qt/GuiDocument.cpp:4637
+#: src/frontends/qt/GuiDocument.cpp:4648
 msgid "Uninstalled used fonts"
 msgstr "Oinstallerade använda typsnitt"
 
-#: src/frontends/qt/GuiDocument.cpp:4623 src/frontends/qt/GuiDocument.cpp:4634
-#: src/frontends/qt/GuiDocument.cpp:4645
+#: src/frontends/qt/GuiDocument.cpp:4627 src/frontends/qt/GuiDocument.cpp:4638
+#: src/frontends/qt/GuiDocument.cpp:4649
 msgid "This font is not installed and won't be used in output"
 msgstr ""
 "Detta typsnitt är inte installerat och kommer inte att användas i utmatning"
 
-#: src/frontends/qt/GuiDocument.cpp:4820
+#: src/frontends/qt/GuiDocument.cpp:4824
 msgid "C&ustomize Hyperref Options"
 msgstr "Anpassa hyperref-alternativ"
 
-#: src/frontends/qt/GuiDocument.cpp:4822
+#: src/frontends/qt/GuiDocument.cpp:4826
 msgid "&Use Hyperref Support"
 msgstr "Använd hyperref-stöd"
 
-#: src/frontends/qt/GuiDocument.cpp:5181
+#: src/frontends/qt/GuiDocument.cpp:5185
 msgid "Can't set layout!"
 msgstr "Kan inte sätta utformning!"
 
-#: src/frontends/qt/GuiDocument.cpp:5182
+#: src/frontends/qt/GuiDocument.cpp:5186
 #, c-format
 msgid "Unable to set layout for ID: %1$s"
 msgstr "Kan inte sätta utformning för ID: %1$s"
 
-#: src/frontends/qt/GuiDocument.cpp:5261
+#: src/frontends/qt/GuiDocument.cpp:5265
 msgid "Not Found"
 msgstr "Hittades inte"
 
-#: src/frontends/qt/GuiDocument.cpp:5323
+#: src/frontends/qt/GuiDocument.cpp:5327
 msgid "Assigned master does not include this file"
 msgstr "Tilldelat huvud inkluderar inte denna fil"
 
-#: src/frontends/qt/GuiDocument.cpp:5324
+#: src/frontends/qt/GuiDocument.cpp:5328
 #, c-format
 msgid ""
 "You must include this file in the document\n"
@@ -39638,11 +39635,11 @@ msgstr ""
 "'%1$s' för att kunna använda huvuddokumentets\n"
 "funktion."
 
-#: src/frontends/qt/GuiDocument.cpp:5328
+#: src/frontends/qt/GuiDocument.cpp:5332
 msgid "Could not load master"
 msgstr "Kunde inte ladda huvuddokument"
 
-#: src/frontends/qt/GuiDocument.cpp:5329
+#: src/frontends/qt/GuiDocument.cpp:5333
 #, c-format
 msgid ""
 "The master document '%1$s'\n"
@@ -39651,46 +39648,46 @@ msgstr ""
 "Huvuddokumentet '%1$s'\n"
 "kunde inte laddas."
 
-#: src/frontends/qt/GuiDocument.cpp:5492
+#: src/frontends/qt/GuiDocument.cpp:5496
 msgid "%1 (missing req.)"
 msgstr "%1 (saknas nödv.)"
 
-#: src/frontends/qt/GuiDocument.cpp:5504
+#: src/frontends/qt/GuiDocument.cpp:5508
 msgid "personal module"
 msgstr "personlig modul"
 
-#: src/frontends/qt/GuiDocument.cpp:5504
+#: src/frontends/qt/GuiDocument.cpp:5508
 msgid "distributed module"
 msgstr "distribuerad modul"
 
-#: src/frontends/qt/GuiDocument.cpp:5505
+#: src/frontends/qt/GuiDocument.cpp:5509
 msgid "<b>Module name:</b> <i>%1</i> (%2)"
 msgstr "<b>Modulnamn:</b> <i>%1</i> (%2)"
 
-#: src/frontends/qt/GuiDocument.cpp:5511
+#: src/frontends/qt/GuiDocument.cpp:5515
 msgid "<b>Note:</b> Some requirements for this module are missing!"
 msgstr "<b>Obs:</b> Vissa krav för denna modul saknas!"
 
-#: src/frontends/qt/GuiDocument.cpp:5658
+#: src/frontends/qt/GuiDocument.cpp:5662
 msgid "Color naming failed"
-msgstr "Färgnamngivning misslyckades"
+msgstr "Namngivning av färg misslyckades"
 
-#: src/frontends/qt/GuiDocument.cpp:5659
+#: src/frontends/qt/GuiDocument.cpp:5663
 #, c-format
 msgid "The color name `%1$s' is already taken."
-msgstr "Färgnamnet `%1$s' är upptaget."
+msgstr "Färgnamnet `%1$s' är upptaget.."
 
-#: src/frontends/qt/GuiDocument.cpp:5720
+#: src/frontends/qt/GuiDocument.cpp:5724
 msgid "Enter new color name"
 msgstr "Ange nytt färgnamn"
 
-#: src/frontends/qt/GuiDocument.cpp:5728
+#: src/frontends/qt/GuiDocument.cpp:5732
 msgid ""
 "The color could not be renamed since the new name consists of non-ASCII "
 "characters or blanks."
 msgstr ""
-"Färgnamnet kunde inte bytas namn eftersom det nya namnet består av icke-"
-"ASCII-tecken eller mellanslag."
+"Färgen kunde inte döpas om eftersom det nya namnet består av icke-ASCII-"
+"tecken eller blanksteg."
 
 #: src/frontends/qt/GuiERT.h:33
 msgid "TeX Mode Inset Settings"
@@ -40564,7 +40561,7 @@ msgstr "Nytt temanamn"
 
 #: src/frontends/qt/GuiPrefs.cpp:1489
 msgid "A user color theme with the same name exists."
-msgstr "Det finns ett användarfärgtema med samma namn."
+msgstr "Det finns redan ett användarfärgtema med samma namn."
 
 #: src/frontends/qt/GuiPrefs.cpp:1490
 msgid "Do you want to overwrite the theme?"
@@ -40580,7 +40577,7 @@ msgstr "Markera ett användartema"
 
 #: src/frontends/qt/GuiPrefs.cpp:1658
 msgid "Please select a user theme to remove from the \"Themes\" list menu."
-msgstr "Markera ett användartema att ta bort från listmeyn \"Teman\"."
+msgstr "Markera ett användartema som du vill ta bort från listmenyn \"Teman\"."
 
 #: src/frontends/qt/GuiPrefs.cpp:1670
 msgid "Not a user theme"
@@ -40588,11 +40585,11 @@ msgstr "Inte ett användartema"
 
 #: src/frontends/qt/GuiPrefs.cpp:1671
 msgid "The selected theme is a system theme. It cannot be removed."
-msgstr "Den markerade posten är ett systemtema. Det kan inte tas bort."
+msgstr "Det markerade temat är ett systemtema. Det kan inte tas bort."
 
 #: src/frontends/qt/GuiPrefs.cpp:1681
 msgid "Confirm the removal"
-msgstr "Bekräfta borttagning"
+msgstr "Bekräfta borttagningen"
 
 #: src/frontends/qt/GuiPrefs.cpp:1682
 #, c-format
@@ -40601,7 +40598,7 @@ msgstr "Vill du verkligen ta bort temat \"%1$s\"?"
 
 #: src/frontends/qt/GuiPrefs.cpp:1820
 msgid "&Export..."
-msgstr "&Exporterar ..."
+msgstr "&Exporterar..."
 
 #: src/frontends/qt/GuiPrefs.cpp:1821
 msgid "&Import..."
@@ -40621,11 +40618,11 @@ msgstr "En sådan färg finns inte"
 
 #: src/frontends/qt/GuiPrefs.cpp:2094
 msgid "No[[bookmarks]]"
-msgstr "Inga[[bokmärken]]"
+msgstr "Inga[[bookmarks]]"
 
 #: src/frontends/qt/GuiPrefs.cpp:2095
 msgid "Inline"
-msgstr "Innanför"
+msgstr "Inline"
 
 #: src/frontends/qt/GuiPrefs.cpp:2096
 msgid "In Margin"
@@ -40905,47 +40902,47 @@ msgstr "Identitet"
 
 #: src/frontends/qt/GuiPrefs.h:380
 msgid "Default[[sortkey]]"
-msgstr "Standard[[sorteringsnyckel]]"
+msgstr "Standard[[sortkey]]"
 
 #: src/frontends/qt/GuiPrefs.h:380
 msgid "Default[[guiname]]"
-msgstr "Standard[[guinamn]]"
+msgstr "Standard[[guiname]]"
 
 #: src/frontends/qt/GuiPrefs.h:381
 msgid "Monochrome[[sortkey]]"
-msgstr "Monokrom[[sorteringsnyckel]]"
+msgstr "Monokrom[[sortkey]]"
 
 #: src/frontends/qt/GuiPrefs.h:381
 msgid "Monochrome[[guiname]]"
-msgstr "Monokrom[[guinamn]]"
+msgstr "Monokrom[[guiname]]"
 
 #: src/frontends/qt/GuiPrefs.h:382
 msgid "Solarized[[sortkey]]"
-msgstr "Solariserad[[sorteringsnyckel]]"
+msgstr "Solariserad[[sortkey]]"
 
 #: src/frontends/qt/GuiPrefs.h:382
 msgid "Solarized[[guiname]]"
-msgstr "Solariserad[[guinamn]]"
+msgstr "Solariserad[[guiname]]"
 
 #: src/frontends/qt/GuiPrefs.h:386
 msgid "Light"
-msgstr "Ljust"
+msgstr "Ljus"
 
 #: src/frontends/qt/GuiPrefs.h:386
 msgid "Dark"
-msgstr "Mörkt"
+msgstr "Mörk"
 
 #: src/frontends/qt/GuiPrefs.h:386
 msgid "Object/Element"
-msgstr "Objekt/Element"
+msgstr "Objekt/element"
 
 #: src/frontends/qt/GuiPrintNomencl.cpp:45
 msgid "Longest label width (guessed)"
-msgstr "Längsta etikettbredd (gissad)"
+msgstr "Längsta etikettbredd (uppskattad)"
 
 #: src/frontends/qt/GuiPrintNomencl.cpp:47
 msgid "Longest label width (set)"
-msgstr "Längsta etikettbredd (uppsättning)"
+msgstr "Längsta etikettbredd (inställd)"
 
 #: src/frontends/qt/GuiPrintNomencl.h:40
 msgid "Nomenclature List Settings"
@@ -41010,7 +41007,7 @@ msgstr "lista (1 och 2)"
 
 #: src/frontends/qt/GuiRef.cpp:81
 msgid "range (1 to 2)"
-msgstr "omfång (1 till 2)"
+msgstr "intervall (1 till 2)"
 
 #: src/frontends/qt/GuiRef.cpp:84
 msgid "Update the label list"
@@ -41022,7 +41019,7 @@ msgstr "Inställningen stöds inte!"
 
 #: src/frontends/qt/GuiRef.cpp:241
 msgid "The reference type you selected allows for maximally two target labels."
-msgstr "Den referenstyp du valde tillåter maximalt två måletiketter."
+msgstr "Den referenstyp du valt tillåter maximalt två måletiketter."
 
 #: src/frontends/qt/GuiRef.cpp:450
 msgid "Label creation error!"
@@ -41033,7 +41030,7 @@ msgid ""
 "Could not auto-generate label for this target.\n"
 "Please insert a label manually."
 msgstr ""
-"Det gick inte att generera etiketten automatiskt för detta mål.\n"
+"Det gick inte att generera en etikett automatiskt för detta mål.\n"
 "Infoga en etikett manuellt."
 
 #: src/frontends/qt/GuiRef.cpp:545
@@ -41364,19 +41361,19 @@ msgstr "Halvbredd- och fullbreddsformer"
 
 #: src/frontends/qt/GuiSymbols.cpp:124
 msgid "Linear B Syllabary"
-msgstr "Linear B stavelseskrift"
+msgstr "Linjär B stavelseskrift"
 
 #: src/frontends/qt/GuiSymbols.cpp:125
 msgid "Linear B Ideograms"
-msgstr "Linear B ideogram"
+msgstr "Linjär B ideogram"
 
 #: src/frontends/qt/GuiSymbols.cpp:126
 msgid "Aegean Numbers"
-msgstr "Egeiska siffror"
+msgstr "Egeiska nummer"
 
 #: src/frontends/qt/GuiSymbols.cpp:127
 msgid "Ancient Greek Numbers"
-msgstr "Antika grekiska siffror"
+msgstr "Antika grekiska nummer"
 
 #: src/frontends/qt/GuiSymbols.cpp:128
 msgid "Old Italic"
@@ -41468,7 +41465,8 @@ msgstr "Symboler"
 
 #: src/frontends/qt/GuiTabular.cpp:64
 msgid "Adjust the horizontal overhang of the coloring here if needed."
-msgstr "Justera färgens horisontella överhäng här om det behövs."
+msgstr ""
+"Justera det horisontella överhänget för färgläggningen här om det behövs."
 
 #: src/frontends/qt/GuiTabular.h:48
 msgid "Tabular Settings"
@@ -41628,7 +41626,7 @@ msgstr "Konverteringen avbröts under förhandsgranskning av format: %1$s"
 
 #: src/frontends/qt/GuiView.cpp:1271
 msgid "None[[color]]"
-msgstr "Ingen [[färg]]"
+msgstr "Ingen[[färg]]"
 
 #: src/frontends/qt/GuiView.cpp:1272
 msgid "(Without)[[color]]"
@@ -42295,7 +42293,7 @@ msgstr "Flytta flik till &slutet"
 
 #: src/frontends/qt/GuiWorkArea.cpp:2231
 msgid "Open Enclosing &Directory"
-msgstr "Öppna överlagrande &katalog"
+msgstr "Öppna överor&dnad katalog"
 
 #: src/frontends/qt/GuiWorkArea.cpp:2276
 msgid "<b>The file %1 changed on disk.</b>"
@@ -44126,19 +44124,19 @@ msgstr "text%1$s"
 #: src/insets/InsetRef.cpp:738 src/insets/InsetRef.cpp:762
 #: src/mathed/InsetMathRef.cpp:520 src/mathed/InsetMathRef.cpp:601
 msgid "[[reference 1]] and [[reference2]]"
-msgstr "[[referens 1]] och [[referens 2]]"
+msgstr "[[reference 1]] och [[reference2]]"
 
 #: src/insets/InsetRef.cpp:406 src/insets/InsetRef.cpp:580
 #: src/insets/InsetRef.cpp:740 src/insets/InsetRef.cpp:764
 #: src/mathed/InsetMathRef.cpp:522 src/mathed/InsetMathRef.cpp:603
 msgid "[[reference 1, ...]], and [[reference n]]"
-msgstr "[[referens 1, ...]], och [[referens n]]"
+msgstr "[[reference 1, ...]], och [[reference n]]"
 
 #: src/insets/InsetRef.cpp:408 src/insets/InsetRef.cpp:582
 #: src/insets/InsetRef.cpp:742 src/insets/InsetRef.cpp:766
 #: src/mathed/InsetMathRef.cpp:524 src/mathed/InsetMathRef.cpp:605
 msgid "[[reference 1]], [[reference2, ...]]"
-msgstr "[[referens 1]], [[referens 2, ...]]"
+msgstr "[[reference 1]], [[reference2, ...]]"
 
 #: src/insets/InsetRef.cpp:423 src/mathed/InsetMathRef.cpp:539
 msgid "Invalid label!"
@@ -44151,9 +44149,9 @@ msgid ""
 "formatted references with prettyref.\n"
 "You will most likely run into a LaTeX error."
 msgstr ""
-"Etiketten `%1$s' har inget prefix (t.ex. `sec:'), vilket behövs för "
+"Etiketten `%1$s' har inget prefix (t.ex. `sec:'), vilket krävs för "
 "formaterade referenser med prettyref.\n"
-"Du kommer troligtvis att stöta på ett LaTeX-fel."
+"Du kommer troligen att stöta på ett LaTeX-fel."
 
 #: src/insets/InsetRef.cpp:704
 msgid "elsewhere"
@@ -44177,7 +44175,7 @@ msgstr "Sidnummer med prefix"
 
 #: src/insets/InsetRef.cpp:1021
 msgid "PrefPage"
-msgstr "PrefPage"
+msgstr "Försida"
 
 #: src/insets/InsetRef.cpp:1022 src/mathed/InsetMathRef.cpp:622
 msgid "Textual Page Number"
@@ -44226,9 +44224,9 @@ msgid ""
 "(`%2$s')\n"
 "which could not be found. Output will be broken!"
 msgstr ""
-"Etiketten `%1$s' refererar till en extern fil\n"
+"Etiketten `%1$s' hänvisar till en extern fil\n"
 "(`%2$s')\n"
-"som inte kunde hittas. Utdata kommer att vara trasig!"
+"som inte kunde hittas. Utdata kommer att bli felaktig!"
 
 #: src/insets/InsetScript.cpp:327
 msgid "subscript"
@@ -44698,7 +44696,7 @@ msgstr "Sida: "
 
 #: src/mathed/InsetMathRef.cpp:621
 msgid "PrefPage: "
-msgstr "Företalsida: "
+msgstr "Försida: "
 
 #: src/mathed/InsetMathRef.cpp:622
 msgid "TextPage: "
@@ -45144,10 +45142,6 @@ msgstr ""
 msgid "Unknown user"
 msgstr "Okänd användare"
 
-#, fuzzy
-#~ msgid "Hyphenation Point"
-#~ msgstr "Avstavningspunkt"
-
 #~ msgid "##"
 #~ msgstr "##"
 
@@ -45166,115 +45160,12 @@ msgstr "Okänd användare"
 #~ msgid "Paragraph[[Sectioning]]"
 #~ msgstr "Stycke[[Sectioning]]"
 
-#~ msgid "Click to change the color"
-#~ msgstr "Klicka för att ändra färgen"
-
-#~ msgid "&Change..."
-#~ msgstr "Än&dra..."
-
-#~ msgid "Greyed-out notes:"
-#~ msgstr "Nedtonade noter:"
-
-#~ msgid "Main text:"
-#~ msgstr "Brödtext:"
-
-#~ msgid "C&hange..."
-#~ msgstr "Än&dra..."
-
-#~ msgid "Revert the color to the default"
-#~ msgstr "Återställ färgen till standard"
-
-#~ msgid "Shaded boxes:"
-#~ msgstr "Skuggade rutor:"
-
-#~ msgid "Ch&ange..."
-#~ msgstr "Än&dra..."
-
-#~ msgid "Re&set"
-#~ msgstr "Åter&ställ"
-
-#~ msgid "Chan&ge..."
-#~ msgstr "Än&dra..."
-
-#~ msgid "Search fo&r:"
-#~ msgstr "Sök efte&r:"
-
-#~ msgid "&Use refstyle (not prettyref) for cross-references"
-#~ msgstr "An&vänd refstyle (inte prettyref) för korsreferenser"
-
-#~ msgid "Sy&mbol:"
-#~ msgstr "Sy&mbol:"
-
-#~ msgid "Des&cription:"
-#~ msgstr "Beskrivning:"
-
-#~ msgid "Sort &as:"
-#~ msgstr "Sorter&a som:"
-
-#~ msgid ""
-#~ "Pass content of the `Symbol' and `Description' fields literally to LaTeX. "
-#~ "Check this if you want to enter LaTeX code."
-#~ msgstr ""
-#~ "Skicka innehållet av `Symbol'- och `Beskrivning'-fälten bokstavligen till "
-#~ "LaTeX. Markera detta om du vill ange LaTeX-kod."
-
-#~ msgid "MathML"
-#~ msgstr "MathML"
-
-#~ msgid "Change the selected color"
-#~ msgstr "Byt vald färg"
-
-#~ msgid "A&lter..."
-#~ msgstr "Ändra..."
-
-#~ msgid "Reset the selected color to its original value"
-#~ msgstr "Återställ den valda färgen till dess originalvärde"
-
-#~ msgid "Restore &Default"
-#~ msgstr "Återställ standar&d"
-
-#~ msgid "Reset all colors to their original value"
-#~ msgstr "Återställ alla färger till dess originalvärden"
-
-#~ msgid "Restore A&ll"
-#~ msgstr "Återställ a&lla"
-
-#~ msgid "&Use system colors"
-#~ msgstr "Använd systemfärger"
-
-#~ msgid ""
-#~ "Mac OS X specific setting for use with emacs bindings. Takes effect next "
-#~ "time LyX is launched."
-#~ msgstr ""
-#~ "Specifikt alternativ för Mac OS X för användning med Emacs-bindningar. "
-#~ "Börjar gälla nästa gång LyX startas."
-
-#~ msgid "Sele&cted Label:"
-#~ msgstr "Vald etikett:"
-
-#~ msgid "Select a label from the list above or enter a label manually"
-#~ msgstr "Välj en etikett från listan ovan eller ange en etikett manuellt"
-
-#~ msgid "Plural"
-#~ msgstr "Plural"
-
-#~ msgid "Capitalized"
-#~ msgstr "Kapitaliserad"
-
-#~ msgid "&Search:"
-#~ msgstr "&Sök:"
-
-#~ msgid "Set borders of the current (selected) cell(s)"
-#~ msgstr "Sätt kanter på aktuell (vald) cell(er)"
-
-#~ msgid "T&op of row:"
-#~ msgstr "T&oppen på rad:"
+#, fuzzy
+#~ msgid "Filter colors"
+#~ msgstr "Typsnittsfärg"
 
 #~ msgid "(\\thesection.\\arabic{equation})"
 #~ msgstr "\\thesection.\\arabiska{equation}"
-
-#~ msgid "Hebrew Letter"
-#~ msgstr "Hebreiskt brev"
 
 #~ msgid "(\\arabic{example})"
 #~ msgstr "(\\arabic{example})"
@@ -45285,9 +45176,6 @@ msgstr "Okänd användare"
 #~ msgid "\\theexamplei (\\alph{subexample})"
 #~ msgstr "\\theexamplei (\\alph{subexample})"
 
-#~ msgid "\\theexamplei (\\alph{subexamplei})"
-#~ msgstr "\\theexamplei (\\alph{subexamplei})"
-
 #~ msgid "\\theexamplei (\\alph{subexampleii})"
 #~ msgstr "\\theexamplei (\\alph{subexampleii})"
 
@@ -45297,17 +45185,11 @@ msgstr "Okänd användare"
 #~ msgid "\\theexamplei (\\alph{subexampleiv})"
 #~ msgstr "\\theexamplei (\\alph{subexampleiv})"
 
-#~ msgid "equation \\thechapter.\\arabic{equation}"
-#~ msgstr "equation \\thechapter.\\arabic{equation}"
-
 #~ msgid "(\\roman{enumiii})"
 #~ msgstr "(\\roman{enumiii})"
 
 #~ msgid "(\\Alph{enumiv})"
 #~ msgstr "(\\Alph{enumiv})"
-
-#~ msgid "Equation ##"
-#~ msgstr "Ekvation ##"
 
 #~ msgid "Axiom \\arabic{theorem}"
 #~ msgstr "Axiom \\arabic{theorem}"
@@ -45327,60 +45209,70 @@ msgstr "Okänd användare"
 #~ msgid "Assumption \\arabic{theorem}"
 #~ msgstr "Antagande \\arabic{theorem}"
 
-#~ msgid "Question \\arabic{theorem}"
-#~ msgstr "Fråga \\arabic{theorem}"
-
-#~ msgid "Arabic (ArabTeX)"
-#~ msgstr "Arabiska (ArabTeX)"
-
-#~ msgid "Arabic (Arabi)"
-#~ msgstr "Arabiska (Arabi)"
-
-#~ msgid "Japanese (CJK)"
-#~ msgstr "Japanska (CJK)"
-
-#~ msgid "Scottish"
-#~ msgstr "Skotska"
-
-#~ msgid "Next Cross-Reference|N"
-#~ msgstr "Nästa korsreferens|N"
-
-#~ msgid "Insert See Reference|c"
-#~ msgstr "Infoga se referens|c"
-
-#~ msgid "Nomenclature Entry...|y"
-#~ msgstr "Nomenklaturpost...|y"
-
-#~ msgid "Normal text mode\t\\textrm"
-#~ msgstr "Normalt textläge\t\\textrm"
-
-#~ msgid "OpenDocument (eLyXer)"
-#~ msgstr "OpenDocument (eLyXer)"
-
-#~ msgid "LinkBack files can only be edited on Apple Mac OSX."
-#~ msgstr "LinkBack-filer kan endast redigeras på Apple Mac OS X."
-
-#~ msgid "Use the Mac OS X conventions for cursor movement"
-#~ msgstr "Använd Mac OS X-konventioner för markörförflyttning"
-
 #~ msgid "LaTeX Preamble"
 #~ msgstr "LaTeX-ingress"
-
-#~ msgid "Nomenclature Settings"
-#~ msgstr "Nomenklaturinställningar"
-
-#~ msgid "Longest label width"
-#~ msgstr "Längsta etikettbredd"
-
-#~ msgid "Search and Replace"
-#~ msgstr "Hitta och ersätt"
 
 #, c-format
 #~ msgid "Sub-%1$s"
 #~ msgstr "Under-%1$s"
 
-#~ msgid "Nom: "
-#~ msgstr "Nom: "
+#~ msgid "Search fo&r:"
+#~ msgstr "Sök efte&r:"
+
+#~ msgid "&Search:"
+#~ msgstr "&Sök:"
+
+#~ msgid "Search and Replace"
+#~ msgstr "Hitta och ersätt"
+
+#~ msgid "&Change..."
+#~ msgstr "Än&dra..."
+
+#~ msgid "C&hange..."
+#~ msgstr "Än&dra..."
+
+#~ msgid "Revert the color to the default"
+#~ msgstr "Återställ färgen till standard"
+
+#~ msgid "Ch&ange..."
+#~ msgstr "Än&dra..."
+
+#~ msgid "Re&set"
+#~ msgstr "Åter&ställ"
+
+#~ msgid "Chan&ge..."
+#~ msgstr "Än&dra..."
+
+#~ msgid "&Use refstyle (not prettyref) for cross-references"
+#~ msgstr "An&vänd refstyle (inte prettyref) för korsreferenser"
+
+#~ msgid "A&lter..."
+#~ msgstr "Ändra..."
+
+#~ msgid "Reset the selected color to its original value"
+#~ msgstr "Återställ den valda färgen till dess originalvärde"
+
+#~ msgid "Restore &Default"
+#~ msgstr "Återställ standar&d"
+
+#~ msgid "Restore A&ll"
+#~ msgstr "Återställ a&lla"
+
+#~ msgid "Sy&mbol:"
+#~ msgstr "Sy&mbol:"
+
+#~ msgid "Des&cription:"
+#~ msgstr "Beskrivning:"
+
+#~ msgid "Sort &as:"
+#~ msgstr "Sorter&a som:"
+
+#~ msgid ""
+#~ "Pass content of the `Symbol' and `Description' fields literally to LaTeX. "
+#~ "Check this if you want to enter LaTeX code."
+#~ msgstr ""
+#~ "Skicka innehållet av `Symbol'- och `Beskrivning'-fälten bokstavligen till "
+#~ "LaTeX. Markera detta om du vill ange LaTeX-kod."
 
 #~ msgid "XHTML Output Options"
 #~ msgstr "XHTML-utmatningsalternativ"
@@ -45393,6 +45285,15 @@ msgstr "Okänd användare"
 
 #~ msgid "DocBook Output Options"
 #~ msgstr "DocBook-utmatningsalternativ"
+
+#~ msgid "Hebrew Letter"
+#~ msgstr "Hebreiskt brev"
+
+#~ msgid "Arabic (Arabi)"
+#~ msgstr "Arabiska (Arabi)"
+
+#~ msgid "Japanese (CJK)"
+#~ msgstr "Japanska (CJK)"
 
 #~ msgid "Split Inset|t"
 #~ msgstr "Dela insättning|t"
@@ -45430,6 +45331,9 @@ msgstr "Okänd användare"
 #~ msgid "htm|HTML"
 #~ msgstr "htm|HTML"
 
+#~ msgid "OpenDocument (eLyXer)"
+#~ msgstr "OpenDocument (eLyXer)"
+
 #~ msgid "pdf_tex"
 #~ msgstr "pdf_tex"
 
@@ -45461,6 +45365,9 @@ msgstr "Okänd användare"
 #~ "%1$s: början nåddes vid bakåtsökning.\n"
 #~ "Fortsätt sök från slutet?"
 
+#~ msgid "Nomenclature Settings"
+#~ msgstr "Nomenklaturinställningar"
+
 #~ msgid "Add to personal dictionary|n"
 #~ msgstr "Lägg till i personlig ordlista|n"
 
@@ -45475,6 +45382,9 @@ msgstr "Okänd användare"
 
 #~ msgid "Switch Language...|L"
 #~ msgstr "Byt språk...|L"
+
+#~ msgid "Nom: "
+#~ msgstr "Nom: "
 
 #, fuzzy
 #~ msgid "Library directory"
@@ -45924,9 +45834,6 @@ msgstr "Okänd användare"
 #~ msgid "Natbibapa"
 #~ msgstr "Natbibapa"
 
-#~ msgid "Footnote ##"
-#~ msgstr "Fotnot ##"
-
 #~ msgid "foot"
 #~ msgstr "fot"
 
@@ -46317,9 +46224,6 @@ msgstr "Okänd användare"
 #~ msgid "What?"
 #~ msgstr "Vad?"
 
-#~ msgid "Theorem \\thechapter.\\thetheorem."
-#~ msgstr "Teorem \\thechapter.\\thetheorem."
-
 #~ msgid "Corollary \\thechapter.\\thecorollary."
 #~ msgstr "Korollarium \\thechapter.\\thecorollary."
 
@@ -46349,9 +46253,6 @@ msgstr "Okänd användare"
 
 #~ msgid "Solution \\thechapter.\\thesolution."
 #~ msgstr "Lösning \\thechapter.\\thesolution."
-
-#~ msgid "Remark \\thechapter.\\theremark."
-#~ msgstr "Anmärkning \\thechapter.\\theremark."
 
 #~ msgid "Claim \\thechapter.\\theclaim."
 #~ msgstr "Påstående \\thechapter.\\theclaim."
@@ -46433,9 +46334,6 @@ msgstr "Okänd användare"
 
 #~ msgid "Cross out"
 #~ msgstr "Överstrykning"
-
-#~ msgid "No color"
-#~ msgstr "Ingen färg"
 
 #~ msgid "&Clipping"
 #~ msgstr "&Klippning"
@@ -46849,9 +46747,6 @@ msgstr "Okänd användare"
 
 #~ msgid "Collate copies"
 #~ msgstr "Kollationera kopior"
-
-#~ msgid "&Collate"
-#~ msgstr "Kollationera"
 
 #~ msgid "Send output to the printer"
 #~ msgstr "Skicka utmatning till skrivaren"
@@ -47544,9 +47439,6 @@ msgstr "Okänd användare"
 #~ msgid "Enter the command to load the language package (default: babel)"
 #~ msgstr "Ange kommandot för att ladda språkpaketet (standard: babel)"
 
-#~ msgid "Preface:"
-#~ msgstr "Företal:"
-
 #~ msgid "Contributor \\Roman{svmultlsti}:"
 #~ msgstr "Medarbetare \\Roman{svmultlsti}:"
 
@@ -47619,9 +47511,6 @@ msgstr "Okänd användare"
 
 #~ msgid "Find & Replace...|F"
 #~ msgstr "Hitta & ersätt..."
-
-#~ msgid "Tabular|T"
-#~ msgstr "Tabellarisk|T"
 
 #~ msgid "Thesaurus..."
 #~ msgstr "Synonymordbok..."
@@ -48070,9 +47959,6 @@ msgstr "Okänd användare"
 #~ msgid "Proposition #:"
 #~ msgstr "Proposition #:"
 
-#~ msgid "Criterion #:"
-#~ msgstr "Kriterium #:"
-
 #~ msgid "Definition #:"
 #~ msgstr "Definition #:"
 
@@ -48087,9 +47973,6 @@ msgstr "Okänd användare"
 
 #~ msgid "Note #:"
 #~ msgstr "Not #:"
-
-#~ msgid "Notation #:"
-#~ msgstr "Notation #:"
 
 #~ msgid "Revert to Repository Version|R"
 #~ msgstr "Återgå till förrådsversion|r"
@@ -48221,12 +48104,6 @@ msgstr "Okänd användare"
 #~ msgid "Unknown layout"
 #~ msgstr "Okänd utformning"
 
-#~ msgid "Monochrome"
-#~ msgstr "Monokrom"
-
-#~ msgid "Grayscale"
-#~ msgstr "Gråskala"
-
 #~ msgid "&Display:"
 #~ msgstr "&Visning:"
 
@@ -48277,9 +48154,6 @@ msgstr "Okänd användare"
 
 #~ msgid "&float"
 #~ msgstr "&flotte"
-
-#~ msgid "S&ubfigure"
-#~ msgstr "Underfigur"
 
 #~ msgid "&Shaded"
 #~ msgstr "&Skuggad"
@@ -48443,7 +48317,3 @@ msgstr "Okänd användare"
 
 #~ msgid "&From:"
 #~ msgstr "&Från:"
-
-#, fuzzy
-#~ msgid "Filter colors"
-#~ msgstr "Typsnittsfärg"
