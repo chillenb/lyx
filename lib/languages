@@ -978,7 +978,7 @@ Language french
 	GuiName          "French"
 	HasGuiSupport    true
 	BabelName        french
-	BabelOptFormat   \frenchsetup{$opts§}
+	BabelOptFormat   \frenchsetup{$opts$}
 	ActiveChars      ;!?:
 	PolyglossiaName  french
 	PolyglossiaOpts  "variant=french"
