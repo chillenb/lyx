@@ -1665,7 +1665,7 @@ Language magyar
 	GuiName          "Hungarian"
 	HasGuiSupport    true
 	BabelName        magyar
-	BabelOptFormat   \magyarOptions{$opts§}
+	BabelOptFormat   \magyarOptions{$opts$}
 	PolyglossiaName  hungarian
 	XindyName        hungarian
 	QuoteStyle       hungarian
