@@ -1083,6 +1083,10 @@ Language german
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de
 	LangVariety      alt
+	PostBabelPreamble
+	    % We use legacy babel-german terminology
+	    \@ifundefined{germansetup}{}{\germansetup{glottonyms=legacy}}
+	EndPostBabelPreamble
 	SupportedBy      cleveref,refstyle,zref
 	SpecialChar extrasofthyphen
 	    Type	formatting
