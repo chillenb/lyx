@@ -1051,6 +1051,7 @@ if [ -n "${userUserDir}" ]; then
       pathtofile="$( cat "${lnx}" )"
       if [ -e "${pathtofile}" ]; then
         ln -s "${pathtofile}" "${lnx%.*}"
+        rm "${lnx}"
       fi
     done
     shopt -u nullglob
