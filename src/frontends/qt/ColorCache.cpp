@@ -13,6 +13,7 @@
 #include "ColorCache.h"
 
 #include "LyXRC.h"
+#include "qt_helpers.h"
 
 #include "Color.h"
 #include "ColorSet.h"
@@ -150,10 +151,7 @@ bool ColorCache::isSystem(ColorCode const color) const
 
 bool ColorCache::isDarkMode() const
 {
-	QColor text_color = pal_.color(QPalette::Active, QPalette::WindowText);
-	QColor bg_color = pal_.color(QPalette::Active, QPalette::Window);
-
-	return (text_color.black() < bg_color.black());
+	return frontend::isPaletteDark(pal_);
 }
 
 

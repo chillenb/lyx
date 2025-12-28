@@ -23,6 +23,7 @@
 
 class QComboBox;
 class QLineEdit;
+class QPalette;
 class QString;
 class QWidget;
 class QAbstractItemView;
@@ -96,6 +97,9 @@ void showDirectory(support::FileName const & directory);
 /// web page in target; external script can be used for pdf/ps view
 /// \p docpath holds the document path
 void showTarget(std::string const & target, Buffer const & buf);
+
+/// Check if a palette represents dark mode
+bool isPaletteDark(QPalette const & pal);
 
 } // namespace frontend
 

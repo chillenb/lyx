@@ -397,6 +397,15 @@ void showTarget(string const & target_in, Buffer const & buf)
 			bformat(_("The target `%1$s' could not be resolved."),
 				from_utf8(target)));
 }
+
+bool isPaletteDark(QPalette const & pal)
+{
+	QColor text_color = pal.color(QPalette::Active, QPalette::WindowText);
+	QColor bg_color = pal.color(QPalette::Active, QPalette::Window);
+
+	return (text_color.black() < bg_color.black());
+}
+
 } // namespace frontend
 
 QString const qt_(char const * str, const char *)

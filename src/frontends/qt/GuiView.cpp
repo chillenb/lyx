@@ -1906,10 +1906,15 @@ bool GuiView::event(QEvent * e)
 #if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 	case QEvent::ThemeChange: {
 		if (lyxrc.color_scheme != "dark" && lyxrc.color_scheme != "light") {
-			guiApp->setPalette(guiApp->style()->standardPalette());
+			QPalette currentPalette = guiApp->palette();
+			QPalette newPalette = guiApp->style()->standardPalette();
+			guiApp->setPalette(newPalette);
 			// We need to update metrics here to avoid a crash (#12786)
 			theBufferList().changed(true);
-			refillToolbars();
+			if (isPaletteDark(currentPalette) != isPaletteDark(newPalette))
+				// we need to refill the toolbar only if we really
+				// switched from dark to light or vice versa
+				refillToolbars();
 			return QMainWindow::event(e);
 		}
 		return true;
