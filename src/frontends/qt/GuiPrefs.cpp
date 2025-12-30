@@ -3480,13 +3480,15 @@ void PrefUserInterface::applyRC(LyXRC & rc) const
 	QString const color_scheme = colorSchemeCO->itemData(
 		colorSchemeCO->currentIndex()).toString();
 	if (rc.color_scheme != fromqstr(color_scheme)) {
-		if (lyxrc.color_scheme == "dark")
+		if (color_scheme == "dark")
 			guiApp->styleHints()->setColorScheme(Qt::ColorScheme::Dark);
-		else if (lyxrc.color_scheme == "light")
+		else if (color_scheme == "light")
 			guiApp->styleHints()->setColorScheme(Qt::ColorScheme::Light);
 		else
 			guiApp->styleHints()->unsetColorScheme();
-	}
+		// make the application update the palette
+		QPalette currentPalette = guiApp->palette();
+		guiApp->setPalette(cur	}
 	rc.color_scheme = fromqstr(color_scheme);
 #endif
 
