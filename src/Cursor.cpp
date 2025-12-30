@@ -2419,6 +2419,9 @@ Font Cursor::getFont() const
 
 	// on boundary, so we are really at the character before
 	pos_type pos = sl.pos();
+	// the error message below is temporary for a possible bug around pos value
+	LYXERR0("cursor position = " << pos << " sl address = " << &sl <<
+	        " sl empty? " << sl.empty());
 	if (pos > 0 && boundary())
 		--pos;
 
