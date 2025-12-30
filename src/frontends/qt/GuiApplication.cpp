@@ -1276,7 +1276,7 @@ void Application::applyPrefs()
 		return;
 	if (lyxrc.ui_style != "default")
 		lyx::frontend::GuiApplication::setStyle(toqstr(lyxrc.ui_style));
-#if (defined(Q_OS_WIN) || defined(Q_CYGWIN_WIN) || defined(Q_OS_MAC)) && QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 	// Set color scheme from prefs
 	if (lyxrc.color_scheme == "dark")
 		guiApp->styleHints()->setColorScheme(Qt::ColorScheme::Dark);

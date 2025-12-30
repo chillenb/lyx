@@ -64,7 +64,7 @@
 #include <QShortcut>
 #include <QString>
 #include <QStyleFactory>
-#if (defined(Q_OS_WIN) || defined(Q_CYGWIN_WIN) || defined(Q_OS_MAC)) && QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 #include <QStyleHints>
 #endif
 #include <QTreeWidget>
@@ -3410,7 +3410,7 @@ PrefUserInterface::PrefUserInterface(GuiPreferences * form)
 		this, SIGNAL(changed()));
 	connect(uiStyleCO, SIGNAL(activated(int)),
 		this, SIGNAL(changed()));
-#if (defined(Q_OS_WIN) || defined(Q_CYGWIN_WIN) || defined(Q_OS_MAC)) && QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 	connect(colorSchemeCO, SIGNAL(activated(int)),
 		this, SIGNAL(changed()));
 #endif
@@ -3437,7 +3437,7 @@ PrefUserInterface::PrefUserInterface(GuiPreferences * form)
 	iconSetCO->addItem(qt_("Classic"), "classic");
 	iconSetCO->addItem(qt_("Oxygen"), "oxygen");
 
-#if (defined(Q_OS_WIN) || defined(Q_CYGWIN_WIN) || defined(Q_OS_MAC)) && QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 	colorSchemeCO->addItem(qt_("System Default"), "system");
 	colorSchemeCO->addItem(qt_("Light Mode"), "light");
 	colorSchemeCO->addItem(qt_("Dark Mode"), "dark");
@@ -3476,7 +3476,7 @@ void PrefUserInterface::applyRC(LyXRC & rc) const
 		else
 			frontend::GuiApplication::setStyle(uistyle);
 	}
-#if (defined(Q_OS_WIN) || defined(Q_CYGWIN_WIN) || defined(Q_OS_MAC)) && QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 	QString const color_scheme = colorSchemeCO->itemData(
 		colorSchemeCO->currentIndex()).toString();
 	if (rc.color_scheme != fromqstr(color_scheme)) {
@@ -3488,7 +3488,8 @@ void PrefUserInterface::applyRC(LyXRC & rc) const
 			guiApp->styleHints()->unsetColorScheme();
 		// make the application update the palette
 		QPalette currentPalette = guiApp->palette();
-		guiApp->setPalette(cur	}
+		guiApp->setPalette(currentPalette);
+	}
 	rc.color_scheme = fromqstr(color_scheme);
 #endif
 
@@ -3523,7 +3524,7 @@ void PrefUserInterface::updateRC(LyXRC const & rc)
 	toggleToolbarsCB->setChecked(rc.full_screen_toolbars);
 	toggleTabbarCB->setChecked(rc.full_screen_tabbar);
 	toggleMenubarCB->setChecked(rc.full_screen_menubar);
-#if (defined(Q_OS_WIN) || defined(Q_CYGWIN_WIN) || defined(Q_OS_MAC)) && QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
+#if QT_VERSION >= QT_VERSION_CHECK(6, 8, 0)
 	int colorscheme = colorSchemeCO->findData(toqstr(rc.color_scheme));
 	if (colorscheme < 0)
 		colorscheme = 0;
