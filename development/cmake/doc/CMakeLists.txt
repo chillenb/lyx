@@ -62,12 +62,10 @@ add_custom_command(
   OUTPUT LFUNs.lyx
   COMMAND ${LYX_PYTHON_EXECUTABLE} "${TOP_SRC_DIR}/development/tools/gen_lfuns.py" "${TOP_SRC_DIR}/src/LyXAction.cpp" > LFUNs.lyx
   DEPENDS "${TOP_SRC_DIR}/development/tools/gen_lfuns.py" "${TOP_SRC_DIR}/src/LyXAction.cpp")
-LIST(APPEND _docs "${CMAKE_CURRENT_BINARY_DIR}/LFUNs.lyx")
-install(FILES "${CMAKE_CURRENT_BINARY_DIR}/LFUNs.lyx" DESTINATION "${LYX_DATA_SUBDIR}doc")
-
-ADD_CUSTOM_TARGET(doc ALL DEPENDS ${_docs})
 
 ADD_CUSTOM_TARGET(lfundoc DEPENDS LFUNs.lyx)
+ADD_CUSTOM_TARGET(doc ALL DEPENDS ${_docs} lfundoc)
+install(FILES "${CMAKE_CURRENT_BINARY_DIR}/LFUNs.lyx" DESTINATION "${LYX_DATA_SUBDIR}doc")
 
 set_target_properties(doc lfundoc PROPERTIES FOLDER "doc")
 
