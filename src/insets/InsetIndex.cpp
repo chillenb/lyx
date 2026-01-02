@@ -328,6 +328,8 @@ void InsetIndex::processLatexSorting(otexstream & os, OutputParams const & runpa
 		// Plain quotes need to be escaped, however (#10649), as this
 		// is the default escape character
 		ppart = subst(ppart, from_ascii("\""), from_ascii("\\\""));
+		// Also escape hashes, as this is a special character in LaTeX
+		ppart = subst(ppart, from_ascii("#"), from_ascii("\\#"));
 
 		// Now insert the sortkey, separated by '@'.
 		os << ppart;
