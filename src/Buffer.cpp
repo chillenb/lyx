@@ -3987,8 +3987,13 @@ void Buffer::updateMacros() const
 	if (d->macro_lock)
 		return;
 
-	// early exit if the buffer has not changed since last time
-	if (d->gui_ && d->update_macros_id_ == d->id_)
+	/** Optimization: early exit if the 3 following conditions hold.
+	 * 1/ gui is used (otherwise some crashes can happen),
+	 * 2/ we are not in the middle of a complex operation (ex: repaint
+	 *    happens in the midle of a Paste because of a dialog),
+	 * 3/ the buffer has not changed since last time.
+	 */
+	if (d->gui_ && !undo().activeUndoGroup() && d->update_macros_id_ == d->id_)
 		return;
 	d->update_macros_id_ = d->id_;
 
