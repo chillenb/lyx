@@ -53,6 +53,7 @@
 #include <QInputMethod>
 #ifdef Q_OS_MAC
 #include <QProxyStyle>
+#include "support/AppleSupport.h"
 #endif
 #include <QMenu>
 #include <QPainter>
@@ -339,7 +340,21 @@ void GuiWorkArea::startBlinkingCaret()
 	// Avoid blinking when debugging PAINTING, since it creates too much noise
 	if (!lyxerr.debugging(Debug::PAINTING)) {
 		// we are not supposed to cache this value.
-		int const time = QApplication::cursorFlashTime() / 2;
+		int time = QApplication::cursorFlashTime() / 2;
+#if defined(Q_OS_MAC)
+		int const cursor_time_on = NSTextInsertionPointBlinkPeriodOn();
+		int const cursor_time_off = NSTextInsertionPointBlinkPeriodOff();
+		if (cursor_time_on > 0 && cursor_time_off > 0) {
+			// Off and On are set and valid
+			time = cursor_time_on + cursor_time_off;
+		} else if (cursor_time_on <= 0 && cursor_time_off > 0) {
+			// Off is set and On is undefined or zero
+			time = 0;
+		} else if (cursor_time_off <= 0 && cursor_time_on > 0) {
+			// On is set and Off is undefined or zero
+			time = 0;
+		}
+#endif
 		if (time <= 0)
 			return;
 		d->caret_timeout_.setInterval(time);
