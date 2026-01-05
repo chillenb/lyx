@@ -61,3 +61,15 @@ int NSTextInsertionPointBlinkPeriodOff() {
 	return [prefs objectForKey:@"NSTextInsertionPointBlinkPeriodOff"] == nil ?
 			-1 : [prefs floatForKey:@"NSTextInsertionPointBlinkPeriodOff"];
 }
+
+bool PrefersNonBlinkingCursorIndicator() {
+	NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
+	bool haspref = [prefs objectForKey:@"PrefersNonBlinkingCursorIndicator"] != nil;
+
+	if (haspref) return [prefs boolForKey:@"PrefersNonBlinkingCursorIndicator"];
+
+	NSDictionary * accessibility = [prefs persistentDomainForName:@"com.apple.Accessibility"];
+	id value = accessibility[@"PrefersNonBlinkingCursorIndicator"];
+
+	return value == nil ? NO : [value boolValue];
+}

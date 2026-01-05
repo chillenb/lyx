@@ -26,6 +26,7 @@ extern "C" {
 	// and return the integer part of it - return -1 in case of unset value
 	int NSTextInsertionPointBlinkPeriodOn();
 	int NSTextInsertionPointBlinkPeriodOff();
+	bool PrefersNonBlinkingCursorIndicator();
 #ifdef __cplusplus
 }
 #endif

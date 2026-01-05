@@ -353,6 +353,9 @@ void GuiWorkArea::startBlinkingCaret()
 		} else if (cursor_time_off <= 0 && cursor_time_on > 0) {
 			// On is set and Off is undefined or zero
 			time = 0;
+		} else if (PrefersNonBlinkingCursorIndicator()) {
+			// system preference set
+			time = 0;
 		}
 #endif
 		if (time <= 0)
