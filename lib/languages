@@ -2303,12 +2303,12 @@ Language thai
 	    \catcode\@tempcnta=13
 	    \advance\@tempcnta\@ne
 	  }%
-	  % Restore \coyright definition corrupted by lthenc.def
+	  % Restore \copyright definition corrupted by lthenc.def
 	  \DeclareRobustCommand{\copyright}{%
 	    \ifmmode{\nfss@text{\textcopyright}}\else\textcopyright\fi}
 	  \DeclareTextSymbol{\textcopyright}{LTH}{8}
 	  %
-          % set up Thai fonts as substitue for the default families
+	  % set up Thai fonts as substitute for the default families
 	  % The 'substitutefont' package is obsolete now, since commands
 	  % from the LaTeX kernel can be used instead. See here:
 	  %   https://ctan.org/pkg/substitutefont
@@ -2323,6 +2323,18 @@ Language thai
 	    \substitutefont{LTH}{\rmdefault}{norasi}
 	    \substitutefont{LTH}{\sfdefault}{garuda}
 	    \substitutefont{LTH}{\ttdefault}{ttypist}
+	  }
+	  % The following is needed with LuaTeX and TeX fonts
+	  % as babel does not load thai.ldf in this case,
+	  % where this is normally defined:
+	  \AtBeginDocument{%
+	    \@ifpackageloaded{luainputenc}{%
+	      \DeclareRobustCommand{\thaitext}{%
+	        \fontencoding{LTH}\selectfont%
+	        \def\encodingdefault{LTH}}
+	      \addto\extrasthai{\thaitext}
+	      \addto\noextrasthai{\latintext}
+	    }{}
 	  }
 	EndPostBabelPreamble
 End
