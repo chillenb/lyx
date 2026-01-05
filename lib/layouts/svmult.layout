@@ -19,6 +19,14 @@ ClassOptions
 	FontSize	""
 End
 
+AddToPreamble
+   % Fix for svmult.cls 5.5 where theorem conflicts with
+   % the class's definitions
+   \@ifpackageloaded{ntheorem}{%
+     \renewcommand\qedsymbol{\hbox{\rlap{$\sqcap$}$\sqcup$}}
+     \renewcommand\qed{\relax\ifmmode\else\unskip\quad\fi\qedsymbol}}{}
+EndPreamble
+
 NoStyle Acknowledgments
 
 # Additional headings
@@ -165,5 +173,9 @@ End
 
 Style ChapMotto
 	Category	"For editors"
+End
+
+Style Proof
+	Requires        amssymb
 End
 
