@@ -18,7 +18,7 @@ Counter examplei
 	GuiName              "Numbered Example (Multiline)"
 	Within               chapter
 	LabelString          "(\theequation)"
-	PrettyFormat         "Example|Examples (##)"
+	PrettyFormat         "Example|Examples ##"
 	StepOtherCounter      equation
 	LaTeXName             equation
 End
@@ -27,7 +27,7 @@ Counter subexamplei
 	GuiName              Subexample
 	Within               examplei
 	LabelString          "(\theequation) (\alph{subexamplei})"
-	PrettyFormat         "Example|Examples (##)"
+	PrettyFormat         "Example|Examples ##"
 	LaTeXName             enumi
 End
 
