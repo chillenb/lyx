@@ -208,10 +208,10 @@ macro(check_xhtml_xmlparser xhtml_file)
 endmacro()
 
 macro(check_docbook_jing xhtml_file)
-  message(STATUS "Calling: ${JAVA_EXECUTABLE} -jar \"${TOP_SRC_DIR}/development/tools/jing.jar\" \"https://docbook.org/xml/5.2b09/rng/docbook.rng\" \"${TempDir}/${xhtml_file}\"")
+  message(STATUS "Calling: ${JAVA_EXECUTABLE} -jar \"${TOP_SRC_DIR}/development/tools/jing.jar\" \"https://cdn.docbook.org/schema/5.2/rng/docbook.rng\" \"${TempDir}/${xhtml_file}\"")
   set(_outputfile "${TempDir}/${xhtml_file}.jing_out")
   execute_process(
-    COMMAND ${JAVA_EXECUTABLE} -jar "${TOP_SRC_DIR}/development/tools/jing.jar" "https://docbook.org/xml/5.2b09/rng/docbook.rng" "${xhtml_file}"
+    COMMAND ${JAVA_EXECUTABLE} -jar "${TOP_SRC_DIR}/development/tools/jing.jar" "https://cdn.docbook.org/schema/5.2/rng/docbook.rng" "${xhtml_file}"
     WORKING_DIRECTORY "${TempDir}"
     OUTPUT_VARIABLE jingout
     RESULT_VARIABLE _err)
