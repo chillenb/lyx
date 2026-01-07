@@ -502,9 +502,6 @@ export/examples/Modules/Chessboard_docbook5
 export/examples/Language_Support/Localization_Test_%28for_Developers%29_docbook5
 # - Inline equation in formatting.
 export/examples(|/ru)/Modules/Fancy_Colored_Boxes_docbook5
-# - Waiting for a new version of DocBook to be tagged on https://github.com/docbook/docbook (anything over 5.2b10a3).
-export/export/docbook/Localization_Test_docbook5
-export/examples/Graphics_and_Insets/Minted_Listings_docbook5
 # - Sweave and other literate-programming tools cannot be implemented properly without the LaTeX tooling.
 export/examples/Modules/Sweave_docbook5
 # - Figures without image, only an equation.
