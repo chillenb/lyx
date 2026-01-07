@@ -178,7 +178,7 @@ public:
 	/// text inset.
 	void updateMacros(DocIterator & it, DocIterator & scope);
 	///
-	void setLabel(ParIterator & it, ParIterator & prev_it, UpdateType utype) const;
+	void setLabel(ParIterator & it, UpdateType utype) const;
 
 	/** If we have branches that use the file suffix
 	    feature, return the file name with suffix appended.
@@ -5306,13 +5306,11 @@ static bool needEnumCounterReset(ParIterator const & it)
 
 
 // set the label of a paragraph. This includes the counters.
-void Buffer::Impl::setLabel(ParIterator & it, ParIterator & prev_it,
-			    UpdateType utype) const
+void Buffer::Impl::setLabel(ParIterator & it, UpdateType utype) const
 {
 	BufferParams const & bp = owner_->masterBuffer()->params();
 	DocumentClass const & textclass = bp.documentClass();
 	Paragraph & par = it.paragraph();
-	Paragraph & prev_par = prev_it.paragraph();
 	Layout const & layout = par.layout();
 	Counters & counters = textclass.counters();
 
@@ -5338,21 +5336,6 @@ void Buffer::Impl::setLabel(ParIterator & it, ParIterator & prev_it,
 		par.params().labelWidthString(docstring());
 	}
 
-	// restore previous counter after environmental counter
-	if (prev_it != it && prev_par.params().depth() >= par.params().depth()
-	    && prev_par.layout().isEnvironment() 
-	    && (prev_par.layout().labeltype == LABEL_ENUMERATE
-		|| !prev_par.layout().counter.empty())
-	    && (!par.layout().isEnvironment()
-		|| (par.layout().labeltype != LABEL_ENUMERATE
-		    && prev_par.layout().counter.empty()))) {
-		docstring const lastcounter = prev_par.layout().counter.empty()
-				? from_ascii("enum")
-				: prev_par.layout().counter;
-		if (prefixIs(counters.currentCounter(), lastcounter))
-			counters.restoreLastCounter();
-	}
-
 	switch(layout.labeltype) {
 	case LABEL_ITEMIZE: {
 		par.params().labelString(
@@ -5364,19 +5347,7 @@ void Buffer::Impl::setLabel(ParIterator & it, ParIterator & prev_it,
 	}
 
 	case LABEL_ENUMERATE: {
-		docstring enumcounter = layout.counter.empty()
-				? from_ascii("enum")
-				: layout.counter;
-
-		// If we have a non-environmental active counter, save it, since it needs
-		// to be restored after the enumeration
-		if (prev_it != it && prev_par.params().depth() <= par.params().depth()
-		    && (!prev_par.layout().isEnvironment()
-			|| (prev_par.layout().labeltype != LABEL_ENUMERATE
-			    && prev_par.layout().counter.empty()))
-		    && !counters.currentCounter().empty()
-		    && !prefixIs(counters.currentCounter(), enumcounter))
-			counters.saveLastCounter();
+		docstring enumcounter = layout.counter.empty() ? from_ascii("enum") : layout.counter;
 
 		switch (par.itemdepth) {
 		case 2:
@@ -5441,18 +5412,9 @@ void Buffer::Impl::setLabel(ParIterator & it, ParIterator & prev_it,
 	case LABEL_STATIC: {
 		docstring const & lcounter = layout.counter;
 		if (!lcounter.empty()) {
-			// If we have a non-environmental active counter, save it, since it needs
-			// to be restored after the enumeration
-			if (prev_it != it && prev_par.params().depth() <= par.params().depth()
-			    && (!prev_par.layout().isEnvironment()
-				|| (prev_par.layout().labeltype != LABEL_ENUMERATE
-				    && prev_par.layout().counter.empty()))
-			    && !counters.currentCounter().empty()
-			    && counters.currentCounter() != lcounter)
-				counters.saveLastCounter();
 			if (layout.toclevel <= bp.secnumdepth
-			    && (layout.latextype != LATEX_ENVIRONMENT
-				|| it.text()->isFirstInSequence(it.pit()))) {
+						&& (layout.latextype != LATEX_ENVIRONMENT
+					|| it.text()->isFirstInSequence(it.pit()))) {
 				if (counters.hasCounter(lcounter))
 					counters.step(lcounter, utype);
 				par.params().labelString(par.expandLabel(layout, bp));
@@ -5486,7 +5448,6 @@ void Buffer::updateBuffer(ParIterator & parit, UpdateType utype, bool const dele
 
 	d->external_xrefed_files_.clear();
 	depth_type maxdepth = 0;
-	ParIterator prev_parit = parit;
 	pit_type const lastpit = parit.lastpit();
 	bool changed = false;
 	for ( ; parit.pit() <= lastpit ; ++parit.pit()) {
@@ -5517,7 +5478,7 @@ void Buffer::updateBuffer(ParIterator & parit, UpdateType utype, bool const dele
 		}
 
 		// set the counter for this paragraph
-		d->setLabel(parit, prev_parit, utype);
+		d->setLabel(parit, utype);
 
 		// now the insets
 		for (auto const & insit : parit->insetList()) {
@@ -5528,9 +5489,6 @@ void Buffer::updateBuffer(ParIterator & parit, UpdateType utype, bool const dele
 
 		// are there changes in this paragraph?
 		changed |= parit->isChanged();
-
-		// update prev_parit
-		prev_parit = parit;
 	}
 
 	// set change indicator for the inset (or the cell that the iterator
