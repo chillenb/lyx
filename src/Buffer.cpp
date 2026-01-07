@@ -5339,8 +5339,7 @@ void Buffer::Impl::setLabel(ParIterator & it, ParIterator & prev_it,
 	}
 
 	// restore previous counter after environmental counter
-	if (!counters.currentCounter().empty()
-	    && prev_it != it && prev_par.params().depth() >= par.params().depth()
+	if (prev_it != it && prev_par.params().depth() >= par.params().depth()
 	    && prev_par.layout().isEnvironment() 
 	    && (prev_par.layout().labeltype == LABEL_ENUMERATE
 		|| !prev_par.layout().counter.empty())
