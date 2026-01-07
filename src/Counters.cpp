@@ -400,8 +400,8 @@ void Counters::step(docstring const & ctr, UpdateType /* deleted */, bool const 
 		step(it->second.stepOtherCounter(), InternalUpdate, false);
 
 	if (set_active) {
-		LBUFERR(!counter_stack_.empty());
-		counter_stack_.pop_back();
+		if (!counter_stack_.empty())
+			counter_stack_.pop_back();
 		counter_stack_.push_back(ctr);
 	}
 
@@ -703,7 +703,9 @@ docstring Counters::prettyCounter(docstring const & name,
 
 docstring Counters::currentCounter() const
 {
-	LBUFERR(!counter_stack_.empty());
+	if (counter_stack_.empty())
+		return docstring();
+
 	return counter_stack_.back();
 }
 
