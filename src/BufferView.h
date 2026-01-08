@@ -420,6 +420,8 @@ private:
 	BufferView(BufferView const &);
 	void operator=(BufferView const &);
 
+	/// Returns true if there is enough cache information for coordOffset.
+	bool hasCacheFor(DocIterator const & dit) const;
 	/// the position relative to (0, baseline) of outermost paragraph
 	Point coordOffset(DocIterator const & dit) const;
 	/// Update current paragraph metrics.

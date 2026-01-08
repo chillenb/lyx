@@ -1119,7 +1119,7 @@ bool BufferView::scrollToCursor(DocIterator const & dit, ScrollType how)
 	pit_type const old_pit = d->anchor_pit_;
 	int const old_ypos = d->anchor_ypos_;
 
-	if (!tm.contains(bot_pit))
+	if (!hasCacheFor(dit))
 		tm.redoParagraph(bot_pit);
 	int const offset = coordOffset(dit).y;
 
@@ -3519,6 +3519,25 @@ void BufferView::insertLyXFile(FileName const & fname, bool const ignorelang)
 
 	// emit message signal.
 	message(bformat(res, disp_fn));
+}
+
+
+bool BufferView::hasCacheFor(DocIterator const & dit) const
+{
+	for (size_t i = 0 ; i < dit.depth() ; ++i) {
+		CursorSlice const & sl = dit[i];
+		if (!coordCache().insets().hasDim(&sl.inset()))
+			return false;
+		if (sl.inset().inMathed()) {
+			if (!coordCache().cells().hasDim(&sl.cell()))
+				return false;
+		} else {
+			TextMetrics const & tm = textMetrics(sl.text());
+			if (!tm.contains(sl.pit()))
+				return false;
+		}
+	}
+	return true;
 }
 
 
