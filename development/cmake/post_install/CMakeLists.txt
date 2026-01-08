@@ -51,7 +51,7 @@ if(LYX_BUNDLE)
     if (APPLE AND LYX_USE_QT MATCHES "QT6")
       # With QT6, just copy all the plugins
       file(GLOB QT_PLUGIN_DIRECTORIES "${QT_PLUGINS_DIR}/*")
-      install(DIRECTORY ${QT_PLUGIN_DIRECTORIES} DESTINATION "${qtplugin_dest_dir}/plugins/" COMPONENT Runtime)
+      install(DIRECTORY ${QT_PLUGIN_DIRECTORIES} DESTINATION "${qtplugin_dest_dir}/plugins/" COMPONENT Runtime REGEX "\\_debug\\.dylib$" EXCLUDE)
     endif()
     # Install code does the following:
     # - Creates the qt.conf file
