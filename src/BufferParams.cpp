@@ -4474,7 +4474,9 @@ string const BufferParams::bibtexCommand(bool const warn) const
 
 bool BufferParams::useBiblatex() const
 {
-	return theCiteEnginesList[citeEngine()]->getCiteFramework() == "biblatex";
+	return theCiteEnginesList[citeEngine()]
+			? theCiteEnginesList[citeEngine()]->getCiteFramework() == "biblatex"
+			: false;
 }
 
 

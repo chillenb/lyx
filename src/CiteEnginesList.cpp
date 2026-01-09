@@ -310,4 +310,20 @@ LyXCiteEngine * CiteEnginesList::operator[](string const & str)
 	return nullptr;
 }
 
+
+LyXCiteEngine const * CiteEnginesList::getCiteEngine(string const & str) const
+{
+	LyXCiteEngine * fallback = nullptr;
+	for (auto & eng : englist_) {
+		if (eng.getID() == str)
+			return &eng;
+		else if (eng.getID() == "basic")
+			fallback = const_cast<LyXCiteEngine *>(&eng);
+	}
+	if (!fallback)
+		LYXERR0("Basic cite engine not found! Your installation is corrupted.");
+
+	return fallback;
+}
+
 } // namespace lyx

@@ -140,6 +140,9 @@ public:
 	LyXCiteEngine const * operator[](std::string const & str) const;
 	///
 	LyXCiteEngine * operator[](std::string const & str);
+	/// Returns a pointer to the LyXCiteEngine with filename str.
+	/// Returns a pointer to basic citeengine if no such engine is found.
+	LyXCiteEngine const * getCiteEngine(std::string const & str) const;
 	private:
 	/// noncopyable
 	CiteEnginesList(CiteEnginesList const &);

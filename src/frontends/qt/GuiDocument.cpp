@@ -3226,7 +3226,7 @@ void GuiDocument::resetDefaultBibfile(string const & which)
 		CiteEngineType(biblioModule->citeStyleCO->itemData(
 							  biblioModule->citeStyleCO->currentIndex()).toInt());
 
-	updateDefaultBiblio(theCiteEnginesList[fromqstr(engine)]->getDefaultBiblio(cet), which);
+	updateDefaultBiblio(theCiteEnginesList.getCiteEngine(fromqstr(engine))->getDefaultBiblio(cet), which);
 }
 
 
@@ -3248,7 +3248,7 @@ void GuiDocument::citeEngineChanged(int n)
 		biblioModule->citeEngineCO->itemData(n).toString();
 
 	vector<string> const engs =
-		theCiteEnginesList[fromqstr(engine)]->getEngineType();
+		theCiteEnginesList.getCiteEngine(fromqstr(engine))->getEngineType();
 
 	updateCiteStyles(engs);
 	updateEngineDependends();
@@ -3263,7 +3263,7 @@ void GuiDocument::updateEngineDependends()
 	QString const engine =
 		biblioModule->citeEngineCO->itemData(
 				biblioModule->citeEngineCO->currentIndex()).toString();
-	LyXCiteEngine const * ce = theCiteEnginesList[fromqstr(engine)];
+	LyXCiteEngine const * ce = theCiteEnginesList.getCiteEngine(fromqstr(engine));
 
 	bool const biblatex = isBiblatex();
 	bool const citepack = biblatex
@@ -3299,7 +3299,8 @@ void GuiDocument::citeStyleChanged()
 	QString const currentDef = isBiblatex() ?
 		biblioModule->biblatexBbxCO->currentText()
 		: biblioModule->defaultBiblioCO->currentText();
-	if (theCiteEnginesList[fromqstr(engine)]->isDefaultBiblio(fromqstr(currentDef)))
+	if (theCiteEnginesList[fromqstr(engine)]
+	    && theCiteEnginesList[fromqstr(engine)]->isDefaultBiblio(fromqstr(currentDef)))
 		resetDefaultBibfile();
 
 	biblioChanged();
@@ -3679,7 +3680,8 @@ void GuiDocument::applyView()
 
 	CiteEngineType const style = CiteEngineType(biblioModule->citeStyleCO->itemData(
 		biblioModule->citeStyleCO->currentIndex()).toInt());
-	if (theCiteEnginesList[engine]->hasEngineType(style))
+	if (theCiteEnginesList[engine]
+	    && theCiteEnginesList[engine]->hasEngineType(style))
 		bp_.setCiteEngineType(style);
 	else
 		bp_.setCiteEngineType(ENGINE_TYPE_DEFAULT);
@@ -5004,8 +5006,8 @@ bool GuiDocument::isBiblatex() const
 	// this can happen if the cite engine is unknown, which can happen
 	// if one is using a file that came from someone else, etc. in that
 	// case, we crash if we proceed.
-	if (engine.isEmpty())
-	    return false;
+	if (engine.isEmpty() || !theCiteEnginesList[fromqstr(engine)])
+		return false;
 
 	return theCiteEnginesList[fromqstr(engine)]->getCiteFramework() == "biblatex";
 }
@@ -5128,7 +5130,7 @@ void GuiDocument::updateResetDefaultBiblio()
 		CiteEngineType(biblioModule->citeStyleCO->itemData(
 							  biblioModule->citeStyleCO->currentIndex()).toInt());
 
-	string const defbib = theCiteEnginesList[fromqstr(engine)]->getDefaultBiblio(cet);
+	string const defbib = theCiteEnginesList.getCiteEngine(fromqstr(engine))->getDefaultBiblio(cet);
 	if (isBiblatex()) {
 		QString const bbx = biblioModule->biblatexBbxCO->currentText();
 		QString const cbx = biblioModule->biblatexCbxCO->currentText();
