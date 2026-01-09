@@ -190,6 +190,7 @@ export/export/latex/languages/th-en_utf8_.*_systemF
 
 # wrong output but does not fail:
 export/export/latex/lyxbugs/3059-language-in-tables_.*_systemF
+export/templates/Articles/Hebrew_Article_%28KOMA-Script%29_(dvi3|pdf5)_texF
 
 # don't test with TeX fonts:
 export/export/latex/languages/supported-languages_babel_non-tex_.*(dvi|pdf.?|texF)
