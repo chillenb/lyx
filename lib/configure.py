@@ -1148,7 +1148,11 @@ def checkConverterEntries():
         rc_entry = [ r'\converter eps        pdf6       "epstopdf --outfile=$$o $$i"	""'])
     #
     #prepare for pdf -> png, 2nd part depends on IM ban below
-    pdftopng = ['sips --resampleWidth 800 --setProperty format png $$i --out $$o' ]
+    if sys.platform == 'darwin':
+        pdftopng = ['gs -sDEVICE=pngalpha -r200 -dUseCropBox -o $$o $$i',
+                    'sips --resampleWidth 800 --setProperty format png $$i --out $$o']
+    else:
+        pdftopng = []
     #
     # Due to more restrictive policies, it is possible that (image)magick
     # does not allow conversions from eps to png.
