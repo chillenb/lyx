@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lyx-japanese\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-12-24 22:58+0100\n"
-"PO-Revision-Date: 2025-12-12 20:37+0900\n"
+"PO-Revision-Date: 2026-01-13 00:37+0900\n"
 "Last-Translator: Koji Yokota <yokota@lyx.org>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.7\n"
+"X-Generator: Poedit 3.8\n"
 "X-Crowdin-Project: lyx-japanese\n"
 "X-Crowdin-Project-ID: 488981\n"
 "X-Crowdin-Language: ja\n"
@@ -2352,8 +2352,8 @@ msgstr "リンク型"
 
 #: src/frontends/qt/ui/HyperlinkUi.ui:136
 msgid ""
-"Link to the web or any other target with an \"authority\" component (i."
-"e., :// in the URI)"
+"Link to the web or any other target with an \"authority\" component "
+"(i.e., :// in the URI)"
 msgstr ""
 "ウェブやその他のターゲットに「オーソリティ」要素(URIにおける://の直後部分)を"
 "リンク"
@@ -3595,8 +3595,8 @@ msgstr "mml"
 
 #: src/frontends/qt/ui/OutputUi.ui:604 src/frontends/qt/ui/OutputUi.ui:622
 msgid ""
-"Scaling factor for images that are generated for some LaTeX constructs (e."
-"g., math formulae) in non-LaTeX output."
+"Scaling factor for images that are generated for some LaTeX constructs "
+"(e.g., math formulae) in non-LaTeX output."
 msgstr ""
 "非LaTeX出力において数式のようなLaTeX要素を表すために生成された画像の伸縮因子"
 
@@ -16166,8 +16166,8 @@ msgid ""
 msgstr ""
 "動的レポート生成用にRでknitrパッケージを使用します．このモジュールを機能させ"
 "るには，install.packages('knitr') のようにして，Rパッケージを導入してくださ"
-"い．これは，R >= 2.14.1 に依存します．詳細については http：//yihui.github."
-"com/knitr をご覧ください"
+"い．これは，R >= 2.14.1 に依存します．詳細については http：//"
+"yihui.github.com/knitr をご覧ください"
 
 #: lib/layouts/knitr.module:14 lib/layouts/litinsets.inc:12
 #: lib/layouts/sweave.module:14
@@ -16585,7 +16585,7 @@ msgstr "語句註解に翻訳を加える"
 
 #: lib/layouts/linguistics.module:298
 msgid "GroupGlossedWords"
-msgstr "グループ語句註解単語"
+msgstr "語句註解単語をグループ化"
 
 #: lib/layouts/linguistics.module:300
 msgid "Group"
@@ -36067,8 +36067,8 @@ msgstr ""
 
 #: src/LyXRC.cpp:3219
 msgid ""
-"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 -"
-"n38\" Refer to the ChkTeX documentation."
+"Define how to run chktex. E.g. \"chktex -n11 -n1 -n3 -n6 -n9 -22 -n25 -n30 "
+"-n38\" Refer to the ChkTeX documentation."
 msgstr ""
 "chktex をどうやって実行するかを指定します．例えば，\"chktex -n11 -n1 -n3 -n6 "
 "-n9 -22 -n25 -n30 -n38\" など．ChkTeX のドキュメントを参照してください．"
@@ -36193,8 +36193,8 @@ msgid ""
 "\"makeindex.sh -m $$lang\"."
 msgstr ""
 "makeindex のオプションを指定する(man makeindex 参照)か，他のコンパイラを選び"
-"ます．例えば，xindy/make-rules を使うときには，コマンド文字列は \"makeindex."
-"sh -m $$lang\" のようになります．"
+"ます．例えば，xindy/make-rules を使うときには，コマンド文字列は "
+"\"makeindex.sh -m $$lang\" のようになります．"
 
 #: src/LyXRC.cpp:3308
 msgid "Define the options of the index program for PLaTeX (Japanese LaTeX)."
@@ -40259,8 +40259,8 @@ msgid ""
 "these files are hidden by default by some file managers."
 msgstr ""
 "これを有効にすると，文書のバックアップはバックアップディレクトリ(%1$s)に生成"
-"されます．バックアップファイルは，フルパス＋ファイル名をファイル名として「."
-"lyx~」という拡張子を持ちます（例：!mydir!filename.lyx~）．これらのファイル"
+"されます．バックアップファイルは，フルパス＋ファイル名をファイル名として"
+"「.lyx~」という拡張子を持ちます（例：!mydir!filename.lyx~）．これらのファイル"
 "は，ファイルマネージャによっては隠しファイルとして扱われることがあります．"
 
 #: src/frontends/qt/GuiPrefs.cpp:3670

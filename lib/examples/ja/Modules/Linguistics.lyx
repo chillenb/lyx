@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.6 created this file. For more info see https://www.lyx.org/
+\lyxformat 648
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -9,89 +9,49 @@
 %% Uncomment the following for Tableaux captions on top:
 %\floatstyle{plaintop}
 %\restylefloat{tableau}
+
+% Backwards compatibility for forest 1.x
+% If you use forest 2.0.1 or later, you can delete this
+\@ifpackageloaded{forest}{%
+  \@ifpackagelater{forest}{2016/02/20}{}{%
+    \forestset{
+      roof/.style={edge path={\noexpand\path[\forestoption{edge}]%
+          (.north west)--(!u.south)--(.north east)--cycle
+          \forestoption{edge label};
+        }
+      },
+      sn edges/.style={
+        for tree={parent anchor=south, child anchor=north},
+      },
+      linguistics preamble/.style={sn edges, baseline, for tree={align=center}}
+    }
+    \preto\forest@do{%
+      \forestOpreto{\forest@root}{given options}{linguistics preamble,}%
+    }
+  }
+}{}
 \end_preamble
+\options dvipdfmx
 \use_default_options false
 \begin_modules
 linguistics
 \end_modules
 \maintain_unincluded_children no
 \begin_local_layout
-### Inserted by lyx2lyx (deprecated ling glosses) ###
-InsetLayout Flex:Tri-Glosse
-  LyXType               custom
-  LabelString           "Tri-Gloss (old version)"
-  MenuString            "Tri-Gloss (old version)"
-  LatexType             environment
-  LatexName             lingglosss
-  Decoration            minimalistic
-  LabelFont
-    Size                Small
-  EndFont
-  MultiPar              true
-  CustomPars            false
-  ForcePlain            true
-  ParbreakIsNewline     true
-  FreeSpacing           true
-  InToc                 true
-  Requires              covington
-  Preamble
-          \def\glosstr{}
-          \@ifundefined{lingglosss}{%
-          \newenvironment{lingglosss}[2][]{
-              \def\glosstr{\glt #1}%
-              \glll #2}
-          {\glosstr\glend}}{}
-  EndPreamble
-  ResetsFont            true
-  Argument 1
-          Decoration    conglomerate
-          LabelString   "Translation"
-          MenuString    "Glosse Translation|s"
-          Tooltip       "Add a translation for the glosse"
-  EndArgument
+Counter examplei
+	PrettyFormat         "Example|Examples ##"
 End
-### Inserted by lyx2lyx (deprecated ling glosses) ###
-InsetLayout Flex:Glosse
-  LyXType               custom
-  LabelString           "Gloss (old version)"
-  MenuString            "Gloss (old version)"
-  LatexType             environment
-  LatexName             linggloss
-  Decoration            minimalistic
-  LabelFont
-    Size                Small
-  EndFont
-  MultiPar              true
-  CustomPars            false
-  ForcePlain            true
-  ParbreakIsNewline     true
-  FreeSpacing           true
-  Requires              covington
-  Preamble
-          \def\glosstr{}
-          \@ifundefined{linggloss}{%
-          \newenvironment{linggloss}[2][]{
-             \def\glosstr{\glt #1}%
-             \gll #2}
-          {\glosstr\glend}}{}
-  EndPreamble
-  InToc                 true
-  ResetsFont            true
-  Argument 1
-          Decoration    conglomerate
-          LabelString   "Translation"
-          MenuString    "Glosse Translation|s"
-          Tooltip       "Add a translation for the glosse"
-  EndArgument
+Counter subexamplei
+	PrettyFormat         "Example|Examples ##"
 End
 \end_local_layout
 \language japanese
-\language_package default
+\language_package none
 \inputencoding utf8
 \fontencoding auto
-\font_roman "lmodern" "IPAexMincho"
-\font_sans "default" "IPAexGothic"
-\font_typewriter "default" "FreeMono"
+\font_roman "lmodern" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
@@ -108,6 +68,8 @@ End
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize default
 \spacing single
 \use_hyperref true
@@ -139,10 +101,19 @@ End
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index 索引
 \shortcut idx
 \color #008000
@@ -159,6 +130,7 @@ End
 \papersides 1
 \paperpagestyle default
 \tablestyle default
+\listings_params "language={[LaTeX]TeX},basicstyle={\ttfamily}"
 \tracking_changes false
 \output_changes false
 \change_bars false
@@ -168,6 +140,7 @@ End
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -179,6 +152,26 @@ End
 
 \begin_layout Author
 Jürgen Spitzmüller
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+翻訳：
+横田 宏治
+\begin_inset CommandInset href
+LatexCommand href
+target "yokota@lyx.org"
+type "mailto:"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
 \begin_inset Newline newline
 \end_inset
 
@@ -195,13 +188,14 @@ literal "false"
 \end_layout
 
 \begin_layout Date
-平成20年9月14日 
+\SpecialChar LyX
+ ver.2.6
 \end_layout
 
 \begin_layout Abstract
 この小論は、\SpecialChar LyX
 が言語学者に提供している機能のいくつかを説明します。
-ここでは、付番用例や語句注解、OT表、セマンティックマークアップ、発音記号（IPA）を生成するために用意されているネイティブサポートを利用する方法を説明します。
+ここでは、付番用例や語句注解、OTタブロー、セマンティックマークアップ、発音記号（IPA）を生成するために用意されているネイティブサポートを利用する方法を説明します。
 
 \end_layout
 
@@ -249,41 +243,24 @@ literal "true"
 \end_inset
 
 ：
-これは付番用例と語句注解に使用される基本パッケージです。
+これは付番用例と語句注解、セマンティック・マークアップに使用される基本パッケージです。
+すべての機能を使用するためには、バージョン2.11以上のcovingtonパッケージが必要であることに注意してください。
 
 \end_layout
 
-\begin_layout Enumerate
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
 
-\emph on
-enumitem.sty
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "enumitem"
-literal "true"
-
+\begin_inset Info
+type  "package"
+arg   "covington"
 \end_inset
 
-：
-このパッケージは、Subexamplesスタイルに使用されます。
-これは一般的に、箇条書き（
-\emph on
-連番
-\emph default
-・
-\emph on
-記号
-\emph default
-・
-\emph on
-記述
-\emph default
-など）の外観を変えるのに役立ちます。
 
 \end_layout
 
+\end_deeper
 \begin_layout Enumerate
 
 \emph on
@@ -302,11 +279,60 @@ literal "true"
 \emph on
 意味
 \emph default
-文字様式に必要です。
+文字様式と語句註解に必要です。
 このパッケージは、使用中の言語に依存して、文脈依存の引用符を提供するようにします。
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
+
+\begin_inset Info
+type  "package"
+arg   "csquotes"
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+drs.sty
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "drs"
+literal "true"
+
+\end_inset
+
+：
+
+\emph on
+談話表示構造
+\emph default
+（DRS）に必要です。
+DRSをcovingtonの機能と共に使用したいときには、バージョン2.3以上のcovingtonパッケージが必要であることに注意してください。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
+
+\begin_inset Info
+type  "package"
+arg   "drs"
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Enumerate
 
 \emph on
@@ -321,12 +347,122 @@ literal "true"
 \end_inset
 
 ：
-OT表とフロート一覧に必要とsれます。
+OTタブローとフロート一覧に必要とされます。
 このパッケージは、すべての\SpecialChar LaTeX
 頒布版に同梱されているはずです。
 
 \end_layout
 
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
+
+\begin_inset Info
+type  "package"
+arg   "float"
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+forest.sty
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "forest"
+literal "true"
+
+\end_inset
+
+：
+このパッケージは構造ツリーを生成するのに使用されます。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
+
+\begin_inset Info
+type  "package"
+arg   "forest"
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+pict2e.sty
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "pict2e"
+literal "true"
+
+\end_inset
+
+：
+
+\emph on
+二重条件DRS
+\emph default
+に必要です。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
+
+\begin_inset Info
+type  "package"
+arg   "pict2e"
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\emph on
+varwidth.sty
+\emph default
+ 
+\begin_inset CommandInset citation
+LatexCommand cite
+key "varwidth"
+literal "true"
+
+\end_inset
+
+：
+語句註解のコメント用にcovingtonが必要とします（バージョン2.11現在）。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+このシステムに導入済みか：
+
+\begin_inset Info
+type  "package"
+arg   "varwidth"
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 付番用例
 \end_layout
@@ -393,6 +529,117 @@ name "subsec:subexample"
 
 \end_layout
 
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:用例と数式に番号を振る"
+
+\end_inset
+
+用例と数式に番号を振る
+\end_layout
+
+\begin_layout Standard
+既定では
+\emph on
+covington
+\emph default
+はequationカウンタを用例用に再利用します。
+すなわち、数式と言語学用例は連続して付番されます（これは\SpecialChar LyX
+作業領域にも反映されます）。
+
+\end_layout
+
+\begin_layout Standard
+数式と用例をともに使用しつつ、それぞれに独立した連番を降りたい場合には、
+\emph on
+covington
+\emph default
+が提供している
+\emph on
+owncounter
+\emph default
+オプションを使用すれば、用例は独立したカウンタ
+\family sans
+covex
+\family default
+を使用するようになります。
+これを有効にするためには、下記を
+\family sans
+文書\SpecialChar menuseparator
+設定\SpecialChar menuseparator
+ローカルのレイアウト
+\family default
+に追記してください。
+
+\end_layout
+
+\begin_layout Quote
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+PackageOptions covington owncounter
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Counter examplei
+\end_layout
+
+\begin_layout Plain Layout
+	LabelString          "(
+\backslash
+arabic{examplei})"
+\end_layout
+
+\begin_layout Plain Layout
+	StepOtherCounter      none
+\end_layout
+
+\begin_layout Plain Layout
+End
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+Counter subexamplei
+\end_layout
+
+\begin_layout Plain Layout
+	LabelString  "(
+\backslash
+arabic{examplei}) (
+\backslash
+alph{subexamplei})"
+\end_layout
+
+\begin_layout Plain Layout
+End
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+これによって用例と数式の付番は、出力と作業領域の両方で分離されることになります。
+
+\end_layout
+
+\begin_layout Subsection
+付番用例を参照する
+\end_layout
+
 \begin_layout Standard
 例への参照は通常通り作成することができます。
 例にラベルを挿入し、
@@ -401,7 +648,12 @@ name "subsec:subexample"
 相互参照
 \family default
 で相互参照を入れてください。
-これを例示するために、ここでは
+
+\end_layout
+
+\begin_layout Standard
+番号のみを出力する単純な参照は右のようになります：
+
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "exa:single-example"
@@ -409,7 +661,7 @@ nolink "false"
 
 \end_inset
 
-と
+および
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "subsec:subexample"
@@ -417,97 +669,363 @@ nolink "false"
 
 \end_inset
 
-への参照をしておきましょう。
+。
+慣例にしたがって、番号を括弧で囲みたいときには、代わりに右記のような括弧書式を選択してください：
+
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "exa:single-example"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+および
+\begin_inset CommandInset ref
+LatexCommand eqref
+reference "subsec:subexample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+。
+
+\end_layout
+
+\begin_layout Standard
+さらに便利な参照をするには、「整形された参照」を使用すれば、
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "exa:single-example"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+および
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:subexample"
+plural "false"
+caps "false"
+noprefix "false"
+nolink "false"
+tuple "list"
+
+\end_inset
+
+のように、
+\emph on
+用例
+\emph default
+の文字列を自動的に追記して番号を括弧に入れてくれます。
+
+\end_layout
+
+\begin_layout Subsection
+調整
+\end_layout
+
+\begin_layout Standard
+用例関係のスタイルは、すべてオプション引数を使って様々にカスタマイズすることができます。
+これらは、
+\family sans
+挿入\SpecialChar menuseparator
+用例オプション
+\family default
+または
+\family sans
+挿入\SpecialChar menuseparator
+小例オプション
+\family default
+で挿入することができます。
+詳細については、
+\emph on
+covington
+\emph default
+マニュアル
+\begin_inset CommandInset citation
+LatexCommand cite
+key "covington"
+literal "false"
+
+\end_inset
+
+を参照してください。
+
+\end_layout
+
+\begin_layout Standard
+全体を調整するには、これらのオプションを
+\family sans
+
+\backslash
+setexampleoptions
+\family default
+マクロに渡すことができます（これは\SpecialChar TeX
+モードを使って行なってください）。
+これについても、詳細は
+\emph on
+covington
+\emph default
+マニュアル
+\begin_inset CommandInset citation
+LatexCommand cite
+key "covington"
+literal "false"
+
+\end_inset
+
+を参照してください。
+
+\end_layout
+
+\begin_layout Standard
+連続する用例や小例の場合には、以下のような差込枠を追加で使用することができます。
+
+\end_layout
+
+\begin_layout Itemize
+各用例の連番を修正するために、
+\family sans
+挿入\SpecialChar menuseparator
+付番の詳細設定
+\family default
+を使用できます。
+
+\end_layout
+
+\begin_layout Itemize
+用例文に判定マーカー（*や?など）を追加するためには、
+\family sans
+挿入\SpecialChar menuseparator
+判定
+\family default
+を使用してください。
+
+\end_layout
+
+\begin_layout Itemize
+用例文の前に（提示データの一部でない）文を追加するには、
+\family sans
+挿入\SpecialChar menuseparator
+特別差込枠\SpecialChar menuseparator
+用例プリアンブル
+\family default
+または
+\family sans
+小例プリアンブル
+\family default
+を使用してください。
+
+\end_layout
+
+\begin_layout Itemize
+用例文の後に（提示データの一部でない）文を追加するには、
+\family sans
+挿入\SpecialChar menuseparator
+特別差込枠\SpecialChar menuseparator
+用例ポストアンブル
+\family default
+または
+\family sans
+小例ポストアンブル
+\family default
+を使用してください。
+
+\end_layout
+
+\begin_layout Standard
+これらの機能についての詳細は
+\emph on
+covington
+\emph default
+マニュアル
+\begin_inset CommandInset citation
+LatexCommand cite
+key "covington"
+literal "false"
+
+\end_inset
+
+を参照してください。
 
 \end_layout
 
 \begin_layout Section
-語句注解
+行間註解
 \end_layout
 
 \begin_layout Standard
 言語学モジュールは、2つの語句注解を提供しており、
 \family sans
 挿入\SpecialChar menuseparator
-任意設定差込枠
+特別差込枠
 \family default
 で挿入することができます。
-標準の
+
 \emph on
-任意設定:語句注解
+行間註解（２行）
 \emph default
-は、2行と翻訳から成る語句注解を提供し、
+は、2行（原文表記と、行間すなわち逐語訳から成る註解対）と自由翻訳から成る語句注解を提供し、
 \emph on
-任意設定:三行語句注解
+行間註解（３行）
 \emph default
-差込枠は、三行と翻訳から成ります。
-各翻訳行は、複数行に展開されるかもしれません。
+はもう１行を持ちます（３行目は通常、語句註解対の後に形態論もしくは音韻論的な情報を提供する必要があります）。
+各翻訳行は、出力では複数行に展開されるかもしれません。
 つまり、本文幅を超えた段落は、自動的に改行されます。
-翻訳行は必須であり、その先頭には
-\family typewriter
-
-\backslash
-glt
+原文表記（語句註解の最初の行）は語句註解差込枠に直接入力し、他の情報は特定の副差込枠に入力します（
+\family sans
+行間註解
 \family default
-コマンドを、語句注解差込枠中にそのまま入れなくてはなりません（\SpecialChar TeX
-モードは必要でなく、実のところ\SpecialChar TeX
-モードにすることはできません）。
+または３行語句註解の場合は
+\family sans
+行間註解（１行目）
+\family default
+と
+\family sans
+行間註解（２行目）
+\family default
+、および
+\family sans
+語句註解翻訳
+\family default
+）。
+これらの副差込枠は、新しく語句註解を挿入すると、\SpecialChar LyX
+が自動的に挿入してくれます。
+これらを手動で挿入するときには、
+\family sans
+挿入\SpecialChar menuseparator
+語句註解
+\family default
+や
+\family sans
+挿入\SpecialChar menuseparator
+行間註解
+\family default
+を使って挿入できます。
+これらの副差込枠は、つねに正しい順序で印字されるので、どの位置に挿入しても構いません。
 
 \end_layout
 
 \begin_layout Standard
-以下は簡単な例です。
+必要ならば、
+\family sans
+挿入\SpecialChar menuseparator
+文コメント
+\family default
+（用例文）や
+\family sans
+挿入\SpecialChar menuseparator
+語句註解コメント
+\family default
+（各語句註解行）を使用して、用例文や各語句註解行にコメントを挿入することもできます。
+これらのコメントは、\SpecialChar LyX
+ウィンドウ中のどこに挿入したかに関わらず、各行の右側に印字されます。
 
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Glosse
+最後に、語句註解オプションを
+\family sans
+挿入\SpecialChar menuseparator
+語句註解オプション
+\family default
+で挿入することができます。
+これらのオプションを使うと、行の表示のされ方をカスタマイズしたり、用例番号や前置テキストを追加したりすることができます。
+詳細については、
+\emph on
+covington
+\emph default
+マニュアル
+\begin_inset CommandInset citation
+LatexCommand cite
+key "covington"
+literal "false"
+
+\end_inset
+
+を参照してください。
+
+\begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
+語句註解のサポートは、\SpecialChar LyX
+2.4で完全に書き換えられたことに注意してください。
+現在では、改良された新しい
+\emph on
+covington
+\emph default
+ (2.0)語句註解マクロが使用されます。
+大規模な変更に伴い、古い語句註解は新しいスタイルに変換できません。
+その代わりに、古い差込枠はインポートされます（そして文書には
+\family sans
+ローカルレイアウト
+\family default
+として保存されます）。
+同様に、新しい語句註解差込枠は、古い\SpecialChar LyX
+バージョンにエクスポートされる場合、\SpecialChar TeX
+コードに変換されます。
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+以下は２行語句註解の例です。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Interlinear Gloss (2 Lines)
 status open
 
 \begin_layout Plain Layout
-
 C'est un exemple simple
 \end_layout
 
+\begin_layout Plain Layout
+\begin_inset Argument post:2
+status open
+
+\begin_layout Plain Layout
+\begin_inset Flex GroupGlossedWords
+status open
+
+\begin_layout Plain Layout
+This is
+\end_layout
+
+\end_inset
+
+ an example simple
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
+\begin_inset Argument post:4
 status open
 
 \begin_layout Plain Layout
-
-{This is} an example simple
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Argument 1
-status open
-
-\begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 This is a simple example
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \end_inset
@@ -522,7 +1040,35 @@ This is a simple example
 
 \begin_layout Standard
 \noindent
-波括弧が複数単語の表現をくくるのに使われていることに注意してください。
+複数単語の表現を一緒に束ねるには、
+\family sans
+編集\SpecialChar menuseparator
+特別文辞様式\SpecialChar menuseparator
+語句註解単語をグループ化
+\family default
+を使用してください（あるいはTeXモードで
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+{
+\end_layout
+
+\end_inset
+
+対象単語の周りに
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+波括弧をつけてください）。
+\SpecialChar LyX
+作業領域で語句註解を整形するのに空白を複数入れることができますが、出力では無効であることに注意してください。
 
 \end_layout
 
@@ -532,16 +1078,19 @@ This is a simple example
 \end_layout
 
 \begin_layout Standard
-\begin_inset Flex Tri-Glosse
+\begin_inset Flex Interlinear Gloss (3 Lines)
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
+Hoc est aliud exemplum
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:2
 status open
 
 \begin_layout Plain Layout
-
-C'est un exemple simple
+n.sg.nom 3sg n.sg.nom n.sg.nom
 \end_layout
 
 \end_inset
@@ -550,12 +1099,11 @@ C'est un exemple simple
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
+\begin_inset Argument post:4
 status open
 
 \begin_layout Plain Layout
-
-{Das ist} ein Beispiel einfach
+This is another  example
 \end_layout
 
 \end_inset
@@ -564,20 +1112,16 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
+\begin_inset Argument post:6
 status open
 
 \begin_layout Plain Layout
-
-{This is} an example simple
+This is another example
 \end_layout
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Plain Layout
 \begin_inset Argument 1
 status open
 
@@ -586,8 +1130,11 @@ status open
 status open
 
 \begin_layout Plain Layout
-
-This is a simple example
+fsii={
+\backslash
+normalfont
+\backslash
+scshape}
 \end_layout
 
 \end_inset
@@ -602,39 +1149,24 @@ This is a simple example
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-\noindent
-連番の付いた語句注解が欲しい場合には、以下のように、語句注解差込枠を付番用例段落に入れるだけです。
+ここで語句註解オプションは、２行目をスモールキャップ体で植字するために使用されています。
+付番された語句註解を使用したい場合には、一つの方法としては、以下のように付番用例段落の中に語句註解差込枠を挿入します。
 
 \end_layout
 
 \begin_layout Numbered Examples (consecutive)
-\begin_inset Flex Tri-Glosse
+\begin_inset Flex Interlinear Gloss (3 Lines)
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 Mein Luftkissenfahrzeug ist voller Aale
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
 \begin_layout Plain Layout
-\begin_inset ERT
+\begin_inset Argument post:2
 status open
 
 \begin_layout Plain Layout
-
 My skeertuig is vol palings
 \end_layout
 
@@ -644,12 +1176,21 @@ My skeertuig is vol palings
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset ERT
+\begin_inset Argument post:4
 status open
 
 \begin_layout Plain Layout
+My hovercraft is 
+\begin_inset Flex GroupGlossedWords
+status open
 
-My hovercraft is {full of} eels
+\begin_layout Plain Layout
+full of
+\end_layout
+
+\end_inset
+
+ eels
 \end_layout
 
 \end_inset
@@ -658,15 +1199,10 @@ My hovercraft is {full of} eels
 \end_layout
 
 \begin_layout Plain Layout
-\begin_inset Argument 1
+\begin_inset Argument post:6
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
 Do you have matches?
 \end_layout
 
@@ -680,61 +1216,306 @@ Do you have matches?
 
 \end_layout
 
+\begin_layout Standard
+もう一つの方法は、語句註解オプション
+\emph on
+ex
+\emph default
+を使用することです。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Interlinear Gloss (3 Lines)
+status open
+
+\begin_layout Plain Layout
+Mein Luftkissenfahrzeug ist voller Aale
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:2
+status open
+
+\begin_layout Plain Layout
+My skeertuig is vol palings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:4
+status open
+
+\begin_layout Plain Layout
+My hovercraft is 
+\begin_inset Flex GroupGlossedWords
+status open
+
+\begin_layout Plain Layout
+full of
+\end_layout
+
+\end_inset
+
+ eels
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:6
+status open
+
+\begin_layout Plain Layout
+Do you have matches?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+ヒントとコツ
+\end_layout
+
+\begin_layout Subsubsection*
+語句註解中での改頁は避ける
+\end_layout
+
+\begin_layout Standard
+既定では、語句註解中で改頁が起こるかもしれませんが、これは望ましくありません。
+これらのほとんどは、
+\family sans
+文書\SpecialChar menuseparator
+設定\SpecialChar ldots
+\SpecialChar menuseparator
+文書クラス\SpecialChar menuseparator
+クラスオプション\SpecialChar menuseparator
+詳細設定
+\family default
+にnoglossbreaksと入力することによって避けることができます。
+それでも改頁が起こるならば、語句註解全体をボックスで囲む（
+\family sans
+挿入\SpecialChar menuseparator
+ボックス\SpecialChar menuseparator
+枠なし
+\family default
+）と良いでしょう。
+
+\end_layout
+
+\begin_layout Subsubsection*
+語句註解中の脚注
+\end_layout
+
+\begin_layout Standard
+語句註解差込枠に脚注を挿入することはできますが、LaTeXコンパイルは成功しないでしょう。
+脚注が必要な場合には、脚注番号が現れるべきところの語句註解にTeXモードで
+\family sans
+
+\backslash
+footnotemark
+\family default
+を置き、
+\emph on
+語句註解
+\emph default
+差込枠の直後にTeXモードで
+\family sans
+
+\backslash
+footnote{実際の脚注...}
+\family default
+と置いてください。
+複数の脚注が必要な場合には、これらのパターンを複数挿入してください。
+
+\end_layout
+
+\begin_layout Subsubsection*
+Beamerプレゼンテーションで語句註解（および用例）を使うには
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+beamer
+\emph default
+プレゼンテーションで言語学モジュールを使用するには、いくつか注意するべき点があります。
+
+\end_layout
+
+\begin_layout Itemize
+
+\emph on
+beamer
+\emph default
+中で語句註解を使用したい場合には、語句註解を「脆弱」フレームに置く必要があります。
+
+\end_layout
+
+\begin_layout Itemize
+古いバージョンの
+\emph on
+covington
+\emph default
+パッケージ（バージョン1.1以前）は、
+\emph on
+beamer
+\emph default
+と
+\emph on
+covington
+\emph default
+が両方とも同じ
+\family sans
+
+\backslash
+example
+\family default
+と
+\family sans
+
+\backslash
+examples
+\family default
+コマンドを定義しようとするので、そのままbeamerクラスで使用することはできません。
+これらの古いcovingtonバージョンでは、\SpecialChar LaTeX
+エラーに終わってしまいます。
+この問題は、
+\family sans
+文書\SpecialChar menuseparator
+設定\SpecialChar menuseparator
+ローカルレイアウト
+\family default
+中に下記のコードを挿入することで回避できます。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Quote
+\begin_inset listings
+lstparams "basicstyle={\footnotesize\ttfamily},tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+Provides covington 1
+\end_layout
+
+\begin_layout Plain Layout
+AddToPreamble
+\end_layout
+
+\begin_layout Plain Layout
+		
+\backslash
+let
+\backslash
+example
+\backslash
+relax
+\end_layout
+
+\begin_layout Plain Layout
+		
+\backslash
+let
+\backslash
+endexample
+\backslash
+relax
+\end_layout
+
+\begin_layout Plain Layout
+		
+\backslash
+let
+\backslash
+examples
+\backslash
+relax
+\end_layout
+
+\begin_layout Plain Layout
+		
+\backslash
+let
+\backslash
+endexamples
+\backslash
+relax
+\end_layout
+
+\begin_layout Plain Layout
+		
+\backslash
+usepackage{covington}
+\end_layout
+
+\begin_layout Plain Layout
+EndPreamble
+\end_layout
+
 \end_inset
 
 
 \end_layout
 
 \begin_layout Standard
-語句注解中では、フォントの変更はできないことに注意してください。
-したがって
+入力後「検証」と「OK」を押してください。
+これは事実上
+\emph on
+beamer
+\emph default
+の用例環境を無効にして
+\emph on
+covington
+\emph default
+のものを有効にします（すなわち
 \family sans
-文字様式
+付番用例
 \family default
-ダイアログは無効になっています。
-語句注解はハイフネートしないので、\SpecialChar LaTeX
-出力中で明示的に言語を設定することは必要とされません（むしろ、covingtonがサポートしないため、出力が崩れてしまいます）。
-それでも、正しいスペルチェックをするために、言語を設定したいと思うかもしれません。
-現在のところ、これは以下のようにしなくてはなりません。
-文章を選択して、
-\begin_inset Info
-type  "shortcut"
-arg   "command-execute"
-\end_inset
-
- 
+スタイルを使用することはできますが、
+\emph on
+beamer
+\emph default
+の
 \family sans
-language <言語>
+例
 \family default
-と打ってください。
-ここで
-\family sans
-<言語>
-\family default
-は、
-\family sans
-english
-\family default
-・
-\family sans
-french
-\family default
-・
-\family sans
-ngerman
-\family default
-などの各言語に置き換えてください。
-\SpecialChar LaTeX
-出力中では、この設定は出力されません。
+は使用することができません）。
 
 \end_layout
 
+\begin_layout Standard
+
+\emph on
+covington
+\emph default
+バージョン1.1時点ではこの問題は解決されています。
+
+\end_layout
+
+\end_deeper
 \begin_layout Section
 最適理論表
 \end_layout
 
 \begin_layout Standard
-OT表自体は、もちろん単純に、通常の表として入れることができます（点線や影付きセルなどの特定の機能については、
+OTタブロー自体は、もちろん単純に、通常の表として入れることができます（点線や影付きセルなどの特定の機能については、
 \emph on
 埋め込みオブジェクト
 \emph default
@@ -745,7 +1526,7 @@ OT表自体は、もちろん単純に、通常の表として入れることが
 \emph default
 のように
 \emph on
-OT表一覧
+タブロー一覧
 \emph default
 を置きたいところです。
 
@@ -758,7 +1539,7 @@ OT表一覧
 挿入\SpecialChar menuseparator
 フロート
 \family default
-の中には、以下のようなOT表フロートがあります。
+の中には、以下のようなタブローフロートがあります。
 
 \end_layout
 
@@ -1044,7 +1825,7 @@ a.ti.kap
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-OT表の例
+タブローの例
 \end_layout
 
 \end_inset
@@ -1059,55 +1840,76 @@ OT表の例
 
 \begin_layout Standard
 出力中のキャプションは、\SpecialChar LyX
-ウィンドウ内での置き方にかかわらず、既定ではつねに、OT表の下に置かれることに注意してください。
-OT表のキャプションを上に置くには、
+ウィンドウ内での置き方にかかわらず、既定ではつねに、タブローの下に置かれることに注意してください。
+タブローのキャプションを上に置くには、
 \family sans
 文書\SpecialChar menuseparator
 設定\SpecialChar menuseparator
-\SpecialChar LaTeX
- プリアンブル
+プリアンブル
 \family default
 に以下のコードを書いてください。
 
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Quote
+\begin_inset listings
+lstparams "language={[LaTeX]TeX},basicstyle={\footnotesize\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
 
 \backslash
 floatstyle{plaintop}
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Plain Layout
 
 \backslash
 restylefloat{tableau}
 \end_layout
 
-\begin_layout Standard
-KOMAクラスを使用している場合には、代わりに以下のようにした方がきれいな余白取りがされます。
+\end_inset
+
 
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Standard
+KOMAクラスを使用している場合には、代わりに以下のようなコードを使います。
+
+\end_layout
+
+\begin_layout Quote
+\begin_inset listings
+lstparams "language={[LaTeX]TeX},basicstyle={\footnotesize\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
 
 \backslash
 floatstyle{komaabove}
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Plain Layout
 
 \backslash
 restylefloat{tableau}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
-OT表一覧差込枠の一覧は、
+タブロー一覧差込枠の一覧は、
 \family sans
 挿入\SpecialChar menuseparator
 一覧/目次
 \family default
 にあります。
-OT表一覧は、通常、文書の始まりか終わりに置かれますが、ここでは例示のためにこの場所に置くことにします。
+これは下記のように表示されます。
 
 \end_layout
 
@@ -1177,7 +1979,7 @@ meaning
 これらの文字様式は、
 \family sans
 編集\SpecialChar menuseparator
-文字様式
+特別文辞様式
 \family default
 サブメニューで入れることができます。
 これらの様式の外観を後で変更する必要があれば、プリアンブル中で再定義することができます。
@@ -1185,14 +1987,25 @@ meaning
 
 \end_layout
 
-\begin_layout LyX-Code
+\begin_layout Quote
+\begin_inset listings
+lstparams "language={[LaTeX]TeX},basicstyle={\footnotesize\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
 
 \backslash
 renewcommand
 \backslash
-lingexpr[1]{
+lexp[1]{
 \backslash
 textbf{#1}}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -1200,15 +2013,803 @@ textbf{#1}}
 \family typewriter
 
 \backslash
-lingconcept
+lcon
 \family default
 ）と意味（
 \family typewriter
 
 \backslash
-lingmeaning
+lmean
 \family default
 ）も修正することができます。
+詳細については、
+\emph on
+covington
+\emph default
+マニュアル
+\begin_inset CommandInset citation
+LatexCommand cite
+key "covington"
+literal "false"
+
+\end_inset
+
+を参照してください。
+
+\end_layout
+
+\begin_layout Section
+言語構造ツリー
+\end_layout
+
+\begin_layout Standard
+構造ツリーを生成するのに役立つ多くの\SpecialChar LaTeX
+が利用可能です。
+\SpecialChar LyX
+は
+\family sans
+forest
+\family default
+パッケージをサポートしており、これは高い柔軟性とパワーを快適な入力文法とともに兼ね備えています。
+言語学モジュールは、構造ツリー差込枠を提供しており、
+\family sans
+挿入\SpecialChar menuseparator
+特別差込枠
+\family default
+で挿入することができます。
+この差込枠中に
+\family sans
+forest
+\family default
+（および
+\family sans
+qtree
+\family default
+等の他の類似のパッケージ）が使用する括弧表記を挿入することができます。
+
+\end_layout
+
+\begin_layout Standard
+下記は簡単な用例です。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Structure Tree
+status open
+
+\begin_layout Plain Layout
+[VP [DP[John]] [V' [V[sent]] [DP[Mary]] [DP[D[a]][NP[letter]]] ] ]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+PDF出力を見ると、
+\end_layout
+
+\begin_layout Quote
+
+\family typewriter
+\size small
+[VP [DP[John]] [V' [V[sent]] [DP[Mary]] [DP[D[a]][NP[letter]]]]]
+\end_layout
+
+\begin_layout Standard
+という入力が、実際の構造ツリーに展開されているのを見ることができるでしょう
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+訳註：
+言語構造ツリーをp\SpecialChar LaTeX
+系で処理する場合には、
+\family sans
+文書\SpecialChar menuseparator
+設定\SpecialChar ldots
+\SpecialChar menuseparator
+クラスオプション\SpecialChar menuseparator
+詳細設定
+\family default
+で「
+\family sans
+dvipdfmx
+\family default
+」オプションを指定してください。
+
+\end_layout
+
+\end_inset
+
+。
+\SpecialChar LyX
+作業領域でこの結果を見るためには、構造ツリーをプレビュー差込枠に埋め込む（
+\family sans
+挿入\SpecialChar menuseparator
+プレビュー
+\family default
+）だけです。
+即時プレビューが正しくインストールされていて有効にされていれば、以下のようなツリーを直ちに見ることができます（編集するためには画像をクリックするだけです）
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+訳註：
+プレビューは2025年1月現在p\SpecialChar LaTeX
+系ではうまく動作しません。
+
+\end_layout
+
+\end_inset
+
+。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Preview
+
+\begin_layout Standard
+\begin_inset Flex Structure Tree
+status open
+
+\begin_layout Plain Layout
+[VP [DP[Mary]] [V' [V[sent]] [DP[John]] [DP[D[a]][NP[response]]] ] ]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ルーフは「roof」オプション
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+「roof」オプションは
+\family sans
+forest
+\family default
+バージョン2.0以降のみ存在することに注意してください。
+この説明書のプリアンブルには、それ以前のバージョンをサポートするためにいくつかのコードを追記しています。
+2.0より前の
+\family sans
+forest
+\family default
+バージョンを使用する場合には、このコードをあなたのプリアンブルにコピーするか、「roof」ではなく古い「triangle」オプションを使用してください。
+
+\end_layout
+
+\end_inset
+
+によって簡単に生成することができます（カンマはオプションを意味するので、特別な意味があることに注意してください）。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Structure Tree
+status open
+
+\begin_layout Plain Layout
+[VP [DP[John]] [V' [V[sent]] [DP[Mary]] [DP[another letter,
+ roof]] ] ]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+ツリーのノードをもっとエレガントに揃えるには、「tier」オプションを使用してください。
+同じ「tier」を持つすべてのノードは揃えるように割り当てられます。
+下記はその例です。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex Structure Tree
+status open
+
+\begin_layout Plain Layout
+[VP [DP[John,tier=word]] [V' [V[sent,tier=word]] [DP[Mary,tier=word]] [DP[D[a,tier=word]][NP[letter,tier=word]]] ] ]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+このパッケージは他にもムーブメントアローや装飾等、ここには文書化できない多くの機能をサポートしています（詳細なパッケージ文書
+\begin_inset CommandInset citation
+LatexCommand cite
+key "forest"
+literal "false"
+
+\end_inset
+
+を参照してください）。
+
+\end_layout
+
+\begin_layout Section
+談話表示構造
+\end_layout
+
+\begin_layout Standard
+言語学モジュールは、
+\noun on
+Hans Kamp
+\noun default
+著『
+\emph on
+Discourse Representation Theory
+\emph default
+』で導入された談話表示構造（DRS）をボックス表記で描画するための差込枠をいくつか提供しています。
+これらの差込枠は
+\family sans
+挿入\SpecialChar menuseparator
+特別差込枠
+\family default
+にあります。
+
+\end_layout
+
+\begin_layout Standard
+単純なDRSは
+\family sans
+談話表示構造
+\family default
+で生成することができます。
+DRSには、差込枠に直接挿入する
+\emph on
+条件
+\emph default
+（
+\emph on
+conditions
+\emph default
+）と、（自動的に挿入される）
+\emph on
+指示対象
+\emph default
+副差込枠
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+もし挿入されていなければ、
+\family sans
+挿入\SpecialChar menuseparator
+DRS指示対象
+\family default
+で挿入することもできます。
+
+\end_layout
+
+\end_inset
+
+に挿入する（場合によっては空の）
+\emph on
+指示対象
+\emph default
+（
+\emph on
+referents
+\emph default
+）（もしくはDRTにおける
+\emph on
+universe
+\emph default
+）があります。
+条件における改行は
+\begin_inset Info
+type  "shortcut"
+arg   "newline-insert newline"
+\end_inset
+
+で行います。
+下記は簡単な例です。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Flex DRS
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+donkey(x)
+\begin_inset Newline newline
+\end_inset
+
+green(x)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+DRSは、ページ上で良好なポジショニングを得るために多めの余白を取ります。
+
+\family sans
+スペースなし
+\family default
+バージョンは、この余分な余白なしで出力を行います。
+
+\end_layout
+
+\begin_layout Standard
+この単純なDRSに加えて、以下のような条件付きDRSが提供されています（おもに単純DRSに入れ子にします）。
+
+\end_layout
+
+\begin_layout Enumerate
+
+\family sans
+もし-ならばDRS
+\family default
+は、
+\emph on
+S
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+
+\emph off
+1
+\end_layout
+
+\end_inset
+
+
+\emph default
+ならば
+\emph on
+S
+\emph default
+
+\begin_inset script subscript
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+
+の形の（含意）条件付き文の構造を表します。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex IfThen-DRS
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+x
+\begin_inset space ~
+\end_inset
+
+y
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+John(x)
+\begin_inset Newline newline
+\end_inset
+
+donkey(y)
+\begin_inset Newline newline
+\end_inset
+
+own(x,y)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+z
+\begin_inset space ~
+\end_inset
+
+w
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:2
+status open
+
+\begin_layout Plain Layout
+z = x
+\begin_inset Newline newline
+\end_inset
+
+w = y
+\begin_inset Newline newline
+\end_inset
+
+feed(z,w)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family sans
+条件DRS
+\family default
+はより一般的な場合で、（含意条件を用いる代わりに）任意の条件を指定することができます。
+条件副差込枠内に任意の記号を入れることができます。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex Cond-DRS
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+x
+\begin_inset space ~
+\end_inset
+
+y
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+John(x)
+\begin_inset Newline newline
+\end_inset
+
+donkey(y)
+\begin_inset Newline newline
+\end_inset
+
+own(x,y)
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\wedge\!\,$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:2
+status open
+
+\begin_layout Plain Layout
+z
+\begin_inset space ~
+\end_inset
+
+w
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:3
+status open
+
+\begin_layout Plain Layout
+z = x
+\begin_inset Newline newline
+\end_inset
+
+w = y
+\begin_inset Newline newline
+\end_inset
+
+love(w,z)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family sans
+二重条件DRS
+\family default
+は二重の条件を挿入するのに用いることができます。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex QDRS
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+x 
+\begin_inset Formula $\in$
+\end_inset
+
+ X
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+every
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:2
+status open
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:3
+status open
+
+\begin_layout Plain Layout
+y
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument post:4
+status open
+
+\begin_layout Plain Layout
+secretary(y)
+\begin_inset Newline newline
+\end_inset
+
+hire(x,y)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\family sans
+否定DRS
+\family default
+は否定記号を前置したDRSを追加します。
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex NegDRS
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+donkey(x)
+\begin_inset Newline newline
+\end_inset
+
+green(x)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+最後に、
+\family sans
+文が上についたDRS
+\family default
+は文字通りボックス表記の上に文を追加します。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace defskip
+\end_inset
+
+
+\begin_inset Flex SDRS
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+A donkey is green
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Argument 2
+status open
+
+\begin_layout Plain Layout
+x
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+donkey(x)
+\begin_inset Newline newline
+\end_inset
+
+green(x)
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\emph on
+drs
+\emph default
+パッケージはDRSボックスのレイアウトと表示をカスタマイズする方法をいくつか提供しています。
+詳細はパッケージ説明書
+\begin_inset CommandInset citation
+LatexCommand cite
+key "drs"
+literal "false"
+
+\end_inset
+
+を参照してください。
 
 \end_layout
 
@@ -1224,7 +2825,9 @@ lingmeaning
 \end_layout
 
 \begin_layout Standard
-\SpecialChar LyX
+伝統的な\SpecialChar LaTeX
+やPDF\SpecialChar LaTeX
+を使用している場合、\SpecialChar LyX
 のIPAサポートを利用するには、\SpecialChar LaTeX
 パッケージ
 \emph on
@@ -1238,8 +2841,100 @@ literal "true"
 
 \end_inset
 
-が必要です。
-加えて自動プレビューを必要とするなら、
+が必要ですが、以下に説明している手順に従えば、\SpecialChar LyX
+はこれを自動的に読み込みます。
+Unicodeフォントを使用する場合には（すなわち
+\family sans
+文書\SpecialChar menuseparator
+設定\SpecialChar menuseparator
+フォント
+\family default
+で「非\SpecialChar TeX
+フォントを使用」をクリックしていれば）、代わりに
+\emph on
+xunicode
+\emph default
+パッケージが読み込まれます（
+\emph on
+tipa
+\emph default
+はこの文脈では動作しないため）
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+https://github.com/wspr/fontspec/issues/280とdocutils-develでの議論（https://www.mail-archive.com/search?l=mid&q=1487664738.2405.6.camel%40lyx.org）も参照してください。
+
+\end_layout
+
+\end_inset
+
+。
+
+\emph on
+xunicode
+\emph default
+パッケージは
+\emph on
+tipa
+\emph default
+の出力をエミュレートしますが完璧ではなく、ものによっては期待通りに表示されないかもしれません。
+さらに、この場合、（
+\emph on
+CMU Serif
+\emph default
+や
+\emph on
+SIL Doulos
+\emph default
+のような）IPAグリフを含むフォントを使うように注意しなくてはなりません。
+
+\family sans
+文書\SpecialChar menuseparator
+設定\SpecialChar menuseparator
+LaTeXプリアンブル
+\family default
+に次のように追記してIPA専用にフォントを指定することもできます。
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "language={[LaTeX]TeX},basicstyle={\footnotesize\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+\backslash
+AtBeginDocument{%
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+newfontfamily{
+\backslash
+ipafont}{CMU Serif}% or another font
+\end_layout
+
+\begin_layout Plain Layout
+
+\backslash
+def
+\backslash
+useTIPAfont{
+\backslash
+ipafont}
+\end_layout
+
+\begin_layout Plain Layout
+}
+\end_layout
+
+\end_inset
+
+さらに、上記のアプローチのいずれを用いるかに関わらず、自動プレビューが欲しい場合には、
 \emph on
 preview-latex
 \emph default
@@ -1251,195 +2946,114 @@ literal "true"
 
 \end_inset
 
-
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-
-\lang english
-If you use traditional \SpecialChar LaTeX
- or PDF\SpecialChar LaTeX
-,
- a prerequisite to use \SpecialChar LyX
-'s IPA support is the \SpecialChar LaTeX
- package 
-\emph on
-tipa
-\emph default
- 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "tipa"
-literal "true"
-
-\end_inset
-
-,
- which is automatically loaded by \SpecialChar LyX
- if you follow the procedure described below.
- If you use Xe\SpecialChar TeX
- or Lua\SpecialChar TeX
- (i.
-\begin_inset space \thinspace{}
-\end_inset
-
-e.,
- if you have clicked 
-\begin_inset Quotes eld
-\end_inset
-
-Use non-\SpecialChar TeX
- fonts
-\begin_inset Quotes erd
-\end_inset
-
- in 
-\family sans
-Document\SpecialChar menuseparator
-Settings\SpecialChar menuseparator
-Fonts
-\family default
-),
- the package 
-\emph on
-xunicode
-\emph default
- is loaded instead (since 
-\emph on
-tipa
-\emph default
- does not work in this context).
- The 
-\emph on
-xunicode
-\emph default
- package emulates the 
-\emph on
-tipa
-\emph default
- output,
- but is not perfect at that,
- so some things might not look as expected.
- Furthermore,
- you need to take care in this case to use a non-TeX font that includes the IPA glyphs (such as 
-\emph on
-CMU Serif
-\emph default
- or 
-\emph on
-SIL Doulos
-\emph default
-).
- You can also specify an extra font only for IPA by adding the following to 
-\family sans
-Document\SpecialChar menuseparator
-Settings\SpecialChar menuseparator
-LaTeX Preamble
-\family default
-:
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang english
-\begin_inset listings
-lstparams "language={[LaTeX]TeX},basicstyle={\footnotesize\ttfamily}"
-inline false
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-AtBeginDocument{%
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-newfontfamily{
-\backslash
-ipafont}{CMU Serif}% or another font
-\end_layout
-
-\begin_layout Plain Layout
-
-
-\backslash
-def
-\backslash
-useTIPAfont{
-\backslash
-ipafont}
-\end_layout
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang english
-Additionally,
- and independent from which of the above approaches you use,
- if you want to have instant preview,
- you should have the 
-\emph on
-preview-latex
-\emph default
- package 
-\begin_inset CommandInset citation
-LatexCommand cite
-key "preview"
-literal "true"
-
-\end_inset
-
- installed.
-\end_layout
-
-\end_inset
-
-を導入しておかなくてはなりません。
+が導入済みである必要があります。
 
 \end_layout
 
 \begin_layout Standard
-発音記号は、
+発音記号を挿入するのに推奨される方法は、
 \family sans
 挿入\SpecialChar menuseparator
 特殊文字\SpecialChar menuseparator
 発音記号
 \family default
-で入れることができます。
-すると小さな枠が現れるので、そこに
+を用いることです。
+すると入力ボックス（\SpecialChar LyX
+用語では「差込枠」）が現れるので、そこに記号を挿入できます。
+このボックスは、小さい断片をインラインで挿入するためにも、発音記号の複数の段落を挿入するためにも用いることができることに注意してください。
+カーソルがボックス内にある間、ツールバーが開き、発音記号の基本セットが（IPAカテゴリで整序されて）提供されます
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+現在、記号が一つありません（2005年にIPAに追加されたlabiodental flap）。
+この記号は
 \emph on
 tipa
 \emph default
-説明書に説明されている短絡表記で記号を挿入します。
-例：
+パッケージでサポートされていないので、LyXでサポートすることができません。
 
-\begin_inset Formula $\text{\textipa{[Ekspl@"neIS@n]}}$
+\end_layout
+
 \end_inset
 
-（
-\emph on
-tipa
-\emph default
-短絡表記：
+。
+各ツールバーパネルは上部にある点線をクリックすることでバーから切り離すことができます。
+これによって、ほとんどの記号をきわめて快適に入力することができます
+\begin_inset IPA
 
-\family typewriter
-[Ekspl@"neIS@n
+\begin_layout Standard
+[l
+\begin_inset IPADeco bottomtiebar
+status open
+
+\begin_layout Plain Layout
+ai
+\end_layout
+
+\end_inset
+
+k ðɪs]
+\end_layout
+
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+発音区別符号を挿入したい場合、ベースとなる文字の
+\emph on
+後に
+\emph default
+発音区別符号を挿入することに注意してください。
+たとえば、
+\begin_inset IPA
+
+\begin_layout Standard
+[d̥]
+\end_layout
+
+\end_inset
+
+を得るには、
+\family sans
+<d>
 \family default
-]）。
+を挿入してから
+\family sans
+<voiceless>
+\family default
+下丸発音区別符号をツールバーから
+\family sans
+<d>
+\family default
+の直後に入れます。
+発音区別符号のみが必要な時は、
+\begin_inset IPA
+
+\begin_layout Standard
+̼
+\end_layout
+
+\end_inset
+
+ (
+\family typewriter
+=
+\begin_inset space ~
+\end_inset
+
+<space>+<Linguolabial from the IPA toolbar>
+\family default
+)のように空白を挿入して発音区別符号を挿入することで実現できます。
+
+\end_layout
+
+\end_inset
+
+。
 
 \emph on
 preview-latex
@@ -1450,48 +3064,55 @@ preview-latex
 設定\SpecialChar menuseparator
 表示
 \family default
-で）有効にしてあれば、カーソルを枠から出すとすぐに、きれいなプレビューを見ることができます。
-
-\end_layout
+で）有効にしてあれば、カーソルを枠から出すとすぐに、きれいなWYSIWYGプレビューを見ることができます。
+ツールバー以外に、
+\emph on
+tipa
+\emph default
+説明書に説明されているように、ショートカット表記を直接入力することで記号を挿入することができます：
+here's 
+\begin_inset IPA
 
 \begin_layout Standard
-さらに、ほとんどのIPAグリフを（
+[@n Ig"zA:mpl]
+\end_layout
+
+\end_inset
+
+（
+\emph on
+tipa
+\emph default
+ショートカット表記：
+
+\family typewriter
+[@n Ig"zA:mpl
+\family default
+]）。
+さらに、記号は
 \family sans
 挿入\SpecialChar menuseparator
 特殊文字\SpecialChar menuseparator
 記号\SpecialChar ldots
 
 \family default
-で）挿入したり、[ɛkspləˈneɪʃən]のように直接\SpecialChar LyX
-に貼り付けたりすることもできます。
-出力中では、これらは正しい
-\emph on
-tipa
-\emph default
-マクロに自動的に変換されます（そうならなければ私に知らせてください）。
-しかしながら、以下の二つの理由から、前者の方法の方が良質の出力を生成することに注意してください。
-
-\end_layout
-
-\begin_layout Enumerate
-直接入力すると、フォントがばらばらになる可能性があります（上例では、ラテン文字は基本フォントから採られ、IPAグリフはIPAフォントから採られていますが、
-\family sans
-挿入\SpecialChar menuseparator
-特殊文字\SpecialChar menuseparator
-発音記号
-\family default
-で入れると、すべての文字にIPAフォントが使われます）。
-
-\end_layout
-
-\begin_layout Enumerate
-文字のカーニングは保持されません。
+で挿入したり、unicodeにエンコードされたテキストを（たとえば他のアプリケーションから）ボックス内に貼り付けたりすることもできます。
+どのような入力方法でも出力は同じです。
 
 \end_layout
 
 \begin_layout Standard
-したがって、単一のIPA文字を入れるだけでいいのでなければ、前者の方法が推奨されます。
-それに、（かなり直感的な）IPA短絡表記は学んでおくに値します。
+特定のIPA入力ボックスの外でも、ほとんどのIPAグリフを挿入したり貼り付けたりすることができることに注意してください：
+[əz ʃəʊn hɪə]。
+出力中では、これらは正しい
+\emph on
+tipa
+\emph default
+マクロに自動的に変換されます（そうならなければ私たちに知らせてください）。
+しかしながら、この方法では劣った出力品質しか得られないことに注意してください。
+これは、フォントが混合する可能性が高いからです（ラテン文字は基本フォントから採られ、IPAグリフはIPAフォントから採られます）。
+他方、IPA入力ボックス内では、すべての文字にIPAフォントが使われます。
+IPA文字を一つだけ挿入する必要がある場合以外は、IPA入力ボックスを用いることが強く推奨されます。
 
 \end_layout
 
@@ -1528,7 +3149,6 @@ covingtonパッケージ：
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/pkg/covington
 \end_layout
 
@@ -1551,13 +3171,34 @@ csquotesパッケージ：
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/csquotes
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "drs"
+literal "false"
+
+\end_inset
+
+ drsパッケージ：
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.ctan.org/tex-archive/macros/latex/contrib/drs
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Bibliography
@@ -1574,7 +3215,6 @@ enumitemパッケージ：
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/enumitem
 \end_layout
 
@@ -1597,13 +3237,34 @@ floatパッケージ：
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/float
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "forest"
+literal "true"
+
+\end_inset
+
+forestパッケージ：
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.ctan.org/tex-archive/graphics/pgf/contrib/forest
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Bibliography
@@ -1623,13 +3284,34 @@ Maria Gouskova,
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/LyX/LinguistLyX
 \end_layout
 
 \end_inset
 
-.
+
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "pict2e"
+literal "false"
+
+\end_inset
+
+pict2eパッケージ：
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.ctan.org/tex-archive/macros/latex/contrib/pict2e
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
@@ -1646,7 +3328,6 @@ preview-latexパッケージ：
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/preview
 \end_layout
 
@@ -1669,13 +3350,56 @@ tipaパッケージおよびフォント：
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/fonts/tipa
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "varwidth"
+literal "false"
+
+\end_inset
+
+varwidthパッケージ：
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.ctan.org/tex-archive/macros/latex/contrib/varwidth
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "zref-clever"
+literal "false"
+
+\end_inset
+
+zref-cleverパッケージ：
+
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+https://www.ctan.org/tex-archive/macros/latex/contrib/zref-clever
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \end_body
