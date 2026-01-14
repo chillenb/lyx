@@ -1,8 +1,8 @@
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass[jreport]{Japanese Report (Standard Class)}
-#  \DeclareCategory{Reports}
+#  \DeclareLaTeXClass[jreport]{Japanese Report (Standard Class, non-UTF8, obsolete)}
+#  \DeclareCategory{Obsolete}
 # Japanese report textclass definition file.
-# Author : Koji Yokota (yokota6@gmail.com)
+# Author : Koji Yokota (yokota@lyx.org)
 
 # This style provides japanese features 
 Format 114

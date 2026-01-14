@@ -1,7 +1,7 @@
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass[jbook]{Japanese Book (Standard Class, non-UTF8, obsolete)}
-#  \DeclareCategory{Obsolete}
-# Japanese book textclass definition file.
+#  \DeclareLaTeXClass[ujreport]{Japanese Report (Standard Class)}
+#  \DeclareCategory{Reports}
+# Japanese report textclass definition file.
 # Author : Koji Yokota (yokota@lyx.org)
 
 # This style provides japanese features 
@@ -9,4 +9,4 @@ Format 114
 Provides japanese 1
 
 # Input general definitions
-Input book.layout
+Input report.layout

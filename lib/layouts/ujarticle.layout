@@ -1,6 +1,6 @@
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass[jarticle]{Japanese Article (Standard Class, non-UTF8, obsolete)}
-#  \DeclareCategory{Obsolete}
+#  \DeclareLaTeXClass[ujarticle]{Japanese Article (Standard Class)}
+#  \DeclareCategory{Articles}
 # Japanese article textclass definition file.
 # Author : Koji Yokota (yokota@lyx.org)
 
