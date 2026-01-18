@@ -2078,7 +2078,7 @@ void BufferParams::validate(LaTeXFeatures & features) const
 namespace{
 
 /// This function checks whether the catcode of @
-/// is `other' (11) rather than `letter' (11)
+/// is `other' (12) rather than `letter' (11)
 /// It also returns the context of the change
 bool isAtOther(docstring const passage, docstring & context)
 {
