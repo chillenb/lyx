@@ -1234,9 +1234,7 @@ int LaTeX::scanLogFile(TeXErrors & terr)
 				// but can be ignored for 'nullfont' (bug 10394).
 				// as well as for ZERO WIDTH NON-JOINER (0x200C) which is
 				// missing in many fonts and output for ligature break (bug 10727).
-				// Since this error only occurs with utf8 output, we can safely assume
-				// that the log file is utf8-encoded
-				docstring const utoken = from_utf8(token);
+				docstring const utoken = from_local8bit(token);
 				if (!contains(utoken, 0x200C)) {
 					retval |= LATEX_ERROR;
 					terr.insertError(0,
