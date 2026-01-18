@@ -27,9 +27,11 @@
 #include "ColorSet.h"
 #include "Converter.h"
 #include "Encoding.h"
+#include "ErrorList.h"
 #include "Format.h"
 #include "IndicesList.h"
 #include "Language.h"
+#include "LaTeX.h"
 #include "LaTeXColors.h"
 #include "LaTeXFeatures.h"
 #include "LaTeXFonts.h"
@@ -2073,6 +2075,52 @@ void BufferParams::validate(LaTeXFeatures & features) const
 }
 
 
+namespace{
+
+/// This function checks whether the catcode of @
+/// is `other' (11) rather than `letter' (11)
+/// It also returns the context of the change
+bool isAtOther(docstring const passage, docstring & context)
+{
+	// we assume `letter' catcode initially
+	bool cc = false;
+	istringstream ss(to_utf8(passage));
+	Lexer lex;
+	lex.setStream(ss);
+	lex.setCommentChar('%');
+	int lineno = lex.lineNumber();
+	int prev_lineno = lineno;
+
+	while (lex.isOK()) {
+		lineno = lex.lineNumber();
+		string token;
+		lex >> token;
+		token = rtrim(token, "%");
+
+		if (lineno == prev_lineno)
+			context += from_ascii(" ");
+		else if (lineno > 0)
+			context += from_ascii("\n");
+		prev_lineno = lineno;
+
+		if (token == "\\makeatletter") {
+			context = from_ascii(token);
+			cc = false;
+			continue;
+		}
+		if (token == "\\makeatother") {
+			context += from_ascii(token);
+			cc = true;
+			continue;
+		}
+		context += from_ascii(token);
+	}
+	return cc;
+}
+
+}// anon namespace
+
+
 bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 			      FileName const & filepath) const
 {
@@ -2767,11 +2815,25 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 	// the text class specific preamble
 	{
 		docstring tmppreamble = features.getTClassPreamble();
-		if (!tmppreamble.empty())
+		if (!tmppreamble.empty()) {
 			atlyxpreamble << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% "
 			                 "Textclass specific LaTeX commands.\n"
 			              << tmppreamble
 			              << '\n';
+			docstring context;
+			if (isAtOther(tmppreamble, context)) {
+				TeXErrors terr;
+	
+				ErrorList & errorList = features.buffer().errorList("Export");
+				errorList.clear();
+				docstring const s = bformat(_("A layout definition sets the catcode of '@' to 12 ('other') "
+							      "in a context where it should remain 11 ('letter'):\n"
+							      "%1$s"
+							      "Please fix or report!"), context);
+				errorList.push_back(ErrorItem(_("Catcode mismatch"), s));
+				features.buffer().bufferErrors(terr, errorList);
+			}
+		}
 	}
 	// suppress date if selected
 	// use \@ifundefined because we cannot be sure that every document class
