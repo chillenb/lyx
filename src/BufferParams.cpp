@@ -2823,7 +2823,7 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 			docstring context;
 			if (isAtOther(tmppreamble, context)) {
 				TeXErrors terr;
-	
+
 				ErrorList & errorList = features.buffer().errorList("Export");
 				errorList.clear();
 				docstring const s = bformat(_("A layout definition sets the catcode of '@' to 12 ('other') "
