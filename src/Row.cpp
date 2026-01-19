@@ -734,7 +734,8 @@ Row::Elements Row::shortenIfNeeded(int const max_width, int const next_width)
 		LATTEST(tail.empty());
 	}
 
-	if (cit != beg && cit->row_flags & NoBreakBefore) {
+	if (cit != beg && (cit->row_flags & NoBreakBefore
+	                   || (cit -1)->row_flags & NoBreakAfter)) {
 		// It is not possible to separate this element from the
 		// previous one. (e.g. VIRTUAL)
 		--cit;
