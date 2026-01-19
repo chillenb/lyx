@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2025-11-28 11:10+0100\n"
-"PO-Revision-Date: 2025-11-28 11:29+0000\n"
+"POT-Creation-Date: 2026-01-18 17:17+0100\n"
+"PO-Revision-Date: 2026-01-18 16:37+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -5331,10 +5331,10 @@ msgstr "&Štýl používateľského rozhrania:"
 #: src/frontends/qt/ui/PrefUi.ui:118
 msgid ""
 "You can override the system's color scheme here if the selected style "
-"supports multiple schemes."
+"supports multiple schemes and the platform theme supports mode switching."
 msgstr ""
-"Tu môžte prepísať farebnú schému systému, ak vybraný štýl podporuje viacero "
-"schém."
+"Ak vybraný štýl podporuje viacero schém a téma platformy podporuje "
+"prepínanie módu, môžete tu prepísať farebnú schému systému."
 
 #: src/frontends/qt/ui/PrefUi.ui:128
 msgid "C&olor scheme:"
@@ -15899,6 +15899,10 @@ msgid "Bousen"
 msgstr "Bousen"
 
 #: lib/layouts/jarticle.layout:3
+msgid "Japanese Article (Standard Class, non-UTF8, obsolete)"
+msgstr "Japonský článok (Štandardná trieda,nie-UTF8, zastaraná)"
+
+#: lib/layouts/jarticle.layout:3
 msgid "Japanese Article (Standard Class)"
 msgstr "Japonský článok (Štandardná trieda)"
 
@@ -15933,6 +15937,10 @@ msgstr "Predtlač číslo:"
 #: lib/layouts/jasatex.layout:305 lib/layouts/jasatex.layout:309
 msgid "Online citation"
 msgstr "Online citát"
+
+#: lib/layouts/jbook.layout:3
+msgid "Japanese Book (Standard Class, non-UTF8, obsolete)"
+msgstr "Japonská kniha (Štandardná trieda, nie-UTF8, zastaraná)"
 
 #: lib/layouts/jbook.layout:3
 msgid "Japanese Book (Standard Class)"
@@ -16093,6 +16101,10 @@ msgstr "Odstup medzi znakmi sa tu môže naztaviť."
 #: lib/layouts/jlreq-report.layout:3
 msgid "Japanese Report (JLReq Class)"
 msgstr "Japonský referát (JLReq trieda)"
+
+#: lib/layouts/jreport.layout:3
+msgid "Japanese Report (Standard Class, non-UTF8, obsolete)"
+msgstr "Japonský referát (Štandardná trieda, nie-UTF8, zastaraná)"
 
 #: lib/layouts/jreport.layout:3
 msgid "Japanese Report (Standard Class)"
@@ -16402,22 +16414,6 @@ msgstr "príklad"
 #: lib/layouts/theorems-without-preamble.inc:263 lib/layouts/theorems.inc:248
 msgid "examples"
 msgstr "príklady"
-
-#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-msgid "Example (##)"
-msgstr "Príklad (##)"
-
-#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-msgid "example (##)"
-msgstr "príklad (##)"
-
-#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-msgid "Examples (##)"
-msgstr "Príklady (##)"
-
-#: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-msgid "examples (##)"
-msgstr "príklady (##)"
 
 #: lib/layouts/linguistics.module:27 lib/layouts/linguistics.module:112
 msgid "Subexample"
@@ -34173,6 +34169,21 @@ msgstr ""
 "\n"
 "Vyberte vhodné kódovanie dokumentu (napr. utf8)\n"
 "alebo zmeňte primerane triedne voľby."
+
+#: src/BufferParams.cpp:2829
+#, c-format
+msgid ""
+"A layout definition sets the catcode of '@' to 12 ('other') in a context "
+"where it should remain 11 ('letter'):\n"
+"%1$sPlease fix or report!"
+msgstr ""
+"Definícia schémy nastavuje kód (catcode) od „@“ na 12 („iné“) v kontexte, "
+"kde by mal zostať 11 („písmeno“):\n"
+"%1$s Prosím, opravte alebo nahláste!"
+
+#: src/BufferParams.cpp:2833
+msgid "Catcode mismatch"
+msgstr "Catcode nesúhlad"
 
 #: src/BufferParams.cpp:2815
 msgid "Uncodable character in user preamble"
