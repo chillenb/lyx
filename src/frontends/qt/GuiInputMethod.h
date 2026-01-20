@@ -134,6 +134,7 @@ public Q_SLOTS:
 	/// Handles the localeChanged() signal the input method emits
 	void onLocaleChanged();
 	void onCursorPositionChanged();
+	void onBufferViewChanged();
 #ifdef Q_DEBUG
 	///
 	void setHint(InputMethod::Hint hint) override;

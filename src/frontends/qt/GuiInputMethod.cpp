@@ -111,6 +111,8 @@ GuiInputMethod::GuiInputMethod(GuiWorkArea *parent)
 	        this, &GuiInputMethod::onLocaleChanged);
 	connect(this, &GuiInputMethod::cursorPositionChanged,
 	        this, &GuiInputMethod::onCursorPositionChanged);
+	connect(parent, &GuiWorkArea::bufferViewChanged,
+	        this, &GuiInputMethod::onBufferViewChanged);
 
 	// initialize locale status
 	onLocaleChanged();
@@ -326,6 +328,12 @@ void GuiInputMethod::onCursorPositionChanged()
 		d->anchor_pos_ = d->cur_->realAnchor().pos();
 
 	setSurroundingText(*d->cur_);
+}
+
+void GuiInputMethod::onBufferViewChanged()
+{
+	d->buffer_view_ = &d->work_area_->bufferView();
+	d->cur_ = &d->buffer_view_->cursor();
 }
 
 
