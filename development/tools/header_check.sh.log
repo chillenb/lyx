@@ -25,6 +25,7 @@ suspicious: ./DocIterator.h::#include <algorithm> // std::min in MSVC 2017
 ./KeySequence.h::#include <string>
 ./LaTeX.h::#include <vector>
 ./LaTeX.h::#include <set>
+./Language.h::#include "support/docstring.h"
 ./Layout.h::#include "support/docstring.h"
 ./LayoutFile.h::#include <string>
 ./LayoutFile.h::#include <vector>
@@ -36,6 +37,7 @@ suspicious: ./DocIterator.h::#include <algorithm> // std::min in MSVC 2017
 ./MetricsInfo.h::#include <string>
 ./ParIterator.h::#include "support/types.h"
 ./Paragraph.h::#include "LayoutEnums.h"
+./Paragraph.h::#include "support/types.h"
 ./Paragraph.h::#include <set>
 ./Paragraph.h::#include <vector>
 ./ParagraphMetrics.h::#include "Dimension.h"
@@ -49,6 +51,7 @@ suspicious: ./DocIterator.h::#include <algorithm> // std::min in MSVC 2017
 ./Server.h::#include <QEvent>
 ./ServerSocket.h::#include <string>
 ./Session.h::#include <string>
+./SpecialChar.h::#include "support/docstring.h"
 ./Statistics.h::#include "support/docstring.h"
 ./Statistics.h::#include "support/types.h"
 ./TextClass.h::#include "FontInfo.h"
@@ -343,7 +346,6 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./BufferView.cpp::#include <iterator>
 ./BufferView.cpp::#include <sstream>
 ./BufferView.cpp::#include <vector>
-./Bullet.cpp::#include "support/lassert.h"
 ./Changes.cpp::#include "Changes.h"
 ./Changes.cpp::#include "Color.h"
 ./Changes.cpp::#include "OutputParams.h"
@@ -423,6 +425,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./Encoding.cpp::#include <iterator>
 ./Encoding.cpp::#include <sstream>
 ./FloatList.cpp::#include "Floating.h"
+./Floating.cpp::#include <set>
 ./Font.cpp::#include "Language.h"
 ./Font.cpp::#include "OutputParams.h"
 ./Font.cpp::#include "texstream.h"
@@ -524,6 +527,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./Paragraph.cpp::#include "texstream.h"
 ./Paragraph.cpp::#include "TexRow.h"
 ./Paragraph.cpp::#include "Text.h"
+./Paragraph.cpp::#include "TextClass.h"
 ./Paragraph.cpp::#include "WordLangTuple.h"
 ./Paragraph.cpp::#include "insets/InsetText.h"
 ./Paragraph.cpp::#include <atomic>
@@ -571,6 +575,8 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./Text.cpp::#include "LyX.h"
 ./Text.cpp::#include "Paragraph.h"
 ./Text.cpp::#include "SpellChecker.h"
+./Text.cpp::#include "TextClass.h"
+./Text.cpp::#include "Undo.h"
 ./Text.cpp::#include "WordLangTuple.h"
 ./Text.cpp::#include "frontends/Clipboard.h"
 ./Text.cpp::#include "insets/Inset.h"
@@ -666,6 +672,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./frontends/qt/GuiAbout.cpp::#include "support/filetools.h"
 ./frontends/qt/GuiAlert.cpp::#include "support/docstring.h"
 ./frontends/qt/GuiAlert.cpp::#include <QLineEdit>
+./frontends/qt/GuiAlert.cpp::#include <QOperatingSystemVersion>
 ./frontends/qt/GuiAlert.cpp::#include <iomanip>
 ./frontends/qt/GuiAlert.cpp::#include <iostream>
 ./frontends/qt/GuiApplication.cpp::#include "frontends/Application.h"
@@ -859,6 +866,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./frontends/qt/GuiPrefs.cpp::#include "GuiFontExample.h"
 ./frontends/qt/GuiPrefs.cpp::#include "Color.h"
 ./frontends/qt/GuiPrefs.cpp::#include "ColorSet.h"
+./frontends/qt/GuiPrefs.cpp::#include "FontEnums.h"
 ./frontends/qt/GuiPrefs.cpp::#include "FuncRequest.h"
 ./frontends/qt/GuiPrefs.cpp::#include "KeySequence.h"
 ./frontends/qt/GuiPrefs.cpp::#include "LengthCombo.h"
@@ -1266,8 +1274,6 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./insets/InsetNewline.cpp::#include "Dimension.h"
 ./insets/InsetNewline.cpp::#include "support/docstream.h"
 ./insets/InsetNewline.cpp::#include "support/docstring.h"
-./insets/InsetNewpage.cpp::#include "support/docstring.h"
-./insets/InsetNewpage.cpp::#include "support/docstream.h"
 ./insets/InsetNomencl.cpp::#include "DispatchResult.h"
 ./insets/InsetNomencl.cpp::#include "Font.h"
 ./insets/InsetNomencl.cpp::#include "FuncRequest.h"
@@ -1313,6 +1319,9 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./insets/InsetSpace.cpp::#include "support/docstream.h"
 ./insets/InsetSpace.cpp::#include "support/Length.h"
 ./insets/InsetSpecialChar.cpp::#include "Dimension.h"
+./insets/InsetSpecialChar.cpp::#include "Font.h"
+./insets/InsetSpecialChar.cpp::#include "Language.h"
+./insets/InsetSpecialChar.cpp::#include "texstream.h"
 ./insets/InsetSpecialChar.cpp::#include "frontends/Painter.h"
 ./insets/InsetSpecialChar.cpp::#include "support/docstream.h"
 ./insets/InsetTOC.cpp::#include "DispatchResult.h"
@@ -1354,6 +1363,9 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./insets/InsetText.cpp::#include "support/FileName.h"
 ./insets/InsetText.cpp::#include <algorithm>
 ./insets/InsetText.cpp::#include <stack>
+./insets/InsetTextbreak.cpp::#include "Paragraph.h"
+./insets/InsetTextbreak.cpp::#include "support/docstring.h"
+./insets/InsetTextbreak.cpp::#include "support/docstream.h"
 ./insets/InsetVSpace.cpp::#include "Dimension.h"
 ./insets/InsetVSpace.cpp::#include "DispatchResult.h"
 ./insets/InsetVSpace.cpp::#include "support/docstream.h"
@@ -1847,7 +1859,6 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./xml.cpp::#include <functional>
 Following are strong candidates from above for removal:
 filtered: ./Buffer.cpp : LayoutFile_h
-filtered: ./Bullet.cpp : lassert_h
 filtered: ./Changes.cpp : lassert_h
 filtered: ./EnchantChecker.cpp : lassert_h
 filtered: ./Graph.cpp : lassert_h
