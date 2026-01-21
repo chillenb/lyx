@@ -16,7 +16,6 @@
 
 
 #include "Inset.h"
-#include "Font.h"
 
 #include "TextClass.h"
 

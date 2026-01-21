@@ -24,7 +24,6 @@
 #include "ParIterator.h"
 #include "PDFOptions.h"
 #include "Statistics.h"
-#include "TextClass.h"
 #include "xml.h"
 #include "texstream.h"
 #include "TocBackend.h"

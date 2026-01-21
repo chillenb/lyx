@@ -17,7 +17,6 @@
 #include "BufferParams.h"
 #include "BufferList.h"
 #include "BufferView.h"
-#include "Cursor.h"
 #include "Paragraph.h"
 #include "TextClass.h"
 

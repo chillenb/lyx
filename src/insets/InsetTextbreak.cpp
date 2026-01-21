@@ -18,7 +18,6 @@
 #include "FuncRequest.h"
 #include "FuncStatus.h"
 #include "MetricsInfo.h"
-#include "Paragraph.h"
 #include "ParIterator.h"
 #include "Text.h"
 #include "xml.h"
