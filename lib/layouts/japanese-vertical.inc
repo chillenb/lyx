@@ -5,6 +5,9 @@
 # - tarticle
 # - tbook
 # - treport
+# - utarticle
+# - utbook
+# - utreport
 
 Format 114
 InsetLayout Flex:Rensuji

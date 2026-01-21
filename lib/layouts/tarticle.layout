@@ -1,8 +1,8 @@
 #% Do not delete the line below; configure depends on this
-#  \DeclareLaTeXClass[tarticle,plext.sty]{Japanese Article (Standard Class, vertical Writing)}
-#  \DeclareCategory{Articles}
+#  \DeclareLaTeXClass[tarticle,plext.sty]{Japanese Article (Standard Class, vertical writing, non-UTF8, obsolete)}
+#  \DeclareCategory{Obsolete}
 # Definition file of Japanese article textclass for vertical writing.
-# Author : Koji Yokota (yokota6@gmail.com)1
+# Author : Koji Yokota (yokota@lyx.org)
 
 # This style provides japanese features 
 Format 114

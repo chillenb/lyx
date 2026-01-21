@@ -1,5 +1,5 @@
 #LyX 2.5 created this file. For more info see https://www.lyx.org/
-\lyxformat 638
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -52,7 +52,7 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
+\justification default
 \crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
@@ -4092,6 +4092,94 @@ Japanese standard classes
 Found:
  
 \family sans
+ujarticle
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "ujarticle"
+\end_inset
+
+,
+ 
+\family sans
+ujreport
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "ujreport"
+\end_inset
+
+,
+ 
+\family sans
+ujbook
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "ujbook"
+\end_inset
+
+,
+ 
+\family sans
+utarticle
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "utarticle"
+\end_inset
+
+,
+ 
+\family sans
+utreport
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "utreport"
+\end_inset
+
+,
+ 
+\family sans
+utbook
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "utbook"
+\end_inset
+
+,
+\begin_inset Newline newline
+\end_inset
+
+(
+\family sans
+obsolete classes:
+ jarticle
+\family default
+:
+ 
+\begin_inset Info
+type  "textclass"
+arg   "jarticle"
+\end_inset
+
+,
+ 
+\family sans
 jreport
 \family default
 :
@@ -4149,7 +4237,7 @@ type  "textclass"
 arg   "tbook"
 \end_inset
 
-
+)
 \end_layout
 
 \begin_layout Description
@@ -4181,7 +4269,7 @@ book
 \begin_inset Quotes eld
 \end_inset
 
-t-
+ut-
 \begin_inset Quotes erd
 \end_inset
 

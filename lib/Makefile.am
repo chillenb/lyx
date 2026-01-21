@@ -3169,6 +3169,12 @@ dist_layouts_DATA =\
 	layouts/treport.layout \
 	layouts/tufte-book.layout \
 	layouts/tufte-handout.layout \
+	layouts/ujarticle.layout \
+	layouts/ujbook.layout \
+	layouts/ujreport.layout \
+	layouts/utarticle.layout \
+	layouts/utbook.layout \
+	layouts/utreport.layout \
 	layouts/varwidth.module
 
 citeenginesdir = $(pkgdatadir)/citeengines
