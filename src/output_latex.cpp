@@ -861,9 +861,14 @@ void TeXOnePar(Buffer const & buf,
 	// This paragraph is merged and we do not show changes in the output
 	bool const merged_par = !bparams.output_changes && par.parEndChange().deleted();
 
-	if (text.inset().isPassThru()) {
-		Font const outerfont = text.outerFont(pit);
+	// If we are inside an inset that does not inherit font,
+	// the outerfont is the buffer's main font, otherwise
+	// the (top-level) environment's font
+	Font const outerfont = par.inInset().inheritFont()
+			? text.outerFont(pit)
+			: Font(bparams.getFont());
 
+	if (text.inset().isPassThru()) {
 		// No newline before first paragraph in this lyxtext
 		if (pit > 0 && !text.inset().getLayout().parbreakIgnored() && !merged_par) {
 			os << '\n';
@@ -886,7 +891,6 @@ void TeXOnePar(Buffer const & buf,
 		state->nest_level_ += 1;
 
 	if (style.pass_thru) {
-		Font const outerfont = text.outerFont(pit);
 		parStartCommand(par, os, runparams, style);
 		if (style.isCommand() && style.needprotect)
 			// Due to the moving argument, some fragile
@@ -1240,8 +1244,6 @@ void TeXOnePar(Buffer const & buf,
 			runparams.postpone_fragile_stuff =
 				bparams.postpone_fragile_content;
 	}
-
-	Font const outerfont = text.outerFont(pit);
 
 	// FIXME UNICODE
 	os << from_utf8(everypar);
