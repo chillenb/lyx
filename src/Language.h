@@ -44,6 +44,8 @@ public:
 				 use_babel_provide_(0){}
 	/// LyX language name
 	std::string const lang() const { return lang_; }
+	/// Change language name; needed for AltLang
+	void setLanguageName(std::string const & l) { lang_ = l; }
 	/// Babel language name
 	std::string const babel() const { return babel_; }
 	/// babel language options
@@ -66,6 +68,10 @@ public:
 	std::string const quoteStyle() const { return quote_style_; }
 	/// active characters
 	std::string const activeChars() const { return active_chars_; }
+	/// fallback language
+	std::string const altLang() const { return alt_lang_; }
+	/// requirement (package, function)
+	std::string const altLangIfNotProvided() const { return alt_lang_if_not_; }
 	/// requirement (package, function)
 	std::string const required() const { return required_; }
 	/// provides feature
@@ -116,7 +122,7 @@ public:
 	/// Is this language supported by a specific package?
 	bool supportedBy(std::string const & package) const;
 	///
-	bool read(support::Lexer & lex);
+	bool read(support::Lexer & lex, std::string const lang);
 	///
 	bool readLanguage(support::Lexer & lex);
 	///
@@ -148,6 +154,10 @@ private:
 	trivstring quote_style_;
 	///
 	trivstring active_chars_;
+	///
+	trivstring alt_lang_;
+	///
+	trivstring alt_lang_if_not_;
 	///
 	trivstring required_;
 	///
@@ -231,6 +241,8 @@ public:
 private:
 	///
 	LanguageList languagelist_;
+	///
+	LanguageList altlanguagelist_;
 };
 
 /// Global singleton instance.

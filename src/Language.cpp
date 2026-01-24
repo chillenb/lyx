@@ -17,6 +17,7 @@
 
 #include "BufferParams.h"
 #include "Encoding.h"
+#include "LaTeXFeatures.h"
 #include "LaTeXFonts.h"
 #include "LyXRC.h"
 
@@ -166,12 +167,16 @@ bool Language::readLanguage(Lexer & lex)
 		LA_RTL,
 		LA_SPECIALCHARS,
 		LA_WORDWRAP,
-		LA_ACTIVECHARS
+		LA_ACTIVECHARS,
+		LA_ALTLANG,
+		LA_ALTLANG_IF_NOT
 	};
 
 	// Keep these sorted alphabetically!
 	LexerKeyword languageTags[] = {
 		{ "activechars",          LA_ACTIVECHARS },
+		{ "altlangifnot",         LA_ALTLANG_IF_NOT },
+		{ "altlanguage",          LA_ALTLANG },
 		{ "babelname",            LA_BABELNAME },
 		{ "babeloptformat",       LA_BABELOPTFORMAT },
 		{ "babelopts",            LA_BABELOPTS },
@@ -250,6 +255,9 @@ bool Language::readLanguage(Lexer & lex)
 		case LA_ACTIVECHARS:
 			lex >> active_chars_;
 			break;
+		case LA_ALTLANG:
+			lex >> alt_lang_;
+			break;
 		case LA_ENCODING:
 			lex >> encodingStr_;
 			break;
@@ -296,6 +304,9 @@ bool Language::readLanguage(Lexer & lex)
 		case LA_REQUIRES:
 			lex >> required_;
 			break;
+		case LA_ALTLANG_IF_NOT:
+			lex >> alt_lang_if_not_;
+			break;
 		case LA_PROVIDES:
 			lex >> provides_;
 			break;
@@ -322,18 +333,13 @@ bool Language::readLanguage(Lexer & lex)
 }
 
 
-bool Language::read(Lexer & lex)
+bool Language::read(Lexer & lex, std::string const lang)
 {
+	lang_ = lang;
 	encoding_ = nullptr;
 	internal_enc_ = false;
 	rightToLeft_ = false;
 
-	if (!lex.next()) {
-		lex.printError("No name given for language: `$$Token'.");
-		return false;
-	}
-
-	lang_ = lex.getString();
 	LYXERR(Debug::INFO, "Reading language " << lang_);
 	if (!readLanguage(lex)) {
 		LYXERR0("Error parsing language `" << lang_ << '\'');
@@ -404,12 +410,29 @@ void Languages::read(FileName const & filename)
 		default:
 			break;
 		}
-		if (lex.getString() != "Language") {
+		string const token = lex.getString();
+		bool altlang = false;
+		if (token == "AltLanguage")
+			altlang = true;
+		else if (token != "Language") {
 			lex.printError("Unknown Language tag `$$Token'");
 			continue;
 		}
+		if (!lex.next()) {
+			lex.printError("No name given for language: `$$Token'.");
+			break;
+		}
+		string const lang = lex.getString();
 		Language l;
-		l.read(lex);
+		if (altlang) {
+			for (auto const & ll : languagelist_) {
+				if (ll.second.altLang() == lang) {
+					l = ll.second;
+					break;
+				}
+			}
+		}
+		l.read(lex, lang);
 		if (!lex)
 			break;
 		if (l.lang() == "latex") {
@@ -422,8 +445,25 @@ void Languages::read(FileName const & filename)
 			LASSERT(ignore_language == nullptr, continue);
 			static const Language ignore_lang = l;
 			ignore_language = &ignore_lang;
-		} else
-			languagelist_[l.lang()] = l;
+		} else {
+			if (altlang)
+				altlanguagelist_[l.lang()] = l;
+			else
+				languagelist_[l.lang()] = l;
+		}
+	}
+
+	// check fallbacks
+	for (auto const & l : languagelist_) {
+		if (!l.second.altLangIfNotProvided().empty() && !l.second.altLang().empty()) {
+			if (!LaTeXFeatures::isAvailable(l.second.altLangIfNotProvided())
+			    && altlanguagelist_.find(l.second.altLang()) != altlanguagelist_.end()) {
+				// use alt. lang and set its name to that of orig lang
+				Language altlang = altlanguagelist_[l.second.altLang()];
+				altlang.setLanguageName(l.first);
+				languagelist_[l.first] = altlang;
+			}
+		}
 	}
 
 	default_language = getLanguage("english");

@@ -38,6 +38,8 @@
 #       SpecialChar
 #          <SpecialChar definitions>
 #       End
+#       AltLanguage       <fallback language name>
+#       AltLangIfNot      <requirement>
 # End
 #
 #
@@ -152,6 +154,11 @@
 # * SupportedBy indicates whether a specific package provides localization
 #   for the given language. This is currently used for the cross-reference
 #   packages (cleveref, refstyle, zref).
+# * You can define a fallback language with AltLanguage (instead of Language)
+#   and request it in a Language via "AltLanguage <altlanguagename>" if the
+#   requirement specified in "AltLangIfNot <requirement>" is not met.
+#   AltLanguage inherits the settings of the corresponding Language if the
+#   latter is defined first.
 #
 ##########################################################################
 
@@ -370,8 +377,8 @@ End
 # Due to the variety, we use no country code.
 Language austrian
 	GuiName          "German (Austria, old spelling)"
-	BabelName        austrian
-	BabelOptFormat   modifier
+	BabelName        german-at-1901
+	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=austrian,spelling=old,babelshorthands=true"
 	XindyName        german-duden
@@ -424,13 +431,22 @@ Language austrian
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	AltLanguage austrian-legacy
+	AltLangIfNot babel-german3
+End
+
+# fallback for babel-german < 3.0
+AltLanguage austrian-legacy
+	HasGuiSupport    false
+	BabelName        austrian
+	BabelOptFormat   modifier
 End
 
 # In polyglossia, this is supported since release 1.33.4 (May 2014)
 Language naustrian
 	GuiName          "German (Austria)"
-	BabelName        naustrian
-	BabelOptFormat   modifier
+	BabelName        german-at
+	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=austrian,spelling=new,babelshorthands=true"
 	XindyName        german-duden
@@ -482,6 +498,15 @@ Language naustrian
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	AltLanguage naustrian-legacy
+	AltLangIfNot babel-german3
+End
+
+# fallback for babel-german < 3.0
+AltLanguage naustrian-legacy
+	HasGuiSupport    false
+	BabelName        naustrian
+	BabelOptFormat   modifier
 End
 
 Language azerbaijani
@@ -1072,8 +1097,8 @@ End
 # german does not use a country code (due to the variety)
 Language german
 	GuiName          "German (old spelling)"
-	BabelName        german
-	BabelOptFormat   modifier
+	BabelName        german-de-1901
+	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=german,spelling=old,babelshorthands=true"
 	XindyName        german-duden
@@ -1083,10 +1108,6 @@ Language german
 	DateFormats      "dd. MMMM yyyy|dd. MMM yyyy|dd.MM.yyyy"
 	LangCode         de
 	LangVariety      alt
-	PostBabelPreamble
-	    % We use legacy babel-german terminology
-	    \@ifundefined{germansetup}{}{\germansetup{glottonyms=legacy}}
-	EndPostBabelPreamble
 	SupportedBy      cleveref,refstyle,zref
 	SpecialChar extrasofthyphen
 	    Type	formatting
@@ -1130,13 +1151,22 @@ Language german
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	AltLanguage german-legacy
+	AltLangIfNot babel-german3
+End
+
+# fallback for babel-german < 3.0
+AltLanguage german-legacy
+	HasGuiSupport    false
+	BabelName        german
+	BabelOptFormat   modifier
 End
 
 Language ngerman
 	GuiName          "German"
 	HasGuiSupport    true
-	BabelName        ngerman
-	BabelOptFormat   modifier
+	BabelName        german-de
+	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=german,spelling=new,babelshorthands=true"
 	XindyName        german-duden
@@ -1188,6 +1218,15 @@ Language ngerman
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	AltLanguage ngerman-legacy
+	AltLangIfNot babel-german3
+End
+
+# fallback for babel-german < 3.0
+AltLanguage ngerman-legacy
+	HasGuiSupport    false
+	BabelName        ngerman
+	BabelOptFormat   modifier
 End
 
 # In Babel, this is supported since release 2.7 of babel-german (Dec 2013)
@@ -1196,8 +1235,8 @@ End
 # We introduce it with LyX 2.3 to give the support time to settle.
 Language german-ch
 	GuiName          "German (Switzerland)"
-	BabelName        nswissgerman
-	BabelOptFormat   modifier
+	BabelName        german-ch
+	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=swiss,spelling=new,babelshorthands=true"
 	XindyName        german-duden
@@ -1249,6 +1288,15 @@ Language german-ch
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	AltLanguage german-ch-legacy
+	AltLangIfNot babel-german3
+End
+
+# fallback for babel-german < 3.0
+AltLanguage german-ch-legacy
+	HasGuiSupport    false
+	BabelName        nswissgerman
+	BabelOptFormat   modifier
 End
 
 # In Babel, this is supported since release 2.7 of babel-german (Dec 2013)
@@ -1256,8 +1304,8 @@ End
 # We introduce it with LyX 2.3 to give the support time to settle.
 Language german-ch-old
 	GuiName          "German (Switzerland, old spelling)"
- 	BabelName        swissgerman
-	BabelOptFormat   modifier
+ 	BabelName        german-ch-1901
+	BabelOptFormat   \germansetup{$opts$}
  	PolyglossiaName  german
  	PolyglossiaOpts  "variant=swiss,spelling=old,babelshorthands=true"
 	XindyName        german-duden
@@ -1309,6 +1357,15 @@ Language german-ch-old
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	AltLanguage german-ch-old-legacy
+	AltLangIfNot babel-german3
+End
+
+# fallback for babel-german < 3.0
+AltLanguage german-ch-old-legacy
+	HasGuiSupport    false
+	BabelName        swissgerman
+	BabelOptFormat   modifier
 End
 
 Language greek
