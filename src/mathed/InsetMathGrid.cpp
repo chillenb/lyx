@@ -1582,8 +1582,10 @@ void InsetMathGrid::doDispatch(Cursor & cur, FuncRequest & cmd)
 		}
 		InsetMathGrid grid(buffer_, 1, 1);
 		if (!topaste.empty())
+			// Note that the parser errors on partial grids ending with \\.
+			// We thus strip this
 			if ((topaste.size() == 1 && isAscii(topaste))
-			    || !mathed_parse_normal(grid, topaste, parseflg)) {
+			    || !mathed_parse_normal(grid, rtrim(topaste, "\\\\"), parseflg)) {
 				resetGrid(grid);
 				mathed_parse_normal(grid, topaste, parseflg | Parse::VERBATIM);
 			}
