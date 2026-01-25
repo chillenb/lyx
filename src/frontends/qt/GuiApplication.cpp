@@ -103,6 +103,9 @@
 #include <QMenuBar>
 #include <QMimeData>
 #include <QObject>
+#if defined(Q_OS_MACOS) && QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+#include <QOperatingSystemVersion>
+#endif
 #include <QPainter>
 #include <QPixmap>
 #if (QT_VERSION >= QT_VERSION_CHECK(5, 10, 0))
@@ -1791,6 +1794,14 @@ void GuiApplication::dispatch(FuncRequest const & cmd, DispatchResult & dr)
 		break;
 
 	case LFUN_LYX_QUIT:
+		// Temporary and imperfect fix for SIGABRT at exiting time on macOS
+		// Tahoe. See
+		// https://www.mail-archive.com/lyx-devel@lists.lyx.org/msg225496.html
+		// FIXME: This fix should be removed once the problem is gone.
+#if defined(Q_OS_MACOS) && QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
+		if (QOperatingSystemVersion::current() >= QOperatingSystemVersion(QOperatingSystemVersion::MacOS, 26))
+				std::this_thread::sleep_for(std::chrono::seconds(2));
+#endif
 		// quitting is triggered by the gui code
 		// (leaving the event loop).
 		if (current_view_)
