@@ -377,7 +377,7 @@ End
 # Due to the variety, we use no country code.
 Language austrian
 	GuiName          "German (Austria, old spelling)"
-	BabelName        german-at-1901
+	BabelName        austrian
 	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=austrian,spelling=old,babelshorthands=true"
@@ -445,7 +445,7 @@ End
 # In polyglossia, this is supported since release 1.33.4 (May 2014)
 Language naustrian
 	GuiName          "German (Austria)"
-	BabelName        german-at
+	BabelName        naustrian
 	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=austrian,spelling=new,babelshorthands=true"
@@ -1097,8 +1097,9 @@ End
 # german does not use a country code (due to the variety)
 Language german
 	GuiName          "German (old spelling)"
-	BabelName        german-de-1901
+	BabelName        german
 	BabelOptFormat   \germansetup{$opts$}
+	BabelOpts        glottonyms=legacy
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=german,spelling=old,babelshorthands=true"
 	XindyName        german-duden
@@ -1160,12 +1161,13 @@ AltLanguage german-legacy
 	HasGuiSupport    false
 	BabelName        german
 	BabelOptFormat   modifier
+	BabelOpts        ""
 End
 
 Language ngerman
 	GuiName          "German"
 	HasGuiSupport    true
-	BabelName        german-de
+	BabelName        ngerman
 	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=german,spelling=new,babelshorthands=true"
@@ -1235,7 +1237,7 @@ End
 # We introduce it with LyX 2.3 to give the support time to settle.
 Language german-ch
 	GuiName          "German (Switzerland)"
-	BabelName        german-ch
+	BabelName        nswissgerman
 	BabelOptFormat   \germansetup{$opts$}
 	PolyglossiaName  german
 	PolyglossiaOpts  "variant=swiss,spelling=new,babelshorthands=true"
@@ -1304,7 +1306,7 @@ End
 # We introduce it with LyX 2.3 to give the support time to settle.
 Language german-ch-old
 	GuiName          "German (Switzerland, old spelling)"
- 	BabelName        german-ch-1901
+ 	BabelName        swissgerman
 	BabelOptFormat   \germansetup{$opts$}
  	PolyglossiaName  german
  	PolyglossiaOpts  "variant=swiss,spelling=old,babelshorthands=true"
