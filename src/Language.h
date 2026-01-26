@@ -40,7 +40,7 @@ public:
 	///
 	Language() : rightToLeft_(false), encoding_(0), internal_enc_(false),
 				 has_gui_support_(false), word_wrap_(true),
-	             im_off_in_math_(false),
+				 im_off_in_math_(false),
 				 use_babel_provide_(0){}
 	/// LyX language name
 	std::string const lang() const { return lang_; }
