@@ -3979,7 +3979,7 @@ string BufferParams::babelCall(LaTeXFeatures const & features, string lang_opts,
 	string force_provide;
 	bool have_main_forceprovide = false;
 	bool have_other_forceprovide = useNonTeXFonts
-			? languages.haveOtherForceProvide()
+			? features.haveOtherForceProvide()
 			: false;
 	for (auto const & l : langs) {
 		string blang = l->babel();

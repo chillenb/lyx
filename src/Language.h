@@ -233,8 +233,6 @@ public:
 	const_iterator begin() const { return languagelist_.begin(); }
 	///
 	const_iterator end() const { return languagelist_.end(); }
-	///
-	bool haveOtherForceProvide() const;
 	/// Special characters
 	std::map<std::string, SpecialChar> special_chars_;
 

@@ -1967,7 +1967,7 @@ docstring const LaTeXFeatures::getBabelPostsettings() const
 		if (!lang->babel_postsettings().empty())
 			tmp << lang->babel_postsettings() << '\n';
 		if (lang->babelOptFormat() != "modifier" && lang->useBabelProvide() == 0
-		    && (!params_.useNonTeXFonts || !languages.haveOtherForceProvide())) {
+		    && (!params_.useNonTeXFonts || !haveOtherForceProvide())) {
 			// user-set options
 			string const opts = bufferParams().babelLangOptions(lang->lang());
 			if (!opts.empty())
@@ -1983,6 +1983,16 @@ docstring const LaTeXFeatures::getBabelPostsettings() const
 		return tmp.str();
 
 	return "\\makeatletter\n" + tmp.str() + "\\makeatother\n";
+}
+
+
+bool LaTeXFeatures::haveOtherForceProvide() const
+{
+	for (auto const & l : UsedLanguages_) {
+		if (l->useBabelProvide())
+			return true;
+	}
+	return false;
 }
 
 

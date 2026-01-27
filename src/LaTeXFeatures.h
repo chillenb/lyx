@@ -220,6 +220,8 @@ public:
 	/// mentioned in the Require tag of layouts/custom insets that
 	/// that have not already been accounted for
 	std::string getUnknownPackages() const;
+	///
+	bool haveOtherForceProvide() const;
 
 private:
 	///
