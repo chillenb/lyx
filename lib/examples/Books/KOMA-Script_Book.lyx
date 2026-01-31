@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -68,10 +68,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -97,6 +106,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -106,7 +116,6 @@
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 frontmatter
@@ -122,7 +131,6 @@ frontmatter
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{center}
@@ -151,8 +159,8 @@ half-title
 status collapsed
 
 \begin_layout Plain Layout
-The Extratitle and Frontispiece paragraph styles come with no default formatting
-; so you have to use \SpecialChar TeX
+The Extratitle and Frontispiece paragraph styles come with no default formatting;
+ so you have to use \SpecialChar TeX
  code.
 \end_layout
 
@@ -179,11 +187,10 @@ frontispiece
 status collapsed
 
 \begin_layout Plain Layout
-Normally, a book in a series is preceded by a page listing the other books
- in the series and the series editors.
+Normally,
+ a book in a series is preceded by a page listing the other books in the series and the series editors.
  The Frontispiece paragraph style appears on the back of the half-title;
- so you must have an Extratitle paragraph style before a Frontispiece paragraph
- style.
+ so you must have an Extratitle paragraph style before a Frontispiece paragraph style.
 \end_layout
 
 \end_inset
@@ -209,9 +216,8 @@ series title
 status collapsed
 
 \begin_layout Plain Layout
-If the book is part of a series, add an Extratitle and a Frontispiece paragraph
- style before the title page so that the Frontispiece can hold a list of
- the other books in the series and the series editors.
+If the book is part of a series,
+ add an Extratitle and a Frontispiece paragraph style before the title page so that the Frontispiece can hold a list of the other books in the series and the series editors.
 \end_layout
 
 \end_inset
@@ -307,7 +313,17 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-publisher!name
+publisher
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+name
 \end_layout
 
 \end_inset
@@ -323,7 +339,17 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-publisher!address
+publisher
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+address
 \end_layout
 
 \end_inset
@@ -339,7 +365,17 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-publisher!website
+publisher
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+website
 \end_layout
 
 \end_inset
@@ -398,8 +434,8 @@ status collapsed
 \begin_layout Plain Layout
 
 \size small
-If you use a CC logo here, make sure it is the correct one for the licence
- you have chosen.
+If you use a CC logo here,
+ make sure it is the correct one for the licence you have chosen.
 \end_layout
 
 \end_inset
@@ -420,16 +456,16 @@ The
 \emph on
 author
 \emph default
- has asserted her/his right under the Copyright, Designs and Patents Act
- 1988 to be identified as the author of this book.
+ has asserted her/his right under the Copyright,
+ Designs and Patents Act 1988 to be identified as the author of this book.
 \begin_inset Note Note
 status collapsed
 
 \begin_layout Plain Layout
 
 \size small
-This wording is applicable to the UK; check the correct wording for the
- jurisdiction within which you intend to publish.
+This wording is applicable to the UK;
+ check the correct wording for the jurisdiction within which you intend to publish.
 \end_layout
 
 \end_inset
@@ -447,9 +483,8 @@ This wording is applicable to the UK; check the correct wording for the
 \end_inset
 
 This publication is copyright.
- Subject to statutory exception and to the provisions of relevant collective
- licensing agreements, no reproduction of any part may take place without
- the written permission of the author.
+ Subject to statutory exception and to the provisions of relevant collective licensing agreements,
+ no reproduction of any part may take place without the written permission of the author.
  
 \begin_inset Newline newline
 \end_inset
@@ -478,12 +513,12 @@ status collapsed
 \begin_layout Plain Layout
 
 \size small
-Set out the key features of the licence; see 
+Set out the key features of the licence;
+ see 
 \begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
-
 https://creativecommons.org/about/cclicenses/
 \end_layout
 
@@ -513,7 +548,8 @@ status collapsed
 \begin_layout Plain Layout
 
 \size small
-Add the book’s publication history, if any.
+Add the book’s publication history,
+ if any.
 \end_layout
 
 \end_inset
@@ -570,25 +606,26 @@ status collapsed
 \begin_layout Plain Layout
 
 \size small
-Under the UK Legal Deposit Libraries Act 2003 you must deposit one copy
- of your book with the Legal Deposit Office, The British Library, Boston
- Spa, Wetherby, West Yorkshire LS23 7BY and, if it is sufficiently memorable,
- any of five other libraries in the British Isles may require you to send
- them a free copy within a year of publication.
- For further information, see 
+Under the UK Legal Deposit Libraries Act 2003 you must deposit one copy of your book with the Legal Deposit Office,
+ The British Library,
+ Boston Spa,
+ Wetherby,
+ West Yorkshire LS23 7BY and,
+ if it is sufficiently memorable,
+ any of five other libraries in the British Isles may require you to send them a free copy within a year of publication.
+ For further information,
+ see 
 \begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
-
 https://www.bl.uk/legal-deposit-web-archiving/
 \end_layout
 
 \end_inset
 
 .
- Check the requirements for other jurisdictions within which you intend
- to publish.
+ Check the requirements for other jurisdictions within which you intend to publish.
 \end_layout
 
 \end_inset
@@ -604,7 +641,8 @@ status collapsed
 \begin_layout Plain Layout
 
 \size small
-If you have the data available, insert it here instead.
+If you have the data available,
+ insert it here instead.
 \end_layout
 
 \end_inset
@@ -625,7 +663,8 @@ ISBN
 
 \end_inset
 
-: 978-n-nnnnnnn-n-n
+:
+ 978-n-nnnnnnn-n-n
 \begin_inset Note Note
 status collapsed
 
@@ -638,7 +677,6 @@ Contact
 status open
 
 \begin_layout Plain Layout
-
 https://nielsenbook.co.uk/isbn-agency/
 \end_layout
 
@@ -661,10 +699,9 @@ https://nielsenbook.co.uk/isbn-agency/
 \begin_inset Newline newline
 \end_inset
 
-The publisher has no responsibility for the persistence or accuracy of URIs
- for external or third party websites referred to in this book and does
- not guarantee that any content on such websites is, or will remain, accurate
- or appropriate.
+The publisher has no responsibility for the persistence or accuracy of URIs for external or third party websites referred to in this book and does not guarantee that any content on such websites is,
+ or will remain,
+ accurate or appropriate.
 \end_layout
 
 \begin_layout Dedication
@@ -711,7 +748,9 @@ Document\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
 Numbering and TOC
 \family default
-; it currently shows Parts, Chapters and Sections but not Subsections.
+;
+ it currently shows Parts,
+ Chapters and Sections but not Subsections.
  
 \end_layout
 
@@ -763,9 +802,9 @@ list of contributors
 \end_layout
 
 \begin_layout Standard
-If the book is a collection of chapters written by different authors, their
- affiliations, previous publications or short biographies appear immediately
- after the Table of Contents and any lists of figures or tables.
+If the book is a collection of chapters written by different authors,
+ their affiliations,
+ previous publications or short biographies appear immediately after the Table of Contents and any lists of figures or tables.
 \end_layout
 
 \begin_layout Standard
@@ -773,9 +812,9 @@ Note that:
 \end_layout
 
 \begin_layout Itemize
-as this example is for a printed book, the Table of Contents, any lists
- of figures or tables and this and all subsequent chapters will start on
- the right hand page
+as this example is for a printed book,
+ the Table of Contents,
+ any lists of figures or tables and this and all subsequent chapters will start on the right hand page
 \begin_inset Index idx
 range none
 pageformat default
@@ -787,7 +826,8 @@ right hand page
 
 \end_inset
 
-; you can turn this off by turning off ‘Two sided document
+;
+ you can turn this off by turning off ‘Two sided document
 \begin_inset Index idx
 range none
 pageformat default
@@ -805,8 +845,7 @@ Documents\SpecialChar menuseparator
 Settings\SpecialChar menuseparator
 Page Layout
 \family default
- but you will lose the ‘Frontispiece’ and ‘Titleback’ paragraph styles as
- there will no longer be a ‘back’ to the half-title
+ but you will lose the ‘Frontispiece’ and ‘Titleback’ paragraph styles as there will no longer be a ‘back’ to the half-title
 \begin_inset Index idx
 range none
 pageformat default
@@ -874,7 +913,8 @@ Chapter
 \end_inset
 
  heading in \SpecialChar LyX
- is numbered, it will appear unnumbered
+ is numbered,
+ it will appear unnumbered
 \begin_inset Index idx
 range none
 pageformat default
@@ -914,8 +954,8 @@ main matter
 
 \end_inset
 
- begins with the first page of Chapter 1; Chapter headings in the main matter
- will be incorrectly numbered in \SpecialChar LyX
+ begins with the first page of Chapter 1;
+ Chapter headings in the main matter will be incorrectly numbered in \SpecialChar LyX
  but correctly numbered in the PDF 
 \end_layout
 
@@ -932,8 +972,7 @@ Chapter*
 
 \end_inset
 
- paragraph style within a book because these chapter headings will not appear
- in the Table of Contents
+ paragraph style within a book because these chapter headings will not appear in the Table of Contents
 \begin_inset Index idx
 range none
 pageformat default
@@ -966,7 +1005,8 @@ status open
 \backslash
 frontmatter
 \family default
-, 
+,
+ 
 \family typewriter
 
 \backslash
@@ -1015,8 +1055,9 @@ numbering
 
 \end_inset
 
- or unnumbered, as appropriate, in the Table of Contents and throughout
- the book.
+ or unnumbered,
+ as appropriate,
+ in the Table of Contents and throughout the book.
 \end_layout
 
 \begin_layout Chapter
@@ -1036,8 +1077,7 @@ foreword
 
 \end_inset
 
- is always written by someone who has not had anything to do with the preparatio
-n of the book.
+ is always written by someone who has not had anything to do with the preparation of the book.
  
 \end_layout
 
@@ -1078,7 +1118,8 @@ foreword
 
 \end_inset
 
-, a series editor
+,
+ a series editor
 \begin_inset Index idx
 range none
 pageformat default
@@ -1103,7 +1144,8 @@ series preface
 \end_inset
 
  setting the book in the context of the series as a whole.
- If the book is part of a series, use the Extratitle
+ If the book is part of a series,
+ use the Extratitle
 \begin_inset Index idx
 range none
 pageformat default
@@ -1155,8 +1197,7 @@ frontispiece
 
 \end_inset
 
- paragraph styles before the Title page in order to provide a list of the
- other books in the series and the series editors.
+ paragraph styles before the Title page in order to provide a list of the other books in the series and the series editors.
 \end_layout
 
 \begin_layout Chapter
@@ -1166,7 +1207,8 @@ name "chap:Preface"
 
 \end_inset
 
-Preface (de: Vorwort)
+Preface (de:
+ Vorwort)
 \begin_inset Argument 1
 status open
 
@@ -1204,10 +1246,9 @@ author
 
 \end_inset
 
- to introduce the book and thank those who have supported its preparation
- without contributing directly to it.
- If there is a long list of people and organisations who have supported
- its preparation, consider using a separate Acknowledgements
+ to introduce the book and thank those who have supported its preparation without contributing directly to it.
+ If there is a long list of people and organisations who have supported its preparation,
+ consider using a separate Acknowledgements
 \begin_inset Index idx
 range none
 pageformat default
@@ -1266,7 +1307,8 @@ introduction
 \end_inset
 
  to the book which is not part of the argument of the book can appear here;
- for example, the author
+ for example,
+ the author
 \begin_inset Index idx
 range none
 pageformat default
@@ -1278,10 +1320,8 @@ author
 
 \end_inset
 
- may wish to describe the context of the book’s argument without revealing
- the main argument of the book.
- An introduction which is part of the argument of the book should appear
- as the first chapter in the main matter
+ may wish to describe the context of the book’s argument without revealing the main argument of the book.
+ An introduction which is part of the argument of the book should appear as the first chapter in the main matter
 \begin_inset Index idx
 range none
 pageformat default
@@ -1331,7 +1371,8 @@ literal "false"
 
 \end_inset
 
-, these are very close to those for US English
+,
+ these are very close to those for US English
 \begin_inset Index idx
 range none
 pageformat default
@@ -1374,23 +1415,21 @@ literal "false"
 \end_layout
 
 \begin_layout Standard
-The main differences in British English are typographical or involve different
- spelling conventions, such as:
+The main differences in British English are typographical or involve different spelling conventions,
+ such as:
 \end_layout
 
 \begin_layout Itemize
-the use of single quotation marks (‘ ’) rather than double quotation marks
- (“ ”) for the outer quotation marks;
+the use of single quotation marks (‘ ’) rather than double quotation marks (“ ”) for the outer quotation marks;
 \end_layout
 
 \begin_layout Itemize
-the spelling of certain active verbs and their associated nouns and adjectives
- using ‘is’ rather than ‘iz;’
+the spelling of certain active verbs and their associated nouns and adjectives using ‘is’ rather than ‘iz;’
 \end_layout
 
 \begin_layout Itemize
-using double consonants after a short vowel, as in ‘travelling’ rather than
- ‘traveling.’
+using double consonants after a short vowel,
+ as in ‘travelling’ rather than ‘traveling.’
 \end_layout
 
 \begin_layout Chapter
@@ -1404,7 +1443,10 @@ name "chap:Acknowledgements"
 
 
 \size default
-Acknowledgements (fr: Reconnaissances; de: Dank)
+Acknowledgements (fr:
+ Reconnaissances;
+ de:
+ Dank)
 \begin_inset Argument 1
 status open
 
@@ -1430,9 +1472,8 @@ acknowledgements
 
 \end_inset
 
- a long list of people and organisations who have supported the preparation
- of the book without actually contributing directly to it, you can make
- this a separate chapter before the rest of the preliminary pages.
+ a long list of people and organisations who have supported the preparation of the book without actually contributing directly to it,
+ you can make this a separate chapter before the rest of the preliminary pages.
  A short list normally goes at the end of the Preface (page
 \begin_inset space ~
 \end_inset
@@ -1545,8 +1586,8 @@ genealogical tables
 \end_layout
 
 \begin_layout Standard
-Where you have material which applies to the whole book and not to a particular
- chapter, it should appear here.
+Where you have material which applies to the whole book and not to a particular chapter,
+ it should appear here.
  Give each of the above that you use a separate Chapter
 \begin_inset Index idx
 range none
@@ -1568,7 +1609,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 mainmatter
 \end_layout
@@ -1589,7 +1629,10 @@ status open
 
 \end_inset
 
- (fr: Préface; de: Einleitung)
+ (fr:
+ Préface;
+ de:
+ Einleitung)
 \begin_inset Argument 1
 status open
 
@@ -1615,8 +1658,7 @@ introduction
 
 \end_inset
 
- but it is normal if you are setting out a particular argument in the book
- (see the comments about an Introduction in the front matter on page
+ but it is normal if you are setting out a particular argument in the book (see the comments about an Introduction in the front matter on page
 \begin_inset space ~
 \end_inset
 
@@ -1636,13 +1678,13 @@ Note that:
 \end_layout
 
 \begin_layout Itemize
-this example contains examples of most things you are likely to need in
- a book; 
+this example contains examples of most things you are likely to need in a book;
+ 
 \end_layout
 
 \begin_layout Itemize
-once you have entered more than two pages of text in a chapter, you will
- realise that the chapter titles appear as running headers
+once you have entered more than two pages of text in a chapter,
+ you will realise that the chapter titles appear as running headers
 \begin_inset Index idx
 range none
 pageformat default
@@ -1668,8 +1710,9 @@ running headers
 
 \end_inset
 
- on the left hand page and the section titles on the right hand page; if
- you don’t like this style, don’t use sections or use them intermittently,
+ on the left hand page and the section titles on the right hand page;
+ if you don’t like this style,
+ don’t use sections or use them intermittently,
  you may find it worthwhile to set a different Page style
 \begin_inset Index idx
 range none
@@ -1749,7 +1792,8 @@ fancyhdr
 
 
 \family default
- package; see 
+ package;
+ see 
 \family sans
 Help\SpecialChar menuseparator
 Additional Features\SpecialChar menuseparator
@@ -1776,17 +1820,17 @@ KOMA-Script
 
 \end_inset
 
- book document style offers the widest range of features for producing a
- book.
- In particular, it enables you to set a binding correction to allow for
- the area of the page which is ‘absorbed’ into the binding of the book and
- to set the margins proportionately as has been done in this example.
- This means that, whatever the size of the printed page, the margins will
- retain the same proportions.
+ book document style offers the widest range of features for producing a book.
+ In particular,
+ it enables you to set a binding correction to allow for the area of the page which is ‘absorbed’ into the binding of the book and to set the margins proportionately as has been done in this example.
+ This means that,
+ whatever the size of the printed page,
+ the margins will retain the same proportions.
 \end_layout
 
 \begin_layout Standard
-Also, with KOMA-Script you don’t have to use numbered
+Also,
+ with KOMA-Script you don’t have to use numbered
 \begin_inset Index idx
 range none
 pageformat default
@@ -1810,7 +1854,8 @@ main matter
 
 \end_inset
 
-; you can use the Addchap
+;
+ you can use the Addchap
 \begin_inset Index idx
 range none
 pageformat default
@@ -1822,7 +1867,8 @@ Addchap
 
 \end_inset
 
- paragraph style instead which, unlike the Chapter*
+ paragraph style instead which,
+ unlike the Chapter*
 \begin_inset Index idx
 range none
 pageformat default
@@ -1834,7 +1880,8 @@ Chapter*
 
 \end_inset
 
- paragraph style, will appear in the Table of Contents
+ paragraph style,
+ will appear in the Table of Contents
 \begin_inset Index idx
 range none
 pageformat default
@@ -1847,8 +1894,7 @@ Table of Contents
 \end_inset
 
 .
- But you need to use the Chapter paragraph style if you intend to use figures
- or tables in the book as their numbering relies on the Chapter
+ But you need to use the Chapter paragraph style if you intend to use figures or tables in the book as their numbering relies on the Chapter
 \begin_inset Index idx
 range none
 pageformat default
@@ -1905,12 +1951,14 @@ Settings\SpecialChar menuseparator
 Document Class\SpecialChar menuseparator
 Class Options
 \family default
-; if you want to produce a book to a different size, you should consult
- the KOMA-Script documentation (
+;
+ if you want to produce a book to a different size,
+ you should consult the KOMA-Script documentation (
 \family typewriter
 scrguien.pdf
 \family default
-; 
+;
+ 
 \begin_inset Newline linebreak
 \end_inset
 
@@ -1959,7 +2007,8 @@ printing
 
 \end_inset
 
- out yourself and it is not too long, you can use 
+ out yourself and it is not too long,
+ you can use 
 \family sans
 pdfjam
 \family default
@@ -1999,7 +2048,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 textquotesingle 
 \end_layout
@@ -2019,7 +2067,6 @@ textquotesingle
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 textquotesingle 
@@ -2062,8 +2109,8 @@ PDF
 \end_inset
 
  with the pages ready to print.
- For this to work, the number of pages must be a multiple of 4 and you must
- enter the page numbers in the correct order!
+ For this to work,
+ the number of pages must be a multiple of 4 and you must enter the page numbers in the correct order!
 \end_layout
 
 \begin_layout Chapter
@@ -2086,7 +2133,8 @@ KOMA-Script
 
  book document style provides almost every\SpecialChar softhyphen
 thing you need to produce a book;
- however, there are one or two things which \SpecialChar LyX
+ however,
+ there are one or two things which \SpecialChar LyX
  does not yet support.
  So this example includes \SpecialChar LaTeX
  code
@@ -2118,7 +2166,8 @@ front matter
 
 \end_inset
 
-, the main matter
+,
+ the main matter
 \begin_inset Index idx
 range none
 pageformat default
@@ -2200,7 +2249,8 @@ index
 
 \end_inset
 
- after the main text and any appendices, you should insert the \SpecialChar LaTeX
+ after the main text and any appendices,
+ you should insert the \SpecialChar LaTeX
  code 
 \family typewriter
 
@@ -2228,7 +2278,8 @@ appendix
 
 \end_inset
 
- are, like the preceding chapters in the main matter
+ are,
+ like the preceding chapters in the main matter
 \begin_inset Index idx
 range none
 pageformat default
@@ -2240,7 +2291,8 @@ main matter
 
 \end_inset
 
-, numbered
+,
+ numbered
 \begin_inset Index idx
 range none
 pageformat default
@@ -2260,7 +2312,6 @@ numbering
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 backmatter
@@ -2288,15 +2339,15 @@ numbering
 
 \end_inset
 
- chapters at the end of a book unless you are writing certain types of thesis
- but this shows you how to do it if you need to.
+ chapters at the end of a book unless you are writing certain types of thesis but this shows you how to do it if you need to.
  If you leave out 
 \family typewriter
 
 \backslash
 backmatter
 \family default
-, you will find that the bibliography
+,
+ you will find that the bibliography
 \begin_inset Index idx
 range none
 pageformat default
@@ -2320,7 +2371,8 @@ index
 
 \end_inset
 
- are unnumbered; so you only need to mark the start of the back matter
+ are unnumbered;
+ so you only need to mark the start of the back matter
 \begin_inset Index idx
 range none
 pageformat default
@@ -2332,15 +2384,14 @@ back matter
 
 \end_inset
 
- if you are inserting a chapter of text as opposed to any of the standard
- components of the back matter.
+ if you are inserting a chapter of text as opposed to any of the standard components of the back matter.
 \end_layout
 
 \begin_layout Standard
-As with the front matter, \SpecialChar LyX
+As with the front matter,
+ \SpecialChar LyX
  incorrectly numbers this chap\SpecialChar softhyphen
-ter but it appears
- unnumbered in the PDF
+ter but it appears unnumbered in the PDF
 \begin_inset Index idx
 range none
 pageformat default
@@ -2366,9 +2417,9 @@ Insert\SpecialChar menuseparator
 Formatting\SpecialChar menuseparator
 Clear Double Page
 \family default
- to ensure that the numbering in the Table of Contents is accurate; otherwise,
- the Bibliography is numbered as starting on the this page even though it
- appears on the correct page in the PDF.
+ to ensure that the numbering in the Table of Contents is accurate;
+ otherwise,
+ the Bibliography is numbered as starting on the this page even though it appears on the correct page in the PDF.
 \end_layout
 
 \end_inset

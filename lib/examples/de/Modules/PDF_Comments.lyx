@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -87,11 +87,20 @@ pdfcomment
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -117,6 +126,7 @@ pdfcomment
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -194,7 +204,6 @@ pdfcomment
 status open
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/pdfcomment/doc/pdfcomment.pdf
 \end_layout
 
@@ -295,7 +304,6 @@ author=
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -306,7 +314,6 @@ Daisy Duck
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -317,7 +324,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -328,7 +334,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -416,7 +421,6 @@ id=1,color=blue,height=2.5cm,width=5.8cm,voffset=-2.8cm,hoffset=8cm,opacity=1.0,
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -427,7 +431,6 @@ yellow
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -438,7 +441,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -449,7 +451,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -601,7 +602,6 @@ type=line,opacity=1,line=
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -612,7 +612,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -623,7 +622,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -634,7 +632,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -645,7 +642,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -656,7 +652,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -943,7 +938,7 @@ Ergebnis:
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\pdfmarkupcomment[style=mathpopup]{\sum_{i=1}^{n}i=\frac{1}{2}n\cdot(n+1)}{\text{Gauß-Summenformel}}
+\pdfmarkupcomment[style=mathpopup]{\sum^{n}_{i=1}i=\frac{1}{2}n\cdot(n+1)}{\text{Gauß-Summenformel}}
 \]
 
 \end_inset
@@ -1182,7 +1177,6 @@ opacity=0.33,color=magenta,icolor=cyan,caption=inline,linebegin=
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1193,7 +1187,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1204,7 +1197,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1215,7 +1207,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1474,7 +1465,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 displaystyle
 \end_layout
@@ -1497,7 +1487,7 @@ Gauß-Summenformel
 \end_inset
 
 
-\begin_inset Formula $\sum_{i=1}^{n}i=\frac{1}{2}n\cdot(n+1)$
+\begin_inset Formula $\sum^{n}_{i=1}i=\frac{1}{2}n\cdot(n+1)$
 \end_inset
 
 
@@ -1569,7 +1559,6 @@ B.
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1631,7 +1620,6 @@ PDF-Anmerkung in orange
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1684,7 +1672,6 @@ markup=Highlight
 status open
 
 \begin_layout Plain Layout
-
 MathePopup
 \end_layout
 
@@ -1890,7 +1877,6 @@ author={Oleg Testmann},icon=Check,color=lime
 status open
 
 \begin_layout Plain Layout
-
 Oleg
 \end_layout
 
@@ -1979,7 +1965,6 @@ Oleg sagte auch:
 status open
 
 \begin_layout Plain Layout
-
 Dolittle
 \end_layout
 
@@ -2049,7 +2034,6 @@ liststyle=
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2060,7 +2044,6 @@ AuthorComment
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2072,7 +2055,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2083,7 +2065,6 @@ Liste der PDF-Kommentare
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2141,7 +2122,6 @@ kann man einen Stil für Liste festlegen.
 status open
 
 \begin_layout Plain Layout
-
 MeinStil
 \end_layout
 

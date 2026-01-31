@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -74,10 +74,19 @@
 \use_indices false
 \paperorientation landscape
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -103,6 +112,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -185,7 +195,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and
 \end_layout
@@ -197,7 +206,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 and
@@ -229,7 +237,6 @@ Traduction française Jean-Pierre Chrétien,
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 today
@@ -363,7 +370,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pause
 \end_layout
@@ -395,7 +401,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pause
 \end_layout
@@ -411,7 +416,6 @@ Premier objet;
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 pause
@@ -429,7 +433,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pause
 \end_layout
@@ -445,7 +448,6 @@ Troisième objet;
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 pause
@@ -472,7 +474,6 @@ Nous pouvons aussi créer quelques items et les cascader:
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 pause
@@ -541,7 +542,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pause
 \end_layout
@@ -570,7 +570,6 @@ DiapoVide
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 pause
@@ -644,7 +643,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 newcommand{
 \backslash
@@ -694,12 +692,10 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 void BonjourLeMonde() {
 \end_layout
 
 \begin_layout Plain Layout
-
 printf("Bonjour,
  le monde!
 \backslash
@@ -707,7 +703,6 @@ n");
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -721,7 +716,6 @@ n");
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 pause

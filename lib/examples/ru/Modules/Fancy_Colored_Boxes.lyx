@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -89,11 +89,20 @@ tcolorbox
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -119,6 +128,7 @@ tcolorbox
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -1324,7 +1334,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 cBoxA
 \end_layout
 
@@ -1335,7 +1344,6 @@ cBoxA
 status open
 
 \begin_layout Plain Layout
-
 1
 \end_layout
 
@@ -1477,7 +1485,6 @@ thetcbcounter
 status open
 
 \begin_layout Plain Layout
-
 auto counter,
  number within=section
 \end_layout
@@ -1489,7 +1496,6 @@ auto counter,
 status open
 
 \begin_layout Plain Layout
-
 cBoxB
 \end_layout
 
@@ -1500,7 +1506,6 @@ cBoxB
 status open
 
 \begin_layout Plain Layout
-
 1
 \end_layout
 
@@ -1706,7 +1711,6 @@ thetcbcounter :
 status open
 
 \begin_layout Plain Layout
-
 auto counter,
  number within=section
 \end_layout
@@ -1718,7 +1722,6 @@ auto counter,
 status open
 
 \begin_layout Plain Layout
-
 cBoxC
 \end_layout
 
@@ -1729,7 +1732,6 @@ cBoxC
 status open
 
 \begin_layout Plain Layout
-
 2
 \end_layout
 
@@ -1923,7 +1925,6 @@ ref{name}
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 ref{Einstein}
@@ -6133,7 +6134,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6145,7 +6145,6 @@ red
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6166,7 +6165,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6186,7 +6184,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6198,7 +6195,6 @@ green
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6219,7 +6215,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6239,7 +6234,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6251,7 +6245,6 @@ blue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6272,7 +6265,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6292,7 +6284,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6304,7 +6295,6 @@ cyan
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6325,7 +6315,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6345,7 +6334,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6357,7 +6345,6 @@ magenta
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6378,7 +6365,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6447,7 +6433,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6459,7 +6444,6 @@ yellow
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6480,7 +6464,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6500,7 +6483,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6512,7 +6494,6 @@ black
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6533,7 +6514,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6553,7 +6533,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6565,7 +6544,6 @@ gray
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6586,7 +6564,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6606,7 +6583,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6618,7 +6594,6 @@ white
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6639,7 +6614,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6659,7 +6633,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6671,7 +6644,6 @@ darkgray
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6692,7 +6664,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6811,7 +6782,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6823,7 +6793,6 @@ lightgray
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6844,7 +6813,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6864,7 +6832,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6876,7 +6843,6 @@ brown
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6897,7 +6863,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6917,7 +6882,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6929,7 +6893,6 @@ lime
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -6950,7 +6913,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -6970,7 +6932,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -6982,7 +6943,6 @@ olive
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -7003,7 +6963,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -7023,7 +6982,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -7035,7 +6993,6 @@ orange
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -7056,7 +7013,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -7125,7 +7081,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -7137,7 +7092,6 @@ pink
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -7158,7 +7112,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -7178,7 +7131,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -7190,7 +7142,6 @@ purple
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -7211,7 +7162,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -7231,7 +7181,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -7243,7 +7192,6 @@ teal
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -7264,7 +7212,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -7284,7 +7231,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -7296,7 +7242,6 @@ violet
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -7317,7 +7262,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 

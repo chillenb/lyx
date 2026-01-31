@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -108,11 +108,20 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -138,6 +147,7 @@
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -148,7 +158,6 @@ Using
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -178,7 +187,6 @@ preview
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -294,7 +302,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -324,7 +331,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -347,7 +353,6 @@ Ctrl-M
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -380,7 +385,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -403,7 +407,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -421,7 +424,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -436,7 +438,6 @@ Xy
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -591,7 +592,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -660,7 +660,6 @@ The following diagram,
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -1078,7 +1077,7 @@ g.
 \end_inset
 
 
-\begin_inset Formula $\xymatrix{\  & \ \ar[l]_{\beta}^{\alpha}.}
+\begin_inset Formula $\xymatrix{\  & \ \ar[l]^{\alpha}_{\beta}.}
 $
 \end_inset
 
@@ -1176,7 +1175,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -1218,7 +1216,6 @@ For labels placed to the left or to the right of the arrow this does not work.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -1933,7 +1930,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -2333,7 +2329,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -2465,7 +2460,6 @@ entrymodifiers={++[o][F-]}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -2663,7 +2657,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -2759,7 +2752,6 @@ xymatrix
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -3069,7 +3061,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3103,7 +3094,6 @@ xymatrix@R=1pc{
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -3264,7 +3254,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3347,7 +3336,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3396,7 +3384,6 @@ Note:
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -3472,7 +3459,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3490,7 +3476,6 @@ Xy
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -3741,7 +3726,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3754,7 +3738,6 @@ Xy
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -3787,7 +3770,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3809,7 +3791,6 @@ Instant_Preview.lyx
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -3856,7 +3837,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3876,7 +3856,6 @@ Xy
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/generic/diagrams/xypic/doc/xyguide.pdf
 \end_layout
 
@@ -3901,7 +3880,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3921,7 +3899,6 @@ Xy
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/generic/diagrams/xypic/doc/xyrefer.pdf
 \end_layout
 
@@ -3944,7 +3921,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Xy
 \end_layout
@@ -3961,7 +3937,6 @@ Xy
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/pkg/xypic
 \end_layout
 
@@ -3987,7 +3962,6 @@ Homepage of preview-latex:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.gnu.org/software/auctex/preview-latex.html
 \end_layout
 
@@ -4011,7 +3985,6 @@ Homepage of AUC\SpecialChar TeX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.gnu.org/software/auctex/
 \end_layout
 
@@ -4034,7 +4007,6 @@ Aaron Lauda:
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Xy
@@ -4059,7 +4031,6 @@ tutorial with an archive of examples
 status collapsed
 
 \begin_layout Plain Layout
-
 https://web.archive.org/web/20080222044349/https://www.dpmms.cam.ac.uk/~al366/xytutorial.html
 \end_layout
 

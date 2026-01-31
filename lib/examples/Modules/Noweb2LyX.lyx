@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -65,10 +65,19 @@ noweb
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -94,6 +103,7 @@ noweb
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -177,12 +187,10 @@ noweb
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 noweb2lyx.in
 \end_layout
 
@@ -192,86 +200,70 @@ noweb2lyx.in
 \end_layout
 
 \begin_layout Plain Layout
-
 # 
 \end_layout
 
 \begin_layout Plain Layout
-
 # Copyright (C) 1999 Kayvan A.
  Sylvan <kayvan@sylvan.com>
 \end_layout
 
 \begin_layout Plain Layout
-
 # You are free to use and modify this code under the terms of
 \end_layout
 
 \begin_layout Plain Layout
-
 # the GNU General Public Licence version 2 or later.
 \end_layout
 
 \begin_layout Plain Layout
-
 #
 \end_layout
 
 \begin_layout Plain Layout
-
 # Written with assistance from:
 \end_layout
 
 \begin_layout Plain Layout
-
 #   Edmar Wienskoski Jr.
  <edmar-w-jr@technologist.com>
 \end_layout
 
 \begin_layout Plain Layout
-
 #   Amir Karger <karger@post.harvard.edu>
 \end_layout
 
 \begin_layout Plain Layout
-
 #
 \end_layout
 
 \begin_layout Plain Layout
-
 # $Id:
  noweb2lyx.lyx,v 1.5 2005/07/18 09:42:27 jamatos Exp $
 \end_layout
 
 \begin_layout Plain Layout
-
 #
 \end_layout
 
 \begin_layout Plain Layout
-
 # NOTE:
  This file was automatically generated from noweb2lyx.lyx using noweb.
 \end_layout
 
 \begin_layout Plain Layout
-
 #
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Setup variables from user supplied args>>
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Subroutines>>
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Convert noweb to LyX>>
 \end_layout
 
@@ -302,12 +294,10 @@ noweb
 status open
 
 \begin_layout Plain Layout
-
 We can do arbitrary LaTeX code here.
 \end_layout
 
 \begin_layout Plain Layout
-
 [...
  blah blah blah ...]
 \end_layout
@@ -327,7 +317,6 @@ Code chunks look like this:
 status collapsed
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -338,7 +327,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -367,7 +355,6 @@ The ``@'' is a necessary delimiter to end the code chunk.
 status collapsed
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -378,7 +365,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -511,7 +497,6 @@ noweb2lyx
 status collapsed
 
 \begin_layout Plain Layout
-
 [[pre_only]]
 \end_layout
 
@@ -542,7 +527,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 [[post_only]]
 \end_layout
 
@@ -571,12 +555,10 @@ With all that preamble out of the way,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Convert noweb to \SpecialChar LyX
 
 \end_layout
@@ -587,47 +569,38 @@ if (!$post_only) {
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Transform noweb for reLyX>>
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 if ((!$pre_only) && (!$post_only)) {
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Run reLyX on intermediate file>>
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 if (!$pre_only) {
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Fix up LyX file>>
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Clean up>>
 \end_layout
 
@@ -658,28 +631,23 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Transform noweb for reLyX>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Setup INPUT and OUTPUT>>
 \end_layout
 
 \begin_layout Plain Layout
-
 inputline:
  while(<INPUT>)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   if (/^
 \backslash
 s*
@@ -694,25 +662,21 @@ s*
 \end_layout
 
 \begin_layout Plain Layout
-
     <<Read in and output the noweb code chunk>>
 \end_layout
 
 \begin_layout Plain Layout
-
   } elsif (/^@
 \backslash
 s+(.*)/) { # Beginning of a documentation chunk
 \end_layout
 
 \begin_layout Plain Layout
-
     print OUTPUT $1;
  # We do not need the ``@'' part
 \end_layout
 
 \begin_layout Plain Layout
-
   } elsif (/
 \backslash
 [
@@ -725,33 +689,27 @@ s+(.*)/) { # Beginning of a documentation chunk
 \end_layout
 
 \begin_layout Plain Layout
-
     <<Perform special input quoting of [[var]]>>
 \end_layout
 
 \begin_layout Plain Layout
-
   } else {
 \end_layout
 
 \begin_layout Plain Layout
-
     print OUTPUT;
  # Just let the line pass through
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Close INPUT and OUTPUT>>
 \end_layout
 
@@ -772,12 +730,10 @@ In the code above,
 status open
 
 \begin_layout Plain Layout
-
 <<Perform special input quoting of [[var]]>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 s/
 \backslash
 [
@@ -788,12 +744,10 @@ s/
 \end_layout
 
 \begin_layout Plain Layout
-
 print OUTPUT;
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -817,7 +771,6 @@ While reading in the
 status collapsed
 
 \begin_layout Plain Layout
-
 [[INPUT]]
 \end_layout
 
@@ -848,12 +801,10 @@ noweb
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Read in and output the noweb code chunk
 \end_layout
 
@@ -863,12 +814,10 @@ Read in and output the noweb code chunk
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Concatenate the rest of the chunk>>
 \end_layout
 
 \begin_layout Plain Layout
-
 <<print out the chunk in a reLyXskip block>>
 \end_layout
 
@@ -901,7 +850,6 @@ noweb2lyx
 status collapsed
 
 \begin_layout Plain Layout
-
 [[INPUT]]
 \end_layout
 
@@ -932,7 +880,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 [[OUTPUT]]
 \end_layout
 
@@ -961,12 +908,10 @@ to read and write files.
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Setup INPUT and OUTPUT
 \end_layout
 
@@ -976,29 +921,24 @@ if ($pre_only) {
 \end_layout
 
 \begin_layout Plain Layout
-
   &setup_files($input_file,
  $output_file);
 \end_layout
 
 \begin_layout Plain Layout
-
 } else {
 \end_layout
 
 \begin_layout Plain Layout
-
   $relyx_file = "temp$$";
 \end_layout
 
 \begin_layout Plain Layout
-
   &setup_files($input_file,
  $relyx_file);
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1023,7 +963,6 @@ This code uses a small perl subroutine,
 status collapsed
 
 \begin_layout Plain Layout
-
 [[setup_files]]
 \end_layout
 
@@ -1047,23 +986,19 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 <<Subroutines>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 sub setup_files {
 \end_layout
 
 \begin_layout Plain Layout
-
   my($in,
  $out) = @_;
 \end_layout
 
 \begin_layout Plain Layout
-
   open(INPUT,
  "<$in") || die "Cannot read $in:
  $!
@@ -1072,7 +1007,6 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
   open(OUTPUT,
  ">$out") || die "Cannot write $out:
  $!
@@ -1081,12 +1015,10 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def setup_files
 \end_layout
 
@@ -1113,12 +1045,10 @@ After we see the beginning of the chunk,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Save the beginning of the chunk to savedchunk
 \end_layout
 
@@ -1128,7 +1058,6 @@ $savedchunk = $_;
 \end_layout
 
 \begin_layout Plain Layout
-
 $endLine = "";
 \end_layout
 
@@ -1142,41 +1071,34 @@ $endLine = "";
 status open
 
 \begin_layout Plain Layout
-
 <<Concatenate the rest of the chunk>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 chunkline:
  while (<INPUT>) {
 \end_layout
 
 \begin_layout Plain Layout
-
  last chunkline if /^@
 \backslash
 s+/;
 \end_layout
 
 \begin_layout Plain Layout
-
  $savedchunk .= $_;
 \end_layout
 
 \begin_layout Plain Layout
-
 };
 \end_layout
 
 \begin_layout Plain Layout
-
 switch:
  {
 \end_layout
 
 \begin_layout Plain Layout
-
  if (/^@
 \backslash
 s+$/) {$savedchunk .= $_;
@@ -1185,7 +1107,6 @@ s+$/) {$savedchunk .= $_;
 \end_layout
 
 \begin_layout Plain Layout
-
  if (/^@
 \backslash
 s+%def.*$/) {$savedchunk .= $_;
@@ -1194,7 +1115,6 @@ s+%def.*$/) {$savedchunk .= $_;
 \end_layout
 
 \begin_layout Plain Layout
-
  if (/^@
 \backslash
 s+(.*)$/) {$savedchunk .= "@
@@ -1207,12 +1127,10 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1234,12 +1152,10 @@ The final piece of the first pass of the conversion is done by this code.
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 print out the chunk in a re\SpecialChar LyX
 skip block
 \end_layout
@@ -1256,12 +1172,10 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
 print OUTPUT $savedchunk;
 \end_layout
 
 \begin_layout Plain Layout
-
 print OUTPUT "
 \backslash
 
@@ -1274,7 +1188,6 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
 print OUTPUT "$endLine";
 \end_layout
 
@@ -1299,7 +1212,6 @@ Finally,
 status collapsed
 
 \begin_layout Plain Layout
-
 [[INPUT]]
 \end_layout
 
@@ -1330,7 +1242,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 [[OUTPUT]]
 \end_layout
 
@@ -1354,12 +1265,10 @@ files.
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Close INPUT and OUTPUT
 \end_layout
 
@@ -1369,7 +1278,6 @@ close(INPUT);
 \end_layout
 
 \begin_layout Plain Layout
-
 close(OUTPUT);
 \end_layout
 
@@ -1400,7 +1308,6 @@ In this section,
 status collapsed
 
 \begin_layout Plain Layout
-
 [[relyx_file]]
 \end_layout
 
@@ -1436,12 +1343,10 @@ In order to run re\SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Run re\SpecialChar LyX
  on intermediate file
 \end_layout
@@ -1452,7 +1357,6 @@ Run re\SpecialChar LyX
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Run reLyX with document class>>
 \end_layout
 
@@ -1498,7 +1402,6 @@ doc
 status collapsed
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -1527,7 +1430,6 @@ ument
 status collapsed
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -1563,12 +1465,10 @@ noweb2lyx
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Parse for document class
 \end_layout
 
@@ -1579,7 +1479,6 @@ open(INPUT,
 \end_layout
 
 \begin_layout Plain Layout
-
   die "Cannot read $relyx_file:
  $!
 \backslash
@@ -1587,19 +1486,16 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
 $class = "article";
  # default if none found
 \end_layout
 
 \begin_layout Plain Layout
-
 parse:
  while(<INPUT>) {
 \end_layout
 
 \begin_layout Plain Layout
-
   if (/
 \backslash
 
@@ -1608,27 +1504,22 @@ docu[m]entclass{(.*)}/) {
 \end_layout
 
 \begin_layout Plain Layout
-
     $class = $1;
 \end_layout
 
 \begin_layout Plain Layout
-
     last parse;
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 close(INPUT);
 \end_layout
 
@@ -1652,18 +1543,15 @@ Now that we know what the document class ought to be,
 status open
 
 \begin_layout Plain Layout
-
 <<Run reLyX with document class>>= 
 \end_layout
 
 \begin_layout Plain Layout
-
 $doc_class = "literate-" .
  $class;
 \end_layout
 
 \begin_layout Plain Layout
-
 die "reLyX returned non-zero:
  $!
 \backslash
@@ -1671,12 +1559,10 @@ n"
 \end_layout
 
 \begin_layout Plain Layout
-
   if (system("reLyX -c $doc_class $relyx_file"));
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1719,12 +1605,10 @@ We need to perform some post-processing of what re\SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Fix up \SpecialChar LyX
  file
 \end_layout
@@ -1735,39 +1619,32 @@ Fix up \SpecialChar LyX
 \end_layout
 
 \begin_layout Plain Layout
-
 line:
  while(<INPUT>)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Fix code chunks in latex layout>>
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Fix [[var]] noweb construct>>
 \end_layout
 
 \begin_layout Plain Layout
-
   print OUTPUT;
  # default
 \end_layout
 
 \begin_layout Plain Layout
-
 } 
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Close INPUT and OUTPUT>>
 \end_layout
 
@@ -1791,7 +1668,6 @@ Note that in the perl code that is contained in the
 status collapsed
 
 \begin_layout Plain Layout
-
 [[while(<INPUT>)]]
 \end_layout
 
@@ -1823,7 +1699,6 @@ loop above,
 status collapsed
 
 \begin_layout Plain Layout
-
 [[next line]]
 \end_layout
 
@@ -1863,7 +1738,6 @@ Setting up the
 status collapsed
 
 \begin_layout Plain Layout
-
 [[INPUT]]
 \end_layout
 
@@ -1894,7 +1768,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 [[OUTPUT]]
 \end_layout
 
@@ -1918,12 +1791,10 @@ is taken care of by this code:
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Setup INPUT and OUTPUT for the final output
 \end_layout
 
@@ -1933,24 +1804,20 @@ if ($post_only) {
 \end_layout
 
 \begin_layout Plain Layout
-
   &setup_files("$input_file",
  "$output_file");
 \end_layout
 
 \begin_layout Plain Layout
-
 } else {
 \end_layout
 
 \begin_layout Plain Layout
-
   &setup_files("$relyx_file.lyx",
  "$output_file");
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1976,12 +1843,10 @@ Now,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Fix code chunks in latex layout
 \end_layout
 
@@ -1995,46 +1860,38 @@ latex latex/) { # Beginning of some latex code
 \end_layout
 
 \begin_layout Plain Layout
-
   if (($line = <INPUT>) =~ /^
 \backslash
 s*<</) { # code chunk
 \end_layout
 
 \begin_layout Plain Layout
-
     <<Transform this chunk into layout chunk>>
 \end_layout
 
 \begin_layout Plain Layout
-
   } else {
 \end_layout
 
 \begin_layout Plain Layout
-
     # print the 
 \backslash
 latex latex line + next line
 \end_layout
 
 \begin_layout Plain Layout
-
     print OUTPUT "$_$line";
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
   next line;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2053,7 +1910,6 @@ When we are sure that we are in a code chunk,
 status open
 
 \begin_layout Plain Layout
-
 <<Transform this chunk into layout chunk>>=
 \end_layout
 
@@ -2062,7 +1918,6 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 $savedchunk = "
 \backslash
 
@@ -2075,40 +1930,33 @@ n$line";
 \end_layout
 
 \begin_layout Plain Layout
-
 codeline:
  while (<INPUT>) {
 \end_layout
 
 \begin_layout Plain Layout
-
  $savedchunk .= $_;
 \end_layout
 
 \begin_layout Plain Layout
-
  last codeline if /^@
 \backslash
 s+/;
 \end_layout
 
 \begin_layout Plain Layout
-
 };
 \end_layout
 
 \begin_layout Plain Layout
-
 print OUTPUT $savedchunk;
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Slurp up to the end of the latex layout>>
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -2128,12 +1976,10 @@ Okay,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Slurp up to the end of the latex layout
 \end_layout
 
@@ -2144,7 +1990,6 @@ slurp:
 \end_layout
 
 \begin_layout Plain Layout
-
   last slurp if /
 \backslash
 
@@ -2153,7 +1998,6 @@ latex /;
 \end_layout
 
 \begin_layout Plain Layout
-
   next slurp if /
 \backslash
 
@@ -2162,20 +2006,17 @@ newline/;
 \end_layout
 
 \begin_layout Plain Layout
-
   next slurp if /^
 \backslash
 s*$/;
 \end_layout
 
 \begin_layout Plain Layout
-
   warn "confused by line:
  $_";
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2226,12 +2067,10 @@ noweb
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Fix [[var]] noweb construct
 \end_layout
 
@@ -2249,7 +2088,6 @@ if (/
 \end_layout
 
 \begin_layout Plain Layout
-
   s/
 \backslash
 [
@@ -2276,17 +2114,14 @@ n/g;
 \end_layout
 
 \begin_layout Plain Layout
-
   print OUTPUT;
 \end_layout
 
 \begin_layout Plain Layout
-
   next line;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2308,12 +2143,10 @@ The cleanup code is very simple:
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Clean up
 \end_layout
 
@@ -2347,94 +2180,77 @@ noweb2lyx
 status open
 
 \begin_layout Plain Layout
-
 <<Setup variables from user supplied args>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 &usage() if ($#ARGV < 1);
  # zero or one argument 
 \end_layout
 
 \begin_layout Plain Layout
-
 if ($ARGV[0] eq "-pre") {
 \end_layout
 
 \begin_layout Plain Layout
-
   &usage unless ($#ARGV == 2);
 \end_layout
 
 \begin_layout Plain Layout
-
   $input_file = $ARGV[1];
  $output_file = $ARGV[2];
  $pre_only = 1;
 \end_layout
 
 \begin_layout Plain Layout
-
 } elsif ($ARGV[0] eq "-post") {
 \end_layout
 
 \begin_layout Plain Layout
-
   &usage unless ($#ARGV == 2);
 \end_layout
 
 \begin_layout Plain Layout
-
   $input_file = $ARGV[1];
  $output_file = $ARGV[2];
  $post_only = 1;
 \end_layout
 
 \begin_layout Plain Layout
-
 } else {
 \end_layout
 
 \begin_layout Plain Layout
-
   &usage unless ($#ARGV == 1);
 \end_layout
 
 \begin_layout Plain Layout
-
   $input_file = $ARGV[0];
  $output_file = $ARGV[1];
 \end_layout
 
 \begin_layout Plain Layout
-
   $pre_only = 0;
  $post_only = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def input_file output_file pre_only post_only
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Subroutines>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 sub usage() {
 \end_layout
 
 \begin_layout Plain Layout
-
   print "Usage:
  noweb2lyx [-pre | -post] input-file output-file
 \end_layout
@@ -2444,20 +2260,17 @@ sub usage() {
 \end_layout
 
 \begin_layout Plain Layout
-
 If -pre is specified,
  only pre-processes the input-file for reLyX.
 \end_layout
 
 \begin_layout Plain Layout
-
 Similarly,
  in the case of -post,
  post-processes reLyX output.
 \end_layout
 
 \begin_layout Plain Layout
-
 In case of bugs,
  Email Kayvan Sylvan <kayvan
 \backslash
@@ -2467,17 +2280,14 @@ n";
 \end_layout
 
 \begin_layout Plain Layout
-
   exit;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def usage
 \end_layout
 
@@ -2523,12 +2333,10 @@ notangle -Rbuild-script $1 | env NOWEB_SOURCE=$1 NOWEB_OUTPUT_DIR=$2 sh
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 build-script
 \end_layout
 
@@ -2538,17 +2346,14 @@ PREFIX=/usr
 \end_layout
 
 \begin_layout Plain Layout
-
 notangle -Rnoweb2lyx.in noweb2lyx.nw > noweb2lyx.in
 \end_layout
 
 \begin_layout Plain Layout
-
 sed -e "s=@PERL@=$PREFIX/bin/perl=" noweb2lyx.in > noweb2lyx
 \end_layout
 
 \begin_layout Plain Layout
-
 chmod +x noweb2lyx
 \end_layout
 
@@ -2583,7 +2388,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 nowebchunks
 \end_layout
@@ -2611,7 +2415,6 @@ Identifiers
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 nowebindex

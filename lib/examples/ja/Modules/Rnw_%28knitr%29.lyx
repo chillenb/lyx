@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -55,10 +55,19 @@ knitr
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -88,6 +97,7 @@ knitr
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -129,7 +139,6 @@ R (
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.r-project.org
 \end_layout
 
@@ -213,7 +222,6 @@ Rnw (knitr)
 status collapsed
 
 \begin_layout Plain Layout
-
 https://yihui.name/knitr
 \end_layout
 
@@ -265,12 +273,10 @@ knitr
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 show-off
 \end_layout
 
@@ -280,18 +286,15 @@ show-off
 \end_layout
 
 \begin_layout Plain Layout
-
 rnorm(5)
 \end_layout
 
 \begin_layout Plain Layout
-
 df=data.frame(y=rnorm(100),
  x=1:100)
 \end_layout
 
 \begin_layout Plain Layout
-
 summary(lm(y~x,
  data=df))
 \end_layout

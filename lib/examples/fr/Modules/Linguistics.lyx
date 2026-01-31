@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -92,11 +92,19 @@ linguistics
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -122,6 +130,7 @@ linguistics
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -949,7 +958,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 fsii={
 \backslash
 normalfont
@@ -1262,17 +1270,14 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 Fournit covington 1
 \end_layout
 
 \begin_layout Plain Layout
-
 AddToPreamble
 \end_layout
 
 \begin_layout Plain Layout
-
 		
 \backslash
 let
@@ -1283,7 +1288,6 @@ relax
 \end_layout
 
 \begin_layout Plain Layout
-
 		
 \backslash
 let
@@ -1294,7 +1298,6 @@ relax
 \end_layout
 
 \begin_layout Plain Layout
-
 		
 \backslash
 let
@@ -1305,7 +1308,6 @@ relax
 \end_layout
 
 \begin_layout Plain Layout
-
 		
 \backslash
 let
@@ -1316,14 +1318,12 @@ relax
 \end_layout
 
 \begin_layout Plain Layout
-
 		
 \backslash
 usepackage{covington}
 \end_layout
 
 \begin_layout Plain Layout
-
 EndPreamble
 \end_layout
 
@@ -1750,13 +1750,11 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 floatstyle{plaintop}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 restylefloat{tableau}
@@ -1780,13 +1778,11 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 floatstyle{komaabove}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 restylefloat{tableau}
@@ -1914,7 +1910,6 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand
@@ -2927,13 +2922,11 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 AtBeginDocument{%
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 newfontfamily{
@@ -2942,7 +2935,6 @@ ipafont}{CMU Serif}% or another font
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 def
@@ -2953,7 +2945,6 @@ ipafont}
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3211,7 +3202,6 @@ Le paquetage covington:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/pkg/covington
 \end_layout
 
@@ -3234,7 +3224,6 @@ Le paquetage csquotes:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/csquotes
 \end_layout
 
@@ -3259,7 +3248,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/drs
 \end_layout
 
@@ -3284,7 +3272,6 @@ The enumitem package:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/enumitem
 \end_layout
 
@@ -3307,7 +3294,6 @@ Le paquetage float:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/float
 \end_layout
 
@@ -3330,7 +3316,6 @@ Le paquetage forest:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/graphics/pgf/contrib/forest
 \end_layout
 
@@ -3360,7 +3345,6 @@ Using \SpecialChar LyX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/LyX/LinguistLyX
 \end_layout
 
@@ -3383,7 +3367,6 @@ Le paquetage pict2e:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/pict2e
 \end_layout
 
@@ -3406,7 +3389,6 @@ Le paquetage preview-latex:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/preview
 \end_layout
 
@@ -3429,7 +3411,6 @@ Le paquetage tipa et ses polices:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/fonts/tipa
 \end_layout
 
@@ -3452,7 +3433,6 @@ The varwidth package:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/varwidth
 \end_layout
 

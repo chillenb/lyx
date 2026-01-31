@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -63,10 +63,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -96,6 +105,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -124,7 +134,6 @@ La clase europecv ofrece muchas posibilidades de personalización;
 status open
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/europecv/europecv.pdf
 \end_layout
 
@@ -176,7 +185,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newline 
 \end_layout
@@ -189,7 +197,6 @@ D.P.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 newline 
@@ -284,7 +291,6 @@ cm desplazada a la derecha
 status open
 
 \begin_layout Plain Layout
-
 height=3cm
 \end_layout
 
@@ -337,7 +343,6 @@ cm hacia la imagen
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 thepage
@@ -498,7 +503,6 @@ Idiomas
 status open
 
 \begin_layout Plain Layout
-
 10pt
 \end_layout
 
@@ -559,7 +563,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 ecvBTwo
 \end_layout
@@ -580,7 +583,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ecvCOne
@@ -603,7 +605,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ecvATwo
 \end_layout
@@ -625,7 +626,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ecvATwo
 \end_layout
@@ -642,7 +642,6 @@ ecvATwo
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ecvBOne
@@ -693,7 +692,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ecvATwo
 \end_layout
@@ -714,7 +712,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ecvBOne
@@ -737,7 +734,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ecvAOne
 \end_layout
@@ -759,7 +755,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ecvAOne
 \end_layout
@@ -776,7 +771,6 @@ ecvAOne
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ecvAOne
@@ -814,7 +808,6 @@ Informática
 status collapsed
 
 \begin_layout Plain Layout
-
 2.5ex
 \end_layout
 
@@ -887,7 +880,6 @@ Código
 status collapsed
 
 \begin_layout Plain Layout
-
 2.5ex
 \end_layout
 
@@ -977,7 +969,6 @@ Aficiones
 status collapsed
 
 \begin_layout Plain Layout
-
 2.5ex
 \end_layout
 
@@ -1005,7 +996,6 @@ Deportes
 status collapsed
 
 \begin_layout Plain Layout
-
 2.5ex
 \end_layout
 
@@ -1055,7 +1045,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newline%
 \end_layout
@@ -1071,7 +1060,6 @@ newline%
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 newline%

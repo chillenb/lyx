@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -55,10 +55,19 @@ noweb
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -84,6 +93,7 @@ noweb
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -191,12 +201,10 @@ Algorithm
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function bodies
 \end_layout
 
@@ -206,133 +214,107 @@ int
 \end_layout
 
 \begin_layout Plain Layout
-
 main (int argc,
  char **argv)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   if (argc == 2) {
 \end_layout
 
 \begin_layout Plain Layout
-
     switch (argv[1][0]) {
 \end_layout
 
 \begin_layout Plain Layout
-
     case 'n':
 \end_layout
 
 \begin_layout Plain Layout
-
       <<Scan input for noweb error messages>>
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     case 'x':
 \end_layout
 
 \begin_layout Plain Layout
-
       <<Scan input for xlc error messages>>
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     case 'a':
 \end_layout
 
 \begin_layout Plain Layout
-
       <<AIX system using both noweb and xlc>>
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     case 's':
 \end_layout
 
 \begin_layout Plain Layout
-
     case 'b':
 \end_layout
 
 \begin_layout Plain Layout
-
       <<Solaris and Linux systems using both noweb and gcc>>
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     case 'g':
 \end_layout
 
 \begin_layout Plain Layout
-
     default:
 \end_layout
 
 \begin_layout Plain Layout
-
       <<Scan input for gcc error messages>>
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
   } else {
 \end_layout
 
 \begin_layout Plain Layout
-
     <<Scan input for gcc error messages>>
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -346,12 +328,10 @@ main (int argc,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function prototypes
 \end_layout
 
@@ -380,32 +360,26 @@ We resort to some global variables to allow access from several different routin
 status open
 
 \begin_layout Plain Layout
-
 <<Global variables>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 char    buffer[200][200];
 \end_layout
 
 \begin_layout Plain Layout
-
 int     last_buf_line;
 \end_layout
 
 \begin_layout Plain Layout
-
 int     last_err_line;
 \end_layout
 
 \begin_layout Plain Layout
-
 int     err_line;
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -452,12 +426,10 @@ This function has been slightly changed from EW's original to make scanning a bi
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function bodies
 \end_layout
 
@@ -467,29 +439,24 @@ void
 \end_layout
 
 \begin_layout Plain Layout
-
 output_error (int buf_size,
  int error_line,
  char *tool)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   int     i;
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
   fprintf(stdout,
  "!
  Build Error:
@@ -500,7 +467,6 @@ n",
 \end_layout
 
 \begin_layout Plain Layout
-
   fprintf(stdout,
  " ...
 \backslash
@@ -513,36 +479,30 @@ n",
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
   for (i=0;
  i<buf_size;
  i++)
 \end_layout
 
 \begin_layout Plain Layout
-
     if (strlen(buffer[i]) != 0)
 \end_layout
 
 \begin_layout Plain Layout
-
       fprintf(stdout,
  "%s",
  buffer[i]);
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
   fprintf(stdout,
  "
 \backslash
@@ -550,7 +510,6 @@ n");
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -564,12 +523,10 @@ n");
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function prototypes
 \end_layout
 
@@ -602,12 +559,10 @@ Both noweave and notangle routines,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Scan input for noweb error messages
 \end_layout
 
@@ -617,36 +572,30 @@ Scan input for noweb error messages
 \end_layout
 
 \begin_layout Plain Layout
-
   last_buf_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   while (fgets(buffer[0],
  200,
  stdin)) {
 \end_layout
 
 \begin_layout Plain Layout
-
     if (noweb_try(0))
 \end_layout
 
 \begin_layout Plain Layout
-
       output_error(1,
  err_line,
  "noweb");
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -667,12 +616,10 @@ The examination itself is very inefficient.
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Global variables
 \end_layout
 
@@ -682,72 +629,58 @@ Global variables
 \end_layout
 
 \begin_layout Plain Layout
-
 char *noweb_msgs[] = {
 \end_layout
 
 \begin_layout Plain Layout
-
   "couldn't open file",
 \end_layout
 
 \begin_layout Plain Layout
-
   "couldn't open temporary file",
 \end_layout
 
 \begin_layout Plain Layout
-
   "error writing temporary file",
 \end_layout
 
 \begin_layout Plain Layout
-
   "ill-formed option",
 \end_layout
 
 \begin_layout Plain Layout
-
   "unknown option",
 \end_layout
 
 \begin_layout Plain Layout
-
   "Bad format sequence",
 \end_layout
 
 \begin_layout Plain Layout
-
   "Can't open output file",
 \end_layout
 
 \begin_layout Plain Layout
-
   "Can't open temporary file",
 \end_layout
 
 \begin_layout Plain Layout
-
   "Capacity exceeded:",
 \end_layout
 
 \begin_layout Plain Layout
-
   "Ignoring unknown option -",
 \end_layout
 
 \begin_layout Plain Layout
-
   "This can't happen:",
 \end_layout
 
 \begin_layout Plain Layout
-
   "non-numeric line number in"
 \end_layout
 
 \begin_layout Plain Layout
-
 };
 \end_layout
 
@@ -756,18 +689,15 @@ char *noweb_msgs[] = {
 \end_layout
 
 \begin_layout Plain Layout
-
 char *noweb_msgs_mimic_gcc[] = {
 \end_layout
 
 \begin_layout Plain Layout
-
   ":
  unescaped << in documentation chunk"
 \end_layout
 
 \begin_layout Plain Layout
-
 };
 \end_layout
 
@@ -798,29 +728,24 @@ A noweb error message can be any string that contains a matching pair of < <
 status open
 
 \begin_layout Plain Layout
-
 <<Function bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 int noweb_try (int buf_line)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   char    *s,
  *t,
  *b;
 \end_layout
 
 \begin_layout Plain Layout
-
   int     i;
  
 \end_layout
@@ -830,12 +755,10 @@ int noweb_try (int buf_line)
 \end_layout
 
 \begin_layout Plain Layout
-
   b = buffer[buf_line];
 \end_layout
 
 \begin_layout Plain Layout
-
   err_line = 0;
 \end_layout
 
@@ -844,151 +767,123 @@ int noweb_try (int buf_line)
 \end_layout
 
 \begin_layout Plain Layout
-
   for (i=0;
  i<1;
  i++) {
 \end_layout
 
 \begin_layout Plain Layout
-
       s = (char *)strstr (b,
  noweb_msgs_mimic_gcc[i]);
 \end_layout
 
 \begin_layout Plain Layout
-
       if (s != NULL) {
 \end_layout
 
 \begin_layout Plain Layout
-
         t = (char *)strchr(buffer[buf_line],
  ':');
 \end_layout
 
 \begin_layout Plain Layout
-
         err_line = atoi(t+1);
 \end_layout
 
 \begin_layout Plain Layout
-
         t = buffer[buf_line];
 \end_layout
 
 \begin_layout Plain Layout
-
         ++s;
 \end_layout
 
 \begin_layout Plain Layout
-
         while (*(t++) = *(s++));
 \end_layout
 
 \begin_layout Plain Layout
-
         return 1;
 \end_layout
 
 \begin_layout Plain Layout
-
       }
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
   s = (char *)strstr(b,
  "<<");
 \end_layout
 
 \begin_layout Plain Layout
-
   if (s != NULL) {
 \end_layout
 
 \begin_layout Plain Layout
-
     s = (char *)strstr(s+2,
  ">>");
 \end_layout
 
 \begin_layout Plain Layout
-
     if (s != NULL) {
 \end_layout
 
 \begin_layout Plain Layout
-
       return 1;
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
   } else { 
 \end_layout
 
 \begin_layout Plain Layout
-
      for (i = 0;
  i < 12;
  ++i) {
 \end_layout
 
 \begin_layout Plain Layout
-
         s = (char *)strstr (b,
  noweb_msgs[i]);
 \end_layout
 
 \begin_layout Plain Layout
-
         if (s != NULL) {
 \end_layout
 
 \begin_layout Plain Layout
-
            return 1;
 \end_layout
 
 \begin_layout Plain Layout
-
         }
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
   return 0;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1002,17 +897,14 @@ int noweb_try (int buf_line)
 status open
 
 \begin_layout Plain Layout
-
 <<Function prototypes>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 int noweb_try (int buf_line);
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1031,12 +923,10 @@ The xlc compiler always outputs one single line for each error found,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Scan input for xlc error messages
 \end_layout
 
@@ -1046,36 +936,30 @@ Scan input for xlc error messages
 \end_layout
 
 \begin_layout Plain Layout
-
   last_buf_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   while (fgets(buffer[last_buf_line],
  200,
  stdin)) {
 \end_layout
 
 \begin_layout Plain Layout
-
     if (xlc_try(0))
 \end_layout
 
 \begin_layout Plain Layout
-
       output_error(1,
  err_line,
  "xlc");
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1116,12 +1000,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function bodies
 \end_layout
 
@@ -1131,55 +1013,45 @@ Function bodies
 \end_layout
 
 \begin_layout Plain Layout
-
 int 
 \end_layout
 
 \begin_layout Plain Layout
-
 xlc_try (int buf_line)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   char    *s,
  *t;
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
   t = buffer[buf_line];
 \end_layout
 
 \begin_layout Plain Layout
-
   s = t+1;
 \end_layout
 
 \begin_layout Plain Layout
-
   while (*s != '"' && *s != ' ' && *s != '
 \backslash
 0')
 \end_layout
 
 \begin_layout Plain Layout
-
     s++;
 \end_layout
 
 \begin_layout Plain Layout
-
   if (*t != '"' || *s != '"' || strncmp(s+1,
  ",
  line ",
@@ -1187,27 +1059,22 @@ xlc_try (int buf_line)
 \end_layout
 
 \begin_layout Plain Layout
-
     return 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   s += 8;
 \end_layout
 
 \begin_layout Plain Layout
-
   err_line = atoi(s);
 \end_layout
 
 \begin_layout Plain Layout
-
   return 1;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1221,12 +1088,10 @@ xlc_try (int buf_line)
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function prototypes
 \end_layout
 
@@ -1283,12 +1148,10 @@ Every gcc error message contains a string with no space followed by a
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Scan input for gcc error messages
 \end_layout
 
@@ -1298,134 +1161,110 @@ Scan input for gcc error messages
 \end_layout
 
 \begin_layout Plain Layout
-
   char    *s,
  *t;
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
   last_buf_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   while (fgets(buffer[last_buf_line],
  200,
  stdin)) {
 \end_layout
 
 \begin_layout Plain Layout
-
     /****** Skip lines until I find an error */
 \end_layout
 
 \begin_layout Plain Layout
-
     s = (char *)strpbrk(buffer[last_buf_line],
  " :");
 \end_layout
 
 \begin_layout Plain Layout
-
     if (s == NULL || *s == ' ')
 \end_layout
 
 \begin_layout Plain Layout
-
       continue;
  /* No gcc error found here */
 \end_layout
 
 \begin_layout Plain Layout
-
     do {
 \end_layout
 
 \begin_layout Plain Layout
-
       <<gcc error message criteria is to find a "...:999:" or a "...:
  ">>
 \end_layout
 
 \begin_layout Plain Layout
-
       /****** OK It is an error message,
  get line number */
 \end_layout
 
 \begin_layout Plain Layout
-
       err_line = atoi(s+1);
 \end_layout
 
 \begin_layout Plain Layout
-
       if (last_err_line == 0 || last_err_line == err_line) {
 \end_layout
 
 \begin_layout Plain Layout
-
         last_err_line = err_line;
 \end_layout
 
 \begin_layout Plain Layout
-
         continue;
  /* It's either a header or a continuation,
  don't output yet */
 \end_layout
 
 \begin_layout Plain Layout
-
       }
 \end_layout
 
 \begin_layout Plain Layout
-
       /****** Completed the scan of one error message,
  output it to LyX */
 \end_layout
 
 \begin_layout Plain Layout
-
       discharge_buffer(1);
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     } while (fgets(buffer[last_buf_line],
  200,
  stdin));
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
   /****** EOF completes the scan of whatever was being scanned */
 \end_layout
 
 \begin_layout Plain Layout
-
   discharge_buffer(0);
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1439,12 +1278,10 @@ Scan input for gcc error messages
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 gcc error message criteria is to find a "...:999:" or a "...:
  "
 \end_layout
@@ -1455,34 +1292,28 @@ gcc error message criteria is to find a "...:999:" or a "...:
 \end_layout
 
 \begin_layout Plain Layout
-
 s = (char *)strpbrk(buffer[last_buf_line],
  " :");
 \end_layout
 
 \begin_layout Plain Layout
-
 last_buf_line++;
 \end_layout
 
 \begin_layout Plain Layout
-
 if (s == NULL || *s == ' ') 
 \end_layout
 
 \begin_layout Plain Layout
-
   <<No gcc error found here,
  but it might terminate the scanning of a previous one>>
 \end_layout
 
 \begin_layout Plain Layout
-
 /****** Search second ":" in the error number */
 \end_layout
 
 \begin_layout Plain Layout
-
 t = (char *)strpbrk(s+1,
  " :");if (t == NULL || *t == ' ')  <<No gcc error found here,
  but it might terminate the scanning of a previous one>>/****** Verify if is all digits between ":" */if (t != s+1+strspn(s+1,
@@ -1499,33 +1330,27 @@ t = (char *)strpbrk(s+1,
 \end_layout
 
 \begin_layout Plain Layout
-
 <<No gcc error found here,
  but it might terminate the scanning of a previous one>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   err_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   discharge_buffer(1);
 \end_layout
 
 \begin_layout Plain Layout
-
   continue;
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1555,12 +1380,10 @@ last line
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function bodies
 \end_layout
 
@@ -1570,102 +1393,83 @@ Function bodies
 \end_layout
 
 \begin_layout Plain Layout
-
 void
 \end_layout
 
 \begin_layout Plain Layout
-
 discharge_buffer (int save_last)
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
  if (last_err_line != 0) { 
 \end_layout
 
 \begin_layout Plain Layout
-
    clean_gcc_messages();
 \end_layout
 
 \begin_layout Plain Layout
-
    if (save_last != 0) {
 \end_layout
 
 \begin_layout Plain Layout
-
       output_error(last_buf_line-1,
  last_err_line,
  "gcc");
 \end_layout
 
 \begin_layout Plain Layout
-
       strcpy (buffer[0],
  buffer[last_buf_line-1]);
 \end_layout
 
 \begin_layout Plain Layout
-
       last_err_line = err_line;
 \end_layout
 
 \begin_layout Plain Layout
-
       last_buf_line = 1;
 \end_layout
 
 \begin_layout Plain Layout
-
     } else { 
 \end_layout
 
 \begin_layout Plain Layout
-
       ++last_buf_line;
 \end_layout
 
 \begin_layout Plain Layout
-
       clean_gcc_messages();
 \end_layout
 
 \begin_layout Plain Layout
-
       output_error(last_buf_line-1,
  last_err_line,
  "gcc");
 \end_layout
 
 \begin_layout Plain Layout
-
       last_err_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
       last_buf_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1679,12 +1483,10 @@ discharge_buffer (int save_last)
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function prototypes
 \end_layout
 
@@ -1728,12 +1530,10 @@ More could be done.
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function bodies
 \end_layout
 
@@ -1743,126 +1543,103 @@ void
 \end_layout
 
 \begin_layout Plain Layout
-
 clean_gcc_messages ()
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   int index;
 \end_layout
 
 \begin_layout Plain Layout
-
   char search [30];
  
 \end_layout
 
 \begin_layout Plain Layout
-
   char *tail,
  *head;
  
 \end_layout
 
 \begin_layout Plain Layout
-
   int search_len = sprintf(search,
  ".nw:%d:",
  last_err_line);
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \end_layout
 
 \begin_layout Plain Layout
-
   for (index = 0;
  index < last_buf_line-1;
  index++) {
 \end_layout
 
 \begin_layout Plain Layout
-
     tail = (char *)strstr (buffer[index],
  search);
 \end_layout
 
 \begin_layout Plain Layout
-
     if ( tail == NULL) {
 \end_layout
 
 \begin_layout Plain Layout
-
        tail = (char *) strstr (buffer[index],
  ".nw:");
 \end_layout
 
 \begin_layout Plain Layout
-
        if (tail) {
 \end_layout
 
 \begin_layout Plain Layout
-
           tail += 4;
 \end_layout
 
 \begin_layout Plain Layout
-
        }
 \end_layout
 
 \begin_layout Plain Layout
-
     } else {
 \end_layout
 
 \begin_layout Plain Layout
-
        tail += search_len;
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
     if (tail != NULL) {
 \end_layout
 
 \begin_layout Plain Layout
-
        head = buffer[index];
 \end_layout
 
 \begin_layout Plain Layout
-
        while (*(head++) = *(tail++));
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1876,12 +1653,10 @@ clean_gcc_messages ()
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Function prototypes
 \end_layout
 
@@ -1905,63 +1680,52 @@ To combine the scan of noweb error messages and xlc error messages is very simpl
 status open
 
 \begin_layout Plain Layout
-
 <<AIX system using both noweb and xlc>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
 \begin_layout Plain Layout
-
   last_buf_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   while (fgets(buffer[0],
  200,
  stdin)) {
 \end_layout
 
 \begin_layout Plain Layout
-
    if (noweb_try(0))
 \end_layout
 
 \begin_layout Plain Layout
-
      output_error(1,
  err_line,
  "noweb");
 \end_layout
 
 \begin_layout Plain Layout
-
    else if (xlc_try(0))
 \end_layout
 
 \begin_layout Plain Layout
-
      output_error(1,
  err_line,
  "xlc");
 \end_layout
 
 \begin_layout Plain Layout
-
  }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1980,12 +1744,10 @@ To combine the scan of noweb error messages and gcc error messages is simple if 
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 Solaris and Linux systems using both noweb and gcc
 \end_layout
 
@@ -1995,156 +1757,128 @@ Solaris and Linux systems using both noweb and gcc
 \end_layout
 
 \begin_layout Plain Layout
-
   char    *s,
  *t;
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
   last_buf_line = 0;
 \end_layout
 
 \begin_layout Plain Layout
-
   while (fgets(buffer[last_buf_line],
  200,
  stdin)) {
 \end_layout
 
 \begin_layout Plain Layout
-
     /****** Skip lines until I find an error */
 \end_layout
 
 \begin_layout Plain Layout
-
     if (last_buf_line == 0 && noweb_try(0)) {
 \end_layout
 
 \begin_layout Plain Layout
-
       output_error(1,
  err_line,
  "noweb");
 \end_layout
 
 \begin_layout Plain Layout
-
       continue;
 \end_layout
 
 \begin_layout Plain Layout
-
     }
 \end_layout
 
 \begin_layout Plain Layout
-
     s = (char *)strpbrk(buffer[last_buf_line],
  " :");
 \end_layout
 
 \begin_layout Plain Layout
-
     if (s == NULL || *s == ' ')
 \end_layout
 
 \begin_layout Plain Layout
-
       continue;
  /* No gcc error found here */
 \end_layout
 
 \begin_layout Plain Layout
-
     do {
 \end_layout
 
 \begin_layout Plain Layout
-
       <<gcc error message criteria is to find a "...:999:" or a "...:
  ">>
 \end_layout
 
 \begin_layout Plain Layout
-
       /****** OK It is an error,
  get line number */
 \end_layout
 
 \begin_layout Plain Layout
-
       err_line = atoi(s+1);
 \end_layout
 
 \begin_layout Plain Layout
-
       if (last_err_line == 0 || last_err_line == err_line) {
 \end_layout
 
 \begin_layout Plain Layout
-
         last_err_line = err_line;
 \end_layout
 
 \begin_layout Plain Layout
-
         continue;
  /* It's either a header or a continuation,
  don't output yet */
 \end_layout
 
 \begin_layout Plain Layout
-
       }
 \end_layout
 
 \begin_layout Plain Layout
-
       /****** Completed the scan of one error message,
  output it to LyX */
 \end_layout
 
 \begin_layout Plain Layout
-
       discharge_buffer(1);
 \end_layout
 
 \begin_layout Plain Layout
-
       break;
 \end_layout
 
 \begin_layout Plain Layout
-
     } while (fgets(buffer[last_buf_line],
  200,
  stdin));
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
   /****** EOF completes the scan of whatever was being scanned */
 \end_layout
 
 \begin_layout Plain Layout
-
   discharge_buffer(0);
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2162,12 +1896,10 @@ Wrapping the code into a file
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 listerrors.c
 \end_layout
 
@@ -2177,27 +1909,22 @@ listerrors.c
 \end_layout
 
 \begin_layout Plain Layout
-
 #include <strings.h>       
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Global variables>>
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Function prototypes>>
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Function bodies>>
 \end_layout
 
@@ -2242,12 +1969,10 @@ listerrors.c
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 build-script
 \end_layout
 
@@ -2257,26 +1982,22 @@ build-script
 \end_layout
 
 \begin_layout Plain Layout
-
 if [ -z "$NOWEB_SOURCE" ];
  then NOWEB_SOURCE=Literate.nw;
  fi
 \end_layout
 
 \begin_layout Plain Layout
-
 if [ -z "$NOWEB_OUTPUT_DIR" ];
  then NOWEB_OUTPUT_DIR=.;
  fi
 \end_layout
 
 \begin_layout Plain Layout
-
 notangle -L -Rlisterrors.c ${NOWEB_SOURCE} > ${NOWEB_OUTPUT_DIR}/listerrors.c
 \end_layout
 
 \begin_layout Plain Layout
-
 gcc -g -o listerrors listerrors.c
 \end_layout
 

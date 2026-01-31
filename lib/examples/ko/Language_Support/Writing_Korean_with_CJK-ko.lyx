@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -97,10 +97,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -127,6 +136,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -136,7 +146,6 @@
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cjkko
@@ -166,7 +175,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 and
 \end_layout
@@ -180,7 +188,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 https://github.com/dohyunkim/cjk-ko
 \end_layout
 
@@ -199,7 +206,6 @@ Version 1.8
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 today
@@ -306,7 +312,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 vtop
 \end_layout
@@ -318,7 +323,6 @@ vtop
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -329,7 +333,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 hsize
@@ -343,7 +346,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textwidth
 \end_layout
@@ -355,7 +357,6 @@ textwidth
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 baselineskip
@@ -369,7 +370,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -381,7 +381,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -392,7 +391,6 @@ begin{document}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -406,7 +404,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -419,7 +416,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -430,7 +426,6 @@ begin{CJK}{UTF8}{mj}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -444,7 +439,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 leavevmode
@@ -458,7 +452,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 llap
 \end_layout
@@ -470,7 +463,6 @@ llap
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -489,7 +481,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -512,7 +503,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -524,7 +514,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -535,7 +524,6 @@ end{CJK}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -549,7 +537,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -562,7 +549,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -573,7 +559,6 @@ end{document}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -584,7 +569,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -631,7 +615,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 dotemph
 \end_layout
@@ -643,7 +626,6 @@ dotemph
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -654,7 +636,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -687,7 +668,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -699,7 +679,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -710,7 +689,6 @@ usepackage[cjk]{kotex}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -728,7 +706,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 패키지 옵션
 \end_layout
 
@@ -768,7 +745,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|kotexutf.sty|
 \end_layout
@@ -780,7 +756,6 @@ verb|kotexutf.sty|
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cjkko
@@ -833,7 +808,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|[hangul]|
 \end_layout
@@ -882,7 +856,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -894,7 +867,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -905,7 +877,6 @@ dotemph
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -928,7 +899,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -940,7 +910,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -951,7 +920,6 @@ normalem
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -963,7 +931,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -975,7 +942,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -986,7 +952,6 @@ emph
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -998,7 +963,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1010,7 +974,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1021,7 +984,6 @@ ULforem
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1066,7 +1028,6 @@ CJK 명조 글꼴을 지정한다.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|[mj=utbt]|
@@ -1124,7 +1085,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1136,7 +1096,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1147,7 +1106,6 @@ CJKscale
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1162,7 +1120,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 leftskip
@@ -1181,7 +1138,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1193,7 +1149,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1204,7 +1159,6 @@ CJKscale{0.95}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1218,7 +1172,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|[usecjkt1font]|
@@ -1235,7 +1188,6 @@ verb|[usecjkt1font]|
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|[hangul]|
@@ -1260,7 +1212,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1272,7 +1223,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1283,7 +1233,6 @@ lowerCJKchar
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1298,7 +1247,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 leftskip
@@ -1317,7 +1265,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1329,7 +1276,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1340,7 +1286,6 @@ lowerCJKchar{-0.07em} % 끌어올려 식자
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1354,7 +1299,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|[usecjkt1font]|
@@ -1378,7 +1322,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1390,7 +1333,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1401,7 +1343,6 @@ dotemph
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1412,7 +1353,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 dotemph
@@ -1425,7 +1365,6 @@ dotemph
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1436,7 +1375,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1451,7 +1389,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 leftskip
@@ -1470,7 +1407,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1482,7 +1418,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1493,7 +1428,6 @@ dotemph{드러냄표}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1507,7 +1441,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|[usedotemph]|
@@ -1525,7 +1458,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 koTeX
 \end_layout
@@ -1538,7 +1470,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1550,7 +1481,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1561,7 +1491,6 @@ dotemphraise
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1573,7 +1502,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1585,7 +1513,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1596,7 +1523,6 @@ dotemphchar
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1620,7 +1546,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 koTeX
 \end_layout
@@ -1633,7 +1558,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -1645,7 +1569,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1656,7 +1579,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1667,7 +1589,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1680,7 +1601,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1691,7 +1611,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1702,7 +1621,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1715,7 +1633,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1726,7 +1643,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1737,7 +1653,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1750,7 +1665,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1761,7 +1675,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1772,7 +1685,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1785,7 +1697,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1796,7 +1707,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1807,7 +1717,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1820,7 +1729,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1831,7 +1739,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1842,7 +1749,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1855,7 +1761,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1866,7 +1771,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1877,7 +1781,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1890,7 +1793,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1901,7 +1803,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1912,7 +1813,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1925,7 +1825,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1936,7 +1835,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1947,7 +1845,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1960,7 +1857,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -1971,7 +1867,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1982,7 +1877,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -1995,7 +1889,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2006,7 +1899,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2017,7 +1909,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -2030,7 +1921,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2041,7 +1931,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2061,7 +1950,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2073,7 +1961,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2084,7 +1971,6 @@ ref
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2095,7 +1981,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -2108,7 +1993,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2119,7 +2003,6 @@ pageref
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2130,7 +2013,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -2143,7 +2025,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2154,7 +2035,6 @@ cite
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2174,7 +2054,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2186,7 +2065,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2197,7 +2075,6 @@ jong
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2208,7 +2085,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -2221,7 +2097,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2232,7 +2107,6 @@ jung
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2243,7 +2117,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cs
@@ -2256,7 +2129,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2267,7 +2139,6 @@ rieul
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2293,7 +2164,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2305,7 +2175,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2316,7 +2185,6 @@ cite{hong}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2328,7 +2196,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2340,7 +2207,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2351,7 +2217,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2367,7 +2232,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 hskip
@@ -2385,7 +2249,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2397,7 +2260,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2408,7 +2270,6 @@ bibitem[홍길동
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2420,7 +2281,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2432,7 +2292,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2443,7 +2302,6 @@ jong]{hong}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2463,7 +2321,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 koTeX
 \end_layout
@@ -2482,7 +2339,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2494,7 +2350,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2505,7 +2360,6 @@ pagenumbering{onum}
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2520,7 +2374,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 leftskip
 \end_layout
@@ -2533,7 +2386,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 labelsep
 \end_layout
@@ -2545,7 +2397,6 @@ labelsep
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 itemsep
@@ -2571,7 +2422,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2583,7 +2433,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2594,7 +2443,6 @@ jaso
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2618,7 +2466,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2630,7 +2477,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2641,7 +2487,6 @@ gana
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2665,7 +2510,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2677,7 +2521,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2688,7 +2531,6 @@ ojaso
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2712,7 +2554,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2724,7 +2565,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2735,7 +2575,6 @@ ogana
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2759,7 +2598,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2771,7 +2609,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2782,7 +2619,6 @@ pjaso
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2806,7 +2642,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2818,7 +2653,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2829,7 +2663,6 @@ pgana
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2853,7 +2686,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2865,7 +2697,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2876,7 +2707,6 @@ onum
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2900,7 +2730,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2912,7 +2741,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2923,7 +2751,6 @@ pnum
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2947,7 +2774,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -2959,7 +2785,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -2970,7 +2795,6 @@ oeng
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2998,7 +2822,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3010,7 +2833,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3021,7 +2843,6 @@ peng
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3049,7 +2870,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3061,7 +2881,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3072,7 +2891,6 @@ hnum
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3100,7 +2918,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3112,7 +2929,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3123,7 +2939,6 @@ Hnum
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3151,7 +2966,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3163,7 +2977,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3174,7 +2987,6 @@ hroman
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3198,7 +3010,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3210,7 +3021,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3221,7 +3031,6 @@ hRoman
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3245,7 +3054,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3257,7 +3065,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3268,7 +3075,6 @@ hNum
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3296,7 +3102,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cs
 \end_layout
@@ -3308,7 +3113,6 @@ cs
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3319,7 +3123,6 @@ hanjanum
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3335,7 +3138,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 {
 \backslash
 hanjafamily 
@@ -3352,7 +3154,6 @@ hanjafamily
 status open
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3374,7 +3175,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 koTeX
 \end_layout
@@ -3395,7 +3195,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|[cjk]|
 \end_layout
@@ -3407,7 +3206,6 @@ verb|[cjk]|
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cjkko
@@ -3426,7 +3224,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 hologo
 \end_layout
@@ -3438,7 +3235,6 @@ hologo
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3449,7 +3245,6 @@ XeTeX
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3461,7 +3256,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 hologo
 \end_layout
@@ -3473,7 +3267,6 @@ hologo
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3484,7 +3277,6 @@ LuaTeX
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3500,7 +3292,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|[euc]|
 \end_layout
@@ -3512,7 +3303,6 @@ verb|[euc]|
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|kotex-euc|
@@ -3526,7 +3316,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 hologo
 \end_layout
@@ -3538,7 +3327,6 @@ hologo
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3549,7 +3337,6 @@ XeTeX
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3562,7 +3349,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 hologo
 \end_layout
@@ -3574,7 +3360,6 @@ hologo
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -3585,7 +3370,6 @@ LuaTeX
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3596,7 +3380,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|
@@ -3617,7 +3400,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|kotexutf.sty|
 \end_layout
@@ -3631,7 +3413,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|xetexko.sty|
 \end_layout
@@ -3644,7 +3425,6 @@ verb|xetexko.sty|
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 verb|luatexko.sty|
@@ -3678,7 +3458,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|cjkutf8-*|
 \end_layout
@@ -3701,7 +3480,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 verb|ko*|
 \end_layout
@@ -3713,7 +3491,6 @@ verb|ko*|
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 koTeX

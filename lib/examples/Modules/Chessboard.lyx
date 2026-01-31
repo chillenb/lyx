@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -68,10 +68,19 @@ multicol
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -100,6 +109,7 @@ multicol
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -217,12 +227,10 @@ pgfstyle=straightmove,arrow=to,linewidth=0.1em,smallboard
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 outvar
 \end_layout
 
@@ -254,7 +262,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 markmoves={d2-d4},pgfstyle=knightmove,markmove={g1-e2},pgfstyle=circle,markfields={d4,f4}
 \end_layout
 
@@ -283,7 +290,6 @@ So far,
 status open
 
 \begin_layout Plain Layout
-
 5...
  Be7?!
 \end_layout
@@ -300,12 +306,10 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 invar
 \end_layout
 
@@ -317,7 +321,6 @@ invar
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 equal{} was better
@@ -338,12 +341,10 @@ equal{} was better
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 outvar
 \end_layout
 
@@ -385,7 +386,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 8.
  Nxc6 bxc6 9.
  O-O Bb7 10.
@@ -412,7 +412,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 markmoves={a1-d1}
 \end_layout
 
@@ -435,7 +434,6 @@ White continues to develop pieces and also sets a trap for Black.
 status open
 
 \begin_layout Plain Layout
-
 12...
  O-O?
  
@@ -443,7 +441,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 This move loses instantly.
 \end_layout
 
@@ -467,12 +464,10 @@ The following was better,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 invar
 \end_layout
 
@@ -486,7 +481,6 @@ invar
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 wbetter
@@ -507,12 +501,10 @@ wbetter
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 outvar
 \end_layout
 
@@ -537,7 +529,6 @@ Black's knight and bishop form a bumbling pair here.
 status open
 
 \begin_layout Plain Layout
-
 13...
  Nd5!?
  14.
@@ -550,7 +541,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 1-0
 \end_layout
 

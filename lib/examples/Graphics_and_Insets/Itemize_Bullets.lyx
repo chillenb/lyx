@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -55,10 +55,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -88,6 +97,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -1214,7 +1224,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{108}
 \end_layout
@@ -1234,7 +1243,6 @@ ding{108}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{109}
@@ -1256,7 +1264,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{119}
 \end_layout
@@ -1276,7 +1283,6 @@ ding{119}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{197}
@@ -1298,7 +1304,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{196}
 \end_layout
@@ -1318,7 +1323,6 @@ Pisymbol{psy}{196}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{183}
@@ -1342,7 +1346,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{71}
 \end_layout
@@ -1362,7 +1365,6 @@ ding{71}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{70}
@@ -1384,7 +1386,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{118}
 \end_layout
@@ -1404,7 +1405,6 @@ ding{118}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{117}
@@ -1426,7 +1426,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{224}
 \end_layout
@@ -1446,7 +1445,6 @@ Pisymbol{psy}{224}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{215}
@@ -1470,7 +1468,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{111}
 \end_layout
@@ -1490,7 +1487,6 @@ ding{111}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{112}
@@ -1512,7 +1508,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{113}
 \end_layout
@@ -1532,7 +1527,6 @@ ding{113}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{114}
@@ -1554,7 +1548,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{68}
 \end_layout
@@ -1574,7 +1567,6 @@ Pisymbol{psy}{68}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{209}
@@ -1598,7 +1590,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{120}
 \end_layout
@@ -1618,7 +1609,6 @@ ding{120}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{121}
@@ -1640,7 +1630,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{122}
 \end_layout
@@ -1660,7 +1649,6 @@ ding{122}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{110}
@@ -1682,7 +1670,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{115}
 \end_layout
@@ -1702,7 +1689,6 @@ ding{115}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{116}
@@ -1726,7 +1712,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{42}
 \end_layout
@@ -1746,7 +1731,6 @@ Pisymbol{psy}{42}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{67}
@@ -1768,7 +1752,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{66}
 \end_layout
@@ -1788,7 +1771,6 @@ ding{66}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{82}
@@ -1810,7 +1792,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{81}
 \end_layout
@@ -1830,7 +1811,6 @@ ding{81}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{228}
@@ -1854,7 +1834,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{162}
 \end_layout
@@ -1874,7 +1853,6 @@ ding{162}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{163}
@@ -1896,7 +1874,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{166}
 \end_layout
@@ -1916,7 +1893,6 @@ ding{166}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{167}
@@ -1938,7 +1914,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{226}
 \end_layout
@@ -1958,7 +1933,6 @@ ding{226}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{227}
@@ -2018,7 +1992,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{37}
 \end_layout
@@ -2038,7 +2011,6 @@ ding{37}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{38}
@@ -2060,7 +2032,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{34}
 \end_layout
@@ -2080,7 +2051,6 @@ ding{34}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{36}
@@ -2102,7 +2072,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{39}
 \end_layout
@@ -2122,7 +2091,6 @@ ding{39}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{40}
@@ -2146,7 +2114,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{41}
 \end_layout
@@ -2166,7 +2133,6 @@ ding{41}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{42}
@@ -2188,7 +2154,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{43}
 \end_layout
@@ -2208,7 +2173,6 @@ ding{43}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{44}
@@ -2230,7 +2194,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{45}
 \end_layout
@@ -2250,7 +2213,6 @@ ding{45}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{47}
@@ -2274,7 +2236,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{53}
 \end_layout
@@ -2294,7 +2255,6 @@ ding{53}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{54}
@@ -2316,7 +2276,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{59}
 \end_layout
@@ -2336,7 +2295,6 @@ ding{59}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{57}
@@ -2358,7 +2316,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{62}
 \end_layout
@@ -2378,7 +2335,6 @@ ding{62}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{61}
@@ -2402,7 +2358,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{55}
 \end_layout
@@ -2422,7 +2377,6 @@ ding{55}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{56}
@@ -2444,7 +2398,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{58}
 \end_layout
@@ -2464,7 +2417,6 @@ ding{58}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{60}
@@ -2486,7 +2438,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{63}
 \end_layout
@@ -2506,7 +2457,6 @@ ding{63}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{64}
@@ -2530,7 +2480,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{51}
 \end_layout
@@ -2550,7 +2499,6 @@ ding{51}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{52}
@@ -2572,7 +2520,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{170}
 \end_layout
@@ -2592,7 +2539,6 @@ Pisymbol{psy}{170}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{167}
@@ -2614,7 +2560,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{168}
 \end_layout
@@ -2634,7 +2579,6 @@ Pisymbol{psy}{168}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{169}
@@ -2658,7 +2602,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{164}
 \end_layout
@@ -2678,7 +2621,6 @@ ding{164}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{165}
@@ -2700,7 +2642,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{171}
 \end_layout
@@ -2720,7 +2661,6 @@ ding{171}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{168}
@@ -2742,7 +2682,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{169}
 \end_layout
@@ -2762,7 +2701,6 @@ ding{169}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{170}
@@ -2822,7 +2760,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{65}
 \end_layout
@@ -2842,7 +2779,6 @@ ding{65}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{76}
@@ -2864,7 +2800,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{75}
 \end_layout
@@ -2884,7 +2819,6 @@ ding{75}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{72}
@@ -2906,7 +2840,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{80}
 \end_layout
@@ -2926,7 +2859,6 @@ ding{80}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{74}
@@ -2950,7 +2882,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{78}
 \end_layout
@@ -2970,7 +2901,6 @@ ding{78}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{77}
@@ -2992,7 +2922,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{79}
 \end_layout
@@ -3012,7 +2941,6 @@ ding{79}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{85}
@@ -3034,7 +2962,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{90}
 \end_layout
@@ -3054,7 +2981,6 @@ ding{90}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{98}
@@ -3078,7 +3004,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{83}
 \end_layout
@@ -3098,7 +3023,6 @@ ding{83}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{84}
@@ -3120,7 +3044,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{86}
 \end_layout
@@ -3140,7 +3063,6 @@ ding{86}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{87}
@@ -3162,7 +3084,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{88}
 \end_layout
@@ -3182,7 +3103,6 @@ ding{88}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{89}
@@ -3206,7 +3126,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{92}
 \end_layout
@@ -3226,7 +3145,6 @@ ding{92}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{91}
@@ -3248,7 +3166,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{93}
 \end_layout
@@ -3268,7 +3185,6 @@ ding{93}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{105}
@@ -3290,7 +3206,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{94}
 \end_layout
@@ -3310,7 +3225,6 @@ ding{94}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{99}
@@ -3334,7 +3248,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{103}
 \end_layout
@@ -3354,7 +3267,6 @@ ding{103}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{104}
@@ -3376,7 +3288,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{106}
 \end_layout
@@ -3396,7 +3307,6 @@ ding{106}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{107}
@@ -3418,7 +3328,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{68}
 \end_layout
@@ -3438,7 +3347,6 @@ ding{68}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{69}
@@ -3462,7 +3370,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{100}
 \end_layout
@@ -3482,7 +3389,6 @@ ding{100}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{101}
@@ -3504,7 +3410,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{102}
 \end_layout
@@ -3524,7 +3429,6 @@ ding{102}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{96}
@@ -3546,7 +3450,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{95}
 \end_layout
@@ -3566,7 +3469,6 @@ ding{95}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{97}
@@ -3626,7 +3528,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{223}
 \end_layout
@@ -3646,7 +3547,6 @@ ding{223}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{224}
@@ -3668,7 +3568,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{225}
 \end_layout
@@ -3688,7 +3587,6 @@ ding{225}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{232}
@@ -3710,7 +3608,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{229}
 \end_layout
@@ -3730,7 +3627,6 @@ ding{229}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{230}
@@ -3754,7 +3650,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{238}
 \end_layout
@@ -3774,7 +3669,6 @@ ding{238}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{237}
@@ -3796,7 +3690,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{236}
 \end_layout
@@ -3816,7 +3709,6 @@ ding{236}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{235}
@@ -3838,7 +3730,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{234}
 \end_layout
@@ -3858,7 +3749,6 @@ ding{234}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{233}
@@ -3882,7 +3772,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{239}
 \end_layout
@@ -3902,7 +3791,6 @@ ding{239}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{241}
@@ -3924,7 +3812,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{250}
 \end_layout
@@ -3944,7 +3831,6 @@ ding{250}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{251}
@@ -3966,7 +3852,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{49}
 \end_layout
@@ -3986,7 +3871,6 @@ ding{49}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{50}
@@ -4010,7 +3894,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{217}
 \end_layout
@@ -4030,7 +3913,6 @@ ding{217}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{245}
@@ -4052,7 +3934,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{243}
 \end_layout
@@ -4072,7 +3953,6 @@ ding{243}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{248}
@@ -4094,7 +3974,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{252}
 \end_layout
@@ -4114,7 +3993,6 @@ ding{252}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{253}
@@ -4138,7 +4016,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{219}
 \end_layout
@@ -4158,7 +4035,6 @@ ding{219}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{213}
@@ -4180,7 +4056,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{221}
 \end_layout
@@ -4200,7 +4075,6 @@ ding{221}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{222}
@@ -4222,7 +4096,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{220}
 \end_layout
@@ -4242,7 +4115,6 @@ ding{220}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{212}
@@ -4266,7 +4138,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Pisymbol{psy}{174}
 \end_layout
@@ -4286,7 +4157,6 @@ Pisymbol{psy}{174}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{222}
@@ -4308,7 +4178,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{254}
 \end_layout
@@ -4328,7 +4197,6 @@ ding{254}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ding{242}
@@ -4350,7 +4218,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ding{231}
 \end_layout
@@ -4370,7 +4237,6 @@ ding{231}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Pisymbol{psy}{45}

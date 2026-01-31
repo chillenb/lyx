@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -67,10 +67,19 @@ lilypond
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -100,6 +109,7 @@ lilypond
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -271,12 +281,10 @@ Insets
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 staffsize=28
 \end_layout
 
@@ -287,18 +295,15 @@ staffsize=28
 
 \begin_layout Plain Layout
 
-
 \backslash
 relative c'' {
 \end_layout
 
 \begin_layout Plain Layout
-
   g a b c
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -419,12 +424,10 @@ LilyPond-book\SpecialChar menuseparator
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 staffsize=12
 \end_layout
 
@@ -476,18 +479,15 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 relative c'' {
 \end_layout
 
 \begin_layout Plain Layout
-
   ais a g ges
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -685,7 +685,6 @@ With surrounding braces,
 status collapsed
 
 \begin_layout Plain Layout
-
 {ais' f'' g' e''} % no 
 \backslash
 score given
@@ -880,37 +879,31 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 new PianoStaff <<
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \end_layout
 
 \begin_layout Plain Layout
-
   % RH Staff
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \backslash
 new Staff {
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 clef treble
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 key aes 
@@ -919,73 +912,62 @@ major
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 time 2/4
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 set Staff.fingeringOrientations = #'(up)
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 set Score.currentBarNumber = #9
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 partial 8
 \end_layout
 
 \begin_layout Plain Layout
-
     <aes''-4 c''>8
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 set doubleSlurs = ##t
 \end_layout
 
 \begin_layout Plain Layout
-
     <bes''-5 des''-2>4(
 \end_layout
 
 \begin_layout Plain Layout
-
     <aes''-4 c''>8
 \backslash
 staccato)
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 noBeam
 \end_layout
 
 \begin_layout Plain Layout
-
     c''8-5
 \backslash
 staccato
@@ -994,58 +976,48 @@ pp
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 unset doubleSlurs
 \end_layout
 
 \begin_layout Plain Layout
-
     bes'8..(
 \end_layout
 
 \begin_layout Plain Layout
-
     aes'32
 \end_layout
 
 \begin_layout Plain Layout
-
     g'8)
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     f'8
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     e'4-2
 \end_layout
 
 \begin_layout Plain Layout
-
     r8
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 once 
@@ -1054,14 +1026,12 @@ override Script #'script-priority = #-100
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 afterGrace
 \end_layout
 
 \begin_layout Plain Layout
-
     f'8(
 \backslash
 trill^
@@ -1072,78 +1042,64 @@ finger "3-2" }
 \end_layout
 
 \begin_layout Plain Layout
-
     { e'16[ f'16] }
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     g'8..-3
 \end_layout
 
 \begin_layout Plain Layout
-
     f'32
 \end_layout
 
 \begin_layout Plain Layout
-
     e'8-1)
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     d'8-2
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     c'4
 \end_layout
 
 \begin_layout Plain Layout
-
     r4
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \end_layout
 
 \begin_layout Plain Layout
-
   % LH Staff
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \backslash
 new Staff {
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 key aes 
@@ -1152,140 +1108,118 @@ major
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 clef treble
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 override Fingering #'direction = #down
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 set Staff.fingeringOrientations = #'(down)
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 partial 8
 \end_layout
 
 \begin_layout Plain Layout
-
     <aes' aes>8
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 set doubleSlurs = ##t
 \end_layout
 
 \begin_layout Plain Layout
-
     <g'-2 ees'-3>4(
 \end_layout
 
 \begin_layout Plain Layout
-
     <aes' aes>8)
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 noBeam
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 clef bass
 \end_layout
 
 \begin_layout Plain Layout
-
     c'8-1
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     %
 \backslash
 set doubleSlurs = ##f
 \end_layout
 
 \begin_layout Plain Layout
-
     bes8..(
 \end_layout
 
 \begin_layout Plain Layout
-
     aes32
 \end_layout
 
 \begin_layout Plain Layout
-
     g8-1)
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     f8
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     e4
 \end_layout
 
 \begin_layout Plain Layout
-
     r8
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 afterGrace
 \end_layout
 
 \begin_layout Plain Layout
-
     f8(
 \backslash
 trill_
@@ -1296,61 +1230,50 @@ finger "2-1" }
 \end_layout
 
 \begin_layout Plain Layout
-
     { e16[ f16] }
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     g8..-1
 \end_layout
 
 \begin_layout Plain Layout
-
     f32
 \end_layout
 
 \begin_layout Plain Layout
-
     e8)
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     d8
 \backslash
 staccato
 \end_layout
 
 \begin_layout Plain Layout
-
     |
 \end_layout
 
 \begin_layout Plain Layout
-
     c4
 \end_layout
 
 \begin_layout Plain Layout
-
     r4
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 >>
 \end_layout
 
@@ -1375,7 +1298,6 @@ staccato
 status collapsed
 
 \begin_layout Plain Layout
-
 https://lsr.di.unimi.it/LSR/Item?id=627
 \end_layout
 
@@ -1405,64 +1327,54 @@ name "subsec:Tablatures-template"
 status collapsed
 
 \begin_layout Plain Layout
-
 upper=  
 \backslash
 relative c' {
 \end_layout
 
 \begin_layout Plain Layout
-
   c4.
   g4  g  c
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 lower=  
 \backslash
 relative c {
 \end_layout
 
 \begin_layout Plain Layout
-
   c4  e  g,
   e'
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 score {
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \backslash
 new StaffGroup <<
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 new Staff = "guitar" <<
 \end_layout
 
 \begin_layout Plain Layout
-
       
 \backslash
 context Voice = "upper guitar" { 
@@ -1475,7 +1387,6 @@ upper }
 \end_layout
 
 \begin_layout Plain Layout
-
       
 \backslash
 context Voice = "lower guitar" { 
@@ -1488,19 +1399,16 @@ lower }
 \end_layout
 
 \begin_layout Plain Layout
-
     >>
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 new TabStaff = "tab" <<
 \end_layout
 
 \begin_layout Plain Layout
-
       
 \backslash
 context TabVoice = "upper tab" { 
@@ -1513,7 +1421,6 @@ upper }
 \end_layout
 
 \begin_layout Plain Layout
-
       
 \backslash
 context TabVoice = "lower tab" { 
@@ -1526,17 +1433,14 @@ lower }
 \end_layout
 
 \begin_layout Plain Layout
-
     >>
 \end_layout
 
 \begin_layout Plain Layout
-
   >>
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1557,7 +1461,6 @@ lower }
 status collapsed
 
 \begin_layout Plain Layout
-
 https://lsr.di.unimi.it/LSR/Item?id=634
 \end_layout
 

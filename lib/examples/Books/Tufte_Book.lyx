@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -63,11 +63,20 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -93,6 +102,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -262,7 +272,6 @@ In this sample document,
 status collapsed
 
 \begin_layout Plain Layout
-
 https://tufte-latex.github.io/tufte-latex/
 \end_layout
 
@@ -1301,7 +1310,7 @@ To find the volume of the figure between points
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\int_{a}^{b}\,\pi f^{2}(x)\,dx
+\int^{b}_{a}\,\pi f^{2}(x)\,dx
 \end{equation}
 
 \end_inset
@@ -1322,8 +1331,8 @@ In the specific example,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\int_{0}^{4}\,\pi x\,dx & = & \pi\int_{0}^{4}\,x\,dx\\
- & = & \pi\left.\left(\frac{x^{2}}{2}\right)\right|_{0}^{4}\\
+\int^{4}_{0}\,\pi x\,dx & = & \pi\int^{4}_{0}\,x\,dx\\
+ & = & \pi\left.\left(\frac{x^{2}}{2}\right)\right|^{4}_{0}\\
  & = & \pi\left(\frac{4^{2}}{2}-0\right)\\
  & = & 8\pi
 \end{eqnarray*}
@@ -1492,7 +1501,7 @@ Then,
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\int_{a}^{b}\,\pi\left(f^{2}(x)-g^{2}(x)\right)\,dx
+\int^{b}_{a}\,\pi\left(f^{2}(x)-g^{2}(x)\right)\,dx
 \end{equation}
 
 \end_inset
@@ -1554,9 +1563,9 @@ The cup with a quadratic hole drilled down its length
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray*}
-\int_{0}^{4}\,\pi\left(\left(\sqrt{x}\right)^{2}-\left(\frac{x^{2}}{16}\right)\right)\,dx & = & \pi\int_{0}^{4}\,\left(x-\frac{x^{4}}{256}\right)\,dx\\
- & = & \pi\left(\int_{0}^{4}\,x\,dx-\int_{0}^{4}\,\frac{x^{4}}{256}\,dx\right)\\
- & = & \pi\left(\left.\left(\frac{x^{2}}{2}\right)\right|_{0}^{4}-\left.\left(\frac{x^{5}}{1280}\right)\right|_{0}^{4}\right)\\
+\int^{4}_{0}\,\pi\left(\left(\sqrt{x}\right)^{2}-\left(\frac{x^{2}}{16}\right)\right)\,dx & = & \pi\int^{4}_{0}\,\left(x-\frac{x^{4}}{256}\right)\,dx\\
+ & = & \pi\left(\int^{4}_{0}\,x\,dx-\int^{4}_{0}\,\frac{x^{4}}{256}\,dx\right)\\
+ & = & \pi\left(\left.\left(\frac{x^{2}}{2}\right)\right|^{4}_{0}-\left.\left(\frac{x^{5}}{1280}\right)\right|^{4}_{0}\right)\\
  & = & \pi\left(\left(\frac{4^{2}}{2}-0\right)-\left(\frac{4^{5}}{1280}-0\right)\right)\\
  & = & \pi\left(8-0.8\right)\\
  & = & 7.2\pi

@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -67,10 +67,19 @@ sweave
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -100,6 +109,7 @@ sweave
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -109,7 +119,6 @@ sweave
 status open
 
 \begin_layout Plain Layout
-
 %
 \backslash
 SweaveOpts{prefix=TRUE,prefix.string=sweave-prefix,keep.source=FALSE}
@@ -125,7 +134,6 @@ SweaveOpts{prefix=TRUE,prefix.string=sweave-prefix,keep.source=FALSE}
 status open
 
 \begin_layout Plain Layout
-
 %% 
 \backslash
 maxwidth はプリアンブル中で定義されています。
@@ -134,7 +142,6 @@ maxwidth はプリアンブル中で定義されています。
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 setkeys{Gin}{width=
@@ -180,7 +187,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and
 \end_layout
@@ -192,7 +198,6 @@ and
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 and
@@ -209,7 +214,6 @@ Sweaveは、文芸的プログラミングの考えに従った、動的なレ�
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.r-project.org
 \end_layout
 
@@ -247,7 +251,6 @@ Sweave
 status collapsed
 
 \begin_layout Plain Layout
-
 https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf
 \end_layout
 
@@ -285,7 +288,6 @@ PATH
 status collapsed
 
 \begin_layout Plain Layout
-
 https://github.com/yihui/lyx
 \end_layout
 
@@ -329,12 +331,10 @@ bin
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 where-is-R-bin,eval=FALSE
 \end_layout
 
@@ -344,7 +344,6 @@ where-is-R-bin,eval=FALSE
 \end_layout
 
 \begin_layout Plain Layout
-
 R.home('bin')
 \end_layout
 
@@ -389,12 +388,10 @@ Sweave.sty
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 sweave-sty,eval=FALSE
 \end_layout
 
@@ -404,7 +401,6 @@ sweave-sty,eval=FALSE
 \end_layout
 
 \begin_layout Plain Layout
-
 file.path(R.home('share'),
  'texmf',
  'tex',
@@ -515,12 +511,10 @@ useFancyQuotes
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 setup,
  keep.source=TRUE
 \end_layout
@@ -531,12 +525,10 @@ setup,
 \end_layout
 
 \begin_layout Plain Layout
-
 ## オプション「digits」は桁数(の概数)を設定できます
 \end_layout
 
 \begin_layout Plain Layout
-
 options(width = 70,
  useFancyQuotes = FALSE,
  digits = 4)
@@ -552,12 +544,10 @@ options(width = 70,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 sweave-manual,
  eval=FALSE,
  keep.source=TRUE
@@ -569,12 +559,10 @@ sweave-manual,
 \end_layout
 
 \begin_layout Plain Layout
-
 ## Sweaveのvignetteを見る (要 R >= 2.13.0)
 \end_layout
 
 \begin_layout Plain Layout
-
 vignette("Sweave",
  package = "utils")
 \end_layout
@@ -590,12 +578,10 @@ vignette("Sweave",
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 print-integers,
  keep.source=TRUE
 \end_layout
@@ -606,12 +592,10 @@ print-integers,
 \end_layout
 
 \begin_layout Plain Layout
-
 ## 1から10までの整数は
 \end_layout
 
 \begin_layout Plain Layout
-
 1:10
 \end_layout
 
@@ -625,12 +609,10 @@ print-integers,
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 hide-results,
  results=hide
 \end_layout
@@ -641,12 +623,10 @@ hide-results,
 \end_layout
 
 \begin_layout Plain Layout
-
 ## results=hide を設定して意図的に出力を隠す
 \end_layout
 
 \begin_layout Plain Layout
-
 print(1:20)
 \end_layout
 
@@ -661,12 +641,10 @@ print(1:20)
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 calculator
 \end_layout
 
@@ -676,12 +654,10 @@ calculator
 \end_layout
 
 \begin_layout Plain Layout
-
 1 + pi
 \end_layout
 
 \begin_layout Plain Layout
-
 sin(pi/6)
 \end_layout
 
@@ -700,12 +676,10 @@ sin(pi/6)
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 rnorm
 \end_layout
 
@@ -715,22 +689,18 @@ rnorm
 \end_layout
 
 \begin_layout Plain Layout
-
 set.seed(123)  # 再現可能性のため
 \end_layout
 
 \begin_layout Plain Layout
-
 x <- rnorm(20)
 \end_layout
 
 \begin_layout Plain Layout
-
 print(x)
 \end_layout
 
 \begin_layout Plain Layout
-
 t1 <- t.test(x)
 \end_layout
 
@@ -765,7 +735,6 @@ x
 status collapsed
 
 \begin_layout Plain Layout
-
 x[3]
 \end_layout
 
@@ -784,7 +753,6 @@ x[3]
 status collapsed
 
 \begin_layout Plain Layout
-
 format.pval(t1$p.value)
 \end_layout
 
@@ -836,12 +804,10 @@ iris
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 iris-summary
 \end_layout
 
@@ -851,7 +817,6 @@ iris-summary
 \end_layout
 
 \begin_layout Plain Layout
-
 summary(iris[,-5])
 \end_layout
 
@@ -897,12 +862,10 @@ name "tab:xtable-demo"
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 xtable-demo,results=tex,echo=FALSE
 \end_layout
 
@@ -912,19 +875,16 @@ xtable-demo,results=tex,echo=FALSE
 \end_layout
 
 \begin_layout Plain Layout
-
 if (require('xtable')) {
 \end_layout
 
 \begin_layout Plain Layout
-
 print(xtable(sapply(iris[,-5],
  quantile)),
  floating=FALSE)
 \end_layout
 
 \begin_layout Plain Layout
-
 } else cat('the xtable package is not available!
  please install.packages("xtable")')
 \end_layout
@@ -1018,12 +978,10 @@ epsとpdfの両方をtrueにして、latexとpdflatexの両方を動作するよ
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 iris-pairs,fig=TRUE,width=4.5,height=4.5,eps=TRUE,pdf=TRUE
 \end_layout
 
@@ -1033,7 +991,6 @@ iris-pairs,fig=TRUE,width=4.5,height=4.5,eps=TRUE,pdf=TRUE
 \end_layout
 
 \begin_layout Plain Layout
-
 pairs(iris,
  col = iris$Species)
 \end_layout
@@ -1085,12 +1042,10 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Argument 1
 status open
 
 \begin_layout Plain Layout
-
 iris-boxplots,fig=TRUE,width=7,height=2,keep.source=F,eps=T,pdf=T
 \end_layout
 
@@ -1100,13 +1055,11 @@ iris-boxplots,fig=TRUE,width=7,height=2,keep.source=F,eps=T,pdf=T
 \end_layout
 
 \begin_layout Plain Layout
-
 par(mar=c(4,5,.1,.3),
  las=1)
 \end_layout
 
 \begin_layout Plain Layout
-
 boxplot(Sepal.Length~Species,data=iris,horizontal=TRUE,xlab='Sepal.Length')
 \end_layout
 
@@ -1210,18 +1163,15 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{verbatim}
 \end_layout
 
 \begin_layout Plain Layout
-
 Rscript --no-save --no-restore $$s/scripts/lyxsweave.R $$p$$i $$p$$o $$e $$r
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{verbatim}
@@ -1359,13 +1309,11 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{verbatim}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 RequirePackage[T1]{fontenc}  
@@ -1373,13 +1321,11 @@ RequirePackage[T1]{fontenc}
 
 \begin_layout Plain Layout
 
-
 \backslash
 RequirePackage{ae}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{verbatim}
@@ -1425,70 +1371,59 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{verbatim}
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:47.868:
  Processing code chunks with options ...
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:47.885:
   1 :
  echo keep.source term verbatim (label=setup)
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:47.889:
   2 :
  echo keep.source (label=sweave-manual)
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:47.908:
   3 :
  echo keep.source term verbatim (label=print-integers)
 \end_layout
 
 \begin_layout Plain Layout
-
 ....
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:47.941:
  Loading required package:
  xtable
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:47.976:
   9 :
  echo term verbatim pdf (label=iris-pairs)
 \end_layout
 
 \begin_layout Plain Layout
-
 ....
 \end_layout
 
 \begin_layout Plain Layout
-
 17:58:48.116:
  You can now run (pdf)latex on 'sweave.tex'
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{verbatim}
@@ -1533,20 +1468,17 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{verbatim}
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 centering{}<<xtable-demo,results=tex,echo=FALSE>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{verbatim}
@@ -1595,7 +1527,6 @@ Sweaveの利用者の手引きは
 status collapsed
 
 \begin_layout Plain Layout
-
 https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf
 \end_layout
 
@@ -1608,7 +1539,6 @@ https://stat.ethz.ch/R-manual/R-devel/library/utils/doc/Sweave.pdf
 status collapsed
 
 \begin_layout Plain Layout
-
 https://cran.r-project.org/web/views/ReproducibleResearch.html
 \end_layout
 
@@ -1622,7 +1552,6 @@ https://cran.r-project.org/web/views/ReproducibleResearch.html
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/MailingLists
 \end_layout
 
@@ -1635,7 +1564,6 @@ https://www.lyx.org/MailingLists
 status collapsed
 
 \begin_layout Plain Layout
-
 https://github.com/yihui/lyx
 \end_layout
 

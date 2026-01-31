@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -66,10 +66,19 @@ noweb
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -95,6 +104,7 @@ noweb
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -119,7 +129,6 @@ Kayvan A.
 status collapsed
 
 \begin_layout Plain Layout
-
 mailto:kayvan@sylvan.com
 \end_layout
 
@@ -167,7 +176,6 @@ Visit
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/trac/ticket/190
 \end_layout
 
@@ -223,7 +231,6 @@ See
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.cs.tufts.edu/~nr/noweb/
 \end_layout
 
@@ -317,7 +324,6 @@ See the Python home page (
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.python.org
 \end_layout
 
@@ -346,17 +352,14 @@ listerrors
 status open
 
 \begin_layout Plain Layout
-
 <<listerrors>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 #!/usr/bin/python
 \end_layout
 
 \begin_layout Plain Layout
-
 """reformat noweb and compiler errors for LyX.
 \end_layout
 
@@ -365,12 +368,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 Expects to read from stdin and output to stdout.
 \end_layout
 
 \begin_layout Plain Layout
-
 """
 \end_layout
 
@@ -379,46 +380,38 @@ Expects to read from stdin and output to stdout.
 \end_layout
 
 \begin_layout Plain Layout
-
 __author__ = "Kayvan A.
  Sylvan <kayvan@sylvan.com>"
 \end_layout
 
 \begin_layout Plain Layout
-
 __date__ = "$Date:
  2005/07/18 09:42:26 $"
 \end_layout
 
 \begin_layout Plain Layout
-
 __version__ = "$Revision:
  1.5 $"
 \end_layout
 
 \begin_layout Plain Layout
-
 __credits__ = """Edmar Wienskoski Jr.
  <edmar-w-jr@technologist.com>
 \end_layout
 
 \begin_layout Plain Layout
-
     original Literate support for LyX.
 \end_layout
 
 \begin_layout Plain Layout
-
 Bernard Michael Hurley <berhardh@westherts.ac.uk>
 \end_layout
 
 \begin_layout Plain Layout
-
     modifications to original listerrors."""
 \end_layout
 
 \begin_layout Plain Layout
-
 __copyright__ = "Copyright 2002 - Kayvan Sylvan."
 \end_layout
 
@@ -427,7 +420,6 @@ __copyright__ = "Copyright 2002 - Kayvan Sylvan."
 \end_layout
 
 \begin_layout Plain Layout
-
 import sys,
  string
 \end_layout
@@ -437,7 +429,6 @@ import sys,
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>
 \end_layout
 
@@ -446,17 +437,14 @@ import sys,
 \end_layout
 
 \begin_layout Plain Layout
-
 if __name__ == "__main__":
 \end_layout
 
 \begin_layout Plain Layout
-
   main()
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -480,19 +468,16 @@ The following function mimics the \SpecialChar TeX
 status open
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 def write_error(msg,
  tool = "noweb",
  line_number = 1):
 \end_layout
 
 \begin_layout Plain Layout
-
   """Write out the given message in TeX error style.
 \end_layout
 
@@ -505,7 +490,6 @@ def write_error(msg,
 \end_layout
 
 \begin_layout Plain Layout
-
   called like:
  write_error(msg,
  tool,
@@ -513,7 +497,6 @@ def write_error(msg,
 \end_layout
 
 \begin_layout Plain Layout
-
   print "!
  Build Error:
  ==> %s ==>
@@ -522,7 +505,6 @@ n" % (tool),
 \end_layout
 
 \begin_layout Plain Layout
-
   print " ...
 \backslash
 n
@@ -533,35 +515,29 @@ n" % (line_number),
 \end_layout
 
 \begin_layout Plain Layout
-
   if type(msg) == type("str"):
  # simple string
 \end_layout
 
 \begin_layout Plain Layout
-
     print msg
 \end_layout
 
 \begin_layout Plain Layout
-
   else:
  # some kind of list (sequence or tuple)
 \end_layout
 
 \begin_layout Plain Layout
-
     for m in msg:
 \end_layout
 
 \begin_layout Plain Layout
-
         if m != "":
  print m,
 \end_layout
 
 \begin_layout Plain Layout
-
     print
 \end_layout
 
@@ -570,7 +546,6 @@ n" % (line_number),
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def write_error
 \end_layout
 
@@ -609,12 +584,10 @@ pushline
 status open
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 __lines = [] # lines pushed back
 \end_layout
 
@@ -623,12 +596,10 @@ __lines = [] # lines pushed back
 \end_layout
 
 \begin_layout Plain Layout
-
 def getline(file = sys.stdin):
 \end_layout
 
 \begin_layout Plain Layout
-
   """read a line from internal stack or from file.
 \end_layout
 
@@ -637,42 +608,34 @@ def getline(file = sys.stdin):
 \end_layout
 
 \begin_layout Plain Layout
-
   optional file argument defaults to sys.stdin."""
 \end_layout
 
 \begin_layout Plain Layout
-
   global __lines
 \end_layout
 
 \begin_layout Plain Layout
-
   lines = __lines
 \end_layout
 
 \begin_layout Plain Layout
-
   if lines:
 \end_layout
 
 \begin_layout Plain Layout
-
     line = lines.pop()
 \end_layout
 
 \begin_layout Plain Layout
-
   else:
 \end_layout
 
 \begin_layout Plain Layout
-
     line = file.readline()
 \end_layout
 
 \begin_layout Plain Layout
-
   return line
 \end_layout
 
@@ -681,7 +644,6 @@ def getline(file = sys.stdin):
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def getline
 \end_layout
 
@@ -699,17 +661,14 @@ And now for the corresponding pushline function:
 status open
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 def pushline(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   "push a line onto the pushback stack."
 \end_layout
 
@@ -718,17 +677,14 @@ def pushline(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   global __lines
 \end_layout
 
 \begin_layout Plain Layout
-
   lines = __lines
 \end_layout
 
 \begin_layout Plain Layout
-
 lines.append(line)
 \end_layout
 
@@ -737,7 +693,6 @@ lines.append(line)
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def pushline
 \end_layout
 
@@ -767,17 +722,14 @@ listerrors
 status open
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 def main():
 \end_layout
 
 \begin_layout Plain Layout
-
   """Entry point for listerrors.
  Takes no options.
 \end_layout
@@ -787,7 +739,6 @@ def main():
 \end_layout
 
 \begin_layout Plain Layout
-
   Reads stdin and writes to stdout.
  Filter errors"""
 \end_layout
@@ -797,28 +748,23 @@ def main():
 \end_layout
 
 \begin_layout Plain Layout
-
   while 1:
 \end_layout
 
 \begin_layout Plain Layout
-
     line = getline()
 \end_layout
 
 \begin_layout Plain Layout
-
     if line == "":
  break
 \end_layout
 
 \begin_layout Plain Layout
-
     <<Check line against patterns and take action>>
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def main
 \end_layout
 
@@ -839,7 +785,6 @@ For each line read in,
 status open
 
 \begin_layout Plain Layout
-
 <<Check line against patterns and take action>>=
 \end_layout
 
@@ -848,25 +793,21 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 try_patterns_dispatch = [ noweb_try,
  gcc_try,
  xlc_try ]
 \end_layout
 
 \begin_layout Plain Layout
-
 for predicate in try_patterns_dispatch:
 \end_layout
 
 \begin_layout Plain Layout
-
   if predicate(line):
  break
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -898,17 +839,14 @@ Noweb errors are output on a single line,
 status open
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 def noweb_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   """see if line is a noweb error.
 \end_layout
 
@@ -917,34 +855,28 @@ def noweb_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   Returns 1 on success,
  0 otherwise.
  Outputs on stdout."""
 \end_layout
 
 \begin_layout Plain Layout
-
   retval = 0
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Look for the unescaped angle-brackets in documentation>>
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Look for anything with double angle brackets>>
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Last ditch effort scan for specific strings>>
 \end_layout
 
 \begin_layout Plain Layout
-
   return retval
 \end_layout
 
@@ -953,7 +885,6 @@ def noweb_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def noweb_try
 \end_layout
 
@@ -985,63 +916,52 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Look for the unescaped angle-brackets in documentation>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 if string.find(line,
  ":
  unescaped << in documentation chunk") != -1:
 \end_layout
 
 \begin_layout Plain Layout
-
   line_parts = string.split(line,
  ':')
 \end_layout
 
 \begin_layout Plain Layout
-
   num_str = line_parts[1]
 \end_layout
 
 \begin_layout Plain Layout
-
   num_len = len(num_str)
 \end_layout
 
 \begin_layout Plain Layout
-
   i = 0
 \end_layout
 
 \begin_layout Plain Layout
-
   while i < num_len and (num_str[i] in string.digits):
  i = i + 1
 \end_layout
 
 \begin_layout Plain Layout
-
   if i == num_len:
 \end_layout
 
 \begin_layout Plain Layout
-
     write_error(":" + line_parts[2],
  "noweb",
  int(num_str))
 \end_layout
 
 \begin_layout Plain Layout
-
     retval = 1
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1060,7 +980,6 @@ Some noweb messages are simply about undefined chunks.
 status open
 
 \begin_layout Plain Layout
-
 <<Look for anything with double angle brackets>>=
 \end_layout
 
@@ -1069,42 +988,35 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 if (not retval):
 \end_layout
 
 \begin_layout Plain Layout
-
   left = string.find(line,
  "<<")
 \end_layout
 
 \begin_layout Plain Layout
-
   if (left != -1) and ((left + 2) < len(line)) and 
 \backslash
 
 \end_layout
 
 \begin_layout Plain Layout
-
      (string.find(line[left+2:],
  ">>") != -1):
 \end_layout
 
 \begin_layout Plain Layout
-
     write_error(line,
  "noweb");
 \end_layout
 
 \begin_layout Plain Layout
-
     retval = 1;
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1123,104 +1035,84 @@ Finally,
 status open
 
 \begin_layout Plain Layout
-
 <<Last ditch effort scan for specific strings>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 if (not retval):
 \end_layout
 
 \begin_layout Plain Layout
-
   msgs_to_try = ("couldn't open file",
 \end_layout
 
 \begin_layout Plain Layout
-
     "couldn't open temporary file",
 \end_layout
 
 \begin_layout Plain Layout
-
     "error writing temporary file",
 \end_layout
 
 \begin_layout Plain Layout
-
     "ill-formed option",
 \end_layout
 
 \begin_layout Plain Layout
-
     "unknown option",
 \end_layout
 
 \begin_layout Plain Layout
-
     "Bad format sequence",
 \end_layout
 
 \begin_layout Plain Layout
-
     "Can't open output file",
 \end_layout
 
 \begin_layout Plain Layout
-
     "Can't open temporary file",
 \end_layout
 
 \begin_layout Plain Layout
-
     "Capacity exceeded:",
 \end_layout
 
 \begin_layout Plain Layout
-
     "Ignoring unknown option -",
 \end_layout
 
 \begin_layout Plain Layout
-
     "This can't happen:",
 \end_layout
 
 \begin_layout Plain Layout
-
     "non-numeric line number in")
 \end_layout
 
 \begin_layout Plain Layout
-
   for msg in msgs_to_try:
 \end_layout
 
 \begin_layout Plain Layout
-
     if string.find(line,
  msg) != -1:
 \end_layout
 
 \begin_layout Plain Layout
-
       write_error(line,
  "noweb")
 \end_layout
 
 \begin_layout Plain Layout
-
       retval = 1
 \end_layout
 
 \begin_layout Plain Layout
-
       break
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1249,13 +1141,11 @@ foo.c:
 status open
 
 \begin_layout Plain Layout
-
 foo.c:3:
  `bar' undeclared (first use in this function) 
 \end_layout
 
 \begin_layout Plain Layout
-
 foo.c:3:
  (Each undeclared identifier is reported only once 
 \end_layout
@@ -1265,13 +1155,11 @@ foo.c:3:
 \end_layout
 
 \begin_layout Plain Layout
-
 foo.c:3:
  for each function it appears in.) 
 \end_layout
 
 \begin_layout Plain Layout
-
 foo.c:3:
  parse error before `x'
 \end_layout
@@ -1291,17 +1179,14 @@ In order to parse this,
 status open
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 def gcc_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   """See if line is a gcc error.
  Read ahead to handle all the lines.
 \end_layout
@@ -1311,24 +1196,20 @@ def gcc_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   Returns 1 on success,
  0 otherwise.
  Outputs on stdout."""
 \end_layout
 
 \begin_layout Plain Layout
-
   retval = 0
 \end_layout
 
 \begin_layout Plain Layout
-
   <<Handle the gcc error message>>
 \end_layout
 
 \begin_layout Plain Layout
-
   return retval
 \end_layout
 
@@ -1337,7 +1218,6 @@ def gcc_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def gcc_try
 \end_layout
 
@@ -1355,89 +1235,73 @@ The error message starts with a gcc header (as above) without an associated line
 status open
 
 \begin_layout Plain Layout
-
 <<Handle the gcc error message>>= 
 \end_layout
 
 \begin_layout Plain Layout
-
 first_space = string.find(line,
  ' ')
 \end_layout
 
 \begin_layout Plain Layout
-
 if first_space > 1:
  # The smallest would be "X:
  "
 \end_layout
 
 \begin_layout Plain Layout
-
   if line[first_space - 1] == ':':
 \end_layout
 
 \begin_layout Plain Layout
-
     header_to_see = line[:first_space - 1]
 \end_layout
 
 \begin_layout Plain Layout
-
     next_line = getline()
 \end_layout
 
 \begin_layout Plain Layout
-
     if next_line and next_line[:first_space - 1] == header_to_see:
 \end_layout
 
 \begin_layout Plain Layout
-
       num_end = first_space
 \end_layout
 
 \begin_layout Plain Layout
-
       while next_line[num_end] in string.digits:
  num_end = num_end + 1
 \end_layout
 
 \begin_layout Plain Layout
-
       if num_end > first_space:
  # good!
 \end_layout
 
 \begin_layout Plain Layout
-
         <<Accumulate gcc error lines and print it>>
 \end_layout
 
 \begin_layout Plain Layout
-
       else:
  # oops!
  Not a gcc error.
 \end_layout
 
 \begin_layout Plain Layout
-
         pushline(next_line)
 \end_layout
 
 \begin_layout Plain Layout
-
     elif next_line:
 \end_layout
 
 \begin_layout Plain Layout
-
       pushline(next_line) # return this line to input stream
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1456,70 +1320,57 @@ At the point in the code that we know that we are in the middle of an error mess
 status open
 
 \begin_layout Plain Layout
-
 <<Accumulate gcc error lines and print it>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 num_str = next_line[first_space:num_end]
 \end_layout
 
 \begin_layout Plain Layout
-
 msgs = [line[first_space:]]
 \end_layout
 
 \begin_layout Plain Layout
-
 msgs.append(next_line[num_end + 1:])
 \end_layout
 
 \begin_layout Plain Layout
-
 header_to_see = next_line[:num_end]
 \end_layout
 
 \begin_layout Plain Layout
-
 next_line = getline()
 \end_layout
 
 \begin_layout Plain Layout
-
 while next_line and next_line[:num_end] == header_to_see:
 \end_layout
 
 \begin_layout Plain Layout
-
   msgs.append(next_line[num_end + 1:])
 \end_layout
 
 \begin_layout Plain Layout
-
   next_line = getline()
 \end_layout
 
 \begin_layout Plain Layout
-
 if next_line:
  pushline(next_line)
 \end_layout
 
 \begin_layout Plain Layout
-
 write_error(msgs,
  "gcc",
  int(num_str))
 \end_layout
 
 \begin_layout Plain Layout
-
 retval = 1
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1574,17 +1425,14 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 <<Function Bodies>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 def xlc_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   """see if line is an xlc error.
 \end_layout
 
@@ -1593,66 +1441,55 @@ def xlc_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
   Returns 1 on success,
  0 otherwise.
  Outputs on stdout."""
 \end_layout
 
 \begin_layout Plain Layout
-
   retval = 0
 \end_layout
 
 \begin_layout Plain Layout
-
   if line[0] == '"':
  # This is the first character of all xlc errors
 \end_layout
 
 \begin_layout Plain Layout
-
     next_quote = string.find(line,
  '"',
  1)
 \end_layout
 
 \begin_layout Plain Layout
-
     first_space = string.find(line,
  ' ')
 \end_layout
 
 \begin_layout Plain Layout
-
     if (next_quote != -1) and (first_space > next_quote):
  # no space inisde quotes
 \end_layout
 
 \begin_layout Plain Layout
-
       if line[first_space - 1:first_space + 6] == ",
  line ":
 \end_layout
 
 \begin_layout Plain Layout
-
         num_start = num_end = first_space + 6
 \end_layout
 
 \begin_layout Plain Layout
-
         while line[num_end] in string.digits:
  num_end = num_end + 1
 \end_layout
 
 \begin_layout Plain Layout
-
         if num_end > num_start:
 \end_layout
 
 \begin_layout Plain Layout
-
           write_error(line,
  "xlc",
  int(line[num_start :
@@ -1660,22 +1497,18 @@ def xlc_try(line):
 \end_layout
 
 \begin_layout Plain Layout
-
           retval = 1
 \end_layout
 
 \begin_layout Plain Layout
-
   return retval
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \end_layout
 
 \begin_layout Plain Layout
-
 @ %def xlc_try
 \end_layout
 
@@ -1724,41 +1557,34 @@ This section defines our build-script,
 status open
 
 \begin_layout Plain Layout
-
 <<build-script>>=
 \end_layout
 
 \begin_layout Plain Layout
-
 #!/bin/sh
 \end_layout
 
 \begin_layout Plain Layout
-
 if [ -z "$NOWEB_SOURCE" ];
  then NOWEB_SOURCE=listerrors.nw;
  fi
 \end_layout
 
 \begin_layout Plain Layout
-
 if [ -z "$NOWEB_OUTPUT_DIR" ];
  then NOWEB_OUTPUT_DIR=.;
  fi
 \end_layout
 
 \begin_layout Plain Layout
-
 notangle -Rlisterrors ${NOWEB_SOURCE} > ${NOWEB_OUTPUT_DIR}/listerrors
 \end_layout
 
 \begin_layout Plain Layout
-
 chmod +x ${NOWEB_OUTPUT_DIR}/listerrors
 \end_layout
 
 \begin_layout Plain Layout
-
 @
 \end_layout
 
@@ -1785,7 +1611,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 nowebchunks
 \end_layout
@@ -1804,7 +1629,6 @@ Identifiers
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 nowebindex
