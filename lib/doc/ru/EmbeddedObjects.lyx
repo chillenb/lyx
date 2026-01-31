@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -229,11 +229,20 @@ varwidth
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -259,6 +268,7 @@ varwidth
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -413,12 +423,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Изображения|see
+Изображения
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -429,7 +448,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -459,7 +477,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  создание
 \end_layout
 
@@ -513,8 +540,8 @@ arg   "dialog-show-new-inset graphics"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Units-available-in"
+nolink "false"
 
 \end_inset
 
@@ -529,7 +556,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  повернутые
 \end_layout
 
@@ -549,7 +585,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  масштабированные
 \end_layout
 
@@ -659,7 +704,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  группировка настроек
 \end_layout
 
@@ -693,8 +747,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Image-Formats"
+nolink "false"
 
 \end_inset
 
@@ -759,7 +813,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  рисунки
 \end_layout
 
@@ -772,7 +835,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  плавающие объекты
 \end_layout
 
@@ -790,8 +862,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:FloatIntroduction"
+nolink "false"
 
 \end_inset
 
@@ -822,8 +894,8 @@ arg   "float-insert figure"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:A-star-in"
+nolink "false"
 
 \end_inset
 
@@ -835,8 +907,8 @@ reference "fig:A-star-in"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:A-3D-object"
+nolink "false"
 
 \end_inset
 
@@ -849,8 +921,8 @@ reference "fig:A-3D-object"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Caption-Placement"
+nolink "false"
 
 \end_inset
 
@@ -954,7 +1026,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ссылки !
+Ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  на рисунки
 \end_layout
 
@@ -967,8 +1048,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:A-star-in"
+nolink "false"
 
 \end_inset
 
@@ -976,8 +1057,8 @@ reference "fig:A-star-in"
  а также 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:A-3D-object"
+nolink "false"
 
 \end_inset
 
@@ -1030,8 +1111,8 @@ arg   "dialog-show-new-inset ref"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Referencing-Floats"
+nolink "false"
 
 \end_inset
 
@@ -1056,8 +1137,8 @@ reference "sec:Referencing-Floats"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Two-distorted-images"
+nolink "false"
 
 \end_inset
 
@@ -1072,8 +1153,8 @@ reference "fig:Two-distorted-images"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Pink-object"
+nolink "false"
 
 \end_inset
 
@@ -1081,8 +1162,8 @@ reference "fig:Pink-object"
  а также 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:A-star"
+nolink "false"
 
 \end_inset
 
@@ -1251,7 +1332,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматы изобажений
 \end_layout
 
@@ -1270,8 +1360,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Output-File-Formats"
+nolink "false"
 
 \end_inset
 
@@ -1294,8 +1384,8 @@ ImageMagick
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Output-File-Formats"
+nolink "false"
 
 \end_inset
 
@@ -1335,12 +1425,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-GIF|see
+GIF
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1351,7 +1450,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1391,12 +1489,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-PNG|see
+PNG
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1407,7 +1514,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1458,12 +1564,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-JPEG|see
+JPEG
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1474,7 +1589,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1531,12 +1645,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-SVG|see
+SVG
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1547,7 +1670,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1587,12 +1709,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-EPS|see
+EPS
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1603,7 +1734,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1643,12 +1773,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-PDF|see
+PDF
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1659,7 +1798,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1699,12 +1837,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-WMF|see
+WMF
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1715,7 +1862,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2114,7 +2260,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  диалоговое окно
 \end_layout
 
@@ -2135,8 +2290,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Formal-Tables"
+nolink "false"
 
 \end_inset
 
@@ -2211,7 +2366,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ширина
 \end_layout
 
@@ -2230,8 +2394,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Special-Cell-Alignment"
+nolink "false"
 
 \end_inset
 
@@ -2247,8 +2411,8 @@ reference "subsec:Special-Cell-Alignment"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multiple-Lines-in"
+nolink "false"
 
 \end_inset
 
@@ -2268,8 +2432,8 @@ reference "subsec:Multiple-Lines-in"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multicolumns"
+nolink "false"
 
 \end_inset
 
@@ -2283,8 +2447,8 @@ reference "subsec:Multicolumns"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multirows"
+nolink "false"
 
 \end_inset
 
@@ -2309,8 +2473,8 @@ reference "subsec:Multirows"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Rotated-Table-Cells"
+nolink "false"
 
 \end_inset
 
@@ -2561,16 +2725,16 @@ A
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multicolumn-Calculations"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Tables"
+nolink "false"
 
 \end_inset
 
@@ -2594,8 +2758,8 @@ reference "sec:Colored-Tables"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Row-Spacing"
+nolink "false"
 
 \end_inset
 
@@ -2620,16 +2784,16 @@ reference "subsec:Row-Spacing"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Multi-page-Tables"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Special-Longtable-Issues"
+nolink "false"
 
 \end_inset
 
@@ -2644,7 +2808,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  панель инструментов
 \end_layout
 
@@ -2981,7 +3154,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  меню редактирования
 \end_layout
 
@@ -3021,7 +3203,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  таблицы
 \end_layout
 
@@ -3034,7 +3225,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  плавающая
 \end_layout
 
@@ -3052,8 +3252,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:FloatIntroduction"
+nolink "false"
 
 \end_inset
 
@@ -3290,8 +3490,8 @@ arg   "float-insert table"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:a table float"
+nolink "false"
 
 \end_inset
 
@@ -3340,7 +3540,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -3359,8 +3568,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Caption-Placement"
+nolink "false"
 
 \end_inset
 
@@ -3391,8 +3600,8 @@ caption
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Caption-Formatting"
+nolink "false"
 
 \end_inset
 
@@ -3407,7 +3616,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ссылки !
+Ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  на таблицы
 \end_layout
 
@@ -3451,8 +3669,8 @@ arg   "dialog-show-new-inset ref"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Referencing-Floats"
+nolink "false"
 
 \end_inset
 
@@ -3474,7 +3692,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многостраничная
 \end_layout
 
@@ -3556,8 +3783,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multi-page-Table-Captions"
+nolink "false"
 
 \end_inset
 
@@ -5729,7 +5956,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 addtocounter{table}{-1}
 \end_layout
@@ -5749,8 +5975,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multi-page-Table-Captions"
+nolink "false"
 
 \end_inset
 
@@ -5777,8 +6003,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  сноски
 \end_layout
 
@@ -5799,8 +6043,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:DiffCaptions"
+nolink "false"
 
 \end_inset
 
@@ -5815,8 +6059,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  выравнивание
 \end_layout
 
@@ -5873,8 +6135,8 @@ LTleft}{значение}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Units"
+nolink "false"
 
 \end_inset
 
@@ -5925,7 +6187,6 @@ columnwidth
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -6194,7 +6455,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -6210,7 +6470,6 @@ fill}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 addtocounter{table}{-1}
@@ -6233,8 +6492,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multi-page-Table-Captions"
+nolink "false"
 
 \end_inset
 
@@ -6254,8 +6513,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подписи
 \end_layout
 
@@ -6287,8 +6564,8 @@ name "subsec:Multi-page-Table-Captions"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Multi-page-Tables"
+nolink "false"
 
 \end_inset
 
@@ -6712,7 +6989,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -6744,8 +7030,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ссылки
 \end_layout
 
@@ -7080,8 +7384,8 @@ asd
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Referenced-multi-page-table"
+nolink "false"
 
 \end_inset
 
@@ -7102,7 +7406,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -7117,8 +7430,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Caption-Formatting"
+nolink "false"
 
 \end_inset
 
@@ -7133,8 +7446,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ширина заголовка
 \end_layout
 
@@ -7190,8 +7521,8 @@ LTcapwidth}{ширина}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Units-available-in"
+nolink "false"
 
 \end_inset
 
@@ -7525,7 +7856,6 @@ asd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -7883,7 +8213,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -7918,7 +8247,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -7983,8 +8321,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  заголовки страниц
 \end_layout
 
@@ -8012,8 +8368,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:DiffCaptions"
+nolink "false"
 
 \end_inset
 
@@ -9928,8 +10284,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  расчет
 \end_layout
 
@@ -9975,8 +10349,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  плавающая
 \end_layout
 
@@ -10008,8 +10400,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
- многостраничная !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многостраничная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разрывы страниц
 \end_layout
 
@@ -10093,8 +10503,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:ForcedPagebreak"
+nolink "false"
 
 \end_inset
 
@@ -11158,7 +11568,6 @@ Paolo,
 status open
 
 \begin_layout Plain Layout
-
 & 111
 \backslash
 
@@ -11169,7 +11578,6 @@ newpage
 \end_layout
 
 \begin_layout Plain Layout
-
 &
 \end_layout
 
@@ -11480,7 +11888,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многострочность
 \end_layout
 
@@ -11493,7 +11910,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разрывы строк
 \end_layout
 
@@ -11672,8 +12098,8 @@ i
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-multiple"
+nolink "false"
 
 \end_inset
 
@@ -11724,8 +12150,8 @@ pt.
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-and"
+nolink "false"
 
 \end_inset
 
@@ -12031,7 +12457,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многоколоночность
 \end_layout
 
@@ -12231,7 +12666,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Многоколоночность !
+Многоколоночность 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  расчет
 \end_layout
 
@@ -12418,8 +12862,8 @@ i
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-centered"
+nolink "false"
 
 \end_inset
 
@@ -12438,8 +12882,8 @@ reference "tab:Table-with-centered"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-without-half"
+nolink "false"
 
 \end_inset
 
@@ -12633,8 +13077,8 @@ i
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Explanation-of-Equation"
+nolink "false"
 
 \end_inset
 
@@ -12683,8 +13127,8 @@ cm (значения по умолчанию для длин),
  так что уравнение 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "eq:Wgn"
+nolink "false"
 
 \end_inset
 
@@ -12720,7 +13164,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -12873,7 +13326,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многострочность
 \end_layout
 
@@ -13110,7 +13572,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -13254,7 +13715,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -13390,7 +13850,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  picinpar
 \end_layout
 
@@ -13438,7 +13907,6 @@ diagbox[options]{lower left}{upper left}{upper right}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifdiagbox
@@ -13499,7 +13967,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox{
 \end_layout
@@ -13511,7 +13978,6 @@ Name
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -13522,7 +13988,6 @@ Parameter
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -13713,7 +14178,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox{
 \end_layout
@@ -13725,7 +14189,6 @@ Team home
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -13736,7 +14199,6 @@ Result
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -13747,7 +14209,6 @@ Team away
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -13936,7 +14397,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox{
 \end_layout
@@ -13948,7 +14408,6 @@ Team home
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -13959,7 +14418,6 @@ Result
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -13970,7 +14428,6 @@ Team away
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14017,7 +14474,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox[dir=NE]{
 \end_layout
@@ -14029,7 +14485,6 @@ Team home
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14040,7 +14495,6 @@ Result
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14051,7 +14505,6 @@ Team away
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14217,7 +14670,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox[dir=SW]{
 \end_layout
@@ -14229,7 +14681,6 @@ Team home
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14240,7 +14691,6 @@ Result
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14251,7 +14701,6 @@ Team away
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14298,7 +14747,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox[dir=SE]{
 \end_layout
@@ -14310,7 +14758,6 @@ Team home
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14321,7 +14768,6 @@ Result
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14332,7 +14778,6 @@ Team away
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14439,7 +14884,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox{
 \end_layout
@@ -14451,7 +14895,6 @@ Name
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14462,7 +14905,6 @@ Parameter
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14596,7 +15038,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newlength{
 \backslash
@@ -14604,7 +15045,6 @@ diagtest}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -14634,7 +15074,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -14680,7 +15129,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox[width=
 \backslash
@@ -14694,7 +15142,6 @@ A
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14705,7 +15152,6 @@ B
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14778,7 +15224,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox{
 \end_layout
@@ -14790,7 +15235,6 @@ A
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14801,7 +15245,6 @@ B
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14894,7 +15337,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox[width=3cm]{
 \end_layout
@@ -14906,7 +15348,6 @@ A
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -14917,7 +15358,6 @@ B
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -15049,7 +15489,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 diagbox[width=3cm,height=1.4cm]{
 \end_layout
@@ -15061,7 +15500,6 @@ A
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 
@@ -15076,7 +15514,6 @@ B
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -15087,7 +15524,6 @@ C
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 
@@ -15102,7 +15538,6 @@ D
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -15156,7 +15591,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else
 \end_layout
@@ -15197,7 +15631,6 @@ diagbox
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi
@@ -15243,7 +15676,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  формальная
 \end_layout
 
@@ -15261,8 +15703,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Example-booktabs-table"
+nolink "false"
 
 \end_inset
 
@@ -15669,8 +16111,8 @@ in % of pixel size
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Row-Spacing"
+nolink "false"
 
 \end_inset
 
@@ -15773,8 +16215,8 @@ midrule
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Units-available-in"
+nolink "false"
 
 \end_inset
 
@@ -15789,8 +16231,8 @@ reference "cha:Units-available-in"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Example-booktabs-table"
+nolink "false"
 
 \end_inset
 
@@ -15932,8 +16374,8 @@ TeX Code
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Special-booktabs-table"
+nolink "false"
 
 \end_inset
 
@@ -15955,8 +16397,8 @@ cmidrules
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Special-booktabs-table"
+nolink "false"
 
 \end_inset
 
@@ -15987,8 +16429,8 @@ morecmidrules
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Special-booktabs-table"
+nolink "false"
 
 \end_inset
 
@@ -16060,7 +16502,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  booktabs
 \end_layout
 
@@ -16160,7 +16611,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 morecmidrules 
 \end_layout
@@ -16172,7 +16622,6 @@ morecmidrules
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule{2-4}
@@ -16341,7 +16790,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 morecmidrules 
 \end_layout
@@ -16353,7 +16801,6 @@ morecmidrules
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule[2pt](l{7pt}){3-4}
@@ -16490,7 +16937,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  выравнивание
 \end_layout
 
@@ -16510,8 +16966,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Box-Dialog"
+nolink "false"
 
 \end_inset
 
@@ -16531,8 +16987,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
@@ -16677,7 +17133,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{0.85
 \backslash
@@ -16813,7 +17268,6 @@ i
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -17077,7 +17531,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-0.32
 \backslash
@@ -17213,7 +17666,6 @@ i
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -17238,8 +17690,8 @@ Raisebox'ы описаны в разделе
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Vertical-Alignment"
+nolink "false"
 
 \end_inset
 
@@ -17330,7 +17782,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  цветная
 \end_layout
 
@@ -17347,7 +17808,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ячеек таблиц
 \end_layout
 
@@ -17543,8 +18013,8 @@ arg   "dialog-show character"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-colored-without"
+nolink "false"
 
 \end_inset
 
@@ -17562,7 +18032,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  colortbl
 \end_layout
 
@@ -17576,7 +18055,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifcolortbl
@@ -17649,8 +18127,8 @@ columncolor{название-цвета}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multicolumn-Calculations"
+nolink "false"
 
 \end_inset
 
@@ -17723,8 +18201,8 @@ dvipsnames
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "chap:List-of-dvips-colornames"
+nolink "false"
 
 \end_inset
 
@@ -17746,8 +18224,8 @@ reference "chap:List-of-dvips-colornames"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-colored-using"
+nolink "false"
 
 \end_inset
 
@@ -17960,8 +18438,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-colored-using"
+nolink "false"
 
 \end_inset
 
@@ -18086,7 +18564,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 rowcolor{cyan}
 \end_layout
@@ -18190,7 +18667,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cellcolor{Maroon}
 \end_layout
@@ -18222,7 +18698,6 @@ i
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -18264,7 +18739,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -18282,7 +18756,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  строк таблиц
 \end_layout
 
@@ -18307,13 +18790,21 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  xcolor
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -18354,7 +18845,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  colortbl
 \end_layout
 
@@ -18376,7 +18876,6 @@ colortbl
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifcolortbl
@@ -18466,8 +18965,8 @@ rowcolors{1}{white}{lightgray}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-rowcolors"
+nolink "false"
 
 \end_inset
 
@@ -18493,8 +18992,8 @@ hline]{1}{lightgray}{cyan}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-rowcolors-2"
+nolink "false"
 
 \end_inset
 
@@ -18543,7 +19042,6 @@ rowcolors
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 rowcolors{1}{white}{lightgray}
@@ -18722,7 +19220,6 @@ Z
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 rowcolors[
@@ -18904,7 +19401,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 rowcolors{1}{}{}
 \end_layout
@@ -18929,7 +19425,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -18971,7 +19466,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -18989,7 +19483,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  линий таблиц
 \end_layout
 
@@ -19006,8 +19509,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Line-Thickness"
+nolink "false"
 
 \end_inset
 
@@ -19028,7 +19531,6 @@ pt.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -19052,8 +19554,8 @@ arrayrulewidth}{1.5pt}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Customized-Format"
+nolink "false"
 
 \end_inset
 
@@ -19080,8 +19582,8 @@ vline}}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-vertical-colored"
+nolink "false"
 
 \end_inset
 
@@ -19260,8 +19762,8 @@ sd
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-horizontal-colored"
+nolink "false"
 
 \end_inset
 
@@ -19336,7 +19838,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -19347,7 +19848,6 @@ hline
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -19355,7 +19855,6 @@ hline}
 \end_layout
 
 \begin_layout Plain Layout
-
  {
 \backslash
 arrayrulecolor{red}
@@ -19529,8 +20028,8 @@ myHlineC}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-colored"
+nolink "false"
 
 \end_inset
 
@@ -19676,7 +20175,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -19695,7 +20193,6 @@ myHlineC}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -19753,8 +20250,8 @@ arrayrulecolor{black}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-different-hor"
+nolink "false"
 
 \end_inset
 
@@ -19864,7 +20361,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 
 \backslash
@@ -19955,7 +20451,6 @@ Y
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 arrayrulecolor{black}
@@ -20086,7 +20581,6 @@ arrayrulecolor{black}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 
@@ -20179,7 +20673,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 arrayrulecolor{black}
 \end_layout
@@ -20245,7 +20738,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 
 \backslash
@@ -20283,8 +20775,8 @@ arrayrulecolor{blue}%
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-different-ver"
+nolink "false"
 
 \end_inset
 
@@ -20512,7 +21004,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 
 \backslash
@@ -20539,7 +21030,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 multicolumn{1}{!{
 \backslash
@@ -20555,7 +21045,6 @@ Y
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20611,7 +21100,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 multicolumn{1}{c|}{
 \end_layout
@@ -20623,7 +21111,6 @@ multicolumn{1}{c|}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20643,7 +21130,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 multicolumn{1}{c!{
 \backslash
@@ -20659,7 +21145,6 @@ Y
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20680,7 +21165,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 arrayrulecolor{black}
@@ -20747,7 +21231,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 
 \backslash
@@ -20774,7 +21257,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 multicolumn{1}{|c!{
 \backslash
@@ -20790,7 +21272,6 @@ vline}}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20809,7 +21290,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 multicolumn{1}{c!{
@@ -20826,7 +21306,6 @@ vline}}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20845,7 +21324,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 multicolumn{1}{c!{
@@ -20862,7 +21340,6 @@ vline}}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20881,7 +21358,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 multicolumn{1}{c!{
@@ -20898,7 +21374,6 @@ vline}}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20917,7 +21392,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 multicolumn{1}{c!{
@@ -20934,7 +21408,6 @@ vline}}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20954,7 +21427,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 multicolumn{1}{c!{
 \backslash
@@ -20970,7 +21442,6 @@ vline}}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20990,7 +21461,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 multicolumn{1}{c|}{
 \end_layout
@@ -21002,7 +21472,6 @@ multicolumn{1}{c|}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21023,7 +21492,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 arrayrulecolor{black}
@@ -21109,7 +21577,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -21136,7 +21603,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  повернутые ячейки
 \end_layout
 
@@ -21186,8 +21662,8 @@ LatexCommand ref
 reference "tab:Table-with-rotated"
 plural "false"
 caps "false"
-nolink "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -21345,16 +21821,16 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Parboxes"
+nolink "false"
 
 \end_inset
 
@@ -21390,8 +21866,8 @@ Minipage (перем.ширина)
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-rotated-multi"
+nolink "false"
 
 \end_inset
 
@@ -21639,7 +22115,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -21660,8 +22145,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multicolumn-Calculations"
+nolink "false"
 
 \end_inset
 
@@ -21858,7 +22343,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Таблица !
+Таблица 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -21882,7 +22376,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  межстрочный промежуток
 \end_layout
 
@@ -21918,8 +22421,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Formal-Tables"
+nolink "false"
 
 \end_inset
 
@@ -22256,8 +22759,8 @@ array
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Units-available-in"
+nolink "false"
 
 \end_inset
 
@@ -22288,8 +22791,8 @@ strut
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Vertical-alignment-of"
+nolink "false"
 
 \end_inset
 
@@ -22487,7 +22990,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 strut 
 \end_layout
@@ -22511,7 +23013,6 @@ strut
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 strut 
@@ -22537,7 +23038,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 strut 
 \end_layout
@@ -22561,7 +23061,6 @@ strut
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 strut 
@@ -22611,7 +23110,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  особое выравнивание ячеек
 \end_layout
 
@@ -22632,8 +23140,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-cells-align"
+nolink "false"
 
 \end_inset
 
@@ -22893,8 +23401,8 @@ name "tab:Table-align-operator"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-align-operator"
+nolink "false"
 
 \end_inset
 
@@ -22925,8 +23433,8 @@ reference "tab:Table-align-operator"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Several-table-cell"
+nolink "false"
 
 \end_inset
 
@@ -22939,8 +23447,8 @@ reference "tab:Several-table-cell"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-align-operator"
+nolink "false"
 
 \end_inset
 
@@ -23284,7 +23792,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  формат ячейки/столбца
 \end_layout
 
@@ -23302,8 +23819,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Table-Width-Calculation"
+nolink "false"
 
 \end_inset
 
@@ -23315,8 +23832,8 @@ reference "sec:Table-Width-Calculation"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multicolumn-Calculations"
+nolink "false"
 
 \end_inset
 
@@ -23414,8 +23931,8 @@ hspace{0pt}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multiple-Lines-in"
+nolink "false"
 
 \end_inset
 
@@ -23491,8 +24008,8 @@ arrayrulewidth)*(1-#2))/#2}}
 В этом формате используется уравнение 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:Wgn"
+nolink "false"
 
 \end_inset
 
@@ -23570,8 +24087,8 @@ K{color name}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-using-user-defined"
+nolink "false"
 
 \end_inset
 
@@ -23785,7 +24302,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  толщина линий
 \end_layout
 
@@ -23816,8 +24342,8 @@ pt,
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-1.5"
+nolink "false"
 
 \end_inset
 
@@ -23865,7 +24391,6 @@ pt в формате
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -24015,7 +24540,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -24043,8 +24567,8 @@ pt только для горизонтальных линий,
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-horizontal"
+nolink "false"
 
 \end_inset
 
@@ -24143,7 +24667,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -24154,7 +24677,6 @@ hline
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -24162,7 +24684,6 @@ hline}
 \end_layout
 
 \begin_layout Plain Layout
-
  {
 \backslash
 noalign{
@@ -24173,7 +24694,6 @@ arrayrulewidth 1.5pt}
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \backslash
 myHline
@@ -24327,7 +24847,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -24357,8 +24876,8 @@ pt только для вертикальных линий,
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Customized-Format"
+nolink "false"
 
 \end_inset
 
@@ -24383,8 +24902,8 @@ vrule width 1.5pt}}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-vertical"
+nolink "false"
 
 \end_inset
 
@@ -24559,7 +25078,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пунктирные линии
 \end_layout
 
@@ -24573,7 +25101,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifarydshln
@@ -24740,7 +25267,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 hdashline 
 \end_layout
@@ -24798,7 +25324,6 @@ o
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cdashline{4-5}
@@ -24928,7 +25453,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  arydshln
 \end_layout
 
@@ -25025,8 +25559,8 @@ cdashline{2-4}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Table-with-dashed"
+nolink "false"
 
 \end_inset
 
@@ -25077,8 +25611,8 @@ cdashline{4-5}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Colored-table-with"
+nolink "false"
 
 \end_inset
 
@@ -25090,7 +25624,6 @@ reference "tab:Colored-table-with"
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -25119,7 +25652,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 dashgapcolor{green}
 \end_layout
@@ -25145,7 +25677,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -25156,7 +25687,6 @@ hdashline
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -25164,7 +25694,6 @@ hdashline}
 \end_layout
 
 \begin_layout Plain Layout
-
  {
 \backslash
 arrayrulecolor{red}
@@ -25196,7 +25725,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -25207,7 +25735,6 @@ cdashline
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -25215,7 +25742,6 @@ cdashline}[1]
 \end_layout
 
 \begin_layout Plain Layout
-
  {
 \backslash
 arrayrulecolor{yellow}
@@ -25381,7 +25907,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 hdashline 
 \end_layout
@@ -25393,7 +25918,6 @@ hdashline
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 rowcolor{Gray}
@@ -25452,7 +25976,6 @@ o
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cdashline{4-5}
@@ -25548,7 +26071,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cellcolor{Maroon}
 \end_layout
@@ -25579,7 +26101,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -25608,7 +26129,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -25639,7 +26159,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 nodashgapcolor
 \end_layout
@@ -25664,7 +26183,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -25697,8 +26215,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Tables"
+nolink "false"
 
 \end_inset
 
@@ -25972,8 +26490,8 @@ arydshln
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Colored-table-with"
+nolink "false"
 
 \end_inset
 
@@ -26026,7 +26544,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  colortbl
 \end_layout
 
@@ -26045,7 +26572,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -26086,7 +26612,6 @@ arydshln
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi
@@ -26186,8 +26711,8 @@ name "sec:FloatIntroduction"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Referencing-Floats"
+nolink "false"
 
 \end_inset
 
@@ -26231,8 +26756,8 @@ arg   "float-insert table"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Caption-Placement"
+nolink "false"
 
 \end_inset
 
@@ -26280,16 +26805,16 @@ reference "sec:Caption-Placement"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Figure-Floats"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Table-Floats"
+nolink "false"
 
 \end_inset
 
@@ -26319,8 +26844,8 @@ reference "sec:Table-Floats"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Wrap-Floats"
+nolink "false"
 
 \end_inset
 
@@ -26335,7 +26860,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  алгоритмы
 \end_layout
 
@@ -26408,8 +26942,8 @@ end loop
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Program-Code-Listings"
+nolink "false"
 
 \end_inset
 
@@ -26433,8 +26967,8 @@ reference "cha:Program-Code-Listings"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "alg:Example-Algorithm-float"
+nolink "false"
 
 \end_inset
 
@@ -26503,7 +27037,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  нумерация
 \end_layout
 
@@ -26618,8 +27161,8 @@ amsmath
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Footnote-Numbering"
+nolink "false"
 
 \end_inset
 
@@ -26641,7 +27184,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ссылки
 \end_layout
 
@@ -26654,7 +27206,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ссылки !
+Ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  на плавающие объекты
 \end_layout
 
@@ -26777,7 +27338,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ссылки !
+Ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматы
 \end_layout
 
@@ -26797,8 +27367,8 @@ status collapsed
  
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Two-distorted-images"
+nolink "false"
 
 \end_inset
 
@@ -26813,8 +27383,8 @@ reference "fig:Two-distorted-images"
  
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:Wgn"
+nolink "false"
 
 \end_inset
 
@@ -26831,8 +27401,8 @@ reference "eq:Wgn"
 
 \begin_inset CommandInset ref
 LatexCommand pageref
-nolink "false"
 reference "fig:Two-distorted-images"
+nolink "false"
 
 \end_inset
 
@@ -26862,8 +27432,8 @@ reference "fig:Two-distorted-images"
  
 \begin_inset CommandInset ref
 LatexCommand vpageref
-nolink "false"
 reference "fig:Two-distorted-images"
+nolink "false"
 
 \end_inset
 
@@ -26898,8 +27468,8 @@ reference "fig:Two-distorted-images"
  
 \begin_inset CommandInset ref
 LatexCommand vref
-nolink "false"
 reference "fig:Two-distorted-images"
+nolink "false"
 
 \end_inset
 
@@ -26944,7 +27514,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -26958,7 +27537,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -27083,8 +27671,8 @@ refstyle
  
 \begin_inset CommandInset ref
 LatexCommand nameref
-nolink "false"
 reference "fig:Two-distorted-images"
+nolink "false"
 
 \end_inset
 
@@ -27105,8 +27693,8 @@ LatexCommand labelonly
 reference "fig:Two-distorted-images"
 plural "false"
 caps "false"
-nolink "false"
 noprefix "false"
+nolink "false"
 
 \end_inset
 
@@ -27127,8 +27715,8 @@ LatexCommand labelonly
 reference "fig:Two-distorted-images"
 plural "false"
 caps "false"
-nolink "false"
 noprefix "true"
+nolink "false"
 
 \end_inset
 
@@ -27189,7 +27777,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -27208,7 +27805,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -27245,7 +27851,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Ссылки !
+Ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  автоматическое именование
 \end_layout
 
@@ -27268,7 +27883,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -27456,8 +28080,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Cross-Reference-Formats"
+nolink "false"
 
 \end_inset
 
@@ -27492,7 +28116,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Ссылки !
+Ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  привязка
 \end_layout
 
@@ -27514,7 +28147,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -27539,7 +28181,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hypcap
 \end_layout
 
@@ -27559,7 +28210,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  oberdiek
 \end_layout
 
@@ -27642,7 +28302,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -27700,7 +28369,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размещение
 \end_layout
 
@@ -28043,7 +28721,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  endfloat
 \end_layout
 
@@ -28285,8 +28972,8 @@ literal "true"
  раздел 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Rotated-Floats"
+nolink "false"
 
 \end_inset
 
@@ -28308,7 +28995,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  поворот
 \end_layout
 
@@ -28363,8 +29059,8 @@ figureright
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Rotated-table"
+nolink "false"
 
 \end_inset
 
@@ -28488,7 +29184,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подобъекты
 \end_layout
 
@@ -28512,16 +29217,16 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Two-subtables-side"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Two-subtables-upon"
+nolink "false"
 
 \end_inset
 
@@ -28538,16 +29243,16 @@ reference "tab:Two-subtables-upon"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:This-is-subtable-a"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:This-is-subtable-b"
+nolink "false"
 
 \end_inset
 
@@ -28559,8 +29264,8 @@ reference "tab:This-is-subtable-b"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Two-subtables-side"
+nolink "false"
 
 \end_inset
 
@@ -29014,7 +29719,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размещенные рядом
 \end_layout
 
@@ -29032,16 +29746,16 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Float-left"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Float-right"
+nolink "false"
 
 \end_inset
 
@@ -29059,8 +29773,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
@@ -29218,8 +29932,8 @@ name "fig:Float-right"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
@@ -29247,7 +29961,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Подпись !
+Подпись 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматирование
 \end_layout
 
@@ -29260,7 +29983,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматирование подписей
 \end_layout
 
@@ -29311,7 +30043,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -29371,8 +30112,8 @@ captionsetup[тип-плавающего-объекта]{определение-
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:This-is-an-fig"
+nolink "false"
 
 \end_inset
 
@@ -29383,8 +30124,8 @@ reference "fig:This-is-an-fig"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:This-is-an-tab"
+nolink "false"
 
 \end_inset
 
@@ -29452,7 +30193,6 @@ captionsetup[table]{labelfont={bf,sf}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 captionsetup[figure]{labelfont={tt},
@@ -29526,7 +30266,6 @@ name "fig:This-is-an-fig"
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 captionsetup[figure]{labelfont={bf,sf},
@@ -29664,7 +30403,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  KOMA-Script
 \end_layout
 
@@ -29749,7 +30497,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  KOMA-Script
 \end_layout
 
@@ -29835,7 +30592,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Подпись !
+Подпись 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размещение
 \end_layout
 
@@ -29848,7 +30614,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размещение подписей
 \end_layout
 
@@ -29902,7 +30677,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -29921,8 +30705,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Caption-Formatting"
+nolink "false"
 
 \end_inset
 
@@ -29957,7 +30741,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  KOMA-Script
 \end_layout
 
@@ -30003,8 +30796,8 @@ KOMA-Script
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:A-caption-marked"
+nolink "false"
 
 \end_inset
 
@@ -30024,8 +30817,8 @@ reference "tab:A-caption-marked"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:A-standard-table"
+nolink "false"
 
 \end_inset
 
@@ -30341,7 +31134,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  sidecap
 \end_layout
 
@@ -30391,7 +31193,6 @@ leftcaption
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifsidecap
@@ -30790,8 +31591,8 @@ TabBesEnd
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:cap-beside-fig"
+nolink "false"
 
 \end_inset
 
@@ -30802,8 +31603,8 @@ reference "fig:cap-beside-fig"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:cap-beside-tab"
+nolink "false"
 
 \end_inset
 
@@ -30889,8 +31690,8 @@ sidecaptionvpos{figure}{c}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:cap-beside-fig-2"
+nolink "false"
 
 \end_inset
 
@@ -30915,8 +31716,8 @@ reference "fig:cap-beside-fig-2"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:cap-beside-tab"
+nolink "false"
 
 \end_inset
 
@@ -30966,8 +31767,8 @@ FigBesBeg
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:cap-beside-tab-wider"
+nolink "false"
 
 \end_inset
 
@@ -31044,7 +31845,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hypcap
 \end_layout
 
@@ -31058,8 +31868,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Reference-Position"
+nolink "false"
 
 \end_inset
 
@@ -31077,7 +31887,6 @@ reference "subsec:Reference-Position"
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 FigBesBeg
@@ -31136,7 +31945,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 FigBesEnd
 \end_layout
@@ -31151,7 +31959,6 @@ FigBesEnd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 TabBesBeg
@@ -31403,7 +32210,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 TabBesEnd
 \end_layout
@@ -31419,7 +32225,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 FigBesBeg
 \end_layout
@@ -31431,7 +32236,6 @@ FigBesBeg
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 sidecaptionvpos{figure}{c}
@@ -31487,7 +32291,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 FigBesEnd
 \end_layout
@@ -31502,7 +32305,6 @@ FigBesEnd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 TabBesBeg[5]
@@ -31539,8 +32341,8 @@ name "tab:cap-beside-tab-wider"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:cap-beside-tab"
+nolink "false"
 
 \end_inset
 
@@ -31767,7 +32569,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 TabBesEnd
 \end_layout
@@ -31782,7 +32583,6 @@ TabBesEnd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -31825,7 +32625,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -31843,7 +32642,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  списки плавающих объектов
 \end_layout
 
@@ -31890,7 +32698,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Заметки !
+Заметки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  заметки
 \end_layout
 
@@ -32022,13 +32839,11 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewenvironment{lyxgreyedout}
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \backslash
 textcolor[gray]{0.8}
@@ -32057,13 +32872,11 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewenvironment{lyxgreyedout}
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \backslash
 textcolor{blue}
@@ -32171,7 +32984,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Заметки !
+Заметки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  сноски
 \end_layout
 
@@ -32264,13 +33086,11 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newcounter{MyRepeatFoot}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 setcounter{MyRepeatFoot}{
@@ -32305,8 +33125,8 @@ thefootnote}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Referencing-Floats"
+nolink "false"
 
 \end_inset
 
@@ -32321,8 +33141,8 @@ reference "sec:Referencing-Floats"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "foot:This-is-an"
+nolink "false"
 
 \end_inset
 
@@ -32347,8 +33167,8 @@ reference "foot:This-is-an"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Footnotes-in-Multi-page"
+nolink "false"
 
 \end_inset
 
@@ -32373,8 +33193,8 @@ reference "subsec:Footnotes-in-Multi-page"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
@@ -32455,7 +33275,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark{}
 \end_layout
@@ -32476,7 +33295,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotetext{
 \end_layout
@@ -32488,7 +33306,6 @@ footnotetext{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -32534,8 +33351,8 @@ footnotemark[номер]
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "foot:This-is-an"
+nolink "false"
 
 \end_inset
 
@@ -32583,7 +33400,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark[
 \backslash
@@ -32621,7 +33437,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark[
 \backslash
@@ -32648,7 +33463,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Сноски !
+Сноски 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  нумерация
 \end_layout
 
@@ -32696,7 +33520,6 @@ roman{footnote}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32819,7 +33642,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -32879,7 +33701,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 numberwithin{footnote}{chapter}
 \end_layout
@@ -32906,7 +33727,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32983,7 +33803,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Сноски !
+Сноски 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размещение
 \end_layout
 
@@ -33043,8 +33872,8 @@ vspace{1.5mm}}}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Standard-footnote-placement"
+nolink "false"
 
 \end_inset
 
@@ -33057,8 +33886,8 @@ reference "fig:Standard-footnote-placement"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Footnote-placement-in"
+nolink "false"
 
 \end_inset
 
@@ -33076,7 +33905,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ftnright
 \end_layout
 
@@ -33244,8 +34082,8 @@ ftnright
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:Endnotes"
+nolink "false"
 
 \end_inset
 
@@ -33257,7 +34095,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Сноски !
+Сноски 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  концевые
 \end_layout
 
@@ -33395,8 +34242,8 @@ notesname}{Anmerkungen}
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Footnote-Numbering"
+nolink "false"
 
 \end_inset
 
@@ -33429,8 +34276,8 @@ theendnote
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Footnote-Numbering"
+nolink "false"
 
 \end_inset
 
@@ -33467,8 +34314,8 @@ footnotemark
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Footnotes"
+nolink "false"
 
 \end_inset
 
@@ -33494,7 +34341,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  footmisc
 \end_layout
 
@@ -33535,7 +34391,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  KOMA-Script
 \end_layout
 
@@ -33561,7 +34426,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Сноски !
+Сноски 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  примечания на полях
 \end_layout
 
@@ -33659,7 +34533,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 reversemarginpar 
 \end_layout
@@ -33723,7 +34596,6 @@ normalmarginpar
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 normalmarginpar 
@@ -33794,8 +34666,8 @@ AVeryLongMarginParWord that isn't hyphenated
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Multiple-Lines-in"
+nolink "false"
 
 \end_inset
 
@@ -33893,7 +34765,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ifmarginnote
 \end_layout
@@ -33933,7 +34804,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  marginnote
 \end_layout
 
@@ -34015,8 +34895,8 @@ marginnote
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Units"
+nolink "false"
 
 \end_inset
 
@@ -34074,7 +34954,6 @@ cm от исходного положения.
 status collapsed
 
 \begin_layout Plain Layout
-
 [-1.5cm]
 \end_layout
 
@@ -34138,7 +35017,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand*{
 \backslash
@@ -34148,7 +35026,6 @@ centering}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand*{
@@ -34204,7 +35081,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand*{
 \backslash
@@ -34214,7 +35090,6 @@ raggedleft}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand*{
@@ -34349,7 +35224,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -34360,7 +35234,6 @@ marginpar
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -34370,7 +35243,6 @@ myMarginpar{%
 \end_layout
 
 \begin_layout Plain Layout
-
    
 \backslash
 textsf{
@@ -34381,7 +35253,6 @@ underbar{Внимание!}}}%
 \end_layout
 
 \begin_layout Plain Layout
-
    
 \backslash
 vspace{1.5mm}
@@ -34411,7 +35282,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 [-1.5cm]
 \end_layout
 
@@ -34425,7 +35295,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -34458,7 +35327,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -34501,7 +35369,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -34542,8 +35409,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
@@ -34557,8 +35424,8 @@ reference "sec:Minipages"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Decoration"
+nolink "false"
 
 \end_inset
 
@@ -34572,8 +35439,8 @@ reference "sec:Decoration"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Prevent-Hyphenation"
+nolink "false"
 
 \end_inset
 
@@ -34587,8 +35454,8 @@ reference "sec:Prevent-Hyphenation"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Vertical-Alignment"
+nolink "false"
 
 \end_inset
 
@@ -34601,8 +35468,8 @@ reference "subsec:Vertical-Alignment"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Boxes"
+nolink "false"
 
 \end_inset
 
@@ -34667,8 +35534,8 @@ Minipage
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Minipages"
+nolink "false"
 
 \end_inset
 
@@ -34684,8 +35551,8 @@ Parbox
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Parboxes"
+nolink "false"
 
 \end_inset
 
@@ -34697,8 +35564,8 @@ Makebox
  в 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Prevent-Hyphenation"
+nolink "false"
 
 \end_inset
 
@@ -34757,8 +35624,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Prevent-Hyphenation"
+nolink "false"
 
 \end_inset
 
@@ -34785,7 +35652,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  диалоговое окно
 \end_layout
 
@@ -34802,7 +35678,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размер
 \end_layout
 
@@ -34828,8 +35713,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Units"
+nolink "false"
 
 \end_inset
 
@@ -35021,7 +35906,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  выравнивание
 \end_layout
 
@@ -35417,7 +36311,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  декорирование
 \end_layout
 
@@ -35630,8 +36533,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Boxes"
+nolink "false"
 
 \end_inset
 
@@ -35757,7 +36660,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancybox
 \end_layout
 
@@ -35817,7 +36729,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройка
 \end_layout
 
@@ -35893,7 +36814,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cornersize*{1.5cm}
 \end_layout
@@ -35950,7 +36870,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cornersize{0.5}
 \end_layout
@@ -35995,8 +36914,8 @@ definecolor
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Tables"
+nolink "false"
 
 \end_inset
 
@@ -36026,8 +36945,8 @@ color
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Boxes"
+nolink "false"
 
 \end_inset
 
@@ -36057,7 +36976,6 @@ definecolor{shadecolor}{cmyk}{0.5,0,1,0.5}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 definecolor{shadecolor}{cmyk}{0.5,0,1,0.5}
@@ -36098,7 +37016,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 definecolor{shadecolor}{rgb}{1,0,0}
 \end_layout
@@ -36134,7 +37051,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  мини-страницы
 \end_layout
 
@@ -36319,8 +37245,8 @@ This is an English footnote.
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Boxes"
+nolink "false"
 
 \end_inset
 
@@ -36387,7 +37313,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  абзацные блоки
 \end_layout
 
@@ -36453,7 +37388,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  для символов
 \end_layout
 
@@ -36477,7 +37421,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  предотвращение переносов
 \end_layout
 
@@ -36588,7 +37541,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 -
 \end_layout
@@ -36678,7 +37630,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вертикальное смещение
 \end_layout
 
@@ -36775,7 +37736,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{
 \backslash
@@ -36797,7 +37757,6 @@ depth}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36821,7 +37780,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-
 \backslash
@@ -36843,7 +37801,6 @@ depth}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36858,7 +37815,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 raisebox{0.5cm}{
@@ -36879,7 +37835,6 @@ raisebox{0.5cm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36912,7 +37867,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-
 \backslash
@@ -36934,7 +37888,6 @@ depth}[0pt]{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36953,7 +37906,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 raisebox{0.5cm}[0pt]{
@@ -36974,7 +37926,6 @@ raisebox{0.5cm}[0pt]{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36998,7 +37949,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  цветные
 \end_layout
 
@@ -37137,8 +38097,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Colored-Tables"
+nolink "false"
 
 \end_inset
 
@@ -37220,7 +38180,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 colorbox{darkgreen}{
 \end_layout
@@ -37240,7 +38199,6 @@ colorbox{darkgreen}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -37326,7 +38284,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  повернутые
 \end_layout
 
@@ -37697,7 +38664,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  повернутые
 \end_layout
 
@@ -37710,7 +38686,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  поворот
 \end_layout
 
@@ -37752,7 +38737,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  масштабирование
 \end_layout
 
@@ -38112,8 +39106,8 @@ status open
  В таблице 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Units"
+nolink "false"
 
 \end_inset
 
@@ -38509,7 +39503,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Рисунки !
+Рисунки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  масштабирование
 \end_layout
 
@@ -38522,7 +39525,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Настройки таблицы !
+Настройки таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  масштабирование
 \end_layout
 
@@ -38590,7 +39602,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  обтекаемые
 \end_layout
 
@@ -38603,7 +39624,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Обтекание текстом !
+Обтекание текстом 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  плавающие объекты
 \end_layout
 
@@ -38675,7 +39705,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  wrapfig
 \end_layout
 
@@ -38735,8 +39774,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:This-is-a"
+nolink "false"
 
 \end_inset
 
@@ -38816,8 +39855,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "chap:Floats"
+nolink "false"
 
 \end_inset
 
@@ -38832,7 +39871,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Обтекание текстом !
+Обтекание текстом 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  фиксированные объекты
 \end_layout
 
@@ -38850,8 +39898,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Wrap-Floats"
+nolink "false"
 
 \end_inset
 
@@ -39520,7 +40568,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  picinpar
 \end_layout
 
@@ -39535,7 +40592,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifpicinpar
@@ -39567,7 +40623,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{window}[2,c,{
 \end_layout
@@ -39589,12 +40644,10 @@ begin{window}[2,c,{
 status collapsed
 
 \begin_layout Plain Layout
-
 },]
 \end_layout
 
 \begin_layout Plain Layout
-
 {}
 \end_layout
 
@@ -39612,7 +40665,6 @@ It was in the spring of the year 1894 that all London was interested,
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotemark{}
@@ -39635,7 +40687,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{window}
 \end_layout
@@ -39651,7 +40702,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotetext{
 \end_layout
@@ -39663,7 +40713,6 @@ footnotetext{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -39804,8 +40853,8 @@ footnotetext
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Footnotes"
+nolink "false"
 
 \end_inset
 
@@ -39817,7 +40866,6 @@ reference "sec:Footnotes"
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -39860,7 +40908,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -39890,7 +40937,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Обтекание текстом !
+Обтекание текстом 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  буквицы
 \end_layout
 
@@ -39914,7 +40970,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  lettrine
 \end_layout
 
@@ -39994,7 +41059,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 iflettrine
@@ -40279,7 +41343,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -40353,7 +41416,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else
 \end_layout
@@ -40394,7 +41456,6 @@ lettrine
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi
@@ -40494,7 +41555,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Внешние части документа !
+Внешние части документа 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  внешний материал
 \end_layout
 
@@ -40668,8 +41738,8 @@ Omit text in PDF
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Child-Documents"
+nolink "false"
 
 \end_inset
 
@@ -40894,7 +41964,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  pdfpages
 \end_layout
 
@@ -40985,8 +42064,8 @@ Beamer
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Graphics-Dialog"
+nolink "false"
 
 \end_inset
 
@@ -41086,8 +42165,8 @@ spreadsheet.lyx
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Graphics-Dialog"
+nolink "false"
 
 \end_inset
 
@@ -41195,7 +42274,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Внешние части документа !
+Внешние части документа 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  дочерние документы
 \end_layout
 
@@ -41208,7 +42296,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Файлы !
+Файлы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  включение
 \end_layout
 
@@ -41334,8 +42431,8 @@ literal "true"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:External-Subsection-1"
+nolink "false"
 
 \end_inset
 
@@ -41458,7 +42555,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textvisiblespace 
 \end_layout
@@ -41563,8 +42659,8 @@ status open
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "cha:Program-Code-Listings"
+nolink "false"
 
 \end_inset
 
@@ -41767,7 +42863,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  листинги
 \end_layout
 
@@ -41796,7 +42901,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  listings
 \end_layout
 
@@ -41814,7 +42928,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  minted
 \end_layout
 
@@ -42020,7 +43143,6 @@ inline true
 status open
 
 \begin_layout Plain Layout
-
 int a = 5;
 \end_layout
 
@@ -42061,8 +43183,8 @@ p
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Float-Settings"
+nolink "false"
 
 \end_inset
 
@@ -42106,8 +43228,8 @@ h
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "lst:Example-Listing"
+nolink "false"
 
 \end_inset
 
@@ -42141,7 +43263,6 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -42160,17 +43281,14 @@ name "lst:Example-Listing"
 \end_layout
 
 \begin_layout Plain Layout
-
 def func(param):
 \end_layout
 
 \begin_layout Plain Layout
-
     'this is a python function'
 \end_layout
 
 \begin_layout Plain Layout
-
     pass
 \end_layout
 
@@ -42424,48 +43542,39 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 def func(param):
 \end_layout
 
 \begin_layout Plain Layout
-
     'this is a python function'
 \end_layout
 
 \begin_layout Plain Layout
-
     pass
 \end_layout
 
 \begin_layout Plain Layout
-
 def func(param):
 \end_layout
 
 \begin_layout Plain Layout
-
 'This is a German word:
  Tschüß'
 \end_layout
 
 \begin_layout Plain Layout
-
 pass
 \end_layout
 
 \begin_layout Plain Layout
-
 def func(param):
 \end_layout
 
 \begin_layout Plain Layout
-
 'this is a python function'
 \end_layout
 
 \begin_layout Plain Layout
-
 pass
 \end_layout
 
@@ -42541,8 +43650,8 @@ status collapsed
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Child-Documents"
+nolink "false"
 
 \end_inset
 
@@ -42580,8 +43689,8 @@ reference "sec:Child-Documents"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "lst:file-listing"
+nolink "false"
 
 \end_inset
 
@@ -42677,7 +43786,6 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
@@ -42691,12 +43799,10 @@ status open
 \end_layout
 
 \begin_layout Plain Layout
-
 def func(param):
 \end_layout
 
 \begin_layout Plain Layout
-
     # $
 \backslash
 prod_{n=1}^{
@@ -42709,7 +43815,6 @@ frac{1}{x^{2}}$
 \end_layout
 
 \begin_layout Plain Layout
-
     pass
 \end_layout
 
@@ -42796,8 +43901,8 @@ name "cha:Units-available-in"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:Units"
+nolink "false"
 
 \end_inset
 
@@ -43600,7 +44705,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  DVI
 \end_layout
 
@@ -43613,12 +44727,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-DVI|see
+DVI
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -43629,7 +44752,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -43715,7 +44837,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PostScript
 \end_layout
 
@@ -43728,12 +44859,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-PostScript|see
+PostScript
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -43744,7 +44884,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -43844,7 +44983,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PDF
 \end_layout
 
@@ -44009,7 +45157,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44021,7 +45168,6 @@ white
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44032,7 +45178,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44052,7 +45197,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44064,7 +45208,6 @@ white
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44075,7 +45218,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44095,7 +45237,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44107,7 +45248,6 @@ white
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44118,7 +45258,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44138,7 +45277,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44150,7 +45288,6 @@ white
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44161,7 +45298,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44183,7 +45319,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44195,7 +45330,6 @@ Apricot
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44216,7 +45350,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44236,7 +45369,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44248,7 +45380,6 @@ Aquamarine
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44269,7 +45400,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44289,7 +45419,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44301,7 +45430,6 @@ Bittersweet
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44322,7 +45450,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44342,7 +45469,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44354,7 +45480,6 @@ BlueGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44375,7 +45500,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44397,7 +45521,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44409,7 +45532,6 @@ BlueViolet
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44430,7 +45552,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44450,7 +45571,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44462,7 +45582,6 @@ BrickRed
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44483,7 +45602,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44503,7 +45621,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44515,7 +45632,6 @@ Brown
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44536,7 +45652,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44556,7 +45671,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44568,7 +45682,6 @@ BurntOrange
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44589,7 +45702,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44611,7 +45723,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44623,7 +45734,6 @@ CadetBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44644,7 +45754,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44664,7 +45773,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44676,7 +45784,6 @@ CarnationPink
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44697,7 +45804,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44717,7 +45823,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44729,7 +45834,6 @@ Cerulean
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44750,7 +45854,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44770,7 +45873,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44782,7 +45884,6 @@ CornflowerBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44803,7 +45904,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44825,7 +45925,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44837,7 +45936,6 @@ Dandelion
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44858,7 +45956,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44878,7 +45975,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44890,7 +45986,6 @@ DarkOrchid
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44911,7 +46006,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44931,7 +46025,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44943,7 +46036,6 @@ Emerald
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -44964,7 +46056,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44984,7 +46075,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -44996,7 +46086,6 @@ ForestGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45017,7 +46106,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45039,7 +46127,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45051,7 +46138,6 @@ Fuchsia
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45072,7 +46158,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45092,7 +46177,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45104,7 +46188,6 @@ Goldenrod
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45125,7 +46208,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45145,7 +46227,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45157,7 +46238,6 @@ Gray
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45178,7 +46258,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45198,7 +46277,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45210,7 +46288,6 @@ GreenYellow
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45231,7 +46308,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45253,7 +46329,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45265,7 +46340,6 @@ JungleGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45286,7 +46360,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45306,7 +46379,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45318,7 +46390,6 @@ Lavender
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45339,7 +46410,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45359,7 +46429,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45371,7 +46440,6 @@ LimeGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45392,7 +46460,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45412,7 +46479,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45424,7 +46490,6 @@ Mahogany
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45445,7 +46510,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45467,7 +46531,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45479,7 +46542,6 @@ Mahogany
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45500,7 +46562,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45520,7 +46581,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45532,7 +46592,6 @@ Maroon
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45553,7 +46612,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45573,7 +46631,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45585,7 +46642,6 @@ Melon
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45606,7 +46662,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45626,7 +46681,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45638,7 +46692,6 @@ MidnightBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45659,7 +46712,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45681,7 +46733,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45693,7 +46744,6 @@ Mulberry
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45714,7 +46764,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45734,7 +46783,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45746,7 +46794,6 @@ NavyBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45767,7 +46814,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45787,7 +46833,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45799,7 +46844,6 @@ OliveGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45820,7 +46864,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45840,7 +46883,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45852,7 +46894,6 @@ Orange
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45873,7 +46914,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45895,7 +46935,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45907,7 +46946,6 @@ OrangeRed
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45928,7 +46966,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -45948,7 +46985,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -45960,7 +46996,6 @@ Orchid
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -45981,7 +47016,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46001,7 +47035,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46013,7 +47046,6 @@ Peach
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46034,7 +47066,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46054,7 +47085,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46066,7 +47096,6 @@ Periwinkle
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46087,7 +47116,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46109,7 +47137,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46121,7 +47148,6 @@ PineGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46142,7 +47168,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46162,7 +47187,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46174,7 +47198,6 @@ Plum
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46195,7 +47218,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46215,7 +47237,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46227,7 +47248,6 @@ ProcessBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46248,7 +47268,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46268,7 +47287,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46280,7 +47298,6 @@ Purple
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46301,7 +47318,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46323,7 +47339,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46335,7 +47350,6 @@ RawSienna
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46356,7 +47370,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46376,7 +47389,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46388,7 +47400,6 @@ RedOrange
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46409,7 +47420,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46429,7 +47439,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46441,7 +47450,6 @@ RedViolet
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46462,7 +47470,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46482,7 +47489,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46494,7 +47500,6 @@ Rhodamine
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46515,7 +47520,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46537,7 +47541,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46549,7 +47552,6 @@ RoyalBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46570,7 +47572,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46590,7 +47591,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46602,7 +47602,6 @@ RoyalPurple
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46623,7 +47622,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46643,7 +47641,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46655,7 +47652,6 @@ RubineRed
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46676,7 +47672,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46696,7 +47691,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46708,7 +47702,6 @@ Salmon
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46729,7 +47722,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46751,7 +47743,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46763,7 +47754,6 @@ SeaGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46784,7 +47774,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46804,7 +47793,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46816,7 +47804,6 @@ Sepia
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46837,7 +47824,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46857,7 +47843,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46869,7 +47854,6 @@ SkyBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46890,7 +47874,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46910,7 +47893,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46922,7 +47904,6 @@ SpringGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46943,7 +47924,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -46965,7 +47945,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -46977,7 +47956,6 @@ Tan
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -46998,7 +47976,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47018,7 +47995,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47030,7 +48006,6 @@ TealBlue
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47051,7 +48026,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47071,7 +48045,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47083,7 +48056,6 @@ Thistle
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47104,7 +48076,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47124,7 +48095,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47136,7 +48106,6 @@ Turquoise
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47157,7 +48126,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47179,7 +48147,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47191,7 +48158,6 @@ Violet
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47212,7 +48178,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47232,7 +48197,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47244,7 +48208,6 @@ VioletRed
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47265,7 +48228,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47285,7 +48247,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47297,7 +48258,6 @@ WildStrawberry
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47318,7 +48278,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47338,7 +48297,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47350,7 +48308,6 @@ YellowGreen
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47371,7 +48328,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47393,7 +48349,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{black}{
 \end_layout
@@ -47405,7 +48360,6 @@ YellowOrange
 status collapsed
 
 \begin_layout Plain Layout
-
 }{
 \end_layout
 
@@ -47426,7 +48380,6 @@ W
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -47480,8 +48433,8 @@ status collapsed
 (
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "eq:Wgn"
+nolink "false"
 
 \end_inset
 
@@ -47560,8 +48513,8 @@ pt.
 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:Wtot_n"
+nolink "false"
 
 \end_inset
 
@@ -47590,16 +48543,16 @@ W_{\mathrm{tot\,mult}}=W_{g\,\mathrm{mult}}+2\cdot\backslash\mbox{tabcolsep}+2\c
 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:Wtot_n"
+nolink "false"
 
 \end_inset
 
  и 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:Wtot_mult"
+nolink "false"
 
 \end_inset
 
@@ -47720,7 +48673,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  arydshln
 \end_layout
 
@@ -47759,7 +48721,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  booktabs
 \end_layout
 
@@ -47798,7 +48769,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -47837,7 +48817,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  diagbox
 \end_layout
 
@@ -47876,7 +48865,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  endfloat
 \end_layout
 
@@ -47915,7 +48913,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  footmisc
 \end_layout
 
@@ -47954,7 +48961,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -47993,7 +49009,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -48032,7 +49057,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  KOMA-Script
 \end_layout
 
@@ -48080,7 +49114,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  lettrine
 \end_layout
 
@@ -48119,7 +49162,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  listings
 \end_layout
 
@@ -48158,7 +49210,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  minted
 \end_layout
 
@@ -48197,7 +49258,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  marginnote
 \end_layout
 
@@ -48236,7 +49306,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  pdfpages
 \end_layout
 
@@ -48275,7 +49354,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -48314,7 +49402,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PSTricks
 \end_layout
 
@@ -48353,7 +49450,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -48392,7 +49498,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  sidecap
 \end_layout
 

@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -111,11 +111,20 @@ shapepar
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -141,6 +150,7 @@ shapepar
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -813,20 +823,17 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{tabular}{ll}
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{minipage}{5cm}
 \end_layout
 
 \begin_layout Plain Layout
-
 Это пример окружения minipage.
  В него можно поместить почти все,
  даже (неплавающие) рисунки и таблицы.
@@ -835,25 +842,21 @@ begin{minipage}{5cm}
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{minipage}
 \end_layout
 
 \begin_layout Plain Layout
-
 &
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{minipage}{5cm}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{verbatim}
@@ -861,26 +864,22 @@ begin{verbatim}
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{minipage}{5cm}
 \end_layout
 
 \begin_layout Plain Layout
-
 Это ...
  
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{minipage}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{verbatim}
@@ -888,13 +887,11 @@ end{verbatim}
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{minipage}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{tabular}
@@ -1830,7 +1827,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 https://texfaq.org/FAQ-overfull
 \end_layout
 
@@ -2402,7 +2398,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/custom-bib
 \end_layout
 
@@ -2457,7 +2452,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/bibtopic
 \end_layout
 
@@ -3386,7 +3380,6 @@ fancyhdr
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/contrib/fancyhdr
 \end_layout
 
@@ -4139,7 +4132,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -4158,7 +4150,6 @@ labelitemi
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand
@@ -4247,7 +4238,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 (
 \backslash
@@ -4304,7 +4294,6 @@ star
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand
@@ -7693,7 +7682,6 @@ Astronomy and Astrophysics
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.aanda.org
 \end_layout
 
@@ -7706,7 +7694,6 @@ https://www.aanda.org
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.overleaf.com/latex/templates/astronomy-and-astrophysics-template/ngdddtchkbcg
 \end_layout
 
@@ -8229,7 +8216,6 @@ aastex
 status collapsed
 
 \begin_layout Plain Layout
-
 https://journals.aas.org/aastex-package-for-manuscript-preparation/
 \end_layout
 
@@ -9362,7 +9348,6 @@ AMS \SpecialChar LaTeX
 status open
 
 \begin_layout Plain Layout
-
 https://www.ams.org
 \end_layout
 
@@ -9373,7 +9358,6 @@ https://www.ams.org
 status open
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/tex-archive/macros/latex/required/amsmath
 \end_layout
 
@@ -11508,7 +11492,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 lyx-devel@lists.lyx.org
 \end_layout
 
@@ -11567,7 +11550,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 CTAN:/macros/latex/memoir/memman.pdf
 \end_layout
 
@@ -11791,7 +11773,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 CTAN:/macros/latex/memoir/memman.pdf
 \end_layout
 
@@ -12018,7 +11999,6 @@ Subjects
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.springer.com
 \end_layout
 
@@ -13363,7 +13343,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 https://svnbook.red-bean.com
 \end_layout
 
@@ -13914,7 +13893,6 @@ cvs -r
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.nongnu.org/cvs/
 \end_layout
 
@@ -13925,7 +13903,6 @@ https://www.nongnu.org/cvs/
 status collapsed
 
 \begin_layout Plain Layout
-
 https://cvs.nongnu.org/
 \end_layout
 
@@ -15049,7 +15026,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 https://svnbook.red-bean.com/en/1.2/svn.advanced.locking.html
 \end_layout
 
@@ -15840,7 +15816,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.chiark.greenend.org.uk/~sgtatham/putty/download.html
 \end_layout
 
@@ -16050,7 +16025,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://svnbook.red-bean.com/en/1.4/svn.advanced.props.file-portability.html
 \end_layout
 
@@ -16684,7 +16658,6 @@ HEAD~X
 status open
 
 \begin_layout Plain Layout
-
 http://www.literateprogramming.com/lpfaq.pdf
 \end_layout
 
@@ -16758,7 +16731,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.cs.tufts.edu/~nr/noweb/
 \end_layout
 
@@ -17945,7 +17917,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 3
 \end_layout
 
@@ -18242,7 +18213,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 subsubsection{
 \end_layout
@@ -18255,7 +18225,6 @@ subsubsection{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -18357,7 +18326,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 baselineskip
@@ -18470,7 +18438,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -18556,7 +18523,6 @@ setlength
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -18691,7 +18657,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 columnbreak{}
 \end_layout
@@ -18803,7 +18768,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -18856,7 +18820,6 @@ My observations of No.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -18916,7 +18879,6 @@ pt:
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -19134,7 +19096,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -19142,7 +19103,6 @@ columnsep}{1cm}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -19291,7 +19251,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -19299,7 +19258,6 @@ columnseprule}{0pt}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{

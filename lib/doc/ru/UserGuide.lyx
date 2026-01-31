@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -123,12 +123,20 @@ logicalmkup
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \branch Вопрос
 \selected 1
 \filename_suffix 0
@@ -164,6 +172,7 @@ logicalmkup
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -563,7 +572,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операции !
+Операции 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  с файлами
 \end_layout
 
@@ -1716,7 +1734,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операции !
+Операции 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  с мышью
 \end_layout
 
@@ -1924,7 +1951,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Навигация !
+Навигация 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  панель
 \end_layout
 
@@ -2109,7 +2145,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Навигация !
+Навигация 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  горизонтальная прокрутка
 \end_layout
 
@@ -2299,12 +2344,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Дополнение слова|see
+Дополнение слова
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -2315,7 +2369,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2483,12 +2536,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Привязки|see
+Привязки
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -2499,7 +2561,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2517,12 +2578,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Сочетания клавиш|see
+Сочетания клавиш
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -2533,7 +2603,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2638,11 +2707,22 @@ Down
 
 \family sans
 Tab
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Tab"
-description "Клавиша Tabulator"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Tab
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+Клавиша Tabulator
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2711,11 +2791,22 @@ Tab
 
 \family sans
 Esc
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Esc"
-description "Клавиша Escape"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Esc
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+Клавиша Escape
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2766,11 +2857,22 @@ Control
 Ctrl
 \family default
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Ctrl"
-description "Клавиша Control"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Ctrl
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+Клавиша Control
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2833,11 +2935,22 @@ Shift
 Shift
 \family default
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Shift"
-description "Клавиша Shift"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Shift
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+Клавиша Shift
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2856,11 +2969,22 @@ Alt
 Alt
 \family default
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Alt"
-description "Клавиша Alt или Meta"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Alt
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+Клавиша Alt или Meta
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2974,7 +3098,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LyX
- !
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  основы
 \end_layout
 
@@ -2991,7 +3124,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  типы
 \end_layout
 
@@ -3044,7 +3186,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  классы
 \end_layout
 
@@ -3075,7 +3226,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -3326,7 +3486,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -3437,7 +3606,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  модули
 \end_layout
 
@@ -3468,7 +3646,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -3563,7 +3750,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  локальный макет
 \end_layout
 
@@ -4217,7 +4413,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  макет
 \end_layout
 
@@ -4230,7 +4435,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -4357,7 +4571,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancyhdr
 \end_layout
 
@@ -4402,7 +4625,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размер бумаги
 \end_layout
 
@@ -4411,7 +4643,7 @@ status collapsed
 
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Paper-Size,-Orientation"
+name "subsec:Paper-Size.-Orientation"
 
 \end_inset
 
@@ -4435,7 +4667,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -4552,7 +4793,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  поля
 \end_layout
 
@@ -4586,7 +4836,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -4644,7 +4903,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разделение
 \end_layout
 
@@ -4779,7 +5047,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разделение
 \end_layout
 
@@ -4821,7 +5098,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -4889,7 +5175,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  междустрочный интервал
 \end_layout
 
@@ -4914,7 +5209,16 @@ status collapsed
 
 \family roman
 \noun off
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -4949,7 +5253,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  setspace
 \end_layout
 
@@ -4990,7 +5303,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружения
 \end_layout
 
@@ -5003,7 +5325,17 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Окружения абзаца|(
+Окружения абзаца
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+(
 \end_layout
 
 \end_inset
@@ -5225,7 +5557,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  заголовок
 \end_layout
 
@@ -5353,7 +5694,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Заголовки разделов !
+Заголовки разделов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  нумерованные
 \end_layout
 
@@ -5546,7 +5896,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Заголовки разделов !
+Заголовки разделов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ненумерованные
 \end_layout
 
@@ -5634,7 +5993,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -5679,7 +6047,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Заголовки разделов !
+Заголовки разделов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  краткие названия
 \end_layout
 
@@ -6039,7 +6416,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  стихи
 \end_layout
 
@@ -6265,7 +6651,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  маркировка
 \end_layout
 
@@ -6451,7 +6846,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -6494,7 +6898,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  перечисление
 \end_layout
 
@@ -6694,7 +7107,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  описание
 \end_layout
 
@@ -6851,7 +7273,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пометка
 \end_layout
 
@@ -7128,7 +7559,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательские
 \end_layout
 
@@ -7159,7 +7599,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -7176,8 +7625,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
- перечисление !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ перечисление 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательское
 \end_layout
 
@@ -7332,7 +7799,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 #
@@ -7362,7 +7828,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 Alph{enumi}.
@@ -7394,7 +7859,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 bfseries{
@@ -7422,7 +7886,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 emph{
@@ -7529,8 +7992,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
- перечисление !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ перечисление 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  продолжение
 \end_layout
 
@@ -7552,7 +8033,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 arabic{enumi}.
@@ -7677,7 +8157,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 start=4
 \end_layout
 
@@ -7699,7 +8178,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  интервал
 \end_layout
 
@@ -7747,7 +8235,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 nolistsep
 \end_layout
 
@@ -7784,7 +8271,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -7831,7 +8327,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 labelindent=
 \backslash
 parindent,
@@ -7860,7 +8355,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Списки !
+Списки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройка
 \end_layout
 
@@ -7932,7 +8436,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 labelindent=0pt,
  labelsep=1cm,
  font=
@@ -7983,7 +8486,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -8756,7 +9268,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Окружения абзаца|)
+Окружения абзаца
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -8954,7 +9476,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Вложенность !
+Вложенность 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружения
 \end_layout
 
@@ -9395,7 +9926,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Вложенность !
+Вложенность 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  таблицы и др.
 \end_layout
 
@@ -10004,7 +10544,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Вложенность !
+Вложенность 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  примеры
 \end_layout
 
@@ -11173,7 +11722,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Вложенность !
+Вложенность 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разделение
 \end_layout
 
@@ -11330,7 +11888,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пробел !
+Пробел 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  неразрывный
 \end_layout
 
@@ -11407,7 +11974,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  горизонтальный
 \end_layout
 
@@ -11453,7 +12029,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пробел !
+Пробел 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  между словами
 \end_layout
 
@@ -11524,7 +12109,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пробел !
+Пробел 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  тонкий
 \end_layout
 
@@ -12234,7 +12828,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  горизонтальное заполнение
 \end_layout
 
@@ -12459,7 +13062,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  фантомный
 \end_layout
 
@@ -12580,7 +13192,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вертикальный
 \end_layout
 
@@ -12650,7 +13271,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -12702,7 +13332,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вертикальное заполнение
 \end_layout
 
@@ -12807,7 +13446,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  выравнивание
 \end_layout
 
@@ -12940,7 +13588,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Разрыв страницы !
+Разрыв страницы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  принудительный
 \end_layout
 
@@ -13070,7 +13727,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Разрыв страницы !
+Разрыв страницы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  с очисткой
 \end_layout
 
@@ -13147,7 +13813,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Разрыв страницы !
+Разрыв страницы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  запрет
 \end_layout
 
@@ -13445,7 +14120,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифты !
+Шрифты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  типы
 \end_layout
 
@@ -13470,7 +14154,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифты !
+Шрифты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  векторные
 \end_layout
 
@@ -13531,7 +14224,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифты !
+Шрифты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  растровые
 \end_layout
 
@@ -13731,7 +14433,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифты !
+Шрифты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размер
 \end_layout
 
@@ -13744,7 +14455,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  шрифт
 \end_layout
 
@@ -13766,7 +14486,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -14281,7 +15010,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fontenc
 \end_layout
 
@@ -14385,7 +15123,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  CJK
 \end_layout
 
@@ -14425,7 +15172,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  microtype
 \end_layout
 
@@ -14544,7 +15300,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -16134,7 +16899,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  текста
 \end_layout
 
@@ -16544,7 +17318,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Простой текст
 \end_layout
 
@@ -16634,7 +17417,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  \SpecialChar LaTeX
 
 \end_layout
@@ -16706,7 +17498,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  DVI
 \end_layout
 
@@ -16803,7 +17604,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PostScript
 \end_layout
 
@@ -16845,7 +17655,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  pstricks
 \end_layout
 
@@ -16908,7 +17727,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PDF
 \end_layout
 
@@ -16921,7 +17749,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
+Тип файла 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PDF
 \end_layout
 
@@ -17217,7 +18054,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Форматы файлов !
+Форматы файлов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  XHTML
 \end_layout
 
@@ -17230,7 +18076,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
+Тип файла 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  HTML
 \end_layout
 
@@ -17313,7 +18168,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  просмотр
 \end_layout
 
@@ -18009,7 +18873,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 nobreakdash
 \end_layout
@@ -18295,7 +19158,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  babel
 \end_layout
 
@@ -18599,7 +19471,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пробел !
+Пробел 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  между словами
 \end_layout
 
@@ -18632,7 +19513,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пробел !
+Пробел 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  тонкий
 \end_layout
 
@@ -18725,7 +19615,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Типографика !
+Типографика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  кавычки
 \end_layout
 
@@ -18738,12 +19637,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Кавычки | see
+Кавычки 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+ see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -18754,7 +19662,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -18797,7 +19704,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -19684,7 +20600,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Типографика !
+Типографика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  лигатуры
 \end_layout
 
@@ -19697,12 +20622,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Лигатуры | see
+Лигатуры 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+ see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -19713,7 +20647,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -19879,7 +20812,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LyX
- !
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  правильные имена
 \end_layout
 
@@ -19959,7 +20901,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Типографика !
+Типографика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  единицы измерения
 \end_layout
 
@@ -20071,7 +21022,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Типографика !
+Типографика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  верхние и нижние висячие строки
 \end_layout
 
@@ -20687,7 +21647,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Изображения !
+Изображения 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматы
 \end_layout
 
@@ -20767,13 +21736,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
- GIF|see
+Тип файла 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ GIF
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -20785,7 +21772,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20825,13 +21811,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
- PNG|see
+Тип файла 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ PNG
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -20843,7 +21847,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20894,13 +21897,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
- JPG|see
+Тип файла 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ JPG
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -20912,7 +21933,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20968,13 +21988,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
- SVG|see
+Тип файла 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ SVG
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -20986,7 +22024,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21026,13 +22063,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
- EPS|see
+Тип файла 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ EPS
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -21044,7 +22099,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21083,7 +22137,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
+Тип файла 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PDF
 \end_layout
 
@@ -21119,7 +22182,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Изображения !
+Изображения 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  группировка настроек
 \end_layout
 
@@ -21750,7 +22822,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблицы !
+Таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многостраничные
 \end_layout
 
@@ -23988,7 +25069,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблицы !
+Таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ячейки
 \end_layout
 
@@ -24385,7 +25475,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подписи
 \end_layout
 
@@ -24431,7 +25530,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  рисунки
 \end_layout
 
@@ -24767,7 +25875,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  таблицы
 \end_layout
 
@@ -25051,7 +26168,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Плавающие объекты !
+Плавающие объекты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подробности
 \end_layout
 
@@ -25285,12 +26411,21 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Формулы|see
+Формулы
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -25301,7 +26436,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -25339,7 +26473,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  основы
 \end_layout
 
@@ -25464,7 +26607,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  навигация
 \end_layout
 
@@ -25719,7 +26871,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  показатели степени
 \end_layout
 
@@ -25732,7 +26893,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  верхние индексы
 \end_layout
 
@@ -25745,7 +26915,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  нижние индексы
 \end_layout
 
@@ -25859,7 +27038,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  дроби
 \end_layout
 
@@ -25924,7 +27112,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  корни
 \end_layout
 
@@ -25989,7 +27186,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  суммы
 \end_layout
 
@@ -26002,7 +27208,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  интегралы
 \end_layout
 
@@ -26035,14 +27250,14 @@ name "subsec:Operators-with-Limits"
  Оператор суммы автоматически поместит свои «пределы» над и под символом оператора в выделенных формулах и слева —
  в обычных формулах,
  как в 
-\begin_inset Formula $\sum_{n=0}^{\infty}\frac{1}{n!}=e$
+\begin_inset Formula $\sum^{\infty}_{n=0}\frac{1}{n!}=e$
 \end_inset
 
 ,
  по сравнению с
 \begin_inset Formula 
 \[
-\sum_{n=0}^{\infty}\frac{1}{n!}=e
+\sum^{\infty}_{n=0}\frac{1}{n!}=e
 \]
 
 \end_inset
@@ -26079,7 +27294,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пределы
 \end_layout
 
@@ -26137,7 +27361,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  символы
 \end_layout
 
@@ -26198,7 +27431,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  интервалы
 \end_layout
 
@@ -26304,7 +27546,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  функции
 \end_layout
 
@@ -26411,7 +27662,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  акценты
 \end_layout
 
@@ -27103,7 +28363,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  скобки
 \end_layout
 
@@ -27116,7 +28385,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ограничители
 \end_layout
 
@@ -27272,7 +28550,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  массивы
 \end_layout
 
@@ -27285,7 +28572,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  матрицы
 \end_layout
 
@@ -27298,7 +28594,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многострочные формулы
 \end_layout
 
@@ -27540,7 +28845,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  нумерация формул
 \end_layout
 
@@ -27553,7 +28867,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ссылки на формулы
 \end_layout
 
@@ -27770,7 +29093,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  макросы
 \end_layout
 
@@ -27807,7 +29139,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  гарнитуры
 \end_layout
 
@@ -28381,7 +29722,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  текст
 \end_layout
 
@@ -28436,7 +29786,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размеры шрифтов
 \end_layout
 
@@ -28569,7 +29928,7 @@ arg   "math-insert \\style"
 
 \family roman
 \size largest
-\begin_inset Formula $\mathrm{e}=\sum_{n=0}^{\infty}\frac{1}{n!}$
+\begin_inset Formula $\mathrm{e}=\sum^{\infty}_{n=0}\frac{1}{n!}$
 \end_inset
 
 
@@ -28584,7 +29943,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  AMS
 \end_layout
 
@@ -28625,7 +29993,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -28659,7 +30036,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Математика !
+Математика 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многострочные формулы
 \end_layout
 
@@ -29112,7 +30498,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -29126,7 +30521,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -29459,7 +30863,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Навигация !
+Навигация 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  панель
 \end_layout
 
@@ -29646,7 +31059,6 @@ URL
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org
 \end_layout
 
@@ -30147,7 +31559,6 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-
 https://en.wikipedia.org/wiki/ASCII##Character_set
 \end_layout
 
@@ -30280,7 +31691,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  natbib
 \end_layout
 
@@ -30302,7 +31722,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -30430,7 +31859,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Библиография !
+Библиография 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  базы данных
 \end_layout
 
@@ -30507,7 +31945,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/BibTeX/Programs
 \end_layout
 
@@ -30540,7 +31977,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -30600,7 +32046,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -30634,7 +32089,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Библиография !
+Библиография 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Bib\SpecialChar TeX
 
 \end_layout
@@ -30740,7 +32204,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Библиография !
+Библиография 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Biblatex
 \end_layout
 
@@ -30754,7 +32227,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -30828,7 +32310,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -30936,7 +32427,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biber
 \end_layout
 
@@ -31129,7 +32629,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Библиография !
+Библиография 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматы ссылок
 \end_layout
 
@@ -31169,7 +32678,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -31265,7 +32783,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -31346,7 +32873,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  jurabib
 \end_layout
 
@@ -31374,7 +32910,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  natbib
 \end_layout
 
@@ -31769,7 +33314,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  генерация
 \end_layout
 
@@ -31897,7 +33451,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  группировка
 \end_layout
 
@@ -32005,7 +33568,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  диапазоны страниц
 \end_layout
 
@@ -32078,7 +33650,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  перекрестные ссылки
 \end_layout
 
@@ -32129,7 +33710,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  упорядочение
 \end_layout
 
@@ -32176,7 +33766,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Фиктивные рубрики !
+Фиктивные рубрики 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  maïs
 \end_layout
 
@@ -32189,7 +33788,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Фиктивные рубрики !
+Фиктивные рубрики 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  maître
 \end_layout
 
@@ -32202,8 +33810,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Фиктивные рубрики !
- maïs@maison
+Фиктивные рубрики 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ maïs
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+maison
 \end_layout
 
 \end_inset
@@ -32250,7 +33877,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  форматирование
 \end_layout
 
@@ -32267,7 +33903,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Фиктивные рубрики !
+Фиктивные рубрики 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \shape italic
 Это фиктивная рубрика в курсивном начертании
@@ -32295,8 +33940,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Фиктивные рубрики !
- номер страницы в курсивном начертании|textit
+Фиктивные рубрики 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ номер страницы в курсивном начертании
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+textit
 \end_layout
 
 \end_inset
@@ -32441,8 +34105,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Фиктивные рубрики !
- мой указатель|IndexDef
+Фиктивные рубрики 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ мой указатель
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+IndexDef
 \end_layout
 
 \end_inset
@@ -32493,7 +34176,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Предметный указатель !
+Предметный указатель 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  процессор
 \end_layout
 
@@ -32623,7 +34315,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  splitidx
 \end_layout
 
@@ -32771,12 +34472,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Словарь терминов|see
+Словарь терминов
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -32787,7 +34497,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -32830,7 +34539,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  nomencl
 \end_layout
 
@@ -32926,7 +34644,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Список обозначений !
+Список обозначений 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  стиль
 \end_layout
 
@@ -33150,11 +34877,107 @@ textbf{#1}}}
 ""{}
 \family default
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "%@, %|, %!, %\"{}"
-description "Знак кавычки в коде TeX выводится записью ' %\"{}%\"{} '."
-literal "true"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+%@,
+ %|,
+ %!,
+ %"{}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+CYRZ{}
+\backslash
+cyrn{}
+\backslash
+cyra{}
+\backslash
+cyrk{} 
+\backslash
+cyrk{}
+\backslash
+cyra{}
+\backslash
+cyrv{}
+\backslash
+cyrery{}
+\backslash
+cyrch{}
+\backslash
+cyrk{}
+\backslash
+cyri{} 
+\backslash
+cyrv{} 
+\backslash
+cyrk{}
+\backslash
+cyro{}
+\backslash
+cyrd{}
+\backslash
+cyre{} TeX 
+\backslash
+cyrv{}
+\backslash
+cyrery{}
+\backslash
+cyrv{}
+\backslash
+cyro{}
+\backslash
+cyrd{}
+\backslash
+cyri{}
+\backslash
+cyrt{}
+\backslash
+cyrs{}
+\backslash
+cyrya{} 
+\backslash
+cyrz{}
+\backslash
+cyra{}
+\backslash
+cyrp{}
+\backslash
+cyri{}
+\backslash
+cyrs{}
+\backslash
+cyrsftsn{}
+\backslash
+cyryu{} ' %"{}%"{} '.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -33169,7 +34992,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Список обозначений !
+Список обозначений 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  порядок сортировки
 \end_layout
 
@@ -33277,7 +35109,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Список обозначений !
+Список обозначений 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  опции
 \end_layout
 
@@ -33594,7 +35435,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Список обозначений !
+Список обозначений 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вывод
 \end_layout
 
@@ -33734,7 +35584,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Список обозначений !
+Список обозначений 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  программы
 \end_layout
 
@@ -33811,7 +35670,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ветки
 \end_layout
 
@@ -34115,7 +35983,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 newcommand{
 \backslash
@@ -34123,7 +35990,6 @@ question}[1]{#1}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 newcommand{
@@ -34152,7 +36018,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 newcommand{
 \backslash
@@ -34160,7 +36025,6 @@ question}[1]{}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 newcommand{
@@ -34255,8 +36119,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Тип файла !
- PDF !
+Тип файла 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ PDF 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  свойства
 \end_layout
 
@@ -34286,7 +36168,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -34647,7 +36538,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fbox{
 \end_layout
@@ -34659,7 +36549,6 @@ fbox{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -34789,7 +36678,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -34963,7 +36861,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pagestyle{fancy}
 \end_layout
@@ -34998,7 +36895,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 rightmark
@@ -35043,7 +36939,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 leftmark
 \end_layout
@@ -35067,7 +36962,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 thepage
@@ -35125,7 +37019,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 Roman{page}
 \end_layout
@@ -35150,7 +37043,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  колонтитулы
 \end_layout
 
@@ -35845,7 +37747,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancyhdr
 \end_layout
 
@@ -36044,7 +37955,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 pagestyle{headings}
 \end_layout
@@ -36091,7 +38001,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  предпросмотр
 \end_layout
 
@@ -36127,7 +38046,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  preview-latex
 \end_layout
 
@@ -36344,7 +38272,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 rotatebox[origin=r]{-60}{
 \end_layout
@@ -36381,7 +38308,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36392,7 +38318,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 rotatebox[origin=lb]{60}{
@@ -36409,7 +38334,6 @@ rotatebox[origin=lb]{60}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36468,7 +38392,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 1mm 
 \backslash
@@ -36483,7 +38406,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{cyan}{magenta}{
 \end_layout
@@ -36495,7 +38417,6 @@ fcolorbox{cyan}{magenta}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36942,7 +38863,7 @@ func()
  чтобы не заменять все буквы «R»,
  встречающиеся в обычном тексте),
  или вхождения 
-\begin_inset Formula $x_{j}^{i}$
+\begin_inset Formula $x^{i}_{j}$
 \end_inset
 
  на 
@@ -37280,7 +39201,6 @@ arg   "dialog-show character"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/trac/export/HEAD/dictionaries/dicts/
 \end_layout
 
@@ -37694,7 +39614,6 @@ user/
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/trac/browser/dictionaries/thes/
 \end_layout
 
@@ -37905,7 +39824,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  отслеживание изменений
 \end_layout
 
@@ -37974,7 +39902,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  отслеживание изменений
 \end_layout
 
@@ -38001,7 +39938,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Панель инструментов !
+Панель инструментов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  рецензирование
 \end_layout
 
@@ -38522,7 +40468,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Язык !
+Язык 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -38535,7 +40490,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -38548,7 +40512,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  язык
 \end_layout
 
@@ -38684,7 +40657,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Файл
 \end_layout
 
@@ -39640,7 +41622,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Правка
 \end_layout
 
@@ -39772,7 +41763,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Абзац !
+Абзац 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  свойства
 \end_layout
 
@@ -39972,7 +41972,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Вид
 \end_layout
 
@@ -40248,7 +42257,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Вставка
 \end_layout
 
@@ -40515,7 +42533,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Язык !
+Язык 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  фонетические символы
 \end_layout
 
@@ -40538,7 +42565,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  tipa
 \end_layout
 
@@ -41471,8 +43507,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Таблицы !
- мини-страница !
+Таблицы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ мини-страница 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подпись
 \end_layout
 
@@ -41808,7 +43862,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Навигация
 \end_layout
 
@@ -41946,7 +44009,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Документ
 \end_layout
 
@@ -42453,7 +44525,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Инструменты
 \end_layout
 
@@ -42695,7 +44776,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Меню !
+Меню 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Помощь
 \end_layout
 
@@ -42789,7 +44879,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Панель инструментов !
+Панель инструментов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  стандартная
 \end_layout
 
@@ -42825,7 +44924,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -43671,7 +45769,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Панель инструментов !
+Панель инструментов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  дополнительная
 \end_layout
 
@@ -44522,7 +46629,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Панель инструментов !
+Панель инструментов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  просмотреть/обновить
 \end_layout
 
@@ -44804,7 +46920,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Панель инструментов !
+Панель инструментов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  таблица
 \end_layout
 
@@ -44823,7 +46948,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Панель инструментов !
+Панель инструментов 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  математические макросы
 \end_layout
 
@@ -44852,7 +46986,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Документ !
+Документ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -45065,7 +47208,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -45079,7 +47231,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -45252,7 +47413,7 @@ reference "sec:Fonts-and-Text"
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:Paper-Size,-Orientation"
+reference "subsec:Paper-Size.-Orientation"
 
 \end_inset
 
@@ -45301,7 +47462,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Язык !
+Язык 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  кодировка
 \end_layout
 
@@ -45392,7 +47562,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  inputenc
 \end_layout
 
@@ -45475,7 +47654,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  babel
 \end_layout
 
@@ -45494,7 +47682,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  polyglossia
 \end_layout
 
@@ -45976,7 +48173,16 @@ status open
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  CJK
 \end_layout
 
@@ -46067,7 +48273,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ucs
 \end_layout
 
@@ -46105,7 +48320,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  inputenc
 \end_layout
 
@@ -46149,7 +48373,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  CJK
 \end_layout
 
@@ -46201,7 +48434,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  japanese
 \end_layout
 
@@ -46263,7 +48505,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  основной текст
 \end_layout
 
@@ -46276,7 +48527,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  фон
 \end_layout
 
@@ -46289,7 +48549,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  закрашенные блоки
 \end_layout
 
@@ -46302,7 +48571,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  серый текст
 \end_layout
 
@@ -46695,7 +48973,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -46714,7 +49001,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  natbib
 \end_layout
 
@@ -46732,7 +49028,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  jurabib
 \end_layout
 
@@ -46759,7 +49064,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  bibtopic
 \end_layout
 
@@ -46858,7 +49172,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  amsmath
 \end_layout
 
@@ -46877,7 +49200,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  amssymb
 \end_layout
 
@@ -46896,7 +49228,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancel
 \end_layout
 
@@ -46915,7 +49256,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  esint
 \end_layout
 
@@ -46934,7 +49284,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathdots
 \end_layout
 
@@ -46953,7 +49312,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -46972,7 +49340,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mhchem
 \end_layout
 
@@ -46991,7 +49368,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  stackrel
 \end_layout
 
@@ -47010,7 +49396,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  stmaryrd
 \end_layout
 
@@ -47028,7 +49423,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  undertilde
 \end_layout
 
@@ -47712,7 +50116,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  панели инструментов
 \end_layout
 
@@ -47725,7 +50138,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  меню
 \end_layout
 
@@ -48075,7 +50497,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Резервное копирование !
+Резервное копирование 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  документов
 \end_layout
 
@@ -48306,7 +50737,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифты !
+Шрифты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  экранные
 \end_layout
 
@@ -48450,7 +50890,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Цвет !
+Цвет 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  экран \SpecialChar LyX
 
 \end_layout
@@ -48464,7 +50913,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  цвета
 \end_layout
 
@@ -48531,7 +50989,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вид
 \end_layout
 
@@ -48582,7 +51049,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  редактирование
 \end_layout
 
@@ -48764,7 +51240,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  сочетания клавиш
 \end_layout
 
@@ -48871,7 +51356,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Сочетания клавиш !
+Сочетания клавиш 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  редактирование
 \end_layout
 
@@ -49075,7 +51569,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  раскладки клавиатуры
 \end_layout
 
@@ -49236,7 +51739,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пути
 \end_layout
 
@@ -49324,7 +51836,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Резервное копирование !
+Резервное копирование 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  каталога
 \end_layout
 
@@ -49623,7 +52144,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Язык !
+Язык 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  настройки
 \end_layout
 
@@ -49636,7 +52166,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  язык
 \end_layout
 
@@ -49710,7 +52249,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  babel
 \end_layout
 
@@ -49735,7 +52283,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  polyglossia
 \end_layout
 
@@ -50231,10 +52788,7 @@ dvips
 status collapsed
 
 \begin_layout Plain Layout
-
-https://www.tug.org/texinfohtml/dvips.html
-\backslash
-#Option-details
+https://www.tug.org/texinfohtml/dvips.html#Option-details
 \end_layout
 
 \end_inset
@@ -50301,7 +52855,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  \SpecialChar LaTeX
 
 \end_layout
@@ -50493,7 +53056,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Настройки !
+Настройки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пути
 \end_layout
 
@@ -51702,7 +54274,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/Credits
 \end_layout
 
@@ -51881,7 +54452,6 @@ The \SpecialChar TeX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/topic
 \end_layout
 
@@ -51908,7 +54478,6 @@ The \SpecialChar LaTeX
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \end_layout
 
@@ -51948,7 +54517,6 @@ Bib\SpecialChar TeX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf
 \end_layout
 
@@ -51988,7 +54556,6 @@ Bib\SpecialChar TeX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf
 \end_layout
 
@@ -52027,7 +54594,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -52042,7 +54618,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf
 \end_layout
 
@@ -52081,7 +54656,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biber
 \end_layout
 
@@ -52096,7 +54680,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/biblio/biber/base/documentation/biber.pdf
 \end_layout
 
@@ -52135,7 +54718,6 @@ makeindex
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/indexing/makeindex/doc/makeindex.pdf
 \end_layout
 
@@ -52174,7 +54756,6 @@ makeindex
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/indexing/makeindex/doc/manpages.dvi
 \end_layout
 
@@ -52213,7 +54794,6 @@ xindy
 status collapsed
 
 \begin_layout Plain Layout
-
 http://www.xindy.org/documentation.html
 \end_layout
 
@@ -52249,7 +54829,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ams.org/publications/authors/tex/amslatex
 \end_layout
 
@@ -52288,7 +54867,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -52303,7 +54891,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/caption/caption.pdf
 \end_layout
 
@@ -52342,7 +54929,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -52357,7 +54953,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/enumitem/enumitem.pdf
 \end_layout
 
@@ -52396,7 +54991,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancyhdr
 \end_layout
 
@@ -52411,7 +55015,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/fancyhdr/fancyhdr.pdf
 \end_layout
 
@@ -52450,7 +55053,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -52465,7 +55077,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf
 \end_layout
 
@@ -52504,7 +55115,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  microtype
 \end_layout
 
@@ -52519,7 +55139,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/microtype/microtype.pdf
 \end_layout
 
@@ -52558,7 +55177,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  nomencl
 \end_layout
 
@@ -52573,7 +55201,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/nomencl/nomencl.pdf
 \end_layout
 
@@ -52612,7 +55239,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -52627,7 +55263,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/prettyref/prettyref.pdf
 \end_layout
 
@@ -52666,7 +55301,16 @@ status collapsed
 
 \begin_layout Plain Layout
 \SpecialChar LaTeX
--пакеты !
+-пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -52681,7 +55325,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/refstyle/refstyle.pdf
 \end_layout
 
@@ -52717,7 +55360,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Arabic
 \end_layout
 
@@ -52753,7 +55395,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Armenian
 \end_layout
 
@@ -52789,7 +55430,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Cyrillic
 \end_layout
 
@@ -52825,7 +55465,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Farsi
 \end_layout
 
@@ -52861,7 +55500,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Hebrew
 \end_layout
 
@@ -52897,7 +55535,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Japanese
 \end_layout
 
@@ -52916,7 +55553,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -52926,7 +55562,6 @@ bibname
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -52988,7 +55623,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand*{
 \backslash
@@ -52996,7 +55630,6 @@ pagedeclaration}[1]{
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \backslash
 unskip,

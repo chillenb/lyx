@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -100,12 +100,20 @@ logicalmkup
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \branch OutDated
 \selected 0
 \filename_suffix 0
@@ -137,6 +145,7 @@ logicalmkup
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -2074,22 +2083,18 @@ inline false
 status open
 
 \begin_layout Plain Layout
-
 #!/bin/bash
 \end_layout
 
 \begin_layout Plain Layout
-
 FROMFILE=$1
 \end_layout
 
 \begin_layout Plain Layout
-
 TOFILE=`basename $2`
 \end_layout
 
 \begin_layout Plain Layout
-
 cp $FROMFILE /home/you/pdf/$TOFILE
 \end_layout
 
@@ -3229,7 +3234,6 @@ po
 status open
 
 \begin_layout Plain Layout
-
 https://www.gnu.org/software/gettext/manual/html_node/PO-Mode.html#PO-Mode
 \end_layout
 
@@ -3853,7 +3857,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 b o
 \end_layout
@@ -3881,7 +3884,6 @@ underdot (underd)
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 d o
@@ -3919,7 +3921,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 t o
 \end_layout
@@ -3939,7 +3940,6 @@ breve (bre)
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 u o
@@ -3984,7 +3984,6 @@ dot (dot)
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 .s
@@ -26013,7 +26012,6 @@ getSizeCSS()
 status collapsed
 
 \begin_layout Plain Layout
-
 src/FontInfo.cpp
 \end_layout
 

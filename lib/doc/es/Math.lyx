@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -200,11 +200,20 @@ subequations
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Índice
 \shortcut idx
 \color #008000
@@ -233,6 +242,7 @@ subequations
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -424,7 +434,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS 
 \end_layout
@@ -450,7 +459,6 @@ Este documento no recoge todos los comandos de ecuaciones
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 AmS 
@@ -485,7 +493,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS 
 \end_layout
@@ -512,7 +519,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en línea
 \end_layout
 
@@ -542,7 +558,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  presentada
 \end_layout
 
@@ -594,8 +619,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 displaystyle
@@ -684,8 +727,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-T@\SpecialChar TeX
- !
+T
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+\SpecialChar TeX
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  modo
 \end_layout
 
@@ -804,7 +866,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Texto !
+Texto 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en ecuaciones
 \end_layout
 
@@ -864,8 +935,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 text
@@ -926,8 +1015,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-T@\SpecialChar TeX
- !
+T
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+\SpecialChar TeX
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  llaves
 \end_layout
 
@@ -1465,7 +1573,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Indices@Índices
+Indices
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+Índices
 \end_layout
 
 \end_inset
@@ -1477,12 +1595,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Superíndices|see
+Superíndices
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1493,7 +1620,6 @@ Exponentes
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1511,12 +1637,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Subíndices|see
+Subíndices
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1527,7 +1662,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1741,8 +1875,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- F !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 frac
@@ -1782,8 +1934,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dfrac
@@ -1805,8 +1975,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 tfrac
@@ -2009,8 +2197,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cfrac
@@ -2220,8 +2426,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- N !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 nicefrac
@@ -2340,8 +2564,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 sqrt
@@ -2369,8 +2611,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 root
@@ -2523,8 +2783,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 leftroot
@@ -2545,8 +2823,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 uproot
@@ -2664,8 +2960,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 binom
@@ -2700,8 +3014,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dbinom
@@ -2722,8 +3054,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 tbinom
@@ -2745,8 +3095,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 brace
@@ -2767,8 +3135,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 brack
@@ -3045,8 +3431,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cases
@@ -3190,8 +3594,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- N !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 not
@@ -3365,7 +3787,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Química !
+Química 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  isótopos
 \end_layout
 
@@ -3378,12 +3809,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Isótopos|see
+Isótopos
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -3394,7 +3834,6 @@ Química
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3458,7 +3897,7 @@ nolink "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{9}\mathrm{F}$
 \end_inset
 
 
@@ -3481,7 +3920,7 @@ nolink "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{1}9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{\phantom{1}9}\mathrm{F}$
 \end_inset
 
 
@@ -3513,8 +3952,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- P !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ P 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 phantom
@@ -3621,7 +4078,7 @@ F
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{1}9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{\phantom{1}9}\mathrm{F}$
 \end_inset
 
 
@@ -3662,7 +4119,7 @@ F
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{23}9}^{235}\mathrm{F}$
+\begin_inset Formula $^{235}_{\phantom{23}9}\mathrm{F}$
 \end_inset
 
 
@@ -3705,7 +4162,7 @@ _MMt
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Lambda_{MMt}^{\phantom{ii}t}$
+\begin_inset Formula $\Lambda^{\phantom{ii}t}_{MMt}$
 \end_inset
 
 
@@ -3735,8 +4192,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- V !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ V 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 vphantom
@@ -3763,8 +4238,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- H !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hphantom
@@ -3888,7 +4381,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Lineas@Líneas
+Lineas
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+Líneas
 \end_layout
 
 \end_inset
@@ -3900,7 +4403,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  sub- o superrayada
 \end_layout
 
@@ -3955,8 +4467,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overline
@@ -4000,8 +4530,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underline
@@ -4120,8 +4668,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 rule
@@ -4266,8 +4832,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 ldots
@@ -4290,8 +4874,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cdots
@@ -4313,8 +4915,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dots
@@ -4666,8 +5286,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- H !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hdotsfor
@@ -4748,8 +5386,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dotfill
@@ -4821,8 +5477,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- H !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hrulefill
@@ -5065,8 +5739,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 left
@@ -5087,8 +5779,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 right
@@ -5487,8 +6197,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arraycolsep
@@ -5521,8 +6249,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arraystretch
@@ -5547,8 +6293,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 renewcommand
@@ -5602,8 +6366,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 smallmatrix
@@ -5650,7 +6432,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Delimitadores !
+Delimitadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  verticales
 \end_layout
 
@@ -6144,8 +6935,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textbackslash
@@ -6203,7 +7012,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Delimitadores !
+Delimitadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  tamaño manual
 \end_layout
 
@@ -6227,8 +7045,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 big
@@ -6430,8 +7266,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 bigm
@@ -6460,8 +7314,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 bigl - 
@@ -6686,7 +7558,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Delimitadores !
+Delimitadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  tamaño automático
 \end_layout
 
@@ -6709,8 +7590,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 left
@@ -6731,8 +7630,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 right
@@ -6987,8 +7904,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 middle
@@ -7041,7 +7976,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Delimitadores !
+Delimitadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  horizontales
 \end_layout
 
@@ -7104,8 +8048,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overbrace
@@ -7153,8 +8115,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underbrace
@@ -7299,7 +8279,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -7354,8 +8343,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overbracket
@@ -7399,8 +8406,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 under
@@ -7754,7 +8779,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -7777,7 +8801,6 @@ A & = & \underbrace{gggg+bbqq}_{r}+\:dddd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -7824,8 +8847,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- J !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ J 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 jot
@@ -7908,7 +8949,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Flechas !
+Flechas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  horizontales
 \end_layout
 
@@ -8683,7 +9733,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Flechas !
+Flechas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  etiquetadas
 \end_layout
 
@@ -8702,8 +9761,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- X !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ X 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 xleftarrow
@@ -8724,8 +9801,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- X !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ X 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 xrightarrow
@@ -8733,7 +9828,6 @@ xrightarrow
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -8899,7 +9993,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -9362,7 +10465,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Flechas !
+Flechas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  diagonales
 \end_layout
 
@@ -9375,7 +10487,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Flechas !
+Flechas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  verticales
 \end_layout
 
@@ -9780,7 +10901,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -9811,7 +10931,6 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -9865,7 +10984,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Acentos !
+Acentos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  para un carácter
 \end_layout
 
@@ -10364,7 +11492,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Dieresis@Diéresis
+Dieresis
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+Diéresis
 \end_layout
 
 \end_inset
@@ -10586,7 +11724,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  undertilde
 \end_layout
 
@@ -10600,7 +11747,6 @@ Paquetes !
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifundertilde 
@@ -10696,7 +11842,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else
 \end_layout
@@ -10736,7 +11881,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -10754,7 +11898,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Acentos !
+Acentos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en varios caracteres
 \end_layout
 
@@ -11117,8 +12270,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overset
@@ -11139,8 +12310,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underset
@@ -11191,7 +12380,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Espacio !
+Espacio 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  horizontal
 \end_layout
 
@@ -11215,8 +12413,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Espacio !
- horizontal !
+Espacio 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ horizontal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  predefinido
 \end_layout
 
@@ -12157,7 +13373,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -12187,7 +13402,6 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -12233,8 +13447,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Espacio !
- horizontal !
+Espacio 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ horizontal 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  variable
 \end_layout
 
@@ -12258,8 +13490,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- H !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hspace
@@ -12353,8 +13603,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- H !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hfill
@@ -12616,7 +13884,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Espacio !
+Espacio 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  adicional en línea
 \end_layout
 
@@ -12639,8 +13916,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mathsurround
@@ -12662,8 +13957,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 setlength
@@ -12720,7 +14033,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -12746,7 +14058,6 @@ mm.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -12817,7 +14128,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Marcos !
+Marcos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  con bordes
 \end_layout
 
@@ -12840,8 +14160,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- F !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 fbox
@@ -12862,8 +14200,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 boxed
@@ -12931,8 +14287,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- F !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 framebox
@@ -13276,7 +14650,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 2mm 
 \backslash
@@ -13359,7 +14732,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 0.4pt 
 \backslash
@@ -13391,7 +14763,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Marcos !
+Marcos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  sin borde
 \end_layout
 
@@ -13415,8 +14796,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mbox
@@ -13438,8 +14837,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 makebox
@@ -13460,8 +14877,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 raisebox
@@ -13734,7 +15169,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Marcos !
+Marcos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  coloreados
 \end_layout
 
@@ -13773,7 +15217,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  color
 \end_layout
 
@@ -13839,8 +15292,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 colorbox
@@ -14208,8 +15679,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- F !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 fcolorbox
@@ -14269,7 +15758,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 1mm 
 \backslash
@@ -14294,7 +15782,6 @@ fboxsep 1mm
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -14377,8 +15864,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 definecolor
@@ -14478,7 +15983,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Texto !
+Texto 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  coloreado
 \end_layout
 
@@ -14492,7 +16006,6 @@ Texto !
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 textcolor{verdeoscuro}{
@@ -14513,7 +16026,6 @@ verdeoscuro
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14536,8 +16048,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textcolor
@@ -14569,7 +16099,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Marcos !
+Marcos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  para párrafos
 \end_layout
 
@@ -14699,8 +16238,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- P !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ P 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 parbox
@@ -14815,8 +16372,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 linewidth
@@ -14824,7 +16399,6 @@ linewidth
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{5mm}
@@ -14868,7 +16442,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -14898,7 +16481,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxsep 5mm 
 \backslash
@@ -14915,7 +16497,6 @@ fboxrule 5mm
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fbox{
@@ -14947,7 +16528,6 @@ fboxrule}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }}
 \end_layout
 
@@ -14958,7 +16538,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -15058,7 +16637,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 [5x-7b=3b
 \backslash
@@ -15075,7 +16653,6 @@ Esto es una descripción.
 status collapsed
 
 \begin_layout Plain Layout
-
 }}
 \backslash
 ]
@@ -15232,7 +16809,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Operadores !
+Operadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  grandes
 \end_layout
 
@@ -15323,8 +16909,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- I !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ I 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 int
@@ -15626,8 +17230,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 sum
@@ -15667,8 +17289,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- P !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ P 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 prod
@@ -16292,7 +17932,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Operadores !
+Operadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  límites de
 \end_layout
 
@@ -16363,7 +18012,7 @@ A(x)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\prod_{0}^{\infty}A(x)$
+\begin_inset Formula $\prod^{\infty}_{0}A(x)$
 \end_inset
 
 
@@ -16413,7 +18062,7 @@ L
 El tipo de límites por omisión es:
 \begin_inset Formula 
 \[
-\sum_{x=0}^{\infty}\frac{1}{x^{2}}
+\sum^{\infty}_{x=0}\frac{1}{x^{2}}
 \]
 
 \end_inset
@@ -16429,7 +18078,7 @@ Alineado
 :
 \begin_inset Formula 
 \[
-\sum\nolimits_{x=0}^{\infty}\frac{1}{x^{2}}
+\sum\nolimits^{\infty}_{x=0}\frac{1}{x^{2}}
 \]
 
 \end_inset
@@ -16490,8 +18139,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 subarray
@@ -16512,8 +18179,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 substack
@@ -16526,10 +18211,10 @@ substack
  para componer la expresión
 \begin_inset Formula 
 \begin{equation}
-\sum_{\begin{subarray}{c}
+\sum^{n}_{\begin{subarray}{c}
 0<k<1000\\
 \\k\,\in\,\mathbb{N}
-\end{subarray}}^{n}k^{-2}\label{eq:substack}
+\end{subarray}}k^{-2}\label{eq:substack}
 \end{equation}
 
 \end_inset
@@ -16651,8 +18336,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 smashoperator
@@ -16693,7 +18396,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -16737,10 +18449,10 @@ e inserta el operador con sus límites entre las llaves.
  A continuación sigue el resto de la ecuación:
 \begin_inset Formula 
 \[
-\smashoperator{\sum_{\begin{subarray}{c}
+\smashoperator{\sum^{n}_{\begin{subarray}{c}
 0<k<1000\\
 \\k\,\in\,\mathbb{N}
-\end{subarray}}^{n}}k^{-2}
+\end{subarray}}}k^{-2}
 \]
 
 \end_inset
@@ -16790,7 +18502,7 @@ smashoperator
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Y\smashoperator{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}=Y\smashoperator[l]{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}=Y\smashoperator[r]{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}
+Y\smashoperator{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}=Y\smashoperator[l]{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}=Y\smashoperator[r]{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}
 \]
 
 \end_inset
@@ -16848,7 +18560,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -16868,8 +18589,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 adjustlimits
@@ -16919,7 +18658,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Operadores !
+Operadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Decoración
 \end_layout
 
@@ -16942,8 +18690,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overset
@@ -16964,8 +18730,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underset
@@ -16988,8 +18772,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 sideset
@@ -17094,7 +18896,7 @@ n
  genera:
 \begin_inset Formula 
 \[
-\sideset{}{'}\sum_{k=1}^{n}
+\sideset{}{'}\sum^{n}_{k=1}
 \]
 
 \end_inset
@@ -17194,7 +18996,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Operadores !
+Operadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  binarios
 \end_layout
 
@@ -17430,7 +19241,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-1.2mm}{
 \end_layout
@@ -17442,7 +19252,6 @@ raisebox{-1.2mm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -18315,7 +20124,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Operadores !
+Operadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  personalizados
 \end_layout
 
@@ -18338,11 +20156,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-dbinom@
+dbinom
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 DeclareMathOperator
 \end_layout
@@ -18413,7 +20259,7 @@ nolink "false"
 .
 \begin_inset Formula 
 \[
-\Lozenge_{n=1}^{\infty}
+\Lozenge^{\infty}_{n=1}
 \]
 
 \end_inset
@@ -18451,8 +20297,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mathop
@@ -18473,8 +20337,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mathbin
@@ -18529,7 +20411,7 @@ mathop
  para poner un límite a varios operadores:
 \begin_inset Formula 
 \[
-\mathop{\sum\negmedspace\sum}_{i,j=1}^{N}
+\mathop{\sum\negmedspace\sum}^{N}_{i,j=1}
 \]
 
 \end_inset
@@ -18606,7 +20488,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Tipografías !
+Tipografías 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  estilos de
 \end_layout
 
@@ -19272,7 +21163,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en negrita
 \end_layout
 
@@ -19295,7 +21195,7 @@ mathbf
  como en la ecuación:
 \begin_inset Formula 
 \[
-\mathbf{\int_{n}^{2}f(\theta)=\Gamma}\qquad\textrm{ecuación con \textbackslash mathbf}
+\mathbf{\int^{2}_{n}f(\theta)=\Gamma}\qquad\textrm{ecuación con \textbackslash mathbf}
 \]
 
 \end_inset
@@ -19311,7 +21211,7 @@ boldsymbol
 :
 \begin_inset Formula 
 \[
-\boldsymbol{\int_{n}^{2}f(\theta)=\Gamma}\qquad\textrm{ecuación con \textbackslash boldsymbol}
+\boldsymbol{\int^{2}_{n}f(\theta)=\Gamma}\qquad\textrm{ecuación con \textbackslash boldsymbol}
 \]
 
 \end_inset
@@ -19338,8 +21238,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 boldmath
@@ -19362,8 +21280,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- U !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 unboldmath
@@ -19378,7 +21314,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 boldmath
 \end_layout
@@ -19388,7 +21323,7 @@ boldmath
 
 \begin_inset Formula 
 \[
-\int_{n}^{2}f(\theta)=\Gamma\qquad\textrm{ecuación en un entorno boldmath}
+\int^{2}_{n}f(\theta)=\Gamma\qquad\textrm{ecuación en un entorno boldmath}
 \]
 
 \end_inset
@@ -19401,7 +21336,6 @@ boldmath
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 unboldmath
@@ -19420,7 +21354,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  coloreada
 \end_layout
 
@@ -19471,8 +21414,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textcolor
@@ -19501,7 +21462,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcolor{verdeoscuro}{
 \end_layout
@@ -19521,7 +21481,6 @@ textcolor{verdeoscuro}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -19568,7 +21527,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Tipografías !
+Tipografías 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  tamaño
 \end_layout
 
@@ -19764,8 +21732,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 displaystyle
@@ -19898,7 +21884,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 huge
 \end_layout
@@ -19916,7 +21901,7 @@ A=\frac{B}{c}\cdot\maltese
 
 \begin_inset Formula 
 \[
-\maltese A\textrm{\Large\maltese\textit{A}}\textrm{\tiny\maltese\textit{A}}
+\maltese A\textrm{{\Large \maltese\textit{A}}}\textrm{{\tiny \maltese\textit{A}}}
 \]
 
 \end_inset
@@ -19929,7 +21914,6 @@ A=\frac{B}{c}\cdot\maltese
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 normalsize
@@ -20084,7 +22068,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Letras griegas !
+Letras griegas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  minúsculas
 \end_layout
 
@@ -21002,7 +22995,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Letras griegas !
+Letras griegas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mayúsculas
 \end_layout
 
@@ -21414,13 +23416,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  was
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -21445,7 +23455,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fixmath
 \end_layout
 
@@ -21476,7 +23495,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Letras griegas !
+Letras griegas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en negrita
 \end_layout
 
@@ -21500,8 +23528,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- B !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 boldsymbol
@@ -21611,7 +23657,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -21642,7 +23687,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -21720,7 +23764,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Símbolos !
+Símbolos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  matemáticos
 \end_layout
 
@@ -22226,7 +24279,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-0.8mm}{
 \end_layout
@@ -22242,7 +24294,6 @@ raisebox{-0.8mm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -22560,7 +24611,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Símbolos !
+Símbolos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  misceláneos
 \end_layout
 
@@ -23372,7 +25432,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Símbolos !
+Símbolos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  euro
 \end_layout
 
@@ -23387,12 +25456,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \backslash
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 
 \backslash
 officialeuro
@@ -23421,7 +25499,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  eurosym
 \end_layout
 
@@ -23454,8 +25541,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- E !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ E 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 euro
@@ -23498,8 +25603,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 officialeuro
@@ -23517,7 +25640,6 @@ officialeuro
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifeurosym
@@ -23565,7 +25687,6 @@ Un vistazo a los diferentes símbolos del euro.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule[0.08em]{2-3}
@@ -23694,7 +25815,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 officialeuro
 \end_layout
@@ -23746,7 +25866,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else
 \end_layout
@@ -23786,7 +25905,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -23823,12 +25941,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comparaciones|see
+Comparaciones
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -23839,7 +25966,6 @@ Relaciones
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -25225,8 +27351,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 stackrel
@@ -25341,7 +27485,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Funciones !
+Funciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  predefinidas
 \end_layout
 
@@ -25354,7 +27507,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Funciones !
+Funciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en español
 \end_layout
 
@@ -25660,7 +27822,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cmidrule(r){1-2}
 \end_layout
@@ -25672,7 +27833,6 @@ cmidrule(r){1-2}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule(r){3-4}
@@ -25686,7 +27846,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 cmidrule(r){5-6}
 \end_layout
@@ -25698,7 +27857,6 @@ cmidrule(r){5-6}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule(r){7-7}
@@ -26417,7 +28575,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Funciones !
+Funciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  personalizadas
 \end_layout
 
@@ -26486,11 +28653,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- D !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-dbinom@
+dbinom
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 DeclareMathOperator
 \end_layout
@@ -26647,7 +28842,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Limites@Límites
+Limites
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+Límites
 \end_layout
 
 \end_inset
@@ -26670,8 +28875,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 lim
@@ -26955,7 +29178,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Funciones !
+Funciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  módulo
 \end_layout
 
@@ -27631,7 +29863,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Acentos !
+Acentos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en texto
 \end_layout
 
@@ -27701,7 +29942,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 "e
 \end_layout
@@ -27734,7 +29974,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 `e
@@ -27773,7 +30012,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ^e
 \end_layout
@@ -27806,7 +30044,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 =e
@@ -27845,7 +30082,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 u e
 \end_layout
@@ -27883,7 +30119,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 b e
 \end_layout
@@ -27920,7 +30155,6 @@ ee
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 t ee
@@ -27993,7 +30227,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 H e
 \end_layout
@@ -28026,7 +30259,6 @@ H e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 'e
@@ -28073,7 +30305,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ~e
 \end_layout
@@ -28106,7 +30337,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 .e
@@ -28145,7 +30375,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 v e
 \end_layout
@@ -28183,7 +30412,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 d e
 \end_layout
@@ -28220,7 +30448,6 @@ e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 c e
@@ -28275,7 +30502,6 @@ sz
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 t sz
@@ -28411,8 +30637,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textcircled
@@ -28473,7 +30717,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcircled{w}
 \end_layout
@@ -28514,7 +30757,6 @@ raisebox{-1.5pt}{W}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Large 
@@ -28605,7 +30847,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Numeros@Números !
+Numeros
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+Números 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en estilo antiguo
 \end_layout
 
@@ -28628,8 +30889,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- O !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 oldstylenums
@@ -28681,7 +30960,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  estilos de
 \end_layout
 
@@ -28803,7 +31091,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  multilínea
 \end_layout
 
@@ -28947,8 +31244,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  separación de filas
 \end_layout
 
@@ -28961,8 +31276,8 @@ Ecuación !
 A veces no hay suficiente espacio entre las líneas de una ecuación multilínea:
 \begin_inset Formula 
 \begin{eqnarray*}
-B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right) & = & 0
+B^{2}(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k})+4x^{2}_{0}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -29006,13 +31321,11 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{eqnarray*}
 \end_layout
 
 \begin_layout Plain Layout
-
 B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & 
 \backslash
 textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}
@@ -29023,7 +31336,6 @@ textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}
 \end_layout
 
 \begin_layout Plain Layout
-
 4x^{2}
 \backslash
 left(B^{2}+x_{0}^{2}
@@ -29040,7 +31352,6 @@ right) & = & 0
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{eqnarray*}
@@ -29069,8 +31380,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- J !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ J 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 jot
@@ -29143,7 +31472,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -29167,7 +31505,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -29179,8 +31516,8 @@ jot}{3mm+3pt}
 
 \begin_inset Formula 
 \begin{eqnarray*}
-B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right) & = & 0
+B^{2}(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k})+4x^{2}_{0}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -29190,7 +31527,6 @@ B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \te
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -29229,8 +31565,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !separación de columnas
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+separación de columnas
 \end_layout
 
 \end_inset
@@ -29260,8 +31615,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arraycolsep
@@ -29333,7 +31706,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -29361,7 +31733,6 @@ pt:
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -29391,7 +31762,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  larga
 \end_layout
 
@@ -29458,8 +31838,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- H !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hspace
@@ -29484,8 +31882,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 lefteqn
@@ -29497,9 +31913,9 @@ lefteqn
  Se inserta en la primer columna de la primera línea y hace que todas las inserciones posteriores sobreescriban las columnas siguientes:
 \begin_inset Formula 
 \begin{eqnarray}
-\lefteqn{4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}}\nonumber \\
- &  & -\hspace{3pt}B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}\nonumber \\
- &  & =B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}\label{eq:lefteqn}
+\lefteqn{4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}}\nonumber \\
+ &  & -\hspace{3pt}B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}\nonumber \\
+ &  & =B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}\label{eq:lefteqn}
 \end{eqnarray}
 
 \end_inset
@@ -29620,7 +32036,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Fracciones !
+Fracciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  multilínea
 \end_layout
 
@@ -29644,8 +32069,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 splitfrac
@@ -29673,7 +32116,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -29753,7 +32205,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Delimitadores !
+Delimitadores 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  para varias líneas
 \end_layout
 
@@ -29766,7 +32227,7 @@ Delimitadores !
 Para poner delimitadores que cubran varias líneas hay un problema:
 \begin_inset Formula 
 \begin{eqnarray*}
-A & = & \sen(x)\left[\prod_{R=1}^{\infty}\frac{1}{R}+\cdots\right.\\
+A & = & \sen(x)\left[\prod^{\infty}_{R=1}\frac{1}{R}+\cdots\right.\\
  &  & \left.\cdots+B-D\right]
 \end{eqnarray*}
 
@@ -29790,8 +32251,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 right
@@ -29844,8 +32323,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- L !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 left
@@ -29905,8 +32402,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- V !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ V 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 vphantom
@@ -29923,8 +32438,8 @@ El resultado es:
  
 \begin_inset Formula 
 \begin{eqnarray*}
-A & = & \sen(x)\left[\prod_{R=1}^{\infty}\frac{1}{R}+\cdots\right.\\
- &  & \left.\vphantom{\prod_{R=1}^{\infty}}\cdots+B-D\right]
+A & = & \sen(x)\left[\prod^{\infty}_{R=1}\frac{1}{R}+\cdots\right.\\
+ &  & \left.\vphantom{\prod^{\infty}_{R=1}}\cdots+B-D\right]
 \end{eqnarray*}
 
 \end_inset
@@ -30000,8 +32515,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno align
 \end_layout
 
@@ -30106,8 +32639,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno alignat
 \end_layout
 
@@ -30163,8 +32714,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno flalign
 \end_layout
 
@@ -30238,8 +32807,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno eqnarray
 \end_layout
 
@@ -30252,8 +32839,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno eqnarray
 \end_layout
 
@@ -30288,8 +32893,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno gather
 \end_layout
 
@@ -30327,8 +32950,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  entorno multilínea
 \end_layout
 
@@ -30361,9 +33002,9 @@ nolink "false"
  en entorno multilínea:
 \begin_inset Formula 
 \begin{multline}
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}\\
--B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}\\
-=B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}\\
+-B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}\\
+=B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}
 \end{multline}
 
 \end_inset
@@ -30403,8 +33044,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 shoveright
@@ -30425,8 +33084,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 shoveleft
@@ -30475,8 +33152,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- M !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 multlinegap
@@ -30514,7 +33209,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -30526,9 +33220,9 @@ multlinegap}{2cm}
 
 \begin_inset Formula 
 \begin{multline}
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}\\
-\shoveleft{-B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}\\
-=B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}\\
+\shoveleft{-B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}\\
+=B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}
 \end{multline}
 
 \end_inset
@@ -30538,7 +33232,6 @@ multlinegap}{2cm}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -30572,8 +33265,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  solo parte
 \end_layout
 
@@ -30638,8 +33349,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 aligned
@@ -30704,8 +33433,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 alignedat
@@ -30726,8 +33473,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- G !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ G 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 gathered
@@ -30749,8 +33514,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 split
@@ -30777,7 +33560,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Texto !
+Texto 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en ecuaciones
 \end_layout
 
@@ -30790,8 +33582,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- multilínea !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ multilínea 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  texto en
 \end_layout
 
@@ -30817,8 +33627,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- I !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ I 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 intertext
@@ -30858,8 +33686,8 @@ intertext
  Un ejemplo en el que se ha insertado texto al inicio de la segunda línea:
 \begin_inset Formula 
 \begin{align}
-I & =a\sqrt{2}\int_{0}^{2\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
-\intertext{\text{el integrando es simétrico para \ensuremath{\phi=\pi}, por tanto}} & =2a\sqrt{2}\int_{0}^{\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
+I & =a\sqrt{2}\int^{2\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
+\intertext{\text{el integrando es simétrico para \ensuremath{\phi=\pi}, por tanto}} & =2a\sqrt{2}\int^{\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
 \end{align}
 
 \end_inset
@@ -30895,7 +33723,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -30927,8 +33764,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- S !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 shortintertext
@@ -30945,8 +33800,8 @@ intertext
 :
 \begin_inset Formula 
 \begin{align}
-I & =a\sqrt{2}\int_{0}^{2\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
-\shortintertext{\text{el integrando es simétrico para \ensuremath{\phi=\pi}, por tanto}} & =2a\sqrt{2}\int_{0}^{\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
+I & =a\sqrt{2}\int^{2\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
+\shortintertext{\text{el integrando es simétrico para \ensuremath{\phi=\pi}, por tanto}} & =2a\sqrt{2}\int^{\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
 \end{align}
 
 \end_inset
@@ -30962,13 +33817,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- numeración|see
+Ecuación 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ numeración
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -30979,7 +33852,6 @@ Numeración de ecuaciones
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -31092,7 +33964,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  referencias cruzadas a
 \end_layout
 
@@ -31301,7 +34182,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Numeración de ecuaciones !
+Numeración de ecuaciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  subnumeración
 \end_layout
 
@@ -31623,7 +34513,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -31669,7 +34558,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Numeración de ecuaciones !
+Numeración de ecuaciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  con números romanos
 \end_layout
 
@@ -31682,7 +34580,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Numeración de ecuaciones !
+Numeración de ecuaciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  con letras
 \end_layout
 
@@ -31767,8 +34674,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 renewcommand
@@ -31854,8 +34779,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 roman
@@ -31898,11 +34841,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- R !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-roman@
+roman
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 Roman
 \end_layout
@@ -31931,8 +34902,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 alph
@@ -31954,11 +34943,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-alph@
+alph
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 Alph
 \end_layout
@@ -31996,7 +35013,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -32020,7 +35036,6 @@ A=\textrm{romanos en minúscula}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32046,7 +35061,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -32070,7 +35084,6 @@ C=\textrm{latinas en minúscula}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32113,8 +35126,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arabic
@@ -32130,7 +35161,6 @@ arabic
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32201,7 +35231,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Numeración de ecuaciones !
+Numeración de ecuaciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  personalizada
 \end_layout
 
@@ -32359,8 +35398,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 tag
@@ -32438,30 +35495,56 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
 \end_inset
 
- !
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 
@@ -32469,18 +35552,26 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
@@ -32617,7 +35708,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  carlisle
 \end_layout
 
@@ -32637,7 +35737,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  remreset
 \end_layout
 
@@ -32668,30 +35777,56 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
 \end_inset
 
- !
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 
@@ -32699,18 +35834,26 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
@@ -32770,8 +35913,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- N !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 numberwithin
@@ -32833,7 +35994,6 @@ Este es el resultado::
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 numberwithin{equation}{section}
@@ -32901,8 +36061,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- A !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arabic
@@ -32917,7 +36095,6 @@ arabic
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32973,20 +36150,17 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 makeatletter
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 @removefromreset{equation}{section}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 makeatother
@@ -33012,7 +36186,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Química !
+Química 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  símbolos
 \end_layout
 
@@ -33025,7 +36208,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Química !
+Química 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caracteres
 \end_layout
 
@@ -33038,13 +36230,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
- química|see
+Ecuación 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ química
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -33055,7 +36265,6 @@ Química
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -33073,7 +36282,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Química !
+Química 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  iones
 \end_layout
 
@@ -33086,12 +36304,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Iones|see
+Iones
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -33102,7 +36329,6 @@ Química
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -33120,7 +36346,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Química !
+Química 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  reacción
 \end_layout
 
@@ -33135,7 +36370,7 @@ Un ejemplo de texto de química:
 
 \begin_layout Quote
 El ion 
-\begin_inset Formula $\mathrm{SO_{4}^{2-}}$
+\begin_inset Formula $\mathrm{SO^{2-}_{4}}$
 \end_inset
 
  reacciona con dos iones 
@@ -33150,7 +36385,7 @@ El ion
  La ecuación química es:
 \begin_inset Formula 
 \begin{equation}
-\mathrm{2\,Na^{+}+SO_{4}^{2-}\longrightarrow Na_{2}SO_{4}}\label{eq:reaccion-quimica}
+\mathrm{2\,Na^{+}+SO^{2-}_{4}\longrightarrow Na_{2}SO_{4}}\label{eq:reaccion-quimica}
 \end{equation}
 
 \end_inset
@@ -33204,8 +36439,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 ce
@@ -33226,7 +36479,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mhchem
 \end_layout
 
@@ -33454,7 +36716,7 @@ Th+
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\ce{_{90}^{227}Th+}$
+\begin_inset Formula $\ce{^{227}_{90}Th+}$
 \end_inset
 
 
@@ -33762,8 +37024,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cf
@@ -33820,7 +37100,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Diagramas !
+Diagramas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  amscd
 \end_layout
 
@@ -33852,8 +37141,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- C !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 CD
@@ -34127,7 +37434,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Diagramas !
+Diagramas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  xymatrix
 \end_layout
 
@@ -34198,7 +37514,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Diagramas !
+Diagramas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Feynman
 \end_layout
 
@@ -34311,7 +37636,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos de usuario !
+Comandos de usuario 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 newcommand
@@ -34326,8 +37660,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- N !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 newcommand
@@ -34871,7 +38223,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos de usuario !
+Comandos de usuario 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Macros de ecuaciones
 \end_layout
 
@@ -35384,7 +38745,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Macros !
+Macros 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Barra de herramientas
 \end_layout
 
@@ -35843,7 +39213,7 @@ Maxima
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\frac{37}{3}*2-\sum_{i=1}^{3}i^{i}=-\frac{22}{3}$
+\begin_inset Formula $\frac{37}{3}*2-\sum^{3}_{i=1}i^{i}=-\frac{22}{3}$
 \end_inset
 
 
@@ -35857,7 +39227,7 @@ Maxima
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\int_{1}^{2}\sen(x)dx=\cos1-\cos2$
+\begin_inset Formula $\int^{2}_{1}\sen(x)dx=\cos1-\cos2$
 \end_inset
 
 
@@ -35915,14 +39285,14 @@ Note:
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $powerseries\left(-\log\left(5-x\right),x,1\right)=\sum_{{\mathit{i}_{2}}=0}^{\infty}{\frac{4^{-{\mathit{i}_{2}}-1}\,\left(x-1\right)^{{\mathit{i}_{2}}+1}}{{\mathit{i}_{2}}+1}}-\log4$
+\begin_inset Formula $powerseries\left(-\log\left(5-x\right),x,1\right)=\sum^{\infty}_{{\mathit{i}_{2}}=0}{\frac{4^{-{\mathit{i}_{2}}-1}\,\left(x-1\right)^{{\mathit{i}_{2}}+1}}{{\mathit{i}_{2}}+1}}-\log4$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $solve\left(x_{1}+y_{1}^{3}=y_{1}+x_{1}^{2},x_{1}\right)=\left[x_{1}=-\frac{\sqrt{4\,y_{1}^{3}-4\,y_{1}+1}-1}{2},x_{1}=\frac{\sqrt{4\,y_{1}^{3}-4\,y_{1}+1}+1}{2}\right]$
+\begin_inset Formula $solve\left(x_{1}+y^{3}_{1}=y_{1}+x^{2}_{1},x_{1}\right)=\left[x_{1}=-\frac{\sqrt{4\,y^{3}_{1}-4\,y_{1}+1}-1}{2},x_{1}=\frac{\sqrt{4\,y^{3}_{1}-4\,y_{1}+1}+1}{2}\right]$
 \end_inset
 
 
@@ -35986,7 +39356,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Numeros@Números !
+Numeros
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+Números 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  negativos
 \end_layout
 
@@ -36150,13 +39539,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  was
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -36181,7 +39578,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  icomma
 \end_layout
 
@@ -36248,7 +39654,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  braket
 \end_layout
 
@@ -36281,7 +39696,6 @@ usepackage{braket}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifbraket 
@@ -36450,7 +39864,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else
 \end_layout
@@ -36489,7 +39902,6 @@ braket
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi
@@ -36540,7 +39952,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Fracciones !
+Fracciones 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  personalizadas
 \end_layout
 
@@ -36564,8 +39985,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- G !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ G 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 genfrac
@@ -36847,7 +40286,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancelada
 \end_layout
 
@@ -36865,7 +40313,6 @@ Hay cuatro formas de cancelar ecuaciones o partes de ellas:
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifcancel 
@@ -37079,7 +40526,7 @@ cancelto
  es especialmente apropiado para visualizar la simplificación de fracciones en una ecuación:
 \begin_inset Formula 
 \[
-\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x_{0}^{2}+B^{2}-r_{g}^{2}}{\cancel{1+b^{2}}}
+\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x^{2}_{0}+B^{2}-r^{2}_{g}}{\cancel{1+b^{2}}}
 \]
 
 \end_inset
@@ -37156,7 +40603,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -37173,7 +40619,7 @@ color{red}}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x_{0}^{2}+B^{2}-r_{g}^{2}}{\cancel{1+b^{2}}}
+\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x^{2}_{0}+B^{2}-r^{2}_{g}}{\cancel{1+b^{2}}}
 \]
 
 \end_inset
@@ -37186,7 +40632,6 @@ color{red}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -37233,7 +40678,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancel
 \end_layout
 
@@ -37247,7 +40701,6 @@ Paquetes !
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else
@@ -37288,7 +40741,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -37313,7 +40765,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en encabezados de sección
 \end_layout
 
@@ -37342,7 +40803,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -37406,8 +40876,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Comandos !
- T !
+Comandos 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 texorpdfstring
@@ -37443,7 +40931,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 boldmath 
 \end_layout
@@ -37478,7 +40965,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -37494,7 +40980,6 @@ texorpdfstring{
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -37508,7 +40993,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 unboldmath 
@@ -37560,7 +41044,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en texto multicolumna
 \end_layout
 
@@ -37598,7 +41091,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  multicol
 \end_layout
 
@@ -37741,7 +41243,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{multicols}{2}
 \end_layout
@@ -37771,7 +41272,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{multicols}
 \end_layout
@@ -37785,7 +41285,7 @@ end{multicols}
 
 \begin_inset Formula 
 \begin{equation}
-S(t)=S_{0}(t)\int_{-\infty}^{\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathrm{d}\phi
+S(t)=S_{0}(t)\int^{\infty}_{-\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathrm{d}\phi
 \end{equation}
 
 \end_inset
@@ -37795,7 +41295,6 @@ S(t)=S_{0}(t)\int_{-\infty}^{\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathr
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{multicols}{2}
@@ -37808,7 +41307,7 @@ wobei
 \end_inset
 
  das Signal ohne Gradient ist und die Normierungsbedingung 
-\begin_inset Formula $\int_{-\infty}^{\infty}P(\phi,t)\,\mathrm{d}\phi=1$
+\begin_inset Formula $\int^{\infty}_{-\infty}P(\phi,t)\,\mathrm{d}\phi=1$
 \end_inset
 
  gilt.
@@ -37836,7 +41335,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{multicols}
 \end_layout
@@ -37854,7 +41352,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Ecuación !
+Ecuación 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  con descripción de variables
 \end_layout
 
@@ -38021,11 +41528,11 @@ nolink "false"
  vacía.
 \begin_inset Formula 
 \begin{flalign}
-\hspace{30pt} & F_{A}=\rho\cdot V\cdot g & \footnotesize\begin{array}{ll}
+\hspace{30pt} & F_{A}=\rho\cdot V\cdot g & {\footnotesize \begin{array}{ll}
 \rho & \mbox{densidad}\\
 V & \mbox{volumen}\\
 g & \mbox{aceleración gravitatoria}
-\end{array} &  & {}\label{eq:within}
+\end{array}} &  & {}\label{eq:within}
 \end{flalign}
 
 \end_inset
@@ -38048,7 +41555,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Letras griegas !
+Letras griegas 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en redonda
 \end_layout
 
@@ -38085,13 +41601,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  was
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -38116,7 +41640,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  upgreek
 \end_layout
 
@@ -38142,7 +41675,6 @@ las suministra.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifupgreek 
@@ -38216,7 +41748,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -38257,7 +41788,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi
 \end_layout
@@ -38275,7 +41805,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Texto !
+Texto 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  en ecuaciones
 \end_layout
 
@@ -39501,7 +43040,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS
 \end_layout
@@ -39562,7 +43100,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancel
 \end_layout
 
@@ -39600,7 +43147,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -39638,7 +43194,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Paquetes !
+Paquetes 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mhchem
 \end_layout
 

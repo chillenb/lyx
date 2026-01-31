@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -119,12 +119,20 @@ enumitem
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 1
+\justification default
+\crossref_package refstyle
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \branch Question
 \selected 1
 \filename_suffix 0
@@ -160,6 +168,7 @@ enumitem
 \html_be_strict true
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -1546,7 +1555,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-الاستكشاف !
+الاستكشاف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خلاصة
 \end_layout
 
@@ -1805,7 +1823,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-الاستكشاف !
+الاستكشاف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  الشريط الأفقي
 \end_layout
 
@@ -1986,12 +2013,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إكمال الكلمة|أنظر
+إكمال الكلمة
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -2002,7 +2038,6 @@ Input completion
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2158,12 +2193,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-الربط|أنظر
+الربط
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -2174,7 +2218,6 @@ Key Bindings
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2194,12 +2237,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-إختصارات|أنظر
+إختصارات
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -2210,7 +2262,6 @@ Key Bindings
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2315,11 +2366,22 @@ Down
 
 \family sans
 جدولة
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Tab"
-description "مفتاح جدولة"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Tab
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+مفتاح جدولة
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2389,11 +2451,22 @@ Tab
 
 \family sans
 خروج
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Esc"
-description "مفتاح الخروج"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Esc
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+مفتاح الخروج
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2463,11 +2536,22 @@ Ctrl
 \end_inset
 
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Ctrl"
-description "مفتاح التحكم"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Ctrl
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+مفتاح التحكم
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2540,11 +2624,22 @@ Shift
 \end_inset
 
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Shift"
-description "مفتاح علوي"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Shift
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+مفتاح علوي
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2571,11 +2666,22 @@ Alt
 \end_inset
 
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "Alt"
-description "مفتاح Alt"
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+Alt
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+مفتاح Alt
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -2726,7 +2832,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ليك !
+ليك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أساسيات
 \end_layout
 
@@ -2743,7 +2858,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  الأنواع
 \end_layout
 
@@ -2796,7 +2920,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نوع
 \end_layout
 
@@ -2826,7 +2959,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -3035,7 +3177,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -3159,7 +3310,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نماذج
 \end_layout
 
@@ -3191,7 +3351,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -3285,7 +3454,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نسق محلي
 \end_layout
 
@@ -3727,7 +3905,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نسق
 \end_layout
 
@@ -3740,7 +3927,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -3865,7 +4061,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancyhdr
 \end_layout
 
@@ -3915,7 +4120,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  حجم الصفحة
 \end_layout
 
@@ -3924,7 +4138,7 @@ status collapsed
 
 \begin_inset CommandInset label
 LatexCommand label
-name "subsec:Paper-Size,-Orientation"
+name "subsec:Paper-Size.-Orientation"
 
 \end_inset
 
@@ -3952,7 +4166,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -4069,7 +4292,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  هوامش
 \end_layout
 
@@ -4106,7 +4338,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -4166,7 +4407,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرة !
+فقرة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  بادئة الفقرة
 \end_layout
 
@@ -4280,7 +4530,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرة !
+فقرة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  فاصلة
 \end_layout
 
@@ -4325,7 +4584,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -4391,7 +4659,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرى !
+فقرى 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تباعد الأسطر
 \end_layout
 
@@ -4415,7 +4692,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -4452,7 +4738,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  setspace
 \end_layout
 
@@ -4492,7 +4787,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرة !
+فقرة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  بيئات
 \end_layout
 
@@ -4505,7 +4809,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-بيئات الفقرة|(
+بيئات الفقرة
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+(
 \end_layout
 
 \end_inset
@@ -4770,7 +5084,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  عنوان
 \end_layout
 
@@ -4938,7 +5261,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-عنونة الأقسام !
+عنونة الأقسام 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ترقيم
 \end_layout
 
@@ -5159,7 +5491,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-عنونة الأقسام !
+عنونة الأقسام 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  غير مرقم
 \end_layout
 
@@ -5259,7 +5600,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -5297,7 +5647,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-عنونة الأقسام !
+عنونة الأقسام 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  عنوان قصير
 \end_layout
 
@@ -5633,7 +5992,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرة !
+فقرة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  شعر
 \end_layout
 
@@ -5876,7 +6244,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نقطي
 \end_layout
 
@@ -6086,7 +6463,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -6125,7 +6511,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  عددي
 \end_layout
 
@@ -6363,7 +6758,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قوائم !
+قوائم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  وصف
 \end_layout
 
@@ -6547,7 +6951,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قوائم !
+قوائم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ملصقات
 \end_layout
 
@@ -6888,7 +7301,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مخصص
 \end_layout
 
@@ -6919,7 +7341,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -6936,8 +7367,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
- عددي !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ عددي 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مخصص
 \end_layout
 
@@ -7114,7 +7563,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 #
@@ -7144,7 +7592,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 Alph{enumi}.
@@ -7176,7 +7623,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 bfseries{
@@ -7204,7 +7650,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 emph{
@@ -7317,8 +7762,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
- عددي !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ عددي 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  استئناف
 \end_layout
 
@@ -7342,7 +7805,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 label=
 \backslash
 arabic{enumi}.
@@ -7469,7 +7931,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 start=4
 \end_layout
 
@@ -7491,7 +7952,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تباعد
 \end_layout
 
@@ -7535,7 +8005,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 nolistsep
 \end_layout
 
@@ -7574,7 +8043,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -7617,7 +8095,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 labelindent=
 \backslash
 parindent,
@@ -7646,7 +8123,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ترقيم !
+ترقيم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مخصص
 \end_layout
 
@@ -7730,7 +8216,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 labelindent=0pt,
  labelsep=1cm,
  font=
@@ -7783,7 +8268,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -8717,7 +9211,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-بيئة الفقرة|)
+بيئة الفقرة
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+)
 \end_layout
 
 \end_inset
@@ -8891,7 +9395,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تفريخ !
+تفريخ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  بيئات
 \end_layout
 
@@ -9388,7 +9901,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تفريخ !
+تفريخ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  الجداول إلخ.
 \end_layout
 
@@ -9955,7 +10477,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تفريخ !
+تفريخ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أمثلة
 \end_layout
 
@@ -11291,7 +11822,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تفريخ !
+تفريخ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  منفصلة
 \end_layout
 
@@ -11452,7 +11992,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافة !
+مسافة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  حماية
 \end_layout
 
@@ -11564,7 +12113,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافة !
+مسافة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أفقي
 \end_layout
 
@@ -11615,7 +12173,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  وسط الكلمة
 \end_layout
 
@@ -11689,7 +12256,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  رفيعة
 \end_layout
 
@@ -12329,7 +12905,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ملء
 \end_layout
 
@@ -12566,7 +13151,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  طيف
 \end_layout
 
@@ -12727,7 +13321,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  رأسي
 \end_layout
 
@@ -12793,7 +13396,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -12827,7 +13439,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ملء
 \end_layout
 
@@ -12954,7 +13575,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرة !
+فقرة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  محاذاة
 \end_layout
 
@@ -13084,7 +13714,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فاصل صفحة !
+فاصل صفحة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  قسري
 \end_layout
 
@@ -13205,7 +13844,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فاصل صفحة !
+فاصل صفحة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  فارغ
 \end_layout
 
@@ -13559,7 +14207,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-خط !
+خط 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نوع
 \end_layout
 
@@ -13586,7 +14243,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-خطوط !
+خطوط 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  متجهية-
 \end_layout
 
@@ -13647,7 +14313,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-خطوط !
+خطوط 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نقطية-
 \end_layout
 
@@ -13836,7 +14511,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-خط !
+خط 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  حجم
 \end_layout
 
@@ -13849,7 +14533,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خط
 \end_layout
 
@@ -13874,7 +14567,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -14442,7 +15144,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fontenc
 \end_layout
 
@@ -14546,7 +15257,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  CJK
 \end_layout
 
@@ -14590,7 +15310,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  microtype
 \end_layout
 
@@ -14717,7 +15446,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -15553,7 +16291,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نص
 \end_layout
 
@@ -16757,7 +17504,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-هيئة الملف !
+هيئة الملف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  اسكي
 \end_layout
 
@@ -16870,7 +17626,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-هيئة الملف !
+هيئة الملف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  لتيك
 \end_layout
 
@@ -16942,7 +17707,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-هيئة الملف !
+هيئة الملف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  DVI
 \end_layout
 
@@ -17051,7 +17825,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-هيئة الملف !
+هيئة الملف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  بوست سكربت
 \end_layout
 
@@ -17113,7 +17896,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  pstricks
 \end_layout
 
@@ -17195,7 +17987,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-هيئة ملف !
+هيئة ملف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  PDF
 \end_layout
 
@@ -17541,7 +18342,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-هيئة الملف !
+هيئة الملف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  XHTML
 \end_layout
 
@@ -17655,7 +18465,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  استعراض 
 \end_layout
 
@@ -18431,7 +19250,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 nobreakdash
 \end_layout
@@ -18756,7 +19574,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  babel
 \end_layout
 
@@ -19031,7 +19858,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  وسط الكلمة
 \end_layout
 
@@ -19072,7 +19908,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مسافات !
+مسافات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  رفيعة
 \end_layout
 
@@ -19195,7 +20040,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-طباعة !
+طباعة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  علامات الاقتباس
 \end_layout
 
@@ -19208,12 +20062,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-علامات الاقتباس | أنظر
+علامات الاقتباس 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+ أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -19224,7 +20087,6 @@ Typography
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -19289,7 +20151,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -20100,7 +20971,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-طباعة !
+طباعة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  الأربطة
 \end_layout
 
@@ -20113,12 +20993,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-أربطة | أنظر
+أربطة 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+ أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -20129,7 +21018,6 @@ Typography
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -20291,7 +21179,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ليك !
+ليك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  الاسم الصحيح
 \end_layout
 
@@ -20395,7 +21292,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-طباعة !
+طباعة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  وحدات
 \end_layout
 
@@ -20522,7 +21428,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-طباعة !
+طباعة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نافذة وأيتام
 \end_layout
 
@@ -21340,7 +22255,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-صور !
+صور 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  هيئات
 \end_layout
 
@@ -21444,12 +22368,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-GIF|see
+GIF
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -21460,7 +22393,6 @@ Image formats
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21506,12 +22438,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-PNG|see
+PNG
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -21522,7 +22463,6 @@ Image formats
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21580,12 +22520,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-JPG|see
+JPG
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -21596,7 +22545,6 @@ Image formats
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21656,12 +22604,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-SVG|see
+SVG
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -21672,7 +22629,6 @@ Image formats
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21718,12 +22674,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-EPS|see
+EPS
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -21734,7 +22699,6 @@ Image formats
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -21833,7 +22797,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-صور !
+صور 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات المجموعات
 \end_layout
 
@@ -22403,7 +23376,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-جداول !
+جداول 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  صفحات متعددة
 \end_layout
 
@@ -24756,7 +25738,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-جداول !
+جداول 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خلايا
 \end_layout
 
@@ -25180,7 +26171,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تعويم !
+تعويم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تعليق
 \end_layout
 
@@ -25229,7 +26229,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تعويم !
+تعويم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تعويم صورة
 \end_layout
 
@@ -25611,7 +26620,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تعويم !
+تعويم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تعويم جدول
 \end_layout
 
@@ -25798,7 +26816,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تعويم !
+تعويم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تفاصيل
 \end_layout
 
@@ -26081,12 +27108,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-معادلات | أنظر
+معادلات 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+ أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -26097,7 +27133,6 @@ Math
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -26137,7 +27172,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أساسيات
 \end_layout
 
@@ -26283,7 +27327,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  دولة
 \end_layout
 
@@ -26471,7 +27524,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نص علوي
 \end_layout
 
@@ -26484,7 +27546,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نص سفلي
 \end_layout
 
@@ -26616,7 +27687,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  كسور
 \end_layout
 
@@ -26692,7 +27772,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  جذور
 \end_layout
 
@@ -26752,7 +27841,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  جموع
 \end_layout
 
@@ -26765,7 +27863,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تكاملات
 \end_layout
 
@@ -26807,7 +27914,7 @@ limits
  over and under the symbol in displayed formulas,
  and to the side in inline formulas,
  as in 
-\begin_inset Formula $\sum_{n=0}^{\infty}\frac{1}{n!}=e$
+\begin_inset Formula $\sum^{\infty}_{n=0}\frac{1}{n!}=e$
 \end_inset
 
 ,
@@ -26816,7 +27923,7 @@ limits
 
 \begin_inset Formula 
 \[
-\sum_{n=0}^{\infty}\frac{1}{n!}=e
+\sum^{\infty}_{n=0}\frac{1}{n!}=e
 \]
 
 \end_inset
@@ -26880,7 +27987,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  حدود
 \end_layout
 
@@ -26950,7 +28066,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  رموز
 \end_layout
 
@@ -27021,7 +28146,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مسافات
 \end_layout
 
@@ -27141,7 +28275,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  وظائف
 \end_layout
 
@@ -27257,7 +28400,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  لهجات
 \end_layout
 
@@ -27774,7 +28926,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أقواس
 \end_layout
 
@@ -27787,7 +28948,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  محددات
 \end_layout
 
@@ -27939,7 +29109,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مصفوفة
 \end_layout
 
@@ -27952,7 +29131,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مصفوفة
 \end_layout
 
@@ -27965,7 +29153,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  معادلة متعددة الأسطر
 \end_layout
 
@@ -28281,7 +29478,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  معادلة مرقمة
 \end_layout
 
@@ -28294,7 +29500,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  معادلة مرجعية
 \end_layout
 
@@ -28554,7 +29769,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ماكرو
 \end_layout
 
@@ -28595,7 +29819,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  محارف
 \end_layout
 
@@ -29085,7 +30318,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نص
 \end_layout
 
@@ -29156,7 +30398,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  حجم الخط
 \end_layout
 
@@ -29305,7 +30556,7 @@ largest
 \family roman
 \size largest
 \lang english
-\begin_inset Formula $\mathrm{e}=\sum_{n=0}^{\infty}\frac{1}{n!}$
+\begin_inset Formula $\mathrm{e}=\sum^{\infty}_{n=0}\frac{1}{n!}$
 \end_inset
 
 
@@ -29331,7 +30582,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  AMS
 \end_layout
 
@@ -29383,7 +30643,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -29421,7 +30690,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-رياضيات !
+رياضيات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  معادلة متعددة الأسطر
 \end_layout
 
@@ -29961,7 +31239,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -29976,7 +31263,16 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -30358,7 +31654,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-استكشاف !
+استكشاف 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خلاصة
 \end_layout
 
@@ -30577,7 +31882,6 @@ Here is an example URL:
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org
 \end_layout
 
@@ -31012,10 +32316,7 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-
-https://en.wikipedia.org/wiki/ASCII
-\backslash
-#Character_set
+https://en.wikipedia.org/wiki/ASCII#Character_set
 \end_layout
 
 \end_inset
@@ -31165,7 +32466,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  natbib
 \end_layout
 
@@ -31214,7 +32524,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -31280,7 +32599,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ثبت المراجع !
+ثبت المراجع 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  قاعدة البيانات
 \end_layout
 
@@ -31368,7 +32696,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/BibTeX/Programs
 \end_layout
 
@@ -31399,7 +32726,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -31461,7 +32797,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -31498,7 +32843,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ثبت المراجع !
+ثبت المراجع 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Bib\SpecialChar TeX
 
 \end_layout
@@ -31616,7 +32970,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ثبت المراجع !
+ثبت المراجع 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Biblatex
 \end_layout
 
@@ -31629,7 +32992,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -31732,7 +33104,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -31846,7 +33227,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biber
 \end_layout
 
@@ -32047,7 +33437,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ثبت المراجع !
+ثبت المراجع 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  هيئة الاستشهاد
 \end_layout
 
@@ -32123,7 +33522,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -32217,7 +33625,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -32305,7 +33722,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  jurabib
 \end_layout
 
@@ -32336,7 +33762,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  natbib
 \end_layout
 
@@ -32732,7 +34167,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فهرس !
+فهرس 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تجميع
 \end_layout
 
@@ -32867,7 +34311,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فهرس !
+فهرس 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مدى صفحات
 \end_layout
 
@@ -32980,7 +34433,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فهرس !
+فهرس 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إشارة مرجعية
 \end_layout
 
@@ -33048,7 +34510,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فهرس !
+فهرس 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ترتيب مدخل
 \end_layout
 
@@ -33123,7 +34594,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مدخل مجسم !
+مدخل مجسم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  الفا
 \end_layout
 
@@ -33136,7 +34616,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مخل مجسم !
+مخل مجسم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  بيتا
 \end_layout
 
@@ -33149,8 +34638,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مدخل مجسم !
- الفا@غاما
+مدخل مجسم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ الفا
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+غاما
 \end_layout
 
 \end_inset
@@ -33219,7 +34727,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فهرس !
+فهرس 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نسق مدخل
 \end_layout
 
@@ -33240,7 +34757,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مدخل مجسم !
+مدخل مجسم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \shape italic
 هذا مدخل مجسم إيطالي
@@ -33281,8 +34807,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مدخل مجسم !
- ترقيم صفحة إيطالي :|textit
+مدخل مجسم 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ ترقيم صفحة إيطالي :
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+textit
 \end_layout
 
 \end_inset
@@ -33439,8 +34984,27 @@ status collapsed
 \begin_layout Plain Layout
 
 \lang english
-Dummy entries !
- my entry|IndexDef
+Dummy entries 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ my entry
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+IndexDef
 \end_layout
 
 \end_inset
@@ -33492,7 +35056,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فهرس !
+فهرس 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  برنامج
 \end_layout
 
@@ -33629,7 +35202,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  splitidx
 \end_layout
 
@@ -33789,12 +35371,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قاموس|أنظر
+قاموس
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -33805,7 +35396,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -33850,7 +35440,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  nomencl
 \end_layout
 
@@ -33965,7 +35564,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مصطلح !
+مصطلح 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نسق
 \end_layout
 
@@ -34225,11 +35833,43 @@ If the characters |
 
 should appear in nomenclature entries containing \SpecialChar TeX
  code they need to be escaped by adding a quote character in front of them.
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "\"@, \"|, \"!, \"\""
-description "The quote sign in TeX code is output by writing ' \"\" '."
-literal "true"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+"@,
+ "|,
+ "!,
+ ""
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+The quote sign in TeX code is output by writing ' "" '.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34244,7 +35884,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مصطلح !
+مصطلح 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  فرز وترتيب
 \end_layout
 
@@ -34264,11 +35913,22 @@ The nomenclature entries are sorted alphabetically by the \SpecialChar LaTeX
  Suppose you have nomenclature entries for the symbols 
 \emph on
 a
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "a"
-description "dummy entry for the character \"a\""
-literal "false"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+a
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+dummy entry for the character "a"
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34279,12 +35939,54 @@ literal "false"
 \end_inset
 
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-prefix "sigma"
-symbol "$\\sigma$"
-description "dummy entry for the character \\textsf{sigma}"
-literal "true"
+\begin_inset Nomenclature
+status open
+
+\begin_layout Plain Layout
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+sigma
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+$
+\backslash
+sigma$
+\end_layout
+
+\end_inset
+
+
+\begin_inset Argument post:1
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+dummy entry for the character 
+\backslash
+textsf{sigma}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -34396,7 +36098,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مصطلح !
+مصطلح 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خيارات
 \end_layout
 
@@ -34778,7 +36489,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مصطلح !
+مصطلح 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  طباعة
 \end_layout
 
@@ -34918,7 +36638,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مصطلح !
+مصطلح 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  برنامج
 \end_layout
 
@@ -34996,7 +36725,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  فروع
 \end_layout
 
@@ -35396,7 +37134,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 newcommand{
 \backslash
@@ -35404,7 +37141,6 @@ question}[1]{#1}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 newcommand{
@@ -35437,7 +37173,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 newcommand{
 \backslash
@@ -35445,7 +37180,6 @@ question}[1]{}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 newcommand{
@@ -35585,7 +37319,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -35989,7 +37732,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fbox{
 \end_layout
@@ -36001,7 +37743,6 @@ fbox{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -36130,7 +37871,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -36319,7 +38069,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pagestyle{fancy}
 \end_layout
@@ -36358,7 +38107,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 rightmark
@@ -36408,7 +38156,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 leftmark
 \end_layout
@@ -36434,7 +38181,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 thepage
@@ -36497,7 +38243,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 Roman{page}
 \end_layout
@@ -36522,7 +38267,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  سطر رأس/تذييل
 \end_layout
 
@@ -37237,7 +38991,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancyhdr
 \end_layout
 
@@ -37430,7 +39193,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 pagestyle{headings}
 \end_layout
@@ -37479,7 +39241,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  استعراض
 \end_layout
 
@@ -37517,7 +39288,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  preview-latex
 \end_layout
 
@@ -37766,7 +39546,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 rotatebox[origin=r]{-60}{
 \end_layout
@@ -37803,7 +39582,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -37814,7 +39592,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 rotatebox[origin=lb]{60}{
@@ -37831,7 +39608,6 @@ rotatebox[origin=lb]{60}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -37900,7 +39676,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 1mm 
 \backslash
@@ -37915,7 +39690,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fcolorbox{cyan}{magenta}{
 \end_layout
@@ -37927,7 +39701,6 @@ fcolorbox{cyan}{magenta}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -38492,7 +40265,7 @@ R
 
  letters occurring in normal text),
  or occurrences of 
-\begin_inset Formula $x_{j}^{i}$
+\begin_inset Formula $x^{i}_{j}$
 \end_inset
 
  with 
@@ -38829,7 +40602,6 @@ All spell-checker dictionaries supported by \SpecialChar LyX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://sourceforge.net/projects/lyxwininstaller/files/hunspell/
 \end_layout
 
@@ -39267,7 +41039,6 @@ further thesaurus dictionaries,
 status collapsed
 
 \begin_layout Plain Layout
-
 https://sourceforge.net/projects/lyxwininstaller/files/thesaurus/
 \end_layout
 
@@ -39499,7 +41270,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  سجل التعديلات
 \end_layout
 
@@ -39583,7 +41363,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  سجل التعديلات
 \end_layout
 
@@ -39618,7 +41407,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-شريط أدوات !
+شريط أدوات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مراجعة
 \end_layout
 
@@ -40143,7 +41941,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  dvipost
 \end_layout
 
@@ -40329,7 +42136,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لغة !
+لغة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خيارات
 \end_layout
 
@@ -40342,7 +42158,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -40355,7 +42180,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  لغة
 \end_layout
 
@@ -40511,7 +42345,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ملف
 \end_layout
 
@@ -41558,7 +43401,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تحرير
 \end_layout
 
@@ -41721,7 +43573,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-فقرة !
+فقرة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -41832,7 +43693,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  عرض
 \end_layout
 
@@ -42191,7 +44061,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إدراج
 \end_layout
 
@@ -42453,7 +44332,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لغة !
+لغة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  رموز صوتية
 \end_layout
 
@@ -42476,7 +44364,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  tipa
 \end_layout
 
@@ -43358,8 +45255,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-جداول !
- صفحات متعددة !
+جداول 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ صفحات متعددة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تعليق
 \end_layout
 
@@ -43743,7 +45658,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  استكشاف
 \end_layout
 
@@ -43938,7 +45862,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مستند
 \end_layout
 
@@ -44570,7 +46503,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أدوات
 \end_layout
 
@@ -44757,13 +46699,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ليك !
- إعادة ضبط|أنظر
+ليك 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ إعادة ضبط
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+أنظر
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -44775,7 +46735,6 @@ Reconfiguration of \SpecialChar LyX
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -44859,7 +46818,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-قائمة !
+قائمة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مساعدة
 \end_layout
 
@@ -44971,7 +46939,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-شريط أدوات !
+شريط أدوات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أساسي
 \end_layout
 
@@ -45004,7 +46981,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -45806,7 +47782,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-شريط أدوات !
+شريط أدوات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إضافي
 \end_layout
 
@@ -46654,7 +48639,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-شريط أدوات !
+شريط أدوات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  عرض / تحديث
 \end_layout
 
@@ -46973,7 +48967,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-شريط أدوات !
+شريط أدوات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  جدول
 \end_layout
 
@@ -46998,7 +49001,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-شريط أدوات !
+شريط أدوات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ماكرو
 \end_layout
 
@@ -47028,7 +49040,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مستند !
+مستند 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -47287,7 +49308,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -47300,7 +49330,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -47494,7 +49533,7 @@ This dialog is described in sections
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "subsec:Paper-Size,-Orientation"
+reference "subsec:Paper-Size.-Orientation"
 nolink "false"
 
 \end_inset
@@ -47547,7 +49586,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لغة !
+لغة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ترميز
 \end_layout
 
@@ -47725,7 +49773,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  babel
 \end_layout
 
@@ -47747,7 +49804,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  polyglossia
 \end_layout
 
@@ -47851,7 +49917,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  inputenc
 \end_layout
 
@@ -48210,7 +50285,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  CJK
 \end_layout
 
@@ -48279,7 +50363,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  japanese
 \end_layout
 
@@ -48454,7 +50547,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  CJK
 \end_layout
 
@@ -48531,7 +50633,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ucs
 \end_layout
 
@@ -48566,7 +50677,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  inputenc
 \end_layout
 
@@ -48662,7 +50782,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  نص رئيسي
 \end_layout
 
@@ -48675,7 +50804,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خلفية
 \end_layout
 
@@ -48688,7 +50826,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  صندوق مظلل
 \end_layout
 
@@ -48701,7 +50848,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  ملاحظة مظللة
 \end_layout
 
@@ -49084,7 +51240,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -49102,7 +51267,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  natbib
 \end_layout
 
@@ -49123,7 +51297,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  jurabib
 \end_layout
 
@@ -49152,7 +51335,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  bibtopic
 \end_layout
 
@@ -49260,7 +51452,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  amsmath
 \end_layout
 
@@ -49278,7 +51479,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  amssymb
 \end_layout
 
@@ -49296,7 +51506,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancel
 \end_layout
 
@@ -49314,7 +51533,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  esint
 \end_layout
 
@@ -49332,7 +51560,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathdots
 \end_layout
 
@@ -49350,7 +51587,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -49368,7 +51614,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mhchem
 \end_layout
 
@@ -49386,7 +51641,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  stackrel
 \end_layout
 
@@ -49404,7 +51668,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  stmaryrd
 \end_layout
 
@@ -49421,7 +51694,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  undertilde
 \end_layout
 
@@ -50139,7 +52421,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تخصيص !
+تخصيص 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  أشرطة الأدوات
 \end_layout
 
@@ -50152,7 +52443,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-تخصيص !
+تخصيص 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  قائمة رئيسية
 \end_layout
 
@@ -50528,7 +52828,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-نسخ احتياطي !
+نسخ احتياطي 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مستندات
 \end_layout
 
@@ -50755,7 +53064,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-خط !
+خط 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  شاشة
 \end_layout
 
@@ -50921,7 +53239,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لون !
+لون 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  شاشة ليك
 \end_layout
 
@@ -50934,7 +53261,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  لون
 \end_layout
 
@@ -50989,7 +53325,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  عرض
 \end_layout
 
@@ -51057,7 +53402,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تحرير
 \end_layout
 
@@ -51194,7 +53548,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  اختصارات
 \end_layout
 
@@ -51334,7 +53697,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-مفتاح الربط !
+مفتاح الربط 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  تحرير
 \end_layout
 
@@ -51546,7 +53918,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  خريطة لوحة المفاتيح
 \end_layout
 
@@ -51747,7 +54128,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مسار
 \end_layout
 
@@ -51876,7 +54266,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-نسخ احتياطي !
+نسخ احتياطي 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مسار
 \end_layout
 
@@ -52152,7 +54551,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-لغة !
+لغة 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  إعدادات
 \end_layout
 
@@ -52165,7 +54573,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  لغة
 \end_layout
 
@@ -52249,7 +54666,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  babel
 \end_layout
 
@@ -52275,7 +54701,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  polyglossia
 \end_layout
 
@@ -52630,10 +55065,7 @@ dvips
 status collapsed
 
 \begin_layout Plain Layout
-
-https://www.tug.org/texinfohtml/dvips.html
-\backslash
-#Option-details
+https://www.tug.org/texinfohtml/dvips.html#Option-details
 \end_layout
 
 \end_inset
@@ -52694,7 +55126,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  هيئة التاريخ
 \end_layout
 
@@ -52711,7 +55152,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://man7.org/linux/man-pages/man1/date.1.html
 \end_layout
 
@@ -52768,7 +55208,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  لتيك
 \end_layout
 
@@ -53052,7 +55501,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-إعدادات !
+إعدادات 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  مسارات
 \end_layout
 
@@ -54164,7 +56622,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.lyx.org/Credits
 \end_layout
 
@@ -54279,7 +56736,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ctan.org/topic
 \end_layout
 
@@ -54306,7 +56762,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://texfaq.org/
 \end_layout
 
@@ -54346,7 +56801,6 @@ Bib\SpecialChar TeX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/biblio/bibtex/contrib/doc/btxdoc.pdf
 \end_layout
 
@@ -54386,7 +56840,6 @@ Bib\SpecialChar TeX
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/info/bibtex/tamethebeast/ttb_en.pdf
 \end_layout
 
@@ -54423,7 +56876,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biblatex
 \end_layout
 
@@ -54438,7 +56900,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/biblatex/doc/biblatex.pdf
 \end_layout
 
@@ -54476,7 +56937,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  biber
 \end_layout
 
@@ -54491,7 +56961,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/biblio/biber/base/documentation/biber.pdf
 \end_layout
 
@@ -54530,7 +56999,6 @@ makeindex
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/indexing/makeindex/doc/makeindex.pdf
 \end_layout
 
@@ -54569,7 +57037,6 @@ makeindex
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/indexing/makeindex/doc/manpages.dvi
 \end_layout
 
@@ -54608,7 +57075,6 @@ xindy
 status collapsed
 
 \begin_layout Plain Layout
-
 http://www.xindy.org/documentation.html
 \end_layout
 
@@ -54644,7 +57110,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://www.ams.org/publications/authors/tex/amslatex
 \end_layout
 
@@ -54682,7 +57147,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  caption
 \end_layout
 
@@ -54697,7 +57171,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/caption/caption.pdf
 \end_layout
 
@@ -54735,7 +57208,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  enumitem
 \end_layout
 
@@ -54750,7 +57232,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/enumitem/enumitem.pdf
 \end_layout
 
@@ -54788,7 +57269,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fancyhdr
 \end_layout
 
@@ -54803,7 +57293,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/fancyhdr/fancyhdr.pdf
 \end_layout
 
@@ -54841,7 +57330,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -54856,7 +57354,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/hyperref/doc/hyperref-doc.pdf
 \end_layout
 
@@ -54894,7 +57391,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  microtpye
 \end_layout
 
@@ -54909,7 +57415,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/microtype/microtype.pdf
 \end_layout
 
@@ -54947,7 +57452,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  nomencl
 \end_layout
 
@@ -54962,7 +57476,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/nomencl/nomencl.pdf
 \end_layout
 
@@ -55000,7 +57513,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  prettyref
 \end_layout
 
@@ -55015,7 +57537,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/prettyref/prettyref.pdf
 \end_layout
 
@@ -55053,7 +57574,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-حزمة لتيك !
+حزمة لتيك 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  refstyle
 \end_layout
 
@@ -55068,7 +57598,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/refstyle/refstyle.pdf
 \end_layout
 
@@ -55104,7 +57633,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Arabic
 \end_layout
 
@@ -55140,7 +57668,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Armenian
 \end_layout
 
@@ -55180,7 +57707,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Cyrillic
 \end_layout
 
@@ -55216,7 +57742,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Farsi
 \end_layout
 
@@ -55252,7 +57777,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Hebrew
 \end_layout
 
@@ -55288,7 +57812,6 @@ literal "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Windows/Japanese
 \end_layout
 
@@ -55307,7 +57830,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 let
 \backslash
@@ -55317,7 +57839,6 @@ bibname
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -55380,7 +57901,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand*{
 \backslash
@@ -55388,7 +57908,6 @@ pagedeclaration}[1]{
 \end_layout
 
 \begin_layout Plain Layout
-
  
 \backslash
 unskip,

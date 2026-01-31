@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties false
@@ -249,11 +249,20 @@ End
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index 索引
 \shortcut idx
 \color #008000
@@ -283,6 +292,7 @@ End
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -512,7 +522,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS 
 \end_layout
@@ -535,7 +544,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS 
 \end_layout
@@ -552,7 +560,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 AmS
@@ -2426,7 +2433,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 space 
 \end_layout
@@ -2445,7 +2451,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 space 
 \end_layout
@@ -2459,7 +2464,6 @@ cfrac
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 space 
@@ -4382,7 +4386,7 @@ nolink "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{9}\mathrm{F}$
 \end_inset
 
 
@@ -4406,7 +4410,7 @@ nolink "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{1}9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{\phantom{1}9}\mathrm{F}$
 \end_inset
 
 
@@ -4439,7 +4443,37 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-こまんと@コマンド!P!
+こまんと
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+コマンド
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+P
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+
 \backslash
 phantom
 \end_layout
@@ -4553,7 +4587,7 @@ F
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{1}9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{\phantom{1}9}\mathrm{F}$
 \end_inset
 
 
@@ -4600,7 +4634,7 @@ F
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{23}9}^{235}\mathrm{F}$
+\begin_inset Formula $^{235}_{\phantom{23}9}\mathrm{F}$
 \end_inset
 
 
@@ -4643,7 +4677,7 @@ _MMt
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Lambda_{MMt}^{\phantom{ii}t}$
+\begin_inset Formula $\Lambda^{\phantom{ii}t}_{MMt}$
 \end_inset
 
 
@@ -4965,12 +4999,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-ぼうせん@棒線
+ぼうせん
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+棒線
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 |see{
 \end_layout
 
@@ -4981,7 +5024,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -9118,7 +9160,37 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-こまんと@コマンド!U!
+こまんと
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+コマンド
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+U
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+
 \backslash
 underbrace
 \end_layout
@@ -9760,7 +9832,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -9783,7 +9854,6 @@ A & = & \underbrace{gggg+bbqq}_{r}+\:dddd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -11976,7 +12046,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -12007,7 +12076,6 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -12585,7 +12653,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 '{e}
 \end_layout
@@ -12814,7 +12881,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ifundertilde 
 \end_layout
@@ -12910,7 +12976,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -12951,7 +13016,6 @@ undertilde
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi 
@@ -14552,7 +14616,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -14583,7 +14646,6 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -15291,7 +15353,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -15318,7 +15379,6 @@ mmの余白を設定した行内数式
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -15993,7 +16053,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 2mm 
 \backslash
@@ -16074,7 +16133,6 @@ fboxsep
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -17221,7 +17279,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 1mm 
 \backslash
@@ -17243,7 +17300,6 @@ fboxsep 1mm
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -17523,7 +17579,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcolor{darkgreen}{
 \end_layout
@@ -17535,7 +17590,6 @@ textcolor{darkgreen}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -18016,7 +18070,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxsep 5mm 
 \backslash
@@ -18033,7 +18086,6 @@ fboxrule 5mm
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fbox{
@@ -18062,7 +18114,6 @@ fboxrule}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }}
 \end_layout
 
@@ -18073,7 +18124,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -18167,7 +18217,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 [5x-7b=3b
 \backslash
@@ -18183,7 +18232,6 @@ parbox{5cm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }}
 \backslash
 ]
@@ -19636,7 +19684,7 @@ A(x)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\prod_{0}^{\infty}A(x)$
+\begin_inset Formula $\prod^{\infty}_{0}A(x)$
 \end_inset
 
 
@@ -19695,7 +19743,7 @@ arg   "math-limits"
 以下のようになっています．
 \begin_inset Formula 
 \[
-\sum_{x=0}^{\infty}\frac{1}{x^{2}}
+\sum^{\infty}_{x=0}\frac{1}{x^{2}}
 \]
 
 \end_inset
@@ -19710,7 +19758,7 @@ arg   "math-limits"
 に変更したときの表示です．
 \begin_inset Formula 
 \[
-\sum\nolimits_{x=0}^{\infty}\frac{1}{x^{2}}
+\sum\nolimits^{\infty}_{x=0}\frac{1}{x^{2}}
 \]
 
 \end_inset
@@ -19859,10 +19907,10 @@ substack
 以下の表記 
 \begin_inset Formula 
 \begin{equation}
-\sum_{\begin{subarray}{c}
+\sum^{n}_{\begin{subarray}{c}
 0<k<1000\\
 \\k\,\in\,\mathbb{N}
-\end{subarray}}^{n}k^{-2}\label{eq:substack}
+\end{subarray}}k^{-2}\label{eq:substack}
 \end{equation}
 
 \end_inset
@@ -20153,10 +20201,10 @@ smashoperator{
 
 \begin_inset Formula 
 \[
-\sum_{\mathclap{\substack{0<k<1000\\
+\sum^{n}_{\mathclap{\substack{0<k<1000\\
 \\k\,\in\,\mathbb{N}
 }
-}}^{n}k^{-2}
+}}k^{-2}
 \]
 
 \end_inset
@@ -20209,7 +20257,7 @@ smashoperator
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Y\smashoperator{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}=Y\smashoperator[l]{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}=Y\smashoperator[r]{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}
+Y\smashoperator{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}=Y\smashoperator[l]{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}=Y\smashoperator[r]{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}
 \]
 
 \end_inset
@@ -20660,7 +20708,7 @@ n
 
 \begin_inset Formula 
 \[
-\sideset{}{'}\sum_{k=1}^{n}
+\sideset{}{'}\sum^{n}_{k=1}
 \]
 
 \end_inset
@@ -21031,7 +21079,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-1.2mm}{
 \end_layout
@@ -21043,7 +21090,6 @@ raisebox{-1.2mm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -22097,7 +22143,7 @@ Lozenge
 を定義します．
 \begin_inset Formula 
 \[
-\Lozenge_{n=1}^{\infty}
+\Lozenge^{\infty}_{n=1}
 \]
 
 \end_inset
@@ -22275,7 +22321,7 @@ mathop
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathop{\sum\negmedspace\sum}_{i,j=1}^{N}
+\mathop{\sum\negmedspace\sum}^{N}_{i,j=1}
 \]
 
 \end_inset
@@ -23152,7 +23198,7 @@ mathbf
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathbf{\int_{n}^{2}f(\theta)=\Gamma}\qquad\textrm{\textbackslash mathbfを使用した数式}
+\mathbf{\int^{2}_{n}f(\theta)=\Gamma}\qquad\textrm{\textbackslash mathbfを使用した数式}
 \]
 
 \end_inset
@@ -23172,7 +23218,7 @@ boldsymbol
 コマンドを使用します．
 \begin_inset Formula 
 \[
-\boldsymbol{\int_{n}^{2}f(\theta)=\Gamma\qquad\textrm{\textbackslash boldsymbolを使用した数式}}
+\boldsymbol{\int^{2}_{n}f(\theta)=\Gamma\qquad\textrm{\textbackslash boldsymbolを使用した数式}}
 \]
 
 \end_inset
@@ -23290,7 +23336,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 boldmath 
 \end_layout
@@ -23300,7 +23345,7 @@ boldmath
 
 \begin_inset Formula 
 \[
-\int_{n}^{2}f(\theta)=\Gamma\qquad\textrm{boldmath環境に置いた数式}
+\int^{2}_{n}f(\theta)=\Gamma\qquad\textrm{boldmath環境に置いた数式}
 \]
 
 \end_inset
@@ -23310,7 +23355,6 @@ boldmath
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 unboldmath 
@@ -23465,7 +23509,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcolor{darkgreen}{
 \end_layout
@@ -23485,7 +23528,6 @@ textcolor{darkgreen}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -23915,7 +23957,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 huge 
 \end_layout
@@ -23933,7 +23974,7 @@ A=\frac{B}{c}\cdot\maltese
 
 \begin_inset Formula 
 \[
-\maltese A\textrm{\Large\maltese\textit{A}}\textrm{\tiny\maltese\textit{A}}
+\maltese A\textrm{{\Large \maltese\textit{A}}}\textrm{{\tiny \maltese\textit{A}}}
 \]
 
 \end_inset
@@ -23943,7 +23984,6 @@ A=\frac{B}{c}\cdot\maltese
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 normalsize 
@@ -25478,12 +25518,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-はつけし@パッケージ!was
+はつけし
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+パッケージ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+was
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 
 \backslash
 vspace{4mm}
@@ -25749,7 +25808,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -25781,7 +25839,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -26404,7 +26461,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-0.8mm}{
 \end_layout
@@ -26420,7 +26476,6 @@ raisebox{-0.8mm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -27630,7 +27685,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 officialeuro
 \end_layout
@@ -27829,7 +27883,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ifeurosym 
 \end_layout
@@ -27877,7 +27930,6 @@ eurosym
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule[0.08em]{2-3}
@@ -28003,7 +28055,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 officialeuro
 \end_layout
@@ -28047,7 +28098,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -28088,7 +28138,6 @@ eurosym
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi 
@@ -31961,7 +32010,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 "e
 \end_layout
@@ -31994,7 +32042,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 `e
@@ -32033,7 +32080,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ^e
 \end_layout
@@ -32066,7 +32112,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 =e
@@ -32105,7 +32150,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 u e
 \end_layout
@@ -32143,7 +32187,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 b e
 \end_layout
@@ -32180,7 +32223,6 @@ ee
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 t ee
@@ -32253,7 +32295,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 H e
 \end_layout
@@ -32286,7 +32327,6 @@ H e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 'e
@@ -32342,7 +32382,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ~e
 \end_layout
@@ -32377,7 +32416,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 .e
@@ -32415,7 +32453,6 @@ e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 v e
@@ -32456,7 +32493,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 d e
 \end_layout
@@ -32493,7 +32529,6 @@ e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 c e
@@ -32545,7 +32580,6 @@ sz
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 t sz
@@ -32770,7 +32804,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcircled{w}
 \end_layout
@@ -32811,7 +32844,6 @@ raisebox{-1.5pt}{W}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Large 
@@ -33391,8 +33423,8 @@ status open
 ときどき起こります．
 \begin_inset Formula 
 \begin{eqnarray*}
-B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right) & = & 0
+B^{2}(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k})+4x^{2}_{0}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -33441,13 +33473,11 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{eqnarray*}
 \end_layout
 
 \begin_layout Plain Layout
-
 B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & 
 \backslash
 textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}
@@ -33458,7 +33488,6 @@ textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}
 \end_layout
 
 \begin_layout Plain Layout
-
 4x^{2}
 \backslash
 left(B^{2}+x_{0}^{2}
@@ -33475,7 +33504,6 @@ right) & = & 0
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{eqnarray*}
@@ -33651,7 +33679,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -33663,8 +33690,8 @@ jot}{3mm+3pt}
 
 \begin_inset Formula 
 \begin{eqnarray*}
-B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right) & = & 0
+B^{2}(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k})+4x^{2}_{0}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -33677,7 +33704,6 @@ B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \te
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -33902,7 +33928,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -33929,7 +33954,6 @@ ptを持つ数式です．
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -34156,9 +34180,9 @@ lefteqn
 続きの内容が他の列にかかって表示されます．
 \begin_inset Formula 
 \begin{eqnarray}
-\lefteqn{4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}}\nonumber \\
- &  & -\hspace{3pt}B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}\nonumber \\
- &  & =B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}\label{eq:lefteqn}
+\lefteqn{4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}}\nonumber \\
+ &  & -\hspace{3pt}B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}\nonumber \\
+ &  & =B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}\label{eq:lefteqn}
 \end{eqnarray}
 
 \end_inset
@@ -34524,7 +34548,7 @@ status open
 以下のような問題が生じます．
 \begin_inset Formula 
 \begin{eqnarray*}
-A & = & \sin(x)\left[\prod_{R=1}^{\infty}\frac{1}{R}+\cdots\right.\\
+A & = & \sin(x)\left[\prod^{\infty}_{R=1}\frac{1}{R}+\cdots\right.\\
  &  & \left.\cdots+B-D\right]
 \end{eqnarray*}
 
@@ -34768,8 +34792,8 @@ vphantom
 その結果が以下の数式です．
 \begin_inset Formula 
 \begin{eqnarray*}
-A & = & \sin(x)\left[\prod_{R=1}^{\infty}\frac{1}{R}+\cdots\right.\\
- &  & \left.\vphantom{\prod_{R=1}^{\infty}}\cdots+B-D\right]
+A & = & \sin(x)\left[\prod^{\infty}_{R=1}\frac{1}{R}+\cdots\right.\\
+ &  & \left.\vphantom{\prod^{\infty}_{R=1}}\cdots+B-D\right]
 \end{eqnarray*}
 
 \end_inset
@@ -35544,9 +35568,9 @@ nolink "false"
 式をmultline環境に置いたものを示します．
 \begin_inset Formula 
 \begin{multline}
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}\\
--B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}\\
-=B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}\\
+-B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}\\
+=B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}
 \end{multline}
 
 \end_inset
@@ -35778,7 +35802,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -35790,9 +35813,9 @@ multlinegap}{2cm}
 
 \begin_inset Formula 
 \begin{multline}
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}\\
-\shoveleft{-B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}\\
-=B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}\\
+\shoveleft{-B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}\\
+=B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}
 \end{multline}
 
 \end_inset
@@ -35802,7 +35825,6 @@ multlinegap}{2cm}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -36412,8 +36434,8 @@ intertext
 二行めの行頭にテキストを入れた例です．
 \begin_inset Formula 
 \begin{align}
-I & =a\sqrt{2}\int_{0}^{2\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
-\intertext{\text{被積分函数は\ensuremath{\phi=\pi}において対称なので、}} & =2a\sqrt{2}\int_{0}^{\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
+I & =a\sqrt{2}\int^{2\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
+\intertext{\text{被積分函数は\ensuremath{\phi=\pi}において対称なので、}} & =2a\sqrt{2}\int^{\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
 \end{align}
 
 \end_inset
@@ -36536,8 +36558,8 @@ shortintertext
 コマンドを使うことができます．
 \begin_inset Formula 
 \begin{align}
-I & =a\sqrt{2}\int_{0}^{2\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
-\shortintertext{\text{被積分函数は\ensuremath{\phi=\pi}において対称なので、}} & =2a\sqrt{2}\int_{0}^{\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
+I & =a\sqrt{2}\int^{2\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
+\shortintertext{\text{被積分函数は\ensuremath{\phi=\pi}において対称なので、}} & =2a\sqrt{2}\int^{\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
 \end{align}
 
 \end_inset
@@ -36588,7 +36610,17 @@ status open
 status open
 
 \begin_layout Plain Layout
-ばんこう@番号
+ばんこう
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+番号
 \end_layout
 
 \end_inset
@@ -36724,7 +36756,17 @@ status open
 status open
 
 \begin_layout Plain Layout
-すうしきへの@数式への
+すうしきへの
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+数式への
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -37235,7 +37277,6 @@ name "eq:以下は"
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -37767,7 +37808,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -37795,7 +37835,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -37820,7 +37859,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -37844,7 +37882,6 @@ C=\textrm{小文字ラテン文字}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -37934,7 +37971,6 @@ arabic
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -38349,13 +38385,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 "
-\end_layout
-
-\end_inset
-
-@
 \end_layout
 
 \end_inset
@@ -38365,13 +38395,37 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
 \end_inset
 
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 @
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38388,13 +38442,22 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@addtoreset
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+addtoreset
 \end_layout
 
 \end_inset
@@ -38542,7 +38605,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-はつけし@パッケージ!carlisle
+はつけし
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+パッケージ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+carlisle
 \end_layout
 
 \end_inset
@@ -38624,13 +38707,7 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 "
-\end_layout
-
-\end_inset
-
-@
 \end_layout
 
 \end_inset
@@ -38640,13 +38717,37 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
 \end_inset
 
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 @
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
@@ -38663,13 +38764,22 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@removefromreset
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+removefromreset
 \end_layout
 
 \end_inset
@@ -38805,7 +38915,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 numberwithin{equation}{section}
 \end_layout
@@ -38906,7 +39015,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -38964,20 +39072,17 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 makeatletter
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 @removefromreset{equation}{section}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 makeatother
@@ -39106,7 +39211,7 @@ status open
 \end_layout
 
 \begin_layout Quote
-\begin_inset Formula $\mathrm{SO_{4}^{2-}}$
+\begin_inset Formula $\mathrm{SO^{2-}_{4}}$
 \end_inset
 
 イオンは，
@@ -39122,7 +39227,7 @@ status open
 を形成します．この化学式は以下のようになります．
 \begin_inset Formula 
 \begin{equation}
-\mathrm{2\,Na^{+}+SO_{4}^{2-}\longrightarrow Na_{2}SO_{4}}\label{eq:chem-reaction}
+\mathrm{2\,Na^{+}+SO^{2-}_{4}\longrightarrow Na_{2}SO_{4}}\label{eq:chem-reaction}
 \end{equation}
 
 \end_inset
@@ -39472,7 +39577,7 @@ Th+
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\ce{_{90}^{227}Th+}$
+\begin_inset Formula $\ce{^{227}_{90}Th+}$
 \end_inset
 
 
@@ -41610,7 +41715,37 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-まくろ@マクロ!つーるばー@ツールバー
+まくろ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+マクロ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+つーるばー
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+ツールバー
 \end_layout
 
 \end_inset
@@ -42150,7 +42285,7 @@ Maxima
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\frac{37}{3}*2-\sum_{i=1}^{3}i^{i}=-\frac{22}{3}$
+\begin_inset Formula $\frac{37}{3}*2-\sum^{3}_{i=1}i^{i}=-\frac{22}{3}$
 \end_inset
 
 
@@ -42164,7 +42299,7 @@ Maxima
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\int_{1}^{2}\sin(x)dx=\cos1-\cos2$
+\begin_inset Formula $\int^{2}_{1}\sin(x)dx=\cos1-\cos2$
 \end_inset
 
 
@@ -42219,14 +42354,14 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $powerseries\left(-\log\left(5-x\right),x,1\right)=\sum_{{\mathit{i}_{2}}=0}^{\infty}{\frac{4^{-{\mathit{i}_{2}}-1}\,\left(x-1\right)^{{\mathit{i}_{2}}+1}}{{\mathit{i}_{2}}+1}}-\log4$
+\begin_inset Formula $powerseries\left(-\log\left(5-x\right),x,1\right)=\sum^{\infty}_{{\mathit{i}_{2}}=0}{\frac{4^{-{\mathit{i}_{2}}-1}\,\left(x-1\right)^{{\mathit{i}_{2}}+1}}{{\mathit{i}_{2}}+1}}-\log4$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $solve\left(x_{1}+y_{1}^{3}=y_{1}+x_{1}^{2},x_{1}\right)=\left[x_{1}=-\frac{\sqrt{4\,y_{1}^{3}-4\,y_{1}+1}-1}{2},x_{1}=\frac{\sqrt{4\,y_{1}^{3}-4\,y_{1}+1}+1}{2}\right]$
+\begin_inset Formula $solve\left(x_{1}+y^{3}_{1}=y_{1}+x^{2}_{1},x_{1}\right)=\left[x_{1}=-\frac{\sqrt{4\,y^{3}_{1}-4\,y_{1}+1}-1}{2},x_{1}=\frac{\sqrt{4\,y^{3}_{1}-4\,y_{1}+1}+1}{2}\right]$
 \end_inset
 
 
@@ -42565,12 +42700,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-はつけし@パッケージ!was
+はつけし
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+パッケージ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+was
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 
 \backslash
 vspace{4mm}
@@ -42755,7 +42909,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ifbraket 
 \end_layout
@@ -42921,7 +43074,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -42962,7 +43114,6 @@ braket
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi 
@@ -43436,7 +43587,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ifcancel 
 \end_layout
@@ -43652,7 +43802,7 @@ cancelto
 とくに数式中の分数の約分を表示するのに適しています．
 \begin_inset Formula 
 \[
-\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x_{0}^{2}+B^{2}-r_{g}^{2}}{\cancel{1+b^{2}}}
+\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x^{2}_{0}+B^{2}-r^{2}_{g}}{\cancel{1+b^{2}}}
 \]
 
 \end_inset
@@ -43733,7 +43883,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -43750,7 +43899,7 @@ color{red}}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x_{0}^{2}+B^{2}-r_{g}^{2}}{\cancel{1+b^{2}}}
+\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x^{2}_{0}+B^{2}-r^{2}_{g}}{\cancel{1+b^{2}}}
 \]
 
 \end_inset
@@ -43763,7 +43912,6 @@ color{red}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -43809,7 +43957,27 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-はつけし@パッケージ!cancel
+はつけし
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+パッケージ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+cancel
 \end_layout
 
 \end_inset
@@ -43822,7 +43990,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else 
@@ -43864,7 +44031,6 @@ cancel
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi 
@@ -44101,7 +44267,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 boldmath 
 \end_layout
@@ -44136,7 +44301,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -44152,7 +44316,6 @@ texorpdfstring{
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -44166,7 +44329,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 unboldmath 
@@ -44478,7 +44640,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{multicols}{2}
 \end_layout
@@ -44512,7 +44673,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{multicols}
 \end_layout
@@ -44526,7 +44686,7 @@ end{multicols}
 
 \begin_inset Formula 
 \begin{equation}
-S(t)=S_{0}(t)\int_{-\infty}^{\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathrm{d}\phi
+S(t)=S_{0}(t)\int^{\infty}_{-\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathrm{d}\phi
 \end{equation}
 
 \end_inset
@@ -44536,7 +44696,6 @@ S(t)=S_{0}(t)\int_{-\infty}^{\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathr
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{multicols}{2}
@@ -44551,7 +44710,7 @@ wobei
 \end_inset
 
  das Signal ohne Gradient ist und die Normierungsbedingung 
-\begin_inset Formula $\int_{-\infty}^{\infty}P(\phi,t)\,\mathrm{d}\phi=1$
+\begin_inset Formula $\int^{\infty}_{-\infty}P(\phi,t)\,\mathrm{d}\phi=1$
 \end_inset
 
  gilt.
@@ -44578,7 +44737,6 @@ wobei
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{multicols}
@@ -44795,11 +44953,11 @@ nolink "false"
 括弧が入っています．
 \begin_inset Formula 
 \begin{flalign}
-\hspace{30pt}F_{A} & =\rho·V·g & \footnotesize\begin{array}{ll}
+\hspace{30pt}F_{A} & =\rho·V·g & {\footnotesize \begin{array}{ll}
 \rho & \textrm{density}\\
 V & \textrm{volume}\\
 g & \textrm{gravitational acceleration}
-\end{array} &  & {}\label{eq:within}
+\end{array}} &  & {}\label{eq:within}
 \end{flalign}
 
 \end_inset
@@ -44891,12 +45049,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-はつけし@パッケージ!was
+はつけし
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+パッケージ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+was
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 
 \backslash
 vspace{4mm}
@@ -44965,7 +45142,6 @@ usepackage{upgreek}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifupgreek 
@@ -45037,7 +45213,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -45078,7 +45253,6 @@ upgreek
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fi 
@@ -45679,8 +45853,37 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-こまんと@コマンド!
- M!
+こまんと
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+コマンド
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+
 \backslash
 mathscr
 \end_layout
@@ -46398,7 +46601,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 AmS

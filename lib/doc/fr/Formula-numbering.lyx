@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -59,9 +59,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
+\font_roman_osf false
 \font_sans_osf false
 \font_typewriter_osf false
-\font_roman_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -93,10 +93,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -113,20 +122,25 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle empty
+\tablestyle default
 \tracking_changes false
-\postpone_fragile_content false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
 
 \begin_layout Standard
 Ce document illustre l'utilisation de deux catégories différentes de formules.
- L'une est numérotée avec des chiffres arabes, l'autre avec des chiffres
- romains.
+ L'une est numérotée avec des chiffres arabes,
+ l'autre avec des chiffres romains.
 \end_layout
 
 \begin_layout Standard
@@ -150,7 +164,6 @@ A=C\label{eq:C}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setrom
@@ -180,7 +193,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setarab
 \end_layout
@@ -209,7 +221,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setrom
 \end_layout
@@ -236,67 +247,75 @@ A=I\label{eq:I}
 \end_layout
 
 \begin_layout Standard
-Références croisées: 
+Références croisées:
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:B"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:C"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:F"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:G"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:D"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:E"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:H"
+nolink "false"
 
 \end_inset
 
- , 
+ ,
+ 
 \begin_inset CommandInset ref
 LatexCommand eqref
-nolink "false"
 reference "eq:I"
+nolink "false"
 
 \end_inset
 
@@ -317,9 +336,10 @@ height "1pt"
 \begin_inset VSpace medskip
 \end_inset
 
-Pour créer cet exemple, il faut d'abord définir un compteur pour les formules
- numérotées avec des chiffres romains.
- Pour le faire, on insère ce qui suit dans le préambule \SpecialChar LaTeX
+Pour créer cet exemple,
+ il faut d'abord définir un compteur pour les formules numérotées avec des chiffres romains.
+ Pour le faire,
+ on insère ce qui suit dans le préambule \SpecialChar LaTeX
 :
 \end_layout
 
@@ -349,7 +369,8 @@ Pour enregistrer la valeur du compteur en chiffres arabes
 \series bold
 equation
 \series default
-, on ajoute ceci au préambule:
+,
+ on ajoute ceci au préambule:
 \end_layout
 
 \begin_layout Standard
@@ -449,7 +470,8 @@ pour la numérotation en chiffres arabes.
 
 \begin_layout Standard
 Chaque formule sera numérotée par défaut avec des chiffres arabes.
- Pour passer aux chiffres romains, on insère la commande 
+ Pour passer aux chiffres romains,
+ on insère la commande 
 \series bold
 
 \backslash

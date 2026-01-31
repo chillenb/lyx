@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -203,11 +203,20 @@ subequations
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
-\notefontcolor #0000ff
+\customcolor lyxnotefontcolor 0000ff
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lyxnotefontcolor
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -236,6 +245,7 @@ subequations
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -467,7 +477,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS 
 \end_layout
@@ -491,7 +500,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS 
 \end_layout
@@ -508,7 +516,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 AmS 
@@ -552,7 +559,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  обычная
 \end_layout
 
@@ -579,7 +595,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  выделенная
 \end_layout
 
@@ -631,8 +656,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 displaystyle
@@ -684,7 +727,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-T@\SpecialChar TeX
+T
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+\SpecialChar TeX
 -режим
 \end_layout
 
@@ -720,7 +773,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-L@\SpecialChar LaTeX
+L
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+\SpecialChar LaTeX
 -преамбула
 \end_layout
 
@@ -802,7 +865,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Текст !
+Текст 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в формулах
 \end_layout
 
@@ -838,8 +910,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 text
@@ -887,7 +977,17 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-T@\SpecialChar TeX
+T
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+\SpecialChar TeX
 -скобки
 \end_layout
 
@@ -1445,12 +1545,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Верхние индексы|see
+Верхние индексы
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1461,7 +1570,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1479,12 +1587,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Нижние индексы|see
+Нижние индексы
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -1495,7 +1612,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1695,8 +1811,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- F !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 frac
@@ -1737,8 +1871,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dfrac
@@ -1761,8 +1913,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 tfrac
@@ -1964,8 +2134,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cfrac
@@ -2180,8 +2368,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- N !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 nicefrac
@@ -2207,8 +2413,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 unitfrac
@@ -2335,8 +2559,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 sqrt
@@ -2365,8 +2607,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 root
@@ -2520,8 +2780,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 leftroot
@@ -2542,8 +2820,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 uproot
@@ -2650,8 +2946,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 binom
@@ -2692,8 +3006,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dbinom
@@ -2714,8 +3046,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 tbinom
@@ -2737,8 +3087,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 brace
@@ -2759,8 +3127,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 brack
@@ -3035,8 +3421,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cases
@@ -3182,8 +3586,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- N !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 not
@@ -3359,7 +3781,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Химические символы !
+Химические символы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  изотопы
 \end_layout
 
@@ -3372,12 +3803,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Изотопы|see
+Изотопы
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -3388,7 +3828,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -3448,7 +3887,7 @@ nolink "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{9}\mathrm{F}$
 \end_inset
 
 
@@ -3471,7 +3910,7 @@ nolink "false"
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{1}9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{\phantom{1}9}\mathrm{F}$
 \end_inset
 
 
@@ -3503,8 +3942,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- P !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ P 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 phantom
@@ -3611,7 +4068,7 @@ F
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{1}9}^{19}\mathrm{F}$
+\begin_inset Formula $^{19}_{\phantom{1}9}\mathrm{F}$
 \end_inset
 
 
@@ -3658,7 +4115,7 @@ F
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $_{\phantom{23}9}^{235}\mathrm{F}$
+\begin_inset Formula $^{235}_{\phantom{23}9}\mathrm{F}$
 \end_inset
 
 
@@ -3701,7 +4158,7 @@ _MMt
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\Lambda_{MMt}^{\phantom{ii}t}$
+\begin_inset Formula $\Lambda^{\phantom{ii}t}_{MMt}$
 \end_inset
 
 
@@ -3732,8 +4189,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- V !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ V 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 vphantom
@@ -3760,8 +4235,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- H !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hphantom
@@ -3898,7 +4391,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подчеркивание
 \end_layout
 
@@ -3952,8 +4454,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overline
@@ -3997,8 +4517,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underline
@@ -4111,8 +4649,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 rule
@@ -4260,8 +4816,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 ldots
@@ -4285,8 +4859,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cdots
@@ -4308,8 +4900,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dots
@@ -4655,8 +5265,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- H !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hdotsfor
@@ -4746,8 +5374,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 dotfill
@@ -4818,8 +5464,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- H !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hrulefill
@@ -5092,8 +5756,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 left
@@ -5114,8 +5796,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 right
@@ -5509,8 +6209,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arraycolsep
@@ -5546,8 +6264,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arraystretch
@@ -5572,8 +6308,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 renewcommand
@@ -5623,8 +6377,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 smallmatrix
@@ -5713,7 +6485,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Скобки !
+Скобки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вертикальные
 \end_layout
 
@@ -6209,8 +6990,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textbackslash
@@ -6278,7 +7077,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Размер скобок !
+Размер скобок 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  установка
 \end_layout
 
@@ -6302,8 +7110,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 big
@@ -6500,8 +7326,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 bigm
@@ -6530,8 +7374,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 bigl - 
@@ -6758,7 +7620,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Размер скобок !
+Размер скобок 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  автоматически
 \end_layout
 
@@ -6781,8 +7652,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 left
@@ -6803,8 +7692,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 right
@@ -7032,8 +7939,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 middle
@@ -7074,7 +7999,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Скобки !
+Скобки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  горизонтальные
 \end_layout
 
@@ -7132,8 +8066,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overbrace
@@ -7181,8 +8133,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underbrace
@@ -7310,7 +8280,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -7393,8 +8372,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overbracket
@@ -7462,8 +8459,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 under
@@ -7856,7 +8871,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -7879,7 +8893,6 @@ A & = & \underbrace{gggg+bbqq}_{r}+\:dddd
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -7930,8 +8943,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- J !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ J 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 jot
@@ -8011,7 +9042,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Стрелки !
+Стрелки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  горизонтальные
 \end_layout
 
@@ -8780,7 +9820,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Стрелки !
+Стрелки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  с пометками
 \end_layout
 
@@ -8799,8 +9848,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- X !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ X 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 xleftarrow
@@ -8821,8 +9888,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- X !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ X 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 xrightarrow
@@ -8830,7 +9915,6 @@ xrightarrow
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -8980,7 +10064,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -9591,7 +10684,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Стрелки !
+Стрелки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  диагональные
 \end_layout
 
@@ -9604,7 +10706,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Стрелки !
+Стрелки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вертикальные
 \end_layout
 
@@ -10003,7 +11114,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -10034,7 +11144,6 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -10080,7 +11189,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Акценты !
+Акценты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  для одного символа
 \end_layout
 
@@ -10745,7 +11863,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  undertilde
 \end_layout
 
@@ -10759,7 +11886,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifundertilde 
@@ -10856,7 +11982,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -10904,7 +12029,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi 
 \end_layout
@@ -10922,7 +12046,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Акценты !
+Акценты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  для нескольких символов
 \end_layout
 
@@ -11282,8 +12415,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overset
@@ -11304,8 +12455,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underset
@@ -11378,7 +12547,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  горизонтальный
 \end_layout
 
@@ -11402,8 +12580,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
- горизонтальный !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ горизонтальный 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  предопределенный
 \end_layout
 
@@ -12325,7 +13521,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -12356,7 +13551,6 @@ nolink "false"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -12402,8 +13596,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
- горизонтальный !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ горизонтальный 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  переменного размера
 \end_layout
 
@@ -12426,8 +13638,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- H !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hspace
@@ -12502,8 +13732,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- H !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hfill
@@ -12758,7 +14006,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Промежуток !
+Промежуток 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  вокруг формул
 \end_layout
 
@@ -12783,8 +14040,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mathsurround
@@ -12806,8 +14081,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 setlength
@@ -12864,7 +14157,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -12891,7 +14183,6 @@ mm,
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -12939,12 +14230,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Рамки |see
+Рамки 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -12955,7 +14255,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -12996,7 +14295,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  с рамками
 \end_layout
 
@@ -13019,8 +14327,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- F !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 fbox
@@ -13041,8 +14367,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 boxed
@@ -13121,8 +14465,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- F !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 framebox
@@ -13455,7 +14817,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 2mm 
 \backslash
@@ -13535,7 +14896,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 0.4pt 
 \backslash
@@ -13567,7 +14927,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  без рамок
 \end_layout
 
@@ -13591,8 +14960,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mbox
@@ -13614,8 +15001,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 makebox
@@ -13636,8 +15041,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 raisebox
@@ -13920,7 +15343,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  цветные
 \end_layout
 
@@ -13960,7 +15392,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  color
 \end_layout
 
@@ -14028,8 +15469,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 colorbox
@@ -14399,8 +15858,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- F !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ F 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 fcolorbox
@@ -14461,7 +15938,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxrule 1mm 
 \backslash
@@ -14483,7 +15959,6 @@ fboxsep 1mm
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -14570,8 +16045,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 definecolor
@@ -14676,7 +16169,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Текст !
+Текст 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в цвете
 \end_layout
 
@@ -14691,7 +16193,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcolor{darkgreen}{
 \end_layout
@@ -14703,7 +16204,6 @@ textcolor{darkgreen}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -14726,8 +16226,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textcolor
@@ -14759,7 +16277,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Блоки !
+Блоки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  как абзацы
 \end_layout
 
@@ -14891,8 +16418,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- P !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ P 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 parbox
@@ -14983,8 +16528,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 linewidth
@@ -15026,7 +16589,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -15056,7 +16628,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fboxsep 5mm 
 \backslash
@@ -15073,7 +16644,6 @@ fboxrule 5mm
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fbox{
@@ -15102,7 +16672,6 @@ fboxrule}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }}
 \end_layout
 
@@ -15113,7 +16682,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 fboxrule 0.4pt 
@@ -15204,7 +16772,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 [5x-7b=3b
 \backslash
@@ -15221,7 +16788,6 @@ parbox{5cm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }}
 \backslash
 ]
@@ -15374,7 +16940,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операторы !
+Операторы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  большие
 \end_layout
 
@@ -15464,8 +17039,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- I !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ I 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 int
@@ -15764,8 +17357,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 sum
@@ -15805,8 +17416,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- P !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ P 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 prod
@@ -15814,7 +17443,6 @@ prod
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -16451,7 +18079,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операторы !
+Операторы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пределы
 \end_layout
 
@@ -16521,7 +18158,7 @@ A(x)
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\prod_{0}^{\infty}A(x)$
+\begin_inset Formula $\prod^{\infty}_{0}A(x)$
 \end_inset
 
 
@@ -16568,7 +18205,7 @@ Alt+M Shift+L N
 Тип пределов по умолчанию:
 \begin_inset Formula 
 \[
-\sum_{x=0}^{\infty}\frac{1}{x^{2}}
+\sum^{\infty}_{x=0}\frac{1}{x^{2}}
 \]
 
 \end_inset
@@ -16576,7 +18213,7 @@ Alt+M Shift+L N
 Вот как это выглядит после изменения типа пределов:
 \begin_inset Formula 
 \[
-\sum\nolimits_{x=0}^{\infty}\frac{1}{x^{2}}
+\sum\nolimits^{\infty}_{x=0}\frac{1}{x^{2}}
 \]
 
 \end_inset
@@ -16637,8 +18274,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 subarray
@@ -16659,8 +18314,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 substack
@@ -16673,10 +18346,10 @@ substack
  для создания выражения
 \begin_inset Formula 
 \begin{equation}
-\sum_{\begin{subarray}{c}
+\sum^{n}_{\begin{subarray}{c}
 0<k<1000\\
 \\k\,\in\,\mathbb{N}
-\end{subarray}}^{n}k^{-2}\label{eq:substack}
+\end{subarray}}k^{-2}\label{eq:substack}
 \end{equation}
 
 \end_inset
@@ -16808,8 +18481,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 smashoperator
@@ -16833,7 +18524,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -16883,10 +18583,10 @@ smashoperator{
  За скобками продолжается ввод формулы:
 \begin_inset Formula 
 \[
-\smashoperator{\sum_{\begin{subarray}{c}
+\smashoperator{\sum^{n}_{\begin{subarray}{c}
 0<k<1000\\
 \\k\,\in\,\mathbb{N}
-\end{subarray}}^{n}}k^{-2}
+\end{subarray}}}k^{-2}
 \]
 
 \end_inset
@@ -16939,7 +18639,7 @@ smashoperator
 \begin_layout Standard
 \begin_inset Formula 
 \[
-Y\smashoperator{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}=Y\smashoperator[l]{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}=Y\smashoperator[r]{\sum_{1\le i\le j\le n}^{n=3456}}X_{ij}
+Y\smashoperator{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}=Y\smashoperator[l]{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}=Y\smashoperator[r]{\sum^{n=3456}_{1\le i\le j\le n}}X_{ij}
 \]
 
 \end_inset
@@ -16981,7 +18681,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -17005,8 +18714,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 adjustlimits
@@ -17057,7 +18784,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операторы !
+Операторы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пометки
 \end_layout
 
@@ -17080,8 +18816,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 overset
@@ -17102,8 +18856,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 underset
@@ -17125,8 +18897,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 sideset
@@ -17231,7 +19021,7 @@ n
  производит:
 \begin_inset Formula 
 \[
-\sideset{}{'}\sum_{k=1}^{n}
+\sideset{}{'}\sum^{n}_{k=1}
 \]
 
 \end_inset
@@ -17329,7 +19119,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операторы !
+Операторы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  бинарные
 \end_layout
 
@@ -17570,7 +19369,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-1.2mm}{
 \end_layout
@@ -17582,7 +19380,6 @@ raisebox{-1.2mm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -18421,7 +20218,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Операторы !
+Операторы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательские
 \end_layout
 
@@ -18444,11 +20250,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-dbinom@
+dbinom
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 DeclareMathOperator
 \end_layout
@@ -18524,7 +20358,7 @@ nolink "false"
 :
 \begin_inset Formula 
 \[
-\Lozenge_{n=1}^{\infty}
+\Lozenge^{\infty}_{n=1}
 \]
 
 \end_inset
@@ -18565,8 +20399,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mathop
@@ -18587,8 +20439,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 mathbin
@@ -18647,7 +20517,7 @@ mathop
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathop{\sum\negmedspace\sum}_{i,j=1}^{N}
+\mathop{\sum\negmedspace\sum}^{N}_{i,j=1}
 \]
 
 \end_inset
@@ -18724,7 +20594,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифт !
+Шрифт 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  стиль
 \end_layout
 
@@ -19349,7 +21228,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  полужирной насыщенности
 \end_layout
 
@@ -19377,7 +21265,7 @@ mathbf
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\mathbf{\int_{n}^{2}f(\theta)=\Gamma}\qquad\textrm{формула с \textbackslash mathbf}
+\mathbf{\int^{2}_{n}f(\theta)=\Gamma}\qquad\textrm{формула с \textbackslash mathbf}
 \]
 
 \end_inset
@@ -19395,7 +21283,7 @@ boldsymbol
 :
 \begin_inset Formula 
 \[
-\boldsymbol{\int_{n}^{2}f(\theta)=\Gamma\qquad\textrm{формула с \textbackslash boldsymbol}}
+\boldsymbol{\int^{2}_{n}f(\theta)=\Gamma\qquad\textrm{формула с \textbackslash boldsymbol}}
 \]
 
 \end_inset
@@ -19418,8 +21306,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 boldmath
@@ -19443,8 +21349,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- U !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ U 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 unboldmath
@@ -19459,7 +21383,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 boldmath 
 \end_layout
@@ -19469,7 +21392,7 @@ boldmath
 
 \begin_inset Formula 
 \[
-\int_{n}^{2}f(\theta)=\Gamma\qquad\textrm{формула в окружении boldmath}
+\int^{2}_{n}f(\theta)=\Gamma\qquad\textrm{формула в окружении boldmath}
 \]
 
 \end_inset
@@ -19479,7 +21402,6 @@ boldmath
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 unboldmath 
@@ -19498,7 +21420,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в цвете
 \end_layout
 
@@ -19550,8 +21481,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textcolor
@@ -19583,7 +21532,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcolor{darkgreen}{
 \end_layout
@@ -19603,7 +21551,6 @@ textcolor{darkgreen}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -19653,7 +21600,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Шрифт !
+Шрифт 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  размеры
 \end_layout
 
@@ -19849,8 +21805,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 displaystyle
@@ -19983,7 +21957,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 huge 
 \end_layout
@@ -20001,7 +21974,7 @@ A=\frac{B}{c}\cdot\maltese
 
 \begin_inset Formula 
 \[
-\maltese A\textrm{\Large\maltese\textit{A}}\textrm{\tiny\maltese\textit{A}}
+\maltese A\textrm{{\Large \maltese\textit{A}}}\textrm{{\tiny \maltese\textit{A}}}
 \]
 
 \end_inset
@@ -20011,7 +21984,6 @@ A=\frac{B}{c}\cdot\maltese
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 normalsize 
@@ -20152,7 +22124,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Греческие буквы !
+Греческие буквы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  строчные
 \end_layout
 
@@ -21111,7 +23092,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Греческие буквы !
+Греческие буквы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  прописные
 \end_layout
 
@@ -21522,13 +23512,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  was
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -21553,7 +23551,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  fixmath
 \end_layout
 
@@ -21583,7 +23590,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Греческие буквы !
+Греческие буквы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  полужирной насыщенности
 \end_layout
 
@@ -21608,8 +23624,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- B !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ B 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 boldsymbol
@@ -21719,7 +23753,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -21750,7 +23783,6 @@ literal "true"
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -21830,7 +23862,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Символы !
+Символы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  математические
 \end_layout
 
@@ -22336,7 +24377,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 raisebox{-0.8mm}{
 \end_layout
@@ -22352,7 +24392,6 @@ raisebox{-0.8mm}{
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -22670,7 +24709,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Символы !
+Символы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разные
 \end_layout
 
@@ -23482,7 +25530,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Символы !
+Символы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  символ евро
 \end_layout
 
@@ -23497,12 +25554,21 @@ status collapsed
 \begin_layout Plain Layout
 
 \backslash
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 
 \backslash
 officialeuro
@@ -23532,7 +25598,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  eurosym
 \end_layout
 
@@ -23565,8 +25640,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- E !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ E 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 euro
@@ -23609,8 +25702,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 officialeuro
@@ -23628,7 +25739,6 @@ officialeuro
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifeurosym 
@@ -23671,7 +25781,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 cmidrule[0.08em]{2-3}
@@ -23800,7 +25909,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 officialeuro
 \end_layout
@@ -23852,7 +25960,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -23894,7 +26001,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi 
 \end_layout
@@ -23931,12 +26037,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Сравнения|see
+Сравнения
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+|
+\end_layout
 
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -23947,7 +26062,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -25332,8 +27446,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 stackrel
@@ -25448,7 +27580,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Функции !
+Функции 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  предопределенные
 \end_layout
 
@@ -26047,7 +28188,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Функции !
+Функции 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательские
 \end_layout
 
@@ -26119,11 +28269,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- D !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ D 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-dbinom@
+dbinom
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 DeclareMathOperator
 \end_layout
@@ -26306,8 +28484,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 lim
@@ -26584,7 +28780,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Функции !
+Функции 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  по модулю
 \end_layout
 
@@ -27264,7 +29469,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Акценты !
+Акценты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в тексте
 \end_layout
 
@@ -27334,7 +29548,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 "e
 \end_layout
@@ -27367,7 +29580,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 `e
@@ -27406,7 +29618,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ^e
 \end_layout
@@ -27439,7 +29650,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 =e
@@ -27478,7 +29688,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 u e
 \end_layout
@@ -27516,7 +29725,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 b e
 \end_layout
@@ -27553,7 +29761,6 @@ ee
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 t ee
@@ -27626,7 +29833,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 H e
 \end_layout
@@ -27659,7 +29865,6 @@ H e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 'e
@@ -27706,7 +29911,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 ~e
 \end_layout
@@ -27739,7 +29943,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 .e
@@ -27778,7 +29981,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 v e
 \end_layout
@@ -27816,7 +30018,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 d e
 \end_layout
@@ -27853,7 +30054,6 @@ e
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 c e
@@ -27905,7 +30105,6 @@ sz
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 t sz
@@ -28038,8 +30237,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 textcircled
@@ -28100,7 +30317,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 textcircled{w}
 \end_layout
@@ -28141,7 +30357,6 @@ raisebox{-1.5pt}{W}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 Large 
@@ -28265,8 +30480,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- O !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ O 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 oldstylenums
@@ -28318,7 +30551,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формулы !
+Формулы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  стили
 \end_layout
 
@@ -28438,7 +30680,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многострочная
 \end_layout
 
@@ -28558,8 +30809,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разделение строк
 \end_layout
 
@@ -28572,8 +30841,8 @@ status collapsed
 Иногда в многострочных формулах размер промежутка между строками требует увеличения:
 \begin_inset Formula 
 \begin{eqnarray*}
-B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right) & = & 0
+B^{2}(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k})+4x^{2}_{0}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -28628,13 +30897,11 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{eqnarray*}
 \end_layout
 
 \begin_layout Plain Layout
-
 B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & 
 \backslash
 textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}
@@ -28645,7 +30912,6 @@ textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}
 \end_layout
 
 \begin_layout Plain Layout
-
 4x^{2}
 \backslash
 left(B^{2}+x_{0}^{2}
@@ -28662,7 +30928,6 @@ right) & = & 0
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{eqnarray*}
@@ -28691,8 +30956,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- J !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ J 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 jot
@@ -28767,7 +31050,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  calc
 \end_layout
 
@@ -28795,7 +31087,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -28807,8 +31098,8 @@ jot}{3mm+3pt}
 
 \begin_inset Formula 
 \begin{eqnarray*}
-B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right) & = & 0
+B^{2}(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k})+4x^{2}_{0}x^{2}+4x_{0}xD & = & \textrm{-}4x^{2}B^{2}+4x_{0}xB^{2}\\
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right) & = & 0
 \end{eqnarray*}
 
 \end_inset
@@ -28821,7 +31112,6 @@ B^{2}(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2})+4x_{0}^{2}x^{2}+4x_{0}xD & = & \te
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -28860,8 +31150,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  разделение столбцов
 \end_layout
 
@@ -28899,8 +31207,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arraycolsep
@@ -28973,7 +31299,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -29000,7 +31325,6 @@ pt между столбцами матрицы:
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -29030,7 +31354,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  длинная
 \end_layout
 
@@ -29106,8 +31439,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- H !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ H 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 hspace
@@ -29133,8 +31484,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 lefteqn
@@ -29146,9 +31515,9 @@ lefteqn
  Она вставляется в первый столбец первой строки и обеспечивает расположение начала формулы в последующих столбцах этой строки:
 \begin_inset Formula 
 \begin{eqnarray}
-\lefteqn{4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}}\nonumber \\
- &  & -\hspace{3pt}B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}\nonumber \\
- &  & =B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}\label{eq:lefteqn}
+\lefteqn{4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}}\nonumber \\
+ &  & -\hspace{3pt}B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}\nonumber \\
+ &  & =B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}\label{eq:lefteqn}
 \end{eqnarray}
 
 \end_inset
@@ -29269,7 +31638,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Дроби !
+Дроби 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  многострочные
 \end_layout
 
@@ -29296,8 +31674,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 splitfrac
@@ -29322,7 +31718,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -29397,7 +31802,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Скобки !
+Скобки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  для многострочных формул
 \end_layout
 
@@ -29412,7 +31826,7 @@ status collapsed
  возникает следующая проблема:
 \begin_inset Formula 
 \begin{eqnarray*}
-A & = & \sin(x)\left[\prod_{R=1}^{\infty}\frac{1}{R}+\cdots\right.\\
+A & = & \sin(x)\left[\prod^{\infty}_{R=1}\frac{1}{R}+\cdots\right.\\
  &  & \left.\cdots+B-D\right]
 \end{eqnarray*}
 
@@ -29441,8 +31855,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 right
@@ -29497,8 +31929,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- L !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ L 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 left
@@ -29552,8 +32002,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- V !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ V 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 vphantom
@@ -29570,8 +32038,8 @@ vphantom
 Результат таков:
 \begin_inset Formula 
 \begin{eqnarray*}
-A & = & \sin(x)\left[\prod_{R=1}^{\infty}\frac{1}{R}+\cdots\right.\\
- &  & \left.\vphantom{\prod_{R=1}^{\infty}}\cdots+B-D\right]
+A & = & \sin(x)\left[\prod^{\infty}_{R=1}\frac{1}{R}+\cdots\right.\\
+ &  & \left.\vphantom{\prod^{\infty}_{R=1}}\cdots+B-D\right]
 \end{eqnarray*}
 
 \end_inset
@@ -29659,8 +32127,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружение align
 \end_layout
 
@@ -29781,8 +32267,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружение alignat
 \end_layout
 
@@ -29854,8 +32358,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружение flalign
 \end_layout
 
@@ -29950,8 +32472,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружение eqnarray
 \end_layout
 
@@ -29987,8 +32527,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружение gather
 \end_layout
 
@@ -30027,8 +32585,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  окружение multline
 \end_layout
 
@@ -30070,9 +32646,9 @@ multline
 :
 \begin_inset Formula 
 \begin{multline}
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}\\
--B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}\\
-=B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}\\
+-B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}\\
+=B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}
 \end{multline}
 
 \end_inset
@@ -30132,8 +32708,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 shoveright
@@ -30154,8 +32748,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 shoveleft
@@ -30200,8 +32812,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- M !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ M 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 multlinegap
@@ -30242,7 +32872,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -30254,9 +32883,9 @@ multlinegap}{2cm}
 
 \begin_inset Formula 
 \begin{multline}
-4x^{2}\left(B^{2}+x_{0}^{2}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r_{g}^{2}+2x_{0}^{2}-2r_{k}^{2}\right)+D^{2}\\
-\shoveleft{-B^{2}-2B\sqrt{r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}+r_{g}^{2}-x^{2}+2x_{0}x-x_{0}^{2}}\\
-=B^{2}+2\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)+\frac{\left(r_{g}^{2}+2x_{0}x-x_{0}^{2}-r_{k}^{2}\right)^{2}}{B^{2}}
+4x^{2}\left(B^{2}+x^{2}_{0}\right)+4x_{0}x\left(D-B^{2}\right)+B^{2}\left(B^{2}-2r^{2}_{g}+2x^{2}_{0}-2r^{2}_{k}\right)+D^{2}\\
+\shoveleft{-B^{2}-2B\sqrt{r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}+r^{2}_{g}-x^{2}+2x_{0}x-x^{2}_{0}}\\
+=B^{2}+2\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)+\frac{\left(r^{2}_{g}+2x_{0}x-x^{2}_{0}-r^{2}_{k}\right)^{2}}{B^{2}}
 \end{multline}
 
 \end_inset
@@ -30266,7 +32895,6 @@ multlinegap}{2cm}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 setlength{
@@ -30300,8 +32928,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  части формулы
 \end_layout
 
@@ -30375,8 +33021,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 aligned
@@ -30460,8 +33124,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 alignedat
@@ -30482,8 +33164,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- G !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ G 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 gathered
@@ -30504,8 +33204,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 split
@@ -30542,7 +33260,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Текст !
+Текст 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в формулах
 \end_layout
 
@@ -30555,8 +33282,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- многострочная !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ многострочная 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  текст
 \end_layout
 
@@ -30596,8 +33341,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- I !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ I 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 intertext
@@ -30640,8 +33403,8 @@ intertext
  где текст был вставлен в начале второй строки:
 \begin_inset Formula 
 \begin{align}
-I & =a\sqrt{2}\int_{0}^{2\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
-\intertext{\text{подынтегральное выражение симметрично относительно \ensuremath{\phi=\pi}, поэтому}} & =2a\sqrt{2}\int_{0}^{\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
+I & =a\sqrt{2}\int^{2\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
+\intertext{\text{подынтегральное выражение симметрично относительно \ensuremath{\phi=\pi}, поэтому}} & =2a\sqrt{2}\int^{\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
 \end{align}
 
 \end_inset
@@ -30673,7 +33436,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mathtools
 \end_layout
 
@@ -30697,8 +33469,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- S !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ S 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 shortintertext
@@ -30718,8 +33508,8 @@ intertext
 \begin_layout Standard
 \begin_inset Formula 
 \begin{align}
-I & =a\sqrt{2}\int_{0}^{2\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
-\shortintertext{\text{подынтегральное выражение симметрично относительно \ensuremath{\phi=\pi}, поэтому}} & =2a\sqrt{2}\int_{0}^{\pi}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
+I & =a\sqrt{2}\int^{2\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi\\
+\shortintertext{\text{подынтегральное выражение симметрично относительно \ensuremath{\phi=\pi}, поэтому}} & =2a\sqrt{2}\int^{\pi}_{0}\sqrt{1+\cos(\phi)}\;\mathrm{d}\phi
 \end{align}
 
 \end_inset
@@ -30747,13 +33537,31 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
- нумерация|see
+Формула 
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+!
+\end_layout
 
+\end_inset
+
+ нумерация
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+|
+\end_layout
+
+\end_inset
+
+see
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 {
 \end_layout
 
@@ -30764,7 +33572,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -30854,7 +33661,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Перекрестные ссылки !
+Перекрестные ссылки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  на формулы
 \end_layout
 
@@ -31049,7 +33865,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Нумерация формул !
+Нумерация формул 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  подчиненная нумерация
 \end_layout
 
@@ -31304,7 +34129,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -31350,7 +34174,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Нумерация формул !
+Нумерация формул 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  буквами
 \end_layout
 
@@ -31363,7 +34196,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Нумерация формул !
+Нумерация формул 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  римскими цифрами
 \end_layout
 
@@ -31408,8 +34250,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 renewcommand
@@ -31497,8 +34357,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 roman
@@ -31540,11 +34418,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- R !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ R 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-roman@
+roman
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 Roman
 \end_layout
@@ -31565,8 +34471,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 alph
@@ -31589,11 +34513,39 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
-alph@
+alph
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+@
+\end_layout
+
+\end_inset
+
+
 \backslash
 Alph
 \end_layout
@@ -31627,7 +34579,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -31655,7 +34606,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -31680,7 +34630,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -31704,7 +34653,6 @@ C=\textrm{small Latin}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -31750,8 +34698,26 @@ status collapsed
 \begin_layout Plain Layout
 
 \series medium
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arabic
@@ -31767,7 +34733,6 @@ arabic
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -31827,7 +34792,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Нумерация формул !
+Нумерация формул 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательская
 \end_layout
 
@@ -31904,7 +34878,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Нумерация формул !
+Нумерация формул 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательские разделители
 \end_layout
 
@@ -31995,8 +34978,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 tag
@@ -32069,30 +35070,56 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
 \end_inset
 
- !
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 
@@ -32100,18 +35127,26 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
@@ -32232,7 +35267,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  carlisle
 \end_layout
 
@@ -32253,7 +35297,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  remreset
 \end_layout
 
@@ -32284,30 +35337,56 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
 \end_inset
 
- !
+ 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 
@@ -32315,18 +35394,26 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 "
 \end_layout
 
 \end_inset
 
-@
+
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
+@
+\end_layout
 
+\end_inset
+
+
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
 "
 \end_layout
 
@@ -32378,8 +35465,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- N !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 numberwithin
@@ -32429,7 +35534,6 @@ numberwithin{equation}{section}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 numberwithin{equation}{section}
@@ -32490,8 +35594,26 @@ status collapsed
 \begin_layout Plain Layout
 
 \series medium
-Команды !
- A !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ A 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 arabic
@@ -32506,7 +35628,6 @@ arabic
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -32562,20 +35683,17 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 makeatletter
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 @removefromreset{equation}{section}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 makeatother
@@ -32601,7 +35719,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Химические символы !
+Химические символы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  знаки
 \end_layout
 
@@ -32626,7 +35753,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Знаки !
+Знаки 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  химические
 \end_layout
 
@@ -32641,7 +35777,7 @@ status collapsed
 
 \begin_layout Quote
 Результатом реакции 
-\begin_inset Formula $\mathrm{SO_{4}^{2-}}$
+\begin_inset Formula $\mathrm{SO^{2-}_{4}}$
 \end_inset
 
 -иона с двумя 
@@ -32656,7 +35792,7 @@ status collapsed
  Химическая формула этой реакции:
 \begin_inset Formula 
 \begin{equation}
-\mathrm{2\,Na^{+}+SO_{4}^{2-}\longrightarrow Na_{2}SO_{4}}\label{eq:chem-reaction}
+\mathrm{2\,Na^{+}+SO^{2-}_{4}\longrightarrow Na_{2}SO_{4}}\label{eq:chem-reaction}
 \end{equation}
 
 \end_inset
@@ -32711,8 +35847,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 ce
@@ -32734,7 +35888,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mhchem
 \end_layout
 
@@ -32963,7 +36126,7 @@ Th+
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $\ce{_{90}^{227}Th+}$
+\begin_inset Formula $\ce{^{227}_{90}Th+}$
 \end_inset
 
 
@@ -33276,8 +36439,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 cf
@@ -33336,7 +36517,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Диаграммы !
+Диаграммы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  amscd
 \end_layout
 
@@ -33374,8 +36564,26 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Команды !
- C !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ C 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 CD
@@ -33671,7 +36879,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Диаграммы !
+Диаграммы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  xymatrix
 \end_layout
 
@@ -33733,7 +36950,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Диаграммы !
+Диаграммы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  Фейнмана
 \end_layout
 
@@ -33850,7 +37076,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пользовательские команды !
+Пользовательские команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 newcommand
@@ -33865,8 +37100,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- N !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ N 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 newcommand
@@ -34415,7 +37668,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пользовательские команды !
+Пользовательские команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  математические макросы
 \end_layout
 
@@ -34942,7 +38204,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Макросы !
+Макросы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  панель инструментов
 \end_layout
 
@@ -35324,7 +38595,7 @@ Maxima
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\frac{37}{3}*2-\sum_{i=1}^{3}i^{i}=-\frac{22}{3}$
+\begin_inset Formula $\frac{37}{3}*2-\sum^{3}_{i=1}i^{i}=-\frac{22}{3}$
 \end_inset
 
 
@@ -35338,7 +38609,7 @@ Maxima
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $\int_{1}^{2}\sin(x)dx=\cos1-\cos2$
+\begin_inset Formula $\int^{2}_{1}\sin(x)dx=\cos1-\cos2$
 \end_inset
 
 
@@ -35394,14 +38665,14 @@ status open
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $powerseries\left(-\log\left(5-x\right),x,1\right)=\sum_{{\mathit{i}_{2}}=0}^{\infty}{\frac{4^{-{\mathit{i}_{2}}-1}\,\left(x-1\right)^{{\mathit{i}_{2}}+1}}{{\mathit{i}_{2}}+1}}-\log4$
+\begin_inset Formula $powerseries\left(-\log\left(5-x\right),x,1\right)=\sum^{\infty}_{{\mathit{i}_{2}}=0}{\frac{4^{-{\mathit{i}_{2}}-1}\,\left(x-1\right)^{{\mathit{i}_{2}}+1}}{{\mathit{i}_{2}}+1}}-\log4$
 \end_inset
 
 
 \end_layout
 
 \begin_layout Itemize
-\begin_inset Formula $solve\left(x_{1}+y_{1}^{3}=y_{1}+x_{1}^{2},x_{1}\right)=\left[x_{1}=-\frac{\sqrt{4\,y_{1}^{3}-4\,y_{1}+1}-1}{2},x_{1}=\frac{\sqrt{4\,y_{1}^{3}-4\,y_{1}+1}+1}{2}\right]$
+\begin_inset Formula $solve\left(x_{1}+y^{3}_{1}=y_{1}+x^{2}_{1},x_{1}\right)=\left[x_{1}=-\frac{\sqrt{4\,y^{3}_{1}-4\,y_{1}+1}-1}{2},x_{1}=\frac{\sqrt{4\,y^{3}_{1}-4\,y_{1}+1}+1}{2}\right]$
 \end_inset
 
 
@@ -35468,7 +38739,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Числа !
+Числа 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  отрицательные
 \end_layout
 
@@ -35644,13 +38924,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  was
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -35675,7 +38963,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  icomma
 \end_layout
 
@@ -35707,7 +39004,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Векторы !
+Векторы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  физические
 \end_layout
 
@@ -35729,7 +39035,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  braket
 \end_layout
 
@@ -35753,7 +39068,6 @@ usepackage{braket}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifbraket 
@@ -35949,7 +39263,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -35991,7 +39304,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi 
 \end_layout
@@ -36017,7 +39329,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Дроби !
+Дроби 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  пользовательские
 \end_layout
 
@@ -36040,8 +39361,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- G !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ G 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 genfrac
@@ -36049,7 +39388,6 @@ genfrac
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -36339,7 +39677,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  аннулированная
 \end_layout
 
@@ -36358,7 +39705,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifcancel 
@@ -36572,7 +39918,7 @@ cancelto
  более всего подходит для визуализации сокращения дробей в формулах:
 \begin_inset Formula 
 \[
-\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x_{0}^{2}+B^{2}-r_{g}^{2}}{\cancel{1+b^{2}}}
+\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x^{2}_{0}+B^{2}-r^{2}_{g}}{\cancel{1+b^{2}}}
 \]
 
 \end_inset
@@ -36654,7 +40000,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 renewcommand{
 \backslash
@@ -36671,7 +40016,7 @@ color{red}}
 \begin_layout Standard
 \begin_inset Formula 
 \[
-\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x_{0}^{2}+B^{2}-r_{g}^{2}}{\cancel{1+b^{2}}}
+\frac{\left(x_{0}+bB\right)^{2}}{\left(1+b^{2}\right)^{\cancelto{2}{3}}}=\frac{x^{2}_{0}+B^{2}-r^{2}_{g}}{\cancel{1+b^{2}}}
 \]
 
 \end_inset
@@ -36684,7 +40029,6 @@ color{red}}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 renewcommand{
@@ -36729,7 +40073,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancel
 \end_layout
 
@@ -36743,7 +40096,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 else 
@@ -36786,7 +40138,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi 
 \end_layout
@@ -36811,7 +40162,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в заголовках
 \end_layout
 
@@ -36844,7 +40204,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -36901,8 +40270,26 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Команды !
- T !
+Команды 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
+ T 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  
 \backslash
 texorpdfstring
@@ -36943,7 +40330,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 boldmath 
 \end_layout
@@ -36978,7 +40364,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 texorpdfstring{
 \end_layout
@@ -36994,7 +40379,6 @@ texorpdfstring{
 status collapsed
 
 \begin_layout Plain Layout
-
 }{}
 \end_layout
 
@@ -37008,7 +40392,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 unboldmath 
@@ -37064,7 +40447,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в многоколоночном тексте
 \end_layout
 
@@ -37104,7 +40496,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  multicol
 \end_layout
 
@@ -37230,7 +40631,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 begin{multicols}{2}
 \end_layout
@@ -37260,7 +40660,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{multicols}
 \end_layout
@@ -37274,7 +40673,7 @@ end{multicols}
 
 \begin_inset Formula 
 \begin{equation}
-S(t)=S_{0}(t)\int_{-\infty}^{\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathrm{d}\phi
+S(t)=S_{0}(t)\int^{\infty}_{-\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathrm{d}\phi
 \end{equation}
 
 \end_inset
@@ -37284,7 +40683,6 @@ S(t)=S_{0}(t)\int_{-\infty}^{\infty}P(\phi,t)\mathrm{e}^{\mathrm{i}\phi}\,\mathr
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{multicols}{2}
@@ -37297,7 +40695,7 @@ wobei
 \end_inset
 
  das Signal ohne Gradient ist und die Normierungsbedingung 
-\begin_inset Formula $\int_{-\infty}^{\infty}P(\phi,t)\,\mathrm{d}\phi=1$
+\begin_inset Formula $\int^{\infty}_{-\infty}P(\phi,t)\,\mathrm{d}\phi=1$
 \end_inset
 
  gilt.
@@ -37327,7 +40725,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 end{multicols}
 \end_layout
@@ -37345,7 +40742,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Формула !
+Формула 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  с описанием переменных
 \end_layout
 
@@ -37531,11 +40937,11 @@ nolink "false"
 .
 \begin_inset Formula 
 \begin{flalign}
-\hspace{30pt}F_{A} & =\rho·V·g & \footnotesize\begin{array}{ll}
+\hspace{30pt}F_{A} & =\rho·V·g & {\footnotesize \begin{array}{ll}
 \rho & \textrm{плотность}\\
 V & \textrm{объем}\\
 g & \textrm{ускорение свободного падения}
-\end{array} &  & {}\label{eq:within}
+\end{array}} &  & {}\label{eq:within}
 \end{flalign}
 
 \end_inset
@@ -37558,7 +40964,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Греческие буквы !
+Греческие буквы 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  строчные прямого начертания
 \end_layout
 
@@ -37596,13 +41011,21 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  was
 \begin_inset ERT
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 vspace{4mm}
@@ -37627,7 +41050,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  upgreek
 \end_layout
 
@@ -37651,7 +41083,6 @@ usepackage{upgreek}
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifupgreek 
@@ -37728,7 +41159,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 else 
 \end_layout
@@ -37770,7 +41200,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 fi 
 \end_layout
@@ -37788,7 +41217,16 @@ pageformat default
 status collapsed
 
 \begin_layout Plain Layout
-Текст !
+Текст 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  в формулах
 \end_layout
 
@@ -39049,7 +42487,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 AmS
 \end_layout
@@ -39110,7 +42547,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  cancel
 \end_layout
 
@@ -39148,7 +42594,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  hyperref
 \end_layout
 
@@ -39186,7 +42641,16 @@ pageformat default
 status open
 
 \begin_layout Plain Layout
-Пакеты !
+Пакеты 
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+!
+\end_layout
+
+\end_inset
+
  mhchem
 \end_layout
 
