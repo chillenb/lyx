@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -80,11 +80,19 @@ multicol
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -110,6 +118,7 @@ multicol
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -328,12 +337,10 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 % Output title
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \backslash
 VERYHuge
@@ -344,7 +351,6 @@ inserttitle}}
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 ifx
@@ -357,7 +363,6 @@ else%
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 par
@@ -385,12 +390,10 @@ fi
 status open
 
 \begin_layout Plain Layout
-
 % Output author and date
 \end_layout
 
 \begin_layout Plain Layout
-
 {
 \backslash
 veryHuge
@@ -435,12 +438,10 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 % Logo
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 raggedleft
@@ -540,7 +541,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 setlength{
 \backslash
@@ -571,7 +571,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 4
 \end_layout
 
@@ -725,7 +724,6 @@ t,
 status open
 
 \begin_layout Plain Layout
-
 1.0105
 \backslash
 textwidth
@@ -748,7 +746,6 @@ textwidth
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 linewidth
@@ -965,7 +962,6 @@ Yet another color.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 linewidth
@@ -1251,7 +1247,6 @@ University of Nowhere
 status open
 
 \begin_layout Plain Layout
-
 doe@uon.edu
 \end_layout
 
@@ -1265,7 +1260,6 @@ doe@uon.edu
 status open
 
 \begin_layout Plain Layout
-
 http://www.uon.edu/doe
 \end_layout
 

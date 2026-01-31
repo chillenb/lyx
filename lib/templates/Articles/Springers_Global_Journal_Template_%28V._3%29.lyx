@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -57,10 +57,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -86,6 +95,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -104,7 +114,6 @@ This is a template \SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Examples/Springer
 \end_layout
 
@@ -212,7 +221,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and 
 \end_layout
@@ -243,7 +251,6 @@ F.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 at 
@@ -291,7 +298,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and 
 \end_layout
@@ -304,7 +310,6 @@ S.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 at 
@@ -346,7 +351,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and 
 \end_layout
@@ -358,7 +362,6 @@ Second keyword
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 and 
@@ -382,7 +385,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and 
 \end_layout
@@ -394,7 +396,6 @@ PACS code2
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 and 
@@ -418,7 +419,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and 
 \end_layout
@@ -430,7 +430,6 @@ MSC code2
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 and 
@@ -935,7 +934,6 @@ The styles can be downloaded from
 status open
 
 \begin_layout Plain Layout
-
 https://cs.overleaf.com/latex/templates/a-general-template-file-for-the-latex-package-svjour3-for-springer-journals/pbbwqhxxvtbp
 \end_layout
 

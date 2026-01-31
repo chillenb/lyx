@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -59,10 +59,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Stichwortverzeichnis
 \shortcut idx
 \color #008000
@@ -88,6 +97,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -196,7 +206,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 and
 \end_layout
@@ -296,7 +305,6 @@ Universität Hier
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 and
@@ -448,14 +456,12 @@ institution-logo-filename.xxx
 status open
 
 \begin_layout Plain Layout
-
 %
 \backslash
 pgfdeclareimage[height=0.5cm]{institution-logo}{institution-logo-filename}
 \end_layout
 
 \begin_layout Plain Layout
-
 %
 \backslash
 logo{
@@ -489,39 +495,33 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 AtBeginSubsection[]{%
 \end_layout
 
 \begin_layout Plain Layout
-
   
 \backslash
 frame<beamer>{ 
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 frametitle{Gliederung}   
 \end_layout
 
 \begin_layout Plain Layout
-
     
 \backslash
 tableofcontents[currentsection,currentsubsection] 
 \end_layout
 
 \begin_layout Plain Layout
-
   }
 \end_layout
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -549,7 +549,6 @@ Falls Sie Aufzählungen immer schrittweise zeigen wollen,
 status open
 
 \begin_layout Plain Layout
-
 %
 \backslash
 beamerdefaultoverlayspecification{<+->}
@@ -742,7 +741,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 1-
 \end_layout
 
@@ -757,7 +755,6 @@ Man kann auch Overlay-Spezifikationen benutzen,
 status open
 
 \begin_layout Plain Layout
-
 3-
 \end_layout
 
@@ -771,7 +768,6 @@ Hiermit können Punkte in beliebiger Reihenfolge präsentiert werden.
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -807,7 +803,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 1-
 \end_layout
 
@@ -831,7 +826,6 @@ Wird auf allen Overlays angezeigt.
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -890,7 +884,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 1-
 \end_layout
 
@@ -911,7 +904,6 @@ Auf dem ersten Overlay.
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -991,7 +983,6 @@ status open
 status open
 
 \begin_layout Plain Layout
-
 1-
 \end_layout
 
@@ -1009,7 +1000,6 @@ In der linken Spalte.
 status open
 
 \begin_layout Plain Layout
-
 2-
 \end_layout
 
@@ -1205,7 +1195,6 @@ status open
 
 \begin_layout Plain Layout
 
-
 \backslash
 beamertemplatebookbibitems
 \end_layout
@@ -1241,7 +1230,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newblock
 \end_layout
@@ -1259,7 +1247,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newblock
 \end_layout
@@ -1272,7 +1259,6 @@ newblock
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 beamertemplatearticlebibitems
@@ -1309,7 +1295,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 newblock
 \end_layout
@@ -1326,7 +1311,6 @@ newblock
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 newblock

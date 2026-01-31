@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -53,10 +53,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -82,6 +91,7 @@
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -100,7 +110,6 @@ This is a template \SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Examples/IJMP
 \end_layout
 
@@ -400,7 +409,6 @@ Items may also be numbered in lowercase roman numerals:
 status open
 
 \begin_layout Plain Layout
-
 (ii)
 \end_layout
 
@@ -419,7 +427,6 @@ item two
 status open
 
 \begin_layout Plain Layout
-
 (b)
 \end_layout
 
@@ -447,7 +454,7 @@ begin{equation}
 \begin_layout Standard
 \begin_inset Formula 
 \begin{equation}
-\mu(n,t)=\frac{\sum_{i=1}^{\infty}1(d_{i}<t,N(d_{i})=n)}{\int_{\sigma=0}^{t}1(N(\sigma)=n)d\sigma}\label{eq:diseqn}
+\mu(n,t)=\frac{\sum^{\infty}_{i=1}1(d_{i}<t,N(d_{i})=n)}{\int^{t}_{\sigma=0}1(N(\sigma)=n)d\sigma}\label{eq:diseqn}
 \end{equation}
 
 \end_inset
@@ -550,7 +557,6 @@ remove the
 status open
 
 \begin_layout Plain Layout
-
 %
 \backslash
 centerline{
@@ -583,7 +589,7 @@ name "fig:A-schematic-illustration"
 A schematic illustration of dissociative recombination.
  The direct mechanism,
  4m
-\begin_inset Formula $_{\pi}^{2}$
+\begin_inset Formula $^{2}_{\pi}$
 \end_inset
 
  is initiated when the molecular ion S
@@ -714,7 +720,6 @@ An example table.
 status collapsed
 
 \begin_layout Plain Layout
-
 {
 \end_layout
 
@@ -859,7 +864,6 @@ name "tab:fuf"
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 

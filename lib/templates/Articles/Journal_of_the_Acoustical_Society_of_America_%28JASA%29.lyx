@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -19,9 +19,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
+\font_roman_osf false
 \font_sans_osf false
 \font_typewriter_osf false
-\font_roman_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -53,10 +53,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -72,12 +81,17 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
-\postpone_fragile_content false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -87,14 +101,14 @@
 status open
 
 \begin_layout Plain Layout
-Update: the ASA does not recommend JASA\SpecialChar TeX
+Update:
+ the ASA does not recommend JASA\SpecialChar TeX
  for submission.
  See 
 \begin_inset Flex URL
 status open
 
 \begin_layout Plain Layout
-
 https://jasa.peerx-press.org/html/jasa/Using_LaTeX_for_JASA.html
 \end_layout
 
@@ -102,14 +116,12 @@ https://jasa.peerx-press.org/html/jasa/Using_LaTeX_for_JASA.html
 
 .
  Note that the JASA\SpecialChar TeX
- .cls file has not been updated in years and that lualatex
- and xelatex might enter into infinit loops if system fonts are used.
+ .cls file has not been updated in years and that lualatex and xelatex might enter into infinit loops if system fonts are used.
 \end_layout
 
 \begin_layout Plain Layout
 This is a template \SpecialChar LyX
- file for articles to be submitted to the Journal of
- the Acoustical Society of America (JASA).
+ file for articles to be submitted to the Journal of the Acoustical Society of America (JASA).
  How to install the JASAS \SpecialChar LaTeX
  class to your \SpecialChar LaTeX
  system is explained in 
@@ -117,7 +129,6 @@ This is a template \SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Layouts/JASATeX
 \end_layout
 
@@ -195,7 +206,8 @@ An Author
 \end_layout
 
 \begin_layout Alternative Affiliation
-Physics Department, XYZ University.
+Physics Department,
+ XYZ University.
 \begin_inset Argument 1
 status open
 
@@ -249,7 +261,6 @@ http://www.Second.institution.edu/
 status collapsed
 
 \begin_layout Plain Layout
-
 ~
 \end_layout
 
@@ -279,7 +290,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 today 
 \end_layout
@@ -300,8 +310,8 @@ you can alternatively specify a certain date
 \end_layout
 
 \begin_layout Abstract
-An article usually includes an abstract, a concise summary of the work covered
- at length in the main body of the article.
+An article usually includes an abstract,
+ a concise summary of the work covered at length in the main body of the article.
  It is used for secondary publications and for information retrieval purposes.
 \end_layout
 
@@ -342,7 +352,8 @@ Introduction
 \end_layout
 
 \begin_layout Standard
-Bla bla, as listed in 
+Bla bla,
+ as listed in 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "whole-collection,proceedings-full"
@@ -362,12 +373,14 @@ Online citation
 \begin_inset Newline newline
 \end_inset
 
-Bla bla, as listed in 
+Bla bla,
+ as listed in 
 \begin_inset Flex Online citation
 status open
 
 \begin_layout Plain Layout
-book-full, booklet-full
+book-full,
+ booklet-full
 \end_layout
 
 \end_inset
@@ -378,7 +391,7 @@ book-full, booklet-full
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-A & = & \prod_{i=1}^{\infty}B\nonumber \\
+A & = & \prod^{\infty}_{i=1}B\nonumber \\
  & = & C
 \end{eqnarray}
 
@@ -404,12 +417,14 @@ Subsubsection
 \end_layout
 
 \begin_layout Standard
-Bla, bla
+Bla,
+ bla
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 placement h
+alignment document
 wide false
 sideways false
 status open
@@ -445,12 +460,18 @@ Appendix name
 \end_layout
 
 \begin_layout Standard
-Appendix, only when needed, inserted behind the acknowledgments but before
- the bibliography.
+Appendix,
+ only when needed,
+ inserted behind the acknowledgments but before the bibliography.
 \end_layout
 
 \begin_layout Standard
-—————–
+—
+—
+—
+—
+—
+–
 \end_layout
 
 \begin_layout Standard
@@ -460,7 +481,8 @@ You can use either Bib\SpecialChar TeX
 status open
 
 \begin_layout Plain Layout
-The following bibliography styles are allowed: 
+The following bibliography styles are allowed:
+ 
 \family sans
 jasaauthyear
 \family default
@@ -486,7 +508,14 @@ options "jasaauthyear"
 \end_layout
 
 \begin_layout Standard
-———————
+—
+—
+—
+—
+—
+—
+—
+
 \end_layout
 
 \begin_layout Standard
@@ -502,13 +531,15 @@ literal "true"
 
 \end_inset
 
-Frank Mittelbach and Michel Goossens: 
+Frank Mittelbach and Michel Goossens:
+ 
 \emph on
 The \SpecialChar LaTeX
  Companion Second Edition.
 
 \emph default
- Addison-Wesley, 2004.
+ Addison-Wesley,
+ 2004.
 \end_layout
 
 \begin_layout Bibliography
@@ -521,7 +552,8 @@ literal "true"
 
 Scott Pakin.
  The comprehensive \SpecialChar LaTeX
- symbol list, 2005.
+ symbol list,
+ 2005.
 \end_layout
 
 \end_body

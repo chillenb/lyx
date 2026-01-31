@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -123,11 +123,19 @@ customHeadersFooters
 \use_indices false
 \paperorientation portrait
 \suppress_date true
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
 \use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \branch chapter-1
 \selected 1
 \filename_suffix 0
@@ -184,6 +192,7 @@ customHeadersFooters
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -329,7 +338,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 vspace{
 \backslash
@@ -450,7 +458,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 rightmark
 \end_layout
@@ -551,7 +558,6 @@ fancyhdr
 status collapsed
 
 \begin_layout Plain Layout
-
 https://mirrors.ctan.org/macros/latex/contrib/fancyhdr/fancyhdr.pdf
 \end_layout
 
@@ -574,7 +580,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 leftmark
@@ -599,7 +604,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 thepage
@@ -635,7 +639,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 thepage
 \end_layout
@@ -666,7 +669,6 @@ LatexCommand tableofcontents
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 pagestyle{plain}
@@ -724,7 +726,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 pagestyle{fancy}
 \end_layout
@@ -754,7 +755,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 chaptername
 \end_layout
@@ -770,7 +770,6 @@ chaptername
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 thechapter
@@ -788,7 +787,6 @@ thechapter
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 rightmark

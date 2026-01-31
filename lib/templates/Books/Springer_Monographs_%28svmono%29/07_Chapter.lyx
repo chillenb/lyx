@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -19,9 +19,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
+\font_roman_osf false
 \font_sans_osf false
 \font_typewriter_osf false
-\font_roman_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -53,10 +53,19 @@
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -72,12 +81,17 @@
 \papercolumns 1
 \papersides 1
 \paperpagestyle default
+\tablestyle default
 \tracking_changes false
-\postpone_fragile_content false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -108,8 +122,7 @@ optional
 \end_layout
 
 \begin_layout Abstract*
-Each chapter should be preceded by an abstract (10–15 lines long) that summarize
-s the content.
+Each chapter should be preceded by an abstract (10–15 lines long) that summarizes the content.
  The abstract will appear 
 \shape italic
 online
@@ -119,18 +132,14 @@ online
 status collapsed
 
 \begin_layout Plain Layout
-
 www.SpringerLink.com
 \end_layout
 
 \end_inset
 
  and be available with unrestricted access.
- This allows unregistered users to read the abstract as a teaser for the
- complete chapter.
- As a general rule the abstracts will not appear in the printed version
- of your book unless it is the style of your particular book or that of
- the series to which your book belongs.
+ This allows unregistered users to read the abstract as a teaser for the complete chapter.
+ As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.
 \begin_inset Newline newline
 \end_inset
 
@@ -139,7 +148,6 @@ www.SpringerLink.com
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 indent
@@ -160,8 +168,7 @@ abstract
 \end_layout
 
 \begin_layout Abstract
-Each chapter should be preceded by an abstract (10–15 lines long) that summarize
-s the content.
+Each chapter should be preceded by an abstract (10–15 lines long) that summarizes the content.
  The abstract will appear 
 \shape italic
 online
@@ -171,18 +178,14 @@ online
 status collapsed
 
 \begin_layout Plain Layout
-
 www.SpringerLink.com
 \end_layout
 
 \end_inset
 
  and be available with unrestricted access.
- This allows unregistered users to read the abstract as a teaser for the
- complete chapter.
- As a general rule the abstracts will not appear in the printed version
- of your book unless it is the style of your particular book or that of
- the series to which your book belongs.
+ This allows unregistered users to read the abstract as a teaser for the complete chapter.
+ As a general rule the abstracts will not appear in the printed version of your book unless it is the style of your particular book or that of the series to which your book belongs.
 \begin_inset Newline newline
 \end_inset
 
@@ -191,7 +194,6 @@ www.SpringerLink.com
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 indent
@@ -252,8 +254,7 @@ name "sec:Section-Heading-2"
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
 \end_layout
 
 \begin_layout Standard
@@ -261,7 +262,8 @@ Use the standard
 \family sans
 equation
 \family default
- environment to typeset your equations, e.g.
+ environment to typeset your equations,
+ e.g.
  
 \begin_inset Formula 
 \begin{equation}
@@ -270,7 +272,8 @@ a\times b=c\;,
 
 \end_inset
 
- however, for multiline equations we recommend to use the 
+ however,
+ for multiline equations we recommend to use the 
 \family sans
 eqnarray
 \family default
@@ -318,8 +321,7 @@ name "subsec:Subsection-Heading"
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
  Furtheron please use the \SpecialChar LyX
 
 \begin_inset space \space{}
@@ -327,6 +329,8 @@ Instead of simply listing headings of different levels we recommend to let
 
 automatism for all your cross-references
 \begin_inset Index idx
+range none
+pageformat default
 status collapsed
 
 \begin_layout Plain Layout
@@ -337,6 +341,8 @@ cross-references
 
  and citations
 \begin_inset Index idx
+range none
+pageformat default
 status collapsed
 
 \begin_layout Plain Layout
@@ -352,8 +358,8 @@ citations
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading-2"
+nolink "false"
 
 \end_inset
 
@@ -361,7 +367,8 @@ reference "sec:Section-Heading-2"
 \end_layout
 
 \begin_layout Quotation
-Please do not use quotation marks when quoting texts! Simply use the 
+Please do not use quotation marks when quoting texts!
+ Simply use the 
 \family sans
 quotation
 \family default
@@ -374,35 +381,34 @@ Subsubsection Heading
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
  Furtheron please use the \SpecialChar LyX
 
 \begin_inset space \space{}
 \end_inset
 
-automatism for all your cross-references and citations as has already been
- described in Sect.
+automatism for all your cross-references and citations as has already been described in Sect.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "subsec:Subsection-Heading"
+nolink "false"
 
 \end_inset
 
-, see also Fig.
+,
+ see also Fig.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:If-the-width"
+nolink "false"
 
 \end_inset
 
@@ -411,8 +417,10 @@ reference "fig:If-the-width"
 status collapsed
 
 \begin_layout Plain Layout
-If you copy text passages, figures, or tables from other works, you must
- obtain 
+If you copy text passages,
+ figures,
+ or tables from other works,
+ you must obtain 
 \shape italic
 permission
 \shape default
@@ -420,6 +428,8 @@ permission
  Please enclose the signed permission with the manucript.
  The sources
 \begin_inset Index idx
+range none
+pageformat default
 status collapsed
 
 \begin_layout Plain Layout
@@ -428,8 +438,8 @@ permission to print
 
 \end_inset
 
- must be acknowledged either in the captions, as footnotes or in a separate
- section of the book.
+ must be acknowledged either in the captions,
+ as footnotes or in a separate section of the book.
 \end_layout
 
 \end_inset
@@ -445,6 +455,7 @@ Please note that the first line of text that follows a heading is not indented,
 \begin_layout Standard
 \begin_inset Float figure
 placement b
+alignment document
 wide false
 sideways false
 status open
@@ -454,7 +465,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 sidecaption
@@ -506,9 +516,8 @@ cm use the
 sidecapion
 \family default
  command to flush the caption on the left side of the page.
- If the figure is positioned at the top of the page, align the sidecaption
- with the top of the figure – to achieve this you simply need to use the
- optional argument 
+ If the figure is positioned at the top of the page,
+ align the sidecaption with the top of the figure – to achieve this you simply need to use the optional argument 
 \family typewriter
 [t]
 \family default
@@ -534,8 +543,7 @@ Paragraph Heading
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
 \end_layout
 
 \begin_layout Standard
@@ -547,25 +555,21 @@ enumerate
 \end_layout
 
 \begin_layout Enumerate
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \begin_layout Enumerate
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \end_deeper
 \begin_layout Enumerate
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \begin_layout Subparagraph
@@ -573,35 +577,34 @@ Subparagraph Heading
 \end_layout
 
 \begin_layout Standard
-In order to avoid simply listing headings of different levels we recommend
- to let every heading be followed by at least a short passage of text.
+In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
  Use the \SpecialChar LyX
 
 \begin_inset space \space{}
 \end_inset
 
-automatism for all your cross-references and citations as has already been
- described in Sect.
+automatism for all your cross-references and citations as has already been described in Sect.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading-2"
+nolink "false"
 
 \end_inset
 
-, see also Fig.
+,
+ see also Fig.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "fig:2"
+nolink "false"
 
 \end_inset
 
@@ -622,8 +625,8 @@ itemize
 \end_layout
 
 \begin_layout Itemize
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development, cf.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development,
+ cf.
 \begin_inset space ~
 \end_inset
 
@@ -634,8 +637,8 @@ Table
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "tab:1"
+nolink "false"
 
 \end_inset
 
@@ -644,24 +647,22 @@ reference "tab:1"
 
 \begin_deeper
 \begin_layout Itemize
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \begin_layout Itemize
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \end_deeper
 \begin_layout Itemize
-Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomi
-c development.
+Livelihood and survival mobility are oftentimes coutcomes of uneven socioeconomic development.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 placement t
+alignment document
 wide false
 sideways false
 status open
@@ -671,7 +672,6 @@ status open
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 sidecaption[t]
@@ -737,16 +737,15 @@ Use the \SpecialChar LyX
 \begin_inset space \space{}
 \end_inset
 
-automatism for all your cross-references and citations as has already been
- described in Sect.
+automatism for all your cross-references and citations as has already been described in Sect.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading-2"
+nolink "false"
 
 \end_inset
 
@@ -764,21 +763,22 @@ Use the \SpecialChar LyX
 \end_inset
 
 automatism for all your cross-refer\SpecialChar softhyphen
-ences and citations as has already been
- described in Sect.
+ences and citations as has already been described in Sect.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading-2"
+nolink "false"
 
 \end_inset
 
 
 \begin_inset Index idx
+range none
+pageformat default
 status collapsed
 
 \begin_layout Plain Layout
@@ -793,6 +793,8 @@ paragraph
 
 \begin_layout Standard
 \begin_inset Float table
+placement document
+alignment document
 wide false
 sideways false
 status open
@@ -871,7 +873,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 svhline
 \end_layout
@@ -909,7 +910,8 @@ mRNA
 \begin_inset Text
 
 \begin_layout Plain Layout
-Translation repression, mRNA cleavage
+Translation repression,
+ mRNA cleavage
 \end_layout
 
 \end_inset
@@ -1095,8 +1097,7 @@ name "sec:Section-Heading-3"
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
 \end_layout
 
 \begin_layout Standard
@@ -1105,8 +1106,7 @@ Please note that the first line of text that follows a heading is not indented,
 \end_layout
 
 \begin_layout Standard
-If you want to list definitions or the like we recommend to use the Springer-enh
-anced 
+If you want to list definitions or the like we recommend to use the Springer-enhanced 
 \family sans
 description
 \family default
@@ -1127,7 +1127,9 @@ Type
 \begin_inset space ~
 \end_inset
 
-1 That addresses central themes pertainng to migration, health, and disease.
+1 That addresses central themes pertainng to migration,
+ health,
+ and disease.
  In Sect.
 \begin_inset space ~
 \end_inset
@@ -1135,19 +1137,18 @@ Type
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading"
+nolink "false"
 
 \end_inset
 
-, Wilson discusses the role of human migration in infectious disease distributio
-ns and patterns.
+,
+ Wilson discusses the role of human migration in infectious disease distributions and patterns.
 \begin_inset Note Note
 status open
 
 \begin_layout Plain Layout
-The optional longest description label ca be used to set the space that
- is necessary to contain all description labels.
+The optional longest description label ca be used to set the space that is necessary to contain all description labels.
 \end_layout
 
 \end_inset
@@ -1160,7 +1161,9 @@ Type
 \begin_inset space ~
 \end_inset
 
-2 That addresses central themes pertainng to migration, health, and disease.
+2 That addresses central themes pertainng to migration,
+ health,
+ and disease.
  In Sect.
 \begin_inset space ~
 \end_inset
@@ -1168,13 +1171,13 @@ Type
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading-3"
+nolink "false"
 
 \end_inset
 
-, Wilson discusses the role of human migration in infectious disease distributio
-ns and patterns.
+,
+ Wilson discusses the role of human migration in infectious disease distributions and patterns.
 \end_layout
 
 \begin_layout Subsection
@@ -1182,23 +1185,21 @@ Subsection Heading
 \end_layout
 
 \begin_layout Standard
-In order to avoid simply listing headings of different levels we recommend
- to let every heading be followed by at least a short passage of text.
+In order to avoid simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
  Use the \SpecialChar LyX
 
 \begin_inset space \space{}
 \end_inset
 
-automatism for all your cross-references and citations citations as has
- already been described in Sect.
+automatism for all your cross-references and citations citations as has already been described in Sect.
 \begin_inset space ~
 \end_inset
 
 
 \begin_inset CommandInset ref
 LatexCommand ref
-nolink "false"
 reference "sec:Section-Heading-2"
+nolink "false"
 
 \end_inset
 
@@ -1211,8 +1212,7 @@ Please note that the first line of text that follows a heading is not indented,
 \end_layout
 
 \begin_layout Svgraybox
-If you want to emphasize complete paragraphs of texts we recommend to use
- the newly defined Springer class option 
+If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option 
 \emph on
 graybox
 \emph default
@@ -1236,8 +1236,7 @@ percent screened box 'behind' your text.
 \end_layout
 
 \begin_layout Svgraybox
-If you want to emphasize complete paragraphs of texts we recommend to use
- the newly defined Springer class option 
+If you want to emphasize complete paragraphs of texts we recommend to use the newly defined Springer class option 
 \emph on
 graybox
 \emph default
@@ -1258,8 +1257,7 @@ Subsubsection Heading
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
 \end_layout
 
 \begin_layout Standard
@@ -1304,8 +1302,7 @@ Paragraph Heading
 \end_layout
 
 \begin_layout Standard
-Instead of simply listing headings of different levels we recommend to let
- every heading be followed by at least a short passage of text.
+Instead of simply listing headings of different levels we recommend to let every heading be followed by at least a short passage of text.
 \end_layout
 
 \begin_layout Standard
@@ -1333,8 +1330,7 @@ smartqed layout
 \end_layout
 
 \begin_layout Acknowledgment
-If you want to include acknowledgments of assistance and the like at the
- end of an individual chapter please use the 
+If you want to include acknowledgments of assistance and the like at the end of an individual chapter please use the 
 \family sans
 acknowledgement
 \family default
@@ -1351,7 +1347,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 addcontentsline{toc}{section}{
 \end_layout
@@ -1363,7 +1358,6 @@ Appendix
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1379,9 +1373,10 @@ adds an entry to the table of contents
 
 \end_inset
 
- When placed at the end of a chapter or contribution (as opposed to at the
- end of the book), the numbering of tables, figures, and equations in the
- appendix section continues on from that in the main text.
+ When placed at the end of a chapter or contribution (as opposed to at the end of the book),
+ the numbering of tables,
+ figures,
+ and equations in the appendix section continues on from that in the main text.
  Hence please 
 \shape italic
 do not
@@ -1399,7 +1394,8 @@ Appendix
 \begin_inset Quotes erd
 \end_inset
 
-, or 
+,
+ or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1407,7 +1403,8 @@ Appendix 1
 \begin_inset Quotes erd
 \end_inset
 
-, or 
+,
+ or 
 \begin_inset Quotes eld
 \end_inset
 
@@ -1415,7 +1412,8 @@ Appendix 2
 \begin_inset Quotes erd
 \end_inset
 
-, etc.
+,
+ etc.
  if there is more than one.
 \end_layout
 
@@ -1450,7 +1448,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 addcontentsline{toc}{section}{
 \end_layout
@@ -1462,7 +1459,6 @@ Problems
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -1489,9 +1485,10 @@ status open
 
 \series bold
 Note:
+
 \series default
- Don't forget to label each problem; the label is needed for the solutions'
- environment
+ Don't forget to label each problem;
+ the label is needed for the solutions' environment
 \end_layout
 
 \end_inset
@@ -1500,7 +1497,8 @@ Note:
 \end_layout
 
 \begin_layout Standard
-There are two styles for problems: 
+There are two styles for problems:
+ 
 \family sans
 Prob
 \family default
@@ -1589,6 +1587,8 @@ Title/Name (optional)
 
 The problem
 \begin_inset Index idx
+range none
+pageformat default
 status collapsed
 
 \begin_layout Plain Layout

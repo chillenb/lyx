@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -90,10 +90,19 @@ theorems-std
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -119,6 +128,7 @@ theorems-std
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -138,7 +148,6 @@ This is an OBSOLETE template \SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 https://wiki.lyx.org/Examples/AGUTeX
 \end_layout
 
@@ -212,7 +221,6 @@ The Journal is specified as document class option in the document settings!
 status open
 
 \begin_layout Plain Layout
-
 http://texnology.com/agudocs.pdf
 \end_layout
 
@@ -304,7 +312,6 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-
 1
 \end_layout
 
@@ -322,7 +329,6 @@ Department of Hydrology and Water Resources,
 status open
 
 \begin_layout Plain Layout
-
 2
 \end_layout
 
@@ -340,7 +346,6 @@ Department of Geography,
 status open
 
 \begin_layout Plain Layout
-
 3
 \end_layout
 
@@ -358,7 +363,6 @@ Department of Space Sciences,
 status open
 
 \begin_layout Plain Layout
-
 4
 \end_layout
 
@@ -380,7 +384,6 @@ Division of Hydrologic Sciences,
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{article}
@@ -412,7 +415,7 @@ Introduction
 \begin_layout Standard
 \begin_inset Formula 
 \begin{eqnarray}
-A & = & \prod_{i=1}^{\infty}B\nonumber \\
+A & = & \prod^{\infty}_{i=1}B\nonumber \\
  & = & C
 \end{eqnarray}
 
@@ -495,7 +498,6 @@ Term
 status collapsed
 
 \begin_layout Plain Layout
-
 &
 \end_layout
 
@@ -520,7 +522,6 @@ Second Term
 status collapsed
 
 \begin_layout Plain Layout
-
 &
 \end_layout
 
@@ -683,7 +684,6 @@ IEEE Trans.
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 end{article}

@@ -1,5 +1,5 @@
-#LyX 2.4 created this file. For more info see https://www.lyx.org/
-\lyxformat 620
+#LyX 2.5 created this file. For more info see https://www.lyx.org/
+\lyxformat 643
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -56,10 +56,19 @@ subequations
 \use_indices false
 \paperorientation portrait
 \suppress_date false
-\justification true
-\use_refstyle 0
+\justification default
+\crossref_package prettyref
+\use_formatted_ref 0
 \use_minted 0
 \use_lineno 0
+\backgroundcolor none
+\fontcolor none
+\notefontcolor lightgray
+\boxbgcolor red
+\table_border_color default
+\table_odd_row_color default
+\table_even_row_color default
+\table_alt_row_colors_start 1
 \index Index
 \shortcut idx
 \color #008000
@@ -85,6 +94,7 @@ subequations
 \html_be_strict false
 \docbook_table_output 0
 \docbook_mathml_prefix 1
+\docbook_mathml_version 0
 \end_header
 
 \begin_body
@@ -105,7 +115,6 @@ This is a template \SpecialChar LyX
 status open
 
 \begin_layout Plain Layout
-
 https://journals.aps.org/revtex
 \end_layout
 
@@ -132,7 +141,6 @@ The style of the document is specified by options in the document preamble!
 status open
 
 \begin_layout Plain Layout
-
 https://journals.aps.org/files/revtex/summary4-1.pdf
 \end_layout
 
@@ -208,7 +216,6 @@ Ann Author
 status open
 
 \begin_layout Plain Layout
-
 Also at 
 \end_layout
 
@@ -325,7 +332,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 today
 \end_layout
@@ -380,7 +386,6 @@ Look at
 status open
 
 \begin_layout Plain Layout
-
 https://journals.aps.org/PACS
 \end_layout
 
@@ -813,7 +818,6 @@ Automatically placing footnotes into the bibliography requires using
 status collapsed
 
 \begin_layout Plain Layout
-
 BibTeX
 \end_layout
 
@@ -857,7 +861,7 @@ Physical Review
  
 \begin_inset Formula 
 \begin{eqnarray}
-\left\{ \openone234567890abc123\alpha\beta\gamma\delta1234556\alpha\beta\frac{1\sum_{b}^{a}}{A^{2}}\right\} .\label{eq:one}
+\left\{ \openone234567890abc123\alpha\beta\gamma\delta1234556\alpha\beta\frac{1\sum^{a}_{b}}{A^{2}}\right\} .\label{eq:one}
 \end{eqnarray}
 
 \end_inset
@@ -883,7 +887,7 @@ Not all numbered equations will fit within a narrow column this way.
  
 \begin_inset Formula 
 \begin{equation}
-\left\{ ab12345678abc123456abcdef\alpha\beta\gamma\delta1234556\alpha\beta\frac{1\sum_{b}^{a}}{A^{2}}\right\} .
+\left\{ ab12345678abc123456abcdef\alpha\beta\gamma\delta1234556\alpha\beta\frac{1\sum^{a}_{b}}{A^{2}}\right\} .
 \end{equation}
 
 \end_inset
@@ -900,7 +904,7 @@ Only number the last line of a continued equation:
  
 \begin_inset Formula 
 \begin{eqnarray}
-{\cal M}= &  & ig_{Z}^{2}(4E_{1}E_{2})^{1/2}(l_{i}^{2})^{-1}\delta_{\sigma_{1},-\sigma_{2}}(g_{\sigma_{2}}^{e})^{2}\chi_{-\sigma_{2}}(p_{2})\nonumber \\
+{\cal M}= &  & ig^{2}_{Z}(4E_{1}E_{2})^{1/2}(l^{2}_{i})^{-1}\delta_{\sigma_{1},-\sigma_{2}}(g^{e}_{\sigma_{2}})^{2}\chi_{-\sigma_{2}}(p_{2})\nonumber \\
  &  & \times[\epsilon_{j}l_{i}\epsilon_{i}]_{\sigma_{1}}\chi_{\sigma_{1}}(p_{1})
 \end{eqnarray}
 
@@ -992,7 +996,7 @@ name "eq:whole"
 
 \begin_inset Formula 
 \begin{eqnarray}
-{\cal M}= &  & ig_{Z}^{2}(4E_{1}E_{2})^{1/2}(l_{i}^{2})^{-1}(g_{\sigma_{2}}^{e})^{2}\chi_{-\sigma_{2}}(p_{2})\nonumber \\
+{\cal M}= &  & ig^{2}_{Z}(4E_{1}E_{2})^{1/2}(l^{2}_{i})^{-1}(g^{e}_{\sigma_{2}})^{2}\chi_{-\sigma_{2}}(p_{2})\nonumber \\
  &  & \times[\epsilon_{i}]_{\sigma_{1}}\chi_{\sigma_{1}}(p_{1}).\label{subeq:2}
 \end{eqnarray}
 
@@ -1001,7 +1005,7 @@ name "eq:whole"
 
 \begin_inset Formula 
 \begin{equation}
-\left\{ abc123456abcdef\alpha\beta\gamma\delta1234556\alpha\beta\frac{1\sum_{b}^{a}}{A^{2}}\right\} ,\label{subeq:1}
+\left\{ abc123456abcdef\alpha\beta\gamma\delta1234556\alpha\beta\frac{1\sum^{a}_{b}}{A^{2}}\right\} ,\label{subeq:1}
 \end{equation}
 
 \end_inset
@@ -1029,7 +1033,7 @@ The equation that follows is set in a wide format,
 \begin_layout Wide Text
 \begin_inset Formula 
 \begin{equation}
-{\cal R}^{(\text{d})}=g_{\sigma_{2}}^{e}\left(\frac{[\Gamma^{Z}(3,21)]_{\sigma_{1}}}{Q_{12}^{2}-M_{W}^{2}}+\frac{[\Gamma^{Z}(13,2)]_{\sigma_{1}}}{Q_{13}^{2}-M_{W}^{2}}\right)+x_{W}Q_{e}\left(\frac{[\Gamma^{\gamma}(3,21)]_{\sigma_{1}}}{Q_{12}^{2}-M_{W}^{2}}+\frac{[\Gamma^{\gamma}(13,2)]_{\sigma_{1}}}{Q_{13}^{2}-M_{W}^{2}}\right)\;.\label{eq:wideeq}
+{\cal R}^{(\text{d})}=g^{e}_{\sigma_{2}}\left(\frac{[\Gamma^{Z}(3,21)]_{\sigma_{1}}}{Q^{2}_{12}-M^{2}_{W}}+\frac{[\Gamma^{Z}(13,2)]_{\sigma_{1}}}{Q^{2}_{13}-M^{2}_{W}}\right)+x_{W}Q_{e}\left(\frac{[\Gamma^{\gamma}(3,21)]_{\sigma_{1}}}{Q^{2}_{12}-M^{2}_{W}}+\frac{[\Gamma^{\gamma}(13,2)]_{\sigma_{1}}}{Q^{2}_{13}-M^{2}_{W}}\right)\;.\label{eq:wideeq}
 \end{equation}
 
 \end_inset
@@ -1223,7 +1227,6 @@ Decimal
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 colrule
@@ -1518,7 +1521,7 @@ This is a wide table that spans the full page width in a two-column layout.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $D_{4h}^{1}$
+\begin_inset Formula $D^{1}_{4h}$
 \end_inset
 
 
@@ -1539,7 +1542,7 @@ This is a wide table that spans the full page width in a two-column layout.
 \begin_inset Text
 
 \begin_layout Plain Layout
-\begin_inset Formula $D_{4h}^{5}$
+\begin_inset Formula $D^{5}_{4h}$
 \end_inset
 
 
@@ -1715,7 +1718,6 @@ Cl
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotemark[1]
@@ -2040,7 +2042,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark[1]
 \end_layout
@@ -2126,7 +2127,6 @@ Pb
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotemark[2]
@@ -2214,7 +2214,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark[3]
 \end_layout
@@ -2300,7 +2299,6 @@ Sr
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotemark[4]
@@ -2388,7 +2386,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark[2]
 \end_layout
@@ -2475,7 +2472,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotemark[5]
 \end_layout
@@ -2528,7 +2524,6 @@ status collapsed
 
 \begin_layout Plain Layout
 
-
 \backslash
 footnotetext[1]{
 \end_layout
@@ -2555,7 +2550,6 @@ misc-full
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2566,7 +2560,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotetext[2]{
@@ -2579,7 +2572,6 @@ Here's the second.
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2590,7 +2582,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotetext[3]{
@@ -2603,7 +2594,6 @@ Here's the third.
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2614,7 +2604,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotetext[4]{
@@ -2627,7 +2616,6 @@ Here's the fourth.
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2638,7 +2626,6 @@ status collapsed
 status collapsed
 
 \begin_layout Plain Layout
-
 
 \backslash
 footnotetext[5]{
@@ -2651,7 +2638,6 @@ And etc.
 status collapsed
 
 \begin_layout Plain Layout
-
 }
 \end_layout
 
@@ -2827,7 +2813,6 @@ literal "false"
 status open
 
 \begin_layout Plain Layout
-
 http://link.aps.org/multimedia/PRSTPER/v4/i1/e010101
 \end_layout
 
