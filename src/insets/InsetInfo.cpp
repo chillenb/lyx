@@ -816,6 +816,11 @@ void InsetInfo::updateBuffer(ParIterator const & it, UpdateType utype, bool cons
 	BufferParams const & bp = buffer().params();
 	params_.lang = it.paragraph().getFontSettings(bp, it.pos()).language();
 	InsetCollapsible::updateBuffer(it, utype, deleted);
+
+	// We might need to build information in case the info inset is hidden
+	// in a collapsible and metrics not triggered (#13280)
+	if (!initialized_)
+		const_cast<InsetInfo *>(this)->build();
 }
 
 
@@ -849,12 +854,14 @@ void InsetInfo::build()
 		if (func.action() == LFUN_UNKNOWN_ACTION) {
 			gui = _("Unknown action %1$s");
 			error(from_ascii("Unknown action %1$s"), params_.lang);
+			initialized_ = true;
 			break;
 		}
 		KeyMap::Bindings bindings = theTopLevelKeymap().findBindings(func);
 		if (bindings.empty()) {
 			gui = _("undefined");
 			info(from_ascii("undefined"), params_.lang);
+			initialized_ = true;
 			break;
 		}
 		docstring sequence;
@@ -956,6 +963,7 @@ void InsetInfo::build()
 		}
 		setText(ods.str(), is_translated ? guilang : nullptr);
 		params_.force_ltr = !is_translated || (!guilang->rightToLeft() && !params_.lang->rightToLeft());
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::LYXRC_INFO: {
@@ -965,6 +973,7 @@ void InsetInfo::build()
 		if (params_.name.empty()) {
 			gui = _("undefined");
 			info(from_ascii("undefined"), params_.lang);
+			initialized_ = true;
 			break;
 		}
 		// FIXME this uses the serialization mechanism to get the info
@@ -974,6 +983,7 @@ void InsetInfo::build()
 		if (result.size() < 2) {
 			gui = _("undefined");
 			info(from_ascii("undefined"), params_.lang);
+			initialized_ = true;
 			break;
 		}
 		string::size_type loc = result.rfind("\n", result.size() - 2);
@@ -982,6 +992,7 @@ void InsetInfo::build()
 			  || result.substr(loc + 1, params_.name.size()) != params_.name) {
 			gui = _("undefined");
 			info(from_ascii("undefined"), params_.lang);
+			initialized_ = true;
 			break;
 		}
 		// remove leading comments and \\name and space
@@ -994,6 +1005,7 @@ void InsetInfo::build()
 		if (result.empty())
 			result = "not set";
 		setText(from_utf8(result), params_.lang);
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::PACKAGE_INFO:
@@ -1039,6 +1051,7 @@ void InsetInfo::build()
 			gui = _("no");
 			info(from_ascii("no"), params_.lang);
 		}
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::MENU_INFO: {
@@ -1110,6 +1123,7 @@ void InsetInfo::build()
 		locstring = subst(locstring, from_ascii("</amp;>"), from_ascii(" & "));
 		setText(locstring, guilang);
 		params_.force_ltr = !guilang->rightToLeft() && !params_.lang->rightToLeft();
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::ICON_INFO: {
@@ -1169,6 +1183,7 @@ void InsetInfo::build()
 			setText(from_utf8(os::latex_path(buffer().filePath())), params_.lang);
 		else if (params_.name == "class")
 			setText(from_utf8(buffer().params().documentClass().name()), params_.lang);
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::VCS_INFO: {
@@ -1199,6 +1214,7 @@ void InsetInfo::build()
 			error(from_ascii("%1$s[[vcs data]] unknown"), params_.lang);
 		} else
 			setText(from_utf8(binfo), params_.lang);
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::LYX_INFO:
@@ -1227,6 +1243,7 @@ void InsetInfo::build()
 		else
 			date = QDate::currentDate();
 		setText(getDate(date_format, date, params_.lang), params_.lang);
+		initialized_ = true;
 		break;
 	}
 	case InsetInfoParams::TIME_INFO:
@@ -1245,6 +1262,7 @@ void InsetInfo::build()
 		else
 			time = QTime::currentTime();
 		setText(getTime(time_format, time, params_.lang), params_.lang);
+		initialized_ = true;
 		break;
 	}
 	}
