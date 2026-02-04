@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-01-18 17:17+0100\n"
-"PO-Revision-Date: 2026-01-18 16:37+0000\n"
+"POT-Creation-Date: 2026-02-04 11:37+0100\n"
+"PO-Revision-Date: 2026-02-04 10:44+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -16110,6 +16110,18 @@ msgstr "Japonský referát (Štandardná trieda, nie-UTF8, zastaraná)"
 msgid "Japanese Report (Standard Class)"
 msgstr "Japonský referát (Štandardná trieda)"
 
+#: lib/layouts/utarticle.layout:3
+msgid "Japanese Article (Standard Class, vertical writing)"
+msgstr "Japonský článok (Štandardná trieda, vertikálne písanie)"
+
+#: lib/layouts/utbook.layout:3
+msgid "Japanese Book (Standard Class, vertical writing)"
+msgstr "Japonská kniha (Štandardná trieda, vertikálne písanie)"
+
+#: lib/layouts/utreport.layout:3
+msgid "Japanese Report (Standard Class, vertical writing)"
+msgstr "Japonský referát (Štandardná trieda, vertikálne písanie)"
+
 #: lib/layouts/jsarticle.layout:3
 msgid "Japanese Article (JS Bundle)"
 msgstr "Japonský článok (JS zväzok)"
@@ -20203,12 +20215,14 @@ msgstr ""
 "pri 'Tabuľka 2.1'."
 
 #: lib/layouts/tarticle.layout:3
-msgid "Japanese Article (Standard Class, vertical Writing)"
-msgstr "Japonský článok (Štandardná trieda, vertikálne písanie)"
+msgid "Japanese Article (Standard Class, vertical writing, non-UTF8, obsolete)"
+msgstr ""
+"Japonský článok (Štandardná trieda,vertikálne písanie, nie-UTF8, zastaraná)"
 
 #: lib/layouts/tbook.layout:3
-msgid "Japanese Book (Standard Class, vertical Writing)"
-msgstr "Japonská kniha (Štandardná trieda, vertikálne písanie)"
+msgid "Japanese Book (Standard Class, vertical writing, non-UTF8, obsolete)"
+msgstr ""
+"Japonská kniha (Štandardná trieda, vertikálne písanie, nie-UTF8, zastaraná)"
 
 #: lib/layouts/tcolorbox.module:2 lib/examples/Articles:0
 msgid "Fancy Colored Boxes"
@@ -21994,8 +22008,9 @@ msgid "MissingFigure"
 msgstr "Chybiaci obrázok"
 
 #: lib/layouts/treport.layout:3
-msgid "Japanese Report (Standard Class, vertical Writing)"
-msgstr "Japonský referát (Štandardná trieda, vertikálne písanie)"
+msgid "Japanese Report (Standard Class, vertical writing, non-UTF8, obsolete)"
+msgstr ""
+"Japonský referát (Štandardná trieda, vertikálne písanie, nie-UTF8, zastaraná)"
 
 #: lib/layouts/tufte-book.layout:3 lib/examples/Articles:0
 msgid "Tufte Book"
