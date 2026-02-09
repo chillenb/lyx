@@ -33,7 +33,7 @@ to create stats only for allowed langauages in LINGUAS file
 """
 from __future__ import print_function
 
-# Modify this when you change branch (e.g. stats for stable branch).
+# Modify this when you change branch (e.g. stats for stable branch: "2.5.x").
 # Note that an empty lyx_branch variable will "do the right thing" for master.
 lyx_branch=""
 # these po-files will be skipped:
