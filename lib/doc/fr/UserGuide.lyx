@@ -173,7 +173,7 @@ logicalmkup
 \papersides 2
 \paperpagestyle default
 \tablestyle default
-\tracking_changes false
+\tracking_changes true
 \output_changes false
 \change_bars false
 \postpone_fragile_content true
@@ -183,6 +183,7 @@ logicalmkup
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
+\author -563046850 "Jean-Marc LASGOUTTES"
 \end_header
 
 \begin_body
@@ -20690,7 +20691,11 @@ hyphenation{unbroken}
 status collapsed
 
 \begin_layout Plain Layout
-mescesuress.sty
+mescesures
+\change_deleted -563046850 1770728309
+s
+\change_unchanged
+.sty
 \end_layout
 
 \end_inset
