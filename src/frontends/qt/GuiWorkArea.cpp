@@ -192,6 +192,10 @@ void GuiWorkArea::init()
 	        this, &GuiWorkArea::flagPreedit);
 	connect(d->im_, &GuiInputMethod::queryProcessed,
 	        this, &GuiWorkArea::receiveIMQueryResponse);
+	connect(guiApp, &GuiApplication::keyCommandStateSet,
+			this, &GuiWorkArea::onKeyCommandStateSet);
+	connect(this, &GuiWorkArea::keyCommandStateSet,
+			d->im_, &GuiInputMethod::toggleInputMethodAcceptance);
 
 	// This connection is closed at the same time as this is destroyed.
 	d->synthetic_mouse_event_.timeout.timeout.connect([this](){

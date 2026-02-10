@@ -103,8 +103,6 @@ GuiInputMethod::GuiInputMethod(GuiWorkArea *parent)
 	LYXERR(Debug::DEBUG, "GuiInputMethod: Address of buffer_view_: " <<
 	       &d->work_area_->bufferView());
 
-	connect(guiApp, &GuiApplication::acceptsInputMethod,
-	        this, &GuiInputMethod::toggleInputMethodAcceptance);
 	connect(this, &GuiInputMethod::inputMethodStateChanged,
 	        d->sys_im_, &QInputMethod::update);
 	connect(d->sys_im_, &QInputMethod::localeChanged,

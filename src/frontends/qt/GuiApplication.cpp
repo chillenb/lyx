@@ -2470,7 +2470,7 @@ void GuiApplication::processKeySym(KeySymbol const & keysym, KeyModifier state)
 	// The preedit mode should avoid intervening multi-stroke commands
 	command_phase_ = func.action() == LFUN_COMMAND_PREFIX;
 
-	Q_EMIT acceptsInputMethod();
+	Q_EMIT keyCommandStateSet();
 
 	// already here we know if it any point in going further
 	// why not return already here if action == -1 and

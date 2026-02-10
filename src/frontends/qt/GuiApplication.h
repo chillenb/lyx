@@ -238,8 +238,8 @@ public:
 	bool isInCommandMode() { return command_phase_; }
 
 Q_SIGNALS:
-	///
-	void acceptsInputMethod();
+	/// signals the state of key command phase is set
+	void keyCommandStateSet();
 private Q_SLOTS:
 	///
 	void execBatchCommands();

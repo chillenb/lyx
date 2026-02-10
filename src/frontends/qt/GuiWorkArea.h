@@ -103,6 +103,8 @@ public Q_SLOTS:
 	void stopBlinkingCaret();
 	///
 	void startBlinkingCaret();
+	///
+	void onKeyCommandStateSet() { Q_EMIT keyCommandStateSet(); }
 
 Q_SIGNALS:
 	///
@@ -115,6 +117,8 @@ Q_SIGNALS:
 	void compressKeySym(KeySymbol const & sym, KeyModifier mod, bool isAutoRepeat);
 	///
 	void preeditChanged(QInputMethodEvent * ev);
+	///
+	void keyCommandStateSet();
 
 private Q_SLOTS:
 	/// Scroll the BufferView.
