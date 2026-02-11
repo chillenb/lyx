@@ -49,6 +49,7 @@ SpecialChar menuseparator
 	PlaintextOutput	"->"
 	XHTMLOutput	&#x21D2;
 	Requires	lyxarrow
+	CanBreakAfter   1
 	IsChar		1
 	Font
 	  Color		special
