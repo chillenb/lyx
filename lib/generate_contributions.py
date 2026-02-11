@@ -53,18 +53,21 @@ class contributor:
           result = [ f'@b{self.name}\n' ]
           if len(self.contact) != 0:
                if self.contact.find("https") != -1:
-                    result.append(f'@i{self.contact}\n')
+                    result.append(f'@i{self.contact}' + '\n')
                else:
-                    result.append(f'@iE-mail: {self.contact}\n')
-          result.append(f'   {self.credit.replace("\n", "\n   ")}\n')
+                    result.append(f'@iE-mail: {self.contact}' + '\n')
+          # Python fstrings parser did not like backslashes until 3.12
+          tidy_credit = self.credit.replace("\n", "\n   ")
+          result.append(f'   {tidy_credit}' + '\n')
           return "".join(result)
 
 
      def as_php_credits(self, wrapper):
+          credit = "\n".join(wrapper.wrap(xml_escape(self.credit)))
           return f'''
 $output=$output.credits_contrib("{xml_escape(self.name)}",
         "{xml_escape(self.contact)}",
-        "{"\n".join(wrapper.wrap(xml_escape(self.credit)))}");
+        "{credit}");
 '''
 
 
@@ -106,13 +109,26 @@ def collate_incomplete(contributors):
           if len(contributor.licence) == 0:
               missing_licence.append(contributor.name)
 
-    return f'''WARNING!
-The following contributors do not have a CREDITS entry:
-    {",\n    ".join(missing_credit)}
+    missing_credit = ",\n    ".join(missing_credit)
+    missing_license = ",\n    ".join(missing_licence)
 
-These ones have no explicit licence statement:
-    {",\n    ".join(missing_licence)}
-'''
+    if not missing_credit and not missing_license:
+        return ""
+
+    info = "WARNING!"
+
+    if missing_credit:
+        info += f"""
+The following contributors do not have a CREDITS entry:
+    {missing_credit}
+"""
+
+    if missing_license:
+        info += f"""
+The following contributors have no explicit licence statement:
+    {missing_license}
+"""
+    return info
 
 
 def as_txt_credits(contributors):
