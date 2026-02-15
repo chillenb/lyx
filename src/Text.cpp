@@ -5055,8 +5055,11 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 				// For the first autoarg, if there is
 				// a selection and InsertCotext is false,
 				// clear selection (#12364)
-				if (!inautoarg && !arg.insertcotext)
+				if (!inautoarg && !arg.insertcotext && cur.selection()) {
+					DocIterator dit = cur.selectionBegin();
 					cur.clearSelection();
+					cur.setCursor(dit);
+				}
 				// If we had already inserted an arg automatically,
 				// leave this now in order to insert the next one.
 				if (inautoarg) {
