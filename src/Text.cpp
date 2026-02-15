@@ -5052,6 +5052,11 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 		for (auto const & la_pair : tclass[layout].args()) {
 			Layout::latexarg const & arg = la_pair.second;
 			if (arg.autoinsert) {
+				// For the first autoarg, if there is
+				// a selection and InsertCotext is false,
+				// clear selection (#12364)
+				if (!inautoarg && !arg.insertcotext)
+					cur.clearSelection();
 				// If we had already inserted an arg automatically,
 				// leave this now in order to insert the next one.
 				if (inautoarg) {
