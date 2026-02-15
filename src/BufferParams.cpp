@@ -2113,7 +2113,7 @@ bool isAtOther(docstring const passage, docstring & context)
 			cc = true;
 			continue;
 		}
-		context += from_ascii(token);
+		context += from_utf8(token);
 	}
 	return cc;
 }
