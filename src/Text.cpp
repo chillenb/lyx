@@ -903,16 +903,22 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 	};
 
 	// insert the string, don't insert doublespace
+	// or empty lines if not allowEmpty()
 	bool space_inserted = true;
+	bool newline_inserted = false;
 	for (auto const & ch : str) {
 		Paragraph & par = pars_[pit];
 		if (ch == '\n') {
-			if (inset().allowMultiPar() && (!par.empty() || par.allowEmpty())) {
+			// We add a paragraph break if we do not end up
+			// with empty paragraphs or paragraphs consisting only of blanks
+			if (inset().allowMultiPar()
+			    && ((!par.empty() && !newline_inserted) || par.allowEmpty())) {
 				lyx::breakParagraph(*this, pit, pos,
 					par.layout().isEnvironment());
 				++pit;
 				pos = 0;
 				space_inserted = true;
+				newline_inserted = true;
 			} else {
 				continue;
 			}
@@ -939,6 +945,7 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 					       : Change(Change::UNCHANGED)))) {
 			++pos;
 			space_inserted = false;
+			newline_inserted = false;
 		} else if (!isPrintable(ch)) {
 			// Ignore (other) unprintables
 			continue;
@@ -947,6 +954,8 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 			par.insertChar(pos, ch, font, bparams.track_changes);
 			++pos;
 			space_inserted = (ch == ' ');
+			if (!space_inserted)
+				newline_inserted = false;
 		}
 	}
 	setCursor(cur, pit, pos);
