@@ -866,12 +866,14 @@ Style OverlayArea
     LabelString    "Overlay Area Width"
     Tooltip        "The width of the overlay area"
     Mandatory      1
+    AutoInsert     1
   EndArgument
   Argument 2
     MenuString     "Overlay Area Height"
     LabelString    "Height"
     Tooltip        "The height of the overlay area"
     Mandatory      1
+    AutoInsert     1
   EndArgument
 End
 
@@ -901,6 +903,7 @@ Style Uncover
     LeftDelim      <
     RightDelim     >
     PassThru       1
+    AutoInsert     1
   EndArgument
 End
 
@@ -930,6 +933,7 @@ Style Only
     LeftDelim      <
     RightDelim     >
     PassThru       1
+    AutoInsert     1
   EndArgument
 End
 
