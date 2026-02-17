@@ -242,6 +242,10 @@ bool InsetArgument::getStatus(Cursor & cur, FuncRequest const & cmd,
 {
 	switch (cmd.action()) {
 
+	case LFUN_INSET_SPLIT:
+		flag.setEnabled(false);
+		return true;
+
 	case LFUN_INSET_MODIFY: {
 		string const first_arg = cmd.getArg(0);
 		if (first_arg == "changetype") {
