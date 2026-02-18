@@ -404,7 +404,7 @@ Language austrian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -471,7 +471,7 @@ Language naustrian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -592,7 +592,7 @@ Language belarusian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1068,7 +1068,7 @@ Language georgian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1125,7 +1125,7 @@ Language german
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1193,7 +1193,7 @@ Language ngerman
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1263,7 +1263,7 @@ Language german-ch
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1332,7 +1332,7 @@ Language german-ch-old
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1799,7 +1799,7 @@ Language mongolian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -1931,7 +1931,7 @@ Language oldrussian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -2101,7 +2101,7 @@ Language russian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -2227,7 +2227,7 @@ Language slovak
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
@@ -2463,7 +2463,7 @@ Language ukrainian
 	End
 	SpecialChar breakabledash
 	    Type	specialchar
-	    MenuString	"Hyphen with Additional Hyphenation Point|y"
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
 	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
 	    LyXOutput	0x2010
 	    LatexOutput	\"=
