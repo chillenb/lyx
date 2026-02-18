@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-02-04 11:37+0100\n"
-"PO-Revision-Date: 2026-02-04 10:44+0000\n"
+"POT-Creation-Date: 2026-02-18 18:21+0100\n"
+"PO-Revision-Date: 2026-02-18 18:40+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -22249,11 +22249,11 @@ msgstr "Anglicky (Austrália)"
 msgid "German (Austria, old spelling)"
 msgstr "Nemecky (Rakúsko, starý pravopis)"
 
-#: lib/languages:400 lib/languages:458 lib/languages:570 lib/languages:1046
-#: lib/languages:1102 lib/languages:1160 lib/languages:1221 lib/languages:1281
-#: lib/languages:1739 lib/languages:1871 lib/languages:2041 lib/languages:2167
-#: lib/languages:2391
-msgid "Hyphen with Additional Hyphenation Point|y"
+#: lib/languages:407 lib/languages:487 lib/languages:621 lib/languages:1043
+#: lib/languages:1138 lib/languages:1208 lib/languages:1289 lib/languages:1372
+#: lib/languages:1454 lib/languages:1934 lib/languages:2079 lib/languages:2263
+#: lib/languages:2389 lib/languages:2639
+msgid "Hyphen with Additional Hyphenation Point|w"
 msgstr "Spojovník s ďalším bodom rozdeľovania|ď"
 
 #: lib/languages:401 lib/languages:459 lib/languages:571 lib/languages:1047
@@ -22263,6 +22263,16 @@ msgstr "Spojovník s ďalším bodom rozdeľovania|ď"
 msgid "Breakable hyphen that keeps predefined hyphenation possibilities"
 msgstr ""
 "Rozdeliteľný spojovník, ktorý zachováva preddefinované možnosti delenia slov"
+
+#: lib/languages:436 lib/languages:516 lib/languages:1237 lib/languages:1318
+#: lib/languages:1401 lib/languages:1483
+msgid "Gender Mark|G"
+msgstr "Značka pohlavia|p"
+
+#: lib/languages:437 lib/languages:517 lib/languages:1238 lib/languages:1319
+#: lib/languages:1402 lib/languages:1484
+msgid "Gender mark that keeps hyphenation points"
+msgstr "Značka pohlavia, ktorá zachováva body delenia slov"
 
 #: lib/languages:431
 msgid "German (Austria)"
@@ -22287,6 +22297,14 @@ msgstr "Baskitsky"
 #: lib/languages:545
 msgid "Belarusian"
 msgstr "Bielorusky"
+
+#: lib/languages:647 lib/languages:1164 lib/languages:1960
+msgid "Thin Space for Initials|I"
+msgstr "Tenká medzera pre iniciály"
+
+#: lib/languages:648 lib/languages:1165 lib/languages:1961
+msgid "Thin space that keeps predefined hyphenation possibilities"
+msgstr "Tenká medzera, ktorá zachováva preddefinované možnosti delenia slov"
 
 #: lib/languages:598 src/frontends/qt/GuiSymbols.cpp:67
 msgid "Bengali"
@@ -22347,6 +22365,14 @@ msgstr "Chorvátsky"
 #: lib/languages:806
 msgid "Czech"
 msgstr "Česky"
+
+#: lib/languages:884 lib/languages:2148 lib/languages:2415
+msgid "Split Hyphen|H"
+msgstr "Rozdeliť spojovník|R"
+
+#: lib/languages:885 lib/languages:2149 lib/languages:2416
+msgid "Hyphen that is repeated at next line when hyphenated"
+msgstr "Spojovník, ktorý sa pri delení slov zopakuje na ďalšom riadku"
 
 #: lib/languages:821
 msgid "Danish"
