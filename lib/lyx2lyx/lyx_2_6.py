@@ -716,6 +716,9 @@ def revert_hyphen_shorthands(document):
             line = document.body[l]
             tokenend = len("\\lang ")
             lang = line[tokenend:].strip()
+        if lang == "finnish":
+            cmd = put_cmd_in_ert("\"-")
+            document.body[i + 1 : i + 1] = cmd
         if lang in langs_breakabledash:
             cmd = put_cmd_in_ert("\"=")
             document.body[i + 1 : i + 1] = cmd

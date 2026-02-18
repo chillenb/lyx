@@ -985,8 +985,22 @@ Language finnish
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM yyyy|d.M.yyyy"
 	LangCode         fi_FI
+	SpecialChar breakabledash
+	    Type	specialchar
+	    MenuString	"Hyphen with Additional Hyphenation Point|w"
+	    Tooltip     "Breakable hyphen that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x2010
+	    LatexOutput	\"-
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	SpecialChar nobreakdash
-	    LaTeXOutput  \"-
+	    LaTeXOutput  \"=
 	    NeedProtect	 0
 	End
 	SpecialChar allowbreak
