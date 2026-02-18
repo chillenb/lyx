@@ -7,6 +7,12 @@ changes happened in particular if possible. A good example would be
 
 -----------------------
 
+2026-02-18 Jürgen Spitzmüller <spitz@lyx.org>
+	* Format incremented to 649:
+	  New (language-specific) SpecialChars gendermark,
+	  thinspacebreakpoint and splithyphen that are supported in some languages
+	  via babelshorthands ("x, ", and "=).
+
 2025-11-25 Jürgen Spitzmüller <spitz@lyx.org>
 	* Format incremented to 648:
 	  New (language-specific) SpecialChars extrasofthyphen

@@ -743,6 +743,90 @@ def revert_hyphen_shorthands(document):
         i += 1
         continue
 
+
+def revert_shorthands2(document):
+    "Revert SpecialChar gendermark, thinspacebreakpoint and splithyphen to ERT"
+
+    mainlang = get_value(document.header, "\\language")
+    if mainlang == "":
+        document.warning("Malformed LyX document! No \\language header found!")
+        return
+
+    langs_gendermark = [
+        "austrian",
+        "naustrian",
+        "german",
+        "ngerman",
+        "german-ch",
+        "german-ch-old"
+    ]
+    
+    langs_thinspacebreakpoint = [
+        "belarusian",
+        "georgian",
+        "mongolian"
+    ]
+
+    langs_splithyphen = [
+        "czech",
+        "polish",
+        "slovak"
+    ]
+
+    i = 0
+    while True:
+        i = find_substring(document.body, "\\SpecialChar gendermark", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\SpecialChar gendermark", "")
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        if lang in langs_gendermark:
+            cmd = put_cmd_in_ert("\"x")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
+    i = 0
+    while True:
+        i = find_substring(document.body, "\\SpecialChar thinspacebreakpoint", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\SpecialChar thinspacebreakpoint", "")
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        if lang in langs_thinspacebreakpoint:
+            cmd = put_cmd_in_ert("\",")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
+    i = 0
+    while True:
+        i = find_substring(document.body, "\\SpecialChar splithyphen", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\SpecialChar splithyphen", "")
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        if lang in langs_splithyphen:
+            cmd = put_cmd_in_ert("\"=")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
 ##
 # Conversion hub
 #
@@ -753,11 +837,13 @@ convert = [
     [645, []],
     [646, []],
     [647, [convert_textbreaks]],
-    [648, []]
+    [648, []],
+    [649, []]
 ]
 
 
 revert = [
+    [648, [revert_shorthands2]],
     [647, [revert_hyphen_shorthands]],
     [646, [revert_textbreaks]],
     [645, [revert_contextual_breaks]],

@@ -431,6 +431,19 @@ Language austrian
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar gendermark
+	    Type	specialchar
+	    MenuString	"Gender Mark|G"
+	    Tooltip     "Gender mark that keeps hyphenation points"
+	    LyXOutput	*
+	    LatexOutput	\"x
+	    IsLetter	1
+	    PlaintextOutput *
+	    XHTMLOutput	*
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	AltLanguage austrian-legacy
 	AltLangIfNot babel-german3
 End
@@ -497,6 +510,19 @@ Language naustrian
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar gendermark
+	    Type	specialchar
+	    MenuString	"Gender Mark|G"
+	    Tooltip     "Gender mark that keeps hyphenation points"
+	    LyXOutput	*
+	    LatexOutput	\"x
+	    IsLetter	1
+	    PlaintextOutput *
+	    XHTMLOutput	*
+	    Font
+	      Color		textlabel1
+	    EndFont
 	End
 	AltLanguage naustrian-legacy
 	AltLangIfNot babel-german3
@@ -615,6 +641,19 @@ Language belarusian
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar thinspacebreakpoint
+	    Type	formatting
+	    MenuString	"Thin Space for Initials|I"
+	    Tooltip     "Thin space that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x02cc
+	    LatexOutput	"\","
+	    IsLetter	1
+	    XHTMLOutput	&#x2009;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
 	End
 End
 
@@ -840,6 +879,20 @@ Language czech
 	FontEncoding	 T1|OT1
 	DateFormats      "d. MMMM yyyy|d. MMM. yyyy|d.M.yyyy"
 	LangCode         cs_CZ
+	SpecialChar splithyphen
+	    Type	specialchar
+	    MenuString	"Split Hyphen|H"
+	    Tooltip     "Hyphen that is repeated at next line when hyphenated"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 End
 
 Language danish
@@ -1106,6 +1159,19 @@ Language georgian
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar thinspacebreakpoint
+	    Type	formatting
+	    MenuString	"Thin Space for Initials|I"
+	    Tooltip     "Thin space that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x02cc
+	    LatexOutput	"\","
+	    IsLetter	1
+	    XHTMLOutput	&#x2009;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 End
 
 # german does not use a country code (due to the variety)
@@ -1165,6 +1231,19 @@ Language german
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar gendermark
+	    Type	specialchar
+	    MenuString	"Gender Mark|G"
+	    Tooltip     "Gender mark that keeps hyphenation points"
+	    LyXOutput	*
+	    LatexOutput	\"x
+	    IsLetter	1
+	    PlaintextOutput *
+	    XHTMLOutput	*
+	    Font
+	      Color		textlabel1
+	    EndFont
 	End
 	AltLanguage german-legacy
 	AltLangIfNot babel-german3
@@ -1233,6 +1312,19 @@ Language ngerman
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar gendermark
+	    Type	specialchar
+	    MenuString	"Gender Mark|G"
+	    Tooltip     "Gender mark that keeps hyphenation points"
+	    LyXOutput	*
+	    LatexOutput	\"x
+	    IsLetter	1
+	    PlaintextOutput *
+	    XHTMLOutput	*
+	    Font
+	      Color		textlabel1
+	    EndFont
 	End
 	AltLanguage ngerman-legacy
 	AltLangIfNot babel-german3
@@ -1304,6 +1396,19 @@ Language german-ch
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar gendermark
+	    Type	specialchar
+	    MenuString	"Gender Mark|G"
+	    Tooltip     "Gender mark that keeps hyphenation points"
+	    LyXOutput	*
+	    LatexOutput	\"x
+	    IsLetter	1
+	    PlaintextOutput *
+	    XHTMLOutput	*
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
 	AltLanguage german-ch-legacy
 	AltLangIfNot babel-german3
 End
@@ -1372,6 +1477,19 @@ Language german-ch-old
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar gendermark
+	    Type	specialchar
+	    MenuString	"Gender Mark|G"
+	    Tooltip     "Gender mark that keeps hyphenation points"
+	    LyXOutput	*
+	    LatexOutput	\"x
+	    IsLetter	1
+	    PlaintextOutput *
+	    XHTMLOutput	*
+	    Font
+	      Color		textlabel1
+	    EndFont
 	End
 	AltLanguage german-ch-old-legacy
 	AltLangIfNot babel-german3
@@ -1837,6 +1955,19 @@ Language mongolian
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar thinspacebreakpoint
+	    Type	formatting
+	    MenuString	"Thin Space for Initials|I"
+	    Tooltip     "Thin space that keeps predefined hyphenation possibilities"
+	    LyXOutput	0x02cc
+	    LatexOutput	"\","
+	    IsLetter	1
+	    XHTMLOutput	&#x2009;
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
 End
 
 Language newzealand
@@ -2011,6 +2142,20 @@ Language polish
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar splithyphen
+	    Type	specialchar
+	    MenuString	"Split Hyphen|H"
+	    Tooltip     "Hyphen that is repeated at next line when hyphenated"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
 	End
 End
 
@@ -2264,6 +2409,20 @@ Language slovak
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar splithyphen
+	    Type	specialchar
+	    MenuString	"Split Hyphen|H"
+	    Tooltip     "Hyphen that is repeated at next line when hyphenated"
+	    LyXOutput	0x2010
+	    LatexOutput	\"=
+	    IsLetter	1
+	    PlaintextOutput -
+	    XHTMLOutput	-
+	    CanBreakAfter   1
+	    Font
+	      Color		textlabel1
+	    EndFont
 	End
 End
 
