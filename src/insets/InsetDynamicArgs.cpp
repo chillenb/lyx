@@ -52,11 +52,10 @@ void InsetDynamicArgs::draw(PainterInfo & pi, int x, int y) const
 	}
 
 	// Draw button
-	BufferView const & bv = *pi.base.bv;
 	FontInfo labelfont = getLabelfont();
 	labelfont.setColor(labelColor());
 	labelfont.realize(pi.base.font);
-	pi.pain.buttonText(x, y, buttonLabel(bv), labelfont,
+	pi.pain.buttonText(x, y, buttonLabel(*pi.base.bv), labelfont,
 			   Color_commandbg, Color_commandframe,
 			   Inset::textOffset(pi.base.bv));
 }
