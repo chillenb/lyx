@@ -246,6 +246,28 @@ bool InsetArgument::getStatus(Cursor & cur, FuncRequest const & cmd,
 		flag.setEnabled(false);
 		return true;
 
+	// We do not allow dissolving in SimpleCommand insets
+	case LFUN_CHAR_DELETE_FORWARD:
+		if (cur.pit() != cur.lastpit() || cur.pos() != cur.lastpos())
+			return InsetCollapsible::getStatus(cur, cmd, flag);
+	// fall through
+	case LFUN_CHAR_DELETE_BACKWARD:
+		if (cmd.action() == LFUN_CHAR_DELETE_BACKWARD
+		     && (cur.pit() != 0 || cur.pos() != 0))
+			return InsetCollapsible::getStatus(cur, cmd, flag);
+	// fall through
+	case LFUN_INSET_DISSOLVE: {
+		if (!cur.paragraph().layout().latexargs().empty())
+			return InsetCollapsible::getStatus(cur, cmd, flag);
+		Inset * in = cur.innerInsetOfType(FLEX_CODE);
+		if (in && in->getLayout().latextype() == InsetLaTeXType::SIMPLE_COMMAND) {
+			// do not allow in SimpleCommand insets
+			flag.setEnabled(false);
+			return true;
+		}
+		return InsetCollapsible::getStatus(cur, cmd, flag);
+	}
+
 	case LFUN_INSET_MODIFY: {
 		string const first_arg = cmd.getArg(0);
 		if (first_arg == "changetype") {

@@ -49,6 +49,8 @@ InsetLaTeXType translateLaTeXType(std::string const & str)
 {
 	if (compare_ascii_no_case(str, "command") == 0)
 		return InsetLaTeXType::COMMAND;
+	if (compare_ascii_no_case(str, "simplecommand") == 0)
+		return InsetLaTeXType::SIMPLE_COMMAND;
 	if (compare_ascii_no_case(str, "environment") == 0)
 		return InsetLaTeXType::ENVIRONMENT;
 	if (compare_ascii_no_case(str, "none") == 0)

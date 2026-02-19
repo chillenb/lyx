@@ -21635,7 +21635,12 @@ status collapsed
 \begin_layout Plain Layout
 Command,
  Environment,
- None
+ 
+\change_inserted -712698321 1771319126
+SimpleCommand,
+ 
+\change_unchanged
+None
 \end_layout
 
 \end_inset
@@ -21707,6 +21712,62 @@ LatexName
 \end_inset
 
 
+\change_inserted -712698321 1771319160
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1771319925
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771319164
+SimpleCommand
+\end_layout
+
+\end_inset
+
+ is a command without a mandatory argument,
+ as in 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771319160
+
+\backslash
+
+\emph on
+LatexName
+\end_layout
+
+\end_inset
+
+.
+ The command might get arguments defined via 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771319266
+Argument
+\end_layout
+
+\end_inset
+
+.
+ If so,
+ they can be inserted into the collapsible inset,
+ which only allows argument insets.
+ If no arguments are defined,
+ the inset is a simple button and cannot be uncollapsed.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -21759,6 +21820,22 @@ LatexName[LatexParam]{\SpecialChar ldots
 \end_layout
 
 \begin_layout Standard
+
+\change_inserted -712698321 1771319490
+or:
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1771319490
+
+\backslash
+LatexName[LatexParam]
+\change_unchanged
+
+\end_layout
+
+\begin_layout Standard
 or:
 \end_layout
 
@@ -21774,6 +21851,25 @@ end{LatexName}
 \begin_layout Standard
 depending upon the \SpecialChar LaTeX
  type.
+
+\change_inserted -712698321 1771320078
+ Instead of 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771319567
+[LatexParam]
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ there might be one or multiple optional or mandatory arguments as well (or nothing at all).
+\change_unchanged
+
 \end_layout
 
 \end_deeper
@@ -24604,6 +24700,8 @@ status collapsed
 
 \change_inserted -712698321 1763989442
 IgnoreLanguage
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -24618,6 +24716,8 @@ status collapsed
 
 \emph on
 0
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -24634,6 +24734,8 @@ status collapsed
 
 \change_inserted -712698321 1763989432
 1
+\change_unchanged
+
 \end_layout
 
 \end_inset

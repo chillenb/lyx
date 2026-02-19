@@ -45,6 +45,7 @@ enum class InsetLyXType : int {
 enum class InsetLaTeXType : int {
 	NOLATEXTYPE,
 	COMMAND,
+	SIMPLE_COMMAND,
 	ENVIRONMENT,
 	ILT_ERROR
 };

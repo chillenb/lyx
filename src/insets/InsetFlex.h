@@ -13,7 +13,7 @@
 #ifndef INSETFLEX_H
 #define INSETFLEX_H
 
-#include "InsetCollapsible.h"
+#include "InsetDynamicArgs.h"
 
 
 namespace lyx {
@@ -21,7 +21,7 @@ namespace lyx {
 /** The Flex inset, e.g., CharStyle, Custom inset or XML short element
 
 */
-class InsetFlex : public InsetCollapsible {
+class InsetFlex : public InsetDynamicArgs {
 public:
 	///
 	InsetFlex(Buffer *, std::string const & layoutName);

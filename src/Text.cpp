@@ -3580,8 +3580,12 @@ bool doInsertInset(Cursor & cur, Text * text,
 	if (!inset)
 		return false;
 
-	if (InsetCollapsible * ci = inset->asInsetCollapsible())
+	if (InsetCollapsible * ci = inset->asInsetCollapsible()) {
 		ci->setButtonLabel();
+		// do not paste into SimpleCommand collapsibles
+		pastesel &= inset->getLayout().latextype()
+				!= InsetLaTeXType::SIMPLE_COMMAND;
+	}
 
 	cur.recordUndoSelection();
 	if (cmd.action() == LFUN_ARGUMENT_INSERT) {

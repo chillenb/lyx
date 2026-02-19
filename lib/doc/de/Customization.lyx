@@ -20520,6 +20520,50 @@ LatexName
 status collapsed
 
 \begin_layout Plain Layout
+SimpleCommand
+\end_layout
+
+\end_inset
+
+ ist ein Befehl ohne obligatorisches Argument,
+ bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\backslash
+
+\emph on
+LatexName
+\end_layout
+
+\end_inset
+
+.
+ Man kann für den Befehl Argumente mittels 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Argument
+\end_layout
+
+\end_inset
+
+ definieren.
+ Falls dies der Fall ist,
+ können diese in die aufklappbare Einfügung eingefügt werden (andere Inhalte sind dort nicht zugelassen).
+ Falls keine Argumente definiert wurden,
+ kann die Einfügung gar nicht aufgeklappt werden.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Environment
 \end_layout
 
@@ -20567,6 +20611,16 @@ LatexName[LatexParam]{\SpecialChar ldots
 
 \begin_layout Standard
 oder:
+\end_layout
+
+\begin_layout LyX-Code
+
+\backslash
+LatexName[LatexParam]
+\end_layout
+
+\begin_layout Standard
+oder:
  
 \end_layout
 
@@ -20583,6 +20637,17 @@ end{LatexName}
 sein wird,
  je nach \SpecialChar LaTeX
 -Typ.
+ Anstelle von 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+[LatexParam]
+\end_layout
+
+\end_inset
+
+ können auch ein oder mehrere optionale oder obligatorische Argumente (oder nichts) stehen.
 \end_layout
 
 \end_deeper

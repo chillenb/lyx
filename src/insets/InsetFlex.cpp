@@ -35,12 +35,12 @@ namespace lyx {
 
 
 InsetFlex::InsetFlex(Buffer * buf, string const & layoutName)
-	: InsetCollapsible(buf), name_(layoutName)
+	: InsetDynamicArgs(buf), name_(layoutName)
 {}
 
 
 InsetFlex::InsetFlex(InsetFlex const & in)
-	: InsetCollapsible(in), name_(in.name_)
+	: InsetDynamicArgs(in), name_(in.name_)
 {}
 
 
@@ -60,6 +60,8 @@ InsetLayout const & InsetFlex::getLayout() const
 
 InsetDecoration InsetFlex::decoration() const
 {
+	if (isButtonOnly())
+		return InsetDecoration::DEFAULT;
 	InsetDecoration const dec = getLayout().decoration();
 	return dec == InsetDecoration::DEFAULT ? InsetDecoration::CONGLOMERATE : dec;
 }
@@ -86,13 +88,16 @@ void InsetFlex::write(ostream & os) const
 		}
 	}
 	os << name << "\n";
-	InsetCollapsible::write(os);
+	InsetDynamicArgs::write(os);
 }
 
 
 bool InsetFlex::getStatus(Cursor & cur, FuncRequest const & cmd,
 		FuncStatus & flag) const
 {
+	if (getLayout().latextype() == InsetLaTeXType::SIMPLE_COMMAND)
+		return InsetDynamicArgs::getStatus(cur, cmd, flag);
+
 	switch (cmd.action()) {
 	case LFUN_INSET_SPLIT:
 	case LFUN_INSET_DISSOLVE:
@@ -104,13 +109,13 @@ bool InsetFlex::getStatus(Cursor & cur, FuncRequest const & cmd,
 			    || (il.name() == InsetLayout::undefined().name()
 				    && type == InsetLyXType::CHARSTYLE)) {
 				FuncRequest temp_cmd(cmd.action());
-				return InsetCollapsible::getStatus(cur, temp_cmd, flag);
+				return InsetDynamicArgs::getStatus(cur, temp_cmd, flag);
 			} else
 				return false;
 		}
 		// fall-through
 	default:
-		return InsetCollapsible::getStatus(cur, cmd, flag);
+		return InsetDynamicArgs::getStatus(cur, cmd, flag);
 	}
 }
 
@@ -129,14 +134,14 @@ void InsetFlex::doDispatch(Cursor & cur, FuncRequest & cmd)
 			    || (il.name() == InsetLayout::undefined().name()
 				    && type == InsetLyXType::CHARSTYLE)) {
 				FuncRequest temp_cmd(cmd.action());
-				InsetCollapsible::doDispatch(cur, temp_cmd);
+				InsetDynamicArgs::doDispatch(cur, temp_cmd);
 			} else
 				cur.undispatched();
 			break;
 		}
 		// fall-through
 	default:
-		InsetCollapsible::doDispatch(cur, cmd);
+		InsetDynamicArgs::doDispatch(cur, cmd);
 		break;
 	}
 }
@@ -172,7 +177,7 @@ void InsetFlex::updateBuffer(ParIterator const & it, UpdateType utype, bool cons
 	}
 	setLabel(custom_label);
 
-	InsetCollapsible::updateBuffer(it, utype, deleted);
+	InsetDynamicArgs::updateBuffer(it, utype, deleted);
 	if (have_counter)
 		cnts.restoreLastCounter();
 }

@@ -162,6 +162,8 @@ public:
 	///
 	void addToToc(DocIterator const & dit, bool output_active,
 	              UpdateType utype, TocBackend & backend) const override;
+	///
+	Dimension dimensionCollapsed(BufferView const & bv) const;
 
 protected:
 	///
@@ -177,8 +179,6 @@ protected:
 	std::unique_ptr<support::TempFile> tempfile_;
 
 private:
-	///
-	Dimension dimensionCollapsed(BufferView const & bv) const;
 	///
 	docstring labelstring_;
 

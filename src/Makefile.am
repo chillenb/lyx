@@ -562,6 +562,8 @@ liblyxinsets_a_SOURCES = \
 	insets/InsetCommandParams.h \
 	insets/InsetCounter.cpp \
 	insets/InsetCounter.h \
+	insets/InsetDynamicArgs.cpp \
+	insets/InsetDynamicArgs.h \
 	insets/InsetERT.cpp \
 	insets/InsetERT.h \
 	insets/InsetExternal.cpp \
