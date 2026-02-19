@@ -5730,7 +5730,6 @@ void Text::dispatch(Cursor & cur, FuncRequest & cmd)
 		doInsertInset(cur, this, cmd, false, false);
 		cur.posForward();
 		cur.forceBufferUpdate();
-		cur.screenUpdateFlags(Update::Force);
 		break;
 	}
 
