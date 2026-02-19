@@ -8,7 +8,7 @@
 #  Class and style files and templates are found at:
 #       http://wiki.lyx.org/Examples/Springer
 #
-Format 114
+Format 115
 
 Input svcommon.inc
 

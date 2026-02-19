@@ -6,7 +6,7 @@
 #
 # Author : John Perry <john.perry@usm.edu>
 
-Format 114
+Format 115
 
 Provides amscls 1
 Provides amsmath 1

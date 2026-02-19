@@ -3,7 +3,7 @@
 #  \DeclareCategory{Articles}
 # Author : Koji Yokota <yok...@lyx.org>
 
-Format 114
+Format 115
 Input article.layout
 Input stdcounters.inc
 Input theorems-order.inc

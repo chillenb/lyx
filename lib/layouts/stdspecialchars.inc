@@ -2,7 +2,7 @@
 # Standard special characters of LyX
 #
 
-Format 114
+Format 115
 
 Provides stdspecialchars 1
 

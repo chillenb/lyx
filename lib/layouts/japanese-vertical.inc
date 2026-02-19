@@ -9,7 +9,7 @@
 # - utbook
 # - utreport
 
-Format 114
+Format 115
 InsetLayout Flex:Rensuji
 	LyxType				custom
 	LatexType			Command

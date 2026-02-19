@@ -3,7 +3,7 @@
 #  \DeclareCategory{Articles}
 # Author: Jürgen Spitzmüller <spitz@lyx.org>
 
-Format 114
+Format 115
 
 # Includes
 Input scrartcl.layout

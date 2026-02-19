@@ -6,7 +6,7 @@
 
 # Author: Julien Rioux <jrioux@lyx.org>
 
-Format 114
+Format 115
 
 # The framework (biblatex|bibtex)
 CiteFramework bibtex

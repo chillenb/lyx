@@ -7,7 +7,7 @@
 #DescriptionEnd
 #Authors: Uwe Stöhr and Jürgen Spitzmüller
 
-Format 114
+Format 115
 
 InsetLayout Flex:Multiple_Columns
   LyXType			custom

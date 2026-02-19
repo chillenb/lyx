@@ -9,7 +9,7 @@
 # Reviewed following tickets #10722 & #10723
 #          by Jean-Pierre Chrétien <jpc@lyx.org>
 
-Format 114
+Format 115
 
 Provides amscls 1
 Provides amsmath 1
