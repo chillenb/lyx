@@ -51,20 +51,14 @@ void InsetDynamicArgs::draw(PainterInfo & pi, int x, int y) const
 		return;
 	}
 
-	BufferView const & bv = *pi.base.bv;
-	Changer dummy = pi.base.font.change(getFont(), true);
 	// Draw button
-	Dimension dimc = dimensionCollapsed(bv);
-
+	BufferView const & bv = *pi.base.bv;
 	FontInfo labelfont = getLabelfont();
 	labelfont.setColor(labelColor());
 	labelfont.realize(pi.base.font);
 	pi.pain.buttonText(x, y, buttonLabel(bv), labelfont,
-			   Color_commandbg, Color_commandframe, Inset::textOffset(pi.base.bv));
-	// Draw the change tracking cue on the label, unless RowPainter already
-	// takes care of it.
-	if (canPaintChange(bv))
-		pi.change.paintCue(pi, x, y, x + dimc.width(), labelfont);
+			   Color_commandbg, Color_commandframe,
+			   Inset::textOffset(pi.base.bv));
 }
 
 
@@ -153,6 +147,15 @@ bool InsetDynamicArgs::getStatus(Cursor & cur, FuncRequest const & cmd,
 	}
 
 	return InsetCollapsible::getStatus(cur, cmd, flag);
+}
+
+
+bool InsetDynamicArgs::canPaintChange(BufferView const & bv) const
+{
+	if (isButtonOnly())
+		return false;
+
+	return InsetCollapsible::canPaintChange(bv);
 }
 
 

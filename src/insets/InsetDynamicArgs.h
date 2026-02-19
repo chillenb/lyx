@@ -33,6 +33,8 @@ public:
 	///
 	Geometry geometry(BufferView const & bv) const;
 	///
+	bool canPaintChange(BufferView const & bv) const override;
+	///
 	bool editable() const override;
 	/// can we go further down on mouse click?
 	bool descendable(BufferView const & bv) const override;
