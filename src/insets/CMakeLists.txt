@@ -21,7 +21,7 @@ endif()
 foreach(_base InsetExternal ExternalSupport Inset InsetArgument
 	InsetBibitem InsetBibtex InsetBox InsetBranch
 	InsetCaption InsetCaptionable InsetCitation InsetCollapsible InsetCommand InsetCommandParams InsetCounter
-	InsetERT InsetFlex InsetFloat InsetFloatList InsetFoot InsetFootlike
+	InsetDynamicArgs InsetERT InsetFlex InsetFloat InsetFloatList InsetFoot InsetFootlike 
 	InsetGraphics InsetHyperlink InsetInfo InsetIPA InsetIPAMacro InsetInclude InsetIndex InsetIndexMacro
 	InsetLabel InsetLayout InsetLine InsetListings InsetListingsParams InsetMarginal
 	InsetNewline InsetNomencl InsetNote
