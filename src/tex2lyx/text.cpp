@@ -3615,7 +3615,6 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			Token const end = p.next_next_token();
 			if (next.cat() == catEnd) {
 				// {}
-				Token const prev = p.prev_token();
 				p.get_token();
 				if (p.next_token().character() == '`')
 					; // ignore it in {}``
@@ -3658,8 +3657,6 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			} else {
 				context.check_layout(os);
 				// special handling of font attribute changes
-				Token const prev = p.prev_token();
-				TeXFont const oldFont = context.font;
 				if (next.character() == '[' ||
 				    next.character() == ']' ||
 				    next.character() == '*') {
