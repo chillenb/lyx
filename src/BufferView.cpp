@@ -3709,18 +3709,18 @@ void BufferView::buildCaretGeometry(bool complet, Point shift)
 	// The completion triangle |> (if needed)
 	if (complet) {
 		int const m = p.y + dim.height() / 2;
-		int const d = dim.height() / 8;
+		int const dd = dim.height() / 8;
 		// offset for slanted carret
-		int const sx = iround((dim.asc - (dim.height() / 2 - d)) * slope);
+		int const sx = iround((dim.asc - (dim.height() / 2 - dd)) * slope);
 		// starting position x
 		int const xx = p.x + dir * dim.wid + sx;
 		cg.shapes.push_back(
-			{{xx,                     m - d},
-			 {xx + dir * d,           m},
-			 {xx,                     m + d},
-			 {xx,                     m + d - dim.wid},
-			 {xx + dir * d - dim.wid, m},
-			 {xx,                     m - d + dim.wid}}
+			{{xx,                     m - dd},
+			 {xx + dir * dd,           m},
+			 {xx,                     m + dd},
+			 {xx,                     m + dd - dim.wid},
+			 {xx + dir * dd - dim.wid, m},
+			 {xx,                     m - dd + dim.wid}}
 			);
 	}
 
