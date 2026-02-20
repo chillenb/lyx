@@ -260,11 +260,11 @@ void GuiInfo::paramsToDialog(Inset const * inset)
 	updateArguments(i);
 	int argindex = -1;
 	int customindex = 0;
-	for (int i = 0 ; i < infoLW->count() ; ++i) {
-		if (infoLW->item(i)->data(Qt::UserRole).toString() == name)
-			argindex = i;
-		else if (infoLW->item(i)->data(Qt::UserRole).toString() == "custom")
-			customindex = i;
+	for (int j = 0 ; j < infoLW->count() ; ++j) {
+		if (infoLW->item(j)->data(Qt::UserRole).toString() == name)
+			argindex = j;
+		else if (infoLW->item(j)->data(Qt::UserRole).toString() == "custom")
+			customindex = j;
 	}
 	if (argindex != -1)
 		infoLW->setCurrentRow(argindex);

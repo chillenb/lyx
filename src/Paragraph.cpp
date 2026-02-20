@@ -1212,7 +1212,7 @@ void Paragraph::Private::latexInset(BufferParams const & bparams,
 		os << "\\end{" << close_env << "}";
 
 	if (close_brace > 0) {
-		for (unsigned i = 0; i < close_brace; ++i)
+		for (unsigned j = 0; j < close_brace; ++j)
 			os << '}';
 		if (disp_env)
 			os << safebreakln;
