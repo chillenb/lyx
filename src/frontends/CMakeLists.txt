@@ -13,7 +13,6 @@ add_subdirectory(qt)
 file(GLOB frontends_sources ${TOP_SRC_DIR}/src/frontends/${LYX_CPP_FILES})
 file(GLOB frontends_headers ${TOP_SRC_DIR}/src/frontends/${LYX_HPP_FILES})
 
-handle_source_option("CXX" ${TOP_SRC_DIR}/src/frontends/WorkAreaManager.cpp -Wno-shadow)
 if(NOT LYX_MERGE_FILES)
 	add_library(frontends ${library_type} ${frontends_sources} ${frontends_headers})
 else()

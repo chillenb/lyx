@@ -18,18 +18,6 @@ if (${LYX_DEBUG_SANITIZE} MATCHES "ADDRESS")
     handle_source_option("CXX" ${TOP_SRC_DIR}/src/insets/${_base}.cpp -Wno-null-dereference)
   endforeach()
 endif()
-foreach(_base InsetExternal ExternalSupport Inset InsetArgument
-	InsetBibitem InsetBibtex InsetBox InsetBranch
-	InsetCaption InsetCaptionable InsetCitation InsetCollapsible InsetCommand InsetCommandParams InsetCounter
-	InsetDynamicArgs InsetERT InsetFlex InsetFloat InsetFloatList InsetFoot InsetFootlike 
-	InsetGraphics InsetHyperlink InsetInfo InsetIPA InsetIPAMacro InsetInclude InsetIndex InsetIndexMacro
-	InsetLabel InsetLayout InsetLine InsetListings InsetListingsParams InsetMarginal
-	InsetNewline InsetNomencl InsetNote
-	InsetPhantom InsetPreview InsetQuotes InsetRef InsetScript InsetSeparator InsetSpace InsetSpecialChar
-	InsetTOC InsetTabular InsetText InsetTextbreak InsetVSpace InsetWrap
-	RenderButton RenderGraphic RenderPreview)
-  handle_source_option("CXX" ${TOP_SRC_DIR}/src/insets/${_base}.cpp -Wno-shadow)
-endforeach()
 foreach(_base InsetArgument InsetBibitem InsetBox InsetBranch InsetCaption InsetCitation
 	InsetCommand InsetCommandParams InsetFloat InsetFoot InsetIPA InsetIPAMacro InsetInclude InsetIndex
 	InsetIndexMacro InsetLabel InsetListings InsetNomencl InsetNote InsetPhantom InsetScript

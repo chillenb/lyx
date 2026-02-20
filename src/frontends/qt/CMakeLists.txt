@@ -15,18 +15,6 @@ if (${LYX_DEBUG_SANITIZE} MATCHES "ADDRESS")
     handle_source_option("CXX" ${TOP_SRC_DIR}/src/frontends/qt/${_base}.cpp -Wno-maybe-uninitialized)
   endforeach()
 endif()
-foreach(_base Dialog DialogFactory FindAndReplace FloatPlacement
-	GuiApplication GuiBibitem GuiBibtex GuiBox GuiBranch GuiBranches
-	GuiChanges GuiCharacter GuiCitation GuiClipboard GuiCommandBuffer GuiCompleter GuiCounter
-	GuiDelimiter GuiDocument GuiERT GuiExternal
-	GuiFontLoader GuiGraphics GuiHSpace GuiHyperlink GuiInclude GuiIndex GuiIndices GuiInfo GuiInputMethod
-	GuiLabel GuiLine GuiListings GuiLog GuiLyXFiles GuiNote GuiPainter GuiParagraph GuiPhantom GuiPrefs GuiPrintNomencl GuiPrintindex
-	GuiRef GuiSelectionManager GuiSendto GuiSpellchecker GuiSymbols
-	GuiTabular GuiTabularCreate GuiThesaurus GuiToolbar
-	GuiView GuiVSpace GuiViewSource GuiWorkArea GuiWrap
-	InsetParamsDialog InsetParamsWidget LayoutBox Menus TocModel TocWidget Toolbars)
-  handle_source_option("CXX" ${TOP_SRC_DIR}/src/frontends/qt/${_base}.cpp -Wno-shadow)
-endforeach()
 handle_source_option("CXX" ${TOP_SRC_DIR}/src/frontends/qt/GuiDocument.cpp -Wno-null-dereference)
 handle_source_option("CXX" ${TOP_SRC_DIR}/src/frontends/qt/GuiWorkArea.cpp -Wno-unreachable-code-return)
 foreach(_base DialogFactory GuiApplication GuiCitation GuiImage GuiListings GuiNote GuiPhantom GuiView GuiWrap Menus)
