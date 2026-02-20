@@ -282,9 +282,9 @@ void PreviewLoader::refreshPreviews()
 }
 
 
-connection PreviewLoader::connect(slot const & slot) const
+connection PreviewLoader::connect(slot const & sl) const
 {
-	return pimpl_->imageReady.connect(slot);
+	return pimpl_->imageReady.connect(sl);
 }
 
 

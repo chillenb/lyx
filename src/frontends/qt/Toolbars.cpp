@@ -44,9 +44,9 @@ ToolbarItem::ToolbarItem(Type t, FuncRequest const & f,
 }
 
 
-ToolbarItem::ToolbarItem(Type type, string const & name,
-                         docstring const & label)
-	: type(type), func(make_shared<FuncRequest>()), label(label), name(name)
+ToolbarItem::ToolbarItem(Type typ, string const & nam,
+                         docstring const & lab)
+	: type(typ), func(make_shared<FuncRequest>()), label(lab), name(nam)
 {
 }
 
@@ -174,10 +174,10 @@ ToolbarInfo & ToolbarInfo::read(Lexer & lex)
 
 		case TO_DYNAMICMENU: {
 			if (lex.next(true)) {
-				string const name = lex.getString();
+				string const mname = lex.getString();
 				lex.next(true);
 				docstring const label = lex.getDocString();
-				add(ToolbarItem(ToolbarItem::DYNAMICMENU, name, label));
+				add(ToolbarItem(ToolbarItem::DYNAMICMENU, mname, label));
 			}
 			break;
 		}

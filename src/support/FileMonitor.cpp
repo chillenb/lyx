@@ -179,9 +179,9 @@ void FileMonitor::connectToFileMonitorGuard()
 }
 
 
-connection FileMonitor::connect(slot const & slot)
+connection FileMonitor::connect(slot const & sl)
 {
-	return fileChanged_.connect(slot);
+	return fileChanged_.connect(sl);
 }
 
 

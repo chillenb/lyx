@@ -753,10 +753,10 @@ struct DocBookInfoTag
 	pit_type bpit;
 	pit_type epit;
 
-	DocBookInfoTag(const set<pit_type> & shouldBeInInfo, const set<pit_type> & mustBeInInfo,
-				   const set<pit_type> & abstract, bool abstractLayout, pit_type bpit, pit_type epit) :
-				   shouldBeInInfo(shouldBeInInfo), mustBeInInfo(mustBeInInfo), abstract(abstract),
-				   abstractLayout(abstractLayout), bpit(bpit), epit(epit) {}
+	DocBookInfoTag(const set<pit_type> & shdBeInInfo, const set<pit_type> & mstBeInInfo,
+				   const set<pit_type> & abs, bool absLayout, pit_type bpit_in, pit_type epit_in) :
+				   shouldBeInInfo(shdBeInInfo), mustBeInInfo(mstBeInInfo), abstract(abs),
+				   abstractLayout(absLayout), bpit(bpit_in), epit(epit_in) {}
 };
 
 

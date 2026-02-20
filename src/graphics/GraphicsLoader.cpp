@@ -364,9 +364,9 @@ void Loader::setDisplayPixelRatio(double scale)
 }
 
 
-connection Loader::connect(slot const & slot) const
+connection Loader::connect(slot const & sl) const
 {
-	return pimpl_->signal_.connect(slot);
+	return pimpl_->signal_.connect(sl);
 }
 
 

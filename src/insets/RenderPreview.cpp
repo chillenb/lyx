@@ -288,9 +288,9 @@ void RenderMonitoredPreview::draw(PainterInfo & pi, int x, int y, bool const) co
 }
 
 
-connection RenderMonitoredPreview::connect(slot const & slot)
+connection RenderMonitoredPreview::connect(slot const & sl)
 {
-	return changed_.connect(slot);
+	return changed_.connect(sl);
 }
 
 
