@@ -3980,17 +3980,17 @@ void BufferView::draw(frontend::Painter & pain, bool paint_caret)
 		Cursor cur(d->cursor_);
 		while (cur.depth() > 1) {
 			if (cur.inTexted()) {
-				TextMetrics const & tm = textMetrics(cur.text());
-				if (d->caret_geometry_.left >= tm.origin().x
-				    && d->caret_geometry_.right <= tm.origin().x + tm.dim().width())
+				TextMetrics const & tms = textMetrics(cur.text());
+				if (d->caret_geometry_.left >= tms.origin().x
+				    && d->caret_geometry_.right <= tms.origin().x + tms.dim().width())
 					break;
 			}
 			cur.pop();
 		}
-		TextMetrics const & tm = textMetrics(cur.text());
-		if (tm.contains(cur.pit())) {
-			ParagraphMetrics const & pm = tm.parMetrics(cur.pit());
-			pm.getRow(cur.pos(), cur.boundary()).changed(true);
+		TextMetrics const & tms = textMetrics(cur.text());
+		if (tms.contains(cur.pit())) {
+			ParagraphMetrics const & pms = tms.parMetrics(cur.pit());
+			pms.getRow(cur.pos(), cur.boundary()).changed(true);
 		}
 	}
 }
