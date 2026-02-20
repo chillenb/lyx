@@ -406,20 +406,20 @@ void makeParagraph(
 
 		// If the parameter is not set, maybe the flex inset only contains things that should match the standard
 		// condition. In this case, isLyxCodeSpecialCase must also check for bibitems...
-		auto isLyxCodeSpecialCase = [](InsetList::Element inset) {
-			return lyxCodeSpecialCases.find(inset.inset->lyxCode()) != lyxCodeSpecialCases.end() ||
-					inset.inset->lyxCode() == BIBITEM_CODE;
+		auto isLyxCodeSpecialCaseInFlex = [](InsetList::Element ins) {
+			return lyxCodeSpecialCases.find(ins.inset->lyxCode()) != lyxCodeSpecialCases.end() ||
+					ins.inset->lyxCode() == BIBITEM_CODE;
 		};
-		if (InsetText * text = inset.inset->asInsetText()) {
-			for (auto const & par : text->paragraphs()) {
-				size_t nInsets = std::distance(par.insetList().begin(), par.insetList().end());
-				auto parSize = (size_t) par.size();
+		if (InsetText * itext = inset.inset->asInsetText()) {
+			for (auto const & p : itext->paragraphs()) {
+				size_t numInsets = std::distance(p.insetList().begin(), p.insetList().end());
+				auto pSize = (size_t) p.size();
 
-				if (nInsets == 1 && par.insetList().begin()->inset->lyxCode() == BIBITEM_CODE)
+				if (numInsets == 1 && p.insetList().begin()->inset->lyxCode() == BIBITEM_CODE)
 					return true;
-				if (nInsets != parSize)
+				if (numInsets != pSize)
 					return false;
-				if (!std::all_of(par.insetList().begin(), par.insetList().end(), isLyxCodeSpecialCase))
+				if (!std::all_of(p.insetList().begin(), p.insetList().end(), isLyxCodeSpecialCaseInFlex))
 					return false;
 			}
 			return true;
