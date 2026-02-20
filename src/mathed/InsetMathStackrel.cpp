@@ -39,17 +39,17 @@ Inset * InsetMathStackrel::clone() const
 
 bool InsetMathStackrel::idxUpDown(Cursor & cur, bool up) const
 {
-	idx_type const npos = 1234; // impossible number
-	idx_type target = npos;
+	idx_type const nopos = 1234; // impossible number
+	idx_type target = nopos;
 	if (up) {
-		idx_type const targets[] = { 1, npos, 0 };
+		idx_type const targets[] = { 1, nopos, 0 };
 		target = targets[cur.idx()];
 	} else {
-		idx_type const targets[] = { 2, 0, npos };
+		idx_type const targets[] = { 2, 0, nopos };
 		target = targets[cur.idx()];
 	}
 
-	if (target == npos || target == nargs())
+	if (target == nopos || target == nargs())
 		return false;
 	cur.idx() = target;
 	cur.pos() = cell(target).x2pos(&cur.bv(), cur.x_target());
