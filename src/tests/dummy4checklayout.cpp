@@ -52,8 +52,8 @@ bool LaTeXColors::isLaTeXColor(string const & /* name */)
 
 LaTeXColors::TexColorMap LaTeXColors::getLaTeXColors()
 {
-	static TexColorMap texcolormap_;
-	return(texcolormap_);
+	static TexColorMap texcolormapx;
+	return(texcolormapx);
 }
 
 LaTeXColor LaTeXColors::getLaTeXColor(string const & /* name */)
