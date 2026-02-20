@@ -112,10 +112,10 @@ void GuiCounter::paramsToDialog(Inset const * ip)
 }
 
 
-bool GuiCounter::initialiseParams(std::string const & data)
+bool GuiCounter::initialiseParams(std::string const & cdata)
 {
 	InsetCommandParams params(insetCode());
-	if (!InsetCommand::string2params(data, params))
+	if (!InsetCommand::string2params(cdata, params))
 		return false;
 
 	fillCombos();

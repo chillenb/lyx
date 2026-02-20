@@ -57,11 +57,11 @@ void GuiTabularCreate::getFiles()
 			QString fn = QFileInfo(it.next()).fileName();
 			if (!fn.endsWith(".lyx") || fn.contains("_1x"))
 				continue;
-			QString data = fn.left(fn.lastIndexOf(".lyx"));
-			QString guiname = data;
+			QString tdata = fn.left(fn.lastIndexOf(".lyx"));
+			QString guiname = tdata;
 			guiname = toqstr(translateIfPossible(qstring_to_ucs4(guiname.replace('_', ' '))));
-			if (styleCO->findData(data) == -1)
-				styleCO->addItem(guiname, data);
+			if (styleCO->findData(tdata) == -1)
+				styleCO->addItem(guiname, tdata);
 		}
 	}
 }

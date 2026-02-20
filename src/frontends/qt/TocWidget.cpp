@@ -258,11 +258,11 @@ void TocWidget::doDispatch(Cursor & cur, FuncRequest const & cmd,
 
 	case LFUN_REFERENCE_TO_PARAGRAPH: {
 		docstring const type = cmd.argument();
-		TocItem const & item =
+		TocItem const & toc_item =
 			gui_view_.tocModels().currentItem(current_type_, index);
-		docstring const id = (item.parIDs().empty())
-				? item.dit().paragraphGotoArgument(true)
-				: item.parIDs();
+		docstring const id = (toc_item.parIDs().empty())
+				? toc_item.dit().paragraphGotoArgument(true)
+				: toc_item.parIDs();
 		docstring const arg = (type.empty()) ? id : id + " " + type;
 		dispatch(FuncRequest(cmd, arg));
 		refocus_wa = true;

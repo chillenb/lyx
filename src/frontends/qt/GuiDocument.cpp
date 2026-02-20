@@ -3604,11 +3604,11 @@ void GuiDocument::getTableStyles()
 			QString fn = QFileInfo(it.next()).fileName();
 			if (!fn.endsWith(".lyx") || fn.contains("_1x"))
 				continue;
-			QString data = fn.left(fn.lastIndexOf(".lyx"));
-			QString guiname = data;
+			QString tsdata = fn.left(fn.lastIndexOf(".lyx"));
+			QString guiname = tsdata;
 			guiname = toqstr(translateIfPossible(qstring_to_ucs4(guiname.replace('_', ' '))));
-			if (textLayoutModule->tableStyleCO->findData(data) == -1)
-				textLayoutModule->tableStyleCO->addItem(guiname, data);
+			if (textLayoutModule->tableStyleCO->findData(tsdata) == -1)
+				textLayoutModule->tableStyleCO->addItem(guiname, tsdata);
 		}
 	}
 }

@@ -168,7 +168,7 @@ public:
 	///
 	std::set<std::string> getEncodingSet(std::string const & doc_encoding) const;
 	///
-	void getFontEncodings(std::vector<std::string> & encodings,
+	void getFontEncodings(std::vector<std::string> & encs,
 			      bool const onlylangs = false) const;
 	///
 	void useLayout(docstring const & layoutname);

@@ -564,9 +564,9 @@ void InsetRef::latex(otexstream & os, OutputParams const & rp) const
 		os << '{' << data << '}';
 	} else if (nlabels == 1) {
 		InsetCommandParams p(REF_CODE, cmd);
-		bool const use_nolink = hyper_on && getParam("nolink") == "true";
+		bool const nolink = hyper_on && getParam("nolink") == "true";
 		p["reference"] = getParam("reference");
-		os << p.getCommand(rp, use_nolink);
+		os << p.getCommand(rp, nolink);
 	} else {
 		bool first = true;
 		vector<docstring>::const_iterator it = labels.begin();

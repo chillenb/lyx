@@ -2582,8 +2582,8 @@ bool GuiView::getStatus(FuncRequest const & cmd, FuncStatus & flag)
 			break;
 		}
 		enable = false;
-		for (Buffer * buf : doc_buffer->allRelatives()) {
-			GuiWorkArea * wa = workArea(*buf);
+		for (Buffer * bf : doc_buffer->allRelatives()) {
+			GuiWorkArea * wa = workArea(*bf);
 			if (!wa)
 				continue;
 			if (wa->bufferView().getStatus(cmdToPass, flag)) {

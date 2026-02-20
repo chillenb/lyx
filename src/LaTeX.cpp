@@ -362,10 +362,10 @@ int LaTeX::run(TeXErrors & terr)
 		LYXERR(Debug::OUTFILE, "Running Bibliography Processor.");
 		message(_("Running Bibliography Processor."));
 		updateBibtexDependencies(head, bibtex_info);
-		int exit_code;
-		rerun |= runBibTeX(bibtex_info, runparams, exit_code);
-		if (exit_code == Systemcall::KILLED || exit_code == Systemcall::TIMEOUT)
-			return exit_code;
+		int ex_code;
+		rerun |= runBibTeX(bibtex_info, runparams, ex_code);
+		if (ex_code == Systemcall::KILLED || ex_code == Systemcall::TIMEOUT)
+			return ex_code;
 		FileName const blgfile(changeExtension(file.absFileName(), ".blg"));
 		if (blgfile.exists())
 			bscanres = scanBlgFile(head, terr);
@@ -394,9 +394,9 @@ int LaTeX::run(TeXErrors & terr)
 		LYXERR(Debug::DEPEND, "Dep. file has changed or rerun requested");
 		LYXERR(Debug::OUTFILE, "Run #" << count);
 		message(runMessage(count));
-		int exit_code = startscript();
-		if (exit_code == Systemcall::KILLED || exit_code == Systemcall::TIMEOUT)
-			return exit_code;
+		int ex_code = startscript();
+		if (ex_code == Systemcall::KILLED || ex_code == Systemcall::TIMEOUT)
+			return ex_code;
 		scanres = scanLogFile(terr);
 
 		// update the depedencies
@@ -423,10 +423,10 @@ int LaTeX::run(TeXErrors & terr)
 		LYXERR(Debug::OUTFILE, "Re-Running Bibliography Processor.");
 		message(_("Re-Running Bibliography Processor."));
 		updateBibtexDependencies(head, bibtex_info);
-		int exit_code;
-		rerun |= runBibTeX(bibtex_info, runparams, exit_code);
-		if (exit_code == Systemcall::KILLED || exit_code == Systemcall::TIMEOUT)
-			return exit_code;
+		int ex_code;
+		rerun |= runBibTeX(bibtex_info, runparams, ex_code);
+		if (ex_code == Systemcall::KILLED || ex_code == Systemcall::TIMEOUT)
+			return ex_code;
 		FileName const blgfile(changeExtension(file.absFileName(), ".blg"));
 		if (blgfile.exists())
 			bscanres = scanBlgFile(head, terr);
@@ -781,16 +781,16 @@ void LaTeX::updateBibtexDependencies(DepTable & dep,
 	     it != bibtex_info.end(); ++it) {
 		for (set<string>::const_iterator it2 = it->databases.begin();
 		     it2 != it->databases.end(); ++it2) {
-			FileName const file = findtexfile(*it2, "bib");
-			if (!file.empty())
-				dep.insert(file, true);
+			FileName const fname = findtexfile(*it2, "bib");
+			if (!fname.empty())
+				dep.insert(fname, true);
 		}
 
 		for (set<string>::const_iterator it2 = it->styles.begin();
 		     it2 != it->styles.end(); ++it2) {
-			FileName const file = findtexfile(*it2, "bst");
-			if (!file.empty())
-				dep.insert(file, true);
+			FileName const fname = findtexfile(*it2, "bst");
+			if (!fname.empty())
+				dep.insert(fname, true);
 		}
 	}
 

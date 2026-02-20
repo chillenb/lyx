@@ -289,8 +289,8 @@ void GuiLyXFiles::on_filesLW_itemClicked(QTreeWidgetItem * item, int)
 		return;
 	}
 
-	QString const data = item->data(0, Qt::UserRole).toString();
-	if (!data.endsWith(getSuffix())) {
+	QString const idata = item->data(0, Qt::UserRole).toString();
+	if (!idata.endsWith(getSuffix())) {
 		// not a file (probably a header)
 		bc().setValid(false);
 		return;
@@ -299,8 +299,8 @@ void GuiLyXFiles::on_filesLW_itemClicked(QTreeWidgetItem * item, int)
 	languageCO->clear();
 	QMap<QString, QString>::const_iterator i =available_languages_.constBegin();
 	while (i != available_languages_.constEnd()) {
-		if (localizations_.contains(data)
-		    && localizations_.find(data).value().contains(i.key()))
+		if (localizations_.contains(idata)
+		    && localizations_.find(idata).value().contains(i.key()))
 			languageCO->addItem(i.value(), i.key());
 		++i;
 	}
@@ -604,9 +604,9 @@ bool GuiLyXFiles::initialiseParams(string const & type)
 }
 
 
-void GuiLyXFiles::passParams(string const & data)
+void GuiLyXFiles::passParams(string const & params)
 {
-	initialiseParams(data);
+	initialiseParams(params);
 	updateContents();
 }
 

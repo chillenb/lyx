@@ -300,8 +300,8 @@ void GuiSelectionManager::addPB_clicked()
 
 	// select and show last added item
 	if (isAdded) {
-		QModelIndex idx = selectedModel->index(srows, 0);
-		selectedLV->setCurrentIndex(idx);
+		QModelIndex i = selectedModel->index(srows, 0);
+		selectedLV->setCurrentIndex(i);
 	}
 
 	updateHook();

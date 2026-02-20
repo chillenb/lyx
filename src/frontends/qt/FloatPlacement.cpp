@@ -225,11 +225,11 @@ string const FloatPlacement::getPlacement() const
 {
 	string placement;
 
-	QString const data =
+	QString const idata =
 		placementCO->itemData(placementCO->currentIndex()).toString();
-	if (data == "class")
+	if (idata == "class")
 		return "class";
-	if (data == "document")
+	if (idata == "document")
 		return "document";
 
 	if (heredefinitelyCB->isChecked()) {

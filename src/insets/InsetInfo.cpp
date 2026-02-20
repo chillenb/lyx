@@ -350,37 +350,37 @@ vector<pair<string,docstring>> InsetInfoParams::getArguments(Buffer const * buf,
 bool InsetInfoParams::validateArgument(Buffer const * buf, docstring const & arg,
 				       bool const usedefaults) const
 {
-	string type;
-	string name = trim(split(to_utf8(arg), type, ' '));
-	if (name.empty() && usedefaults)
-		name = defaultValueTranslator().find(type);
+	string itype;
+	string iname = trim(split(to_utf8(arg), itype, ' '));
+	if (iname.empty() && usedefaults)
+		iname = defaultValueTranslator().find(itype);
 
-	switch (nameTranslator().find(type)) {
+	switch (nameTranslator().find(itype)) {
 	case UNKNOWN_INFO:
 		return false;
 
 	case SHORTCUT_INFO:
 	case SHORTCUTS_INFO:
 	case MENU_INFO: {
-		FuncRequest func = lyxaction.lookupFunc(name);
+		FuncRequest func = lyxaction.lookupFunc(iname);
 		return func.action() != LFUN_UNKNOWN_ACTION;
 	}
 
 	case L7N_INFO:
-		return !name.empty();
+		return !iname.empty();
 
 	case ICON_INFO: {
-		FuncCode const action = lyxaction.lookupFunc(name).action();
+		FuncCode const action = lyxaction.lookupFunc(iname).action();
 		if (action == LFUN_UNKNOWN_ACTION) {
 			string dir = "images";
-			return !imageLibFileSearch(dir, name, "svgz,png").empty();
+			return !imageLibFileSearch(dir, iname, "svgz,png").empty();
 		}
 		return true;
 	}
 
 	case LYXRC_INFO: {
 		set<string> rcs = lyxrc.getRCs();
-		return rcs.find(name) != rcs.end();
+		return rcs.find(iname) != rcs.end();
 	}
 
 	case PACKAGE_INFO:
@@ -388,54 +388,54 @@ bool InsetInfoParams::validateArgument(Buffer const * buf, docstring const & arg
 		return true;
 
 	case BUFFER_INFO:
-		return (name == "name" || name == "name-noext"
-			|| name == "path" || name == "class");
+		return (iname == "name" || iname == "name-noext"
+			|| iname == "path" || iname == "class");
 
 	case VCS_INFO:
-		if (name == "revision" || name == "revision-abbrev" || name == "tree-revision"
-		    || name == "author" || name == "date" || name == "time")
+		if (iname == "revision" || iname == "revision-abbrev" || iname == "tree-revision"
+		    || iname == "author" || iname == "date" || iname == "time")
 			return buf->lyxvc().inUse();
 		return false;
 
 	case LYX_INFO:
-		return name == "version" || name == "layoutformat";
+		return iname == "version" || iname == "layoutformat";
 
 	case FIXDATE_INFO: {
 		string date;
 		string piece;
-		date = split(name, piece, '@');
+		date = split(iname, piece, '@');
 		if (!date.empty() && !QDate::fromString(toqstr(date), Qt::ISODate).isValid())
 			return false;
 		if (!piece.empty())
-			name = piece;
+			iname = piece;
 	}
 	// fall through
 	case DATE_INFO:
 	case MODDATE_INFO: {
-		if (name == "long" || name == "short" || name == "ISO")
+		if (iname == "long" || iname == "short" || iname == "ISO")
 			return true;
 		else {
 			QDate date = QDate::currentDate();
-			return !date.toString(toqstr(name)).isEmpty();
+			return !date.toString(toqstr(iname)).isEmpty();
 		}
 	}
 	case FIXTIME_INFO: {
 		string time;
 		string piece;
-		time = split(name, piece, '@');
+		time = split(iname, piece, '@');
 		if (!time.empty() && !QTime::fromString(toqstr(time), Qt::ISODate).isValid())
 			return false;
 		if (!piece.empty())
-			name = piece;
+			iname = piece;
 	}
 	// fall through
 	case TIME_INFO:
 	case MODTIME_INFO: {
-		if (name == "long" || name == "short" || name == "ISO")
+		if (iname == "long" || iname == "short" || iname == "ISO")
 			return true;
 		else {
 			QTime time = QTime::currentTime();
-			return !time.toString(toqstr(name)).isEmpty();
+			return !time.toString(toqstr(iname)).isEmpty();
 		}
 	}
 	}
@@ -1040,11 +1040,11 @@ void InsetInfo::build()
 		// TODO: when away from a release, replace with getTextClassInfo.
 		// the TextClass can change
 		LayoutFileList const & list = LayoutFileList::get();
-		bool available = false;
+		bool avail = false;
 		// params_.name is the class name
 		if (list.haveClass(params_.name))
-			available = list[params_.name].isTeXClassAvailable();
-		if (available) {
+			avail = list[params_.name].isTeXClassAvailable();
+		if (avail) {
 			gui = _("yes");
 			info(from_ascii("yes"), params_.lang);
 		} else {
@@ -1306,8 +1306,8 @@ std::pair<QDate, std::string> parseDate(Buffer const & buffer, const InsetInfoPa
 	if (params.type == InsetInfoParams::MODDATE_INFO)
 		date = QDateTime::fromSecsSinceEpoch(buffer.fileName().lastModified()).date();
 	else if (params.type == InsetInfoParams::FIXDATE_INFO && !date_specifier.empty()) {
-		QDate date = QDate::fromString(toqstr(date_specifier), Qt::ISODate);
-		date = (date.isValid()) ? date : QDate::currentDate();
+		QDate trydate = QDate::fromString(toqstr(date_specifier), Qt::ISODate);
+		date = (trydate.isValid()) ? trydate : QDate::currentDate();
 	} else {
 		if (params.type != InsetInfoParams::DATE_INFO && params.type != InsetInfoParams::FIXDATE_INFO)
 			lyxerr << "Unexpected InsetInfoParams::info_type in parseDate: " << params.type;

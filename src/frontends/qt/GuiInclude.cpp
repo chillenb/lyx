@@ -250,11 +250,11 @@ void GuiInclude::applyView()
 		// the parameter string should have passed validation
 		InsetListingsParams par(fromqstr(listingsED->toPlainText()));
 		string caption = fromqstr(captionLE->text());
-		string label = fromqstr(labelLE->text());
+		string lab = fromqstr(labelLE->text());
 		if (!caption.empty())
 			par.addParam("caption", "{" + caption + "}");
-		if (!label.empty())
-			par.addParam("label", "{" + label + "}");
+		if (!lab.empty())
+			par.addParam("label", "{" + lab + "}");
 		string const listparams = par.params();
 		params_["lstparams"] = from_utf8(listparams);
 	} else {

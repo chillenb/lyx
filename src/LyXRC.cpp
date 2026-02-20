@@ -2804,12 +2804,12 @@ void LyXRC::write(ostream & os, bool ignore_system_lyxrc, string const & name) c
 					system_lyxrc.viewer_alternatives.begin() : // we won't use it in this case
 					system_lyxrc.viewer_alternatives.find(fmt);
 			for (; sit != sen; ++sit) {
-				string const & cmd = *sit;
+				string const & command = *sit;
 				if (ignore_system_lyxrc
 				    || sysfmt == sysend               // format not found
-					 || sysfmt->second.count(cmd) == 0 // this command not found
+					 || sysfmt->second.count(command) == 0 // this command not found
 				   )
-					os << "\\viewer_alternatives " << fmt << " \"" << escapeCommand(cmd) << "\"\n";
+					os << "\\viewer_alternatives " << fmt << " \"" << escapeCommand(command) << "\"\n";
 			}
 		}
 		if (tag != RC_LAST)
@@ -2830,12 +2830,12 @@ void LyXRC::write(ostream & os, bool ignore_system_lyxrc, string const & name) c
 					system_lyxrc.editor_alternatives.begin() : // we won't use it in this case
 					system_lyxrc.editor_alternatives.find(fmt);
 			for (; sit != sen; ++sit) {
-				string const & cmd = *sit;
+				string const & command = *sit;
 				if (ignore_system_lyxrc
 				    || sysfmt == sysend               // format not found
-				    || sysfmt->second.count(cmd) == 0 // this command not found
+				    || sysfmt->second.count(command) == 0 // this command not found
 				   )
-					os << "\\editor_alternatives " << fmt << " \"" << escapeCommand(cmd) << "\"\n";
+					os << "\\editor_alternatives " << fmt << " \"" << escapeCommand(command) << "\"\n";
 			}
 		}
 		if (tag != RC_LAST)

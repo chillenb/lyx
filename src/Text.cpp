@@ -895,7 +895,7 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 	pos_type pos = cur.pos();
 
 	// The special chars we handle
-	static map<wchar_t, string> specialchars = {
+	static map<wchar_t, string> special_chars = {
 		{ 0x200c, "ligaturebreak" },
 		{ 0x200b, "allowbreak" },
 		{ 0x2026, "ldots" },
@@ -937,9 +937,9 @@ void Text::insertStringAsLines(Cursor & cur, docstring const & str,
 				++pos;
 				space_inserted = true;
 			}
-		} else if (specialchars.find(ch) != specialchars.end()
+		} else if (special_chars.find(ch) != special_chars.end()
 			   && (par.insertInset(pos, new InsetSpecialChar(cur.buffer(), cur.current_font.language(),
-									 specialchars.find(ch)->second),
+									 special_chars.find(ch)->second),
 					       font, bparams.track_changes
 					       ? Change(Change::INSERTED)
 					       : Change(Change::UNCHANGED)))) {
@@ -6966,10 +6966,10 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 			&& (cur.text()->getTocLevel(cur.pit()) == Layout::NOT_IN_TOC
 			    || cur.pos() == 0 || cur.pos() == cur.lastpos());
 		if (cmd.getArg(0) == "contextual") {
-			string cmd;
+			string command;
 			string gui;
-			getContextualBreak(paragraphs(), cur.pit(), cmd, gui);
-			enable &= !cmd.empty();
+			getContextualBreak(paragraphs(), cur.pit(), command, gui);
+			enable &= !command.empty();
 		}
 		break;
 

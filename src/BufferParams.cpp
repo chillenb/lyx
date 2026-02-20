@@ -1269,9 +1269,9 @@ string BufferParams::readToken(Lexer & lex, string const & token,
 		if (token == "\\spellchecker_ignore") {
 			lex.eatLine();
 			docstring wl = lex.getDocString();
-			docstring language;
-			docstring word = split(wl, language, ' ');
-			Language const * lang = languages.getLanguage(to_ascii(language));
+			docstring l;
+			docstring word = split(wl, l, ' ');
+			Language const * lang = languages.getLanguage(to_ascii(l));
 			if (lang)
 				spellignore().push_back(WordLangTuple(word, lang));
 			break;
@@ -4116,15 +4116,15 @@ void BufferParams::writeEncodingPreamble(otexstream & os,
 			} else {
 				// We might have an additional language that requires inputenc
 				set<string> encoding_set = features.getEncodingSet(doc_encoding);
-				bool inputenc = false;
+				bool use_inputenc = false;
 				for (auto const & enc : encoding_set) {
 					if (encodings.fromLaTeXName(enc)
 					    && encodings.fromLaTeXName(enc)->package() == Encoding::inputenc) {
-						inputenc = true;
+						use_inputenc = true;
 						break;
 					}
 				}
-				if (inputenc)
+				if (use_inputenc)
 					// load (lua)inputenc without options
 					// (the encoding is loaded later)
 					os << "\\usepackage{" << inputenc_package << "}\n";
