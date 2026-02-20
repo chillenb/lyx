@@ -1775,10 +1775,10 @@ void outputIndexPage(XMLStream & xs, const IndexNode* root_node, unsigned depth 
 		xs << XMLStream::ESCAPE_NONE << " &#8212; "; // Em dash, i.e. long (---).
 		unsigned entry_number = 1;
 
-		auto writeLinkToEntry = [&xs](const IndexEntry &entry, unsigned entry_number) {
+		auto writeLinkToEntry = [&xs](const IndexEntry &entry, unsigned entry_num) {
 			std::string const link_attr = "href='#" + entry.inset()->paragraphs()[0].magicLabel() + "'";
 			xs << xml::StartTag("a", link_attr);
-			xs << from_ascii(std::to_string(entry_number));
+			xs << from_ascii(std::to_string(entry_num));
 			xs << xml::EndTag("a");
 		};
 
