@@ -4736,11 +4736,11 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 		if ((where = is_known(t.cs(), known_ref_commands))
 		     && (t.cs() != "prettyref" || preamble.crossrefPackage() == "prettyref")
 		     && (p.next_token().asInput() != "*" || is_known(t.cs(), known_starref_commands))) {
-			bool starred = false;
+			bool star = false;
 			bool const caps = contains(t.cs(), 'C');
 			bool const plural = suffixIs(t.cs(), "refs");
 			if (p.next_token().asInput() == "*") {
-				starred = true;
+				star = true;
 				p.get_token();
 			}
 			string const opt = p.getOpt();
@@ -4766,7 +4766,7 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 				else
 					os << "caps \"false\"\n";
 				os << "noprefix \"false\"\n";
-				if (starred)
+				if (star)
 					os << "nolink \"true\"\n";
 				else
 					os << "nolink \"false\"\n";
@@ -4792,13 +4792,13 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 
 		if ((where = is_known(t.cs(), known_zref_commands))
 		     && preamble.crossrefPackage() == "zref") {
-			bool starred = false;
+			bool star = false;
 			bool caps = false;
 			bool range = false;
 			bool noname = false;
 			bool page = false;
 			if (p.next_token().asInput() == "*") {
-				starred = true;
+				star = true;
 				p.get_token();
 			}
 			vector<string> const opts = getVectorFromString(p.getOpt());
@@ -4841,7 +4841,7 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			else
 				os << "caps \"false\"\n";
 			os << "noprefix \"false\"\n";
-			if (starred)
+			if (star)
 				os << "nolink \"true\"\n";
 			else
 				os << "nolink \"false\"\n";
@@ -5386,10 +5386,10 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			begin_inset(os, "Quotes ");
 			string quotetype = known_coded_quotes[where - known_quotes];
 			// try to make a smart guess about the side
-			Token const prev = p.prev_token();
-			bool const opening = (prev.cat() != catSpace && prev.character() != 0
-					&& prev.character() != '\n' && prev.character() != '~');
-			quotetype = guessQuoteStyle(quotetype, opening);
+			Token const prev_tok = p.prev_token();
+			bool const op_quote = (prev_tok.cat() != catSpace && prev_tok.character() != 0
+					&& prev_tok.character() != '\n' && prev_tok.character() != '~');
+			quotetype = guessQuoteStyle(quotetype, op_quote);
 			os << quotetype;
 			end_inset(os);
 			// LyX adds {} after the quote, so we have to eat
