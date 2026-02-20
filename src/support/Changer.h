@@ -37,7 +37,7 @@ using Changer = std::unique_ptr<Revertible>;
 template<typename X>
 class RevertibleRef : public Revertible {
 public:
-	RevertibleRef(X & ref) : ref(ref), old(ref), enabled(true) {}
+	RevertibleRef(X & rf) : ref(rf), old(rf), enabled(true) {}
 	//
 	~RevertibleRef() override { revert(); }
 	//

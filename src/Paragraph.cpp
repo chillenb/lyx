@@ -3462,7 +3462,7 @@ public:
 	bool has_value;
 
 	OptionalFontType(): ft(xml::FT_EMPH), has_value(false) {} // A possible value at random for ft.
-	OptionalFontType(xml::FontTypes ft): ft(ft), has_value(true) {}
+	OptionalFontType(xml::FontTypes ftt): ft(ftt), has_value(true) {}
 };
 
 OptionalFontType fontShapeToXml(FontShape fs)

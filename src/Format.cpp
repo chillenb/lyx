@@ -482,8 +482,8 @@ string Formats::getFormatFromExtension(string const & ext) const
 struct ZippedInfo {
 	bool zipped;
 	std::time_t timestamp;
-	ZippedInfo(bool zipped, std::time_t timestamp)
-	: zipped(zipped), timestamp(timestamp) { }
+	ZippedInfo(bool z, std::time_t ts)
+	: zipped(z), timestamp(ts) { }
 };
 
 

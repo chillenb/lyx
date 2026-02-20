@@ -80,8 +80,8 @@ public:
 
 	typedef Items::const_iterator item_iterator;
 
-	explicit ToolbarInfo(std::string const & name = std::string())
-		: name(name), allow_auto(false) {}
+	explicit ToolbarInfo(std::string const & name_in = std::string())
+		: name(name_in), allow_auto(false) {}
 
 	/// toolbar name
 	std::string name;
