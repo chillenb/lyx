@@ -289,9 +289,9 @@ void InsetMathMacro::Private::updateNestedChildren(InsetMathMacro * owner, Inset
 			InsetArgumentProxy * ap = dynamic_cast
 				<InsetArgumentProxy *>(md[j].nucleus());
 			if (ap) {
-				InsetMathMacro::Private * md = ap->owner()->d;
-				if (md->macro_)
-					md->macro_ = &md->macroBackup_;
+				InsetMathMacro::Private * mdd = ap->owner()->d;
+				if (mdd->macro_)
+					mdd->macro_ = &mdd->macroBackup_;
 				ap->setOwner(owner);
 			}
 			InsetMathNest * imn = md[j].nucleus()->asNestInset();

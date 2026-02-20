@@ -814,17 +814,17 @@ void extractSums(MathData & md)
 		InsetMathScript const * sub = md[i]->asScriptInset();
 		if (sub && sub->hasDown()) {
 			// try to figure out the summation index from the subscript
-			MathData const & md = sub->down();
+			MathData const & mdd = sub->down();
 			MathData::const_iterator xt =
-				find_if(md.begin(), md.end(), &testEqualSign);
-			if (xt != md.end()) {
+				find_if(mdd.begin(), mdd.end(), &testEqualSign);
+			if (xt != mdd.end()) {
 				// we found a '=', use everything in front of that as index,
 				// and everything behind as lower index
-				p->cell(1) = MathData(buf, md.begin(), xt);
-				p->cell(2) = MathData(buf, xt + 1, md.end());
+				p->cell(1) = MathData(buf, mdd.begin(), xt);
+				p->cell(2) = MathData(buf, xt + 1, mdd.end());
 			} else {
 				// use everything as summation index, don't use scripts.
-				p->cell(1) = md;
+				p->cell(1) = mdd;
 			}
 		}
 

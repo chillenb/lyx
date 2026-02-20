@@ -823,7 +823,7 @@ void InsetMathHull::usedMacros(MathData const & md, DocIterator const & pos,
 				continue;
 			macros.erase(name);
 			// Look for macros in the definition of this macro.
-			MathData md(pos.buffer());
+			MathData mdd(pos.buffer());
 			MacroData const * data =
 				pos.buffer()->getMacro(name, pos, true);
 			if (data) {
@@ -839,13 +839,13 @@ void InsetMathHull::usedMacros(MathData const & md, DocIterator const & pos,
 						       from_ascii("\r\n"),
 						       from_ascii("\n")),
 						 "\n") + "\n");
-				asMathData(data->definition(), md);
+				asMathData(data->definition(), mdd);
 			}
-			usedMacros(md, pos, macros, defs);
+			usedMacros(mdd, pos, macros, defs);
 		} else if (mt) {
-			MathData md(pos.buffer());
-			asMathData(mt->definition(), md);
-			usedMacros(md, pos, macros, defs);
+			MathData mdd(pos.buffer());
+			asMathData(mt->definition(), mdd);
+			usedMacros(mdd, pos, macros, defs);
 		} else if (si) {
 			if (!si->nuc().empty())
 				usedMacros(si->nuc(), pos, macros, defs);
