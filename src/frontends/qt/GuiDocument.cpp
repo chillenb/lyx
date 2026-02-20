@@ -4443,13 +4443,13 @@ void GuiDocument::paramsToDialog()
 	}
 
 	map<string, string> const & packages = BufferParams::auto_packages();
-	for (map<string, string>::const_iterator it = packages.begin();
-	     it != packages.end(); ++it) {
-		QTableWidgetItem * item = mathsModule->packagesTW->findItems(toqstr(it->first), Qt::MatchExactly)[0];
+	for (map<string, string>::const_iterator itt = packages.begin();
+	     itt != packages.end(); ++itt) {
+		QTableWidgetItem * item = mathsModule->packagesTW->findItems(toqstr(itt->first), Qt::MatchExactly)[0];
 		if (!item)
 			continue;
 		int row = mathsModule->packagesTW->row(item);
-		switch (bp_.use_package(it->first)) {
+		switch (bp_.use_package(itt->first)) {
 			case BufferParams::package_off: {
 				QRadioButton * rb =
 					(QRadioButton*)mathsModule->packagesTW->cellWidget(row, 3)->layout()->itemAt(0)->widget();
