@@ -592,12 +592,12 @@ void GuiWorkArea::Private::drawCaret(QPainter & painter, int horiz_offset,
 	for (auto const & shape : buffer_view_->caretGeometry().shapes) {
 		bool first = true;
 		QPainterPath path;
-		for (Point const & p : shape) {
+		for (Point const & pt : shape) {
 			if (first) {
-				path.moveTo(p.x - horiz_offset, p.y - vert_offset);
+				path.moveTo(pt.x - horiz_offset, pt.y - vert_offset);
 				first = false;
 			} else
-				path.lineTo(p.x - horiz_offset, p.y - vert_offset);
+				path.lineTo(pt.x - horiz_offset, pt.y - vert_offset);
 		}
 		painter.fillPath(path, color);
 	}

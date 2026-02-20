@@ -3730,11 +3730,11 @@ void BufferView::buildCaretGeometry(bool complet, Point shift)
 	cg.top = 1000000;
 	cg.bottom = -1000000;
 	for (auto const & shape : cg.shapes)
-		for (Point const & p : shape) {
-			cg.left = min(cg.left, p.x);
-			cg.right = max(cg.right, p.x);
-			cg.top = min(cg.top, p.y);
-			cg.bottom = max(cg.bottom, p.y);
+		for (Point const & pt : shape) {
+			cg.left = min(cg.left, pt.x);
+			cg.right = max(cg.right, pt.x);
+			cg.top = min(cg.top, pt.y);
+			cg.bottom = max(cg.bottom, pt.y);
 		}
 }
 
