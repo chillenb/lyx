@@ -655,6 +655,45 @@ Language belarusian
 	      Color		textlabel2
 	    EndFont
 	End
+	SpecialChar cyrillicdash_normal
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Normal)|C"
+	    Tooltip     "Cyrillic dash for the use in normal text"
+	    LyXOutput	"0x2009 0x2014 0x2009"
+	    LatexOutput	" \"---"
+	    IsLetter	1
+	    PlaintextOutput "0x2009 0x2014 0x2009"
+	    XHTMLOutput	&#x2009;&#x2014;&#x2009;
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
+	SpecialChar cyrillicdash_compound
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Compound Name)|o"
+	    Tooltip     "Cyrillic dash for the use in compound names (surnames)"
+	    LyXOutput	0x2014
+	    LatexOutput	\"--~
+	    IsLetter	1
+	    PlaintextOutput 0x2014
+	    XHTMLOutput	&#x2014;
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar cyrillicdash_quotative
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Quotative)|u"
+	    Tooltip     "Cyrillic dash for denoting direct speech"
+	    LyXOutput	"0x2014 0x2002"
+	    LatexOutput	\"--*
+	    IsLetter	1
+	    PlaintextOutput "0x2014 0x2002"
+	    XHTMLOutput	&#x2014;&#x2002;
+	    Font
+	      Color		textlabel3
+	    EndFont
+	End
 End
 
 # supported by polyglossia but not babel:
@@ -1170,6 +1209,45 @@ Language georgian
 	    CanBreakAfter   1
 	    Font
 	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar cyrillicdash_normal
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Normal)|C"
+	    Tooltip     "Cyrillic dash for the use in normal text"
+	    LyXOutput	"0x2009 0x2014 0x2009"
+	    LatexOutput	" \"---"
+	    IsLetter	1
+	    PlaintextOutput "0x2009 0x2014 0x2009"
+	    XHTMLOutput	&#x2009;&#x2014;&#x2009;
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
+	SpecialChar cyrillicdash_compound
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Compound Name)|o"
+	    Tooltip     "Cyrillic dash for the use in compound names (surnames)"
+	    LyXOutput	0x2014
+	    LatexOutput	\"--~
+	    IsLetter	1
+	    PlaintextOutput 0x2014
+	    XHTMLOutput	&#x2014;
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar cyrillicdash_quotative
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Quotative)|u"
+	    Tooltip     "Cyrillic dash for denoting direct speech"
+	    LyXOutput	"0x2014 0x2002"
+	    LatexOutput	\"--*
+	    IsLetter	1
+	    PlaintextOutput "0x2014 0x2002"
+	    XHTMLOutput	&#x2014;&#x2002;
+	    Font
+	      Color		textlabel3
 	    EndFont
 	End
 End
@@ -1968,6 +2046,45 @@ Language mongolian
 	      Color		textlabel2
 	    EndFont
 	End
+	SpecialChar cyrillicdash_normal
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Normal)|C"
+	    Tooltip     "Cyrillic dash for the use in normal text"
+	    LyXOutput	"0x2009 0x2014 0x2009"
+	    LatexOutput	" \"---"
+	    IsLetter	1
+	    PlaintextOutput "0x2009 0x2014 0x2009"
+	    XHTMLOutput	&#x2009;&#x2014;&#x2009;
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
+	SpecialChar cyrillicdash_compound
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Compound Name)|o"
+	    Tooltip     "Cyrillic dash for the use in compound names (surnames)"
+	    LyXOutput	0x2014
+	    LatexOutput	\"--~
+	    IsLetter	1
+	    PlaintextOutput 0x2014
+	    XHTMLOutput	&#x2014;
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar cyrillicdash_quotative
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Quotative)|u"
+	    Tooltip     "Cyrillic dash for denoting direct speech"
+	    LyXOutput	"0x2014 0x2002"
+	    LatexOutput	\"--*
+	    IsLetter	1
+	    PlaintextOutput "0x2014 0x2002"
+	    XHTMLOutput	&#x2014;&#x2002;
+	    Font
+	      Color		textlabel3
+	    EndFont
+	End
 End
 
 Language newzealand
@@ -2283,6 +2400,45 @@ Language russian
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar cyrillicdash_normal
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Normal)|C"
+	    Tooltip     "Cyrillic dash for the use in normal text"
+	    LyXOutput	"0x2009 0x2014 0x2009"
+	    LatexOutput	" \"---"
+	    IsLetter	1
+	    PlaintextOutput "0x2009 0x2014 0x2009"
+	    XHTMLOutput	&#x2009;&#x2014;&#x2009;
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
+	SpecialChar cyrillicdash_compound
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Compound Name)|o"
+	    Tooltip     "Cyrillic dash for the use in compound names (surnames)"
+	    LyXOutput	0x2014
+	    LatexOutput	\"--~
+	    IsLetter	1
+	    PlaintextOutput 0x2014
+	    XHTMLOutput	&#x2014;
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar cyrillicdash_quotative
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Quotative)|u"
+	    Tooltip     "Cyrillic dash for denoting direct speech"
+	    LyXOutput	"0x2014 0x2002"
+	    LatexOutput	\"--*
+	    IsLetter	1
+	    PlaintextOutput "0x2014 0x2002"
+	    XHTMLOutput	&#x2014;&#x2002;
+	    Font
+	      Color		textlabel3
+	    EndFont
 	End
 End
 
@@ -2659,6 +2815,45 @@ Language ukrainian
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar cyrillicdash_normal
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Normal)|C"
+	    Tooltip     "Cyrillic dash for the use in normal text"
+	    LyXOutput	"0x2009 0x2014 0x2009"
+	    LatexOutput	" \"---"
+	    IsLetter	1
+	    PlaintextOutput "0x2009 0x2014 0x2009"
+	    XHTMLOutput	&#x2009;&#x2014;&#x2009;
+	    Font
+	      Color		textlabel1
+	    EndFont
+	End
+	SpecialChar cyrillicdash_compound
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Compound Name)|o"
+	    Tooltip     "Cyrillic dash for the use in compound names (surnames)"
+	    LyXOutput	0x2014
+	    LatexOutput	\"--~
+	    IsLetter	1
+	    PlaintextOutput 0x2014
+	    XHTMLOutput	&#x2014;
+	    Font
+	      Color		textlabel2
+	    EndFont
+	End
+	SpecialChar cyrillicdash_quotative
+	    Type	specialchar
+	    MenuString	"Cyrillic Dash (Quotative)|u"
+	    Tooltip     "Cyrillic dash for denoting direct speech"
+	    LyXOutput	"0x2014 0x2002"
+	    LatexOutput	\"--*
+	    IsLetter	1
+	    PlaintextOutput "0x2014 0x2002"
+	    XHTMLOutput	&#x2014;&#x2002;
+	    Font
+	      Color		textlabel3
+	    EndFont
 	End
 End
 

@@ -745,12 +745,20 @@ def revert_hyphen_shorthands(document):
 
 
 def revert_shorthands2(document):
-    "Revert SpecialChar gendermark, thinspacebreakpoint and splithyphen to ERT"
+    "Revert SpecialChar cyrillicdash*, gendermark, thinspacebreakpoint and splithyphen to ERT"
 
     mainlang = get_value(document.header, "\\language")
     if mainlang == "":
         document.warning("Malformed LyX document! No \\language header found!")
         return
+
+    langs_cyrillicdash = [
+        "belarusian",
+        "georgian",
+        "mongolian",
+        "russian",
+        "ukrainian"
+    ]
 
     langs_gendermark = [
         "austrian",
@@ -823,6 +831,32 @@ def revert_shorthands2(document):
             lang = line[tokenend:].strip()
         if lang in langs_splithyphen:
             cmd = put_cmd_in_ert("\"=")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
+    i = 0
+    while True:
+        i = find_substring(document.body, "\\SpecialChar cyrillicdash", i)
+        if i == -1:
+            break
+        repl = " \"---"
+        if "\\SpecialChar cyrillicdash_normal" in document.body[i]:
+            document.body[i] = document.body[i].replace("\\SpecialChar cyrillicdash_normal", "")
+        elif "\\SpecialChar cyrillicdash_compound" in document.body[i]:
+            document.body[i] = document.body[i].replace("\\SpecialChar cyrillicdash_compound", "")
+            repl = "\"--~"
+        elif "\\SpecialChar cyrillicdash_quotative" in document.body[i]:
+            document.body[i] = document.body[i].replace("\\SpecialChar cyrillicdash_quotative", "")
+            repl = "\"--*"
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        if lang in langs_cyrillicdash:
+            cmd = put_cmd_in_ert(repl)
             document.body[i + 1 : i + 1] = cmd
         i += 1
         continue
