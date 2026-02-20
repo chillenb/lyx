@@ -5044,9 +5044,9 @@ Buffer::ReadStatus Buffer::loadThisLyXFile(FileName const & fn)
 }
 
 
-void Buffer::Impl::traverseErrors(TeXErrors::Errors::const_iterator err, TeXErrors::Errors::const_iterator end, ErrorList & errorList) const
+void Buffer::Impl::traverseErrors(TeXErrors::Errors::const_iterator err, TeXErrors::Errors::const_iterator end_err, ErrorList & errorList) const
 {
-	for (; err != end; ++err) {
+	for (; err != end_err; ++err) {
 		TexRow::TextEntry start = TexRow::text_none, end = TexRow::text_none;
 		int errorRow = err->error_in_line;
 		Buffer const * buf = nullptr;
