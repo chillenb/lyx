@@ -3261,10 +3261,10 @@ void Preamble::parse(Parser & p, string const & forceclass,
 			string const fsize_format = tc.fontsizeformat();
 			for (auto const & fsize : class_fsizes) {
 				string latexsize = subst(fsize_format, "$$s", fsize);
-				vector<string>::iterator it = find(opts.begin(), opts.end(), latexsize);
-				if (it != opts.end()) {
+				vector<string>::iterator itt = find(opts.begin(), opts.end(), latexsize);
+				if (itt != opts.end()) {
 					h_paperfontsize = fsize;
-					opts.erase(it);
+					opts.erase(itt);
 					break;
 				}
 			}
@@ -3327,10 +3327,10 @@ void Preamble::parse(Parser & p, string const & forceclass,
 			string const psize_format = tc.pagesizeformat();
 			for (auto const & psize : class_psizes) {
 				string latexsize = subst(psize_format, "$$s", psize);
-				vector<string>::iterator it = find(opts.begin(), opts.end(), latexsize);
-				if (it != opts.end()) {
+				vector<string>::iterator itt = find(opts.begin(), opts.end(), latexsize);
+				if (itt != opts.end()) {
 					h_papersize = psize;
-					opts.erase(it);
+					opts.erase(itt);
 					break;
 				}
 				if (psize_format == "$$spaper")
@@ -3338,10 +3338,10 @@ void Preamble::parse(Parser & p, string const & forceclass,
 				// Also try with the default format since this is understood by
 				// most classes
 				latexsize = psize + "paper";
-				it = find(opts.begin(), opts.end(), latexsize);
-				if (it != opts.end()) {
+				itt = find(opts.begin(), opts.end(), latexsize);
+				if (itt != opts.end()) {
 					h_papersize = psize;
-					opts.erase(it);
+					opts.erase(itt);
 					break;
 				}
 			}
