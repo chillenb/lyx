@@ -21726,6 +21726,8 @@ status collapsed
 
 \change_inserted -712698321 1771319164
 SimpleCommand
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -21743,6 +21745,8 @@ status collapsed
 
 \emph on
 LatexName
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -21756,6 +21760,8 @@ status collapsed
 
 \change_inserted -712698321 1771319266
 Argument
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -24882,7 +24888,7 @@ status collapsed
 
 \begin_layout Description
 
-\change_inserted -712698321 1761640200
+\change_inserted -712698321 1771593735
 \begin_inset Flex Code
 status collapsed
 
@@ -24985,13 +24991,58 @@ status collapsed
 \end_inset
 
 ).
+ Allowed are also unicode hex values,
+ one (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771593676
+0x002e
+\end_layout
+
+\end_inset
+
+) or a space-separated series (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771593726
+\begin_inset Quotes qld
+\end_inset
+
+0x2009 0x2014 0x2009
+\begin_inset Quotes qld
+\end_inset
+
+
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+).
 \change_unchanged
 
 \end_layout
 
 \begin_layout Description
 
-\change_inserted -712698321 1762761714
+\change_inserted -712698321 1771593740
 \begin_inset Flex Code
 status collapsed
 
@@ -25113,13 +25164,56 @@ status collapsed
 \end_inset
 
 ).
+ Allowed are also unicode hex values,
+ one (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771593739
+0x002e
+\end_layout
+
+\end_inset
+
+) or a space-separated series (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771593739
+\begin_inset Quotes qld
+\end_inset
+
+0x2009 0x2014 0x2009
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
 \change_unchanged
 
 \end_layout
 
 \begin_layout Description
 
-\change_inserted -712698321 1762780991
+\change_inserted -712698321 1771593742
 \begin_inset Flex Code
 status collapsed
 
@@ -25241,13 +25335,56 @@ status collapsed
 \end_inset
 
 ).
+ Allowed are also unicode hex values,
+ one (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771593742
+0x002e
+\end_layout
+
+\end_inset
+
+) or a space-separated series (e.
+\begin_inset space \thinspace{}
+\end_inset
+
+g.,
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771593742
+\begin_inset Quotes qld
+\end_inset
+
+0x2009 0x2014 0x2009
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
 \change_unchanged
 
 \end_layout
 
 \begin_layout Description
 
-\change_inserted -712698321 1761553134
+\change_inserted -712698321 1771593615
 \begin_inset Flex Code
 status collapsed
 
@@ -25276,7 +25413,7 @@ status collapsed
 \end_inset
 
  The text that is output in the workarea.
- This might be verbatim text or a unicode hex value (e.
+ This might be verbatim text or one or a space-separated series of unicode hex values (e.
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -25369,7 +25506,7 @@ protect
 
 \begin_layout Description
 
-\change_inserted -712698321 1761552888
+\change_inserted -712698321 1771593634
 \begin_inset Flex Code
 status collapsed
 
@@ -25398,7 +25535,7 @@ status collapsed
 \end_inset
 
  The text that is output in plain text export.
- This might be verbatim text or a unicode hex value (e.
+ This might be verbatim text or one or a space-separated series of unicode hex values (e.
 \begin_inset space \thinspace{}
 \end_inset
 

@@ -161,50 +161,80 @@ SpecialChar SpecialChars::readSpecialChars(Lexer & lexrc, SpecialChar & sc) cons
 			break;
 		case SC_LATEX_OUTPUT: {
 			lexrc.next(true);
-			docstring const res = rtrim(lexrc.getDocString());
-			if (isHex(res))
-				sc.latex_output = docstring(1, hexToInt(res));
-			else
+			vector<docstring> const results =
+				getVectorFromString(rtrim(lexrc.getDocString()), from_ascii(" "));
+			bool was_hex = false;
+			for (auto const & res : results) {
+				was_hex = isHex(res);
+				if (!was_hex)
+					break;
+				sc.latex_output += docstring(1, hexToInt(res));
+			}
+			if (!was_hex)
 				sc.latex_output = rtrim(lexrc.getDocString());
 			sc.latex_output_default = false;
 			break;
 		}
 		case SC_LATEX_OUTPUT_RTL: {
 			lexrc.next(true);
-			docstring const res = rtrim(lexrc.getDocString());
-			if (isHex(res))
-				sc.latex_output_rtl = docstring(1, hexToInt(res));
-			else
+			vector<docstring> const results =
+				getVectorFromString(rtrim(lexrc.getDocString()), from_ascii(" "));
+			bool was_hex = false;
+			for (auto const & res : results) {
+				was_hex = isHex(res);
+				if (!was_hex)
+					break;
+				sc.latex_output_rtl += docstring(1, hexToInt(res));
+			}
+			if (!was_hex)
 				sc.latex_output_rtl = rtrim(lexrc.getDocString());
 			sc.latex_output_rtl_default = false;
 			break;
 		}
 		case SC_LATEX_OUTPUT_UTF8: {
 			lexrc.next(true);
-			docstring const res = rtrim(lexrc.getDocString());
-			if (isHex(res))
-				sc.latex_output_utf8 = docstring(1, hexToInt(res));
-			else
+			vector<docstring> const results =
+				getVectorFromString(rtrim(lexrc.getDocString()), from_ascii(" "));
+			bool was_hex = false;
+			for (auto const & res : results) {
+				was_hex = isHex(res);
+				if (!was_hex)
+					break;
+				sc.latex_output_utf8 += docstring(1, hexToInt(res));
+			}
+			if (!was_hex)
 				sc.latex_output_utf8 = rtrim(lexrc.getDocString());
 			sc.latex_output_utf8_default = false;
 			break;
 		}
 		case SC_LYX_OUTPUT: {
 			lexrc.next();
-			docstring const res = rtrim(lexrc.getDocString());
-			if (isHex(res))
-				sc.lyx_output = docstring(1, hexToInt(res));
-			else
+			vector<docstring> const results =
+				getVectorFromString(rtrim(lexrc.getDocString()), from_ascii(" "));
+			bool was_hex = false;
+			for (auto const & res : results) {
+				was_hex = isHex(res);
+				if (!was_hex)
+					break;
+				sc.lyx_output += docstring(1, hexToInt(res));
+			}
+			if (!was_hex)
 				sc.lyx_output = rtrim(lexrc.getDocString());
 			sc.lyx_output_default = false;
 			break;
 		}
 		case SC_PLAINTEXT_OUTPUT: {
 			lexrc.next();
-			docstring const res = rtrim(lexrc.getDocString());
-			if (isHex(res))
-				sc.plaintext_output = docstring(1, hexToInt(res));
-			else
+			vector<docstring> const results =
+				getVectorFromString(rtrim(lexrc.getDocString()), from_ascii(" "));
+			bool was_hex = false;
+			for (auto const & res : results) {
+				was_hex = isHex(res);
+				if (!was_hex)
+					break;
+				sc.plaintext_output += docstring(1, hexToInt(res));
+			}
+			if (!was_hex)
 				sc.plaintext_output = rtrim(lexrc.getDocString());
 			sc.plaintext_output_default = false;
 			break;

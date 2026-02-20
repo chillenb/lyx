@@ -23875,6 +23875,37 @@ status collapsed
 \end_inset
 
 ).
+ Erlaubt sind auch Unicode-Hex-Werte,
+ einzeln (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+0x002e
+\end_layout
+
+\end_inset
+
+) oder als durch Leerzeichen getrennte Kette (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes qld
+\end_inset
+
+0x2009 0x2014 0x2009
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description
@@ -23958,6 +23989,37 @@ status collapsed
 
 \backslash
 
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
+ Erlaubt sind auch Unicode-Hex-Werte,
+ einzeln (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+0x002e
+\end_layout
+
+\end_inset
+
+) oder als durch Leerzeichen getrennte Kette (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes qld
+\end_inset
+
+0x2009 0x2014 0x2009
 \begin_inset Quotes qld
 \end_inset
 
@@ -24059,6 +24121,37 @@ status collapsed
 \end_inset
 
 ).
+ Erlaubt sind auch Unicode-Hex-Werte,
+ einzeln (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+0x002e
+\end_layout
+
+\end_inset
+
+) oder als durch Leerzeichen getrennte Kette (bspw.
+ 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Quotes qld
+\end_inset
+
+0x2009 0x2014 0x2009
+\begin_inset Quotes qld
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+).
 \end_layout
 
 \begin_layout Description
@@ -24083,7 +24176,8 @@ status collapsed
 
  Der Text,
  der im Arbeitsbereich ausgegeben wird.
- Das kann normaler Text sein oder ein Unicode-Hex-Wert (bspw.
+ Das kann normaler Text sein,
+ ein einzelner oder mehrere durch Leerzeichen getrennte Unicode-Hex-Werte (bspw.
  
 \begin_inset Flex Code
 status collapsed
@@ -24171,7 +24265,8 @@ status collapsed
 
  Der Text,
  der im einfachen Textmodus ausgegeben wird.
- Das kann normaler Text sein oder ein Unicode-Hex-Wert (bspw.
+ Das kann normaler Text sein,
+ ein einzelner oder mehrere durch Leerzeichen getrennte Unicode-Hex-Werte (bspw.
  
 \begin_inset Flex Code
 status collapsed
