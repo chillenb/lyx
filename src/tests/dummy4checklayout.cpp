@@ -52,12 +52,15 @@ bool LaTeXColors::isLaTeXColor(string const & /* name */)
 
 LaTeXColors::TexColorMap LaTeXColors::getLaTeXColors()
 {
-	static TexColorMap texcolormapx;
-	return(texcolormapx);
+	// this is just an empty dummy,
+	// the colors themselves are not needed
+	static TexColorMap dummy_texcolormap;
+	return(dummy_texcolormap);
 }
 
 LaTeXColor LaTeXColors::getLaTeXColor(string const & /* name */)
 {
+	// the color itself is not needed
 	return LaTeXColor();
 }
 } // namespace lyx
