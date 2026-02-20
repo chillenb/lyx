@@ -3867,38 +3867,38 @@ static void modifyRegexForMatchWord(string &t)
 	t = "\\b" + s + "\\b";
 }
 
-MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opt)
-	: p_buf(&buf), p_first_buf(&buf), opt(opt)
+MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opts)
+	: p_buf(&buf), p_first_buf(&buf), opt(opts)
 {
-	Buffer & find_buf = *theBufferList().getBuffer(FileName(to_utf8(opt.find_buf_name)), true);
-	docstring const & ds = stringifySearchBuffer(find_buf, opt);
+	Buffer & find_buf = *theBufferList().getBuffer(FileName(to_utf8(opts.find_buf_name)), true);
+	docstring const & ds = stringifySearchBuffer(find_buf, opts);
 	if (ds.empty() ) {
-		CreateRegexp(opt, "", "", "");
+		CreateRegexp(opts, "", "", "");
 		return;
 	}
 	use_regexp = ds.find(from_utf8("\\regexp{")) != std::string::npos;
-	if (opt.replace_all && previous_single_replace) {
+	if (opts.replace_all && previous_single_replace) {
 		previous_single_replace = false;
 		num_replaced = 0;
 	}
-	else if (!opt.replace_all) {
+	else if (!opts.replace_all) {
 		num_replaced = 0;	// count number of replaced strings
 		previous_single_replace = true;
 	}
 	// When using regexp, braces are hacked already by escape_for_regex()
-	par_as_string = convertLF2Space(ds, opt.ignoreformat);
+	par_as_string = convertLF2Space(ds, opts.ignoreformat);
 
 	size_t lead_size = 0;
 	// correct the language settings
-	par_as_string = correctlanguagesetting(par_as_string, true, !opt.ignoreformat, &buf);
+	par_as_string = correctlanguagesetting(par_as_string, true, !opts.ignoreformat, &buf);
 	if (par_as_string.empty()) {
-		CreateRegexp(opt, "", "", "");
+		CreateRegexp(opts, "", "", "");
 		return;
 	}
-	opt.matchAtStart = false;
+	opts.matchAtStart = false;
 	if (!use_regexp) {
-		identifyClosing(par_as_string, opt.ignoreformat); // Removes math closings ($, ], ...) at end of string
-		if (opt.ignoreformat) {
+		identifyClosing(par_as_string, opts.ignoreformat); // Removes math closings ($, ], ...) at end of string
+		if (opts.ignoreformat) {
 			lead_size = 0;
 		}
 		else {
@@ -3910,20 +3910,20 @@ MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opt)
 		string par_as_regex_string_nolead = string2regex(par_as_string_nolead);
 		/* Handle whole words too in this case
 		*/
-		if (opt.matchword) {
+		if (opts.matchword) {
 			par_as_regex_string_nolead = "\\b" + par_as_regex_string_nolead + "\\b";
-			opt.matchword = false;
+			opts.matchword = false;
 		}
 		string regexp_str = "(" + lead_as_regex_string + ")()" + par_as_regex_string_nolead;
 		string regexp2_str = "(" + lead_as_regex_string + ")(.*?)" + par_as_regex_string_nolead;
-		CreateRegexp(opt, regexp_str, regexp2_str);
+		CreateRegexp(opts, regexp_str, regexp2_str);
 		use_regexp = true;
 		LYXERR(Debug::FINDVERBOSE|Debug::FIND, "Setting regexp to : '" << regexp_str << "'");
 		LYXERR(Debug::FINDVERBOSE|Debug::FIND, "Setting regexp2 to: '" << regexp2_str << "'");
 		return;
 	}
 
-	if (!opt.ignoreformat) {
+	if (!opts.ignoreformat) {
 		lead_size = identifyLeading(par_as_string);
 		LYXERR(Debug::FINDVERBOSE, "Lead_size: " << lead_size);
 		lead_as_string = par_as_string.substr(0, lead_size);
@@ -3943,12 +3943,12 @@ MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opt)
 			LYXERR(Debug::FINDVERBOSE, "par_as_string now is '" << par_as_string << "'");
 		}
 		// LYXERR(Debug::FINDVERBOSE, "par_as_string before escape_for_regex() is '" << par_as_string << "'");
-		par_as_string = escape_for_regex(par_as_string, !opt.ignoreformat);
+		par_as_string = escape_for_regex(par_as_string, !opts.ignoreformat);
 		// Insert (.*?) before trailing closure of math, macros and environments, so to catch parts of them.
 		// LYXERR(Debug::FINDVERBOSE, "par_as_string now is '" << par_as_string << "'");
 		++close_wildcards;
 		size_t lng = par_as_string.size();
-		if (!opt.ignoreformat) {
+		if (!opts.ignoreformat) {
 			// Remove extra '\}' at end if not part of \{\.\}
 			while(lng > 2) {
 				if (par_as_string.substr(lng-2, 2).compare("\\}") == 0) {
@@ -3969,7 +3969,7 @@ MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opt)
 		if ((lng > 0) && (par_as_string[0] == '^')) {
 			par_as_string = par_as_string.substr(1);
 			--lng;
-			opt.matchAtStart = true;
+			opts.matchAtStart = true;
 		}
 		// LYXERR(Debug::FINDVERBOSE, "par_as_string now is '" << par_as_string << "'");
 		// LYXERR(Debug::FINDVERBOSE, "Open braces: " << open_braces);
@@ -3988,7 +3988,7 @@ MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opt)
 				string dest = "\\" + std::to_string(i+2);
 				while (regex_replace(par_as_string, par_as_string, orig, dest));
 			}
-			if (opt.matchword) {
+			if (opts.matchword) {
 				modifyRegexForMatchWord(par_as_string);
 				// opt.matchword = false;
 			}
@@ -3997,7 +3997,7 @@ MatchStringAdv::MatchStringAdv(lyx::Buffer & buf, FindAndReplaceOptions & opt)
 		}
 		LYXERR(Debug::FINDVERBOSE|Debug::FIND, "Setting regexp to : '" << regexp_str << "'");
 		LYXERR(Debug::FINDVERBOSE|Debug::FIND, "Setting regexp2 to: '" << regexp2_str << "'");
-		CreateRegexp(opt, regexp_str, regexp2_str, par_as_string);
+		CreateRegexp(opts, regexp_str, regexp2_str, par_as_string);
 	}
 }
 
