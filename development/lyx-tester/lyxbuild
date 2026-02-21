@@ -738,7 +738,7 @@ else
 
       # todo: lyx-devel says it would be good to clean these up.
       # (https://www.mail-archive.com/search?l=mid&q=4cee06c8-0646-4f1a-b81f-409d6de33a4b%40gmail.com)
-      CPPFLAGS+=";-Wno-shadow"
+      CPPFLAGS+=";-Wshadow"
 
       # Gives a lot of various types of warnings with GCC.
       # todo: ask on lyx-devel if any of the types of warnings are useful.
