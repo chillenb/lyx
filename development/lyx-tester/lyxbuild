@@ -736,8 +736,9 @@ else
       # #https://stackoverflow.com/questions/56761591/how-do-i-organize-members-in-a-struct-to-waste-the-least-space-on-alignment
       CPPFLAGS+=";-Wno-padded"
 
-      # todo: lyx-devel says it would be good to clean these up.
+      # lyx-devel says it makes sense to keep these clean
       # (https://www.mail-archive.com/search?l=mid&q=4cee06c8-0646-4f1a-b81f-409d6de33a4b%40gmail.com)
+      # For fixes, see Jürgen's commits on 2026-02-20.
       CPPFLAGS+=";-Wshadow"
 
       # Gives a lot of various types of warnings with GCC.
