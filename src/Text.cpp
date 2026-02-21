@@ -1135,6 +1135,7 @@ void Text::insertChar(Cursor & cur, char_type c)
 	}
 
 	pos_type pos = cur.pos();
+	bool boundary = cur.boundary() || tm.isRTLBoundary(cur.pit(), pos);
 	if (!cur.paragraph().isPassThru() && owner_->lyxCode() != IPA_CODE &&
 	    cur.real_current_font.fontInfo().family() != TYPEWRITER_FAMILY &&
 	    c == '-' && pos > 0) {
@@ -1158,9 +1159,6 @@ void Text::insertChar(Cursor & cur, char_type c)
 		cur.buffer()->params().track_changes);
 	cur.checkBufferStructure();
 
-//		cur.screenUpdateFlags(Update::Force);
-	bool boundary = cur.boundary()
-		|| tm.isRTLBoundary(cur.pit(), pos + 1);
 	setCursor(cur, cur.pit(), pos + 1, false, boundary);
 	charInserted(cur);
 }
