@@ -298,8 +298,10 @@ Style Example
 	  \addto\captions$$lang{\renewcommand{\examplename}{_(Example)}}
 	EndBabelPreamble
 	LabelCounter          example
-	DocBookWrapperTag     informalexample
+	DocBookWrapperTag     example
+	DocBookWrapperAttr    ""
 	DocBookTag            para
+	DocBookGenerateTitle  true # Inherited
 	DocBookAttr           ""
 End
 

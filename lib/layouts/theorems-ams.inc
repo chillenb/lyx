@@ -251,8 +251,10 @@ Style Example
 	BabelPreamble
 	  \addto\captions$$lang{\renewcommand{\examplename}{_(Example)}}
 	EndBabelPreamble
-	DocBookWrapperTag     informalexample
+	DocBookWrapperTag     example
+	DocBookWrapperAttr    ""
 	DocBookTag            para
+	DocBookGenerateTitle  true # Inherited
 	DocBookAttr           ""
 End
 
