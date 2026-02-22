@@ -98,7 +98,7 @@ msgstr ""
 "Project-Id-Version: LyX 2.4git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2026-02-20 14:46+0100\n"
-"PO-Revision-Date: 2026-02-20 14:53+0100\n"
+"PO-Revision-Date: 2026-02-22 13:04+0100\n"
 "Last-Translator: Jürgen Spitzmüller <spitz@lyx.org>\n"
 "Language-Team: German <lyx-docs@lists.lyx.org>\n"
 "Language: de\n"
@@ -5218,7 +5218,7 @@ msgstr "Vorwärtssuche"
 
 #: src/frontends/qt/ui/PrefOutputUi.ui:40
 msgid "DV&I command:"
-msgstr "DV&I Befehl:"
+msgstr "DV&I-Befehl:"
 
 #: src/frontends/qt/ui/PrefOutputUi.ui:79
 msgid "&PDF command:"
@@ -5226,7 +5226,7 @@ msgstr "&PDF-Befehl:"
 
 #: src/frontends/qt/ui/PrefOutputUi.ui:113
 msgid "Dvips Options"
-msgstr "Dvips Optionen"
+msgstr "Dvips-Optionen"
 
 #: src/frontends/qt/ui/PrefOutputUi.ui:132
 msgid "Paper t&ype:"
