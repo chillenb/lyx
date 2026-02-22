@@ -24875,10 +24875,8 @@ Sioyek (all platforms)
 
 \begin_layout Standard
 
-\change_inserted -712698321 1771765191
-In \SpecialChar LyX
-,
- set 
+\change_inserted -712698321 1771773046
+Set 
 \family sans
 Tools\SpecialChar menuseparator
 Preferences\SpecialChar menuseparator
@@ -24891,55 +24889,42 @@ PDF
 
 \begin_layout LyX-Code
 
-\change_inserted -712698321 1771759703
-sioyek "$$o" --forward-search-file "$$f" --forward-search-line $$n
+\change_inserted -712698321 1771772658
+sioyek "$$o" --forward-search-file "$$f" --forward-search-line $$n --inverse-search "lyxclient -g %1 %2"
+\change_unchanged
+
 \end_layout
 
 \begin_layout Standard
 
-\change_inserted -712698321 1771765294
-In 
+\change_inserted -712698321 1771773099
+and select 
+\begin_inset Quotes eld
+\end_inset
+
+sioyek
+\begin_inset Quotes erd
+\end_inset
+
+ as 
 \family sans
-Sioyek
+Viewer
 \family default
-,
- add to the file 
-\begin_inset Flex Code
-status collapsed
+ for the respective PDF file format in 
+\family sans
+Tools\SpecialChar menuseparator
+Preferences\SpecialChar menuseparator
+File Handling\SpecialChar menuseparator
+File Formats
+\family default
+.
+ This way,
+ no \SpecialChar LyX
+-specific configuration is needed in 
+\family sans
+Sioyek.
+\change_deleted -712698321 1771772782
 
-\begin_layout Plain Layout
-
-\change_inserted -712698321 1771765253
-prefs_user.cfg
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
- (can be opened with command 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-
-\change_inserted -712698321 1771765294
-prefs_user
-\change_unchanged
-
-\end_layout
-
-\end_inset
-
-):
-\change_unchanged
-
-\end_layout
-
-\begin_layout LyX-Code
-
-\change_inserted -712698321 1771765215
-inverse_search_command lyxclient -g %1 %2
 \end_layout
 
 \begin_layout Standard

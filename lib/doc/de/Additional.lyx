@@ -24701,39 +24701,36 @@ PDF-Befehl
 \end_layout
 
 \begin_layout LyX-Code
-sioyek "$$o" --forward-search-file "$$f" --forward-search-line $$n
+sioyek "$$o" --forward-search-file "$$f" --forward-search-line $$n --inverse-search "lyxclient -g %1 %2"
 \end_layout
 
 \begin_layout Standard
-In der Konfigurationsdatei 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-prefs_user.cfg
-\end_layout
-
+Wählen Sie außerdem 
+\begin_inset Quotes gld
 \end_inset
 
- von 
+sioyek
+\begin_inset Quotes grd
+\end_inset
+
+ als 
+\family sans
+Anzeigeprogramm
+\family default
+ für das entsprechende PDF-Format in 
+\family sans
+Werkzeuge\SpecialChar menuseparator
+Einstellungen\SpecialChar menuseparator
+Datei-Handhabung\SpecialChar menuseparator
+Dateiformate
+\family default
+.
+ Damit sind in 
 \family sans
 Sioyek
 \family default
- (die mittels 
-\begin_inset Flex Code
-status collapsed
-
-\begin_layout Plain Layout
-prefs_user
-\end_layout
-
-\end_inset
-
- geöffnet werden kann) fügen Sie die folgende Zeile hinzu:
-\end_layout
-
-\begin_layout LyX-Code
-inverse_search_command lyxclient -g %1 %2
+ selbst keine \SpecialChar LyX
+-spezifischen Einstellungen nötig.
 \end_layout
 
 \begin_layout Standard
