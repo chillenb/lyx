@@ -251,6 +251,9 @@ Style "Backmatter heading"
         Series Bold
     EndFont
     NextNoIndent    1
+    DocBookTag      bridgehead
+    DocBookTagType  paragraph
+    DocBookAttr     role="backmatter"
 End
 
 Style Appendices
