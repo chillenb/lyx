@@ -283,6 +283,7 @@ Style Appendix
     Tooltip	"Short title for the appendix"
     InsertCotext 1
   EndArgument
+  # DocBook: custom appendices are impossible to implement correctly.
 End
 
 
