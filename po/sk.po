@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-02-18 18:21+0100\n"
-"PO-Revision-Date: 2026-02-18 18:40+0000\n"
+"POT-Creation-Date: 2026-02-22 07:56+0100\n"
+"PO-Revision-Date: 2026-02-22 07:19+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -22305,6 +22305,36 @@ msgstr "Tenká medzera pre iniciály"
 #: lib/languages:648 lib/languages:1165 lib/languages:1961
 msgid "Thin space that keeps predefined hyphenation possibilities"
 msgstr "Tenká medzera, ktorá zachováva preddefinované možnosti delenia slov"
+
+#: lib/languages:660 lib/languages:1216 lib/languages:2051 lib/languages:2406
+#: lib/languages:2821
+msgid "Cyrillic Dash (Normal)|C"
+msgstr "Cyrilická pomlčka (normálna)|C"
+
+#: lib/languages:661 lib/languages:1217 lib/languages:2052 lib/languages:2407
+#: lib/languages:2822
+msgid "Cyrillic dash for the use in normal text"
+msgstr "Cyrilická pomlčka pre použitie v normálnom texte"
+
+#: lib/languages:673 lib/languages:1229 lib/languages:2064 lib/languages:2419
+#: lib/languages:2834
+msgid "Cyrillic Dash (Compound Name)|o"
+msgstr "Cyrilická pomlčka (zložené meno)|o"
+
+#: lib/languages:674 lib/languages:1230 lib/languages:2065 lib/languages:2420
+#: lib/languages:2835
+msgid "Cyrillic dash for the use in compound names (surnames)"
+msgstr "Cyrilická pomlčka na použitie vo zlúčených názvoch (priezviskách)"
+
+#: lib/languages:686 lib/languages:1242 lib/languages:2077 lib/languages:2432
+#: lib/languages:2847
+msgid "Cyrillic Dash (Quotative)|u"
+msgstr "Cyrilická pomlčka  (kvótovaná)|ó"
+
+#: lib/languages:687 lib/languages:1243 lib/languages:2078 lib/languages:2433
+#: lib/languages:2848
+msgid "Cyrillic dash for denoting direct speech"
+msgstr "Cyrilická pomlčka na označenie priamej reči"
 
 #: lib/languages:598 src/frontends/qt/GuiSymbols.cpp:67
 msgid "Bengali"
