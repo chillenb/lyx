@@ -24944,9 +24944,9 @@ inverse_search_command lyxclient -g %1 %2
 
 \begin_layout Standard
 
-\change_inserted -712698321 1771765356
+\change_inserted -712698321 1771769636
 By default,
- synctex mode is off in 
+ mouse-click reverse search is off in 
 \family sans
 Sioyek
 \family default
@@ -24966,7 +24966,7 @@ toggle_synctex
 \end_inset
 
  command).
- While in this mode,
+ Consequently,
  right clicking on any text toggles reverse search.
 \change_unchanged
 

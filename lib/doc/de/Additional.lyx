@@ -24737,7 +24737,7 @@ inverse_search_command lyxclient -g %1 %2
 \end_layout
 
 \begin_layout Standard
-Per Voreinstellung ist der Synctex-Modus in 
+Per Voreinstellung ist die mausgesteuerte Rückwärtssuche in 
 \family sans
 Sioyek
 \family default
@@ -24754,7 +24754,7 @@ toggle_synctex
 \end_inset
 
 ).
- In diesem Modus initiiert ein Rechtsklick die Rückwärtssuche.
+ Danach initiiert ein Rechtsklick die Rückwärtssuche.
 \end_layout
 
 \begin_layout Subsubsection*
