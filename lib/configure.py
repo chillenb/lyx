@@ -887,7 +887,7 @@ def checkFormatEntries(dtl_tools):
     checkViewer('a PDF previewer',
                 ['pdfview', 'kpdf', 'okular', 'qpdfview --unique',
                  'evince', 'papers', 'xreader', 'kghostview', 'xpdf', 'SumatraPDF',
-                 'acrobat', 'acroread', 'mupdf', 'Skim.app',
+                 'acrobat', 'acroread', 'mupdf', 'sioyek', 'Skim.app',
                  'gv', 'ghostview', 'AcroRd32', 'gsview64', 'gsview32'],
         rc_entry = [r'''\Format pdf        pdf    "PDF (ps2pdf)"          P  "%%"	""	"document,vector,menu=export"	""
 \Format pdf2       pdf    "PDF (pdflatex)"        F  "%%"	""	"document,vector,menu=export"	""

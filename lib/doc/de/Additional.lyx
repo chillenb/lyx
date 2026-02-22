@@ -24685,6 +24685,79 @@ Alt-Klick
 \end_layout
 
 \begin_layout Subsubsection*
+Sioyek (alle Plattformen)
+\end_layout
+
+\begin_layout Standard
+Geben Sie in 
+\family sans
+Werkzeuge\SpecialChar menuseparator
+Einstellungen\SpecialChar menuseparator
+Ausgabe\SpecialChar menuseparator
+Generell\SpecialChar menuseparator
+PDF-Befehl
+\family default
+ ein:
+\end_layout
+
+\begin_layout LyX-Code
+sioyek "$$o" --forward-search-file "$$f" --forward-search-line $$n
+\end_layout
+
+\begin_layout Standard
+In der Konfigurationsdatei 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+prefs_user.cfg
+\end_layout
+
+\end_inset
+
+ von 
+\family sans
+Sioyek
+\family default
+ (die mittels 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+prefs_user
+\end_layout
+
+\end_inset
+
+ geöffnet werden kann) fügen Sie die folgende Zeile hinzu:
+\end_layout
+
+\begin_layout LyX-Code
+inverse_search_command lyxclient -g %1 %2
+\end_layout
+
+\begin_layout Standard
+Per Voreinstellung ist der Synctex-Modus in 
+\family sans
+Sioyek
+\family default
+ deaktiviert.
+ Drücken Sie F4,
+ um ihn zu aktivieren (Befehl 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+toggle_synctex
+\end_layout
+
+\end_inset
+
+).
+ In diesem Modus initiiert ein Rechtsklick die Rückwärtssuche.
+\end_layout
+
+\begin_layout Subsubsection*
 Skim (Mac OSX)
 \end_layout
 

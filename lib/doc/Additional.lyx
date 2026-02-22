@@ -144,6 +144,7 @@ initials
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
+\author -712698321 "Jürgen Spitzmüller"
 \end_header
 
 \begin_body
@@ -24864,6 +24865,111 @@ Modify the lines accordingly if you install \SpecialChar LyX
 
 \begin_layout Standard
 Reverse search is triggered by Alt-click (OPTION-click).
+\end_layout
+
+\begin_layout Subsubsection*
+
+\change_inserted -712698321 1771759297
+Sioyek (all platforms)
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1771765191
+In \SpecialChar LyX
+,
+ set 
+\family sans
+Tools\SpecialChar menuseparator
+Preferences\SpecialChar menuseparator
+Output\SpecialChar menuseparator
+General\SpecialChar menuseparator
+PDF
+\family default
+ to
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1771759703
+sioyek "$$o" --forward-search-file "$$f" --forward-search-line $$n
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1771765294
+In 
+\family sans
+Sioyek
+\family default
+,
+ add to the file 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771765253
+prefs_user.cfg
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ (can be opened with command 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771765294
+prefs_user
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+):
+\change_unchanged
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1771765215
+inverse_search_command lyxclient -g %1 %2
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1771765356
+By default,
+ synctex mode is off in 
+\family sans
+Sioyek
+\family default
+.
+ Press F4 to activate it (
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1771759732
+toggle_synctex
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ command).
+ While in this mode,
+ right clicking on any text toggles reverse search.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsubsection*
