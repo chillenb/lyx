@@ -3101,7 +3101,11 @@ namespace {
 					cmds.end();
 			for (; sit != sen; ++sit) {
 				QString const qcmd = toqstr(*sit);
-				combo->addItem(qcmd, qcmd);
+				// if we have options, only display them in tooltip
+				QString const gui = qcmd.split(" ").first();
+				combo->addItem(gui, qcmd);
+				if (qcmd != gui)
+					combo->setItemData(combo->count() - 1, qcmd, Qt::ToolTipRole);
 			}
 		}
 	}
