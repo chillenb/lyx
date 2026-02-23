@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-02-22 07:56+0100\n"
-"PO-Revision-Date: 2026-02-22 07:19+0000\n"
+"POT-Creation-Date: 2026-02-23 08:11+0100\n"
+"PO-Revision-Date: 2026-02-23 07:22+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -32455,11 +32455,32 @@ msgstr "Dia"
 
 #: lib/xtemplates/dia.xtemplate:15 lib/xtemplates/dia.xtemplate:18
 msgid "Dia diagram"
-msgstr "Dia diagram"
+msgstr "Diagram dia"
 
 #: lib/xtemplates/dia.xtemplate:17
 msgid "Dia diagram.\n"
-msgstr "Diagram programu Dia.\n"
+msgstr "Diagram dia.\n"
+
+#: lib/xtemplates/draw.io.xtemplate:12 lib/configure.py:790
+msgid "Draw.io"
+msgstr "Draw.io"
+
+#: lib/xtemplates/draw.io.xtemplate:13 lib/xtemplates/draw.io.xtemplate:17
+msgid "Draw.io diagram"
+msgstr "Diagram draw.io diagram"
+
+#: lib/xtemplates/draw.io.xtemplate:15
+msgid ""
+"Draw.io diagram.\n"
+"Draw.io provided as a browser-based and also as a stand-alone application. "
+"This template uses a stand-alone program so please make it ready before "
+"using this template. Included file will be cropped to the size of the "
+"diagram.\n"
+msgstr ""
+"Diagram Draw.io.\n"
+"Draw.io je poskytovaný ako prehliadač a tiež ako samostatná aplikácia. Táto "
+"šablóna používa samostatný program, preto si ju pred použitím šablóny "
+"pripravte. Zahrnutý súbor bude orezaný na veľkosť diagramu.\n"
 
 #: lib/xtemplates/gnumeric.xtemplate:13
 msgid "GnumericSpreadsheet"
