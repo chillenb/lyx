@@ -1887,7 +1887,7 @@ void InsetMathHull::doExtern(Cursor & cur, FuncRequest & func)
 	cur.idx() -= cur.idx() % ncols();
 	cur.pos() = 0;
 
-	if (getType() == hullSimple) {
+	if (getType() == hullSimple || getType() == hullEquation) {
 		size_type pos = cur.cell().find_last(eq);
 		MathData md(buffer_);
 		if (pos == cur.cell().size()) {
@@ -1895,24 +1895,10 @@ void InsetMathHull::doExtern(Cursor & cur, FuncRequest & func)
 			lyxerr << "use whole cell: " << md << endl;
 		} else {
 			md = MathData(buffer_, cur.cell().begin() + pos + 1, cur.cell().end());
-			lyxerr << "use partial cell form pos: " << pos << endl;
+			lyxerr << "use partial cell from pos: " << pos << endl;
 		}
 		cur.cell().append(eq);
 		cur.cell().append(pipeThroughExtern(lang, extra, md));
-		cur.pos() = cur.lastpos();
-		return;
-	}
-
-	if (getType() == hullEquation) {
-		lyxerr << "use equation inset" << endl;
-		mutate(hullEqnArray);
-		MathData & md = cur.cell();
-		lyxerr << "use cell: " << md << endl;
-		++cur.idx();
-		cur.cell() = eq;
-		++cur.idx();
-		cur.cell() = pipeThroughExtern(lang, extra, md);
-		// move to end of line
 		cur.pos() = cur.lastpos();
 		return;
 	}
