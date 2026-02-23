@@ -5763,8 +5763,7 @@ void GuiDocument::toggleCustomColor(QTreeWidgetItem * item, int)
 	if (sel_color.isEmpty())
 		return;
 
-	docstring current_index = qstring_to_ucs4(sel_color);
-	QColor const initial(item->text(1));
+	QColor const initial(custom_colors_[sel_color]);
 	QColor ncol = GuiDialog::getColor(initial, this);
 	if (!ncol.isValid())
 		return;
