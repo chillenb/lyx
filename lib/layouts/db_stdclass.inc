@@ -28,7 +28,7 @@ End
 Input stdinsets.inc
 Input db_stdcharstyles.inc
 # Input db_stdlists.inc
-# Input db_stdsections.inc
+Input db_stdsections.inc
 Input db_stdstarsections.inc
 Input db_stdtitle.inc
 Input db_stdstruct.inc
