@@ -92,22 +92,6 @@ Style Subsubsection*
 	EndArgument
 End
 
-Style Abstract_over_Columns
-	CopyStyle            Abstract
-	InTitle              1
-	LabelString          "Abstract"
-	Category             FrontMatter
-	LatexType            Command
-	LatexName            jlreqabstract
-	Preamble
-		\newcommand{\jlreqabstract}[1]{%
-		\begin{abstract}%
-		#1%
-		\end{abstract}%
-		}
-	EndPreamble
-End
-
 Style JLReq_Setup
 	InPreamble           1
 	LatexType            Command
