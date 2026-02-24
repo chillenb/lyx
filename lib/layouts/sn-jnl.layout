@@ -253,7 +253,7 @@ Style "Backmatter heading"
     NextNoIndent    1
     DocBookTag      bridgehead
     DocBookTagType  paragraph
-    DocBookAttr     role="backmatter"
+    DocBookAttr     role='backmatter'
 End
 
 Style Appendices
