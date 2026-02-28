@@ -1691,7 +1691,7 @@ void authorsToDocBookAuthorGroup(docstring const & authorsString, XMLStream & xs
 
 	auto it = authors.cbegin();
 	auto en = authors.cend();
-	for (size_t i = 0; it != en; ++it, ++i) {
+	for (; it != en; ++it) {
 		const std::string tag = (type.empty() || type == "author") ? "author" : "othercredit";
 		const std::string attr = (type == "book") ? R"(class="other" otherclass="bookauthor")" : "";
 
