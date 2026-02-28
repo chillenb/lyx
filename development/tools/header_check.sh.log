@@ -703,6 +703,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./frontends/qt/GuiApplication.cpp::#include <QList>
 ./frontends/qt/GuiApplication.cpp::#include <QMimeData>
 ./frontends/qt/GuiApplication.cpp::#include <QObject>
+./frontends/qt/GuiApplication.cpp::#include <QOperatingSystemVersion>
 ./frontends/qt/GuiApplication.cpp::#include <QPixmap>
 ./frontends/qt/GuiApplication.cpp::#include <QStyle>
 ./frontends/qt/GuiApplication.cpp::#include <QStyleHints>
@@ -1002,6 +1003,7 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./frontends/qt/GuiWorkArea.cpp::#include <QHelpEvent>
 ./frontends/qt/GuiWorkArea.cpp::#include <QInputMethod>
 ./frontends/qt/GuiWorkArea.cpp::#include <QProxyStyle>
+./frontends/qt/GuiWorkArea.cpp::#include "support/AppleSupport.h"
 ./frontends/qt/GuiWorkArea.cpp::#include <QMenu>
 ./frontends/qt/GuiWorkArea.cpp::#include <QPainter>
 ./frontends/qt/GuiWorkArea.cpp::#include <QPalette>
@@ -1319,7 +1321,6 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./insets/InsetSpace.cpp::#include "support/docstream.h"
 ./insets/InsetSpace.cpp::#include "support/Length.h"
 ./insets/InsetSpecialChar.cpp::#include "Dimension.h"
-./insets/InsetSpecialChar.cpp::#include "Font.h"
 ./insets/InsetSpecialChar.cpp::#include "Language.h"
 ./insets/InsetSpecialChar.cpp::#include "texstream.h"
 ./insets/InsetSpecialChar.cpp::#include "frontends/Painter.h"
@@ -1363,7 +1364,6 @@ suspicious: ./support/checksum.h::#include <fstream>
 ./insets/InsetText.cpp::#include "support/FileName.h"
 ./insets/InsetText.cpp::#include <algorithm>
 ./insets/InsetText.cpp::#include <stack>
-./insets/InsetTextbreak.cpp::#include "Paragraph.h"
 ./insets/InsetTextbreak.cpp::#include "support/docstring.h"
 ./insets/InsetTextbreak.cpp::#include "support/docstream.h"
 ./insets/InsetVSpace.cpp::#include "Dimension.h"
