@@ -16,7 +16,6 @@
 #include "qt_helpers.h"
 
 #include "Color.h"
-#include "ColorSet.h"
 
 namespace lyx {
 
