@@ -244,6 +244,7 @@ logicalmkup
 \docbook_table_output 0
 \docbook_mathml_prefix 1
 \docbook_mathml_version 0
+\author 2090250301 "fcan"
 \end_header
 
 \begin_body
@@ -38890,6 +38891,32 @@ Maxima
 \begin_inset Formula $\frac{a*b+2*a*b}{b}+\frac{1}{a}+a*b=a\,b+3\,a+\frac{1}{a}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted 2090250301 1772474211
+Note that \SpecialChar LyX
+ displays the TeX output as returned by 
+\family typewriter
+Maxima.
+ In some rare cases,
+ this may result in a slightly different format than the input.
+ For example,
+ Maxima defaults to using variants of certain Greek letters,
+ so if your input uses the symbol 
+\begin_inset Formula $\phi$
+\end_inset
+
+ for phi,
+ the Maxima output may substitute 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ for it,
+ even though the answer will be correct.
+\change_unchanged
 
 \end_layout
 
