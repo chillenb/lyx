@@ -271,6 +271,7 @@ Style Appendices
     Series	Bold
     Color	textlabel2
   EndFont
+  DocBookTag ""
 End
 
 Style Appendix
@@ -282,8 +283,12 @@ Style Appendix
     LabelString	"Short Title"
     Tooltip	"Short title for the appendix"
     InsertCotext 1
+    DocBookTag    titleabbrev
+    DocBookArgumentAfterMainTag  true
   EndArgument
-  # DocBook: custom appendices are impossible to implement correctly.
+  DocBookTag            title
+  DocBookTagType        paragraph
+  DocBookInInfo         maybe
+  DocBookSectionTag     appendix
+  DocBookSection        true
 End
-
-
