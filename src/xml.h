@@ -17,6 +17,7 @@
 
 #include <deque>
 #include <memory>
+#include <optional>
 
 namespace lyx {
 
@@ -47,9 +48,12 @@ public:
 	// int & tab() { return tab_; }
 	/// closes any font tags that are eligible to be closed,
 	/// i.e., last on the tag_stack_.
+	/// If ignore_one_non_font_tag is true (default: false),
+	/// the function does not issue an error if, after its normal
+	/// behaviour, there is still one non-font tag at most.
 	/// \return false if there are open font tags we could not close.
 	/// because they are "blocked" by open non-font tags on the stack.
-	bool closeFontTags();
+	bool closeFontTags(bool ignore_one_non_font_tag = false);
 	/// sets a mark so we know what tags to close at the end.
 	/// normally called at the start of a paragraph.
 	void startDivision(bool keep_empty);
@@ -99,6 +103,8 @@ public:
 	bool isTagOpen(xml::StartTag const &, int maxdepth = -1) const;
 	///
 	bool isTagOpen(xml::EndTag const &, int maxdepth = -1) const;
+	/// If it exists, returns a copy of closest xml::StartTag that has the given XML tag.
+	[[nodiscard]] std::optional<xml::StartTag> getStartTagByXmlTag(const docstring & xml_tag, int maxdepth = -1) const;
 	///
 	bool isTagPending(xml::StartTag const &, int maxdepth = -1) const;
 	/// Is the last tag that was added to the stream a new line (CR)? This is mostly to known

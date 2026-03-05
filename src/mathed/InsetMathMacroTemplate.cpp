@@ -1285,10 +1285,8 @@ int InsetMathMacroTemplate::writeMath(TeXMathStream & os, bool overwriteRedefini
 }
 
 
-docstring InsetMathMacroTemplate::xhtml(XMLStream &, OutputParams const &) const
-{
-	return docstring();
-}
+void InsetMathMacroTemplate::xhtml(XMLStream &, OutputParams const &) const
+{}
 
 int InsetMathMacroTemplate::plaintext(odocstringstream & os,
 				 OutputParams const &, size_t) const

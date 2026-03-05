@@ -438,7 +438,7 @@ void InsetListings::latex(otexstream & os, OutputParams const & runparams) const
 }
 
 
-docstring InsetListings::xhtml(XMLStream & os, OutputParams const & rp) const
+void InsetListings::xhtml(XMLStream & os, OutputParams const & rp) const
 {
 	bool const isInline = params().isInline();
 	if (!isInline) {
@@ -468,7 +468,6 @@ docstring InsetListings::xhtml(XMLStream & os, OutputParams const & rp) const
 	if (!isInline) {
 		os << xml::EndTag("div");
 	}
-	return {};
 }
 
 

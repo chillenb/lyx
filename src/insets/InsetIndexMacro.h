@@ -84,7 +84,7 @@ private:
 	/// We do not output anything directly to the stream
 	void docbook(XMLStream &, OutputParams const &) const override {}
 	/// We do not output anything directly to the stream
-	docstring xhtml(XMLStream &, OutputParams const &) const override { return docstring(); }
+	void xhtml(XMLStream &, OutputParams const &) const override {}
 	///
 	bool allowSpellCheck() const override { return false; }
 	///

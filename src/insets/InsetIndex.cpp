@@ -564,14 +564,13 @@ void InsetIndex::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetIndex::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetIndex::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	// we just print an anchor, taking the paragraph ID from
 	// our own interior paragraph, which doesn't get printed
 	std::string const magic = paragraphs().front().magicLabel();
 	std::string const attr = "id='" + magic + "'";
 	xs << xml::CompTag("a", attr);
-	return docstring();
 }
 
 
@@ -1883,13 +1882,13 @@ void printTree(const IndexNode* root_node, unsigned depth = 0)
 }
 
 
-docstring InsetPrintIndex::xhtml(XMLStream &, OutputParams const & op) const
+void InsetPrintIndex::xhtml(XMLStream & xs, OutputParams const & op) const
 {
 	BufferParams const & bp = buffer().masterBuffer()->params();
 
 	shared_ptr<Toc const> toc = buffer().tocBackend().toc("index");
 	if (toc->empty())
-		return docstring();
+		return;
 
 	// Collect the index entries in a form we can use them.
 	vector<IndexEntry> entries;
@@ -1903,9 +1902,9 @@ docstring InsetPrintIndex::xhtml(XMLStream &, OutputParams const & op) const
 
 	// If all the index entries are in notes or not displayed, get out sooner.
 	if (entries.empty())
-		return docstring();
+		return;
 
-	const IndexNode* index_root = buildIndexTree(entries);
+	const IndexNode* const index_root = buildIndexTree(entries);
 #ifdef LYX_INSET_INDEX_DEBUG
 	printTree(index_root);
 #endif
@@ -1916,11 +1915,12 @@ docstring InsetPrintIndex::xhtml(XMLStream &, OutputParams const & op) const
 	string const tocattr = "class='index " + tocclass + "'";
 	docstring const indexName = params().getParamOr("name", from_ascii("Index"));
 
-	// we'll use our own stream, because we are going to defer everything.
-	// that's how we deal with the fact that we're probably inside a standard
-	// paragraph, and we don't want to be.
-	odocstringstream ods;
-	XMLStream xs(ods);
+	// If we're inside a standard paragraph, leave it: we don't want to be.
+	// Otherwise, the HTML wouldn't be very valid (<p>…<div/>…</p>).
+	std::optional<const xml::StartTag> const para_open = xs.getStartTagByXmlTag(from_ascii("p"));
+	if (para_open.has_value()) {
+		xs << xml::EndTag("p");
+	}
 
 	xs << xml::StartTag("div", tocattr);
 	xs << xml::CR();
@@ -1931,7 +1931,7 @@ docstring InsetPrintIndex::xhtml(XMLStream &, OutputParams const & op) const
 	xs << xml::StartTag("ul", "class='main'");
 	xs << xml::CR();
 
-	LASSERT(index_root->entries.empty(), return docstring()); // No index entry should have zero terms.
+	LASSERT(index_root->entries.empty(), return); // No index entry should have zero terms.
 	for (const IndexNode* node : index_root->children) {
 		outputIndexPage(xs, node);
 	}
@@ -1941,7 +1941,11 @@ docstring InsetPrintIndex::xhtml(XMLStream &, OutputParams const & op) const
 	xs << xml::CR();
 	xs << xml::EndTag("div");
 
-	return ods.str();
+	// Reopen the paragraph that was previously open when starting the output of the index.
+	// It might create an empty paragraph with styles, but it's not a big deal.
+	if (para_open.has_value()) {
+		xs << *para_open;
+	}
 }
 
 } // namespace lyx

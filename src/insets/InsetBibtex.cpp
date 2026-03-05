@@ -1022,7 +1022,7 @@ int InsetBibtex::plaintext(odocstringstream & os,
 // FIXME
 // docstring InsetBibtex::entriesAsXHTML(vector<docstring> const & entries)
 // And then here just: entriesAsXHTML(buffer().masterBibInfo().citedEntries())
-docstring InsetBibtex::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetBibtex::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	// tell BiblioInfo our purpose
 	CiteItem ci;
@@ -1066,7 +1066,6 @@ docstring InsetBibtex::xhtml(XMLStream & xs, OutputParams const &) const
 		   << xml::CR();
 	}
 	xs << xml::EndTag("div");
-	return docstring();
 }
 
 

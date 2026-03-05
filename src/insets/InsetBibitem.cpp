@@ -347,7 +347,7 @@ void InsetBibitem::docbook(XMLStream &, OutputParams const &) const
 }
 
 
-docstring InsetBibitem::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetBibitem::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	// FIXME XHTML
 	// XHTML 1.1 doesn't have the "name" attribute for <a>, so we have to use
@@ -361,7 +361,6 @@ docstring InsetBibitem::xhtml(XMLStream & xs, OutputParams const &) const
 	xs << xml::StartTag("span", "class='bibitemlabel'");
 	xs << bibLabel();
 	xs << xml::EndTag("span");
-	return docstring();
 }
 
 

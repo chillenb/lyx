@@ -248,24 +248,25 @@ void InsetTOC::makeTOCNoDepth(XMLStream & xs,
 }
 
 
-docstring InsetTOC::xhtml(XMLStream &, OutputParams const & op) const
+void InsetTOC::xhtml(XMLStream & xs, OutputParams const & op) const
 {
 	string const & command = getCmdName();
 	if (command != "tableofcontents" && command != "lstlistoflistings") {
 		LYXERR0("TOC type " << command << " not yet implemented.");
-		LASSERT(false, return docstring());
+		LASSERT(false, return);
 	}
 
 	shared_ptr<Toc const> toc =
 		buffer().masterBuffer()->tocBackend().toc(cmd2type(command));
 	if (toc->empty())
-		return docstring();
+		return;
 
-	// we'll use our own stream, because we are going to defer everything.
-	// that's how we deal with the fact that we're probably inside a standard
-	// paragraph, and we don't want to be.
-	odocstringstream ods;
-	XMLStream xs(ods);
+	// If we're inside a standard paragraph, leave it: we don't want to be.
+	// Otherwise, the HTML wouldn't be very valid (<p>…<div/>…</p>).
+	std::optional<const xml::StartTag> const para_open = xs.getStartTagByXmlTag(from_ascii("p"));
+	if (para_open.has_value()) {
+		xs << xml::EndTag("p");
+	}
 
 	xs << xml::StartTag("div", "class='toc'");
 
@@ -291,7 +292,12 @@ docstring InsetTOC::xhtml(XMLStream &, OutputParams const & op) const
 		makeTOCNoDepth(xs, *toc, op);
 
 	xs << xml::EndTag("div") << xml::CR();
-	return ods.str();
+
+	// Reopen the paragraph that was previously open when starting the output of the index.
+	// It might create an empty paragraph with styles, but it's not a big deal.
+	if (para_open.has_value()) {
+		xs << *para_open;
+	}
 }
 
 

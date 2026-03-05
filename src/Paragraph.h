@@ -223,7 +223,7 @@ public:
 
 	/// \return any material that has had to be deferred until after the
 	/// paragraph has closed.
-	docstring simpleLyXHTMLOnePar(Buffer const & buf,
+	void simpleLyXHTMLOnePar(Buffer const & buf,
 								  XMLStream & xs,
 								  OutputParams const & runparams,
 								  Font const & outerfont,

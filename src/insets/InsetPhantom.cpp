@@ -347,10 +347,8 @@ void InsetPhantom::docbook(XMLStream &, OutputParams const &) const
 }
 
 
-docstring InsetPhantom::xhtml(XMLStream &, OutputParams const &) const
-{
-	return docstring();
-}
+void InsetPhantom::xhtml(XMLStream &, OutputParams const &) const
+{}
 
 string InsetPhantom::contextMenuName() const
 {

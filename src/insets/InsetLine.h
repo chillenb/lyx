@@ -40,7 +40,7 @@ private:
 	//@{
 	InsetCode lyxCode() const override { return LINE_CODE; }
 	void docbook(XMLStream &, OutputParams const &) const override;
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	bool hasSettings() const override { return true; }
 	void metrics(MetricsInfo &, Dimension &) const override;
 	void draw(PainterInfo & pi, int x, int y) const override;

@@ -313,12 +313,12 @@ void InsetNote::docbook(XMLStream & xs, OutputParams const & runparams_in) const
 }
 
 
-docstring InsetNote::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetNote::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	if (params_.type == InsetNoteParams::Note)
-		return docstring();
+		return;
 
-	return InsetCollapsible::xhtml(xs, rp);
+	InsetCollapsible::xhtml(xs, rp);
 }
 
 

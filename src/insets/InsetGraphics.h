@@ -80,7 +80,7 @@ public:
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream & os, OutputParams const &) const override;
+	void xhtml(XMLStream & os, OutputParams const &) const override;
 	/** Tell LyX what the latex features you need i.e. what latex packages
 	    you need to be included.
 	 */

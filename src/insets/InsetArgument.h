@@ -63,8 +63,7 @@ public:
 	///
 	void docbook(XMLStream & xs, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override
-		{ return docstring(); }
+	void xhtml(XMLStream &, OutputParams const &) const override {}
 	///
 	void write(std::ostream & os) const override;
 	///

@@ -1061,7 +1061,7 @@ CtObject InsetGraphics::getCtObject(OutputParams const &) const
 }
 
 
-docstring InsetGraphics::xhtml(XMLStream & xs, OutputParams const & op) const
+void InsetGraphics::xhtml(XMLStream & xs, OutputParams const & op) const
 {
 	string const output_file = op.dryrun ? string() : prepareHTMLFile(op);
 
@@ -1071,7 +1071,7 @@ docstring InsetGraphics::xhtml(XMLStream & xs, OutputParams const & op) const
 		string const attr = "src='" + params().filename.absFileName()
 		                    + "' alt='image: " + output_file + "'";
 		xs << xml::CompTag("img", attr);
-		return docstring();
+		return;
 	}
 
 	// FIXME XHTML
@@ -1108,7 +1108,6 @@ docstring InsetGraphics::xhtml(XMLStream & xs, OutputParams const & op) const
 	string const attr = imgstyle + "src='" + output_file + "' alt='image: "
 	                    + output_file + "'";
 	xs << xml::CompTag("img", attr);
-	return docstring();
 }
 
 

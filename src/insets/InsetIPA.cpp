@@ -267,11 +267,11 @@ void InsetIPA::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetIPA::xhtml(XMLStream & xs, OutputParams const & runparams_in) const
+void InsetIPA::xhtml(XMLStream & xs, OutputParams const & runparams_in) const
 {
 	OutputParams runparams(runparams_in);
 	runparams.inIPA = true;
-	return InsetText::xhtml(xs, runparams);
+	InsetText::xhtml(xs, runparams);
 }
 
 

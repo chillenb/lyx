@@ -828,10 +828,9 @@ void InsetSpace::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetSpace::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetSpace::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	xs << XMLStream::ESCAPE_NONE << from_ascii(spaceToXMLEntity(params_.kind));
-	return docstring();
 }
 
 

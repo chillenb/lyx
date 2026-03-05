@@ -62,7 +62,7 @@ private:
 	///
 	void latex(otexstream &, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///

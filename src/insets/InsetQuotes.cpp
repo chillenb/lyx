@@ -925,10 +925,9 @@ void InsetQuotes::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetQuotes::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetQuotes::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	xs << XMLStream::ESCAPE_NONE << getQuoteXMLEntity();
-	return docstring();
 }
 
 

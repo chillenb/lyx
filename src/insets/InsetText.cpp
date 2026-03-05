@@ -859,10 +859,9 @@ void InsetText::docbookText(XMLStream & xs, OutputParams const & rp, XHTMLOption
 }
 
 
-docstring InsetText::xhtml(XMLStream & xs, OutputParams const & runparams) const
+void InsetText::xhtml(XMLStream & xs, OutputParams const & runparams) const
 {
 	insetAsXHTML(xs, runparams, WriteEverything);
-	return docstring();
 }
 
 
@@ -880,7 +879,7 @@ docstring InsetText::xhtml(XMLStream & xs, OutputParams const & runparams) const
 // There are probably limits to how well we can do here, though, and we will
 // have to rely upon users not putting footnotes inside noun-type insets.
 void InsetText::insetAsXHTML(XMLStream & xs, OutputParams const & rp,
-                                  XHTMLOptions opts) const
+                             XHTMLOptions opts) const
 {
 	// we will always want to output all our paragraphs when we are
 	// called this way.
@@ -894,6 +893,11 @@ void InsetText::insetAsXHTML(XMLStream & xs, OutputParams const & rp,
 		xs.endDivision();
 		return;
 	}
+
+	// Start the division around the outer tags, there might be a
+	// need to split the paragraph when outputting the inset (and
+	// thus repeat some tags).
+	xs.startDivision(false);
 
 	InsetLayout const & il = getLayout();
 	if (opts & WriteOuterTag)
@@ -928,15 +932,16 @@ void InsetText::insetAsXHTML(XMLStream & xs, OutputParams const & rp,
 	if (il.isPassThru())
 		runparams.pass_thru = true;
 
-	xs.startDivision(false);
 	xhtmlParagraphs(text_, buffer(), xs, runparams);
-	xs.endDivision();
 
 	if (opts & WriteInnerTag)
 		xs << xml::EndTag(il.htmlinnertag());
 
 	if (opts & WriteOuterTag)
 		xs << xml::EndTag(il.htmltag());
+
+	// Similarly, end the division after the outer tag.
+	xs.endDivision();
 }
 
 

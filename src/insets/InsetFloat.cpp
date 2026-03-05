@@ -350,30 +350,39 @@ void InsetFloat::validate(LaTeXFeatures & features) const
 }
 
 
-docstring InsetFloat::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetFloat::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	FloatList const & floats = buffer().params().documentClass().floats();
 	Floating const & ftype = floats.getType(params_.type);
 	string const & htmltype = ftype.htmlTag();
 	string const & attr = ftype.htmlAttrib();
 
-	odocstringstream ods;
-	XMLStream newxs(ods);
-	newxs << xml::StartTag(htmltype, attr);
+	std::optional<xml::StartTag> para_open;
+	if (rp.inFloat == OutputParams::NONFLOAT) {
+		// If we're inside a standard paragraph, leave it: we don't want to be.
+		// Otherwise, the HTML wouldn't be very valid (<p>…<div/>…</p>).
+		para_open = xs.getStartTagByXmlTag(from_ascii("p"));
+		if (!para_open.has_value()) {
+			const xml::StartTag tag = xml::StartTag(from_ascii("div"), from_ascii("class='standard'"));
+			if (xs.isTagOpen(tag)) {
+				para_open = tag;
+			}
+		}
+		if (para_open.has_value()) {
+			xs << xml::EndTag(*para_open);
+		}
+	}
+
+	xs << xml::StartTag(htmltype, attr);
 	InsetText::XHTMLOptions const opts =
 		InsetText::WriteLabel | InsetText::WriteInnerTag;
-	InsetText::insetAsXHTML(newxs, rp, opts);
-	newxs << xml::EndTag(htmltype);
+	InsetText::insetAsXHTML(xs, rp, opts);
+	xs << xml::EndTag(htmltype);
 
-	if (rp.inFloat == OutputParams::NONFLOAT) {
-		// In this case, this float needs to be deferred, but we'll put it
-		// before anything the text itself deferred.
-		return ods.str();
-	} else {
-		// Things will already have been escaped, so we do not
-		// want to escape them again.
-		xs << XMLStream::ESCAPE_NONE << ods.str();
-		return docstring();
+	// Reopen the paragraph that was previously open when starting the output of the index.
+	// It might create an empty paragraph with styles, but it's not a big deal.
+	if (para_open.has_value()) {
+		xs << *para_open;
 	}
 }
 

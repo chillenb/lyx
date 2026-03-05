@@ -949,10 +949,10 @@ void InsetInclude::latex(otexstream & os, OutputParams const & runparams) const
 }
 
 
-docstring InsetInclude::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetInclude::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	if (rp.inComment)
-		 return docstring();
+		 return;
 
 	// For verbatim and listings, we just include the contents of the file as-is.
 	// In the case of listings, we wrap it in <pre>.
@@ -964,7 +964,7 @@ docstring InsetInclude::xhtml(XMLStream & xs, OutputParams const & rp) const
 		xs << includedFileName(buffer(), params()).fileContents("UTF-8");
 		if (listing)
 			xs << xml::EndTag("pre");
-		return docstring();
+		return;
 	}
 
 	// We don't (yet) know how to Input or Include non-LyX files.
@@ -977,17 +977,17 @@ docstring InsetInclude::xhtml(XMLStream & xs, OutputParams const & rp) const
 					 bformat(_("LyX does not know how to include non-LyX files when "
 					           "generating HTML output. Offending file:\n%1$s"),
 					            ltrim(params()["filename"])));
-		return docstring();
+		return;
 	}
 
 	// In the other cases, we will generate the HTML and include it.
 
 	Buffer const * const ibuf = loadIfNeeded();
 	if (!ibuf)
-		return docstring();
+		return;
 
 	if (recursion_error_)
-		return docstring();
+		return;
 
 	// are we generating only some paragraphs, or all of them?
 	bool const all_pars = !rp.dryrun ||
@@ -1005,7 +1005,7 @@ docstring InsetInclude::xhtml(XMLStream & xs, OutputParams const & rp) const
 		xs << XMLStream::ESCAPE_NONE << " -->";
 	}
 	
-	return docstring();
+	return;
 }
 
 

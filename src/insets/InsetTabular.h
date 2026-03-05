@@ -91,7 +91,7 @@ public:
 	/// descending into insets
 	docstring asString(bool intoInsets = true);
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
@@ -675,7 +675,7 @@ public:
 	/// serialise the table in DocBook, according to buffer parameters
 	void docbook(XMLStream &, OutputParams const &) const;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const;
+	void xhtml(XMLStream &, OutputParams const &) const;
 	///
 	void plaintext(odocstringstream &,
 		       OutputParams const & runparams, int const depth,
@@ -1053,9 +1053,9 @@ private:
 	std::string getVAlignAsXmlAttribute(idx_type cell) const;
 
 	/// Helpers for XML tables (XHTML or DocBook).
-	docstring xmlRow(XMLStream & xs, row_type row, OutputParams const &,
-	                 bool header, XmlOutputFormat output_format,
-	                 BufferParams::TableOutput docbook_table_output = BufferParams::TableOutput::HTMLTable) const;
+	void xmlRow(XMLStream & xs, row_type row, OutputParams const &,
+	            bool header, XmlOutputFormat output_format,
+	            BufferParams::TableOutput docbook_table_output = BufferParams::TableOutput::HTMLTable) const;
 	void xmlHeader(XMLStream & xs, OutputParams const &, XmlOutputFormat output_format) const;
 	void xmlFooter(XMLStream & xs, OutputParams const &, XmlOutputFormat output_format) const;
 	void xmlBody(XMLStream & xs, OutputParams const &, XmlOutputFormat output_format) const;
@@ -1162,7 +1162,7 @@ public:
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	void validate(LaTeXFeatures & features) const override;
 	///

@@ -60,7 +60,7 @@ public:
 	int plaintext(odocstringstream &, OutputParams const &,
 	              size_t max_length = INT_MAX) const override;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///

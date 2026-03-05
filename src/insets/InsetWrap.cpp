@@ -210,7 +210,7 @@ void InsetWrap::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetWrap::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetWrap::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	string const len = params_.width.asHTMLString();
 	string const width = len.empty() ? "50%" : len;
@@ -220,7 +220,6 @@ docstring InsetWrap::xhtml(XMLStream & xs, OutputParams const & rp) const
 	xs << xml::StartTag(tag, attr);
 	InsetText::insetAsXHTML(xs, rp, InsetText::WriteInnerTag);
 	xs << xml::EndTag(tag);
-	return docstring();
 }
 
 

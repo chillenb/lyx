@@ -180,10 +180,9 @@ void InsetLine::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetLine::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetLine::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	xs << xml::CompTag("hr") << xml::CR();
-	return docstring();
 }
 
 

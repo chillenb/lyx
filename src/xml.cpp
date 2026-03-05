@@ -173,7 +173,7 @@ XMLStream::TagPtr XMLStream::getLastStackTag()
 }
 
 
-bool XMLStream::closeFontTags()
+bool XMLStream::closeFontTags(bool ignore_one_non_font_tag)
 {
 	if (isTagPending(xml::parsep_tag))
 		// we haven't had any content
@@ -196,6 +196,9 @@ bool XMLStream::closeFontTags()
 	}
 
 	if (**curtag == xml::parsep_tag)
+		return true;
+
+	if (ignore_one_non_font_tag && !(**curtag).asFontTag())
 		return true;
 
 	// so we've hit a non-font tag.
@@ -401,7 +404,7 @@ XMLStream &XMLStream::operator<<(xml::CR const &)
 bool XMLStream::isTagOpen(xml::StartTag const &stag, int maxdepth) const
 {
 	auto sit = tag_stack_.begin();
-	auto sen = tag_stack_.cend();
+	const auto sen = tag_stack_.cend();
 	for (; sit != sen && maxdepth != 0; ++sit) {
 		if (**sit == stag)
 			return true;
@@ -414,7 +417,7 @@ bool XMLStream::isTagOpen(xml::StartTag const &stag, int maxdepth) const
 bool XMLStream::isTagOpen(xml::EndTag const &etag, int maxdepth) const
 {
 	auto sit = tag_stack_.begin();
-	auto sen = tag_stack_.cend();
+	const auto sen = tag_stack_.cend();
 	for (; sit != sen && maxdepth != 0; ++sit) {
 		if (etag == **sit)
 			return true;
@@ -424,10 +427,23 @@ bool XMLStream::isTagOpen(xml::EndTag const &etag, int maxdepth) const
 }
 
 
+std::optional<xml::StartTag> XMLStream::getStartTagByXmlTag(const docstring & xml_tag, int maxdepth) const
+{
+	auto sit = tag_stack_.begin();
+	const auto sen = tag_stack_.cend();
+	for (; sit != sen && maxdepth != 0; ++sit) {
+		if ((*sit)->tag_ == xml_tag)
+			return **sit;
+		maxdepth -= 1;
+	}
+	return {};
+}
+
+
 bool XMLStream::isTagPending(xml::StartTag const &stag, int maxdepth) const
 {
 	auto sit = pending_tags_.begin();
-	auto sen = pending_tags_.cend();
+	const auto sen = pending_tags_.cend();
 	for (; sit != sen && maxdepth != 0; ++sit) {
 		if (**sit == stag)
 			return true;

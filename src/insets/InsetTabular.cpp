@@ -4203,10 +4203,9 @@ std::vector<std::string> Tabular::computeCssStylePerCell(row_type row, col_type 
 }
 
 
-docstring Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const & runparams,
+void Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const & runparams,
 	const bool header, const XmlOutputFormat output_format, BufferParams::TableOutput docbook_table_output) const
 {
-	docstring ret;
 	const bool is_xhtml_table = output_format == XmlOutputFormat::XHTML ||
 			docbook_table_output == BufferParams::TableOutput::HTMLTable;
 	const bool is_cals_table = output_format == XmlOutputFormat::DOCBOOK &&
@@ -4287,7 +4286,7 @@ docstring Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const
 		// Render the cell as either XHTML or DocBook.
 		xs << xml::StartTag(cell_tag, attr_str, true);
 		if (output_format == XmlOutputFormat::XHTML) {
-			ret += cellInset(cell)->xhtml(xs, runparams);
+			cellInset(cell)->xhtml(xs, runparams);
 		} else if (output_format == XmlOutputFormat::DOCBOOK) {
 			// DocBook: no return value for this function.
 			OutputParams rp = runparams;
@@ -4300,8 +4299,6 @@ docstring Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const
 	}
 	xs << xml::EndTag(row_tag);
 	xs << xml::CR();
-
-	return ret;
 }
 
 
@@ -4416,10 +4413,8 @@ void Tabular::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring Tabular::xhtml(XMLStream & xs, OutputParams const & runparams) const
+void Tabular::xhtml(XMLStream & xs, OutputParams const & runparams) const
 {
-	docstring ret;
-
 	if (is_long_tabular) {
 		// We'll wrap it in a div to deal with alignment.
 		string align;
@@ -4443,7 +4438,7 @@ docstring Tabular::xhtml(XMLStream & xs, OutputParams const & runparams) const
 			xs << xml::CR();
 			for (row_type r = 0; r < nrows(); ++r)
 				if (row_info[r].caption)
-					ret += xmlRow(xs, r, runparams, false, XmlOutputFormat::XHTML);
+					xmlRow(xs, r, runparams, false, XmlOutputFormat::XHTML);
 			xs << xml::EndTag("div");
 			xs << xml::CR();
 		}
@@ -4462,7 +4457,6 @@ docstring Tabular::xhtml(XMLStream & xs, OutputParams const & runparams) const
 		xs << xml::EndTag("div");
 		xs << xml::CR();
 	}
-	return ret;
 }
 
 
@@ -4907,13 +4901,13 @@ void InsetTableCell::addToToc(DocIterator const & di, bool output_active,
 }
 
 
-docstring InsetTableCell::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetTableCell::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	if (!isFixedWidth) {
 		InsetText::insetAsXHTML(xs, rp, InsetText::JustText);
-		return docstring();
+	} else {
+		InsetText::xhtml(xs, rp);
 	}
-	return InsetText::xhtml(xs, rp);
 }
 
 
@@ -6921,9 +6915,9 @@ void InsetTabular::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetTabular::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetTabular::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
-	return tabular.xhtml(xs, rp);
+	tabular.xhtml(xs, rp);
 }
 
 

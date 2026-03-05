@@ -516,10 +516,9 @@ void Inset::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring Inset::xhtml(XMLStream & xs, OutputParams const &) const
+void Inset::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	xs << "[[Inset: " << from_ascii(insetName(lyxCode())) << "]]";
-	return docstring();
 }
 
 

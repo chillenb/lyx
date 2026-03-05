@@ -172,13 +172,13 @@ int InsetFloatList::plaintext(odocstringstream & os,
 }
 
 
-docstring InsetFloatList::xhtml(XMLStream &, OutputParams const & op) const {
+void InsetFloatList::xhtml(XMLStream & xs, OutputParams const & op) const {
 	FloatList const & floats = buffer().params().documentClass().floats();
 	FloatList::const_iterator cit = floats[to_ascii(getParam("type"))];
 
 	if (cit == floats.end()) {
 		LYXERR0("Unknown float type `" << getParam("type") << "' in IFL::xhtml.");
-		return docstring();
+		return;
 	}
 
 	string toctype;
@@ -202,7 +202,7 @@ docstring InsetFloatList::xhtml(XMLStream &, OutputParams const & op) const {
 			                               getLocalOrDefaultLang(op)->lang());
 		} else {
 			LYXERR0("Unknown Builtin Float!");
-			return docstring();
+			return;
 		}
 	} else {
 		toctype = to_utf8(getParam("type"));
@@ -212,7 +212,7 @@ docstring InsetFloatList::xhtml(XMLStream &, OutputParams const & op) const {
 
 	shared_ptr<Toc const> toc = buffer().tocBackend().toc(toctype);
 	if (toc->empty())
-		return docstring();
+		return;
 
 	// we want to look like a chapter, section, or whatever.
 	// so we're going to look for the layout with the minimum toclevel
@@ -235,11 +235,13 @@ docstring InsetFloatList::xhtml(XMLStream &, OutputParams const & op) const {
 	string const tocclass = lay ? " " + lay->defaultCSSClass(): "";
 	string const tocattr = "class='tochead toc-" + toctype + tocclass + "'";
 
-	// we'll use our own stream, because we are going to defer everything.
-	// that's how we deal with the fact that we're probably inside a standard
-	// paragraph, and we don't want to be.
-	odocstringstream ods;
-	XMLStream xs(ods);
+	std::optional<xml::StartTag> para_open;
+	// If we're inside a standard paragraph, leave it: we don't want to be.
+	// Otherwise, the HTML wouldn't be very valid (<p>…<div/>…</p>).
+	para_open = xs.getStartTagByXmlTag(from_ascii("p"));
+	if (para_open.has_value()) {
+		xs << xml::EndTag("p");
+	}
 
 	InsetLayout const & il = getLayout();
 	string const & tag = il.htmltag();
@@ -263,7 +265,12 @@ docstring InsetFloatList::xhtml(XMLStream &, OutputParams const & op) const {
 		xs << xml::EndTag("div");
 	}
 	xs << xml::EndTag("div");
-	return ods.str();
+
+	// Reopen the paragraph that was previously open when starting the output of the index.
+	// It might create an empty paragraph with styles, but it's not a big deal.
+	if (para_open.has_value()) {
+		xs << *para_open;
+	}
 }
 
 

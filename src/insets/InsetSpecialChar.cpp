@@ -113,7 +113,7 @@ void drawLogo(PainterInfo & pi, int & x, int const y, string const kind)
 		drawChar(pi, x, y, 'X');
 		return;
 	}
-	if (kind == "LaTeX2e") { 
+	if (kind == "LaTeX2e") {
 		/** Reference macro:
 		 *  \DeclareRobustCommand{\LaTeXe}{\mbox{\m@th
 		 *    \if b\expandafter\@car\f@series\@nil\boldmath\fi
@@ -126,7 +126,7 @@ void drawLogo(PainterInfo & pi, int & x, int const y, string const kind)
 		drawChar(pi, x, y + em / 4, char_type(0x03b5));
 		return;
 	}
-	if (kind == "LaTeX") { 
+	if (kind == "LaTeX") {
 		/** Reference macro:
 		 * \DeclareRobustCommand{\LaTeX}{L\kern-.36em%
 		 *        {\sbox\z@ T%
@@ -308,13 +308,12 @@ void InsetSpecialChar::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetSpecialChar::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetSpecialChar::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	if (unknown_)
 		return docstring();
 
 	xs << XMLStream::ESCAPE_NONE << sc_.xhtml_output;
-	return docstring();
 }
 
 

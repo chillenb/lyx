@@ -234,12 +234,11 @@ void InsetVSpace::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetVSpace::xhtml(XMLStream & os, OutputParams const &) const
+void InsetVSpace::xhtml(XMLStream & os, OutputParams const &) const
 {
 	string const len = space_.asHTMLLength();
 	string const attr = "style='height:" + (len.empty() ? "1em" : len) + "'";
 	os << xml::StartTag("div", attr, true) << xml::EndTag("div");
-	return docstring();
 }
 
 

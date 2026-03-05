@@ -56,7 +56,7 @@ public:
 	/// if overwriteRedefinition is true
 	int writeMath(TeXMathStream & os, bool overwriteRedefinition) const;
 	/// Nothing happens. This is simply to suppress the default output.
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	int plaintext(odocstringstream &, OutputParams const &, size_t) const override;
 	///

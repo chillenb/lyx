@@ -80,7 +80,7 @@ public:
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	/// Update the contextual information of this inset
 	void update();
 	///

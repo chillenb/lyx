@@ -218,7 +218,7 @@ public:
 	/// Outputs the inset as DocBook, taking advantage of the metadata available in InsetInfoParams.
 	void docbook(XMLStream &, OutputParams const &) const override;
 	/// Outputs the inset as XHTML, taking advantage of the metadata available in InsetInfoParams.
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 
 private:
 	///

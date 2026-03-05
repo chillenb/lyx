@@ -2019,7 +2019,7 @@ void InsetInfo::docbook(XMLStream & xs, OutputParams const & rp) const
 }
 
 
-docstring InsetInfo::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetInfo::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	// TODO: away from a release, merge some of this code with InsetInfo::build and InsetInfoParams::getArguments.
 	switch (params_.type) {
@@ -2144,8 +2144,6 @@ docstring InsetInfo::xhtml(XMLStream & xs, OutputParams const & rp) const
 		xml::closeTag(xs, "span", "inline");
 		break;
 	}
-
-	return from_ascii("");
 }
 
 

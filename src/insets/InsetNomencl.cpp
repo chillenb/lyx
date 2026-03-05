@@ -130,9 +130,9 @@ void InsetNomencl::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetNomencl::xhtml(XMLStream &, OutputParams const &) const
+void InsetNomencl::xhtml(XMLStream &, OutputParams const &) const
 {
-	return docstring();
+	// TODO: implement.
 }
 
 
@@ -209,7 +209,7 @@ struct NomenclEntry {
 typedef map<docstring, NomenclEntry > EntryMap;
 
 
-docstring InsetPrintNomencl::xhtml(XMLStream &, OutputParams const & op) const
+void InsetPrintNomencl::xhtml(XMLStream & xs, OutputParams const & op) const
 {
 	shared_ptr<Toc const> toc = buffer().tocBackend().toc("nomencl");
 
@@ -221,10 +221,10 @@ docstring InsetPrintNomencl::xhtml(XMLStream &, OutputParams const & op) const
 		Paragraph const & par = dit.innerParagraph();
 		Inset const * inset = par.getInset(dit.top().pos());
 		if (!inset)
-			return docstring();
+			return;
 		InsetNomencl const * in = inset->asInsetNomencl();
 		if (!in)
-			return docstring();
+			return;
 
 		// FIXME We need a link to the paragraph here, so we
 		// need some kind of struct.
@@ -237,13 +237,14 @@ docstring InsetPrintNomencl::xhtml(XMLStream &, OutputParams const & op) const
 	}
 
 	if (entries.empty())
-		return docstring();
+		return;
 
-	// we'll use our own stream, because we are going to defer everything.
-	// that's how we deal with the fact that we're probably inside a standard
-	// paragraph, and we don't want to be.
-	odocstringstream ods;
-	XMLStream xs(ods);
+	// If we're inside a standard paragraph, leave it: we don't want to be.
+	// Otherwise, the HTML wouldn't be very valid (<p>…<div/>…</p>).
+	std::optional<const xml::StartTag> const para_open = xs.getStartTagByXmlTag(from_ascii("p"));
+	if (para_open.has_value()) {
+		xs << xml::EndTag("p");
+	}
 
 	InsetLayout const & il = getLayout();
 	string const & tag = il.htmltag();
@@ -278,9 +279,13 @@ docstring InsetPrintNomencl::xhtml(XMLStream &, OutputParams const & op) const
 	xs << xml::EndTag("dl")
 	   << xml::CR()
 	   << xml::EndTag("div")
-	   << xml::CR();
+	<< xml::CR();
 
-	return ods.str();
+	// Reopen the paragraph that was previously open when starting the output of the index.
+	// It might create an empty paragraph with styles, but it's not a big deal.
+	if (para_open.has_value()) {
+		xs << *para_open;
+	}
 }
 
 

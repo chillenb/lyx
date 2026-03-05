@@ -300,10 +300,10 @@ void InsetCaption::docbook(XMLStream &, OutputParams const &) const
 }
 
 
-docstring InsetCaption::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetCaption::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	if (rp.html_disable_captions)
-		return docstring();
+		return;
 	InsetLayout const & il = getLayout();
 	string const & tag = il.htmltag();
 	string attr = il.htmlGetAttrString();
@@ -318,7 +318,6 @@ docstring InsetCaption::xhtml(XMLStream & xs, OutputParams const & rp) const
 	xs << xml::StartTag(tag, attr);
 	writeCaptionAsHTML(xs, rp);
 	xs << xml::EndTag(tag);
-	return docstring();
 }
 
 

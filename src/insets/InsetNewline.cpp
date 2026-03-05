@@ -186,10 +186,9 @@ void InsetNewline::docbook(XMLStream &, OutputParams const &) const
 }
 
 
-docstring InsetNewline::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetNewline::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	xs << xml::CR() << xml::CompTag("br") << xml::CR();
-	return docstring();
 }
 
 

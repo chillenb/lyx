@@ -179,13 +179,12 @@ void InsetCounter::docbook(XMLStream &, OutputParams const &) const
 }
 
 
-docstring InsetCounter::xhtml(XMLStream &, OutputParams const &) const
+void InsetCounter::xhtml(XMLStream &, OutputParams const &) const
 {
 	// Here, we need to track counter values ourselves,
 	// since unlike in the LaTeX case, there is no external
 	// mechanism for doing that.
 	trackCounters(getCmdName());
-	return docstring();
 }
 
 

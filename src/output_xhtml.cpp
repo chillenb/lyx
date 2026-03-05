@@ -357,23 +357,21 @@ ParagraphList::const_iterator makeParagraphs(Buffer const & buf,
 			|| (!open_par && runparams.html_in_par && par == pbegin && nextpar != pend);
 
 		if (open_par) {
+			xs.startDivision(par->allowEmpty());
 			// We do not issue the paragraph id if we are doing
 			// this for the TOC (or some similar purpose)
 			openParTag(xs, lay, par->params(),
 			           runparams.for_toc ? "" : par->magicLabel());
 		}
 
-		docstring const deferred = par->simpleLyXHTMLOnePar(buf, xs,
+		par->simpleLyXHTMLOnePar(buf, xs,
 			runparams, text.outerFont(distance(begin, par)),
-			open_par, close_par);
+			false, false);
 
 		if (close_par) {
 			closeTag(xs, lay);
 			xs << xml::CR();
-		}
-
-		if (!deferred.empty()) {
-			xs << XMLStream::ESCAPE_NONE << deferred << xml::CR();
+			xs.endDivision();
 		}
 	}
 	return pend;
@@ -539,9 +537,8 @@ ParagraphList::const_iterator makeEnvironment(Buffer const & buf,
 				if (labelfirst)
 					openItemTag(xs, style, par->params(), par->magicLabel());
 
-				docstring deferred = par->simpleLyXHTMLOnePar(buf, xs, runparams,
+				par->simpleLyXHTMLOnePar(buf, xs, runparams,
 					text.outerFont(distance(begin, par)), true, true, sep);
-				xs << XMLStream::ESCAPE_NONE << deferred;
 				++par;
 
 				// We may not want to close the tag yet, in particular:

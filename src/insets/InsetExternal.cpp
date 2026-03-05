@@ -788,11 +788,10 @@ void InsetExternal::docbook(XMLStream & xs,
 }
 
 
-docstring InsetExternal::xhtml(XMLStream & xs,
+void InsetExternal::xhtml(XMLStream & xs,
 			OutputParams const & runparams) const
 {
 	generateXML(xs, runparams, "XHTML");
-	return docstring();
 }
 
 

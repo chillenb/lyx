@@ -85,7 +85,7 @@ private:
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	/// Makes no sense for XHTML.
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	bool getStatus(Cursor &, FuncRequest const &, FuncStatus &) const override;
 	///

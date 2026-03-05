@@ -3918,15 +3918,13 @@ void doFontSwitchXHTML(vector<xml::FontTag> & tagsToOpen,
 } // anonymous namespace
 
 
-docstring Paragraph::simpleLyXHTMLOnePar(Buffer const & buf,
+void Paragraph::simpleLyXHTMLOnePar(Buffer const & buf,
 				    XMLStream & xs,
 				    OutputParams const & runparams,
 				    Font const & outerfont,
 				    bool start_paragraph, bool close_paragraph,
 				    pos_type initial) const
 {
-	docstring retval;
-
 	// track whether we have opened these tags
 	bool emph_flag = false;
 	bool bold_flag = false;
@@ -4235,7 +4233,7 @@ docstring Paragraph::simpleLyXHTMLOnePar(Buffer const & buf,
 				// case" where we do not output the containing paragraph info
 				if (!inset->getLayout().htmlisblock() && size() != 1)
 					np.html_in_par = true;
-				retval += inset->xhtml(xs, np);
+				inset->xhtml(xs, np);
 			}
 		} else {
 			char_type c = getUChar(buf.masterBuffer()->params(),
@@ -4253,11 +4251,9 @@ docstring Paragraph::simpleLyXHTMLOnePar(Buffer const & buf,
 	// FIXME XHTML
 	// I'm worried about what happens if a branch, say, is itself
 	// wrapped in some font stuff. I think that will not work.
-	xs.closeFontTags();
+	xs.closeFontTags(true);
 	if (close_paragraph)
 		xs.endDivision();
-
-	return retval;
 }
 
 

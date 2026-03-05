@@ -653,17 +653,15 @@ void InsetCitation::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetCitation::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetCitation::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	if (getCmdName() == "nocite")
-		return docstring();
+		return;
 
 	// have to output this raw, because generateLabel() will include tags
 	// but we need to escape standalone ampersands
 	xs << XMLStream::ESCAPE_NONE
 	   << subst(generateLabel(true), from_ascii(" & "), from_ascii(" &amp; "));
-
-	return docstring();
 }
 
 

@@ -333,12 +333,11 @@ void InsetIPADeco::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetIPADeco::xhtml(XMLStream & xs, OutputParams const & runparams) const
+void InsetIPADeco::xhtml(XMLStream & xs, OutputParams const & runparams) const
 {
 	// The DocBook encoding for this inset has no DocBook tag, but sheer XML (relying on a plaintext
 	// transformation of the inset).
 	docbook(xs, runparams);
-	return docstring();
 }
 
 
@@ -586,10 +585,9 @@ void InsetIPAChar::docbook(XMLStream & xs, OutputParams const &) const
 }
 
 
-docstring InsetIPAChar::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetIPAChar::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	xs << XMLStream::ESCAPE_NONE << from_ascii(ipaCharToXMLEntity(kind()));
-	return docstring();
 }
 
 

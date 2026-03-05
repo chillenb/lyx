@@ -482,7 +482,7 @@ void InsetLabel::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetLabel::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetLabel::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	// Print the label as an HTML anchor, so that an external link can point to this equation.
 	// (URL: FILE.html#EQ-ID.)
@@ -493,7 +493,6 @@ docstring InsetLabel::xhtml(XMLStream & xs, OutputParams const &) const
 	// have to figure out what to do about this later.
 	docstring const attr = "id=\"" + xml::cleanAttr(getParam("name")) + '"';
 	xs << xml::CompTag("a", to_utf8(attr));
-	return docstring();
 }
 
 

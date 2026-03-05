@@ -746,7 +746,7 @@ docstring InsetRef::displayString(docstring const & ref, string const & cmd,
 }
 
 
-docstring InsetRef::xhtml(XMLStream & xs, OutputParams const & op) const
+void InsetRef::xhtml(XMLStream & xs, OutputParams const & op) const
 {
 	vector<docstring> display_string;
 	vector<docstring> refs = getVectorFromString(getParam("reference"));
@@ -771,10 +771,8 @@ docstring InsetRef::xhtml(XMLStream & xs, OutputParams const & op) const
 		++i;
 		if (first) {
 			first = false;
-			continue;
 		}
 	}
-	return docstring();
 }
 
 

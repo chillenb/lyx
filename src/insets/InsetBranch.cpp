@@ -312,7 +312,7 @@ void InsetBranch::docbook(XMLStream & xs, OutputParams const & runparams) const
 }
 
 
-docstring InsetBranch::xhtml(XMLStream & xs, OutputParams const & rp) const
+void InsetBranch::xhtml(XMLStream & xs, OutputParams const & rp) const
 {
 	if (producesOutput()) {
 		OutputParams newrp = rp;
@@ -320,7 +320,6 @@ docstring InsetBranch::xhtml(XMLStream & xs, OutputParams const & rp) const
 		newrp.par_end = text().paragraphs().size();
 		xhtmlParagraphs(text(), buffer(), xs, newrp);
 	}
-	return docstring();
 }
 
 

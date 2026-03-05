@@ -2722,7 +2722,7 @@ docstring InsetMathHull::mathAsLatex() const
 }
 
 
-docstring InsetMathHull::xhtml(XMLStream & xs, OutputParams const & op) const
+void InsetMathHull::xhtml(XMLStream & xs, OutputParams const & op) const
 {
 	BufferParams::MathOutput const mathtype =
 		buffer().masterBuffer()->params().html_math_output;
@@ -2849,7 +2849,6 @@ docstring InsetMathHull::xhtml(XMLStream & xs, OutputParams const & op) const
 		   << xml::EndTag(tag)
 		   << xml::CR();
 	}
-	return docstring();
 }
 
 

@@ -367,10 +367,7 @@ public:
 	virtual void docbook(XMLStream &, OutputParams const &) const;
 	/// XHTML output
 	/// the inset is expected to write XHTML to the XMLStream
-	/// \return any "deferred" material that should be written outside the
-	/// normal stream, and which will in fact be written after the current
-	/// paragraph closes. this is appropriate e.g. for floats.
-	virtual docstring xhtml(XMLStream &, OutputParams const &) const;
+	virtual void xhtml(XMLStream &, OutputParams const &) const;
 
 	/// 
 	virtual bool findUsesToString() const { return false; }

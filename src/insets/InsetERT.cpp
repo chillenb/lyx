@@ -303,9 +303,9 @@ string InsetERT::params2string(CollapseStatus status)
 }
 
 
-docstring InsetERT::xhtml(XMLStream &, OutputParams const &) const
+void InsetERT::xhtml(XMLStream &, OutputParams const &) const
 {
-	return docstring();
+	return;
 }
 
 } // namespace lyx

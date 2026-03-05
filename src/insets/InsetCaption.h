@@ -82,7 +82,7 @@ private:
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream & os, OutputParams const & runparams) const override;
+	void xhtml(XMLStream & os, OutputParams const & runparams) const override;
 	///
 	void addToToc(DocIterator const & di, bool output_active, UpdateType utype,
 	              TocBackend & backend) const override;

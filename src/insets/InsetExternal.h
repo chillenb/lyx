@@ -150,7 +150,7 @@ public:
 	void docbook(XMLStream &, OutputParams const &) const override;
 	/// For now, this does nothing. Someone who knows about this
 	/// should see what needs doing for XHTML output.
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	/// Update needed features for this inset.
 	void validate(LaTeXFeatures & features) const override;
 	///
