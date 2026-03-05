@@ -6,7 +6,7 @@
 
 # Author: Joel A. Kulesza (jkulesza@gmail.com)
 
-Format 115
+Format 116
 
 # This counter is used by the equations within the inset below
 # but the inset itself uses the equation counter (outside of

@@ -22,7 +22,7 @@
 # TODO: for DocBook, there is no difference with standard (not starred) environments.
 # How to encode the subtlety?
 
-Format 115
+Format 116
 
 OutlinerName thm "Definitions & Theorems"
 

@@ -2,7 +2,7 @@
 #  \DeclareLaTeXClass[ctexart,savesym.sty,xeCJK.sty]{Chinese Article (CTeX)}
 #  \DeclareCategory{Articles}
 
-Format 115
+Format 116
 
 # Read the definitions from article.layout
 Input article.layout

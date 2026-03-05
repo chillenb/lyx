@@ -4,7 +4,7 @@
 #
 # Detailed format description is available in the customization manual
 
-Format 115
+Format 116
 
 Provides stdinsets 1
 

@@ -1,7 +1,7 @@
 # Author : André Pönitz
 # This include file contains label definitions for an article-like numbering.
 
-Format 115
+Format 116
 
 # appendix applies to sections.
 Counter section

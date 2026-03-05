@@ -6,7 +6,7 @@
 #DescriptionEnd
 # Author: Uwe Stöhr <uwestoehr@web.de>
 
-Format 115
+Format 116
 
 AddToPreamble
 	\usepackage{braille}

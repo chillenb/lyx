@@ -4,7 +4,7 @@
 # Latex8 textclass definition file.
 # Author : Allan Rae <rae@elec.uq.edu.au>
 
-Format 115
+Format 116
 Preamble
 	\usepackage{latex8}
 	\usepackage{times}
