@@ -5449,7 +5449,7 @@ EndColor
 
 Color LatexColors:tenne(tawny)
 	LaTexName  tenne(tawny)
-	GuiName  "Tenné (Tawny)"
+	GuiName  "Tenne (Tawny)"
 	HexName  CD5700
 	Category  "Latex Colors"
 	Requires  latexcolors
