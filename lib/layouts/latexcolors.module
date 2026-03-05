@@ -1,0 +1,6075 @@
+#\DeclareLyXModule{LaTeX Colors}
+#DescriptionBegin
+#Provides custom colors from the latexcolors package
+#DescriptionEnd
+
+# Author: Baris Erkus <bariserkus@hotmail.com>
+
+Format 111
+
+Color LatexColors:airforceblue
+	LaTexName  airforceblue
+	GuiName  "Air Force blue"
+	HexName  5D8AA8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:aliceblue
+	LaTexName  aliceblue
+	GuiName  "Alice blue"
+	HexName  F0F8FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:alizarin
+	LaTexName  alizarin
+	GuiName  "Alizarin"
+	HexName  E32636
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:almond
+	LaTexName  almond
+	GuiName  "Almond"
+	HexName  EFDECD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:amaranth
+	LaTexName  amaranth
+	GuiName  "Amaranth"
+	HexName  E52B50
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:amber
+	LaTexName  amber
+	GuiName  "Amber"
+	HexName  FFBF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:amber(sae/ece)
+	LaTexName  amber(sae/ece)
+	GuiName  "Amber (SAE/ECE)"
+	HexName  FF7E00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:americanrose
+	LaTexName  americanrose
+	GuiName  "American rose"
+	HexName  FF033E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:amethyst
+	LaTexName  amethyst
+	GuiName  "Amethyst"
+	HexName  9966CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:anti-flashwhite
+	LaTexName  anti-flashwhite
+	GuiName  "Anti-flash white"
+	HexName  F2F3F4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:antiquebrass
+	LaTexName  antiquebrass
+	GuiName  "Antique brass"
+	HexName  CD9575
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:antiquefuchsia
+	LaTexName  antiquefuchsia
+	GuiName  "Antique fuchsia"
+	HexName  915C83
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:antiquewhite
+	LaTexName  antiquewhite
+	GuiName  "Antique white"
+	HexName  FAEBD7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ao
+	LaTexName  ao
+	GuiName  "Ao"
+	HexName  0000FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ao(english)
+	LaTexName  ao(english)
+	GuiName  "Ao (English)"
+	HexName  008000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:applegreen
+	LaTexName  applegreen
+	GuiName  "Apple green"
+	HexName  8DB600
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:apricot
+	LaTexName  apricot
+	GuiName  "Apricot"
+	HexName  FBCEB1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:aqua
+	LaTexName  aqua
+	GuiName  "Aqua"
+	HexName  00FFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:aquamarine
+	LaTexName  aquamarine
+	GuiName  "Aquamarine"
+	HexName  7FFFD0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:armygreen
+	LaTexName  armygreen
+	GuiName  "Army green"
+	HexName  4B5320
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:arsenic
+	LaTexName  arsenic
+	GuiName  "Arsenic"
+	HexName  3B444B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:arylideyellow
+	LaTexName  arylideyellow
+	GuiName  "Arylide yellow"
+	HexName  E9D66B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ashgrey
+	LaTexName  ashgrey
+	GuiName  "Ash grey"
+	HexName  B2BEB5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:asparagus
+	LaTexName  asparagus
+	GuiName  "Asparagus"
+	HexName  87A96B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:atomictangerine
+	LaTexName  atomictangerine
+	GuiName  "Atomic tangerine"
+	HexName  FF9966
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:auburn
+	LaTexName  auburn
+	GuiName  "Auburn"
+	HexName  6D351A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:aureolin
+	LaTexName  aureolin
+	GuiName  "Aureolin"
+	HexName  FDEE00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:aurometalsaurus
+	LaTexName  aurometalsaurus
+	GuiName  "AuroMetalSaurus"
+	HexName  6E7F80
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:awesome
+	LaTexName  awesome
+	GuiName  "Awesome"
+	HexName  FF2052
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:azure(colorwheel)
+	LaTexName  azure(colorwheel)
+	GuiName  "Azure (color wheel)"
+	HexName  007FFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:azure(web)(azuremist)
+	LaTexName  azure(web)(azuremist)
+	GuiName  "Azure (web) (Azure mist)"
+	HexName  F0FFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:babyblue
+	LaTexName  babyblue
+	GuiName  "Baby blue"
+	HexName  89CFF0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:babyblueeyes
+	LaTexName  babyblueeyes
+	GuiName  "Baby blue eyes"
+	HexName  A1CAF1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:babypink
+	LaTexName  babypink
+	GuiName  "Baby pink"
+	HexName  F4C2C2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ballblue
+	LaTexName  ballblue
+	GuiName  "Ball Blue"
+	HexName  21ABCD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bananamania
+	LaTexName  bananamania
+	GuiName  "Banana Mania"
+	HexName  FAE7B5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bananayellow
+	LaTexName  bananayellow
+	GuiName  "Banana Yellow"
+	HexName  FFE135
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:battleshipgrey
+	LaTexName  battleshipgrey
+	GuiName  "Battleship grey"
+	HexName  848482
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bazaar
+	LaTexName  bazaar
+	GuiName  "Bazaar"
+	HexName  98777B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:beaublue
+	LaTexName  beaublue
+	GuiName  "Beau blue"
+	HexName  BCD4E6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:beaver
+	LaTexName  beaver
+	GuiName  "Beaver"
+	HexName  9F8170
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:beige
+	LaTexName  beige
+	GuiName  "Beige"
+	HexName  F5F5DC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bisque
+	LaTexName  bisque
+	GuiName  "Bisque"
+	HexName  FFE4C4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bistre
+	LaTexName  bistre
+	GuiName  "Bistre"
+	HexName  3D2B1F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bittersweet
+	LaTexName  bittersweet
+	GuiName  "Bittersweet"
+	HexName  FE6F5E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:black
+	LaTexName  black
+	GuiName  "Black"
+	HexName  000000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blanchedalmond
+	LaTexName  blanchedalmond
+	GuiName  "Blanched Almond"
+	HexName  FFEBCD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bleudefrance
+	LaTexName  bleudefrance
+	GuiName  "Bleu de France"
+	HexName  318CE7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blizzardblue
+	LaTexName  blizzardblue
+	GuiName  "Blizzard Blue"
+	HexName  ACE5EE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blond
+	LaTexName  blond
+	GuiName  "Blond"
+	HexName  FAF0BE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue
+	LaTexName  blue
+	GuiName  "Blue"
+	HexName  0000FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue(munsell)
+	LaTexName  blue(munsell)
+	GuiName  "Blue (Munsell)"
+	HexName  0093AF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue(ncs)
+	LaTexName  blue(ncs)
+	GuiName  "Blue (NCS)"
+	HexName  0087BD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue(pigment)
+	LaTexName  blue(pigment)
+	GuiName  "Blue (pigment)"
+	HexName  333399
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue(ryb)
+	LaTexName  blue(ryb)
+	GuiName  "Blue (RYB)"
+	HexName  0247FE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bluebell
+	LaTexName  bluebell
+	GuiName  "Blue Bell"
+	HexName  A2A2D0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bluegray
+	LaTexName  bluegray
+	GuiName  "Blue Gray"
+	HexName  6699CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue-green
+	LaTexName  blue-green
+	GuiName  "Blue-green"
+	HexName  00DDDD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blue-violet
+	LaTexName  blue-violet
+	GuiName  "Blue-violet"
+	HexName  8A2BE2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:blush
+	LaTexName  blush
+	GuiName  "Blush"
+	HexName  DE5D83
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bole
+	LaTexName  bole
+	GuiName  "Bole"
+	HexName  79443B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bondiblue
+	LaTexName  bondiblue
+	GuiName  "Bondi blue"
+	HexName  0095B6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bostonuniversityred
+	LaTexName  bostonuniversityred
+	GuiName  "Boston University Red"
+	HexName  CC0000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brandeisblue
+	LaTexName  brandeisblue
+	GuiName  "Brandeis blue"
+	HexName  0070FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brass
+	LaTexName  brass
+	GuiName  "Brass"
+	HexName  B5A642
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brickred
+	LaTexName  brickred
+	GuiName  "Brick red"
+	HexName  CB4154
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightcerulean
+	LaTexName  brightcerulean
+	GuiName  "Bright cerulean"
+	HexName  1DACD6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightgreen
+	LaTexName  brightgreen
+	GuiName  "Bright green"
+	HexName  66FF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightlavender
+	LaTexName  brightlavender
+	GuiName  "Bright lavender"
+	HexName  BF94E4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightmaroon
+	LaTexName  brightmaroon
+	GuiName  "Bright maroon"
+	HexName  C32148
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightpink
+	LaTexName  brightpink
+	GuiName  "Bright pink"
+	HexName  FF007F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightturquoise
+	LaTexName  brightturquoise
+	GuiName  "Bright turquoise"
+	HexName  08E8DE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brightube
+	LaTexName  brightube
+	GuiName  "Bright ube"
+	HexName  D19FE8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brilliantlavender
+	LaTexName  brilliantlavender
+	GuiName  "Brilliant lavender"
+	HexName  F4BBFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brilliantrose
+	LaTexName  brilliantrose
+	GuiName  "Brilliant rose"
+	HexName  FF55A3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brinkpink
+	LaTexName  brinkpink
+	GuiName  "Brink pink"
+	HexName  FB607F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:britishracinggreen
+	LaTexName  britishracinggreen
+	GuiName  "British racing green"
+	HexName  004225
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bronze
+	LaTexName  bronze
+	GuiName  "Bronze"
+	HexName  CD7F32
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brown(traditional)
+	LaTexName  brown(traditional)
+	GuiName  "Brown (traditional)"
+	HexName  964B00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:brown(web)
+	LaTexName  brown(web)
+	GuiName  "Brown (web)"
+	HexName  A52A2A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bubblegum
+	LaTexName  bubblegum
+	GuiName  "Bubble gum"
+	HexName  FFC1CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bubbles
+	LaTexName  bubbles
+	GuiName  "Bubbles"
+	HexName  E7FEFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:buff
+	LaTexName  buff
+	GuiName  "Buff"
+	HexName  F0DC82
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:bulgarianrose
+	LaTexName  bulgarianrose
+	GuiName  "Bulgarian rose"
+	HexName  480607
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:burgundy
+	LaTexName  burgundy
+	GuiName  "Burgundy"
+	HexName  800020
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:burlywood
+	LaTexName  burlywood
+	GuiName  "Burlywood"
+	HexName  DEB887
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:burntorange
+	LaTexName  burntorange
+	GuiName  "Burnt orange"
+	HexName  CC5500
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:burntsienna
+	LaTexName  burntsienna
+	GuiName  "Burnt sienna"
+	HexName  E97451
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:burntumber
+	LaTexName  burntumber
+	GuiName  "Burnt umber"
+	HexName  8A3324
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:byzantine
+	LaTexName  byzantine
+	GuiName  "Byzantine"
+	HexName  BD33A4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:byzantium
+	LaTexName  byzantium
+	GuiName  "Byzantium"
+	HexName  702963
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadet
+	LaTexName  cadet
+	GuiName  "Cadet"
+	HexName  536872
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadetblue
+	LaTexName  cadetblue
+	GuiName  "Cadet blue"
+	HexName  5F9EA0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadetgrey
+	LaTexName  cadetgrey
+	GuiName  "Cadet grey"
+	HexName  91A3B0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadmiumgreen
+	LaTexName  cadmiumgreen
+	GuiName  "Cadmium Green"
+	HexName  006B3C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadmiumorange
+	LaTexName  cadmiumorange
+	GuiName  "Cadmium Orange"
+	HexName  ED872D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadmiumred
+	LaTexName  cadmiumred
+	GuiName  "Cadmium Red"
+	HexName  E30022
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cadmiumyellow
+	LaTexName  cadmiumyellow
+	GuiName  "Cadmium Yellow"
+	HexName  FFF600
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:calpolypomonagreen
+	LaTexName  calpolypomonagreen
+	GuiName  "Cal Poly Pomona green"
+	HexName  1E4D2B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cambridgeblue
+	LaTexName  cambridgeblue
+	GuiName  "Cambridge Blue"
+	HexName  A3C1AD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:camel
+	LaTexName  camel
+	GuiName  "Camel"
+	HexName  C19A6B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:camouflagegreen
+	LaTexName  camouflagegreen
+	GuiName  "Camouflage green"
+	HexName  78866B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:canaryyellow
+	LaTexName  canaryyellow
+	GuiName  "Canary yellow"
+	HexName  FFEF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:candyapplered
+	LaTexName  candyapplered
+	GuiName  "Candy apple red"
+	HexName  FF0800
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:candypink
+	LaTexName  candypink
+	GuiName  "Candy pink"
+	HexName  E4717A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:capri
+	LaTexName  capri
+	GuiName  "Capri"
+	HexName  00BFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:caputmortuum
+	LaTexName  caputmortuum
+	GuiName  "Caput mortuum"
+	HexName  592720
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cardinal
+	LaTexName  cardinal
+	GuiName  "Cardinal"
+	HexName  C41E3A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:caribbeangreen
+	LaTexName  caribbeangreen
+	GuiName  "Caribbean green"
+	HexName  00CC99
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carmine
+	LaTexName  carmine
+	GuiName  "Carmine"
+	HexName  960018
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carminepink
+	LaTexName  carminepink
+	GuiName  "Carmine pink"
+	HexName  EB4C42
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carminered
+	LaTexName  carminered
+	GuiName  "Carmine red"
+	HexName  FF0038
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carnationpink
+	LaTexName  carnationpink
+	GuiName  "Carnation pink"
+	HexName  FFA6C9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carnelian
+	LaTexName  carnelian
+	GuiName  "Carnelian"
+	HexName  B31B1B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carolinablue
+	LaTexName  carolinablue
+	GuiName  "Carolina blue"
+	HexName  99BADD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:carrotorange
+	LaTexName  carrotorange
+	GuiName  "Carrot orange"
+	HexName  ED9121
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ceil
+	LaTexName  ceil
+	GuiName  "Ceil"
+	HexName  92A1CF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:celadon
+	LaTexName  celadon
+	GuiName  "Celadon"
+	HexName  ACE1AF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:celestialblue
+	LaTexName  celestialblue
+	GuiName  "Celestial blue"
+	HexName  4997D0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cerise
+	LaTexName  cerise
+	GuiName  "Cerise"
+	HexName  DE3163
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cerisepink
+	LaTexName  cerisepink
+	GuiName  "Cerise pink"
+	HexName  EC3B83
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cerulean
+	LaTexName  cerulean
+	GuiName  "Cerulean"
+	HexName  007BA7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ceruleanblue
+	LaTexName  ceruleanblue
+	GuiName  "Cerulean blue"
+	HexName  2A52BE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chamoisee
+	LaTexName  chamoisee
+	GuiName  "Chamoisee"
+	HexName  A0785A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:champagne
+	LaTexName  champagne
+	GuiName  "Champagne"
+	HexName  F7E7CE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:charcoal
+	LaTexName  charcoal
+	GuiName  "Charcoal"
+	HexName  36454F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chartreuse(traditional)
+	LaTexName  chartreuse(traditional)
+	GuiName  "Chartreuse (traditional)"
+	HexName  DFFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chartreuse(web)
+	LaTexName  chartreuse(web)
+	GuiName  "Chartreuse (web)"
+	HexName  7FFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cherryblossompink
+	LaTexName  cherryblossompink
+	GuiName  "Cherry blossom pink"
+	HexName  FFB7C5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chestnut
+	LaTexName  chestnut
+	GuiName  "Chestnut"
+	HexName  CD5C5C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chocolate(traditional)
+	LaTexName  chocolate(traditional)
+	GuiName  "Chocolate (traditional)"
+	HexName  7B3F00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chocolate(web)
+	LaTexName  chocolate(web)
+	GuiName  "Chocolate (web)"
+	HexName  D2691E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:chromeyellow
+	LaTexName  chromeyellow
+	GuiName  "Chrome yellow"
+	HexName  FFA700
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cinereous
+	LaTexName  cinereous
+	GuiName  "Cinereous"
+	HexName  98817B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cinnabar
+	LaTexName  cinnabar
+	GuiName  "Cinnabar"
+	HexName  E34234
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cinnamon
+	LaTexName  cinnamon
+	GuiName  "Cinnamon"
+	HexName  D2691E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:citrine
+	LaTexName  citrine
+	GuiName  "Citrine"
+	HexName  E4D00A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:classicrose
+	LaTexName  classicrose
+	GuiName  "Classic rose"
+	HexName  FBCCE7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cobalt
+	LaTexName  cobalt
+	GuiName  "Cobalt"
+	HexName  0047AB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cocoabrown
+	LaTexName  cocoabrown
+	GuiName  "Cocoa brown"
+	HexName  D2691E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:columbiablue
+	LaTexName  columbiablue
+	GuiName  "Columbia blue"
+	HexName  9BDDFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:coolblack
+	LaTexName  coolblack
+	GuiName  "Cool black"
+	HexName  002E63
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:coolgrey
+	LaTexName  coolgrey
+	GuiName  "Cool grey"
+	HexName  8C92AC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:copper
+	LaTexName  copper
+	GuiName  "Copper"
+	HexName  B87333
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:copperrose
+	LaTexName  copperrose
+	GuiName  "Copper rose"
+	HexName  996666
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:coquelicot
+	LaTexName  coquelicot
+	GuiName  "Coquelicot"
+	HexName  FF3800
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:coral
+	LaTexName  coral
+	GuiName  "Coral"
+	HexName  FF7F50
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:coralpink
+	LaTexName  coralpink
+	GuiName  "Coral pink"
+	HexName  F88379
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:coralred
+	LaTexName  coralred
+	GuiName  "Coral red"
+	HexName  FF4040
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cordovan
+	LaTexName  cordovan
+	GuiName  "Cordovan"
+	HexName  893F45
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:corn
+	LaTexName  corn
+	GuiName  "Corn"
+	HexName  FBEC5D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cornellred
+	LaTexName  cornellred
+	GuiName  "Cornell Red"
+	HexName  B31B1B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cornflowerblue
+	LaTexName  cornflowerblue
+	GuiName  "Cornflower blue"
+	HexName  6495ED
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cornsilk
+	LaTexName  cornsilk
+	GuiName  "Cornsilk"
+	HexName  FFF8DC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cosmiclatte
+	LaTexName  cosmiclatte
+	GuiName  "Cosmic latte"
+	HexName  FFF8E7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cottoncandy
+	LaTexName  cottoncandy
+	GuiName  "Cotton candy"
+	HexName  FFBCD9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cream
+	LaTexName  cream
+	GuiName  "Cream"
+	HexName  FFFDD0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:crimson
+	LaTexName  crimson
+	GuiName  "Crimson"
+	HexName  DC143C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:crimsonglory
+	LaTexName  crimsonglory
+	GuiName  "Crimson glory"
+	HexName  BE0032
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cyan
+	LaTexName  cyan
+	GuiName  "Cyan"
+	HexName  00FFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:cyan(process)
+	LaTexName  cyan(process)
+	GuiName  "Cyan (process)"
+	HexName  00B7EB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:daffodil
+	LaTexName  daffodil
+	GuiName  "Daffodil"
+	HexName  FFFF31
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dandelion
+	LaTexName  dandelion
+	GuiName  "Dandelion"
+	HexName  F0E130
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkblue
+	LaTexName  darkblue
+	GuiName  "Dark blue"
+	HexName  00008B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkbrown
+	LaTexName  darkbrown
+	GuiName  "Dark brown"
+	HexName  654321
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkbyzantium
+	LaTexName  darkbyzantium
+	GuiName  "Dark byzantium"
+	HexName  5D3954
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkcandyapplered
+	LaTexName  darkcandyapplered
+	GuiName  "Dark candy apple red"
+	HexName  A40000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkcerulean
+	LaTexName  darkcerulean
+	GuiName  "Dark cerulean"
+	HexName  08457E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkchampagne
+	LaTexName  darkchampagne
+	GuiName  "Dark champagne"
+	HexName  C2B280
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkchestnut
+	LaTexName  darkchestnut
+	GuiName  "Dark chestnut"
+	HexName  986960
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkcoral
+	LaTexName  darkcoral
+	GuiName  "Dark coral"
+	HexName  CD5B45
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkcyan
+	LaTexName  darkcyan
+	GuiName  "Dark cyan"
+	HexName  008B8B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkelectricblue
+	LaTexName  darkelectricblue
+	GuiName  "Dark electric blue"
+	HexName  536878
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkgoldenrod
+	LaTexName  darkgoldenrod
+	GuiName  "Dark goldenrod"
+	HexName  B8860B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkgray
+	LaTexName  darkgray
+	GuiName  "Dark gray"
+	HexName  A9A9A9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkgreen
+	LaTexName  darkgreen
+	GuiName  "Dark green"
+	HexName  013220
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkjunglegreen
+	LaTexName  darkjunglegreen
+	GuiName  "Dark jungle green"
+	HexName  1A2421
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkkhaki
+	LaTexName  darkkhaki
+	GuiName  "Dark khaki"
+	HexName  BDB76B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darklava
+	LaTexName  darklava
+	GuiName  "Dark lava"
+	HexName  483C32
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darklavender
+	LaTexName  darklavender
+	GuiName  "Dark lavender"
+	HexName  734F96
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkmagenta
+	LaTexName  darkmagenta
+	GuiName  "Dark magenta"
+	HexName  8B008B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkmidnightblue
+	LaTexName  darkmidnightblue
+	GuiName  "Dark midnight blue"
+	HexName  003366
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkolivegreen
+	LaTexName  darkolivegreen
+	GuiName  "Dark olive green"
+	HexName  556B2F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkorange
+	LaTexName  darkorange
+	GuiName  "Dark orange"
+	HexName  FF8C00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkorchid
+	LaTexName  darkorchid
+	GuiName  "Dark orchid"
+	HexName  9932CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkpastelblue
+	LaTexName  darkpastelblue
+	GuiName  "Dark pastel blue"
+	HexName  779ECB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkpastelgreen
+	LaTexName  darkpastelgreen
+	GuiName  "Dark pastel green"
+	HexName  03C03C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkpastelpurple
+	LaTexName  darkpastelpurple
+	GuiName  "Dark pastel purple"
+	HexName  966FD6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkpastelred
+	LaTexName  darkpastelred
+	GuiName  "Dark pastel red"
+	HexName  C23B22
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkpink
+	LaTexName  darkpink
+	GuiName  "Dark pink"
+	HexName  E75480
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkpowderblue
+	LaTexName  darkpowderblue
+	GuiName  "Dark powder blue"
+	HexName  003399
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkraspberry
+	LaTexName  darkraspberry
+	GuiName  "Dark raspberry"
+	HexName  872657
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkred
+	LaTexName  darkred
+	GuiName  "Dark red"
+	HexName  8B0000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darksalmon
+	LaTexName  darksalmon
+	GuiName  "Dark salmon"
+	HexName  E9967A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkscarlet
+	LaTexName  darkscarlet
+	GuiName  "Dark scarlet"
+	HexName  560319
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkseagreen
+	LaTexName  darkseagreen
+	GuiName  "Dark sea green"
+	HexName  8FBC8F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darksienna
+	LaTexName  darksienna
+	GuiName  "Dark sienna"
+	HexName  3C1414
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkslateblue
+	LaTexName  darkslateblue
+	GuiName  "Dark slate blue"
+	HexName  483D8B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkslategray
+	LaTexName  darkslategray
+	GuiName  "Dark slate gray"
+	HexName  2F4F4F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkspringgreen
+	LaTexName  darkspringgreen
+	GuiName  "Dark spring green"
+	HexName  177245
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darktan
+	LaTexName  darktan
+	GuiName  "Dark tan"
+	HexName  918151
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darktangerine
+	LaTexName  darktangerine
+	GuiName  "Dark tangerine"
+	HexName  FFA812
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darktaupe
+	LaTexName  darktaupe
+	GuiName  "Dark taupe"
+	HexName  483C32
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkterracotta
+	LaTexName  darkterracotta
+	GuiName  "Dark terra cotta"
+	HexName  CC4E5C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkturquoise
+	LaTexName  darkturquoise
+	GuiName  "Dark turquoise"
+	HexName  00CED1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:darkviolet
+	LaTexName  darkviolet
+	GuiName  "Dark violet"
+	HexName  9400D3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dartmouthgreen
+	LaTexName  dartmouthgreen
+	GuiName  "Dartmouth green"
+	HexName  00693E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:davy\'sgrey
+	LaTexName  davy\'sgrey
+	GuiName  "Davy\'s grey"
+	HexName  555555
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:debianred
+	LaTexName  debianred
+	GuiName  "Debian red"
+	HexName  D70A53
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepcarmine
+	LaTexName  deepcarmine
+	GuiName  "Deep carmine"
+	HexName  A9203E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepcarminepink
+	LaTexName  deepcarminepink
+	GuiName  "Deep carmine pink"
+	HexName  EF3038
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepcarrotorange
+	LaTexName  deepcarrotorange
+	GuiName  "Deep carrot orange"
+	HexName  E9692C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepcerise
+	LaTexName  deepcerise
+	GuiName  "Deep cerise"
+	HexName  DA3287
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepchampagne
+	LaTexName  deepchampagne
+	GuiName  "Deep champagne"
+	HexName  FAD6A5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepchestnut
+	LaTexName  deepchestnut
+	GuiName  "Deep chestnut"
+	HexName  B94E48
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepfuchsia
+	LaTexName  deepfuchsia
+	GuiName  "Deep fuchsia"
+	HexName  C154C1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepjunglegreen
+	LaTexName  deepjunglegreen
+	GuiName  "Deep jungle green"
+	HexName  004B49
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deeplilac
+	LaTexName  deeplilac
+	GuiName  "Deep lilac"
+	HexName  9955BB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepmagenta
+	LaTexName  deepmagenta
+	GuiName  "Deep magenta"
+	HexName  CC00CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deeppeach
+	LaTexName  deeppeach
+	GuiName  "Deep peach"
+	HexName  FFCBA4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deeppink
+	LaTexName  deeppink
+	GuiName  "Deep pink"
+	HexName  FF1493
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepsaffron
+	LaTexName  deepsaffron
+	GuiName  "Deep saffron"
+	HexName  FF9933
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:deepskyblue
+	LaTexName  deepskyblue
+	GuiName  "Deep sky blue"
+	HexName  00BFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:denim
+	LaTexName  denim
+	GuiName  "Denim"
+	HexName  1560BD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:desert
+	LaTexName  desert
+	GuiName  "Desert"
+	HexName  C19A6B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:desertsand
+	LaTexName  desertsand
+	GuiName  "Desert sand"
+	HexName  EDC9AF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dimgray
+	LaTexName  dimgray
+	GuiName  "Dim gray"
+	HexName  696969
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dodgerblue
+	LaTexName  dodgerblue
+	GuiName  "Dodger blue"
+	HexName  1E90FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dogwoodrose
+	LaTexName  dogwoodrose
+	GuiName  "Dogwood rose"
+	HexName  D71868
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dollarbill
+	LaTexName  dollarbill
+	GuiName  "Dollar bill"
+	HexName  85BB65
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:drab
+	LaTexName  drab
+	GuiName  "Drab"
+	HexName  967117
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:dukeblue
+	LaTexName  dukeblue
+	GuiName  "Duke blue"
+	HexName  00009C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:earthyellow
+	LaTexName  earthyellow
+	GuiName  "Earth yellow"
+	HexName  E1A95F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ecru
+	LaTexName  ecru
+	GuiName  "Ecru"
+	HexName  C2B280
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:eggplant
+	LaTexName  eggplant
+	GuiName  "Eggplant"
+	HexName  614051
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:eggshell
+	LaTexName  eggshell
+	GuiName  "Eggshell"
+	HexName  F0EAD6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:egyptianblue
+	LaTexName  egyptianblue
+	GuiName  "Egyptian blue"
+	HexName  1034A6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricblue
+	LaTexName  electricblue
+	GuiName  "Electric blue"
+	HexName  7DF9FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electriccrimson
+	LaTexName  electriccrimson
+	GuiName  "Electric crimson"
+	HexName  FF003F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electriccyan
+	LaTexName  electriccyan
+	GuiName  "Electric cyan"
+	HexName  00FFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricgreen
+	LaTexName  electricgreen
+	GuiName  "Electric green"
+	HexName  00FF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricindigo
+	LaTexName  electricindigo
+	GuiName  "Electric indigo"
+	HexName  6F00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electriclavender
+	LaTexName  electriclavender
+	GuiName  "Electric lavender"
+	HexName  F4BBFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electriclime
+	LaTexName  electriclime
+	GuiName  "Electric lime"
+	HexName  CCFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricpurple
+	LaTexName  electricpurple
+	GuiName  "Electric purple"
+	HexName  BF00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricultramarine
+	LaTexName  electricultramarine
+	GuiName  "Electric ultramarine"
+	HexName  3F00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricviolet
+	LaTexName  electricviolet
+	GuiName  "Electric violet"
+	HexName  8F00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:electricyellow
+	LaTexName  electricyellow
+	GuiName  "Electric Yellow"
+	HexName  FFFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:emerald
+	LaTexName  emerald
+	GuiName  "Emerald"
+	HexName  50C878
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:etonblue
+	LaTexName  etonblue
+	GuiName  "Eton blue"
+	HexName  96C8A2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fallow
+	LaTexName  fallow
+	GuiName  "Fallow"
+	HexName  C19A6B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:falured
+	LaTexName  falured
+	GuiName  "Falu red"
+	HexName  801818
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fandango
+	LaTexName  fandango
+	GuiName  "Fandango"
+	HexName  B53389
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fashionfuchsia
+	LaTexName  fashionfuchsia
+	GuiName  "Fashion fuchsia"
+	HexName  F400A1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fawn
+	LaTexName  fawn
+	GuiName  "Fawn"
+	HexName  E5AA70
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:feldgrau
+	LaTexName  feldgrau
+	GuiName  "Feldgrau"
+	HexName  4D5D53
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ferngreen
+	LaTexName  ferngreen
+	GuiName  "Fern green"
+	HexName  4F7942
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ferrarired
+	LaTexName  ferrarired
+	GuiName  "Ferrari Red"
+	HexName  FF2800
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fielddrab
+	LaTexName  fielddrab
+	GuiName  "Field drab"
+	HexName  6C541E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:firebrick
+	LaTexName  firebrick
+	GuiName  "Firebrick"
+	HexName  B22222
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fireenginered
+	LaTexName  fireenginered
+	GuiName  "Fire engine red"
+	HexName  CE2029
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:flame
+	LaTexName  flame
+	GuiName  "Flame"
+	HexName  E25822
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:flamingopink
+	LaTexName  flamingopink
+	GuiName  "Flamingo pink"
+	HexName  FC8EAC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:flavescent
+	LaTexName  flavescent
+	GuiName  "Flavescent"
+	HexName  F7E98E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:flax
+	LaTexName  flax
+	GuiName  "Flax"
+	HexName  EEDC82
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:floralwhite
+	LaTexName  floralwhite
+	GuiName  "Floral white"
+	HexName  FFFAF0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fluorescentorange
+	LaTexName  fluorescentorange
+	GuiName  "Fluorescent orange"
+	HexName  FFBF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fluorescentpink
+	LaTexName  fluorescentpink
+	GuiName  "Fluorescent pink"
+	HexName  FF1493
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fluorescentyellow
+	LaTexName  fluorescentyellow
+	GuiName  "Fluorescent yellow"
+	HexName  CCFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:folly
+	LaTexName  folly
+	GuiName  "Folly"
+	HexName  FF004F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:forestgreen(traditional)
+	LaTexName  forestgreen(traditional)
+	GuiName  "Forest green (traditional)"
+	HexName  014421
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:forestgreen(web)
+	LaTexName  forestgreen(web)
+	GuiName  "Forest green (web)"
+	HexName  228B22
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:frenchbeige
+	LaTexName  frenchbeige
+	GuiName  "French beige"
+	HexName  A67B5B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:frenchblue
+	LaTexName  frenchblue
+	GuiName  "French blue"
+	HexName  0072BB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:frenchlilac
+	LaTexName  frenchlilac
+	GuiName  "French lilac"
+	HexName  86608E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:frenchrose
+	LaTexName  frenchrose
+	GuiName  "French rose"
+	HexName  F64A8A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fuchsia
+	LaTexName  fuchsia
+	GuiName  "Fuchsia"
+	HexName  FF00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fuchsiapink
+	LaTexName  fuchsiapink
+	GuiName  "Fuchsia pink"
+	HexName  FF77FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fulvous
+	LaTexName  fulvous
+	GuiName  "Fulvous"
+	HexName  E48400
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:fuzzywuzzy
+	LaTexName  fuzzywuzzy
+	GuiName  "Fuzzy Wuzzy"
+	HexName  CC6666
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gainsboro
+	LaTexName  gainsboro
+	GuiName  "Gainsboro"
+	HexName  DCDCDC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gamboge
+	LaTexName  gamboge
+	GuiName  "Gamboge"
+	HexName  E49B0F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ghostwhite
+	LaTexName  ghostwhite
+	GuiName  "Ghost white"
+	HexName  F8F8FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ginger
+	LaTexName  ginger
+	GuiName  "Ginger"
+	HexName  B06500
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:glaucous
+	LaTexName  glaucous
+	GuiName  "Glaucous"
+	HexName  6082B6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gold(metallic)
+	LaTexName  gold(metallic)
+	GuiName  "Gold (metallic)"
+	HexName  D4AF37
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gold(web)(golden)
+	LaTexName  gold(web)(golden)
+	GuiName  "Gold (web) (Golden)"
+	HexName  FFD700
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:goldenbrown
+	LaTexName  goldenbrown
+	GuiName  "Golden brown"
+	HexName  996515
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:goldenpoppy
+	LaTexName  goldenpoppy
+	GuiName  "Golden poppy"
+	HexName  FCC200
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:goldenyellow
+	LaTexName  goldenyellow
+	GuiName  "Golden yellow"
+	HexName  FFDF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:goldenrod
+	LaTexName  goldenrod
+	GuiName  "Goldenrod"
+	HexName  DAA520
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:grannysmithapple
+	LaTexName  grannysmithapple
+	GuiName  "Granny Smith Apple"
+	HexName  A8E4A0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gray
+	LaTexName  gray
+	GuiName  "Gray"
+	HexName  808080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gray(html/cssgray)
+	LaTexName  gray(html/cssgray)
+	GuiName  "Gray (HTML/CSS gray)"
+	HexName  7F7F7F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gray(x11gray)
+	LaTexName  gray(x11gray)
+	GuiName  "Gray (X11 gray)"
+	HexName  BEBEBE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:gray-asparagus
+	LaTexName  gray-asparagus
+	GuiName  "Gray-asparagus"
+	HexName  465945
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green(colorwheel)(x11green)
+	LaTexName  green(colorwheel)(x11green)
+	GuiName  "Green (color wheel) (X11 green)"
+	HexName  00FF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green(html/cssgreen)
+	LaTexName  green(html/cssgreen)
+	GuiName  "Green (HTML/CSS green)"
+	HexName  008000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green(munsell)
+	LaTexName  green(munsell)
+	GuiName  "Green (Munsell)"
+	HexName  00A877
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green(ncs)
+	LaTexName  green(ncs)
+	GuiName  "Green (NCS)"
+	HexName  009F6B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green(pigment)
+	LaTexName  green(pigment)
+	GuiName  "Green (pigment)"
+	HexName  00A550
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green(ryb)
+	LaTexName  green(ryb)
+	GuiName  "Green (RYB)"
+	HexName  66B032
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:green-yellow
+	LaTexName  green-yellow
+	GuiName  "Green-yellow"
+	HexName  ADFF2F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:grullo
+	LaTexName  grullo
+	GuiName  "Grullo"
+	HexName  A99A86
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:guppiegreen
+	LaTexName  guppiegreen
+	GuiName  "Guppie green"
+	HexName  00FF7F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:halayaube
+	LaTexName  halayaube
+	GuiName  "Halaya ube"
+	HexName  663854
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hanblue
+	LaTexName  hanblue
+	GuiName  "Han blue"
+	HexName  446CCF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hanpurple
+	LaTexName  hanpurple
+	GuiName  "Han purple"
+	HexName  5218FA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hansayellow
+	LaTexName  hansayellow
+	GuiName  "Hansa yellow"
+	HexName  E9D66B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:harlequin
+	LaTexName  harlequin
+	GuiName  "Harlequin"
+	HexName  3FFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:harvardcrimson
+	LaTexName  harvardcrimson
+	GuiName  "Harvard crimson"
+	HexName  C90016
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:harvestgold
+	LaTexName  harvestgold
+	GuiName  "Harvest Gold"
+	HexName  DA9100
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:heartgold
+	LaTexName  heartgold
+	GuiName  "Heart Gold"
+	HexName  808000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:heliotrope
+	LaTexName  heliotrope
+	GuiName  "Heliotrope"
+	HexName  DF73FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hollywoodcerise
+	LaTexName  hollywoodcerise
+	GuiName  "Hollywood cerise"
+	HexName  F400A1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:honeydew
+	LaTexName  honeydew
+	GuiName  "Honeydew"
+	HexName  F0FFF0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hooker\'sgreen
+	LaTexName  hooker\'sgreen
+	GuiName  "Hooker\'s green"
+	HexName  007000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hotmagenta
+	LaTexName  hotmagenta
+	GuiName  "Hot magenta"
+	HexName  FF1DCE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:hotpink
+	LaTexName  hotpink
+	GuiName  "Hot pink"
+	HexName  FF69B4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:huntergreen
+	LaTexName  huntergreen
+	GuiName  "Hunter green"
+	HexName  355E3B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:iceberg
+	LaTexName  iceberg
+	GuiName  "Iceberg"
+	HexName  71A6D2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:icterine
+	LaTexName  icterine
+	GuiName  "Icterine"
+	HexName  FCF75E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:inchworm
+	LaTexName  inchworm
+	GuiName  "Inchworm"
+	HexName  B2EC5D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:indiagreen
+	LaTexName  indiagreen
+	GuiName  "India green"
+	HexName  138808
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:indianred
+	LaTexName  indianred
+	GuiName  "Indian red"
+	HexName  CD5C5C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:indianyellow
+	LaTexName  indianyellow
+	GuiName  "Indian yellow"
+	HexName  E3A857
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:indigo(dye)
+	LaTexName  indigo(dye)
+	GuiName  "Indigo (dye)"
+	HexName  00416A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:indigo(web)
+	LaTexName  indigo(web)
+	GuiName  "Indigo (web)"
+	HexName  4B0082
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:internationalkleinblue
+	LaTexName  internationalkleinblue
+	GuiName  "International Klein Blue"
+	HexName  002FA7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:internationalorange
+	LaTexName  internationalorange
+	GuiName  "International orange"
+	HexName  FF4F00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:iris
+	LaTexName  iris
+	GuiName  "Iris"
+	HexName  5A4FCF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:isabelline
+	LaTexName  isabelline
+	GuiName  "Isabelline"
+	HexName  F4F0EC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:islamicgreen
+	LaTexName  islamicgreen
+	GuiName  "Islamic green"
+	HexName  009000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ivory
+	LaTexName  ivory
+	GuiName  "Ivory"
+	HexName  FFFFF0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:jade
+	LaTexName  jade
+	GuiName  "Jade"
+	HexName  00A86B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:jasper
+	LaTexName  jasper
+	GuiName  "Jasper"
+	HexName  D73B3E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:jazzberryjam
+	LaTexName  jazzberryjam
+	GuiName  "Jazzberry jam"
+	HexName  A50B5E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:jonquil
+	LaTexName  jonquil
+	GuiName  "Jonquil"
+	HexName  FADA5E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:junebud
+	LaTexName  junebud
+	GuiName  "June bud"
+	HexName  BDDA57
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:junglegreen
+	LaTexName  junglegreen
+	GuiName  "Jungle green"
+	HexName  29AB87
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:kellygreen
+	LaTexName  kellygreen
+	GuiName  "Kelly green"
+	HexName  4CBB17
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:khaki(html/css)(khaki)
+	LaTexName  khaki(html/css)(khaki)
+	GuiName  "Khaki (HTML/CSS) (Khaki)"
+	HexName  C3B091
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:khaki(x11)(lightkhaki)
+	LaTexName  khaki(x11)(lightkhaki)
+	GuiName  "Khaki (X11) (Light khaki)"
+	HexName  F0E68C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lasallegreen
+	LaTexName  lasallegreen
+	GuiName  "La Salle Green"
+	HexName  087830
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:languidlavender
+	LaTexName  languidlavender
+	GuiName  "Languid lavender"
+	HexName  D6CADD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lapislazuli
+	LaTexName  lapislazuli
+	GuiName  "Lapis lazuli"
+	HexName  26619C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:laserlemon
+	LaTexName  laserlemon
+	GuiName  "Laser Lemon"
+	HexName  FEFE22
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lava
+	LaTexName  lava
+	GuiName  "Lava"
+	HexName  CF1020
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavender(floral)
+	LaTexName  lavender(floral)
+	GuiName  "Lavender (floral)"
+	HexName  B57EDC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavender(web)
+	LaTexName  lavender(web)
+	GuiName  "Lavender (web)"
+	HexName  E6E6FA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavenderblue
+	LaTexName  lavenderblue
+	GuiName  "Lavender blue"
+	HexName  CCCCFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavenderblush
+	LaTexName  lavenderblush
+	GuiName  "Lavender blush"
+	HexName  FFF0F5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavendergray
+	LaTexName  lavendergray
+	GuiName  "Lavender gray"
+	HexName  C4C3D0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavenderindigo
+	LaTexName  lavenderindigo
+	GuiName  "Lavender indigo"
+	HexName  9457EB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavendermagenta
+	LaTexName  lavendermagenta
+	GuiName  "Lavender magenta"
+	HexName  EE82EE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavendermist
+	LaTexName  lavendermist
+	GuiName  "Lavender mist"
+	HexName  E6E6FA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavenderpink
+	LaTexName  lavenderpink
+	GuiName  "Lavender pink"
+	HexName  FBAED2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavenderpurple
+	LaTexName  lavenderpurple
+	GuiName  "Lavender purple"
+	HexName  967BB6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lavenderrose
+	LaTexName  lavenderrose
+	GuiName  "Lavender rose"
+	HexName  FBA0E3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lawngreen
+	LaTexName  lawngreen
+	GuiName  "Lawn green"
+	HexName  7CFC00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lemon
+	LaTexName  lemon
+	GuiName  "Lemon"
+	HexName  FFF700
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lemonchiffon
+	LaTexName  lemonchiffon
+	GuiName  "Lemon chiffon"
+	HexName  FFFACD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightapricot
+	LaTexName  lightapricot
+	GuiName  "Light apricot"
+	HexName  FDD5B1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightblue
+	LaTexName  lightblue
+	GuiName  "Light blue"
+	HexName  ADD8E6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightbrown
+	LaTexName  lightbrown
+	GuiName  "Light brown"
+	HexName  B5651D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightcarminepink
+	LaTexName  lightcarminepink
+	GuiName  "Light carmine pink"
+	HexName  E66771
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightcoral
+	LaTexName  lightcoral
+	GuiName  "Light coral"
+	HexName  F08080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightcornflowerblue
+	LaTexName  lightcornflowerblue
+	GuiName  "Light cornflower blue"
+	HexName  93CCEA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightcyan
+	LaTexName  lightcyan
+	GuiName  "Light cyan"
+	HexName  E0FFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightfuchsiapink
+	LaTexName  lightfuchsiapink
+	GuiName  "Light fuchsia pink"
+	HexName  F984EF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightgoldenrodyellow
+	LaTexName  lightgoldenrodyellow
+	GuiName  "Light goldenrod yellow"
+	HexName  FAFAD2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightgray
+	LaTexName  lightgray
+	GuiName  "Light gray"
+	HexName  D3D3D3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightgreen
+	LaTexName  lightgreen
+	GuiName  "Light green"
+	HexName  90EE90
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightkhaki
+	LaTexName  lightkhaki
+	GuiName  "Light khaki"
+	HexName  F0E68C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightmauve
+	LaTexName  lightmauve
+	GuiName  "Light mauve"
+	HexName  DCD0FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightpastelpurple
+	LaTexName  lightpastelpurple
+	GuiName  "Light pastel purple"
+	HexName  B19CD9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightpink
+	LaTexName  lightpink
+	GuiName  "Light pink"
+	HexName  FFB6C1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightsalmon
+	LaTexName  lightsalmon
+	GuiName  "Light salmon"
+	HexName  FFA07A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightsalmonpink
+	LaTexName  lightsalmonpink
+	GuiName  "Light salmon pink"
+	HexName  FF9999
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightseagreen
+	LaTexName  lightseagreen
+	GuiName  "Light sea green"
+	HexName  20B2AA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightskyblue
+	LaTexName  lightskyblue
+	GuiName  "Light sky blue"
+	HexName  87CEEB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightslategray
+	LaTexName  lightslategray
+	GuiName  "Light slate gray"
+	HexName  778899
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lighttaupe
+	LaTexName  lighttaupe
+	GuiName  "Light taupe"
+	HexName  B38B6D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightthulianpink
+	LaTexName  lightthulianpink
+	GuiName  "Light Thulian pink"
+	HexName  E68FAC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lightyellow
+	LaTexName  lightyellow
+	GuiName  "Light yellow"
+	HexName  FFFFED
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lilac
+	LaTexName  lilac
+	GuiName  "Lilac"
+	HexName  C8A2C8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lime(colorwheel)
+	LaTexName  lime(colorwheel)
+	GuiName  "Lime (color wheel)"
+	HexName  BFFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lime(web)(x11green)
+	LaTexName  lime(web)(x11green)
+	GuiName  "Lime (web) (X11 green)"
+	HexName  00FF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:limegreen
+	LaTexName  limegreen
+	GuiName  "Lime green"
+	HexName  32CD32
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lincolngreen
+	LaTexName  lincolngreen
+	GuiName  "Lincoln green"
+	HexName  195905
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:linen
+	LaTexName  linen
+	GuiName  "Linen"
+	HexName  FAF0E6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:liver
+	LaTexName  liver
+	GuiName  "Liver"
+	HexName  534B4F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:lust
+	LaTexName  lust
+	GuiName  "Lust"
+	HexName  E62020
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:macaroniandcheese
+	LaTexName  macaroniandcheese
+	GuiName  "Macaroni and Cheese"
+	HexName  FFBD88
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:magenta
+	LaTexName  magenta
+	GuiName  "Magenta"
+	HexName  FF00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:magenta(dye)
+	LaTexName  magenta(dye)
+	GuiName  "Magenta (dye)"
+	HexName  CA1F7B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:magenta(process)
+	LaTexName  magenta(process)
+	GuiName  "Magenta (process)"
+	HexName  FF0090
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:magicmint
+	LaTexName  magicmint
+	GuiName  "Magic mint"
+	HexName  AAF0D1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:magnolia
+	LaTexName  magnolia
+	GuiName  "Magnolia"
+	HexName  F8F4FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mahogany
+	LaTexName  mahogany
+	GuiName  "Mahogany"
+	HexName  C04000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:maize
+	LaTexName  maize
+	GuiName  "Maize"
+	HexName  FBEC5D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:majorelleblue
+	LaTexName  majorelleblue
+	GuiName  "Majorelle Blue"
+	HexName  6050DC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:malachite
+	LaTexName  malachite
+	GuiName  "Malachite"
+	HexName  0BDA51
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:manatee
+	LaTexName  manatee
+	GuiName  "Manatee"
+	HexName  979AAA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mangotango
+	LaTexName  mangotango
+	GuiName  "Mango Tango"
+	HexName  FF8243
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:maroon(html/css)
+	LaTexName  maroon(html/css)
+	GuiName  "Maroon (HTML/CSS)"
+	HexName  800000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:maroon(x11)
+	LaTexName  maroon(x11)
+	GuiName  "Maroon (X11)"
+	HexName  B03060
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mauve
+	LaTexName  mauve
+	GuiName  "Mauve"
+	HexName  E0B0FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mauvetaupe
+	LaTexName  mauvetaupe
+	GuiName  "Mauve taupe"
+	HexName  915F6D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mauvelous
+	LaTexName  mauvelous
+	GuiName  "Mauvelous"
+	HexName  EF98AA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mayablue
+	LaTexName  mayablue
+	GuiName  "Maya blue"
+	HexName  73C2FB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:meatbrown
+	LaTexName  meatbrown
+	GuiName  "Meat brown"
+	HexName  E5B73B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumaquamarine
+	LaTexName  mediumaquamarine
+	GuiName  "Medium aquamarine"
+	HexName  66DDAA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumblue
+	LaTexName  mediumblue
+	GuiName  "Medium blue"
+	HexName  0000CD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumcandyapplered
+	LaTexName  mediumcandyapplered
+	GuiName  "Medium candy apple red"
+	HexName  E2062C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumcarmine
+	LaTexName  mediumcarmine
+	GuiName  "Medium carmine"
+	HexName  AF4035
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumchampagne
+	LaTexName  mediumchampagne
+	GuiName  "Medium champagne"
+	HexName  F3E5AB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumelectricblue
+	LaTexName  mediumelectricblue
+	GuiName  "Medium electric blue"
+	HexName  035096
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumjunglegreen
+	LaTexName  mediumjunglegreen
+	GuiName  "Medium jungle green"
+	HexName  1C352D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumlavendermagenta
+	LaTexName  mediumlavendermagenta
+	GuiName  "Medium lavender magenta"
+	HexName  DDA0DD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumorchid
+	LaTexName  mediumorchid
+	GuiName  "Medium orchid"
+	HexName  BA55D3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumpersianblue
+	LaTexName  mediumpersianblue
+	GuiName  "Medium Persian blue"
+	HexName  0067A5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumpurple
+	LaTexName  mediumpurple
+	GuiName  "Medium purple"
+	HexName  9370DB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumred-violet
+	LaTexName  mediumred-violet
+	GuiName  "Medium red-violet"
+	HexName  BB3385
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumseagreen
+	LaTexName  mediumseagreen
+	GuiName  "Medium sea green"
+	HexName  3CB371
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumslateblue
+	LaTexName  mediumslateblue
+	GuiName  "Medium slate blue"
+	HexName  7B68EE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumspringbud
+	LaTexName  mediumspringbud
+	GuiName  "Medium spring bud"
+	HexName  C9DC87
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumspringgreen
+	LaTexName  mediumspringgreen
+	GuiName  "Medium spring green"
+	HexName  00FA9A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumtaupe
+	LaTexName  mediumtaupe
+	GuiName  "Medium taupe"
+	HexName  674C47
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumtealblue
+	LaTexName  mediumtealblue
+	GuiName  "Medium teal blue"
+	HexName  0054B4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumturquoise
+	LaTexName  mediumturquoise
+	GuiName  "Medium turquoise"
+	HexName  48D1CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mediumviolet-red
+	LaTexName  mediumviolet-red
+	GuiName  "Medium violet-red"
+	HexName  C71585
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:melon
+	LaTexName  melon
+	GuiName  "Melon"
+	HexName  FDBCB4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:midnightblue
+	LaTexName  midnightblue
+	GuiName  "Midnight blue"
+	HexName  191970
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:midnightgreen(eaglegreen)
+	LaTexName  midnightgreen(eaglegreen)
+	GuiName  "Midnight green (eagle green)"
+	HexName  004953
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mikadoyellow
+	LaTexName  mikadoyellow
+	GuiName  "Mikado yellow"
+	HexName  FFC40C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mint
+	LaTexName  mint
+	GuiName  "Mint"
+	HexName  3EB489
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mintcream
+	LaTexName  mintcream
+	GuiName  "Mint cream"
+	HexName  F5FFFA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mintgreen
+	LaTexName  mintgreen
+	GuiName  "Mint green"
+	HexName  98FF98
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mistyrose
+	LaTexName  mistyrose
+	GuiName  "Misty rose"
+	HexName  FFE4E1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:moccasin
+	LaTexName  moccasin
+	GuiName  "Moccasin"
+	HexName  FAEBD7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:modebeige
+	LaTexName  modebeige
+	GuiName  "Mode beige"
+	HexName  967117
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:moonstoneblue
+	LaTexName  moonstoneblue
+	GuiName  "Moonstone blue"
+	HexName  73A9C2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mordantred19
+	LaTexName  mordantred19
+	GuiName  "Mordant red 19"
+	HexName  AE0C00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mossgreen
+	LaTexName  mossgreen
+	GuiName  "Moss green"
+	HexName  ADDFAD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mountainmeadow
+	LaTexName  mountainmeadow
+	GuiName  "Mountain Meadow"
+	HexName  30BA8F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mountbattenpink
+	LaTexName  mountbattenpink
+	GuiName  "Mountbatten pink"
+	HexName  997A8D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mulberry
+	LaTexName  mulberry
+	GuiName  "Mulberry"
+	HexName  C54B8C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:mustard
+	LaTexName  mustard
+	GuiName  "Mustard"
+	HexName  FFDB58
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:myrtle
+	LaTexName  myrtle
+	GuiName  "Myrtle"
+	HexName  21421E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:msugreen
+	LaTexName  msugreen
+	GuiName  "MSU Green"
+	HexName  18453B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:nadeshikopink
+	LaTexName  nadeshikopink
+	GuiName  "Nadeshiko pink"
+	HexName  F6ADC6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:napiergreen
+	LaTexName  napiergreen
+	GuiName  "Napier green"
+	HexName  2A8000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:naplesyellow
+	LaTexName  naplesyellow
+	GuiName  "Naples yellow"
+	HexName  FADA5E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:navajowhite
+	LaTexName  navajowhite
+	GuiName  "Navajo white"
+	HexName  FFDEAD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:navyblue
+	LaTexName  navyblue
+	GuiName  "Navy blue"
+	HexName  000080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:neoncarrot
+	LaTexName  neoncarrot
+	GuiName  "Neon Carrot"
+	HexName  FFA343
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:neonfuchsia
+	LaTexName  neonfuchsia
+	GuiName  "Neon fuchsia"
+	HexName  FE59C2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:neongreen
+	LaTexName  neongreen
+	GuiName  "Neon green"
+	HexName  39FF14
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:non-photoblue
+	LaTexName  non-photoblue
+	GuiName  "Non-photo blue"
+	HexName  A4DDED
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oceanboatblue
+	LaTexName  oceanboatblue
+	GuiName  "Ocean Boat Blue"
+	HexName  0077BE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ochre
+	LaTexName  ochre
+	GuiName  "Ochre"
+	HexName  CC7722
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:officegreen
+	LaTexName  officegreen
+	GuiName  "Office green"
+	HexName  008000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oldgold
+	LaTexName  oldgold
+	GuiName  "Old gold"
+	HexName  CFB53B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oldlace
+	LaTexName  oldlace
+	GuiName  "Old lace"
+	HexName  FDF5E6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oldlavender
+	LaTexName  oldlavender
+	GuiName  "Old lavender"
+	HexName  796878
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oldmauve
+	LaTexName  oldmauve
+	GuiName  "Old mauve"
+	HexName  673147
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oldrose
+	LaTexName  oldrose
+	GuiName  "Old rose"
+	HexName  C08081
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:olive
+	LaTexName  olive
+	GuiName  "Olive"
+	HexName  808000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:olivedrab(web)(olivedrab3)
+	LaTexName  olivedrab(web)(olivedrab3)
+	GuiName  "Olive Drab (web) (Olive Drab #3)"
+	HexName  6B8E23
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:olivedrab7
+	LaTexName  olivedrab7
+	GuiName  "Olive Drab #7"
+	HexName  3C341F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:olivine
+	LaTexName  olivine
+	GuiName  "Olivine"
+	HexName  9AB973
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:onyx
+	LaTexName  onyx
+	GuiName  "Onyx"
+	HexName  0F0F0F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:operamauve
+	LaTexName  operamauve
+	GuiName  "Opera mauve"
+	HexName  B784A7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:orange(colorwheel)
+	LaTexName  orange(colorwheel)
+	GuiName  "Orange (color wheel)"
+	HexName  FF7F00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:orange(ryb)
+	LaTexName  orange(ryb)
+	GuiName  "Orange (RYB)"
+	HexName  FB9902
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:orange(webcolor)
+	LaTexName  orange(webcolor)
+	GuiName  "Orange (web color)"
+	HexName  FFA500
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:orangepeel
+	LaTexName  orangepeel
+	GuiName  "Orange peel"
+	HexName  FF9F00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:orange-red
+	LaTexName  orange-red
+	GuiName  "Orange-red"
+	HexName  FF4500
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:orchid
+	LaTexName  orchid
+	GuiName  "Orchid"
+	HexName  DA70D6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:otterbrown
+	LaTexName  otterbrown
+	GuiName  "Otter brown"
+	HexName  654321
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:outerspace
+	LaTexName  outerspace
+	GuiName  "Outer Space"
+	HexName  414A4C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:outrageousorange
+	LaTexName  outrageousorange
+	GuiName  "Outrageous Orange"
+	HexName  FF6E4A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oxfordblue
+	LaTexName  oxfordblue
+	GuiName  "Oxford Blue"
+	HexName  002147
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:oucrimsonred
+	LaTexName  oucrimsonred
+	GuiName  "OU Crimson Red"
+	HexName  990000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pakistangreen
+	LaTexName  pakistangreen
+	GuiName  "Pakistan green"
+	HexName  006600
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palatinateblue
+	LaTexName  palatinateblue
+	GuiName  "Palatinate blue"
+	HexName  273BE2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palatinatepurple
+	LaTexName  palatinatepurple
+	GuiName  "Palatinate purple"
+	HexName  682860
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:paleaqua
+	LaTexName  paleaqua
+	GuiName  "Pale aqua"
+	HexName  BCD4E6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:paleblue
+	LaTexName  paleblue
+	GuiName  "Pale blue"
+	HexName  AFEEEE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palebrown
+	LaTexName  palebrown
+	GuiName  "Pale brown"
+	HexName  987654
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palecarmine
+	LaTexName  palecarmine
+	GuiName  "Pale carmine"
+	HexName  AF4035
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palecerulean
+	LaTexName  palecerulean
+	GuiName  "Pale cerulean"
+	HexName  9BC4E2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palechestnut
+	LaTexName  palechestnut
+	GuiName  "Pale chestnut"
+	HexName  DDADAF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palecopper
+	LaTexName  palecopper
+	GuiName  "Pale copper"
+	HexName  DA8A67
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palecornflowerblue
+	LaTexName  palecornflowerblue
+	GuiName  "Pale cornflower blue"
+	HexName  ABCDEF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palegold
+	LaTexName  palegold
+	GuiName  "Pale gold"
+	HexName  E6BE8A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palegoldenrod
+	LaTexName  palegoldenrod
+	GuiName  "Pale goldenrod"
+	HexName  EEE8AA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palegreen
+	LaTexName  palegreen
+	GuiName  "Pale green"
+	HexName  98FB98
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palemagenta
+	LaTexName  palemagenta
+	GuiName  "Pale magenta"
+	HexName  F984E5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palepink
+	LaTexName  palepink
+	GuiName  "Pale pink"
+	HexName  FADADD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:paleplum
+	LaTexName  paleplum
+	GuiName  "Pale plum"
+	HexName  DDA0DD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palered-violet
+	LaTexName  palered-violet
+	GuiName  "Pale red-violet"
+	HexName  DB7093
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palerobineggblue
+	LaTexName  palerobineggblue
+	GuiName  "Pale robin egg blue"
+	HexName  96DED1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palesilver
+	LaTexName  palesilver
+	GuiName  "Pale silver"
+	HexName  C9C0BB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:palespringbud
+	LaTexName  palespringbud
+	GuiName  "Pale spring bud"
+	HexName  ECEBBD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:paletaupe
+	LaTexName  paletaupe
+	GuiName  "Pale taupe"
+	HexName  BC987E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:paleviolet-red
+	LaTexName  paleviolet-red
+	GuiName  "Pale violet-red"
+	HexName  DB7093
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pansypurple
+	LaTexName  pansypurple
+	GuiName  "Pansy purple"
+	HexName  78184A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:papayawhip
+	LaTexName  papayawhip
+	GuiName  "Papaya whip"
+	HexName  FFEFD5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:parisgreen
+	LaTexName  parisgreen
+	GuiName  "Paris Green"
+	HexName  50C878
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelblue
+	LaTexName  pastelblue
+	GuiName  "Pastel blue"
+	HexName  AEC6CF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelbrown
+	LaTexName  pastelbrown
+	GuiName  "Pastel brown"
+	HexName  836953
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelgray
+	LaTexName  pastelgray
+	GuiName  "Pastel gray"
+	HexName  CFCFC4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelgreen
+	LaTexName  pastelgreen
+	GuiName  "Pastel green"
+	HexName  77DD77
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelmagenta
+	LaTexName  pastelmagenta
+	GuiName  "Pastel magenta"
+	HexName  F49AC2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelorange
+	LaTexName  pastelorange
+	GuiName  "Pastel orange"
+	HexName  FFB347
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelpink
+	LaTexName  pastelpink
+	GuiName  "Pastel pink"
+	HexName  FFD1DC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelpurple
+	LaTexName  pastelpurple
+	GuiName  "Pastel purple"
+	HexName  B39EB5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelred
+	LaTexName  pastelred
+	GuiName  "Pastel red"
+	HexName  FF6961
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelviolet
+	LaTexName  pastelviolet
+	GuiName  "Pastel violet"
+	HexName  CB99C9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pastelyellow
+	LaTexName  pastelyellow
+	GuiName  "Pastel yellow"
+	HexName  FDFD96
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:patriarch
+	LaTexName  patriarch
+	GuiName  "Patriarch"
+	HexName  800080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:payne\'sgrey
+	LaTexName  payne\'sgrey
+	GuiName  "Payne\'s grey"
+	HexName  40404F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:peach
+	LaTexName  peach
+	GuiName  "Peach"
+	HexName  FFE5B4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:peach-orange
+	LaTexName  peach-orange
+	GuiName  "Peach-orange"
+	HexName  FFCC99
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:peachpuff
+	LaTexName  peachpuff
+	GuiName  "Peach puff"
+	HexName  FFDAB9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:peach-yellow
+	LaTexName  peach-yellow
+	GuiName  "Peach-yellow"
+	HexName  FADFAD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pear
+	LaTexName  pear
+	GuiName  "Pear"
+	HexName  D1E231
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pearl
+	LaTexName  pearl
+	GuiName  "Pearl"
+	HexName  F0EAD6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:peridot
+	LaTexName  peridot
+	GuiName  "Peridot"
+	HexName  E6E200
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:periwinkle
+	LaTexName  periwinkle
+	GuiName  "Periwinkle"
+	HexName  CCCCFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianblue
+	LaTexName  persianblue
+	GuiName  "Persian blue"
+	HexName  1C39BB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persiangreen
+	LaTexName  persiangreen
+	GuiName  "Persian green"
+	HexName  00A693
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianindigo
+	LaTexName  persianindigo
+	GuiName  "Persian indigo"
+	HexName  32127A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianorange
+	LaTexName  persianorange
+	GuiName  "Persian orange"
+	HexName  D99058
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:peru
+	LaTexName  peru
+	GuiName  "Peru"
+	HexName  CD853F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianpink
+	LaTexName  persianpink
+	GuiName  "Persian pink"
+	HexName  F77FBE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianplum
+	LaTexName  persianplum
+	GuiName  "Persian plum"
+	HexName  701C1C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianred
+	LaTexName  persianred
+	GuiName  "Persian red"
+	HexName  CC3333
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persianrose
+	LaTexName  persianrose
+	GuiName  "Persian rose"
+	HexName  FE28A2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:persimmon
+	LaTexName  persimmon
+	GuiName  "Persimmon"
+	HexName  EC5800
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:phlox
+	LaTexName  phlox
+	GuiName  "Phlox"
+	HexName  DF00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:phthaloblue
+	LaTexName  phthaloblue
+	GuiName  "Phthalo blue"
+	HexName  000F89
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:phthalogreen
+	LaTexName  phthalogreen
+	GuiName  "Phthalo green"
+	HexName  123524
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:piggypink
+	LaTexName  piggypink
+	GuiName  "Piggy pink"
+	HexName  FDDDE6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pinegreen
+	LaTexName  pinegreen
+	GuiName  "Pine green"
+	HexName  01796F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pink
+	LaTexName  pink
+	GuiName  "Pink"
+	HexName  FFC0CB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pink-orange
+	LaTexName  pink-orange
+	GuiName  "Pink-orange"
+	HexName  FF9966
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pinkpearl
+	LaTexName  pinkpearl
+	GuiName  "Pink pearl"
+	HexName  E7ACCF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pinksherbet
+	LaTexName  pinksherbet
+	GuiName  "Pink Sherbet"
+	HexName  F78FA7
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pistachio
+	LaTexName  pistachio
+	GuiName  "Pistachio"
+	HexName  93C572
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:platinum
+	LaTexName  platinum
+	GuiName  "Platinum"
+	HexName  E5E4E2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:plum(traditional)
+	LaTexName  plum(traditional)
+	GuiName  "Plum (traditional)"
+	HexName  8E4585
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:plum(web)
+	LaTexName  plum(web)
+	GuiName  "Plum (web)"
+	HexName  DDA0DD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:portlandorange
+	LaTexName  portlandorange
+	GuiName  "Portland Orange"
+	HexName  FF5A36
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:powderblue(web)
+	LaTexName  powderblue(web)
+	GuiName  "Powder blue (web)"
+	HexName  B0E0E6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:princetonorange
+	LaTexName  princetonorange
+	GuiName  "Princeton orange"
+	HexName  FF8F00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:prune
+	LaTexName  prune
+	GuiName  "Prune"
+	HexName  701C1C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:prussianblue
+	LaTexName  prussianblue
+	GuiName  "Prussian blue"
+	HexName  003153
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:psychedelicpurple
+	LaTexName  psychedelicpurple
+	GuiName  "Psychedelic purple"
+	HexName  DF00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:puce
+	LaTexName  puce
+	GuiName  "Puce"
+	HexName  CC8899
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:pumpkin
+	LaTexName  pumpkin
+	GuiName  "Pumpkin"
+	HexName  FF7518
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purple(html/css)
+	LaTexName  purple(html/css)
+	GuiName  "Purple (HTML/CSS)"
+	HexName  800080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purple(munsell)
+	LaTexName  purple(munsell)
+	GuiName  "Purple (Munsell)"
+	HexName  9F00C5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purple(x11)
+	LaTexName  purple(x11)
+	GuiName  "Purple (X11)"
+	HexName  A020F0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purpleheart
+	LaTexName  purpleheart
+	GuiName  "Purple Heart"
+	HexName  69359C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purplemountainmajesty
+	LaTexName  purplemountainmajesty
+	GuiName  "Purple mountain majesty"
+	HexName  9678B6
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purplepizzazz
+	LaTexName  purplepizzazz
+	GuiName  "Purple pizzazz"
+	HexName  FE4EDA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:purpletaupe
+	LaTexName  purpletaupe
+	GuiName  "Purple taupe"
+	HexName  50404D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:radicalred
+	LaTexName  radicalred
+	GuiName  "Radical Red"
+	HexName  FF355E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:raspberry
+	LaTexName  raspberry
+	GuiName  "Raspberry"
+	HexName  E30B5D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:raspberryglace
+	LaTexName  raspberryglace
+	GuiName  "Raspberry glace"
+	HexName  915F6D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:raspberrypink
+	LaTexName  raspberrypink
+	GuiName  "Raspberry pink"
+	HexName  E25098
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:raspberryrose
+	LaTexName  raspberryrose
+	GuiName  "Raspberry rose"
+	HexName  B3446C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rawumber
+	LaTexName  rawumber
+	GuiName  "Raw umber"
+	HexName  826644
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:razzledazzlerose
+	LaTexName  razzledazzlerose
+	GuiName  "Razzle dazzle rose"
+	HexName  FF33CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:razzmatazz
+	LaTexName  razzmatazz
+	GuiName  "Razzmatazz"
+	HexName  E3256B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red
+	LaTexName  red
+	GuiName  "Red"
+	HexName  FF0000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red(munsell)
+	LaTexName  red(munsell)
+	GuiName  "Red (Munsell)"
+	HexName  F2003C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red(ncs)
+	LaTexName  red(ncs)
+	GuiName  "Red (NCS)"
+	HexName  C40233
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red(pigment)
+	LaTexName  red(pigment)
+	GuiName  "Red (pigment)"
+	HexName  ED1C24
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red(ryb)
+	LaTexName  red(ryb)
+	GuiName  "Red (RYB)"
+	HexName  FE2712
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red-brown
+	LaTexName  red-brown
+	GuiName  "Red-brown"
+	HexName  A52A2A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:red-violet
+	LaTexName  red-violet
+	GuiName  "Red-violet"
+	HexName  C71585
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:redwood
+	LaTexName  redwood
+	GuiName  "Redwood"
+	HexName  AB4E52
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:regalia
+	LaTexName  regalia
+	GuiName  "Regalia"
+	HexName  522D80
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richblack
+	LaTexName  richblack
+	GuiName  "Rich black"
+	HexName  004040
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richbrilliantlavender
+	LaTexName  richbrilliantlavender
+	GuiName  "Rich brilliant lavender"
+	HexName  F1A7FE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richcarmine
+	LaTexName  richcarmine
+	GuiName  "Rich carmine"
+	HexName  D70040
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richelectricblue
+	LaTexName  richelectricblue
+	GuiName  "Rich electric blue"
+	HexName  0892D0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richlavender
+	LaTexName  richlavender
+	GuiName  "Rich lavender"
+	HexName  A76BCF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richlilac
+	LaTexName  richlilac
+	GuiName  "Rich lilac"
+	HexName  B666D2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:richmaroon
+	LaTexName  richmaroon
+	GuiName  "Rich maroon"
+	HexName  B03060
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:riflegreen
+	LaTexName  riflegreen
+	GuiName  "Rifle green"
+	HexName  414833
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:robineggblue
+	LaTexName  robineggblue
+	GuiName  "Robin egg blue"
+	HexName  00CCCC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rose
+	LaTexName  rose
+	GuiName  "Rose"
+	HexName  FF007F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosebonbon
+	LaTexName  rosebonbon
+	GuiName  "Rose bonbon"
+	HexName  F9429E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:roseebony
+	LaTexName  roseebony
+	GuiName  "Rose ebony"
+	HexName  674846
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosegold
+	LaTexName  rosegold
+	GuiName  "Rose gold"
+	HexName  B76E79
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosemadder
+	LaTexName  rosemadder
+	GuiName  "Rose madder"
+	HexName  E32636
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosepink
+	LaTexName  rosepink
+	GuiName  "Rose pink"
+	HexName  FF66CC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosequartz
+	LaTexName  rosequartz
+	GuiName  "Rose quartz"
+	HexName  AA98A9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosetaupe
+	LaTexName  rosetaupe
+	GuiName  "Rose taupe"
+	HexName  905D5D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosevale
+	LaTexName  rosevale
+	GuiName  "Rose vale"
+	HexName  AB4E52
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosewood
+	LaTexName  rosewood
+	GuiName  "Rosewood"
+	HexName  65000B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rossocorsa
+	LaTexName  rossocorsa
+	GuiName  "Rosso corsa"
+	HexName  D40000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rosybrown
+	LaTexName  rosybrown
+	GuiName  "Rosy brown"
+	HexName  BC8F8F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:royalazure
+	LaTexName  royalazure
+	GuiName  "Royal azure"
+	HexName  0038A8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:royalblue(traditional)
+	LaTexName  royalblue(traditional)
+	GuiName  "Royal blue (traditional)"
+	HexName  002366
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:royalblue(web)
+	LaTexName  royalblue(web)
+	GuiName  "Royal blue (web)"
+	HexName  4169E1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:royalfuchsia
+	LaTexName  royalfuchsia
+	GuiName  "Royal fuchsia"
+	HexName  CA2C92
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:royalpurple
+	LaTexName  royalpurple
+	GuiName  "Royal purple"
+	HexName  7851A9
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ruby
+	LaTexName  ruby
+	GuiName  "Ruby"
+	HexName  E0115F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ruddy
+	LaTexName  ruddy
+	GuiName  "Ruddy"
+	HexName  FF0028
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ruddybrown
+	LaTexName  ruddybrown
+	GuiName  "Ruddy brown"
+	HexName  BB6528
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ruddypink
+	LaTexName  ruddypink
+	GuiName  "Ruddy pink"
+	HexName  E18E96
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rufous
+	LaTexName  rufous
+	GuiName  "Rufous"
+	HexName  A81C07
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:russet
+	LaTexName  russet
+	GuiName  "Russet"
+	HexName  80461B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:rust
+	LaTexName  rust
+	GuiName  "Rust"
+	HexName  B7410E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sacramentostategreen
+	LaTexName  sacramentostategreen
+	GuiName  "Sacramento State green"
+	HexName  00563F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:saddlebrown
+	LaTexName  saddlebrown
+	GuiName  "Saddle brown"
+	HexName  8B4513
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:safetyorange(blazeorange)
+	LaTexName  safetyorange(blazeorange)
+	GuiName  "Safety orange (blaze orange)"
+	HexName  FF6700
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:saffron
+	LaTexName  saffron
+	GuiName  "Saffron"
+	HexName  F4C430
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:st.patrick\'sblue
+	LaTexName  st.patrick\'sblue
+	GuiName  "St. Patrick\'s blue"
+	HexName  23297A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:salmon
+	LaTexName  salmon
+	GuiName  "Salmon"
+	HexName  FF8C69
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:salmonpink
+	LaTexName  salmonpink
+	GuiName  "Salmon pink"
+	HexName  FF91A4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sand
+	LaTexName  sand
+	GuiName  "Sand"
+	HexName  C2B280
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sanddune
+	LaTexName  sanddune
+	GuiName  "Sand dune"
+	HexName  967117
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sandstorm
+	LaTexName  sandstorm
+	GuiName  "Sandstorm"
+	HexName  ECD540
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sandybrown
+	LaTexName  sandybrown
+	GuiName  "Sandy brown"
+	HexName  F4A460
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sandytaupe
+	LaTexName  sandytaupe
+	GuiName  "Sandy taupe"
+	HexName  967117
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sangria
+	LaTexName  sangria
+	GuiName  "Sangria"
+	HexName  92000A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sapgreen
+	LaTexName  sapgreen
+	GuiName  "Sap green"
+	HexName  507D2A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sapphire
+	LaTexName  sapphire
+	GuiName  "Sapphire"
+	HexName  082567
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:satinsheengold
+	LaTexName  satinsheengold
+	GuiName  "Satin sheen gold"
+	HexName  CBA135
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:scarlet
+	LaTexName  scarlet
+	GuiName  "Scarlet"
+	HexName  FF2000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:schoolbusyellow
+	LaTexName  schoolbusyellow
+	GuiName  "School bus yellow"
+	HexName  FFD800
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:screamin\'green
+	LaTexName  screamin\'green
+	GuiName  "Screamin\' Green"
+	HexName  76FF7A
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:seagreen
+	LaTexName  seagreen
+	GuiName  "Sea green"
+	HexName  2E8B57
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sealbrown
+	LaTexName  sealbrown
+	GuiName  "Seal brown"
+	HexName  321414
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:seashell
+	LaTexName  seashell
+	GuiName  "Seashell"
+	HexName  FFF5EE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:selectiveyellow
+	LaTexName  selectiveyellow
+	GuiName  "Selective yellow"
+	HexName  FFBA00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sepia
+	LaTexName  sepia
+	GuiName  "Sepia"
+	HexName  704214
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:shadow
+	LaTexName  shadow
+	GuiName  "Shadow"
+	HexName  8A795D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:shamrockgreen
+	LaTexName  shamrockgreen
+	GuiName  "Shamrock green"
+	HexName  009E60
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:shockingpink
+	LaTexName  shockingpink
+	GuiName  "Shocking pink"
+	HexName  FC0FC0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sienna
+	LaTexName  sienna
+	GuiName  "Sienna"
+	HexName  882D17
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:silver
+	LaTexName  silver
+	GuiName  "Silver"
+	HexName  C0C0C0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sinopia
+	LaTexName  sinopia
+	GuiName  "Sinopia"
+	HexName  CB410B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:skobeloff
+	LaTexName  skobeloff
+	GuiName  "Skobeloff"
+	HexName  007474
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:skyblue
+	LaTexName  skyblue
+	GuiName  "Sky blue"
+	HexName  87CEEB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:skymagenta
+	LaTexName  skymagenta
+	GuiName  "Sky magenta"
+	HexName  CF71AF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:slateblue
+	LaTexName  slateblue
+	GuiName  "Slate blue"
+	HexName  6A5ACD
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:slategray
+	LaTexName  slategray
+	GuiName  "Slate gray"
+	HexName  708090
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:smalt(darkpowderblue)
+	LaTexName  smalt(darkpowderblue)
+	GuiName  "Smalt (Dark powder blue)"
+	HexName  003399
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:smokeytopaz
+	LaTexName  smokeytopaz
+	GuiName  "Smokey topaz"
+	HexName  933D41
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:smokyblack
+	LaTexName  smokyblack
+	GuiName  "Smoky black"
+	HexName  100C08
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:snow
+	LaTexName  snow
+	GuiName  "Snow"
+	HexName  FFFAFA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:spirodiscoball
+	LaTexName  spirodiscoball
+	GuiName  "Spiro Disco Ball"
+	HexName  0FC0FC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:splashedwhite
+	LaTexName  splashedwhite
+	GuiName  "Splashed white"
+	HexName  FEFDFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:springbud
+	LaTexName  springbud
+	GuiName  "Spring bud"
+	HexName  A7FC00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:springgreen
+	LaTexName  springgreen
+	GuiName  "Spring green"
+	HexName  00FF7F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:steelblue
+	LaTexName  steelblue
+	GuiName  "Steel blue"
+	HexName  4682B4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:stildegrainyellow
+	LaTexName  stildegrainyellow
+	GuiName  "Stil de grain yellow"
+	HexName  FADA5E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:straw
+	LaTexName  straw
+	GuiName  "Straw"
+	HexName  E4D96F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sunglow
+	LaTexName  sunglow
+	GuiName  "Sunglow"
+	HexName  FFCC33
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:sunset
+	LaTexName  sunset
+	GuiName  "Sunset"
+	HexName  FAD6A5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tan
+	LaTexName  tan
+	GuiName  "Tan"
+	HexName  D2B48C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tangelo
+	LaTexName  tangelo
+	GuiName  "Tangelo"
+	HexName  F94D00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tangerine
+	LaTexName  tangerine
+	GuiName  "Tangerine"
+	HexName  F28500
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tangerineyellow
+	LaTexName  tangerineyellow
+	GuiName  "Tangerine yellow"
+	HexName  FFCC00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:taupe
+	LaTexName  taupe
+	GuiName  "Taupe"
+	HexName  483C32
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:taupegray
+	LaTexName  taupegray
+	GuiName  "Taupe gray"
+	HexName  8B8589
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:teagreen
+	LaTexName  teagreen
+	GuiName  "Tea green"
+	HexName  D0F0C0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tearose(orange)
+	LaTexName  tearose(orange)
+	GuiName  "Tea rose (orange)"
+	HexName  F88379
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tearose(rose)
+	LaTexName  tearose(rose)
+	GuiName  "Tea rose (rose)"
+	HexName  F4C2C2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:teal
+	LaTexName  teal
+	GuiName  "Teal"
+	HexName  008080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tealblue
+	LaTexName  tealblue
+	GuiName  "Teal blue"
+	HexName  367588
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tealgreen
+	LaTexName  tealgreen
+	GuiName  "Teal green"
+	HexName  006D5B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tenne(tawny)
+	LaTexName  tenne(tawny)
+	GuiName  "Tenné (Tawny)"
+	HexName  CD5700
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:terracotta
+	LaTexName  terracotta
+	GuiName  "Terra cotta"
+	HexName  E2725B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:thistle
+	LaTexName  thistle
+	GuiName  "Thistle"
+	HexName  D8BFD8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:thulianpink
+	LaTexName  thulianpink
+	GuiName  "Thulian pink"
+	HexName  DE6FA1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ticklemepink
+	LaTexName  ticklemepink
+	GuiName  "Tickle Me Pink"
+	HexName  FC89AC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tiffanyblue
+	LaTexName  tiffanyblue
+	GuiName  "Tiffany Blue"
+	HexName  0ABAB5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tiger\'seye
+	LaTexName  tiger\'seye
+	GuiName  "Tiger\'s eye"
+	HexName  E08D3C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:timberwolf
+	LaTexName  timberwolf
+	GuiName  "Timberwolf"
+	HexName  DBD7D2
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:titaniumyellow
+	LaTexName  titaniumyellow
+	GuiName  "Titanium yellow"
+	HexName  EEE600
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tomato
+	LaTexName  tomato
+	GuiName  "Tomato"
+	HexName  FF6347
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:toolbox
+	LaTexName  toolbox
+	GuiName  "Toolbox"
+	HexName  746CC0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tractorred
+	LaTexName  tractorred
+	GuiName  "Tractor red"
+	HexName  FD0E35
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:trolleygrey
+	LaTexName  trolleygrey
+	GuiName  "Trolley Grey"
+	HexName  808080
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tropicalrainforest
+	LaTexName  tropicalrainforest
+	GuiName  "Tropical rain forest"
+	HexName  00755E
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:trueblue
+	LaTexName  trueblue
+	GuiName  "True Blue"
+	HexName  0073CF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tuftsblue
+	LaTexName  tuftsblue
+	GuiName  "Tufts Blue"
+	HexName  417DC1
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tumbleweed
+	LaTexName  tumbleweed
+	GuiName  "Tumbleweed"
+	HexName  DEAA88
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:turkishrose
+	LaTexName  turkishrose
+	GuiName  "Turkish rose"
+	HexName  B57281
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:turquoise
+	LaTexName  turquoise
+	GuiName  "Turquoise"
+	HexName  30D5C8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:turquoiseblue
+	LaTexName  turquoiseblue
+	GuiName  "Turquoise blue"
+	HexName  00FFEF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:turquoisegreen
+	LaTexName  turquoisegreen
+	GuiName  "Turquoise green"
+	HexName  A0D6B4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tuscanred
+	LaTexName  tuscanred
+	GuiName  "Tuscan red"
+	HexName  823535
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:twilightlavender
+	LaTexName  twilightlavender
+	GuiName  "Twilight lavender"
+	HexName  8A496B
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:tyrianpurple
+	LaTexName  tyrianpurple
+	GuiName  "Tyrian purple"
+	HexName  66023C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:uablue
+	LaTexName  uablue
+	GuiName  "UA blue"
+	HexName  0033AA
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:uared
+	LaTexName  uared
+	GuiName  "UA red"
+	HexName  D9004C
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ube
+	LaTexName  ube
+	GuiName  "Ube"
+	HexName  8878C3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:uclablue
+	LaTexName  uclablue
+	GuiName  "UCLA Blue"
+	HexName  536895
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:uclagold
+	LaTexName  uclagold
+	GuiName  "UCLA Gold"
+	HexName  FFB300
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ufogreen
+	LaTexName  ufogreen
+	GuiName  "UFO Green"
+	HexName  3CD070
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ultramarine
+	LaTexName  ultramarine
+	GuiName  "Ultramarine"
+	HexName  120A8F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ultramarineblue
+	LaTexName  ultramarineblue
+	GuiName  "Ultramarine blue"
+	HexName  4166F5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:ultrapink
+	LaTexName  ultrapink
+	GuiName  "Ultra pink"
+	HexName  FF6FFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:umber
+	LaTexName  umber
+	GuiName  "Umber"
+	HexName  635147
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:unitednationsblue
+	LaTexName  unitednationsblue
+	GuiName  "United Nations blue"
+	HexName  5B92E5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:unmellowyellow
+	LaTexName  unmellowyellow
+	GuiName  "Unmellow Yellow"
+	HexName  FFFF66
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:upforestgreen
+	LaTexName  upforestgreen
+	GuiName  "UP Forest green"
+	HexName  014421
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:upmaroon
+	LaTexName  upmaroon
+	GuiName  "UP Maroon"
+	HexName  7B1113
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:upsdellred
+	LaTexName  upsdellred
+	GuiName  "Upsdell red"
+	HexName  AE2029
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:urobilin
+	LaTexName  urobilin
+	GuiName  "Urobilin"
+	HexName  E1AD21
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:usccardinal
+	LaTexName  usccardinal
+	GuiName  "USC Cardinal"
+	HexName  990000
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:uscgold
+	LaTexName  uscgold
+	GuiName  "USC Gold"
+	HexName  FFCC00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:utahcrimson
+	LaTexName  utahcrimson
+	GuiName  "Utah Crimson"
+	HexName  D3003F
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vanilla
+	LaTexName  vanilla
+	GuiName  "Vanilla"
+	HexName  F3E5AB
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vegasgold
+	LaTexName  vegasgold
+	GuiName  "Vegas gold"
+	HexName  C5B358
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:venetianred
+	LaTexName  venetianred
+	GuiName  "Venetian red"
+	HexName  C80815
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:verdigris
+	LaTexName  verdigris
+	GuiName  "Verdigris"
+	HexName  43B3AE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vermilion
+	LaTexName  vermilion
+	GuiName  "Vermilion"
+	HexName  E34234
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:veronica
+	LaTexName  veronica
+	GuiName  "Veronica"
+	HexName  A020F0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:violet
+	LaTexName  violet
+	GuiName  "Violet"
+	HexName  8F00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:violet(colorwheel)
+	LaTexName  violet(colorwheel)
+	GuiName  "Violet (color wheel)"
+	HexName  7F00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:violet(ryb)
+	LaTexName  violet(ryb)
+	GuiName  "Violet (RYB)"
+	HexName  8601AF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:violet(web)
+	LaTexName  violet(web)
+	GuiName  "Violet (web)"
+	HexName  EE82EE
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:viridian
+	LaTexName  viridian
+	GuiName  "Viridian"
+	HexName  40826D
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vividauburn
+	LaTexName  vividauburn
+	GuiName  "Vivid auburn"
+	HexName  922724
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vividburgundy
+	LaTexName  vividburgundy
+	GuiName  "Vivid burgundy"
+	HexName  9F1D35
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vividcerise
+	LaTexName  vividcerise
+	GuiName  "Vivid cerise"
+	HexName  DA1D81
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vividtangerine
+	LaTexName  vividtangerine
+	GuiName  "Vivid tangerine"
+	HexName  FFA089
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:vividviolet
+	LaTexName  vividviolet
+	GuiName  "Vivid violet"
+	HexName  9F00FF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:warmblack
+	LaTexName  warmblack
+	GuiName  "Warm black"
+	HexName  004242
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:wenge
+	LaTexName  wenge
+	GuiName  "Wenge"
+	HexName  645452
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:wheat
+	LaTexName  wheat
+	GuiName  "Wheat"
+	HexName  F5DEB3
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:white
+	LaTexName  white
+	GuiName  "White"
+	HexName  FFFFFF
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:whitesmoke
+	LaTexName  whitesmoke
+	GuiName  "White smoke"
+	HexName  F5F5F5
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:wildblueyonder
+	LaTexName  wildblueyonder
+	GuiName  "Wild blue yonder"
+	HexName  A2ADD0
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:wildstrawberry
+	LaTexName  wildstrawberry
+	GuiName  "Wild Strawberry"
+	HexName  FF43A4
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:wildwatermelon
+	LaTexName  wildwatermelon
+	GuiName  "Wild Watermelon"
+	HexName  FC6C85
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:wisteria
+	LaTexName  wisteria
+	GuiName  "Wisteria"
+	HexName  C9A0DC
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:xanadu
+	LaTexName  xanadu
+	GuiName  "Xanadu"
+	HexName  738678
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yaleblue
+	LaTexName  yaleblue
+	GuiName  "Yale Blue"
+	HexName  0F4D92
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yellow
+	LaTexName  yellow
+	GuiName  "Yellow"
+	HexName  FFFF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yellow(munsell)
+	LaTexName  yellow(munsell)
+	GuiName  "Yellow (Munsell)"
+	HexName  EFCC00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yellow(ncs)
+	LaTexName  yellow(ncs)
+	GuiName  "Yellow (NCS)"
+	HexName  FFD300
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yellow(process)
+	LaTexName  yellow(process)
+	GuiName  "Yellow (process)"
+	HexName  FFEF00
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yellow(ryb)
+	LaTexName  yellow(ryb)
+	GuiName  "Yellow (RYB)"
+	HexName  FEFE33
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:yellow-green
+	LaTexName  yellow-green
+	GuiName  "Yellow-green"
+	HexName  9ACD32
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:zaffre
+	LaTexName  zaffre
+	GuiName  "Zaffre"
+	HexName  0014A8
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+Color LatexColors:zinnwalditebrown
+	LaTexName  zinnwalditebrown
+	GuiName  "Zinnwaldite brown"
+	HexName  2C1608
+	Category  "Latex Colors"
+	Requires  latexcolors
+EndColor
+
+
+
