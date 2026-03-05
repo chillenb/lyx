@@ -15,6 +15,7 @@
 #include "DocumentClassPtr.h"
 #include "FloatList.h"
 #include "FontInfo.h"
+#include "LaTeXColors.h"
 #include "LayoutEnums.h"
 #include "LayoutModuleList.h"
 #include "SpecialChar.h"
@@ -381,6 +382,8 @@ protected:
 	std::map<std::string, SpecialChar> special_chars_;
 	/// Does this class put the bibliography to toc by itself?
 	bool bibintoc_;
+	///
+	std::vector<std::pair<std::string, LaTeXColor>> texcolors_;
 private:
 	///////////////////////////////////////////////////////////////////
 	// helper routines for reading layout files
@@ -569,6 +572,8 @@ public:
 	bool fullAuthorList() const { return cite_full_author_list_; }
 	///
 	bool bibInToc() const { return bibintoc_; }
+	///
+	std::vector<std::pair<std::string, LaTeXColor>> latexColors() const { return texcolors_; }
 protected:
 	/// Constructs a DocumentClass based upon a LayoutFile.
 	DocumentClass(LayoutFile const & tc);

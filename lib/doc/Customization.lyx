@@ -9557,6 +9557,50 @@ nolink "false"
 
 ).
  A cite format defined in a layout or module will override the cite engine definition.
+\change_inserted -712698321 1772710836
+
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772711175
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772710840
+Color
+\end_layout
+
+\end_inset
+
+ defines an additional color that is specific for the textclass or a module.
+ Must end with 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772710897
+EndColor
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
+ See 
+\begin_inset CommandInset ref
+LatexCommand formatted
+reference "subsec:Color-description"
+
+\end_inset
+
+ for details.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Description
@@ -25005,6 +25049,8 @@ status collapsed
 
 \change_inserted -712698321 1771593676
 0x002e
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -25178,6 +25224,8 @@ status collapsed
 
 \change_inserted -712698321 1771593739
 0x002e
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -25201,6 +25249,8 @@ status collapsed
 \begin_inset Quotes qld
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -25349,6 +25399,8 @@ status collapsed
 
 \change_inserted -712698321 1771593742
 0x002e
+\change_unchanged
+
 \end_layout
 
 \end_inset
@@ -25372,6 +25424,8 @@ status collapsed
 \begin_inset Quotes qld
 \end_inset
 
+
+\change_unchanged
 
 \end_layout
 
@@ -27206,6 +27260,482 @@ giant
 \end_inset
 
 ]
+\end_layout
+
+\begin_layout Subsection
+
+\change_inserted -712698321 1772711254
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Color-description"
+
+\end_inset
+
+Color description
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1772711397
+The 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711365
+Color
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ blocks define colors that can be used for text,
+ frames,
+ boxes etc.
+ They look like this
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1772711441
+Color <name>
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1772711571
+  \SpecialChar ldots
+
+\end_layout
+
+\begin_layout LyX-Code
+
+\change_inserted -712698321 1772711478
+EndColor
+\end_layout
+
+\begin_layout Standard
+
+\change_inserted -712698321 1772712721
+See the file 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711496
+latexcolors
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ shipped with \SpecialChar LyX
+ for examples.
+ The following commands are available:
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772711759
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711724
+Category
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711732
+string
+\end_layout
+
+\end_inset
+
+].
+ The category this color should be assorted to in the color combo boxes.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772711868
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711602
+ColorModel
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711554
+string
+\end_layout
+
+\end_inset
+
+] color model as categorized by the 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711641
+xcolor
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ package (dvipsnames,
+ svgnames,
+ x11names).
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772712299
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711791
+CMYK
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711785
+string
+\end_layout
+
+\end_inset
+
+] The CMYK value of the color (only needed with 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712299
+SVGClash 1
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772711892
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711873
+GuiName
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711869
+string
+\end_layout
+
+\end_inset
+
+] The name of the color as displayed in the GUI.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772711937
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711896
+HexName
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711892
+string
+\end_layout
+
+\end_inset
+
+] The hex color value without preceding 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711921
+#
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772711975
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711940
+LaTeXName
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711937
+string
+\end_layout
+
+\end_inset
+
+] The \SpecialChar LaTeX
+ name of the color.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772712138
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711978
+Requires
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772711975
+string
+\end_layout
+
+\end_inset
+
+] A comma-separated list of the package(s) required to generate this color.
+ The package 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712105
+xcolor
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ is automatically required if a 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712138
+ColorModel
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ is specified.
+\end_layout
+
+\begin_layout Description
+
+\change_inserted -712698321 1772712947
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712022
+SVGClash
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712045
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712045
+1
+\end_layout
+
+\end_inset
+
+] This is specific to colors provided by the 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712192
+xcolor
+\end_layout
+
+\end_inset
+
+ package,
+ where some color names clash in the 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712916
+dvipsnames
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ and 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712922
+svgnames
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ models.
+ In this case,
+ we set 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712246
+SVGClash 1
+\change_unchanged
+
+\end_layout
+
+\end_inset
+
+ and specify the CMYK value.
+ \SpecialChar LyX
+ will then define and use a fallback color for the 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\change_inserted -712698321 1772712943
+dvipsnames
+\end_layout
+
+\end_inset
+
+ model.
+\change_unchanged
+
 \end_layout
 
 \begin_layout Subsection

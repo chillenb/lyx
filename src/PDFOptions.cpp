@@ -315,15 +315,7 @@ void PDFOptions::validate(LaTeXFeatures & features) const
 		if (!contains(opt, "color="))
 			continue;
 		string const color = split(opt, '=');
-		if (theLaTeXColors().isRealLaTeXColor(color)) {
-			string const lyxcolor = theLaTeXColors().getFromLaTeXColor(color);
-			LaTeXColor const lc = theLaTeXColors().getLaTeXColor(lyxcolor);
-			for (auto const & r : lc.req())
-				features.require(r);
-			features.require("xcolor");
-			if (!lc.model().empty())
-				features.require("xcolor:" + lc.model());
-		}
+		features.requireColorPackage(color, true);
 	}
 	
 }

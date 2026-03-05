@@ -2547,14 +2547,7 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 		// only require color here, the background color will be defined
 		// in LaTeXFeatures.cpp to avoid interferences with the LaTeX
 		// package pdfpages
-		if (theLaTeXColors().isLaTeXColor(backgroundcolor)) {
-			LaTeXColor const lc = theLaTeXColors().getLaTeXColor(backgroundcolor);
-			for (auto const & r : lc.req())
-				features.require(r);
-			features.require("xcolor");
-			if (!lc.model().empty())
-				features.require("xcolor:" + lc.model());
-		}
+		features.requireColorPackage(backgroundcolor);
 		features.require("pagecolor");
 	}
 
@@ -2563,14 +2556,7 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 		// only require color here, the font color will be defined
 		// in LaTeXFeatures.cpp to avoid interferences with the LaTeX
 		// package pdfpages
-		if (theLaTeXColors().isLaTeXColor(fontcolor)) {
-			LaTeXColor const lc = theLaTeXColors().getLaTeXColor(fontcolor);
-			for (auto const & r : lc.req())
-				features.require(r);
-			features.require("xcolor");
-			if (!lc.model().empty())
-				features.require("xcolor:" + lc.model());
-		}
+		features.requireColorPackage(fontcolor);
 		features.require("fontcolor");
 	}
 

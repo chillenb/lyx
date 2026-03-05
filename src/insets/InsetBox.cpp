@@ -797,14 +797,7 @@ void InsetBox::validate(LaTeXFeatures & features) const
 	switch (btype) {
 	case Frameless:
 		if (params_.backgroundcolor != "none") {
-			if (theLaTeXColors().isLaTeXColor(params_.backgroundcolor)) {
-				LaTeXColor const lc = theLaTeXColors().getLaTeXColor(params_.backgroundcolor);
-				for (auto const & r : lc.req())
-					features.require(r);
-				features.require("xcolor");
-				if (!lc.model().empty())
-					features.require("xcolor:" + lc.model());
-			} else
+			if (!features.requireColorPackage(params_.backgroundcolor))
 				features.require("color");
 		}
 		break;
@@ -815,26 +808,8 @@ void InsetBox::validate(LaTeXFeatures & features) const
 	case Boxed:
 		features.require("calc");
 		if (useFColorBox()) {
-			bool need_xcolor = false;
-			if (theLaTeXColors().isLaTeXColor(params_.backgroundcolor)) {
-				LaTeXColor const lc = theLaTeXColors().getLaTeXColor(params_.backgroundcolor);
-				for (auto const & r : lc.req())
-					features.require(r);
-				features.require("xcolor");
-				need_xcolor = true;
-				if (!lc.model().empty())
-					features.require("xcolor:" + lc.model());
-			}
-			if (theLaTeXColors().isLaTeXColor(params_.framecolor)) {
-				LaTeXColor const lc = theLaTeXColors().getLaTeXColor(params_.framecolor);
-				for (auto const & r : lc.req())
-					features.require(r);
-				features.require("xcolor");
-				need_xcolor = true;
-				if (!lc.model().empty())
-					features.require("xcolor:" + lc.model());
-			}
-			if (!need_xcolor)
+			if (!features.requireColorPackage(params_.backgroundcolor)
+			     && !features.requireColorPackage(params_.framecolor))
 				features.require("color");
 		}
 		break;
@@ -847,13 +822,7 @@ void InsetBox::validate(LaTeXFeatures & features) const
 		break;
 	case Shaded: {
 		features.require("xcolor");
-		if (theLaTeXColors().isLaTeXColor(buffer().params().boxbgcolor)) {
-			LaTeXColor const lc = theLaTeXColors().getLaTeXColor(buffer().params().boxbgcolor);
-			for (auto const & r : lc.req())
-				features.require(r);
-			if (!lc.model().empty())
-				features.require("xcolor:" + lc.model());
-		}
+		features.requireColorPackage(buffer().params().boxbgcolor);
 		features.require("framed");
 		break;
 	}

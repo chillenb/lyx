@@ -336,13 +336,7 @@ void InsetNote::validate(LaTeXFeatures & features) const
 		break;
 	case InsetNoteParams::Greyedout: {
 		features.require("xcolor");
-		if (theLaTeXColors().isLaTeXColor(buffer().params().notefontcolor)) {
-			LaTeXColor const lc = theLaTeXColors().getLaTeXColor(buffer().params().notefontcolor);
-			for (auto const & r : lc.req())
-				features.require(r);
-			if (!lc.model().empty())
-				features.require("xcolor:" + lc.model());
-		}
+		features.requireColorPackage(buffer().params().notefontcolor);
 		InsetCollapsible::validate(features);
 		break;
 	}

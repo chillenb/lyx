@@ -1262,22 +1262,38 @@ void GuiView::addColorItem(QString const & item, QString const & guiname,
 
 QStandardItemModel * GuiView::viewColorsModel()
 {
-	if (colors_model_->rowCount() > 0)
+	int extracols = 0;
+	if (currentBufferView())
+		extracols = currentBufferView()->buffer().masterParams().custom_colors.size()
+				+ currentBufferView()->buffer().masterParams().documentClass().latexColors().size();
+	// if nothing has changed, we do not have to change the model
+	if (colors_model_->rowCount() > 0 && extracols == num_colors_)
 		return colors_model_;
 
+	colors_model_->clear();
 	// at first add the general values as required
 	addColorItem("ignore", qt_("No change"));
 	addColorItem("default", qt_("Default"));
 	addColorItem("none", qt_("None[[color]]"));
 	addColorItem("inherit", qt_("(Without)[[color]]"));
-	// then custom colors
+	int nc = 0;
 	if (currentBufferView()) {
+		// then custom colors
 		for (auto const & lc : currentBufferView()->buffer().masterParams().custom_colors) {
+			++nc;
 			addColorItem(toqstr(lc.first),
 				     toqstr(lc.first),
 				     qt_("Custom Colors"),
 				     toqstr(lc.second),
 				     true);
+		}
+		// then textclass/module colors
+		for (auto const & lc : currentBufferView()->buffer().masterParams().documentClass().latexColors()) {
+			++nc;
+			addColorItem(toqstr(lc.first),
+				     toqstr(translateIfPossible(lc.second.guiname())),
+				     toqstr(translateIfPossible(lc.second.category())),
+				     toqstr(lc.second.hexname()));
 		}
 	}
 	// finally the latex colors
@@ -1288,6 +1304,7 @@ QStandardItemModel * GuiView::viewColorsModel()
 			     toqstr(lc.second.hexname()));
 	}
 
+	num_colors_ = nc;
 	return colors_model_;
 }
 

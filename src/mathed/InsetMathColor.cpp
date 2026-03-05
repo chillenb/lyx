@@ -87,16 +87,7 @@ void InsetMathColor::validate(LaTeXFeatures & features) const
 	InsetMathNest::validate(features);
 	if (!normalcolor(color_)) {
 		string const col = theLaTeXColors().getFromLaTeXColor(to_utf8(color_));
-		if (theLaTeXColors().isLaTeXColor(col)) {
-			LaTeXColor const lc = theLaTeXColors().getLaTeXColor(col);
-			for (auto const & r : lc.req())
-				features.require(r);
-			features.require("color");
-			if (!lc.model().empty()) {
-				features.require("xcolor");
-				features.require("xcolor:" + lc.model());
-			}
-		}
+		features.requireColorPackage(col);
 	}
 }
 

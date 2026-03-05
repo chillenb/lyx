@@ -9,7 +9,7 @@
 # This script will update a .layout file to current format
 
 # The latest layout format is also defined in src/TextClass.cpp
-currentFormat = 115
+currentFormat = 116
 
 
 # Incremented to format 4, 6 April 2007, lasgouttes
@@ -391,6 +391,9 @@ currentFormat = 115
 # Incremented to format 115, 28 February 2026 by spitz
 # New InsetLayout option LaTeXType SimpleCommand
 
+# Incremented to format 116, 5 March 2026 by spitz
+# New Tag Color for textclass/module-specific color definitions
+
 # Do not forget to document format change in Customization
 # Manual (section "Declaring a new text class").
 
@@ -730,7 +733,7 @@ def convert(lines, end_format):
                 i += 1
             continue
 
-        if 101 <= format <= 115:
+        if 101 <= format <= 116:
             # nothing to do.
             i += 1
             continue

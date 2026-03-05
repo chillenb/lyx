@@ -222,6 +222,8 @@ public:
 	std::string getUnknownPackages() const;
 	///
 	bool haveOtherForceProvide() const;
+	///
+	bool requireColorPackage(std::string const & col, bool const islatexcol = false);
 
 private:
 	///

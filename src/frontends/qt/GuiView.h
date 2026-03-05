@@ -593,6 +593,8 @@ private:
 
 	///
 	QStandardItemModel * colors_model_;
+	/// Number of additional latex colors
+	int num_colors_ = 0;
 };
 
 

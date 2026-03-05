@@ -1311,8 +1311,45 @@ string const LaTeXFeatures::getColorValue(string const & col) const
 		return lc.latex();
 	} else if (params_.custom_colors.find(col) != params_.custom_colors.end()) {
 		return col;
+	} else {
+		for (auto const & lc : params_.documentClass().latexColors()) {
+			if (lc.first == col)
+				return lc.second.latex();
+		}
 	}
 	return string();
+}
+
+
+bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexcol)
+{
+	bool res = false;
+	if ((!islatexcol && theLaTeXColors().isLaTeXColor(col))
+	     || (islatexcol && theLaTeXColors().isRealLaTeXColor(col))) {
+		string lyxcolor = islatexcol ? theLaTeXColors().getFromLaTeXColor(col) : col;
+		LaTeXColor const lc = theLaTeXColors().getLaTeXColor(lyxcolor);
+		for (auto const & r : lc.req())
+			require(r);
+		require("color");
+		if (!lc.model().empty()) {
+			require("xcolor");
+			require("xcolor:" + lc.model());
+		}
+		res = true;
+	} else {
+		for (auto const & lc : params_.documentClass().latexColors()) {
+			if ((!islatexcol && lc.first == col) || (islatexcol && lc.second.latex() == col)){
+				for (auto const & r : lc.second.req())
+					require(r);
+				if (!lc.second.model().empty()) {
+					require("xcolor");
+					require("xcolor:" + lc.second.model());
+				}
+				res = true;
+			}
+		}
+	}
+	return res;
 }
 
 

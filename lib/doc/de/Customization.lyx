@@ -8332,6 +8332,30 @@ End
 status collapsed
 
 \begin_layout Plain Layout
+Color
+\end_layout
+
+\end_inset
+
+ definiert zusätzliche Farben für eine Dokumentklasse oder ein Modul.
+ Muss mit 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+EndColor
+\end_layout
+
+\end_inset
+
+ abgeschlossen werden.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
 Columns
 \end_layout
 
@@ -25804,6 +25828,379 @@ giant
 \end_inset
 
 ]
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "subsec:Color-description"
+
+\end_inset
+
+Beschreibung von Farben
+\end_layout
+
+\begin_layout Standard
+Die 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Color
+\end_layout
+
+\end_inset
+
+-Blöcke definieren Farben,
+ die für Text,
+ Rahmen,
+ Boxen usw.
+ (in der Ausgabe) verwendet werden können.
+ Sie schauen so aus:
+\end_layout
+
+\begin_layout LyX-Code
+Color <Name>
+\end_layout
+
+\begin_layout LyX-Code
+  \SpecialChar ldots
+
+\end_layout
+
+\begin_layout LyX-Code
+EndColor
+\end_layout
+
+\begin_layout Standard
+Die mit \SpecialChar LyX
+ ausgelieferte Datei 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+latexcolors
+\end_layout
+
+\end_inset
+
+ enthält Beispiele.
+ Folgende Parameter sind verfügbar:
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Category
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+].
+ Die Kategorie,
+ der diese Farbei in den Auswahlfeldern zugewiesen werden soll.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+ColorModel
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Das Farbmodell in der Kategoriesierung des Pakets 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+xcolor
+\end_layout
+
+\end_inset
+
+ (dvipsnames,
+ svgnames,
+ x11names).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+CMYK
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Der CMYK-Wert dieser Farbe (wird nur mit 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+SVGClash 1
+\end_layout
+
+\end_inset
+
+ gebraucht).
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+GuiName
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Der Name der Farbe,
+ wie er in der Benutzeroberfläche angezeigt werden soll.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+HexName
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Der Hex-Farbwert ohne vorangehendes 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+#
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+LaTeXName
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Der \SpecialChar LaTeX
+-Name der Farbe.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+Requires
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+string
+\end_layout
+
+\end_inset
+
+] Eine komma-separierte Liste von Paketen,
+ die geladen werden müssen,
+ damit diese Farbe ausgegeben werden kann.
+ Das Paket 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+xcolor
+\end_layout
+
+\end_inset
+
+ wird automatisch geladen wenn ein 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+ColorModel
+\end_layout
+
+\end_inset
+
+ spezifiziert wurde.
+\end_layout
+
+\begin_layout Description
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+SVGClash
+\end_layout
+
+\end_inset
+
+ [
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+
+\emph on
+0
+\end_layout
+
+\end_inset
+
+,
+\begin_inset space \thinspace{}
+\end_inset
+
+
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+
+] Dies ist spezifisch für Farben,
+ die vom Paket 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+xcolor
+\end_layout
+
+\end_inset
+
+ vordefiniert wurden,
+ da dort einige Farben in den Modellen 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+dvipsnames
+\end_layout
+
+\end_inset
+
+ und 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+svgnames
+\end_layout
+
+\end_inset
+
+ denselben Namen haben,
+ obwohl sie nicht identisch sind.
+ In diesem Fall setzen wir 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+SVGClash 1
+\end_layout
+
+\end_inset
+
+ und spezifizieren einen CMYK-Wert.
+ \SpecialChar LyX
+ definiert dann eine zusätzliche Farbe für 
+\begin_inset Flex Code
+status collapsed
+
+\begin_layout Plain Layout
+dvipsnames
+\end_layout
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Subsection

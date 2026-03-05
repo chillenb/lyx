@@ -4777,17 +4777,8 @@ void Tabular::validate(LaTeXFeatures & features) const
 	if (!used_colors.empty())
 		features.require("colortbl");
 	
-	for (auto const & col : used_colors) {
-		if (!theLaTeXColors().isLaTeXColor(col))
-			continue;
-		LaTeXColor const lc = theLaTeXColors().getLaTeXColor(col);
-		for (auto const & r : lc.req())
-			features.require(r);
-		if (!lc.model().empty()) {
-			features.require("xcolor");
-			features.require("xcolor:" + lc.model());
-		}
-	}
+	for (auto const & col : used_colors)
+		features.requireColorPackage(col);
 }
 
 

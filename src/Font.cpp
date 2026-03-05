@@ -818,17 +818,7 @@ void Font::validate(LaTeXFeatures & features) const
 		LYXERR(Debug::OUTFILE, "Wavy underline enabled. Font: " << to_utf8(stateText()));
 	}
 	string const col = lcolor.getLyXName(bits_.color());
-	if (theLaTeXColors().isLaTeXColor(col)) {
-		LaTeXColor const lc = theLaTeXColors().getLaTeXColor(col);
-		for (auto const & r : lc.req())
-			features.require(r);
-		features.require("color");
-		if (!lc.model().empty()) {
-			features.require("xcolor");
-			features.require("xcolor:" + lc.model());
-		}
-		LYXERR(Debug::OUTFILE, "Color enabled. Font: " << to_utf8(stateText()));
-	}
+	features.requireColorPackage(col);
 
 	// FIXME: Do something for background and soul package?
 

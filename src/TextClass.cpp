@@ -17,6 +17,7 @@
 #include "TextClass.h"
 
 #include "CiteEnginesList.h"
+#include "ColorSet.h"
 #include "Counters.h"
 #include "Floating.h"
 #include "FloatList.h"
@@ -59,7 +60,7 @@ namespace lyx {
 // You should also run the development/tools/updatelayouts.py script,
 // to update the format of all of our layout files.
 //
-int const LAYOUT_FORMAT = 115; // spitz: LaTeXType SimpleCommand
+int const LAYOUT_FORMAT = 116; // spitz: Color
 
 
 // Layout format for the current lyx file format. Controls which format is
@@ -219,7 +220,8 @@ enum TextClassTags {
 	TC_TABLESTYLE,
 	TC_BIBINTOC,
 	TC_DOCBOOKROOT,
-	TC_DOCBOOKFORCEABSTRACT
+	TC_DOCBOOKFORCEABSTRACT,
+	TC_COLOR
 };
 
 
@@ -236,6 +238,7 @@ LexerKeyword textClassTags[] = {
 	{ "citeformat",        TC_CITEFORMAT },
 	{ "citeframework",     TC_CITEFRAMEWORK },
 	{ "classoptions",      TC_CLASSOPTIONS },
+	{ "color",             TC_COLOR },
 	{ "columns",           TC_COLUMNS },
 	{ "counter",           TC_COUNTER },
 	{ "defaultbiblio",     TC_DEFAULTBIBLIO },
@@ -896,6 +899,21 @@ TextClass::ReturnValues TextClass::read(Lexer & lexrc, ReadType rt)
 				error = true;
 			}
 			break;
+
+		case TC_COLOR: {
+			LaTeXColor col;
+			col.read(lexrc);
+			if (lexrc) {
+				texcolors_.push_back(make_pair(col.name(), col));
+				string const lyxname = col.name();
+				if (!lcolor.isKnownLyXName(lyxname)) {
+					lcolor.setColor(lyxname, col.hexname());
+					lcolor.setLaTeXName(lyxname, col.latex());
+					lcolor.setGUIName(lyxname, to_utf8(col.guiname()));
+				}
+			}
+			break;
+		}
 
 		case TC_TITLELATEXTYPE:
 			readTitleType(lexrc);
