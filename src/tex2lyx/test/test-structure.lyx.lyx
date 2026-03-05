@@ -1163,7 +1163,7 @@ blabla bla bla
 
 \begin_layout Standard
 switch to german:
-\lang german
+\lang ngerman
  Hallo! 
 \lang french
 some 
@@ -1171,13 +1171,13 @@ some
 french
 \emph default
 
-\lang german
+\lang ngerman
  back to english:
 \lang newzealand
  and some nested 
 \lang french
 french 
-\lang german
+\lang ngerman
 nested 
 \emph on
 german

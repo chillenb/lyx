@@ -35,8 +35,6 @@ public:
 	void setName(std::string const & name) { name_ = name; }
 };
 
-/// Translate babel language name to LyX language name
-extern std::string babel2lyx(std::string const & language);
 /// Translate LyX language name to babel language name
 extern std::string lyx2babel(std::string const & language);
 /// Translate polyglossia language name to LyX language name

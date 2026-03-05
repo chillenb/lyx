@@ -5485,13 +5485,13 @@ void parse_text(Parser & p, ostream & os, unsigned flags, bool outer,
 			context.check_layout(os);
 			// save the language for the case that a
 			// \foreignlanguage is used
-			context.font.language = babel2lyx(p.verbatim_item());
+			context.font.language = preamble.babel2lyx(p.verbatim_item());
 			os << "\n\\lang " << context.font.language << "\n";
 			continue;
 		}
 
 		if (t.cs() == "foreignlanguage") {
-			string const lang = babel2lyx(p.verbatim_item());
+			string const lang = preamble.babel2lyx(p.verbatim_item());
 			parse_text_attributes(p, os, FLAG_ITEM, outer,
 			                      context, "\\lang",
 			                      context.font.language, lang);

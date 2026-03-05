@@ -56,7 +56,10 @@ const char * const known_languages[] = {"acadian", "afrikaans", "albanian",
 "bulgarian", "canadian", "canadien", "catalan", "churchslavic", "classiclatin", "coptic",
 "croatian", "czech", "danish", "divehi", "dutch", "ecclesiasticlatin", "english", "esperanto",
 "estonian", "farsi", "finnish", "francais", "french", "frenchb", "frenchle", "frenchpro", "friulan",
-"galician", "german", "germanb", "georgian", "greek", "hebrew", "hindi", "hungarian", "icelandic",
+"galician", "german", "germanb", "german-at", "german-at-1901", "german-ch", "german-ch-1901",
+"german-de", "german-de-1901", "german-austria", "german-austria-1901", "german-switzerland",
+"german-switzerland-1901", "german-germany", "german-germany-1901",
+"georgian", "greek", "hebrew", "hindi", "hungarian", "icelandic",
 "indon", "indonesian", "interlingua", "irish", "italian", "japanese", "kannada", "kazakh", "khmer",
 "kurmanji", "lao", "latin", "latvian", "lithuanian", "lowersorbian", "lsorbian", "macedonian", "magyar",
 "malay", "malayalam", "marathi", "medievallatin", "meyalu", "mexican", "mongolian", "naustrian", "newzealand",
@@ -79,7 +82,10 @@ const char * const known_coded_languages[] = {"french", "afrikaans", "albanian",
 "bulgarian", "canadian", "canadien", "catalan", "churchslavonic", "latin-classic", "coptic",
 "croatian", "czech", "danish", "divehi", "dutch", "latin-ecclesiastic", "english", "esperanto",
 "estonian", "farsi", "finnish", "french", "french", "french", "french", "french", "friulan",
-"galician", "german", "german", "georgian", "greek", "hebrew", "hindi", "magyar", "icelandic",
+"galician", "german", "german", "naustrian", "austrian", "german-ch", "german-ch-old",
+"ngerman", "german", "naustrian", "austrian", "german-ch",
+"german-ch-old", "ngerman", "german",
+"georgian", "greek", "hebrew", "hindi", "magyar", "icelandic",
 "bahasa", "bahasa", "interlingua", "irish", "italian", "japanese", "kannada", "kazakh", "khmer",
 "kurmanji", "lao", "latin", "latvian", "lithuanian", "lowersorbian", "lowersorbian", "macedonian", "magyar",
 "bahasam", "malayalam", "marathi", "latin-medieval", "bahasam", "spanish-mexico", "mongolian", "naustrian", "newzealand",
@@ -90,6 +96,9 @@ const char * const known_coded_languages[] = {"french", "afrikaans", "albanian",
 "ukrainian", "ukrainian", "uppersorbian", "english", "urdu", "english", "uppersorbian", "uyghur",
 "vietnamese", "welsh",
 0};
+
+/// legacy babel-german options that change semantics with glottonyms=auto
+const char * const known_legacy_german[] = {"naustrian", "ngerman", "nswissgerman", 0};
 
 /// languages with british quotes (.lyx names)
 const char * const known_british_quotes_languages[] = {"british", "welsh", 0};
@@ -949,7 +958,8 @@ string remove_braces(string const & value)
 } // anonymous namespace
 
 
-Preamble::Preamble() : one_language(true), explicit_babel(false),
+Preamble::Preamble() : one_language(true), default_language("english"),
+	explicit_babel(false), has_legacy_german(false),
 	title_layout_found(false), index_number(0), h_font_cjk_set(false)
 {
 	//h_backgroundcolor;
@@ -2082,9 +2092,13 @@ void Preamble::handle_package(Parser &p, string const & name,
 			// babel takes the last language of the option of its \usepackage
 			// call as document language. If there is no such language option, the
 			// last language in the documentclass options is used.
-			handle_opt(options, known_languages, h_language);
+			handle_opt(options, known_languages, default_language);
+			// Check whether we have naustrian, ngerman, or nswissgerman
+			// This is needed for babel german handling
+			string dummy;
+			has_legacy_german |= handle_opt(options, known_legacy_german, dummy);
 			// translate the babel name to a LyX name
-			h_language = babel2lyx(h_language);
+			h_language = babel2lyx(default_language);
 			if (h_language == "japanese") {
 				// For Japanese, the encoding isn't indicated in the source
 				// file, and there's really not much we can do. We could
@@ -2548,8 +2562,11 @@ bool Preamble::writeLyXHeader(ostream & os, bool subdoc, string const & outfiled
 		h_font_roman_osf = "false";
 	}
 	os << "\\maintain_unincluded_children " << h_maintain_unincluded_children << "\n"
-	   << "\\language " << h_language << "\n"
-	   << "\\language_package " << h_language_package << "\n"
+	   << "\\language " << h_language << "\n";
+	for (map<string, string>::const_iterator it = h_babel_options.begin();
+	     it != h_babel_options.end(); ++it)
+		os << "\\language_options_babel " << it->first << ' ' << it->second << '\n';
+	os << "\\language_package " << h_language_package << "\n"
 	   << "\\inputencoding " << h_inputencoding << "\n"
 	   << "\\fontencoding " << h_fontencoding << "\n"
 	   << "\\font_roman \"" << h_font_roman[0]
@@ -3272,8 +3289,14 @@ void Preamble::parse(Parser & p, string const & forceclass,
 			// The documentclass options are always parsed before the options
 			// of the babel call so that a language cannot overwrite the babel
 			// options.
-			handle_opt(opts, known_languages, h_language);
+			handle_opt(opts, known_languages, default_language);
+			// Check whether we have naustrian, ngerman, or nswissgerman
+			// This is needed for babel german handling
+			string dummy;
+			has_legacy_german = handle_opt(opts, known_legacy_german, dummy);
 			delete_opt(opts, known_languages);
+			// translate the babel name to a LyX name
+			h_language = babel2lyx(default_language);
 
 			// math indentation
 			if ((it = find(opts.begin(), opts.end(), "fleqn"))
@@ -3666,6 +3689,27 @@ void Preamble::parse(Parser & p, string const & forceclass,
 			continue;
 		}
 
+		if (t.cs() == "germansetup") {
+			string const arg = p.verbatim_item();
+			if (contains(arg, "glottonyms=legacy"))
+				has_legacy_german = true;
+			if (contains(arg, "glottonyms=contemporary"))
+				has_legacy_german = false;
+			if (default_language == "german")
+				// adopt main language name
+				h_language = babel2lyx(default_language);
+			if (!arg.empty()) {
+				// germansetup applies to all varieties
+				h_babel_options["austrian"] = arg;
+				h_babel_options["naustrian"] = arg;
+				h_babel_options["german"] = arg;
+				h_babel_options["ngerman"] = arg;
+				h_babel_options["german-ch"] = arg;
+				h_babel_options["german-ch-old"] = arg;
+			}
+			continue;
+		}
+
 		if (is_known(t.cs(), known_if_3arg_commands)) {
 			// prevent misparsing of \usepackage if it is used
 			// as an argument (see e.g. our own output of
@@ -3821,8 +3865,13 @@ string Preamble::parseEncoding(Parser & p, string const & forceclass)
 }
 
 
-string babel2lyx(string const & language)
+string Preamble::babel2lyx(string language)
 {
+	// with german, the semantics depends on the
+	// settings of glottonyms and the use of
+	// other options
+	if (language == "german" && !has_legacy_german)
+		language = "ngerman";
 	char const * const * where = is_known(language, known_languages);
 	if (where)
 		return known_coded_languages[where - known_languages];

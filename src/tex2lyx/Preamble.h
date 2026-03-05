@@ -116,6 +116,8 @@ public:
 	           TeX2LyXDocClass & tc);
 	/// Parse the encoding from a preamble. *this is unusable afterwards.
 	std::string parseEncoding(Parser & p, std::string const & forceclass);
+	/// Translate babel language name to LyX language name
+	std::string babel2lyx(std::string language);
 	/// Writes the LyX file header from internal data
 	bool writeLyXHeader(std::ostream & os, bool subdoc,
 	                    std::string const & outfiledir);
@@ -152,6 +154,8 @@ private:
 	std::string default_language;
 	/// Was babel called explicitly?
 	bool explicit_babel;
+	/// Does "german" mean legacy German (1901 spelling)?
+	bool has_legacy_german;
 
 	/// was at least one title layout found?
 	bool title_layout_found;
@@ -215,6 +219,7 @@ private:
 	std::string h_justification;
 	std::string h_language;
 	std::string h_language_package;
+	std::map<std::string, std::string> h_babel_options;
 	std::string h_listings_params;
 	std::string h_maintain_unincluded_children;
 	std::string h_margins;
