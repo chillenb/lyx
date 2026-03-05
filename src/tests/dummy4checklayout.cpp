@@ -63,4 +63,10 @@ LaTeXColor LaTeXColors::getLaTeXColor(string const & /* name */)
 	// the color itself is not needed
 	return LaTeXColor();
 }
+
+bool LaTeXColor::read(lyx::support::Lexer&)
+{
+	return true;
+}
+
 } // namespace lyx
