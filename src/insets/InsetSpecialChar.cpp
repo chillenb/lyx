@@ -310,8 +310,8 @@ void InsetSpecialChar::docbook(XMLStream & xs, OutputParams const &) const
 
 void InsetSpecialChar::xhtml(XMLStream & xs, OutputParams const &) const
 {
-	if (unknown_)
-		return docstring();
+	if (!unknown_)
+		return;
 
 	xs << XMLStream::ESCAPE_NONE << sc_.xhtml_output;
 }

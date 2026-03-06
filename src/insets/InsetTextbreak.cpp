@@ -334,11 +334,10 @@ void InsetTextbreak::docbook(XMLStream & os, OutputParams const &) const
 }
 
 
-docstring InsetTextbreak::xhtml(XMLStream & xs, OutputParams const &) const
+void InsetTextbreak::xhtml(XMLStream & xs, OutputParams const &) const
 {
 	if (params_.kind !=  InsetTextbreakParams::NOPAGEBREAK)
 		xs << xml::CompTag("br");
-	return docstring();
 }
 
 

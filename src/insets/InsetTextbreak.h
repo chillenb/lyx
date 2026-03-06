@@ -75,7 +75,7 @@ private:
 	///
 	void docbook(XMLStream &, OutputParams const &) const override;
 	///
-	docstring xhtml(XMLStream &, OutputParams const &) const override;
+	void xhtml(XMLStream &, OutputParams const &) const override;
 	///
 	void read(support::Lexer & lex) override;
 	///
