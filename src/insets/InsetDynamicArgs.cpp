@@ -12,7 +12,6 @@
 
 #include "InsetDynamicArgs.h"
 
-#include "Buffer.h"
 #include "BufferParams.h"
 #include "BufferView.h"
 #include "FuncRequest.h"
