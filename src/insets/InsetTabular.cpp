@@ -4285,6 +4285,7 @@ void Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const & ru
 
 		// Render the cell as either XHTML or DocBook.
 		xs << xml::StartTag(cell_tag, attr_str, true);
+		const pos_type xs_position_before_cell = xs.os().tellp();
 		if (output_format == XmlOutputFormat::XHTML) {
 			cellInset(cell)->xhtml(xs, runparams);
 		} else if (output_format == XmlOutputFormat::DOCBOOK) {
@@ -4293,6 +4294,10 @@ void Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const & ru
 			rp.docbook_in_par = false;
 			rp.docbook_force_pars = true;
 			cellInset(cell)->docbook(xs, rp);
+		}
+		if (xs.os().tellp() == xs_position_before_cell) {
+			// Avoid empty cells.
+			xs << XMLStream::ESCAPE_NONE << "&#0160;";
 		}
 		xs << xml::EndTag(cell_tag);
 		xs << xml::CR();
