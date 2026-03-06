@@ -238,7 +238,11 @@ void InsetHyperlink::docbook(XMLStream & xs, OutputParams const &) const
 {
 	docstring target = subst(getParam("target"), from_ascii("&"), from_ascii("&amp;")) ;
 	xs << xml::StartTag("link", "xlink:href=\"" + makeURL(target, getParam("type")) + "\"");
-	xs << xml::escapeString(getParam("name"));
+	if (!getParam("name").empty()) {
+		xs << xml::escapeString(getParam("name"));
+	} else {
+		xs << xml::escapeString(getParam("type"));
+	}
 	xs << xml::EndTag("link");
 }
 
