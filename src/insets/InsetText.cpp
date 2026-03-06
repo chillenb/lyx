@@ -689,7 +689,7 @@ void InsetText::docbookRenderAsImage(XMLStream & xs, OutputParams const & rp, XH
 	// Also, the image must be generated before the DocBook output is finished,
 	// unlike a preview that is not immediately required for display.
 	docstring const latex_snippet = insetToLaTeXSnippet(&buffer(), this);
-	docstring const snippet = support::trim(latex_snippet);
+	docstring const snippet = trim(latex_snippet);
 	// TODO: no real support for Unicode. This code is very similar to RenderPreview::addPreview, the same gotcha applies.
 
 	graphics::PreviewLoader* loader = buffer().loader();
@@ -698,8 +698,14 @@ void InsetText::docbookRenderAsImage(XMLStream & xs, OutputParams const & rp, XH
 	loader->add(snippet);
 	loader->startLoading(true); // Generate the image and wait until done.
 	graphics::PreviewImage const * img = loader->preview(snippet);
-	LASSERT(img != nullptr, return);
-	support::FileName const & filename = img->filename();
+	if (!img) {
+		xs << XMLStream::ESCAPE_NONE << "<!-- Exporting a figure as image failed. -->";
+		xs << XMLStream::ESCAPE_NONE << "<!-- ";
+		xs << latex_snippet;
+		xs << XMLStream::ESCAPE_NONE << " -->";
+		return;
+	}
+	FileName const & filename = img->filename();
 
 	// Use a file name that is only determined by the LaTeX code: the name of
 	// the snippet is more or less random (i.e., if the user generates the file
