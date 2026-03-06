@@ -4213,7 +4213,7 @@ void Tabular::xmlRow(XMLStream & xs, const row_type row, OutputParams const & ru
 
 	std::string const row_tag = is_xhtml_table ? "tr" : "row";
 	std::string const cell_tag = is_xhtml_table ? (header ? "th" : "td") : "entry";
-	Tabular::XmlRowWiseBorders const borders = computeXmlBorders(row);
+	XmlRowWiseBorders const borders = computeXmlBorders(row);
 	idx_type cell = getFirstCellInRow(row);
 
 	std::string row_attr;
