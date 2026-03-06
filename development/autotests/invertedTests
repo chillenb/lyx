@@ -493,8 +493,6 @@ export/examples(|/de|/es)/Curricula_Vitae/Europe_CV_docbook5
 export/examples(|/es)/Curricula_Vitae/Modern_CV_docbook5
 # - Chess: multicol not supported.
 export/examples/Modules/Chessboard_docbook5
-# - Empty figure and table (just a caption, while DocBook requires some content).
-export/examples/Language_Support/Localization_Test_%28for_Developers%29_docbook5
 # - Inline equation in formatting.
 export/examples(|/ru)/Modules/Fancy_Colored_Boxes_docbook5
 # - Sweave and other literate-programming tools cannot be implemented properly without the LaTeX tooling.
