@@ -3039,6 +3039,7 @@ dist_layouts_DATA =\
 	layouts/knitr.module \
 	layouts/landscape.module \
 	layouts/latex8.layout \
+	layouts/latexcolors.module \
 	layouts/letter.layout \
 	layouts/lettre.layout \
 	layouts/lilypond.module \
