@@ -98,7 +98,7 @@ msgstr ""
 "Project-Id-Version: LyX 2.4git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2026-03-05 13:46+0100\n"
-"PO-Revision-Date: 2026-03-05 17:37+0100\n"
+"PO-Revision-Date: 2026-03-07 12:39+0100\n"
 "Last-Translator: Jürgen Spitzmüller <spitz@lyx.org>\n"
 "Language-Team: German <lyx-docs@lists.lyx.org>\n"
 "Language: de\n"
@@ -17652,39 +17652,32 @@ msgid "Dark orchid"
 msgstr "Dunkle Orchideenfarbe (Dark Orchid)"
 
 #: lib/layouts/latexcolors.module:1492
-#, fuzzy
 msgid "Dark pastel blue"
-msgstr "Dunkles Schieferblau (DarkSlateBlue)"
+msgstr "Dunkles Pastellblau (Dark Pastel Blue)"
 
 #: lib/layouts/latexcolors.module:1500
-#, fuzzy
 msgid "Dark pastel green"
-msgstr "Dunkles Meergrün (DarkSeaGreen)"
+msgstr "Dunkles Pastellgrün (Dark Pastel Green)"
 
 #: lib/layouts/latexcolors.module:1508
-#, fuzzy
 msgid "Dark pastel purple"
-msgstr "Dunkles Schieferblau (DarkSlateBlue)"
+msgstr "Dunkles Pastelllila (Dark Pastel Purple)"
 
 #: lib/layouts/latexcolors.module:1516
-#, fuzzy
 msgid "Dark pastel red"
-msgstr "Dunkles Schieferblau (DarkSlateBlue)"
+msgstr "Dunkles Pastellrot (Dark Pastel Red)"
 
 #: lib/layouts/latexcolors.module:1524
-#, fuzzy
 msgid "Dark pink"
-msgstr "Marke ein"
+msgstr "Dunkles Rosa (Dark Pink)"
 
 #: lib/layouts/latexcolors.module:1532
-#, fuzzy
 msgid "Dark powder blue"
-msgstr "Dunkler Modus"
+msgstr "Dunkles Puderblau (Dark Powder Blue)"
 
 #: lib/layouts/latexcolors.module:1540
-#, fuzzy
 msgid "Dark raspberry"
-msgstr "Dunkelgrau"
+msgstr "Dunkelhimbeer (Dark Raspberry)"
 
 #: lib/layouts/latexcolors.module:1548
 msgid "Dark red"
@@ -17695,18 +17688,16 @@ msgid "Dark salmon"
 msgstr "Dunkler Lachs (Dark Salmon)"
 
 #: lib/layouts/latexcolors.module:1564
-#, fuzzy
 msgid "Dark scarlet"
-msgstr "Marke gesetzt"
+msgstr "Dunkelscharlachrot (Dark Scarlet)"
 
 #: lib/layouts/latexcolors.module:1572
 msgid "Dark sea green"
 msgstr "Dunkles Meergrün (Dark Sea Green)"
 
 #: lib/layouts/latexcolors.module:1580
-#, fuzzy
 msgid "Dark sienna"
-msgstr "Dunkles Magenta (DarkMagenta)"
+msgstr "Dunkles Sienna (Dark Sienna)"
 
 #: lib/layouts/latexcolors.module:1588
 msgid "Dark slate blue"
@@ -17721,19 +17712,16 @@ msgid "Dark spring green"
 msgstr "Dunkles Frühlingsgrün (Dark Spring Green)"
 
 #: lib/layouts/latexcolors.module:1612
-#, fuzzy
 msgid "Dark tan"
-msgstr "Dunkles Zyanblau (DarkCyan)"
+msgstr "Dunkles Tan (Dark Tan)"
 
 #: lib/layouts/latexcolors.module:1620
-#, fuzzy
 msgid "Dark tangerine"
-msgstr "Dunkles Orange (DarkOrange)"
+msgstr "Dunkle Mandarine (Dark Tangerine)"
 
 #: lib/layouts/latexcolors.module:1628
-#, fuzzy
 msgid "Dark taupe"
-msgstr "Dunkelblau (DarkBlue)"
+msgstr "Dunkeltaupe (Dark Taupe)"
 
 #: lib/layouts/latexcolors.module:1636
 msgid "Dark terra cotta"
@@ -17749,7 +17737,7 @@ msgstr "Dunkelviolett (Dark Violet)"
 
 #: lib/layouts/latexcolors.module:1660
 msgid "Dartmouth green"
-msgstr ""
+msgstr "Dartmouthgrün (Dartmouth Green)"
 
 #: lib/layouts/latexcolors.module:1668
 msgid "Davy\\'s grey"
@@ -17760,22 +17748,20 @@ msgid "Debian red"
 msgstr "Debianrot (Debian Red)"
 
 #: lib/layouts/latexcolors.module:1684
-#, fuzzy
 msgid "Deep carmine"
-msgstr "Groß-/&Kleinschreibung nicht ändern"
+msgstr "Tiefkarmin (Deep Carmine)"
 
 #: lib/layouts/latexcolors.module:1692
 msgid "Deep carmine pink"
-msgstr ""
+msgstr "Tiefes Karminrosa (Deep Carmine Pink)"
 
 #: lib/layouts/latexcolors.module:1700
 msgid "Deep carrot orange"
 msgstr "Tiefes Karrotenorange (Deep Carrot Orange)"
 
 #: lib/layouts/latexcolors.module:1708
-#, fuzzy
 msgid "Deep cerise"
-msgstr "Groß-/&Kleinschreibung nicht ändern"
+msgstr "Tiefkirschrot (Deep Cerise)"
 
 #: lib/layouts/latexcolors.module:1716
 msgid "Deep champagne"
@@ -17783,7 +17769,7 @@ msgstr "Tiefes Champagner (Deep Champagne)"
 
 #: lib/layouts/latexcolors.module:1724
 msgid "Deep chestnut"
-msgstr ""
+msgstr "Tiefkastanie (Deep Chestnut)"
 
 #: lib/layouts/latexcolors.module:1732
 msgid "Deep fuchsia"
@@ -17794,18 +17780,16 @@ msgid "Deep jungle green"
 msgstr "Tiefes Dschungelgrün (Deep Jungle Green)"
 
 #: lib/layouts/latexcolors.module:1748
-#, fuzzy
 msgid "Deep lilac"
-msgstr "&Nicht überschreiben"
+msgstr "Tiefer Flieder (Deep Lilac)"
 
 #: lib/layouts/latexcolors.module:1756
 msgid "Deep magenta"
 msgstr "Tiefes Magenta (Deep Magenta)"
 
 #: lib/layouts/latexcolors.module:1764
-#, fuzzy
 msgid "Deep peach"
-msgstr "&Zusammenpassend"
+msgstr "Tiefes Pfirsisch (Deep Peach)"
 
 #: lib/layouts/latexcolors.module:1772
 msgid "Deep pink"
@@ -17813,7 +17797,7 @@ msgstr "Tiefrosa (Deep Pink)"
 
 #: lib/layouts/latexcolors.module:1780
 msgid "Deep saffron"
-msgstr ""
+msgstr "Tiefes Safrangelb (Deep Saffron)"
 
 #: lib/layouts/latexcolors.module:1788
 msgid "Deep sky blue"
@@ -17824,19 +17808,16 @@ msgid "Denim"
 msgstr "Jeansblau (Denim)"
 
 #: lib/layouts/latexcolors.module:1804
-#, fuzzy
 msgid "Desert"
-msgstr "Mormonen-Alphabet"
+msgstr "Wüstengelb (Desert)"
 
 #: lib/layouts/latexcolors.module:1812
-#, fuzzy
 msgid "Desert sand"
-msgstr "Mormonen-Alphabet"
+msgstr "Wüstensand (Desert Sand)"
 
 #: lib/layouts/latexcolors.module:1820
-#, fuzzy
 msgid "Dim gray"
-msgstr "Dunkelgrau"
+msgstr "Dunkelgrau (Dim Gray)"
 
 #: lib/layouts/latexcolors.module:1828
 msgid "Dodger blue"
@@ -17844,35 +17825,31 @@ msgstr "Dodger-Blau (Dodger Blue)"
 
 #: lib/layouts/latexcolors.module:1836
 msgid "Dogwood rose"
-msgstr ""
+msgstr "Hundsrose (Dogwood Rose)"
 
 #: lib/layouts/latexcolors.module:1844
 msgid "Dollar bill"
-msgstr ""
+msgstr "Dollarnote (Dollar Bill)"
 
 #: lib/layouts/latexcolors.module:1852
-#, fuzzy
 msgid "Drab"
-msgstr "Olivfarbiges Graubraun (OliveDrab)"
+msgstr "Graubraun (Drab)"
 
 #: lib/layouts/latexcolors.module:1860
-#, fuzzy
 msgid "Duke blue"
-msgstr "Blau"
+msgstr "Dukeblau (Duke Blue)"
 
 #: lib/layouts/latexcolors.module:1868
-#, fuzzy
 msgid "Earth yellow"
-msgstr "Gelb"
+msgstr "Erdgelb (Earth Yellow)"
 
 #: lib/layouts/latexcolors.module:1876
 msgid "Ecru"
-msgstr ""
+msgstr "Ecru"
 
 #: lib/layouts/latexcolors.module:1884
-#, fuzzy
 msgid "Eggplant"
-msgstr "geqslant"
+msgstr "Aubergine (Eggplant)"
 
 #: lib/layouts/latexcolors.module:1892
 msgid "Eggshell"
@@ -17883,55 +17860,48 @@ msgid "Egyptian blue"
 msgstr "Ägyptisch Blau (Egyptian Blue)"
 
 #: lib/layouts/latexcolors.module:1908
-#, fuzzy
 msgid "Electric blue"
-msgstr "Elektronische Adresse:"
+msgstr "Elektrisches Blau (Electric Blue)"
 
 #: lib/layouts/latexcolors.module:1916
-#, fuzzy
 msgid "Electric crimson"
-msgstr "Elektronische Adresse:"
+msgstr "Elektrisches Crimson (Electric Crimson)"
 
 #: lib/layouts/latexcolors.module:1924
 msgid "Electric cyan"
-msgstr ""
+msgstr "Elektrisches Cyan (Electric Cyan)"
 
 #: lib/layouts/latexcolors.module:1932
-#, fuzzy
 msgid "Electric green"
-msgstr "Elektronische Adresse:"
+msgstr "Elektrisches Grün (Electric Green)"
 
 #: lib/layouts/latexcolors.module:1940
 msgid "Electric indigo"
-msgstr ""
+msgstr "Elektrisches Indigo (Electric Indigo)"
 
 #: lib/layouts/latexcolors.module:1948
-#, fuzzy
 msgid "Electric lavender"
-msgstr "Elektronische Adresse:"
+msgstr "Elektrisches Lavendel (Electric Lavender)"
 
 #: lib/layouts/latexcolors.module:1956
-#, fuzzy
 msgid "Electric lime"
-msgstr "Elektronische Adresse:"
+msgstr "Elektrische Limette (Electric Lime)"
 
 #: lib/layouts/latexcolors.module:1964
-#, fuzzy
 msgid "Electric purple"
-msgstr "Elektronische Adresse:"
+msgstr "Elektrisches Lila (Electric Purple)"
 
 #: lib/layouts/latexcolors.module:1972
 msgid "Electric ultramarine"
-msgstr ""
+msgstr "Elektrisches Ultramarin (Electric Ultramarine)"
 
 #: lib/layouts/latexcolors.module:1980
-#, fuzzy
 msgid "Electric violet"
-msgstr "Wählen Sie eine Grafikdatei"
+msgstr "Elektrisches Violet (Electric Violet)"
 
 #: lib/layouts/latexcolors.module:1988
 msgid "Electric Yellow"
-msgstr ""
+msgstr "Elektrisches Geld (Electric Yellow)"
 
 #: lib/layouts/latexcolors.module:1996 lib/latexcolors:675
 msgid "Emerald"
@@ -17942,35 +17912,32 @@ msgid "Eton blue"
 msgstr "Etonblau (Eton Blue)"
 
 #: lib/layouts/latexcolors.module:2012
-#, fuzzy
 msgid "Fallow"
-msgstr "Gelb"
+msgstr "Brachland (Fallow)"
 
 #: lib/layouts/latexcolors.module:2020
 msgid "Falu red"
-msgstr ""
+msgstr "Falunrot (Falu Red)"
 
 #: lib/layouts/latexcolors.module:2028
 msgid "Fandango"
-msgstr ""
+msgstr "Fandango"
 
 #: lib/layouts/latexcolors.module:2036
-#, fuzzy
 msgid "Fashion fuchsia"
-msgstr "Fuchsia"
+msgstr "Fashion Fuchsia"
 
 #: lib/layouts/latexcolors.module:2044
 msgid "Fawn"
-msgstr ""
+msgstr "Rehbraun (Fawn)"
 
 #: lib/layouts/latexcolors.module:2052
 msgid "Feldgrau"
 msgstr "Feldgrau"
 
 #: lib/layouts/latexcolors.module:2060
-#, fuzzy
 msgid "Fern green"
-msgstr "Grün"
+msgstr "Farngrün (Fern Green)"
 
 #: lib/layouts/latexcolors.module:2068
 msgid "Ferrari Red"
@@ -17978,7 +17945,7 @@ msgstr "Ferrarirot (Ferrari Red)"
 
 #: lib/layouts/latexcolors.module:2076
 msgid "Field drab"
-msgstr ""
+msgstr "Field Drab"
 
 #: lib/layouts/latexcolors.module:2084
 msgid "Firebrick"
@@ -17990,7 +17957,7 @@ msgstr "Feuerwehrrot (Fire Engine Red)"
 
 #: lib/layouts/latexcolors.module:2100
 msgid "Flame"
-msgstr ""
+msgstr "Flamme (Flame)"
 
 #: lib/layouts/latexcolors.module:2108
 msgid "Flamingo pink"
@@ -17998,11 +17965,11 @@ msgstr "Flamingorosa (Flamingo Pink)"
 
 #: lib/layouts/latexcolors.module:2116
 msgid "Flavescent"
-msgstr ""
+msgstr "Gelblich (Flawescent)"
 
 #: lib/layouts/latexcolors.module:2124
 msgid "Flax"
-msgstr ""
+msgstr "Lein (Flax)"
 
 #: lib/layouts/latexcolors.module:2132
 msgid "Floral white"
@@ -18022,17 +17989,15 @@ msgstr "Fluoreszierendes Geld (Fluorescent Yellow)"
 
 #: lib/layouts/latexcolors.module:2164
 msgid "Folly"
-msgstr ""
+msgstr "Folly"
 
 #: lib/layouts/latexcolors.module:2172
-#, fuzzy
 msgid "Forest green (traditional)"
-msgstr "Chinesisch (traditionell)"
+msgstr "Waldgrün (Forest Green Traditional)"
 
 #: lib/layouts/latexcolors.module:2180
-#, fuzzy
 msgid "Forest green (web)"
-msgstr "Waldgrün (ForestGreen)"
+msgstr "Waldgrün (Forest Green Web)"
 
 #: lib/layouts/latexcolors.module:2188
 msgid "French beige"
@@ -18055,13 +18020,12 @@ msgid "Fuchsia"
 msgstr "Fuchsia"
 
 #: lib/layouts/latexcolors.module:2228
-#, fuzzy
 msgid "Fuchsia pink"
-msgstr "Fuchsia"
+msgstr "Fuchsia-Rosa (Fuchsia Pink)"
 
 #: lib/layouts/latexcolors.module:2236
 msgid "Fulvous"
-msgstr ""
+msgstr "Lohfarben (Fulvous)"
 
 #: lib/layouts/latexcolors.module:2244
 msgid "Fuzzy Wuzzy"
@@ -18073,7 +18037,7 @@ msgstr "Gainsboro"
 
 #: lib/layouts/latexcolors.module:2260
 msgid "Gamboge"
-msgstr ""
+msgstr "Gummigutta (Gamboge)"
 
 #: lib/layouts/latexcolors.module:2268
 msgid "Ghost white"
@@ -18085,30 +18049,27 @@ msgstr "Ingwer (Ginger)"
 
 #: lib/layouts/latexcolors.module:2284
 msgid "Glaucous"
-msgstr ""
+msgstr "Glauk (Glaucous)"
 
 #: lib/layouts/latexcolors.module:2292
 msgid "Gold (metallic)"
-msgstr ""
+msgstr "Gold (Metallic)"
 
 #: lib/layouts/latexcolors.module:2300
 msgid "Gold (web) (Golden)"
-msgstr ""
+msgstr "Gold (Web) (Golden)"
 
 #: lib/layouts/latexcolors.module:2308
-#, fuzzy
 msgid "Golden brown"
-msgstr "Goldrute (Goldenrod)"
+msgstr "Goldbraun (Golden Brown)"
 
 #: lib/layouts/latexcolors.module:2316
-#, fuzzy
 msgid "Golden poppy"
-msgstr "Goldrute (Goldenrod)"
+msgstr "Goldmohn (Golden Poppy)"
 
 #: lib/layouts/latexcolors.module:2324
-#, fuzzy
 msgid "Golden yellow"
-msgstr "Helles Goldrutengelb (LightGoldenrodYellow)"
+msgstr "Golgelb (Golden Yellow)"
 
 #: lib/layouts/latexcolors.module:2332 lib/latexcolors:233 lib/latexcolors:1153
 msgid "Goldenrod"
@@ -18133,15 +18094,15 @@ msgstr "Grau (X11 Gray)"
 
 #: lib/layouts/latexcolors.module:2372
 msgid "Gray-asparagus"
-msgstr ""
+msgstr "Grüner Spargel (Gray-Asparagus)"
 
 #: lib/layouts/latexcolors.module:2380
 msgid "Green (color wheel) (X11 green)"
-msgstr ""
+msgstr "Grün (Green color wheel/X11 green)"
 
 #: lib/layouts/latexcolors.module:2388
 msgid "Green (HTML/CSS green)"
-msgstr ""
+msgstr "Grün (Green HTML/CSS green)"
 
 #: lib/layouts/latexcolors.module:2396
 msgid "Green (Munsell)"
@@ -18165,26 +18126,23 @@ msgstr "Grüngelb (Green-Yellow)"
 
 #: lib/layouts/latexcolors.module:2436
 msgid "Grullo"
-msgstr ""
+msgstr "Grullo"
 
 #: lib/layouts/latexcolors.module:2444
-#, fuzzy
 msgid "Guppie green"
-msgstr "Frühlingsgrün (SpringGreen)"
+msgstr "Guppiegrün (Guppie Green)"
 
 #: lib/layouts/latexcolors.module:2452
 msgid "Halaya ube"
-msgstr ""
+msgstr "Halaya Ube"
 
 #: lib/layouts/latexcolors.module:2460
-#, fuzzy
 msgid "Han blue"
-msgstr "Blau"
+msgstr "Han-Blau (Han Blue)"
 
 #: lib/layouts/latexcolors.module:2468
-#, fuzzy
 msgid "Han purple"
-msgstr "Purpur (purple)"
+msgstr "Han-Purpur (Han Purple)"
 
 #: lib/layouts/latexcolors.module:2476
 msgid "Hansa yellow"
@@ -18192,29 +18150,27 @@ msgstr "Hansagelb (Hansa Yellow)"
 
 #: lib/layouts/latexcolors.module:2484
 msgid "Harlequin"
-msgstr ""
+msgstr "Karlekin (Harlequin)"
 
 #: lib/layouts/latexcolors.module:2492
 msgid "Harvard crimson"
-msgstr ""
+msgstr "Harvard-Crimson"
 
 #: lib/layouts/latexcolors.module:2500
 msgid "Harvest Gold"
-msgstr ""
+msgstr "Erntewgold (Harvest Gold)"
 
 #: lib/layouts/latexcolors.module:2508
-#, fuzzy
 msgid "Heart Gold"
-msgstr "Herz"
+msgstr "Herzgold (Heart Gold)"
 
 #: lib/layouts/latexcolors.module:2516
 msgid "Heliotrope"
-msgstr ""
+msgstr "Heliotrop (Heliotrope)"
 
 #: lib/layouts/latexcolors.module:2524
-#, fuzzy
 msgid "Hollywood cerise"
-msgstr "Hollywood"
+msgstr "Hollywoodkirsche (Hollywood Cerise)"
 
 #: lib/layouts/latexcolors.module:2532 lib/latexcolors:1786
 msgid "Honeydew"
@@ -18222,17 +18178,15 @@ msgstr "Honigmelone (Honeydew)"
 
 #: lib/layouts/latexcolors.module:2540
 msgid "Hooker\\'s green"
-msgstr ""
+msgstr "Hookergrün (Hooker's Green)"
 
 #: lib/layouts/latexcolors.module:2548
-#, fuzzy
 msgid "Hot magenta"
-msgstr "Magenta"
+msgstr "Heißes Magenta (Hot Magenta)"
 
 #: lib/layouts/latexcolors.module:2556
-#, fuzzy
 msgid "Hot pink"
-msgstr "Rosa (Pink)"
+msgstr "Heißes Rosa (Hot Pink)"
 
 #: lib/layouts/latexcolors.module:2564
 msgid "Hunter green"
@@ -18240,16 +18194,15 @@ msgstr "Jägergrün (Hunter Green)"
 
 #: lib/layouts/latexcolors.module:2572
 msgid "Iceberg"
-msgstr ""
+msgstr "Eisberg (Iceberg)"
 
 #: lib/layouts/latexcolors.module:2580
-#, fuzzy
 msgid "Icterine"
-msgstr "Kriterium"
+msgstr "Ikterisch (Icterine)"
 
 #: lib/layouts/latexcolors.module:2588
 msgid "Inchworm"
-msgstr ""
+msgstr "Spannerraupe (Inchworm)"
 
 #: lib/layouts/latexcolors.module:2596
 msgid "India green"
@@ -18273,26 +18226,23 @@ msgstr "Indigo"
 
 #: lib/layouts/latexcolors.module:2636
 msgid "International Klein Blue"
-msgstr ""
+msgstr "International Klein Blue"
 
 #: lib/layouts/latexcolors.module:2644
-#, fuzzy
 msgid "International orange"
-msgstr "Rotationswinkel"
+msgstr "Internationales Orange"
 
 #: lib/layouts/latexcolors.module:2652
-#, fuzzy
 msgid "Iris"
-msgstr "Irisch"
+msgstr "Iris"
 
 #: lib/layouts/latexcolors.module:2660
-#, fuzzy
 msgid "Isabelline"
-msgstr "Tabelle (Linie)"
+msgstr "Isabellin (Isabelline)"
 
 #: lib/layouts/latexcolors.module:2668
 msgid "Islamic green"
-msgstr ""
+msgstr "Islamischgrün (Islamic Green)"
 
 #: lib/layouts/latexcolors.module:2676 lib/latexcolors:993
 msgid "Ivory"
@@ -18304,46 +18254,43 @@ msgstr "Jade"
 
 #: lib/layouts/latexcolors.module:2692
 msgid "Jasper"
-msgstr ""
+msgstr "Jaspis (Jasper)"
 
 #: lib/layouts/latexcolors.module:2700
 msgid "Jazzberry jam"
-msgstr ""
+msgstr "Jazzberry Jam"
 
 #: lib/layouts/latexcolors.module:2708
 msgid "Jonquil"
-msgstr ""
+msgstr "Jonquille (Jonquil)"
 
 #: lib/layouts/latexcolors.module:2716
 msgid "June bud"
-msgstr ""
+msgstr "June Bud"
 
 #: lib/layouts/latexcolors.module:2724
 msgid "Jungle green"
 msgstr "Dschungelgrün (Jungle Green)"
 
 #: lib/layouts/latexcolors.module:2732
-#, fuzzy
 msgid "Kelly green"
-msgstr "Gelbgrün (YellowGreen)"
+msgstr "Kellygrün (Kelly Green)"
 
 #: lib/layouts/latexcolors.module:2740
 msgid "Khaki (HTML/CSS) (Khaki)"
-msgstr ""
+msgstr "Kaki (HTML/CSS Khaki)"
 
 #: lib/layouts/latexcolors.module:2748
 msgid "Khaki (X11) (Light khaki)"
-msgstr ""
+msgstr "Kaki (X11 Light Khaki)"
 
 #: lib/layouts/latexcolors.module:2756
-#, fuzzy
 msgid "La Salle Green"
-msgstr "Blassgrün (PaleGreen)"
+msgstr "La-Salle-Grün (La Salle Green)"
 
 #: lib/layouts/latexcolors.module:2764
-#, fuzzy
 msgid "Languid lavender"
-msgstr "Lavendel"
+msgstr "Languid-Lavendel (Languid Lavender)"
 
 #: lib/layouts/latexcolors.module:2772
 msgid "Lapis lazuli"
@@ -18351,21 +18298,19 @@ msgstr "Lapislazuli (Lapis Lazuli)"
 
 #: lib/layouts/latexcolors.module:2780
 msgid "Laser Lemon"
-msgstr ""
+msgstr "Laser-Limone (Laser Lemon)"
 
 #: lib/layouts/latexcolors.module:2788
 msgid "Lava"
-msgstr ""
+msgstr "Lava"
 
 #: lib/layouts/latexcolors.module:2796
-#, fuzzy
 msgid "Lavender (floral)"
-msgstr "Querformat (gleitend)"
+msgstr "Lavendel (floral)"
 
 #: lib/layouts/latexcolors.module:2804
-#, fuzzy
 msgid "Lavender (web)"
-msgstr "Lavendel"
+msgstr "Lavendel (Web)"
 
 #: lib/layouts/latexcolors.module:2812
 msgid "Lavender blue"
@@ -18380,66 +18325,56 @@ msgid "Lavender gray"
 msgstr "Lavendelgrau (Lavender Grey)"
 
 #: lib/layouts/latexcolors.module:2836
-#, fuzzy
 msgid "Lavender indigo"
-msgstr "Lavendel"
+msgstr "Lavendel-Indigo (Lavender indigo)"
 
 #: lib/layouts/latexcolors.module:2844
-#, fuzzy
 msgid "Lavender magenta"
-msgstr "Lavendel"
+msgstr "Lavendel-Magenta (Lavender Magenta)"
 
 #: lib/layouts/latexcolors.module:2852
-#, fuzzy
 msgid "Lavender mist"
-msgstr "Lavendel"
+msgstr "Lavender Mist"
 
 #: lib/layouts/latexcolors.module:2860
-#, fuzzy
 msgid "Lavender pink"
-msgstr "Lavendel"
+msgstr "Lavendel-Rosa (Lavender Pink)"
 
 #: lib/layouts/latexcolors.module:2868
-#, fuzzy
 msgid "Lavender purple"
-msgstr "Lavendel"
+msgstr "Lavendel-Purpur (Lavender Purple)"
 
 #: lib/layouts/latexcolors.module:2876
-#, fuzzy
 msgid "Lavender rose"
-msgstr "Lavendel"
+msgstr "Lavendel-Rosé (Lavender Rose)"
 
 #: lib/layouts/latexcolors.module:2884
-#, fuzzy
 msgid "Lawn green"
-msgstr "Rasengrün (LawnGreen)"
+msgstr "Rasengrün (Lawn Green)"
 
 #: lib/layouts/latexcolors.module:2892
 msgid "Lemon"
-msgstr ""
+msgstr "Limone (Lemon)"
 
 #: lib/layouts/latexcolors.module:2900
-#, fuzzy
 msgid "Lemon chiffon"
-msgstr "Chiffongelb (LemonChiffon)"
+msgstr "Chiffongelb (Lemon Chiffon)"
 
 #: lib/layouts/latexcolors.module:2908
-#, fuzzy
 msgid "Light apricot"
-msgstr "Hellgrau"
+msgstr "Hellapricot (Light Apricot)"
 
 #: lib/layouts/latexcolors.module:2916
 msgid "Light blue"
 msgstr "Hellblau (Light Blue)"
 
 #: lib/layouts/latexcolors.module:2924
-#, fuzzy
 msgid "Light brown"
-msgstr "Hellgrau"
+msgstr "Hellbraum (Light Brown)"
 
 #: lib/layouts/latexcolors.module:2932
 msgid "Light carmine pink"
-msgstr ""
+msgstr "Hellkarminrosa (Light Carmine Pink)"
 
 #: lib/layouts/latexcolors.module:2940
 msgid "Light coral"
@@ -18455,7 +18390,7 @@ msgstr "Helles Zyanblau (Light Cyan)"
 
 #: lib/layouts/latexcolors.module:2964
 msgid "Light fuchsia pink"
-msgstr ""
+msgstr "Hellfuchsiarosa (Light Fuchsia Pink)"
 
 #: lib/layouts/latexcolors.module:2972
 msgid "Light goldenrod yellow"
@@ -18470,19 +18405,16 @@ msgid "Light green"
 msgstr "Hellgrün (Light Green)"
 
 #: lib/layouts/latexcolors.module:2996
-#, fuzzy
 msgid "Light khaki"
-msgstr "Hellgrau"
+msgstr "Hellkaki (Light Khaki)"
 
 #: lib/layouts/latexcolors.module:3004
-#, fuzzy
 msgid "Light mauve"
-msgstr "Hellblau (LightBlue)"
+msgstr "Hellmauve (Light Mauve)"
 
 #: lib/layouts/latexcolors.module:3012
-#, fuzzy
 msgid "Light pastel purple"
-msgstr "Helles Schieferblau (LightSlateBlue)"
+msgstr "Helles Pastellpurpur (Light Pastel Purple)"
 
 #: lib/layouts/latexcolors.module:3020
 msgid "Light pink"
@@ -18493,9 +18425,8 @@ msgid "Light salmon"
 msgstr "Heller Lachs (Light Salmon)"
 
 #: lib/layouts/latexcolors.module:3036
-#, fuzzy
 msgid "Light salmon pink"
-msgstr "Heller Lachs (LightSalmon)"
+msgstr "Helles Lachsrosa (Light Salmon Pink)"
 
 #: lib/layouts/latexcolors.module:3044
 msgid "Light sea green"
@@ -18510,13 +18441,12 @@ msgid "Light slate gray"
 msgstr "Helles Schiefergrau (Light Slate Gray)"
 
 #: lib/layouts/latexcolors.module:3068
-#, fuzzy
 msgid "Light taupe"
-msgstr "Hellblau (LightBlue)"
+msgstr "Helltaupe (Light Taupe)"
 
 #: lib/layouts/latexcolors.module:3076
 msgid "Light Thulian pink"
-msgstr ""
+msgstr "Helles Thulianrosa (Light Thulian Pink)"
 
 #: lib/layouts/latexcolors.module:3084
 msgid "Light yellow"
@@ -18524,25 +18454,23 @@ msgstr "Hellgelb (Light Yellow)"
 
 #: lib/layouts/latexcolors.module:3092
 msgid "Lilac"
-msgstr ""
+msgstr "Flieder (Lilac)"
 
 #: lib/layouts/latexcolors.module:3100
-#, fuzzy
 msgid "Lime (color wheel)"
-msgstr "Name des Farbthemas"
+msgstr "Lindgrün (Lime Color Wheel)"
 
 #: lib/layouts/latexcolors.module:3108
 msgid "Lime (web) (X11 green)"
-msgstr ""
+msgstr "Lindgrün (Lime Web/X11 Green)"
 
 #: lib/layouts/latexcolors.module:3116
 msgid "Lime green"
 msgstr "Lindgrün (Lime Green)"
 
 #: lib/layouts/latexcolors.module:3124
-#, fuzzy
 msgid "Lincoln green"
-msgstr "Hellgrün (LightGreen)"
+msgstr "Lincolngrün (Lincoln Green)"
 
 #: lib/layouts/latexcolors.module:3132 lib/latexcolors:1025
 msgid "Linen"
@@ -18550,15 +18478,15 @@ msgstr "Leinen (Linen)"
 
 #: lib/layouts/latexcolors.module:3140
 msgid "Liver"
-msgstr ""
+msgstr "Leber (Liver)"
 
 #: lib/layouts/latexcolors.module:3148
 msgid "Lust"
-msgstr ""
+msgstr "Lust"
 
 #: lib/layouts/latexcolors.module:3156
 msgid "Macaroni and Cheese"
-msgstr ""
+msgstr "Makkaroni und Käse (Macaroni and Cheese)"
 
 #: lib/layouts/latexcolors.module:3164 lib/latexcolors:122 lib/latexcolors:397
 #: lib/latexcolors:1433
@@ -18566,23 +18494,20 @@ msgid "Magenta"
 msgstr "Magenta"
 
 #: lib/layouts/latexcolors.module:3172
-#, fuzzy
 msgid "Magenta (dye)"
-msgstr "Magenta"
+msgstr "Magenta (dye)"
 
 #: lib/layouts/latexcolors.module:3180
-#, fuzzy
 msgid "Magenta (process)"
-msgstr "Wählen Sie einen Prozessor"
+msgstr "Magenta (process)"
 
 #: lib/layouts/latexcolors.module:3188
 msgid "Magic mint"
-msgstr ""
+msgstr "Magic Mint"
 
 #: lib/layouts/latexcolors.module:3196
-#, fuzzy
 msgid "Magnolia"
-msgstr "Mongolisch"
+msgstr "Magnolie"
 
 #: lib/layouts/latexcolors.module:3204 lib/latexcolors:315
 msgid "Mahogany"
@@ -18590,111 +18515,99 @@ msgstr "Mahagoni (Mahogany)"
 
 #: lib/layouts/latexcolors.module:3212
 msgid "Maize"
-msgstr ""
+msgstr "Mais (Maize)"
 
 #: lib/layouts/latexcolors.module:3220
 msgid "Majorelle Blue"
-msgstr ""
+msgstr "Majorelleblau (Majorelle Blue)"
 
 #: lib/layouts/latexcolors.module:3228
-#, fuzzy
 msgid "Malachite"
-msgstr "Blütenweiß (FloralWhite)"
+msgstr "Malachit (Malachite)"
 
 #: lib/layouts/latexcolors.module:3236
 msgid "Manatee"
-msgstr ""
+msgstr "Manatis (Manatee)"
 
 #: lib/layouts/latexcolors.module:3244
 msgid "Mango Tango"
-msgstr ""
+msgstr "Mango Tango"
 
 #: lib/layouts/latexcolors.module:3252
 msgid "Maroon (HTML/CSS)"
-msgstr ""
+msgstr "Kastanienbraun (Maroon HTML/CSS)"
 
 #: lib/layouts/latexcolors.module:3260
-#, fuzzy
 msgid "Maroon (X11)"
-msgstr "Kastanienbraun 1 (Maroon1)"
+msgstr "Kastanienbraun (Maroon X11)"
 
 #: lib/layouts/latexcolors.module:3268
 msgid "Mauve"
-msgstr ""
+msgstr "Mauve"
 
 #: lib/layouts/latexcolors.module:3276
 msgid "Mauve taupe"
-msgstr ""
+msgstr "Mauve-Taupe"
 
 #: lib/layouts/latexcolors.module:3284
 msgid "Mauvelous"
-msgstr ""
+msgstr "Mauvelisch (Mauvelous)"
 
 #: lib/layouts/latexcolors.module:3292
-#, fuzzy
 msgid "Maya blue"
-msgstr "Blau"
+msgstr "Maya-Blau (Maya Blue)"
 
 #: lib/layouts/latexcolors.module:3300
-#, fuzzy
 msgid "Meat brown"
-msgstr "Braun"
+msgstr "Fleischbraun (Meat Brown)"
 
 #: lib/layouts/latexcolors.module:3308
-#, fuzzy
 msgid "Medium aquamarine"
-msgstr "Mittleres Aquamarinblau (MediumAquamarine)"
+msgstr "Mittleres Aquamarinblau (Medium Aquamarine)"
 
 #: lib/layouts/latexcolors.module:3316
-#, fuzzy
 msgid "Medium blue"
-msgstr "Mittelblau (MediumBlue)"
+msgstr "Mittelblau (Medium Blue)"
 
 #: lib/layouts/latexcolors.module:3324
 msgid "Medium candy apple red"
-msgstr ""
+msgstr "Kandierter Apfel Mittelrot (Medium Candy Apple Red)"
 
 #: lib/layouts/latexcolors.module:3332
-#, fuzzy
 msgid "Medium carmine"
-msgstr "Mittleres Aquamarinblau (MediumAquamarine)"
+msgstr "Mittleres Karminrot (Medium Carmine)"
 
 #: lib/layouts/latexcolors.module:3340
-#, fuzzy
 msgid "Medium champagne"
-msgstr "Mittleres Aquamarinblau (MediumAquamarine)"
+msgstr "Mittleres Champagner (Medium Champagne)"
 
 #: lib/layouts/latexcolors.module:3348
-#, fuzzy
 msgid "Medium electric blue"
-msgstr "Mittleres Schieferblau (MediumSlateBlue)"
+msgstr "Mittleres Eletrischblau (Medium Electric Blue)"
 
 #: lib/layouts/latexcolors.module:3356
-#, fuzzy
 msgid "Medium jungle green"
-msgstr "Mittleres Meergrün (MediumSeaGreen)"
+msgstr "Mittleres Dschungelgrün (Medium Jungle Green)"
 
 #: lib/layouts/latexcolors.module:3364
 msgid "Medium lavender magenta"
-msgstr ""
+msgstr "Mittleres Lavendel-Magenta (Medium Lavender Magenta)"
 
 #: lib/layouts/latexcolors.module:3372
 msgid "Medium orchid"
 msgstr "Mittlere Orchideenfarbe (Medium Orchid)"
 
 #: lib/layouts/latexcolors.module:3380
-#, fuzzy
 msgid "Medium Persian blue"
-msgstr "Mittelpurpur (MediumPurple)"
+msgstr "Mittleres Persischblau (Medium Persian Blue)"
 
 #: lib/layouts/latexcolors.module:3388
 msgid "Medium purple"
 msgstr "Mittelpurpur (Medium Purple)"
 
 #: lib/layouts/latexcolors.module:3396
-#, fuzzy
 msgid "Medium red-violet"
-msgstr "Mittleres Violettrot (MediumVioletRed)"
+msgstr "Mittleres Rotviolett (Medium Red-Violet)"
 
 #: lib/layouts/latexcolors.module:3404
 msgid "Medium sea green"
@@ -18705,23 +18618,20 @@ msgid "Medium slate blue"
 msgstr "Mittleres Schieferblau (Medium Slate Blue)"
 
 #: lib/layouts/latexcolors.module:3420
-#, fuzzy
 msgid "Medium spring bud"
-msgstr "Mittleres Frühlingsgrün (MediumSpringGreen)"
+msgstr "Mittlere Frühlingsknospe (Medium Spring Bud)"
 
 #: lib/layouts/latexcolors.module:3428
 msgid "Medium spring green"
 msgstr "Mittleres Frühlingsgrün (Medium Spring Green)"
 
 #: lib/layouts/latexcolors.module:3436
-#, fuzzy
 msgid "Medium taupe"
-msgstr "Mittelpurpur (MediumPurple)"
+msgstr "Mitteltaupe (Medium Taupe)"
 
 #: lib/layouts/latexcolors.module:3444
-#, fuzzy
 msgid "Medium teal blue"
-msgstr "Mittleres Schieferblau (MediumSlateBlue)"
+msgstr "Mittleres Tealblau (Medium Teal Blue)"
 
 #: lib/layouts/latexcolors.module:3452
 msgid "Medium turquoise"
@@ -18741,27 +18651,23 @@ msgstr "Nachtblau (Midnight Blue)"
 
 #: lib/layouts/latexcolors.module:3484
 msgid "Midnight green (eagle green)"
-msgstr ""
+msgstr "Mitternachtsgrün (Midnight/Eagle Green)"
 
 #: lib/layouts/latexcolors.module:3492
-#, fuzzy
 msgid "Mikado yellow"
-msgstr "Gelb"
+msgstr "Mikadogelb (Mikado Yellow)"
 
 #: lib/layouts/latexcolors.module:3500
-#, fuzzy
 msgid "Mint"
-msgstr "Cremig Pfefferminz (MintCream)"
+msgstr "Minz (Mint)"
 
 #: lib/layouts/latexcolors.module:3508
-#, fuzzy
 msgid "Mint cream"
-msgstr "Cremig Pfefferminz (MintCream)"
+msgstr "Cremig Pfefferminz (Mint Cream)"
 
 #: lib/layouts/latexcolors.module:3516
-#, fuzzy
 msgid "Mint green"
-msgstr "Grün"
+msgstr "Minzgrün (Mint Green)"
 
 #: lib/layouts/latexcolors.module:3524
 msgid "Misty rose"
@@ -18772,62 +18678,56 @@ msgid "Moccasin"
 msgstr "Mokassin (Moccasin)"
 
 #: lib/layouts/latexcolors.module:3540
-#, fuzzy
 msgid "Mode beige"
-msgstr "Quelltext-Vorschau"
+msgstr "Mode-Beige"
 
 #: lib/layouts/latexcolors.module:3548
 msgid "Moonstone blue"
-msgstr ""
+msgstr "Mondsteinblau (Moonstone Blue)"
 
 #: lib/layouts/latexcolors.module:3556
 msgid "Mordant red 19"
-msgstr ""
+msgstr "Mordant Red 19"
 
 #: lib/layouts/latexcolors.module:3564
-#, fuzzy
 msgid "Moss green"
-msgstr "Grün"
+msgstr "Moosgrün (Moss Green)"
 
 #: lib/layouts/latexcolors.module:3572
 msgid "Mountain Meadow"
-msgstr ""
+msgstr "Mountain Meadow"
 
 #: lib/layouts/latexcolors.module:3580
 msgid "Mountbatten pink"
-msgstr ""
+msgstr "Mountbatten-Rosa (Mountbatten pink)"
 
 #: lib/layouts/latexcolors.module:3588 lib/latexcolors:423
 msgid "Mulberry"
 msgstr "Dunkelviolett (Mulberry)"
 
 #: lib/layouts/latexcolors.module:3596
-#, fuzzy
 msgid "Mustard"
-msgstr "star"
+msgstr "Senf (Mustard)"
 
 #: lib/layouts/latexcolors.module:3604
 msgid "Myrtle"
-msgstr ""
+msgstr "Myrte (Myrtle)"
 
 #: lib/layouts/latexcolors.module:3612
-#, fuzzy
 msgid "MSU Green"
-msgstr "Grün"
+msgstr "MSU-Grün (MSU Green)"
 
 #: lib/layouts/latexcolors.module:3620
 msgid "Nadeshiko pink"
-msgstr ""
+msgstr "Nadeshiko-Rosa (Nadeshiko Pink)"
 
 #: lib/layouts/latexcolors.module:3628
-#, fuzzy
 msgid "Napier green"
-msgstr "Frühlingsgrün (SpringGreen)"
+msgstr "Napiergrün (Napier Green)"
 
 #: lib/layouts/latexcolors.module:3636
-#, fuzzy
 msgid "Naples yellow"
-msgstr "Gelb"
+msgstr "Neapelgelb (Naples Yellow)"
 
 #: lib/layouts/latexcolors.module:3644
 msgid "Navajo white"
@@ -18838,59 +18738,52 @@ msgid "Navy blue"
 msgstr "Marineblau (Navy Blue)"
 
 #: lib/layouts/latexcolors.module:3660
-#, fuzzy
 msgid "Neon Carrot"
-msgstr "downarrow"
+msgstr "Neonkarotte (Neon Carrot)"
 
 #: lib/layouts/latexcolors.module:3668
-#, fuzzy
 msgid "Neon fuchsia"
-msgstr "Fuchsia"
+msgstr "Neon-Fuchsia"
 
 #: lib/layouts/latexcolors.module:3676
-#, fuzzy
 msgid "Neon green"
-msgstr "Grün"
+msgstr "Neongrün (Neon Green)"
 
 #: lib/layouts/latexcolors.module:3684
 msgid "Non-photo blue"
-msgstr ""
+msgstr "Non-Photo Blue"
 
 #: lib/layouts/latexcolors.module:3692
 msgid "Ocean Boat Blue"
-msgstr ""
+msgstr "Ocean Boat Blue"
 
 #: lib/layouts/latexcolors.module:3700
 msgid "Ochre"
-msgstr ""
+msgstr "Ocker (Ochre)"
 
 #: lib/layouts/latexcolors.module:3708
-#, fuzzy
 msgid "Office green"
-msgstr "Olivgrün (OliveGreen)"
+msgstr "Bürogrün (Office Green)"
 
 #: lib/layouts/latexcolors.module:3716
 msgid "Old gold"
-msgstr ""
+msgstr "Altgold (Old Gold)"
 
 #: lib/layouts/latexcolors.module:3724
-#, fuzzy
 msgid "Old lace"
-msgstr "Altitalisch"
+msgstr "Alte Spitze (Old Lace)"
 
 #: lib/layouts/latexcolors.module:3732
-#, fuzzy
 msgid "Old lavender"
-msgstr "Lavendel"
+msgstr "Alter Lavendel (Old Lavender)"
 
 #: lib/layouts/latexcolors.module:3740
 msgid "Old mauve"
-msgstr ""
+msgstr "Alte Malve (Old Mauve)"
 
 #: lib/layouts/latexcolors.module:3748
-#, fuzzy
 msgid "Old rose"
-msgstr "Ungera&de Zeilen:"
+msgstr "Altrosé (Old Rose)"
 
 #: lib/layouts/latexcolors.module:3756 lib/latexcolors:182 lib/latexcolors:1986
 msgid "Olive"
@@ -18898,43 +18791,39 @@ msgstr "Olivgrün"
 
 #: lib/layouts/latexcolors.module:3764
 msgid "Olive Drab (web) (Olive Drab #3)"
-msgstr ""
+msgstr "Olivfarbiges Graubraun (Olive Drab #3)"
 
 #: lib/layouts/latexcolors.module:3772
 msgid "Olive Drab #7"
 msgstr "Olivfarbiges Graubraun (Olive Drab)"
 
 #: lib/layouts/latexcolors.module:3780
-#, fuzzy
 msgid "Olivine"
-msgstr "Olivgrün"
+msgstr "Olivin (Olivine)"
 
 #: lib/layouts/latexcolors.module:3788
 msgid "Onyx"
-msgstr ""
+msgstr "Onyx"
 
 #: lib/layouts/latexcolors.module:3796
 msgid "Opera mauve"
-msgstr ""
+msgstr "Opernmalve (Opera Mauve)"
 
 #: lib/layouts/latexcolors.module:3804
-#, fuzzy
 msgid "Orange (color wheel)"
-msgstr "Ein Farbthema exportieren"
+msgstr "Orange (color wheel)"
 
 #: lib/layouts/latexcolors.module:3812
 msgid "Orange (RYB)"
 msgstr "Orange (RYB)"
 
 #: lib/layouts/latexcolors.module:3820
-#, fuzzy
 msgid "Orange (web color)"
-msgstr "Bereich (1 bis 2)"
+msgstr "Orange (web color)"
 
 #: lib/layouts/latexcolors.module:3828
-#, fuzzy
 msgid "Orange peel"
-msgstr "Orange"
+msgstr "Orangenschale (Orange Peel)"
 
 #: lib/layouts/latexcolors.module:3836
 msgid "Orange-red"
@@ -18945,84 +18834,72 @@ msgid "Orchid"
 msgstr "Orchidee (Orchid)"
 
 #: lib/layouts/latexcolors.module:3852
-#, fuzzy
 msgid "Otter brown"
-msgstr "Braun"
+msgstr "Otterbraun (Otter Brown)"
 
 #: lib/layouts/latexcolors.module:3860
-#, fuzzy
 msgid "Outer Space"
-msgstr "Normales Leerzeichen"
+msgstr "Outer Space"
 
 #: lib/layouts/latexcolors.module:3868
-#, fuzzy
 msgid "Outrageous Orange"
-msgstr "Beginnt einen Seitenbereich"
+msgstr "Outrageous Orange"
 
 #: lib/layouts/latexcolors.module:3876
 msgid "Oxford Blue"
-msgstr ""
+msgstr "Oxfordblau (Oxford Blue)"
 
 #: lib/layouts/latexcolors.module:3884
-#, fuzzy
 msgid "OU Crimson Red"
-msgstr "Crimson"
+msgstr "OU-Crimsonrot (OU Crimson Red)"
 
 #: lib/layouts/latexcolors.module:3892
-#, fuzzy
 msgid "Pakistan green"
-msgstr "Piniengrün (PineGreen)"
+msgstr "Pakistangrün (Pakistan Green)"
 
 #: lib/layouts/latexcolors.module:3900
-#, fuzzy
 msgid "Palatinate blue"
-msgstr "Palatino"
+msgstr "Palatinatblau (Palatinate Blue)"
 
 #: lib/layouts/latexcolors.module:3908
 msgid "Palatinate purple"
-msgstr ""
+msgstr "Palatinatpurpur (Palatinate Purple)"
 
 #: lib/layouts/latexcolors.module:3916
 msgid "Pale aqua"
-msgstr ""
+msgstr "Blassaqua (Pale Aqua)"
 
 #: lib/layouts/latexcolors.module:3924
-#, fuzzy
 msgid "Pale blue"
-msgstr "Blau"
+msgstr "Blassblau (Pale Blue)"
 
 #: lib/layouts/latexcolors.module:3932
-#, fuzzy
 msgid "Pale brown"
-msgstr "Braun"
+msgstr "Blassbraun (Pale Brown)"
 
 #: lib/layouts/latexcolors.module:3940
-#, fuzzy
 msgid "Pale carmine"
-msgstr "Tabellenlegende"
+msgstr "Blasskarminrot (Pale Carmine)"
 
 #: lib/layouts/latexcolors.module:3948
-#, fuzzy
 msgid "Pale cerulean"
-msgstr "Himmelblau (Cerulean)"
+msgstr "Blasshimmelblau (Pale Cerulean)"
 
 #: lib/layouts/latexcolors.module:3956
 msgid "Pale chestnut"
-msgstr ""
+msgstr "Blasskastanie (Pale Chestnut)"
 
 #: lib/layouts/latexcolors.module:3964
 msgid "Pale copper"
-msgstr ""
+msgstr "Blasskupfer (Pale Copper)"
 
 #: lib/layouts/latexcolors.module:3972
-#, fuzzy
 msgid "Pale cornflower blue"
-msgstr "Kornblumenblau (CornflowerBlue)"
+msgstr "Blasses Kornblumenblau (Pale Cornflower Blue)"
 
 #: lib/layouts/latexcolors.module:3980
-#, fuzzy
 msgid "Pale gold"
-msgstr "Blasse Goldrute (PaleGoldenrod)"
+msgstr "Blassgold (Pale Gold)"
 
 #: lib/layouts/latexcolors.module:3988
 msgid "Pale goldenrod"
@@ -19033,219 +18910,192 @@ msgid "Pale green"
 msgstr "Blassgrün (Pale Green)"
 
 #: lib/layouts/latexcolors.module:4004
-#, fuzzy
 msgid "Pale magenta"
-msgstr "Magenta"
+msgstr "Blassmagenta (Pale Magenta)"
 
 #: lib/layouts/latexcolors.module:4012
-#, fuzzy
 msgid "Pale pink"
-msgstr "Rosa (Pink)"
+msgstr "Blassrosa (Pale Pink)"
 
 #: lib/layouts/latexcolors.module:4020
 msgid "Pale plum"
-msgstr ""
+msgstr "Blasspflaume (Pale Plum)"
 
 #: lib/layouts/latexcolors.module:4028
-#, fuzzy
 msgid "Pale red-violet"
-msgstr "Blasses Violettrot (PaleVioletRed)"
+msgstr "Blasses Rotviolett (Pale Red-Violet)"
 
 #: lib/layouts/latexcolors.module:4036
 msgid "Pale robin egg blue"
-msgstr ""
+msgstr "Blasses Robin-Ei-Blau (Pale Robin Egg Blue)"
 
 #: lib/layouts/latexcolors.module:4044
 msgid "Pale silver"
-msgstr ""
+msgstr "Blass-Silber (Pale Silver)"
 
 #: lib/layouts/latexcolors.module:4052
 msgid "Pale spring bud"
-msgstr ""
+msgstr "Blasse Frühlingsknospe (Pale Spring Bud)"
 
 #: lib/layouts/latexcolors.module:4060
 msgid "Pale taupe"
-msgstr ""
+msgstr "Blass-Taupe (Pale Taupe)"
 
 #: lib/layouts/latexcolors.module:4068
 msgid "Pale violet-red"
 msgstr "Blasses Violettrot (Pale Violet-Red)"
 
 #: lib/layouts/latexcolors.module:4076
-#, fuzzy
 msgid "Pansy purple"
-msgstr "Purpur (purple)"
+msgstr "Stiefmütterchen-Purpur (Pansy Purple)"
 
 #: lib/layouts/latexcolors.module:4084
-#, fuzzy
 msgid "Papaya whip"
-msgstr "Cremiges Papaya (PapayaWhip)"
+msgstr "Cremiges Papaya (Papaya Whip)"
 
 #: lib/layouts/latexcolors.module:4092
-#, fuzzy
 msgid "Paris Green"
-msgstr "Piniengrün (PineGreen)"
+msgstr "Pariser Grün (Paris Green)"
 
 #: lib/layouts/latexcolors.module:4100
-#, fuzzy
 msgid "Pastel blue"
-msgstr "Einfügen"
+msgstr "Pastellblau (Pastel Blue)"
 
 #: lib/layouts/latexcolors.module:4108
 msgid "Pastel brown"
-msgstr ""
+msgstr "Pastellbraun (Pastel Brown)"
 
 #: lib/layouts/latexcolors.module:4116
-#, fuzzy
 msgid "Pastel gray"
-msgstr "Einfügen|E"
+msgstr "Patsellgrau (Pastel Gray)"
 
 #: lib/layouts/latexcolors.module:4124
-#, fuzzy
 msgid "Pastel green"
-msgstr "Einfügen (vorherige Auswahl)|h"
+msgstr "Pastellgrün (PÜastel Green)"
 
 #: lib/layouts/latexcolors.module:4132
-#, fuzzy
 msgid "Pastel magenta"
-msgstr "Rastergrafik"
+msgstr "Pastellmagenta (Pastel Magenta)"
 
 #: lib/layouts/latexcolors.module:4140
-#, fuzzy
 msgid "Pastel orange"
-msgstr "Rastergrafik"
+msgstr "Pastellorange (Pastel Orange)"
 
 #: lib/layouts/latexcolors.module:4148
-#, fuzzy
 msgid "Pastel pink"
-msgstr "Einfügen (speziell)"
+msgstr "Patsellrosa (Pastel Pink)"
 
 #: lib/layouts/latexcolors.module:4156
-#, fuzzy
 msgid "Pastel purple"
-msgstr "Purpur (purple)"
+msgstr "Pastellpurpur (Pastel Purple)"
 
 #: lib/layouts/latexcolors.module:4164
-#, fuzzy
 msgid "Pastel red"
-msgstr "Einfügen"
+msgstr "Pastellrot (Pastel Red)"
 
 #: lib/layouts/latexcolors.module:4172
-#, fuzzy
 msgid "Pastel violet"
-msgstr "Violett"
+msgstr "Pastellviolett (Pastel Violet)"
 
 #: lib/layouts/latexcolors.module:4180
-#, fuzzy
 msgid "Pastel yellow"
-msgstr "Gelb"
+msgstr "Pastellgelb (Pastel Yellow)"
 
 #: lib/layouts/latexcolors.module:4188
 msgid "Patriarch"
-msgstr ""
+msgstr "Patriarch"
 
 #: lib/layouts/latexcolors.module:4196
 msgid "Payne\\'s grey"
-msgstr ""
+msgstr "Paynegrün (Payne's Green)"
 
 #: lib/layouts/latexcolors.module:4204 lib/latexcolors:257
 msgid "Peach"
 msgstr "Pfirsich (Peach)"
 
 #: lib/layouts/latexcolors.module:4212
-#, fuzzy
 msgid "Peach-orange"
-msgstr "Orange"
+msgstr "Pfirsich-Orange (Peach-Orange)"
 
 #: lib/layouts/latexcolors.module:4220
 msgid "Peach puff"
 msgstr "Pfirsich (Peach Puff)"
 
 #: lib/layouts/latexcolors.module:4228
-#, fuzzy
 msgid "Peach-yellow"
-msgstr "Gelb"
+msgstr "Pfirsich-Gelb (Peach-Yellow)"
 
 #: lib/layouts/latexcolors.module:4236
 msgid "Pear"
-msgstr ""
+msgstr "Birne (Pear)"
 
 #: lib/layouts/latexcolors.module:4244
 msgid "Pearl"
-msgstr ""
+msgstr "Perle (Pearl)"
 
 #: lib/layouts/latexcolors.module:4252
 msgid "Peridot"
-msgstr ""
+msgstr "Peridot"
 
 #: lib/layouts/latexcolors.module:4260 lib/latexcolors:535
 msgid "Periwinkle"
 msgstr "Immergrün (Periwinkle)"
 
 #: lib/layouts/latexcolors.module:4268
-#, fuzzy
 msgid "Persian blue"
-msgstr "Altpersisch"
+msgstr "Persisch Blau (Persian Blue)"
 
 #: lib/layouts/latexcolors.module:4276
-#, fuzzy
 msgid "Persian green"
-msgstr "Frühlingsgrün (SpringGreen)"
+msgstr "Persisch Grün (Persian Green)"
 
 #: lib/layouts/latexcolors.module:4284
 msgid "Persian indigo"
-msgstr ""
+msgstr "Persisch Indigo (Persian Indigo)"
 
 #: lib/layouts/latexcolors.module:4292
-#, fuzzy
 msgid "Persian orange"
-msgstr "Orange"
+msgstr "Persisch Orange (Persian Orange)"
 
 #: lib/layouts/latexcolors.module:4300 lib/latexcolors:1169
 msgid "Peru"
 msgstr "Peru"
 
 #: lib/layouts/latexcolors.module:4308
-#, fuzzy
 msgid "Persian pink"
-msgstr "Altpersisch"
+msgstr "Persisch Rosa (Persian Pink)"
 
 #: lib/layouts/latexcolors.module:4316
-#, fuzzy
 msgid "Persian plum"
-msgstr "Altpersisch"
+msgstr "Persisch Pflaume (Persian Plum)"
 
 #: lib/layouts/latexcolors.module:4324
-#, fuzzy
 msgid "Persian red"
-msgstr "Altpersisch"
+msgstr "Persisch Rot (Persian Red)"
 
 #: lib/layouts/latexcolors.module:4332
-#, fuzzy
 msgid "Persian rose"
-msgstr "Die Versionsnummer kommt hierher"
+msgstr "Persisch Rosé (Persian Rose)"
 
 #: lib/layouts/latexcolors.module:4340
-#, fuzzy
 msgid "Persimmon"
-msgstr "Version"
+msgstr "Pewrsimone (Persimmon)"
 
 #: lib/layouts/latexcolors.module:4348
 msgid "Phlox"
-msgstr ""
+msgstr "Phlox"
 
 #: lib/layouts/latexcolors.module:4356
 msgid "Phthalo blue"
-msgstr ""
+msgstr "Phthaloblau (Phthalo Blue)"
 
 #: lib/layouts/latexcolors.module:4364
-#, fuzzy
 msgid "Phthalo green"
-msgstr "Blassgrün (PaleGreen)"
+msgstr "Phthalogrün (Phthalo Green)"
 
 #: lib/layouts/latexcolors.module:4372
 msgid "Piggy pink"
-msgstr ""
+msgstr "Schweinchenrosa (Piggy Pink)"
 
 #: lib/layouts/latexcolors.module:4380
 msgid "Pine green"
@@ -19256,138 +19106,124 @@ msgid "Pink"
 msgstr "Rosa (Pink)"
 
 #: lib/layouts/latexcolors.module:4396
-#, fuzzy
 msgid "Pink-orange"
-msgstr "Orange"
+msgstr "Rosa-Orange (Pink-Orange)"
 
 #: lib/layouts/latexcolors.module:4404
-#, fuzzy
 msgid "Pink pearl"
-msgstr "Linktyp"
+msgstr "Rosa Perle (Pink Pearl)"
 
 #: lib/layouts/latexcolors.module:4412
-#, fuzzy
 msgid "Pink Sherbet"
-msgstr "PDF-Link-Einstellungen"
+msgstr "Pink Sherbet"
 
 #: lib/layouts/latexcolors.module:4420
 msgid "Pistachio"
-msgstr ""
+msgstr "Pistazie (Pistachio)"
 
 #: lib/layouts/latexcolors.module:4428
-#, fuzzy
 msgid "Platinum"
-msgstr "Palatino"
+msgstr "Platin (Platinum)"
 
 #: lib/layouts/latexcolors.module:4436
-#, fuzzy
 msgid "Plum (traditional)"
-msgstr "Chinesisch (traditionell)"
+msgstr "Pflaume (Plum Traditional)"
 
 #: lib/layouts/latexcolors.module:4444
 msgid "Plum (web)"
-msgstr ""
+msgstr "Pflaume (Plum Web)"
 
 #: lib/layouts/latexcolors.module:4452
-#, fuzzy
 msgid "Portland Orange"
-msgstr "Gebranntes Orange (BurntOrange)"
+msgstr "Portland-Orange"
 
 #: lib/layouts/latexcolors.module:4460
-#, fuzzy
 msgid "Powder blue (web)"
-msgstr "Taubenblau (PowderBlue)"
+msgstr "Puderblau (Powder Blue Web)"
 
 #: lib/layouts/latexcolors.module:4468
-#, fuzzy
 msgid "Princeton orange"
-msgstr "Platzierung auf der Seite"
+msgstr "Princeton-Orange"
 
 #: lib/layouts/latexcolors.module:4476
 msgid "Prune"
-msgstr ""
+msgstr "Dörrpflaume (Prune)"
 
 #: lib/layouts/latexcolors.module:4484
-#, fuzzy
 msgid "Prussian blue"
-msgstr "Russisch"
+msgstr "Preußisch Blau (Prussian Blue)"
 
 #: lib/layouts/latexcolors.module:4492
 msgid "Psychedelic purple"
-msgstr ""
+msgstr "Psychedelisches Purpur (Psychedelic Purple)"
 
 #: lib/layouts/latexcolors.module:4500
 msgid "Puce"
-msgstr ""
+msgstr "Puce"
 
 #: lib/layouts/latexcolors.module:4508
 msgid "Pumpkin"
-msgstr ""
+msgstr "Kürbis (Pumpkin)"
 
 #: lib/layouts/latexcolors.module:4516
 msgid "Purple (HTML/CSS)"
-msgstr ""
+msgstr "Purpur (Purple HTML/CSS)"
 
 #: lib/layouts/latexcolors.module:4524
 msgid "Purple (Munsell)"
-msgstr ""
+msgstr "Purpur (Munsell Purple)"
 
 #: lib/layouts/latexcolors.module:4532
-#, fuzzy
 msgid "Purple (X11)"
-msgstr "Purpur 1 (Purple1)"
+msgstr "Purpur (Purple X11)"
 
 #: lib/layouts/latexcolors.module:4540
-#, fuzzy
 msgid "Purple Heart"
-msgstr "Purpur (Purple)"
+msgstr "Purpurherz (Purple Heart)"
 
 #: lib/layouts/latexcolors.module:4548
 msgid "Purple mountain majesty"
-msgstr ""
+msgstr "Purple Mountain Majesty"
 
 #: lib/layouts/latexcolors.module:4556
-#, fuzzy
 msgid "Purple pizzazz"
-msgstr "Purpur (Purple)"
+msgstr "Purple Pizzazz"
 
 #: lib/layouts/latexcolors.module:4564
-#, fuzzy
 msgid "Purple taupe"
-msgstr "Purpur (Purple)"
+msgstr "Purpurtaupe (Purple Taupe)"
 
 #: lib/layouts/latexcolors.module:4572
 msgid "Radical Red"
-msgstr ""
+msgstr "Radikales Rot (Radical Red)"
 
 #: lib/layouts/latexcolors.module:4580
 msgid "Raspberry"
-msgstr ""
+msgstr "Himbeer (Raspberry)"
 
 #: lib/layouts/latexcolors.module:4588
 msgid "Raspberry glace"
-msgstr ""
+msgstr "Himbeereis (Raspberry Glace)"
 
 #: lib/layouts/latexcolors.module:4596
 msgid "Raspberry pink"
-msgstr ""
+msgstr "Himbeerrosa (Raspberry Pink)"
 
 #: lib/layouts/latexcolors.module:4604
 msgid "Raspberry rose"
-msgstr ""
+msgstr "Himbeerrosé (Raspberry Rose)"
 
 #: lib/layouts/latexcolors.module:4612
-#, fuzzy
 msgid "Raw umber"
-msgstr "R-S-Nummer"
+msgstr "Rohes Umbra (Raw Umber)"
 
 #: lib/layouts/latexcolors.module:4620
 msgid "Razzle dazzle rose"
-msgstr ""
+msgstr "Razzle dazzle Rose"
 
 #: lib/layouts/latexcolors.module:4628
 msgid "Razzmatazz"
-msgstr ""
+msgstr "Razzmatazz"
 
 #: lib/layouts/latexcolors.module:4636 lib/latexcolors:107 lib/latexcolors:343
 #: lib/latexcolors:1249
@@ -19396,24 +19232,23 @@ msgstr "Rot"
 
 #: lib/layouts/latexcolors.module:4644
 msgid "Red (Munsell)"
-msgstr ""
+msgstr "Rot (Munsell)"
 
 #: lib/layouts/latexcolors.module:4652
 msgid "Red (NCS)"
-msgstr ""
+msgstr "Rot (NCS)"
 
 #: lib/layouts/latexcolors.module:4660
 msgid "Red (pigment)"
-msgstr ""
+msgstr "Rot (pigment)"
 
 #: lib/layouts/latexcolors.module:4668
 msgid "Red (RYB)"
-msgstr ""
+msgstr "Rot (RYB)"
 
 #: lib/layouts/latexcolors.module:4676
-#, fuzzy
 msgid "Red-brown"
-msgstr "Braun"
+msgstr "Rot-Braun (Red-Brown)"
 
 #: lib/layouts/latexcolors.module:4684
 msgid "Red-violet"
@@ -19421,124 +19256,111 @@ msgstr "Rotviolett (Red-Violet)"
 
 #: lib/layouts/latexcolors.module:4692
 msgid "Redwood"
-msgstr ""
+msgstr "Redwood"
 
 #: lib/layouts/latexcolors.module:4700
-#, fuzzy
 msgid "Regalia"
-msgstr "Bengalisch"
+msgstr "Regalia"
 
 #: lib/layouts/latexcolors.module:4708
-#, fuzzy
 msgid "Rich black"
-msgstr "Schwarz"
+msgstr "Reiches Schwarz (Rich Black)"
 
 #: lib/layouts/latexcolors.module:4716
 msgid "Rich brilliant lavender"
-msgstr ""
+msgstr "Reiches brilliantes Lavendel (Rich Brilliant Lavender)"
 
 #: lib/layouts/latexcolors.module:4724
-#, fuzzy
 msgid "Rich carmine"
-msgstr "Rhabarber (Rhodamine)"
+msgstr "Reiches Karminrot (Rich Carmine)"
 
 #: lib/layouts/latexcolors.module:4732
 msgid "Rich electric blue"
-msgstr ""
+msgstr "Reiches Elektrischblau (Rich Electric Blue)"
 
 #: lib/layouts/latexcolors.module:4740
-#, fuzzy
 msgid "Rich lavender"
-msgstr "Lavendel"
+msgstr "Reiches Lavendel"
 
 #: lib/layouts/latexcolors.module:4748
 msgid "Rich lilac"
-msgstr ""
+msgstr "Reiches Flieder"
 
 #: lib/layouts/latexcolors.module:4756
 msgid "Rich maroon"
-msgstr ""
+msgstr "Reiches Kastanienbraun"
 
 #: lib/layouts/latexcolors.module:4764
-#, fuzzy
 msgid "Rifle green"
-msgstr "Grün"
+msgstr "Riflegrün (Rifle Green)"
 
 #: lib/layouts/latexcolors.module:4772
 msgid "Robin egg blue"
-msgstr ""
+msgstr "Robin-Ei-Blau"
 
 #: lib/layouts/latexcolors.module:4780
-#, fuzzy
 msgid "Rose"
-msgstr "Altrosa (MistyRose)"
+msgstr "Rosé"
 
 #: lib/layouts/latexcolors.module:4788
 msgid "Rose bonbon"
-msgstr ""
+msgstr "Rosenbonbon (Rose Bonbon)"
 
 #: lib/layouts/latexcolors.module:4796
-#, fuzzy
 msgid "Rose ebony"
-msgstr "Schließe Abschnitt"
+msgstr "Rosen-Ebenholz (Rose Ebony)"
 
 #: lib/layouts/latexcolors.module:4804
 msgid "Rose gold"
-msgstr ""
+msgstr "Rosengold (Rose Gold)"
 
 #: lib/layouts/latexcolors.module:4812
 msgid "Rose madder"
-msgstr ""
+msgstr "Rose Madder"
 
 #: lib/layouts/latexcolors.module:4820
-#, fuzzy
 msgid "Rose pink"
-msgstr "Rosa (Pink)"
+msgstr "Rosenrosa (Rose Pink)"
 
 #: lib/layouts/latexcolors.module:4828
 msgid "Rose quartz"
-msgstr ""
+msgstr "Rosenquarz (Rose Quartz)"
 
 #: lib/layouts/latexcolors.module:4836
 msgid "Rose taupe"
-msgstr ""
+msgstr "Rosetaupe (Rose Taupe)"
 
 #: lib/layouts/latexcolors.module:4844
-#, fuzzy
 msgid "Rose vale"
-msgstr "Größenwert"
+msgstr "Vale Rosé (Rose Vale)"
 
 #: lib/layouts/latexcolors.module:4852
 msgid "Rosewood"
-msgstr ""
+msgstr "Rosenholz (Rosenwood)"
 
 #: lib/layouts/latexcolors.module:4860
 msgid "Rosso corsa"
-msgstr ""
+msgstr "Rosso Corsa"
 
 #: lib/layouts/latexcolors.module:4868
 msgid "Rosy brown"
 msgstr "Rosiges Braun (Rosy Brown)"
 
 #: lib/layouts/latexcolors.module:4876
-#, fuzzy
 msgid "Royal azure"
-msgstr "Königspurpur (RoyalPurple)"
+msgstr "Königsazur (Royal Azure)"
 
 #: lib/layouts/latexcolors.module:4884
-#, fuzzy
 msgid "Royal blue (traditional)"
-msgstr "Chinesisch (traditionell)"
+msgstr "Königsblau (Royal Blue Traditional)"
 
 #: lib/layouts/latexcolors.module:4892
-#, fuzzy
 msgid "Royal blue (web)"
-msgstr "Königsblau (RoyalBlue)"
+msgstr "Königsblau (Royal Blue Web)"
 
 #: lib/layouts/latexcolors.module:4900
-#, fuzzy
 msgid "Royal fuchsia"
-msgstr "Fuchsia"
+msgstr "Königsfuchsia (Royal Fuchsia)"
 
 #: lib/layouts/latexcolors.module:4908
 msgid "Royal purple"
@@ -19551,33 +19373,31 @@ msgstr "Ruby"
 
 #: lib/layouts/latexcolors.module:4924
 msgid "Ruddy"
-msgstr ""
+msgstr "Rötlich (Ruddy)"
 
 #: lib/layouts/latexcolors.module:4932
-#, fuzzy
 msgid "Ruddy brown"
-msgstr "Braun"
+msgstr "Rötlich Braun (Ruddy Brown)"
 
 #: lib/layouts/latexcolors.module:4940
 msgid "Ruddy pink"
-msgstr ""
+msgstr "Rötlich Rosa (Ruddy Pink)"
 
 #: lib/layouts/latexcolors.module:4948
 msgid "Rufous"
-msgstr ""
+msgstr "Rotbraun (Rufous)"
 
 #: lib/layouts/latexcolors.module:4956
-#, fuzzy
 msgid "Russet"
-msgstr "Russisch"
+msgstr "Rostbraun (Russet)"
 
 #: lib/layouts/latexcolors.module:4964
 msgid "Rust"
-msgstr ""
+msgstr "Rost (Rust)"
 
 #: lib/layouts/latexcolors.module:4972
 msgid "Sacramento State green"
-msgstr ""
+msgstr "Sacramento-Staatsgrün"
 
 #: lib/layouts/latexcolors.module:4980
 msgid "Saddle brown"
@@ -19585,37 +19405,35 @@ msgstr "Sattelbraun (Saddle Brown)"
 
 #: lib/layouts/latexcolors.module:4988
 msgid "Safety orange (blaze orange)"
-msgstr ""
+msgstr "Sicherheits-Orange (Safety Orange)"
 
 #: lib/layouts/latexcolors.module:4996
 msgid "Saffron"
-msgstr ""
+msgstr "Safran (Saffron)"
 
 #: lib/layouts/latexcolors.module:5004
 msgid "St. Patrick\\'s blue"
-msgstr ""
+msgstr "St.-Patrick-Blau"
 
 #: lib/layouts/latexcolors.module:5012 lib/latexcolors:379 lib/latexcolors:1281
 msgid "Salmon"
 msgstr "Lachs (Salmon)"
 
 #: lib/layouts/latexcolors.module:5020
-#, fuzzy
 msgid "Salmon pink"
-msgstr "Lachs (Salmon)"
+msgstr "Lachsrosa (Salmon Pink)"
 
 #: lib/layouts/latexcolors.module:5028
 msgid "Sand"
-msgstr ""
+msgstr "Sand"
 
 #: lib/layouts/latexcolors.module:5036
 msgid "Sand dune"
-msgstr ""
+msgstr "Sandüne (Sand Dune)"
 
 #: lib/layouts/latexcolors.module:5044
-#, fuzzy
 msgid "Sandstorm"
-msgstr "leadsto"
+msgstr "Sandsturm (Sandstorm)"
 
 #: lib/layouts/latexcolors.module:5052
 msgid "Sandy brown"
@@ -19623,73 +19441,67 @@ msgstr "Sandbraun (Sandy Brown)"
 
 #: lib/layouts/latexcolors.module:5060
 msgid "Sandy taupe"
-msgstr ""
+msgstr "Sandiges Taupe"
 
 #: lib/layouts/latexcolors.module:5068
 msgid "Sangria"
-msgstr ""
+msgstr "Sangria"
 
 #: lib/layouts/latexcolors.module:5076
-#, fuzzy
 msgid "Sap green"
-msgstr "Grün"
+msgstr "Saftgrün (Sap Green)"
 
 #: lib/layouts/latexcolors.module:5084
 msgid "Sapphire"
-msgstr ""
+msgstr "Saphir (Sapphire)"
 
 #: lib/layouts/latexcolors.module:5092
 msgid "Satin sheen gold"
-msgstr ""
+msgstr "Satin Sheen Gold"
 
 #: lib/layouts/latexcolors.module:5100
 msgid "Scarlet"
-msgstr ""
+msgstr "Scharlachrot (Scarlet)"
 
 #: lib/layouts/latexcolors.module:5108
 msgid "School bus yellow"
-msgstr ""
+msgstr "Schulbusgelb (School Bus Yellow)"
 
 #: lib/layouts/latexcolors.module:5116
-#, fuzzy
 msgid "Screamin\\' Green"
-msgstr "Meergrün (SeaGreen)"
+msgstr "Schreiendes Grün (Screamin' Green)"
 
 #: lib/layouts/latexcolors.module:5124
 msgid "Sea green"
 msgstr "Meergrün (Sea Green)"
 
 #: lib/layouts/latexcolors.module:5132
-#, fuzzy
 msgid "Seal brown"
-msgstr "Braun"
+msgstr "Siegelbraun (Seal Brown)"
 
 #: lib/layouts/latexcolors.module:5140 lib/latexcolors:1009
 msgid "Seashell"
 msgstr "Muschel (Seashell)"
 
 #: lib/layouts/latexcolors.module:5148
-#, fuzzy
 msgid "Selective yellow"
-msgstr "Alles auswählen"
+msgstr "Selektives Gelb (Selective Yellow)"
 
 #: lib/layouts/latexcolors.module:5156 lib/latexcolors:785
 msgid "Sepia"
 msgstr "Sepia"
 
 #: lib/layouts/latexcolors.module:5164
-#, fuzzy
 msgid "Shadow"
-msgstr "Schatten&größe:"
+msgstr "Schatten (Shadow)"
 
 #: lib/layouts/latexcolors.module:5172
-#, fuzzy
 msgid "Shamrock green"
-msgstr "Dunkelgrün (DarkGreen)"
+msgstr "Shamrock-Grün (Shamrock Green)"
 
 #: lib/layouts/latexcolors.module:5180
 msgid "Shocking pink"
-msgstr ""
+msgstr "Schockierendes Rosa (Shocking Pink)"
 
 #: lib/layouts/latexcolors.module:5188 lib/latexcolors:1193
 msgid "Sienna"
@@ -19700,23 +19512,20 @@ msgid "Silver"
 msgstr "Silber (Silver)"
 
 #: lib/layouts/latexcolors.module:5204
-#, fuzzy
 msgid "Sinopia"
-msgstr "Utopia"
+msgstr "Sinopia"
 
 #: lib/layouts/latexcolors.module:5212
 msgid "Skobeloff"
-msgstr ""
+msgstr "Skobeloff"
 
 #: lib/layouts/latexcolors.module:5220
-#, fuzzy
 msgid "Sky blue"
-msgstr "Blau"
+msgstr "Himmelblau (Sky Blue)"
 
 #: lib/layouts/latexcolors.module:5228
-#, fuzzy
 msgid "Sky magenta"
-msgstr "Magenta"
+msgstr "Himmelmagenta (Sky Magenta)"
 
 #: lib/layouts/latexcolors.module:5236
 msgid "Slate blue"
@@ -19728,16 +19537,15 @@ msgstr "Schiefergrau (Slate Gray)"
 
 #: lib/layouts/latexcolors.module:5252
 msgid "Smalt (Dark powder blue)"
-msgstr ""
+msgstr "Smalt (Dunkles Puderblau)"
 
 #: lib/layouts/latexcolors.module:5260
 msgid "Smokey topaz"
-msgstr ""
+msgstr "Rauchiger Topaz (Smokey Topaz)"
 
 #: lib/layouts/latexcolors.module:5268
-#, fuzzy
 msgid "Smoky black"
-msgstr "Schwarz"
+msgstr "Rauchiges Schwarz (Smoky Black)"
 
 #: lib/layouts/latexcolors.module:5276 lib/latexcolors:985
 msgid "Snow"
@@ -19745,16 +19553,15 @@ msgstr "Schneeweiß (Snow)"
 
 #: lib/layouts/latexcolors.module:5284
 msgid "Spiro Disco Ball"
-msgstr ""
+msgstr "Spiro Disco Ball"
 
 #: lib/layouts/latexcolors.module:5292
 msgid "Splashed white"
-msgstr ""
+msgstr "Splashed White"
 
 #: lib/layouts/latexcolors.module:5300
-#, fuzzy
 msgid "Spring bud"
-msgstr "Zeichenkette gefunden."
+msgstr "Frühlingsknospe (Spring Bud)"
 
 #: lib/layouts/latexcolors.module:5308
 msgid "Spring green"
@@ -19766,59 +19573,55 @@ msgstr "Stahlblau (Steel Blue)"
 
 #: lib/layouts/latexcolors.module:5324
 msgid "Stil de grain yellow"
-msgstr ""
+msgstr "Schüttgelb (Stil De Grain Yellow)"
 
 #: lib/layouts/latexcolors.module:5332
-#, fuzzy
 msgid "Straw"
-msgstr "Straße"
+msgstr "Stroh (Straw)"
 
 #: lib/layouts/latexcolors.module:5340
 msgid "Sunglow"
-msgstr ""
+msgstr "Abendröte (Sunglow)"
 
 #: lib/layouts/latexcolors.module:5348
 msgid "Sunset"
-msgstr ""
+msgstr "Sonnenuntergang (Sunset)"
 
 #: lib/layouts/latexcolors.module:5356 lib/latexcolors:805 lib/latexcolors:1329
 msgid "Tan"
 msgstr "Hellbraun (Tan)"
 
 #: lib/layouts/latexcolors.module:5364
-#, fuzzy
 msgid "Tangelo"
-msgstr "Bereich"
+msgstr "Tangelo"
 
 #: lib/layouts/latexcolors.module:5372
 msgid "Tangerine"
-msgstr ""
+msgstr "Manderine (Tangerine)"
 
 #: lib/layouts/latexcolors.module:5380
 msgid "Tangerine yellow"
-msgstr ""
+msgstr "Manderinengelb (Tangerine Yellow)"
 
 #: lib/layouts/latexcolors.module:5388
 msgid "Taupe"
-msgstr ""
+msgstr "Taupe"
 
 #: lib/layouts/latexcolors.module:5396
-#, fuzzy
 msgid "Taupe gray"
-msgstr "Dunkelgrau"
+msgstr "Taupe-Grau (Taupe Gray)"
 
 #: lib/layouts/latexcolors.module:5404
-#, fuzzy
 msgid "Tea green"
-msgstr "Grün"
+msgstr "Teegrün (Tea Green)"
 
 #: lib/layouts/latexcolors.module:5412
 msgid "Tea rose (orange)"
-msgstr ""
+msgstr "Teerose (Orange)"
 
 #: lib/layouts/latexcolors.module:5420
 msgid "Tea rose (rose)"
-msgstr ""
+msgstr "Teerose (Rosé)"
 
 #: lib/layouts/latexcolors.module:5428 lib/latexcolors:159 lib/latexcolors:1858
 msgid "Teal"
@@ -19829,17 +19632,16 @@ msgid "Teal blue"
 msgstr "Blaugrün-Blau (Teal Blue)"
 
 #: lib/layouts/latexcolors.module:5444
-#, fuzzy
 msgid "Teal green"
-msgstr "Grün"
+msgstr "Blaugrün-Grün (Teal Green)"
 
 #: lib/layouts/latexcolors.module:5452
 msgid "Tenne (Tawny)"
-msgstr ""
+msgstr "Tenné (Tawny)"
 
 #: lib/layouts/latexcolors.module:5460
 msgid "Terra cotta"
-msgstr ""
+msgstr "Terra Cotta"
 
 #: lib/layouts/latexcolors.module:5468 lib/latexcolors:461 lib/latexcolors:1473
 msgid "Thistle"
@@ -19847,28 +19649,27 @@ msgstr "Distel (Thistle)"
 
 #: lib/layouts/latexcolors.module:5476
 msgid "Thulian pink"
-msgstr ""
+msgstr "Thulianisches Rosa (Thulian Pink)"
 
 #: lib/layouts/latexcolors.module:5484
 msgid "Tickle Me Pink"
-msgstr ""
+msgstr "Tickle Me Pink"
 
 #: lib/layouts/latexcolors.module:5492
-#, fuzzy
 msgid "Tiffany Blue"
-msgstr "Marineblau (NavyBlue)"
+msgstr "Tiffany-Blau (Tiffany Blue)"
 
 #: lib/layouts/latexcolors.module:5500
 msgid "Tiger\\'s eye"
-msgstr ""
+msgstr "Tiger's eye"
 
 #: lib/layouts/latexcolors.module:5508
 msgid "Timberwolf"
-msgstr ""
+msgstr "Timberwolf"
 
 #: lib/layouts/latexcolors.module:5516
 msgid "Titanium yellow"
-msgstr ""
+msgstr "Titangelb (Titanium Yellow)"
 
 #: lib/layouts/latexcolors.module:5524 lib/latexcolors:1265
 msgid "Tomato"
@@ -19876,95 +19677,83 @@ msgstr "Tomatenrot (Tomato)"
 
 #: lib/layouts/latexcolors.module:5532
 msgid "Toolbox"
-msgstr ""
+msgstr "Toolbox"
 
 #: lib/layouts/latexcolors.module:5540
-#, fuzzy
 msgid "Tractor red"
-msgstr "Zurückgelagert"
+msgstr "Traktorrot (Tractor Red)"
 
 #: lib/layouts/latexcolors.module:5548
 msgid "Trolley Grey"
-msgstr ""
+msgstr "Trolleygrau (Trolley Grey)"
 
 #: lib/layouts/latexcolors.module:5556
 msgid "Tropical rain forest"
-msgstr ""
+msgstr "Tropischer Regenwald (Tropical Rain Forest)"
 
 #: lib/layouts/latexcolors.module:5564
-#, fuzzy
 msgid "True Blue"
-msgstr "Blaugrün-Blau (TealBlue)"
+msgstr "Staubiges Rauchblau (True Blue)"
 
 #: lib/layouts/latexcolors.module:5572
-#, fuzzy
 msgid "Tufts Blue"
-msgstr "Tufte-Buch"
+msgstr "Tufts-Blau (Tufts Blue)"
 
 #: lib/layouts/latexcolors.module:5580
 msgid "Tumbleweed"
-msgstr ""
+msgstr "Tumbleweed"
 
 #: lib/layouts/latexcolors.module:5588
-#, fuzzy
 msgid "Turkish rose"
-msgstr "Türkisch"
+msgstr "Türkisch Rosé (Turkish Rose)"
 
 #: lib/layouts/latexcolors.module:5596 lib/latexcolors:641 lib/latexcolors:1802
 msgid "Turquoise"
 msgstr "Türkis (Turquoise)"
 
 #: lib/layouts/latexcolors.module:5604
-#, fuzzy
 msgid "Turquoise blue"
-msgstr "Türkis (Turquoise)"
+msgstr "Türkis-Blau (Turquoise Blue)"
 
 #: lib/layouts/latexcolors.module:5612
-#, fuzzy
 msgid "Turquoise green"
-msgstr "Türkis (Turquoise)"
+msgstr "Türkis-Grün (Turquoise Green)"
 
 #: lib/layouts/latexcolors.module:5620
 msgid "Tuscan red"
-msgstr ""
+msgstr "Toskanarot (Tuscan Red)"
 
 #: lib/layouts/latexcolors.module:5628
-#, fuzzy
 msgid "Twilight lavender"
-msgstr "Kopfzeile rechts"
+msgstr "Twilight Lavender"
 
 #: lib/layouts/latexcolors.module:5636
-#, fuzzy
 msgid "Tyrian purple"
-msgstr "Dreieck aufwärts"
+msgstr "Tyrianischer Purpur (Tyrian Purple)"
 
 #: lib/layouts/latexcolors.module:5644
-#, fuzzy
 msgid "UA blue"
-msgstr "Blau"
+msgstr "UA-Blau (UA Blue)"
 
 #: lib/layouts/latexcolors.module:5652
 msgid "UA red"
-msgstr ""
+msgstr "UA-Rot (UA Red)"
 
 #: lib/layouts/latexcolors.module:5660
 msgid "Ube"
-msgstr ""
+msgstr "Ube"
 
 #: lib/layouts/latexcolors.module:5668
-#, fuzzy
 msgid "UCLA Blue"
-msgstr "Blau"
+msgstr "UCLA-Blau (UCLA Blue)"
 
 #: lib/layouts/latexcolors.module:5676
-#, fuzzy
 msgid "UCLA Gold"
-msgstr "Gold"
+msgstr "UCLA-Gold (UCLA Gold)"
 
 #: lib/layouts/latexcolors.module:5684
-#, fuzzy
 msgid "UFO Green"
-msgstr "Grün"
+msgstr "UCLA-Grün (UCLA Grün)"
 
 #: lib/layouts/latexcolors.module:5692
 msgid "Ultramarine"
@@ -19972,82 +19761,75 @@ msgstr "Ultramarin (Ultramarine)"
 
 #: lib/layouts/latexcolors.module:5700
 msgid "Ultramarine blue"
-msgstr ""
+msgstr "Ultramarin Blau (Ultramarine Blue)"
 
 #: lib/layouts/latexcolors.module:5708
 msgid "Ultra pink"
-msgstr ""
+msgstr "Ultra-Rosa (Ultra Pink)"
 
 #: lib/layouts/latexcolors.module:5716
-#, fuzzy
 msgid "Umber"
-msgstr "Nummer"
+msgstr "Umbra (Umber)"
 
 #: lib/layouts/latexcolors.module:5724
-#, fuzzy
 msgid "United Nations blue"
-msgstr "Zitierstil"
+msgstr "UN-Blau (United Nations Blue)"
 
 #: lib/layouts/latexcolors.module:5732
 msgid "Unmellow Yellow"
-msgstr ""
+msgstr "Unmellow Yellow"
 
 #: lib/layouts/latexcolors.module:5740
-#, fuzzy
 msgid "UP Forest green"
-msgstr "Waldgrün (ForestGreen)"
+msgstr "UP-Waldgrün (UP Forest Green)"
 
 #: lib/layouts/latexcolors.module:5748
-#, fuzzy
 msgid "UP Maroon"
-msgstr "Kastanienbraun (Maroon)"
+msgstr "UP-Kastanienbraun (UP Maroon)"
 
 #: lib/layouts/latexcolors.module:5756
 msgid "Upsdell red"
-msgstr ""
+msgstr "Upsdell-Rot (Upsdell Red)"
 
 #: lib/layouts/latexcolors.module:5764
 msgid "Urobilin"
-msgstr ""
+msgstr "Urobilin"
 
 #: lib/layouts/latexcolors.module:5772
 msgid "USC Cardinal"
-msgstr ""
+msgstr "USC Cardinal"
 
 #: lib/layouts/latexcolors.module:5780
-#, fuzzy
 msgid "USC Gold"
-msgstr "Gold"
+msgstr "USC-Gold"
 
 #: lib/layouts/latexcolors.module:5788
-#, fuzzy
 msgid "Utah Crimson"
-msgstr "Crimson"
+msgstr "Utah-Crimson"
 
 #: lib/layouts/latexcolors.module:5796
 msgid "Vanilla"
-msgstr ""
+msgstr "Vanille (Vannilla)"
 
 #: lib/layouts/latexcolors.module:5804
 msgid "Vegas gold"
-msgstr ""
+msgstr "Vegas-Gold"
 
 #: lib/layouts/latexcolors.module:5812
 msgid "Venetian red"
-msgstr ""
+msgstr "Venezianisches Rot (Venetian Red)"
 
 #: lib/layouts/latexcolors.module:5820
 msgid "Verdigris"
-msgstr ""
+msgstr "Grünspan (Verdigris)"
 
 #: lib/layouts/latexcolors.module:5828
-#, fuzzy
 msgid "Vermilion"
-msgstr "permil"
+msgstr "Zinnoberrot (Vermilion)"
 
 #: lib/layouts/latexcolors.module:5836
 msgid "Veronica"
-msgstr ""
+msgstr "Veronica"
 
 #: lib/layouts/latexcolors.module:5844 lib/latexcolors:129 lib/latexcolors:511
 #: lib/latexcolors:1489
@@ -20055,54 +19837,48 @@ msgid "Violet"
 msgstr "Violett"
 
 #: lib/layouts/latexcolors.module:5852
-#, fuzzy
 msgid "Violet (color wheel)"
-msgstr "Ein Farbthema exportieren"
+msgstr "Violett (Violet Color Wheel)"
 
 #: lib/layouts/latexcolors.module:5860
-#, fuzzy
 msgid "Violet (RYB)"
-msgstr "Violett"
+msgstr "Violett (Violet RYB)"
 
 #: lib/layouts/latexcolors.module:5868
-#, fuzzy
 msgid "Violet (web)"
-msgstr "Violett"
+msgstr "Violett (Violet Web)"
 
 #: lib/layouts/latexcolors.module:5876
 msgid "Viridian"
-msgstr ""
+msgstr "Chromoxidgrün (Viridian)"
 
 #: lib/layouts/latexcolors.module:5884
 msgid "Vivid auburn"
-msgstr ""
+msgstr "Lebhaftes Auburn (Vivid Auburn)"
 
 #: lib/layouts/latexcolors.module:5892
 msgid "Vivid burgundy"
-msgstr ""
+msgstr "Lebhaftes Burgunder (Vivid Burgundy)"
 
 #: lib/layouts/latexcolors.module:5900
 msgid "Vivid cerise"
-msgstr ""
+msgstr "Lebhaftes Kirschrot (Vivid Cerise)"
 
 #: lib/layouts/latexcolors.module:5908
 msgid "Vivid tangerine"
-msgstr ""
+msgstr "Lebhaftes Mandarine (Vivid Tangerine)"
 
 #: lib/layouts/latexcolors.module:5916
-#, fuzzy
 msgid "Vivid violet"
-msgstr "Violett"
+msgstr "Lebhaftes Violett (Vivid Violet)"
 
 #: lib/layouts/latexcolors.module:5924
-#, fuzzy
 msgid "Warm black"
-msgstr "Schwarz"
+msgstr "Warmes Schwarz (Warm Black)"
 
 #: lib/layouts/latexcolors.module:5932
-#, fuzzy
 msgid "Wenge"
-msgstr "lozenge"
+msgstr "Wenge"
 
 #: lib/layouts/latexcolors.module:5940 lib/latexcolors:1345
 msgid "Wheat"
@@ -20119,7 +19895,7 @@ msgstr "Rauchiges Weiß (White Smoke)"
 
 #: lib/layouts/latexcolors.module:5964
 msgid "Wild blue yonder"
-msgstr ""
+msgstr "Wild Blue Yonder"
 
 #: lib/layouts/latexcolors.module:5972
 msgid "Wild Strawberry"
@@ -20127,21 +19903,19 @@ msgstr "Walderdbeere (Wild Strawberry)"
 
 #: lib/layouts/latexcolors.module:5980
 msgid "Wild Watermelon"
-msgstr ""
+msgstr "Wilde Wassermelone (Wild Watermelon)"
 
 #: lib/layouts/latexcolors.module:5988
-#, fuzzy
 msgid "Wisteria"
-msgstr "Kriterien"
+msgstr "Blauregen (Wisteria)"
 
 #: lib/layouts/latexcolors.module:5996
 msgid "Xanadu"
-msgstr ""
+msgstr "Xanadu"
 
 #: lib/layouts/latexcolors.module:6004
-#, fuzzy
 msgid "Yale Blue"
-msgstr "Blaugrün-Blau (TealBlue)"
+msgstr "Yale-Blau (Yale Blue)"
 
 #: lib/layouts/latexcolors.module:6012 lib/latexcolors:84 lib/latexcolors:223
 #: lib/latexcolors:1113
@@ -20150,21 +19924,19 @@ msgstr "Gelb"
 
 #: lib/layouts/latexcolors.module:6020
 msgid "Yellow (Munsell)"
-msgstr ""
+msgstr "Gelob (Munsell)"
 
 #: lib/layouts/latexcolors.module:6028
-#, fuzzy
 msgid "Yellow (NCS)"
-msgstr "Gelb"
+msgstr "Gelb (NCS)"
 
 #: lib/layouts/latexcolors.module:6036
 msgid "Yellow (process)"
-msgstr ""
+msgstr "Gelb (Process)"
 
 #: lib/layouts/latexcolors.module:6044
-#, fuzzy
 msgid "Yellow (RYB)"
-msgstr "Gelb"
+msgstr "Gelb (RYB)"
 
 #: lib/layouts/latexcolors.module:6052
 msgid "Yellow-green"
@@ -20172,11 +19944,11 @@ msgstr "Gelbgrün (Yellow-Green)"
 
 #: lib/layouts/latexcolors.module:6060
 msgid "Zaffre"
-msgstr ""
+msgstr "Zaffer (Zaffre)"
 
 #: lib/layouts/latexcolors.module:6068
 msgid "Zinnwaldite brown"
-msgstr ""
+msgstr "Zinnwalditbraun (Zinnwaldite Brown)"
 
 #: lib/layouts/letter.layout:3 lib/examples/Articles:0
 msgid "Letter (Standard Class)"
@@ -36202,12 +35974,11 @@ msgstr "Dia-Diagramm.\n"
 
 #: lib/xtemplates/draw.io.xtemplate:12 lib/configure.py:790
 msgid "Draw.io"
-msgstr ""
+msgstr "Draw.io"
 
 #: lib/xtemplates/draw.io.xtemplate:13 lib/xtemplates/draw.io.xtemplate:17
-#, fuzzy
 msgid "Draw.io diagram"
-msgstr "Dia-Diagramm"
+msgstr "Draw.io-Diagramm"
 
 #: lib/xtemplates/draw.io.xtemplate:15
 msgid ""
@@ -36217,6 +35988,11 @@ msgid ""
 "using this template. Included file will be cropped to the size of the "
 "diagram.\n"
 msgstr ""
+"Draw.io-Diagramm.\n"
+"Draw.io ist als Browser-basierte und Stand-alone-Anwendung verfügbar. Diese "
+"Vorlage setzt die Stand-alone-Anwendung voraus, prüfen Sie also, dass diese "
+"installiert ist.. Die eingebettet Datei wird auf die Größe des Diagramms "
+"zugeschnitten.\n"
 
 #: lib/xtemplates/gnumeric.xtemplate:13
 msgid "GnumericSpreadsheet"
