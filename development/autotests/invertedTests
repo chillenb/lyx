@@ -346,6 +346,11 @@ export/export/latex/unicodesymbols/008-greek-and-coptic_utf8x_pdf2
 #                     {churchslavonic}[churchslavonic@]{babelshorthands}[false]{}
 export/export/latex/languages/supported-languages_polyglossia-XeTeX_pdf4_systemF
 
+# https://github.com/texjporg/platex/issues/107
+# There is a fix but it has not been released yet.
+export/examples/ja/Modules/Linguistics_lyx(22|23|24)
+export/examples/ja/Modules/Linguistics_(dvi|pdf|pdf3)$
+
 
 # ================================================
 Sublabel: externalissues
