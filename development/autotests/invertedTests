@@ -351,6 +351,13 @@ export/export/latex/languages/supported-languages_polyglossia-XeTeX_pdf4_systemF
 export/examples/ja/Modules/Linguistics_lyx(22|23|24)
 export/examples/ja/Modules/Linguistics_(dvi|pdf|pdf3)$
 
+# These babel tests were failing for a few months on TL25 and TL26.
+# https://github.com/latex3/babel/issues/376
+export/export/latex/languages/supported-languages_babel_(dvi|pdf|pdf2|pdf3)
+export/export/latex/languages/supported-languages_babel_auto-legacy_(dvi|pdf|pdf2|pdf3)
+# ! Package babel Error: You haven't defined the language 'mainlocalename' yet.
+export/export/latex/languages/supported-languages_babel_non-tex_(dvi3|pdf4|pdf5)_systemF
+
 
 # ================================================
 Sublabel: externalissues
