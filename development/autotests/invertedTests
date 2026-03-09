@@ -350,6 +350,8 @@ export/export/latex/languages/supported-languages_polyglossia-XeTeX_pdf4_systemF
 # There is a fix but it has not been released yet.
 export/examples/ja/Modules/Linguistics_lyx(22|23|24)
 export/examples/ja/Modules/Linguistics_(dvi|pdf|pdf3)$
+export/export/latex/inputenc-utf8-platex_pdf3?
+
 
 # These babel tests were failing for a few months on TL25 and TL26.
 # https://github.com/latex3/babel/issues/376
