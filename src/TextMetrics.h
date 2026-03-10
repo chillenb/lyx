@@ -281,10 +281,9 @@ public:
 	/// our 'outermost' font.
 	/// This is handed down from the surrounding
 	/// inset through the pi/mi parameter (pi.base.font)
-	/// It is used in applyOuterFont() and setCharFont() for reasons
-	/// that are not clear... to hand hand the outermost language and
-	/// also for char style apparently.
-	Font font_;
+	/// It is used in applyOuterFont(), Text::insertChar() and Text::setFont().
+	// FIXME: move to Text
+	mutable Font font_;
 };
 
 /// return the default height of a row in pixels, considering font zoom

@@ -194,9 +194,9 @@ void InsetText::read(Lexer & lex)
 }
 
 
-void InsetText::setOuterFont(BufferView & bv, FontInfo const & outer) const
+void InsetText::setOuterFont(BufferView const & bv, FontInfo const & outer) const
 {
-	TextMetrics & tm = bv.textMetrics(&text_);
+	TextMetrics const & tm = bv.textMetrics(&text_);
 	FontInfo tmpfont = getFont();
 	tmpfont.realize(outer);
 	tm.font_.fontInfo() = tmpfont;

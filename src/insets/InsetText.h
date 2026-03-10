@@ -57,7 +57,7 @@ public:
 	///
 	void write(std::ostream & os) const override;
 	/// Let the inset compute and store its reference font from \c outer.
-	void setOuterFont(BufferView & bv, FontInfo const & outer) const;
+	void setOuterFont(BufferView const & bv, FontInfo const & outer) const;
 	///
 	void metrics(MetricsInfo & mi, Dimension & dim) const override;
 	///
