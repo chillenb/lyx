@@ -313,6 +313,12 @@ def revert_mathref(document):
                         if k == -1 or l == j:
                             i = j
                             break
+                        m = regexp.match(document.body[k])
+                        if m:
+                            pretext = m.group(1)
+                            cmd = m.group(2)
+                            arg = m.group(3)
+                            posttext = m.group(4)
 
             arguments = arg[1:-1].split(",")
             
