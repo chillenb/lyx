@@ -1321,7 +1321,8 @@ string const LaTeXFeatures::getColorValue(string const & col) const
 }
 
 
-bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexcol)
+bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexcol,
+					bool const xcolor)
 {
 	bool res = false;
 	if ((!islatexcol && theLaTeXColors().isLaTeXColor(col))
@@ -1330,7 +1331,10 @@ bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexco
 		LaTeXColor const lc = theLaTeXColors().getLaTeXColor(lyxcolor);
 		for (auto const & r : lc.req())
 			require(r);
-		require("color");
+		if (xcolor)
+			require("xcolor");
+		else
+			require("color");
 		if (!lc.model().empty()) {
 			require("xcolor");
 			require("xcolor:" + lc.model());
@@ -1341,6 +1345,10 @@ bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexco
 			if ((!islatexcol && lc.first == col) || (islatexcol && lc.second.latex() == col)){
 				for (auto const & r : lc.second.req())
 					require(r);
+				if (xcolor)
+					require("xcolor");
+				else
+					require("color");
 				if (!lc.second.model().empty()) {
 					require("xcolor");
 					require("xcolor:" + lc.second.model());

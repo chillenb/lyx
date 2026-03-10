@@ -2547,7 +2547,7 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 		// only require color here, the background color will be defined
 		// in LaTeXFeatures.cpp to avoid interferences with the LaTeX
 		// package pdfpages
-		features.requireColorPackage(backgroundcolor);
+		features.requireColorPackage(backgroundcolor, false, true);
 		features.require("pagecolor");
 	}
 
@@ -2556,7 +2556,7 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 		// only require color here, the font color will be defined
 		// in LaTeXFeatures.cpp to avoid interferences with the LaTeX
 		// package pdfpages
-		features.requireColorPackage(fontcolor);
+		features.requireColorPackage(fontcolor, false, true);
 		features.require("fontcolor");
 	}
 

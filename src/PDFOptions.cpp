@@ -315,7 +315,7 @@ void PDFOptions::validate(LaTeXFeatures & features) const
 		if (!contains(opt, "color="))
 			continue;
 		string const color = split(opt, '=');
-		features.requireColorPackage(color, true);
+		features.requireColorPackage(color, true, true);
 	}
 	
 }

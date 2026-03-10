@@ -796,7 +796,7 @@ void InsetBox::validate(LaTeXFeatures & features) const
 	switch (btype) {
 	case Frameless:
 		if (params_.backgroundcolor != "none") {
-			if (!features.requireColorPackage(params_.backgroundcolor))
+			if (!features.requireColorPackage(params_.backgroundcolor, false, true))
 				features.require("color");
 		}
 		break;
@@ -808,7 +808,7 @@ void InsetBox::validate(LaTeXFeatures & features) const
 		features.require("calc");
 		if (useFColorBox()) {
 			if (!features.requireColorPackage(params_.backgroundcolor)
-			     && !features.requireColorPackage(params_.framecolor))
+			     && !features.requireColorPackage(params_.framecolor, false, true))
 				features.require("color");
 		}
 		break;
