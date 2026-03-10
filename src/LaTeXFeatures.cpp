@@ -1321,8 +1321,7 @@ string const LaTeXFeatures::getColorValue(string const & col) const
 }
 
 
-bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexcol,
-					bool const xcolor)
+bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexcol, bool xcolor)
 {
 	bool res = false;
 	if ((!islatexcol && theLaTeXColors().isLaTeXColor(col))
@@ -1331,28 +1330,28 @@ bool LaTeXFeatures::requireColorPackage(string const & col, bool const islatexco
 		LaTeXColor const lc = theLaTeXColors().getLaTeXColor(lyxcolor);
 		for (auto const & r : lc.req())
 			require(r);
+		if (!lc.model().empty()) {
+			xcolor = true;
+			require("xcolor:" + lc.model());
+		}
 		if (xcolor)
 			require("xcolor");
 		else
 			require("color");
-		if (!lc.model().empty()) {
-			require("xcolor");
-			require("xcolor:" + lc.model());
-		}
 		res = true;
 	} else {
 		for (auto const & lc : params_.documentClass().latexColors()) {
 			if ((!islatexcol && lc.first == col) || (islatexcol && lc.second.latex() == col)){
 				for (auto const & r : lc.second.req())
 					require(r);
+				if (!lc.second.model().empty()) {
+					xcolor = true;
+					require("xcolor:" + lc.second.model());
+				}
 				if (xcolor)
 					require("xcolor");
 				else
 					require("color");
-				if (!lc.second.model().empty()) {
-					require("xcolor");
-					require("xcolor:" + lc.second.model());
-				}
 				res = true;
 			}
 		}

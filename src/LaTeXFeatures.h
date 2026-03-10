@@ -224,7 +224,7 @@ public:
 	bool haveOtherForceProvide() const;
 	///
 	bool requireColorPackage(std::string const & col, bool const islatexcol = false,
-				 bool const xcolor = false);
+				 bool xcolor = false);
 
 private:
 	///
