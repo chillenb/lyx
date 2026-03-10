@@ -135,7 +135,7 @@ bool LaTeXColor::read(Lexer & lex)
 	name_ = ascii_lowercase(lex.getString());
 	LYXERR(Debug::INFO, "Reading LaTeX color " << name_);
 	if (!readColor(lex)) {
-		LYXERR0("Error parsing LaTeX font `" << name_ << '\'');
+		LYXERR0("Error parsing Color `" << name_ << '\'');
 		return false;
 	}
 
