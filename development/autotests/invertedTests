@@ -351,7 +351,19 @@ export/export/latex/languages/supported-languages_polyglossia-XeTeX_pdf4_systemF
 export/examples/ja/Modules/Linguistics_lyx(22|23|24)
 export/examples/ja/Modules/Linguistics_(dvi|pdf|pdf3)$
 export/export/latex/inputenc-utf8-platex_pdf3?
-
+#
+#
+#  ! Missing \endcsname inserted.
+#  <to be read again>
+#  \target@series@value
+#  l.690 ...backslash begin\{}\textbf{\emph{環境名}}
+#                                                    \textbf{\} \ldots{}
+#  The control sequence marked <to be read again> should
+#  not appear between \csname and \endcsname.
+#
+# The error started around commit b625138b, but it is also due to a bug in platex.
+# https://www.mail-archive.com/search?l=mid&q=4ceb5c3c69c2610b3ea9021920b979343f01e476.camel%40lyx.org
+export/doc/ja/UserGuide_pdf5_systemF
 
 # These babel tests were failing for a few months on TL25 and TL26.
 # https://github.com/latex3/babel/issues/376
