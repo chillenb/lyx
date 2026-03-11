@@ -25,6 +25,7 @@
 #include "output_xhtml.h"
 #include "xml.h"
 
+#include "support/lstrings.h"
 #include "support/Lexer.h"
 #include "support/Messages.h"
 
@@ -33,6 +34,8 @@
 using namespace std;
 
 namespace lyx {
+
+using namespace support;
 
 // Make linker happy
 
@@ -65,7 +68,7 @@ LaTeXColor LaTeXColors::getLaTeXColor(string const & /* name */)
 	return LaTeXColor();
 }
 
-bool LaTeXColor::read(lyx::support::Lexer & lex)
+bool LaTeXColor::read(Lexer & lex)
 {
 	if (!lex.next()) {
 		lex.printError("No name given for LaTeX color: `$$Token'.");
@@ -81,7 +84,7 @@ bool LaTeXColor::read(lyx::support::Lexer & lex)
 }
 
 
-bool LaTeXColor::readColor(lyx::support::Lexer & lex)
+bool LaTeXColor::readColor(Lexer & lex)
 {
 	enum LaTeXColorTags {
 		LC_CATEGORY = 1,
@@ -96,7 +99,7 @@ bool LaTeXColor::readColor(lyx::support::Lexer & lex)
 	};
 
 	// Keep these sorted alphabetically!
-	lyx::support::LexerKeyword latexColorTags[] = {
+	LexerKeyword latexColorTags[] = {
 		{ "category",             LC_CATEGORY },
 		{ "cmyk",                 LC_CMYK },
 		{ "colormodel",           LC_COLOR_MODEL },
@@ -116,10 +119,10 @@ bool LaTeXColor::readColor(lyx::support::Lexer & lex)
 		int le = lex.lex();
 		// See comment in LyXRC.cpp.
 		switch (le) {
-		case lyx::support::Lexer::LEX_FEOF:
+		case Lexer::LEX_FEOF:
 			continue;
 
-		case lyx::support::Lexer::LEX_UNDEF: // parse error
+		case Lexer::LEX_UNDEF: // parse error
 			lex.printError("Unknown LaTeXColor tag `$$Token'");
 			error = true;
 			continue;
@@ -131,13 +134,43 @@ bool LaTeXColor::readColor(lyx::support::Lexer & lex)
 		case LC_END: // end of structure
 			finished = true;
 			break;
-		case LC_GUINAME:
-		case LC_HEXNAME:
 		case LC_CATEGORY:
 		case LC_CMYK:
 		case LC_COLOR_MODEL:
-		case LC_LATEXNAME: 
-		case LC_SVG_CLASH:
+		case LC_LATEXNAME: {
+			// check if this is an ASCII string
+			lex.eatLine();
+			string const val = lex.getString();
+			if (!isAscii(val)){
+				lex.printError("Value isn't ASCII: " + val);
+				error = true;
+				continue;
+			}
+			break;
+		}
+		case LC_HEXNAME: {
+			// check if this is a Hex color
+			lex.eatLine();
+			docstring const val = trim(lex.getDocString(true));
+			if (val.size() != 6 || !isHex(val)){
+				lex.printError("Value isn't proper hex color: " + to_utf8(val));
+				error = true;
+				continue;
+			}
+			break;
+		}
+		case LC_SVG_CLASH: {
+			// check if this is an ASCII string
+			lex.eatLine();
+			string const val = lowercase(lex.getString());
+			if (val != "0" && val != "1" && val != "true" && val != "false") {
+				lex.printError("Value isn't proper boolean: " + val);
+				error = true;
+				continue;
+			}
+			break;
+		}
+		case LC_GUINAME:
 		case LC_REQUIRES: {
 			// simply eat the value
 			lex.eatLine();
