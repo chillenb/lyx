@@ -25,6 +25,7 @@
 #include "output_xhtml.h"
 #include "xml.h"
 
+#include "support/Lexer.h"
 #include "support/Messages.h"
 
 #include <iostream>
@@ -64,9 +65,92 @@ LaTeXColor LaTeXColors::getLaTeXColor(string const & /* name */)
 	return LaTeXColor();
 }
 
-bool LaTeXColor::read(lyx::support::Lexer&)
+bool LaTeXColor::read(lyx::support::Lexer & lex)
 {
+	if (!lex.next()) {
+		lex.printError("No name given for LaTeX color: `$$Token'.");
+		return false;
+	}
+
+	if (!readColor(lex)) {
+		lex.printError("Error parsing Color: `$$Token'.");
+		return false;
+	}
+
 	return true;
+}
+
+
+bool LaTeXColor::readColor(lyx::support::Lexer & lex)
+{
+	enum LaTeXColorTags {
+		LC_CATEGORY = 1,
+		LC_CMYK,
+		LC_COLOR_MODEL,
+		LC_END,
+		LC_GUINAME,
+		LC_HEXNAME,
+		LC_LATEXNAME,
+		LC_REQUIRES,
+		LC_SVG_CLASH
+	};
+
+	// Keep these sorted alphabetically!
+	lyx::support::LexerKeyword latexColorTags[] = {
+		{ "category",             LC_CATEGORY },
+		{ "cmyk",                 LC_CMYK },
+		{ "colormodel",           LC_COLOR_MODEL },
+		{ "endcolor",             LC_END },
+		{ "guiname",              LC_GUINAME },
+		{ "hexname",              LC_HEXNAME },
+		{ "latexname",            LC_LATEXNAME },
+		{ "requires",             LC_REQUIRES },
+		{ "svgclash",             LC_SVG_CLASH },
+	};
+
+	bool error = false;
+	bool finished = false;
+	lex.pushTable(latexColorTags);
+	// parse color section
+	while (!finished && lex.isOK() && !error) {
+		int le = lex.lex();
+		// See comment in LyXRC.cpp.
+		switch (le) {
+		case lyx::support::Lexer::LEX_FEOF:
+			continue;
+
+		case lyx::support::Lexer::LEX_UNDEF: // parse error
+			lex.printError("Unknown LaTeXColor tag `$$Token'");
+			error = true;
+			continue;
+
+		default:
+			break;
+		}
+		switch (static_cast<LaTeXColorTags>(le)) {
+		case LC_END: // end of structure
+			finished = true;
+			break;
+		case LC_GUINAME:
+		case LC_HEXNAME:
+		case LC_CATEGORY:
+		case LC_CMYK:
+		case LC_COLOR_MODEL:
+		case LC_LATEXNAME: 
+		case LC_SVG_CLASH:
+		case LC_REQUIRES: {
+			// simply eat the value
+			lex.eatLine();
+			break;
+		}
+		}
+	}
+	if (!finished) {
+		lex.printError("No EndColor tag found for LaTeXColor tag `$$Token'");
+		return false;
+	}
+	lex.popTable();
+	return finished && !error;
 }
 
 } // namespace lyx
