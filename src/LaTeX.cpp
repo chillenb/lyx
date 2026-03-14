@@ -1228,10 +1228,12 @@ int LaTeX::scanLogFile(TeXErrors & terr)
 						 child_name);
 			} else if (!ignore_missing_glyphs
 				   && prefixIs(token, "Missing character: There is no ")
-				   && !contains(token, "nullfont")) {
+				   && !contains(token, "nullfont")
+				   && !contains(token, "^^@")) {
 				// Warning about missing glyph in selected font
 				// may be dataloss (bug 9610)
-				// but can be ignored for 'nullfont' (bug 10394).
+				// but can be ignored for 'nullfont' (bug 10394),
+				// null character (^^@ or U+0000),
 				// as well as for ZERO WIDTH NON-JOINER (0x200C) which is
 				// missing in many fonts and output for ligature break (bug 10727).
 				docstring const utoken = from_local8bit(token);
