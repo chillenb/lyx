@@ -141,8 +141,7 @@ export/templates/Articles/IEEE_Transactions_Journal_lyx16
 export/examples/fa/Welcome_pdf4_systemF
 #
 # CJK-quotes examples (missing in most Latin-script fonts)
-export/doc/(|de/|es/|fr/)UserGuide_(dvi3|pdf4|pdf5)_systemF
-#
+export/doc/es/UserGuide_(dvi3|pdf4|pdf5)_systemF
 # Japanese
 export/examples/ja/Modules/Linguistics.*systemF
 #
@@ -394,6 +393,7 @@ Sublabel: attic
 # (i.e. could be ERT, package incompatiblity, ...)
 export/doc/attic/it_(UserGuide_dvi3|UserGuide_pdf4)_systemF
 export/doc/attic/id_UserGuide_.*systemF
+
 
 # ================================================
 Sublabel: dvips
