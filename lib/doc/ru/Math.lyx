@@ -138,6 +138,23 @@
 
 \usepackage{iftex}
 \iftutex
+  % convert \cyr... and \CYR... to Unicode
+  % these are used by varioref
+  % (https://github.com/latex3/latex2e/issues/2020)
+  % Workaround taken from
+  % https://tex.stackexchange.com/a/706098/19291
+  \ExplSyntaxOn
+  \group_begin:
+  \cs_set:Npn \DeclareUnicodeCharacter #1 #2
+   {
+    \bool_lazy_or:nnT
+     { \str_if_eq_p:ee { cyr } { \str_range:nnn { #2 } { 2 } { 4 } } }% \cyr...
+     { \str_if_eq_p:ee { CYR } { \str_range:nnn { #2 } { 2 } { 4 } } }% \CYR...
+     { \cs_gset:Npe #2 { \char_generate:nn { "#1 } { 11 } } }
+   }
+  \file_input:n { t2aenc.dfu }
+  \group_end:
+  \ExplSyntaxOff
   % latinmodern (used with non-TeX fonts) does not have a combining cedilla
   % fake it (https://tex.stackexchange.com/a/164270/19291)
   \def\c#1{{\setbox0=\hbox{#1}\ifdim\ht0=1ex \accent184 #1%

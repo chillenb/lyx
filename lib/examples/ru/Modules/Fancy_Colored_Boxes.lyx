@@ -21,6 +21,27 @@
 % Use serif font
 \addtokomafont{disposition}{\rmfamily}
 \addtokomafont{descriptionlabel}{\rmfamily}
+
+\usepackage{iftex}
+\iftutex
+  % convert \cyr... and \CYR... to Unicode
+  % these are used by varioref
+  % (https://github.com/latex3/latex2e/issues/2020)
+  % Workaround taken from
+  % https://tex.stackexchange.com/a/706098/19291
+  \ExplSyntaxOn
+  \group_begin:
+  \cs_set:Npn \DeclareUnicodeCharacter #1 #2
+   {
+    \bool_lazy_or:nnT
+     { \str_if_eq_p:ee { cyr } { \str_range:nnn { #2 } { 2 } { 4 } } }% \cyr...
+     { \str_if_eq_p:ee { CYR } { \str_range:nnn { #2 } { 2 } { 4 } } }% \CYR...
+     { \cs_gset:Npe #2 { \char_generate:nn { "#1 } { 11 } } }
+   }
+  \file_input:n { t2aenc.dfu }
+  \group_end:
+  \ExplSyntaxOff
+\fi
 \end_preamble
 \options BCOR8mm, most, usenames, dvipsnames
 \use_default_options false
