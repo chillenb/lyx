@@ -30424,7 +30424,7 @@ d e
 </cell>
 </row>
 <row>
-<cell alignment="left" valignment="top" leftline="true" usebox="none">
+<cell alignment="left" valignment="top" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
@@ -30439,7 +30439,7 @@ e
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
 \begin_layout Plain Layout
