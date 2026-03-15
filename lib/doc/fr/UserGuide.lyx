@@ -60,9 +60,6 @@
 %}{}
 
 \AtBeginDocument{\addto\captionsfrench{\def\nomname{Glossaire}}}
-% Added by lyx2lyx
-\setlength{\parskip}{\medskipamount}
-\setlength{\parindent}{0pt}
 \end_preamble
 \options refpage,intoc,bibliography=totoc,index=totoc,BCOR7.5mm,captions=tableheading,numbers=noenddot
 \use_default_options false
@@ -163,8 +160,8 @@ logicalmkup
 \end_index
 \secnumdepth 3
 \tocdepth 2
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip halfline
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style swiss

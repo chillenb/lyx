@@ -49,9 +49,6 @@
 \AtBeginDocument{\setdefaultlanguage[numerals=maghrib]{arabic}} %%%% without this line nomenclature list not appear in pdf.
 %\renewcommand{\nomname}{المصطلحات}%% used arabic title for nomname
 \newcommand\lettergroup[1]{} % without this line "unknown english letters" appear in the index list in pdf.
-% Added by lyx2lyx
-\setlength{\parskip}{\medskipamount}
-\setlength{\parindent}{0pt}
 \end_preamble
 \options refpage,intoc,bibliography=totoc,index=totoc,BCOR7.5mm,captions=tableheading
 \use_default_options false
@@ -83,6 +80,8 @@ enumitem
 \output_sync 0
 \bibtex_command bibtex
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize 12
 \spacing single
 \use_hyperref true
@@ -149,8 +148,8 @@ enumitem
 \end_index
 \secnumdepth 3
 \tocdepth 2
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip halfline
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style french
