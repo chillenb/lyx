@@ -136,16 +136,6 @@ export/export/latex/lyxbugs/[a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z0-9][a-z
 #11455 "Unable to process argument!" with multiple 1.6.x roundtrips
 export/templates/Articles/IEEE_Transactions_Journal_lyx16
 
-#11522 Support specification of complementing non-TeX fonts
-#
-# More than one non-TeX font required for the character set in many documents
-# to prevent "missing glyph" errors with non-TeX fonts
-#
-#export/export/latex/inputenc-.*_systemF # problem remains but test now ignored
-export/doc/(|de/|es/|fr/)Math.*systemF
-# a minimal example for Math.lyx is in
-#export/export/latex/lyxbugs/11522-systemfonts-Math-missingchars.*systemF
-#
 # Farsi: missing glyphs (em space and "English" quotes)
 export/examples/fa/Welcome_pdf4_systemF
 #
