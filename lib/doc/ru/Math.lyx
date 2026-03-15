@@ -24,14 +24,15 @@
 
 % increase link area for cross-references and autoname them,
 \AtBeginDocument{\renewcommand{\ref}[1]{\mbox{\autoref{#1}}}}
-\@ifpackageloaded{babel}{
- \addto\extrasrussian{%
-  \renewcommand*{\equationautorefname}[1]{}%
-  \renewcommand{\sectionautorefname}{разд.\negthinspace}%
-  \renewcommand{\subsectionautorefname}{разд.\negthinspace}%
-  \renewcommand{\subsubsectionautorefname}{разд.\negthinspace}%
+\AddToHook{begindocument/before}{
+ \HyLang@addto\extrasrussian{%
+  \def\equationautorefname{}%
+  \def\sectionautorefname{разд.\negthinspace}%
+  \def\subsectionautorefname{разд.\negthinspace}%
+  \def\subsubsectionautorefname{разд.\negthinspace}%
+  \def\tableautorefname{табл.\negthinspace}%
  }
-}{}
+}
 
 % don't load packages twice
 % see first footnote in sec. 9.3
