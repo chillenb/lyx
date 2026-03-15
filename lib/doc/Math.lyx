@@ -141,9 +141,13 @@
     \else\ooalign{\unhbox0\crcr\hidewidth\char184\hidewidth}\fi}}
 \fi
 \ifxetex
-  % latinmodern (with XeTeX) does not feature Å
+  % latinmodern (with XeTeX) does not feature \AA
   \usepackage{newunicodechar}
-  \newunicodechar{Å}{\AA}
+  \newcommand{\DeclareUnicodeCharacter}[2]{%
+    \begingroup\lccode`|=\string"#1\relax
+    \lowercase{\endgroup\newunicodechar{|}}{#2}%
+  }
+  \DeclareUnicodeCharacter{212B}{\AA}
 \fi
 \end_preamble
 \options bibliography=totoc,index=totoc,BCOR7.5mm,titlepage,captions=tableheading
