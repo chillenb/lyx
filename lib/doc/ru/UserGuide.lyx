@@ -34918,14 +34918,15 @@ textbf{#1}}}
 status open
 
 \begin_layout Plain Layout
+@,
+ |,
+ !,
+ 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
-%@,
- %|,
- %!,
- %"{}
+%"
 \end_layout
 
 \end_inset
@@ -34935,80 +34936,22 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
+Знак кавычки в коде \SpecialChar TeX
+ выводится записью 
+\begin_inset Flex Code
 status collapsed
 
 \begin_layout Plain Layout
+%
+\begin_inset Quotes qrd
+\end_inset
 
-\backslash
-CYRZ{}
-\backslash
-cyrn{}
-\backslash
-cyra{}
-\backslash
-cyrk{} 
-\backslash
-cyrk{}
-\backslash
-cyra{}
-\backslash
-cyrv{}
-\backslash
-cyrery{}
-\backslash
-cyrch{}
-\backslash
-cyrk{}
-\backslash
-cyri{} 
-\backslash
-cyrv{} 
-\backslash
-cyrk{}
-\backslash
-cyro{}
-\backslash
-cyrd{}
-\backslash
-cyre{} TeX 
-\backslash
-cyrv{}
-\backslash
-cyrery{}
-\backslash
-cyrv{}
-\backslash
-cyro{}
-\backslash
-cyrd{}
-\backslash
-cyri{}
-\backslash
-cyrt{}
-\backslash
-cyrs{}
-\backslash
-cyrya{} 
-\backslash
-cyrz{}
-\backslash
-cyra{}
-\backslash
-cyrp{}
-\backslash
-cyri{}
-\backslash
-cyrs{}
-\backslash
-cyrsftsn{}
-\backslash
-cyryu{} ' %"{}%"{} '.
+
 \end_layout
 
 \end_inset
 
-
+.
 \end_layout
 
 \end_inset
