@@ -11134,6 +11134,15 @@ arg   "math-insert \\hat"
 \end_layout
 
 \begin_layout Subsection
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Акценты для одного символа
+\end_layout
+
+\end_inset
+
 Акценты для одного символа
 \begin_inset ERT
 status collapsed
@@ -13541,6 +13550,15 @@ Ctrl+Shift+Пробел
 \end_layout
 
 \begin_layout Subsection
+\begin_inset Argument 1
+status collapsed
+
+\begin_layout Plain Layout
+Пробелы переменного размера
+\end_layout
+
+\end_inset
+
 Пробелы переменного размера
 \begin_inset ERT
 status collapsed
