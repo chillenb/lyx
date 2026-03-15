@@ -60,6 +60,26 @@
 %}{}
 
 \AtBeginDocument{\addto\captionsfrench{\def\nomname{Glossaire}}}
+
+\usepackage{iftex}
+\iftutex
+  % latinmodern (used with non-TeX fonts) does not feature Japanese
+  % quotations marks, so we fake them.
+  \usepackage{stmaryrd}
+  \usepackage{newunicodechar}
+  \newcommand{\DeclareUnicodeCharacter}[2]{%
+    \begingroup\lccode`|=\string"#1\relax
+    \lowercase{\endgroup\newunicodechar{|}}{#2}%
+  }
+  \DeclareUnicodeCharacter{300C}{\ensuremath{\lceil}}
+  \DeclareUnicodeCharacter{300D}{\ensuremath{\rfloor}}
+  \DeclareUnicodeCharacter{300E}{\ensuremath{\llceil}}
+  \DeclareUnicodeCharacter{300F}{\ensuremath{\rrfloor}}
+  \DeclareUnicodeCharacter{300A}{\ensuremath{\langle\kern-2.5pt\langle}}
+  \DeclareUnicodeCharacter{300B}{\ensuremath{\rangle\kern-2.5pt\rangle}}
+  \DeclareUnicodeCharacter{3008}{\ensuremath{\langle}}
+  \DeclareUnicodeCharacter{3009}{\ensuremath{\rangle}}
+\fi
 \end_preamble
 \options refpage,intoc,bibliography=totoc,index=totoc,BCOR7.5mm,captions=tableheading,numbers=noenddot
 \use_default_options false

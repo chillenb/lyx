@@ -51,6 +51,26 @@
 %\let\OrgIndex\index 
 %\renewcommand*{\index}[1]{\OrgIndex{#1}}
 
+\usepackage{iftex}
+\iftutex
+  % latinmodern (mit Nicht-TeX-Schriften) unterstützt keine
+  % Japanischen Anführungszeichen, also bauen wir sie nach.
+  \usepackage{stmaryrd}
+  \usepackage{newunicodechar}
+  \newcommand{\DeclareUnicodeCharacter}[2]{%
+    \begingroup\lccode`|=\string"#1\relax
+    \lowercase{\endgroup\newunicodechar{|}}{#2}%
+  }
+  \DeclareUnicodeCharacter{300C}{\ensuremath{\lceil}}
+  \DeclareUnicodeCharacter{300D}{\ensuremath{\rfloor}}
+  \DeclareUnicodeCharacter{300E}{\ensuremath{\llceil}}
+  \DeclareUnicodeCharacter{300F}{\ensuremath{\rrfloor}}
+  \DeclareUnicodeCharacter{300A}{\ensuremath{\langle\kern-2.5pt\langle}}
+  \DeclareUnicodeCharacter{300B}{\ensuremath{\rangle\kern-2.5pt\rangle}}
+  \DeclareUnicodeCharacter{3008}{\ensuremath{\langle}}
+  \DeclareUnicodeCharacter{3009}{\ensuremath{\rangle}}
+\fi
+
 % Trennausnahmen
 \hyphenation{Text-ei-gen-schaf-ten}
 \end_preamble
