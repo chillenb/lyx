@@ -18,7 +18,8 @@ Sublabel: todo
 # missing glyphs: There is no ^^A in font [lmroman12-regular]
 # and all the line down to ^^Z and beyond...
 # XeTeX artifact? works with LuaTeX, explore:
-export/doc/(|de/|es/|fr/)EmbeddedObjects_pdf4_systemF
+export/doc/(|de/|es/|fr/|ru/)EmbeddedObjects_pdf4_systemF
+
 
 # `acmart` document class:
 # (see also lyxbugs below and ignoredTests)
@@ -405,10 +406,6 @@ Sublabel: dvips
 # (rotation of foils does not work).
 export/examples/(|fr/)Presentations/Foils_pdf[45]_systemF
 export/examples/(|fr/)Presentations/Foils_pdf[25](_systemF|_texF)?
-
-# A pending failure left over from the previous varioref
-# category.
-export/doc/ru/EmbeddedObjects_pdf4_systemF
 
 
 # ================================================
