@@ -131,9 +131,6 @@
  {\usepackage{upgreek}
   \setboolean{upgreek}{true}}
  {\setboolean{upgreek}{false}}
-% Added by lyx2lyx
-\setlength{\parskip}{\medskipamount}
-\setlength{\parindent}{0pt}
 \end_preamble
 \options bibliography=totoc,index=totoc,BCOR7.5mm,titlepage,captions=tableheading
 \use_default_options false
@@ -164,6 +161,8 @@ subequations
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize 12
 \spacing single
 \use_hyperref true
@@ -220,8 +219,8 @@ subequations
 \end_index
 \secnumdepth 4
 \tocdepth 3
-\paragraph_separation indent
-\paragraph_indentation default
+\paragraph_separation skip
+\defskip halfline
 \is_math_indent 0
 \math_numbering_side default
 \quotes_style swiss

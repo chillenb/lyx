@@ -140,9 +140,6 @@
 \AtBeginDvi{\special{pdf:tounicode EUC-UCS2}}
 
 \renewcommand{\see}[2]{→\,#1\,参照}{}
-% Added by lyx2lyx
-\setlength{\parskip}{\medskipamount}
-\setlength{\parindent}{0pt}
 
 % Needed for XeTeX
 \AddToHook{package/fontspec/after}{%
