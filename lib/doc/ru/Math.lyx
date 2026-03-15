@@ -135,6 +135,19 @@
 % Use serif font
 \addtokomafont{disposition}{\rmfamily}
 \addtokomafont{descriptionlabel}{\rmfamily}
+
+\usepackage{iftex}
+\iftutex
+  % latinmodern (used with non-TeX fonts) does not have a combining cedilla
+  % fake it (https://tex.stackexchange.com/a/164270/19291)
+  \def\c#1{{\setbox0=\hbox{#1}\ifdim\ht0=1ex \accent184 #1%
+    \else\ooalign{\unhbox0\crcr\hidewidth\char184\hidewidth}\fi}}
+\fi
+\ifxetex
+  % latinmodern (with XeTeX) does not feature Å
+  \usepackage{newunicodechar}
+  \newunicodechar{Å}{\AA}
+\fi
 \end_preamble
 \options bibliography=totoc,index=totoc,BCOR7.5mm,titlepage,captions=tableheading
 \use_default_options false

@@ -144,6 +144,19 @@
 % benötigt für Kommas in Formeln, siehe Kap. 22.3
 \IfFileExists{icomma.sty}
  {\usepackage{icomma}}{}
+
+\usepackage{iftex}
+\iftutex
+  % latinmodern (mit Nicht-TeX-Schriften verwendet) hat keine kombinierende Cedille.
+  % Baue sie nach (https://tex.stackexchange.com/a/164270/19291)
+  \def\c#1{{\setbox0=\hbox{#1}\ifdim\ht0=1ex \accent184 #1%
+    \else\ooalign{\unhbox0\crcr\hidewidth\char184\hidewidth}\fi}}
+\fi
+\ifxetex
+  % latinmodern (mit XeTeX) unterstützt Å nicht
+  \usepackage{newunicodechar}
+  \newunicodechar{Å}{\AA}
+\fi
 \end_preamble
 \options bibliography=totoc,index=totoc,BCOR7.5mm,titlepage,captions=tableheading
 \use_default_options false
