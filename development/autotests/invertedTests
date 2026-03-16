@@ -75,8 +75,6 @@ export/export/latex/unicodesymbols/031-thai_th_(euc-|gbk|jis|utf8-cjk).*
 # unicode-math or mathspec, but I am not familiar with those packages,
 # and my attempts only made things worse.
 export/doc/ja/(Math).*_systemF
-#
-export/doc/ja/Formula-numbering_pdf4_systemF
 
 # Test for command \pdfsave fails:
 # ! Package xypdf Error: pdfTeX version 1.40.0 or higher is needed for the xypdf

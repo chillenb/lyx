@@ -19,7 +19,14 @@
 
 \else % if DVI
 
-\usepackage[colorlinks=true, hypertex]{hyperref}
+% using the option "hypertex" for some reason
+% gives the following error only for the Japanese
+% version with pdf4 systemF. The error is:
+%
+% ! Package hyperref Error: Wrong DVI mode driver option `hypertex',
+%\usepackage[colorlinks=true, hypertex]{hyperref}
+% so instead we remove the hypertex option:
+\usepackage[colorlinks=true]{hyperref}
 
 \fi
 
@@ -71,6 +78,8 @@
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize 12
 \spacing single
 \use_hyperref false
