@@ -118,11 +118,12 @@
 % used for surrounded fixed objects
 \newboolean{picinpar}
 \IfFileExists{picinpar.sty}
- {%
+ {\usepackage{picinpar}
+  \setboolean{picinpar}{true}
   % see https://github.com/latex3/latex2e/issues/1725
-  \tracinglostchars=3
-  \usepackage{picinpar}
-  \setboolean{picinpar}{true}}
+  \let\prevtracinglostchars=\tracinglostchars
+  \AddToHook{env/window/begin}{\tracinglostchars=0}
+  \AddToHook{env/window/end}{\tracinglostchars=\prevtracinglostchars}}
  {\setboolean{picinpar}{false}}
 
 % check for lettrine
