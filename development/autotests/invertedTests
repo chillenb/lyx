@@ -15,12 +15,6 @@ Sublabel: todo
 # * easyfix issues,
 # * LyX bugs to report at trac (move pattern to section "lyxbugs" once done).
 
-# missing glyphs: There is no ^^A in font [lmroman12-regular]
-# and all the line down to ^^Z and beyond...
-# XeTeX artifact? works with LuaTeX, explore:
-export/doc/(|de/|es/|fr/|ru/)EmbeddedObjects_pdf4_systemF
-
-
 # `acmart` document class:
 # (see also lyxbugs below and ignoredTests)
 # issues with listsof, reported to the maintainer
