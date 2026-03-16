@@ -18967,7 +18967,7 @@ msgstr "Pastellbraun (Pastel Brown)"
 
 #: lib/layouts/latexcolors.module:4116
 msgid "Pastel gray"
-msgstr "Patsellgrau (Pastel Gray)"
+msgstr "Pastellgrau (Pastel Gray)"
 
 #: lib/layouts/latexcolors.module:4124
 msgid "Pastel green"
@@ -18983,7 +18983,7 @@ msgstr "Pastellorange (Pastel Orange)"
 
 #: lib/layouts/latexcolors.module:4148
 msgid "Pastel pink"
-msgstr "Patsellrosa (Pastel Pink)"
+msgstr "Pastellrosa (Pastel Pink)"
 
 #: lib/layouts/latexcolors.module:4156
 msgid "Pastel purple"
