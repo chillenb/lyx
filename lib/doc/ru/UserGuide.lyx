@@ -73,6 +73,10 @@
   \DeclareUnicodeCharacter{3008}{\ensuremath{\langle}}
   \DeclareUnicodeCharacter{3009}{\ensuremath{\rangle}}
 }{
+  \iftutex
+     % Needed for LuaTeX/TeX fonts with \cprotect
+     \def\T2A{}
+  \fi
 }
 \ifdefined\DeclareUnicodeCharacter\else
   % convert \cyr... and \CYR... to Unicode
