@@ -137,8 +137,7 @@
 \addtokomafont{disposition}{\rmfamily}
 \addtokomafont{descriptionlabel}{\rmfamily}
 
-\usepackage{iftex}
-\iftutex
+\ifdefined\DeclareUnicodeCharacter\else
   % convert \cyr... and \CYR... to Unicode
   % these are used by varioref
   % (https://github.com/latex3/latex2e/issues/2020)
@@ -156,11 +155,13 @@
   \file_input:n { t2aenc.dfu }
   \group_end:
   \ExplSyntaxOff
+\fi
+\@ifpackageloaded{fontspec}{
   % latinmodern (used with non-TeX fonts) does not have a combining cedilla
   % fake it (https://tex.stackexchange.com/a/164270/19291)
   \def\c#1{{\setbox0=\hbox{#1}\ifdim\ht0=1ex \accent184 #1%
     \else\ooalign{\unhbox0\crcr\hidewidth\char184\hidewidth}\fi}}
-\fi
+}{}
 \end_preamble
 \options bibliography=totoc,index=totoc,BCOR7.5mm,titlepage,captions=tableheading
 \use_default_options false

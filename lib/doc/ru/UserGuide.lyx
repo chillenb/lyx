@@ -55,7 +55,7 @@
 \addtokomafont{descriptionlabel}{\rmfamily}
 
 \usepackage{iftex}
-\iftutex
+\@ifpackageloaded{fontspec}{
   % latinmodern (used with non-TeX fonts) does not feature Japanese
   % quotations marks, so we fake them.
   \usepackage{stmaryrd}
@@ -72,6 +72,9 @@
   \DeclareUnicodeCharacter{300B}{\ensuremath{\rangle\kern-2.5pt\rangle}}
   \DeclareUnicodeCharacter{3008}{\ensuremath{\langle}}
   \DeclareUnicodeCharacter{3009}{\ensuremath{\rangle}}
+}{
+}
+\ifdefined\DeclareUnicodeCharacter\else
   % convert \cyr... and \CYR... to Unicode
   % these are used by varioref
   % (https://github.com/latex3/latex2e/issues/2020)

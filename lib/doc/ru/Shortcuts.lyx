@@ -9,8 +9,7 @@
 % Use serif font
 \addtokomafont{disposition}{\rmfamily}
 
-\usepackage{iftex}
-\iftutex
+\ifdefined\DeclareUnicodeCharacter\else
   % convert \cyr... and \CYR... to Unicode
   % these are used by varioref
   % (https://github.com/latex3/latex2e/issues/2020)

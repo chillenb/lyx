@@ -51,8 +51,7 @@
 %\let\OrgIndex\index 
 %\renewcommand*{\index}[1]{\OrgIndex{#1}}
 
-\usepackage{iftex}
-\iftutex
+\ifdefined\DeclareUnicodeCharacter\else
   % latinmodern (mit Nicht-TeX-Schriften) unterstützt keine
   % Japanischen Anführungszeichen, also bauen wir sie nach.
   \usepackage{stmaryrd}

@@ -61,8 +61,7 @@
 
 \AtBeginDocument{\addto\captionsfrench{\def\nomname{Glossaire}}}
 
-\usepackage{iftex}
-\iftutex
+\ifdefined\DeclareUnicodeCharacter\else
   % latinmodern (used with non-TeX fonts) does not feature Japanese
   % quotations marks, so we fake them.
   \usepackage{stmaryrd}
