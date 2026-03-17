@@ -1262,25 +1262,31 @@ void GuiView::addColorItem(QString const & item, QString const & guiname,
 
 QStandardItemModel * GuiView::viewColorsModel()
 {
-	int extracols = 0;
-	if (currentBufferView())
-		extracols = currentBufferView()->buffer().masterParams().custom_colors.size()
-				+ currentBufferView()->buffer().masterParams().documentClass().latexColors().size();
+	int const num_tc = currentBufferView()->buffer().masterParams().documentClass().latexColors().size();
+	int const num_cc = currentBufferView()->buffer().masterParams().custom_colors.size();
 	// if nothing has changed, we do not have to change the model
-	if (colors_model_->rowCount() > 0 && extracols == num_colors_)
-		return colors_model_;
+	if (colors_model_->rowCount() == 0
+	    || num_tc != num_tc_colors_
+	    || num_cc != num_custom_colors_)
+		fillColorsModel();
+		
+	return colors_model_;
+}
 
+
+void GuiView::fillColorsModel() const
+{
 	colors_model_->clear();
 	// at first add the general values as required
 	addColorItem("ignore", qt_("No change"));
 	addColorItem("default", qt_("Default"));
 	addColorItem("none", qt_("None[[color]]"));
 	addColorItem("inherit", qt_("(Without)[[color]]"));
-	int nc = 0;
+	int ncc = 0, ntc = 0;
 	if (currentBufferView()) {
 		// then custom colors
 		for (auto const & lc : currentBufferView()->buffer().masterParams().custom_colors) {
-			++nc;
+			++ncc;
 			addColorItem(toqstr(lc.first),
 				     toqstr(lc.first),
 				     qt_("Custom Colors"),
@@ -1289,7 +1295,7 @@ QStandardItemModel * GuiView::viewColorsModel()
 		}
 		// then textclass/module colors
 		for (auto const & lc : currentBufferView()->buffer().masterParams().documentClass().latexColors()) {
-			++nc;
+			++ntc;
 			addColorItem(toqstr(lc.first),
 				     toqstr(translateIfPossible(lc.second.guiname())),
 				     toqstr(translateIfPossible(lc.second.category())),
@@ -1304,14 +1310,16 @@ QStandardItemModel * GuiView::viewColorsModel()
 			     toqstr(lc.second.hexname()));
 	}
 
-	num_colors_ = nc;
-	return colors_model_;
+	num_custom_colors_ = ncc;
+	num_tc_colors_ = ntc;
 }
 
 
 void GuiView::updateColorsModel() const
 {
 	bool changed = false;
+	int const num_tc = currentBufferView()->buffer().masterParams().documentClass().latexColors().size();
+
 	// remove custom colors
 	QList<QStandardItem *> cis = colors_model_->findItems("custom", Qt::MatchExactly, 3);
 	for (int i = 0; i < cis.size(); ++i) {
@@ -1330,6 +1338,13 @@ void GuiView::updateColorsModel() const
 			++r;
 			changed = true;
 		}
+	}
+
+	if (num_tc != num_tc_colors_) {
+		// if textclass colors changed, we need to
+		// refill the whole thing
+		fillColorsModel();
+		changed = true;
 	}
 	if (changed)
 		Q_EMIT colorsModelChanged();

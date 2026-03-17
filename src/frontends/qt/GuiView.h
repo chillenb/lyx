@@ -201,6 +201,8 @@ public:
 	///
 	QStandardItemModel * viewColorsModel();
 	///
+	void fillColorsModel() const;
+	///
 	void updateColorsModel() const;
 
 	/// called on timeout
@@ -593,8 +595,10 @@ private:
 
 	///
 	QStandardItemModel * colors_model_;
-	/// Number of additional latex colors
-	int num_colors_ = 0;
+	/// Number of custom latex colors
+	mutable int num_custom_colors_ = 0;
+	/// Number of textclass colors
+	mutable int num_tc_colors_ = 0;
 };
 
 
