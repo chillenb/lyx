@@ -1720,7 +1720,8 @@ void latexParagraphs(Buffer const & buf,
 	DocumentClass const & tclass = bparams.documentClass();
 
 	// Floats nest languages like (other) environments
-	if (runparams.inFloat != OutputParams::NONFLOAT)
+	if (runparams.inFloat != OutputParams::NONFLOAT
+	    || (!maintext && text.inset().isEnvironment()))
 		state->nest_level_ += 1;
 
 	// Did we already warn about inTitle layout mixing? (we only warn once)
@@ -1911,7 +1912,8 @@ void latexParagraphs(Buffer const & buf,
 	}
 
 	// Decrease nesting level at the end of floats
-	if (runparams.inFloat != OutputParams::NONFLOAT)
+	if (runparams.inFloat != OutputParams::NONFLOAT
+	    || (!maintext && text.inset().isEnvironment()))
 		state->nest_level_ -= 1;
 }
 
