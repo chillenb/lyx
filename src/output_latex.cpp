@@ -1692,7 +1692,7 @@ void latexParagraphs(Buffer const & buf,
 	bool const using_begin_end = runparams.use_polyglossia ||
 					!lang_end_command.empty();
 
-	if (maintext && !lyxrc.language_auto_begin &&
+	if (maintext && !is_child && !lyxrc.language_auto_begin &&
 	    !mainlang.empty()) {
 		// FIXME UNICODE
 		string bc = runparams.use_polyglossia ?
@@ -1848,8 +1848,8 @@ void latexParagraphs(Buffer const & buf,
 	// but only if the last par is in a babel or polyglossia language
 	Language const * const lastpar_language =
 			paragraphs.at(lastpit).getParLanguage(bparams);
-	if (maintext && !lyxrc.language_auto_end && !mainlang.empty() &&
 		lastpar_language->encoding()->package() != Encoding::CJK) {
+	if (maintext && !is_child && !lyxrc.language_auto_end && !mainlang.empty() &&
 		os << from_utf8(subst(lang_end_command,
 					"$$lang",
 					mainlang))
