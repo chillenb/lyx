@@ -347,8 +347,7 @@ static TeXEnvironmentData prepareEnvironment(Buffer const & buf,
 
 
 static void finishEnvironment(otexstream & os, OutputParams const & runparams,
-			      TeXEnvironmentData const & data, bool const maintext,
-			      bool const lastpar)
+			      TeXEnvironmentData const & data, bool const lastpar)
 {
 	OutputState * state = getOutputState();
 	// BufferParams const & bparams = buf.params();
@@ -397,19 +396,19 @@ static void finishEnvironment(otexstream & os, OutputParams const & runparams,
 			runparams.encoding = data.prev_encoding;
 			os << setEncoding(data.prev_encoding->iconvName());
 		}
-		// If this is the last par of an inset, the language needs
-		// to be closed after the environment
-		if (lastpar && !maintext) {
-			if (using_begin_end && langOpenedAtThisLevel(state)) {
-				if (isLocalSwitch(state)) {
-					os << "}";
-				} else {
-					os << "\\end{"
-					   << openLanguageName(state)
-					   << "}%\n";
-				}
-				popLanguageName();
+		// If this is the last par of an inset or the main text,
+		// the language needs to be closed after the environment
+		// if it is not the main language
+		if (lastpar && using_begin_end && langOpenedAtThisLevel(state)
+		    && state->lang_switch_depth_.size() > 1) {
+			if (isLocalSwitch(state)) {
+				os << "}";
+			} else {
+				os << "\\end{"
+				   << openLanguageName(state)
+				   << "}%\n";
 			}
+			popLanguageName();
 		}
 	}
 
@@ -515,7 +514,7 @@ void TeXEnvironment(Buffer const & buf, Text const & text,
 		// Recursive call to TeXEnvironment!
 		TeXEnvironment(buf, text, runparams, pit, os);
 		bool const lastpar = size_t(pit + 1) >= paragraphs.size();
-		finishEnvironment(os, runparams, data, text.isMainText(), lastpar);
+		finishEnvironment(os, runparams, data, lastpar);
 	}
 
 	if (pit != runparams.par_end)
@@ -1793,7 +1792,7 @@ void latexParagraphs(Buffer const & buf,
 			output_changes = bparams.output_changes;
 		else
 			output_changes = runparams.find_with_deleted();
-		bool const lastpar = size_t(pit + 1) >= paragraphs.size();
+		bool lastpar = size_t(pit + 1) >= paragraphs.size();
 		if (!lastpar) {
 			ParagraphList::const_iterator nextpar = paragraphs.iterator_at(pit + 1);
 			Paragraph const & cpar = paragraphs.at(pit);
@@ -1821,7 +1820,8 @@ void latexParagraphs(Buffer const & buf,
 			prepareEnvironment(buf, text, par, os, runparams);
 		// pit can be changed in TeXEnvironment.
 		TeXEnvironment(buf, text, runparams, pit, os);
-		finishEnvironment(os, runparams, data, maintext, lastpar);
+		lastpar = size_t(pit + 1) >= paragraphs.size();
+		finishEnvironment(os, runparams, data, lastpar);
 	}
 
 	// FIXME: uncomment the content or remove this block
