@@ -1846,10 +1846,12 @@ void latexParagraphs(Buffer const & buf,
 
 	// if "auto end" is switched off, explicitly close the language at the end
 	// but only if the last par is in a babel or polyglossia language
+	// and with polyglossia only of "auto_begin" is also off
 	Language const * const lastpar_language =
 			paragraphs.at(lastpit).getParLanguage(bparams);
-		lastpar_language->encoding()->package() != Encoding::CJK) {
-	if (maintext && !is_child && !lyxrc.language_auto_end && !mainlang.empty() &&
+	if (maintext && !is_child && !lyxrc.language_auto_end && !mainlang.empty()
+	    && lastpar_language->encoding()->package() != Encoding::CJK
+	    && (!lyxrc.language_auto_begin || !runparams.use_polyglossia)) {
 		os << from_utf8(subst(lang_end_command,
 					"$$lang",
 					mainlang))
