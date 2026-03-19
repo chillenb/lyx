@@ -61,7 +61,7 @@ enum OpenEncoding {
 struct OutputState
 {
 	OutputState() : prev_env_language_(nullptr), open_encoding_(none),
-		cjk_inherited_(0), nest_level_(0)
+		cjk_inherited_(0), nest_level_(0), LR_switch_(0)
 	{
 	}
 	Language const * prev_env_language_;
@@ -70,6 +70,7 @@ struct OutputState
 	OpenEncoding open_encoding_;
 	int cjk_inherited_;
 	int nest_level_;
+	int LR_switch_;
 };
 
 
@@ -1117,6 +1118,7 @@ void TeXOnePar(Buffer const & buf,
 					os << "\\R{";
 				else
 					os << "\\L{";
+				++state->LR_switch_;
 			}
 			// With CJK, the CJK tag has to be closed first (see below)
 			if ((runparams.encoding->package() != Encoding::CJK
@@ -1343,7 +1345,9 @@ void TeXOnePar(Buffer const & buf,
 	// as well as for any InTitleCommand (since these set the language locally);
 	// it is also needed if we're within an \L or \R that we may have opened above
 	// (not necessarily in this paragraph) and are about to close.
-	bool closing_rtl_ltr_environment = !using_begin_end
+	bool closing_rtl_ltr_environment =
+		state->LR_switch_ > 0
+		&& !using_begin_end
 		// not for ArabTeX
 		&& (par_language->lang() != "arabic_arabtex"
 		    && outer_language->lang() != "arabic_arabtex")
@@ -1435,8 +1439,10 @@ void TeXOnePar(Buffer const & buf,
 			}
 		}
 	}
-	if (closing_rtl_ltr_environment)
+	if (closing_rtl_ltr_environment) {
 		os << "}";
+		--state->LR_switch_;
+	}
 
 	// InTitle commands need to be closed after the language has been closed.
 	if (intitle_command) {
