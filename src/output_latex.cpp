@@ -1719,6 +1719,10 @@ void latexParagraphs(Buffer const & buf,
 	pit_type lastpit = pit;
 	DocumentClass const & tclass = bparams.documentClass();
 
+	// Floats nest languages like (other) environments
+	if (runparams.inFloat != OutputParams::NONFLOAT)
+		state->nest_level_ += 1;
+
 	// Did we already warn about inTitle layout mixing? (we only warn once)
 	bool gave_layout_warning = false;
 	for (; pit < runparams.par_end; ++pit) {
@@ -1905,6 +1909,10 @@ void latexParagraphs(Buffer const & buf,
 		os << "\\end{btUnit}\n";
 		runparams.openbtUnit = false;
 	}
+
+	// Decrease nesting level at the end of floats
+	if (runparams.inFloat != OutputParams::NONFLOAT)
+		state->nest_level_ -= 1;
 }
 
 // Switch the input encoding for some part(s) of the document.
