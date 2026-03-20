@@ -87,6 +87,8 @@ parskip=false%          Change to true to use indent instead of skip (more optio
 \output_sync 0
 \bibtex_command default
 \index_command default
+\float_placement class
+\float_alignment class
 \paperfontsize 11
 \spacing other 1.15
 \use_hyperref false
@@ -132,7 +134,7 @@ parskip=false%          Change to true to use indent instead of skip (more optio
 \paragraph_indentation default
 \is_math_indent 0
 \math_numbering_side default
-\quotes_style danish
+\quotes_style english
 \dynamic_quotes 0
 \papercolumns 1
 \papersides 1
@@ -241,17 +243,16 @@ Dear Mr.
 \end_layout
 
 \begin_layout Standard
-This template illustrates the use of the new scrlttr2 class (introduced with KOMA-script v.
- 2.9).
+This template illustrates the use of the scrlttr2 class (part of KOMA-Script).
  This letter class is very flexible.
  Have a look at 
 \family sans
-Layout\SpecialChar menuseparator
 Document\SpecialChar menuseparator
+Settings\SpecialChar menuseparator
 Preamble
 \family default
  for the most common parameters.
- Please consult the KOMA Script documentation
+ Please consult the KOMA-Script documentation
 \begin_inset Foot
 status collapsed
 
@@ -281,6 +282,29 @@ s.:
 \begin_layout CC
 The \SpecialChar LyX
  Users
+\end_layout
+
+\begin_layout EndLetter
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Explicit 
+\emph on
+End of letter
+\emph default
+ is only needed if you have selected 
+\family sans
+(Un)Set document language explicitly
+\family default
+ in preferences and use Non-\SpecialChar TeX
+ fonts.
+ In other cases it is optional.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body
