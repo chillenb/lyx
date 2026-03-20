@@ -3320,6 +3320,10 @@ calettertemplatesdir = $(pkgdatadir)/templates/ca/Letters
 dist_calettertemplates_DATA = \
 	templates/ca/Letters/Letter_%28Standard_Class%29.lyx
 
+delettertemplatesdir = $(pkgdatadir)/templates/de/Letters
+dist_delettertemplates_DATA = \
+	templates/de/Letters/KOMA-Script_Letter_%28V._2%29.lyx
+
 eslettertemplatesdir = $(pkgdatadir)/templates/es/Letters
 dist_eslettertemplates_DATA = \
 	templates/es/Letters/Letter_%28Standard_Class%29.lyx
@@ -3706,6 +3710,7 @@ exampleandtemplate_files = \
 			   $(dist_caexamples_DATA) \
 			   $(dist_cainsetexamples_DATA) \
 			   $(dist_calettertemplates_DATA) \
+			   $(dist_delettertemplates_DATA) \
 			   $(dist_csexamples_DATA) \
 			   $(dist_cvexamples_DATA) \
 			   $(dist_daexamples_DATA) \
