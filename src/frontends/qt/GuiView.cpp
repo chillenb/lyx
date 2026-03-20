@@ -1742,7 +1742,7 @@ void GuiView::onBufferViewChanged()
 	zoom_out_->setEnabled(currentBufferView()
 			      && zoom_slider_->value() > zoom_slider_->minimum());
 	d.stats_update_trigger_ = true;
-	if (!closing_)
+	if (!closing_ && currentBufferView() && !currentBufferView()->buffer().isClosing())
 		updateColorsModel();
 }
 
