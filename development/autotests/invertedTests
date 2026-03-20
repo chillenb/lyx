@@ -28,7 +28,7 @@ Sublabel: todo
 check_load/templates/Articles/Association_for_Computing_Machinery_.*
 export/templates/Articles/Association_for_Computing_Machinery_.*_lyx(23|24)
 
-export/export/latex/lyxbugs-resolved/6373-hebrew-enumerate-in-algorithm_(docbook5|dvi3_texF|dvi3_systemF|pdf4_systemF|pdf5_texF|pdf5_systemF)
+export/export/latex/lyxbugs-resolved/6373-hebrew-enumerate-in-algorithm_(docbook5|dvi3_texF|pdf5_texF)
 
 # Failing LyX2LyX conversions for old versions:
 #

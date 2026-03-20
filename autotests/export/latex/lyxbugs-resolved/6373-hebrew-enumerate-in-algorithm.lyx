@@ -1,5 +1,5 @@
-#LyX 2.5 created this file. For more info see https://www.lyx.org/
-\lyxformat 643
+#LyX 2.6 created this file. For more info see https://www.lyx.org/
+\lyxformat 649
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -14,9 +14,9 @@
 \language_package default
 \inputencoding auto-legacy
 \fontencoding auto
-\font_roman "default" "default"
-\font_sans "default" "default"
-\font_typewriter "default" "default"
+\font_roman "default" "FreeSerif"
+\font_sans "default" "FreeSans"
+\font_typewriter "default" "FreeMono"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts false
@@ -34,6 +34,7 @@
 \bibtex_command default
 \index_command default
 \float_placement H
+\float_alignment class
 \paperfontsize default
 \spacing single
 \use_hyperref false
