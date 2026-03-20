@@ -741,7 +741,7 @@ def examples_templates_l10n(input_files, output, base):
 def parseExamplesTemplates(file, seen, output):
   # Recursively iterate over subdirectories
   if os.path.isdir(file):
-      for sfile in glob.glob( os.path.join(file, '*') ):
+      for sfile in sorted(glob.glob( os.path.join(file, '*') )):
           parseExamplesTemplates(sfile, seen, output)
 
   filename = os.path.normpath(os.path.realpath(file)).split(os.sep)[-1]
