@@ -400,7 +400,7 @@ static void finishEnvironment(otexstream & os, OutputParams const & runparams,
 		// the language needs to be closed after the environment
 		// if it is not the main language
 		if (lastpar && using_begin_end && langOpenedAtThisLevel(state)
-		    && state->lang_switch_depth_.size() > 1) {
+		    && (state->lang_switch_depth_.size() > 1 || lyxrc.language_auto_begin)) {
 			if (isLocalSwitch(state)) {
 				os << "}";
 			} else {
