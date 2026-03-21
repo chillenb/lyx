@@ -28,8 +28,6 @@ Sublabel: todo
 check_load/templates/Articles/Association_for_Computing_Machinery_.*
 export/templates/Articles/Association_for_Computing_Machinery_.*_lyx(23|24)
 
-export/export/latex/lyxbugs-resolved/6373-hebrew-enumerate-in-algorithm_docbook5
-
 # Failing LyX2LyX conversions for old versions:
 #
 # "beamer" lyx2lyx fails sometimes for versions < 2.1
@@ -534,6 +532,8 @@ export/examples/(|ja/)Modules/LilyPond_Book_docbook5
 export/examples/Articles/Springer_Nature_Journals_docbook5
 export/export/latex/lyxbugs-resolved/12544-recursive-counter_docbook5
 #
+export/export/latex/lyxbugs-resolved/6373-hebrew-enumerate-in-algorithm_docbook5
+#
 export/templates/Articles/Econometric_Society_Journals_docbook5
 # Missing glyphs!
 export/templates/Articles/Econometric_Society_Journals_dvi3_texF
@@ -549,6 +549,7 @@ export/templates/Articles/Econometric_Society_Journals_pdf5_texF
 export/templates/Articles/Econometric_Society_Journals_dvi3_systemF
 export/templates/Articles/Econometric_Society_Journals_pdf4_systemF
 export/templates/Articles/Econometric_Society_Journals_pdf5_systemF
+
 
 
 Sublabel: docbook poster
