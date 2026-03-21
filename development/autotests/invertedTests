@@ -139,11 +139,7 @@ export/doc/es/UserGuide_(dvi3|pdf4|pdf5)_systemF
 # Japanese
 export/examples/ja/Modules/Linguistics.*systemF
 #
-# Arabic (see also "texissues")
-# "! Extra \else" and missing glyph "no ␣ in font Scheherazade":
-# (the lyx2lyx test also tests compilation after round-trip)
-export/doc/ar/UserGuide_pdf4_systemF
-export/doc/ar/UserGuide_lyx(22|23|24)
+export/doc/ar/UserGuide_lyx(22|23)
 
 #11773 lyx2lyx: language reversion nesting problems with polyglossia
 export/export/lyx2lyx/11773-language-reversion-nesting-polyglossia_lyx2[234]
