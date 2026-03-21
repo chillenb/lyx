@@ -63,7 +63,7 @@ enumitem
 \fontencoding auto
 \font_roman "lmodern" "Scheherazade"
 \font_sans "lmss" "Scheherazade"
-\font_typewriter "lmtt" "Scheherazade"
+\font_typewriter "lmtt" "FreeMono"
 \font_math "auto" "auto"
 \font_default_family default
 \use_non_tex_fonts true
@@ -4803,22 +4803,12 @@ status collapsed
 
 
 \begin_inset Index idx
-range none
+range start
 pageformat default
-status collapsed
+status open
 
 \begin_layout Plain Layout
 بيئات الفقرة
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-|
-\end_layout
-
-\end_inset
-
-(
 \end_layout
 
 \end_inset
@@ -9205,22 +9195,12 @@ Hello world!
 \lang arabic_arabi
 .
 \begin_inset Index idx
-range none
+range end
 pageformat default
-status collapsed
+status open
 
 \begin_layout Plain Layout
-بيئة الفقرة
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-|
-\end_layout
-
-\end_inset
-
-)
+بيئات الفقرة
 \end_layout
 
 \end_inset
@@ -9375,9 +9355,13 @@ Verbatim*
 Verbatim
 \family default
  with the difference that spaces appear in the output as the character '
+\family typewriter
+
 \begin_inset space \textvisiblespace{}
 \end_inset
 
+
+\family default
 '.
  An example:
 \end_layout
@@ -22368,31 +22352,13 @@ status collapsed
 
 \lang english
 GIF
-\begin_inset ERT
-status collapsed
+\begin_inset IndexMacro see
+status open
 
 \begin_layout Plain Layout
-|
-\end_layout
 
-\end_inset
-
-see
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-{
-\end_layout
-
-\end_inset
-
+\lang english
 Image formats
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-}
 \end_layout
 
 \end_inset
@@ -22438,31 +22404,13 @@ status collapsed
 
 \lang english
 PNG
-\begin_inset ERT
-status collapsed
+\begin_inset IndexMacro see
+status open
 
 \begin_layout Plain Layout
-|
-\end_layout
 
-\end_inset
-
-see
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-{
-\end_layout
-
-\end_inset
-
+\lang english
 Image formats
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-}
 \end_layout
 
 \end_inset
@@ -22520,31 +22468,13 @@ status collapsed
 
 \lang english
 JPG
-\begin_inset ERT
-status collapsed
+\begin_inset IndexMacro see
+status open
 
 \begin_layout Plain Layout
-|
-\end_layout
 
-\end_inset
-
-see
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-{
-\end_layout
-
-\end_inset
-
+\lang english
 Image formats
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-}
 \end_layout
 
 \end_inset
@@ -22604,31 +22534,13 @@ status collapsed
 
 \lang english
 SVG
-\begin_inset ERT
-status collapsed
+\begin_inset IndexMacro see
+status open
 
 \begin_layout Plain Layout
-|
-\end_layout
 
-\end_inset
-
-see
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-{
-\end_layout
-
-\end_inset
-
+\lang english
 Image formats
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-}
 \end_layout
 
 \end_inset
@@ -22674,31 +22586,13 @@ status collapsed
 
 \lang english
 EPS
-\begin_inset ERT
-status collapsed
+\begin_inset IndexMacro see
+status open
 
 \begin_layout Plain Layout
-|
-\end_layout
 
-\end_inset
-
-see
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-{
-\end_layout
-
-\end_inset
-
+\lang english
 Image formats
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-}
 \end_layout
 
 \end_inset
@@ -27400,9 +27294,13 @@ Space
 \end_inset
 
 
+\family typewriter
+
 \begin_inset space \textvisiblespace{}
 \end_inset
 
+
+\family default
 
 \begin_inset Quotes erd
 \end_inset
@@ -27424,7 +27322,7 @@ Space
 
 ,
  type 
-\series bold
+\family typewriter
 
 \backslash
 sqrt
@@ -27432,9 +27330,9 @@ sqrt
 \end_inset
 
 2x+1
-\series default
+\family default
  and not 
-\series bold
+\family typewriter
 
 \backslash
 sqrt
@@ -27446,7 +27344,7 @@ sqrt
 \end_inset
 
 +1
-\series default
+\family default
 ,
  since in the latter case only the 
 \family typewriter
@@ -27594,13 +27492,13 @@ arg   "math-subscript"
 
 ,
  type in a formula 
-\series bold
+\family typewriter
 x^2
 \begin_inset space \textvisiblespace{}
 \end_inset
 
 
-\series default
+\family default
 .
  The final 
 \family sans
@@ -27608,9 +27506,9 @@ Space
 \family default
  puts the cursor back down on the base line of the expression.
  If you type 
-\series bold
+\family typewriter
 x^2y
-\series default
+\family default
 ,
  you will get 
 \begin_inset Formula $x^{2y}$
@@ -27623,13 +27521,13 @@ x^2y
 
 ,
  type 
-\series bold
+\family typewriter
 x^2
 \begin_inset space \textvisiblespace{}
 \end_inset
 
 y
-\series default
+\family default
 .
  If you use characters in the superscript,
  that could be accented with the circumflex 
@@ -27653,13 +27551,13 @@ Space
 
 ,
  type 
-\series bold
+\family typewriter
 x^
 \begin_inset space \textvisiblespace{}
 \end_inset
 
 a
-\series default
+\family default
 .
  Subscripts are similar:
  To get 
@@ -27668,13 +27566,13 @@ a
 
 ,
  type 
-\series bold
+\family typewriter
 a_1
 \begin_inset space \textvisiblespace{}
 \end_inset
 
 
-\series default
+\family default
 .
 \end_layout
 
@@ -28432,7 +28330,7 @@ In a formula you can insert accented characters in the same way as in text mode.
 
  even if your keyboard doesn't have the circumflex enabled.
  Our example is entered by typing 
-\series bold
+\family typewriter
 
 \backslash
 hat
@@ -28440,7 +28338,7 @@ hat
 \end_inset
 
 a
-\series default
+\family default
  in a formula.
  Table
 \begin_inset space ~
@@ -32145,8 +32043,12 @@ Appendix
 
 \begin_inset CommandInset ref
 LatexCommand ref
-reference "chap:Credits"
+reference "chap:Units-available-in"
+plural "false"
+caps "false"
+noprefix "false"
 nolink "false"
+tuple "list"
 
 \end_inset
 
@@ -35836,14 +35738,15 @@ should appear in nomenclature entries containing \SpecialChar TeX
 status open
 
 \begin_layout Plain Layout
+@,
+ |,
+ !,
+ 
 \begin_inset ERT
-status collapsed
+status open
 
 \begin_layout Plain Layout
-"@,
- "|,
- "!,
- ""
+%"
 \end_layout
 
 \end_inset
@@ -35853,16 +35756,9 @@ status collapsed
 status open
 
 \begin_layout Plain Layout
-\begin_inset ERT
-status collapsed
 
-\begin_layout Plain Layout
-The quote sign in TeX code is output by writing ' "" '.
-\end_layout
-
-\end_inset
-
-
+\lang english
+The quote sign in TeX code is output by writing ' %" '.
 \end_layout
 
 \end_inset
@@ -37569,7 +37465,7 @@ literal "true"
 كود تيك وتراكيب لتيك 
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:TeX-Code-1"
+name "sec:TeX-Code"
 
 \end_inset
 
@@ -44285,6 +44181,8 @@ Space
 \family default
  key):
  
+\family typewriter
+
 \begin_inset space \textvisiblespace{}
 \end_inset
 
@@ -44549,7 +44447,7 @@ Math
 \end_inset
 
 To insert a fraction use the command 
-\series bold
+\family typewriter
 
 \backslash
 frac
@@ -44560,17 +44458,13 @@ A
 \begin_inset Formula $\downarrow$
 \end_inset
 
-B.
-\series default
-
+B
+\family default
+.
 \begin_inset Quotes erd
 \end_inset
 
- The visible space is hereby the character before the 
-\series bold
-A
-\series default
-.
+ The visible space is hereby the character before the A.
 \end_layout
 
 \begin_layout Description
@@ -47042,7 +46936,7 @@ Embedded Objects
 \begin_inset Text
 
 \begin_layout Plain Layout
-قائمة منسدلة بالبيئات التنسيقية المتوفرة في نوع المستند
+قائمة مندلة بالبيئات التنيقية المتوفرة في نوع المتند
 \end_layout
 
 \end_inset
@@ -47210,7 +47104,7 @@ arg   "spelling-continuously"
 \begin_inset Text
 
 \begin_layout Plain Layout
-المصحح الإملائي المستمر
+المصحح الإملائي المتمر
 \end_layout
 
 \end_inset
@@ -47330,7 +47224,7 @@ arg   "copy"
 
 \family sans
 تحرير\SpecialChar menuseparator
-نسخ
+نخ
 \end_layout
 
 \end_inset
@@ -47398,11 +47292,11 @@ arg   "dialog-show findreplace"
 \begin_inset space \thinspace{}
 \end_inset
 
-استبدال
+اتبدال
 \begin_inset space \thinspace{}
 \end_inset
 
-(سريع)
+(ريع)
 \end_layout
 
 \end_inset
@@ -47438,7 +47332,7 @@ arg   "dialog-toggle findreplaceadv"
 \begin_inset space \thinspace{}
 \end_inset
 
-استبدال
+اتبدال
 \begin_inset space \thinspace{}
 \end_inset
 
@@ -47471,9 +47365,9 @@ arg   "bookmark-goto 0"
 \begin_layout Plain Layout
 
 \family sans
-استكشاف\SpecialChar menuseparator
+اتكشاف\SpecialChar menuseparator
 العلامات\SpecialChar menuseparator
-استكشاف للخلف
+اتكشاف للخلف
 \end_layout
 
 \end_inset
@@ -47508,7 +47402,7 @@ arg   "font-emph"
 \begin_inset space ~
 \end_inset
 
-أسلوب\SpecialChar menuseparator
+ألوب\SpecialChar menuseparator
 نافذة التخصيص
 \end_layout
 
@@ -47536,7 +47430,7 @@ arg   "font-noun"
 \begin_inset Text
 
 \begin_layout Plain Layout
-تعيين النص كاسم،
+تعيين النص كام،
  دوال التحرير
 \family sans
 \SpecialChar menuseparator
@@ -47544,7 +47438,7 @@ arg   "font-noun"
 \begin_inset space ~
 \end_inset
 
-أسلوب\SpecialChar menuseparator
+ألوب\SpecialChar menuseparator
 نافذة التخصيص
 \end_layout
 
@@ -47572,14 +47466,14 @@ arg   "textstyle-apply"
 \begin_inset Text
 
 \begin_layout Plain Layout
-تهيئة النص حسب إعدادات التحرير الحالية
+تهيئة النص حب إعدادات التحرير الحالية
 \family sans
 \SpecialChar menuseparator
 النص
 \begin_inset space ~
 \end_inset
 
-أسلوب\SpecialChar menuseparator
+ألوب\SpecialChar menuseparator
 
 \family default
 نافذة التخصيص
