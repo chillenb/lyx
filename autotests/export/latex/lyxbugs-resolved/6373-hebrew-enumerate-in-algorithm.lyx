@@ -7,6 +7,11 @@
 \textclass book
 \begin_preamble
 \floatname{algorithm}{אלגוריתם}
+
+% With LuaTeX/TeX fonts, the font encoding is not properly switched
+\@ifpackageloaded{luainputenc}{
+  \AddToHook{package/babel/after}{\addto\extrashebrew{\fontencoding{HE8}}}
+}{}
 \end_preamble
 \use_default_options false
 \maintain_unincluded_children no
@@ -129,10 +134,6 @@ Two
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Plain Layout
 
 \end_layout
 
