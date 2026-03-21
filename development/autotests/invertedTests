@@ -28,7 +28,7 @@ Sublabel: todo
 check_load/templates/Articles/Association_for_Computing_Machinery_.*
 export/templates/Articles/Association_for_Computing_Machinery_.*_lyx(23|24)
 
-export/export/latex/lyxbugs-resolved/6373-hebrew-enumerate-in-algorithm_(docbook5|dvi3_texF|pdf5_texF)
+export/export/latex/lyxbugs-resolved/6373-hebrew-enumerate-in-algorithm_docbook5
 
 # Failing LyX2LyX conversions for old versions:
 #
@@ -294,12 +294,6 @@ export/export/latex/languages/uk-babel-date-missing-chars-with-ascii_pdf5_texF
 # Putting the following as the first line of the LaTeX file is a workaround:
 # \RequirePackage[2020-02-02]{latexrelease}
 export/templates/Articles/Journal_of_the_Acoustical_Society_of_America_%28JASA%29.*(dvi|pdf|lyx22|lyx23|lyx24).*
-
-# These fail on updated TL 2020 after an update to "babel-greek" because of
-# missing symbols. I (Scott) checked the output of an older TL system and
-# indeed the output looks good (no  missing symbols). This issue was reported
-# to the babel-greek maintainer and is being looked into.
-export/.*/el/.*_(dvi3|pdf5)_texF
 
 # It is not high priority to look into the underlying cause of these two
 # failures since TeX fonts are not commonly used with LuaTeX and the ectaart
