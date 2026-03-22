@@ -736,6 +736,14 @@ contributors = [
                  "14 January 2006",
                  "Improvements to the Swedish translation of the Windows Installer"),
 
+     contributor("Baris Erkus",
+                 "bariserkus () hotmail ! com",
+                 "GPL",
+                 "Re: Use svgnames in preamble [v2.5.0]",
+                 "m=177271617530062",
+                 "5 March 2026",
+                 "LaTeX colors module"),
+
      contributor("Martin Engbers",
                  "martin.engbers () gmx ! de",
                  "GPL",
