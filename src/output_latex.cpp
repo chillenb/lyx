@@ -991,8 +991,10 @@ void TeXOnePar(Buffer const & buf,
 	bool const use_polyglossia = runparams.use_polyglossia;
 	string const par_lang = use_polyglossia ?
 		getPolyglossiaEnvName(par_language): par_language->babel();
-	string const prev_lang = use_polyglossia ?
+	string prev_lang = use_polyglossia ?
 		getPolyglossiaEnvName(prev_language) : prev_language->babel();
+	string const doc_lang = use_polyglossia ?
+		getPolyglossiaEnvName(doc_language) : doc_language->babel();
 	string const outer_lang = use_polyglossia ?
 		getPolyglossiaEnvName(outer_language) : outer_language->babel();
 	string const nextpar_lang = nextpar_language ? (use_polyglossia ?
@@ -1004,8 +1006,14 @@ void TeXOnePar(Buffer const & buf,
 		"\\end{$$lang}" : lyxrc.language_command_end;
 	// the '%' is necessary to prevent unwanted whitespace
 	string lang_command_termination = "%\n";
-	bool const using_begin_end = use_polyglossia ||
-					!lang_end_command.empty();
+	bool const using_begin_end = use_polyglossia || !lang_end_command.empty();
+
+	// With begin/end command, it is possible that we have closed
+	// the previous language already.
+	// In this case we need to reopen it (if it is not the main lang).
+	if (using_begin_end && prev_lang != doc_lang
+	    && openLanguageName(state) != prev_lang)
+		prev_lang = string();
 
 	// For InTitle commands, we need to switch the language inside the command
 	// (see #10849); thus open the command here.
