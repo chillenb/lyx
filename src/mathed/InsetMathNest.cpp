@@ -976,10 +976,10 @@ void InsetMathNest::doDispatch(Cursor & cur, FuncRequest & cmd)
 		// Now that we know exactly what we want to do, let's do it!
 		cur.selHandle(select);
 		cur.clearTargetX();
-		cur.macroModeClose();
-		// try moving forward or backwards as necessary...
-		if (!(forward ? cur.mathForward(word) : cur.mathBackward(word))) {
-			// ... and if movement failed, then finish forward or backwards
+		// Try in order (1) close macromode and (2) move cursor...
+		if (!cur.macroModeClose()
+		     && !(forward ? cur.mathForward(word) : cur.mathBackward(word))) {
+			// ... and both failed, then finish forward or backward
 			// as necessary
 			cmd = FuncRequest(finish_lfun);
 			cur.undispatched();

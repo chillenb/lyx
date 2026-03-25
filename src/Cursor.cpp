@@ -846,6 +846,8 @@ void Cursor::dispatch(FuncRequest const & cmd0)
 			safe.pos() = safe.lastpos();
 		}
 		operator=(safe);
+		// FIXME: should the screen update flags be preserved? After
+		// all an update may have been requested for a reason.
 		disp_.screenUpdate(Update::None);
 		disp_.dispatched(false);
 	} else {
