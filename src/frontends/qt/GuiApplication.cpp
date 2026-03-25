@@ -1794,20 +1794,16 @@ void GuiApplication::dispatch(FuncRequest const & cmd, DispatchResult & dr)
 		break;
 
 	case LFUN_LYX_QUIT:
-		// Temporary and imperfect fix for SIGABRT at exiting time on macOS
-		// Tahoe. See
-		// https://www.mail-archive.com/lyx-devel@lists.lyx.org/msg225496.html
-		// FIXME: This fix should be removed once the problem is gone.
-#if defined(Q_OS_MACOS) && QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
-		if (QOperatingSystemVersion::current() >= QOperatingSystemVersion(QOperatingSystemVersion::MacOS, 26))
-				std::this_thread::sleep_for(std::chrono::seconds(2));
-#endif
+		if (current_view_) {
+			current_view_->message(from_utf8(N_("Exiting.")));
+			if (!current_view_->closeBufferAll()) {
+				current_view_->message(from_utf8(N_("Cancelled")));
+				break;
+			}
+		}
 		// quitting is triggered by the gui code
 		// (leaving the event loop).
-		if (current_view_)
-			current_view_->message(from_utf8(N_("Exiting.")));
-		if (closeAllViews())
-			quit();
+		QApplication::quit();
 		break;
 
 	case LFUN_SCREEN_FONT_UPDATE: {

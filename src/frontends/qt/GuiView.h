@@ -165,6 +165,9 @@ public:
 	bool closeWorkArea(GuiWorkArea * wa);
 	/// closes the buffer
 	bool closeBuffer(Buffer & buf);
+	/// Close all document buffers.
+	bool closeBufferAll();
+
 	///
 	void openDocuments(std::string const & filename, int origin);
 	///
@@ -325,8 +328,6 @@ private:
 	void openChildDocument(std::string const & filename);
 	/// Close current document buffer.
 	bool closeBuffer();
-	/// Close all document buffers.
-	bool closeBufferAll();
 	///
 	TabWorkArea * addTabWorkArea();
 
