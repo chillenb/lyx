@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-02-23 08:11+0100\n"
-"PO-Revision-Date: 2026-02-23 07:22+0000\n"
+"POT-Creation-Date: 2026-03-27 15:58+0100\n"
+"PO-Revision-Date: 2026-03-27 23:39+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -16280,6 +16280,461 @@ msgstr "Na šírku (plávanie)"
 msgid "Latex8 Article (Obsolete)"
 msgstr "LaTeX8 článok (Zastaraný)"
 
+#: lib/layouts/latexcolors.module:2
+msgid "LaTeX Colors"
+msgstr "Farby LaTeXu"
+
+#: lib/layouts/latexcolors.module:5
+msgid "Provides custom colors from the latexcolors package"
+msgstr "Poskytuje vlastné farby z balíka latexcolors"
+
+#: lib/layouts/latexcolors.module:12
+msgid "Air Force blue"
+msgstr "Modrá (Air Force blue)"
+
+#: lib/layouts/latexcolors.module:14 lib/layouts/latexcolors.module:22
+#: lib/layouts/latexcolors.module:30 lib/layouts/latexcolors.module:38
+#: lib/layouts/latexcolors.module:46 lib/layouts/latexcolors.module:54
+#: lib/layouts/latexcolors.module:62 lib/layouts/latexcolors.module:70
+#: lib/layouts/latexcolors.module:78 lib/layouts/latexcolors.module:86
+#: lib/layouts/latexcolors.module:94 lib/layouts/latexcolors.module:102
+#: lib/layouts/latexcolors.module:110 lib/layouts/latexcolors.module:118
+#: lib/layouts/latexcolors.module:126 lib/layouts/latexcolors.module:134
+#: lib/layouts/latexcolors.module:142 lib/layouts/latexcolors.module:150
+#: lib/layouts/latexcolors.module:158 lib/layouts/latexcolors.module:166
+#: lib/layouts/latexcolors.module:174 lib/layouts/latexcolors.module:182
+#: lib/layouts/latexcolors.module:190 lib/layouts/latexcolors.module:198
+#: lib/layouts/latexcolors.module:206 lib/layouts/latexcolors.module:214
+#: lib/layouts/latexcolors.module:222 lib/layouts/latexcolors.module:230
+#: lib/layouts/latexcolors.module:238 lib/layouts/latexcolors.module:246
+#: lib/layouts/latexcolors.module:254 lib/layouts/latexcolors.module:262
+#: lib/layouts/latexcolors.module:270 lib/layouts/latexcolors.module:278
+#: lib/layouts/latexcolors.module:286 lib/layouts/latexcolors.module:294
+#: lib/layouts/latexcolors.module:302 lib/layouts/latexcolors.module:310
+#: lib/layouts/latexcolors.module:318 lib/layouts/latexcolors.module:326
+#: lib/layouts/latexcolors.module:334 lib/layouts/latexcolors.module:342
+#: lib/layouts/latexcolors.module:350 lib/layouts/latexcolors.module:358
+#: lib/layouts/latexcolors.module:366 lib/layouts/latexcolors.module:374
+#: lib/layouts/latexcolors.module:382 lib/layouts/latexcolors.module:390
+#: lib/layouts/latexcolors.module:398 lib/layouts/latexcolors.module:406
+#: lib/layouts/latexcolors.module:414 lib/layouts/latexcolors.module:422
+#: lib/layouts/latexcolors.module:430 lib/layouts/latexcolors.module:438
+#: lib/layouts/latexcolors.module:446 lib/layouts/latexcolors.module:454
+#: lib/layouts/latexcolors.module:462 lib/layouts/latexcolors.module:470
+#: lib/layouts/latexcolors.module:478 lib/layouts/latexcolors.module:486
+#: lib/layouts/latexcolors.module:494 lib/layouts/latexcolors.module:502
+#: lib/layouts/latexcolors.module:510 lib/layouts/latexcolors.module:518
+#: lib/layouts/latexcolors.module:526 lib/layouts/latexcolors.module:534
+#: lib/layouts/latexcolors.module:542 lib/layouts/latexcolors.module:550
+#: lib/layouts/latexcolors.module:558 lib/layouts/latexcolors.module:566
+#: lib/layouts/latexcolors.module:574 lib/layouts/latexcolors.module:582
+#: lib/layouts/latexcolors.module:590 lib/layouts/latexcolors.module:598
+#: lib/layouts/latexcolors.module:606 lib/layouts/latexcolors.module:614
+#: lib/layouts/latexcolors.module:622 lib/layouts/latexcolors.module:630
+#: lib/layouts/latexcolors.module:638 lib/layouts/latexcolors.module:646
+#: lib/layouts/latexcolors.module:654 lib/layouts/latexcolors.module:662
+#: lib/layouts/latexcolors.module:670 lib/layouts/latexcolors.module:678
+#: lib/layouts/latexcolors.module:686 lib/layouts/latexcolors.module:694
+#: lib/layouts/latexcolors.module:702 lib/layouts/latexcolors.module:710
+#: lib/layouts/latexcolors.module:718 lib/layouts/latexcolors.module:726
+#: lib/layouts/latexcolors.module:734 lib/layouts/latexcolors.module:742
+#: lib/layouts/latexcolors.module:750 lib/layouts/latexcolors.module:758
+#: lib/layouts/latexcolors.module:766 lib/layouts/latexcolors.module:774
+#: lib/layouts/latexcolors.module:782 lib/layouts/latexcolors.module:790
+#: lib/layouts/latexcolors.module:798 lib/layouts/latexcolors.module:806
+#: lib/layouts/latexcolors.module:814 lib/layouts/latexcolors.module:822
+#: lib/layouts/latexcolors.module:830 lib/layouts/latexcolors.module:838
+#: lib/layouts/latexcolors.module:846 lib/layouts/latexcolors.module:854
+#: lib/layouts/latexcolors.module:862 lib/layouts/latexcolors.module:870
+#: lib/layouts/latexcolors.module:878 lib/layouts/latexcolors.module:886
+#: lib/layouts/latexcolors.module:894 lib/layouts/latexcolors.module:902
+#: lib/layouts/latexcolors.module:910 lib/layouts/latexcolors.module:918
+#: lib/layouts/latexcolors.module:926 lib/layouts/latexcolors.module:934
+#: lib/layouts/latexcolors.module:942 lib/layouts/latexcolors.module:950
+#: lib/layouts/latexcolors.module:958 lib/layouts/latexcolors.module:966
+#: lib/layouts/latexcolors.module:974 lib/layouts/latexcolors.module:982
+#: lib/layouts/latexcolors.module:990 lib/layouts/latexcolors.module:998
+#: lib/layouts/latexcolors.module:1006 lib/layouts/latexcolors.module:1014
+#: lib/layouts/latexcolors.module:1022 lib/layouts/latexcolors.module:1030
+#: lib/layouts/latexcolors.module:1038 lib/layouts/latexcolors.module:1046
+#: lib/layouts/latexcolors.module:1054 lib/layouts/latexcolors.module:1062
+#: lib/layouts/latexcolors.module:1070 lib/layouts/latexcolors.module:1078
+#: lib/layouts/latexcolors.module:1086 lib/layouts/latexcolors.module:1094
+#: lib/layouts/latexcolors.module:1102 lib/layouts/latexcolors.module:1110
+#: lib/layouts/latexcolors.module:1118 lib/layouts/latexcolors.module:1126
+#: lib/layouts/latexcolors.module:1134 lib/layouts/latexcolors.module:1142
+#: lib/layouts/latexcolors.module:1150 lib/layouts/latexcolors.module:1158
+#: lib/layouts/latexcolors.module:1166 lib/layouts/latexcolors.module:1174
+#: lib/layouts/latexcolors.module:1182 lib/layouts/latexcolors.module:1190
+#: lib/layouts/latexcolors.module:1198 lib/layouts/latexcolors.module:1206
+#: lib/layouts/latexcolors.module:1214 lib/layouts/latexcolors.module:1222
+#: lib/layouts/latexcolors.module:1230 lib/layouts/latexcolors.module:1238
+#: lib/layouts/latexcolors.module:1246 lib/layouts/latexcolors.module:1254
+#: lib/layouts/latexcolors.module:1262 lib/layouts/latexcolors.module:1270
+#: lib/layouts/latexcolors.module:1278 lib/layouts/latexcolors.module:1286
+#: lib/layouts/latexcolors.module:1294 lib/layouts/latexcolors.module:1302
+#: lib/layouts/latexcolors.module:1310 lib/layouts/latexcolors.module:1318
+#: lib/layouts/latexcolors.module:1326 lib/layouts/latexcolors.module:1334
+#: lib/layouts/latexcolors.module:1342 lib/layouts/latexcolors.module:1350
+#: lib/layouts/latexcolors.module:1358 lib/layouts/latexcolors.module:1366
+#: lib/layouts/latexcolors.module:1374 lib/layouts/latexcolors.module:1382
+#: lib/layouts/latexcolors.module:1390 lib/layouts/latexcolors.module:1398
+#: lib/layouts/latexcolors.module:1406 lib/layouts/latexcolors.module:1414
+#: lib/layouts/latexcolors.module:1422 lib/layouts/latexcolors.module:1430
+#: lib/layouts/latexcolors.module:1438 lib/layouts/latexcolors.module:1446
+#: lib/layouts/latexcolors.module:1454 lib/layouts/latexcolors.module:1462
+#: lib/layouts/latexcolors.module:1470 lib/layouts/latexcolors.module:1478
+#: lib/layouts/latexcolors.module:1486 lib/layouts/latexcolors.module:1494
+#: lib/layouts/latexcolors.module:1502 lib/layouts/latexcolors.module:1510
+#: lib/layouts/latexcolors.module:1518 lib/layouts/latexcolors.module:1526
+#: lib/layouts/latexcolors.module:1534 lib/layouts/latexcolors.module:1542
+#: lib/layouts/latexcolors.module:1550 lib/layouts/latexcolors.module:1558
+#: lib/layouts/latexcolors.module:1566 lib/layouts/latexcolors.module:1574
+#: lib/layouts/latexcolors.module:1582 lib/layouts/latexcolors.module:1590
+#: lib/layouts/latexcolors.module:1598 lib/layouts/latexcolors.module:1606
+#: lib/layouts/latexcolors.module:1614 lib/layouts/latexcolors.module:1622
+#: lib/layouts/latexcolors.module:1630 lib/layouts/latexcolors.module:1638
+#: lib/layouts/latexcolors.module:1646 lib/layouts/latexcolors.module:1654
+#: lib/layouts/latexcolors.module:1662 lib/layouts/latexcolors.module:1670
+#: lib/layouts/latexcolors.module:1678 lib/layouts/latexcolors.module:1686
+#: lib/layouts/latexcolors.module:1694 lib/layouts/latexcolors.module:1702
+#: lib/layouts/latexcolors.module:1710 lib/layouts/latexcolors.module:1718
+#: lib/layouts/latexcolors.module:1726 lib/layouts/latexcolors.module:1734
+#: lib/layouts/latexcolors.module:1742 lib/layouts/latexcolors.module:1750
+#: lib/layouts/latexcolors.module:1758 lib/layouts/latexcolors.module:1766
+#: lib/layouts/latexcolors.module:1774 lib/layouts/latexcolors.module:1782
+#: lib/layouts/latexcolors.module:1790 lib/layouts/latexcolors.module:1798
+#: lib/layouts/latexcolors.module:1806 lib/layouts/latexcolors.module:1814
+#: lib/layouts/latexcolors.module:1822 lib/layouts/latexcolors.module:1830
+#: lib/layouts/latexcolors.module:1838 lib/layouts/latexcolors.module:1846
+#: lib/layouts/latexcolors.module:1854 lib/layouts/latexcolors.module:1862
+#: lib/layouts/latexcolors.module:1870 lib/layouts/latexcolors.module:1878
+#: lib/layouts/latexcolors.module:1886 lib/layouts/latexcolors.module:1894
+#: lib/layouts/latexcolors.module:1902 lib/layouts/latexcolors.module:1910
+#: lib/layouts/latexcolors.module:1918 lib/layouts/latexcolors.module:1926
+#: lib/layouts/latexcolors.module:1934 lib/layouts/latexcolors.module:1942
+#: lib/layouts/latexcolors.module:1950 lib/layouts/latexcolors.module:1958
+#: lib/layouts/latexcolors.module:1966 lib/layouts/latexcolors.module:1974
+#: lib/layouts/latexcolors.module:1982 lib/layouts/latexcolors.module:1990
+#: lib/layouts/latexcolors.module:1998 lib/layouts/latexcolors.module:2006
+#: lib/layouts/latexcolors.module:2014 lib/layouts/latexcolors.module:2022
+#: lib/layouts/latexcolors.module:2030 lib/layouts/latexcolors.module:2038
+#: lib/layouts/latexcolors.module:2046 lib/layouts/latexcolors.module:2054
+#: lib/layouts/latexcolors.module:2062 lib/layouts/latexcolors.module:2070
+#: lib/layouts/latexcolors.module:2078 lib/layouts/latexcolors.module:2086
+#: lib/layouts/latexcolors.module:2094 lib/layouts/latexcolors.module:2102
+#: lib/layouts/latexcolors.module:2110 lib/layouts/latexcolors.module:2118
+#: lib/layouts/latexcolors.module:2126 lib/layouts/latexcolors.module:2134
+#: lib/layouts/latexcolors.module:2142 lib/layouts/latexcolors.module:2150
+#: lib/layouts/latexcolors.module:2158 lib/layouts/latexcolors.module:2166
+#: lib/layouts/latexcolors.module:2174 lib/layouts/latexcolors.module:2182
+#: lib/layouts/latexcolors.module:2190 lib/layouts/latexcolors.module:2198
+#: lib/layouts/latexcolors.module:2206 lib/layouts/latexcolors.module:2214
+#: lib/layouts/latexcolors.module:2222 lib/layouts/latexcolors.module:2230
+#: lib/layouts/latexcolors.module:2238 lib/layouts/latexcolors.module:2246
+#: lib/layouts/latexcolors.module:2254 lib/layouts/latexcolors.module:2262
+#: lib/layouts/latexcolors.module:2270 lib/layouts/latexcolors.module:2278
+#: lib/layouts/latexcolors.module:2286 lib/layouts/latexcolors.module:2294
+#: lib/layouts/latexcolors.module:2302 lib/layouts/latexcolors.module:2310
+#: lib/layouts/latexcolors.module:2318 lib/layouts/latexcolors.module:2326
+#: lib/layouts/latexcolors.module:2334 lib/layouts/latexcolors.module:2342
+#: lib/layouts/latexcolors.module:2350 lib/layouts/latexcolors.module:2358
+#: lib/layouts/latexcolors.module:2366 lib/layouts/latexcolors.module:2374
+#: lib/layouts/latexcolors.module:2382 lib/layouts/latexcolors.module:2390
+#: lib/layouts/latexcolors.module:2398 lib/layouts/latexcolors.module:2406
+#: lib/layouts/latexcolors.module:2414 lib/layouts/latexcolors.module:2422
+#: lib/layouts/latexcolors.module:2430 lib/layouts/latexcolors.module:2438
+#: lib/layouts/latexcolors.module:2446 lib/layouts/latexcolors.module:2454
+#: lib/layouts/latexcolors.module:2462 lib/layouts/latexcolors.module:2470
+#: lib/layouts/latexcolors.module:2478 lib/layouts/latexcolors.module:2486
+#: lib/layouts/latexcolors.module:2494 lib/layouts/latexcolors.module:2502
+#: lib/layouts/latexcolors.module:2510 lib/layouts/latexcolors.module:2518
+#: lib/layouts/latexcolors.module:2526 lib/layouts/latexcolors.module:2534
+#: lib/layouts/latexcolors.module:2542 lib/layouts/latexcolors.module:2550
+#: lib/layouts/latexcolors.module:2558 lib/layouts/latexcolors.module:2566
+#: lib/layouts/latexcolors.module:2574 lib/layouts/latexcolors.module:2582
+#: lib/layouts/latexcolors.module:2590 lib/layouts/latexcolors.module:2598
+#: lib/layouts/latexcolors.module:2606 lib/layouts/latexcolors.module:2614
+#: lib/layouts/latexcolors.module:2622 lib/layouts/latexcolors.module:2630
+#: lib/layouts/latexcolors.module:2638 lib/layouts/latexcolors.module:2646
+#: lib/layouts/latexcolors.module:2654 lib/layouts/latexcolors.module:2662
+#: lib/layouts/latexcolors.module:2670 lib/layouts/latexcolors.module:2678
+#: lib/layouts/latexcolors.module:2686 lib/layouts/latexcolors.module:2694
+#: lib/layouts/latexcolors.module:2702 lib/layouts/latexcolors.module:2710
+#: lib/layouts/latexcolors.module:2718 lib/layouts/latexcolors.module:2726
+#: lib/layouts/latexcolors.module:2734 lib/layouts/latexcolors.module:2742
+#: lib/layouts/latexcolors.module:2750 lib/layouts/latexcolors.module:2758
+#: lib/layouts/latexcolors.module:2766 lib/layouts/latexcolors.module:2774
+#: lib/layouts/latexcolors.module:2782 lib/layouts/latexcolors.module:2790
+#: lib/layouts/latexcolors.module:2798 lib/layouts/latexcolors.module:2806
+#: lib/layouts/latexcolors.module:2814 lib/layouts/latexcolors.module:2822
+#: lib/layouts/latexcolors.module:2830 lib/layouts/latexcolors.module:2838
+#: lib/layouts/latexcolors.module:2846 lib/layouts/latexcolors.module:2854
+#: lib/layouts/latexcolors.module:2862 lib/layouts/latexcolors.module:2870
+#: lib/layouts/latexcolors.module:2878 lib/layouts/latexcolors.module:2886
+#: lib/layouts/latexcolors.module:2894 lib/layouts/latexcolors.module:2902
+#: lib/layouts/latexcolors.module:2910 lib/layouts/latexcolors.module:2918
+#: lib/layouts/latexcolors.module:2926 lib/layouts/latexcolors.module:2934
+#: lib/layouts/latexcolors.module:2942 lib/layouts/latexcolors.module:2950
+#: lib/layouts/latexcolors.module:2958 lib/layouts/latexcolors.module:2966
+#: lib/layouts/latexcolors.module:2974 lib/layouts/latexcolors.module:2982
+#: lib/layouts/latexcolors.module:2990 lib/layouts/latexcolors.module:2998
+#: lib/layouts/latexcolors.module:3006 lib/layouts/latexcolors.module:3014
+#: lib/layouts/latexcolors.module:3022 lib/layouts/latexcolors.module:3030
+#: lib/layouts/latexcolors.module:3038 lib/layouts/latexcolors.module:3046
+#: lib/layouts/latexcolors.module:3054 lib/layouts/latexcolors.module:3062
+#: lib/layouts/latexcolors.module:3070 lib/layouts/latexcolors.module:3078
+#: lib/layouts/latexcolors.module:3086 lib/layouts/latexcolors.module:3094
+#: lib/layouts/latexcolors.module:3102 lib/layouts/latexcolors.module:3110
+#: lib/layouts/latexcolors.module:3118 lib/layouts/latexcolors.module:3126
+#: lib/layouts/latexcolors.module:3134 lib/layouts/latexcolors.module:3142
+#: lib/layouts/latexcolors.module:3150 lib/layouts/latexcolors.module:3158
+#: lib/layouts/latexcolors.module:3166 lib/layouts/latexcolors.module:3174
+#: lib/layouts/latexcolors.module:3182 lib/layouts/latexcolors.module:3190
+#: lib/layouts/latexcolors.module:3198 lib/layouts/latexcolors.module:3206
+#: lib/layouts/latexcolors.module:3214 lib/layouts/latexcolors.module:3222
+#: lib/layouts/latexcolors.module:3230 lib/layouts/latexcolors.module:3238
+#: lib/layouts/latexcolors.module:3246 lib/layouts/latexcolors.module:3254
+#: lib/layouts/latexcolors.module:3262 lib/layouts/latexcolors.module:3270
+#: lib/layouts/latexcolors.module:3278 lib/layouts/latexcolors.module:3286
+#: lib/layouts/latexcolors.module:3294 lib/layouts/latexcolors.module:3302
+#: lib/layouts/latexcolors.module:3310 lib/layouts/latexcolors.module:3318
+#: lib/layouts/latexcolors.module:3326 lib/layouts/latexcolors.module:3334
+#: lib/layouts/latexcolors.module:3342 lib/layouts/latexcolors.module:3350
+#: lib/layouts/latexcolors.module:3358 lib/layouts/latexcolors.module:3366
+#: lib/layouts/latexcolors.module:3374 lib/layouts/latexcolors.module:3382
+#: lib/layouts/latexcolors.module:3390 lib/layouts/latexcolors.module:3398
+#: lib/layouts/latexcolors.module:3406 lib/layouts/latexcolors.module:3414
+#: lib/layouts/latexcolors.module:3422 lib/layouts/latexcolors.module:3430
+#: lib/layouts/latexcolors.module:3438 lib/layouts/latexcolors.module:3446
+#: lib/layouts/latexcolors.module:3454 lib/layouts/latexcolors.module:3462
+#: lib/layouts/latexcolors.module:3470 lib/layouts/latexcolors.module:3478
+#: lib/layouts/latexcolors.module:3486 lib/layouts/latexcolors.module:3494
+#: lib/layouts/latexcolors.module:3502 lib/layouts/latexcolors.module:3510
+#: lib/layouts/latexcolors.module:3518 lib/layouts/latexcolors.module:3526
+#: lib/layouts/latexcolors.module:3534 lib/layouts/latexcolors.module:3542
+#: lib/layouts/latexcolors.module:3550 lib/layouts/latexcolors.module:3558
+#: lib/layouts/latexcolors.module:3566 lib/layouts/latexcolors.module:3574
+#: lib/layouts/latexcolors.module:3582 lib/layouts/latexcolors.module:3590
+#: lib/layouts/latexcolors.module:3598 lib/layouts/latexcolors.module:3606
+#: lib/layouts/latexcolors.module:3614 lib/layouts/latexcolors.module:3622
+#: lib/layouts/latexcolors.module:3630 lib/layouts/latexcolors.module:3638
+#: lib/layouts/latexcolors.module:3646 lib/layouts/latexcolors.module:3654
+#: lib/layouts/latexcolors.module:3662 lib/layouts/latexcolors.module:3670
+#: lib/layouts/latexcolors.module:3678 lib/layouts/latexcolors.module:3686
+#: lib/layouts/latexcolors.module:3694 lib/layouts/latexcolors.module:3702
+#: lib/layouts/latexcolors.module:3710 lib/layouts/latexcolors.module:3718
+#: lib/layouts/latexcolors.module:3726 lib/layouts/latexcolors.module:3734
+#: lib/layouts/latexcolors.module:3742 lib/layouts/latexcolors.module:3750
+#: lib/layouts/latexcolors.module:3758 lib/layouts/latexcolors.module:3766
+#: lib/layouts/latexcolors.module:3774 lib/layouts/latexcolors.module:3782
+#: lib/layouts/latexcolors.module:3790 lib/layouts/latexcolors.module:3798
+#: lib/layouts/latexcolors.module:3806 lib/layouts/latexcolors.module:3814
+#: lib/layouts/latexcolors.module:3822 lib/layouts/latexcolors.module:3830
+#: lib/layouts/latexcolors.module:3838 lib/layouts/latexcolors.module:3846
+#: lib/layouts/latexcolors.module:3854 lib/layouts/latexcolors.module:3862
+#: lib/layouts/latexcolors.module:3870 lib/layouts/latexcolors.module:3878
+#: lib/layouts/latexcolors.module:3886 lib/layouts/latexcolors.module:3894
+#: lib/layouts/latexcolors.module:3902 lib/layouts/latexcolors.module:3910
+#: lib/layouts/latexcolors.module:3918 lib/layouts/latexcolors.module:3926
+#: lib/layouts/latexcolors.module:3934 lib/layouts/latexcolors.module:3942
+#: lib/layouts/latexcolors.module:3950 lib/layouts/latexcolors.module:3958
+#: lib/layouts/latexcolors.module:3966 lib/layouts/latexcolors.module:3974
+#: lib/layouts/latexcolors.module:3982 lib/layouts/latexcolors.module:3990
+#: lib/layouts/latexcolors.module:3998 lib/layouts/latexcolors.module:4006
+#: lib/layouts/latexcolors.module:4014 lib/layouts/latexcolors.module:4022
+#: lib/layouts/latexcolors.module:4030 lib/layouts/latexcolors.module:4038
+#: lib/layouts/latexcolors.module:4046 lib/layouts/latexcolors.module:4054
+#: lib/layouts/latexcolors.module:4062 lib/layouts/latexcolors.module:4070
+#: lib/layouts/latexcolors.module:4078 lib/layouts/latexcolors.module:4086
+#: lib/layouts/latexcolors.module:4094 lib/layouts/latexcolors.module:4102
+#: lib/layouts/latexcolors.module:4110 lib/layouts/latexcolors.module:4118
+#: lib/layouts/latexcolors.module:4126 lib/layouts/latexcolors.module:4134
+#: lib/layouts/latexcolors.module:4142 lib/layouts/latexcolors.module:4150
+#: lib/layouts/latexcolors.module:4158 lib/layouts/latexcolors.module:4166
+#: lib/layouts/latexcolors.module:4174 lib/layouts/latexcolors.module:4182
+#: lib/layouts/latexcolors.module:4190 lib/layouts/latexcolors.module:4198
+#: lib/layouts/latexcolors.module:4206 lib/layouts/latexcolors.module:4214
+#: lib/layouts/latexcolors.module:4222 lib/layouts/latexcolors.module:4230
+#: lib/layouts/latexcolors.module:4238 lib/layouts/latexcolors.module:4246
+#: lib/layouts/latexcolors.module:4254 lib/layouts/latexcolors.module:4262
+#: lib/layouts/latexcolors.module:4270 lib/layouts/latexcolors.module:4278
+#: lib/layouts/latexcolors.module:4286 lib/layouts/latexcolors.module:4294
+#: lib/layouts/latexcolors.module:4302 lib/layouts/latexcolors.module:4310
+#: lib/layouts/latexcolors.module:4318 lib/layouts/latexcolors.module:4326
+#: lib/layouts/latexcolors.module:4334 lib/layouts/latexcolors.module:4342
+#: lib/layouts/latexcolors.module:4350 lib/layouts/latexcolors.module:4358
+#: lib/layouts/latexcolors.module:4366 lib/layouts/latexcolors.module:4374
+#: lib/layouts/latexcolors.module:4382 lib/layouts/latexcolors.module:4390
+#: lib/layouts/latexcolors.module:4398 lib/layouts/latexcolors.module:4406
+#: lib/layouts/latexcolors.module:4414 lib/layouts/latexcolors.module:4422
+#: lib/layouts/latexcolors.module:4430 lib/layouts/latexcolors.module:4438
+#: lib/layouts/latexcolors.module:4446 lib/layouts/latexcolors.module:4454
+#: lib/layouts/latexcolors.module:4462 lib/layouts/latexcolors.module:4470
+#: lib/layouts/latexcolors.module:4478 lib/layouts/latexcolors.module:4486
+#: lib/layouts/latexcolors.module:4494 lib/layouts/latexcolors.module:4502
+#: lib/layouts/latexcolors.module:4510 lib/layouts/latexcolors.module:4518
+#: lib/layouts/latexcolors.module:4526 lib/layouts/latexcolors.module:4534
+#: lib/layouts/latexcolors.module:4542 lib/layouts/latexcolors.module:4550
+#: lib/layouts/latexcolors.module:4558 lib/layouts/latexcolors.module:4566
+#: lib/layouts/latexcolors.module:4574 lib/layouts/latexcolors.module:4582
+#: lib/layouts/latexcolors.module:4590 lib/layouts/latexcolors.module:4598
+#: lib/layouts/latexcolors.module:4606 lib/layouts/latexcolors.module:4614
+#: lib/layouts/latexcolors.module:4622 lib/layouts/latexcolors.module:4630
+#: lib/layouts/latexcolors.module:4638 lib/layouts/latexcolors.module:4646
+#: lib/layouts/latexcolors.module:4654 lib/layouts/latexcolors.module:4662
+#: lib/layouts/latexcolors.module:4670 lib/layouts/latexcolors.module:4678
+#: lib/layouts/latexcolors.module:4686 lib/layouts/latexcolors.module:4694
+#: lib/layouts/latexcolors.module:4702 lib/layouts/latexcolors.module:4710
+#: lib/layouts/latexcolors.module:4718 lib/layouts/latexcolors.module:4726
+#: lib/layouts/latexcolors.module:4734 lib/layouts/latexcolors.module:4742
+#: lib/layouts/latexcolors.module:4750 lib/layouts/latexcolors.module:4758
+#: lib/layouts/latexcolors.module:4766 lib/layouts/latexcolors.module:4774
+#: lib/layouts/latexcolors.module:4782 lib/layouts/latexcolors.module:4790
+#: lib/layouts/latexcolors.module:4798 lib/layouts/latexcolors.module:4806
+#: lib/layouts/latexcolors.module:4814 lib/layouts/latexcolors.module:4822
+#: lib/layouts/latexcolors.module:4830 lib/layouts/latexcolors.module:4838
+#: lib/layouts/latexcolors.module:4846 lib/layouts/latexcolors.module:4854
+#: lib/layouts/latexcolors.module:4862 lib/layouts/latexcolors.module:4870
+#: lib/layouts/latexcolors.module:4878 lib/layouts/latexcolors.module:4886
+#: lib/layouts/latexcolors.module:4894 lib/layouts/latexcolors.module:4902
+#: lib/layouts/latexcolors.module:4910 lib/layouts/latexcolors.module:4918
+#: lib/layouts/latexcolors.module:4926 lib/layouts/latexcolors.module:4934
+#: lib/layouts/latexcolors.module:4942 lib/layouts/latexcolors.module:4950
+#: lib/layouts/latexcolors.module:4958 lib/layouts/latexcolors.module:4966
+#: lib/layouts/latexcolors.module:4974 lib/layouts/latexcolors.module:4982
+#: lib/layouts/latexcolors.module:4990 lib/layouts/latexcolors.module:4998
+#: lib/layouts/latexcolors.module:5006 lib/layouts/latexcolors.module:5014
+#: lib/layouts/latexcolors.module:5022 lib/layouts/latexcolors.module:5030
+#: lib/layouts/latexcolors.module:5038 lib/layouts/latexcolors.module:5046
+#: lib/layouts/latexcolors.module:5054 lib/layouts/latexcolors.module:5062
+#: lib/layouts/latexcolors.module:5070 lib/layouts/latexcolors.module:5078
+#: lib/layouts/latexcolors.module:5086 lib/layouts/latexcolors.module:5094
+#: lib/layouts/latexcolors.module:5102 lib/layouts/latexcolors.module:5110
+#: lib/layouts/latexcolors.module:5118 lib/layouts/latexcolors.module:5126
+#: lib/layouts/latexcolors.module:5134 lib/layouts/latexcolors.module:5142
+#: lib/layouts/latexcolors.module:5150 lib/layouts/latexcolors.module:5158
+#: lib/layouts/latexcolors.module:5166 lib/layouts/latexcolors.module:5174
+#: lib/layouts/latexcolors.module:5182 lib/layouts/latexcolors.module:5190
+#: lib/layouts/latexcolors.module:5198 lib/layouts/latexcolors.module:5206
+#: lib/layouts/latexcolors.module:5214 lib/layouts/latexcolors.module:5222
+#: lib/layouts/latexcolors.module:5230 lib/layouts/latexcolors.module:5238
+#: lib/layouts/latexcolors.module:5246 lib/layouts/latexcolors.module:5254
+#: lib/layouts/latexcolors.module:5262 lib/layouts/latexcolors.module:5270
+#: lib/layouts/latexcolors.module:5278 lib/layouts/latexcolors.module:5286
+#: lib/layouts/latexcolors.module:5294 lib/layouts/latexcolors.module:5302
+#: lib/layouts/latexcolors.module:5310 lib/layouts/latexcolors.module:5318
+#: lib/layouts/latexcolors.module:5326 lib/layouts/latexcolors.module:5334
+#: lib/layouts/latexcolors.module:5342 lib/layouts/latexcolors.module:5350
+#: lib/layouts/latexcolors.module:5358 lib/layouts/latexcolors.module:5366
+#: lib/layouts/latexcolors.module:5374 lib/layouts/latexcolors.module:5382
+#: lib/layouts/latexcolors.module:5390 lib/layouts/latexcolors.module:5398
+#: lib/layouts/latexcolors.module:5406 lib/layouts/latexcolors.module:5414
+#: lib/layouts/latexcolors.module:5422 lib/layouts/latexcolors.module:5430
+#: lib/layouts/latexcolors.module:5438 lib/layouts/latexcolors.module:5446
+#: lib/layouts/latexcolors.module:5454 lib/layouts/latexcolors.module:5462
+#: lib/layouts/latexcolors.module:5470 lib/layouts/latexcolors.module:5478
+#: lib/layouts/latexcolors.module:5486 lib/layouts/latexcolors.module:5494
+#: lib/layouts/latexcolors.module:5502 lib/layouts/latexcolors.module:5510
+#: lib/layouts/latexcolors.module:5518 lib/layouts/latexcolors.module:5526
+#: lib/layouts/latexcolors.module:5534 lib/layouts/latexcolors.module:5542
+#: lib/layouts/latexcolors.module:5550 lib/layouts/latexcolors.module:5558
+#: lib/layouts/latexcolors.module:5566 lib/layouts/latexcolors.module:5574
+#: lib/layouts/latexcolors.module:5582 lib/layouts/latexcolors.module:5590
+#: lib/layouts/latexcolors.module:5598 lib/layouts/latexcolors.module:5606
+#: lib/layouts/latexcolors.module:5614 lib/layouts/latexcolors.module:5622
+#: lib/layouts/latexcolors.module:5630 lib/layouts/latexcolors.module:5638
+#: lib/layouts/latexcolors.module:5646 lib/layouts/latexcolors.module:5654
+#: lib/layouts/latexcolors.module:5662 lib/layouts/latexcolors.module:5670
+#: lib/layouts/latexcolors.module:5678 lib/layouts/latexcolors.module:5686
+#: lib/layouts/latexcolors.module:5694 lib/layouts/latexcolors.module:5702
+#: lib/layouts/latexcolors.module:5710 lib/layouts/latexcolors.module:5718
+#: lib/layouts/latexcolors.module:5726 lib/layouts/latexcolors.module:5734
+#: lib/layouts/latexcolors.module:5742 lib/layouts/latexcolors.module:5750
+#: lib/layouts/latexcolors.module:5758 lib/layouts/latexcolors.module:5766
+#: lib/layouts/latexcolors.module:5774 lib/layouts/latexcolors.module:5782
+#: lib/layouts/latexcolors.module:5790 lib/layouts/latexcolors.module:5798
+#: lib/layouts/latexcolors.module:5806 lib/layouts/latexcolors.module:5814
+#: lib/layouts/latexcolors.module:5822 lib/layouts/latexcolors.module:5830
+#: lib/layouts/latexcolors.module:5838 lib/layouts/latexcolors.module:5846
+#: lib/layouts/latexcolors.module:5854 lib/layouts/latexcolors.module:5862
+#: lib/layouts/latexcolors.module:5870 lib/layouts/latexcolors.module:5878
+#: lib/layouts/latexcolors.module:5886 lib/layouts/latexcolors.module:5894
+#: lib/layouts/latexcolors.module:5902 lib/layouts/latexcolors.module:5910
+#: lib/layouts/latexcolors.module:5918 lib/layouts/latexcolors.module:5926
+#: lib/layouts/latexcolors.module:5934 lib/layouts/latexcolors.module:5942
+#: lib/layouts/latexcolors.module:5950 lib/layouts/latexcolors.module:5958
+#: lib/layouts/latexcolors.module:5966 lib/layouts/latexcolors.module:5974
+#: lib/layouts/latexcolors.module:5982 lib/layouts/latexcolors.module:5990
+#: lib/layouts/latexcolors.module:5998 lib/layouts/latexcolors.module:6006
+#: lib/layouts/latexcolors.module:6014 lib/layouts/latexcolors.module:6022
+#: lib/layouts/latexcolors.module:6030 lib/layouts/latexcolors.module:6038
+#: lib/layouts/latexcolors.module:6046 lib/layouts/latexcolors.module:6054
+#: lib/layouts/latexcolors.module:6062 lib/layouts/latexcolors.module:6070
+msgid "Latex Colors"
+msgstr "Farby LaTeXu"
+
+#: lib/layouts/latexcolors.module:20
+msgid "Alice blue"
+msgstr "Modrá (Alice blue)"
+
+#: lib/layouts/latexcolors.module:28
+msgid "Alizarin"
+msgstr "Alizarín (Alizarin)"
+
+#: lib/layouts/latexcolors.module:36
+msgid "Almond"
+msgstr "Mandľová (Almond)"
+
+#: lib/layouts/latexcolors.module:44
+msgid "Amaranth"
+msgstr "Amarantová (Amaranth)"
+
+#: lib/layouts/latexcolors.module:52
+msgid "Amber"
+msgstr "Jantárová (Amber)"
+
+#: lib/layouts/latexcolors.module:60
+msgid "Amber (SAE/ECE)"
+msgstr "Jantárová (Amber SAE/ECE)"
+
+#: lib/layouts/latexcolors.module:68
+msgid "American rose"
+msgstr "Ružová (American rose)"
+
+#: lib/layouts/latexcolors.module:76
+msgid "Amethyst"
+msgstr "Ametystová (Amethyst)"
+
+#: lib/layouts/latexcolors.module:84
+msgid "Anti-flash white"
+msgstr "Biela (Anti-flash white)"
+
+#: lib/layouts/latexcolors.module:92
+msgid "Antique brass"
+msgstr "Mosadzová (Antique brass)"
+
+#: lib/layouts/latexcolors.module:100
+msgid "Antique fuchsia"
+msgstr "Fuchsiová (Antique fuchsia)"
+
+#: lib/layouts/latexcolors.module:108
+msgid "Antique white"
+msgstr "Biela (Antique white)"
+
+#: lib/layouts/latexcolors.module:116
+msgid "Ao"
+msgstr "Modrá (Ao)"
+
+#: lib/layouts/latexcolors.module:124
+msgid "Ao (English)"
+msgstr ""
+"Stredne zelená (Ao (English))"
+
+#: lib/layouts/latexcolors.module:132
+msgid "Apple green"
+msgstr "Zelená (Apple green)"
+
 #: lib/layouts/letter.layout:3 lib/examples/Articles:0
 msgid "Letter (Standard Class)"
 msgstr "List (Štandardná trieda)"
@@ -18631,6 +19086,50 @@ msgstr ""
 #: lib/layouts/ruby.module:26 lib/layouts/ruby.module:35
 msgid "Ruby"
 msgstr "Ruby"
+
+#: lib/layouts/latexcolors.module:4924
+msgid "Ruddy"
+msgstr "Červenkavá (Ruddy)"
+
+#: lib/layouts/latexcolors.module:4932
+msgid "Ruddy brown"
+msgstr "Červenkavo-hnedá (Ruddy brown)"
+
+#: lib/layouts/latexcolors.module:4940
+msgid "Ruddy pink"
+msgstr "Červenkavo-ružová (Ruddy pink)"
+
+#: lib/layouts/latexcolors.module:4948
+msgid "Rufous"
+msgstr "Červeno-hnedá (Rufous)"
+
+#: lib/layouts/latexcolors.module:4956
+msgid "Russet"
+msgstr "Hrdzavo-hnedá (Russet)"
+
+#: lib/layouts/latexcolors.module:4964
+msgid "Rust"
+msgstr "Hrdzavá (Rust)"
+
+#: lib/layouts/latexcolors.module:4972
+msgid "Sacramento State green"
+msgstr "Sacramento štátna-zelená (Sacramento State green)"
+
+#: lib/layouts/latexcolors.module:4980
+msgid "Saddle brown"
+msgstr "Sedlovo-hnedá (Saddle brown)"
+
+#: lib/layouts/latexcolors.module:4988
+msgid "Safety orange (blaze orange)"
+msgstr "Bezpečnostná-oranžová (Safety orange (blaze orange))"
+
+#: lib/layouts/latexcolors.module:4996
+msgid "Saffron"
+msgstr "Šafran (Saffron)"
+
+#: lib/layouts/latexcolors.module:5004
+msgid "St. Patrick\\'s blue"
+msgstr "Svätého Patrika-modrá (St. Patrick\\'s blue)"
 
 #: lib/layouts/ruby.module:49
 msgid "ruby text"
@@ -22739,6 +23238,22 @@ msgstr "Walesky"
 msgid "Black"
 msgstr "Čierna (Black)"
 
+#: lib/layouts/latexcolors.module:380
+msgid "Blanched Almond"
+msgstr "MandľovoBiela (Blanched Almond)"
+
+#: lib/layouts/latexcolors.module:388
+msgid "Bleu de France"
+msgstr "Modrá (Bleu de France)"
+
+#: lib/layouts/latexcolors.module:396
+msgid "Blizzard Blue"
+msgstr "Modrá (Blizzard Blue)"
+
+#: lib/layouts/latexcolors.module:404
+msgid "Blond"
+msgstr "Blonďatá (Blond)"
+
 #: lib/latexcolors:48 lib/latexcolors:55 lib/latexcolors:63 lib/latexcolors:71
 #: lib/latexcolors:79 lib/latexcolors:86 lib/latexcolors:93 lib/latexcolors:101
 #: lib/latexcolors:109 lib/latexcolors:116 lib/latexcolors:124
@@ -22748,25 +23263,534 @@ msgstr "Čierna (Black)"
 msgid "LaTeX Base Colors"
 msgstr "Základné farby LaTeXu"
 
-#: lib/latexcolors:53
+#: lib/layouts/latexcolors.module:1404 lib/latexcolors:53
 msgid "Dark gray"
-msgstr "Tmavošedá (Dark gray)"
+msgstr "Tmavo-šedá (Dark gray)"
 
-#: lib/latexcolors:61 lib/latexcolors:205 lib/latexcolors:894
+#: lib/layouts/latexcolors.module:1412
+msgid "Dark green"
+msgstr "Tmavo-zelená (Dark green)"
+
+#: lib/layouts/latexcolors.module:1420
+msgid "Dark jungle green"
+msgstr "Tmavá džunglo-zelená (Dark jungle green)"
+
+#: lib/layouts/latexcolors.module:1428
+msgid "Dark khaki"
+msgstr "Tmavá khaki (Dark khaki)"
+
+#: lib/layouts/latexcolors.module:1436
+msgid "Dark lava"
+msgstr "Tmavá láva (Dark lava)"
+
+#: lib/layouts/latexcolors.module:1444
+msgid "Dark lavender"
+msgstr "Tmavá levanduľová (Dark lavender)"
+
+#: lib/layouts/latexcolors.module:1452
+msgid "Dark magenta"
+msgstr "Tmavo-purpurová (Dark magenta)"
+
+#: lib/layouts/latexcolors.module:1460
+msgid "Dark midnight blue"
+msgstr "Polnočná modrá 1 (Dark midnight blue)"
+
+#: lib/layouts/latexcolors.module:1468
+msgid "Dark olive green"
+msgstr "Tmavá olivo-zelená (Dark olive green)"
+
+#: lib/layouts/latexcolors.module:1476
+msgid "Dark orange"
+msgstr "Tmavo-oranžová (Dark orange)"
+
+#: lib/layouts/latexcolors.module:1484
+msgid "Dark orchid"
+msgstr "Tmavo-orchideová (Dark orchid)"
+
+#: lib/layouts/latexcolors.module:1492
+msgid "Dark pastel blue"
+msgstr "Tmavá pastelovo-modrá (Dark pastel blue)"
+
+#: lib/layouts/latexcolors.module:1500
+msgid "Dark pastel green"
+msgstr "Tmavá pastelovo-zelená (Dark pastel green)"
+
+#: lib/layouts/latexcolors.module:1508
+msgid "Dark pastel purple"
+msgstr "Tmavá pastelovo-fialová (Dark pastel purple)"
+
+#: lib/layouts/latexcolors.module:1516
+msgid "Dark pastel red"
+msgstr "Tmavá pastelovo-červená (Dark pastel red)"
+
+#: lib/layouts/latexcolors.module:1524
+msgid "Dark pink"
+msgstr "Tmavá ružová (Dark pink)"
+
+#: lib/layouts/latexcolors.module:1532
+msgid "Dark powder blue"
+msgstr "Tmavá práškovo-modrá (Dark powder blue)"
+
+#: lib/layouts/latexcolors.module:1540
+msgid "Dark raspberry"
+msgstr "Tmavá malinová (Dark raspberry)"
+
+#: lib/layouts/latexcolors.module:1548
+msgid "Dark red"
+msgstr "Tmavo-červená (Dark red)"
+
+#: lib/layouts/latexcolors.module:1556
+msgid "Dark salmon"
+msgstr "Tmavo-lososová (Dark salmon)"
+
+#: lib/layouts/latexcolors.module:1564
+msgid "Dark scarlet"
+msgstr "Tmavo-šarlátová (Dark scarlet)"
+
+#: lib/layouts/latexcolors.module:1572
+msgid "Dark sea green"
+msgstr "Tmavá morsko-zelená (Dark sea green)"
+
+#: lib/layouts/latexcolors.module:1580
+msgid "Dark sienna"
+msgstr "Tmavá siena (Dark sienna)"
+
+#: lib/layouts/latexcolors.module:1588
+msgid "Dark slate blue"
+msgstr "Tmavá bridlicovo-modrá (Dark slate blue)"
+
+#: lib/layouts/latexcolors.module:1596
+msgid "Dark slate gray"
+msgstr "Tmavá bridlicovo-šedá (Dark slate gray)"
+
+#: lib/layouts/latexcolors.module:1604
+msgid "Dark spring green"
+msgstr "Tmavá jarno-zelená (Dark spring green)"
+
+#: lib/layouts/latexcolors.module:1612
+msgid "Dark tan"
+msgstr "Tmavo-hnedá (Dark tan)"
+
+#: lib/layouts/latexcolors.module:1620
+msgid "Dark tangerine"
+msgstr "Tmavá mandarínková (Dark tangerine)"
+
+#: lib/layouts/latexcolors.module:1628
+msgid "Dark taupe"
+msgstr "Tmavá láva (Dark taupe)"
+
+#: lib/layouts/latexcolors.module:1636
+msgid "Dark terra cotta"
+msgstr "Tmavá terakotová (Dark terra cotta)"
+
+#: lib/layouts/latexcolors.module:1644
+msgid "Dark turquoise"
+msgstr "Tmavo-tyrkysová (Dark turquoise)"
+
+#: lib/layouts/latexcolors.module:1652
+msgid "Dark violet"
+msgstr "Tmavo-fialová (Dark violet)"
+
+#: lib/layouts/latexcolors.module:1660
+msgid "Dartmouth green"
+msgstr "Dartmouth zelená (Dartmouth green)"
+
+#: lib/layouts/latexcolors.module:1668
+msgid "Davy\\'s grey"
+msgstr "Davyho šedá (Davy\\'s grey)"
+
+#: lib/layouts/latexcolors.module:1676
+msgid "Debian red"
+msgstr "Debian červená (Debian red)"
+
+#: lib/layouts/latexcolors.module:1684
+msgid "Deep carmine"
+msgstr "Sýto-karmínová (Deep carmine)"
+
+#: lib/layouts/latexcolors.module:1692
+msgid "Deep carmine pink"
+msgstr "Sýta karmínovo-ružová (Deep carmine pink)"
+
+#: lib/layouts/latexcolors.module:1700
+msgid "Deep carrot orange"
+msgstr "Sýta mrkvovo-oranžová (Deep carrot orange)"
+
+#: lib/layouts/latexcolors.module:1708
+msgid "Deep cerise"
+msgstr "Sýto-čerešňová (Deep cerise)"
+
+#: lib/layouts/latexcolors.module:1716
+msgid "Deep champagne"
+msgstr "Sýto-šampanská (Deep champagne)"
+
+#: lib/layouts/latexcolors.module:1724
+msgid "Deep chestnut"
+msgstr "Sýto-gaštanová (Deep chestnut)"
+
+#: lib/layouts/latexcolors.module:1732
+msgid "Deep fuchsia"
+msgstr "Sýto-fuchsiová (Deep fuchsia)"
+
+#: lib/layouts/latexcolors.module:1740
+msgid "Deep jungle green"
+msgstr "Sýta džunglo-zelená (Deep jungle green)"
+
+#: lib/layouts/latexcolors.module:1748
+msgid "Deep lilac"
+msgstr "Sýto-orgovánová (Deep lilac)"
+
+#: lib/layouts/latexcolors.module:1756
+msgid "Deep magenta"
+msgstr "Sýto-purpurová (Deep magenta)"
+
+#: lib/layouts/latexcolors.module:1764
+msgid "Deep peach"
+msgstr "Sýto-broskyňová (Deep peach)"
+
+#: lib/layouts/latexcolors.module:1772
+msgid "Deep pink"
+msgstr "Sýto-ružová (Deep pink)"
+
+#: lib/layouts/latexcolors.module:1780
+msgid "Deep saffron"
+msgstr "Sýto-šafranová (Deep saffron)"
+
+#: lib/layouts/latexcolors.module:1788
+msgid "Deep sky blue"
+msgstr "Sýta nebesko-modrá (Deep sky blue)"
+
+#: lib/layouts/latexcolors.module:1796
+msgid "Denim"
+msgstr "Džínsovo-modrá (Denim)"
+
+#: lib/layouts/latexcolors.module:1804
+msgid "Desert"
+msgstr "Púštna žltá (Desert)"
+
+#: lib/layouts/latexcolors.module:1812
+msgid "Desert sand"
+msgstr "Púštno-piesková (Desert sand)"
+
+#: lib/layouts/latexcolors.module:1820
+msgid "Dim gray"
+msgstr "Tmavo-šedá (Dark gray)"
+
+#: lib/layouts/latexcolors.module:1828
+msgid "Dodger blue"
+msgstr "Dodger-modrá (Dodger blue)"
+
+#: lib/layouts/latexcolors.module:1836
+msgid "Dogwood rose"
+msgstr "Svíb červeno-ružová (Dogwood rose)"
+
+#: lib/layouts/latexcolors.module:1844
+msgid "Dollar bill"
+msgstr "Dolárová bankovka (Dollar bill)"
+
+#: lib/layouts/latexcolors.module:1852
+msgid "Drab"
+msgstr "Šedo-hnedá (Drab)"
+
+#: lib/layouts/latexcolors.module:1860
+msgid "Duke blue"
+msgstr "Vojvodská modrá (Duke blue)"
+
+#: lib/layouts/latexcolors.module:1868
+msgid "Earth yellow"
+msgstr "Zemno-žltá (Earth yellow)"
+
+#: lib/layouts/latexcolors.module:1876
+msgid "Ecru"
+msgstr "Tmavo-šampanská (Ecru)"
+
+#: lib/layouts/latexcolors.module:1884
+msgid "Eggplant"
+msgstr "Baklažánová (Eggplant)"
+
+#: lib/layouts/latexcolors.module:1892
+msgid "Eggshell"
+msgstr "Perleťová (Eggshell)"
+
+#: lib/layouts/latexcolors.module:1900
+msgid "Egyptian blue"
+msgstr "Egyptská modrá (Egyptian blue)"
+
+#: lib/layouts/latexcolors.module:1908
+msgid "Electric blue"
+msgstr "Brilantná modrá (Electric blue)"
+
+#: lib/layouts/latexcolors.module:1916
+msgid "Electric crimson"
+msgstr "Brilantná karmínová (Electric crimson)"
+
+#: lib/layouts/latexcolors.module:1924
+msgid "Electric cyan"
+msgstr "Brilantná azúrová (Electric cyan)"
+
+#: lib/layouts/latexcolors.module:1932
+msgid "Electric green"
+msgstr "Limetková (Electric green)"
+
+#: lib/layouts/latexcolors.module:1940
+msgid "Electric indigo"
+msgstr "Brilantná indigová (Electric indigo)"
+
+#: lib/layouts/latexcolors.module:1948
+msgid "Electric lavender"
+msgstr "Brilantná levanduľa (Electric lavender)"
+
+#: lib/layouts/latexcolors.module:1956
+msgid "Electric lime"
+msgstr "Brilantná limetková (Electric lime)"
+
+#: lib/layouts/latexcolors.module:1964
+msgid "Electric purple"
+msgstr "Brilantná fialová (Electric purple)"
+
+#: lib/layouts/latexcolors.module:1972
+msgid "Electric ultramarine"
+msgstr "Brilantná ultramarínová (Electric ultramarine)"
+
+#: lib/layouts/latexcolors.module:1980
+msgid "Electric violet"
+msgstr "Brilantná fialová (Electric violet)"
+
+#: lib/layouts/latexcolors.module:1988
+msgid "Electric Yellow"
+msgstr "Žltá (Electric Yellow)"
+
+#: lib/layouts/latexcolors.module:2348 lib/latexcolors:61 lib/latexcolors:205
+#: lib/latexcolors:894
 msgid "Gray"
 msgstr "Šedá (Gray)"
 
-#: lib/latexcolors:69
+#: lib/layouts/latexcolors.module:2356
+msgid "Gray (HTML/CSS gray)"
+msgstr "Šedá (Gray (HTML/CSS gray))"
+
+#: lib/layouts/latexcolors.module:2364
+msgid "Gray (X11 gray)"
+msgstr "Šedá (Gray (X11 gray))"
+
+#: lib/layouts/latexcolors.module:2372
+msgid "Gray-asparagus"
+msgstr "Zeleno-špargľová (Gray-asparagus)"
+
+#: lib/layouts/latexcolors.module:2380
+msgid "Green (color wheel) (X11 green)"
+msgstr "Zelená (Green (color wheel) (X11 green))"
+
+#: lib/layouts/latexcolors.module:2388
+msgid "Green (HTML/CSS green)"
+msgstr "Stredne zelená (Green (HTML/CSS green))"
+
+#: lib/layouts/latexcolors.module:2396
+msgid "Green (Munsell)"
+msgstr "Zelená (Green (Munsell))"
+
+#: lib/layouts/latexcolors.module:2404
+msgid "Green (NCS)"
+msgstr "Zelená (Green(NCS))"
+
+#: lib/layouts/latexcolors.module:2412
+msgid "Green (pigment)"
+msgstr "Zelená (Green (pigment))"
+
+#: lib/layouts/latexcolors.module:2420
+msgid "Green (RYB)"
+msgstr "Zelená (Green (RYB))"
+
+#: lib/layouts/latexcolors.module:2428
+msgid "Green-yellow"
+msgstr "Zeleno-žltá (Green-yellow)"
+
+#: lib/layouts/latexcolors.module:2436
+msgid "Grullo"
+msgstr "Grullo"
+
+#: lib/layouts/latexcolors.module:2444
+msgid "Guppie green"
+msgstr "Jarno-zelená (Guppie green)"
+
+#: lib/layouts/latexcolors.module:2452
+msgid "Halaya ube"
+msgstr "Halaya ube"
+
+#: lib/layouts/latexcolors.module:2460
+msgid "Han blue"
+msgstr "Han modrá (Han blue)"
+
+#: lib/layouts/latexcolors.module:2468
+msgid "Han purple"
+msgstr "Han fialová (Han purple)"
+
+#: lib/layouts/latexcolors.module:2476
+msgid "Hansa yellow"
+msgstr "Hansa žltá (Hansa yellow)"
+
+#: lib/layouts/latexcolors.module:2484
+msgid "Harlequin"
+msgstr "Harlekýn (Harlequin)"
+
+#: lib/layouts/latexcolors.module:2492
+msgid "Harvard crimson"
+msgstr "Harvard karmínová (Harvard crimson)"
+
+#: lib/layouts/latexcolors.module:2500
+msgid "Harvest Gold"
+msgstr "Úrodná zlatá (Harvest Gold)"
+
+#: lib/layouts/latexcolors.module:2508
+msgid "Heart Gold"
+msgstr "Olivová (Heart Gold)"
+
+#: lib/layouts/latexcolors.module:2516
+msgid "Heliotrope"
+msgstr "Heliotrop (Heliotrope)"
+
+#: lib/layouts/latexcolors.module:2524
+msgid "Hollywood cerise"
+msgstr "Módna fuchsiová (Hollywood cerise)"
+
+#: lib/layouts/latexcolors.module:2980 lib/latexcolors:69
 msgid "Light gray"
-msgstr "Svetlošedá (Light gray)"
+msgstr "Svetlo-šedá (Light gray)"
+
+#: lib/layouts/latexcolors.module:2988
+msgid "Light green"
+msgstr "Svetlozelená (Light green)"
+
+#: lib/layouts/latexcolors.module:2996
+msgid "Light khaki"
+msgstr "Svetlá khaki (Light khaki)"
+
+#: lib/layouts/latexcolors.module:3004
+msgid "Light mauve"
+msgstr "Svetlá žlto-modrá (Light mauve)"
+
+#: lib/layouts/latexcolors.module:3012
+msgid "Light pastel purple"
+msgstr "Svetlá Pastelovo-fialová (Light pastel purple)"
+
+#: lib/layouts/latexcolors.module:3020
+msgid "Light pink"
+msgstr "Svetlo-ružová (Light pink)"
+
+#: lib/layouts/latexcolors.module:3028
+msgid "Light salmon"
+msgstr "Svetlo-lososová (Light salmon)"
+
+#: lib/layouts/latexcolors.module:3036
+msgid "Light salmon pink"
+msgstr "Svetlá lososovo-ružová (Light salmon pink)"
+
+#: lib/layouts/latexcolors.module:3044
+msgid "Light sea green"
+msgstr "Svetlá morsko-zelená (Light sea green)"
+
+#: lib/layouts/latexcolors.module:3052
+msgid "Light sky blue"
+msgstr "Svetlá nebesko-modrá (Light sky blue)"
+
+#: lib/layouts/latexcolors.module:3060
+msgid "Light slate gray"
+msgstr "Svetlá bridlicovo-šedá (Light slate gray)"
+
+#: lib/layouts/latexcolors.module:3068
+msgid "Light taupe"
+msgstr "Svetlá taupe (Light taupe)"
+
+#: lib/layouts/latexcolors.module:3076
+msgid "Light Thulian pink"
+msgstr "Svetlá Thulian-ružová (Light Thulian pink)"
+
+#: lib/layouts/latexcolors.module:3084
+msgid "Light yellow"
+msgstr "Svetlo-žltá (Light yellow)"
+
+#: lib/layouts/latexcolors.module:3092
+msgid "Lilac"
+msgstr "Orgovánová (Lilac)"
+
+#: lib/layouts/latexcolors.module:3100
+msgid "Lime (color wheel)"
+msgstr "Limetková (Lime (color wheel)"
+
+#: lib/layouts/latexcolors.module:3108
+msgid "Lime (web) (X11 green)"
+msgstr "Limetkovo-zelená (Lime (web) (X11 green))"
+
+#: lib/layouts/latexcolors.module:3116
+msgid "Lime green"
+msgstr "Limetkovo-zelená (Lime green)"
+
+#: lib/layouts/latexcolors.module:3124
+msgid "Lincoln green"
+msgstr "Lincoln zelená (Lincoln green)"
 
 #: lib/latexcolors:77 lib/latexcolors:213 lib/latexcolors:977
 msgid "White"
 msgstr "Biela (White)"
 
+#: lib/layouts/latexcolors.module:5956
+msgid "White smoke"
+msgstr "Dymovo-biela (White smoke)"
+
+#: lib/layouts/latexcolors.module:5964
+msgid "Wild blue yonder"
+msgstr "Wild blue yonder"
+
+#: lib/layouts/latexcolors.module:5972
+msgid "Wild Strawberry"
+msgstr "Lesná jahoda (Wild strawberry)"
+
+#: lib/layouts/latexcolors.module:5980
+msgid "Wild Watermelon"
+msgstr "Melónová (Wild Watermelon)"
+
+#: lib/layouts/latexcolors.module:5988
+msgid "Wisteria"
+msgstr "Wisteria"
+
+#: lib/layouts/latexcolors.module:5996
+msgid "Xanadu"
+msgstr "Xanadu"
+
+#: lib/layouts/latexcolors.module:6004
+msgid "Yale Blue"
+msgstr "Yale modrá (Yale Blue)"
+
 #: lib/latexcolors:84 lib/latexcolors:223 lib/latexcolors:1113
 msgid "Yellow"
 msgstr "Žltá (Yellow)"
+
+#: lib/layouts/latexcolors.module:6020
+msgid "Yellow (Munsell)"
+msgstr "Žltá (Yellow (Munsell))"
+
+#: lib/layouts/latexcolors.module:6028
+msgid "Yellow (NCS)"
+msgstr "Žltá (Yellow (NCS))"
+
+#: lib/layouts/latexcolors.module:6036
+msgid "Yellow (process)"
+msgstr "Kanársky žltá (Yellow (process))"
+
+#: lib/layouts/latexcolors.module:6044
+msgid "Yellow (RYB)"
+msgstr "Žltá (Yellow (RYB))"
+
+#: lib/layouts/latexcolors.module:6052
+msgid "Yellow-green"
+msgstr "Žlto-zelená (Yellow-green)"
+
+#: lib/layouts/latexcolors.module:6060
+msgid "Zaffre"
+msgstr "Zafrán (Zaffre)"
+
+#: lib/layouts/latexcolors.module:6068
+msgid "Zinnwaldite brown"
+msgstr "Zinnwalditová hnedá (Zinnwaldite brown)"
 
 #: lib/latexcolors:91 lib/latexcolors:795 lib/latexcolors:1201
 msgid "Brown"
@@ -22776,21 +23800,340 @@ msgstr "Hnedá (Brown)"
 msgid "Orange"
 msgstr "Oranžová (Orange)"
 
-#: lib/latexcolors:107 lib/latexcolors:343 lib/latexcolors:1249
+#: lib/layouts/latexcolors.module:4636 lib/latexcolors:107 lib/latexcolors:343
+#: lib/latexcolors:1249
 msgid "Red"
 msgstr "Červená (Red)"
+
+#: lib/layouts/latexcolors.module:4644
+msgid "Red (Munsell)"
+msgstr "Červená (Red (Munsell))"
+
+#: lib/layouts/latexcolors.module:4652
+msgid "Red (NCS)"
+msgstr "Červená (Red (NCS))"
+
+#: lib/layouts/latexcolors.module:4660
+msgid "Red (pigment)"
+msgstr "Červená (Red (pigment))"
+
+#: lib/layouts/latexcolors.module:4668
+msgid "Red (RYB)"
+msgstr "Červená (Red (RYB))"
+
+#: lib/layouts/latexcolors.module:4676
+msgid "Red-brown"
+msgstr "Hnedá (Red-brown)"
+
+#: lib/layouts/latexcolors.module:4684
+msgid "Red-violet"
+msgstr "Stredne fialovo-červená (Red-violet)"
+
+#: lib/layouts/latexcolors.module:4692
+msgid "Redwood"
+msgstr "Sekvoj (Redwood)"
+
+#: lib/layouts/latexcolors.module:4700
+msgid "Regalia"
+msgstr "Regalia"
+
+#: lib/layouts/latexcolors.module:4708
+msgid "Rich black"
+msgstr "Bohatá čierna (Rich black)"
+
+#: lib/layouts/latexcolors.module:4716
+msgid "Rich brilliant lavender"
+msgstr "Bohatá brilantná levanduľa (Rich brilliant lavender)"
+
+#: lib/layouts/latexcolors.module:4724
+msgid "Rich carmine"
+msgstr "Bohatá karmínová (Rich carmine)"
+
+#: lib/layouts/latexcolors.module:4732
+msgid "Rich electric blue"
+msgstr "Bohatá brilantná modrá (Rich electric blue)"
+
+#: lib/layouts/latexcolors.module:4740
+msgid "Rich lavender"
+msgstr "Bohatá levanduľová (Rich lavender)"
+
+#: lib/layouts/latexcolors.module:4748
+msgid "Rich lilac"
+msgstr "Bohatá orgovánová (Rich lilac)"
+
+#: lib/layouts/latexcolors.module:4756
+msgid "Rich maroon"
+msgstr "Gaštanová (Rich maroon)"
+
+#: lib/layouts/latexcolors.module:4764
+msgid "Rifle green"
+msgstr "Rifle-zelená (Rifle green)"
+
+#: lib/layouts/latexcolors.module:4772
+msgid "Robin egg blue"
+msgstr "Robin-vajcovo-modrá (Robin egg blue)"
+
+#: lib/layouts/latexcolors.module:4780
+msgid "Rose"
+msgstr "Svetlo-ružová (Rose)"
+
+#: lib/layouts/latexcolors.module:4788
+msgid "Rose bonbon"
+msgstr "Ružový bonbónik (Rose bonbon)"
+
+#: lib/layouts/latexcolors.module:4796
+msgid "Rose ebony"
+msgstr "Ružovo-ebenová (Rose ebony)"
+
+#: lib/layouts/latexcolors.module:4804
+msgid "Rose gold"
+msgstr "Ružovo-zlatá (Rose gold)"
+
+#: lib/layouts/latexcolors.module:4812
+msgid "Rose madder"
+msgstr "Alizarín (Rose madder)"
+
+#: lib/layouts/latexcolors.module:4820
+msgid "Rose pink"
+msgstr "Ružovo-ružová (Rose pink)"
+
+#: lib/layouts/latexcolors.module:4828
+msgid "Rose quartz"
+msgstr "Ružový kremeň (Rose quartz)"
+
+#: lib/layouts/latexcolors.module:4836
+msgid "Rose taupe"
+msgstr "Ružová taupe (Rose taupe)"
+
+#: lib/layouts/latexcolors.module:4844
+msgid "Rose vale"
+msgstr "Sekvoj (Rose vale)"
+
+#: lib/layouts/latexcolors.module:4852
+msgid "Rosewood"
+msgstr "Ruženín (Rosewood)"
+
+#: lib/layouts/latexcolors.module:4860
+msgid "Rosso corsa"
+msgstr "Rosso corsa"
+
+#: lib/layouts/latexcolors.module:4868
+msgid "Rosy brown"
+msgstr "Ružovo-hnedá (Rosy brown)"
+
+#: lib/layouts/latexcolors.module:4876
+msgid "Royal azure"
+msgstr "Kráľovská-azúrová (Royal azure)"
+
+#: lib/layouts/latexcolors.module:4884
+msgid "Royal blue (traditional)"
+msgstr "Kráľovská-modrá (Royal blue (traditional))"
+
+#: lib/layouts/latexcolors.module:4892
+msgid "Royal blue (web)"
+msgstr "Kráľovská-modrá (Royal blue (web))"
+
+#: lib/layouts/latexcolors.module:4900
+msgid "Royal fuchsia"
+msgstr "Kráľovská-fuchsiová (Royal fuchsia)"
+
+#: lib/layouts/latexcolors.module:4908
+msgid "Royal purple"
+msgstr "Kráľovsko-fialová (Royal purple)"
 
 #: lib/latexcolors:114 lib/latexcolors:1401
 msgid "Pink"
 msgstr "Ružová (Pink)"
 
-#: lib/latexcolors:122 lib/latexcolors:397 lib/latexcolors:1433
+#: lib/layouts/latexcolors.module:4396
+msgid "Pink-orange"
+msgstr "Ružovo-oranžová (Pink-orange)"
+
+#: lib/layouts/latexcolors.module:4404
+msgid "Pink pearl"
+msgstr "Ružovo-perleťová (Pink pearl)"
+
+#: lib/layouts/latexcolors.module:4412
+msgid "Pink Sherbet"
+msgstr "Ružovo-šerbetová (Pink Sherbet)"
+
+#: lib/layouts/latexcolors.module:4420
+msgid "Pistachio"
+msgstr "Pistáciová (Pistachio)"
+
+#: lib/layouts/latexcolors.module:4428
+msgid "Platinum"
+msgstr "Platina (Platinum)"
+
+#: lib/layouts/latexcolors.module:4436
+msgid "Plum (traditional)"
+msgstr "Slivková (Plum (traditional))"
+
+#: lib/layouts/latexcolors.module:4444
+msgid "Plum (web)"
+msgstr "Stredne levanduľovo-purpurová (Plum (web))"
+
+#: lib/layouts/latexcolors.module:4452
+msgid "Portland Orange"
+msgstr "Portland-oranžová (Portland Orange)"
+
+#: lib/layouts/latexcolors.module:4460
+msgid "Powder blue (web)"
+msgstr "Práškovo-modrá (Powder blue (web))"
+
+#: lib/layouts/latexcolors.module:4468
+msgid "Princeton orange"
+msgstr "Princeton-oranžová (Princeton orange)"
+
+#: lib/layouts/latexcolors.module:4476
+msgid "Prune"
+msgstr "Perzská slivka (Prune)"
+
+#: lib/layouts/latexcolors.module:4484
+msgid "Prussian blue"
+msgstr "Pruská modrá (Prussian blue)"
+
+#: lib/layouts/latexcolors.module:4492
+msgid "Psychedelic purple"
+msgstr "Psychedelická fialová (Psychedelic purple)"
+
+#: lib/layouts/latexcolors.module:4500
+msgid "Puce"
+msgstr "Čipová (Puce)"
+
+#: lib/layouts/latexcolors.module:4508
+msgid "Pumpkin"
+msgstr "Tekvicová (Pumpkin)"
+
+#: lib/layouts/latexcolors.module:4516
+msgid "Purple (HTML/CSS)"
+msgstr "Fialová 3 (Purple (HTML/CSS))"
+
+#: lib/layouts/latexcolors.module:4524
+msgid "Purple (Munsell)"
+msgstr "Fialová (Purple (Munsell))"
+
+#: lib/layouts/latexcolors.module:4532
+msgid "Purple (X11)"
+msgstr "Fialová (Purple (X11))"
+
+#: lib/layouts/latexcolors.module:4540
+msgid "Purple Heart"
+msgstr "Fialovo-srdcová (Purple Heart)"
+
+#: lib/layouts/latexcolors.module:4548
+msgid "Purple mountain majesty"
+msgstr "Fialová horsko-majestátna (Purple mountain majesty)"
+
+#: lib/layouts/latexcolors.module:4556
+msgid "Purple pizzazz"
+msgstr "Fialový šmrnc (Purple pizzazz)"
+
+#: lib/layouts/latexcolors.module:4564
+msgid "Purple taupe"
+msgstr "Fialová taupe (Purple taupe)"
+
+#: lib/layouts/latexcolors.module:4572
+msgid "Radical Red"
+msgstr "Radikálna červená (Radical Red)"
+
+#: lib/layouts/latexcolors.module:4580
+msgid "Raspberry"
+msgstr "Malinová (Raspberry)"
+
+#: lib/layouts/latexcolors.module:4588
+msgid "Raspberry glace"
+msgstr "Malinová zmrzlina (Raspberry glace)"
+
+#: lib/layouts/latexcolors.module:4596
+msgid "Raspberry pink"
+msgstr "Malinovo-ružová (Raspberry pink)"
+
+#: lib/layouts/latexcolors.module:4604
+msgid "Raspberry rose"
+msgstr "Malinovo-ružová (Raspberry rose)"
+
+#: lib/layouts/latexcolors.module:4612
+msgid "Raw umber"
+msgstr "Surová umbra (Raw umber)"
+
+#: lib/layouts/latexcolors.module:4620
+msgid "Razzle dazzle rose"
+msgstr "Razzle dazzle ruža (Razzle dazzle rose)"
+
+#: lib/layouts/latexcolors.module:4628
+msgid "Razzmatazz"
+msgstr "Razzmatazz"
+
+#: lib/layouts/latexcolors.module:3164 lib/latexcolors:122 lib/latexcolors:397
+#: lib/latexcolors:1433
 msgid "Magenta"
 msgstr "Purpurová (Magenta)"
 
-#: lib/latexcolors:129 lib/latexcolors:511 lib/latexcolors:1489
+#: lib/layouts/latexcolors.module:3172
+msgid "Magenta (dye)"
+msgstr "Purpurová (Magenta (dye))"
+
+#: lib/layouts/latexcolors.module:3180
+msgid "Magenta (process)"
+msgstr "Purpurová (Magenta (process))"
+
+#: lib/layouts/latexcolors.module:3188
+msgid "Magic mint"
+msgstr "Magická mäta (Magic mint)"
+
+#: lib/layouts/latexcolors.module:3196
+msgid "Magnolia"
+msgstr "Magnólia (Magnolia)"
+
+#: lib/layouts/latexcolors.module:5844 lib/latexcolors:129 lib/latexcolors:511
+#: lib/latexcolors:1489
 msgid "Violet"
-msgstr "Fialová (Violet)"
+msgstr "Brilantná fialová (Violet)"
+
+#: lib/layouts/latexcolors.module:5852
+msgid "Violet (color wheel)"
+msgstr "Fialová (Violet (color wheel))"
+
+#: lib/layouts/latexcolors.module:5860
+msgid "Violet (RYB)"
+msgstr "Levanduľovo-purpurová (Violet (RYB))"
+
+#: lib/layouts/latexcolors.module:5868
+msgid "Violet (web)"
+msgstr "Levanduľovo-purpurová (Violet (web))"
+
+#: lib/layouts/latexcolors.module:5876
+msgid "Viridian"
+msgstr "Viridianová"
+
+#: lib/layouts/latexcolors.module:5884
+msgid "Vivid auburn"
+msgstr "Živo-gaštanová (Vivid auburn)"
+
+#: lib/layouts/latexcolors.module:5892
+msgid "Vivid burgundy"
+msgstr "Živo-burgundská (Vivid burgundy)"
+
+#: lib/layouts/latexcolors.module:5900
+msgid "Vivid cerise"
+msgstr "Živá čerešňovo-červená (Vivid cerise)"
+
+#: lib/layouts/latexcolors.module:5908
+msgid "Vivid tangerine"
+msgstr "Živo-mandarínková (Vivid tangerine)"
+
+#: lib/layouts/latexcolors.module:5916
+msgid "Vivid violet"
+msgstr "Živo-fialová (Vivid violet)"
+
+#: lib/layouts/latexcolors.module:5924
+msgid "Warm black"
+msgstr "Teplá čierna (Warm black)"
+
+#: lib/layouts/latexcolors.module:5932
+msgid "Wenge"
+msgstr "Wenge"
 
 #: lib/latexcolors:137 lib/latexcolors:491 lib/latexcolors:1521
 msgid "Purple"
@@ -22800,13 +24143,317 @@ msgstr "Purpurová (Purple)"
 msgid "Blue"
 msgstr "Modrá (Blue)"
 
+#: lib/layouts/latexcolors.module:420
+msgid "Blue (Munsell)"
+msgstr "Modrá (Blue Munsell)"
+
+#: lib/layouts/latexcolors.module:428
+msgid "Blue (NCS)"
+msgstr "Modrá (Blue (NCS))"
+
+#: lib/layouts/latexcolors.module:436
+msgid "Blue (pigment)"
+msgstr "Modrá (Blue (pigment))"
+
+#: lib/layouts/latexcolors.module:444
+msgid "Blue (RYB)"
+msgstr "Modrá (Blue (RYB))"
+
+#: lib/layouts/latexcolors.module:452
+msgid "Blue Bell"
+msgstr "Modrý zvonček (Blue Bell)"
+
+#: lib/layouts/latexcolors.module:460
+msgid "Blue Gray"
+msgstr "Modro-šedá (Blue Gray)"
+
+#: lib/layouts/latexcolors.module:468
+msgid "Blue-green"
+msgstr "Modro-zelená (Blue-green)"
+
+#: lib/layouts/latexcolors.module:476
+msgid "Blue-violet"
+msgstr "Modro-fialová (Blue-violet)"
+
+#: lib/layouts/latexcolors.module:484
+msgid "Blush"
+msgstr "Červenavá (Blush)"
+
+#: lib/layouts/latexcolors.module:492
+msgid "Bole"
+msgstr "Bolus červený"
+
+#: lib/layouts/latexcolors.module:500
+msgid "Bondi blue"
+msgstr "Modrá (Bondi blue)"
+
+#: lib/layouts/latexcolors.module:508
+msgid "Boston University Red"
+msgstr "Červená (Boston University Red)"
+
+#: lib/layouts/latexcolors.module:516
+msgid "Brandeis blue"
+msgstr "Modrá (Brandeis blue)"
+
+#: lib/layouts/latexcolors.module:524
+msgid "Brass"
+msgstr "Meden (Brass)"
+
+#: lib/layouts/latexcolors.module:532
+msgid "Brick red"
+msgstr "TehlovoČervená (Brick red)"
+
+#: lib/layouts/latexcolors.module:540
+msgid "Bright cerulean"
+msgstr "Jasný ceruleán (Bright cerulean)"
+
+#: lib/layouts/latexcolors.module:548
+msgid "Bright green"
+msgstr "Svetlá zelená (Bright green)"
+
+#: lib/layouts/latexcolors.module:556
+msgid "Bright lavender"
+msgstr "Svetlá levanduľová (Bright lavender)"
+
+#: lib/layouts/latexcolors.module:564
+msgid "Bright maroon"
+msgstr "Svetlá gaštanová (Bright maroon)"
+
+#: lib/layouts/latexcolors.module:572
+msgid "Bright pink"
+msgstr "Svetlá ružová (Bright pink)"
+
+#: lib/layouts/latexcolors.module:580
+msgid "Bright turquoise"
+msgstr "Svetlá tyrkysová (Bright turquoise)"
+
+#: lib/layouts/latexcolors.module:588
+msgid "Bright ube"
+msgstr "Svetlé ube (Bright ube)"
+
+#: lib/layouts/latexcolors.module:596
+msgid "Brilliant lavender"
+msgstr "Brilantná levanduľa (Brilliant lavender)"
+
+#: lib/layouts/latexcolors.module:604
+msgid "Brilliant rose"
+msgstr "Brilantná ružová (Brilliant rose)"
+
+#: lib/layouts/latexcolors.module:612
+msgid "Brink pink"
+msgstr "Ružová (Brink pink)"
+
+#: lib/layouts/latexcolors.module:620
+msgid "British racing green"
+msgstr "Britská pretekárska zelená (British racing green)"
+
+#: lib/layouts/latexcolors.module:628
+msgid "Bronze"
+msgstr "Bronzová (Bronze)"
+
+#: lib/layouts/latexcolors.module:636
+msgid "Brown (traditional)"
+msgstr "Hnedá (Brown (traditional))"
+
+#: lib/layouts/latexcolors.module:644
+msgid "Brown (web)"
+msgstr "Hnedá (Brown (web))"
+
+#: lib/layouts/latexcolors.module:652
+msgid "Bubble gum"
+msgstr "Ružová (žuvačka) (Bubble gum)"
+
+#: lib/layouts/latexcolors.module:660
+msgid "Bubbles"
+msgstr "Bublinová (Bubbles)"
+
+#: lib/layouts/latexcolors.module:668
+msgid "Buff"
+msgstr "Kožohnedá (Buff)"
+
+#: lib/layouts/latexcolors.module:676
+msgid "Bulgarian rose"
+msgstr "Bulharská ružová (Bulgarian rose)"
+
+#: lib/layouts/latexcolors.module:684
+msgid "Burgundy"
+msgstr "Burgundská (Burgundy)"
+
+#: lib/layouts/latexcolors.module:692
+msgid "Burlywood"
+msgstr "HruboHnedá (Burlywood)"
+
+#: lib/layouts/latexcolors.module:700
+msgid "Burnt orange"
+msgstr "Pálená Oranžová (Burnt orange)"
+
+#: lib/layouts/latexcolors.module:708
+msgid "Burnt sienna"
+msgstr "Pálená siena (Burnt sienna)"
+
+#: lib/layouts/latexcolors.module:716
+msgid "Burnt umber"
+msgstr "Pálená umbra (Burnt umber)"
+
+#: lib/layouts/latexcolors.module:724
+msgid "Byzantine"
+msgstr "Byzantská (Byzantine)"
+
+#: lib/layouts/latexcolors.module:732
+msgid "Byzantium"
+msgstr "Byzanciová (Byzantium)"
+
+#: lib/layouts/latexcolors.module:740
+msgid "Cadet"
+msgstr "KadetoModrá (Cadet)"
+
+#: lib/layouts/latexcolors.module:748
+msgid "Cadet blue"
+msgstr "KadetoModrá (CadetBlue)"
+
+#: lib/layouts/latexcolors.module:756
+msgid "Cadet grey"
+msgstr "KadetoŠedá (Cadet grey)"
+
+#: lib/layouts/latexcolors.module:764
+msgid "Cadmium Green"
+msgstr "Stredná MorskoZelená (Cadmium Green)"
+
+#: lib/layouts/latexcolors.module:772
+msgid "Cadmium Orange"
+msgstr "Kadmium oranžová (Cadmium Orange)"
+
+#: lib/layouts/latexcolors.module:780
+msgid "Cadmium Red"
+msgstr "Kadmium červená (Cadmium Red)"
+
+#: lib/layouts/latexcolors.module:788
+msgid "Cadmium Yellow"
+msgstr "Kadmium žltá (Cadmium Yellow)"
+
+#: lib/layouts/latexcolors.module:796
+msgid "Cal Poly Pomona green"
+msgstr "Cal Poly Pomona zelená (Cal Poly Pomona green)"
+
+#: lib/layouts/latexcolors.module:804
+msgid "Cambridge Blue"
+msgstr "Modrá (Cambridge Blue)"
+
+#: lib/layouts/latexcolors.module:812
+msgid "Camel"
+msgstr "Ťavia srsť (Camel)"
+
+#: lib/layouts/latexcolors.module:820
+msgid "Camouflage green"
+msgstr "Kamufláž zelená (Camouflage green)"
+
+#: lib/layouts/latexcolors.module:828
+msgid "Canary yellow"
+msgstr "Kanársky žltá (Canary yellow)"
+
+#: lib/layouts/latexcolors.module:836
+msgid "Candy apple red"
+msgstr "Červená cukrovka (Candy apple red)"
+
+#: lib/layouts/latexcolors.module:844
+msgid "Candy pink"
+msgstr "Ružová cukrovka (Candy pink)"
+
+#: lib/layouts/latexcolors.module:852
+msgid "Capri"
+msgstr "Hlboká nebesko-modrá (Capri)"
+
+#: lib/layouts/latexcolors.module:860
+msgid "Caput mortuum"
+msgstr "Caput mortuum (Caput mortuum)"
+
+#: lib/layouts/latexcolors.module:868
+msgid "Cardinal"
+msgstr "Kardinál (Cardinal)"
+
+#: lib/layouts/latexcolors.module:876
+msgid "Caribbean green"
+msgstr "Karibská zelená (Caribbean green)"
+
+#: lib/layouts/latexcolors.module:884
+msgid "Carmine"
+msgstr "Karmínová (Carmine)"
+
+#: lib/layouts/latexcolors.module:892
+msgid "Carmine pink"
+msgstr "KarmínovoRužová (Carmine pink)"
+
+#: lib/layouts/latexcolors.module:900
+msgid "Carmine red"
+msgstr "KarmínovoČervená (Carmine red)"
+
+#: lib/layouts/latexcolors.module:908
+msgid "Carnation pink"
+msgstr "KarneálovoRužová (Carnation pink)"
+
+#: lib/layouts/latexcolors.module:916
+msgid "Carnelian"
+msgstr "Karneolová (Carnelian)"
+
+#: lib/layouts/latexcolors.module:924
+msgid "Carolina blue"
+msgstr "Karolínska modrá (Carolina blue)"
+
+#: lib/layouts/latexcolors.module:932
+msgid "Carrot orange"
+msgstr "Mrkvy oranžovej (Carrot orange)"
+
+#: lib/layouts/latexcolors.module:940
+msgid "Ceil"
+msgstr "Strop (Ceil)"
+
+#: lib/layouts/latexcolors.module:948
+msgid "Celadon"
+msgstr "Celadon"
+
+#: lib/layouts/latexcolors.module:956
+msgid "Celestial blue"
+msgstr "Nebesko-modrá (Celestial blue)"
+
+#: lib/layouts/latexcolors.module:964
+msgid "Cerise"
+msgstr "Čerešňovo-červená (Cerise)"
+
+#: lib/layouts/latexcolors.module:972
+msgid "Cerise pink"
+msgstr "Čerešňovo-ružová (Cerise pink)"
+
 #: lib/latexcolors:152 lib/latexcolors:613 lib/latexcolors:1730
 msgid "Cyan"
 msgstr "Azúrová (Cyan)"
 
+#: lib/layouts/latexcolors.module:1292
+msgid "Cyan (process)"
+msgstr "Azúrová (Cyan (process))"
+
+#: lib/layouts/latexcolors.module:1300
+msgid "Daffodil"
+msgstr "Narcisová (Daffodil)"
+
 #: lib/latexcolors:159 lib/latexcolors:1858
 msgid "Teal"
 msgstr "Tyrkysová (Teal)"
+
+#: lib/layouts/latexcolors.module:5436
+msgid "Teal blue"
+msgstr "Tyrkysovo-modrá (Teal blue)"
+
+#: lib/layouts/latexcolors.module:5444
+msgid "Teal green"
+msgstr "Tyrkysovo-zelená (Teal green)"
+
+#: lib/layouts/latexcolors.module:5452
+msgid "Tenne (Tawny)"
+msgstr "Mláťačka (Tenne (Tawny))"
+
+#: lib/layouts/latexcolors.module:5460
+msgid "Terra cotta"
+msgstr "Terra cotta"
 
 #: lib/latexcolors:167 lib/latexcolors:1922
 msgid "Lime"
@@ -22816,9 +24463,49 @@ msgstr "Limetková (Lime)"
 msgid "Green"
 msgstr "Zelená (Green)"
 
-#: lib/latexcolors:182 lib/latexcolors:1986
+#: lib/layouts/latexcolors.module:3756 lib/latexcolors:182 lib/latexcolors:1986
 msgid "Olive"
-msgstr "OlivoZelená (Olive)"
+msgstr "Olivová (Olive)"
+
+#: lib/layouts/latexcolors.module:3764
+msgid "Olive Drab (web) (Olive Drab #3)"
+msgstr "Olivová fádna (Olive Drab (web) (Olive Drab #3))"
+
+#: lib/layouts/latexcolors.module:3772
+msgid "Olive Drab #7"
+msgstr "Olivovo-šedo-hnedá (Olive Drab #7)"
+
+#: lib/layouts/latexcolors.module:3780
+msgid "Olivine"
+msgstr "Olivínová (Olivine)"
+
+#: lib/layouts/latexcolors.module:3788
+msgid "Onyx"
+msgstr "Onyx"
+
+#: lib/layouts/latexcolors.module:3796
+msgid "Opera mauve"
+msgstr "Opera-fialová (Opera mauve)"
+
+#: lib/layouts/latexcolors.module:3804
+msgid "Orange (color wheel)"
+msgstr "Oranžová (farebné koliesko) (Orange (color wheel))"
+
+#: lib/layouts/latexcolors.module:3812
+msgid "Orange (RYB)"
+msgstr "Oranžová (Orange (RYB))"
+
+#: lib/layouts/latexcolors.module:3820
+msgid "Orange (web color)"
+msgstr "Oranžová (Orange (web color))"
+
+#: lib/layouts/latexcolors.module:3828
+msgid "Orange peel"
+msgstr "Pomarančová kôra (Orange peel)"
+
+#: lib/layouts/latexcolors.module:3836
+msgid "Orange-red"
+msgstr "Oranžovo-červená (Orange-red)"
 
 #: lib/latexcolors:198 lib/latexcolors:208 lib/latexcolors:216
 #: lib/latexcolors:226 lib/latexcolors:236 lib/latexcolors:244
@@ -22850,9 +24537,57 @@ msgstr "Názvy pre DVIPS"
 msgid "Goldenrod"
 msgstr "Zlatobyľová (Goldenrod)"
 
+#: lib/layouts/latexcolors.module:2340
+msgid "Granny Smith Apple"
+msgstr "Granny Smith jablková (Granny Smith Apple)"
+
 #: lib/latexcolors:241
 msgid "Dandelion"
 msgstr "Púpavová (Dandelion)"
+
+#: lib/layouts/latexcolors.module:1316
+msgid "Dark blue"
+msgstr "Tmavo-modrá (Dark blue)"
+
+#: lib/layouts/latexcolors.module:1324
+msgid "Dark brown"
+msgstr "Tmavo-hnedá (Dark brown)"
+
+#: lib/layouts/latexcolors.module:1332
+msgid "Dark byzantium"
+msgstr "Tmavo-byzanciová (Dark byzantium)"
+
+#: lib/layouts/latexcolors.module:1340
+msgid "Dark candy apple red"
+msgstr "Tmavé červené cukríkové jablko (Dark candy apple red)"
+
+#: lib/layouts/latexcolors.module:1348
+msgid "Dark cerulean"
+msgstr "Tmavá nebesko-modrá (Dark cerulean)"
+
+#: lib/layouts/latexcolors.module:1356
+msgid "Dark champagne"
+msgstr "Tmavo-šampanská (Dark champagne)"
+
+#: lib/layouts/latexcolors.module:1364
+msgid "Dark chestnut"
+msgstr "Tmavo-gaštanová (Dark chestnut)"
+
+#: lib/layouts/latexcolors.module:1372
+msgid "Dark coral"
+msgstr "Tmavo-korálová (Dark coral)"
+
+#: lib/layouts/latexcolors.module:1380
+msgid "Dark cyan"
+msgstr "Tmavo-azúrová (Dark cyan)"
+
+#: lib/layouts/latexcolors.module:1388
+msgid "Dark electric blue"
+msgstr "Tmavá brilantná modrá (Dark electric blue)"
+
+#: lib/layouts/latexcolors.module:1396
+msgid "Dark goldenrod"
+msgstr "Tmavá zlatobyľová (Dark goldenrod)"
 
 #: lib/latexcolors:249
 msgid "Apricot"
@@ -22862,9 +24597,61 @@ msgstr "Marhuľová (Apricot)"
 msgid "Peach"
 msgstr "Broskyňová (Peach)"
 
+#: lib/layouts/latexcolors.module:4212
+msgid "Peach-orange"
+msgstr "Broskyňovo-oranžová (Peach-orange)"
+
+#: lib/layouts/latexcolors.module:4220
+msgid "Peach puff"
+msgstr "Broskyňová (Peach puff)"
+
+#: lib/layouts/latexcolors.module:4228
+msgid "Peach-yellow"
+msgstr "Broskyňovo-žltá (Peach-yellow)"
+
+#: lib/layouts/latexcolors.module:4236
+msgid "Pear"
+msgstr "Hruška (Pear)"
+
+#: lib/layouts/latexcolors.module:4244
+msgid "Pearl"
+msgstr "Perleťová (Pearl)"
+
+#: lib/layouts/latexcolors.module:4252
+msgid "Peridot"
+msgstr "Peridot"
+
 #: lib/latexcolors:265
 msgid "Melon"
 msgstr "Melónová (Melon)"
+
+#: lib/layouts/latexcolors.module:3476
+msgid "Midnight blue"
+msgstr "Polnočná modrá 2 (Midnight blue)"
+
+#: lib/layouts/latexcolors.module:3484
+msgid "Midnight green (eagle green)"
+msgstr "Polnočná zelená (Midnight green (eagle green)"
+
+#: lib/layouts/latexcolors.module:3492
+msgid "Mikado yellow"
+msgstr "Mikado-žltá (Mikado yellow)"
+
+#: lib/layouts/latexcolors.module:3500
+msgid "Mint"
+msgstr "Mätová (Mint)"
+
+#: lib/layouts/latexcolors.module:3508
+msgid "Mint cream"
+msgstr "Mätovo-krémová (Mint cream)"
+
+#: lib/layouts/latexcolors.module:3516
+msgid "Mint green"
+msgstr "Mätovo-zelená (Mint green)"
+
+#: lib/layouts/latexcolors.module:3524
+msgid "Misty rose"
+msgstr "Hmlisto-ružová (Misty rose)"
 
 #: lib/latexcolors:273
 msgid "YellowOrange"
@@ -22885,6 +24672,134 @@ msgstr "ČervenoOranžová (RedOrange)"
 #: lib/latexcolors:315
 msgid "Mahogany"
 msgstr "Mahagónová (Mahogany)"
+
+#: lib/layouts/latexcolors.module:3212
+msgid "Maize"
+msgstr "Kukuričná (Maize)"
+
+#: lib/layouts/latexcolors.module:3220
+msgid "Majorelle Blue"
+msgstr "Majorelle-modrá (Majorelle Blue)"
+
+#: lib/layouts/latexcolors.module:3228
+msgid "Malachite"
+msgstr "Malachit (Malachite)"
+
+#: lib/layouts/latexcolors.module:3236
+msgid "Manatee"
+msgstr "Lamantínová (Manatee)"
+
+#: lib/layouts/latexcolors.module:3244
+msgid "Mango Tango"
+msgstr "Mango Tango"
+
+#: lib/layouts/latexcolors.module:3252
+msgid "Maroon (HTML/CSS)"
+msgstr "Gaštanová (Maroon (HTML/CSS))"
+
+#: lib/layouts/latexcolors.module:3260
+msgid "Maroon (X11)"
+msgstr "Gaštanová (Maroon (X11))"
+
+#: lib/layouts/latexcolors.module:3268
+msgid "Mauve"
+msgstr "Fialová (Mauve)"
+
+#: lib/layouts/latexcolors.module:3276
+msgid "Mauve taupe"
+msgstr "Malinová zmrzlina (Mauve taupe)"
+
+#: lib/layouts/latexcolors.module:3284
+msgid "Mauvelous"
+msgstr "Škodlivá (Mauvelous)"
+
+#: lib/layouts/latexcolors.module:3292
+msgid "Maya blue"
+msgstr "Majská modrá (Maya blue)"
+
+#: lib/layouts/latexcolors.module:3300
+msgid "Meat brown"
+msgstr "Mäsovo-hnedá (Meat brown)"
+
+#: lib/layouts/latexcolors.module:3308
+msgid "Medium aquamarine"
+msgstr "Stredne akvamarínová (Medium aquamarine)"
+
+#: lib/layouts/latexcolors.module:3316
+msgid "Medium blue"
+msgstr "Stredne modrá (Medium blue)"
+
+#: lib/layouts/latexcolors.module:3324
+msgid "Medium candy apple red"
+msgstr "Stredne červené cukrové jablko (Medium candy apple red)"
+
+#: lib/layouts/latexcolors.module:3332
+msgid "Medium carmine"
+msgstr "Stredne karmínová (Medium carmine)"
+
+#: lib/layouts/latexcolors.module:3340
+msgid "Medium champagne"
+msgstr "Stredne šampanské (Medium champagne)"
+
+#: lib/layouts/latexcolors.module:3348
+msgid "Medium electric blue"
+msgstr "Stredne Brilantne-modrá (Medium electric blue)"
+
+#: lib/layouts/latexcolors.module:3356
+msgid "Medium jungle green"
+msgstr "Stredne džunglo-zelená (Medium jungle green)"
+
+#: lib/layouts/latexcolors.module:3364
+msgid "Medium lavender magenta"
+msgstr "Stredne levanduľovo-purpurová (Medium lavender magenta)"
+
+#: lib/layouts/latexcolors.module:3372
+msgid "Medium orchid"
+msgstr "Stredne orchideová (Medium orchid)"
+
+#: lib/layouts/latexcolors.module:3380
+msgid "Medium Persian blue"
+msgstr "Stredne Perzská modrá (Medium Persian blue)"
+
+#: lib/layouts/latexcolors.module:3388
+msgid "Medium purple"
+msgstr "Stredne fialová (Medium purple)"
+
+#: lib/layouts/latexcolors.module:3396
+msgid "Medium red-violet"
+msgstr "Stredne červeno-fialová (Medium red-violet)"
+
+#: lib/layouts/latexcolors.module:3404
+msgid "Medium sea green"
+msgstr "Stredne morsko-zelená (Medium sea green)"
+
+#: lib/layouts/latexcolors.module:3412
+msgid "Medium slate blue"
+msgstr "Stredne bridlicovo-modrá (Medium slate blue)"
+
+#: lib/layouts/latexcolors.module:3420
+msgid "Medium spring bud"
+msgstr "Stredný jarný púčik (Medium spring bud)"
+
+#: lib/layouts/latexcolors.module:3428
+msgid "Medium spring green"
+msgstr "Stredne jarno-zelená (Medium spring green)"
+
+#: lib/layouts/latexcolors.module:3436
+msgid "Medium taupe"
+msgstr "Stredná taupe (Medium taupe)"
+
+#: lib/layouts/latexcolors.module:3444
+msgid "Medium teal blue"
+msgstr "Stredne tyrkysovo-modrá (Medium teal blue)"
+
+#: lib/layouts/latexcolors.module:3452
+msgid "Medium turquoise"
+msgstr "Stredne tyrkysová (Medium turquoise)"
+
+#: lib/layouts/latexcolors.module:3460
+msgid "Medium violet-red"
+msgstr "Stredne fialovo-červená (Medium violet-red)"
 
 #: lib/latexcolors:325 lib/latexcolors:1217
 msgid "Maroon"
@@ -22910,6 +24825,66 @@ msgstr "LesnejJahody (WildStrawberry)"
 msgid "Salmon"
 msgstr "Lososová (Salmon)"
 
+#: lib/layouts/latexcolors.module:5020
+msgid "Salmon pink"
+msgstr "Lososovo-ružová (Salmon pink)"
+
+#: lib/layouts/latexcolors.module:5028
+msgid "Sand"
+msgstr "Tmavo-šampanská (Sand)"
+
+#: lib/layouts/latexcolors.module:5036
+msgid "Sand dune"
+msgstr "Šedo-hnedá (Sand dune)"
+
+#: lib/layouts/latexcolors.module:5044
+msgid "Sandstorm"
+msgstr "Piesočná búrka (Sandstorm)"
+
+#: lib/layouts/latexcolors.module:5052
+msgid "Sandy brown"
+msgstr "Pieskovo-hnedá (Sandy brown)"
+
+#: lib/layouts/latexcolors.module:5060
+msgid "Sandy taupe"
+msgstr "Šedo-hnedá (Sandy taupe)"
+
+#: lib/layouts/latexcolors.module:5068
+msgid "Sangria"
+msgstr "Sangria"
+
+#: lib/layouts/latexcolors.module:5076
+msgid "Sap green"
+msgstr "Šťavnato-zelená (Sap green)"
+
+#: lib/layouts/latexcolors.module:5084
+msgid "Sapphire"
+msgstr "Zafírová (Sapphire)"
+
+#: lib/layouts/latexcolors.module:5092
+msgid "Satin sheen gold"
+msgstr "Saténový zlatý lesk (Satin sheen gold)"
+
+#: lib/layouts/latexcolors.module:5100
+msgid "Scarlet"
+msgstr "Šarlatová (Scarlet)"
+
+#: lib/layouts/latexcolors.module:5108
+msgid "School bus yellow"
+msgstr "Školský autobus-žltá (School bus yellow)"
+
+#: lib/layouts/latexcolors.module:5116
+msgid "Screamin\\' Green"
+msgstr "Kričiaca zelená (Screamin\\' Green)"
+
+#: lib/layouts/latexcolors.module:5124
+msgid "Sea green"
+msgstr "Morsko-zelená (Sea green)"
+
+#: lib/layouts/latexcolors.module:5132
+msgid "Seal brown"
+msgstr "Pečaťovo-hnedá (Seal brown)"
+
 #: lib/latexcolors:387
 msgid "CarnationPink"
 msgstr "KarafiátovoRužová (CarnationPink)"
@@ -22926,13 +24901,105 @@ msgstr "Rebarborská (Rhodamine)"
 msgid "Mulberry"
 msgstr "TmavoFialová (Mulberry)"
 
+#: lib/layouts/latexcolors.module:3596
+msgid "Mustard"
+msgstr "Horčicová (Mustard)"
+
+#: lib/layouts/latexcolors.module:3604
+msgid "Myrtle"
+msgstr "Myrtová (Myrtle)"
+
+#: lib/layouts/latexcolors.module:3612
+msgid "MSU Green"
+msgstr "MSU-zelená (MSU Green)"
+
+#: lib/layouts/latexcolors.module:3620
+msgid "Nadeshiko pink"
+msgstr "Nadeshiko-ružová (Nadeshiko pink)"
+
+#: lib/layouts/latexcolors.module:3628
+msgid "Napier green"
+msgstr "Napier-zelená (Napier green)"
+
+#: lib/layouts/latexcolors.module:3636
+msgid "Naples yellow"
+msgstr "Neapolská žltá (Naples yellow)"
+
+#: lib/layouts/latexcolors.module:3644
+msgid "Navajo white"
+msgstr "Navajová biela (Navajo white)"
+
+#: lib/layouts/latexcolors.module:3652
+msgid "Navy blue"
+msgstr "Námornícka modrá (Navy blue)"
+
+#: lib/layouts/latexcolors.module:3660
+msgid "Neon Carrot"
+msgstr "Neónová mrkva (Neon Carrot)"
+
+#: lib/layouts/latexcolors.module:3668
+msgid "Neon fuchsia"
+msgstr "Neónovo-fuchsiová (Neon fuchsia)"
+
+#: lib/layouts/latexcolors.module:3676
+msgid "Neon green"
+msgstr "Neónovo-zelená (Neon green)"
+
+#: lib/layouts/latexcolors.module:3684
+msgid "Non-photo blue"
+msgstr "Bledo-modrá (Non-photo blue)"
+
+#: lib/layouts/latexcolors.module:3692
+msgid "Ocean Boat Blue"
+msgstr "Vodo-modrá (Ocean Boat Blue)"
+
+#: lib/layouts/latexcolors.module:3700
+msgid "Ochre"
+msgstr "Okrová (Ochre)"
+
+#: lib/layouts/latexcolors.module:3708
+msgid "Office green"
+msgstr "Stredne zelená (Office green)"
+
+#: lib/layouts/latexcolors.module:3716
+msgid "Old gold"
+msgstr "Staro-zlatá (Old gold)"
+
+#: lib/layouts/latexcolors.module:3724
+msgid "Old lace"
+msgstr "Stará krajka (Old lace)"
+
+#: lib/layouts/latexcolors.module:3732
+msgid "Old lavender"
+msgstr "Stará levanduľa (Old lavender)"
+
+#: lib/layouts/latexcolors.module:3740
+msgid "Old mauve"
+msgstr "Stará malva (Old mauve)"
+
+#: lib/layouts/latexcolors.module:3748
+msgid "Old rose"
+msgstr "Staroružová (Old rose)"
+
 #: lib/latexcolors:431
 msgid "RedViolet"
 msgstr "ČervenoFialová (RedViolet)"
 
-#: lib/latexcolors:441 lib/latexcolors:1425
+#: lib/layouts/latexcolors.module:2220 lib/latexcolors:441 lib/latexcolors:1425
 msgid "Fuchsia"
-msgstr "Fuchsiová (Fuchsia)"
+msgstr "Purpurová (Fuchsia)"
+
+#: lib/layouts/latexcolors.module:2228
+msgid "Fuchsia pink"
+msgstr "Purpurovo-ružová (Fuchsia pink)"
+
+#: lib/layouts/latexcolors.module:2236
+msgid "Fulvous"
+msgstr "Opálená (Fulvous)"
+
+#: lib/layouts/latexcolors.module:2244
+msgid "Fuzzy Wuzzy"
+msgstr "Fuzzy Wuzzy"
 
 #: lib/latexcolors:451 lib/latexcolors:1481
 msgid "Lavender"
@@ -22942,9 +25009,209 @@ msgstr "Levanduľová (Lavender)"
 msgid "Thistle"
 msgstr "Bodliaková (Thistle)"
 
+#: lib/layouts/latexcolors.module:5476
+msgid "Thulian pink"
+msgstr "Thuliánsky-ružová (Thulian pink)"
+
+#: lib/layouts/latexcolors.module:5484
+msgid "Tickle Me Pink"
+msgstr "Štekli ma ružová (Tickle Me Pink)"
+
+#: lib/layouts/latexcolors.module:5492
+msgid "Tiffany Blue"
+msgstr "Tiffany-modrá (Tiffany Blue)"
+
+#: lib/layouts/latexcolors.module:5500
+msgid "Tiger\\'s eye"
+msgstr "Tigrie oko (Tiger\\'s eye)"
+
+#: lib/layouts/latexcolors.module:5508
+msgid "Timberwolf"
+msgstr "Timberwolf"
+
+#: lib/layouts/latexcolors.module:5516
+msgid "Titanium yellow"
+msgstr "Titánovo-žltá (Titanium yellow)"
+
 #: lib/latexcolors:471 lib/latexcolors:1497
 msgid "Orchid"
 msgstr "Orchideová (Orchid)"
+
+#: lib/layouts/latexcolors.module:3852
+msgid "Otter brown"
+msgstr "Tmavo-hnedá (Otter brown)"
+
+#: lib/layouts/latexcolors.module:3860
+msgid "Outer Space"
+msgstr "Vesmírna (Outer Space)"
+
+#: lib/layouts/latexcolors.module:3868
+msgid "Outrageous Orange"
+msgstr "Ohromujúca oranžová (Outrageous Orange)"
+
+#: lib/layouts/latexcolors.module:3876
+msgid "Oxford Blue"
+msgstr "Oxfordská modrá (Oxford Blue)"
+
+#: lib/layouts/latexcolors.module:3884
+msgid "OU Crimson Red"
+msgstr "OU karmínovo-červená (OU Crimson Red)"
+
+#: lib/layouts/latexcolors.module:3892
+msgid "Pakistan green"
+msgstr "Pakistanská zelená (Pakistan green)"
+
+#: lib/layouts/latexcolors.module:3900
+msgid "Palatinate blue"
+msgstr "Falcká modrá (Palatinate blue)"
+
+#: lib/layouts/latexcolors.module:3908
+msgid "Palatinate purple"
+msgstr "Falcká fialová (Palatinate purple)"
+
+#: lib/layouts/latexcolors.module:3916
+msgid "Pale aqua"
+msgstr "Modrá krásna (Pale aqua)"
+
+#: lib/layouts/latexcolors.module:3924
+msgid "Pale blue"
+msgstr "Bledá modrá (Pale blue)"
+
+#: lib/layouts/latexcolors.module:3932
+msgid "Pale brown"
+msgstr "Bledá hnedá (Pale brown)"
+
+#: lib/layouts/latexcolors.module:3940
+msgid "Pale carmine"
+msgstr "Stredne karmínová (Pale carmine)"
+
+#: lib/layouts/latexcolors.module:3948
+msgid "Pale cerulean"
+msgstr "Bledá nebesko-modrá (Pale cerulean)"
+
+#: lib/layouts/latexcolors.module:3956
+msgid "Pale chestnut"
+msgstr "Bledá gaštanová (Pale chestnut)"
+
+#: lib/layouts/latexcolors.module:3964
+msgid "Pale copper"
+msgstr "Bledá medená (Pale copper)"
+
+#: lib/layouts/latexcolors.module:3972
+msgid "Pale cornflower blue"
+msgstr "Bledá nevädzo-modrá (Pale cornflower blue)"
+
+#: lib/layouts/latexcolors.module:3980
+msgid "Pale gold"
+msgstr "Bledá zlatá (Pale gold)"
+
+#: lib/layouts/latexcolors.module:3988
+msgid "Pale goldenrod"
+msgstr "Bledá zlatobyľová (Pale goldenrod)"
+
+#: lib/layouts/latexcolors.module:3996
+msgid "Pale green"
+msgstr "Bledá zelená (Pale green)"
+
+#: lib/layouts/latexcolors.module:4004
+msgid "Pale magenta"
+msgstr "Bledá purpurová (Pale magenta)"
+
+#: lib/layouts/latexcolors.module:4012
+msgid "Pale pink"
+msgstr "Bledá ružová (Pale pink)"
+
+#: lib/layouts/latexcolors.module:4020
+msgid "Pale plum"
+msgstr "Stredne levanduľovo-purpurová (Pale plum)"
+
+#: lib/layouts/latexcolors.module:4028
+msgid "Pale red-violet"
+msgstr "Bledá fialovo-červená (Pale red-violet)"
+
+#: lib/layouts/latexcolors.module:4036
+msgid "Pale robin egg blue"
+msgstr "Bledá robin-vajcovo-modrá (Pale robin egg blue)"
+
+#: lib/layouts/latexcolors.module:4044
+msgid "Pale silver"
+msgstr "Bledá strieborná (Pale silver)"
+
+#: lib/layouts/latexcolors.module:4052
+msgid "Pale spring bud"
+msgstr "Bledý jarný púčik (Pale spring bud)"
+
+#: lib/layouts/latexcolors.module:4060
+msgid "Pale taupe"
+msgstr "Bledá taupe (Pale taupe)"
+
+#: lib/layouts/latexcolors.module:4068
+msgid "Pale violet-red"
+msgstr "Bledá fialovo-červená (Pale violet-red)"
+
+#: lib/layouts/latexcolors.module:4076
+msgid "Pansy purple"
+msgstr "Maceško-fialová (Pansy purple)"
+
+#: lib/layouts/latexcolors.module:4084
+msgid "Papaya whip"
+msgstr "Papájo-krémová (Papaya whip)"
+
+#: lib/layouts/latexcolors.module:4092
+msgid "Paris Green"
+msgstr "Smaragdová (Paris Green)"
+
+#: lib/layouts/latexcolors.module:4100
+msgid "Pastel blue"
+msgstr "Pastelovo-modrá (Pastel blue)"
+
+#: lib/layouts/latexcolors.module:4108
+msgid "Pastel brown"
+msgstr "Pastelovo-hnedá (Pastel brown)"
+
+#: lib/layouts/latexcolors.module:4116
+msgid "Pastel gray"
+msgstr "Pastelovo-šedá (Pastel gray)"
+
+#: lib/layouts/latexcolors.module:4124
+msgid "Pastel green"
+msgstr "Pastelovo-zelená (Pastel green)"
+
+#: lib/layouts/latexcolors.module:4132
+msgid "Pastel magenta"
+msgstr "Pastelovo-purpurová (Pastel magenta)"
+
+#: lib/layouts/latexcolors.module:4140
+msgid "Pastel orange"
+msgstr "Pastelovo-oranžová (Pastel orange)"
+
+#: lib/layouts/latexcolors.module:4148
+msgid "Pastel pink"
+msgstr "Pastelovo-ružová (Pastel pink)"
+
+#: lib/layouts/latexcolors.module:4156
+msgid "Pastel purple"
+msgstr "Pastelovo-fialová (Pastel purple)"
+
+#: lib/layouts/latexcolors.module:4164
+msgid "Pastel red"
+msgstr "Pastelovo-červená (Pastel red)"
+
+#: lib/layouts/latexcolors.module:4172
+msgid "Pastel violet"
+msgstr "Pastelovo-fialová (Pastel violet)"
+
+#: lib/layouts/latexcolors.module:4180
+msgid "Pastel yellow"
+msgstr "Pastelovo-žltá (Pastel yellow)"
+
+#: lib/layouts/latexcolors.module:4188
+msgid "Patriarch"
+msgstr "Fialová 3 (Patriarch)"
+
+#: lib/layouts/latexcolors.module:4196
+msgid "Payne\\'s grey"
+msgstr "Payne\\'s-šedá (Payne\\'s grey)"
 
 #: lib/latexcolors:481 lib/latexcolors:1553
 msgid "DarkOrchid"
@@ -22962,9 +25229,25 @@ msgstr "KráľovskoPurpurová (RoyalPurple)"
 msgid "BlueViolet"
 msgstr "ModroFialová (BlueViolet)"
 
-#: lib/latexcolors:535
+#: lib/layouts/latexcolors.module:4260 lib/latexcolors:535
 msgid "Periwinkle"
-msgstr "Brčálová (Periwinkle)"
+msgstr "Levanduľovo-modrá (Periwinkle)"
+
+#: lib/layouts/latexcolors.module:4268
+msgid "Persian blue"
+msgstr "Perzská modrá (Persian blue)"
+
+#: lib/layouts/latexcolors.module:4276
+msgid "Persian green"
+msgstr "Perzská zelená (Persian green)"
+
+#: lib/layouts/latexcolors.module:4284
+msgid "Persian indigo"
+msgstr "Perzská indigová (Persian indigo)"
+
+#: lib/layouts/latexcolors.module:4292
+msgid "Persian orange"
+msgstr "Perzská oranžová (Persian orange)"
 
 #: lib/latexcolors:545 lib/latexcolors:1866
 msgid "CadetBlue"
@@ -22986,9 +25269,105 @@ msgstr "NámorníckoModrá (NavyBlue)"
 msgid "RoyalBlue"
 msgstr "KráľovskoModrá (RoyalBlue)"
 
-#: lib/latexcolors:603
+#: lib/layouts/latexcolors.module:980 lib/latexcolors:603
 msgid "Cerulean"
-msgstr "NebeskoModrá (Cerulean)"
+msgstr "Nebesko-modrá (Cerulean)"
+
+#: lib/layouts/latexcolors.module:988
+msgid "Cerulean blue"
+msgstr "Nebesko-modrá (Cerulean blue)"
+
+#: lib/layouts/latexcolors.module:996
+msgid "Chamoisee"
+msgstr "Kamzíková (Chamoisee)"
+
+#: lib/layouts/latexcolors.module:1004
+msgid "Champagne"
+msgstr "Šampanská (Champagne)"
+
+#: lib/layouts/latexcolors.module:1012
+msgid "Charcoal"
+msgstr "Dreveného uhlia (Charcoal)"
+
+#: lib/layouts/latexcolors.module:1020
+msgid "Chartreuse (traditional)"
+msgstr "Chartreuse zelená (Chartreuse (traditional))"
+
+#: lib/layouts/latexcolors.module:1028
+msgid "Chartreuse (web)"
+msgstr "Chartreuse zelená (Chartreuse (web))"
+
+#: lib/layouts/latexcolors.module:1036
+msgid "Cherry blossom pink"
+msgstr "Ružového čerešňového kvetu (Cherry blossom pink)"
+
+#: lib/layouts/latexcolors.module:1044
+msgid "Chestnut"
+msgstr "Gaštanová (Chestnut)"
+
+#: lib/layouts/latexcolors.module:1052
+msgid "Chocolate (traditional)"
+msgstr "Čokoládovo-hnedá (Chocolate (traditional))"
+
+#: lib/layouts/latexcolors.module:1060
+msgid "Chocolate (web)"
+msgstr "Čokoládovo-hnedá (Chocolate (web))"
+
+#: lib/layouts/latexcolors.module:1068
+msgid "Chrome yellow"
+msgstr "Chromovo-žltá (Chrome yellow)"
+
+#: lib/layouts/latexcolors.module:1076
+msgid "Cinereous"
+msgstr "Tmavá hnedo-červená (Cinereous)"
+
+#: lib/layouts/latexcolors.module:1084
+msgid "Cinnabar"
+msgstr "Krvavo-oranžová (Cinnabar)"
+
+#: lib/layouts/latexcolors.module:1092
+msgid "Cinnamon"
+msgstr "Škoricová (Cinnamon)"
+
+#: lib/layouts/latexcolors.module:1100
+msgid "Citrine"
+msgstr "Citrínová (Citrine)"
+
+#: lib/layouts/latexcolors.module:1108
+msgid "Classic rose"
+msgstr "Klasická ružová (Classic rose)"
+
+#: lib/layouts/latexcolors.module:1116
+msgid "Cobalt"
+msgstr "Kobaltová (Cobalt)"
+
+#: lib/layouts/latexcolors.module:1124
+msgid "Cocoa brown"
+msgstr "Kakaovo-hnedá (Cocoa brown)"
+
+#: lib/layouts/latexcolors.module:1132
+msgid "Columbia blue"
+msgstr "Kolumbijská modrá (Columbia blue)"
+
+#: lib/layouts/latexcolors.module:1140
+msgid "Cool black"
+msgstr "Chladná čierna (Cool black)"
+
+#: lib/layouts/latexcolors.module:1148
+msgid "Cool grey"
+msgstr "Chladná šedá (Cool grey)"
+
+#: lib/layouts/latexcolors.module:1156
+msgid "Copper"
+msgstr "Medená (Copper)"
+
+#: lib/layouts/latexcolors.module:1164
+msgid "Copper rose"
+msgstr "Medeno-ružová (Copper rose)"
+
+#: lib/layouts/latexcolors.module:1172
+msgid "Coquelicot"
+msgstr "Maková (Coquelicot)"
 
 #: lib/latexcolors:621
 msgid "ProcessBlue"
@@ -22996,27 +25375,344 @@ msgstr "ProcesneModrá (ProcessBlue)"
 
 #: lib/latexcolors:631 lib/latexcolors:1706
 msgid "SkyBlue"
-msgstr "NebeskoModrá (SkyBlue)"
+msgstr "Nebesko-modrá (SkyBlue)"
 
 #: lib/latexcolors:641 lib/latexcolors:1802
 msgid "Turquoise"
 msgstr "Tyrkysová (Turquoise)"
 
+#: lib/layouts/latexcolors.module:5604
+msgid "Turquoise blue"
+msgstr "Tyrkysovo-modrá (Turquoise blue)"
+
+#: lib/layouts/latexcolors.module:5612
+msgid "Turquoise green"
+msgstr "Tyrkysovo-zelená (Turquoise green)"
+
+#: lib/layouts/latexcolors.module:5620
+msgid "Tuscan red"
+msgstr "Toskánska červená (Tuscan red)"
+
+#: lib/layouts/latexcolors.module:5628
+msgid "Twilight lavender"
+msgstr "Súmrakovo-levanduľová (Twilight lavender)"
+
+#: lib/layouts/latexcolors.module:5636
+msgid "Tyrian purple"
+msgstr "Tyrianska fialová (Tyrian purple)"
+
+#: lib/layouts/latexcolors.module:5644
+msgid "UA blue"
+msgstr "UA-modrá (UA blue)"
+
+#: lib/layouts/latexcolors.module:5652
+msgid "UA red"
+msgstr "UA-červená (UA red)"
+
+#: lib/layouts/latexcolors.module:5660
+msgid "Ube"
+msgstr "Ube"
+
+#: lib/layouts/latexcolors.module:5668
+msgid "UCLA Blue"
+msgstr "UCLA-modrá (UCLA Blue)"
+
+#: lib/layouts/latexcolors.module:5676
+msgid "UCLA Gold"
+msgstr "UCLA-zlatá (UCLA Gold)"
+
+#: lib/layouts/latexcolors.module:5684
+msgid "UFO Green"
+msgstr "UFO-zelená (UFO Green)"
+
+#: lib/layouts/latexcolors.module:5692
+msgid "Ultramarine"
+msgstr "Ultramarínová (Ultramarine)"
+
+#: lib/layouts/latexcolors.module:5700
+msgid "Ultramarine blue"
+msgstr "Ultramarínovo-modrá (Ultramarine blue)"
+
+#: lib/layouts/latexcolors.module:5708
+msgid "Ultra pink"
+msgstr "Ultra ružová (Ultra pink)"
+
+#: lib/layouts/latexcolors.module:5716
+msgid "Umber"
+msgstr "Umbra (Umber)"
+
+#: lib/layouts/latexcolors.module:5724
+msgid "United Nations blue"
+msgstr "OSN-modrá (United Nations blue)"
+
+#: lib/layouts/latexcolors.module:5732
+msgid "Unmellow Yellow"
+msgstr "Bezmravene-žltá (Unmellow Yellow)"
+
+#: lib/layouts/latexcolors.module:5740
+msgid "UP Forest green"
+msgstr "Lesno-zelená (tradičná) (UP Forest green)"
+
+#: lib/layouts/latexcolors.module:5748
+msgid "UP Maroon"
+msgstr "UP-gaštanová (UP Maroon)"
+
+#: lib/layouts/latexcolors.module:5756
+msgid "Upsdell red"
+msgstr "Upsdell-červená (Upsdell red)"
+
+# žltačka
+#: lib/layouts/latexcolors.module:5764
+msgid "Urobilin"
+msgstr "Urobilín (Urobilin)"
+
+#: lib/layouts/latexcolors.module:5772
+msgid "USC Cardinal"
+msgstr "OU karmínovo-červená (USC Cardinal)"
+
+#: lib/layouts/latexcolors.module:5780
+msgid "USC Gold"
+msgstr "Mandarínkovo-žltá (USC Gold)"
+
+#: lib/layouts/latexcolors.module:5788
+msgid "Utah Crimson"
+msgstr "Utah-karmínová (Utah Crimson)"
+
+#: lib/layouts/latexcolors.module:5796
+msgid "Vanilla"
+msgstr "Stredne šampanské (Vanilla)"
+
+#: lib/layouts/latexcolors.module:5804
+msgid "Vegas gold"
+msgstr "Vegas-zlatá (Vegas gold)"
+
+#: lib/layouts/latexcolors.module:5812
+msgid "Venetian red"
+msgstr "Benátska červená (Venetian red)"
+
+#: lib/layouts/latexcolors.module:5820
+msgid "Verdigris"
+msgstr "Medenka (Verdigris)"
+
+#: lib/layouts/latexcolors.module:5828
+msgid "Vermilion"
+msgstr "Krvavo-oranžová (Vermilion)"
+
+#: lib/layouts/latexcolors.module:5836
+msgid "Veronica"
+msgstr "Fialová (Veronica)"
+
 #: lib/latexcolors:649
 msgid "TealBlue"
 msgstr "TyrkysovoModrá (TealBlue)"
 
-#: lib/latexcolors:659 lib/latexcolors:1794
+#: lib/layouts/latexcolors.module:156 lib/latexcolors:659 lib/latexcolors:1794
 msgid "Aquamarine"
 msgstr "Akvamarínová (Aquamarine)"
+
+#: lib/layouts/latexcolors.module:164
+msgid "Army green"
+msgstr "Zelená (Army green)"
+
+#: lib/layouts/latexcolors.module:172
+msgid "Arsenic"
+msgstr "Arzénová (Arsenic)"
+
+#: lib/layouts/latexcolors.module:180
+msgid "Arylide yellow"
+msgstr "Žltá (Arylide yellow)"
+
+#: lib/layouts/latexcolors.module:188
+msgid "Ash grey"
+msgstr "Šedá (Ash grey)"
+
+#: lib/layouts/latexcolors.module:196
+msgid "Asparagus"
+msgstr "Špargľová (Asparagus)"
+
+#: lib/layouts/latexcolors.module:204
+msgid "Atomic tangerine"
+msgstr "Ružovo-oranžová (Atomic tangerine)"
+
+#: lib/layouts/latexcolors.module:212
+msgid "Auburn"
+msgstr "Gaštanová (Auburn)"
+
+#: lib/layouts/latexcolors.module:220
+msgid "Aureolin"
+msgstr "Kobaltová žlť (Aureolin)"
+
+#: lib/layouts/latexcolors.module:228
+msgid "AuroMetalSaurus"
+msgstr "AuroMetalSaurus"
+
+#: lib/layouts/latexcolors.module:236
+msgid "Awesome"
+msgstr "Úžasná (Awesome)"
+
+#: lib/layouts/latexcolors.module:244
+msgid "Azure (color wheel)"
+msgstr "Modro-azúrová (Azure Color Wheel)"
+
+#: lib/layouts/latexcolors.module:252
+msgid "Azure (web) (Azure mist)"
+msgstr "Modro-azúrová (Azure (web/mist)"
+
+#: lib/layouts/latexcolors.module:260
+msgid "Baby blue"
+msgstr "Modrá (Baby blue)"
+
+#: lib/layouts/latexcolors.module:268
+msgid "Baby blue eyes"
+msgstr "Modrá (Baby blue eyes)"
+
+#: lib/layouts/latexcolors.module:276
+msgid "Baby pink"
+msgstr "Ružová (Baby pink)"
+
+#: lib/layouts/latexcolors.module:284
+msgid "Ball Blue"
+msgstr "Modrá (Ball Blue)"
+
+#: lib/layouts/latexcolors.module:292
+msgid "Banana Mania"
+msgstr "Banánová (Banana Mania)"
+
+#: lib/layouts/latexcolors.module:300
+msgid "Banana Yellow"
+msgstr "Banánovožltá (Banana Yellow)"
+
+#: lib/layouts/latexcolors.module:308
+msgid "Battleship grey"
+msgstr "Šedá (Battleship grey)"
+
+#: lib/layouts/latexcolors.module:316
+msgid "Bazaar"
+msgstr "Bazárová (Bazaar)"
+
+#: lib/layouts/latexcolors.module:324
+msgid "Beau blue"
+msgstr "Modrá krásna (Beau blue)"
+
+#: lib/layouts/latexcolors.module:332
+msgid "Beaver"
+msgstr "Bobrová (Beaver)"
 
 #: lib/latexcolors:667
 msgid "BlueGreen"
 msgstr "ModroZelená (BlueGreen)"
 
-#: lib/latexcolors:675
+#: lib/layouts/latexcolors.module:1996 lib/latexcolors:675
 msgid "Emerald"
-msgstr "SmaragdoZelená (Emerald)"
+msgstr "Smaragdová (Emerald)"
+
+#: lib/layouts/latexcolors.module:2004
+msgid "Eton blue"
+msgstr "Etónová modrá (Eton blue)"
+
+#: lib/layouts/latexcolors.module:2012
+msgid "Fallow"
+msgstr "Ťavia srsť (Fallow)"
+
+#: lib/layouts/latexcolors.module:2020
+msgid "Falu red"
+msgstr "Falu červená (Falu red)"
+
+#: lib/layouts/latexcolors.module:2028
+msgid "Fandango"
+msgstr "Fandango"
+
+#: lib/layouts/latexcolors.module:2036
+msgid "Fashion fuchsia"
+msgstr "Módna fuchsiová (Fashion fuchsia)"
+
+#: lib/layouts/latexcolors.module:2044
+msgid "Fawn"
+msgstr "Plavá (Fawn)"
+
+#: lib/layouts/latexcolors.module:2052
+msgid "Feldgrau"
+msgstr "Poľná šedá (Feldgrau)"
+
+#: lib/layouts/latexcolors.module:2060
+msgid "Fern green"
+msgstr "Papraďovo-zelená (Fern green)"
+
+#: lib/layouts/latexcolors.module:2068
+msgid "Ferrari Red"
+msgstr "Ferrari červená (Ferrari Red)"
+
+#: lib/layouts/latexcolors.module:2076
+msgid "Field drab"
+msgstr "Poľná jednofarebná (Field drab)"
+
+#: lib/layouts/latexcolors.module:2084
+msgid "Firebrick"
+msgstr "Tehlová (Firebrick)"
+
+#: lib/layouts/latexcolors.module:2092
+msgid "Fire engine red"
+msgstr "Hasičská červená (Fire engine red)"
+
+#: lib/layouts/latexcolors.module:2100
+msgid "Flame"
+msgstr "Plameňová (Flame)"
+
+#: lib/layouts/latexcolors.module:2108
+msgid "Flamingo pink"
+msgstr "Flamingo ružová (Flamingo pink)"
+
+#: lib/layouts/latexcolors.module:2116
+msgid "Flavescent"
+msgstr "Žltkastá (Flavescent)"
+
+#: lib/layouts/latexcolors.module:2124
+msgid "Flax"
+msgstr "Ľanová (Flax)"
+
+#: lib/layouts/latexcolors.module:2132
+msgid "Floral white"
+msgstr "Kvetinovo-biela (Floral white)"
+
+#: lib/layouts/latexcolors.module:2140
+msgid "Fluorescent orange"
+msgstr "Jantarová (Fluorescent orange)"
+
+#: lib/layouts/latexcolors.module:2148
+msgid "Fluorescent pink"
+msgstr "Sýto-ružová (Fluorescent pink)"
+
+#: lib/layouts/latexcolors.module:2156
+msgid "Fluorescent yellow"
+msgstr "Brilantná limetková (Fluorescent yellow)"
+
+#: lib/layouts/latexcolors.module:2164
+msgid "Folly"
+msgstr "Folly"
+
+#: lib/layouts/latexcolors.module:2172
+msgid "Forest green (traditional)"
+msgstr "Lesno-zelená (tradičná) (Forest green (traditional))"
+
+#: lib/layouts/latexcolors.module:2180
+msgid "Forest green (web)"
+msgstr "Lesno-zelená (web) (Forest green (web))"
+
+#: lib/layouts/latexcolors.module:2188
+msgid "French beige"
+msgstr "Francúzska béžová (French beige)"
+
+#: lib/layouts/latexcolors.module:2196
+msgid "French blue"
+msgstr "Francúzska modrá (French blue)"
+
+#: lib/layouts/latexcolors.module:2204
+msgid "French lilac"
+msgstr "Francúzska orgovánová (French lilac)"
+
+#: lib/layouts/latexcolors.module:2212
+msgid "French rose"
+msgstr "Francúzska ružová (French rose)"
 
 #: lib/latexcolors:683
 msgid "JungleGreen"
@@ -23032,7 +25728,7 @@ msgstr "LesnoZelená (ForestGreen)"
 
 #: lib/latexcolors:721
 msgid "PineGreen"
-msgstr "BorovicovoZelená (PineGreen)"
+msgstr "Borovicovo-zelená (PineGreen)"
 
 #: lib/latexcolors:731 lib/latexcolors:1930
 msgid "LimeGreen"
@@ -23040,7 +25736,7 @@ msgstr "LimetkovoZelená (LimeGreen)"
 
 #: lib/latexcolors:741 lib/latexcolors:2002
 msgid "YellowGreen"
-msgstr "ŽltoZelená (YellowGreen)"
+msgstr "Žlto-zelená (YellowGreen)"
 
 #: lib/latexcolors:751 lib/latexcolors:1914
 msgid "SpringGreen"
@@ -23062,9 +25758,53 @@ msgstr "SurovejSieny (RawSienna)"
 msgid "Sepia"
 msgstr "Sépiová (Sepia)"
 
-#: lib/latexcolors:805 lib/latexcolors:1329
+#: lib/layouts/latexcolors.module:5164
+msgid "Shadow"
+msgstr "Tieň"
+
+#: lib/layouts/latexcolors.module:5172
+msgid "Shamrock green"
+msgstr "Shamrock-zelená (Shamrock green)"
+
+#: lib/layouts/latexcolors.module:5180
+msgid "Shocking pink"
+msgstr " Šokujúco-ružová (Shocking pink)"
+
+#: lib/layouts/latexcolors.module:5356 lib/latexcolors:805 lib/latexcolors:1329
 msgid "Tan"
-msgstr "SvetloHnedá (Tan)"
+msgstr "Svetlo-hnedá (Tan)"
+
+#: lib/layouts/latexcolors.module:5364
+msgid "Tangelo"
+msgstr "Tangelo"
+
+#: lib/layouts/latexcolors.module:5372
+msgid "Tangerine"
+msgstr "Mandarínka (Tangerine)"
+
+#: lib/layouts/latexcolors.module:5380
+msgid "Tangerine yellow"
+msgstr "Mandarínkovo-žltá (Tangerine yellow)"
+
+#: lib/layouts/latexcolors.module:5388
+msgid "Taupe"
+msgstr "Tmavá láva (Taupe)"
+
+#: lib/layouts/latexcolors.module:5396
+msgid "Taupe gray"
+msgstr "Taupe šedá (Taupe gray)"
+
+#: lib/layouts/latexcolors.module:5404
+msgid "Tea green"
+msgstr "Čajovo-zelená (Tea green)"
+
+#: lib/layouts/latexcolors.module:5412
+msgid "Tea rose (orange)"
+msgstr "Koralovo-ružová (Tea rose (orange))"
+
+#: lib/layouts/latexcolors.module:5420
+msgid "Tea rose (rose)"
+msgstr "Ružová (Tea rose (rose))"
 
 #: lib/latexcolors:821 lib/latexcolors:829 lib/latexcolors:846
 #: lib/latexcolors:863 lib/latexcolors:880 lib/latexcolors:897
@@ -23141,6 +25881,42 @@ msgstr "TmavoŠedá (DarkGray)"
 msgid "Silver"
 msgstr "Strieborná (Silver)"
 
+#: lib/layouts/latexcolors.module:5204
+msgid "Sinopia"
+msgstr "Sinopia"
+
+#: lib/layouts/latexcolors.module:5212
+msgid "Skobeloff"
+msgstr "Skobeloff"
+
+#: lib/layouts/latexcolors.module:5220
+msgid "Sky blue"
+msgstr "Svetlá nebesko-modrá (Sky blue)"
+
+#: lib/layouts/latexcolors.module:5228
+msgid "Sky magenta"
+msgstr "Nebesko-purpurová (Sky magenta)"
+
+#: lib/layouts/latexcolors.module:5236
+msgid "Slate blue"
+msgstr "Bridlicovo-modrá (Slate blue)"
+
+#: lib/layouts/latexcolors.module:5244
+msgid "Slate gray"
+msgstr "Bridlicovo-šedá (Slate gray)"
+
+#: lib/layouts/latexcolors.module:5252
+msgid "Smalt (Dark powder blue)"
+msgstr "Tmavá práškovo-modrá (Smalt (Dark powder blue))"
+
+#: lib/layouts/latexcolors.module:5260
+msgid "Smokey topaz"
+msgstr "Zadymený topás (Smokey topaz)"
+
+#: lib/layouts/latexcolors.module:5268
+msgid "Smoky black"
+msgstr "Zadymená čierna (Smoky black)"
+
 #: lib/latexcolors:936
 msgid "LightGray"
 msgstr "SvetloŠedá (LightGray)"
@@ -23149,9 +25925,45 @@ msgstr "SvetloŠedá (LightGray)"
 msgid "Gainsboro"
 msgstr "Gainsboro"
 
+#: lib/layouts/latexcolors.module:2260
+msgid "Gamboge"
+msgstr "Cisárska žltá (Gamboge)"
+
+#: lib/layouts/latexcolors.module:2268
+msgid "Ghost white"
+msgstr "Ducho-biela (Ghost white)"
+
+#: lib/layouts/latexcolors.module:2276
+msgid "Ginger"
+msgstr "Zázvorová (Ginger)"
+
+#: lib/layouts/latexcolors.module:2284
+msgid "Glaucous"
+msgstr "Slivková (Glaucous)"
+
+#: lib/layouts/latexcolors.module:2292
+msgid "Gold (metallic)"
+msgstr "Zlatá (Metallica) (Gold (metallic))"
+
+#: lib/layouts/latexcolors.module:2300
+msgid "Gold (web) (Golden)"
+msgstr "Zlatožltá (Gold (web) (Golden))"
+
+#: lib/layouts/latexcolors.module:2308
+msgid "Golden brown"
+msgstr "Zlato-hnedá (Golden brown)"
+
+#: lib/layouts/latexcolors.module:2316
+msgid "Golden poppy"
+msgstr "Zlato-maková (Golden poppy)"
+
+#: lib/layouts/latexcolors.module:2324
+msgid "Golden yellow"
+msgstr "Zlato-žltá (Golden yellow)"
+
 #: lib/latexcolors:961
 msgid "WhiteSmoke"
-msgstr "DymovoBiela (WhiteSmoke)"
+msgstr "Dymovo-biela (WhiteSmoke)"
 
 #: lib/latexcolors:969
 msgid "GhostWhite"
@@ -23161,9 +25973,195 @@ msgstr "DuchoBiela (GhostWhite)"
 msgid "Snow"
 msgstr "Snehová (Snow)"
 
-#: lib/latexcolors:993
+#: lib/layouts/latexcolors.module:5284
+msgid "Spiro Disco Ball"
+msgstr "Spiro Disco Ball"
+
+#: lib/layouts/latexcolors.module:5292
+msgid "Splashed white"
+msgstr "Nastriekaná biela (Splashed white)"
+
+#: lib/layouts/latexcolors.module:5300
+msgid "Spring bud"
+msgstr "Jarný púčik (Spring bud)"
+
+#: lib/layouts/latexcolors.module:5308
+msgid "Spring green"
+msgstr "Jarno-zelená (Spring green)"
+
+#: lib/layouts/latexcolors.module:5316
+msgid "Steel blue"
+msgstr "Oceľovo-modrá (Steel blue)"
+
+#: lib/layouts/latexcolors.module:5324
+msgid "Stil de grain yellow"
+msgstr "Neapolská žltá (Stil de grain yellow)"
+
+#: lib/layouts/latexcolors.module:5332
+msgid "Straw"
+msgstr "Slama (Straw)"
+
+#: lib/layouts/latexcolors.module:5340
+msgid "Sunglow"
+msgstr "Slnečná žiara (Sunglow)"
+
+#: lib/layouts/latexcolors.module:5348
+msgid "Sunset"
+msgstr "Sýto-šampanská (Sunset)"
+
+#: lib/layouts/latexcolors.module:2676 lib/latexcolors:993
 msgid "Ivory"
-msgstr "Slonovej Kosti (Ivory)"
+msgstr "Slonovinová (Ivory)"
+
+#: lib/layouts/latexcolors.module:2684
+msgid "Jade"
+msgstr "Jadeová (nefritová zelená) (Jade)"
+
+#: lib/layouts/latexcolors.module:2692
+msgid "Jasper"
+msgstr "Jaspis (Jasper)"
+
+#: lib/layouts/latexcolors.module:2700
+msgid "Jazzberry jam"
+msgstr "Jazzberry džem (Jazzberry jam)"
+
+# Narcissus jonquilla
+#: lib/layouts/latexcolors.module:2708
+msgid "Jonquil"
+msgstr "Neapolská žltá (Jonquil)"
+
+# svetlá žlto zelená
+#: lib/layouts/latexcolors.module:2716
+msgid "June bud"
+msgstr "June bud"
+
+#: lib/layouts/latexcolors.module:2724
+msgid "Jungle green"
+msgstr "Džunglo-zelená (Jungle green)"
+
+#: lib/layouts/latexcolors.module:2732
+msgid "Kelly green"
+msgstr "Kelly-zelená (Kelly green)"
+
+#: lib/layouts/latexcolors.module:2740
+msgid "Khaki (HTML/CSS) (Khaki)"
+msgstr "Khaki (Khaki (HTML/CSS) (Khaki))"
+
+#: lib/layouts/latexcolors.module:2748
+msgid "Khaki (X11) (Light khaki)"
+msgstr "Svetlá khaki (Khaki (X11) (Light khaki))"
+
+#: lib/layouts/latexcolors.module:2756
+msgid "La Salle Green"
+msgstr "La-Salle zelená (La Salle Green)"
+
+#: lib/layouts/latexcolors.module:2764
+msgid "Languid lavender"
+msgstr "Languid levanduľová (Languid lavender)"
+
+#: lib/layouts/latexcolors.module:2772
+msgid "Lapis lazuli"
+msgstr "Lapislazuli (Lapis lazuli)"
+
+#: lib/layouts/latexcolors.module:2780
+msgid "Laser Lemon"
+msgstr "Laser citrónová (Laser Lemon)"
+
+#: lib/layouts/latexcolors.module:2788
+msgid "Lava"
+msgstr "Láva (Lava)"
+
+#: lib/layouts/latexcolors.module:2796
+msgid "Lavender (floral)"
+msgstr "Levanduľová (kvetinová) (Lavender (floral))"
+
+#: lib/layouts/latexcolors.module:2804
+msgid "Lavender (web)"
+msgstr "Levanduľová (Lavender (web))"
+
+#: lib/layouts/latexcolors.module:2812
+msgid "Lavender blue"
+msgstr "Levanduľovo-modrá (Lavender blue)"
+
+#: lib/layouts/latexcolors.module:2820
+msgid "Lavender blush"
+msgstr "Levanduľovo-červená (Lavender blush)"
+
+#: lib/layouts/latexcolors.module:2828
+msgid "Lavender gray"
+msgstr "Levanduľovo-šedá (Lavender gray)"
+
+#: lib/layouts/latexcolors.module:2836
+msgid "Lavender indigo"
+msgstr "Levanduľovo-indigová (Lavender indigo)"
+
+#: lib/layouts/latexcolors.module:2844
+msgid "Lavender magenta"
+msgstr "Levanduľovo-purpurová (Lavender magenta)"
+
+#: lib/layouts/latexcolors.module:2852
+msgid "Lavender mist"
+msgstr "Levanduľovo-zahlmená (Lavender mist)"
+
+#: lib/layouts/latexcolors.module:2860
+msgid "Lavender pink"
+msgstr "Levanduľovo-ružová (Lavender pink)"
+
+#: lib/layouts/latexcolors.module:2868
+msgid "Lavender purple"
+msgstr "Levanduľovo-fialová (Lavender purple)"
+
+#: lib/layouts/latexcolors.module:2876
+msgid "Lavender rose"
+msgstr "Levanduľovo-ružová (Lavender rose)"
+
+#: lib/layouts/latexcolors.module:2884
+msgid "Lawn green"
+msgstr "Trávnikovo-zelená (Lawn green)"
+
+#: lib/layouts/latexcolors.module:2892
+msgid "Lemon"
+msgstr "Citrónová (Lemon)"
+
+#: lib/layouts/latexcolors.module:2900
+msgid "Lemon chiffon"
+msgstr "Citrónovo-šifónová (Lemon chiffon)"
+
+#: lib/layouts/latexcolors.module:2908
+msgid "Light apricot"
+msgstr "Svetlo-marhuľová (Light apricot)"
+
+#: lib/layouts/latexcolors.module:2916
+msgid "Light blue"
+msgstr "Svetlo-modrá (Light blue)"
+
+#: lib/layouts/latexcolors.module:2924
+msgid "Light brown"
+msgstr "Svetlo-hnedá (Light brown)"
+
+#: lib/layouts/latexcolors.module:2932
+msgid "Light carmine pink"
+msgstr "Svetlá karmínovo-ružová (Light carmine pink)"
+
+#: lib/layouts/latexcolors.module:2940
+msgid "Light coral"
+msgstr "Svetlo-koralová (Light coral)"
+
+#: lib/layouts/latexcolors.module:2948
+msgid "Light cornflower blue"
+msgstr "Svetlá nevädzo-modrá (Light cornflower blue)"
+
+#: lib/layouts/latexcolors.module:2956
+msgid "Light cyan"
+msgstr "Svetlo-azúrová (Light cyan)"
+
+#: lib/layouts/latexcolors.module:2964
+msgid "Light fuchsia pink"
+msgstr "Svetlá fuchsiovo-ružová (Light fuchsia pink)"
+
+#: lib/layouts/latexcolors.module:2972
+msgid "Light goldenrod yellow"
+msgstr "Svetlá zlatobyľovo-žltá (Light goldenrod yellow)"
 
 #: lib/latexcolors:1001
 msgid "FloralWhite"
@@ -23173,6 +26171,10 @@ msgstr "KvetinovoBiela (FloralWhite)"
 msgid "Seashell"
 msgstr "Lasturová (Seashell)"
 
+#: lib/layouts/latexcolors.module:5148
+msgid "Selective yellow"
+msgstr "Selektívna žltá (Selective yellow)"
+
 #: lib/latexcolors:1017
 msgid "OldLace"
 msgstr "StaroZlatá (OldLace)"
@@ -23180,6 +26182,18 @@ msgstr "StaroZlatá (OldLace)"
 #: lib/latexcolors:1025
 msgid "Linen"
 msgstr "Ľanová (Linen)"
+
+#: lib/layouts/latexcolors.module:3140
+msgid "Liver"
+msgstr "Pečeňová (Liver)"
+
+#: lib/layouts/latexcolors.module:3148
+msgid "Lust"
+msgstr "Chtíč (Lust)"
+
+#: lib/layouts/latexcolors.module:3156
+msgid "Macaroni and Cheese"
+msgstr "Makaróny so syrom (Macaroni and Cheese)"
 
 #: lib/latexcolors:1033
 msgid "AntiqueWhite"
@@ -23197,9 +26211,21 @@ msgstr "PapájoKrémová (PapayaWhip)"
 msgid "Beige"
 msgstr "Béžová (Beige)"
 
-#: lib/latexcolors:1065
+#: lib/layouts/latexcolors.module:1236 lib/latexcolors:1065
 msgid "Cornsilk"
 msgstr "Kukuričná (Cornsilk)"
+
+#: lib/layouts/latexcolors.module:1244
+msgid "Cosmic latte"
+msgstr "Kozmicko-mliečna (Cosmic latte)"
+
+#: lib/layouts/latexcolors.module:1252
+msgid "Cotton candy"
+msgstr "Cukrovej vaty (Cotton candy)"
+
+#: lib/layouts/latexcolors.module:1260
+msgid "Cream"
+msgstr "Krémová (Cream)"
 
 #: lib/latexcolors:1073
 msgid "LightGoldenrodYellow"
@@ -23237,9 +26263,49 @@ msgstr "TmavoOranžová (DarkOrange)"
 msgid "DarkGoldenrod"
 msgstr "Tmavá Zlatobyľová (DarkGoldenrod)"
 
-#: lib/latexcolors:1169
+#: lib/layouts/latexcolors.module:4300 lib/latexcolors:1169
 msgid "Peru"
-msgstr "Peru"
+msgstr "Peru (Peru)"
+
+#: lib/layouts/latexcolors.module:4308
+msgid "Persian pink"
+msgstr "Perzská ružová (Persian pink)"
+
+#: lib/layouts/latexcolors.module:4316
+msgid "Persian plum"
+msgstr "Perzská slivka (Persian plum)"
+
+#: lib/layouts/latexcolors.module:4324
+msgid "Persian red"
+msgstr "Perzská červená (Persian red)"
+
+#: lib/layouts/latexcolors.module:4332
+msgid "Persian rose"
+msgstr "Perzská ružová (Persian rose)"
+
+#: lib/layouts/latexcolors.module:4340
+msgid "Persimmon"
+msgstr "Persimmon"
+
+#: lib/layouts/latexcolors.module:4348
+msgid "Phlox"
+msgstr "Psychedelická fialová (Phlox)"
+
+#: lib/layouts/latexcolors.module:4356
+msgid "Phthalo blue"
+msgstr "Phthalo-modrá"
+
+#: lib/layouts/latexcolors.module:4364
+msgid "Phthalo green"
+msgstr "Phthalo-zelená (Phthalo green)"
+
+#: lib/layouts/latexcolors.module:4372
+msgid "Piggy pink"
+msgstr "Prasiatko-ružová (Piggy pink)"
+
+#: lib/layouts/latexcolors.module:4380
+msgid "Pine green"
+msgstr "Borovicovo-zelená (Pine green)"
 
 #: lib/latexcolors:1177
 msgid "Chocolate"
@@ -23249,9 +26315,9 @@ msgstr "ČokoládovoHnedá (Chocolate)"
 msgid "SaddleBrown"
 msgstr "SedlovoHnedá (SaddleBrown)"
 
-#: lib/latexcolors:1193
+#: lib/layouts/latexcolors.module:5188 lib/latexcolors:1193
 msgid "Sienna"
-msgstr "Sienna"
+msgstr "Siena (Sienna)"
 
 #: lib/latexcolors:1209
 msgid "DarkRed"
@@ -23273,9 +26339,65 @@ msgstr "Karmínová (Crimson)"
 msgid "Tomato"
 msgstr "Paradajková (Tomato)"
 
+#: lib/layouts/latexcolors.module:5532
+msgid "Toolbox"
+msgstr "Toolbox"
+
+#: lib/layouts/latexcolors.module:5540
+msgid "Tractor red"
+msgstr "Traktorovo-červená (Tractor red)"
+
+#: lib/layouts/latexcolors.module:5548
+msgid "Trolley Grey"
+msgstr "Šedá (Trolley Grey)"
+
+#: lib/layouts/latexcolors.module:5556
+msgid "Tropical rain forest"
+msgstr "Tropický dažďový prales (Tropical rain forest)"
+
+#: lib/layouts/latexcolors.module:5564
+msgid "True Blue"
+msgstr "Pravá modrá (True Blue)"
+
+#: lib/layouts/latexcolors.module:5572
+msgid "Tufts Blue"
+msgstr "Trsy-modrá (Tufts Blue)"
+
+#: lib/layouts/latexcolors.module:5580
+msgid "Tumbleweed"
+msgstr "Slanobyl (Tumbleweed)"
+
+#: lib/layouts/latexcolors.module:5588
+msgid "Turkish rose"
+msgstr "Turecky-ružová (Turkish rose)"
+
 #: lib/latexcolors:1273
 msgid "Coral"
 msgstr "Koralová (Coral)"
+
+#: lib/layouts/latexcolors.module:1188
+msgid "Coral pink"
+msgstr "Koralovo-ružová (Coral pink)"
+
+#: lib/layouts/latexcolors.module:1196
+msgid "Coral red"
+msgstr "Koralovo-červená (Coral red)"
+
+#: lib/layouts/latexcolors.module:1204
+msgid "Cordovan"
+msgstr "Cordovan (Cordovan)"
+
+#: lib/layouts/latexcolors.module:1212
+msgid "Corn"
+msgstr "Kukuričná (Corn)"
+
+#: lib/layouts/latexcolors.module:1220
+msgid "Cornell Red"
+msgstr "Karneolová (Cornell Red)"
+
+#: lib/layouts/latexcolors.module:1228
+msgid "Cornflower blue"
+msgstr "NevädzoModrá (Cornflower blue)"
 
 #: lib/latexcolors:1289
 msgid "LightCoral"
@@ -23291,7 +26413,7 @@ msgstr "SvetloLososová (LightSalmon)"
 
 #: lib/latexcolors:1313
 msgid "SandyBrown"
-msgstr "PieskovoHnedá (SandyBrown)"
+msgstr "Pieskovo-hnedá (SandyBrown)"
 
 #: lib/latexcolors:1321
 msgid "RosyBrown"
@@ -23313,13 +26435,41 @@ msgstr "Broskyňová (PeachPuff)"
 msgid "Moccasin"
 msgstr "Mokasínová (Moccasin)"
 
+#: lib/layouts/latexcolors.module:3540
+msgid "Mode beige"
+msgstr "Šedo-hnedá (Mode beige)"
+
+#: lib/layouts/latexcolors.module:3548
+msgid "Moonstone blue"
+msgstr "Drahokamovo-modrá (Moonstone blue)"
+
+#: lib/layouts/latexcolors.module:3556
+msgid "Mordant red 19"
+msgstr "Moridlo-červená 19 (Mordant red 19)"
+
+#: lib/layouts/latexcolors.module:3564
+msgid "Moss green"
+msgstr "Machovo-zelená (Moss green)"
+
+#: lib/layouts/latexcolors.module:3572
+msgid "Mountain Meadow"
+msgstr "Horsko-lúčna (Mountain Meadow)"
+
+#: lib/layouts/latexcolors.module:3580
+msgid "Mountbatten pink"
+msgstr "Mountbatten-ružová (Mountbatten pink)"
+
 #: lib/latexcolors:1369
 msgid "NavajoWhite"
 msgstr "NavajoBiela (NavajoWhite)"
 
-#: lib/latexcolors:1377
+#: lib/layouts/latexcolors.module:348 lib/latexcolors:1377
 msgid "Bisque"
-msgstr "ParadajkovoKrémová (Bisque)"
+msgstr "Paradajkovo-krémová (Bisque)"
+
+#: lib/layouts/latexcolors.module:356
+msgid "Bistre"
+msgstr "Bister (Bistre)"
 
 #: lib/latexcolors:1385
 msgid "LavenderBlush"
@@ -23339,7 +26489,7 @@ msgstr "SvetloRužová (HotPink)"
 
 #: lib/latexcolors:1441
 msgid "DeepPink"
-msgstr "SýtoRužová (DeepPink)"
+msgstr "Sýto-ružová (DeepPink)"
 
 #: lib/latexcolors:1449
 msgid "MediumVioletRed"
@@ -23403,11 +26553,11 @@ msgstr "Doger-Modrá (DodgerBlue)"
 
 #: lib/latexcolors:1690
 msgid "DeepSkyBlue"
-msgstr "Sýta NebeskoModrá (DeepSkyBlue)"
+msgstr "Sýta nebesko-modrá (DeepSkyBlue)"
 
 #: lib/latexcolors:1698
 msgid "LightSkyBlue"
-msgstr "Svetlá NebeskoModrá (LightSkyBlue)"
+msgstr "Svetlá nebesko-modrá (LightSkyBlue)"
 
 #: lib/latexcolors:1714
 msgid "LightSteelBlue"
@@ -23417,13 +26567,13 @@ msgstr "Svetlá OceľovoModrá (LightSteelBlue)"
 msgid "LightBlue"
 msgstr "SvetloModrá (LightBlue)"
 
-#: lib/latexcolors:1738
+#: lib/layouts/latexcolors.module:148 lib/latexcolors:1738
 msgid "Aqua"
-msgstr "Aqua"
+msgstr "Cyanová (Aqua)"
 
 #: lib/latexcolors:1746
 msgid "PowderBlue"
-msgstr "PráškovoModrá (PowderBlue)"
+msgstr "Práškovo-modrá (PowderBlue)"
 
 #: lib/latexcolors:1754
 msgid "LightCyan"
@@ -23441,9 +26591,78 @@ msgstr "Azúrová (Azure)"
 msgid "MintCream"
 msgstr "Krémová pepermintová (MintCream)"
 
-#: lib/latexcolors:1786
+#: lib/layouts/latexcolors.module:2532 lib/latexcolors:1786
 msgid "Honeydew"
-msgstr "Medová (Honeydew)"
+msgstr "Medovková (Honeydew)"
+
+#: lib/layouts/latexcolors.module:2540
+msgid "Hooker\\'s green"
+msgstr "Hookerova zelená (Hooker\\'s green)"
+
+#: lib/layouts/latexcolors.module:2548
+msgid "Hot magenta"
+msgstr "Horúca purpurová (Hot magenta)"
+
+#: lib/layouts/latexcolors.module:2556
+msgid "Hot pink"
+msgstr "Horúca ružová (Hot pink)"
+
+#: lib/layouts/latexcolors.module:2564
+msgid "Hunter green"
+msgstr "Poľovnícka zelená (Hunter green)"
+
+#: lib/layouts/latexcolors.module:2572
+msgid "Iceberg"
+msgstr "Ľadovcová (Iceberg)"
+
+#: lib/layouts/latexcolors.module:2580
+msgid "Icterine"
+msgstr "Ikterínová (Icterine)"
+
+#: lib/layouts/latexcolors.module:2588
+msgid "Inchworm"
+msgstr "Húsenica piadivky (Inchworm)"
+
+#: lib/layouts/latexcolors.module:2596
+msgid "India green"
+msgstr "Indicko-zelená (India green)"
+
+#: lib/layouts/latexcolors.module:2604
+msgid "Indian red"
+msgstr "Indicko-červená (IndianRed)"
+
+#: lib/layouts/latexcolors.module:2612
+msgid "Indian yellow"
+msgstr "Indicko-žltá (Indian yellow)"
+
+#: lib/layouts/latexcolors.module:2620
+msgid "Indigo (dye)"
+msgstr "Indigová 2 (Indigo (dye))"
+
+#: lib/layouts/latexcolors.module:2628
+msgid "Indigo (web)"
+msgstr "Indigová (web) (Indigo (web))"
+
+#: lib/layouts/latexcolors.module:2636
+msgid "International Klein Blue"
+msgstr "Medzinárodná Klein-modrá (International Klein Blue)"
+
+#: lib/layouts/latexcolors.module:2644
+msgid "International orange"
+msgstr "Medzinárodná oranžová (International orange)"
+
+#: lib/layouts/latexcolors.module:2652
+msgid "Iris"
+msgstr "Dúhovková (Iris)"
+
+# Nemá v Slovenčine: zliatina Cu 84,5% + Mn 12,5%
+#: lib/layouts/latexcolors.module:2660
+msgid "Isabelline"
+msgstr "Isabelline"
+
+#: lib/layouts/latexcolors.module:2668
+msgid "Islamic green"
+msgstr "Moslimská zelená (Islamic green)"
 
 #: lib/latexcolors:1810
 msgid "PaleTurquoise"
@@ -23451,7 +26670,7 @@ msgstr "BledoTyrkysová (PaleTurquoise)"
 
 #: lib/latexcolors:1818
 msgid "MediumTurquoise"
-msgstr "Stredná tyrkysová (MediumTurquoise)"
+msgstr "Stredne tyrkysová (Medium turquoise,MediumTurquoise)"
 
 #: lib/latexcolors:1826
 msgid "DarkTurquoise"
@@ -23674,19 +26893,19 @@ msgstr "Starožitná Biela 4 (AntiqueWhite4)"
 
 #: lib/latexcolors:2152
 msgid "Bisque1"
-msgstr "ParadajkovoKrémová 1 (Bisque1)"
+msgstr "Paradajkovo-krémová 1 (Bisque1)"
 
 #: lib/latexcolors:2160
 msgid "Bisque2"
-msgstr "ParadajkovoKrémová 2 (Bisque2)"
+msgstr "Paradajkovo-krémová 2 (Bisque2)"
 
 #: lib/latexcolors:2168
 msgid "Bisque3"
-msgstr "ParadajkovoKrémová 3 (Bisque3)"
+msgstr "Paradajkovo-krémová 3 (Bisque3)"
 
 #: lib/latexcolors:2176
 msgid "Bisque4"
-msgstr "ParadajkovoKrémová 4 (Bisque4)"
+msgstr "Paradajkovo-krémová 4 (Bisque4)"
 
 #: lib/latexcolors:2184
 msgid "PeachPuff1"
@@ -23914,51 +27133,51 @@ msgstr "OceľovoModrá 4 (SteelBlue4)"
 
 #: lib/latexcolors:2632
 msgid "DeepSkyBlue1"
-msgstr "Sýta NebeskoModrá 1 (DeepSkyBlue1)"
+msgstr "Sýta nebesko-modrá 1 (DeepSkyBlue1)"
 
 #: lib/latexcolors:2640
 msgid "DeepSkyBlue2"
-msgstr "Sýta NebeskoModrá 2 (DeepSkyBlue2)"
+msgstr "Sýta nebesko-modrá 2 (DeepSkyBlue2)"
 
 #: lib/latexcolors:2648
 msgid "DeepSkyBlue3"
-msgstr "Sýta NebeskoModrá 3 (DeepSkyBlue3)"
+msgstr "Sýta nebesko-modrá 3 (DeepSkyBlue3)"
 
 #: lib/latexcolors:2656
 msgid "DeepSkyBlue4"
-msgstr "Sýta NebeskoModrá 4 (DeepSkyBlue4)"
+msgstr "Sýta nebesko-modrá 4 (DeepSkyBlue4)"
 
 #: lib/latexcolors:2664
 msgid "SkyBlue1"
-msgstr "NebeskoModrá 1 (SkyBlue1)"
+msgstr "Nebesko-modrá 1 (SkyBlue1)"
 
 #: lib/latexcolors:2672
 msgid "SkyBlue2"
-msgstr "NebeskoModrá 2 (SkyBlue2)"
+msgstr "Nebesko-modrá 2 (SkyBlue2)"
 
 #: lib/latexcolors:2680
 msgid "SkyBlue3"
-msgstr "NebeskoModrá 3 (SkyBlue3)"
+msgstr "Nebesko-modrá 3 (SkyBlue3)"
 
 #: lib/latexcolors:2688
 msgid "SkyBlue4"
-msgstr "NebeskoModrá 4 (SkyBlue4)"
+msgstr "Nebesko-modrá 4 (SkyBlue4)"
 
 #: lib/latexcolors:2696
 msgid "LightSkyBlue1"
-msgstr "Svetlá NebeskoModrá 1 (LightSkyBlue1)"
+msgstr "Svetlá nebesko-modrá 1 (LightSkyBlue1)"
 
 #: lib/latexcolors:2704
 msgid "LightSkyBlue2"
-msgstr "Svetlá NebeskoModrá 2 (LightSkyBlue2)"
+msgstr "Svetlá nebesko-modrá 2 (LightSkyBlue2)"
 
 #: lib/latexcolors:2712
 msgid "LightSkyBlue3"
-msgstr "Svetlá NebeskoModrá 3 (LightSkyBlue3)"
+msgstr "Svetlá nebesko-modrá 3 (LightSkyBlue3)"
 
 #: lib/latexcolors:2720
 msgid "LightSkyBlue4"
-msgstr "Svetlá NebeskoModrá 4 (LightSkyBlue4)"
+msgstr "Svetlá nebesko-modrá 4 (LightSkyBlue4)"
 
 #: lib/latexcolors:2728
 msgid "SlateGray1"
@@ -24286,19 +27505,19 @@ msgstr "Svetlá Zlatobyľová 4 (LightGoldenrod4)"
 
 #: lib/latexcolors:3376
 msgid "LightYellow1"
-msgstr "SvetloŽltá 1 (LightYellow1)"
+msgstr "Svetlo-žltá 1 (LightYellow1)"
 
 #: lib/latexcolors:3384
 msgid "LightYellow2"
-msgstr "SvetloŽltá 2 (LightYellow2)"
+msgstr "Svetlo-žltá 2 (LightYellow2)"
 
 #: lib/latexcolors:3392
 msgid "LightYellow3"
-msgstr "SvetloŽltá 3 (LightYellow3)"
+msgstr "Svetlo-žltá 3 (LightYellow3)"
 
 #: lib/latexcolors:3400
 msgid "LightYellow4"
-msgstr "SvetloŽltá 4 (LightYellow4)"
+msgstr "Svetlo-žltá 4 (LightYellow4)"
 
 #: lib/latexcolors:3408
 msgid "Yellow1"
@@ -24398,19 +27617,19 @@ msgstr "IndickoČervená 4 (IndianRed4)"
 
 #: lib/latexcolors:3600
 msgid "Sienna1"
-msgstr "Sienna 1 (Sienna1)"
+msgstr "Siena 1 (Sienna1)"
 
 #: lib/latexcolors:3608
 msgid "Sienna2"
-msgstr "Sienna 2 (Sienna2)"
+msgstr "Siena 2 (Sienna2)"
 
 #: lib/latexcolors:3616
 msgid "Sienna3"
-msgstr "Sienna 3 (Sienna3)"
+msgstr "Siena 3 (Sienna3)"
 
 #: lib/latexcolors:3624
 msgid "Sienna4"
-msgstr "Sienna 4 (Sienna4)"
+msgstr "Siena 4 (Sienna4)"
 
 #: lib/latexcolors:3632
 msgid "Burlywood1"
@@ -24622,19 +27841,19 @@ msgstr "Červená 4 (Red4)"
 
 #: lib/latexcolors:4048
 msgid "DeepPink1"
-msgstr "SýtoRužová 1 (DeepPink1)"
+msgstr "Sýto-ružová 1 (DeepPink1)"
 
 #: lib/latexcolors:4056
 msgid "DeepPink2"
-msgstr "SýtoRužová 2 (DeepPink2)"
+msgstr "Sýto-ružová 2 (DeepPink2)"
 
 #: lib/latexcolors:4064
 msgid "DeepPink3"
-msgstr "SýtoRužová 3 (DeepPink3)"
+msgstr "Sýto-ružová 3 (DeepPink3)"
 
 #: lib/latexcolors:4072
 msgid "DeepPink4"
-msgstr "SýtoRužová 4 (DeepPink4)"
+msgstr "Sýto-ružová 4 (DeepPink4)"
 
 #: lib/latexcolors:4080
 msgid "HotPink1"
@@ -24899,6 +28118,10 @@ msgstr "Karmínová (Košenová) (Crimson Cochineal)"
 #: lib/latexfonts:150
 msgid "Crimson"
 msgstr "Karmínová (Crimson)"
+
+#: lib/layouts/latexcolors.module:1276
+msgid "Crimson glory"
+msgstr "Karmínová sláva (Crimson glory)"
 
 #: lib/latexfonts:156
 msgid "Computer Modern Roman"
@@ -37763,6 +40986,10 @@ msgstr ""
 #: src/frontends/qt/GuiApplication.cpp:1812
 msgid "Exiting."
 msgstr "Končím."
+
+#: src/frontends/qt/GuiApplication.cpp:1800
+msgid "Cancelled"
+msgstr "Zrušené"
 
 #: src/frontends/qt/GuiApplication.cpp:1907
 #, c-format
