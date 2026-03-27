@@ -1137,7 +1137,7 @@ void InsetIndex::addToToc(DocIterator const & cpit, bool output_active,
 	if (!il.contentaslabel())
 		str = label;
 	else {
-		str = getNewLabel(label);
+		str = getNewLabel(label, TOC_ENTRY_LENGTH);
 		OutputParams const rp(0);
 		vector<docstring> sublbls = getSubentriesAsText(rp, true);
 		for (auto const & sublbl : sublbls) {

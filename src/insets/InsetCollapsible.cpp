@@ -487,10 +487,10 @@ bool InsetCollapsible::clickable(BufferView const & bv, int x, int y) const
 }
 
 
-docstring const InsetCollapsible::getNewLabel(docstring const & l) const
+docstring const InsetCollapsible::getNewLabel(docstring const & l,
+					      pos_type const max_length) const
 {
 	odocstringstream label;
-	pos_type const max_length = 15;
 	pos_type const p_siz = paragraphs().begin()->size();
 	pos_type const n = min(max_length, p_siz);
 	pos_type i = 0;

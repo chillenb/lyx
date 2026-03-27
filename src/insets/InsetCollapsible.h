@@ -72,7 +72,7 @@ public:
 	void cursorPos(BufferView const & bv, CursorSlice const & sl,
 		bool boundary, int & x, int & y) const override;
 	///
-	docstring const getNewLabel(docstring const & l) const;
+	docstring const getNewLabel(docstring const & l, pos_type const max_length = 15) const;
 	///
 	bool editable() const override;
 	///
