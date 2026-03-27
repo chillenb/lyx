@@ -809,7 +809,8 @@ void InsetIndex::getSubentries(otexstream & os, OutputParams const & runparams,
 
 
 std::vector<docstring> InsetIndex::getSubentriesAsText(OutputParams const & runparams,
-						       bool const asLabel) const
+						       bool const asLabel,
+						       pos_type const max_length) const
 {
 	std::vector<docstring> subentries;
 
@@ -827,7 +828,7 @@ std::vector<docstring> InsetIndex::getSubentriesAsText(OutputParams const & runp
 					break;
 				if (asLabel) {
 					docstring const l;
-					docstring const sl = iim.getNewLabel(l);
+					docstring const sl = iim.getNewLabel(l, max_length);
 					subentries.emplace_back(sl);
 				} else {
 					otexstringstream os;
@@ -1134,32 +1135,35 @@ void InsetIndex::addToToc(DocIterator const & cpit, bool output_active,
 	docstring str;
 	InsetLayout const & il = getLayout();
 	docstring label = translateIfPossible(il.labelstring());
+	string type = "index";
+	if (buffer().masterBuffer()->params().use_indices)
+		type += ":" + to_utf8(params_.index);
+	shared_ptr<Toc> toc = backend.toc(type);
 	if (!il.contentaslabel())
-		str = label;
+		toc->push_back(TocItem(cpit, 0, label, output_active));
 	else {
+		str = getNewLabel(label, TOC_ENTRY_LENGTH);
 		OutputParams const rp(0);
-		vector<docstring> sublbls = getSubentriesAsText(rp, true);
-		docstring sublabel;
-		for (auto const & sublbl : sublbls) {
-			sublabel += " " + docstring(1, char_type(0x2023));// TRIANGULAR BULLET
-			sublabel += " " + sublbl;
-		}
 		docstring see = getSeeAsText(rp, true);
 		if (see.empty() && !getSeeAlsoesAsText(rp, true).empty())
 			see = getSeeAlsoesAsText(rp, true).front();
 		if (!see.empty())
 			see = " " + docstring(1, char_type(0x261e)) + see;// WHITE RIGHT POINTING INDEX
-		int const maxlen = TOC_ENTRY_LENGTH - sublabel.size() - see.size();
-		str = getNewLabel(label, maxlen) + sublabel + see;
+		vector<docstring> sublbls = getSubentriesAsText(rp, true, TOC_ENTRY_LENGTH);
+		if (sublbls.empty() && !see.empty())
+			str += see;
+		toc->push_back(TocItem(cpit, 0, str, output_active));
+		int item_depth = 1;
+		for (auto const & sublbl : sublbls) {
+			if (item_depth == int(sublbls.size()))
+				toc->push_back(TocItem(cpit, item_depth, sublbl + see, output_active));
+			else
+				toc->push_back(TocItem(cpit, item_depth, sublbl, output_active));
+			++item_depth;
+		}
 	}
-	string type = "index";
-	if (buffer().masterBuffer()->params().use_indices)
-		type += ":" + to_utf8(params_.index);
-	TocBuilder & b = backend.builder(type);
-	b.pushItem(pit, str, output_active);
 	// Proceed with the rest of the inset.
 	InsetCollapsible::addToToc(cpit, output_active, utype, backend);
-	b.pop();
 }
 
 
