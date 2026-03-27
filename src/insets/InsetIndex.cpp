@@ -1137,20 +1137,20 @@ void InsetIndex::addToToc(DocIterator const & cpit, bool output_active,
 	if (!il.contentaslabel())
 		str = label;
 	else {
-		str = getNewLabel(label, TOC_ENTRY_LENGTH);
 		OutputParams const rp(0);
 		vector<docstring> sublbls = getSubentriesAsText(rp, true);
+		docstring sublabel;
 		for (auto const & sublbl : sublbls) {
-			str += " " + docstring(1, char_type(0x2023));// TRIANGULAR BULLET
-			str += " " + sublbl;
+			sublabel += " " + docstring(1, char_type(0x2023));// TRIANGULAR BULLET
+			sublabel += " " + sublbl;
 		}
 		docstring see = getSeeAsText(rp, true);
 		if (see.empty() && !getSeeAlsoesAsText(rp, true).empty())
 			see = getSeeAlsoesAsText(rp, true).front();
-		if (!see.empty()) {
-			str += " " + docstring(1, char_type(0x261e));// WHITE RIGHT POINTING INDEX
-			str += " " + see;
-		}
+		if (!see.empty())
+			see = " " + docstring(1, char_type(0x261e)) + see;// WHITE RIGHT POINTING INDEX
+		int const maxlen = TOC_ENTRY_LENGTH - sublabel.size() - see.size();
+		str = getNewLabel(label, maxlen) + sublabel + see;
 	}
 	string type = "index";
 	if (buffer().masterBuffer()->params().use_indices)
