@@ -123,6 +123,10 @@ public:
 	bool mark() const { return mark_; }
 	/// did we place the anchor?
 	void setMark(bool mark) { mark_ = mark; }
+	/// Set search match selection mode
+	void setSearchMatchSelection(bool set) { search_match_selection_ = set; }
+	/// Are we in search match selection mode?
+	bool searchMatchSelection() const { return search_match_selection_; }
 	///
 	void setSelection();
 	/// set selection at given position
@@ -229,6 +233,8 @@ private:
 	bool mark_;
 	/// are we in word-selection mode? This is set when double clicking.
 	bool word_selection_;
+	/// are we in search match selection mode?
+	bool search_match_selection_;
 
 	/// the start of the new born word
 	DocIterator new_word_;

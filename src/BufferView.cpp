@@ -3236,7 +3236,8 @@ bool BufferView::mouseSetCursor(Cursor & cur, bool const select)
 
 
 void BufferView::putSelectionAt(DocIterator const & cur,
-				int length, bool backwards)
+				int length, bool backwards,
+				bool const searchhit)
 {
 	d->cursor_.clearSelection();
 
@@ -3249,6 +3250,8 @@ void BufferView::putSelectionAt(DocIterator const & cur,
 		} else
 			d->cursor_.setSelection(d->cursor_, length);
 	}
+	if (searchhit)
+		d->cursor_.setSearchMatchSelection(true);
 }
 
 

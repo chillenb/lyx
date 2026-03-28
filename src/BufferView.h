@@ -306,7 +306,8 @@ public:
 	 * cur + \c length.
 	 */
 	void putSelectionAt(DocIterator const & cur,
-		int length, bool backwards);
+		int length, bool backwards,
+		bool const searchhit = false);
 	/// set a selection between \p from and \p to
 	void setSelection(DocIterator const & from,
 			 DocIterator const & to);

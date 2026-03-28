@@ -239,8 +239,9 @@ int findForward(DocIterator & cur, DocIterator const & endcur,
 		bool find_del = true, bool onlysel = false)
 {
 	for (; cur; cur.forwardChar()) {
-		if (onlysel && cur.inTexted() && endcur.pit() == cur.pit()
-		    && endcur.idx() == cur.idx() && endcur.pos() < cur.pos())
+		if (onlysel && cur.inTexted()
+		    && (endcur.pit() < cur.pit() || (endcur.pit() == cur.pit()
+		    && endcur.idx() == cur.idx() && endcur.pos() < cur.pos())))
 			break;
 		if (cur.inTexted()) {
 			int len = match(cur.paragraph(), cur.pos(), find_del);
@@ -258,8 +259,9 @@ int findBackwards(DocIterator & cur, DocIterator const & endcur,
 {
 	while (cur) {
 		cur.backwardChar();
-		if (onlysel && cur.inTexted() && endcur.pit() == cur.pit()
-		    && endcur.idx() == cur.idx() && endcur.pos() > cur.pos())
+		if (onlysel && cur.inTexted()
+		    && (endcur.pit() > cur.pit() || (endcur.pit() == cur.pit()
+		    && endcur.idx() == cur.idx() && endcur.pos() > cur.pos())))
 			break;
 		if (cur.inTexted()) {
 			int len = match(cur.paragraph(), cur.pos(), find_del);
@@ -283,10 +285,13 @@ bool searchAllowed(docstring const & str)
 } // namespace
 
 
+DocIterator selection_search_start;
+DocIterator selection_search_end;
+
 bool findOne(BufferView * bv, docstring const & searchstr,
 	     bool case_sens, bool whole, bool forward,
 	     bool find_del, bool check_wrap, bool const auto_wrap,
-	     bool instant, bool onlysel)
+	     bool instant, bool onlysel, bool fromrep)
 {
 	bool const had_selection = bv->cursor().selection();
 
@@ -302,10 +307,14 @@ bool findOne(BufferView * bv, docstring const & searchstr,
 	if (!searchAllowed(searchstr))
 		return false;
 
-	DocIterator const startcur = bv->cursor().selectionBegin();
-	DocIterator const endcur = bv->cursor().selectionEnd();
+	if (!fromrep && (!had_selection || !bv->cursor().searchMatchSelection())) {
+		selection_search_start = bv->cursor().selectionBegin();
+		selection_search_end = bv->cursor().selectionEnd();
+	}
 
-	if (onlysel && had_selection) {
+	bool const in_new_selection = onlysel && had_selection && !bv->cursor().searchMatchSelection();
+
+	if (in_new_selection) {
 		docstring const matchstring = bv->cursor().selectionAsString(false);
 		docstring const lcmatchsting = support::lowercase(matchstring);
 		if (matchstring == searchstr || (!case_sens && lcmatchsting == lowercase(searchstr))) {
@@ -324,28 +333,35 @@ bool findOne(BufferView * bv, docstring const & searchstr,
 	}
 
 	DocIterator cur = forward
-		? ((instant || onlysel) ? bv->cursor().selectionBegin() : bv->cursor().selectionEnd())
-		: ((instant || onlysel) ? bv->cursor().selectionEnd() : bv->cursor().selectionBegin());
+		? ((instant || in_new_selection) ? bv->cursor().selectionBegin() : bv->cursor().selectionEnd())
+		: ((instant || in_new_selection) ? bv->cursor().selectionEnd() : bv->cursor().selectionBegin());
 
 	MatchString const match(searchstr, case_sens, whole);
 
+	// Set only_selection to false if we search outside a set selection range
+	onlysel &= selection_search_start != selection_search_end;
+
 	int match_len = forward
-		? findForward(cur, endcur, match, find_del, onlysel)
-		: findBackwards(cur, startcur, match, find_del, onlysel);
+		? findForward(cur, selection_search_end, match, find_del, onlysel)
+		: findBackwards(cur, selection_search_start, match, find_del, onlysel);
 
 	if (match_len > 0)
-		bv->putSelectionAt(cur, match_len, !forward);
-	else if (onlysel && had_selection) {
+		bv->putSelectionAt(cur, match_len, !forward, true);
+	else if (onlysel) {
 		docstring q = _("The search string was not found within the selection.\n"
 				"Continue search outside?");
 		int search_answer = frontend::Alert::prompt(_("Search outside selection?"),
 			q, 0, 1, _("&Yes"), _("&No"));
 		if (search_answer == 0) {
 			bv->clearSelection();
+			selection_search_start = bv->cursor().selectionBegin();
+			selection_search_end = bv->cursor().selectionEnd();
 			if (findOne(bv, searchstr, case_sens, whole, forward,
 				    find_del, check_wrap, auto_wrap, false, false))
 				return true;
-		}
+		} else
+			// restore original selection
+			bv->setSelection(selection_search_start, selection_search_end);
 		return false;
 	}
 	else if (check_wrap) {
@@ -381,12 +397,12 @@ bool findOne(BufferView * bv, docstring const & searchstr,
 				    find_del, false, false, false, false))
 				return true;
 		}
-		bv->setCursor(startcur);
+		bv->setCursor(selection_search_start);
 
 		// restore original selection
 		if (had_selection) {
 			bv->cursor().resetAnchor();
-			bv->setSelection(startcur, endcur);
+			bv->setSelection(selection_search_start, selection_search_end);
 		}
 		return false;
 	}
@@ -470,18 +486,18 @@ int replaceAll(BufferView * bv,
 }
 
 
-// the idea here is that we are going to replace the string that
+// The idea here is that we are going to replace the string that
 // is selected IF it is the search string.
-// if there is a selection, but it is not the search string, then
-// we basically ignore it. (FIXME We ought to replace only within
-// the selection.)
-// if there is no selection, then:
-//  (i) if some search string has been provided, then we find it.
+// If there is a selection, but it is not the search string, then
+// we search for a hit in this selection if "only selection" is set,
+// otherwise we search after the selection.
+// If there is no selection, then:
+//  (i) If some search string has been provided, then we find it.
 //      (think of how the dialog works when you hit "replace" the
 //      first time.)
-// (ii) if no search string has been provided, then we treat the
-//      word the cursor is in as the search string. (why? i have no
-//      idea.) but this only works in text?
+// (ii) If no search string has been provided, then we treat the
+//      word the cursor is in as the search string. ("Why? I have no
+//      idea.) But this only works in text?
 //
 // returns the number of replacements made (one, if any) and
 // whether anything at all was done.
@@ -491,7 +507,8 @@ pair<bool, int> replaceOne(BufferView * bv, docstring searchstr,
 			   bool onlysel)
 {
 	Cursor & cur = bv->cursor();
-	if (!cur.selection() || onlysel) {
+	bool const in_new_selection = onlysel && !bv->cursor().searchMatchSelection();
+	if (!cur.selection() || in_new_selection) {
 		// no selection, non-empty search string: find it
 		if (!searchstr.empty()) {
 			bool const found = findOne(bv, searchstr, case_sens, whole,
@@ -535,6 +552,13 @@ pair<bool, int> replaceOne(BufferView * bv, docstring searchstr,
 		return make_pair(false, 0);
 
 	cap::replaceSelectionWithString(cur, replacestr);
+	if (onlysel && selection_search_start != selection_search_end
+	    && selection_search_end.pit() == cur.pit()
+	    && selection_search_end.idx() == cur.idx()) {
+		selection_search_end.pos() += replacestr.length() - searchstr.length();
+		LASSERT(selection_search_end.pos() >= 0 && selection_search_end.pos() <= cur.lastpos(),
+			selection_search_end.pos() = 0);
+	}
 	if (forward) {
 		cur.pos() += replacestr.length();
 		LASSERT(cur.pos() <= cur.lastpos(),
@@ -542,7 +566,7 @@ pair<bool, int> replaceOne(BufferView * bv, docstring searchstr,
 	}
 	if (findnext)
 		findOne(bv, searchstr, case_sens, whole,
-			forward, false, findnext, wrap, false, onlysel);
+			forward, false, findnext, wrap, false, onlysel, true);
 
 	return make_pair(true, 1);
 }

@@ -123,19 +123,19 @@ DocIterator bruteFind(Cursor const & c, int x, int y)
 
 CursorData::CursorData()
 	: DocIterator(), anchor_(), selection_(false), mark_(false),
-	  word_selection_(false), current_font(inherit_font)
+	  word_selection_(false), search_match_selection_(false), current_font(inherit_font)
 {}
 
 
 CursorData::CursorData(Buffer * buffer)
 	: DocIterator(buffer), anchor_(), selection_(false), mark_(false),
-	  word_selection_(false), current_font(inherit_font)
+	  word_selection_(false), search_match_selection_(false), current_font(inherit_font)
 {}
 
 
 CursorData::CursorData(DocIterator const & dit)
 	: DocIterator(dit), anchor_(), selection_(false), mark_(false),
-	  word_selection_(false), current_font(inherit_font)
+	  word_selection_(false), search_match_selection_(false), current_font(inherit_font)
 {}
 
 
@@ -251,6 +251,7 @@ CursorSlice CursorData::normalAnchor() const
 void CursorData::setSelection()
 {
 	selection(true);
+	setSearchMatchSelection(false);
 	if (idx() == normalAnchor().idx() &&
 	    pit() == normalAnchor().pit() &&
 	    pos() == normalAnchor().pos())
@@ -262,6 +263,7 @@ void CursorData::setSelection(DocIterator const & where, int n)
 {
 	setCursor(where);
 	selection(true);
+	setSearchMatchSelection(false);
 	anchor_ = where;
 	pos() += n;
 }
@@ -500,6 +502,7 @@ void CursorData::clearSelection()
 {
 	selection(false);
 	setWordSelection(false);
+	setSearchMatchSelection(false);
 	setMark(false);
 	resetAnchor();
 }
