@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-03-27 15:58+0100\n"
-"PO-Revision-Date: 2026-03-27 23:39+0000\n"
+"POT-Creation-Date: 2026-03-28 00:47+0100\n"
+"PO-Revision-Date: 2026-03-28 09:53+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -23525,7 +23525,7 @@ msgstr "Brilantná karmínová (Electric crimson)"
 
 #: lib/layouts/latexcolors.module:1924
 msgid "Electric cyan"
-msgstr "Brilantná azúrová (Electric cyan)"
+msgstr "Brilantná modro-zelená (Electric cyan)"
 
 #: lib/layouts/latexcolors.module:1932
 msgid "Electric green"
@@ -24269,7 +24269,7 @@ msgstr "Bublinová (Bubbles)"
 
 #: lib/layouts/latexcolors.module:668
 msgid "Buff"
-msgstr "Kožohnedá (Buff)"
+msgstr "Kožo-hnedá (Buff)"
 
 #: lib/layouts/latexcolors.module:676
 msgid "Bulgarian rose"
@@ -24281,7 +24281,7 @@ msgstr "Burgundská (Burgundy)"
 
 #: lib/layouts/latexcolors.module:692
 msgid "Burlywood"
-msgstr "HruboHnedá (Burlywood)"
+msgstr "Hrubo-hnedá (Burlywood)"
 
 #: lib/layouts/latexcolors.module:700
 msgid "Burnt orange"
@@ -24423,13 +24423,14 @@ msgstr "Čerešňovo-červená (Cerise)"
 msgid "Cerise pink"
 msgstr "Čerešňovo-ružová (Cerise pink)"
 
-#: lib/latexcolors:152 lib/latexcolors:613 lib/latexcolors:1730
+#: lib/layouts/latexcolors.module:1284 lib/latexcolors:152 lib/latexcolors:613
+#: lib/latexcolors:1730
 msgid "Cyan"
-msgstr "Azúrová (Cyan)"
+msgstr "Modro-zelená (Cyan)"
 
 #: lib/layouts/latexcolors.module:1292
 msgid "Cyan (process)"
-msgstr "Azúrová (Cyan (process))"
+msgstr "Modro-zelená (Cyan (process))"
 
 #: lib/layouts/latexcolors.module:1300
 msgid "Daffodil"
@@ -24579,7 +24580,7 @@ msgstr "Tmavo-korálová (Dark coral)"
 
 #: lib/layouts/latexcolors.module:1380
 msgid "Dark cyan"
-msgstr "Tmavo-azúrová (Dark cyan)"
+msgstr "Tmavá modro-zelená (Dark cyan)"
 
 #: lib/layouts/latexcolors.module:1388
 msgid "Dark electric blue"
@@ -26153,7 +26154,7 @@ msgstr "Svetlá nevädzo-modrá (Light cornflower blue)"
 
 #: lib/layouts/latexcolors.module:2956
 msgid "Light cyan"
-msgstr "Svetlo-azúrová (Light cyan)"
+msgstr "Svetlá modro-zelená (Light cyan)"
 
 #: lib/layouts/latexcolors.module:2964
 msgid "Light fuchsia pink"
@@ -26237,7 +26238,7 @@ msgstr "SvetloŽltá (LightYellow)"
 
 #: lib/latexcolors:1089
 msgid "LemonChiffon"
-msgstr "CitrónovoŠifónová (LemonChiffon)"
+msgstr "Citrónovo-šifónová (LemonChiffon)"
 
 #: lib/latexcolors:1097
 msgid "PaleGoldenrod"
@@ -26397,7 +26398,7 @@ msgstr "Karneolová (Cornell Red)"
 
 #: lib/layouts/latexcolors.module:1228
 msgid "Cornflower blue"
-msgstr "NevädzoModrá (Cornflower blue)"
+msgstr "Nevädzo-modrá (Cornflower blue)"
 
 #: lib/latexcolors:1289
 msgid "LightCoral"
@@ -26421,7 +26422,7 @@ msgstr "RužovoHnedá (RosyBrown)"
 
 #: lib/latexcolors:1337
 msgid "BurlyWood"
-msgstr "HruboHnedá (BurlyWood)"
+msgstr "Hrubo-hnedá (BurlyWood)"
 
 #: lib/latexcolors:1345
 msgid "Wheat"
@@ -26461,7 +26462,7 @@ msgstr "Mountbatten-ružová (Mountbatten pink)"
 
 #: lib/latexcolors:1369
 msgid "NavajoWhite"
-msgstr "NavajoBiela (NavajoWhite)"
+msgstr "Navajová biela (NavajoWhite)"
 
 #: lib/layouts/latexcolors.module:348 lib/latexcolors:1377
 msgid "Bisque"
@@ -26569,7 +26570,7 @@ msgstr "SvetloModrá (LightBlue)"
 
 #: lib/layouts/latexcolors.module:148 lib/latexcolors:1738
 msgid "Aqua"
-msgstr "Cyanová (Aqua)"
+msgstr "Modro-zelená (Aqua)"
 
 #: lib/latexcolors:1746
 msgid "PowderBlue"
@@ -26577,7 +26578,7 @@ msgstr "Práškovo-modrá (PowderBlue)"
 
 #: lib/latexcolors:1754
 msgid "LightCyan"
-msgstr "SvetloAzúrová (LightCyan)"
+msgstr "Svetlá modro-zelená (LightCyan)"
 
 #: lib/latexcolors:1762
 msgid "AliceBlue"
@@ -26686,7 +26687,7 @@ msgstr "Svetlá MorskoZelená (LightSeaGreen)"
 
 #: lib/latexcolors:1850
 msgid "DarkCyan"
-msgstr "TmavoAzúrová (DarkCyan)"
+msgstr "Tmavá modro-zelená (DarkCyan)"
 
 #: lib/latexcolors:1874
 msgid "MediumSeaGreen"
@@ -26718,7 +26719,7 @@ msgstr "OlivoŠedoHnedá (OliveDrab)"
 
 #: lib/latexcolors:1978
 msgid "DarkOliveGreen"
-msgstr "Tmavá OlivoZelená (DarkOliveGreen)"
+msgstr "Tmavá olivo-zelená (DarkOliveGreen)"
 
 #: lib/latexcolors:1994
 msgid "DarkKhaki"
@@ -26925,35 +26926,35 @@ msgstr "Broskyňová 4 (PeachPuff4)"
 
 #: lib/latexcolors:2216
 msgid "NavajoWhite1"
-msgstr "NavajoBiela 1 (NavajoWhite1)"
+msgstr "Navajová biela 1 (NavajoWhite1)"
 
 #: lib/latexcolors:2224
 msgid "NavajoWhite2"
-msgstr "NavajoBiela 2 (NavajoWhite2)"
+msgstr "Navajová biela 2 (NavajoWhite2)"
 
 #: lib/latexcolors:2232
 msgid "NavajoWhite3"
-msgstr "NavajoBiela 3 (NavajoWhite3)"
+msgstr "Navajová biela 3 (NavajoWhite3)"
 
 #: lib/latexcolors:2240
 msgid "NavajoWhite4"
-msgstr "NavajoBiela 4 (NavajoWhite4)"
+msgstr "Navajová biela 4 (NavajoWhite4)"
 
 #: lib/latexcolors:2248
 msgid "LemonChiffon1"
-msgstr "CitrónovoŠifónová 1 (LemonChiffon1)"
+msgstr "Citrónovo-šifónová 1 (LemonChiffon1)"
 
 #: lib/latexcolors:2256
 msgid "LemonChiffon2"
-msgstr "CitrónovoŠifónová 2 (LemonChiffon2)"
+msgstr "Citrónovo-šifónová 2 (LemonChiffon2)"
 
 #: lib/latexcolors:2264
 msgid "LemonChiffon3"
-msgstr "CitrónovoŠifónová 3 (LemonChiffon3)"
+msgstr "Citrónovo-šifónová 3 (LemonChiffon3)"
 
 #: lib/latexcolors:2272
 msgid "LemonChiffon4"
-msgstr "CitrónovoŠifónová 4 (LemonChiffon4)"
+msgstr "Citrónovo-šifónová 4 (LemonChiffon4)"
 
 #: lib/latexcolors:2280
 msgid "Cornsilk1"
@@ -27229,19 +27230,19 @@ msgstr "SvetloModrá 4 (LightBlue4)"
 
 #: lib/latexcolors:2824
 msgid "LightCyan1"
-msgstr "SvetloAzúrová 1 (LightCyan1)"
+msgstr "Svetlá modro-zelená 1 (LightCyan1)"
 
 #: lib/latexcolors:2832
 msgid "LightCyan2"
-msgstr "SvetloAzúrová 2 (LightCyan2)"
+msgstr "Svetlá modro-zelená 2 (LightCyan2)"
 
 #: lib/latexcolors:2840
 msgid "LightCyan3"
-msgstr "SvetloAzúrová 3 (LightCyan3)"
+msgstr "Svetlá modro-zelená 3 (LightCyan3)"
 
 #: lib/latexcolors:2848
 msgid "LightCyan4"
-msgstr "SvetloAzúrová 4 (LightCyan4)"
+msgstr "Svetlá modro-zelená 4 (LightCyan4)"
 
 #: lib/latexcolors:2856
 msgid "PaleTurquoise1"
@@ -27293,19 +27294,19 @@ msgstr "Tyrkysová 4 (Turquoise4)"
 
 #: lib/latexcolors:2952
 msgid "Cyan1"
-msgstr "Azúrová 1 (Cyan1)"
+msgstr "Modro-zelená 1 (Cyan1)"
 
 #: lib/latexcolors:2960
 msgid "Cyan2"
-msgstr "Azúrová 2 (Cyan2)"
+msgstr "Modro-zelená 2 (Cyan2)"
 
 #: lib/latexcolors:2968
 msgid "Cyan3"
-msgstr "Azúrová 3 (Cyan3)"
+msgstr "Modro-zelená 3 (Cyan3)"
 
 #: lib/latexcolors:2976
 msgid "Cyan4"
-msgstr "Azúrová 4 (Cyan4)"
+msgstr "Modro-zelená 4 (Cyan4)"
 
 #: lib/latexcolors:2984
 msgid "DarkSlateGray1"
@@ -27633,19 +27634,19 @@ msgstr "Siena 4 (Sienna4)"
 
 #: lib/latexcolors:3632
 msgid "Burlywood1"
-msgstr "HruboHnedá 1 (Burlywood1)"
+msgstr "Hrubo-hnedá 1 (Burlywood1)"
 
 #: lib/latexcolors:3640
 msgid "Burlywood2"
-msgstr "HruboHnedá 2 (Burlywood2)"
+msgstr "Hrubo-hnedá 2 (Burlywood2)"
 
 #: lib/latexcolors:3648
 msgid "Burlywood3"
-msgstr "HruboHnedá 3 (Burlywood3)"
+msgstr "Hrubo-hnedá 3 (Burlywood3)"
 
 #: lib/latexcolors:3656
 msgid "Burlywood4"
-msgstr "HruboHnedá 4 (Burlywood4)"
+msgstr "Hrubo-hnedá 4 (Burlywood4)"
 
 #: lib/latexcolors:3664
 msgid "Wheat1"
@@ -37891,7 +37892,7 @@ msgstr "hnedá"
 
 #: src/Color.cpp:248
 msgid "cyan"
-msgstr "modrozelená"
+msgstr "modro-zelená"
 
 #: src/Color.cpp:249
 msgid "darkgray"
