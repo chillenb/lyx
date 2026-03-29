@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-03-28 00:47+0100\n"
-"PO-Revision-Date: 2026-03-28 09:53+0000\n"
+"POT-Creation-Date: 2026-03-29 11:55+0200\n"
+"PO-Revision-Date: 2026-03-29 10:01+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -16290,7 +16290,7 @@ msgstr "Poskytuje vlastné farby z balíka latexcolors"
 
 #: lib/layouts/latexcolors.module:12
 msgid "Air Force blue"
-msgstr "Modrá (Air Force blue)"
+msgstr "Letecká modrá (Air Force blue)"
 
 #: lib/layouts/latexcolors.module:14 lib/layouts/latexcolors.module:22
 #: lib/layouts/latexcolors.module:30 lib/layouts/latexcolors.module:38
@@ -16676,7 +16676,7 @@ msgstr "Farby LaTeXu"
 
 #: lib/layouts/latexcolors.module:20
 msgid "Alice blue"
-msgstr "Modrá (Alice blue)"
+msgstr "Alice-modrá (Alice blue)"
 
 #: lib/layouts/latexcolors.module:28
 msgid "Alizarin"
@@ -16700,7 +16700,7 @@ msgstr "Jantárová (Amber SAE/ECE)"
 
 #: lib/layouts/latexcolors.module:68
 msgid "American rose"
-msgstr "Ružová (American rose)"
+msgstr "Americká ružová (American rose)"
 
 #: lib/layouts/latexcolors.module:76
 msgid "Amethyst"
@@ -16708,19 +16708,19 @@ msgstr "Ametystová (Amethyst)"
 
 #: lib/layouts/latexcolors.module:84
 msgid "Anti-flash white"
-msgstr "Biela (Anti-flash white)"
+msgstr "Anti-blesková biela (Anti-flash white)"
 
 #: lib/layouts/latexcolors.module:92
 msgid "Antique brass"
-msgstr "Mosadzová (Antique brass)"
+msgstr "Starožitná mosadzová (Antique brass)"
 
 #: lib/layouts/latexcolors.module:100
 msgid "Antique fuchsia"
-msgstr "Fuchsiová (Antique fuchsia)"
+msgstr "Starožitná fuchsiová (Antique fuchsia)"
 
 #: lib/layouts/latexcolors.module:108
 msgid "Antique white"
-msgstr "Biela (Antique white)"
+msgstr "Starožitná biela (Antique white)"
 
 #: lib/layouts/latexcolors.module:116
 msgid "Ao"
@@ -16733,7 +16733,7 @@ msgstr ""
 
 #: lib/layouts/latexcolors.module:132
 msgid "Apple green"
-msgstr "Zelená (Apple green)"
+msgstr "Jablkovo-zelená (Apple green)"
 
 #: lib/layouts/letter.layout:3 lib/examples/Articles:0
 msgid "Letter (Standard Class)"
@@ -23240,7 +23240,7 @@ msgstr "Čierna (Black)"
 
 #: lib/layouts/latexcolors.module:380
 msgid "Blanched Almond"
-msgstr "MandľovoBiela (Blanched Almond)"
+msgstr "Blanšírovaná mandľa (Blanched Almond)"
 
 #: lib/layouts/latexcolors.module:388
 msgid "Bleu de France"
@@ -23297,7 +23297,7 @@ msgstr "Polnočná modrá 1 (Dark midnight blue)"
 
 #: lib/layouts/latexcolors.module:1468
 msgid "Dark olive green"
-msgstr "Tmavá olivo-zelená (Dark olive green)"
+msgstr "Tmavá olivovo-zelená (Dark olive green)"
 
 #: lib/layouts/latexcolors.module:1476
 msgid "Dark orange"
@@ -23473,7 +23473,7 @@ msgstr "Púštno-piesková (Desert sand)"
 
 #: lib/layouts/latexcolors.module:1820
 msgid "Dim gray"
-msgstr "Tmavo-šedá (Dark gray)"
+msgstr "Matno-šedá (Dark gray)"
 
 #: lib/layouts/latexcolors.module:1828
 msgid "Dodger blue"
@@ -24305,31 +24305,31 @@ msgstr "Byzanciová (Byzantium)"
 
 #: lib/layouts/latexcolors.module:740
 msgid "Cadet"
-msgstr "KadetoModrá (Cadet)"
+msgstr "Kadetská (Cadet)"
 
 #: lib/layouts/latexcolors.module:748
 msgid "Cadet blue"
-msgstr "KadetoModrá (CadetBlue)"
+msgstr "Kadeto-modrá (CadetBlue)"
 
 #: lib/layouts/latexcolors.module:756
 msgid "Cadet grey"
-msgstr "KadetoŠedá (Cadet grey)"
+msgstr "Kadeto-šedá (Cadet grey)"
 
 #: lib/layouts/latexcolors.module:764
 msgid "Cadmium Green"
-msgstr "Stredná MorskoZelená (Cadmium Green)"
+msgstr "Kadmiová zelená (Cadmium Green)"
 
 #: lib/layouts/latexcolors.module:772
 msgid "Cadmium Orange"
-msgstr "Kadmium oranžová (Cadmium Orange)"
+msgstr "Kadmiová oranžová (Cadmium Orange)"
 
 #: lib/layouts/latexcolors.module:780
 msgid "Cadmium Red"
-msgstr "Kadmium červená (Cadmium Red)"
+msgstr "Kadmiová červená (Cadmium Red)"
 
 #: lib/layouts/latexcolors.module:788
 msgid "Cadmium Yellow"
-msgstr "Kadmium žltá (Cadmium Yellow)"
+msgstr "Kadmiová žltá (Cadmium Yellow)"
 
 #: lib/layouts/latexcolors.module:796
 msgid "Cal Poly Pomona green"
@@ -24381,15 +24381,15 @@ msgstr "Karmínová (Carmine)"
 
 #: lib/layouts/latexcolors.module:892
 msgid "Carmine pink"
-msgstr "KarmínovoRužová (Carmine pink)"
+msgstr "Karmínovo-ružová (Carmine pink)"
 
 #: lib/layouts/latexcolors.module:900
 msgid "Carmine red"
-msgstr "KarmínovoČervená (Carmine red)"
+msgstr "Karmínovo-červená (Carmine red)"
 
 #: lib/layouts/latexcolors.module:908
 msgid "Carnation pink"
-msgstr "KarneálovoRužová (Carnation pink)"
+msgstr "Karneálovo-ružová (Carnation pink)"
 
 #: lib/layouts/latexcolors.module:916
 msgid "Carnelian"
@@ -24724,7 +24724,7 @@ msgstr "Mäsovo-hnedá (Meat brown)"
 
 #: lib/layouts/latexcolors.module:3308
 msgid "Medium aquamarine"
-msgstr "Stredne akvamarínová (Medium aquamarine)"
+msgstr "Stredne-akvamarínová (Medium aquamarine)"
 
 #: lib/layouts/latexcolors.module:3316
 msgid "Medium blue"
@@ -24898,9 +24898,9 @@ msgstr "FialovoČervená (VioletRed)"
 msgid "Rhodamine"
 msgstr "Rebarborská (Rhodamine)"
 
-#: lib/latexcolors:423
+#: lib/layouts/latexcolors.module:3588 lib/latexcolors:423
 msgid "Mulberry"
-msgstr "TmavoFialová (Mulberry)"
+msgstr "Tmavo-fialová (Mulberry)"
 
 #: lib/layouts/latexcolors.module:3596
 msgid "Mustard"
@@ -25252,7 +25252,7 @@ msgstr "Perzská oranžová (Persian orange)"
 
 #: lib/latexcolors:545 lib/latexcolors:1866
 msgid "CadetBlue"
-msgstr "KadetoModrá (CadetBlue)"
+msgstr "Kadeto-modrá (CadetBlue)"
 
 #: lib/latexcolors:555 lib/latexcolors:1674
 msgid "CornflowerBlue"
@@ -25601,7 +25601,7 @@ msgstr "Bobrová (Beaver)"
 
 #: lib/latexcolors:667
 msgid "BlueGreen"
-msgstr "ModroZelená (BlueGreen)"
+msgstr "Modro-zelená (BlueGreen)"
 
 #: lib/layouts/latexcolors.module:1996 lib/latexcolors:675
 msgid "Emerald"
@@ -25717,15 +25717,15 @@ msgstr "Francúzska ružová (French rose)"
 
 #: lib/latexcolors:683
 msgid "JungleGreen"
-msgstr "DžungloZelená (JungleGreen)"
+msgstr "Džunglo-zelená (JungleGreen)"
 
 #: lib/latexcolors:693 lib/latexcolors:1938
 msgid "SeaGreen"
-msgstr "MorskoZelená SeaGreen)"
+msgstr "Morsko-zelená SeaGreen)"
 
 #: lib/latexcolors:713 lib/latexcolors:1946
 msgid "ForestGreen"
-msgstr "LesnoZelená (ForestGreen)"
+msgstr "Lesno-zelená (ForestGreen)"
 
 #: lib/latexcolors:721
 msgid "PineGreen"
@@ -25733,7 +25733,7 @@ msgstr "Borovicovo-zelená (PineGreen)"
 
 #: lib/latexcolors:731 lib/latexcolors:1930
 msgid "LimeGreen"
-msgstr "LimetkovoZelená (LimeGreen)"
+msgstr "Limetkovo-zelená (LimeGreen)"
 
 #: lib/latexcolors:741 lib/latexcolors:2002
 msgid "YellowGreen"
@@ -25741,7 +25741,7 @@ msgstr "Žlto-zelená (YellowGreen)"
 
 #: lib/latexcolors:751 lib/latexcolors:1914
 msgid "SpringGreen"
-msgstr "JarnoZelená (SpringGreen)"
+msgstr "Jarno-zelená (SpringGreen)"
 
 #: lib/latexcolors:761 lib/latexcolors:2018
 msgid "GreenYellow"
@@ -25749,11 +25749,11 @@ msgstr "ZelenoŽltá (GreenYellow)"
 
 #: lib/latexcolors:769
 msgid "OliveGreen"
-msgstr "OlivoZelená (OliveGreen)"
+msgstr "Olivovo-zelená (OliveGreen)"
 
 #: lib/latexcolors:777
 msgid "RawSienna"
-msgstr "SurovejSieny (RawSienna)"
+msgstr "Surová siena (RawSienna)"
 
 #: lib/latexcolors:785
 msgid "Sepia"
@@ -25860,23 +25860,23 @@ msgstr "SVG-mená"
 
 #: lib/latexcolors:826
 msgid "DarkSlateGray"
-msgstr "Tmavá BridlicoŠedá (DarkSlateGray)"
+msgstr "Tmavá bridlicovo-šedá (DarkSlateGray)"
 
 #: lib/latexcolors:843
 msgid "SlateGray"
-msgstr "BridlicoŠedá (SlateGray)"
+msgstr "Bridlicovo-šedá (SlateGray)"
 
 #: lib/latexcolors:860
 msgid "LightSlateGray"
-msgstr "Svetlá BridlicovoŠedá (LightSlateGray)"
+msgstr "Svetlá bridlicovovo-šedá (LightSlateGray)"
 
 #: lib/latexcolors:877
 msgid "DimGray"
-msgstr "MatnoŠedá (DimGray)"
+msgstr "Matno-šedá (DimGray)"
 
 #: lib/latexcolors:911
 msgid "DarkGray"
-msgstr "TmavoŠedá (DarkGray)"
+msgstr "Tmavo-šedá (DarkGray)"
 
 #: lib/latexcolors:928
 msgid "Silver"
@@ -25920,7 +25920,7 @@ msgstr "Zadymená čierna (Smoky black)"
 
 #: lib/latexcolors:936
 msgid "LightGray"
-msgstr "SvetloŠedá (LightGray)"
+msgstr "Svetlo-šedá (LightGray)"
 
 #: lib/latexcolors:953
 msgid "Gainsboro"
@@ -25968,7 +25968,7 @@ msgstr "Dymovo-biela (WhiteSmoke)"
 
 #: lib/latexcolors:969
 msgid "GhostWhite"
-msgstr "DuchoBiela (GhostWhite)"
+msgstr "Ducho-biela (GhostWhite)"
 
 #: lib/latexcolors:985
 msgid "Snow"
@@ -26012,7 +26012,7 @@ msgstr "Sýto-šampanská (Sunset)"
 
 #: lib/layouts/latexcolors.module:2676 lib/latexcolors:993
 msgid "Ivory"
-msgstr "Slonovinová (Ivory)"
+msgstr "Slonovina (Ivory)"
 
 #: lib/layouts/latexcolors.module:2684
 msgid "Jade"
@@ -26166,7 +26166,7 @@ msgstr "Svetlá zlatobyľovo-žltá (Light goldenrod yellow)"
 
 #: lib/latexcolors:1001
 msgid "FloralWhite"
-msgstr "KvetinovoBiela (FloralWhite)"
+msgstr "Kvetinovo-biela (FloralWhite)"
 
 #: lib/latexcolors:1009
 msgid "Seashell"
@@ -26198,11 +26198,11 @@ msgstr "Makaróny so syrom (Macaroni and Cheese)"
 
 #: lib/latexcolors:1033
 msgid "AntiqueWhite"
-msgstr "Starožitná Biela (AntiqueWhite)"
+msgstr "Starožitná biela (AntiqueWhite)"
 
 #: lib/latexcolors:1041
 msgid "BlanchedAlmond"
-msgstr "MandľovoBiela (BlanchedAlmond)"
+msgstr "Blanšírovaná mandľa (BlanchedAlmond)"
 
 #: lib/latexcolors:1049
 msgid "PapayaWhip"
@@ -26432,9 +26432,9 @@ msgstr "Pšeničná (Wheat)"
 msgid "PeachPuff"
 msgstr "Broskyňová (PeachPuff)"
 
-#: lib/latexcolors:1361
+#: lib/layouts/latexcolors.module:3532 lib/latexcolors:1361
 msgid "Moccasin"
-msgstr "Mokasínová (Moccasin)"
+msgstr "Starožitná biela (Moccasin)"
 
 #: lib/layouts/latexcolors.module:3540
 msgid "Mode beige"
@@ -26478,7 +26478,7 @@ msgstr "Levanduľovo-červená (LavenderBlush)"
 
 #: lib/latexcolors:1393
 msgid "MistyRose"
-msgstr "StaroRužová (MistyRose)"
+msgstr "Hmlistá ruža (MistyRose)"
 
 #: lib/latexcolors:1409
 msgid "LightPink"
@@ -26582,7 +26582,7 @@ msgstr "Svetlá modro-zelená (LightCyan)"
 
 #: lib/latexcolors:1762
 msgid "AliceBlue"
-msgstr "Alice-Modrá (AliceBlue)"
+msgstr "Alice-modrá (AliceBlue)"
 
 #: lib/latexcolors:1770
 msgid "Azure"
@@ -26594,7 +26594,7 @@ msgstr "Krémová pepermintová (MintCream)"
 
 #: lib/layouts/latexcolors.module:2532 lib/latexcolors:1786
 msgid "Honeydew"
-msgstr "Medovková (Honeydew)"
+msgstr "Medovka (Honeydew)"
 
 #: lib/layouts/latexcolors.module:2540
 msgid "Hooker\\'s green"
@@ -26679,11 +26679,11 @@ msgstr "Tmavotyrkysová (DarkTurquoise)"
 
 #: lib/latexcolors:1834
 msgid "MediumAquamarine"
-msgstr "StredneAkvamarínová (MediumAquamarine)"
+msgstr "Stredne-akvamarínová (MediumAquamarine)"
 
 #: lib/latexcolors:1842
 msgid "LightSeaGreen"
-msgstr "Svetlá MorskoZelená (LightSeaGreen)"
+msgstr "Svetlá morsko-zelená (LightSeaGreen)"
 
 #: lib/latexcolors:1850
 msgid "DarkCyan"
@@ -26691,35 +26691,35 @@ msgstr "Tmavá modro-zelená (DarkCyan)"
 
 #: lib/latexcolors:1874
 msgid "MediumSeaGreen"
-msgstr "Stredná MorskoZelená (MediumSeaGreen)"
+msgstr "Stredná morsko-zelená (MediumSeaGreen)"
 
 #: lib/latexcolors:1882
 msgid "DarkSeaGreen"
-msgstr "Tmavá MorskoZelená (DarkSeaGreen)"
+msgstr "Tmavá morsko-zelená (DarkSeaGreen)"
 
 #: lib/latexcolors:1890
 msgid "LightGreen"
-msgstr "SvetloZelená (LightGreen)"
+msgstr "Svetlo-zelená (LightGreen)"
 
 #: lib/latexcolors:1898
 msgid "PaleGreen"
-msgstr "BledoZelená (PaleGreen)"
+msgstr "Bledo-zelená (PaleGreen)"
 
 #: lib/latexcolors:1906
 msgid "MediumSpringGreen"
-msgstr "Stredná JarnoZelená (MediumSpringGreen)"
+msgstr "Stredná jarno-zelená (MediumSpringGreen)"
 
 #: lib/latexcolors:1962
 msgid "DarkGreen"
-msgstr "TmavoZelená (DarkGreen)"
+msgstr "Tmavo-zelená (DarkGreen)"
 
 #: lib/latexcolors:1970
 msgid "OliveDrab"
-msgstr "OlivoŠedoHnedá (OliveDrab)"
+msgstr "Olivovo-šedo-hnedá (OliveDrab)"
 
 #: lib/latexcolors:1978
 msgid "DarkOliveGreen"
-msgstr "Tmavá olivo-zelená (DarkOliveGreen)"
+msgstr "Tmavá olivovo-zelená (DarkOliveGreen)"
 
 #: lib/latexcolors:1994
 msgid "DarkKhaki"
@@ -26731,7 +26731,7 @@ msgstr "Chartreuse"
 
 #: lib/latexcolors:2026
 msgid "LawnGreen"
-msgstr "TrávnikoZelená (LawnGreen)"
+msgstr "Trávnikovo-zelená (LawnGreen)"
 
 #: lib/latexcolors:2048
 msgid "Gray0"
@@ -26878,19 +26878,19 @@ msgstr "Lasturová 4 (Seashell4)"
 
 #: lib/latexcolors:2120
 msgid "AntiqueWhite1"
-msgstr "Starožitná Biela 1 (AntiqueWhite1)"
+msgstr "Starožitná biela 1 (AntiqueWhite1)"
 
 #: lib/latexcolors:2128
 msgid "AntiqueWhite2"
-msgstr "Starožitná Biela 2 (AntiqueWhite2)"
+msgstr "Starožitná biela 2 (AntiqueWhite2)"
 
 #: lib/latexcolors:2136
 msgid "AntiqueWhite3"
-msgstr "Starožitná Biela 3 (AntiqueWhite3)"
+msgstr "Starožitná biela 3 (AntiqueWhite3)"
 
 #: lib/latexcolors:2144
 msgid "AntiqueWhite4"
-msgstr "Starožitná Biela 4 (AntiqueWhite4)"
+msgstr "Starožitná biela 4 (AntiqueWhite4)"
 
 #: lib/latexcolors:2152
 msgid "Bisque1"
@@ -26974,67 +26974,67 @@ msgstr "Kukuričná 4 (Cornsilk4)"
 
 #: lib/latexcolors:2312
 msgid "Ivory1"
-msgstr "Slonovej Kosti 1 (Ivory1)"
+msgstr "Slonovina 1 (Ivory1)"
 
 #: lib/latexcolors:2320
 msgid "Ivory2"
-msgstr "Slonovej Kosti 2 (Ivory2)"
+msgstr "Slonovina 2 (Ivory2)"
 
 #: lib/latexcolors:2328
 msgid "Ivory3"
-msgstr "Slonovej Kosti 3 (Ivory3)"
+msgstr "Slonovina 3 (Ivory3)"
 
 #: lib/latexcolors:2336
 msgid "Ivory4"
-msgstr "Slonovej Kosti 4 (Ivory4)"
+msgstr "Slonovina 4 (Ivory4)"
 
 #: lib/latexcolors:2344
 msgid "Honeydew1"
-msgstr "Medová 1 (Honeydew1)"
+msgstr "Medovka 1 (Honeydew1)"
 
 #: lib/latexcolors:2352
 msgid "Honeydew2"
-msgstr "Medová 2 (Honeydew2)"
+msgstr "Medovka 2 (Honeydew2)"
 
 #: lib/latexcolors:2360
 msgid "Honeydew3"
-msgstr "Medová 3 (Honeydew3)"
+msgstr "Medovka 3 (Honeydew3)"
 
 #: lib/latexcolors:2368
 msgid "Honeydew4"
-msgstr "Medová 4 (Honeydew4)"
+msgstr "Medovka 4 (Honeydew4)"
 
 #: lib/latexcolors:2376
 msgid "LavenderBlush1"
-msgstr "KvetoLevanduľová 1 (LavenderBlush1)"
+msgstr "Levanduľovo-červená 1 (LavenderBlush1)"
 
 #: lib/latexcolors:2384
 msgid "LavenderBlush2"
-msgstr "KvetoLevanduľová 2 (LavenderBlush2)"
+msgstr "Levanduľovo-červená 2 (LavenderBlush2)"
 
 #: lib/latexcolors:2392
 msgid "LavenderBlush3"
-msgstr "KvetoLevanduľová 3 (LavenderBlush3)"
+msgstr "Levanduľovo-červená 3 (LavenderBlush3)"
 
 #: lib/latexcolors:2400
 msgid "LavenderBlush4"
-msgstr "KvetoLevanduľová 4 (LavenderBlush4)"
+msgstr "Levanduľovo-červená 4 (LavenderBlush4)"
 
 #: lib/latexcolors:2408
 msgid "MistyRose1"
-msgstr "StaroRužová 1 (MistyRose1)"
+msgstr "Hmlistá ruža 1 (MistyRose1)"
 
 #: lib/latexcolors:2416
 msgid "MistyRose2"
-msgstr "StaroRužová 2 (MistyRose2)"
+msgstr "Hmlistá ruža 2 (MistyRose2)"
 
 #: lib/latexcolors:2424
 msgid "MistyRose3"
-msgstr "StaroRužová 3 (MistyRose3)"
+msgstr "Hmlistá ruža 3 (MistyRose3)"
 
 #: lib/latexcolors:2432
 msgid "MistyRose4"
-msgstr "StaroRužová 4 (MistyRose4)"
+msgstr "Hmlistá ruža 4 (MistyRose4)"
 
 #: lib/latexcolors:2440
 msgid "Azure1"
@@ -27182,19 +27182,19 @@ msgstr "Svetlá nebesko-modrá 4 (LightSkyBlue4)"
 
 #: lib/latexcolors:2728
 msgid "SlateGray1"
-msgstr "BridlicoŠedá 1 (SlateGray1)"
+msgstr "Bridlicovo-šedá 1 (SlateGray1)"
 
 #: lib/latexcolors:2736
 msgid "SlateGray2"
-msgstr "BridlicoŠedá 2 (SlateGray2)"
+msgstr "Bridlicovo-šedá 2 (SlateGray2)"
 
 #: lib/latexcolors:2744
 msgid "SlateGray3"
-msgstr "BridlicoŠedá 3 (SlateGray3)"
+msgstr "Bridlicovo-šedá 3 (SlateGray3)"
 
 #: lib/latexcolors:2752
 msgid "SlateGray4"
-msgstr "BridlicoŠedá 4 (SlateGray4)"
+msgstr "Bridlicovo-šedá 4 (SlateGray4)"
 
 #: lib/latexcolors:2760
 msgid "LightSteelBlue1"
@@ -27262,19 +27262,19 @@ msgstr "Bledá Tyrkysová 4 (PaleTurquoise4)"
 
 #: lib/latexcolors:2888
 msgid "CadetBlue1"
-msgstr "KadetoModrá 1 (CadetBlue1)"
+msgstr "Kadeto-modrá 1 (CadetBlue1)"
 
 #: lib/latexcolors:2896
 msgid "CadetBlue2"
-msgstr "KadetoModrá 2 (CadetBlue2)"
+msgstr "Kadeto-modrá 2 (CadetBlue2)"
 
 #: lib/latexcolors:2904
 msgid "CadetBlue3"
-msgstr "KadetoModrá 3 (CadetBlue3)"
+msgstr "Kadeto-modrá 3 (CadetBlue3)"
 
 #: lib/latexcolors:2912
 msgid "CadetBlue4"
-msgstr "KadetoModrá 4 (CadetBlue4)"
+msgstr "Kadeto-modrá 4 (CadetBlue4)"
 
 #: lib/latexcolors:2920
 msgid "Turquoise1"
@@ -27310,83 +27310,83 @@ msgstr "Modro-zelená 4 (Cyan4)"
 
 #: lib/latexcolors:2984
 msgid "DarkSlateGray1"
-msgstr "Tmavá BridlicoŠedá 1 (DarkSlateGray1)"
+msgstr "Tmavá bridlicovo-šedá 1 (DarkSlateGray1)"
 
 #: lib/latexcolors:2992
 msgid "DarkSlateGray2"
-msgstr "Tmavá BridlicoŠedá 2 (DarkSlateGray2)"
+msgstr "Tmavá bridlicovo-šedá 2 (DarkSlateGray2)"
 
 #: lib/latexcolors:3000
 msgid "DarkSlateGray3"
-msgstr "Tmavá BridlicoŠedá 3 (DarkSlateGray3)"
+msgstr "Tmavá bridlicovo-šedá 3 (DarkSlateGray3)"
 
 #: lib/latexcolors:3008
 msgid "DarkSlateGray4"
-msgstr "Tmavá BridlicoŠedá 4 (DarkSlateGray4)"
+msgstr "Tmavá bridlicovo-šedá 4 (DarkSlateGray4)"
 
 #: lib/latexcolors:3016
 msgid "Aquamarine1"
-msgstr "Akvamarín 1 (Aquamarine1)"
+msgstr "Akvamarínová 1 (Aquamarine1)"
 
 #: lib/latexcolors:3024
 msgid "Aquamarine2"
-msgstr "Akvamarín 2 (Aquamarine2)"
+msgstr "Akvamarínová 2 (Aquamarine2)"
 
 #: lib/latexcolors:3032
 msgid "Aquamarine3"
-msgstr "Akvamarín 3 (Aquamarine3)"
+msgstr "Akvamarínová 3 (Aquamarine3)"
 
 #: lib/latexcolors:3040
 msgid "Aquamarine4"
-msgstr "Akvamarín 4 (Aquamarine4)"
+msgstr "Akvamarínová 4 (Aquamarine4)"
 
 #: lib/latexcolors:3048
 msgid "DarkSeaGreen1"
-msgstr "Tmavá MorskoZelená 1 (DarkSeaGreen1)"
+msgstr "Tmavá morsko-zelená 1 (DarkSeaGreen1)"
 
 #: lib/latexcolors:3056
 msgid "DarkSeaGreen2"
-msgstr "Tmavá MorskoZelená 2 (DarkSeaGreen2)"
+msgstr "Tmavá morsko-zelená 2 (DarkSeaGreen2)"
 
 #: lib/latexcolors:3064
 msgid "DarkSeaGreen3"
-msgstr "Tmavá MorskoZelená 3 (DarkSeaGreen3)"
+msgstr "Tmavá morsko-zelená 3 (DarkSeaGreen3)"
 
 #: lib/latexcolors:3072
 msgid "DarkSeaGreen4"
-msgstr "Tmavá MorskoZelená 4 (DarkSeaGreen4)"
+msgstr "Tmavá morsko-zelená 4 (DarkSeaGreen4)"
 
 #: lib/latexcolors:3080
 msgid "SeaGreen1"
-msgstr "MorskoZelená 1 (SeaGreen1)"
+msgstr "Morsko-zelená 1 (SeaGreen1)"
 
 #: lib/latexcolors:3088
 msgid "SeaGreen2"
-msgstr "MorskoZelená 2 (SeaGreen2)"
+msgstr "Morsko-zelená 2 (SeaGreen2)"
 
 #: lib/latexcolors:3096
 msgid "SeaGreen3"
-msgstr "MorskoZelená 3 (SeaGreen3)"
+msgstr "Morsko-zelená 3 (SeaGreen3)"
 
 #: lib/latexcolors:3104
 msgid "SeaGreen4"
-msgstr "MorskoZelená 4 (SeaGreen4)"
+msgstr "Morsko-zelená 4 (SeaGreen4)"
 
 #: lib/latexcolors:3112
 msgid "PaleGreen1"
-msgstr "BledoZelená 1 (PaleGreen1)"
+msgstr "Bledo-zelená 1 (PaleGreen1)"
 
 #: lib/latexcolors:3120
 msgid "PaleGreen2"
-msgstr "BledoZelená 2 (PaleGreen2)"
+msgstr "Bledo-zelená 2 (PaleGreen2)"
 
 #: lib/latexcolors:3128
 msgid "PaleGreen3"
-msgstr "BledoZelená 3 (PaleGreen3)"
+msgstr "Bledo-zelená 3 (PaleGreen3)"
 
 #: lib/latexcolors:3136
 msgid "PaleGreen4"
-msgstr "BledoZelená 4 (PaleGreen4)"
+msgstr "Bledo-zelená 4 (PaleGreen4)"
 
 #: lib/latexcolors:3144
 msgid "SpringGreen1"
@@ -27442,35 +27442,35 @@ msgstr "Chartreuse4"
 
 #: lib/latexcolors:3248
 msgid "OliveDrab1"
-msgstr "OlivoŠedoHnedá 1 (OliveDrab1)"
+msgstr "Olivovo-šedo-hnedá 1 (OliveDrab1)"
 
 #: lib/latexcolors:3256
 msgid "OliveDrab2"
-msgstr "OlivoŠedoHnedá 2 (OliveDrab2)"
+msgstr "Olivovo-šedo-hnedá 2 (OliveDrab2)"
 
 #: lib/latexcolors:3264
 msgid "OliveDrab3"
-msgstr "OlivoŠedoHnedá 3 (OliveDrab3)"
+msgstr "Olivovo-šedo-hnedá 3 (OliveDrab3)"
 
 #: lib/latexcolors:3272
 msgid "OliveDrab4"
-msgstr "OlivoŠedoHnedá 4 (OliveDrab4)"
+msgstr "Olivovo-šedo-hnedá 4 (OliveDrab4)"
 
 #: lib/latexcolors:3280
 msgid "DarkOliveGreen1"
-msgstr "Tmavá OlivoZelená 1 (DarkOliveGreen1)"
+msgstr "Tmavá Olivovo-zelená 1 (DarkOliveGreen1)"
 
 #: lib/latexcolors:3288
 msgid "DarkOliveGreen2"
-msgstr "Tmavá OlivoZelená 2 (DarkOliveGreen2)"
+msgstr "Tmavá Olivovo-zelená 2 (DarkOliveGreen2)"
 
 #: lib/latexcolors:3296
 msgid "DarkOliveGreen3"
-msgstr "Tmavá OlivoZelená 3 (DarkOliveGreen3)"
+msgstr "Tmavá Olivovo-zelená 3 (DarkOliveGreen3)"
 
 #: lib/latexcolors:3304
 msgid "DarkOliveGreen4"
-msgstr "Tmavá OlivoZelená 4 (DarkOliveGreen4)"
+msgstr "Tmavá Olivovo-zelená 4 (DarkOliveGreen4)"
 
 #: lib/latexcolors:3312
 msgid "Khaki1"
@@ -47235,26 +47235,26 @@ msgstr "Chyba pri hľadaní"
 msgid "Search string is empty"
 msgstr "Reťazec na hľadanie je prázdny"
 
-#: src/lyxfind.cpp:312
+#: src/lyxfind.cpp:330
 msgid ""
 "The search string matches the selection, and search is limited to "
 "selection.\n"
 "Continue search outside?"
 msgstr ""
 "Hľadaný reťazec zodpovedá vybraniu, a hľadanie je obmedzené výberom.\n"
-"Pokračovať hľadaním vonku?"
+"Pokračovať hľadaním mimo výberu?"
 
 #: src/lyxfind.cpp:314 src/lyxfind.cpp:341
 msgid "Search outside selection?"
 msgstr "Hľadať mimo výberu?"
 
-#: src/lyxfind.cpp:339
+#: src/lyxfind.cpp:360
 msgid ""
-"The search string was not found within the selection.\n"
+"No (further) match was found within the selection.\n"
 "Continue search outside?"
 msgstr ""
-"Hľadaný reťazec sa vo výbere nenašiel.\n"
-"Pokračovať hľadaním mimo výberu?"
+"Vo výbere sa (ďalšia) zhoda nenašla.\n"
+"Pokračovať v hľadaní mimo výberu?"
 
 #: src/lyxfind.cpp:375
 msgid "Search reached end of document, continuing from beginning."
