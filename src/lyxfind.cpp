@@ -348,7 +348,7 @@ bool findOne(BufferView * bv, docstring const & searchstr,
 	if (match_len > 0)
 		bv->putSelectionAt(cur, match_len, !forward, true);
 	else if (onlysel) {
-		docstring q = _("The search string was not found within the selection.\n"
+		docstring q = _("No (further) match was found within the selection.\n"
 				"Continue search outside?");
 		int search_answer = frontend::Alert::prompt(_("Search outside selection?"),
 			q, 0, 1, _("&Yes"), _("&No"));
