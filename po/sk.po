@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-03-29 21:24+0200\n"
-"PO-Revision-Date: 2026-03-30 07:57+0000\n"
+"POT-Creation-Date: 2026-03-30 11:38+0200\n"
+"PO-Revision-Date: 2026-03-30 10:13+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -23714,7 +23714,7 @@ msgstr "Orgovánová (Lilac)"
 
 #: lib/layouts/latexcolors.module:3100
 msgid "Lime (color wheel)"
-msgstr "Limetková (Lime (color wheel)"
+msgstr "Limetková (Lime (color wheel))"
 
 #: lib/layouts/latexcolors.module:3108
 msgid "Lime (web) (X11 green)"
@@ -24632,7 +24632,7 @@ msgstr "Polnočná modrá 2 (Midnight blue)"
 
 #: lib/layouts/latexcolors.module:3484
 msgid "Midnight green (eagle green)"
-msgstr "Polnočná zelená (Midnight green (eagle green)"
+msgstr "Polnočná zelená (Midnight green (eagle green))"
 
 #: lib/layouts/latexcolors.module:3492
 msgid "Mikado yellow"
@@ -27758,7 +27758,7 @@ msgstr "Svetlá lososová 3 (LightSalmon3)"
 
 #: lib/latexcolors:3880
 msgid "LightSalmon4"
-msgstr "Svetlá lososová 4 LightSalmon4)"
+msgstr "Svetlá lososová 4 (LightSalmon4)"
 
 #: lib/latexcolors:3888
 msgid "Orange1"
