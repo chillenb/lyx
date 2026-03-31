@@ -96,6 +96,7 @@ my %Fuzzy = ();			# inside new po-file
 my $result = 0;			# exit value
 my $printlines = 1;
 my @names = ();
+my @lastOut = ();
 my %options = (
   "--display-fuzzy" => 1,
   "--display-untranslated" => 1,
@@ -229,6 +230,17 @@ else {
   diff_po(@ARGV);
 }
 
+my $lastfound = 0;
+for my $msg (@lastOut) {
+  if (!$lastfound) {
+    $lastfound = 1;
+    print "#######################################\n";
+  }
+  print "$msg";
+}
+if ($lastfound) {
+  print "#######################################\n";
+}
 exit($result);
 #########################################################
 
@@ -304,7 +316,11 @@ sub diff_po(@)
 
   print RED "<<< \"$names[0]\"\n", RESET;
   print GREEN ">>> \"$names[1]\"\n", RESET;
+  my $count = 0;
   for my $k (@MsgKeys) {
+    if ($k ne "") {
+      $count += 1;
+    }
     if ($newMessages{$k}->{msgstr} eq "") {
       # this is still untranslated string
       $Untranslated{$newMessages{$k}->{line}} = $k;
@@ -316,12 +332,16 @@ sub diff_po(@)
 	$Fuzzy{$newMessages{$k}->{line}} = $k;
       }
     }
+    if ($newMessages{$k}->{alternative}) {
+      $count -= 1;
+    }
     if (exists($Messages{$k})) {
       printIfDiff($k, $Messages{$k}, $newMessages{$k});
       delete($Messages{$k});
       delete($newMessages{$k});
     }
   }
+  push(@lastOut, "$count\t# of processed po-entries\n");
 
   if (0) {
     @MsgKeys = sort keys %Messages, keys %newMessages;
@@ -378,7 +398,7 @@ sub check_po_file_readable($$)
   my ($spec, $filename) = @_;
 
   if (! -e $filename ) {
-    die("$spec po file does not exist");
+    die("$spec po file does not exist ($filename)");
   }
   if ( ! -f $filename ) {
     die("$spec po file is not regular");
@@ -415,8 +435,10 @@ sub printIfDiff($$$)
 {
   my ($k, $rM, $rnM) = @_;
   my $doprint = 0;
-  $doprint = 1 if ($rM->{fuzzy} != $rnM->{fuzzy});
-  $doprint = 1 if ($rM->{msgstr} ne $rnM->{msgstr});
+  if ($k ne "") {	# Don't check po-header which has msgid == ""
+    $doprint = 1 if ($rM->{fuzzy} != $rnM->{fuzzy});
+    $doprint = 1 if ($rM->{msgstr} ne $rnM->{msgstr});
+  }
   if ($doprint) {
     $result |= 4;
     printDiff($k, $k, $rM, $rnM);
@@ -430,7 +452,7 @@ sub printExtraMessages($$$)
   my @sortedExtraKeys = sort { $a <=> $b;} keys %{$rExtra};
 
   if (@sortedExtraKeys > 0) {
-    print "Still " . 0 + @sortedExtraKeys . " $type messages found in $rNames->[1]\n";
+    push(@lastOut, "" . (0 + @sortedExtraKeys) . "\t$type messages found in $rNames->[1]\n");
     for my $l (@sortedExtraKeys) {
       print "> line $l: \"" . $rExtra->{$l} . "\"\n";
     }
