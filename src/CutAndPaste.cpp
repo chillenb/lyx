@@ -1226,19 +1226,23 @@ void clearCutStack()
 }
 
 
-docstring selection(size_t sel_index, DocInfoPair docinfo, bool for_math)
+docstring selection(size_t sel_index, BufferParams & bp, bool for_math)
 {
 	if (sel_index >= theCuts.size())
 		return docstring();
 
 	unique_ptr<Buffer> buffer(copyToTempBuffer(theCuts[sel_index].first,
-	                                           docinfo.first));
+						   bp.documentClassPtr()));
 	if (!buffer)
 		return docstring();
 
 	int options = AS_STR_INSETS | AS_STR_NEWLINES;
 	if (for_math)
 		options |= AS_STR_MATHED;
+
+	// This is needed for proper xrefs handling in math
+	// LaTeX output depends on the setting
+	buffer->params().xref_package = bp.xref_package;
 
 	return buffer->paragraphs().back().asString(options);
 }

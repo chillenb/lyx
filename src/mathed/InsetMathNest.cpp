@@ -845,8 +845,7 @@ void InsetMathNest::doDispatch(Cursor & cur, FuncRequest & cmd)
 			size_t n = 0;
 			idocstringstream is(cmd.argument());
 			is >> n;
-			topaste = cap::selection(n, make_pair(buffer().params().documentClassPtr(),
-							      buffer().params().authors()));
+			topaste = cap::selection(n, buffer().params());
 		}
 		InsetMath const * im = cur.inset().asInsetMath();
 		InsetMathMacro const * macro = im ? im->asMacroInset() : nullptr;
