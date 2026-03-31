@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2026-03-30 11:38+0200\n"
-"PO-Revision-Date: 2026-03-30 10:13+0000\n"
+"PO-Revision-Date: 2026-03-30 19:58+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -23517,15 +23517,15 @@ msgstr "Egyptská modrá (Egyptian blue)"
 
 #: lib/layouts/latexcolors.module:1908
 msgid "Electric blue"
-msgstr "Brilantná modrá (Electric blue)"
+msgstr "Elektricky-modrá (Electric blue)"
 
 #: lib/layouts/latexcolors.module:1916
 msgid "Electric crimson"
-msgstr "Brilantná karmínová (Electric crimson)"
+msgstr "Elektricky-karmínová (Electric crimson)"
 
 #: lib/layouts/latexcolors.module:1924
 msgid "Electric cyan"
-msgstr "Brilantná modro-zelená (Electric cyan)"
+msgstr "Elektrická modro-zelená (Electric cyan)"
 
 #: lib/layouts/latexcolors.module:1932
 msgid "Electric green"
@@ -23533,31 +23533,31 @@ msgstr "Limetková (Electric green)"
 
 #: lib/layouts/latexcolors.module:1940
 msgid "Electric indigo"
-msgstr "Brilantná indigová (Electric indigo)"
+msgstr "Elektricky-indigová (Electric indigo)"
 
 #: lib/layouts/latexcolors.module:1948
 msgid "Electric lavender"
-msgstr "Brilantná levanduľa (Electric lavender)"
+msgstr "Elektricky-levanduľová (Electric lavender)"
 
 #: lib/layouts/latexcolors.module:1956
 msgid "Electric lime"
-msgstr "Brilantná limetková (Electric lime)"
+msgstr "Elektricky-limetková (Electric lime)"
 
 #: lib/layouts/latexcolors.module:1964
 msgid "Electric purple"
-msgstr "Brilantná fialová (Electric purple)"
+msgstr "Elektricky-fialová (Electric purple)"
 
 #: lib/layouts/latexcolors.module:1972
 msgid "Electric ultramarine"
-msgstr "Brilantná ultramarínová (Electric ultramarine)"
+msgstr "Elektricky-ultramarínová (Electric ultramarine)"
 
 #: lib/layouts/latexcolors.module:1980
 msgid "Electric violet"
-msgstr "Brilantná fialová (Electric violet)"
+msgstr "Elektricky-fialová (Electric violet)"
 
 #: lib/layouts/latexcolors.module:1988
 msgid "Electric Yellow"
-msgstr "Žltá (Electric Yellow)"
+msgstr "Elektricky-žltá (Electric Yellow)"
 
 #: lib/layouts/latexcolors.module:2348 lib/latexcolors:61 lib/latexcolors:205
 #: lib/latexcolors:894
@@ -23774,7 +23774,7 @@ msgstr "Žltá (Yellow (NCS))"
 
 #: lib/layouts/latexcolors.module:6036
 msgid "Yellow (process)"
-msgstr "Kanársky žltá (Yellow (process))"
+msgstr "Kanárska žltá (Yellow (process))"
 
 #: lib/layouts/latexcolors.module:6044
 msgid "Yellow (RYB)"
@@ -23851,7 +23851,7 @@ msgstr "Bohatá karmínová (Rich carmine)"
 
 #: lib/layouts/latexcolors.module:4732
 msgid "Rich electric blue"
-msgstr "Bohatá brilantná modrá (Rich electric blue)"
+msgstr "Bohatá elektricky-modrá (Rich electric blue)"
 
 #: lib/layouts/latexcolors.module:4740
 msgid "Rich lavender"
@@ -24349,7 +24349,7 @@ msgstr "Kamufláž zelená (Camouflage green)"
 
 #: lib/layouts/latexcolors.module:828
 msgid "Canary yellow"
-msgstr "Kanársky žltá (Canary yellow)"
+msgstr "Kanárska žltá (Canary yellow)"
 
 #: lib/layouts/latexcolors.module:836
 msgid "Candy apple red"
@@ -24584,7 +24584,7 @@ msgstr "Tmavá modro-zelená (Dark cyan)"
 
 #: lib/layouts/latexcolors.module:1388
 msgid "Dark electric blue"
-msgstr "Tmavá brilantná modrá (Dark electric blue)"
+msgstr "Tmavá elektricky-modrá (Dark electric blue)"
 
 #: lib/layouts/latexcolors.module:1396
 msgid "Dark goldenrod"
@@ -24744,7 +24744,7 @@ msgstr "Stredne šampanské (Medium champagne)"
 
 #: lib/layouts/latexcolors.module:3348
 msgid "Medium electric blue"
-msgstr "Stredne Brilantne-modrá (Medium electric blue)"
+msgstr "Stredne elektricky-modrá (Medium electric blue)"
 
 #: lib/layouts/latexcolors.module:3356
 msgid "Medium jungle green"
@@ -25264,7 +25264,7 @@ msgstr "PolnočnáModrá (MidnightBlue)"
 
 #: lib/latexcolors:575 lib/latexcolors:1626
 msgid "NavyBlue"
-msgstr "NámorníckoModrá (NavyBlue)"
+msgstr "Námornícka modrá (NavyBlue)"
 
 #: lib/latexcolors:585 lib/latexcolors:1658
 msgid "RoyalBlue"
@@ -25745,7 +25745,7 @@ msgstr "Jarno-zelená (SpringGreen)"
 
 #: lib/latexcolors:761 lib/latexcolors:2018
 msgid "GreenYellow"
-msgstr "ZelenoŽltá (GreenYellow)"
+msgstr "Zeleno-žltá (GreenYellow)"
 
 #: lib/latexcolors:769
 msgid "OliveGreen"
@@ -38902,7 +38902,7 @@ msgstr "   voľby: "
 #: src/LaTeX.cpp:65
 #, c-format
 msgid "Waiting for LaTeX run number %1$d"
-msgstr "Čakanie na %1$d spracovanie LaTeX-u"
+msgstr "Čakám na beh LaTeX-u číslo %1$d"
 
 #: src/LaTeX.cpp:363
 msgid "Running Bibliography Processor."
