@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: lyx-japanese\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
 "POT-Creation-Date: 2025-12-24 22:58+0100\n"
-"PO-Revision-Date: 2026-01-13 00:37+0900\n"
+"PO-Revision-Date: 2026-03-31 09:50+0900\n"
 "Last-Translator: Koji Yokota <yokota@lyx.org>\n"
 "Language-Team: Japanese\n"
 "Language: ja\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Poedit 3.8\n"
+"X-Generator: Poedit 3.9\n"
 "X-Crowdin-Project: lyx-japanese\n"
 "X-Crowdin-Project-ID: 488981\n"
 "X-Crowdin-Language: ja\n"
@@ -3974,7 +3974,7 @@ msgstr "色の設定(&C)："
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:241
 msgid "Use the color scheme of your Operating System/Desktop Environment"
-msgstr "お使いの基本ソフトウェア若しくはデスクトップ環境の色スキームを使う"
+msgstr "お使いの基本ソフトウェア若しくはデスクトップ環境の色彩スキームを使う"
 
 #: src/frontends/qt/ui/PrefColorsUi.ui:244
 msgid "Use &system colors"
@@ -5294,12 +5294,12 @@ msgid ""
 "You can override the system's color scheme here if the selected style "
 "supports multiple schemes."
 msgstr ""
-"ここでは、選択した様式が複数のスキームをサポートしている場合、システムの色ス"
-"キームを上書きすることができます．"
+"ここでは、選択した様式が複数のスキームをサポートしている場合、システムの色彩"
+"スキームを上書きすることができます．"
 
 #: src/frontends/qt/ui/PrefUi.ui:128
 msgid "C&olor scheme:"
-msgstr "色スキーム(&O)："
+msgstr "色彩スキーム(&O)："
 
 #: src/frontends/qt/ui/PrefUi.ui:156
 msgid "Context Help"
@@ -7403,15 +7403,13 @@ msgstr "ケース"
 #: lib/layouts/theorems-case.inc:13 lib/layouts/theorems-case.inc:20
 #: lib/layouts/theorems-case.inc:26 lib/layouts/theorems-case.inc:31
 #: lib/layouts/theorems-without-preamble.inc:458
-#, fuzzy
 msgid "case"
-msgstr "ケース ##"
+msgstr "ケース"
 
 #: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
 #: lib/layouts/theorems-case.inc:13 lib/layouts/theorems-case.inc:20
 #: lib/layouts/theorems-case.inc:26 lib/layouts/theorems-case.inc:31
 #: lib/layouts/theorems-without-preamble.inc:458
-#, fuzzy
 msgid "Cases"
 msgstr "ケース"
 
@@ -7419,9 +7417,8 @@ msgstr "ケース"
 #: lib/layouts/theorems-case.inc:13 lib/layouts/theorems-case.inc:20
 #: lib/layouts/theorems-case.inc:26 lib/layouts/theorems-case.inc:31
 #: lib/layouts/theorems-without-preamble.inc:458
-#, fuzzy
 msgid "cases"
-msgstr "ケース ##"
+msgstr "ケース"
 
 #: lib/layouts/AEA.layout:212 lib/layouts/elsart.layout:546
 #: lib/layouts/theorems-without-preamble.inc:458
@@ -11297,9 +11294,8 @@ msgid "Enter the frame title here"
 msgstr "ここにフレーム見出しを入力してください"
 
 #: lib/layouts/beamer.layout:555
-#, fuzzy
 msgid "Frame Break"
-msgstr "改頁"
+msgstr "改フレーム"
 
 #: lib/layouts/beamer.layout:565
 msgid "PlainFrame"
@@ -11788,7 +11784,6 @@ msgstr "表"
 
 #: lib/layouts/beamer.layout:1748 lib/layouts/powerdot.layout:574
 #: lib/layouts/sciposter.layout:133 lib/layouts/stdfloats.inc:24
-#, fuzzy
 msgid "tables"
 msgstr "表"
 
@@ -11827,7 +11822,6 @@ msgstr "従属図"
 
 #: lib/layouts/beamer.layout:1763 lib/layouts/powerdot.layout:593
 #: lib/layouts/sciposter.layout:117 lib/layouts/stdfloats.inc:41
-#, fuzzy
 msgid "figure"
 msgstr "図"
 
@@ -11839,7 +11833,6 @@ msgstr "図"
 
 #: lib/layouts/beamer.layout:1763 lib/layouts/powerdot.layout:593
 #: lib/layouts/sciposter.layout:117 lib/layouts/stdfloats.inc:41
-#, fuzzy
 msgid "figures"
 msgstr "図"
 
@@ -12010,24 +12003,20 @@ msgid "Act Number"
 msgstr "幕番号"
 
 #: lib/layouts/broadway.layout:28
-#, fuzzy
 msgid "Act"
-msgstr "Alt"
+msgstr "幕"
 
 #: lib/layouts/broadway.layout:28
-#, fuzzy
 msgid "act"
-msgstr "事実"
+msgstr "幕"
 
 #: lib/layouts/broadway.layout:28
-#, fuzzy
 msgid "Acts"
-msgstr "事実 ##"
+msgstr "幕"
 
 #: lib/layouts/broadway.layout:28
-#, fuzzy
 msgid "acts"
-msgstr "事実"
+msgstr "幕"
 
 #: lib/layouts/broadway.layout:28
 msgid "Act ##"
@@ -12054,19 +12043,16 @@ msgid "Scene"
 msgstr "場面"
 
 #: lib/layouts/broadway.layout:34
-#, fuzzy
 msgid "scene"
 msgstr "場面"
 
 #: lib/layouts/broadway.layout:34
-#, fuzzy
 msgid "Scenes"
 msgstr "場面"
 
 #: lib/layouts/broadway.layout:34
-#, fuzzy
 msgid "scenes"
-msgstr "場面 ##"
+msgstr "場面"
 
 #: lib/layouts/broadway.layout:34
 msgid "Scene ##"
@@ -13552,7 +13538,6 @@ msgstr "後註"
 
 #: lib/layouts/endnotes.module:16 lib/layouts/enotez.module:16
 #: lib/layouts/memoir.layout:310
-#, fuzzy
 msgid "endnotes"
 msgstr "後註"
 
@@ -16362,24 +16347,20 @@ msgid "examples"
 msgstr "例"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-#, fuzzy
 msgid "Example (##)"
-msgstr "例 ##"
+msgstr "例 (##)"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-#, fuzzy
 msgid "example (##)"
-msgstr "例 ##"
+msgstr "例 (##)"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-#, fuzzy
 msgid "Examples (##)"
-msgstr "例 ##"
+msgstr "例 (##)"
 
 #: lib/layouts/linguistics.module:21 lib/layouts/linguistics.module:30
-#, fuzzy
 msgid "examples (##)"
-msgstr "例 ##"
+msgstr "例 (##)"
 
 #: lib/layouts/linguistics.module:27 lib/layouts/linguistics.module:112
 msgid "Subexample"
@@ -16798,12 +16779,10 @@ msgid "List of Tableaux"
 msgstr "タブロー一覧"
 
 #: lib/layouts/linguistics.module:580
-#, fuzzy
 msgid "tableau"
 msgstr "タブロー"
 
 #: lib/layouts/linguistics.module:580
-#, fuzzy
 msgid "tableaux"
 msgstr "タブロー"
 
@@ -16828,19 +16807,16 @@ msgid "Chunk"
 msgstr "コード組(chunk)"
 
 #: lib/layouts/litinsets.inc:13
-#, fuzzy
 msgid "chunk"
 msgstr "コード組(chunk)"
 
 #: lib/layouts/litinsets.inc:13
-#, fuzzy
 msgid "Chunks"
 msgstr "コード組(chunk)"
 
 #: lib/layouts/litinsets.inc:13
-#, fuzzy
 msgid "chunks"
-msgstr "コード組 ##"
+msgstr "コード組"
 
 #: lib/layouts/litinsets.inc:13 lib/layouts/litinsets.inc:19
 msgid "Chunk ##"
@@ -17527,9 +17503,8 @@ msgid ""
 msgstr "このページで多段を開始する際，ページ上に要求する余白"
 
 #: lib/layouts/multicol.module:41
-#, fuzzy
 msgid "Column Break"
-msgstr "列の間隔(&Columnsep)："
+msgstr "改段"
 
 #: lib/layouts/mwart.layout:3
 msgid "Polish Article (MW Bundle)"
@@ -17578,19 +17553,16 @@ msgid "\\Alph{chapter}"
 msgstr "\\Alph{chapter}"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
-#, fuzzy
 msgid "chapter"
 msgstr "章"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
-#, fuzzy
 msgid "Chapters"
 msgstr "章"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
-#, fuzzy
 msgid "chapters"
-msgstr "第##章"
+msgstr "章"
 
 #: lib/layouts/numreport.inc:11 lib/layouts/stdcounters.inc:16
 msgid "Chapter ##"
@@ -17610,21 +17582,18 @@ msgstr "第##章"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
-#, fuzzy
 msgid "section"
-msgstr "選択"
+msgstr "節"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
-#, fuzzy
 msgid "Sections"
 msgstr "節"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
-#, fuzzy
 msgid "sections"
-msgstr "第##節"
+msgstr "節"
 
 #: lib/layouts/numreport.inc:18 lib/layouts/stdcounters.inc:22
 #: lib/layouts/stdcounters.inc:28 lib/layouts/stdcounters.inc:34
@@ -17658,7 +17627,6 @@ msgstr "脚註"
 
 #: lib/layouts/numreport.inc:46 lib/layouts/stdcounters.inc:92
 #: lib/layouts/stdcounters.inc:97
-#, fuzzy
 msgid "footnotes"
 msgstr "脚註"
 
@@ -18471,7 +18439,6 @@ msgid "List of Videos"
 msgstr "ビデオ一覧"
 
 #: lib/layouts/revtex4-x.inc:340
-#, fuzzy
 msgid "video"
 msgstr "ビデオ"
 
@@ -18480,7 +18447,6 @@ msgid "Videos"
 msgstr "ビデオ"
 
 #: lib/layouts/revtex4-x.inc:340
-#, fuzzy
 msgid "videos"
 msgstr "ビデオ"
 
@@ -18666,7 +18632,6 @@ msgstr "\\thechapter.\\arabic{equation}"
 
 #: lib/layouts/scrbook.layout:32 lib/layouts/stdcounters.inc:87
 #: lib/layouts/subequations.module:18
-#, fuzzy
 msgid "equation"
 msgstr "数式"
 
@@ -18678,7 +18643,6 @@ msgstr "数式"
 
 #: lib/layouts/scrbook.layout:32 lib/layouts/stdcounters.inc:87
 #: lib/layouts/subequations.module:18
-#, fuzzy
 msgid "equations"
 msgstr "数式"
 
@@ -19473,19 +19437,16 @@ msgid "\\Roman{part}"
 msgstr "\\Roman{part}"
 
 #: lib/layouts/stdcounters.inc:11
-#, fuzzy
 msgid "part"
-msgstr "部(addpart)"
+msgstr "部"
 
 #: lib/layouts/stdcounters.inc:11
-#, fuzzy
 msgid "Parts"
 msgstr "部"
 
 #: lib/layouts/stdcounters.inc:11
-#, fuzzy
 msgid "parts"
-msgstr "第##部"
+msgstr "部"
 
 #: lib/layouts/stdcounters.inc:11
 msgid "Part ##"
@@ -19504,19 +19465,16 @@ msgid "parts ##"
 msgstr "第##部"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
-#, fuzzy
 msgid "paragraph"
 msgstr "段落"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
-#, fuzzy
 msgid "Paragraphs"
 msgstr "段落"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
-#, fuzzy
 msgid "paragraphs"
-msgstr "第##段落"
+msgstr "段落"
 
 #: lib/layouts/stdcounters.inc:40 lib/layouts/stdcounters.inc:46
 msgid "Paragraph ##"
@@ -19540,21 +19498,18 @@ msgstr "\\arabic{enumi}."
 
 #: lib/layouts/stdcounters.inc:52 lib/layouts/stdcounters.inc:59
 #: lib/layouts/stdcounters.inc:66 lib/layouts/stdcounters.inc:73
-#, fuzzy
 msgid "item"
-msgstr "下層アイテム"
+msgstr "アイテム"
 
 #: lib/layouts/stdcounters.inc:52 lib/layouts/stdcounters.inc:59
 #: lib/layouts/stdcounters.inc:66 lib/layouts/stdcounters.inc:73
-#, fuzzy
 msgid "Items"
 msgstr "アイテム"
 
 #: lib/layouts/stdcounters.inc:52 lib/layouts/stdcounters.inc:59
 #: lib/layouts/stdcounters.inc:66 lib/layouts/stdcounters.inc:73
-#, fuzzy
 msgid "items"
-msgstr "下層アイテム"
+msgstr "アイテム"
 
 #: lib/layouts/stdcounters.inc:52
 msgid "Item \\arabic{enumi}"
@@ -19629,7 +19584,6 @@ msgid "items \\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 msgstr "項目\\arabic{enumi}(\\alph{enumii})\\roman{enumiii}\\Alph{enumiv}"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "listing"
 msgstr "プログラムリスト"
 
@@ -19638,7 +19592,6 @@ msgid "Listings"
 msgstr "プログラムリスト"
 
 #: lib/layouts/stdcounters.inc:82
-#, fuzzy
 msgid "listings"
 msgstr "プログラムリスト"
 
@@ -19829,18 +19782,16 @@ msgid "End of Sentence|E"
 msgstr "句点(E)|E"
 
 #: lib/layouts/stdspecialchars.inc:21
-#, fuzzy
 msgid "End of Sentence"
-msgstr "句点(E)|E"
+msgstr "句点"
 
 #: lib/layouts/stdspecialchars.inc:30
 msgid "Ellipsis|i"
 msgstr "省略符号(I)|I"
 
 #: lib/layouts/stdspecialchars.inc:31
-#, fuzzy
 msgid "Ellipsis"
-msgstr "省略符号(I)|I"
+msgstr "省略符号"
 
 #: lib/layouts/stdspecialchars.inc:44
 msgid "Menu Separator|M"
@@ -19855,45 +19806,42 @@ msgid "Breakable Slash|a"
 msgstr "可改行スラッシュ(A)|A"
 
 #: lib/layouts/stdspecialchars.inc:61 lib/layouts/stdspecialchars.inc:66
-#, fuzzy
 msgid "Breakable Slash"
-msgstr "可改行スラッシュ(A)|A"
+msgstr "可改行スラッシュ"
 
 #: lib/layouts/stdspecialchars.inc:76
 msgid "Non-Breaking Hyphen|y"
 msgstr "非改行ハイフン(Y)|Y"
 
 #: lib/layouts/stdspecialchars.inc:77
-#, fuzzy
 msgid "Non-Breaking Hyphen (SHY)"
-msgstr "非改行ハイフン(Y)|Y"
+msgstr "非改行ハイフン(SHY)"
 
 #: lib/layouts/stdspecialchars.inc:97
 msgid "Optional Line Break|B"
-msgstr "改行可能位置(B)|B"
+msgstr "改行可能箇所(B)|B"
 
 #: lib/layouts/stdspecialchars.inc:98
-#, fuzzy
 msgid "Optional Line Break (ZWSP)"
-msgstr "改行可能位置(B)|B"
+msgstr "改行可能箇所(ZWSP)"
 
 #: lib/layouts/stdspecialchars.inc:112
 msgid "Ligature Break|k"
 msgstr "合字回避指定(K)|K"
 
 #: lib/layouts/stdspecialchars.inc:113
-#, fuzzy
 msgid "Ligature Break (ZWNJ)"
-msgstr "合字回避指定(K)|K"
+msgstr "合字回避指定(ZWNJ)"
 
 #: lib/layouts/stdspecialchars.inc:128
-#, fuzzy
 msgid "Exclusive Hyphenation Point|H"
-msgstr "ハイフネーション位置(H)|H"
+msgstr "排他的ハイフネーション箇所(H)|H"
 
 #: lib/layouts/stdspecialchars.inc:129
 msgid "Hyphenation point that overwrites predefined hyphenation possibilities"
 msgstr ""
+"このハイフネーション箇所は事前に定義されたハイフネーション可能箇所を上書きし"
+"ます"
 
 #: lib/layouts/stdspecialchars.inc:146
 msgid "LaTeX Logo|a"
@@ -21484,7 +21432,6 @@ msgstr "条件 ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:24
 #: lib/layouts/theorems-without-preamble.inc:530
-#, fuzzy
 msgid "notes"
 msgstr "註釈"
 
@@ -21525,7 +21472,6 @@ msgid "notations ##"
 msgstr "記法 ##"
 
 #: lib/layouts/theorems-counters-extended-bytype.inc:36
-#, fuzzy
 msgid "conclusions"
 msgstr "結論"
 
@@ -21867,19 +21813,16 @@ msgid "Label of the corresponding problem"
 msgstr "対応する問題のラベル"
 
 #: lib/layouts/theorems-without-preamble.inc:482
-#, fuzzy
 msgid "property"
 msgstr "性質"
 
 #: lib/layouts/theorems-without-preamble.inc:482
-#, fuzzy
 msgid "Properties"
-msgstr "性質 ##"
+msgstr "性質"
 
 #: lib/layouts/theorems-without-preamble.inc:482
-#, fuzzy
 msgid "properties"
-msgstr "性質 ##"
+msgstr "性質"
 
 #: lib/layouts/theorems-without-preamble.inc:482
 msgid "Property ##"
@@ -22037,14 +21980,12 @@ msgid "Margin Figure"
 msgstr "傍図"
 
 #: lib/layouts/tufte-book.layout:261
-#, fuzzy
 msgid "margin figure"
-msgstr "傍図 ##"
+msgstr "傍図"
 
 #: lib/layouts/tufte-book.layout:261
-#, fuzzy
 msgid "margin figures"
-msgstr "傍図 ##"
+msgstr "傍図"
 
 #: lib/layouts/tufte-book.layout:261
 msgid "Margin Figure ##"
@@ -22067,14 +22008,12 @@ msgid "Margin Table"
 msgstr "傍表"
 
 #: lib/layouts/tufte-book.layout:266
-#, fuzzy
 msgid "margin table"
-msgstr "傍表 ##"
+msgstr "傍表"
 
 #: lib/layouts/tufte-book.layout:266
-#, fuzzy
 msgid "margin tables"
-msgstr "傍表 ##"
+msgstr "傍表"
 
 #: lib/layouts/tufte-book.layout:266
 msgid "Margin Table ##"
@@ -22173,9 +22112,8 @@ msgstr "アフリカーンス語"
 #: lib/languages:1147 lib/languages:1208 lib/languages:1268 lib/languages:1726
 #: lib/languages:1858 lib/languages:1923 lib/languages:1955 lib/languages:2028
 #: lib/languages:2154 lib/languages:2378
-#, fuzzy
 msgid "Additional Hyphenation Point|y"
-msgstr "ハイフネーション位置(H)|H"
+msgstr "追加的ハイフネーション箇所(Y)|Y"
 
 #: lib/languages:193 lib/languages:388 lib/languages:446 lib/languages:558
 #: lib/languages:636 lib/languages:861 lib/languages:1034 lib/languages:1090
@@ -22184,6 +22122,8 @@ msgstr "ハイフネーション位置(H)|H"
 #: lib/languages:2155 lib/languages:2379
 msgid "Hyphenation point that keeps predefined hyphenation possibilities"
 msgstr ""
+"このハイフネーション箇所は，事前に定義されたハイフネーション可能箇所は上書き"
+"しません"
 
 #: lib/languages:222
 msgid "Albanian"
@@ -22230,14 +22170,14 @@ msgstr "ドイツ語(オーストリア・旧綴方)"
 #: lib/languages:1739 lib/languages:1871 lib/languages:2041 lib/languages:2167
 #: lib/languages:2391
 msgid "Hyphen with Additional Hyphenation Point|y"
-msgstr ""
+msgstr "追加的ハイフネーション箇所およびハイフン"
 
 #: lib/languages:401 lib/languages:459 lib/languages:571 lib/languages:1047
 #: lib/languages:1103 lib/languages:1161 lib/languages:1222 lib/languages:1282
 #: lib/languages:1740 lib/languages:1872 lib/languages:2042 lib/languages:2168
 #: lib/languages:2392
 msgid "Breakable hyphen that keeps predefined hyphenation possibilities"
-msgstr ""
+msgstr "事前定義されたハイフネーション箇所を上書きしない改行可能ハイフンです"
 
 #: lib/languages:431
 msgid "German (Austria)"
@@ -32921,9 +32861,8 @@ msgid "LyX 2.4.x"
 msgstr "LyX 2.4.x"
 
 #: lib/configure.py:862
-#, fuzzy
 msgid "LyX 2.5.x"
-msgstr "LyX 2.0.x"
+msgstr "LyX 2.5.x"
 
 #: lib/configure.py:863
 msgid "CJK LyX 1.4.x (big5)"
@@ -34786,7 +34725,7 @@ msgstr "フォーカスを得ているボタンの背景(壊れた参照)"
 
 #: src/Color.cpp:309
 msgid "special character"
-msgstr "特別な文字"
+msgstr "特殊文字"
 
 #: src/Color.cpp:310
 msgid "math text"
@@ -36132,7 +36071,7 @@ msgstr ""
 
 #: src/LyXRC.cpp:3261
 msgid "Possibility to enforce a particular color scheme (system|dark|light)"
-msgstr "特定の色スキームを適用できるか否か(システム|ダーク|ライト)"
+msgstr "特定の色彩スキームを適用できるか否か(システム|ダーク|ライト)"
 
 #: src/LyXRC.cpp:3265
 msgid "Current UI theme if it has a name, otherwise empty"
@@ -36827,15 +36766,15 @@ msgstr ""
 "stdinsets.incを読むことができません！データ喪失につながる可能性があります！"
 
 #: src/TextClass.cpp:983
-#, fuzzy
 msgid "Could not find stdspecialchars.inc! This may lead to data loss!"
-msgstr "stdinsets.incが見つかりません！データ喪失につながる可能性があります！"
+msgstr ""
+"stdspecialchars.incが見つかりません！データ喪失につながる可能性があります！"
 
 #: src/TextClass.cpp:987
-#, fuzzy
 msgid "Could not read stdspecialchars.inc! This may lead to data loss!"
 msgstr ""
-"stdinsets.incを読むことができません！データ喪失につながる可能性があります！"
+"stdspecialchars.incを読むことができません！データ喪失につながる可能性がありま"
+"す！"
 
 #: src/TextClass.cpp:1765
 #, c-format
@@ -41876,9 +41815,8 @@ msgid "Open Outliner..."
 msgstr "文書構造を開く..."
 
 #: src/frontends/qt/Menus.cpp:1605
-#, fuzzy
 msgid "Contextual Break"
-msgstr "文脈依存ヘルプ"
+msgstr "文脈依存改行"
 
 #: src/frontends/qt/Menus.cpp:1627
 msgid "[[Toolbar]]On|O"
@@ -43765,9 +43703,9 @@ msgid "Non-Breaking Horizontal Space (%1$s)"
 msgstr "横方向の非改行空白(%1$s)"
 
 #: src/insets/InsetSpecialChar.cpp:61
-#, fuzzy, c-format
+#, c-format
 msgid "Unknown special character (%1$s)!"
-msgstr "特別な文字"
+msgstr "未知の特殊文字 (%1$s) です！"
 
 #: src/insets/InsetTOC.cpp:78
 msgid "Unknown TOC type"
@@ -43821,7 +43759,7 @@ msgstr "改頁なし"
 
 #: src/insets/InsetTextbreak.cpp:261
 msgid "Non-sensical Break"
-msgstr ""
+msgstr "無分別な改行"
 
 #: src/insets/InsetWrap.cpp:61
 msgid "Wrap: "
@@ -44581,160 +44519,3 @@ msgstr ""
 #: src/support/userinfo.cpp:44
 msgid "Unknown user"
 msgstr "未知のユーザー"
-
-#~ msgid "##"
-#~ msgstr "##"
-
-#~ msgid "Item[[enumerate]]"
-#~ msgstr "項目"
-
-#~ msgid "item[[enumerate]]"
-#~ msgstr "項目"
-
-#~ msgid "Items[[enumerate]]"
-#~ msgstr "項目"
-
-#~ msgid "items[[enumerate]]"
-#~ msgstr "項目"
-
-#~ msgid "Paragraph[[Sectioning]]"
-#~ msgstr "段落"
-
-#~ msgid "(\\thesection.\\arabic{equation})"
-#~ msgstr "(\\thesection.\\arabic{equation})"
-
-#~ msgid "(\\arabic{example})"
-#~ msgstr "(\\arabic{example})"
-
-#~ msgid "(\\arabic{examplei})"
-#~ msgstr "(\\arabic{examplei})"
-
-#~ msgid "\\theexamplei (\\alph{subexample})"
-#~ msgstr "\\theexamplei (\\alph{subexample})"
-
-#~ msgid "\\theexamplei (\\alph{subexampleii})"
-#~ msgstr "\\theexamplei (\\alph{subexampleii})"
-
-#~ msgid "\\theexamplei (\\alph{subexampleiii})"
-#~ msgstr "\\theexamplei (\\alph{subexampleiii})"
-
-#~ msgid "\\theexamplei (\\alph{subexampleiv})"
-#~ msgstr "\\theexamplei (\\alph{subexampleiv})"
-
-#~ msgid "(\\roman{enumiii})"
-#~ msgstr "(\\roman{enumiii})"
-
-#~ msgid "(\\Alph{enumiv})"
-#~ msgstr "(\\Alph{enumiv})"
-
-#~ msgid "(\\alph{enumiv})"
-#~ msgstr "(\\alph{enumiv})"
-
-#~ msgid "Axiom \\arabic{theorem}"
-#~ msgstr "公理 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "axiom \\arabic{theorem}"
-#~ msgstr "公理 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Axioms \\arabic{theorem}"
-#~ msgstr "公理 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "axioms \\arabic{theorem}"
-#~ msgstr "公理 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Condition \\arabic{theorem}"
-#~ msgstr "条件 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "condition \\arabic{theorem}"
-#~ msgstr "条件 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Conditions \\arabic{theorem}"
-#~ msgstr "条件 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "conditions \\arabic{theorem}"
-#~ msgstr "条件 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "note \\arabic{theorem}"
-#~ msgstr "註釈 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Notes \\arabic{theorem}"
-#~ msgstr "註釈 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "notes \\arabic{theorem}"
-#~ msgstr "註釈 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Notation \\arabic{theorem}"
-#~ msgstr "記法 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "notation \\arabic{theorem}"
-#~ msgstr "記法 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Notations \\arabic{theorem}"
-#~ msgstr "記法 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "notations \\arabic{theorem}"
-#~ msgstr "記法 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Summary \\arabic{theorem}"
-#~ msgstr "要約 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "summary \\arabic{theorem}"
-#~ msgstr "要約 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Summaries \\arabic{theorem}"
-#~ msgstr "要約 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "summaries \\arabic{theorem}"
-#~ msgstr "要約 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Conclusion \\arabic{theorem}"
-#~ msgstr "結論 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "conclusion \\arabic{theorem}"
-#~ msgstr "結論 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Conclusions \\arabic{theorem}"
-#~ msgstr "結論 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "conclusions \\arabic{theorem}"
-#~ msgstr "結論 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Assumption \\arabic{theorem}"
-#~ msgstr "仮定 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "assumption \\arabic{theorem}"
-#~ msgstr "仮定 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Assumptions \\arabic{theorem}"
-#~ msgstr "仮定 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "assumptions \\arabic{theorem}"
-#~ msgstr "仮定 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Question \\arabic{theorem}"
-#~ msgstr "問 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "question \\arabic{theorem}"
-#~ msgstr "問 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "Questions \\arabic{theorem}"
-#~ msgstr "問 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "questions \\arabic{theorem}"
-#~ msgstr "問 \\thechapter.\\arabic{theorem}"
-
-#~ msgid "LaTeX Preamble"
-#~ msgstr "LaTeXプリアンブル"
-
-#~ msgid "Are you sure?"
-#~ msgstr "本当ですか？"
-
-#, c-format
-#~ msgid "Sub-%1$s"
-#~ msgstr "副%1$s"
-
-#~ msgid "&Filter"
-#~ msgstr "フィルタ(&F)："
-
-#~ msgid "Filter colors"
-#~ msgstr "色をフィルター"
