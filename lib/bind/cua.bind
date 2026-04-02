@@ -102,13 +102,13 @@ Format 5
 \bind "~S-M-quotedbl"		"quote-insert inner"
 \bind "~S-C-quotedbl"		"quote-insert outer auto plain"
 \bind "~S-C-apostrophe"		"quote-insert inner auto plain"
-\bind "M-minus"			"specialchar-insert hyphenation"
+\bind "M-minus"			"specialchar-insert softhyphen"
 \bind "C-S-underscore"		"math-macro-fold"
 \bind "C-M-minus"		"specialchar-insert nobreakdash"
 \bind "M-S-Right"		"depth-increment"
 \bind "M-S-Left"		"depth-decrement"
-\bind "C-S-L"			"specialchar-insert ligature-break"
-\bind "C-~S-slash"		"specialchar-insert slash"
+\bind "C-S-L"			"specialchar-insert ligaturebreak"
+\bind "C-~S-slash"		"specialchar-insert breakableslash"
 \bind "C-l"			"ert-insert"		# 'l' for LaTeX
 \bind "C-S-I"			"info-insert"
 
@@ -246,8 +246,8 @@ Format 5
 \bind "nobreakspace"		"space-insert protected"
 \bind "C-M-space"		"space-insert normal"
 \bind "S-C-space"		"space-insert thin"
-\bind "C-~S-period"		"specialchar-insert end-of-sentence"
-\bind "M-~S-period"		"specialchar-insert dots"
+\bind "C-~S-period"		"specialchar-insert endofsentence"
+\bind "M-~S-period"		"specialchar-insert ldots"
 \bind "Escape"			"cancel"
 \bind "F9"			"meta-prefix"
 
