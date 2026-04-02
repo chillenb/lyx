@@ -6705,7 +6705,28 @@ bool Text::getStatus(Cursor & cur, FuncRequest const & cmd,
 		allow_in_passthru = true;
 		break;
 	case LFUN_SPECIALCHAR_INSERT: {
-		string const arg = cmd.getArg(0);
+		string arg = cmd.getArg(0);
+		// backwards compatibility
+		if (arg == "hyphenation")
+			arg = "softhyphen";
+		else if (arg == "ligature-break")
+			arg = "ligaturebreak";
+		else if (arg == "slash")
+			arg = "breakableslash";
+		else if (arg == "dots")
+			arg = "ldots";
+		else if (arg == "end-of-sentence")
+			arg = "endofsentence";
+		else if (arg == "menu-separator")
+			arg = "menuseparator";
+		else if (arg == "lyx")
+			arg = "LyX";
+		else if (arg == "tex")
+			arg = "TeX";
+		else if (arg == "latex")
+			arg = "LaTeX";
+		else if (arg == "latex2e")
+			arg = "LaTeX2e";
 		code = SPECIALCHAR_CODE;
 		enable = cur.buffer()->params().documentClass().isKnownSpecialChar(arg)
 			|| (cur.inTexted() && const_cast<Language*>(cur.current_font.language())->isKnownSpecialChar(arg));
