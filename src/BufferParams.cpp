@@ -2125,8 +2125,9 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 			      FileName const & filepath) const
 {
 	// DocumentMetadata must come before anything else
-	if (features.isAvailableAtLeastFrom("LaTeX", 2022, 6)
-	    && !containsOnly(document_metadata, " \n\t")) {
+	if ((features.isRequired("DocumentMetadata")
+	     || !containsOnly(document_metadata, " \n\t"))
+	    && features.isAvailableAtLeastFrom("LaTeX", 2022, 6)) {
 		// Check if the user preamble contains uncodable glyphs
 		odocstringstream doc_metadata;
 		docstring uncodable_glyphs;
@@ -2171,7 +2172,8 @@ bool BufferParams::writeLaTeX(otexstream & os, LaTeXFeatures & features,
 			os << "\\DocumentMetadata{\n"
 			   << doc_metadata.str()
 			   << "}\n";
-		}
+		} else if (features.isRequired("DocumentMetadata"))
+			os << "\\DocumentMetadata{}\n";
 	}
 
 	// http://www.tug.org/texmf-dist/doc/latex/base/fixltx2e.pdf
