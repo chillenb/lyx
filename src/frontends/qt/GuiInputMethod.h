@@ -118,7 +118,6 @@ Q_SIGNALS:
 	void preeditProcessed(QInputMethodEvent* ev);
 	void queryProcessed(QVariant response);
 	void inputMethodStateChanged(Qt::InputMethodQueries);
-	void cursorPositionChanged();
 
 public Q_SLOTS:
 	/// Process incoming preedit string
@@ -133,7 +132,6 @@ public Q_SLOTS:
 	void disableInputMethod() override;
 	/// Handles the localeChanged() signal the input method emits
 	void onLocaleChanged();
-	void onCursorPositionChanged();
 	void onBufferViewChanged();
 #ifdef Q_DEBUG
 	///

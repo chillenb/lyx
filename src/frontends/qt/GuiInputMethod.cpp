@@ -107,8 +107,6 @@ GuiInputMethod::GuiInputMethod(GuiWorkArea *parent)
 	        d->sys_im_, &QInputMethod::update);
 	connect(d->sys_im_, &QInputMethod::localeChanged,
 	        this, &GuiInputMethod::onLocaleChanged);
-	connect(this, &GuiInputMethod::cursorPositionChanged,
-	        this, &GuiInputMethod::onCursorPositionChanged);
 	connect(parent, &GuiWorkArea::bufferViewChanged,
 	        this, &GuiInputMethod::onBufferViewChanged);
 
@@ -292,7 +290,7 @@ void GuiInputMethod::processPreedit(QInputMethodEvent* ev)
 }
 
 
-void GuiInputMethod::onCursorPositionChanged()
+void GuiInputMethod::updatePosAndSurroundingText()
 {
 	if (d->cur_->atEnd()) {
 		// Slices are empty:
@@ -302,7 +300,10 @@ void GuiInputMethod::onCursorPositionChanged()
 		return;
 	}
 
-	d->cur_pos_ = d->cur_->top().pos();
+	if (d->cur_pos_ == d->cur_->top().pos())
+		return;
+	else
+		d->cur_pos_ = d->cur_->top().pos();
 
 	// We are only interested in the current paragraph
 	// (where cur_pos_ is) with the anchor_pos_.
@@ -1101,8 +1102,7 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 		return 0;
 
 	// position of the real cursor (also the start of the preedit)
-	if (cur->top().pos() != d->cur_pos_)
-		Q_EMIT cursorPositionChanged();
+	updatePosAndSurroundingText();
 
 	// Note that getRowIndex(., false) gives the row index *after* preedit
 	// strings since they are virtual, so it increases as preedit strings go
@@ -1367,23 +1367,6 @@ void GuiInputMethod::setSurroundingText(const Cursor & cur)
 	                               Qt::ImTextAfterCursor);
 	return;
 }
-
-void GuiInputMethod::updatePosAndSurroundingText()
-{
-	if (d->cur_->atEnd()) {
-		// Slices are empty:
-		// Reset pos caches and quit.
-		d->cur_pos_ = 0;
-		d->anchor_pos_ = 0;
-		return;
-	}
-	if (d->cur_->top().pos() == d->cur_pos_)
-		// Nothing to do
-		return;
-
-	Q_EMIT cursorPositionChanged();
-}
-
 
 docstring & GuiInputMethod::preeditString() const
 {
