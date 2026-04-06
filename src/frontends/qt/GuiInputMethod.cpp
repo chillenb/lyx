@@ -10,7 +10,6 @@
 
 #include <config.h>
 #include <array>
-#include <ios>
 
 #include "GuiInputMethod.h"
 
