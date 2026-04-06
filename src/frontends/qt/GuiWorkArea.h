@@ -168,7 +168,7 @@ private:
 	/// key press event. It also knows how to handle ShortcutOverride events to
 	/// avoid code duplication.
 	void keyPressEvent(QKeyEvent * ev) override;
-	/// IM events
+	/// input method event
 	void inputMethodEvent(QInputMethodEvent * ev) override;
 	/// IM query
 	QVariant inputMethodQuery(Qt::InputMethodQuery query) const override;
