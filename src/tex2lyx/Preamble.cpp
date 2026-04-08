@@ -2762,6 +2762,10 @@ void Preamble::parse(Parser & p, string const & forceclass,
 		class_set = true;
 	}
 
+	// if we have a full document, check that we have
+	// a body (see #13297)
+	bool complete_preamble = false;
+
 	while (is_full_document && p.good()) {
 		if (detectEncoding && h_inputencoding != "auto-legacy" &&
 		    h_inputencoding != "auto-legacy-plain")
@@ -3546,8 +3550,10 @@ void Preamble::parse(Parser & p, string const & forceclass,
 
 		if (t.cs() == "begin") {
 			string const name = p.getArg('{', '}');
-			if (name == "document")
+			if (name == "document") {
+				complete_preamble = true;
 				break;
+			}
 			h_preamble << "\\begin{" << name << "}";
 			continue;
 		}
@@ -3763,6 +3769,11 @@ void Preamble::parse(Parser & p, string const & forceclass,
 			h_preamble << '\\' << t.cs();
 			continue;
 		}
+	}
+
+	if (is_full_document && !complete_preamble) {
+		error_message("Found preamble but not \\begin{document}. Aborting!");
+		exit(EXIT_FAILURE);
 	}
 
 	// set textclass if not yet done (snippets without \documentclass and forced class)
