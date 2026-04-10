@@ -101,8 +101,8 @@ GuiInputMethod::GuiInputMethod(GuiWorkArea *parent)
 	d->cur_ = &d->buffer_view_->cursor();
 
 #ifdef _DEBUG
-	LYXERR(Debug::DEBUG, "GuiInputMethod: Address of parent: " << parent);
-	LYXERR(Debug::DEBUG, "GuiInputMethod: Address of buffer_view_: " <<
+	LYXERR(Debug::KEY, "GuiInputMethod: Address of parent: " << parent);
+	LYXERR(Debug::KEY, "GuiInputMethod: Address of buffer_view_: " <<
 	       &d->work_area_->bufferView());
 #endif
 
@@ -196,7 +196,7 @@ void GuiInputMethod::processPreedit(QInputMethodEvent* ev)
 	d->font_color_ = d->color_cache_.get(fg);
 	d->font_brush_.setColor(d->font_color_);
 #ifdef _DEBUG
-	LYXERR(Debug::DEBUG,
+	LYXERR(Debug::KEY,
 	       "Preedit font color is set to " << d->font_color_.name());
 #endif
 
@@ -204,7 +204,7 @@ void GuiInputMethod::processPreedit(QInputMethodEvent* ev)
 	d->style_.lang_ = d->locale_;
 
 #ifdef _DEBUG
-	LYXERR(Debug::DEBUG,
+	LYXERR(Debug::KEY,
 	       "IM locale: " << d->locale_.bcp47Name() <<
 	       " preeditString: " << ev->preeditString() <<
 	       " commitString: " << ev->commitString());
@@ -435,7 +435,7 @@ void GuiInputMethod::setPreeditStyle(
 
 #ifdef _DEBUG
 			// we only prepare for finding such incoming event
-			LYXERR(Debug::DEBUG,
+			LYXERR(Debug::KEY,
 			       "QInputMethodEvent: virtual cursor position: " <<
 			       std::dec << d->caret_pos_ << " caret color: " <<
 			       d->style_.caret_color_.name(QColor::HexRgb));
@@ -446,7 +446,7 @@ void GuiInputMethod::setPreeditStyle(
 		case QInputMethodEvent::Language:
 			d->style_.lang_ = it.value.value<QLocale>();
 #ifdef _DEBUG
-			LYXERR(Debug::DEBUG,
+			LYXERR(Debug::KEY,
 			       "QInputMethodEvent::Language: " <<
 			       d->style_.lang_.bcp47Name());
 #endif
@@ -456,7 +456,7 @@ void GuiInputMethod::setPreeditStyle(
 		case QInputMethodEvent::Ruby:
 			d->style_.ruby_ = it.value.value<QString>();
 #ifdef _DEBUG
-			LYXERR(Debug::DEBUG,
+			LYXERR(Debug::KEY,
 			       "QInputMethodEvent::Ruby: " << d->style_.ruby_);
 #endif
 			break;
@@ -466,7 +466,7 @@ void GuiInputMethod::setPreeditStyle(
 			d->caret_pos_ = it.start + it.length;
 			d->cur_->setSelection(d->cur_->realAnchor(), it.length);
 #ifdef _DEBUG
-			LYXERR(Debug::DEBUG,
+			LYXERR(Debug::KEY,
 			       "QInputMethodEvent::Selection start: " << it.start <<
 			       " length: " << it.length);
 #endif
@@ -513,7 +513,7 @@ void GuiInputMethod::setPreeditStyle(
 
 	if (d->im_state_.composing_mode_) {
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, "preedit is in the composing mode");
+		LYXERR(Debug::KEY, "preedit is in the composing mode");
 #endif
 		QTextCharFormat char_format;
 		int start = 0;
@@ -534,7 +534,7 @@ void GuiInputMethod::setPreeditStyle(
 		d->style_.segments_.push_back(seg);
 	} else {
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, "preedit is in the completing mode");
+		LYXERR(Debug::KEY, "preedit is in the completing mode");
 #endif
 		d->style_.caret_visible_ = false;
 	}
@@ -962,9 +962,9 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	case Qt::ImEnabled: {
 #ifdef _DEBUG
 		if (d->im_state_.enabled_)
-			LYXERR(Debug::DEBUG, msg << "\"true\"");
+			LYXERR(Debug::KEY, msg << "\"true\"");
 		else
-			LYXERR(Debug::DEBUG, msg << "\"false\"");
+			LYXERR(Debug::KEY, msg << "\"false\"");
 #endif
 		Q_EMIT queryProcessed(d->im_state_.enabled_);
 		break;
@@ -980,14 +980,14 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 			// that points the starting point during the editing mode
 			rect = &d->im_state_.anchor_rect_;
 #ifdef _DEBUG
-			LYXERR(Debug::DEBUG,
+			LYXERR(Debug::KEY,
 			       "     (Composing mode: use anchor_rect_ for ImCursorRectangle)");
 #endif
 		} else
 			rect = &d->im_state_.cursor_rect_;
 
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << " x:" << rect->x() << " y:" << rect->y()
+		LYXERR(Debug::KEY, msg << " x:" << rect->x() << " y:" << rect->y()
 		       << " w:" << rect->width() << " h:" << rect->height());
 #endif
 		Q_EMIT queryProcessed(*rect);
@@ -995,7 +995,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	}
 	case Qt::ImCurrentSelection: {
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << d->cur_->selectionAsString(false));
+		LYXERR(Debug::KEY, msg << d->cur_->selectionAsString(false));
 #endif
 		Q_EMIT queryProcessed(toqstr(d->cur_->selectionAsString(false)));
 		break;
@@ -1004,12 +1004,12 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	case Qt::ImSurroundingText: {
 #ifdef _DEBUG
 		if (d->im_state_.surrounding_text_.empty())
-			LYXERR(Debug::DEBUG, msg << "\"\"");
+			LYXERR(Debug::KEY, msg << "\"\"");
 		else if (d->im_state_.surrounding_text_.length() <= 20)
-			LYXERR(Debug::DEBUG, msg << "\"" <<
+			LYXERR(Debug::KEY, msg << "\"" <<
 			       d->im_state_.surrounding_text_ << "\"");
 		else
-			LYXERR(Debug::DEBUG, msg << "\"" <<
+			LYXERR(Debug::KEY, msg << "\"" <<
 			       d->im_state_.surrounding_text_.substr(0, 20) << "...\"");
 #endif
 		Q_EMIT queryProcessed(toqstr(d->im_state_.surrounding_text_));
@@ -1021,7 +1021,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		// change in the document
 		setAbsolutePosition(*d->cur_);
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << std::dec << d->abs_pos_);
+		LYXERR(Debug::KEY, msg << std::dec << d->abs_pos_);
 #endif
 		Q_EMIT queryProcessed((qlonglong)d->abs_pos_);
 		break;
@@ -1031,11 +1031,11 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		updatePosAndSurroundingText();
 #ifdef _DEBUG
 		if (d->im_state_.text_before_.empty())
-			LYXERR(Debug::DEBUG, msg << "\"\"");
+			LYXERR(Debug::KEY, msg << "\"\"");
 		else if (d->im_state_.text_before_. length() <= 20)
-			LYXERR(Debug::DEBUG, msg << "\"" << d->im_state_.text_before_ << "\"");
+			LYXERR(Debug::KEY, msg << "\"" << d->im_state_.text_before_ << "\"");
 		else
-			LYXERR(Debug::DEBUG, msg << "\"..." <<
+			LYXERR(Debug::KEY, msg << "\"..." <<
 			       d->im_state_.text_before_.substr(0, 20) << "\"");
 #endif
 		QVariant str(toqstr(d->im_state_.text_before_));
@@ -1047,11 +1047,11 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		updatePosAndSurroundingText();
 #ifdef _DEBUG
 		if (d->im_state_.text_after_.empty())
-			LYXERR(Debug::DEBUG, msg << "\"\"");
+			LYXERR(Debug::KEY, msg << "\"\"");
 		else if (d->im_state_.text_after_.length() <= 20)
-			LYXERR(Debug::DEBUG, msg << "\"" << d->im_state_.text_after_ << "\"");
+			LYXERR(Debug::KEY, msg << "\"" << d->im_state_.text_after_ << "\"");
 		else
-			LYXERR(Debug::DEBUG, msg << "\"..." <<
+			LYXERR(Debug::KEY, msg << "\"..." <<
 			       d->im_state_.text_after_.substr(0, 20) << "\"");
 #endif
 		QVariant str(toqstr(d->im_state_.text_after_));
@@ -1062,7 +1062,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	case Qt::ImCursorPosition: {
 		updatePosAndSurroundingText();
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << std::dec << d->cur_->pos());
+		LYXERR(Debug::KEY, msg << std::dec << d->cur_->pos());
 #endif
 		Q_EMIT queryProcessed((qlonglong)d->cur_->pos());
 		break;
@@ -1071,7 +1071,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	case Qt::ImAnchorPosition: {
 		updatePosAndSurroundingText();
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << std::dec << (unsigned int)d->anchor_pos_);
+		LYXERR(Debug::KEY, msg << std::dec << (unsigned int)d->anchor_pos_);
 #endif
 		Q_EMIT queryProcessed(QVariant((unsigned int)d->anchor_pos_));
 		break;
@@ -1082,7 +1082,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		                d->work_area_->viewport()->width(),
 		                d->work_area_->viewport()->height());
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << "(x,y,w,h) = " <<
+		LYXERR(Debug::KEY, msg << "(x,y,w,h) = " <<
 		       viewport.x() << ", " << viewport.y() << ", " <<
 		       viewport.width() << ", " << viewport.height() << ")");
 #endif
@@ -1092,7 +1092,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	// hints for input method on expected input
 	case Qt::ImHints: {
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << "0x" << std::hex
+		LYXERR(Debug::KEY, msg << "0x" << std::hex
 		                         << d->work_area_->inputMethodHints()
 		                         << std::dec);
 #endif
@@ -1104,7 +1104,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		QLocale locale(toqstr(d->cur_->getFont().language()->code()));
 		QString lang = locale.languageToString(locale.language());
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << lang);
+		LYXERR(Debug::KEY, msg << lang);
 #endif
 		Q_EMIT queryProcessed(lang);
 		break;
@@ -1114,7 +1114,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	// as of August 2024.
 	case Qt::ImAnchorRectangle: {
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, msg << " x:" << d->im_state_.anchor_rect_.x()
+		LYXERR(Debug::KEY, msg << " x:" << d->im_state_.anchor_rect_.x()
 		       << " y:" << d->im_state_.anchor_rect_.y()
 		       << " w:" << d->im_state_.anchor_rect_.width()
 		       << " h:" << d->im_state_.anchor_rect_.height());
@@ -1125,7 +1125,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	default: {
 		QVariant null;
 #ifdef _DEBUG
-		LYXERR(Debug::DEBUG, "Unsupported query by LyX came in: " <<
+		LYXERR(Debug::KEY, "Unsupported query by LyX came in: " <<
 		       inputMethodQueryFlagsAsString(query));
 #endif
 		Q_EMIT queryProcessed(null);
@@ -1254,24 +1254,24 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 	real_boundary |= post_real_boundary;
 
 #ifdef _DEBUG
-	LYXERR(Debug::DEBUG, "========== BEGIN: initializePositions ==========");
-	LYXERR(Debug::DEBUG, "cur_row_idx   = " << cur_row_idx <<
+	LYXERR(Debug::KEY, "========== BEGIN: initializePositions ==========");
+	LYXERR(Debug::KEY, "cur_row_idx   = " << cur_row_idx <<
 	        "\treal_boundary    = " << real_boundary);
-	LYXERR(Debug::DEBUG, "                      " <<
+	LYXERR(Debug::KEY, "                      " <<
 	        "\tvirtual_boundary = " << virtual_boundary);
-	LYXERR(Debug::DEBUG, "max width     = " << std::dec <<
+	LYXERR(Debug::KEY, "max width     = " << std::dec <<
 	        d->buffer_view_->textMetrics(
 	            cur->innerText()).maxWidth()
 	             - d->rows_[cur_row_idx].right_margin);
-	LYXERR(Debug::DEBUG, "row width     = " << std::dec <<
+	LYXERR(Debug::KEY, "row width     = " << std::dec <<
 			d->rows_[cur_row_idx].width());
 	if (d->preedit_str_.empty())
-		LYXERR(Debug::DEBUG, "wchar width   = " <<
+		LYXERR(Debug::KEY, "wchar width   = " <<
 		       horizontalAdvance(from_utf8("あ")));
 	else
-		LYXERR(Debug::DEBUG, "wchar width = " <<
+		LYXERR(Debug::KEY, "wchar width = " <<
 		        horizontalAdvance(d->preedit_str_.substr(0,1)));
-	LYXERR(Debug::DEBUG, "========== END:   initializePositions ==========");
+	LYXERR(Debug::KEY, "========== END:   initializePositions ==========");
 #endif
 
 	return cur_row_idx;
@@ -1388,16 +1388,16 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo()
 		caret_row.pos = d->cur_pos_;
 
 #ifdef _DEBUG
-	LYXERR(Debug::DEBUG, "============= BEGIN: getCaretInfo ===============");
-	LYXERR(Debug::DEBUG, "*d->cur_pos_ptr   = " << d->cur_pos_);
-	LYXERR(Debug::DEBUG, "second_row_pos    = " << second_row_pos);
-	LYXERR(Debug::DEBUG, "d->caret_pos_     = " << std::dec << d->caret_pos_ <<
+	LYXERR(Debug::KEY, "============= BEGIN: getCaretInfo ===============");
+	LYXERR(Debug::KEY, "*d->cur_pos_ptr   = " << d->cur_pos_);
+	LYXERR(Debug::KEY, "second_row_pos    = " << second_row_pos);
+	LYXERR(Debug::KEY, "d->caret_pos_     = " << std::dec << d->caret_pos_ <<
 	        "\tcaret_row.index   = " << std::dec << caret_row.index);
-	LYXERR(Debug::DEBUG, "caret_row.pos_    = " << std::dec << caret_row.pos <<
+	LYXERR(Debug::KEY, "caret_row.pos_    = " << std::dec << caret_row.pos <<
 	        "\td->cur_row_idx_   = " << std::dec << d->cur_row_idx_);
-	LYXERR(Debug::DEBUG, "d->real_boundary_     = " << d->real_boundary_ <<
+	LYXERR(Debug::KEY, "d->real_boundary_     = " << d->real_boundary_ <<
 	        "\td->virtual_boundary_  = " << d->virtual_boundary_);
-	LYXERR(Debug::DEBUG, "=============== END: getCaretInfo ===============");
+	LYXERR(Debug::KEY, "=============== END: getCaretInfo ===============");
 #endif
 
 	return caret_row;
@@ -1434,9 +1434,9 @@ void GuiInputMethod::setSurroundingText(const Cursor & cur)
 	}
 
 #ifdef _DEBUG
-	LYXERR(Debug::DEBUG, "surrounding text before cursor = \"" <<
+	LYXERR(Debug::KEY, "surrounding text before cursor = \"" <<
 	       d->im_state_.text_before_ << "\"");
-	LYXERR(Debug::DEBUG, "surrounding text after  cursor = \"" <<
+	LYXERR(Debug::KEY, "surrounding text after  cursor = \"" <<
 	       d->im_state_.text_after_ << "\"");
 #endif
 
