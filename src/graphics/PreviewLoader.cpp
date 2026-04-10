@@ -626,7 +626,7 @@ void PreviewLoader::Impl::startLoading(bool wait)
 					? buffer_.params().getOutputFlavor()
 					: Flavor::LaTeX;
 	if (buffer_.params().encoding().package() == Encoding::japanese) {
-		latexparam = " --latex=platex";
+		latexparam = " --latex=pdflatex";
 		flavor = Flavor::LaTeX;
 	}
 	else if (buffer_.params().useNonTeXFonts) {
@@ -850,6 +850,11 @@ void PreviewLoader::Impl::dumpPreamble(otexstream & os, Flavor flavor) const
 	os << "\n"
 	   << "\\usepackage[active,delayed,showlabels,lyx]{preview}\n"
 	   << "\n";
+	if (buffer_.params().encoding().package() == Encoding::japanese) {
+		os << "\n"
+		   << "\\usepackage[whole]{bxcjkjatype}\n"
+		   << "\n";
+	}
 }
 
 
