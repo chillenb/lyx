@@ -1050,12 +1050,12 @@ void Tabular::insertColumn(col_type col, bool copy, row_type row)
 		cell_info[r].insert(cell_info[r].begin() + col + 1,
 			copy ? cell_info[r][col] : CellData(buffer_));
 		// make new cell part of multicolumn if old cell was at the beginning
-		// or middle of a multicolumn
+		// or middle of a multicolumn, or if it is part of a longtable caption
 		if (cell_info[r][col].multicolumn == CELL_BEGIN_OF_MULTICOLUMN
-			|| (col + 2 < ncols()
-				&& cell_info[r][col].multicolumn == CELL_PART_OF_MULTICOLUMN
-				&& cell_info[r][col + 2].multicolumn == CELL_PART_OF_MULTICOLUMN
-			))
+		    || (col + 2 < ncols()
+			&& cell_info[r][col].multicolumn == CELL_PART_OF_MULTICOLUMN
+			&& cell_info[r][col + 2].multicolumn == CELL_PART_OF_MULTICOLUMN)
+		    || (is_long_tabular && ltCaption(r)))
 			cell_info[r][col + 1].multicolumn = CELL_PART_OF_MULTICOLUMN;
 	}
 	updateIndexes();
