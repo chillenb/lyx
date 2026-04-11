@@ -2560,8 +2560,16 @@ void Buffer::registerExternalRefs(FileName fn) const
 
 	vector<FileName>::const_iterator temp =
 		find(d->external_xrefed_files_.begin(), d->external_xrefed_files_.end(), fn);
-	if (temp == d->external_xrefed_files_.end())
+	if (temp == d->external_xrefed_files_.end()) {
 		d->external_xrefed_files_.push_back(fn);
+		// we also need to load these files in the background
+		// and update their buffer to get valid ref insets
+		if (!theBufferList().getBuffer(fn)) {
+			Buffer * xb = checkAndLoadLyXFile(fn, true);
+			if (xb)
+				xb->updateBuffer();
+		}
+	}
 }
 
 
