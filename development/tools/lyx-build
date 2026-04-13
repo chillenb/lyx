@@ -14,7 +14,7 @@
 # Where we will do our work
 BASE="/cvs/lyx/lyx-release";
 # Where our git repository lives
-SRCDIR="/cvs/lyx/lyx-devel";
+SRCDIR="/cvs/lyx/lyx-stable";
 # editor 
 if [ -z "$EDITOR" ]; then EDITOR=vi; fi
 
@@ -30,17 +30,15 @@ COMPILE="YES";
 PATCH="YES";
 
 function usage() {
-echo "lyx-build [-C] [-m MAKEARGS[ [-P]";
+echo "lyx-build [-C] [-m MAKEARGS]]";
 echo " -C: Do not test compilation";
 echo " -m MAKEARGS: Arguments for make";
-echo " -P: Do not build patch files";
 }
 
-while getopts ":Cm:Ph" opt; do
+while getopts ":Cm:h" opt; do
   case $opt in
     C )   COMPILE="";; # don't test compilation
     m )   MAKEOPTS="$OPTARG";;
-    P )   PATCH="";; # don't build patch files
     h )   usage; exit 0;;
     \? )  echo "Unknown option $opt"; usage; exit 1;;
   esac
@@ -129,94 +127,4 @@ if [ -n "$COMPILE" ]; then
 		echo "Compilation errors!!";
 		exit 1;
 	fi
-fi
-
-if [ -z "$PATCH" ]; then 
-	echo "Skipping patch files.";
-	exit 0; 
-fi
-
-LASTNUM=$(echo $PKG_VERSION | sed -e 's/.*\.//');
-LAST=$((LASTNUM - 1));
-FIRST=$(echo $PKG_VERSION | sed -e 's/[0-9]*$//');
-ORIGINAL=${FIRST}0;
-LAST=$FIRST$LAST;
-
-if [ ! -d "$BASE/lyx-patch/" ]; then
-	$DEBUG mkdir "$BASE/lyx-patch/" || exit 1;
-fi
-
-if [ ! -d $BASE/lyx-patch/lyx-$LAST ]; then 
-    echo "Can't find directory for last version $LAST.";
-    echo "See if you can fix this in $BASE/lyx-patch/.";
-    echo "Try that, if you like, and then we'll continue.";
-    echo "We'll try to download from the LyX site if that does not work.";
-    read;
-
-    if [ -z "$DEBUG" ]; then
-        if [ ! -d $BASE/lyx-patch/lyx-$LAST ]; then 
-            echo "Will try to download from LyX site....";
-            pushd $BASE/lyx-patch/;
-            wget ftp://ftp.lyx.org/pub/lyx/stable/${FIRST}x/lyx-$LAST.tar.gz;
-            wget ftp://ftp.lyx.org/pub/lyx/stable/${FIRST}x/lyx-$LAST.tar.gz.sig
-            gpg -q --verify lyx-$LAST.tar.gz.sig
-            if ! [ $? == 0 ]; then
-                echo "Signature wrong!"
-                exit 1;
-            fi
-            rm lyx-$LAST.tar.gz.sig
-            tar -zxvf lyx-$LAST.tar.gz;
-            if [ ! -f lyx-$LAST.tar.gz ]; then
-                echo "Still unable to find directory for last version $LAST.";
-                exit 1;
-            fi
-            $DEBUG popd;
-        fi
-    fi
-fi
-
-echo -n "Ready to make patch against $LAST...";
-read
-
-$DEBUG cd $BASE/lyx-patch/;
-if [ -z "$DEBUG" ]; then
-    tar -zxvf $BASE/lyx-build/lyx-$VERSION.tar.gz >/dev/null;
-    diff -urN -x .svn -x version.cpp lyx-$LAST lyx-$PKG_VERSION > patch;
-    echo -n "Please check the patch...";
-    read;
-    $EDITOR patch;
-else
-    $DEBUG tar -zxvf $BASE/lyx-build/lyx-$VERSION.tar.gz;
-    $DEBUG diff -urN -x .svn -x version.cpp lyx-$LAST lyx-$PKG_VERSION;
-fi
-
-
-NUMFIX="th";
-if [ "$LASTNUM" = "1" ]; then
-  NUMFIX="st";
-elif [ "$LASTNUM" = "2" ]; then
-  NUMFIX="nd";
-fi
-NUM="$LASTNUM$NUMFIX";
-if [ -z "$DEBUG" ]; then
-    cat $BASE/lyx-export/development/tools/patch-preamble | \
-    sed -e "s/VERSION/$PKG_VERSION/; s/ORIGINAL/$ORIGINAL/; s/LAST/$LAST/; s/NUM/$NUM/;" >patch-preamble;
-    echo -n "Please verify the patch preamble...";
-    read
-    $EDITOR patch-preamble;
-    PATCH="patch-$VERSION";
-    cat patch-preamble $BASE/lyx-export/ANNOUNCE patch >$PATCH;
-    gzip -c $PATCH > $PATCH.gz
-    if [ -f $PATCH.gz.sig ]; then
-        rm $PATCH.gz.sig;
-    fi
-    gpg -b $PATCH.gz
-    xz -zc $PATCH > $PATCH.xz
-    if [ -f $PATCH.xz.sig ]; then
-        rm $PATCH.xz.sig;
-    fi
-    $DEBUG gpg -b $PATCH.xz
-
-    echo -n "Patch and signatures created...";
-    ln $PATCH.gz $PATCH.gz.sig $PATCH.xz $PATCH.xz.sig $BASE;
 fi
