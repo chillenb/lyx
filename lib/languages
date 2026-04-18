@@ -433,7 +433,7 @@ Language austrian
 	End
 	SpecialChar abbrvdot
 	    Type	specialchar
-	    MenuString	"Abbreviation Dot|o"
+	    MenuString	"Abbreviation Period|o"
 	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
 	    LyXOutput	"0x002e 0x2009"
 	    LatexOutput	\".
@@ -526,7 +526,7 @@ Language naustrian
 	End
 	SpecialChar abbrvdot
 	    Type	specialchar
-	    MenuString	"Abbreviation Dot|o"
+	    MenuString	"Abbreviation Period|o"
 	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
 	    LyXOutput	"0x002e 0x2009"
 	    LatexOutput	\".
@@ -1338,7 +1338,7 @@ Language german
 	End
 	SpecialChar abbrvdot
 	    Type	specialchar
-	    MenuString	"Abbreviation Dot|o"
+	    MenuString	"Abbreviation Period|o"
 	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
 	    LyXOutput	"0x002e 0x2009"
 	    LatexOutput	\".
@@ -1432,7 +1432,7 @@ Language ngerman
 	End
 	SpecialChar abbrvdot
 	    Type	specialchar
-	    MenuString	"Abbreviation Dot|o"
+	    MenuString	"Abbreviation Period|o"
 	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
 	    LyXOutput	"0x002e 0x2009"
 	    LatexOutput	\".
@@ -1528,7 +1528,7 @@ Language german-ch
 	End
 	SpecialChar abbrvdot
 	    Type	specialchar
-	    MenuString	"Abbreviation Dot|o"
+	    MenuString	"Abbreviation Period|o"
 	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
 	    LyXOutput	"0x002e 0x2009"
 	    LatexOutput	\".
@@ -1623,7 +1623,7 @@ Language german-ch-old
 	End
 	SpecialChar abbrvdot
 	    Type	specialchar
-	    MenuString	"Abbreviation Dot|o"
+	    MenuString	"Abbreviation Period|o"
 	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
 	    LyXOutput	"0x002e 0x2009"
 	    LatexOutput	\".
