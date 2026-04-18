@@ -170,10 +170,8 @@ private:
 	pos_type pickNextSegFromTurnout(pos_type next_seg_pos, QTextCharFormat * char_format = nullptr);
 	/// Register preedit segment for final output
 	pos_type registerSegment(pos_type start, size_type length, QTextCharFormat char_format);
-#ifdef _DEBUG
 	/// Returns enum Qt::InputMethodQuery constant from its value
 	docstring inputMethodQueryFlagsAsString(unsigned long int query) const;
-#endif
 	/// update cursor position and surrounding text
 	void updatePosAndSurroundingText();
 

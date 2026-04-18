@@ -30,9 +30,7 @@
 #include "Text.h"
 #include "TextMetrics.h"
 
-#ifdef _DEBUG
 #include "support/debug.h"
-#endif
 #include "support/lassert.h"
 #include "support/qstring_helpers.h"
 
@@ -100,11 +98,9 @@ GuiInputMethod::GuiInputMethod(GuiWorkArea *parent)
 	d->buffer_view_ = &d->work_area_->bufferView();
 	d->cur_ = &d->buffer_view_->cursor();
 
-#ifdef _DEBUG
 	LYXERR(Debug::KEY, "GuiInputMethod: Address of parent: " << parent);
 	LYXERR(Debug::KEY, "GuiInputMethod: Address of buffer_view_: " <<
 	       &d->work_area_->bufferView());
-#endif
 
 	connect(this, &GuiInputMethod::inputMethodStateChanged,
 	        d->sys_im_, &QInputMethod::update);
@@ -195,20 +191,16 @@ void GuiInputMethod::processPreedit(QInputMethodEvent* ev)
 	Color fg(Color_foreground);
 	d->font_color_ = d->color_cache_.get(fg);
 	d->font_brush_.setColor(d->font_color_);
-#ifdef _DEBUG
 	LYXERR(Debug::KEY,
 	       "Preedit font color is set to " << d->font_color_.name());
-#endif
 
 	d->locale_ = d->sys_im_->locale();
 	d->style_.lang_ = d->locale_;
 
-#ifdef _DEBUG
 	LYXERR(Debug::KEY,
 	       "IM locale: " << d->locale_.bcp47Name() <<
 	       " preeditString: " << ev->preeditString() <<
 	       " commitString: " << ev->commitString());
-#endif
 
 	// output the commit string to the text
 	if (!ev->commitString().isEmpty()) {
@@ -375,9 +367,8 @@ void GuiInputMethod::setPreeditStyle(
 	//
 	d->seg_turnout_.clear();
 
-#ifdef _DEBUG
-	LYXERR(Debug::GUI, "Start parsing attributes of the preedit");
-#endif
+	LYXERR(Debug::KEY, "Start parsing attributes of the preedit");
+
 	// obtain attributes of input method
 	for (const QInputMethodEvent::Attribute & it : attr) {
 		switch (it.type) {
@@ -433,43 +424,35 @@ void GuiInputMethod::setPreeditStyle(
 			// however we haven't encountered use cases in QInputMethodEvent
 			d->style_.caret_color_ = it.value.value<QColor>();
 
-#ifdef _DEBUG
 			// we only prepare for finding such incoming event
 			LYXERR(Debug::KEY,
 			       "QInputMethodEvent: virtual cursor position: " <<
 			       std::dec << d->caret_pos_ << " caret color: " <<
 			       d->style_.caret_color_.name(QColor::HexRgb));
-#endif
 			break;
 
 		// again not implemented yet?
 		case QInputMethodEvent::Language:
 			d->style_.lang_ = it.value.value<QLocale>();
-#ifdef _DEBUG
 			LYXERR(Debug::KEY,
 			       "QInputMethodEvent::Language: " <<
 			       d->style_.lang_.bcp47Name());
-#endif
 			break;
 
 		// this also seems not implemented by any input methods
 		case QInputMethodEvent::Ruby:
 			d->style_.ruby_ = it.value.value<QString>();
-#ifdef _DEBUG
 			LYXERR(Debug::KEY,
 			       "QInputMethodEvent::Ruby: " << d->style_.ruby_);
-#endif
 			break;
 
 		case QInputMethodEvent::Selection:
 			d->anchor_pos_ = it.start;
 			d->caret_pos_ = it.start + it.length;
 			d->cur_->setSelection(d->cur_->realAnchor(), it.length);
-#ifdef _DEBUG
 			LYXERR(Debug::KEY,
 			       "QInputMethodEvent::Selection start: " << it.start <<
 			       " length: " << it.length);
-#endif
 			break;
 #if QT_VERSION >= QT_VERSION_CHECK(6, 10, 0)
 		case QInputMethodEvent::MimeData:
@@ -483,9 +466,7 @@ void GuiInputMethod::setPreeditStyle(
 	for (size_type i=0; i<d->seg_turnout_.size(); ++i)
 		next_seg_pos = pickNextSegFromTurnout(next_seg_pos);
 	if (!d->seg_turnout_.empty()) {
-#ifdef _DEBUG
 		LYXERR0("Turnouts of preedit segments have not been all swept");
-#endif
 		LATTEST(false);
 	}
 
@@ -512,9 +493,7 @@ void GuiInputMethod::setPreeditStyle(
 	        || (focus_style == nullptr && d->style_.segments_.size() <= 1);
 
 	if (d->im_state_.composing_mode_) {
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, "preedit is in the composing mode");
-#endif
 		QTextCharFormat char_format;
 		int start = 0;
 		size_type length = 0;
@@ -533,9 +512,7 @@ void GuiInputMethod::setPreeditStyle(
 		PreeditSegment seg = {start, length, char_format};
 		d->style_.segments_.push_back(seg);
 	} else {
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, "preedit is in the completing mode");
-#endif
 		d->style_.caret_visible_ = false;
 	}
 }
@@ -546,15 +523,13 @@ pos_type GuiInputMethod::setTextFormat(const QInputMethodEvent::Attribute & it,
 	// get LyX's color setting
 	QTextCharFormat char_format = it.value.value<QTextCharFormat>();
 
-#ifdef _DEBUG
-	LYXERR(Debug::GUI,
+	LYXERR(Debug::KEY,
 	       "QInputMethodEvent::TextFormat start: " << it.start <<
 	       " end: " << it.start + it.length - 1 <<
 	       " underline? " << char_format.font().underline() <<
 	       " UnderlineStyle: " << char_format.underlineStyle() <<
 	       " fg: " << char_format.foreground().color().name() <<
 	       " bg: " << char_format.background().color().name());
-#endif
 
 	//
 	// Fit and adjust arrived text formats
@@ -593,11 +568,9 @@ pos_type GuiInputMethod::setTextFormat(const QInputMethodEvent::Attribute & it,
 			        pickNextSegFromTurnout(next_seg_pos, &char_format);
 			if (updated_pos == next_seg_pos) {
 				// no matching segment in the turnout
-#ifdef _DEBUG
-				LYXERR(Debug::GUI, "Pushing to preedit register: (" << it.start
+				LYXERR(Debug::KEY, "Pushing to preedit register: (" << it.start
 				       << ", " << it.start + it.length - 1 << ") bg color: "
 				       << char_format.background().color().name());
-#endif
 				next_seg_pos = registerSegment(it.start, (size_type)it.length,
 				                               char_format);
 			} else
@@ -605,23 +578,19 @@ pos_type GuiInputMethod::setTextFormat(const QInputMethodEvent::Attribute & it,
 		} else {
 			// push the constructed char format together with start and length
 			// to the list
-#ifdef _DEBUG
-			LYXERR(Debug::GUI, "Pushing to preedit register: (" << it.start
+			LYXERR(Debug::KEY, "Pushing to preedit register: (" << it.start
 			       << ", " << it.start + it.length - 1
 			       << ") fg: "
 			       << char_format.foreground().color().name()
 			       << " bg: "
 			       << char_format.background().color().name());
-#endif
 			next_seg_pos =
 			        registerSegment(it.start, (size_type)it.length, char_format);
 		}
 		next_seg_pos = pickNextSegFromTurnout(next_seg_pos);
 	} else if ((it.start > next_seg_pos || d->initial_tf_entry_) && it.length > 0) {
-#ifdef _DEBUG
-		LYXERR(Debug::GUI, "Pushing to preedit turnout:  (" << it.start << ", "
+		LYXERR(Debug::KEY, "Pushing to preedit turnout:  (" << it.start << ", "
 				<< it.start + it.length - 1 << ")");
-#endif
 		PreeditSegment turnout = {it.start, (size_type)it.length, char_format};
 		d->seg_turnout_.push_back(turnout);
 		d->initial_tf_entry_ = false;
@@ -650,15 +619,13 @@ pos_type GuiInputMethod::pickNextSegFromTurnout(pos_type next_seg_pos,
 				seg = {(*past_attr).start_,
 								  (size_type)(*past_attr).length_,
 								  (*past_attr).char_format_};
-#ifdef _DEBUG
-			LYXERR(Debug::GUI,
+			LYXERR(Debug::KEY,
 			       "Pushing to preedit register: (" << (*past_attr).start_
 			        << ", " << (*past_attr).start_ + (*past_attr).length_ - 1
 			        << ") fg: "
 			        << (*past_attr).char_format_.foreground().color().name()
 			        << " bg: "
 			        << (*past_attr).char_format_.background().color().name());
-#endif
 			d->style_.segments_.push_back(seg);
 			next_seg_pos += (*past_attr).length_;
 			if (d->seg_turnout_.size() > 1)
@@ -670,19 +637,15 @@ pos_type GuiInputMethod::pickNextSegFromTurnout(pos_type next_seg_pos,
 	// Clear d->seg_turnout_
 	if (is_matched) {
 		if (d->seg_turnout_.size() == 1) {
-#ifdef _DEBUG
-			LYXERR(Debug::GUI, "Preedit turnout clearing:    ("
+			LYXERR(Debug::KEY, "Preedit turnout clearing:    ("
 			        << d->seg_turnout_.back().start_ << ", "
 			        << d->seg_turnout_.back().start_
 			               + d->seg_turnout_.back().length_ - 1 << ")");
-#endif
 			d->seg_turnout_.pop_back();
 		} else if (d->seg_turnout_.size() > 1) {
-#ifdef _DEBUG
-			LYXERR(Debug::GUI, "Preedit turnout clearing: ("
+			LYXERR(Debug::KEY, "Preedit turnout clearing: ("
 			        << (*to_erase).start_ << ", "
 			        << (*to_erase).start_ + (*to_erase).length_ - 1 << ")");
-#endif
 			d->seg_turnout_.erase(to_erase);
 		}
 	}
@@ -953,19 +916,15 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		return;
 	}
 
-#ifdef _DEBUG
 	docstring msg = "Responded to query " +
 		inputMethodQueryFlagsAsString(query) + " = ";
-#endif
 	switch (query) {
 	// The widget accepts input method input
 	case Qt::ImEnabled: {
-#ifdef _DEBUG
 		if (d->im_state_.enabled_)
 			LYXERR(Debug::KEY, msg << "\"true\"");
 		else
 			LYXERR(Debug::KEY, msg << "\"false\"");
-#endif
 		Q_EMIT queryProcessed(d->im_state_.enabled_);
 		break;
 	}
@@ -979,30 +938,23 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 			// the starting point of the preedit, so respond with anchor_rect_
 			// that points the starting point during the editing mode
 			rect = &d->im_state_.anchor_rect_;
-#ifdef _DEBUG
 			LYXERR(Debug::KEY,
 			       "     (Composing mode: use anchor_rect_ for ImCursorRectangle)");
-#endif
 		} else
 			rect = &d->im_state_.cursor_rect_;
 
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << " x:" << rect->x() << " y:" << rect->y()
 		       << " w:" << rect->width() << " h:" << rect->height());
-#endif
 		Q_EMIT queryProcessed(*rect);
 		break;
 	}
 	case Qt::ImCurrentSelection: {
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << d->cur_->selectionAsString(false));
-#endif
 		Q_EMIT queryProcessed(toqstr(d->cur_->selectionAsString(false)));
 		break;
 	}
 	// plain text around the input area, for example the current paragraph
 	case Qt::ImSurroundingText: {
-#ifdef _DEBUG
 		if (d->im_state_.surrounding_text_.empty())
 			LYXERR(Debug::KEY, msg << "\"\"");
 		else if (d->im_state_.surrounding_text_.length() <= 20)
@@ -1011,7 +963,6 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		else
 			LYXERR(Debug::KEY, msg << "\"" <<
 			       d->im_state_.surrounding_text_.substr(0, 20) << "...\"");
-#endif
 		Q_EMIT queryProcessed(toqstr(d->im_state_.surrounding_text_));
 		break;
 	}
@@ -1020,16 +971,13 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		// FIXME: position should be set only when there was a non-virtual
 		// change in the document
 		setAbsolutePosition(*d->cur_);
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << std::dec << d->abs_pos_);
-#endif
 		Q_EMIT queryProcessed((qlonglong)d->abs_pos_);
 		break;
 	}
 	// plain text before the cursor
 	case Qt::ImTextBeforeCursor: {
 		updatePosAndSurroundingText();
-#ifdef _DEBUG
 		if (d->im_state_.text_before_.empty())
 			LYXERR(Debug::KEY, msg << "\"\"");
 		else if (d->im_state_.text_before_. length() <= 20)
@@ -1037,7 +985,6 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		else
 			LYXERR(Debug::KEY, msg << "\"..." <<
 			       d->im_state_.text_before_.substr(0, 20) << "\"");
-#endif
 		QVariant str(toqstr(d->im_state_.text_before_));
 		Q_EMIT queryProcessed(str);
 		break;
@@ -1045,7 +992,6 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	// plain text after the cursor
 	case Qt::ImTextAfterCursor: {
 		updatePosAndSurroundingText();
-#ifdef _DEBUG
 		if (d->im_state_.text_after_.empty())
 			LYXERR(Debug::KEY, msg << "\"\"");
 		else if (d->im_state_.text_after_.length() <= 20)
@@ -1053,7 +999,6 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		else
 			LYXERR(Debug::KEY, msg << "\"..." <<
 			       d->im_state_.text_after_.substr(0, 20) << "\"");
-#endif
 		QVariant str(toqstr(d->im_state_.text_after_));
 		Q_EMIT queryProcessed(str);
 		break;
@@ -1061,18 +1006,14 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	// logical position of the cursor within the text surrounding the input area
 	case Qt::ImCursorPosition: {
 		updatePosAndSurroundingText();
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << std::dec << d->cur_->pos());
-#endif
 		Q_EMIT queryProcessed((qlonglong)d->cur_->pos());
 		break;
 	}
 	// position of the selection anchor
 	case Qt::ImAnchorPosition: {
 		updatePosAndSurroundingText();
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << std::dec << (unsigned int)d->anchor_pos_);
-#endif
 		Q_EMIT queryProcessed(QVariant((unsigned int)d->anchor_pos_));
 		break;
 	}
@@ -1081,21 +1022,17 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 		                d->work_area_->viewport()->y(),
 		                d->work_area_->viewport()->width(),
 		                d->work_area_->viewport()->height());
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << "(x,y,w,h) = " <<
 		       viewport.x() << ", " << viewport.y() << ", " <<
 		       viewport.width() << ", " << viewport.height() << ")");
-#endif
 		Q_EMIT queryProcessed(viewport);
 		break;
 	}
 	// hints for input method on expected input
 	case Qt::ImHints: {
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << "0x" << std::hex
 		                         << d->work_area_->inputMethodHints()
 		                         << std::dec);
-#endif
 		Q_EMIT queryProcessed((qlonglong)d->work_area_->inputMethodHints());
 		break;
 	}
@@ -1103,9 +1040,7 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	case Qt::ImPreferredLanguage: {
 		QLocale locale(toqstr(d->cur_->getFont().language()->code()));
 		QString lang = locale.languageToString(locale.language());
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << lang);
-#endif
 		Q_EMIT queryProcessed(lang);
 		break;
 	}
@@ -1113,27 +1048,22 @@ void GuiInputMethod::processQuery(Qt::InputMethodQuery query)
 	// it seems this property is not yet used by most of input methods
 	// as of August 2024.
 	case Qt::ImAnchorRectangle: {
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, msg << " x:" << d->im_state_.anchor_rect_.x()
 		       << " y:" << d->im_state_.anchor_rect_.y()
 		       << " w:" << d->im_state_.anchor_rect_.width()
 		       << " h:" << d->im_state_.anchor_rect_.height());
-#endif
 		Q_EMIT queryProcessed(d->im_state_.anchor_rect_);
 		break;
 	}
 	default: {
 		QVariant null;
-#ifdef _DEBUG
 		LYXERR(Debug::KEY, "Unsupported query by LyX came in: " <<
 		       inputMethodQueryFlagsAsString(query));
-#endif
 		Q_EMIT queryProcessed(null);
 	}
 	}
 }
 
-#ifdef _DEBUG
 // Returns enum Qt::InputMethodQuery constant from its value.
 // This is for debugging purpose only.
 docstring GuiInputMethod::inputMethodQueryFlagsAsString(unsigned long int query) const
@@ -1161,7 +1091,6 @@ docstring GuiInputMethod::inputMethodQueryFlagsAsString(unsigned long int query)
 	}
 	return str;
 }
-#endif
 
 //
 //     helper functions
@@ -1253,7 +1182,6 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 	// real_boundary, i.e. d->real_boundary_.
 	real_boundary |= post_real_boundary;
 
-#ifdef _DEBUG
 	LYXERR(Debug::KEY, "========== BEGIN: initializePositions ==========");
 	LYXERR(Debug::KEY, "cur_row_idx   = " << cur_row_idx <<
 	        "\treal_boundary    = " << real_boundary);
@@ -1272,7 +1200,6 @@ pos_type GuiInputMethod::initializePositions(Cursor * cur)
 		LYXERR(Debug::KEY, "wchar width = " <<
 		        horizontalAdvance(d->preedit_str_.substr(0,1)));
 	LYXERR(Debug::KEY, "========== END:   initializePositions ==========");
-#endif
 
 	return cur_row_idx;
 }
@@ -1387,7 +1314,6 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo()
 	} else
 		caret_row.pos = d->cur_pos_;
 
-#ifdef _DEBUG
 	LYXERR(Debug::KEY, "============= BEGIN: getCaretInfo ===============");
 	LYXERR(Debug::KEY, "*d->cur_pos_ptr   = " << d->cur_pos_);
 	LYXERR(Debug::KEY, "second_row_pos    = " << second_row_pos);
@@ -1398,7 +1324,6 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo()
 	LYXERR(Debug::KEY, "d->real_boundary_     = " << d->real_boundary_ <<
 	        "\td->virtual_boundary_  = " << d->virtual_boundary_);
 	LYXERR(Debug::KEY, "=============== END: getCaretInfo ===============");
-#endif
 
 	return caret_row;
 }
@@ -1433,12 +1358,10 @@ void GuiInputMethod::setSurroundingText(const Cursor & cur)
 		d->im_state_.surrounding_text_ = partext;
 	}
 
-#ifdef _DEBUG
 	LYXERR(Debug::KEY, "surrounding text before cursor = \"" <<
 	       d->im_state_.text_before_ << "\"");
 	LYXERR(Debug::KEY, "surrounding text after  cursor = \"" <<
 	       d->im_state_.text_after_ << "\"");
-#endif
 
 	// notify the input method about the update
 #if QT_VERSION < QT_VERSION_CHECK(5, 12, 0)
