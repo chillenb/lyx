@@ -431,6 +431,19 @@ Language austrian
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar abbrvdot
+	    Type	specialchar
+	    MenuString	"Abbreviation Dot|o"
+	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
+	    LyXOutput	"0x002e 0x2009"
+	    LatexOutput	\".
+	    IsLetter	1
+	    PlaintextOutput "0x002e 0x2009"
+	    XHTMLOutput	.&#x2009;
+	    Font
+	      Color		latex
+	    EndFont
+	End
 	SpecialChar gendermark
 	    Type	specialchar
 	    MenuString	"Gender Mark|G"
@@ -510,6 +523,19 @@ Language naustrian
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar abbrvdot
+	    Type	specialchar
+	    MenuString	"Abbreviation Dot|o"
+	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
+	    LyXOutput	"0x002e 0x2009"
+	    LatexOutput	\".
+	    IsLetter	1
+	    PlaintextOutput "0x002e 0x2009"
+	    XHTMLOutput	.&#x2009;
+	    Font
+	      Color		latex
+	    EndFont
 	End
 	SpecialChar gendermark
 	    Type	specialchar
@@ -1310,6 +1336,19 @@ Language german
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar abbrvdot
+	    Type	specialchar
+	    MenuString	"Abbreviation Dot|o"
+	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
+	    LyXOutput	"0x002e 0x2009"
+	    LatexOutput	\".
+	    IsLetter	1
+	    PlaintextOutput "0x002e 0x2009"
+	    XHTMLOutput	.&#x2009;
+	    Font
+	      Color		latex
+	    EndFont
+	End
 	SpecialChar gendermark
 	    Type	specialchar
 	    MenuString	"Gender Mark|G"
@@ -1390,6 +1429,19 @@ Language ngerman
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar abbrvdot
+	    Type	specialchar
+	    MenuString	"Abbreviation Dot|o"
+	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
+	    LyXOutput	"0x002e 0x2009"
+	    LatexOutput	\".
+	    IsLetter	1
+	    PlaintextOutput "0x002e 0x2009"
+	    XHTMLOutput	.&#x2009;
+	    Font
+	      Color		latex
+	    EndFont
 	End
 	SpecialChar gendermark
 	    Type	specialchar
@@ -1474,6 +1526,19 @@ Language german-ch
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
 	End
+	SpecialChar abbrvdot
+	    Type	specialchar
+	    MenuString	"Abbreviation Dot|o"
+	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
+	    LyXOutput	"0x002e 0x2009"
+	    LatexOutput	\".
+	    IsLetter	1
+	    PlaintextOutput "0x002e 0x2009"
+	    XHTMLOutput	.&#x2009;
+	    Font
+	      Color		latex
+	    EndFont
+	End
 	SpecialChar gendermark
 	    Type	specialchar
 	    MenuString	"Gender Mark|G"
@@ -1555,6 +1620,19 @@ Language german-ch-old
 	SpecialChar ligaturebreak
 	    LaTeXOutput  \"|
 	    LaTeXOutputUTF8 \"|
+	End
+	SpecialChar abbrvdot
+	    Type	specialchar
+	    MenuString	"Abbreviation Dot|o"
+	    Tooltip     "Abbreviation punctuation with appropriate ensuing space"
+	    LyXOutput	"0x002e 0x2009"
+	    LatexOutput	\".
+	    IsLetter	1
+	    PlaintextOutput "0x002e 0x2009"
+	    XHTMLOutput	.&#x2009;
+	    Font
+	      Color		latex
+	    EndFont
 	End
 	SpecialChar gendermark
 	    Type	specialchar

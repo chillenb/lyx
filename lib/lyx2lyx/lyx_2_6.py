@@ -807,6 +807,25 @@ def revert_shorthands2(document):
 
     i = 0
     while True:
+        i = find_substring(document.body, "\\SpecialChar abbrvdot", i)
+        if i == -1:
+            break
+        document.body[i] = document.body[i].replace("\\SpecialChar abbrvdot", "")
+        lang = mainlang
+        l = find_token_backwards(document.body, "\\lang", i) != -1
+        if l > 0:
+            line = document.body[l]
+            tokenend = len("\\lang ")
+            lang = line[tokenend:].strip()
+        # abbrvdot and gendermark are featured by the same langs (german)
+        if lang in langs_gendermark:
+            cmd = put_cmd_in_ert("\".")
+            document.body[i + 1 : i + 1] = cmd
+        i += 1
+        continue
+
+    i = 0
+    while True:
         i = find_substring(document.body, "\\SpecialChar thinspacebreakpoint", i)
         if i == -1:
             break
