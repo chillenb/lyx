@@ -97,15 +97,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX 2.4git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-03-29 09:06+0200\n"
-"PO-Revision-Date: 2026-03-29 09:07+0200\n"
+"POT-Creation-Date: 2026-04-18 09:30+0200\n"
+"PO-Revision-Date: 2026-04-18 09:34+0200\n"
 "Last-Translator: Jürgen Spitzmüller <spitz@lyx.org>\n"
 "Language-Team: German <lyx-docs@lists.lyx.org>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Gtranslator 49.0\n"
+"X-Generator: Gtranslator 50.0\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/frontends/qt/ui/AboutUi.ui:27
@@ -796,7 +796,7 @@ msgid "Remove the selected branch"
 msgstr "Den ausgewählten Zweig entfernen"
 
 #: src/frontends/qt/ui/BranchesUi.ui:74 src/frontends/qt/ui/ColorUi.ui:257
-#: src/frontends/qt/ui/IndicesUi.ui:169 src/Buffer.cpp:4904 src/Buffer.cpp:4917
+#: src/frontends/qt/ui/IndicesUi.ui:169 src/Buffer.cpp:4912 src/Buffer.cpp:4925
 msgid "&Remove"
 msgstr "&Entfernen"
 
@@ -873,7 +873,7 @@ msgid "Add A&ll"
 msgstr "A&lle hinzufügen"
 
 #: src/frontends/qt/ui/BranchesUnknownUi.ui:58 src/Buffer.cpp:1518
-#: src/Buffer.cpp:4878 src/Buffer.cpp:4988 src/LyXVC.cpp:114 src/LyXVC.cpp:309
+#: src/Buffer.cpp:4886 src/Buffer.cpp:4996 src/LyXVC.cpp:114 src/LyXVC.cpp:309
 #: src/buffer_funcs.cpp:56 src/frontends/qt/GuiBranches.cpp:256
 #: src/frontends/qt/GuiClipboard.cpp:251 src/frontends/qt/GuiDocument.cpp:3062
 #: src/frontends/qt/GuiParagraph.cpp:173 src/frontends/qt/GuiPrefs.cpp:4290
@@ -25912,19 +25912,19 @@ msgstr "Ignorieren"
 msgid "Afrikaans"
 msgstr "Afrikaans"
 
-#: lib/languages:199 lib/languages:394 lib/languages:474 lib/languages:608
-#: lib/languages:738 lib/languages:977 lib/languages:1164 lib/languages:1273
-#: lib/languages:1354 lib/languages:1437 lib/languages:1519 lib/languages:1999
-#: lib/languages:2183 lib/languages:2248 lib/languages:2294 lib/languages:2367
-#: lib/languages:2532 lib/languages:2782
+#: lib/languages:199 lib/languages:394 lib/languages:487 lib/languages:634
+#: lib/languages:764 lib/languages:1003 lib/languages:1190 lib/languages:1299
+#: lib/languages:1393 lib/languages:1489 lib/languages:1584 lib/languages:2077
+#: lib/languages:2261 lib/languages:2326 lib/languages:2372 lib/languages:2445
+#: lib/languages:2610 lib/languages:2860
 msgid "Additional Hyphenation Point|y"
 msgstr "Zusätzliche Trennmöglichkeit|ä"
 
-#: lib/languages:200 lib/languages:395 lib/languages:475 lib/languages:609
-#: lib/languages:739 lib/languages:978 lib/languages:1165 lib/languages:1274
-#: lib/languages:1355 lib/languages:1438 lib/languages:1520 lib/languages:2000
-#: lib/languages:2184 lib/languages:2249 lib/languages:2295 lib/languages:2368
-#: lib/languages:2533 lib/languages:2783
+#: lib/languages:200 lib/languages:395 lib/languages:488 lib/languages:635
+#: lib/languages:765 lib/languages:1004 lib/languages:1191 lib/languages:1300
+#: lib/languages:1394 lib/languages:1490 lib/languages:1585 lib/languages:2078
+#: lib/languages:2262 lib/languages:2327 lib/languages:2373 lib/languages:2446
+#: lib/languages:2611 lib/languages:2861
 msgid "Hyphenation point that keeps predefined hyphenation possibilities"
 msgstr "Trennmöglichkeit, die alle vordefinierten Möglichkeiten behält"
 
@@ -25968,487 +25968,497 @@ msgstr "Englisch (Australien)"
 msgid "German (Austria, old spelling)"
 msgstr "Deutsch (Österreich, alte Rechtschreibung)"
 
-#: lib/languages:407 lib/languages:487 lib/languages:621 lib/languages:1082
-#: lib/languages:1177 lib/languages:1286 lib/languages:1367 lib/languages:1450
-#: lib/languages:1532 lib/languages:2012 lib/languages:2196 lib/languages:2380
-#: lib/languages:2545 lib/languages:2795
+#: lib/languages:407 lib/languages:500 lib/languages:647 lib/languages:1108
+#: lib/languages:1203 lib/languages:1312 lib/languages:1406 lib/languages:1502
+#: lib/languages:1597 lib/languages:2090 lib/languages:2274 lib/languages:2458
+#: lib/languages:2623 lib/languages:2873
 msgid "Hyphen with Additional Hyphenation Point|w"
 msgstr "Trennstrich mit zusätzlichen Trennmöglichkeiten|z"
 
-#: lib/languages:408 lib/languages:488 lib/languages:622 lib/languages:1083
-#: lib/languages:1178 lib/languages:1287 lib/languages:1368 lib/languages:1451
-#: lib/languages:1533 lib/languages:2013 lib/languages:2197 lib/languages:2381
-#: lib/languages:2546 lib/languages:2796
+#: lib/languages:408 lib/languages:501 lib/languages:648 lib/languages:1109
+#: lib/languages:1204 lib/languages:1313 lib/languages:1407 lib/languages:1503
+#: lib/languages:1598 lib/languages:2091 lib/languages:2275 lib/languages:2459
+#: lib/languages:2624 lib/languages:2874
 msgid "Breakable hyphen that keeps predefined hyphenation possibilities"
 msgstr "Trennbarer Trennstrich, die zusätzliche Trennmöglichkeiten behält"
 
-#: lib/languages:436 lib/languages:516 lib/languages:1315 lib/languages:1396
-#: lib/languages:1479 lib/languages:1561
+#: lib/languages:436 lib/languages:529 lib/languages:1341 lib/languages:1435
+#: lib/languages:1531 lib/languages:1626
+msgid "Abbreviation Period|o"
+msgstr "Abkürzungspunkt|A"
+
+#: lib/languages:437 lib/languages:530 lib/languages:1342 lib/languages:1436
+#: lib/languages:1532 lib/languages:1627
+msgid "Abbreviation punctuation with appropriate ensuing space"
+msgstr "Abkürzungspunkt mit angemessenem Abstand danach"
+
+#: lib/languages:449 lib/languages:542 lib/languages:1354 lib/languages:1448
+#: lib/languages:1544 lib/languages:1639
 msgid "Gender Mark|G"
 msgstr "Gender-Markierung|G"
 
-#: lib/languages:437 lib/languages:517 lib/languages:1316 lib/languages:1397
-#: lib/languages:1480 lib/languages:1562
+#: lib/languages:450 lib/languages:543 lib/languages:1355 lib/languages:1449
+#: lib/languages:1545 lib/languages:1640
 msgid "Gender mark that keeps hyphenation points"
 msgstr "Gender-Markierung, nach der getrennt werden kann"
 
-#: lib/languages:460
+#: lib/languages:473
 msgid "German (Austria)"
 msgstr "Deutsch (Österreich)"
 
-#: lib/languages:539
+#: lib/languages:565
 msgid "Azerbaijani"
 msgstr "Aserbaidschanisch"
 
-#: lib/languages:555
+#: lib/languages:581
 msgid "Indonesian"
 msgstr "Indonesisch"
 
-#: lib/languages:568
+#: lib/languages:594
 msgid "Malay"
 msgstr "Malaiisch"
 
-#: lib/languages:579
+#: lib/languages:605
 msgid "Basque"
 msgstr "Baskisch"
 
-#: lib/languages:596
+#: lib/languages:622
 msgid "Belarusian"
 msgstr "Weißrussisch"
 
-#: lib/languages:647 lib/languages:1203 lib/languages:2038
+#: lib/languages:673 lib/languages:1229 lib/languages:2116
 msgid "Thin Space for Initials|I"
 msgstr "Halbes Leerzeichen für Initialen|c"
 
-#: lib/languages:648 lib/languages:1204 lib/languages:2039
+#: lib/languages:674 lib/languages:1230 lib/languages:2117
 msgid "Thin space that keeps predefined hyphenation possibilities"
 msgstr "Halbes Leerzeichen, nachdem getrennt werden kann"
 
-#: lib/languages:660 lib/languages:1216 lib/languages:2051 lib/languages:2406
-#: lib/languages:2821
+#: lib/languages:686 lib/languages:1242 lib/languages:2129 lib/languages:2484
+#: lib/languages:2899
 msgid "Cyrillic Dash (Normal)|C"
 msgstr "Kyrillischer Gedankenstrich (Normal)|G"
 
-#: lib/languages:661 lib/languages:1217 lib/languages:2052 lib/languages:2407
-#: lib/languages:2822
+#: lib/languages:687 lib/languages:1243 lib/languages:2130 lib/languages:2485
+#: lib/languages:2900
 msgid "Cyrillic dash for the use in normal text"
 msgstr "Kyrillischer Gedankenstrich für normalen Text"
 
-#: lib/languages:673 lib/languages:1229 lib/languages:2064 lib/languages:2419
-#: lib/languages:2834
+#: lib/languages:699 lib/languages:1255 lib/languages:2142 lib/languages:2497
+#: lib/languages:2912
 msgid "Cyrillic Dash (Compound Name)|o"
 msgstr "Kyrillischer Gedankenstrich (Doppelname)|D"
 
-#: lib/languages:674 lib/languages:1230 lib/languages:2065 lib/languages:2420
-#: lib/languages:2835
+#: lib/languages:700 lib/languages:1256 lib/languages:2143 lib/languages:2498
+#: lib/languages:2913
 msgid "Cyrillic dash for the use in compound names (surnames)"
 msgstr "Kyrillischer Gedankenstrich zur Verbindung von Nachnamen"
 
-#: lib/languages:686 lib/languages:1242 lib/languages:2077 lib/languages:2432
-#: lib/languages:2847
+#: lib/languages:712 lib/languages:1268 lib/languages:2155 lib/languages:2510
+#: lib/languages:2925
 msgid "Cyrillic Dash (Quotative)|u"
 msgstr "Kyrillischer Gedankenstrich (Zitat)|K"
 
-#: lib/languages:687 lib/languages:1243 lib/languages:2078 lib/languages:2433
-#: lib/languages:2848
+#: lib/languages:713 lib/languages:1269 lib/languages:2156 lib/languages:2511
+#: lib/languages:2926
 msgid "Cyrillic dash for denoting direct speech"
 msgstr "Kyrillischer Gedankenstrich zur Markierung direkter Rede"
 
-#: lib/languages:701 src/frontends/qt/GuiSymbols.cpp:67
+#: lib/languages:727 src/frontends/qt/GuiSymbols.cpp:67
 msgid "Bengali"
 msgstr "Bengalisch"
 
-#: lib/languages:713
+#: lib/languages:739
 msgid "Bosnian"
 msgstr "Bosnisch"
 
-#: lib/languages:724
+#: lib/languages:750
 msgid "Portuguese (Brazil)"
 msgstr "Portugiesisch (Brasilien)"
 
-#: lib/languages:761
+#: lib/languages:787
 msgid "Breton"
 msgstr "Bretonisch"
 
-#: lib/languages:772
+#: lib/languages:798
 msgid "English (UK)"
 msgstr "Englisch (Großbritannien)"
 
-#: lib/languages:786
+#: lib/languages:812
 msgid "Bulgarian"
 msgstr "Bulgarisch"
 
-#: lib/languages:801
+#: lib/languages:827
 msgid "English (Canada)"
 msgstr "Englisch (Kanada)"
 
-#: lib/languages:815
+#: lib/languages:841
 msgid "French (Canada)"
 msgstr "Französisch (Kanada)"
 
-#: lib/languages:830
+#: lib/languages:856
 msgid "Catalan"
 msgstr "Katalanisch"
 
-#: lib/languages:845
+#: lib/languages:871
 msgid "Chinese (simplified)"
 msgstr "Chinesisch (vereinfacht)"
 
-#: lib/languages:860
+#: lib/languages:886
 msgid "Chinese (traditional)"
 msgstr "Chinesisch (traditionell)"
 
-#: lib/languages:874
+#: lib/languages:900
 msgid "Church Slavonic"
 msgstr "Altkirchenslawisch"
 
-#: lib/languages:888
+#: lib/languages:914
 msgid "Coptic"
 msgstr "Koptisch"
 
-#: lib/languages:897
+#: lib/languages:923
 msgid "Croatian"
 msgstr "Kroatisch"
 
-#: lib/languages:909
+#: lib/languages:935
 msgid "Czech"
 msgstr "Tschechisch"
 
-#: lib/languages:923 lib/languages:2265 lib/languages:2571
+#: lib/languages:949 lib/languages:2343 lib/languages:2649
 msgid "Split Hyphen|H"
 msgstr "Gesplitteter Trennsprich|G"
 
-#: lib/languages:924 lib/languages:2266 lib/languages:2572
+#: lib/languages:950 lib/languages:2344 lib/languages:2650
 msgid "Hyphen that is repeated at next line when hyphenated"
 msgstr "Trennstrich, der am Anfang der nächsten Zeile wiederholt wird"
 
-#: lib/languages:938
+#: lib/languages:964
 msgid "Danish"
 msgstr "Dänisch"
 
-#: lib/languages:953
+#: lib/languages:979
 msgid "Divehi (Maldivian)"
 msgstr "Dhivehi"
 
-#: lib/languages:963
+#: lib/languages:989
 msgid "Dutch"
 msgstr "Holländisch"
 
-#: lib/languages:1006 lib/examples/Articles:0
+#: lib/languages:1032 lib/examples/Articles:0
 #: src/frontends/qt/GuiLyXFiles.cpp:68
 msgid "English"
 msgstr "Englisch"
 
-#: lib/languages:1023
+#: lib/languages:1049
 msgid "Esperanto"
 msgstr "Esperanto"
 
-#: lib/languages:1036
+#: lib/languages:1062
 msgid "Estonian"
 msgstr "Estnisch"
 
-#: lib/languages:1052
+#: lib/languages:1078
 msgid "Farsi"
 msgstr "Persisch"
 
-#: lib/languages:1070
+#: lib/languages:1096
 msgid "Finnish"
 msgstr "Finnisch"
 
-#: lib/languages:1109
+#: lib/languages:1135
 msgid "French"
 msgstr "Französisch"
 
-#: lib/languages:1126
+#: lib/languages:1152
 msgid "Friulian"
 msgstr "Furlanisch"
 
-#: lib/languages:1138
+#: lib/languages:1164
 msgid "Galician"
 msgstr "Galizisch"
 
-#: lib/languages:1154 src/frontends/qt/GuiSymbols.cpp:78
+#: lib/languages:1180 src/frontends/qt/GuiSymbols.cpp:78
 msgid "Georgian"
 msgstr "Georgisch"
 
-#: lib/languages:1257
+#: lib/languages:1283
 msgid "German (old spelling)"
 msgstr "Deutsch (alte Rechtschreibung)"
 
-#: lib/languages:1339 lib/examples/Articles:0
+#: lib/languages:1378 lib/examples/Articles:0
 msgid "German"
 msgstr "Deutsch"
 
-#: lib/languages:1423
+#: lib/languages:1475
 msgid "German (Switzerland)"
 msgstr "Deutsch (Schweiz)"
 
-#: lib/languages:1505
+#: lib/languages:1570
 msgid "German (Switzerland, old spelling)"
 msgstr "Deutsch (Schweiz, alte Rechtschreibung)"
 
-#: lib/languages:1584 lib/ui/stdtoolbars.inc:229 lib/ui/stdtoolbars.inc:651
+#: lib/languages:1662 lib/ui/stdtoolbars.inc:229 lib/ui/stdtoolbars.inc:651
 #: src/frontends/qt/GuiSymbols.cpp:61
 msgid "Greek"
 msgstr "Griechisch"
 
-#: lib/languages:1601
+#: lib/languages:1679
 msgid "Greek (polytonic)"
 msgstr "Griechisch (polytonisch)"
 
-#: lib/languages:1617 src/frontends/qt/GuiSymbols.cpp:64
+#: lib/languages:1695 src/frontends/qt/GuiSymbols.cpp:64
 msgid "Hebrew"
 msgstr "Hebräisch"
 
-#: lib/languages:1634
+#: lib/languages:1712
 msgid "Hindi"
 msgstr "Hindi"
 
-#: lib/languages:1645
+#: lib/languages:1723
 msgid "Icelandic"
 msgstr "Isländisch"
 
-#: lib/languages:1660
+#: lib/languages:1738
 msgid "Interlingua"
 msgstr "Interlingua"
 
-#: lib/languages:1672
+#: lib/languages:1750
 msgid "Irish"
 msgstr "Irisch"
 
-#: lib/languages:1684
+#: lib/languages:1762
 msgid "Italian"
 msgstr "Italienisch"
 
-#: lib/languages:1700
+#: lib/languages:1778
 msgid "Japanese"
 msgstr "Japanisch"
 
-#: lib/languages:1717
+#: lib/languages:1795
 msgid "Japanese (CJK, only with TeX fonts)"
 msgstr "Japanisch (CJK, nur mit TeX-Schriften)"
 
-#: lib/languages:1728 src/frontends/qt/GuiSymbols.cpp:73
+#: lib/languages:1806 src/frontends/qt/GuiSymbols.cpp:73
 msgid "Kannada"
 msgstr "Kannada"
 
-#: lib/languages:1739
+#: lib/languages:1817
 msgid "Kazakh"
 msgstr "Kasachisch"
 
-#: lib/languages:1749
+#: lib/languages:1827
 msgid "Khmer"
 msgstr "Khmer"
 
-#: lib/languages:1759
+#: lib/languages:1837
 msgid "Korean"
 msgstr "Koreanisch"
 
-#: lib/languages:1781
+#: lib/languages:1859
 msgid "Kurdish (Kurmanji)"
 msgstr "Kurdisch (Kurmandschi)"
 
-#: lib/languages:1795
+#: lib/languages:1873
 msgid "Kurdish (Sorani)"
 msgstr "Kurdisch (Sorani)"
 
-#: lib/languages:1809 src/frontends/qt/GuiSymbols.cpp:76
+#: lib/languages:1887 src/frontends/qt/GuiSymbols.cpp:76
 msgid "Lao"
 msgstr "Laotisch"
 
-#: lib/languages:1822
+#: lib/languages:1900
 msgid "Latin (Modern)"
 msgstr "Latein (modern)"
 
-#: lib/languages:1835
+#: lib/languages:1913
 msgid "Latin (Classic)"
 msgstr "Latein (klassisch)"
 
-#: lib/languages:1848
+#: lib/languages:1926
 msgid "Latin (Ecclesiastic)"
 msgstr "Latein (Kirchenlatein)"
 
-#: lib/languages:1861
+#: lib/languages:1939
 msgid "Latin (Medieval)"
 msgstr "Latein (Mittellatein)"
 
-#: lib/languages:1878
+#: lib/languages:1956
 msgid "Latvian"
 msgstr "Lettisch"
 
-#: lib/languages:1893
+#: lib/languages:1971
 msgid "Lithuanian"
 msgstr "Litauisch"
 
-#: lib/languages:1925
+#: lib/languages:2003
 msgid "Lower Sorbian"
 msgstr "Niedersorbisch"
 
-#: lib/languages:1938
+#: lib/languages:2016
 msgid "Hungarian"
 msgstr "Ungarisch"
 
-#: lib/languages:1952
+#: lib/languages:2030
 msgid "Macedonian"
 msgstr "Mazedonisch"
 
-#: lib/languages:1965 src/frontends/qt/GuiSymbols.cpp:74
+#: lib/languages:2043 src/frontends/qt/GuiSymbols.cpp:74
 msgid "Malayalam"
 msgstr "Malayalam"
 
-#: lib/languages:1976
+#: lib/languages:2054
 msgid "Marathi"
 msgstr "Marathi"
 
-#: lib/languages:1988
+#: lib/languages:2066
 msgid "Mongolian"
 msgstr "Mongolisch"
 
-#: lib/languages:2091
+#: lib/languages:2169
 msgid "English (New Zealand)"
 msgstr "Englisch (Neuseeland)"
 
-#: lib/languages:2105
+#: lib/languages:2183
 msgid "N'Ko"
 msgstr "N'Ko"
 
-#: lib/languages:2118
+#: lib/languages:2196
 msgid "Norwegian (Bokmaal)"
 msgstr "Norwegisch (Bokmål)"
 
-#: lib/languages:2133
+#: lib/languages:2211
 msgid "Norwegian (Nynorsk)"
 msgstr "Norwegisch (Nynorsk)"
 
-#: lib/languages:2148
+#: lib/languages:2226
 msgid "Occitan"
 msgstr "Okzitanisch"
 
-#: lib/languages:2158
+#: lib/languages:2236
 msgid "Odia"
 msgstr "Odia"
 
-#: lib/languages:2170
+#: lib/languages:2248
 msgid "Russian (Petrine orthography)"
 msgstr "Russisch (Petrinische Rechtschreibung)"
 
-#: lib/languages:2224
+#: lib/languages:2302
 msgid "Piedmontese"
 msgstr "Piemontesisch"
 
-#: lib/languages:2236
+#: lib/languages:2314
 msgid "Polish"
 msgstr "Polnisch"
 
-#: lib/languages:2280
+#: lib/languages:2358
 msgid "Portuguese"
 msgstr "Portugiesisch"
 
-#: lib/languages:2316
+#: lib/languages:2394
 msgid "Punjabi"
 msgstr "Panjabi"
 
-#: lib/languages:2326
+#: lib/languages:2404
 msgid "Romanian"
 msgstr "Rumänisch"
 
-#: lib/languages:2339
+#: lib/languages:2417
 msgid "Romansh"
 msgstr "Rätoromanisch"
 
-#: lib/languages:2351
+#: lib/languages:2429
 msgid "Russian"
 msgstr "Russisch"
 
-#: lib/languages:2447
+#: lib/languages:2525
 msgid "North Sami"
 msgstr "Nordsamisch"
 
-#: lib/languages:2457
+#: lib/languages:2535
 msgid "Sanskrit"
 msgstr "Sanskrit"
 
-#: lib/languages:2469
+#: lib/languages:2547
 msgid "Scottish Gaelic"
 msgstr "Schottisch-Gälisch"
 
-#: lib/languages:2486
+#: lib/languages:2564
 msgid "Serbian"
 msgstr "Serbisch"
 
-#: lib/languages:2504
+#: lib/languages:2582
 msgid "Serbian (Latin)"
 msgstr "Serbisch (latein. Schrift)"
 
-#: lib/languages:2518
+#: lib/languages:2596
 msgid "Slovak"
 msgstr "Slowakisch"
 
-#: lib/languages:2586
+#: lib/languages:2664
 msgid "Slovene"
 msgstr "Slowenisch"
 
-#: lib/languages:2598
+#: lib/languages:2676
 msgid "Spanish"
 msgstr "Spanisch"
 
-#: lib/languages:2616
+#: lib/languages:2694
 msgid "Spanish (Mexico)"
 msgstr "Spanisch (Mexiko)"
 
-#: lib/languages:2630
+#: lib/languages:2708
 msgid "Swedish"
 msgstr "Schwedisch"
 
-#: lib/languages:2644
+#: lib/languages:2722
 msgid "Syriac"
 msgstr "Syriakisch"
 
-#: lib/languages:2655 src/frontends/qt/GuiSymbols.cpp:71
+#: lib/languages:2733 src/frontends/qt/GuiSymbols.cpp:71
 msgid "Tamil"
 msgstr "Tamilisch"
 
-#: lib/languages:2665 src/frontends/qt/GuiSymbols.cpp:72
+#: lib/languages:2743 src/frontends/qt/GuiSymbols.cpp:72
 msgid "Telugu"
 msgstr "Telugu"
 
-#: lib/languages:2677 src/frontends/qt/GuiSymbols.cpp:75
+#: lib/languages:2755 src/frontends/qt/GuiSymbols.cpp:75
 msgid "Thai"
 msgstr "Thailändisch"
 
-#: lib/languages:2732 src/frontends/qt/GuiSymbols.cpp:77
+#: lib/languages:2810 src/frontends/qt/GuiSymbols.cpp:77
 msgid "Tibetan"
 msgstr "Tibetisch"
 
-#: lib/languages:2741
+#: lib/languages:2819
 msgid "Turkish"
 msgstr "Türkisch"
 
-#: lib/languages:2757
+#: lib/languages:2835
 msgid "Turkmen"
 msgstr "Turkmenisch"
 
-#: lib/languages:2768
+#: lib/languages:2846
 msgid "Ukrainian"
 msgstr "Ukrainisch"
 
-#: lib/languages:2861
+#: lib/languages:2939
 msgid "Upper Sorbian"
 msgstr "Obersorbisch"
 
-#: lib/languages:2874
+#: lib/languages:2952
 msgid "Urdu"
 msgstr "Urdu"
 
-#: lib/languages:2885
+#: lib/languages:2963
 msgid "Uyghur"
 msgstr "Uigurisch"
 
-#: lib/languages:2898
+#: lib/languages:2976
 msgid "Vietnamese"
 msgstr "Vietnamesisch"
 
-#: lib/languages:2911
+#: lib/languages:2989
 msgid "Welsh"
 msgstr "Walisisch"
 
@@ -29132,7 +29142,7 @@ msgid "Copy as Reference|R"
 msgstr "Als Querverweis kopieren|k"
 
 #: lib/ui/stdcontext.inc:61 lib/ui/stdcontext.inc:381 lib/ui/stdmenus.inc:108
-#: lib/ui/stdtoolbars.inc:89 src/Text.cpp:4996 src/mathed/InsetMathNest.cpp:870
+#: lib/ui/stdtoolbars.inc:89 src/Text.cpp:4996 src/mathed/InsetMathNest.cpp:869
 msgid "Cut"
 msgstr "Ausschneiden"
 
@@ -36962,11 +36972,11 @@ msgstr "\\begin_header fehlt"
 msgid "\\begin_document is missing"
 msgstr "\\begin_document fehlt"
 
-#: src/Buffer.cpp:1076 src/Buffer.cpp:3172
+#: src/Buffer.cpp:1076 src/Buffer.cpp:3180
 msgid "Changes not shown in LaTeX output"
 msgstr "Änderungen nicht in der LaTeX-Ausgabe angezeigt"
 
-#: src/Buffer.cpp:1077 src/Buffer.cpp:3173
+#: src/Buffer.cpp:1077 src/Buffer.cpp:3181
 msgid ""
 "Changes will not be highlighted in LaTeX output, because xcolor and ulem are "
 "not installed.\n"
@@ -37066,7 +37076,7 @@ msgstr ""
 "%1$s stammt von einer neueren LyX-Version, aber das lyx2lyx-Skript konnte "
 "das Dokument nicht konvertieren."
 
-#: src/Buffer.cpp:1505 src/Buffer.cpp:4888 src/Buffer.cpp:4997
+#: src/Buffer.cpp:1505 src/Buffer.cpp:4896 src/Buffer.cpp:5005
 msgid "File is read-only"
 msgstr "Datei ist schreibgeschützt"
 
@@ -37303,16 +37313,16 @@ msgstr "ChkTeX ist fehlgeschlagen"
 msgid "Could not run chktex successfully."
 msgstr "Chktex konnte nicht erfolgreich ausgeführt werden."
 
-#: src/Buffer.cpp:2850
+#: src/Buffer.cpp:2858
 #, c-format
 msgid "Don't know how to export to format: %1$s"
 msgstr "Keine Informationen vorhanden, um in das Format %1$s zu exportieren"
 
-#: src/Buffer.cpp:2929
+#: src/Buffer.cpp:2937
 msgid "Branch state changes in master document"
 msgstr "Änderung des Zweigstatus im Hauptdokument"
 
-#: src/Buffer.cpp:2930
+#: src/Buffer.cpp:2938
 #, c-format
 msgid ""
 "The state of the branch '%1$s' was changed in the master file. Please make "
@@ -37321,31 +37331,31 @@ msgstr ""
 "Der Status des Zweigs '%1$s' wurde im Hauptdokument geändert. Bitte denken "
 "Sie daran, das Hauptdokument zu speichern."
 
-#: src/Buffer.cpp:2999
+#: src/Buffer.cpp:3007
 #, c-format
 msgid "Error exporting to format: %1$s."
 msgstr "Keine Informationen vorhanden, um in das Format %1$s zu exportieren."
 
-#: src/Buffer.cpp:3008
+#: src/Buffer.cpp:3016
 msgid "Error generating literate programming code."
 msgstr "Fehler bei der Erzeugung des Codes für literarische Programmierung."
 
-#: src/Buffer.cpp:3097
+#: src/Buffer.cpp:3105
 #, c-format
 msgid "Branch \"%1$s\" already exists."
 msgstr "Zweig \"%1$s\" existiert bereits."
 
-#: src/Buffer.cpp:3154
+#: src/Buffer.cpp:3162
 msgid "Error viewing the output file."
 msgstr "Fehler bei der Ansicht der Ausgabedatei."
 
-#: src/Buffer.cpp:3519 src/frontends/qt/GuiView.cpp:3145
+#: src/Buffer.cpp:3527 src/frontends/qt/GuiView.cpp:3145
 #: src/frontends/qt/Validator.cpp:256 src/insets/ExternalSupport.cpp:400
 #: src/insets/InsetGraphics.cpp:694 src/insets/InsetInclude.cpp:608
 msgid "Invalid filename"
 msgstr "Ungültiger Dateiname"
 
-#: src/Buffer.cpp:3520 src/insets/ExternalSupport.cpp:401
+#: src/Buffer.cpp:3528 src/insets/ExternalSupport.cpp:401
 #: src/insets/InsetGraphics.cpp:695 src/insets/InsetInclude.cpp:609
 msgid ""
 "The following filename will cause troubles when running the exported file "
@@ -37354,12 +37364,12 @@ msgstr ""
 "Der folgende Dateiname wird Probleme bereiten, wenn LaTeX mit der "
 "exportierten Datei ausgeführt wird: "
 
-#: src/Buffer.cpp:3525 src/insets/ExternalSupport.cpp:406
+#: src/Buffer.cpp:3533 src/insets/ExternalSupport.cpp:406
 #: src/insets/InsetGraphics.cpp:702 src/insets/InsetInclude.cpp:613
 msgid "Problematic filename for DVI"
 msgstr "Problematischer Dateiname für DVI"
 
-#: src/Buffer.cpp:3526 src/insets/ExternalSupport.cpp:407
+#: src/Buffer.cpp:3534 src/insets/ExternalSupport.cpp:407
 #: src/insets/InsetGraphics.cpp:703 src/insets/InsetInclude.cpp:614
 msgid ""
 "The following filename can cause troubles when running the exported file "
@@ -37368,11 +37378,11 @@ msgstr ""
 "Der folgende Dateiname könnte Probleme bereiten, wenn LaTeX mit der "
 "exportierten Datei ausgeführt und die erzeugte DVI-Datei geöffnet wird: "
 
-#: src/Buffer.cpp:3565 src/insets/InsetBibtex.cpp:349
+#: src/Buffer.cpp:3573 src/insets/InsetBibtex.cpp:349
 msgid "Export Warning!"
 msgstr "Export-Warnung!"
 
-#: src/Buffer.cpp:3566
+#: src/Buffer.cpp:3574
 msgid ""
 "There are spaces in the paths to your BibTeX databases.\n"
 "BibTeX will be unable to find them."
@@ -37380,57 +37390,57 @@ msgstr ""
 "Die Pfade zu Ihren BibTeX-Datenbanken enthalten Leerzeichen.\n"
 "BiBTeX wird die Datenbanken nicht finden."
 
-#: src/Buffer.cpp:4243
+#: src/Buffer.cpp:4251
 #, c-format
 msgid "Preview source code for paragraph %1$d"
 msgstr "Quellcode für Absatz %1$d vorschauen"
 
-#: src/Buffer.cpp:4248
+#: src/Buffer.cpp:4256
 #, c-format
 msgid "Preview source code from paragraph %1$s to %2$s"
 msgstr "Quellcode von Absatz %1$s bis %2$s vorschauen"
 
-#: src/Buffer.cpp:4306
+#: src/Buffer.cpp:4314
 msgid "Preview source code"
 msgstr "Quellcode vorschauen"
 
-#: src/Buffer.cpp:4308
+#: src/Buffer.cpp:4316
 msgid "Preview preamble"
 msgstr "Vorschau des Vorspanns"
 
-#: src/Buffer.cpp:4310
+#: src/Buffer.cpp:4318
 msgid "Preview body"
 msgstr "Vorschau des Haupttextes"
 
-#: src/Buffer.cpp:4326
+#: src/Buffer.cpp:4334
 msgid "Plain text does not have a preamble."
 msgstr "Einfacher Text hat keinen Vorspann."
 
-#: src/Buffer.cpp:4470
+#: src/Buffer.cpp:4478
 msgid "Autosaving current document..."
 msgstr "Automatisches Speichern des aktuellen Dokuments..."
 
-#: src/Buffer.cpp:4600
+#: src/Buffer.cpp:4608
 #, c-format
 msgid "No information for exporting the format %1$s."
 msgstr "Keine Informationen vorhanden, um das Format %1$s zu exportieren."
 
-#: src/Buffer.cpp:4604
+#: src/Buffer.cpp:4612
 #, c-format
 msgid "Hint: use non-TeX fonts or set input encoding to '%1$s'"
 msgstr ""
 "Tipp: Verwenden Sie keine TeX-Schriften oder stellen Sie als Kodierung "
 "'%1$s' ein."
 
-#: src/Buffer.cpp:4606
+#: src/Buffer.cpp:4614
 msgid "Couldn't export file"
 msgstr "Die Datei konnte nicht exportiert werden"
 
-#: src/Buffer.cpp:4674 src/frontends/qt/GuiView.cpp:3301
+#: src/Buffer.cpp:4682 src/frontends/qt/GuiView.cpp:3301
 msgid "File name error"
 msgstr "Fehler im Dateinamen"
 
-#: src/Buffer.cpp:4675
+#: src/Buffer.cpp:4683
 #, c-format
 msgid ""
 "The directory path to the document\n"
@@ -37443,21 +37453,21 @@ msgstr ""
 "enthält Leerzeichen, aber Ihre TeX-Installation erlaubt dies nicht. Bitte "
 "speichern Sie Ihr Dokument in einem Verzeichnis ohne Leerzeichen."
 
-#: src/Buffer.cpp:4765 src/Buffer.cpp:4795 src/frontends/qt/GuiView.cpp:924
+#: src/Buffer.cpp:4773 src/Buffer.cpp:4803 src/frontends/qt/GuiView.cpp:924
 msgid "Document export cancelled."
 msgstr "Der Export des Dokuments wurde abgebrochen."
 
-#: src/Buffer.cpp:4798
+#: src/Buffer.cpp:4806
 #, c-format
 msgid "Document exported as %1$s to file `%2$s'"
 msgstr "Dokument wurde als %1$s in die Datei ,%2$s` exportiert."
 
-#: src/Buffer.cpp:4805
+#: src/Buffer.cpp:4813
 #, c-format
 msgid "Document exported as %1$s"
 msgstr "Dokument als %1$s exportiert"
 
-#: src/Buffer.cpp:4874
+#: src/Buffer.cpp:4882
 #, c-format
 msgid ""
 "An emergency save of the document %1$s exists.\n"
@@ -37468,23 +37478,23 @@ msgstr ""
 "\n"
 "Soll die Notspeicherung wiederhergestellt werden?"
 
-#: src/Buffer.cpp:4877
+#: src/Buffer.cpp:4885
 msgid "Load emergency save?"
 msgstr "Notspeicherung laden?"
 
-#: src/Buffer.cpp:4878
+#: src/Buffer.cpp:4886
 msgid "&Recover"
 msgstr "&Wiederherstellen"
 
-#: src/Buffer.cpp:4878
+#: src/Buffer.cpp:4886
 msgid "&Load Original"
 msgstr "&Original laden"
 
-#: src/Buffer.cpp:4878
+#: src/Buffer.cpp:4886
 msgid "&Only show difference"
 msgstr "Nur &Unterschiede zeigen"
 
-#: src/Buffer.cpp:4889
+#: src/Buffer.cpp:4897
 #, c-format
 msgid ""
 "An emergency file is successfully loaded, but the original file %1$s is "
@@ -37494,15 +37504,15 @@ msgstr ""
 "%1$s ist schreibgeschützt.\n"
 "Bitte speichern Sie die Datei unter einem neuen Namen."
 
-#: src/Buffer.cpp:4896
+#: src/Buffer.cpp:4904
 msgid "Document was successfully recovered."
 msgstr "Dokument wurde erfolgreich wiederhergestellt."
 
-#: src/Buffer.cpp:4898
+#: src/Buffer.cpp:4906
 msgid "Document was NOT successfully recovered."
 msgstr "Dokument wurde NICHT erfolgreich wiederhergestellt."
 
-#: src/Buffer.cpp:4899
+#: src/Buffer.cpp:4907
 #, c-format
 msgid ""
 "Remove emergency file now?\n"
@@ -37512,31 +37522,31 @@ msgstr ""
 "%1$s\n"
 "jetzt löschen?"
 
-#: src/Buffer.cpp:4903 src/Buffer.cpp:4915
+#: src/Buffer.cpp:4911 src/Buffer.cpp:4923
 msgid "Delete emergency file?"
 msgstr "Notspeicherung löschen?"
 
-#: src/Buffer.cpp:4904 src/Buffer.cpp:4917
+#: src/Buffer.cpp:4912 src/Buffer.cpp:4925
 msgid "&Keep"
 msgstr "&Behalten"
 
-#: src/Buffer.cpp:4908
+#: src/Buffer.cpp:4916
 msgid "Emergency file deleted"
 msgstr "Notspeicherung gelöscht"
 
-#: src/Buffer.cpp:4909
+#: src/Buffer.cpp:4917
 msgid "Do not forget to save your file now!"
 msgstr "Vergessen Sie nicht, ihre Datei jetzt zu speichern!"
 
-#: src/Buffer.cpp:4916
+#: src/Buffer.cpp:4924
 msgid "Remove emergency file now?"
 msgstr "Notspeicherungsdatei jetzt löschen?"
 
-#: src/Buffer.cpp:4939
+#: src/Buffer.cpp:4947
 msgid "Can't rename emergency file!"
 msgstr "Notspeicherungsdatei kann nicht umbenannt werden!"
 
-#: src/Buffer.cpp:4940
+#: src/Buffer.cpp:4948
 msgid ""
 "LyX was unable to rename the emergency file. You should do so manually. "
 "Otherwise, you will be asked about it again the next time you try to load "
@@ -37547,11 +37557,11 @@ msgstr ""
 "wieder danach gefragt, und Ihre Datei könnte mit einer dann nicht mehr "
 "aktuellen Notspeicherung überschrieben werden."
 
-#: src/Buffer.cpp:4945
+#: src/Buffer.cpp:4953
 msgid "Emergency File Renamed"
 msgstr "Umbenennung der Notspeicherung"
 
-#: src/Buffer.cpp:4946
+#: src/Buffer.cpp:4954
 #, c-format
 msgid ""
 "Emergency file renamed as:\n"
@@ -37560,7 +37570,7 @@ msgstr ""
 "Notspeicherung umbenannt als:\n"
 " %1$s"
 
-#: src/Buffer.cpp:4985
+#: src/Buffer.cpp:4993
 #, c-format
 msgid ""
 "The backup of the document %1$s is newer.\n"
@@ -37571,19 +37581,19 @@ msgstr ""
 "\n"
 "Stattdessen die Sicherung laden?"
 
-#: src/Buffer.cpp:4987
+#: src/Buffer.cpp:4995
 msgid "Load backup?"
 msgstr "Sicherung laden?"
 
-#: src/Buffer.cpp:4988
+#: src/Buffer.cpp:4996
 msgid "&Load backup"
 msgstr "&Sicherung laden"
 
-#: src/Buffer.cpp:4988
+#: src/Buffer.cpp:4996
 msgid "Load &original"
 msgstr "&Original laden"
 
-#: src/Buffer.cpp:4998
+#: src/Buffer.cpp:5006
 #, c-format
 msgid ""
 "A backup file is successfully loaded, but the original file %1$s is marked "
@@ -37593,25 +37603,25 @@ msgstr ""
 "%1$s ist schreibgeschützt.\n"
 "Bitte speichern Sie die Datei unter einem neuen Namen."
 
-#: src/Buffer.cpp:5390
+#: src/Buffer.cpp:5398
 msgid "Senseless!!! "
 msgstr "Sinnlos!!! "
 
-#: src/Buffer.cpp:5614
+#: src/Buffer.cpp:5622
 #, c-format
 msgid "Document %1$s reloaded."
 msgstr "Dokument %1$s neu geladen."
 
-#: src/Buffer.cpp:5617
+#: src/Buffer.cpp:5625
 #, c-format
 msgid "Could not reload document %1$s."
 msgstr "Kann Dokument %1$s nicht neu laden."
 
-#: src/Buffer.cpp:5790
+#: src/Buffer.cpp:5798
 msgid "File deleted from disk"
 msgstr "Datei von der Festplatte gelöscht"
 
-#: src/Buffer.cpp:5791
+#: src/Buffer.cpp:5799
 #, c-format
 msgid ""
 "The file\n"
@@ -37731,8 +37741,8 @@ msgstr ""
 msgid "Document class not available"
 msgstr "Die Dokumentklasse ist nicht verfügbar"
 
-#: src/BufferParams.cpp:2143 src/BufferParams.cpp:2304
-#: src/BufferParams.cpp:2849 src/Encoding.cpp:264 src/Paragraph.cpp:3214
+#: src/BufferParams.cpp:2144 src/BufferParams.cpp:2306
+#: src/BufferParams.cpp:2851 src/Encoding.cpp:264 src/Paragraph.cpp:3214
 #: src/frontends/qt/LaTeXHighlighter.cpp:178
 #: src/insets/InsetCommandParams.cpp:515 src/insets/InsetCommandParams.cpp:523
 #: src/insets/InsetGraphics.cpp:901 src/insets/InsetGraphics.cpp:909
@@ -37742,8 +37752,8 @@ msgstr "Die Dokumentklasse ist nicht verfügbar"
 msgid "LyX Warning: "
 msgstr "LyX-Warnung: "
 
-#: src/BufferParams.cpp:2144 src/BufferParams.cpp:2305
-#: src/BufferParams.cpp:2850 src/Encoding.cpp:265 src/Paragraph.cpp:3215
+#: src/BufferParams.cpp:2145 src/BufferParams.cpp:2307
+#: src/BufferParams.cpp:2852 src/Encoding.cpp:265 src/Paragraph.cpp:3215
 #: src/insets/InsetCommandParams.cpp:516 src/insets/InsetCommandParams.cpp:524
 #: src/insets/InsetGraphics.cpp:902 src/insets/InsetGraphics.cpp:910
 #: src/insets/InsetListings.cpp:300 src/insets/InsetListings.cpp:308
@@ -37752,11 +37762,11 @@ msgstr "LyX-Warnung: "
 msgid "uncodable character"
 msgstr "unkodierbares Zeichen"
 
-#: src/BufferParams.cpp:2157
+#: src/BufferParams.cpp:2158
 msgid "Uncodable character in document metadata"
 msgstr "Unkodierbares Zeichen in Dokument-Metadaten"
 
-#: src/BufferParams.cpp:2159
+#: src/BufferParams.cpp:2160
 #, c-format
 msgid ""
 "The metadata of your document contains glyphs that are unknown in the "
@@ -37774,11 +37784,11 @@ msgstr ""
 "Wählen Sie eine passende Kodierung (bspw. utf8)\n"
 "oder ändern Sie die Metadaten entsprechend."
 
-#: src/BufferParams.cpp:2318
+#: src/BufferParams.cpp:2320
 msgid "Uncodable character in class options"
 msgstr "Unkodierbare Zeichen in den Klassenoptionen"
 
-#: src/BufferParams.cpp:2320
+#: src/BufferParams.cpp:2322
 #, c-format
 msgid ""
 "The class options of your document contain glyphs that are unknown in the "
@@ -37796,7 +37806,7 @@ msgstr ""
 "Wählen Sie eine passende Kodierung (bspw. utf8)\n"
 "oder ändern Sie den LaTeX-Code im Vorspann."
 
-#: src/BufferParams.cpp:2815
+#: src/BufferParams.cpp:2817
 #, c-format
 msgid ""
 "A layout definition sets the catcode of '@' to 12 ('other') in a context "
@@ -37807,15 +37817,15 @@ msgstr ""
 "gegebenen Kontext sollte er aber 11 (,letter`) bleiben:\n"
 "%1$sBitte beheben oder melden Sie dies!"
 
-#: src/BufferParams.cpp:2819
+#: src/BufferParams.cpp:2821
 msgid "Catcode mismatch"
 msgstr "Unerwarteter Kategoriencode"
 
-#: src/BufferParams.cpp:2863
+#: src/BufferParams.cpp:2865
 msgid "Uncodable character in user preamble"
 msgstr "Unkodierbares Zeichen im Benutzervorspann"
 
-#: src/BufferParams.cpp:2865
+#: src/BufferParams.cpp:2867
 #, c-format
 msgid ""
 "The user preamble of your document contains glyphs that are unknown in the "
@@ -37833,7 +37843,7 @@ msgstr ""
 "Wählen Sie eine passende Kodierung (bspw. utf8)\n"
 "oder ändern Sie den LaTeX-Code im Vorspann."
 
-#: src/BufferParams.cpp:3204
+#: src/BufferParams.cpp:3206
 #, c-format
 msgid ""
 "The layout file:\n"
@@ -37848,11 +37858,11 @@ msgstr ""
 "Formaten wird benutzt werden. LyX wird nicht in der Lage sein eine korrekte\n"
 "Ausgabe zu erzeugen."
 
-#: src/BufferParams.cpp:3210
+#: src/BufferParams.cpp:3212
 msgid "Document class not found"
 msgstr "Dokumentklasse nicht gefunden"
 
-#: src/BufferParams.cpp:3217
+#: src/BufferParams.cpp:3219
 #, c-format
 msgid ""
 "Due to some error in it, the layout file:\n"
@@ -37867,23 +37877,23 @@ msgstr ""
 "korrekte\n"
 "Ausgabe erzeugen können."
 
-#: src/BufferParams.cpp:3223 src/BufferView.cpp:1551 src/BufferView.cpp:1583
+#: src/BufferParams.cpp:3225 src/BufferView.cpp:1551 src/BufferView.cpp:1583
 msgid "Could not load class"
 msgstr "Konnte Klasse nicht laden"
 
-#: src/BufferParams.cpp:3269
+#: src/BufferParams.cpp:3271
 msgid "Error reading internal layout information"
 msgstr "Fehler beim Einlesen interner Format-Informationen"
 
-#: src/BufferParams.cpp:3270 src/TextClass.cpp:2104 src/TextClass.cpp:2137
+#: src/BufferParams.cpp:3272 src/TextClass.cpp:2104 src/TextClass.cpp:2137
 msgid "Read Error"
 msgstr "Lesefehler"
 
-#: src/BufferParams.cpp:4460
+#: src/BufferParams.cpp:4462
 msgid "No bibliography processor found!"
 msgstr "Kein Literaturverzeichnis-Prozessor gefunden!"
 
-#: src/BufferParams.cpp:4462
+#: src/BufferParams.cpp:4464
 #, c-format
 msgid ""
 "The bibliography processor requested by this document (%1$s) is not "
@@ -37897,11 +37907,11 @@ msgstr ""
 "Literaturverweise erzeugt werden.\n"
 "Bitte reparieren Sie Ihr System!"
 
-#: src/BufferParams.cpp:4470
+#: src/BufferParams.cpp:4472
 msgid "Requested bibliography processor not found!"
 msgstr "Verlangter Literaturverzeichnis-Prozessor nicht gefunden!"
 
-#: src/BufferParams.cpp:4472
+#: src/BufferParams.cpp:4474
 #, c-format
 msgid ""
 "The bibliography processor requested by this document (%1$s) is not "
@@ -40444,7 +40454,7 @@ msgstr "Mathe-Editor-Modus"
 msgid "No valid math formula"
 msgstr "Keine gültige Matheformel"
 
-#: src/Text.cpp:3534 src/mathed/InsetMathNest.cpp:1351
+#: src/Text.cpp:3534 src/mathed/InsetMathNest.cpp:1350
 msgid "Already in regular expression mode"
 msgstr "Bereits im Regexp-Modus"
 
@@ -47874,27 +47884,27 @@ msgstr "Verzierung: %1$s"
 msgid "Environment: %1$s"
 msgstr "Umgebung: %1$s"
 
-#: src/mathed/InsetMathGrid.cpp:1733
+#: src/mathed/InsetMathGrid.cpp:1732
 msgid "Cursor not in table"
 msgstr "Cursor nicht in Tabelle"
 
-#: src/mathed/InsetMathGrid.cpp:1738
+#: src/mathed/InsetMathGrid.cpp:1737
 msgid "Only one row"
 msgstr "Nur eine Zeile"
 
-#: src/mathed/InsetMathGrid.cpp:1744
+#: src/mathed/InsetMathGrid.cpp:1743
 msgid "Only one column"
 msgstr "Nur eine Spalte"
 
-#: src/mathed/InsetMathGrid.cpp:1752
+#: src/mathed/InsetMathGrid.cpp:1751
 msgid "No hline to delete"
 msgstr "Keine horizontale Linie zu löschen"
 
-#: src/mathed/InsetMathGrid.cpp:1761
+#: src/mathed/InsetMathGrid.cpp:1760
 msgid "No vline to delete"
 msgstr "Keine vertikale Linie zu löschen"
 
-#: src/mathed/InsetMathGrid.cpp:1790
+#: src/mathed/InsetMathGrid.cpp:1789
 #, c-format
 msgid "Unknown tabular feature '%1$s'"
 msgstr "Unbekanntes Tabellenmerkmal '%1$s'"
@@ -47968,19 +47978,19 @@ msgstr "Mathe-Makro: \\%1$s"
 msgid "Invalid macro! \\%1$s"
 msgstr "Ungültiges Makro! \\%1$s"
 
-#: src/mathed/InsetMathNest.cpp:1336
+#: src/mathed/InsetMathNest.cpp:1335
 msgid "create new math text environment ($...$)"
 msgstr "Neue Mathe-Textumgebung erzeugen ($...$)"
 
-#: src/mathed/InsetMathNest.cpp:1339
+#: src/mathed/InsetMathNest.cpp:1338
 msgid "entered math text mode (textrm)"
 msgstr "Mathe-Textmodus betreten (textrm)"
 
-#: src/mathed/InsetMathNest.cpp:1362
+#: src/mathed/InsetMathNest.cpp:1361
 msgid "Regular expression editor mode"
 msgstr "Bearbeitungsmodus für reguläre Ausdrücke"
 
-#: src/mathed/InsetMathNest.cpp:2295
+#: src/mathed/InsetMathNest.cpp:2294
 #, c-format
 msgid "Cannot apply %1$s here."
 msgstr "%1$s kann hier nicht angewendet werden."
