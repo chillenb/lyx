@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-03-30 11:38+0200\n"
-"PO-Revision-Date: 2026-03-30 19:58+0000\n"
+"POT-Creation-Date: 2026-04-18 10:06+0200\n"
+"PO-Revision-Date: 2026-04-18 08:18+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -19125,7 +19125,7 @@ msgstr "Bezpečnostná-oranžová (Safety orange (blaze orange))"
 
 #: lib/layouts/latexcolors.module:4996
 msgid "Saffron"
-msgstr "Šafran (Saffron)"
+msgstr "Šafránová (Saffron)"
 
 #: lib/layouts/latexcolors.module:5004
 msgid "St. Patrick\\'s blue"
@@ -22763,6 +22763,16 @@ msgid "Breakable hyphen that keeps predefined hyphenation possibilities"
 msgstr ""
 "Rozdeliteľný spojovník, ktorý zachováva preddefinované možnosti delenia slov"
 
+#: lib/languages:436 lib/languages:529 lib/languages:1341 lib/languages:1435
+#: lib/languages:1531 lib/languages:1626
+msgid "Abbreviation Period|o"
+msgstr "Skratka bodky|o"
+
+#: lib/languages:437 lib/languages:530 lib/languages:1342 lib/languages:1436
+#: lib/languages:1532 lib/languages:1627
+msgid "Abbreviation punctuation with appropriate ensuing space"
+msgstr "Interpunkcia s príslušnou nasledujúcou medzerou"
+
 #: lib/languages:436 lib/languages:516 lib/languages:1237 lib/languages:1318
 #: lib/languages:1401 lib/languages:1483
 msgid "Gender Mark|G"
@@ -23453,7 +23463,7 @@ msgstr "Sýta ružová (Deep pink)"
 
 #: lib/layouts/latexcolors.module:1780
 msgid "Deep saffron"
-msgstr "Sýta šafranová (Deep saffron)"
+msgstr "Sýta šafránová (Deep saffron)"
 
 #: lib/layouts/latexcolors.module:1788
 msgid "Deep sky blue"
@@ -23626,7 +23636,7 @@ msgstr "Han fialová (Han purple)"
 
 #: lib/layouts/latexcolors.module:2476
 msgid "Hansa yellow"
-msgstr "Hansa žltá (Hansa yellow)"
+msgstr "Hansa žlť (Hansa yellow)"
 
 #: lib/layouts/latexcolors.module:2484
 msgid "Harlequin"
@@ -23698,7 +23708,7 @@ msgstr "Svetlá bridlicovo-šedá (Light slate gray)"
 
 #: lib/layouts/latexcolors.module:3068
 msgid "Light taupe"
-msgstr "Svetlá taupe (Light taupe)"
+msgstr "Svetlá šedo-hnedá (Light taupe)"
 
 #: lib/layouts/latexcolors.module:3076
 msgid "Light Thulian pink"
@@ -23903,7 +23913,7 @@ msgstr "Ružový kremeň (Rose quartz)"
 
 #: lib/layouts/latexcolors.module:4836
 msgid "Rose taupe"
-msgstr "Ružová taupe (Rose taupe)"
+msgstr "Ružová šedo-hnedá (Rose taupe)"
 
 #: lib/layouts/latexcolors.module:4844
 msgid "Rose vale"
@@ -24031,7 +24041,7 @@ msgstr "Fialový šmrnc (Purple pizzazz)"
 
 #: lib/layouts/latexcolors.module:4564
 msgid "Purple taupe"
-msgstr "Fialová taupe (Purple taupe)"
+msgstr "Fialová šedo-hnedá (Purple taupe)"
 
 #: lib/layouts/latexcolors.module:4572
 msgid "Radical Red"
@@ -24181,7 +24191,7 @@ msgstr "Červenavá (Blush)"
 
 #: lib/layouts/latexcolors.module:492
 msgid "Bole"
-msgstr "Bolus červený"
+msgstr "Bolus červený (Bole)"
 
 #: lib/layouts/latexcolors.module:500
 msgid "Bondi blue"
@@ -24205,7 +24215,7 @@ msgstr "TehlovoČervená (Brick red)"
 
 #: lib/layouts/latexcolors.module:540
 msgid "Bright cerulean"
-msgstr "Jasný ceruleán (Bright cerulean)"
+msgstr "Svetlý blankyt (Bright cerulean)"
 
 #: lib/layouts/latexcolors.module:548
 msgid "Bright green"
@@ -24409,7 +24419,7 @@ msgstr "Strop (Ceil)"
 
 #: lib/layouts/latexcolors.module:948
 msgid "Celadon"
-msgstr "Celadon"
+msgstr "Celadón (Celadon)"
 
 #: lib/layouts/latexcolors.module:956
 msgid "Celestial blue"
@@ -24564,7 +24574,7 @@ msgstr "Tmavé červené cukríkové jablko (Dark candy apple red)"
 
 #: lib/layouts/latexcolors.module:1348
 msgid "Dark cerulean"
-msgstr "Tmavá nebesko-modrá (Dark cerulean)"
+msgstr "Tmavý blankyt (Dark cerulean)"
 
 #: lib/layouts/latexcolors.module:1356
 msgid "Dark champagne"
@@ -24740,7 +24750,7 @@ msgstr "Stredne karmínová (Medium carmine)"
 
 #: lib/layouts/latexcolors.module:3340
 msgid "Medium champagne"
-msgstr "Stredne šampanské (Medium champagne)"
+msgstr "Stredne šampanská (Medium champagne)"
 
 #: lib/layouts/latexcolors.module:3348
 msgid "Medium electric blue"
@@ -24788,7 +24798,7 @@ msgstr "Stredne jarno-zelená (Medium spring green)"
 
 #: lib/layouts/latexcolors.module:3436
 msgid "Medium taupe"
-msgstr "Stredná taupe (Medium taupe)"
+msgstr "Stredne šedo-hnedá (Medium taupe)"
 
 #: lib/layouts/latexcolors.module:3444
 msgid "Medium teal blue"
@@ -24848,7 +24858,7 @@ msgstr "Pieskovo-hnedá (Sandy brown)"
 
 #: lib/layouts/latexcolors.module:5060
 msgid "Sandy taupe"
-msgstr "Šedo-hnedá (Sandy taupe)"
+msgstr "Piesková šedo-hnedá (Sandy taupe)"
 
 #: lib/layouts/latexcolors.module:5068
 msgid "Sangria"
@@ -24924,7 +24934,7 @@ msgstr "Napier-zelená (Napier green)"
 
 #: lib/layouts/latexcolors.module:3636
 msgid "Naples yellow"
-msgstr "Neapolská žltá (Naples yellow)"
+msgstr "Neapolská žlť (Naples yellow)"
 
 #: lib/layouts/latexcolors.module:3644
 msgid "Navajo white"
@@ -25088,7 +25098,7 @@ msgstr "Bledá karmínová (Pale carmine)"
 
 #: lib/layouts/latexcolors.module:3948
 msgid "Pale cerulean"
-msgstr "Bledá nebesko-modrá (Pale cerulean)"
+msgstr "Bledý blankyt (Pale cerulean)"
 
 #: lib/layouts/latexcolors.module:3956
 msgid "Pale chestnut"
@@ -25144,7 +25154,7 @@ msgstr "Bledý jarný púčik (Pale spring bud)"
 
 #: lib/layouts/latexcolors.module:4060
 msgid "Pale taupe"
-msgstr "Bledá taupe (Pale taupe)"
+msgstr "Bledá šedo-hnedá (Pale taupe)"
 
 #: lib/layouts/latexcolors.module:4068
 msgid "Pale violet-red"
@@ -25272,11 +25282,11 @@ msgstr "Kráľovská modrá (RoyalBlue)"
 
 #: lib/layouts/latexcolors.module:980 lib/latexcolors:603
 msgid "Cerulean"
-msgstr "Nebesko-modrá (Cerulean)"
+msgstr "Blankyt (Cerulean)"
 
 #: lib/layouts/latexcolors.module:988
 msgid "Cerulean blue"
-msgstr "Nebesko-modrá (Cerulean blue)"
+msgstr "Blankytná modrá (Cerulean blue)"
 
 #: lib/layouts/latexcolors.module:996
 msgid "Chamoisee"
@@ -25477,11 +25487,11 @@ msgstr "Mandarínkovo-žltá (USC Gold)"
 
 #: lib/layouts/latexcolors.module:5788
 msgid "Utah Crimson"
-msgstr "Utah-karmínová (Utah Crimson)"
+msgstr "Utah karmínová (Utah Crimson)"
 
 #: lib/layouts/latexcolors.module:5796
 msgid "Vanilla"
-msgstr "Stredne šampanské (Vanilla)"
+msgstr "Stredne šampanská (Vanilla)"
 
 #: lib/layouts/latexcolors.module:5804
 msgid "Vegas gold"
@@ -25677,7 +25687,7 @@ msgstr "Kvetinovo-biela (Floral white)"
 
 #: lib/layouts/latexcolors.module:2140
 msgid "Fluorescent orange"
-msgstr "Jantarová (Fluorescent orange)"
+msgstr "Jantárová (Fluorescent orange)"
 
 #: lib/layouts/latexcolors.module:2148
 msgid "Fluorescent pink"
@@ -25793,7 +25803,7 @@ msgstr "Tmavá láva (Taupe)"
 
 #: lib/layouts/latexcolors.module:5396
 msgid "Taupe gray"
-msgstr "Taupe šedá (Taupe gray)"
+msgstr "Tmavo-šedá (Taupe gray)"
 
 #: lib/layouts/latexcolors.module:5404
 msgid "Tea green"
@@ -25948,7 +25958,7 @@ msgstr "Zlatá (Metallica) (Gold (metallic))"
 
 #: lib/layouts/latexcolors.module:2300
 msgid "Gold (web) (Golden)"
-msgstr "Zlatožltá (Gold (web) (Golden))"
+msgstr "Zlato-žltá (Gold (web) (Golden))"
 
 #: lib/layouts/latexcolors.module:2308
 msgid "Golden brown"
@@ -25996,7 +26006,7 @@ msgstr "Oceľovo-modrá (Steel blue)"
 
 #: lib/layouts/latexcolors.module:5324
 msgid "Stil de grain yellow"
-msgstr "Neapolská žltá (Stil de grain yellow)"
+msgstr "Neapolská žlť (Stil de grain yellow)"
 
 #: lib/layouts/latexcolors.module:5332
 msgid "Straw"
@@ -26029,12 +26039,12 @@ msgstr "Jazzberry džem (Jazzberry jam)"
 # Narcissus jonquilla
 #: lib/layouts/latexcolors.module:2708
 msgid "Jonquil"
-msgstr "Neapolská žltá (Jonquil)"
+msgstr "Neapolská žlť (Jonquil)"
 
 # svetlá žlto zelená
 #: lib/layouts/latexcolors.module:2716
 msgid "June bud"
-msgstr "June bud"
+msgstr "Júnový púčik (June bud)"
 
 #: lib/layouts/latexcolors.module:2724
 msgid "Jungle green"
@@ -26634,7 +26644,7 @@ msgstr "Indická červená (IndianRed)"
 
 #: lib/layouts/latexcolors.module:2612
 msgid "Indian yellow"
-msgstr "Indická žltá (Indian yellow)"
+msgstr "Indická žlť (Indian yellow)"
 
 #: lib/layouts/latexcolors.module:2620
 msgid "Indigo (dye)"
@@ -26659,7 +26669,7 @@ msgstr "Dúhovková (Iris)"
 # Nemá v Slovenčine: zliatina Cu 84,5% + Mn 12,5%
 #: lib/layouts/latexcolors.module:2660
 msgid "Isabelline"
-msgstr "Isabelline"
+msgstr "Žltkastá (Isabelline)"
 
 #: lib/layouts/latexcolors.module:2668
 msgid "Islamic green"
