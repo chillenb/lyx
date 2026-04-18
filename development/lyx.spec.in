@@ -8,7 +8,7 @@ License: GPL
 Group: Applications/Publishing
 URL: http://www.lyx.org/
 Packager: The LyX Team <lyx-devel@lists.lyx.org>
-Source: ftp://ftp.lyx.org/pub/lyx/stable/%{name}-%{version}.tar.gz
+Source: ftp://ftp.lyx.org/pub/lyx/stable/%{name}-%{version}.tar.xz
 BuildRoot: %{_tmppath}/%{name}-%{version}-root
 Prefix: %{_prefix}
 Obsoletes: tetex-lyx

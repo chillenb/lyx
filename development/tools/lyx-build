@@ -87,8 +87,7 @@ fi
 echo "Packages created:";
 
 # This will happen with development releases
-if [ ! -f "lyx-$PKG_VERSION.tar.gz" ]; then
-	$DEBUG mv "lyx-$VERSION.tar.gz" "lyx-$PKG_VERSION.tar.gz" || exit 1;
+if [ ! -f "lyx-$PKG_VERSION.tar.xz" ]; then
 	$DEBUG mv "lyx-$VERSION.tar.xz" "lyx-$PKG_VERSION.tar.xz" || exit 1;
 fi
 
@@ -97,7 +96,6 @@ $DEBUG ln lyx-$PKG_VERSION.tar.{gz,xz} $BASE/ || exit 1;
 echo -n "Ready to build signatures...";
 read
 
-$DEBUG gpg -b lyx-$VERSION.tar.gz
 $DEBUG gpg -b lyx-$VERSION.tar.xz
 
 echo "Signatures created:"
@@ -110,7 +108,7 @@ if [ -n "$COMPILE" ]; then
 	$DEBUG rm -Rf $BASE/lyx-test/
 	$DEBUG mkdir $BASE/lyx-test/
 	$DEBUG cd $BASE/lyx-test/
-	$DEBUG tar -zxvf $BASE/lyx-build/lyx-$VERSION.tar.gz
+	$DEBUG tar -xvf $BASE/lyx-build/lyx-$VERSION.tar.xz
 	if ! $DEBUG cd lyx-$PKG_VERSION; then
 		echo "Unable to enter build directory!";
 		exit 1;

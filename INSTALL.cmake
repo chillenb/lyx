@@ -316,10 +316,10 @@ Updating the translations
 Packaging
 ----------
 
-    - Source .tar.gz, .tar.bz2, .zip:
+    - Source .tar.gz, .tar.xz, .zip:
         make package_source
 
-    - Binary .tar.gz and install .sh:
+    - Binary .tar.xz and install .sh:
         make package
 
     - Binary .deb:

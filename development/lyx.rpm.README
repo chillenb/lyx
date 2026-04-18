@@ -12,7 +12,7 @@ changes should be needed for other platforms.
 3) Copy lyx.spec to the SPECS directory (on Redhat, this is located at
    /usr/src/redhat/SPECS, on other systems at /usr/src/packages/SPECS)
 
-4) Copy the tarball (lyx-2.x.y.tar.gz) to your SOURCES directory (located
+4) Copy the tarball (lyx-2.x.y.tar.xz) to your SOURCES directory (located
    in the same path as SPECS, e.g. /usr/src/packages/SOURCES).
 
 5) Issue the command

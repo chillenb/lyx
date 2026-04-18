@@ -56,9 +56,9 @@ How does the LyX version scheme work?
     series. To summarize, there are three possible types of file names
     that are of interest to normal users:
 
-       lyx-2.3.0.tar.gz     -- stable release, first in the 2.3-series
-       lyx-2.2.4.tar.gz     -- fourth maintenance release of LyX 2.2
-       lyx-2.4.0rc1.tar.gz  -- potentially unstable release candidate
+       lyx-2.3.0.tar.xz     -- stable release, first in the 2.3-series
+       lyx-2.2.4.tar.xz     -- fourth maintenance release of LyX 2.2
+       lyx-2.4.0rc1.tar.xz  -- potentially unstable release candidate
 
     Note that the goal is not parallel development as for the Linux
     kernel --- the team is too small to afford that --- but rather to
