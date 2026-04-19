@@ -14,21 +14,21 @@ Using cmake-gui:
 Likewise you may call cmake directly. E.g. to create debian package
     cd _BUILD_DIR_; cmake _SRC_DIR_ -DCPACK_BINARY_DEB:BOOL=ON
 The generators (dependent on your system) are
-    DEB, RPM, TGZ, NSIS, STGZ, TBZ2, TZ
+    DEB, RPM, TGZ, NSIS, STGZ, TBZ2, TXZ, TZ
     
 Now it is possible to create the package
     cd _BUILD_DIR_; make package
-    #The created packages will be something like
-    #_PKG_NAME_.tar.gz
-    #_PKG_NAME_.zip
+    #As an example the created packages for -DCPACK_BINARY_TXZ:BOOL=ON will be something like
+    #_PKG_NAME_.tar.xz
     #...
 
 
-In archives for TGZ, STGZ, TBZ2 or TZ the filenames are prepended with the package-name,
+In archives for TGZ, STGZ, TBZ2, TXZ or TZ the filenames are prepended with the package-name,
 therefore we have to get rid of it (e.g. for STGZ the parameter "--exclude-subdir").
 Some installation proceedings:
     STGZ:	sudo _PKG_NAME_.sh --exclude-subdir
-    TGZ:	sudo tar -zxv --strip-components 1 --directory / -f _PKG_NAME_.tar.gz
+    TXZ:	sudo tar -axv --strip-components 1 --directory / -f _PKG_NAME_.tar.xz
+    TGZ:	sudo tar -axv --strip-components 1 --directory / -f _PKG_NAME_.tar.gz
     DEB:	sudo dpkg -i _PKG_NAME_.deb
     RPM:	sudo rpm -U --force _PKG_NAME_.rpm
 
