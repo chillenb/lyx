@@ -58,6 +58,7 @@ public:
 		QString ruby_;
 	};
 
+	/// pair of row's \p index and its first char \p pos in a paragraph
 	struct PreeditRow {
 		pos_type pos;
 		pos_type index;

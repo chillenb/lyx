@@ -826,9 +826,8 @@ std::array<int,2> GuiInputMethod::setCaretOffset(pos_type caret_pos)
 	// vertical offset only applicable to main text
 	caret_offset[1] = 0;
 	for (pos_type i = d->cur_row_idx_ +
-	     (d->real_boundary_ && !d->im_state_.composing_mode_);
-	     i < caret_row.index +
-	     (d->real_boundary_ && d->im_state_.composing_mode_); ++i)
+	                  (d->real_boundary_ && !d->im_state_.composing_mode_);
+	     i < caret_row.index; ++i)
 		caret_offset[1] += d->rows_[i].descent() + d->rows_[i+1].ascent();
 
 	return caret_offset;
@@ -1269,19 +1268,29 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo()
 {
 	// the virtual boundary case has the real cusor on the second row of
 	// the preedit inputs
+
+	// row index of the preedit's second row in a paragraph (rows)
 	const pos_type second_row_idx =
 	        d->cur_row_idx_ + 1 + d->real_boundary_ - d->virtual_boundary_;
+
+	LASSERT(d->cur_row_idx_ < (pos_type)d->rows_size_ &&
+	        d->cur_row_idx_ >= 0, return {});
 
 	// accumulate the length of preedit elements within d->rows_[d->cur_row_idx_]
 	// the length of str is used since preedits has zero widths (pos == endpos)
 	// second_row_pos is only useful when preedit string goes over two rows
-	LASSERT(d->cur_row_idx_ < (pos_type)d->rows_size_ &&
-	        d->cur_row_idx_ >= 0, return {});
+
+	// character position of the start of the second row
+	pos_type second_row_pos;
+	// row index as is visual on screen (+1 to d->cur_row_idx_ on boundary)
+	pos_type const & visual_row_idx_ = d->cur_row_idx_ + d->real_boundary_;
+	// first row as is visual on screen
+	Row & first_row = d->rows_[visual_row_idx_];
 	Row::const_iterator begin =
-	        d->rows_[d->cur_row_idx_].findElement(d->cur_pos_, false);
-	pos_type second_row_pos = d->cur_pos_;
+	        first_row.findElement(d->cur_pos_, false);
+	second_row_pos = d->cur_pos_;
 	for (Row::const_iterator eit = begin;
-	     eit < d->rows_[d->cur_row_idx_].end(); ++eit)
+	     eit < d->rows_[visual_row_idx_].end(); ++eit)
 		second_row_pos += eit->str.length();
 
 	PreeditRow caret_row{};
@@ -1291,6 +1300,7 @@ GuiInputMethod::PreeditRow GuiInputMethod::getCaretInfo()
 	// below is the starting point to calculate caret_row.pos
 	caret_row.pos = (d->real_boundary_ && !d->im_state_.composing_mode_) ?
 	            d->cur_pos_ : second_row_pos;
+	LASSERT(caret_row.pos >= 0, return {});
 
 	// if the preedit caret is on the second row or later, count the second row
 	caret_row.index = d->caret_pos_ > second_row_pos ?
