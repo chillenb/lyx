@@ -1000,13 +1000,13 @@ void MenuDefinition::expandSpellingSuggestions(BufferView const * bv)
 				if (i > 0)
 					add(MenuItem(MenuItem::Separator));
 				docstring const arg = wl.word() + " " + from_ascii(wl.lang()->lang());
-				add(MenuItem(MenuItem::Command, qt_("Add to personal dictionary|r"),
+				add(MenuItem(MenuItem::Command, qt_("Add to Personal Dictionary|r"),
 						FuncRequest(LFUN_SPELLING_ADD, arg)));
-				add(MenuItem(MenuItem::Command, qt_("Ignore this occurrence|o"),
+				add(MenuItem(MenuItem::Command, qt_("Ignore this Occurrence|o"),
 						FuncRequest(LFUN_FONT_NO_SPELLCHECK, arg)));
-				add(MenuItem(MenuItem::Command, qt_("Ignore all for this session|t"),
+				add(MenuItem(MenuItem::Command, qt_("Ignore All for this Session|t"),
 						FuncRequest(LFUN_SPELLING_IGNORE, arg)));
-				add(MenuItem(MenuItem::Command, qt_("Ignore all in this document|u"),
+				add(MenuItem(MenuItem::Command, qt_("Ignore All in this Document|u"),
 						FuncRequest(LFUN_SPELLING_ADD_LOCAL, arg)));
 			}
 		}
