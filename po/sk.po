@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX-2.5\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-04-18 10:06+0200\n"
-"PO-Revision-Date: 2026-04-18 08:18+0000\n"
+"POT-Creation-Date: 2026-04-23 18:29+0200\n"
+"PO-Revision-Date: 2026-04-23 16:34+0000\n"
 "Last-Translator: Kornel Benko <kornel@lyx.org>\n"
 "Language-Team: Slovak <kornel@lyx.org>\n"
 "Language: sk\n"
@@ -45131,19 +45131,19 @@ msgid "More Spelling Suggestions"
 msgstr "Viacej pravopisných návrhov"
 
 #: src/frontends/qt/Menus.cpp:1003
-msgid "Add to personal dictionary|r"
+msgid "Add to Personal Dictionary|r"
 msgstr "Pridať do osobného slovníka|b"
 
 #: src/frontends/qt/Menus.cpp:1005
-msgid "Ignore this occurrence|o"
+msgid "Ignore this Occurrence|o"
 msgstr "Ignorovať tento výskyt|g"
 
 #: src/frontends/qt/Menus.cpp:1007
-msgid "Ignore all for this session|t"
+msgid "Ignore All for this Session|t"
 msgstr "Ignorovať všetky počas tohto celého sedenia|I"
 
 #: src/frontends/qt/Menus.cpp:1009
-msgid "Ignore all in this document|u"
+msgid "Ignore All in this Document|u"
 msgstr "Ignorovať všetko v tomto dokumente|d"
 
 #: src/frontends/qt/Menus.cpp:1017
