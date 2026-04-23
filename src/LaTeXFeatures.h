@@ -263,7 +263,7 @@ private:
 	///
 	UsedFloats usedFloats_;
 	///
-	std::list<ThmInfo> usedTheorems_;
+	std::map<std::string, ThmInfo> usedTheorems_;
 	///
 	std::set<docstring> usedRefPrefixes_;
 	///

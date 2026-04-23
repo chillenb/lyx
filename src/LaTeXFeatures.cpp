@@ -702,7 +702,7 @@ void LaTeXFeatures::useLayout(docstring const & layoutname, int level)
 			thm.style = layout.thmStyle();
 			thm.zrefname = layout.thmZRefName();
 			thm.refprefix = to_ascii(layout.refprefix);
-			usedTheorems_.push_back(thm);
+			usedTheorems_[thm.name] = thm;
 			require("amsthm");
 		}
 		usedLayouts_.push_back(layoutname);
@@ -2045,8 +2045,8 @@ string const LaTeXFeatures::getThmDefinitions() const
 	ostringstream tmp;
 
 	string laststyle;
-	for (auto const & thm : usedTheorems_) {
-		if (isProvided("newtheorem:" + thm.name))
+	for (auto const & [name, thm] : usedTheorems_) {
+		if (isProvided("newtheorem:" + name))
 			continue;
 		if (thm.style != laststyle) {
 			tmp << "\\theoremstyle{" << thm.style << "}\n";
@@ -2077,7 +2077,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 {
 	ostringstream tmp;
 
-	for (auto const & thm : usedTheorems_) {
+	for (auto const & [name, thm] : usedTheorems_) {
 		if (thm.counter == "none" || !refPrefixUsed(from_ascii(thm.refprefix)))
 			continue;
 
