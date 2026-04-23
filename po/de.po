@@ -97,8 +97,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LyX 2.4git\n"
 "Report-Msgid-Bugs-To: lyx-devel@lists.lyx.org\n"
-"POT-Creation-Date: 2026-04-18 09:30+0200\n"
-"PO-Revision-Date: 2026-04-18 09:34+0200\n"
+"POT-Creation-Date: 2026-04-23 13:11+0200\n"
+"PO-Revision-Date: 2026-04-23 13:12+0200\n"
 "Last-Translator: Jürgen Spitzmüller <spitz@lyx.org>\n"
 "Language-Team: German <lyx-docs@lists.lyx.org>\n"
 "Language: de\n"
@@ -7741,7 +7741,7 @@ msgstr "Fall \\thecase."
 #: lib/layouts/theorems-counters-bytype.inc:61
 #: lib/layouts/theorems-counters-bytype.inc:62
 #: lib/layouts/theorems-order.inc:73 lib/layouts/theorems-sec-bytype.module:111
-#: lib/layouts/theorems-starred-equivalents.inc:83
+#: lib/layouts/theorems-starred-equivalents.inc:61
 #: lib/layouts/theorems-starred.inc:340 lib/layouts/theorems-starred.inc:343
 #: lib/layouts/theorems-without-preamble.inc:440
 #: lib/layouts/theorems-without-preamble.inc:443
@@ -7821,7 +7821,7 @@ msgstr "Bedingung"
 #: lib/layouts/theorems-counters-bytype.inc:25
 #: lib/layouts/theorems-counters-bytype.inc:26
 #: lib/layouts/theorems-order.inc:31 lib/layouts/theorems-sec-bytype.module:76
-#: lib/layouts/theorems-starred-equivalents.inc:34
+#: lib/layouts/theorems-starred-equivalents.inc:26
 #: lib/layouts/theorems-starred.inc:151 lib/layouts/theorems-starred.inc:154
 #: lib/layouts/theorems-without-preamble.inc:178
 #: lib/layouts/theorems-without-preamble.inc:179
@@ -7856,7 +7856,7 @@ msgstr "Vermutung"
 #: lib/layouts/theorems-counters-bytype.inc:10
 #: lib/layouts/theorems-counters-bytype.inc:12
 #: lib/layouts/theorems-order.inc:13 lib/layouts/theorems-sec-bytype.module:61
-#: lib/layouts/theorems-starred-equivalents.inc:13
+#: lib/layouts/theorems-starred-equivalents.inc:11
 #: lib/layouts/theorems-starred.inc:88 lib/layouts/theorems-starred.inc:91
 #: lib/layouts/theorems-without-preamble.inc:86
 #: lib/layouts/theorems-without-preamble.inc:87
@@ -7914,7 +7914,7 @@ msgstr "Kriterium"
 #: lib/layouts/theorems-counters-bytype.inc:33
 #: lib/layouts/theorems-counters-bytype.inc:35
 #: lib/layouts/theorems-order.inc:37 lib/layouts/theorems-sec-bytype.module:86
-#: lib/layouts/theorems-starred-equivalents.inc:41
+#: lib/layouts/theorems-starred-equivalents.inc:31
 #: lib/layouts/theorems-starred.inc:202 lib/layouts/theorems-starred.inc:205
 #: lib/layouts/theorems-without-preamble.inc:231
 #: lib/layouts/theorems-without-preamble.inc:232
@@ -7946,7 +7946,7 @@ msgstr "Definition"
 #: lib/layouts/theorems-counters-bytype.inc:38
 #: lib/layouts/theorems-counters-bytype.inc:39
 #: lib/layouts/theorems-order.inc:43 lib/layouts/theorems-sec-bytype.module:91
-#: lib/layouts/theorems-starred-equivalents.inc:48
+#: lib/layouts/theorems-starred-equivalents.inc:36
 #: lib/layouts/theorems-starred.inc:224 lib/layouts/theorems-starred.inc:227
 #: lib/layouts/theorems-without-preamble.inc:262
 #: lib/layouts/theorems-without-preamble.inc:263
@@ -7976,7 +7976,7 @@ msgstr "Beispiel"
 #: lib/layouts/theorems-counters-bytype.inc:46
 #: lib/layouts/theorems-counters-bytype.inc:48
 #: lib/layouts/theorems-order.inc:55 lib/layouts/theorems-sec-bytype.module:101
-#: lib/layouts/theorems-starred-equivalents.inc:69
+#: lib/layouts/theorems-starred-equivalents.inc:51
 #: lib/layouts/theorems-starred.inc:266 lib/layouts/theorems-starred.inc:269
 #: lib/layouts/theorems-without-preamble.inc:291
 #: lib/layouts/theorems-without-preamble.inc:317
@@ -8013,7 +8013,7 @@ msgstr "Aufgabe"
 #: lib/layouts/theorems-counters-bytype.inc:15
 #: lib/layouts/theorems-counters-bytype.inc:17
 #: lib/layouts/theorems-order.inc:19 lib/layouts/theorems-sec-bytype.module:66
-#: lib/layouts/theorems-starred-equivalents.inc:20
+#: lib/layouts/theorems-starred-equivalents.inc:16
 #: lib/layouts/theorems-starred.inc:109 lib/layouts/theorems-starred.inc:112
 #: lib/layouts/theorems-without-preamble.inc:109
 #: lib/layouts/theorems-without-preamble.inc:110
@@ -8068,7 +8068,7 @@ msgstr "Notation"
 #: lib/layouts/theorems-counters-bytype.inc:42
 #: lib/layouts/theorems-counters-bytype.inc:43
 #: lib/layouts/theorems-order.inc:49 lib/layouts/theorems-sec-bytype.module:96
-#: lib/layouts/theorems-starred-equivalents.inc:62
+#: lib/layouts/theorems-starred-equivalents.inc:46
 #: lib/layouts/theorems-starred.inc:244 lib/layouts/theorems-starred.inc:247
 #: lib/layouts/theorems-without-preamble.inc:286
 #: lib/layouts/theorems-without-preamble.inc:287
@@ -8103,7 +8103,7 @@ msgstr "Problem"
 #: lib/layouts/theorems-counters-bytype.inc:20
 #: lib/layouts/theorems-counters-bytype.inc:22
 #: lib/layouts/theorems-order.inc:25 lib/layouts/theorems-sec-bytype.module:71
-#: lib/layouts/theorems-starred-equivalents.inc:27
+#: lib/layouts/theorems-starred-equivalents.inc:21
 #: lib/layouts/theorems-starred.inc:130 lib/layouts/theorems-starred.inc:133
 #: lib/layouts/theorems-without-preamble.inc:132
 #: lib/layouts/theorems-without-preamble.inc:133
@@ -8137,7 +8137,7 @@ msgstr "Satz"
 #: lib/layouts/theorems-counters-bytype.inc:56
 #: lib/layouts/theorems-counters-bytype.inc:58
 #: lib/layouts/theorems-order.inc:67 lib/layouts/theorems-sec-bytype.module:106
-#: lib/layouts/theorems-starred-equivalents.inc:76
+#: lib/layouts/theorems-starred-equivalents.inc:56
 #: lib/layouts/theorems-starred.inc:318 lib/layouts/theorems-starred.inc:321
 #: lib/layouts/theorems-without-preamble.inc:417
 #: lib/layouts/theorems-without-preamble.inc:418
@@ -8226,7 +8226,7 @@ msgstr "Bemerkung \\theremark."
 #: lib/layouts/theorems-counters-bytype.inc:51
 #: lib/layouts/theorems-counters-bytype.inc:53
 #: lib/layouts/theorems-order.inc:61
-#: lib/layouts/theorems-starred-equivalents.inc:55
+#: lib/layouts/theorems-starred-equivalents.inc:41
 #: lib/layouts/theorems-starred.inc:288 lib/layouts/theorems-starred.inc:291
 #: lib/layouts/theorems-without-preamble.inc:350
 #: lib/layouts/theorems-without-preamble.inc:351
@@ -45635,19 +45635,19 @@ msgid "More Spelling Suggestions"
 msgstr "Weitere Rechtschreibvorschläge"
 
 #: src/frontends/qt/Menus.cpp:1003
-msgid "Add to personal dictionary|r"
+msgid "Add to Personal Dictionary|r"
 msgstr "Zum persönlichen Wörterbuch hinzufügen|ö"
 
 #: src/frontends/qt/Menus.cpp:1005
-msgid "Ignore this occurrence|o"
+msgid "Ignore this Occurrence|o"
 msgstr "An dieser Stelle ignorieren|g"
 
 #: src/frontends/qt/Menus.cpp:1007
-msgid "Ignore all for this session|t"
+msgid "Ignore All for this Session|t"
 msgstr "Während dieser Sitzung ignorieren|i"
 
 #: src/frontends/qt/Menus.cpp:1009
-msgid "Ignore all in this document|u"
+msgid "Ignore All in this Document|u"
 msgstr "In diesem Dokument ignorieren|D"
 
 #: src/frontends/qt/Menus.cpp:1017
