@@ -437,7 +437,7 @@ void handle_colalign(Parser & p, vector<ColInfo> & colinfo,
 				// new column, vertical aligned box
 				next.valign = t.character();
 				next.width = p.verbatim_item();
-				if (!next.special.empty()) {
+				if (!next.special.empty() || next.align != 'n') {
 					ci2special(next);
 					// handle decimal separator
 					if (next.decimal_point != '\0') {
