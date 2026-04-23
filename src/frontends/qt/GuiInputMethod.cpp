@@ -788,11 +788,8 @@ std::array<int,2> GuiInputMethod::setCaretOffset(pos_type caret_pos)
 		int left_margin;
 		int inset_offset;
 		if (d->cur_->depth() > 1) {
-			pit_type & outer_pit = d->cur_->bottom().pit();
-			TextMetrics & tm =
-			        d->buffer_view_->textMetrics(d->cur_->bottom().text());
-			left_margin = tm.leftMargin(outer_pit);
-			inset_offset = d->cur_->inset().leftOffset(d->buffer_view_);
+			left_margin = d->cur_->inset().leftOffset(&d->cur_->bv());
+			inset_offset =  d->cur_->inset().xo(d->cur_->bv());
 		} else {
 			left_margin = d->rows_[caret_row.index].left_margin;
 			inset_offset = 0;
