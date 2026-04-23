@@ -380,6 +380,11 @@ void handle_colalign(Parser & p, vector<ColInfo> & colinfo,
 			continue;
 		}
 
+		if (t.cat() == catNewline) {
+			p.skip_spaces();
+			continue;
+		}
+
 		switch (t.character()) {
 			case ' ':
 				// whitespace, ignore.
