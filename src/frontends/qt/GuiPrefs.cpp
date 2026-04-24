@@ -3270,6 +3270,15 @@ PrefLanguage::PrefLanguage(GuiPreferences * form)
 	defaultLengthUnitCO->addItem(lyx::qt_(unit_name_gui[Length::CM]), Length::CM);
 	defaultLengthUnitCO->addItem(lyx::qt_(unit_name_gui[Length::IN]), Length::IN);
 
+	languagePackageCO->addItem(
+		qt_("Automatic"), toqstr("auto"));
+	languagePackageCO->addItem(
+		qt_("Always Babel"), toqstr("babel"));
+	languagePackageCO->addItem(
+		qt_("Custom"), toqstr("custom"));
+	languagePackageCO->addItem(
+		qt_("None[[language package]]"), toqstr("none"));
+
 	QAbstractItemModel * language_model = guiApp->languageModel();
 	language_model->sort(0);
 	uiLanguageCO->blockSignals(true);
@@ -3332,15 +3341,8 @@ void PrefLanguage::applyRC(LyXRC & rc) const
 	rc.respect_os_kbd_language = respectOSkbdCB->isChecked();
 	rc.language_auto_begin = !explicitDocLangBeginCB->isChecked();
 	rc.language_auto_end = !explicitDocLangEndCB->isChecked();
-	int const p = languagePackageCO->currentIndex();
-	if (p == 0)
-		rc.language_package_selection = LyXRC::LP_AUTO;
-	else if (p == 1)
-		rc.language_package_selection = LyXRC::LP_BABEL;
-	else if (p == 2)
-		rc.language_package_selection = LyXRC::LP_CUSTOM;
-	else if (p == 3)
-		rc.language_package_selection = LyXRC::LP_NONE;
+	rc.language_package_selection =
+		fromqstr(languagePackageCO->itemData(languagePackageCO->currentIndex()).toString());
 	rc.language_custom_package = fromqstr(languagePackageED->text());
 	rc.language_global_options = globalCB->isChecked();
 	rc.language_command_begin = fromqstr(startCommandED->text());
@@ -3365,8 +3367,9 @@ void PrefLanguage::updateRC(LyXRC const & rc)
 	respectOSkbdCB->setChecked(rc.respect_os_kbd_language);
 	explicitDocLangBeginCB->setChecked(!rc.language_auto_begin);
 	explicitDocLangEndCB->setChecked(!rc.language_auto_end);
-	languagePackageCO->setCurrentIndex(rc.language_package_selection);
-	if (languagePackageCO->currentIndex() == 2) {
+	int pos = languagePackageCO->findData(toqstr(rc.language_package_selection));
+	languagePackageCO->setCurrentIndex(pos);
+	if (rc.language_package_selection == "custom") {
 		languagePackageED->setText(toqstr(rc.language_custom_package));
 		languagePackageED->setEnabled(true);
 	} else {
@@ -3385,7 +3388,7 @@ void PrefLanguage::updateRC(LyXRC const & rc)
 		defaultDecimalSepCO->setCurrentIndex(1);
 		defaultDecimalSepED->setText(toqstr(rc.default_decimal_sep));
 	}
-	int pos = defaultLengthUnitCO->findData(int(rc.default_length_unit));
+	pos = defaultLengthUnitCO->findData(int(rc.default_length_unit));
 	defaultLengthUnitCO->setCurrentIndex(pos);
 
 	pos = uiLanguageCO->findData(toqstr(rc.gui_language));

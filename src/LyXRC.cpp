@@ -60,7 +60,7 @@ namespace {
 
 // The format should also be updated in configure.py, and conversion code
 // should be added to prefs2prefs_prefs.py.
-static unsigned int const LYXRC_FILEFORMAT = 40; // graduate \\experimental:bookmark_visibility and change default
+static unsigned int const LYXRC_FILEFORMAT = 41; // Use proper string values for \language_package_selection
 // when adding something to this array keep it sorted!
 LexerKeyword lyxrcTags[] = {
 	{ "\\accept_compound", LyXRC::RC_ACCEPT_COMPOUND },
@@ -830,22 +830,7 @@ LyXRC::ReturnValues LyXRC::read(Lexer & lexrc, bool check_format)
 			lexrc >> language_global_options;
 			break;
 		case RC_LANGUAGE_PACKAGE_SELECTION:
-			if (lexrc.next()) {
-				switch (lexrc.getInteger()) {
-				case 0:
-					language_package_selection = LP_AUTO;
-					break;
-				case 1:
-					language_package_selection = LP_BABEL;
-					break;
-				case 2:
-					language_package_selection = LP_CUSTOM;
-					break;
-				case 3:
-					language_package_selection = LP_NONE;
-					break;
-				}
-			}
+			lexrc >> language_package_selection;
 			break;
 		case RC_LANGUAGE_COMMAND_BEGIN:
 			lexrc >> language_command_begin;
@@ -2586,21 +2571,10 @@ void LyXRC::write(ostream & os, bool ignore_system_lyxrc, string const & name) c
 	case RC_LANGUAGE_PACKAGE_SELECTION:
 		if (ignore_system_lyxrc ||
 		    language_package_selection != system_lyxrc.language_package_selection) {
-			os << "\\language_package_selection ";
-			switch (language_package_selection) {
-			case LP_AUTO:
-				os << "0\n";
+			os << "\\language_package_selection \""
+			    << language_package_selection
+			    << "\"\n";
 				break;
-			case LP_BABEL:
-				os << "1\n";
-				break;
-			case LP_CUSTOM:
-				os << "2\n";
-				break;
-			case LP_NONE:
-				os << "3\n";
-				break;
-			}
 		}
 		if (tag != RC_LAST)
 			break;

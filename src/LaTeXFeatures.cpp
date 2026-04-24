@@ -621,23 +621,19 @@ LaTeXFeatures::LangPackage LaTeXFeatures::langPackage() const
 	}
 
 	if (local_lp == "default") {
-		switch (lyxrc.language_package_selection) {
-		case LyXRC::LP_AUTO:
+		if (lyxrc.language_package_selection == "auto") {
 			// polyglossia requirement has priority over babel
 			if (polyglossia_required)
 				return LANG_PACK_POLYGLOSSIA;
 			else if (babel_required)
 				return LANG_PACK_BABEL;
-			break;
-		case LyXRC::LP_BABEL:
+		} else if (lyxrc.language_package_selection == "babel") {
 			if (babel_required)
 				return LANG_PACK_BABEL;
-			break;
-		case LyXRC::LP_CUSTOM:
+		} else if (lyxrc.language_package_selection == "custom")
 			return LANG_PACK_CUSTOM;
-		case LyXRC::LP_NONE:
+		else if (lyxrc.language_package_selection == "none")
 			return LANG_PACK_NONE;
-		}
 	}
 
 	return LANG_PACK_NONE;

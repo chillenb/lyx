@@ -178,6 +178,9 @@
 # Incremented to format 40
 #   Rename \experimental:bookmarks_visibility to \bookmarks_visibility
 
+# Incremented to format 41, by spitz
+#   Use proper string values for \language_package_selection
+
 # NOTE: The format should also be updated in LYXRC.cpp and
 # in configure.py (search for lyxrc_fileformat).
 
@@ -529,6 +532,24 @@ def bookmarks_visibility(line):
 ####################################
 
 
+#################################
+# Conversions from LyX 2.5 to 2.6
+
+def rename_langpack(line):
+	line = line.lower()
+	if not line.startswith("\\language_package_selection "):
+		return no_match
+	line = line.replace('0', '"auto"')
+	line = line.replace('1', '"babel"')
+	line = line.replace('2', '"custom"')
+	line = line.replace('3', '"none"')
+	return (True, line)
+
+
+# End conversions for LyX 2.5 to 2.6
+####################################
+
+
 ############################################################
 # Format-conversion map. Also add empty format changes here.
 
@@ -578,5 +599,6 @@ conversions = [
 	[ 37, [remove_fullscreen_widthlimit]],
 	[ 38, []],
 	[ 39, []],
-        [ 40, [bookmarks_visibility]],
+    [ 40, [bookmarks_visibility]],
+    [ 41, [rename_langpack]]
 ]

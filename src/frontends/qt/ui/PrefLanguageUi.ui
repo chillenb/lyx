@@ -72,27 +72,7 @@
         <property name="toolTip">
          <string>Select which (LaTeX) language package documents should use by default</string>
         </property>
-        <item>
-         <property name="text">
-          <string>Automatic</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Always Babel</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>Custom</string>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>None[[language package]]</string>
-         </property>
-        </item>
-       </widget>
+        </widget>
       </item>
       <item row="0" column="2">
        <widget class="QLineEdit" name="languagePackageED">

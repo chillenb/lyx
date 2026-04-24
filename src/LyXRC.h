@@ -406,14 +406,7 @@ public:
 	///
 	bool language_global_options = true;
 	///
-	enum LangPackageSelection {
-		LP_AUTO = 0,
-		LP_BABEL,
-		LP_CUSTOM,
-		LP_NONE
-	};
-	///
-	LangPackageSelection language_package_selection = LP_AUTO;
+	std::string language_package_selection = "auto";
 	/// bidi cursor movement: true = visual, false = logical
 	bool visual_cursor = false;
 	///
