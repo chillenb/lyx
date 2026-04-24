@@ -156,12 +156,10 @@ struct GuiWorkArea::Private
 	QTransform item_trans_;
 	/// whether item_rect_ and item_trans need to be reset
 	bool item_geom_needs_reset_ = false;
-#ifdef Q_OS_MACOS
 	/// whether previously input key was a spacekey
 	bool prev_space_key_ = false;
 	/// the replacement string that macOS sends when double spaces are hit
 	QString const auto_replacement_str_ = ". ";
-#endif
 	/// for debug
 	//QLocale::Language im_lang_ = QLocale::AnyLanguage;
 

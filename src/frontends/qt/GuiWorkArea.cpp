@@ -674,19 +674,18 @@ bool GuiWorkArea::event(QEvent * e)
 			keyPressEvent(ke);
 			return true;
 		}
-#ifdef Q_OS_MACOS
 		// see "case QEvent::InputMethod:" below
 		if (ke->key() == Qt::Key_Space)
 			d->prev_space_key_ = true;
 		else
 			d->prev_space_key_ = false;
-#endif
+
 		return QAbstractScrollArea::event(e);
 	}
 
 	case QEvent::InputMethod: {
 		QInputMethodEvent * ev = static_cast<QInputMethodEvent*>(e);
-#ifdef Q_OS_MACOS
+
 		// Hitting double spaces turns the second space into an input method
 		// commit string "a period plus a space" in the default English keyboard
 		// if this feature is turned on in the system settings.
@@ -701,7 +700,6 @@ bool GuiWorkArea::event(QEvent * e)
 			lyx::dispatch(FuncRequest(LFUN_CHAR_DELETE_BACKWARD));
 			d->prev_space_key_ = false;
 		}
-#endif
 		inputMethodEvent(ev);
 		return e->isAccepted();
 	}
