@@ -698,8 +698,21 @@ void LaTeXFeatures::useLayout(docstring const & layoutname, int level)
 			thm.style = layout.thmStyle();
 			thm.zrefname = layout.thmZRefName();
 			thm.refprefix = to_ascii(layout.refprefix);
-			usedTheorems_[thm.name] = thm;
-			require("amsthm");
+			// check if this theorem has already
+			// been defined. If so, overwrite the
+			// existing definition
+			bool thm_exists = false;
+			for (auto & av_thm : usedTheorems_) {
+				if (av_thm.name == thm.name) {
+					av_thm = thm;
+					thm_exists = true;
+					break;
+				}
+			}
+			if (!thm_exists) {
+				usedTheorems_.push_back(thm);
+				require("amsthm");
+			}
 		}
 		usedLayouts_.push_back(layoutname);
 	} else {
@@ -2041,8 +2054,8 @@ string const LaTeXFeatures::getThmDefinitions() const
 	ostringstream tmp;
 
 	string laststyle;
-	for (auto const & [name, thm] : usedTheorems_) {
-		if (isProvided("newtheorem:" + name))
+	for (auto const & thm : usedTheorems_) {
+		if (isProvided("newtheorem:" + thm.name))
 			continue;
 		if (thm.style != laststyle) {
 			tmp << "\\theoremstyle{" << thm.style << "}\n";
@@ -2073,7 +2086,7 @@ string const LaTeXFeatures::getThmExtraDefinitions() const
 {
 	ostringstream tmp;
 
-	for (auto const & [name, thm] : usedTheorems_) {
+	for (auto const & thm : usedTheorems_) {
 		if (thm.counter == "none" || !refPrefixUsed(from_ascii(thm.refprefix)))
 			continue;
 
