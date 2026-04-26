@@ -20,11 +20,13 @@
  \renewcommand{\ref}[1]{\mbox{\autoref{#1}}}
  \newlength{\abc}
  \settowidth{\abc}{\space}
- \addto\extrasenglish{
- \renewcommand{\equationautorefname}{\hspace{-\abc}}
- \renewcommand{\sectionautorefname}{sec.\negthinspace}
- \renewcommand{\subsectionautorefname}{sec.\negthinspace}
- \renewcommand{\subsubsectionautorefname}{sec.\negthinspace}}
+ \@ifundefined{addto}{}{
+   \addto\extrasenglish{
+   \renewcommand{\equationautorefname}{\hspace{-\abc}}
+   \renewcommand{\sectionautorefname}{sec.\negthinspace}
+   \renewcommand{\subsectionautorefname}{sec.\negthinspace}
+   \renewcommand{\subsubsectionautorefname}{sec.\negthinspace}}
+ }
 }
 
 % wird benutzt, um Tabellenzellen zu vergrosern
